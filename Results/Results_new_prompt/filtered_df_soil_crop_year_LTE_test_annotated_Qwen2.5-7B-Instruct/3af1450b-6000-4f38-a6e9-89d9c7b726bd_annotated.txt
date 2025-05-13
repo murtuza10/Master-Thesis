@@ -1,0 +1,79 @@
+### Instruction ###
+You are an expert in Named Entity Recognition (NER) for agricultural texts, with a specialization in identifying entities related to **Crops**, **Soil**, **Location**, and **Time Statements**.
+
+Your task is to extract relevant entities from the provided text and return them in the exact JSON format defined below.
+
+### Extraction Categories ###
+1. **Crops**
+   - cropSpecies
+   - cropVariety
+
+2. **Soil**
+   - soilTexture
+   - soilReferenceGroup
+   - soilDepth
+   - soilBulkDensity
+   - soilPH
+   - soilOrganicCarbon
+   - soilAvailableNitrogen
+
+3. **Location**
+   - country
+   - region
+   - city
+   - latitude
+   - longitude
+
+4. **Time Statement**
+   - startTime
+   - endTime
+   - duration
+
+### Rules ###
+- Return results **strictly** in the JSON format shown below.
+- Each entity must include:
+   - The extracted value (`"value"`)
+   - Its character span in the original text (`"span": [start_index, end_index]`)
+- If no entities are found in a category, return an empty list (e.g., `"Crops": []`)
+- **Do not include any explanations, commentary, or extra formatting.** Output must be pure JSON.
+- Each entity's key (e.g., `soilPH`) must match its type as defined above.
+- In cases such as “winter wheat” or “summer wheat” only annotate “wheat”, as it can be the same species in both cases, which is just used for a different purpose.
+- Example of annotation:  
+  `"soilPH": {"value": "pH", "span": [25, 27]}`
+
+### Output Format ###
+```json
+{
+  "Crops": [
+      {"cropSpecies": { "value": "", "span": [start_index, end_index] }},
+      {"cropVariety": { "value": "", "span": [start_index, end_index] }},
+      ...
+  ],
+  "Soil": [
+      {"soilPH": { "value": "", "span": [start_index, end_index] }},
+      {"soilTexture": { "value": "", "span": [start_index, end_index] }},
+      ...
+  ],
+  "Location": [
+      {"country": { "value": "", "span": [start_index, end_index] }},
+      {"city": { "value": "", "span": [start_index, end_index] }},
+      ...
+  ],
+  "Time Statement": [
+      {"startTime": { "value": "", "span": [start_index, end_index] }},
+      {"endTime": { "value": "", "span": [start_index, end_index] }},
+      ...
+  ]
+}
+
+Extract entities for Crops, Soil, Location, and Time Statement from the text below.
+    
+    ### Text ###
+    Title: 
+ Agricultural long-term experiments in Europe outside Germany
+Abstract_text_1: 
+ Agricultural long-term experiments in Europe outside Germany.
+Abstract_text_2: 
+ This dataset provides information about 186 agricultural long-term experiments (LTE) in Europe (without Germany; For LTE in Germany see https://doi.org/10.20387/BonaRes-3TR6-MG8R) with a duration of at least 20 years. The following information is provided, if available: site, name, start, end (if appropriate), holding institution, research theme, website, networks, research parameters, farming category, size, exact position, experimental setup, crop rotation, soil type, etc. Research domain: Other Research question: Which kind of agricultural long-term experiments do exist in Europe? Where do they exist? On which soils? How can networking be simplified? Update to data version 1.1: Authors statement: «AGROVOC (https://agrovoc.fao.org/browse/agrovoc/en/) keywords that best describe the respective LTE. In addition, there are generalizing terms that make it easier to find similar LTE on specific topics.” see lineage for more information
+Keywords: 
+ Soil, cash crops, cereal crops, catch crops, cover plants, agronomic characters, crop modelling, crop residues, cropping systems, field crops, soil organic carbon, total carbon, field experimentation, opendata, Boden, Kulturpflanze, Nutzpflanze, Nutzpflanzenproduktion, Freilandversuch, Langzeitversuch, Versuchsanlage, Bodennutzung, Bodentextur, Bodenart, Bodenveränderungen, Bodenklima, Bodenschadstoffe, Bodenstruktur, Bodenqualität, BodenpH, Bodenfeuchtigkeit, Bodenporosität, Bodenschwere, Bodenbestandteile, Bodenbulkdensity, Bodenbevölkerung, BodenorganischeBranneisen, Bodenphosphor, Bodenpotassium, Bodenmagnesium, Bodennitrat, Bodensulfat, Bodenkalium, Bodenkies, Bodengelee, Bodensand, Bodenlehm, Bodenrot, Bodengelb, Bodenbraun, Bodengrau, Bodenweiß, Bodenbraun-rot, Bodenbräunlich-rot, Bodenbraun-weiß, Bodenbräunlich-weiß, Bodenbraun-grau, Bodenbräunlich-grau, Bodenbraun-grün, Bodenbräunlich-grün, Bodenbraun-schwarz, Bodenbräunlich-schwarz, Bodenbraun-rot-schwarz, Bodenbräunlich-rot-schwarz, Bodenbraun-weiß-schwarz, Bodenbräunlich-weiß-schwarz, Bodenbraun-grau-schwarz, Bodenbräunlich-grau-schwarz, Bodenbraun-grün-schwarz, Bodenbräunlich-grün-schwarz, Bodenbraun-schwarz-rot, Bodenbräunlich-schwarz-rot, Bodenbraun-schwarz-weiß, Bodenbräunlich-schwarz-weiß, Bodenbraun-schwarz-grau, Bodenbräunlich-schwarz-grau, Bodenbraun-schwarz-grün, Bodenbräunlich-schwarz-grün, Bodenbraun-schwarz-schwarz, Bodenbräunlich-schwarz-schwarz, Bodenbraun-schwarz-rot-weiß, Bodenbräunlich-schwarz-rot-weiß, Bodenbraun-schwarz-weiß-grau, Bodenbräunlich-schwarz-weiß-grau, Bodenbraun-schwarz-weiß-grün, Bodenbräunlich-schwarz-weiß-grün, Bodenbraun-schwarz-weiß-schwarz, Bodenbräunlich-schwarz-weiß-schwarz, Bodenbraun-schwarz-weiß-rot, Bodenbräunlich-schwarz-weiß-rot, Bodenbraun-schwarz-weiß-weiß, Bodenbräunlich-schwarz-weiß-weiß, Bodenbraun-schwarz-weiß-grau-rot, Bodenbräunlich-schwarz-weiß-grau-rot, Bodenbraun-schwarz-weiß-grau-weiß, Bodenbräunlich-schwarz-weiß-grau-weiß, Bodenbraun-schwarz-weiß-grau-schwarz, Bodenbräunlich-schwarz-weiß-grau-schwarz, Bodenbraun-schwarz-weiß-grau-rot-weiß, Bodenbräunlich-schwarz-weiß-grau-rot-weiß, Bodenbraun-schwarz-weiß-grau-weiß-rot, Bodenbräunlich-schwarz-weiß-grau-weiß-rot, Bodenbraun-schwarz-weiß-grau-weiß-weiß, Bodenbräunlich-schwarz-weiß-grau-weiß-weiß, Bodenbraun-schwarz-weiß-grau-schwarz-rot, Bodenbräunlich-schwarz-weiß-grau-schwarz-rot, Bodenbraun-schwarz-weiß-grau-weiß-rot-weiß, Bodenbräunlich-schwarz-weiß-grau-weiß-rot-weiß, Bodenbraun-schwarz-weiß-grau-weiß-weiß-rot, Bodenbräunlich-schwarz-weiß-grau-weiß-weiß-rot, Bodenbraun-schwarz-weiß-grau-weiß-weiß-weiß, Bodenbräunlich-schwarz-weiß-grau-weiß-weiß-weiß, Bodenbraun-schwarz-weiß-grau-schwarz-rot-weiß, Bodenbrä

@@ -1,0 +1,145 @@
+### Instruction ###
+You are an expert in Named Entity Recognition (NER) for agricultural texts, with a specialization in identifying entities related to **Crops**, **Soil**, **Location**, and **Time Statements**.
+
+Your task is to extract relevant entities from the provided text and return them in the exact JSON format defined below.
+
+### Extraction Categories ###
+1. **Crops**
+   - cropSpecies
+   - cropVariety
+
+2. **Soil**
+   - soilTexture
+   - soilReferenceGroup
+   - soilDepth
+   - soilBulkDensity
+   - soilPH
+   - soilOrganicCarbon
+   - soilAvailableNitrogen
+
+3. **Location**
+   - country
+   - region
+   - city
+   - latitude
+   - longitude
+
+4. **Time Statement**
+   - startTime
+   - endTime
+   - duration
+
+### Rules ###
+- Return results **strictly** in the JSON format shown below.
+- Each entity must include:
+   - The extracted value (`"value"`)
+   - Its character span in the original text (`"span": [start_index, end_index]`)
+- If no entities are found in a category, return an empty list (e.g., `"Crops": []`)
+- **Do not include any explanations, commentary, or extra formatting.** Output must be pure JSON.
+- Each entity's key (e.g., `soilPH`) must match its type as defined above.
+- Example of annotation:  
+  `"soilPH": {"value": "pH", "span": [25, 27]}`
+
+### Output Format ###
+```json
+{
+  "Crops": [
+    {
+      "cropSpecies": { "value": "", "span": [start_index, end_index] },
+      "cropVariety": { "value": "", "span": [start_index, end_index] }
+    }
+  ],
+  "Soil": [
+    {
+      "soilPH": { "value": "", "span": [start_index, end_index] }
+    }
+  ],
+  "Location": [
+    {
+      "country": { "value": "", "span": [start_index, end_index] }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": { "value": "", "span": [start_index, end_index] }
+    }
+  ]
+}
+
+Extract entities for Crops, Soil, Location, and Time Statement from the text below.
+    
+    ### Text ###
+    Title: 
+ P release kinetics from vivianite, hydroxyapatite and bone char
+Abstract_text_1: 
+ P release kinetics from vivianite, hydroxyapatite and bone char.
+Abstract_text_2: 
+ The bone char used for P release experiments was produced by Bonechar Carvão Ativado Do Brasil Ltda. (Maringá, Brazil) in 2015. It has been manufactured by pyrolysis of rendered (de-fatted) bovine bones at more than 800°C. A particle size analysis of the bone char was carried out, whereby 100 g of char was divided into three particle size fractions: 200 µm, 200 - 2000 µm, and 2000 µm. The P bearing minerals used were the commercially available Ca-phosphate hydroxyapatite (Ca5[OH(PO4)3]) (Acros Organics, Geel, Belgium) and the Fe-phosphate vivianite (Fe32+[PO4]2 · 8H2O). Vivianite was prepared where 250 ml of a 0.035 M H3PO4-solution were added to solid FeSO4. The resulting 0.05 M FeSO4-solution was adjusted to pH 6 with 5 M KOH. The precipitate formed was centrifuged for 5 min at 2090 × G and washed with ultrapure water. The prepared vivianite was dried at 40°C and ground into powder using mortar and pestle. P, Ca, and Fe were determined using ICP-AES after pressure digestion or aqua regia digestion. The composition of hydroxyapatite and vivianite was verified using X-ray diffraction (XRD). The specific surface area was determined with an Autosorb-1 (Quantachrome, Odelzhausen, Germany) using a multi-point BET-measurement (Brunauer-Emmett-Teller) and N2 as adsorptive medium. The specific surface area of hydroxyapatite was with 68.4 m² g-1 1.7 fold higher than for vivianite with 39.5 m² g-1. Bone char had the highest specific surface area with values in the range from 92.1 to 94.8 m² g-1. The P release experiments were performed in batch reactors with 100 mL of 0.01 M CaCl2 solution and 1.0 g of the P-bearing material. The reactors were agitated on a horizontal shaker at 200 rpm at 25°C for 1, 2, 4, 8, 16, and 24 hours. Aliquots of 1.5 mL were taken at each time point and filtered through 0.45 µm syringe filters. The P concentrations were measured using the molybdenum blue method. The results show that the P release rate from vivianite was higher compared to hydroxyapatite and bone char. The P release from hydroxyapatite and bone char was similar, but slower compared to vivianite. The P release from vivianite was rapid in the first 4 hours, followed by a slower release until 24 hours. For hydroxyapatite and bone char, the P release was slow throughout the entire experiment.
+### Response ###
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": { "value": "Brazil", "span": [101, 107] }
+    },
+    {
+      "city": { "value": "Maringá", "span": [93, 99] }
+    },
+    {
+      "country": { "value": "Belgium", "span": [213, 219] }
+    },
+    {
+      "city": { "value": "Geel", "span": [209, 212] }
+    },
+    {
+      "country": { "value": "Germany", "span": [352, 358] }
+    },
+    {
+      "city": { "value": "Odelzhausen", "span": [338, 351] }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": { "value": "2015", "span": [109, 113] }
+    },
+    {
+      "duration": { "value": "1, 2, 4, 8, 16, and 24 hours", "span": [543, 570] }
+    }
+  ]
+}
+``` ```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": { "value": "Brazil", "span": [101, 107] }
+    },
+    {
+      "city": { "value": "Maringá", "span": [93, 99] }
+    },
+    {
+      "country": { "value": "Belgium", "span": [213, 219] }
+    },
+    {
+      "city": { "value": "Geel", "span": [209, 212] }
+    },
+    {
+      "country": { "value": "Germany", "span": [352, 358] }
+    },
+    {
+      "city": { "value": "Odelzhausen", "span": [338, 351] }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": { "value": "2015", "span": [109, 113] }
+    },
+    {
+      "duration": { "value": "1, 2, 4, 8, 16, and 24 hours", "span": [543, 570] }
+    }
+  ]
+}
+```
