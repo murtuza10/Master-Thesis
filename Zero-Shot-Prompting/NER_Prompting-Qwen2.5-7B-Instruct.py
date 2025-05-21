@@ -2,8 +2,13 @@ import os
 import json
 import torch
 import re
+import sys
+import os
+
+# Go one level up to the parent directory (Master-Thesis)
+sys.path.append(os.path.abspath('..'))
 from transformers import AutoModelForCausalLM, AutoTokenizer
-from generate_ner_prompt import generate_ner_prompts
+from Evaluation_Files.generate_ner_prompt import generate_ner_prompts
 
 # Step 1: Load Qwen 2.5-7B Model and Tokenizer
 def load_qwen_model(model_path):
@@ -22,7 +27,7 @@ def load_qwen_model(model_path):
 
 
 
-# Step 3: Perform NER with Qwen 1.5-32B
+# Step 3: Perform NER with Qwen 2.5-7B
 def perform_ner_with_qwen(model, tokenizer, text, max_length=1512):
     system_prompt, user_prompt = generate_ner_prompts(text)
     prompt = f"{system_prompt}\n\n{user_prompt}"
@@ -58,15 +63,15 @@ def process_text_files(input_dir, model, tokenizer, output_dir):
                 file.write(ner_result)
             
             print(f"NER results saved to {output_text_path}")
-            i = i+1
-            if i==10:
-                break
+            # i = i+1
+            # if i==10:
+            #     break
 
 # Step 6: Main Execution
 if __name__ == "__main__":
-    input_dir = "/home/s27mhusa_hpc/pilot-uc-textmining-metadata/data/Bonares/output/filtered_df_soil_crop_year_LTE_test"
-    output_dir = "/home/s27mhusa_hpc/pilot-uc-textmining-metadata/data/Bonares/output/Results_new_prompt/filtered_df_soil_crop_year_LTE_test_annotated_Qwen2.5-7B-Instruct"  # Change to the desired output directory path
-    local_model_path = "/lustre/scratch/data/s27mhusa_hpc-ner_model_data/Qwen2.5-7B-Instruct"
+    input_dir = "/home/s27mhusa_hpc/Master-Thesis/Text_Files_For_LLM_Input"
+    output_dir = "/home/s27mhusa_hpc/Master-Thesis/Results/Results_new_prompt/LLM_annotated_Qwen2.5-7B-Instruct"  # Change to the desired output directory path
+    local_model_path = "/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/Qwen2.5-7B-Instruct"
 
     qwen_model, qwen_tokenizer = load_qwen_model(local_model_path)
     process_text_files(input_dir, qwen_model, qwen_tokenizer, output_dir)

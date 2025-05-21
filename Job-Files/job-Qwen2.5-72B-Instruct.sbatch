@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --partition=sgpu_short
 #SBATCH --time=8:00:00
-#SBATCH --gpus=1
-#SBATCH --ntasks=1
+#SBATCH --gpus=2
+#SBATCH --ntasks=2
 
 
 
@@ -14,4 +14,4 @@ conda init
 conda deactivate 
 conda activate Llama
 
-python NER_Prompting-Qwen2.5-72B-Instruct.py
+python /home/s27mhusa_hpc/Master-Thesis/Zero-Shot-Prompting/NER_Prompting-Qwen2.5-72B-Instruct.py

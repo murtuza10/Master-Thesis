@@ -14,4 +14,4 @@ conda init
 conda deactivate 
 conda activate Llama
 
-python NER_Prompting-Llama-3.3-70B-Instruct_text.py
+python /home/s27mhusa_hpc/Master-Thesis/Zero-Shot-Prompting/NER_Prompting-Llama-3.3-70B-Instruct_text.py
