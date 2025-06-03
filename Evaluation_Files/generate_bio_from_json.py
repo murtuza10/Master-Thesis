@@ -9,54 +9,81 @@ def convert_json_to_bio(text, annotation_json):
     tokens = [token.text for token in doc]
     labels = ["O"] * len(tokens)
 
-    # Flatten all labeled 'value' fields from the nested JSON structure
     entity_spans = []
 
-    # print(annotation_json)
-    # Process each category and its entities
+    # Flatten all labeled 'value' fields from the nested JSON structure
     for category, entries in annotation_json.items():
         for entry in entries:
             for sublabel, data in entry.items():
                 value = data.get("value", "")
+                span = data.get("span", [])
                 if value:
                     entity_spans.append({
                         "label": sublabel,
-                        "value": value
+                        "value": value,
+                        "span": span
                     })
 
-    # Loop through the values and assign BIO tags
+    correct_spans = 0
+    fallbacks_used = 0
+    not_found_entities_count = 0
+    not_found_entities = []
+
     for entity in entity_spans:
         label = entity["label"]
         value = entity["value"]
+        span = entity.get("span", [])
 
-        # Search for the value in the text and assign BIO tags
-        start_idx = text.find(value)
-        
-        while start_idx != -1:  # Continue as long as we find the value
-            # Get the token indices for the value
-            end_idx = start_idx + len(value)
+        start_idx = -1
 
-            # Find the corresponding tokens that match the value in the doc
-            token_start = token_end = -1
-            for i, token in enumerate(doc):
-                if token_start == -1 and token.idx == start_idx:
-                    token_start = i  # First token of the match
-                if token.idx + len(token.text) == end_idx:
-                    token_end = i  # Last token of the match
-                    break
+        # Check if the span is valid and matches the value
+        if isinstance(span, list) and len(span) == 2 and all(isinstance(x, int) for x in span):
+            start, end = span
+            if text[start:end] == value:
+                start_idx = start
+                correct_spans += 1
+            else:
+                start_idx = text.find(value)
+                if start_idx != -1:
+                    fallbacks_used += 1
+                else:
+                    not_found_entities_count += 1
+                    not_found_entities.append(value)
+                    continue  # Skip tagging
+        else:
+            # Span is not usable; try finding the value in text
+            start_idx = text.find(value)
+            if start_idx != -1:
+                fallbacks_used += 1
+            else:
+                not_found_entities_count += 1
+                not_found_entities.append(value)
+                continue  # Skip tagging
 
-            # Now assign BIO tags based on token positions
-            if token_start != -1 and token_end != -1:
-                for i in range(token_start, token_end + 1):
-                    if i == token_start:
-                        labels[i] = f"B-{label}"  # Beginning of the entity
-                    else:
-                        labels[i] = f"I-{label}"  # Inside the entity
+        end_idx = start_idx + len(value)
 
-            # Move to the next occurrence of the value in the text
-            start_idx = text.find(value, start_idx + 1)
+        # Find token positions
+        token_start = token_end = -1
+        for i, token in enumerate(doc):
+            if token_start == -1 and token.idx == start_idx:
+                token_start = i
+            if token.idx + len(token.text) == end_idx:
+                token_end = i
+                break
 
-    return tokens, labels
+        if token_start != -1 and token_end != -1:
+            for i in range(token_start, token_end + 1):
+                labels[i] = f"B-{label}" if i == token_start else f"I-{label}"
+
+    stats = {
+        "correct_spans": correct_spans,
+        "fallbacks_used": fallbacks_used,
+        "not_found_entities": not_found_entities,
+        "not_found_entities_count": not_found_entities_count,
+        "total_entities": len(entity_spans)
+    }
+
+    return tokens, labels, stats
 
 def generate_bio_from_json(text_file, annotations_file):
 
@@ -65,17 +92,18 @@ def generate_bio_from_json(text_file, annotations_file):
   
   with open(annotations_file, "r", encoding="utf-8") as f:
     annotation_json = json.load(f)
-  tokens, labels = convert_json_to_bio(text, annotation_json)
+  tokens, labels, stats = convert_json_to_bio(text, annotation_json)
 
 #   Print the results
-  for token, label in zip(tokens, labels):
-      print(f"{token}: {label}")
+#   for token, label in zip(tokens, labels):
+#       print(f"{token}: {label}")
+  print(stats)
 
-  return labels
+  return tokens, labels, stats
 
 
 if __name__ == "__main__":
-    input_file_text = "/home/s27mhusa_hpc/Master-Thesis/Text_Files_For_LLM_Input/50596_inception.txt"
-    input_file_annotations = "/home/s27mhusa_hpc/Master-Thesis/Results/Results_new_prompt_json/LLM_annotated_Qwen2.5-72B-Instruct/50596_inception_annotated.txt"
+    input_file_text = "/home/s27mhusa_hpc/Master-Thesis/Text_Files_For_LLM_Input/00bee634-47e6-490b-89ba-2464c9f09c31_inception.txt"
+    input_file_annotations = "/home/s27mhusa_hpc/Master-Thesis/Results/Results_new_prompt_json/LLM_annotated_Qwen2.5-72B-Instruct/00bee634-47e6-490b-89ba-2464c9f09c31_inception_annotated.txt"
 
     generate_bio_from_json(input_file_text,input_file_annotations)

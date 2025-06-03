@@ -43,8 +43,11 @@ def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_js
     all_y_true = []
     all_y_pred = []
     results_per_file = []
-    results_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/ner_evaluation_results_{model_name}.txt"
+    results_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Modified_Prompt/ner_evaluation_results_{model_name}.txt"
+    stats_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Modified_Prompt/Stats/ner_evaluation_stats_{model_name}.txt"
+
     results_lines = []  # Collect output to write to file later
+    stats_lines = []
 
 
     for filename in os.listdir(input_text_dir):
@@ -64,7 +67,9 @@ def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_js
                 y_true = generate_bio_annotations_from_cas(xmi_path)
 
                 if os.path.exists(annot_path):
-                    y_pred = generate_bio_from_json(text_path, annot_path)
+                    token, y_pred, stats = generate_bio_from_json(text_path, annot_path)
+                    stats_lines.append(f"{file_id}:\n")
+                    stats_lines.append(stats)
                 else:
                     msg = f"ℹ️ No annotation file for {filename}, assuming no predictions."
                     print(msg)
@@ -111,6 +116,10 @@ def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_js
             f.write(str(line) + "\n")
         for line in results_lines:
             f.write(str(line) + "\n")
+    
+    with open(stats_output_path, "w", encoding="utf-8") as f:
+        for line in stats_lines:
+            f.write(str(line) + "\n")
 
     print(f"\n📁 All results saved to {results_output_path}")
 
@@ -124,8 +133,8 @@ if __name__ == "__main__":
 
     model_name = args.model_name
     input_text_dir = "/home/s27mhusa_hpc/Master-Thesis/Text_Files_For_LLM_Input"
-    input_annot_dir = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_new_prompt/LLM_annotated_{model_name}"
-    input_annot_dir_json = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_new_prompt_json/LLM_annotated_{model_name}"
+    input_annot_dir = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_modified_prompt/LLM_annotated_{model_name}"
+    input_annot_dir_json = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_modified_prompt_json/LLM_annotated_{model_name}"
     xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/XMI_Files"
 
     evaluate_all(

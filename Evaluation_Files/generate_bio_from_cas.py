@@ -48,7 +48,7 @@ def generate_bio_annotations_from_cas(cas_file):
     tokens, bio_labels = cas_to_bio(cas, annotation_types)
     # for token, label in zip(tokens, bio_labels):
     #   print(f"{token}: {label}")
-    return bio_labels
+    return tokens, bio_labels
 
 
 
