@@ -3,7 +3,7 @@ import regex
 import json
 import os
 
-def extract_second_json_block_from_directory(input_dir, output_dir):
+def extract_second_json_block_from_directory(input_dir, output_dir,model_name):
     """
     Extracts the second JSON block from each .txt file in the input directory
     and saves it as a pretty-printed JSON file in the output directory.
@@ -33,19 +33,28 @@ def extract_second_json_block_from_directory(input_dir, output_dir):
                 matches = regex.findall(pattern, content)
                 # for i,match in enumerate(matches):
                 #     print(f"Match {i}: {match}")
-
-                for i in range(1, len(matches)):
-                    try:
-                        data = json.loads(matches[i])
-                        with open(output_file, "w", encoding="utf-8") as out:
-                            json.dump(data, out, indent=2)
-                        print(f"✅ Processed: {filename} (using block {i + 1})")
-                        break  # Stop after the first successful parse
-                    except json.JSONDecodeError as je:
-                        print(f"⚠️ Block {i + 1} in {filename} is not valid JSON, trying next...")
-
+                if model_name == "DeepSeekV3":
+                    # Strip code block markers
+                    data = json.loads(content)  
+                    content = data['choices'][0]['message']['content']
+                    clean_json_str = content.strip('`').replace("json\n", "", 1)
+                    # Parse JSON
+                    parsed_json = json.loads(clean_json_str)
+                    with open(output_file, "w", encoding="utf-8") as out:
+                        json.dump(parsed_json, out, indent=2)
                 else:
-                    print(f"⚠️ No valid JSON block found in {filename} after the first one.")
+                    for i in range(1, len(matches)):
+                        try:
+                            data = json.loads(matches[i])
+                            with open(output_file, "w", encoding="utf-8") as out:
+                                json.dump(data, out, indent=2)
+                            print(f"✅ Processed: {filename} (using block {i + 1})")
+                            break  # Stop after the first successful parse
+                        except json.JSONDecodeError as je:
+                            print(f"⚠️ Block {i + 1} in {filename} is not valid JSON, trying next...")
+
+                    else:
+                        print(f"⚠️ No valid JSON block found in {filename} after the first one.")
             except Exception as e:
                 print(f"❌ Error processing {filename}: {e}")
 

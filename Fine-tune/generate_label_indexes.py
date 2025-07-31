@@ -6,18 +6,15 @@ import os
 import ast
 import json
 
-# Define input root and output folder
-labels = Path("/home/s27mhusa_hpc/Master-Thesis/OpenAgrar_BIO_labels")
-tokens = Path("/home/s27mhusa_hpc/Master-Thesis/OpenAgrar_BIO_tokens")
 
 
-label_list = ["O", "B-soilOrganicCarbon", "I-soilOrganicCarbon", "B-startTime", "I-startTime", "B-endTime", "I-endTime", "B-city", "I-city", "B-duration", "I-duration", "B-cropSpecies", "I-cropSpecies", "B-soilAvailableNitrogen", "I-soilAvailableNitrogen", "B-soilDepth", "I-soilDepth", "B-region", "I-region", "B-country", "I-country", "B-longitude", "I-longitude", "B-latitude", "I-latitude", "B-cropVariety", "I-cropVariety", "B-soilPH", "I-soilPH", "B-soilBulkDensity", "I-soilBulkDensity"]
+label_list = ["O","B-soilReferenceGroup","I-soilReferenceGroup", "B-soilOrganicCarbon", "I-soilOrganicCarbon", "B-soilTexture", "I-soilTexture", "B-startTime", "I-startTime", "B-endTime", "I-endTime", "B-city", "I-city", "B-duration", "I-duration", "B-cropSpecies", "I-cropSpecies", "B-soilAvailableNitrogen", "I-soilAvailableNitrogen", "B-soilDepth", "I-soilDepth", "B-region", "I-region", "B-country", "I-country", "B-longitude", "I-longitude", "B-latitude", "I-latitude", "B-cropVariety", "I-cropVariety", "B-soilPH", "I-soilPH", "B-soilBulkDensity", "I-soilBulkDensity"]
 
 
 label_to_index = {label: idx for idx, label in enumerate(label_list)}
 
-input_dir_labels = Path("/home/s27mhusa_hpc/Master-Thesis/OpenAgrar_BIO_labels")
-output_dir_labels = Path("/home/s27mhusa_hpc/Master-Thesis/OpenAgrar_BIO_labels_indexed")
+input_dir_labels = Path("/home/s27mhusa_hpc/Master-Thesis/FinalDatasets-10July/Test_BIO_labels")
+output_dir_labels = Path("/home/s27mhusa_hpc/Master-Thesis/FinalDatasets-10July/Test_BIO_labels_indexed")
 os.makedirs(output_dir_labels, exist_ok=True)
 
 for filename in os.listdir(input_dir_labels):

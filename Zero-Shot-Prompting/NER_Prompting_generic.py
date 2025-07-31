@@ -71,6 +71,7 @@ def main():
     parser = argparse.ArgumentParser(description="Perform NER using a transformer-based model.")
     parser.add_argument("--input_dir", required=True, help="Directory containing input text files.")
     parser.add_argument("--output_dir", required=True, help="Directory to save annotated output files.")
+    parser.add_argument("--output_dir_json", required=True, help="Directory to save extracted json output from annotated files.")
     parser.add_argument("--model_name", required=True, help="Name of the model used for annotation.")
     parser.add_argument("--model_path", required=True, help="Path to the pretrained model.")
     parser.add_argument("--max_length", type=int, default=1512, help="Maximum length for tokenized input.")
@@ -80,14 +81,14 @@ def main():
 
     model, tokenizer = load_model(args.model_path)
     process_text_files(args.input_dir, model, tokenizer, args.output_dir, args.max_length)
-    input_text_dir = "/home/s27mhusa_hpc/Master-Thesis/Text_Files_For_LLM_Input"
-    input_annot_dir = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_new_prompt/LLM_annotated_{model_name}"
-    input_annot_dir_json = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_new_prompt_json/LLM_annotated_{model_name}"
-    xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/XMI_Files"
+    # input_text_dir = "/home/s27mhusa_hpc/Master-Thesis/Text_Files_For_LLM_Input"
+    # input_annot_dir = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_new_prompt/LLM_annotated_{model_name}"
+    # input_annot_dir_json = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_new_prompt_json/LLM_annotated_{model_name}"
+    xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/XMI_Files_OpenAgrar"
     evaluate_all(model_name,
-        input_text_dir,
-        input_annot_dir,
-        input_annot_dir_json,
+        args.input_dir,
+        args.output_dir,
+        args.output_dir_json,
         xmi_dir)
     print("NER processing complete.")
 

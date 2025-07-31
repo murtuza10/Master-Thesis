@@ -2,7 +2,7 @@ from typing import List, Dict
 import json
 
 
-label_map = {0: "O", 1: "B-soilOrganicCarbon",2: "I-soilOrganicCarbon",3: "B-soilTexture",4: "I-soilTexture",5: "B-startTime",6: "I-startTime",7: "B-endTime",8: "I-endTime",9: "B-city",10: "I-city",11: "B-duration",12: "I-duration",13: "B-cropSpecies",14: "I-cropSpecies",15: "B-soilAvailableNitrogen",16: "I-soilAvailableNitrogen",17: "B-soilDepth",18: "I-soilDepth",19: "B-region",20: "I-region",21: "B-country",22: "I-country",23: "B-longitude",24: "I-longitude",25: "B-latitude",26: "I-latitude",27: "B-cropVariety",28: "I-cropVariety",29: "B-soilPH",30: "I-soilPH",31: "B-soilBulkDensity",32: "I-soilBulkDensity"}
+label_map = {0: "O",1:"B-soilReferenceGroup",2:"I-soilReferenceGroup", 3: "B-soilOrganicCarbon",4: "I-soilOrganicCarbon",5: "B-soilTexture",6: "I-soilTexture",7: "B-startTime",8: "I-startTime",9: "B-endTime",10: "I-endTime",11: "B-city",12: "I-city",13: "B-duration",14: "I-duration",15: "B-cropSpecies",16: "I-cropSpecies",17: "B-soilAvailableNitrogen",18: "I-soilAvailableNitrogen",19: "B-soilDepth",20: "I-soilDepth",21: "B-region",22: "I-region",23: "B-country",24: "I-country",25: "B-longitude",26: "I-longitude",27: "B-latitude",28: "I-latitude",29: "B-cropVariety",30: "I-cropVariety",31: "B-soilPH",32: "I-soilPH",33: "B-soilBulkDensity",34: "I-soilBulkDensity"}
 
 
 def convert_to_span_format(data: List[Dict]) -> List[Dict]:
@@ -45,14 +45,14 @@ def convert_to_span_format(data: List[Dict]) -> List[Dict]:
     return results
 
 # Load your data
-with open("/home/s27mhusa_hpc/Master-Thesis/combined_ner_dataset_combined_manual_val_token_minlabel.json", "r", encoding="utf-8") as f:
+with open("/home/s27mhusa_hpc/Master-Thesis/Dataset-25-July-Document-Level/Test_ner_dataset_document.json", "r", encoding="utf-8") as f:
     raw_data = json.load(f)
 
 # Convert
 converted_data = convert_to_span_format(raw_data)
 
 # Save
-with open("/home/s27mhusa_hpc/Master-Thesis/combined_ner_dataset_val_converted.json", "w", encoding="utf-8") as f:
+with open("/home/s27mhusa_hpc/Master-Thesis/Dataset-25-July-Document-Level/Test_ner_dataset_document_converted.json", "w", encoding="utf-8") as f:
     json.dump(converted_data, f, indent=2, ensure_ascii=False)
 
-print("✅ Conversion complete! Saved to 'converted_autotrain.json'")
+print("✅ Conversion complete! Saved to 'Combined_ner_dataset_document_converted.json'")

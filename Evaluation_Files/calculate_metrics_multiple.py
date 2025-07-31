@@ -1,3 +1,5 @@
+import ast
+import json
 import os
 import evaluate
 import argparse
@@ -10,6 +12,9 @@ from seqeval.metrics import classification_report
 import spacy
 from extract_json_from_output import extract_second_json_block_from_directory
 
+
+def has_named_entities(labels):
+    return any(label.startswith("B-") or label.startswith("I-") for label in labels)
 
 def generate_empty_bio(text_path):
     """
@@ -36,15 +41,17 @@ def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_js
 
     extract_second_json_block_from_directory(
     input_annot_dir,
-    input_annot_dir_json
+    input_annot_dir_json,
+    model_name
     )
     ner_metric = evaluate.load("seqeval")
 
     all_y_true = []
     all_y_pred = []
     results_per_file = []
-    results_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Modified_Prompt/ner_evaluation_results_{model_name}.txt"
-    stats_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Modified_Prompt/Stats/ner_evaluation_stats_{model_name}.txt"
+    y_true_dir = f"/home/s27mhusa_hpc/Master-Thesis/Test_BIO_labels"
+    results_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/TestFiles_29July/ner_evaluation_results_{model_name}.txt"
+    stats_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/TestFiles_29July/Stats/ner_evaluation_stats_{model_name}.txt"
 
     results_lines = []  # Collect output to write to file later
     stats_lines = []
@@ -64,10 +71,26 @@ def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_js
                 continue
 
             try:
-                y_true = generate_bio_annotations_from_cas(xmi_path)
-
+                y_true_path = os.path.join(y_true_dir, f"{file_id}.txt")
+                if os.path.exists(y_true_path):
+                    # File exists: read and convert to list
+                    with open(y_true_path, "r", encoding="utf-8") as f:
+                        content = f.read().strip()
+                        y_true = ast.literal_eval(content)
+                else:
+                    # File doesn't exist: generate and save
+                    tokens,y_true = generate_bio_annotations_from_cas(xmi_path)
+                    
+                    # Ensure the directory exists
+                    os.makedirs(os.path.dirname(y_true_path), exist_ok=True)
+                    
+                    # Save the output to the file
+                    with open(y_true_path, "w", encoding="utf-8") as f:
+                        f.write("\n".join(y_true))
+                
+                # print(f"Y_true is {y_true} and length is {len(y_true)}")
                 if os.path.exists(annot_path):
-                    token, y_pred, stats = generate_bio_from_json(text_path, annot_path)
+                    token, y_pred, stats = generate_bio_from_json(text_path, annot_path) # Pass the parsed dictionary
                     stats_lines.append(f"{file_id}:\n")
                     stats_lines.append(stats)
                 else:
@@ -75,6 +98,7 @@ def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_js
                     print(msg)
                     # results_lines.append(msg)                    
                     y_pred = generate_empty_bio(text_path)
+                # print(f"token is {token} and length is {len(y_pred)}")
 
                 if len(y_true) != len(y_pred):
                     msg = f"❌ Length mismatch in {file_id} — skipping."
@@ -91,8 +115,13 @@ def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_js
 
                 results = ner_metric.compute(predictions=[y_pred], references=[y_true], zero_division=0)
                 results_per_file.append(f"{file_id}:\n")
-                report = classification_report([y_true], [y_pred])
-                results_per_file.append(report)
+                has_true_entities = any(l != "O" for l in y_true)
+                has_pred_entities = any(l != "O" for l in y_pred)
+                if (has_true_entities or has_pred_entities):
+                    report = classification_report([y_true], [y_pred])
+                    results_per_file.append(report)
+                else:
+                    results_per_file.append(results)
                 results_per_file.append(f"Accuracy: {results['overall_accuracy']}\n")
                 print(f"✅ {file_id}: {results['overall_f1']:.4f} F1")
             except Exception as e:
@@ -110,6 +139,8 @@ def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_js
     results_lines.append(report)
     results_lines.append(f"Overall Accuracy: {overall_results['overall_accuracy']}")
 
+    os.makedirs(os.path.dirname(results_output_path), exist_ok=True)
+
     # Save results to file
     with open(results_output_path, "w", encoding="utf-8") as f:
         for line in results_per_file:
@@ -117,6 +148,8 @@ def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_js
         for line in results_lines:
             f.write(str(line) + "\n")
     
+    os.makedirs(os.path.dirname(stats_output_path), exist_ok=True)
+
     with open(stats_output_path, "w", encoding="utf-8") as f:
         for line in stats_lines:
             f.write(str(line) + "\n")
@@ -133,8 +166,8 @@ if __name__ == "__main__":
 
     model_name = args.model_name
     input_text_dir = "/home/s27mhusa_hpc/Master-Thesis/Text_Files_For_LLM_Input"
-    input_annot_dir = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_modified_prompt/LLM_annotated_{model_name}"
-    input_annot_dir_json = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_modified_prompt_json/LLM_annotated_{model_name}"
+    input_annot_dir = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_TestFiles_29July/LLM_annotated_{model_name}"
+    input_annot_dir_json = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_TestFiles_29July_json/LLM_annotated_{model_name}"
     xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/XMI_Files"
 
     evaluate_all(

@@ -36,7 +36,7 @@ def convert_json_to_bio(text, annotation_json):
 
         start_idx = -1
 
-        # Check if the span is valid and matches the value
+        # If valid span is provided and matches value
         if isinstance(span, list) and len(span) == 2 and all(isinstance(x, int) for x in span):
             start, end = span
             if text[start:end] == value:
@@ -49,20 +49,20 @@ def convert_json_to_bio(text, annotation_json):
                 else:
                     not_found_entities_count += 1
                     not_found_entities.append(value)
-                    continue  # Skip tagging
+                    continue
         else:
-            # Span is not usable; try finding the value in text
+            # Try to find value if span is missing
             start_idx = text.find(value)
             if start_idx != -1:
                 fallbacks_used += 1
             else:
                 not_found_entities_count += 1
                 not_found_entities.append(value)
-                continue  # Skip tagging
+                continue
 
         end_idx = start_idx + len(value)
 
-        # Find token positions
+        # Map character positions to token indices
         token_start = token_end = -1
         for i, token in enumerate(doc):
             if token_start == -1 and token.idx == start_idx:
@@ -86,20 +86,14 @@ def convert_json_to_bio(text, annotation_json):
     return tokens, labels, stats
 
 def generate_bio_from_json(text_file, annotations_file):
-
-  with open(text_file, "r", encoding="utf-8") as f:
-    text = f.read()
+    with open(text_file, "r", encoding="utf-8") as f:
+        text = f.read()
   
-  with open(annotations_file, "r", encoding="utf-8") as f:
-    annotation_json = json.load(f)
-  tokens, labels, stats = convert_json_to_bio(text, annotation_json)
+    with open(annotations_file, "r", encoding="utf-8") as f:
+        annotation_json = json.load(f)
+    tokens, labels, stats = convert_json_to_bio(text, annotation_json)    
+    return tokens, labels, stats
 
-#   Print the results
-#   for token, label in zip(tokens, labels):
-#       print(f"{token}: {label}")
-  print(stats)
-
-  return tokens, labels, stats
 
 
 if __name__ == "__main__":
