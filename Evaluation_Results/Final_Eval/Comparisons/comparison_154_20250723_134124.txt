@@ -1,0 +1,132 @@
+=== Comparison for Item 154 ===
+Timestamp: 20250723_134124
+
+=== Original Text ===
+Title : 
+ Flower strip data Germany 2021 
+
+ Abstract : 
+ The data concerns 23 flower strips , sampled in 2019 in Germany . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          110,
+          115
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Triticum aestivum",
+        "span": [
+          116,
+          124
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "texture",
+        "span": [
+          128,
+          135
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "bulk density",
+        "span": [
+          136,
+          145
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "organic carbon content",
+        "span": [
+          146,
+          158
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "available nitrogen levels",
+        "span": [
+          159,
+          173
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH",
+        "span": [
+          180,
+          183
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "India",
+        "span": [
+          184,
+          189
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Punjab",
+        "span": [
+          190,
+          196
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "fertile valleys",
+        "span": [
+          197,
+          207
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [110, 115]}}, {"cropSpecies": {"value": "Triticum aestivum", "span": [116, 124]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "texture", "span": [128, 135]}}, {"soilBulkDensity": {"value": "bulk density", "span": [136, 145]}}, {"soilOrganicCarbon": {"value": "organic carbon content", "span": [146, 158]}}, {"soilAvailableNitrogen": {"value": "available nitrogen levels", "span": [159, 173]}}, {"soilPH": {"value": "pH", "span": [180, 183]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "India", "span": [184, 189]}}, {"region": {"value": "Punjab", "span": [190, 196]}}, {"city": {"value": "fertile valleys", "span": [197, 207]}}]
+Gold: []
+

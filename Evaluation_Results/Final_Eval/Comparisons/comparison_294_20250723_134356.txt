@@ -1,0 +1,78 @@
+=== Comparison for Item 294 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+The database was developed with Microsoft Access Database 2007 - 2016 and stores 43 million records . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          160,
+          167
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          375,
+          382
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "three years",
+        "span": [
+          312,
+          323
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "2011/2012",
+        "span": [
+          326,
+          335
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2014/2015",
+        "span": [
+          338,
+          347
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Location
+Predictions: []
+Gold: [{"country": {"value": "Germany", "span": [160, 167]}}, {"country": {"value": "Germany", "span": [375, 382]}}]
+
+Category: Time Statement
+Predictions: []
+Gold: [{"duration": {"value": "three years", "span": [312, 323]}}, {"startTime": {"value": "2011/2012", "span": [326, 335]}}, {"endTime": {"value": "2014/2015", "span": [338, 347]}}]
+

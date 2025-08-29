@@ -1,0 +1,90 @@
+=== Comparison for Item 6 ===
+Timestamp: 20250808_165553
+
+=== Original Text ===
+Title : 
+  Fusarium abundance and diversity and Alternaria abundance on grasses and wheat ears after the infection with Fusarium graminearum , Fusarium culmorum and Fusarium sporotrichioides with and without irrigation        - Abundance of Fusaria and Alternaria 
+ Abstract_text_1 : 
+  Fusarium abundance and diversity and Alternaria abundance on grasses and wheat ears after the infection with Fusarium graminearum , Fusarium culmorum and Fusarium sporotrichioides with and without irrigation        - Abundance of Fusaria and Alternaria . 
+ Abstract_text_2 : 
+  The table contains the abundances of Fusarium and Alternaria determined by qPCR and culture - dependent methods ( potato dextrose agar with chloramphenicol ) . General description see mother table : ( https://doi.org/10.4228/zalf-58e8-wm91 ) ; Related datasets are listed in the metadata element ' Related Identifier ' . Dataset version 1.0 
+ Keywords : 
+  Soil , Fusarium sporotrichioides , Fusarium , Fusarium culmorum , Fusarium equiseti , winter wheat , grass weeds , Lolium hybridum , Lolium multiflorum , pathogenic fungi , mycotoxins , trichothecenes , zearalenone , irrigation , microclimate , agricultural sciences , opendata , Boden , Lebensr채ume und Biotope , Verteilung der Arten , Bodenbedeckung , Landwirtschaft , Wissenschaftliche Forschung , Germany , Brandenburg , M채rkisch Oderland , M체ncheberg
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": [
+          598,
+          603
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          605,
+          610
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": [
+          612,
+          617
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": [
+          1407,
+          1412
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          1422,
+          1427
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": [
+          1437,
+          1443
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "maize", "span": [598, 603]}}, {"cropSpecies": {"value": "wheat", "span": [605, 610]}}, {"cropSpecies": {"value": "barley", "span": [612, 617]}}]
+Gold: [{"cropSpecies": {"value": "maize", "span": [1407, 1412]}}, {"cropSpecies": {"value": "wheat", "span": [1422, 1427]}}, {"cropSpecies": {"value": "barley", "span": [1437, 1443]}}]
+

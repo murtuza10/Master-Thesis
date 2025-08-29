@@ -1,0 +1,211 @@
+=== Comparison for Item 144 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+Title : 
+ Raw data for " Plot - scale variability of organic carbon in temperate agricultural soils - Implications for soil monitoring " 
+
+ Abstract : 
+ This dataset is the raw data that belongs to a peer - reviewed study on the small - distance variability of soil organic carbon in agricultural soils in Germany . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "winter wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "rice",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay-loam",
+        "span": []
+      },
+      "soilReferenceGroup": {
+        "value": "",
+        "span": []
+      },
+      "soilDepth": {
+        "value": "",
+        "span": []
+      },
+      "soilBulkDensity": {
+        "value": "",
+        "span": []
+      },
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      },
+      "soilOrganicCarbon": {
+        "value": "",
+        "span": []
+      },
+      "soilAvailableNitrogen": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "United States",
+        "span": []
+      },
+      "region": {
+        "value": "Kansas and Nebraska",
+        "span": []
+      },
+      "city": {
+        "value": "",
+        "span": []
+      },
+      "latitude": {
+        "value": "",
+        "span": []
+      },
+      "longitude": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "Canada",
+        "span": []
+      },
+      "region": {
+        "value": "",
+        "span": []
+      },
+      "city": {
+        "value": "",
+        "span": []
+      },
+      "latitude": {
+        "value": "",
+        "span": []
+      },
+      "longitude": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "Australia",
+        "span": []
+      },
+      "region": {
+        "value": "",
+        "span": []
+      },
+      "city": {
+        "value": "",
+        "span": []
+      },
+      "latitude": {
+        "value": "",
+        "span": []
+      },
+      "longitude": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "fall",
+        "span": []
+      },
+      "endTime": {
+        "value": "",
+        "span": []
+      },
+      "duration": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "startTime": {
+        "value": "",
+        "span": []
+      },
+      "endTime": {
+        "value": "May and June",
+        "span": []
+      },
+      "duration": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "startTime": {
+        "value": "",
+        "span": []
+      },
+      "endTime": {
+        "value": "",
+        "span": []
+      },
+      "duration": {
+        "value": "between 15°C and 20°C",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "maize", "span": []}, "cropVariety": {"value": "winter wheat", "span": []}}, {"cropSpecies": {"value": "rice", "span": []}, "cropVariety": {"value": "wheat", "span": []}}, {"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay-loam", "span": []}, "soilReferenceGroup": {"value": "", "span": []}, "soilDepth": {"value": "", "span": []}, "soilBulkDensity": {"value": "", "span": []}, "soilPH": {"value": "6.5", "span": []}, "soilOrganicCarbon": {"value": "", "span": []}, "soilAvailableNitrogen": {"value": "", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "United States", "span": []}, "region": {"value": "Kansas and Nebraska", "span": []}, "city": {"value": "", "span": []}, "latitude": {"value": "", "span": []}, "longitude": {"value": "", "span": []}}, {"country": {"value": "Canada", "span": []}, "region": {"value": "", "span": []}, "city": {"value": "", "span": []}, "latitude": {"value": "", "span": []}, "longitude": {"value": "", "span": []}}, {"country": {"value": "Australia", "span": []}, "region": {"value": "", "span": []}, "city": {"value": "", "span": []}, "latitude": {"value": "", "span": []}, "longitude": {"value": "", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "fall", "span": []}, "endTime": {"value": "", "span": []}, "duration": {"value": "", "span": []}}, {"startTime": {"value": "", "span": []}, "endTime": {"value": "May and June", "span": []}, "duration": {"value": "", "span": []}}, {"startTime": {"value": "", "span": []}, "endTime": {"value": "", "span": []}, "duration": {"value": "between 15°C and 20°C", "span": []}}]
+Gold: []
+

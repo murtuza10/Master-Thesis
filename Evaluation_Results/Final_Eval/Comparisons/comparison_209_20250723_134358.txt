@@ -1,0 +1,101 @@
+=== Comparison for Item 209 ===
+Timestamp: 20250723_134358
+
+=== Original Text ===
+Thereby , exhibit the genotypes Milaneco and Capo a more deep - rooting and the genotype Trebelir a shallower rooting system . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          191,
+          196
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Milaneco",
+        "span": [
+          207,
+          215
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Capo",
+        "span": [
+          218,
+          222
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Trebelir",
+        "span": [
+          227,
+          235
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [
+    {
+      "city": {
+        "value": "Klein - Altendorf",
+        "span": [
+          129,
+          146
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Bonn",
+        "span": [
+          149,
+          153
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "2020",
+        "span": [
+          104,
+          108
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropSpecies": {"value": "wheat", "span": [191, 196]}}, {"cropVariety": {"value": "Milaneco", "span": [207, 215]}}, {"cropVariety": {"value": "Capo", "span": [218, 222]}}, {"cropVariety": {"value": "Trebelir", "span": [227, 235]}}]
+
+Category: Location
+Predictions: []
+Gold: [{"city": {"value": "Klein - Altendorf", "span": [129, 146]}}, {"city": {"value": "Bonn", "span": [149, 153]}}]
+
+Category: Time Statement
+Predictions: []
+Gold: [{"duration": {"value": "2020", "span": [104, 108]}}]
+

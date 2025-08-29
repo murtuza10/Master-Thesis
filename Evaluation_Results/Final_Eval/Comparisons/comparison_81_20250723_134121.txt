@@ -1,0 +1,46 @@
+=== Comparison for Item 81 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+The samples were collected simultaneously at five different locations in Germany ( Bochum , Braunschweig , Celle , Hohenheim , Veitshöchheim ) from spring 2022 to spring 2023 . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "honey bee",
+        "span": [
+          51,
+          65
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "bumblebee",
+        "span": [
+          76,
+          90
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "honey bee", "span": [51, 65]}}, {"cropSpecies": {"value": "bumblebee", "span": [76, 90]}}]
+Gold: []
+

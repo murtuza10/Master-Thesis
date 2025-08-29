@@ -1,0 +1,95 @@
+=== Comparison for Item 84 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+( 2024 ) https://doi.org/10.1016/j.cub.2024.10.008 Residues of two commonly used fungicides ( boscalid and pyraclostrobin ) were measured in several bee matrices along a transfer pathway from plants to larvae .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": [
+          40,
+          45
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          67,
+          72
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": [
+          90,
+          95
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "rapeseed",
+        "span": [
+          118,
+          124
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Zea mays",
+        "span": [
+          47,
+          54
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Triticum aestivum",
+        "span": [
+          75,
+          86
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Hordeum vulgare",
+        "span": [
+          98,
+          107
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Brassica napus ssp.",
+        "span": [
+          126,
+          142
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "maize", "span": [40, 45]}}, {"cropSpecies": {"value": "wheat", "span": [67, 72]}}, {"cropSpecies": {"value": "barley", "span": [90, 95]}}, {"cropSpecies": {"value": "rapeseed", "span": [118, 124]}}, {"cropVariety": {"value": "Zea mays", "span": [47, 54]}}, {"cropVariety": {"value": "Triticum aestivum", "span": [75, 86]}}, {"cropVariety": {"value": "Hordeum vulgare", "span": [98, 107]}}, {"cropVariety": {"value": "Brassica napus ssp.", "span": [126, 142]}}]
+Gold: []
+

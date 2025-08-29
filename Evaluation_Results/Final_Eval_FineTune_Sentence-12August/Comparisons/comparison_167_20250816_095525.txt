@@ -1,0 +1,55 @@
+=== Comparison for Item 167 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+The file " FlowerStripSpeciesCount " contains the count and ground cover of the observed species in the 23 flower strips .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "city": {
+        "value": "Grossbeeren",
+        "span": [
+          32,
+          43
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "1972",
+        "span": [
+          46,
+          50
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2022",
+        "span": [
+          52,
+          56
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Location
+Predictions: [{"city": {"value": "Grossbeeren", "span": [32, 43]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "1972", "span": [46, 50]}}, {"endTime": {"value": "2022", "span": [52, 56]}}]
+Gold: []
+

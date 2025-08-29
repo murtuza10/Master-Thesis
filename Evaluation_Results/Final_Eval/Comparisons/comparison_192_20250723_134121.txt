@@ -1,0 +1,106 @@
+=== Comparison for Item 192 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+The adsorption experiments were done in duplicate . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": [
+          23,
+          28
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "pH",
+        "span": [
+          46,
+          49
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "bulk density",
+        "span": [
+          56,
+          68
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "latitude": {
+        "value": "latitude",
+        "span": [
+          0,
+          9
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "longitude",
+        "span": [
+          10,
+          19
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "duration",
+        "span": [
+          0,
+          8
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [0, 5]}}, {"cropSpecies": {"value": "barley", "span": [23, 28]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilPH": {"value": "pH", "span": [46, 49]}}, {"soilBulkDensity": {"value": "bulk density", "span": [56, 68]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"latitude": {"value": "latitude", "span": [0, 9]}}, {"longitude": {"value": "longitude", "span": [10, 19]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"duration": {"value": "duration", "span": [0, 8]}}]
+Gold: []
+

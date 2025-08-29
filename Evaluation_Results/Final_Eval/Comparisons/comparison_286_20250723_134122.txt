@@ -1,0 +1,54 @@
+=== Comparison for Item 286 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+
+ Keywords : 
+  Soil , Phosphate fertilizers , fertilizers , farm inputs , Phosphates , Bones , Laboratory experimentation , Hydroxide , Phosphorus , Desorption , opendata , Boden 
+ 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": [
+          29,
+          35
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilReferenceGroup": {
+        "value": "North Carolina, USA",
+        "span": [
+          76,
+          94
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "maize", "span": [29, 35]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilReferenceGroup": {"value": "North Carolina, USA", "span": [76, 94]}}]
+Gold: []
+

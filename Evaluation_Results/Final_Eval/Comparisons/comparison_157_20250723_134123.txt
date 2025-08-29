@@ -1,0 +1,118 @@
+=== Comparison for Item 157 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+Coordinates for each flower strip is also available in UTM32 and lat / lon degrees . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay",
+        "span": []
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "subsoil",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "10-20 cm",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "g / cm^ 3",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "%",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "kg / ha",
+        "span": []
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sand",
+        "span": [
+          116,
+          120
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "silt",
+        "span": [
+          123,
+          127
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "clay",
+        "span": [
+          130,
+          134
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH",
+        "span": [
+          147,
+          149
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay", "span": []}}, {"soilReferenceGroup": {"value": "subsoil", "span": []}}, {"soilDepth": {"value": "10-20 cm", "span": []}}, {"soilBulkDensity": {"value": "g / cm^ 3", "span": []}}, {"soilPH": {"value": "pH", "span": []}}, {"soilOrganicCarbon": {"value": "%", "span": []}}, {"soilAvailableNitrogen": {"value": "kg / ha", "span": []}}]
+Gold: [{"soilTexture": {"value": "sand", "span": [116, 120]}}, {"soilTexture": {"value": "silt", "span": [123, 127]}}, {"soilTexture": {"value": "clay", "span": [130, 134]}}, {"soilPH": {"value": "pH", "span": [147, 149]}}]
+

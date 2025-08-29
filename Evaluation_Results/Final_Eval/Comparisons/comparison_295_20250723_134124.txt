@@ -1,0 +1,46 @@
+=== Comparison for Item 295 ===
+Timestamp: 20250723_134124
+
+=== Original Text ===
+Multi - variable data sets consists of gas fluxes ( carbon dioxide , nitrous dioxide , methane and ammonia ) , crop parameters ( ontogenesis , aboveground biomass , grain and straw yield , N and C content , etc . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2007",
+        "span": [
+          58,
+          62
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2016",
+        "span": [
+          65,
+          69
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Time Statement
+Predictions: []
+Gold: [{"startTime": {"value": "2007", "span": [58, 62]}}, {"endTime": {"value": "2016", "span": [65, 69]}}]
+

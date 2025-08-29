@@ -1,0 +1,109 @@
+=== Comparison for Item 348 ===
+Timestamp: 20250723_131816
+
+=== Original Text ===
+These international regulations ( protocols etc . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loamy",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "1990",
+        "span": []
+      },
+      "endTime": {
+        "value": "2017",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "German",
+        "span": [
+          65,
+          71
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          175,
+          182
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "1990",
+        "span": [
+          84,
+          88
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2017",
+        "span": [
+          91,
+          95
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loamy", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": []}}]
+Gold: [{"country": {"value": "German", "span": [65, 71]}}, {"country": {"value": "Germany", "span": [175, 182]}}]
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "1990", "span": []}, "endTime": {"value": "2017", "span": []}}]
+Gold: [{"startTime": {"value": "1990", "span": [84, 88]}}, {"endTime": {"value": "2017", "span": [91, 95]}}]
+

@@ -1,0 +1,133 @@
+=== Comparison for Item 26 ===
+Timestamp: 20250808_165554
+
+=== Original Text ===
+Title : 
+ Trap captures data from the 7 - year Drosophila suzukii monitoring program in southwest Germany 
+
+ Abstract : 
+ A relatively recent invasive pest of soft - skinned fruits in Europe is Drosophila suzukii ( Spotted wing drosophila - SWD ) . It has already caused severe economic damages in many fruit - crops and some susceptible grape varieties and seems to have successfully adapted to survive under a variety of conditions . The Julius Kühn Institute ( JKI ) set up a primary monitoring program in 2011 in southwest Germany expecting the migration of SWD into Germany . Following its appearance in late summer 2011 , the monitoring of SWD gathered more momentum with more traps and other institutes joining in the study . The online tool DrosoMon ( http://drosomon.julius-kuehn.de/ ) was created to act as a hub for gathering and harmonizing the trap capture data from the SWD monitoring programs from different parts of Germany and Europe . DrosoMon also provides the means to visualize the data at trap levels and compare variations in captures between traps or with temperature and precipitation data from the nearest weather station . Here we present and publish the data from the JKI monitoring program from 2011 to February 2018 . The data set of D. suzukii captures presented here comes from the monitoring study conducted by the Institute for Plant Protection in Fruit Crops and Viticulture , Dossenheim and Siebeldingen , and the Institute for Biological Plant Protection , Darmstadt of the JKI between 2011 and 2018 . All monitoring sites are located in southwest Germany roughly within ~75 km radius near the institutes . The coordinates of the trap locations were recorded with a handheld - GPS ( ‘ lat ’ and ‘ lon ’ in the table / dataset ) . The sites were chosen randomly to represent different possible preferred sites of host plants or potential overwintering grounds in the immediate vicinity . The traps were installed in semi - natural habitats , mainly on hedges with wild host plants of D. suzukii , in the surroundings of the institutes . The trap designs were quite similar between the three institutes following the instructions in the JKI - flyer ( https://drosophila.julius-kuehn.de/index.php?menuid=61 and in Briem et al . 2018 ) with minor variations . The traps were filled with a mixture of unfiltered apple cider vinegar ( ACV ) ( acetic acid content 5 % ) diluted with water . For more detailed information on the ingredients , the variations in trap designs between each monitoring group see the methods section in respective paper this data set relates on . The monitoring data set is provided as two tab - separated ascii tables : captures_data.txt and trap_description.txt . In the trap_description table , each record describes the characteristics and location of a single trap along with the baiting mixture used . In the captures_data table , each record describes the number of male and female D. suzukii from a single trap deployment , for each individual trap . The trap_description table lists 100 traps that were set during the monitoring period , the actual number of traps in operation varying over the years . The captures_data table contains 9967 records , each record representing a trap deployment . These deployments account for a total of 116,602 days and captured 756,717 adult D. suzukii individuals . The data were manually entered in the Drosomon database and checked for errors concerning dates and trap parameters .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "apple",
+        "span": [
+          129,
+          134
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "apple",
+        "span": [
+          62,
+          67
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "apple",
+        "span": [
+          609,
+          614
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [
+    {
+      "region": {
+        "value": "Altes Land",
+        "span": [
+          85,
+          95
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Altes Land",
+        "span": [
+          365,
+          375
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Lower Saxony",
+        "span": [
+          559,
+          571
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          574,
+          581
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "Three - year",
+        "span": [
+          10,
+          22
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "2001",
+        "span": [
+          670,
+          674
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2003",
+        "span": [
+          679,
+          683
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "apple", "span": [129, 134]}}]
+Gold: [{"cropSpecies": {"value": "apple", "span": [62, 67]}}, {"cropSpecies": {"value": "apple", "span": [609, 614]}}]
+
+Category: Location
+Predictions: []
+Gold: [{"region": {"value": "Altes Land", "span": [85, 95]}}, {"region": {"value": "Altes Land", "span": [365, 375]}}, {"region": {"value": "Lower Saxony", "span": [559, 571]}}, {"country": {"value": "Germany", "span": [574, 581]}}]
+
+Category: Time Statement
+Predictions: []
+Gold: [{"duration": {"value": "Three - year", "span": [10, 22]}}, {"startTime": {"value": "2001", "span": [670, 674]}}, {"endTime": {"value": "2003", "span": [679, 683]}}]
+

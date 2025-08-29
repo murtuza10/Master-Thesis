@@ -1,0 +1,37 @@
+=== Comparison for Item 314 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+The online tool DrosoMon ( http://drosomon.julius-kuehn.de/ ) was created to act as a hub for gathering and harmonizing the trap capture data from the SWD monitoring programs from different parts of Germany and Europe . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "late summer 2011",
+        "span": [
+          28,
+          44
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Time Statement
+Predictions: []
+Gold: [{"startTime": {"value": "late summer 2011", "span": [28, 44]}}]
+

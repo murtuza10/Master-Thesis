@@ -1,0 +1,78 @@
+=== Comparison for Item 102 ===
+Timestamp: 20250723_131816
+
+=== Original Text ===
+Die steigende Nachfrage nach holzbasierten Produkten , vom Schnittholz ( bis zu +36 % ) bis zur Textilfaser ( bis zu +447 % ) , kann dadurch gedeckt werden . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "pine",
+        "span": [
+          46,
+          52
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "oak",
+        "span": [
+          87,
+          93
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "spruce",
+        "span": [
+          122,
+          129
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2020",
+        "span": [
+          43,
+          47
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2050",
+        "span": [
+          62,
+          66
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "pine", "span": [46, 52]}}, {"cropSpecies": {"value": "oak", "span": [87, 93]}}, {"cropSpecies": {"value": "spruce", "span": [122, 129]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2020", "span": [43, 47]}}, {"endTime": {"value": "2050", "span": [62, 66]}}]
+Gold: []
+

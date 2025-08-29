@@ -1,0 +1,108 @@
+=== Comparison for Item 3 ===
+Timestamp: 20250803_132348
+
+=== Original Text ===
+Title : 
+  50 years box plot experiment in Grossbeeren ( 1972 - 2022 ) - Plots 
+ Abstract_text_1 : 
+  50 years box plot experiment in Grossbeeren ( 1972 - 2022 ) - Plots . 
+ Abstract_text_2 : 
+  The Box Plot Experiment in Grossbeeren was set up in 1972 to investigate the effect of different fertilization strategies within an irrigated vegetable crop rotation system for three different soils . Therefore , this vegetable long - term fertilization experiment can be used to investigate different plant - soil - systems under the same climatic conditions . The experimented was halted in 2022 . The experimental site ( 52 ° 21’01.30 ’’ E , 13 ° 19’05.47 ’’ N , 50 m a.s.l . ) is located in the transition zone between the more maritime - affected Northern German Plain and the continental climate of the European mainland . Weather data were collected in an agrometeorological station close to the experimental area . The long - term means ( 1991 - 2020 ) for air temperature and annual precipitation are 9.7 ° C and 492 mm . The single plots are quadratic concrete boxes with walls of 10 cm thickness , a surface area of 4 m2 and a depth of 75 cm . The upper 50 cm are filled with the tested soils ; the lower 25 cm comprises a coarse - sandy drainage layer . The three soil types are Arenic Luvisol ( weak loamy sand ) , Gleyic Fluvisol ( heavy sandy loam ) and Luvic - Phaeozem ( medium clayey silt ) according to the World Reference Base – WRB ( and the Bodenkundliche Kartieranleitung – KA4 ) . Within 10 rotations , the vegetable species white cabbage ( Brassica oleracea L. var . capitata f. alba ) , carrot ( Daucus carota L. ) , cucumber ( Cucumis sativus L. ) , leek ( Allium porrum L. ) and celery ( Apium graveolens L. var . rapaceum Mill . ) were cultivated . No celery was cultivated during the first rotation . The experiment consists of 12 fertilization treatments in different combinations of mineral N fertilization and organic amendments and as quadruplicate for each of the three soils . The experimental set - up scheme can be found in the supplementary material . Mineral N fertilizer was applied as calcium ammonium nitrate . Mineral P and K fertilization was uniform for all treatments . Total N and total C in soil , plant and organic amendments were determined using a CNS analyser VARIO El ( Elemental Hanau ) since 1995 and before by wet combustion with K2Cr2O7 und H2SO4 . C and N in the soil samples and N in the plant samples were analysed annually . The C contents of the crop residues ( leaf + stalk + root ) of the five vegetable species were investigated irregularly . In autumn , the soil was annually dug up to 20 cm by using a spade . Weeds were removed by a combination of mechanical ( cultivator , rake or hoe ) and chemical measures . Insect protection nets , insecticides or fungicides were used where necessary . Approximately 150 mm per year was additionally irrigated with a sprinkler system . More details about the experiment ’s description can be found in the supplementary material . Description of table 1 Related datasets are listed in the metadata element ' Related Identifier ' . Dataset version 1.0 
+ Keywords : 
+  horticulture , long - term experiments , vegetable crops , fertilization , fertilizers , soil types , soil fertility , soil organic carbon , soil organic matter , field crops , crop management , crop production , crop rotation , crop residues , crop residue management , crop yield , nutrient balance , nutrient management , nutrient uptake , nutrient use efficiency , nutrient utilization , nitrogen , nitrogen balance , nitrogen content , nitrogen fertilizers , nitrogen - use efficiency , potassium , phosphorus , magnesium , cucumbers , Cucumis , Cucumis sativus , carrots , Daucus carota , cabbages , Brassica oleracea var . capitata , leeks , Allium ampeloprasum , celery , Apium graveolens , Apium graveolens var . rapaceum , farmyard manure , organic amendments , organic fertilizers , slurry , bark mulches , resource management , Luvisols , Fluvisols , Phaeozems , opendata , , Boden , agricultural management , horticulture , crop production , crop rotation , crop waste , cultivation , cultivation system , cultivation method , food production ( agriculture ) , irrigation farming , manure , mineral fertiliser , nitrogenous fertiliser , organic fertiliser , soil fertilisation , soil fertility , vegetable , vegetable cultivation , vegetable waste , yield ( agricultural ) , resource utilisation , organic matter , phosphate
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "winter wheat",
+        "span": [
+          0,
+          13
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          478,
+          485
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Kraichgau",
+        "span": [
+          509,
+          518
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Swabian . Alp",
+        "span": [
+          624,
+          637
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "nine cropping seasons",
+        "span": [
+          770,
+          791
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "2009",
+        "span": [
+          797,
+          801
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2018",
+        "span": [
+          805,
+          809
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "winter wheat", "span": [0, 13]}}]
+Gold: []
+
+Category: Location
+Predictions: []
+Gold: [{"country": {"value": "Germany", "span": [478, 485]}}, {"region": {"value": "Kraichgau", "span": [509, 518]}}, {"region": {"value": "Swabian . Alp", "span": [624, 637]}}]
+
+Category: Time Statement
+Predictions: []
+Gold: [{"duration": {"value": "nine cropping seasons", "span": [770, 791]}}, {"startTime": {"value": "2009", "span": [797, 801]}}, {"endTime": {"value": "2018", "span": [805, 809]}}]
+

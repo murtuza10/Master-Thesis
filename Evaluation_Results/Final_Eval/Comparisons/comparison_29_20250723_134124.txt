@@ -1,0 +1,130 @@
+=== Comparison for Item 29 ===
+Timestamp: 20250723_134124
+
+=== Original Text ===
+One station in each region has now been set up as continuous observatories of state variables and fluxes in intensively managed agricultural fields . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "carbon",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "nitrogen",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sandy loam",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "20 to 50 cm",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.1 to 1.4 g / cm 3",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "7.8",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "1.4 %",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "40.8 mg / kg",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "None",
+        "span": []
+      },
+      "region": {
+        "value": "None",
+        "span": []
+      },
+      "city": {
+        "value": "None",
+        "span": []
+      },
+      "latitude": {
+        "value": "33.5 ° N",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "None",
+        "span": []
+      },
+      "region": {
+        "value": "None",
+        "span": []
+      },
+      "city": {
+        "value": "None",
+        "span": []
+      },
+      "longitude": {
+        "value": "117.4 ° E",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "carbon", "span": []}, "cropVariety": {"value": "None", "span": []}}, {"cropSpecies": {"value": "nitrogen", "span": []}, "cropVariety": {"value": "None", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "sandy loam", "span": []}}, {"soilDepth": {"value": "20 to 50 cm", "span": []}}, {"soilBulkDensity": {"value": "1.1 to 1.4 g / cm 3", "span": []}}, {"soilPH": {"value": "7.8", "span": []}}, {"soilOrganicCarbon": {"value": "1.4 %", "span": []}}, {"soilAvailableNitrogen": {"value": "40.8 mg / kg", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "None", "span": []}, "region": {"value": "None", "span": []}, "city": {"value": "None", "span": []}, "latitude": {"value": "33.5 ° N", "span": []}}, {"country": {"value": "None", "span": []}, "region": {"value": "None", "span": []}, "city": {"value": "None", "span": []}, "longitude": {"value": "117.4 ° E", "span": []}}]
+Gold: []
+

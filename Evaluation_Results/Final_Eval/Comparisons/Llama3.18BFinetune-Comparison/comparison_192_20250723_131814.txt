@@ -1,0 +1,109 @@
+=== Comparison for Item 192 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+The adsorption experiments were done in duplicate . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay loam",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "7.5",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.2 g cm - 3",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "4.5 %",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "United States",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "eastern part of the region",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2016",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "2016",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "same year",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}, {"cropSpecies": {"value": "barley", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay loam", "span": []}}, {"soilPH": {"value": "7.5", "span": []}}, {"soilBulkDensity": {"value": "1.2 g cm - 3", "span": []}}, {"soilOrganicCarbon": {"value": "4.5 %", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "United States", "span": []}}, {"region": {"value": "eastern part of the region", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2016", "span": []}}, {"endTime": {"value": "2016", "span": []}}, {"duration": {"value": "same year", "span": []}}]
+Gold: []
+

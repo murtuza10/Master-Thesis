@@ -1,0 +1,44 @@
+=== Comparison for Item 22 ===
+Timestamp: 20250816_095523
+
+=== Original Text ===
+Title : 
+  Regional climate change observational data FOR 1695 ( Part 3.5 of data collection , table SOIL_SITE5 ) 
+ Abstract_text_1 : 
+  Regional climate change observational data FOR 1695 ( Part 3.5 of data collection , table SOIL_SITE5 ) .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2017",
+        "span": [
+          21,
+          25
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2019",
+        "span": [
+          31,
+          35
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2017", "span": [21, 25]}}, {"endTime": {"value": "2019", "span": [31, 35]}}]
+Gold: []
+

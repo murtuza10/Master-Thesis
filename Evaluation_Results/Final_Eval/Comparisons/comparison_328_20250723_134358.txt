@@ -1,0 +1,74 @@
+=== Comparison for Item 328 ===
+Timestamp: 20250723_134358
+
+=== Original Text ===
+In the captures_data table , each record describes the number of male and female D. suzukii from a single trap deployment , for each individual trap . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sandy loam",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Kenya",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "0.375948",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "36.734511",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "maize", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "sandy loam", "span": []}}, {"soilPH": {"value": "6.5", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Kenya", "span": []}}, {"latitude": {"value": "0.375948", "span": []}}, {"longitude": {"value": "36.734511", "span": []}}]
+Gold: []
+

@@ -1,0 +1,46 @@
+=== Comparison for Item 146 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+There are two files : One contains the raw data with measured C contents , delta 13C values , fraction weights and the subsequently calculated amounts of new and old carbon in all fractions .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          51,
+          58
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2011",
+        "span": [
+          34,
+          38
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": [51, 58]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2011", "span": [34, 38]}}]
+Gold: []
+

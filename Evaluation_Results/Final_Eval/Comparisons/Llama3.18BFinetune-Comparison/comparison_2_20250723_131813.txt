@@ -1,0 +1,151 @@
+=== Comparison for Item 2 ===
+Timestamp: 20250723_131813
+
+=== Original Text ===
+For example , the higher the level of GCFs , the lower the plant biomass and soil water stable aggregation . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          63,
+          68
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "corn",
+        "span": [
+          83,
+          88
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "soybean",
+        "span": [
+          93,
+          100
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay",
+        "span": [
+          117,
+          122
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "sandy",
+        "span": [
+          127,
+          133
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "silty",
+        "span": [
+          137,
+          143
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "10",
+        "span": [
+          156,
+          159
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "20",
+        "span": [
+          160,
+          163
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.0",
+        "span": [
+          173,
+          177
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "7.0",
+        "span": [
+          178,
+          182
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "region",
+        "span": [
+          201,
+          207
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "600 mm",
+        "span": [
+          214,
+          218
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [63, 68]}}, {"cropSpecies": {"value": "corn", "span": [83, 88]}}, {"cropSpecies": {"value": "soybean", "span": [93, 100]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay", "span": [117, 122]}}, {"soilTexture": {"value": "sandy", "span": [127, 133]}}, {"soilTexture": {"value": "silty", "span": [137, 143]}}, {"soilDepth": {"value": "10", "span": [156, 159]}}, {"soilDepth": {"value": "20", "span": [160, 163]}}, {"soilPH": {"value": "6.0", "span": [173, 177]}}, {"soilPH": {"value": "7.0", "span": [178, 182]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "region", "span": [201, 207]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"duration": {"value": "600 mm", "span": [214, 218]}}]
+Gold: []
+

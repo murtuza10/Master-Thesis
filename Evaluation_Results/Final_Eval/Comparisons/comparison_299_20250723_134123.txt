@@ -1,0 +1,133 @@
+=== Comparison for Item 299 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+) . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          43,
+          48
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "rice",
+        "span": [
+          34,
+          37
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": [
+          104,
+          108
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "high",
+        "span": [
+          113,
+          117
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "East Asia",
+        "span": [
+          39,
+          46
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "East Asia",
+        "span": [
+          39,
+          46
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Beijing",
+        "span": [
+          74,
+          81
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "spring",
+        "span": [
+          91,
+          96
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "August",
+        "span": [
+          125,
+          132
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "June and August",
+        "span": [
+          121,
+          132
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [43, 48]}}, {"cropSpecies": {"value": "rice", "span": [34, 37]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilPH": {"value": "6.5", "span": [104, 108]}}, {"soilOrganicCarbon": {"value": "high", "span": [113, 117]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "East Asia", "span": [39, 46]}}, {"region": {"value": "East Asia", "span": [39, 46]}}, {"city": {"value": "Beijing", "span": [74, 81]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "spring", "span": [91, 96]}}, {"endTime": {"value": "August", "span": [125, 132]}}, {"duration": {"value": "June and August", "span": [121, 132]}}]
+Gold: []
+

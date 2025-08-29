@@ -1,0 +1,67 @@
+=== Comparison for Item 270 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+1:1 , 1:5 , 1:10 and 0:1 , and brought to a pH of 6 with 5 M KOH . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "mixed Fe - Al - hydroxides",
+        "span": []
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "10 min",
+        "span": []
+      },
+      "endTime": {
+        "value": "10 min",
+        "span": []
+      },
+      "duration": {
+        "value": "10 min",
+        "span": []
+      }
+    },
+    {
+      "startTime": {
+        "value": "30 min",
+        "span": []
+      },
+      "endTime": {
+        "value": "30 min",
+        "span": []
+      },
+      "duration": {
+        "value": "30 min",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilTexture": {"value": "mixed Fe - Al - hydroxides", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "10 min", "span": []}, "endTime": {"value": "10 min", "span": []}, "duration": {"value": "10 min", "span": []}}, {"startTime": {"value": "30 min", "span": []}, "endTime": {"value": "30 min", "span": []}, "duration": {"value": "30 min", "span": []}}]
+Gold: []
+

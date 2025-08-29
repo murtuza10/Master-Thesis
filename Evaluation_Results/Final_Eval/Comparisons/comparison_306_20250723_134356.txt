@@ -1,0 +1,83 @@
+=== Comparison for Item 306 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+Two different monitoring strategies have been applied ; event - driven sampling after pesticide applications and weekly integrated sampling using automatic water samplers . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "apple",
+        "span": [
+          117,
+          122
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [
+    {
+      "region": {
+        "value": "Lower Saxony",
+        "span": [
+          67,
+          79
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          82,
+          89
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2001",
+        "span": [
+          178,
+          182
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2003",
+        "span": [
+          187,
+          191
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropSpecies": {"value": "apple", "span": [117, 122]}}]
+
+Category: Location
+Predictions: []
+Gold: [{"region": {"value": "Lower Saxony", "span": [67, 79]}}, {"country": {"value": "Germany", "span": [82, 89]}}]
+
+Category: Time Statement
+Predictions: []
+Gold: [{"startTime": {"value": "2001", "span": [178, 182]}}, {"endTime": {"value": "2003", "span": [187, 191]}}]
+

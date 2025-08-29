@@ -1,0 +1,95 @@
+=== Comparison for Item 371 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+In two experimental repetitions starting at 30.8.2017 and 6.9.2017 and ending three weeks later at 20.9.2017 and 25.9.2017 , grapes were exposed to the four different treatments in gauze sleeves in the field , followed by an incubation in the laboratory . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "soybean",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "0-30 cm",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2.5%",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Netherlands",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2017",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2017",
+        "span": [
+          53,
+          57
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "maize", "span": []}}, {"cropSpecies": {"value": "soybean", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilDepth": {"value": "0-30 cm", "span": []}}, {"soilOrganicCarbon": {"value": "2.5%", "span": []}}, {"soilPH": {"value": "6.5", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Netherlands", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2017", "span": []}}]
+Gold: [{"startTime": {"value": "2017", "span": [53, 57]}}]
+

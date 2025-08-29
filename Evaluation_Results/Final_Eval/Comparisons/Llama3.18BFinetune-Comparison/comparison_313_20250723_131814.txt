@@ -1,0 +1,60 @@
+=== Comparison for Item 313 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+Following its appearance in late summer 2011 , the monitoring of SWD gathered more momentum with more traps and other institutes joining in the study . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          91,
+          98
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          135,
+          142
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2011",
+        "span": [
+          73,
+          77
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Location
+Predictions: []
+Gold: [{"country": {"value": "Germany", "span": [91, 98]}}, {"country": {"value": "Germany", "span": [135, 142]}}]
+
+Category: Time Statement
+Predictions: []
+Gold: [{"startTime": {"value": "2011", "span": [73, 77]}}]
+

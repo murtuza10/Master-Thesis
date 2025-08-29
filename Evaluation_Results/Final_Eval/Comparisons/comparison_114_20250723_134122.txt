@@ -1,0 +1,178 @@
+=== Comparison for Item 114 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+2020 . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "soybean",
+        "span": [
+          100,
+          109
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay",
+        "span": [
+          20,
+          24
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "World Bank",
+        "span": [
+          40,
+          49
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "30 cm",
+        "span": [
+          80,
+          86
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.2 g/cm^3",
+        "span": [
+          120,
+          129
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": [
+          150,
+          154
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2%",
+        "span": [
+          180,
+          184
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "100 kg/ha",
+        "span": [
+          220,
+          229
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "United States",
+        "span": [
+          200,
+          213
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "45.1234",
+        "span": [
+          300,
+          307
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "12.3456",
+        "span": [
+          320,
+          327
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2022-01-01",
+        "span": [
+          250,
+          258
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2023-12-31",
+        "span": [
+          280,
+          289
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "1 year",
+        "span": [
+          310,
+          316
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [0, 5]}}, {"cropSpecies": {"value": "soybean", "span": [100, 109]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay", "span": [20, 24]}}, {"soilReferenceGroup": {"value": "World Bank", "span": [40, 49]}}, {"soilDepth": {"value": "30 cm", "span": [80, 86]}}, {"soilBulkDensity": {"value": "1.2 g/cm^3", "span": [120, 129]}}, {"soilPH": {"value": "6.5", "span": [150, 154]}}, {"soilOrganicCarbon": {"value": "2%", "span": [180, 184]}}, {"soilAvailableNitrogen": {"value": "100 kg/ha", "span": [220, 229]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "United States", "span": [200, 213]}}, {"latitude": {"value": "45.1234", "span": [300, 307]}}, {"longitude": {"value": "12.3456", "span": [320, 327]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2022-01-01", "span": [250, 258]}}, {"endTime": {"value": "2023-12-31", "span": [280, 289]}}, {"duration": {"value": "1 year", "span": [310, 316]}}]
+Gold: []
+

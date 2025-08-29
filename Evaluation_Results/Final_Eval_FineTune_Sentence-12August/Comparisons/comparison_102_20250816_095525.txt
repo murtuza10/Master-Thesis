@@ -1,0 +1,46 @@
+=== Comparison for Item 102 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+In enger Zusammenarbeit mit dem nova - Institut kalibriert das Thünen - Institut für Waldwirtschaft das Model .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilAvailableNitrogen": {
+        "value": "total N",
+        "span": [
+          10,
+          16
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "since 1995",
+        "span": [
+          58,
+          67
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilAvailableNitrogen": {"value": "total N", "span": [10, 16]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "since 1995", "span": [58, 67]}}]
+Gold: []
+

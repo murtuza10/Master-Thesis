@@ -1,0 +1,95 @@
+=== Comparison for Item 289 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+For this purpose we have established a transect starting from the edge of the kettle holes up to 50 m into the surrounding wheat fields . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loam",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5 and 7.0",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "Essex",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "United Kingdom",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "April 1, 2023",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "October 31, 2023",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          87,
+          92
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: [{"cropSpecies": {"value": "wheat", "span": [87, 92]}}]
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loam", "span": []}}, {"soilPH": {"value": "6.5 and 7.0", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "Essex", "span": []}}, {"country": {"value": "United Kingdom", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "April 1, 2023", "span": []}}, {"endTime": {"value": "October 31, 2023", "span": []}}]
+Gold: []
+

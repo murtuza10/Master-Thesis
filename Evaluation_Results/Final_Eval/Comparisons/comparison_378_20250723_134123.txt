@@ -1,0 +1,98 @@
+=== Comparison for Item 378 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+The experimental setup was the same as in the field experiments with four treatments repeated 10 times and distributed randomly in the climatic chamber . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "grape",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "None",
+        "span": []
+      },
+      "region": {
+        "value": "None",
+        "span": []
+      },
+      "city": {
+        "value": "None",
+        "span": []
+      },
+      "latitude": {
+        "value": "None",
+        "span": []
+      },
+      "longitude": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "29.8.2018",
+        "span": []
+      },
+      "endTime": {
+        "value": "None",
+        "span": []
+      },
+      "duration": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "startTime": {
+        "value": "4.9.2018",
+        "span": []
+      },
+      "endTime": {
+        "value": "None",
+        "span": []
+      },
+      "duration": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "grape", "span": []}, "cropVariety": {"value": "None", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "None", "span": []}, "region": {"value": "None", "span": []}, "city": {"value": "None", "span": []}, "latitude": {"value": "None", "span": []}, "longitude": {"value": "None", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "29.8.2018", "span": []}, "endTime": {"value": "None", "span": []}, "duration": {"value": "None", "span": []}}, {"startTime": {"value": "4.9.2018", "span": []}, "endTime": {"value": "None", "span": []}, "duration": {"value": "None", "span": []}}]
+Gold: []
+

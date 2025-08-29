@@ -1,0 +1,78 @@
+=== Comparison for Item 201 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+At initial pH 12.0 , the decrease of the solution pH weakened with a final pH of 11.6 . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "8.0",
+        "span": [
+          15,
+          18
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "10.0",
+        "span": [
+          22,
+          25
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.7",
+        "span": [
+          49,
+          52
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "7.6",
+        "span": [
+          58,
+          61
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "3 months",
+        "span": [
+          89,
+          97
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilPH": {"value": "8.0", "span": [15, 18]}}, {"soilPH": {"value": "10.0", "span": [22, 25]}}, {"soilPH": {"value": "6.7", "span": [49, 52]}}, {"soilPH": {"value": "7.6", "span": [58, 61]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"duration": {"value": "3 months", "span": [89, 97]}}]
+Gold: []
+

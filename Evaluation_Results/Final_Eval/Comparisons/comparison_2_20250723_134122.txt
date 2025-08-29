@@ -1,0 +1,103 @@
+=== Comparison for Item 2 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+For example , the higher the level of GCFs , the lower the plant biomass and soil water stable aggregation . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "minor impact",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "increased",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "increased",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "decreased",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "decreased",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "not mentioned",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "November",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "March",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "3 months",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "minor impact", "span": []}}, {"soilPH": {"value": "increased", "span": []}}, {"soilAvailableNitrogen": {"value": "increased", "span": []}}, {"soilBulkDensity": {"value": "decreased", "span": []}}, {"soilOrganicCarbon": {"value": "decreased", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "not mentioned", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "November", "span": []}}, {"endTime": {"value": "March", "span": []}}, {"duration": {"value": "3 months", "span": []}}]
+Gold: []
+

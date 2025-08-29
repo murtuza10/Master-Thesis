@@ -1,0 +1,36 @@
+=== Comparison for Item 159 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+Title : 
+ Flower strip data Germany 2021 
+
+ Abstract : 
+ The data concerns 23 flower strips , sampled in 2019 in Germany .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2018",
+        "span": [
+          29,
+          33
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2018", "span": [29, 33]}}]
+Gold: []
+

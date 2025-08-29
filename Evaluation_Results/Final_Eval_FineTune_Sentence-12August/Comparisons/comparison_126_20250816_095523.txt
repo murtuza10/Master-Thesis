@@ -1,0 +1,50 @@
+=== Comparison for Item 126 ===
+Timestamp: 20250816_095523
+
+=== Original Text ===
+Selected data provided by the nova institute .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "rape",
+        "span": [
+          35,
+          39
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "OSR",
+        "span": [
+          60,
+          63
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Brassica napus",
+        "span": [
+          41,
+          52
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "rape", "span": [35, 39]}}, {"cropSpecies": {"value": "OSR", "span": [60, 63]}}, {"cropVariety": {"value": "Brassica napus", "span": [41, 52]}}]
+Gold: []
+

@@ -1,0 +1,190 @@
+=== Comparison for Item 68 ===
+Timestamp: 20250723_131813
+
+=== Original Text ===
+
+ Keywords : 
+  Boden , Langzeitversuch , Landwirtschaft , Ertrag ( landwirtschaftlich ) , Ernte , Agrarproduktion , Getreide , agriculture , Field experimentation , Agricultural research , Ears , Grain , Plant products , Agricultural products , Yields , Yield components , Crop yield , Quality , Dauerfeldversuch , Dauerversuch , Langzeitfeldversuch , Langzeitversuch , Dauerdüngungversuch , Langzeitdüngungsversuch , DFV , DDV , DV , Long - Term Field Experiment , Long - Term Experiment , Long - Term Trial , Long - Term Field Trial , Long - Term Fertilizer Experiment , Long - Term Soil Experiment , LTFE , LTE , LTSE 
+ 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "winter wheat",
+        "span": [
+          45,
+          17
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Yudai variety",
+        "span": [
+          96,
+          19
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay loam",
+        "span": [
+          106,
+          16
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "Ap horizon",
+        "span": [
+          82,
+          15
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "60 cm",
+        "span": [
+          66,
+          13
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.2 g / cm^3",
+        "span": [
+          55,
+          23
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.2",
+        "span": [
+          94,
+          7
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "0.8 %",
+        "span": [
+          91,
+          10
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "70 ppm",
+        "span": [
+          83,
+          13
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "latitude": {
+        "value": "23.4347",
+        "span": [
+          53,
+          15
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "121.4677",
+        "span": [
+          48,
+          17
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "none mentioned",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "none mentioned",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "none mentioned",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "winter season",
+        "span": [
+          46,
+          16
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "spring season",
+        "span": [
+          68,
+          15
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "120 days",
+        "span": [
+          69,
+          14
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "winter wheat", "span": [45, 17]}}, {"cropVariety": {"value": "Yudai variety", "span": [96, 19]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay loam", "span": [106, 16]}}, {"soilReferenceGroup": {"value": "Ap horizon", "span": [82, 15]}}, {"soilDepth": {"value": "60 cm", "span": [66, 13]}}, {"soilBulkDensity": {"value": "1.2 g / cm^3", "span": [55, 23]}}, {"soilPH": {"value": "6.2", "span": [94, 7]}}, {"soilOrganicCarbon": {"value": "0.8 %", "span": [91, 10]}}, {"soilAvailableNitrogen": {"value": "70 ppm", "span": [83, 13]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"latitude": {"value": "23.4347", "span": [53, 15]}}, {"longitude": {"value": "121.4677", "span": [48, 17]}}, {"country": {"value": "none mentioned", "span": []}}, {"region": {"value": "none mentioned", "span": []}}, {"city": {"value": "none mentioned", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "winter season", "span": [46, 16]}}, {"endTime": {"value": "spring season", "span": [68, 15]}}, {"duration": {"value": "120 days", "span": [69, 14]}}]
+Gold: []
+

@@ -1,0 +1,151 @@
+=== Comparison for Item 110 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+Forestry Production and Trade , Statistical Database . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          1,
+          7
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "crop variety",
+        "span": [
+          35,
+          45
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilOrganicCarbon": {
+        "value": "organic carbon",
+        "span": [
+          62,
+          77
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "low",
+        "span": [
+          67,
+          70
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Australia",
+        "span": [
+          5,
+          13
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "region of interest",
+        "span": [
+          23,
+          35
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "",
+        "span": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "45.1234",
+        "span": [
+          24,
+          32
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "-120.4567",
+        "span": [
+          33,
+          41
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2020",
+        "span": [
+          14,
+          18
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "",
+        "span": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "",
+        "span": [
+          0,
+          0
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [1, 7]}}, {"cropVariety": {"value": "crop variety", "span": [35, 45]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilOrganicCarbon": {"value": "organic carbon", "span": [62, 77]}}, {"soilPH": {"value": "low", "span": [67, 70]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Australia", "span": [5, 13]}}, {"region": {"value": "region of interest", "span": [23, 35]}}, {"city": {"value": "", "span": [0, 0]}}, {"latitude": {"value": "45.1234", "span": [24, 32]}}, {"longitude": {"value": "-120.4567", "span": [33, 41]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2020", "span": [14, 18]}}, {"endTime": {"value": "", "span": [0, 0]}}, {"duration": {"value": "", "span": [0, 0]}}]
+Gold: []
+

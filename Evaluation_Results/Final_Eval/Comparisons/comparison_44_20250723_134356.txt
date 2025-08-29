@@ -1,0 +1,123 @@
+=== Comparison for Item 44 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+rapaceum Mill . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "white cabbage",
+        "span": []
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Brassica oleracea L. var. capitata f. alba",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loamy sand",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH 6.5",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "1.2%",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "30 cm",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "North region",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "country",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropVariety": {
+        "value": "white",
+        "span": [
+          44,
+          49
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "cabbage",
+        "span": [
+          50,
+          57
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Brassica oleracea L.",
+        "span": [
+          60,
+          80
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "var .",
+        "span": [
+          81,
+          86
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "white cabbage", "span": []}}, {"cropVariety": {"value": "Brassica oleracea L. var. capitata f. alba", "span": []}}]
+Gold: [{"cropVariety": {"value": "white", "span": [44, 49]}}, {"cropSpecies": {"value": "cabbage", "span": [50, 57]}}, {"cropSpecies": {"value": "Brassica oleracea L.", "span": [60, 80]}}, {"cropVariety": {"value": "var .", "span": [81, 86]}}]
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loamy sand", "span": []}}, {"soilPH": {"value": "pH 6.5", "span": []}}, {"soilOrganicCarbon": {"value": "1.2%", "span": []}}, {"soilDepth": {"value": "30 cm", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "North region", "span": []}}, {"country": {"value": "country", "span": []}}]
+Gold: []
+

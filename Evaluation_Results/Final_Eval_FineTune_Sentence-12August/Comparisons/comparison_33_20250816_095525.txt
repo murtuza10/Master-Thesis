@@ -1,0 +1,50 @@
+=== Comparison for Item 33 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+Related datasets are listed in the metadata element ' Related Identifier ' .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": [
+          297,
+          302
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          304,
+          309
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": [
+          311,
+          316
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "maize", "span": [297, 302]}}, {"cropSpecies": {"value": "wheat", "span": [304, 309]}}, {"cropSpecies": {"value": "barley", "span": [311, 316]}}]
+Gold: []
+

@@ -1,0 +1,103 @@
+=== Comparison for Item 221 ===
+Timestamp: 20250723_134124
+
+=== Original Text ===
+Codes of Soil3 genotypes Related datasets are listed in the metadata element ' Related Identifier ' . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "winter wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "winter barley",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "0-10 cm depth",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "0-10 cm depth",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "0-10 cm depth",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "0-20 cm depth",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "0-20 cm depth",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "latitude": {
+        "value": "46.1234° N",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "0.1234° E",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "1 year",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "winter wheat", "span": []}}, {"cropSpecies": {"value": "winter barley", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "0-10 cm depth", "span": []}}, {"soilBulkDensity": {"value": "0-10 cm depth", "span": []}}, {"soilPH": {"value": "0-10 cm depth", "span": []}}, {"soilOrganicCarbon": {"value": "0-20 cm depth", "span": []}}, {"soilAvailableNitrogen": {"value": "0-20 cm depth", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"latitude": {"value": "46.1234° N", "span": []}}, {"longitude": {"value": "0.1234° E", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"duration": {"value": "1 year", "span": []}}]
+Gold: []
+

@@ -1,0 +1,104 @@
+=== Comparison for Item 134 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+The smaller uptake at the TS was caused by higher ( 151 % ) ecosystem respiration , while gross primary production was only 15 % difference . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sandy loam",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5 ± 0.1",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2.5 % ± 0.1 %",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "10.3 ± 0.6 kg N ha-1",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "12.6 ± 0.9 kg N ha-1",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.4 ± 0.1 g cm-3",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "the north of the country",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "Winter Wheat",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "40.5",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "120.7",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "sandy loam", "span": []}}, {"soilPH": {"value": "6.5 ± 0.1", "span": []}}, {"soilOrganicCarbon": {"value": "2.5 % ± 0.1 %", "span": []}}, {"soilAvailableNitrogen": {"value": "10.3 ± 0.6 kg N ha-1", "span": []}}, {"soilAvailableNitrogen": {"value": "12.6 ± 0.9 kg N ha-1", "span": []}}, {"soilBulkDensity": {"value": "1.4 ± 0.1 g cm-3", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "the north of the country", "span": []}}, {"city": {"value": "Winter Wheat", "span": []}}, {"latitude": {"value": "40.5", "span": []}}, {"longitude": {"value": "120.7", "span": []}}]
+Gold: []
+

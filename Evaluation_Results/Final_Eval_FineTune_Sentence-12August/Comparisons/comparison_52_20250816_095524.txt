@@ -1,0 +1,95 @@
+=== Comparison for Item 52 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+The experimental set - up scheme can be found in the supplementary material .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "grain maize",
+        "span": [
+          26,
+          35
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          49,
+          54
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": [
+          67,
+          72
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "rapeseed",
+        "span": [
+          87,
+          94
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Zea mays",
+        "span": [
+          37,
+          44
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Triticum aestivum",
+        "span": [
+          56,
+          66
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Hordeum vulgare",
+        "span": [
+          74,
+          83
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Brassica napus ssp.",
+        "span": [
+          96,
+          109
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "grain maize", "span": [26, 35]}}, {"cropSpecies": {"value": "wheat", "span": [49, 54]}}, {"cropSpecies": {"value": "barley", "span": [67, 72]}}, {"cropSpecies": {"value": "rapeseed", "span": [87, 94]}}, {"cropVariety": {"value": "Zea mays", "span": [37, 44]}}, {"cropVariety": {"value": "Triticum aestivum", "span": [56, 66]}}, {"cropVariety": {"value": "Hordeum vulgare", "span": [74, 83]}}, {"cropVariety": {"value": "Brassica napus ssp.", "span": [96, 109]}}]
+Gold: []
+

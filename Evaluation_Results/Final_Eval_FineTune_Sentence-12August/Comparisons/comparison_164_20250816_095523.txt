@@ -1,0 +1,46 @@
+=== Comparison for Item 164 ===
+Timestamp: 20250816_095523
+
+=== Original Text ===
+C ) , total precipitation ( precip , mm ) and sunshine duration from the climate station closest to each of the sampled flower strips .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "equilibration pH",
+        "span": [
+          54,
+          67
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "4 days",
+        "span": [
+          28,
+          34
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilPH": {"value": "equilibration pH", "span": [54, 67]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"duration": {"value": "4 days", "span": [28, 34]}}]
+Gold: []
+

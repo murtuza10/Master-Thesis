@@ -1,0 +1,55 @@
+=== Comparison for Item 210 ===
+Timestamp: 20250723_134358
+
+=== Original Text ===
+We postulate , that ( i ) the absolute abundance of bacteria and archaea will be increased in DLB treatment plots . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropVariety": {
+        "value": "Milaneco",
+        "span": [
+          32,
+          40
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Capo",
+        "span": [
+          45,
+          49
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Trebelir",
+        "span": [
+          89,
+          97
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropVariety": {"value": "Milaneco", "span": [32, 40]}}, {"cropVariety": {"value": "Capo", "span": [45, 49]}}, {"cropVariety": {"value": "Trebelir", "span": [89, 97]}}]
+

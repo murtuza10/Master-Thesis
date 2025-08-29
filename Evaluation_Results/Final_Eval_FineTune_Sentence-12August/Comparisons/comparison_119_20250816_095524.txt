@@ -1,0 +1,41 @@
+=== Comparison for Item 119 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+Rome : FAO .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "C4 roots",
+        "span": [
+          60,
+          67
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "C3 soil",
+        "span": [
+          72,
+          78
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "C4 roots", "span": [60, 67]}}, {"cropSpecies": {"value": "C3 soil", "span": [72, 78]}}]
+Gold: []
+

@@ -1,0 +1,432 @@
+=== Comparison for Item 2 ===
+Timestamp: 20250816_094258
+
+=== Original Text ===
+Title : 
+  Regional climate change observational data FOR 1695 ( Part 3.5 of data collection , table SOIL_SITE5 ) 
+ Abstract_text_1 : 
+  Regional climate change observational data FOR 1695 ( Part 3.5 of data collection , table SOIL_SITE5 ) . 
+ Abstract_text_2 : 
+  We present a comprehensive , high - quality dataset characterising soil - vegetation and land - surface processes from continuous measurements conducted in two climatically contrasting study regions in South West Germany : the warmer and drier Kraichgau region with a mean temperature of 9.7 ° C and annual precipitation of 890 mm , and the cooler and wetter Swabian . Alp with mean temperature 7.5 ° C and annual precipitation 1042 mm . In each region , measurements were conducted over a time period of nine cropping seasons from 2009 to 2018 . The backbone of the investigation was formed by six eddy - covariance stations ( EC ) which measured fluxes of water , energy and carbon dioxide between the land surface and the atmosphere at half hourly resolution . This resulted in a dataset containing measurements from a total of 54 site*years containing observations with a multitude of crops , as well as considerable variation in local growing season climates . The presented multi - site , multi - year data set is composed of crop - related data on phenological development stages , canopy height , leaf area index , vegetative and generative biomass and their respective carbon and nitrogen content . Time series of soil temperature and soil water content were monitored with 30 - min resolution at various points in the soil profile , including ground heat fluxes . Moreover , more than 1,200 soil samples were taken to study changes of carbon and nitrogen contents . One station in each region has now been set up as continuous observatories of state variables and fluxes in intensively managed agricultural fields . Research domain : Soil Sciences The corresponding publication can be accessed here :   https://doi.org/10.5194/essd-2020-396    Dataset version 1.1 This table contains Site 5 soil data . Related datasets are listed in the metadata element ' Related Identifier ' . 
+ Keywords : 
+  Soil , climate , opendata , Boden , inspireidentifiziert
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": [
+          246,
+          251
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          257,
+          262
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": [
+          268,
+          273
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "rapeseed",
+        "span": [
+          279,
+          285
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Zea mays",
+        "span": [
+          261,
+          269
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Triticum aestivum",
+        "span": [
+          274,
+          284
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Hordeum vulgare",
+        "span": [
+          289,
+          297
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Brassica napus ssp. napus",
+        "span": [
+          304,
+          321
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loess chernozem",
+        "span": [
+          89,
+          101
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "100 cm",
+        "span": [
+          112,
+          117
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "neutral pH (7.0 - 7.4)",
+        "span": [
+          154,
+          170
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          68,
+          75
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Saxony Anhalt",
+        "span": [
+          61,
+          70
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Bernburg",
+        "span": [
+          54,
+          60
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "51 ° 82 ' N",
+        "span": [
+          77,
+          86
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "11 ° 70 '",
+        "span": [
+          88,
+          97
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "1992",
+        "span": [
+          19,
+          23
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "grain maize",
+        "span": [
+          898,
+          909
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Zea mays",
+        "span": [
+          912,
+          920
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          932,
+          937
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Triticum aestivum",
+        "span": [
+          940,
+          957
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": [
+          969,
+          975
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Hordeum vulgare",
+        "span": [
+          978,
+          993
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "rapeseed",
+        "span": [
+          1005,
+          1013
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Brassica napus ssp . napus",
+        "span": [
+          1016,
+          1042
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          1054,
+          1059
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "depth",
+        "span": [
+          429,
+          434
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "100 cm",
+        "span": [
+          438,
+          444
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "22 % clay",
+        "span": [
+          458,
+          467
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "70 % silt",
+        "span": [
+          470,
+          479
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "8 % sand",
+        "span": [
+          484,
+          492
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH",
+        "span": [
+          549,
+          551
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "7.0",
+        "span": [
+          554,
+          557
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "7.4",
+        "span": [
+          560,
+          563
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "city": {
+        "value": "Bernburg",
+        "span": [
+          269,
+          277
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Saxony Anhalt",
+        "span": [
+          280,
+          293
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          296,
+          303
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "51 ° 82 ' N",
+        "span": [
+          306,
+          317
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "11 ° 70 '",
+        "span": [
+          320,
+          329
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "1992",
+        "span": [
+          261,
+          265
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "1980",
+        "span": [
+          702,
+          706
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2010",
+        "span": [
+          709,
+          713
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "maize", "span": [246, 251]}}, {"cropSpecies": {"value": "wheat", "span": [257, 262]}}, {"cropSpecies": {"value": "barley", "span": [268, 273]}}, {"cropSpecies": {"value": "rapeseed", "span": [279, 285]}}, {"cropVariety": {"value": "Zea mays", "span": [261, 269]}}, {"cropVariety": {"value": "Triticum aestivum", "span": [274, 284]}}, {"cropVariety": {"value": "Hordeum vulgare", "span": [289, 297]}}, {"cropVariety": {"value": "Brassica napus ssp. napus", "span": [304, 321]}}]
+Gold: [{"cropSpecies": {"value": "grain maize", "span": [898, 909]}}, {"cropSpecies": {"value": "Zea mays", "span": [912, 920]}}, {"cropSpecies": {"value": "wheat", "span": [932, 937]}}, {"cropSpecies": {"value": "Triticum aestivum", "span": [940, 957]}}, {"cropSpecies": {"value": "barley", "span": [969, 975]}}, {"cropSpecies": {"value": "Hordeum vulgare", "span": [978, 993]}}, {"cropSpecies": {"value": "rapeseed", "span": [1005, 1013]}}, {"cropSpecies": {"value": "Brassica napus ssp . napus", "span": [1016, 1042]}}, {"cropSpecies": {"value": "wheat", "span": [1054, 1059]}}]
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loess chernozem", "span": [89, 101]}}, {"soilDepth": {"value": "100 cm", "span": [112, 117]}}, {"soilPH": {"value": "neutral pH (7.0 - 7.4)", "span": [154, 170]}}]
+Gold: [{"soilDepth": {"value": "depth", "span": [429, 434]}}, {"soilDepth": {"value": "100 cm", "span": [438, 444]}}, {"soilTexture": {"value": "22 % clay", "span": [458, 467]}}, {"soilTexture": {"value": "70 % silt", "span": [470, 479]}}, {"soilTexture": {"value": "8 % sand", "span": [484, 492]}}, {"soilPH": {"value": "pH", "span": [549, 551]}}, {"soilPH": {"value": "7.0", "span": [554, 557]}}, {"soilPH": {"value": "7.4", "span": [560, 563]}}]
+
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": [68, 75]}}, {"region": {"value": "Saxony Anhalt", "span": [61, 70]}}, {"city": {"value": "Bernburg", "span": [54, 60]}}, {"latitude": {"value": "51 ° 82 ' N", "span": [77, 86]}}, {"longitude": {"value": "11 ° 70 '", "span": [88, 97]}}]
+Gold: [{"city": {"value": "Bernburg", "span": [269, 277]}}, {"region": {"value": "Saxony Anhalt", "span": [280, 293]}}, {"country": {"value": "Germany", "span": [296, 303]}}, {"latitude": {"value": "51 ° 82 ' N", "span": [306, 317]}}, {"longitude": {"value": "11 ° 70 '", "span": [320, 329]}}]
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "1992", "span": [19, 23]}}]
+Gold: [{"startTime": {"value": "1992", "span": [261, 265]}}, {"startTime": {"value": "1980", "span": [702, 706]}}, {"endTime": {"value": "2010", "span": [709, 713]}}]
+

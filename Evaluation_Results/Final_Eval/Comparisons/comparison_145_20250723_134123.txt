@@ -1,0 +1,60 @@
+=== Comparison for Item 145 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+It consists of three different files . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilOrganicCarbon": {
+        "value": "organic carbon",
+        "span": [
+          53,
+          67
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "soil organic carbon",
+        "span": [
+          261,
+          280
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          306,
+          313
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: []
+Gold: [{"soilOrganicCarbon": {"value": "organic carbon", "span": [53, 67]}}, {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [261, 280]}}]
+
+Category: Location
+Predictions: []
+Gold: [{"country": {"value": "Germany", "span": [306, 313]}}]
+

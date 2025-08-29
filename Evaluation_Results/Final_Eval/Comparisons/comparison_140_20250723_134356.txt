@@ -1,0 +1,84 @@
+=== Comparison for Item 140 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+Title : 
+ Root litter quality incubation experiment 
+
+ Abstract : 
+ The dataset contains data of a 2 - year incubation experiment of C4 roots litter added to a C3 soil . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "corn",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loam",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "deep",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2.1%",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "United States",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "Iowa",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "corn", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loam", "span": []}}, {"soilDepth": {"value": "deep", "span": []}}, {"soilPH": {"value": "6.5", "span": []}}, {"soilOrganicCarbon": {"value": "2.1%", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "United States", "span": []}}, {"region": {"value": "Iowa", "span": []}}]
+Gold: []
+

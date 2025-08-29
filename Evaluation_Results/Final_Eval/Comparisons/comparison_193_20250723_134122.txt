@@ -1,0 +1,148 @@
+=== Comparison for Item 193 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+Under real conditions in the soil , an influence of the P sorption on the pH is to be expected . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          54,
+          60
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "winter",
+        "span": [
+          67,
+          75
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "1.2 g/cm^3",
+        "span": [
+          23,
+          34
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "0.6%",
+        "span": [
+          39,
+          46
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "8.5 mg/kg",
+        "span": [
+          53,
+          64
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "None",
+        "span": null
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "None",
+        "span": null
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "None",
+        "span": null
+      }
+    },
+    {
+      "soilPH": {
+        "value": "None",
+        "span": null
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "8.5 mg/kg",
+        "span": [
+          53,
+          64
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Australia",
+        "span": [
+          81,
+          91
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "None",
+        "span": null
+      }
+    },
+    {
+      "endTime": {
+        "value": "None",
+        "span": null
+      }
+    },
+    {
+      "duration": {
+        "value": "None",
+        "span": null
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [54, 60]}}, {"cropVariety": {"value": "winter", "span": [67, 75]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "1.2 g/cm^3", "span": [23, 34]}}, {"soilOrganicCarbon": {"value": "0.6%", "span": [39, 46]}}, {"soilAvailableNitrogen": {"value": "8.5 mg/kg", "span": [53, 64]}}, {"soilTexture": {"value": "None", "span": null}}, {"soilReferenceGroup": {"value": "None", "span": null}}, {"soilDepth": {"value": "None", "span": null}}, {"soilPH": {"value": "None", "span": null}}, {"soilAvailableNitrogen": {"value": "8.5 mg/kg", "span": [53, 64]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Australia", "span": [81, 91]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "None", "span": null}}, {"endTime": {"value": "None", "span": null}}, {"duration": {"value": "None", "span": null}}]
+Gold: []
+

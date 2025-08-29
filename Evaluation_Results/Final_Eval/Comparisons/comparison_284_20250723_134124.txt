@@ -1,0 +1,51 @@
+=== Comparison for Item 284 ===
+Timestamp: 20250723_134124
+
+=== Original Text ===
+A concentration of 2 g l-1 for both humic and citric acid was selected to provide a concentration similar to that of the CaCl2 and CaSO4 . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          0,
+          5
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sand",
+        "span": [
+          25,
+          29
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [0, 5]}}]
+Gold: []
+
+Category: Soil
+Predictions: []
+Gold: [{"soilTexture": {"value": "sand", "span": [25, 29]}}]
+

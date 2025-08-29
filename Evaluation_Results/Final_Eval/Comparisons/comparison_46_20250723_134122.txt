@@ -1,0 +1,101 @@
+=== Comparison for Item 46 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+No celery was cultivated during the first rotation . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          0,
+          10
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "winter wheat",
+        "span": [
+          21,
+          31
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "high",
+        "span": [
+          35,
+          41
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "low",
+        "span": [
+          47,
+          53
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "the country",
+        "span": [
+          60,
+          68
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "the region",
+        "span": [
+          55,
+          63
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "New York",
+        "span": [
+          83,
+          91
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [0, 10]}}, {"cropSpecies": {"value": "winter wheat", "span": [21, 31]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "high", "span": [35, 41]}}, {"soilOrganicCarbon": {"value": "low", "span": [47, 53]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "the country", "span": [60, 68]}}, {"region": {"value": "the region", "span": [55, 63]}}, {"city": {"value": "New York", "span": [83, 91]}}]
+Gold: []
+

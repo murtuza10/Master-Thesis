@@ -1,0 +1,52 @@
+=== Comparison for Item 198 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+The solution pH decreased for the initial pH 4 to 3.9 . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "pH 8",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH 10",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH 12",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH 6",
+        "span": []
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilPH": {"value": "pH 8", "span": []}}, {"soilPH": {"value": "pH 10", "span": []}}, {"soilPH": {"value": "pH 12", "span": []}}, {"soilPH": {"value": "pH 6", "span": []}}]
+Gold: []
+

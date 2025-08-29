@@ -1,0 +1,81 @@
+=== Comparison for Item 176 ===
+Timestamp: 20250723_134358
+
+=== Original Text ===
+Title : 
+  pH - dependency of P adsorption kinetics on goethite 
+ Abstract_text_1 : 
+  pH - dependency of P adsorption kinetics on goethite . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          199,
+          204
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          534,
+          541
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Brandenburg",
+        "span": [
+          544,
+          555
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Uckermark",
+        "span": [
+          558,
+          567
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Quillow",
+        "span": [
+          570,
+          577
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropSpecies": {"value": "wheat", "span": [199, 204]}}]
+
+Category: Location
+Predictions: []
+Gold: [{"country": {"value": "Germany", "span": [534, 541]}}, {"region": {"value": "Brandenburg", "span": [544, 555]}}, {"region": {"value": "Uckermark", "span": [558, 567]}}, {"city": {"value": "Quillow", "span": [570, 577]}}]
+

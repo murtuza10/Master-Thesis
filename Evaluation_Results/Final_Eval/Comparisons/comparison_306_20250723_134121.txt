@@ -1,0 +1,127 @@
+=== Comparison for Item 306 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+Two different monitoring strategies have been applied ; event - driven sampling after pesticide applications and weekly integrated sampling using automatic water samplers . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "apple",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": []
+      },
+      "region": {
+        "value": "Lower Saxony",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2001",
+        "span": []
+      },
+      "endTime": {
+        "value": "2003",
+        "span": []
+      },
+      "duration": {
+        "value": "2",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "apple",
+        "span": [
+          117,
+          122
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [
+    {
+      "region": {
+        "value": "Lower Saxony",
+        "span": [
+          67,
+          79
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          82,
+          89
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2001",
+        "span": [
+          178,
+          182
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2003",
+        "span": [
+          187,
+          191
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "apple", "span": []}}]
+Gold: [{"cropSpecies": {"value": "apple", "span": [117, 122]}}]
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": []}, "region": {"value": "Lower Saxony", "span": []}}]
+Gold: [{"region": {"value": "Lower Saxony", "span": [67, 79]}}, {"country": {"value": "Germany", "span": [82, 89]}}]
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2001", "span": []}, "endTime": {"value": "2003", "span": []}, "duration": {"value": "2", "span": []}}]
+Gold: [{"startTime": {"value": "2001", "span": [178, 182]}}, {"endTime": {"value": "2003", "span": [187, 191]}}]
+

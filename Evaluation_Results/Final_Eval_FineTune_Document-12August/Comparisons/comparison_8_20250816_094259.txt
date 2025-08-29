@@ -1,0 +1,160 @@
+=== Comparison for Item 8 ===
+Timestamp: 20250816_094259
+
+=== Original Text ===
+Title : 
+ Datensatz mit Fragebögen zur Analyse von Lebensmittelverlusten bei Obst und Gemüse auf Erzeugerebene und in der Wertschöpfungskette 
+
+ Abstract : 
+ Der Datensatz enthält 8 Fragebögen für persönliche Interviews mit Entscheidungstragenden auf Erzeugerebene und in der Wertschöpfungskette zur Analyse der Lebensmittelverluste : - i m Freilandanbau von Möhre , Salat , Apfel und Erdbeere , - i m geschützten Anbau von Erdbeere und Himbeere und - in Verarbeitung und Lebensmitteleinzelhandel
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "oilseed rape",
+        "span": [
+          596,
+          605
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Brassica napus",
+        "span": [
+          607,
+          617
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "OSR",
+        "span": [
+          619,
+          622
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "oilseed rape",
+        "span": [
+          710,
+          722
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Brassica napus",
+        "span": [
+          725,
+          739
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          523,
+          530
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Bochum",
+        "span": [
+          533,
+          539
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Braunschweig",
+        "span": [
+          542,
+          554
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Celle",
+        "span": [
+          557,
+          562
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Hohenheim",
+        "span": [
+          565,
+          574
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Veitshöchheim",
+        "span": [
+          577,
+          590
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "spring 2022",
+        "span": [
+          598,
+          609
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "spring 2023",
+        "span": [
+          613,
+          624
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "oilseed rape", "span": [596, 605]}}, {"cropSpecies": {"value": "Brassica napus", "span": [607, 617]}}, {"cropVariety": {"value": "OSR", "span": [619, 622]}}]
+Gold: [{"cropSpecies": {"value": "oilseed rape", "span": [710, 722]}}, {"cropSpecies": {"value": "Brassica napus", "span": [725, 739]}}]
+
+Category: Location
+Predictions: []
+Gold: [{"country": {"value": "Germany", "span": [523, 530]}}, {"city": {"value": "Bochum", "span": [533, 539]}}, {"city": {"value": "Braunschweig", "span": [542, 554]}}, {"city": {"value": "Celle", "span": [557, 562]}}, {"city": {"value": "Hohenheim", "span": [565, 574]}}, {"city": {"value": "Veitshöchheim", "span": [577, 590]}}]
+
+Category: Time Statement
+Predictions: []
+Gold: [{"startTime": {"value": "spring 2022", "span": [598, 609]}}, {"startTime": {"value": "spring 2023", "span": [613, 624]}}]
+

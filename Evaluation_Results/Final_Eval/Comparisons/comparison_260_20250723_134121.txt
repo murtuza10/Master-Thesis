@@ -1,0 +1,85 @@
+=== Comparison for Item 260 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+The differentially managed soils are either intensively ( Int ) operated according to usual practice regarding N supply and pesticide application or extensively managed ( Ext ) with reduced N supply , without fungicides , and growth regulators . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "1.5 g/cm3",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2%",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "latitude": {
+        "value": "43.2",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "72.1",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "late autumn",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "early summer",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "1.5 g/cm3", "span": []}}, {"soilOrganicCarbon": {"value": "2%", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"latitude": {"value": "43.2", "span": []}}, {"longitude": {"value": "72.1", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "late autumn", "span": []}}, {"endTime": {"value": "early summer", "span": []}}]
+Gold: []
+

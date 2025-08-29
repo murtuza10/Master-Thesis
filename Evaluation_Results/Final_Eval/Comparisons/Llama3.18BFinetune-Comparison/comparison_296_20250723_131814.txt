@@ -1,0 +1,93 @@
+=== Comparison for Item 296 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+) , continuously recorded meteorological variables ( air and soil temperatures , radiation , precipitation , etc . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "carbon dioxide",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "nitrous dioxide",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "methane",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "ammonia",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "ontogenesis",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "grain and straw yield",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "texture",
+        "span": []
+      },
+      "soilReferenceGroup": {
+        "value": "reference group",
+        "span": []
+      },
+      "soilDepth": {
+        "value": "depth",
+        "span": []
+      },
+      "soilBulkDensity": {
+        "value": "bulk density",
+        "span": []
+      },
+      "soilPH": {
+        "value": "pH",
+        "span": []
+      },
+      "soilOrganicCarbon": {
+        "value": "organic carbon",
+        "span": []
+      },
+      "soilAvailableNitrogen": {
+        "value": "available N",
+        "span": []
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "carbon dioxide", "span": []}, "cropVariety": {"value": "nitrous dioxide", "span": []}}, {"cropSpecies": {"value": "methane", "span": []}, "cropVariety": {"value": "ammonia", "span": []}}, {"cropSpecies": {"value": "ontogenesis", "span": []}, "cropVariety": {"value": "grain and straw yield", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "texture", "span": []}, "soilReferenceGroup": {"value": "reference group", "span": []}, "soilDepth": {"value": "depth", "span": []}, "soilBulkDensity": {"value": "bulk density", "span": []}, "soilPH": {"value": "pH", "span": []}, "soilOrganicCarbon": {"value": "organic carbon", "span": []}, "soilAvailableNitrogen": {"value": "available N", "span": []}}]
+Gold: []
+

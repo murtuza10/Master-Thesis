@@ -1,0 +1,75 @@
+=== Comparison for Item 182 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+The KCl solutions were diluted with ultrapure water to a total volume of 20 ml , leading to final concentrations of 0.01 M , 0.1 M , and 1 M , respectively . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "goethite",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilReferenceGroup": {
+        "value": "KCl",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "0.5 g",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "PE - tubes",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "0.02 M",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "0.2 M",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "2 M",
+        "span": []
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "goethite", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilReferenceGroup": {"value": "KCl", "span": []}}, {"soilBulkDensity": {"value": "0.5 g", "span": []}}, {"soilDepth": {"value": "PE - tubes", "span": []}}, {"soilPH": {"value": "0.02 M", "span": []}}, {"soilOrganicCarbon": {"value": "0.2 M", "span": []}}, {"soilAvailableNitrogen": {"value": "2 M", "span": []}}]
+Gold: []
+

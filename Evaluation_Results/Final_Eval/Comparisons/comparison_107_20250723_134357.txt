@@ -1,0 +1,103 @@
+=== Comparison for Item 107 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+In den hier dargestellten Dokumenten sind Eingangsdaten , Datenkalibrierungen , Modelinputdaten , Ergebnisse der Modellierung der drei Szenarien und Hintergrundinformationen abgelegt . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Getreide",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Soja",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Weizen",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Soja",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "1,5 g/cm³",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6,5",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2,5 %",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "Nordrhein-Westfalen",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "Sachsen-Anhalt",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "Jahr 2018",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "Getreide", "span": []}}, {"cropSpecies": {"value": "Soja", "span": []}}, {"cropSpecies": {"value": "Weizen", "span": []}}, {"cropSpecies": {"value": "Soja", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "1,5 g/cm³", "span": []}}, {"soilPH": {"value": "6,5", "span": []}}, {"soilOrganicCarbon": {"value": "2,5 %", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "Nordrhein-Westfalen", "span": []}}, {"region": {"value": "Sachsen-Anhalt", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "Jahr 2018", "span": []}}]
+Gold: []
+

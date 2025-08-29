@@ -1,0 +1,57 @@
+=== Comparison for Item 321 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+The traps were installed in semi - natural habitats , mainly on hedges with wild host plants of D. suzukii , in the surroundings of the institutes . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "PH",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "organic carbon",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "available nitrogen",
+        "span": []
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilPH": {"value": "PH", "span": []}}, {"soilOrganicCarbon": {"value": "organic carbon", "span": []}}, {"soilAvailableNitrogen": {"value": "available nitrogen", "span": []}}]
+Gold: []
+

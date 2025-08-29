@@ -1,0 +1,40 @@
+=== Comparison for Item 28 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+Moreover , more than 1,200 soil samples were taken to study changes of carbon and nitrogen contents . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "15 May 2022",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "30 June 2022",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Time Statement
+Predictions: [{"startTime": {"value": "15 May 2022", "span": []}}, {"endTime": {"value": "30 June 2022", "span": []}}]
+Gold: []
+

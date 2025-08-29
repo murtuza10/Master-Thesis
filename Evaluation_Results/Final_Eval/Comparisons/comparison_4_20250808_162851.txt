@@ -1,0 +1,518 @@
+=== Comparison for Item 4 ===
+Timestamp: 20250808_162851
+
+=== Original Text ===
+Title : 
+  Long - term field experiment V140 Muencheberg from ( launched in 1963 ) - Yield 
+ Abstract_text_1 : 
+  Long - term field experiment V140 Muencheberg from ( launched in 1963 ) - Yield . 
+ Abstract_text_2 : 
+  Child table of long - term field experiment V140 Muencheberg . Table with information about yield . General description about the V140 experiment can be found in the table V140 - Plots . More information about database schema , assorted literature overview , the detailed location plan , etc.can be found in the supplemental material . 
+ Keywords : 
+  Boden , Langzeitversuch , Landwirtschaft , Ertrag ( landwirtschaftlich ) , Ernte , Agrarproduktion , Getreide , agriculture , Field experimentation , Agricultural research , Ears , Grain , Plant products , Agricultural products , Yields , Yield components , Crop yield , Quality , Dauerfeldversuch , Dauerversuch , Langzeitfeldversuch , Langzeitversuch , Dauerdüngungversuch , Langzeitdüngungsversuch , DFV , DDV , DV , Long - Term Field Experiment , Long - Term Experiment , Long - Term Trial , Long - Term Field Trial , Long - Term Fertilizer Experiment , Long - Term Soil Experiment , LTFE , LTE , LTSE
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropVariety": {
+        "value": "white",
+        "span": [
+          1544,
+          1549
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "cabbage",
+        "span": [
+          1550,
+          1557
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Brassica oleracea L.",
+        "span": [
+          1560,
+          1580
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "var . capitata f. alba",
+        "span": [
+          1581,
+          1603
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "carrot",
+        "span": [
+          1608,
+          1614
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Daucus carota L.",
+        "span": [
+          1617,
+          1633
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "cucumber",
+        "span": [
+          1638,
+          1646
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Cucumis sativus L.",
+        "span": [
+          1649,
+          1667
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "leek",
+        "span": [
+          1672,
+          1676
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Allium porrum L.",
+        "span": [
+          1679,
+          1695
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "celery",
+        "span": [
+          1702,
+          1708
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Apium graveolens L.",
+        "span": [
+          1711,
+          1730
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "var . rapaceum Mill .",
+        "span": [
+          1731,
+          1752
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "celery",
+        "span": [
+          1776,
+          1782
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "cucumbers",
+        "span": [
+          3698,
+          3707
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Cucumis",
+        "span": [
+          3710,
+          3717
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Cucumis sativus",
+        "span": [
+          3720,
+          3735
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "carrots",
+        "span": [
+          3738,
+          3745
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Daucus carota",
+        "span": [
+          3748,
+          3761
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "cabbages",
+        "span": [
+          3764,
+          3772
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Brassica oleracea",
+        "span": [
+          3775,
+          3792
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "var . capitata",
+        "span": [
+          3793,
+          3807
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "leeks",
+        "span": [
+          3810,
+          3815
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Allium ampeloprasum",
+        "span": [
+          3818,
+          3837
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "celery",
+        "span": [
+          3840,
+          3846
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Apium graveolens",
+        "span": [
+          3849,
+          3865
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Apium graveolens",
+        "span": [
+          3868,
+          3884
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "var . rapaceum",
+        "span": [
+          3885,
+          3899
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "depth",
+        "span": [
+          1133,
+          1138
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "75 cm",
+        "span": [
+          1142,
+          1147
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "50 cm",
+        "span": [
+          1160,
+          1165
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "25 cm",
+        "span": [
+          1211,
+          1216
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "coarse - sandy",
+        "span": [
+          1229,
+          1243
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "weak loamy sand",
+        "span": [
+          1303,
+          1318
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "heavy sandy loam",
+        "span": [
+          1341,
+          1357
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "medium clayey silt",
+        "span": [
+          1383,
+          1401
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "soil organic carbon",
+        "span": [
+          3288,
+          3307
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "city": {
+        "value": "Grossbeeren",
+        "span": [
+          43,
+          54
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Grossbeeren",
+        "span": [
+          134,
+          145
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Grossbeeren",
+        "span": [
+          222,
+          233
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "52 ° 21’01.30 ’’ E",
+        "span": [
+          619,
+          637
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "13 ° 19’05.47 ’’ N",
+        "span": [
+          640,
+          658
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "50 years",
+        "span": [
+          11,
+          19
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "1972",
+        "span": [
+          57,
+          61
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2022",
+        "span": [
+          64,
+          68
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "50 years",
+        "span": [
+          102,
+          110
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "1972",
+        "span": [
+          148,
+          152
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2022",
+        "span": [
+          155,
+          159
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "1972",
+        "span": [
+          248,
+          252
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2022",
+        "span": [
+          588,
+          592
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "1991",
+        "span": [
+          942,
+          946
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2020",
+        "span": [
+          949,
+          953
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropVariety": {"value": "white", "span": [1544, 1549]}}, {"cropSpecies": {"value": "cabbage", "span": [1550, 1557]}}, {"cropSpecies": {"value": "Brassica oleracea L.", "span": [1560, 1580]}}, {"cropVariety": {"value": "var . capitata f. alba", "span": [1581, 1603]}}, {"cropSpecies": {"value": "carrot", "span": [1608, 1614]}}, {"cropSpecies": {"value": "Daucus carota L.", "span": [1617, 1633]}}, {"cropSpecies": {"value": "cucumber", "span": [1638, 1646]}}, {"cropSpecies": {"value": "Cucumis sativus L.", "span": [1649, 1667]}}, {"cropSpecies": {"value": "leek", "span": [1672, 1676]}}, {"cropSpecies": {"value": "Allium porrum L.", "span": [1679, 1695]}}, {"cropSpecies": {"value": "celery", "span": [1702, 1708]}}, {"cropSpecies": {"value": "Apium graveolens L.", "span": [1711, 1730]}}, {"cropVariety": {"value": "var . rapaceum Mill .", "span": [1731, 1752]}}, {"cropSpecies": {"value": "celery", "span": [1776, 1782]}}, {"cropSpecies": {"value": "cucumbers", "span": [3698, 3707]}}, {"cropSpecies": {"value": "Cucumis", "span": [3710, 3717]}}, {"cropSpecies": {"value": "Cucumis sativus", "span": [3720, 3735]}}, {"cropSpecies": {"value": "carrots", "span": [3738, 3745]}}, {"cropSpecies": {"value": "Daucus carota", "span": [3748, 3761]}}, {"cropSpecies": {"value": "cabbages", "span": [3764, 3772]}}, {"cropSpecies": {"value": "Brassica oleracea", "span": [3775, 3792]}}, {"cropVariety": {"value": "var . capitata", "span": [3793, 3807]}}, {"cropSpecies": {"value": "leeks", "span": [3810, 3815]}}, {"cropSpecies": {"value": "Allium ampeloprasum", "span": [3818, 3837]}}, {"cropSpecies": {"value": "celery", "span": [3840, 3846]}}, {"cropSpecies": {"value": "Apium graveolens", "span": [3849, 3865]}}, {"cropSpecies": {"value": "Apium graveolens", "span": [3868, 3884]}}, {"cropVariety": {"value": "var . rapaceum", "span": [3885, 3899]}}]
+
+Category: Soil
+Predictions: []
+Gold: [{"soilDepth": {"value": "depth", "span": [1133, 1138]}}, {"soilDepth": {"value": "75 cm", "span": [1142, 1147]}}, {"soilDepth": {"value": "50 cm", "span": [1160, 1165]}}, {"soilDepth": {"value": "25 cm", "span": [1211, 1216]}}, {"soilTexture": {"value": "coarse - sandy", "span": [1229, 1243]}}, {"soilTexture": {"value": "weak loamy sand", "span": [1303, 1318]}}, {"soilTexture": {"value": "heavy sandy loam", "span": [1341, 1357]}}, {"soilTexture": {"value": "medium clayey silt", "span": [1383, 1401]}}, {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [3288, 3307]}}]
+
+Category: Location
+Predictions: []
+Gold: [{"city": {"value": "Grossbeeren", "span": [43, 54]}}, {"city": {"value": "Grossbeeren", "span": [134, 145]}}, {"city": {"value": "Grossbeeren", "span": [222, 233]}}, {"longitude": {"value": "52 ° 21’01.30 ’’ E", "span": [619, 637]}}, {"latitude": {"value": "13 ° 19’05.47 ’’ N", "span": [640, 658]}}]
+
+Category: Time Statement
+Predictions: []
+Gold: [{"duration": {"value": "50 years", "span": [11, 19]}}, {"startTime": {"value": "1972", "span": [57, 61]}}, {"endTime": {"value": "2022", "span": [64, 68]}}, {"duration": {"value": "50 years", "span": [102, 110]}}, {"startTime": {"value": "1972", "span": [148, 152]}}, {"endTime": {"value": "2022", "span": [155, 159]}}, {"startTime": {"value": "1972", "span": [248, 252]}}, {"endTime": {"value": "2022", "span": [588, 592]}}, {"startTime": {"value": "1991", "span": [942, 946]}}, {"endTime": {"value": "2020", "span": [949, 953]}}]
+

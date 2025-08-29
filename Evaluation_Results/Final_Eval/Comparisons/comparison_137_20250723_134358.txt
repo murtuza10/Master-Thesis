@@ -1,0 +1,78 @@
+=== Comparison for Item 137 ===
+Timestamp: 20250723_134358
+
+=== Original Text ===
+Accounting for plot - scale CH4 fluxes , both sites were a weak source of greenhouse gases , but a distinctly stronger C sink occurred at the OS . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilOrganicCarbon": {
+        "value": "peat C",
+        "span": [
+          20,
+          25
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "new peat",
+        "span": [
+          73,
+          80
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "Fennoscandia",
+        "span": [
+          94,
+          106
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "62.5°N",
+        "span": [
+          112,
+          117
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "20.3°E",
+        "span": [
+          122,
+          127
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilOrganicCarbon": {"value": "peat C", "span": [20, 25]}}, {"soilOrganicCarbon": {"value": "new peat", "span": [73, 80]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "Fennoscandia", "span": [94, 106]}}, {"latitude": {"value": "62.5°N", "span": [112, 117]}}, {"longitude": {"value": "20.3°E", "span": [122, 127]}}]
+Gold: []
+

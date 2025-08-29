@@ -1,0 +1,51 @@
+=== Comparison for Item 219 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+Furthermore , beta diversity for soil and root samples was only influenced by the different sampling depths but not by the genotype or the treatment . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropVariety": {
+        "value": "Milaneco",
+        "span": [
+          38,
+          46
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "30 - 60 cm",
+        "span": [
+          130,
+          140
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropVariety": {"value": "Milaneco", "span": [38, 46]}}]
+
+Category: Soil
+Predictions: []
+Gold: [{"soilDepth": {"value": "30 - 60 cm", "span": [130, 140]}}]
+

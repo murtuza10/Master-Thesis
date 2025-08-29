@@ -1,0 +1,32 @@
+=== Comparison for Item 31 ===
+Timestamp: 20250816_095523
+
+=== Original Text ===
+One station in each region has now been set up as continuous observatories of state variables and fluxes in intensively managed agricultural fields .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "energy crops",
+        "span": [
+          57,
+          66
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "energy crops", "span": [57, 66]}}]
+Gold: []
+

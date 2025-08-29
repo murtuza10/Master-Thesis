@@ -1,0 +1,104 @@
+=== Comparison for Item 39 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+The long - term means ( 1991 - 2020 ) for air temperature and annual precipitation are 9.7 ° C and 492 mm . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "sugar beet",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loamy sand",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH of 6.5",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "bulk density of 1.4 g/cm³",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "organic carbon content of 1.2%",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "latitude": {
+        "value": "51.07822 N",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "19.67842 E",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "Łódź",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "Poland",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}, {"cropSpecies": {"value": "maize", "span": []}}, {"cropSpecies": {"value": "sugar beet", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loamy sand", "span": []}}, {"soilPH": {"value": "pH of 6.5", "span": []}}, {"soilBulkDensity": {"value": "bulk density of 1.4 g/cm³", "span": []}}, {"soilOrganicCarbon": {"value": "organic carbon content of 1.2%", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"latitude": {"value": "51.07822 N", "span": []}}, {"longitude": {"value": "19.67842 E", "span": []}}, {"region": {"value": "Łódź", "span": []}}, {"country": {"value": "Poland", "span": []}}]
+Gold: []
+

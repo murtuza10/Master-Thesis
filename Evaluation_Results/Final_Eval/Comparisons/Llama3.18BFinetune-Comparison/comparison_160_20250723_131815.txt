@@ -1,0 +1,160 @@
+=== Comparison for Item 160 ===
+Timestamp: 20250723_131815
+
+=== Original Text ===
+The equal soil mass - corrected mass of each layer ( Mass ; Mg / ha ) , SOC stock ( SOC ; Mg C / ha ) , total N ( TN ; Mg N / ha ) and corresponding C : N ratio ( CN , unitless ) is available . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "winter",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "winter",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "sunflower",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sandy loam",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.5 g / cm3",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.3",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "70 mg / kg",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "25 g / kg",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "",
+        "span": []
+      },
+      "region": {
+        "value": "",
+        "span": []
+      },
+      "city": {
+        "value": "Zaporizhzhia",
+        "span": []
+      },
+      "latitude": {
+        "value": "47.82 N",
+        "span": []
+      },
+      "longitude": {
+        "value": "35.23 E",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "",
+        "span": []
+      },
+      "region": {
+        "value": "",
+        "span": []
+      },
+      "city": {
+        "value": "Kharkiv",
+        "span": []
+      },
+      "latitude": {
+        "value": "50.00 N",
+        "span": []
+      },
+      "longitude": {
+        "value": "36.33 E",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "",
+        "span": []
+      },
+      "region": {
+        "value": "",
+        "span": []
+      },
+      "city": {
+        "value": "Odesa",
+        "span": []
+      },
+      "latitude": {
+        "value": "46.48 N",
+        "span": []
+      },
+      "longitude": {
+        "value": "30.73 E",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}, "cropVariety": {"value": "winter", "span": []}}, {"cropSpecies": {"value": "barley", "span": []}, "cropVariety": {"value": "winter", "span": []}}, {"cropSpecies": {"value": "sunflower", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "sandy loam", "span": []}}, {"soilBulkDensity": {"value": "1.5 g / cm3", "span": []}}, {"soilPH": {"value": "6.3", "span": []}}, {"soilAvailableNitrogen": {"value": "70 mg / kg", "span": []}}, {"soilOrganicCarbon": {"value": "25 g / kg", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "", "span": []}, "region": {"value": "", "span": []}, "city": {"value": "Zaporizhzhia", "span": []}, "latitude": {"value": "47.82 N", "span": []}, "longitude": {"value": "35.23 E", "span": []}}, {"country": {"value": "", "span": []}, "region": {"value": "", "span": []}, "city": {"value": "Kharkiv", "span": []}, "latitude": {"value": "50.00 N", "span": []}, "longitude": {"value": "36.33 E", "span": []}}, {"country": {"value": "", "span": []}, "region": {"value": "", "span": []}, "city": {"value": "Odesa", "span": []}, "latitude": {"value": "46.48 N", "span": []}, "longitude": {"value": "30.73 E", "span": []}}]
+Gold: []
+

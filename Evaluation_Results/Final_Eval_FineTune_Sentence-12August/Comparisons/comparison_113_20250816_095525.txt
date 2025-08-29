@@ -1,0 +1,32 @@
+=== Comparison for Item 113 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+[ 1 ] FAOStat , 2023 .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "48 h",
+        "span": [
+          37,
+          42
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Time Statement
+Predictions: [{"duration": {"value": "48 h", "span": [37, 42]}}]
+Gold: []
+

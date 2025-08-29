@@ -1,0 +1,69 @@
+=== Comparison for Item 155 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+In all files , " Location " is the ID of the flower strips . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          28,
+          35
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          113,
+          120
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2021",
+        "span": [
+          36,
+          40
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "2019",
+        "span": [
+          105,
+          109
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Location
+Predictions: []
+Gold: [{"country": {"value": "Germany", "span": [28, 35]}}, {"country": {"value": "Germany", "span": [113, 120]}}]
+
+Category: Time Statement
+Predictions: []
+Gold: [{"startTime": {"value": "2021", "span": [36, 40]}}, {"startTime": {"value": "2019", "span": [105, 109]}}]
+

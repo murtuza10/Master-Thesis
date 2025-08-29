@@ -1,0 +1,71 @@
+=== Comparison for Item 60 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+Dataset version 1.0 
+ Keywords : 
+  horticulture , long - term experiments , vegetable crops , fertilization , fertilizers , soil types , soil fertility , soil organic carbon , soil organic matter , field crops , crop management , crop production , crop rotation , crop residues , crop residue management , crop yield , nutrient balance , nutrient management , nutrient uptake , nutrient use efficiency , nutrient utilization , nitrogen , nitrogen balance , nitrogen content , nitrogen fertilizers , nitrogen - use efficiency , potassium , phosphorus , magnesium , cucumbers , Cucumis , Cucumis sativus , carrots , Daucus carota , cabbages , Brassica oleracea var . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "winter wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilReferenceGroup": {
+        "value": "1",
+        "span": []
+      },
+      "soilDepth": {
+        "value": "20",
+        "span": []
+      },
+      "soilBulkDensity": {
+        "value": "1.5",
+        "span": []
+      },
+      "soilPH": {
+        "value": "6.2",
+        "span": []
+      },
+      "soilOrganicCarbon": {
+        "value": "3.2",
+        "span": []
+      },
+      "soilAvailableNitrogen": {
+        "value": "10",
+        "span": []
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}, "cropVariety": {"value": "winter wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilReferenceGroup": {"value": "1", "span": []}, "soilDepth": {"value": "20", "span": []}, "soilBulkDensity": {"value": "1.5", "span": []}, "soilPH": {"value": "6.2", "span": []}, "soilOrganicCarbon": {"value": "3.2", "span": []}, "soilAvailableNitrogen": {"value": "10", "span": []}}]
+Gold: []
+

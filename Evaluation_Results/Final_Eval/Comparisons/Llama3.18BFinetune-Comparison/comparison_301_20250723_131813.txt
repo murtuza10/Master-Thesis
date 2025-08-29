@@ -1,0 +1,103 @@
+=== Comparison for Item 301 ===
+Timestamp: 20250723_131813
+
+=== Original Text ===
+Also available are site - specific calculated C and N balances for the respective crops and crop rotations . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "oats",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "rye",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "0.8 g/cm3",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "latitude": {
+        "value": "45.6 N",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "119.1 W",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "a country",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "February 15, 2018",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "October 31, 2019",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "21 months",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "oats", "span": []}}, {"cropSpecies": {"value": "rye", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "0.8 g/cm3", "span": []}}, {"soilPH": {"value": "6.5", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"latitude": {"value": "45.6 N", "span": []}}, {"longitude": {"value": "119.1 W", "span": []}}, {"country": {"value": "a country", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "February 15, 2018", "span": []}}, {"endTime": {"value": "October 31, 2019", "span": []}}, {"duration": {"value": "21 months", "span": []}}]
+Gold: []
+

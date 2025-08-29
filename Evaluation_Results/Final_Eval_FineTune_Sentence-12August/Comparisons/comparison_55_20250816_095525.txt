@@ -1,0 +1,32 @@
+=== Comparison for Item 55 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+Total N and total C in soil , plant and organic amendments were determined using a CNS analyser VARIO El ( Elemental Hanau ) since 1995 and before by wet combustion with K2Cr2O7 und H2SO4 .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          58,
+          63
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [58, 63]}}]
+Gold: []
+

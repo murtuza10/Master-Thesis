@@ -1,0 +1,46 @@
+=== Comparison for Item 2 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+For example , the higher the level of GCFs , the lower the plant biomass and soil water stable aggregation .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Apium graveolens",
+        "span": [
+          18,
+          35
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2016",
+        "span": [
+          41,
+          45
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "Apium graveolens", "span": [18, 35]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2016", "span": [41, 45]}}]
+Gold: []
+

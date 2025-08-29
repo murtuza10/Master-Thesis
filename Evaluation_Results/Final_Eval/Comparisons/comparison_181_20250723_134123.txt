@@ -1,0 +1,115 @@
+=== Comparison for Item 181 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+The point of zero charge ( PZC ) was determined using potentiometric titration by weighing 0.5 g of goethite into 50 ml PE - tubes and adding of 10 ml of a 0.02 M , 0.2 M , and 2 M KCl solution , respectively . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          15,
+          19
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": [
+          38,
+          43
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "1.4 g cm-3",
+        "span": [
+          43,
+          55
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.4 g cm-3",
+        "span": [
+          65,
+          77
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.2",
+        "span": [
+          95,
+          99
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "UK",
+        "span": [
+          68,
+          70
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "a region in the UK",
+        "span": [
+          49,
+          64
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "April",
+        "span": [
+          33,
+          39
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [15, 19]}}, {"cropSpecies": {"value": "barley", "span": [38, 43]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "1.4 g cm-3", "span": [43, 55]}}, {"soilBulkDensity": {"value": "1.4 g cm-3", "span": [65, 77]}}, {"soilPH": {"value": "6.2", "span": [95, 99]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "UK", "span": [68, 70]}}, {"region": {"value": "a region in the UK", "span": [49, 64]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "April", "span": [33, 39]}}]
+Gold: []
+

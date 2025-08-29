@@ -1,0 +1,133 @@
+=== Comparison for Item 247 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+Plot dimensions were 500 m long and 30 m wide included 19 plants rows and 6 transects . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "cucumber",
+        "span": []
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "cucumber",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay loam",
+        "span": []
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "clay loam",
+        "span": []
+      },
+      "soilDepth": {
+        "value": "1.2 m",
+        "span": []
+      },
+      "soilBulkDensity": {
+        "value": "1.6 g / cm3",
+        "span": []
+      },
+      "soilPH": {
+        "value": "6.3",
+        "span": []
+      },
+      "soilOrganicCarbon": {
+        "value": "12 g / kg",
+        "span": []
+      },
+      "soilAvailableNitrogen": {
+        "value": "110 mg / kg",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "country",
+        "span": []
+      },
+      "region": {
+        "value": "region",
+        "span": []
+      },
+      "city": {
+        "value": "",
+        "span": []
+      },
+      "latitude": {
+        "value": "",
+        "span": []
+      },
+      "longitude": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2009",
+        "span": []
+      },
+      "endTime": {
+        "value": "2011",
+        "span": []
+      },
+      "duration": {
+        "value": "3 years",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "cucumber",
+        "span": [
+          100,
+          108
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "cucumber", "span": []}}, {"cropVariety": {"value": "cucumber", "span": []}}]
+Gold: [{"cropSpecies": {"value": "cucumber", "span": [100, 108]}}]
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay loam", "span": []}}, {"soilReferenceGroup": {"value": "clay loam", "span": []}, "soilDepth": {"value": "1.2 m", "span": []}, "soilBulkDensity": {"value": "1.6 g / cm3", "span": []}, "soilPH": {"value": "6.3", "span": []}, "soilOrganicCarbon": {"value": "12 g / kg", "span": []}, "soilAvailableNitrogen": {"value": "110 mg / kg", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "country", "span": []}, "region": {"value": "region", "span": []}, "city": {"value": "", "span": []}, "latitude": {"value": "", "span": []}, "longitude": {"value": "", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2009", "span": []}, "endTime": {"value": "2011", "span": []}, "duration": {"value": "3 years", "span": []}}]
+Gold: []
+

@@ -1,0 +1,73 @@
+=== Comparison for Item 163 ===
+Timestamp: 20250816_095523
+
+=== Original Text ===
+The file " FlowerStripClimate " contains monthly information about the mean temperature ( temp , deg .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilOrganicCarbon": {
+        "value": "particulate organic carbon",
+        "span": [
+          39,
+          62
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "mineral associated organic carbon",
+        "span": [
+          70,
+          93
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "6 months",
+        "span": [
+          15,
+          22
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "12 months",
+        "span": [
+          24,
+          31
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "24 months",
+        "span": [
+          33,
+          40
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilOrganicCarbon": {"value": "particulate organic carbon", "span": [39, 62]}}, {"soilOrganicCarbon": {"value": "mineral associated organic carbon", "span": [70, 93]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"duration": {"value": "6 months", "span": [15, 22]}}, {"duration": {"value": "12 months", "span": [24, 31]}}, {"duration": {"value": "24 months", "span": [33, 40]}}]
+Gold: []
+

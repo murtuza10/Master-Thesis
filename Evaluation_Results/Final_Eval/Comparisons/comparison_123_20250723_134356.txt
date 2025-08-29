@@ -1,0 +1,109 @@
+=== Comparison for Item 123 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+( E - Mail 17.11.2023 ) [ 7 ] Pia Skoczinski , Michael Carus , Gillian Tweddle , Pauline Ruiz , Nicolas Hark , Ann Zhang , Doris de Guzman , Jan Ravenstijn , Harald Käb and Achim Raschka . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loam",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.5 g/cm³",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.8",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2.5%",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "51.2345",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "9.8765",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "March 1st, 2023",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "April 15th, 2023",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}, {"cropSpecies": {"value": "barley", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loam", "span": []}}, {"soilBulkDensity": {"value": "1.5 g/cm³", "span": []}}, {"soilPH": {"value": "6.8", "span": []}}, {"soilOrganicCarbon": {"value": "2.5%", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": []}}, {"latitude": {"value": "51.2345", "span": []}}, {"longitude": {"value": "9.8765", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "March 1st, 2023", "span": []}}, {"endTime": {"value": "April 15th, 2023", "span": []}}]
+Gold: []
+

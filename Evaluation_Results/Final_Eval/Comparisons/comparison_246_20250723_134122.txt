@@ -1,0 +1,38 @@
+=== Comparison for Item 246 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+table KERSTEN_ET_AL_DATA_FIG5 : Spider mite abundance in the phyllosphere and soil of an open field cucumber cultivation . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "spider mite",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "winter wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "spider mite", "span": []}, "cropVariety": {"value": "winter wheat", "span": []}}]
+Gold: []
+

@@ -1,0 +1,32 @@
+=== Comparison for Item 25 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+In each region , measurements were conducted over a time period of nine cropping seasons from 2009 to 2018 .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "endTime": {
+        "value": "2022",
+        "span": [
+          27,
+          31
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Time Statement
+Predictions: [{"endTime": {"value": "2022", "span": [27, 31]}}]
+Gold: []
+

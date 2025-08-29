@@ -1,0 +1,80 @@
+=== Comparison for Item 83 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+The formulation Pictor ® Active was applied to the treatment field site according to label instructions at the maximum field recommended rate of 1 L ( product)/ha . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "3.5",
+        "span": []
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "March 1",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "May 30",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "oilseed rape",
+        "span": [
+          83,
+          95
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Brassica napus",
+        "span": [
+          98,
+          112
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropSpecies": {"value": "oilseed rape", "span": [83, 95]}}, {"cropSpecies": {"value": "Brassica napus", "span": [98, 112]}}]
+
+Category: Soil
+Predictions: [{"soilPH": {"value": "6.5", "span": []}}, {"soilOrganicCarbon": {"value": "3.5", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "March 1", "span": []}}, {"endTime": {"value": "May 30", "span": []}}]
+Gold: []
+

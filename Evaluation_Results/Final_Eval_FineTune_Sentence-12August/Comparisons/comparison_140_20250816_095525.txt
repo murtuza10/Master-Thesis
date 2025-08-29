@@ -1,0 +1,32 @@
+=== Comparison for Item 140 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+This indicates a loss of peat C from the TS , while the successfully rewetted site was accumulating new peat .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          36,
+          42
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": [36, 42]}}]
+Gold: []
+

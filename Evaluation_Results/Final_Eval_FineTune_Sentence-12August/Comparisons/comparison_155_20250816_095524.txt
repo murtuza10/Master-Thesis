@@ -1,0 +1,73 @@
+=== Comparison for Item 155 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+It is a combined dataset from several open source datasets with a total of 1396 individual sites .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "city": {
+        "value": "Dossenheim",
+        "span": [
+          56,
+          66
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Siebeldingen",
+        "span": [
+          72,
+          82
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Darmstadt",
+        "span": [
+          122,
+          129
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2011",
+        "span": [
+          153,
+          157
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2018",
+        "span": [
+          163,
+          167
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Location
+Predictions: [{"city": {"value": "Dossenheim", "span": [56, 66]}}, {"city": {"value": "Siebeldingen", "span": [72, 82]}}, {"city": {"value": "Darmstadt", "span": [122, 129]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2011", "span": [153, 157]}}, {"endTime": {"value": "2018", "span": [163, 167]}}]
+Gold: []
+

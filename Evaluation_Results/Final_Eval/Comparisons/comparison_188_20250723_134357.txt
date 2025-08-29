@@ -1,0 +1,121 @@
+=== Comparison for Item 188 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+Therefore , goethite sample material ( 5 g ) for the respective pH steps was adjusted to pH 4 , 6 , 8 , 10 , or 12 , respectively , in ultrapure water with 0.01 M HCl ( pH 4 ) , or 0.1 M to 5 M KOH ( pH 6 to 12 ) using a Potentiometric Compact Titrator G20S and combined DGi115 - SC pH electrode ( Mettler - Toledeo ) under continuous stirring . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "soybeans",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilReferenceGroup": {
+        "value": "goethite",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "8.8",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "4",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "8",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "10",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "12",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "0-20 cm",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Brazil",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "Minas Gerais",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2015",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "2016",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "soybeans", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilReferenceGroup": {"value": "goethite", "span": []}}, {"soilPH": {"value": "8.8", "span": []}}, {"soilPH": {"value": "4", "span": []}}, {"soilPH": {"value": "6", "span": []}}, {"soilPH": {"value": "8", "span": []}}, {"soilPH": {"value": "10", "span": []}}, {"soilPH": {"value": "12", "span": []}}, {"soilDepth": {"value": "0-20 cm", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Brazil", "span": []}}, {"region": {"value": "Minas Gerais", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2015", "span": []}}, {"endTime": {"value": "2016", "span": []}}]
+Gold: []
+

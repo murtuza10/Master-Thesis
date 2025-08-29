@@ -1,0 +1,217 @@
+=== Comparison for Item 23 ===
+Timestamp: 20250808_165554
+
+=== Original Text ===
+Title : 
+  Microclimatic data along a gradient from kettle holes to agricultural fields in the AgroScapeLabs Quillow 2019 
+ Abstract_text_1 : 
+  Microclimatic data along a gradient from kettle holes to agricultural fields in the AgroScapeLabs Quillow 2019 . 
+ Abstract_text_2 : 
+  Ten kettle holes within six agricultural fields ( crop : winter wheat ) were selected for monitoring microclimatic conditions around the kettle holes . For this purpose we have established a transect starting from the edge of the kettle holes up to 50 m into the surrounding wheat fields . As a control , transects were established from the field edge into the wheat field . Along these transects microclimatic observation stations were installed at 5 different distances ( -1 m ; 1 m ; 5 m ; 20 m ; 50 m ) . At each point air temperature and air humidity were monitored during the growing season of wheat plants ( between April and June 2019 ) Research domain : Ecology of Agricultural Landscapes 
+ Keywords : 
+  climatic factors , environmental factors , measurement , production location , climate system , ecosystems , opendata , Boden , Bewirtschaftungsgebiete / Schutzgebiete / geregelte Gebiete und Berichterstattungseinheiten , Lebensräume und Biotope , Meteorologisch - geografische Kennwerte , Germany , Brandenburg , Uckermark , Quillow
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "pH of 7.5",
+        "span": [
+          344,
+          353
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH 6",
+        "span": [
+          972,
+          976
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "USA",
+        "span": [
+          137,
+          140
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          166,
+          173
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Great Britain",
+        "span": [
+          253,
+          262
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Netherlands",
+        "span": [
+          311,
+          319
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Haverhill",
+        "span": [
+          125,
+          133
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Oberkochen",
+        "span": [
+          241,
+          249
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Almelo",
+        "span": [
+          304,
+          309
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "24 h",
+        "span": [
+          1015,
+          1021
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "1 h",
+        "span": [
+          419,
+          423
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "150 motions min-1",
+        "span": [
+          930,
+          942
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "2 , 6 , 24 , 48 , 168 , 336 , 672 , and 1344 h",
+        "span": [
+          1032,
+          1073
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sand",
+        "span": [
+          1998,
+          2002
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "sand",
+        "span": [
+          2148,
+          2152
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "sand",
+        "span": [
+          2342,
+          2346
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "sand",
+        "span": [
+          2645,
+          2649
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "sand",
+        "span": [
+          3180,
+          3184
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "sand",
+        "span": [
+          3267,
+          3271
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilPH": {"value": "pH of 7.5", "span": [344, 353]}}, {"soilPH": {"value": "pH 6", "span": [972, 976]}}]
+Gold: [{"soilTexture": {"value": "sand", "span": [1998, 2002]}}, {"soilTexture": {"value": "sand", "span": [2148, 2152]}}, {"soilTexture": {"value": "sand", "span": [2342, 2346]}}, {"soilTexture": {"value": "sand", "span": [2645, 2649]}}, {"soilTexture": {"value": "sand", "span": [3180, 3184]}}, {"soilTexture": {"value": "sand", "span": [3267, 3271]}}]
+
+Category: Location
+Predictions: [{"country": {"value": "USA", "span": [137, 140]}}, {"country": {"value": "Germany", "span": [166, 173]}}, {"country": {"value": "Great Britain", "span": [253, 262]}}, {"country": {"value": "Netherlands", "span": [311, 319]}}, {"city": {"value": "Haverhill", "span": [125, 133]}}, {"city": {"value": "Oberkochen", "span": [241, 249]}}, {"city": {"value": "Almelo", "span": [304, 309]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"duration": {"value": "24 h", "span": [1015, 1021]}}, {"duration": {"value": "1 h", "span": [419, 423]}}, {"duration": {"value": "150 motions min-1", "span": [930, 942]}}, {"duration": {"value": "2 , 6 , 24 , 48 , 168 , 336 , 672 , and 1344 h", "span": [1032, 1073]}}]
+Gold: []
+

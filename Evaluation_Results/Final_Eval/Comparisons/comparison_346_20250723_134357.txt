@@ -1,0 +1,103 @@
+=== Comparison for Item 346 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+
+
+ 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "0-30 cm",
+        "span": [
+          39,
+          45
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.8",
+        "span": [
+          98,
+          101
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2.5%",
+        "span": [
+          119,
+          123
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "city": {
+        "value": "Kigali",
+        "span": [
+          74,
+          79
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Rwanda",
+        "span": [
+          81,
+          87
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "June 1, 2022",
+        "span": [
+          142,
+          153
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "August 31, 2022",
+        "span": [
+          157,
+          170
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilDepth": {"value": "0-30 cm", "span": [39, 45]}}, {"soilPH": {"value": "6.8", "span": [98, 101]}}, {"soilOrganicCarbon": {"value": "2.5%", "span": [119, 123]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"city": {"value": "Kigali", "span": [74, 79]}}, {"country": {"value": "Rwanda", "span": [81, 87]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "June 1, 2022", "span": [142, 153]}}, {"endTime": {"value": "August 31, 2022", "span": [157, 170]}}]
+Gold: []
+

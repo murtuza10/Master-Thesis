@@ -1,0 +1,207 @@
+=== Comparison for Item 24 ===
+Timestamp: 20250808_165554
+
+=== Original Text ===
+Title : 
+ GHG - DB - Thuenen – Multi - variable experimental data set of agronomic data and gaseous soil emissions of energy crop cultivation at eight sites in Germany 
+
+ Abstract : 
+ The database ( GHG - DB - Thuenen ) contains gaseous emission data as well as agronomic variables and management activities for three years ( 2011/2012 – 2014/2015 ) at eight field trials in Germany derived from two joint research projects . The database was developed with Microsoft Access Database 2007 - 2016 and stores 43 million records . Multi - variable data sets consists of gas fluxes ( carbon dioxide , nitrous dioxide , methane and ammonia ) , crop parameters ( ontogenesis , aboveground biomass , grain and straw yield , N and C content , etc . ) , soil characteristics ( nitrogen content , ammonium - N , nitrate - N , bulk density etc . ) , continuously recorded meteorological variables ( air and soil temperatures , radiation , precipitation , etc . ) , management activities ( sowing , harvest , soil tillage , fertilization , etc . ) , and its metadata ( methods , further information about variables , etc . ) . In addition , N2 data were measured and analyzed . Also available are site - specific calculated C and N balances for the respective crops and crop rotations .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          66,
+          71
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          128,
+          133
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          242,
+          248
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Brandenburg",
+        "span": [
+          249,
+          258
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Uckermark",
+        "span": [
+          259,
+          267
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "April",
+        "span": [
+          173,
+          178
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "June",
+        "span": [
+          183,
+          187
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "between April and June 2019",
+        "span": [
+          173,
+          190
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          345,
+          350
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          556,
+          561
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          642,
+          647
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          881,
+          886
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          1285,
+          1292
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Brandenburg",
+        "span": [
+          1295,
+          1306
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Uckermark",
+        "span": [
+          1309,
+          1318
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Quillow",
+        "span": [
+          1321,
+          1328
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "April",
+        "span": [
+          904,
+          909
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "June 2019",
+        "span": [
+          914,
+          923
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [66, 71]}}, {"cropSpecies": {"value": "wheat", "span": [128, 133]}}]
+Gold: [{"cropSpecies": {"value": "wheat", "span": [345, 350]}}, {"cropSpecies": {"value": "wheat", "span": [556, 561]}}, {"cropSpecies": {"value": "wheat", "span": [642, 647]}}, {"cropSpecies": {"value": "wheat", "span": [881, 886]}}]
+
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": [242, 248]}}, {"region": {"value": "Brandenburg", "span": [249, 258]}}, {"city": {"value": "Uckermark", "span": [259, 267]}}]
+Gold: [{"country": {"value": "Germany", "span": [1285, 1292]}}, {"region": {"value": "Brandenburg", "span": [1295, 1306]}}, {"region": {"value": "Uckermark", "span": [1309, 1318]}}, {"city": {"value": "Quillow", "span": [1321, 1328]}}]
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "April", "span": [173, 178]}}, {"endTime": {"value": "June", "span": [183, 187]}}, {"duration": {"value": "between April and June 2019", "span": [173, 190]}}]
+Gold: [{"startTime": {"value": "April", "span": [904, 909]}}, {"endTime": {"value": "June 2019", "span": [914, 923]}}]
+

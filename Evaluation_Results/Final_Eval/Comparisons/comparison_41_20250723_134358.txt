@@ -1,0 +1,46 @@
+=== Comparison for Item 41 ===
+Timestamp: 20250723_134358
+
+=== Original Text ===
+The upper 50 cm are filled with the tested soils ; the lower 25 cm comprises a coarse - sandy drainage layer . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "depth",
+        "span": [
+          107,
+          112
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "75 cm",
+        "span": [
+          116,
+          121
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: []
+Gold: [{"soilDepth": {"value": "depth", "span": [107, 112]}}, {"soilDepth": {"value": "75 cm", "span": [116, 121]}}]
+

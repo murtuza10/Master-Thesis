@@ -1,0 +1,74 @@
+=== Comparison for Item 350 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+These conventions require annual calculations of the emissions of the respective gases and air pollutants . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          25,
+          31
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "European Union",
+        "span": [
+          75,
+          91
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "winter",
+        "span": [
+          41,
+          49
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "winter",
+        "span": [
+          41,
+          49
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [25, 31]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "European Union", "span": [75, 91]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "winter", "span": [41, 49]}}, {"endTime": {"value": "winter", "span": [41, 49]}}]
+Gold: []
+

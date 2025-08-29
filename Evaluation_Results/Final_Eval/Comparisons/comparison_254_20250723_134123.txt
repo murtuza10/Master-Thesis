@@ -1,0 +1,191 @@
+=== Comparison for Item 254 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+It has a neutral pH ( 7.0–7.4 ) and an appropriate P and K supply ( 45–70 mg kg-1 and 130–185 mg kg-1 in calcium - acetate - lactate extract , respectively ) . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          0,
+          5
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loess chernozem",
+        "span": [
+          0,
+          12
+        ]
+      },
+      "soilReferenceGroup": {
+        "value": "limestone",
+        "span": [
+          13,
+          20
+        ]
+      },
+      "soilDepth": {
+        "value": "100 cm",
+        "span": [
+          21,
+          25
+        ]
+      },
+      "soilBulkDensity": {
+        "value": "1.4 g / cm 3",
+        "span": [
+          26,
+          35
+        ]
+      },
+      "soilPH": {
+        "value": "7.8",
+        "span": [
+          84,
+          87
+        ]
+      },
+      "soilOrganicCarbon": {
+        "value": "30 g / kg",
+        "span": [
+          98,
+          104
+        ]
+      },
+      "soilAvailableNitrogen": {
+        "value": "160 kg / ha",
+        "span": [
+          44,
+          52
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "unknown",
+        "span": [
+          -1,
+          -1
+        ]
+      },
+      "region": {
+        "value": "unknown",
+        "span": [
+          -1,
+          -1
+        ]
+      },
+      "city": {
+        "value": "unknown",
+        "span": [
+          -1,
+          -1
+        ]
+      },
+      "latitude": {
+        "value": "unknown",
+        "span": [
+          -1,
+          -1
+        ]
+      },
+      "longitude": {
+        "value": "unknown",
+        "span": [
+          -1,
+          -1
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "unknown",
+        "span": [
+          -1,
+          -1
+        ]
+      },
+      "endTime": {
+        "value": "unknown",
+        "span": [
+          -1,
+          -1
+        ]
+      },
+      "duration": {
+        "value": "unknown",
+        "span": [
+          -1,
+          -1
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "22 % clay",
+        "span": [
+          100,
+          109
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "70 % silt",
+        "span": [
+          112,
+          121
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "8 % sand",
+        "span": [
+          126,
+          134
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [0, 5]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loess chernozem", "span": [0, 12]}, "soilReferenceGroup": {"value": "limestone", "span": [13, 20]}, "soilDepth": {"value": "100 cm", "span": [21, 25]}, "soilBulkDensity": {"value": "1.4 g / cm 3", "span": [26, 35]}, "soilPH": {"value": "7.8", "span": [84, 87]}, "soilOrganicCarbon": {"value": "30 g / kg", "span": [98, 104]}, "soilAvailableNitrogen": {"value": "160 kg / ha", "span": [44, 52]}}]
+Gold: [{"soilTexture": {"value": "22 % clay", "span": [100, 109]}}, {"soilTexture": {"value": "70 % silt", "span": [112, 121]}}, {"soilTexture": {"value": "8 % sand", "span": [126, 134]}}]
+
+Category: Location
+Predictions: [{"country": {"value": "unknown", "span": [-1, -1]}, "region": {"value": "unknown", "span": [-1, -1]}, "city": {"value": "unknown", "span": [-1, -1]}, "latitude": {"value": "unknown", "span": [-1, -1]}, "longitude": {"value": "unknown", "span": [-1, -1]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "unknown", "span": [-1, -1]}, "endTime": {"value": "unknown", "span": [-1, -1]}, "duration": {"value": "unknown", "span": [-1, -1]}}]
+Gold: []
+

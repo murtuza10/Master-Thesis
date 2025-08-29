@@ -1,0 +1,55 @@
+=== Comparison for Item 22 ===
+Timestamp: 20250723_134124
+
+=== Original Text ===
+Alp with mean temperature 7.5 ° C and annual precipitation 1042 mm . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          236,
+          243
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Kraichgau",
+        "span": [
+          267,
+          276
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Swabian .",
+        "span": [
+          382,
+          391
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Location
+Predictions: []
+Gold: [{"country": {"value": "Germany", "span": [236, 243]}}, {"region": {"value": "Kraichgau", "span": [267, 276]}}, {"region": {"value": "Swabian .", "span": [382, 391]}}]
+

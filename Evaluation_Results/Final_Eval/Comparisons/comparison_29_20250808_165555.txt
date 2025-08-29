@@ -1,0 +1,149 @@
+=== Comparison for Item 29 ===
+Timestamp: 20250808_165555
+
+=== Original Text ===
+Title : 
+ Data to : Single and combined effects of Drosophila suzukii and D. melanogaster on sour rot development in viticulture 
+
+ Abstract : 
+ Sour rot is a disease complex that causes serious damage in viticulture . The common vinegar fly Drosophila melanogaster ( Diptera : Drosophilidae ) is associated with sour rot in overripe or otherwise damaged grapes . Drosophila suzukii ( Diptera : Drosophilidae ) is an invasive species , which is suspected to induce sour rot in previously undamaged grapes due to the flies ’ ability to infest healthy , undamaged soft fruits with its serrated ovipositor . As a consequence , infection of healthy grapes by D. suzukii may facilitate the colonization by D. melanogaster . 
+  The aim of this study was to investigate the single and combined influence of D. suzukii and D. melanogaster on sour rot development under near - natural conditions in the vineyard , along with laboratory experiments under controlled climate . For that , manipulative experiments with gauze - bagged grapes comprising four different treatments : 1 ) D. suzukii , 2 ) D. melanogaster , 3 ) both Drosophila species combined and 4 ) without flies as control were performed in 2017 and 2018 . Subsequently , sour rot development was determined by measuring the volatile acidity levels . 
+  All experiments were performed around the harvest , started with the adding of the flies and ended with the determination of the volatile acid levels ( as an indicator for sour rot ) . Field experiments were set up in a randomized block design : Blocks comprised four different treatments and were repeated 10 times and randomly distributed over the vineyard . For the laboratory experiments , the same experimental set up was chosen with four treatments repeated 10 times and randomly distributed in the climatic chamber . Therefore , one grape cluster per sample was placed in a plastic box . For all experiments n = 40 samples ( 4 treatments x 10 replicates ) were used to check for differences in volatile acidity levels between the treatments performing variance analyses followed by post hoc tests . 
+  The raw data supporting the results in the paper are presented in three datasets referring to the five figures in the publication . A legend , explaining the different variables used in the datasets is given in a separate document . 
+  Dataset 1 is from the semi - field experiments in 2017 and underlies figure 1 , 2 and 3 and related analyses . In two experimental repetitions starting at 30.8.2017 and 6.9.2017 and ending three weeks later at 20.9.2017 and 25.9.2017 , grapes were exposed to the four different treatments in gauze sleeves in the field , followed by an incubation in the laboratory . In this experiment , additionally to the volatile acidity of the grape clusters , the fly emergence rates and grape cluster weight were determined . 
+  Dataset 2 is from the field experiments in 2018 and underlies figure 4 and related analyses . The experimental setup was same as in dataset 1 , but the experiment took place completely in the vineyard . Again , two experimental repetitions were performed starting at 24.8.2018 and 31.8.2018 and ending with the determination of volatile acidity at 13.9.2018 and 20.9.2018 . 
+  Dataset 3 is from the laboratory experiments in 2018 and underlies figure 5 and related analyses . For that , two laboratory repetitions were performed starting at 29.8.2018 and 4.9.2018 by placing one grape cluster per sample in a plastic box . The experimental setup was the same as in the field experiments with four treatments repeated 10 times and distributed randomly in the climatic chamber . The experiment ended after two weeks with the determination of volatile acidity of the grape cluster at 12.9.2018 and 29.9.2018 respectively .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "True",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "True",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "True",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "True",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "German",
+        "span": [
+          65,
+          71
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          175,
+          182
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "German",
+        "span": [
+          958,
+          964
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          981,
+          988
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "federal states",
+        "span": [
+          997,
+          1011
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "1990",
+        "span": [
+          84,
+          88
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2017",
+        "span": [
+          91,
+          95
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "1990",
+        "span": [
+          1025,
+          1029
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2017",
+        "span": [
+          1032,
+          1036
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Location
+Predictions: [{"country": {"value": "True", "span": []}}, {"country": {"value": "True", "span": []}}, {"country": {"value": "True", "span": []}}, {"region": {"value": "True", "span": []}}]
+Gold: [{"country": {"value": "German", "span": [65, 71]}}, {"country": {"value": "Germany", "span": [175, 182]}}, {"country": {"value": "German", "span": [958, 964]}}, {"country": {"value": "Germany", "span": [981, 988]}}, {"region": {"value": "federal states", "span": [997, 1011]}}]
+
+Category: Time Statement
+Predictions: []
+Gold: [{"startTime": {"value": "1990", "span": [84, 88]}}, {"endTime": {"value": "2017", "span": [91, 95]}}, {"startTime": {"value": "1990", "span": [1025, 1029]}}, {"endTime": {"value": "2017", "span": [1032, 1036]}}]
+

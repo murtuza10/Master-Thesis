@@ -1,0 +1,78 @@
+=== Comparison for Item 154 ===
+Timestamp: 20250723_134355
+
+=== Original Text ===
+Title : 
+ Flower strip data Germany 2021 
+
+ Abstract : 
+ The data concerns 23 flower strips , sampled in 2019 in Germany . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "5.5 to 6.5",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "1.5% to 3.0%",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "state of Iowa",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "USA",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "April 1, 2022",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "September 30, 2022",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilPH": {"value": "5.5 to 6.5", "span": []}}, {"soilOrganicCarbon": {"value": "1.5% to 3.0%", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "state of Iowa", "span": []}}, {"country": {"value": "USA", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "April 1, 2022", "span": []}}, {"endTime": {"value": "September 30, 2022", "span": []}}]
+Gold: []
+

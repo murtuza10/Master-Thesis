@@ -1,0 +1,97 @@
+=== Comparison for Item 108 ===
+Timestamp: 20250723_134358
+
+=== Original Text ===
+Die Dokumente sind auf Anfrage verfügbar . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Weizen",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Raps",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Gerste",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sandig-lehmig",
+        "span": []
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "lehmig-sandig",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "Nordrhein-Westfalen",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2020",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "2050",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "Weizen", "span": []}}, {"cropSpecies": {"value": "Raps", "span": []}}, {"cropSpecies": {"value": "Gerste", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "sandig-lehmig", "span": []}}, {"soilTexture": {"value": "lehmig-sandig", "span": []}}, {"soilPH": {"value": "6.5", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "Nordrhein-Westfalen", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2020", "span": []}}, {"endTime": {"value": "2050", "span": []}}]
+Gold: []
+

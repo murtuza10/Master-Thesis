@@ -1,0 +1,133 @@
+=== Comparison for Item 245 ===
+Timestamp: 20250723_131816
+
+=== Original Text ===
+Can the targeted use of predatory mites contain spider mite hotspots ? 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "spider mites",
+        "span": [
+          67,
+          83
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "1.8 g / cm 3",
+        "span": [
+          104,
+          124
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "1.4 %",
+        "span": [
+          125,
+          140
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": [
+          141,
+          146
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "United States",
+        "span": [
+          95,
+          116
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "the region",
+        "span": [
+          163,
+          172
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "the region of the United States",
+        "span": [
+          173,
+          192
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "40.0 degrees",
+        "span": [
+          193,
+          205
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "121.5 degrees",
+        "span": [
+          206,
+          219
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "2 years",
+        "span": [
+          220,
+          228
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "spider mites", "span": [67, 83]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "1.8 g / cm 3", "span": [104, 124]}}, {"soilOrganicCarbon": {"value": "1.4 %", "span": [125, 140]}}, {"soilPH": {"value": "6.5", "span": [141, 146]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "United States", "span": [95, 116]}}, {"region": {"value": "the region", "span": [163, 172]}}, {"city": {"value": "the region of the United States", "span": [173, 192]}}, {"latitude": {"value": "40.0 degrees", "span": [193, 205]}}, {"longitude": {"value": "121.5 degrees", "span": [206, 219]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"duration": {"value": "2 years", "span": [220, 228]}}]
+Gold: []
+

@@ -1,0 +1,33 @@
+=== Comparison for Item 74 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+Abstract_text_2 : 
+  Child table of long - term field experiment ' Organic and Mineral Nitrogen Fertilization Experiment ( IOSDV ) ' .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "late summer 2011",
+        "span": [
+          36,
+          52
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Time Statement
+Predictions: [{"startTime": {"value": "late summer 2011", "span": [36, 52]}}]
+Gold: []
+

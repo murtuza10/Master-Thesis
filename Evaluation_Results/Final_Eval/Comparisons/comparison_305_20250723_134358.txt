@@ -1,0 +1,91 @@
+=== Comparison for Item 305 ===
+Timestamp: 20250723_134358
+
+=== Original Text ===
+The pesticide data presented here were acquired in four ditches in Lower Saxony , Germany ( three ditches located in apple plantations , one ditch located in grassland ) between 2001 and 2003 . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loamy sand",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "1.2%",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "Hesse",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "March 2021",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "October 2021",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loamy sand", "span": []}}, {"soilPH": {"value": "6.5", "span": []}}, {"soilOrganicCarbon": {"value": "1.2%", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": []}}, {"region": {"value": "Hesse", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "March 2021", "span": []}}, {"endTime": {"value": "October 2021", "span": []}}]
+Gold: []
+

@@ -1,0 +1,78 @@
+=== Comparison for Item 7 ===
+Timestamp: 20250723_131813
+
+=== Original Text ===
+With an increasing number of GCFs involved , it becomes more and more complicated to predict effects on ecosystems . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "crop species",
+        "span": [
+          37,
+          51
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "crop variety",
+        "span": [
+          56,
+          71
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "pH",
+        "span": [
+          69,
+          71
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "soil organic carbon",
+        "span": [
+          76,
+          97
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "soil available nitrogen",
+        "span": [
+          98,
+          121
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "crop species", "span": [37, 51]}}, {"cropVariety": {"value": "crop variety", "span": [56, 71]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilPH": {"value": "pH", "span": [69, 71]}}, {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [76, 97]}}, {"soilAvailableNitrogen": {"value": "soil available nitrogen", "span": [98, 121]}}]
+Gold: []
+

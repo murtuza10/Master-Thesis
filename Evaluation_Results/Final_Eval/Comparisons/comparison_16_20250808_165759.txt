@@ -1,0 +1,76 @@
+=== Comparison for Item 16 ===
+Timestamp: 20250808_165759
+
+=== Original Text ===
+Title : 
+  Fusarium abundance and diversity and Alternaria abundance on weeds and wheat ears in transitions zones between kettle hole edge and field and field edge and field .        - Abundance of Fusaria and Alternaria on weed plants 
+ Abstract_text_1 : 
+  Fusarium abundance and diversity and Alternaria abundance on weeds and wheat ears in transitions zones between kettle hole edge and field and field edge and field .        - Abundance of Fusaria and Alternaria on weed plants . 
+ Abstract_text_2 : 
+  The table contains the abundances of Fusarium and Alternaria detected on weed plants determined by qPCR and culture - dependent methods ( potato dextrose agar with chloramphenicol ) . General description see mother table : ( https://doi.org/10.4228/zalf-zh6h-df38 ) ; Related datasets are listed in the metadata element ' Related Identifier ' . Dataset version 1.0 
+ Keywords : 
+  Soil , Fusarium , Fusarium culmorum , Fusarium equiseti , Fusarium oxysporum , Fusarium sporotrichioides , Gibberella zeae , Fusarium solani , Alternaria , winter wheat , weeds , mycotoxins , trichothecenes , zearalenone , quantitative polymerase chain reaction , kettle holes , glacial lakes , ponds , pathogenic fungi , pathogens , agricultural sciences , agricultural landscape , opendata , Boden , Lebensräume und Biotope , Verteilung der Arten , Landwirtschaft , Wissenschaft , Bodennutzung , Germany , Brandenburg , Uckermark , Quillow
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Wheat",
+        "span": [
+          10,
+          15
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          234,
+          239
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2019",
+        "span": [
+          176,
+          180
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2020",
+        "span": [
+          185,
+          189
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropSpecies": {"value": "Wheat", "span": [10, 15]}}, {"cropSpecies": {"value": "wheat", "span": [234, 239]}}]
+
+Category: Time Statement
+Predictions: []
+Gold: [{"startTime": {"value": "2019", "span": [176, 180]}}, {"endTime": {"value": "2020", "span": [185, 189]}}]
+

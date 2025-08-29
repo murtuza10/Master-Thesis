@@ -1,0 +1,97 @@
+=== Comparison for Item 119 ===
+Timestamp: 20250723_134358
+
+=== Original Text ===
+https://iiasa.ac.at/models-tools-data/ssp ( Accessed on November 2023 ) [ 5 ] World Trade Organization , 2024 . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "6.8",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.3 g/cm³",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "1.5%",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "South Asia",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "25.6789",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "87.4567",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "April",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "June",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "maize", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilPH": {"value": "6.8", "span": []}}, {"soilBulkDensity": {"value": "1.3 g/cm³", "span": []}}, {"soilOrganicCarbon": {"value": "1.5%", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "South Asia", "span": []}}, {"latitude": {"value": "25.6789", "span": []}}, {"longitude": {"value": "87.4567", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "April", "span": []}}, {"endTime": {"value": "June", "span": []}}]
+Gold: []
+

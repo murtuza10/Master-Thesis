@@ -1,0 +1,78 @@
+=== Comparison for Item 275 ===
+Timestamp: 20250723_131813
+
+=== Original Text ===
+Diffraction data were recorded from 4.6 ° to 84.9 ° 2ϴ with a step - size of 0.0131 , a step time of 58.4 s , and generator settings of 40 kV and 40 mA. Prior to desorption , the hydroxides were coated on silica sand ( particle size 0.2 – 0.8 mm , Merck Millipore ) to ensure a similar sample treatment ( e.g. centrifugation times and revolutions ) . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "Cu",
+        "span": [
+          69,
+          71
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "0.15418",
+        "span": [
+          87,
+          90
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "nm",
+        "span": [
+          92,
+          94
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Netherlands",
+        "span": [
+          81,
+          93
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Almelo",
+        "span": [
+          76,
+          83
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "Cu", "span": [69, 71]}}, {"soilDepth": {"value": "0.15418", "span": [87, 90]}}, {"soilPH": {"value": "nm", "span": [92, 94]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Netherlands", "span": [81, 93]}}, {"region": {"value": "Almelo", "span": [76, 83]}}]
+Gold: []
+

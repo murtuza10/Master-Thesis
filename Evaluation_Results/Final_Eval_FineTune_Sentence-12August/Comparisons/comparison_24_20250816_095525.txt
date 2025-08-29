@@ -1,0 +1,32 @@
+=== Comparison for Item 24 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+Alp with mean temperature 7.5 ° C and annual precipitation 1042 mm .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "grapes",
+        "span": [
+          36,
+          42
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "grapes", "span": [36, 42]}}]
+Gold: []
+

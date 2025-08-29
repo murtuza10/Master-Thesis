@@ -1,0 +1,32 @@
+=== Comparison for Item 124 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+Integrated Database ( IDB ) .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "1963",
+        "span": [
+          58,
+          62
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Time Statement
+Predictions: [{"startTime": {"value": "1963", "span": [58, 62]}}]
+Gold: []
+

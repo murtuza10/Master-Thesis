@@ -1,0 +1,55 @@
+=== Comparison for Item 128 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+2024 : Bio - based Building Blocks and Polymers – Global Capacities , Production and Trends 2023–2028 .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "grape",
+        "span": [
+          61,
+          66
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "29.8.2018",
+        "span": [
+          37,
+          45
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "4.9.2018",
+        "span": [
+          50,
+          57
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "grape", "span": [61, 66]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "29.8.2018", "span": [37, 45]}}, {"startTime": {"value": "4.9.2018", "span": [50, 57]}}]
+Gold: []
+

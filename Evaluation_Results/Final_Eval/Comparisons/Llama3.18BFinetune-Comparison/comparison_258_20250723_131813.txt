@@ -1,0 +1,124 @@
+=== Comparison for Item 258 ===
+Timestamp: 20250723_131813
+
+=== Original Text ===
+Conservation tillage with a cultivator ( CT ; 10 cm flat non - inversion soil loosening ) is compared to sub - plots with conventional tillage ( MP ; mould - board plough , carrier board with combined alternating ploughshares , ploughing depth 30 cm , incl . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "corn",
+        "span": [
+          0,
+          24
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "soybeans",
+        "span": [
+          0,
+          24
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          0,
+          24
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Winter Wheat",
+        "span": [
+          39,
+          52
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": [
+          34,
+          37
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "United States",
+        "span": [
+          46,
+          61
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "38.5° N",
+        "span": [
+          42,
+          51
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "90.5° W",
+        "span": [
+          52,
+          61
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "180 days",
+        "span": [
+          45,
+          56
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "corn", "span": [0, 24]}}, {"cropSpecies": {"value": "soybeans", "span": [0, 24]}}, {"cropSpecies": {"value": "wheat", "span": [0, 24]}}, {"cropVariety": {"value": "Winter Wheat", "span": [39, 52]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilPH": {"value": "6.5", "span": [34, 37]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "United States", "span": [46, 61]}}, {"latitude": {"value": "38.5° N", "span": [42, 51]}}, {"longitude": {"value": "90.5° W", "span": [52, 61]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"duration": {"value": "180 days", "span": [45, 56]}}]
+Gold: []
+

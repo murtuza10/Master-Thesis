@@ -1,0 +1,155 @@
+Item 2:
+              precision    recall  f1-score   support
+
+     country       0.00      0.00      0.00         1
+
+   micro avg       0.00      0.00      0.00         1
+   macro avg       0.00      0.00      0.00         1
+weighted avg       0.00      0.00      0.00         1
+
+Item 24:
+              precision    recall  f1-score   support
+
+     country       0.00      0.00      0.00         1
+
+   micro avg       0.00      0.00      0.00         1
+   macro avg       0.00      0.00      0.00         1
+weighted avg       0.00      0.00      0.00         1
+
+Item 26:
+              precision    recall  f1-score   support
+
+     country       0.00      0.00      0.00         1
+ cropSpecies       0.00      0.00      0.00         1
+
+   micro avg       0.00      0.00      0.00         2
+   macro avg       0.00      0.00      0.00         2
+weighted avg       0.00      0.00      0.00         2
+
+Item 22:
+              precision    recall  f1-score   support
+
+     country       1.00      1.00      1.00         1
+
+   micro avg       1.00      1.00      1.00         1
+   macro avg       1.00      1.00      1.00         1
+weighted avg       1.00      1.00      1.00         1
+
+Item 28:
+              precision    recall  f1-score   support
+
+     country       0.00      0.00      0.00         1
+   startTime       0.00      0.00      0.00         1
+
+   micro avg       0.00      0.00      0.00         2
+   macro avg       0.00      0.00      0.00         2
+weighted avg       0.00      0.00      0.00         2
+
+Item 27:
+              precision    recall  f1-score   support
+
+     country       0.00      0.00      0.00         1
+     endTime       0.00      0.00      0.00         1
+
+   micro avg       0.00      0.00      0.00         2
+   macro avg       0.00      0.00      0.00         2
+weighted avg       0.00      0.00      0.00         2
+
+Item 29:
+              precision    recall  f1-score   support
+
+     endTime       0.00      0.00      0.00         1
+
+   micro avg       0.00      0.00      0.00         1
+   macro avg       0.00      0.00      0.00         1
+weighted avg       0.00      0.00      0.00         1
+
+Item 7:
+              precision    recall  f1-score   support
+
+     country       0.00      0.00      0.00         1
+
+   micro avg       0.00      0.00      0.00         1
+   macro avg       0.00      0.00      0.00         1
+weighted avg       0.00      0.00      0.00         1
+
+Item 25:
+              precision    recall  f1-score   support
+
+     country       0.00      0.00      0.00         1
+
+   micro avg       0.00      0.00      0.00         1
+   macro avg       0.00      0.00      0.00         1
+weighted avg       0.00      0.00      0.00         1
+
+Item 13:
+                   precision    recall  f1-score   support
+
+soilOrganicCarbon       0.00      0.00      0.00         1
+
+        micro avg       0.00      0.00      0.00         1
+        macro avg       0.00      0.00      0.00         1
+     weighted avg       0.00      0.00      0.00         1
+
+Item 6:
+              precision    recall  f1-score   support
+
+ cropSpecies       1.00      1.00      1.00         1
+
+   micro avg       1.00      1.00      1.00         1
+   macro avg       1.00      1.00      1.00         1
+weighted avg       1.00      1.00      1.00         1
+
+Item 1:
+              precision    recall  f1-score   support
+
+ cropSpecies       0.00      0.00      0.00         1
+
+   micro avg       0.00      0.00      0.00         1
+   macro avg       0.00      0.00      0.00         1
+weighted avg       0.00      0.00      0.00         1
+
+Item 15:
+              precision    recall  f1-score   support
+
+   startTime       0.00      0.00      0.00         1
+
+   micro avg       0.00      0.00      0.00         1
+   macro avg       0.00      0.00      0.00         1
+weighted avg       0.00      0.00      0.00         1
+
+Item 16:
+              precision    recall  f1-score   support
+
+ cropSpecies       1.00      1.00      1.00         1
+
+   micro avg       1.00      1.00      1.00         1
+   macro avg       1.00      1.00      1.00         1
+weighted avg       1.00      1.00      1.00         1
+
+Item 19:
+              precision    recall  f1-score   support
+
+   soilDepth       0.00      0.00      0.00         1
+
+   micro avg       0.00      0.00      0.00         1
+   macro avg       0.00      0.00      0.00         1
+weighted avg       0.00      0.00      0.00         1
+
+
+📊 Overall Results:
+                   precision    recall  f1-score   support
+
+          country       1.00      0.12      0.22         8
+      cropSpecies       1.00      0.50      0.67         4
+          endTime       0.00      0.00      0.00         2
+        soilDepth       0.00      0.00      0.00         1
+soilOrganicCarbon       0.00      0.00      0.00         1
+        startTime       0.00      0.00      0.00         2
+
+        micro avg       1.00      0.17      0.29        18
+        macro avg       0.33      0.10      0.15        18
+     weighted avg       0.67      0.17      0.25        18
+
+Accuracy: 0.9985
+F1: 0.2857

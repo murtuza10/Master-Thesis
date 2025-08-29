@@ -1,0 +1,46 @@
+=== Comparison for Item 241 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+The highly sensitive HRM real - time PCR assay was used for the quantification of the spider mites . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2010",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "2015",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "5 years",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2010", "span": []}}, {"endTime": {"value": "2015", "span": []}}, {"duration": {"value": "5 years", "span": []}}]
+Gold: []
+

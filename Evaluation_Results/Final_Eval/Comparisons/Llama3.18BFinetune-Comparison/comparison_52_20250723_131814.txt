@@ -1,0 +1,73 @@
+=== Comparison for Item 52 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+C and N in the soil samples and N in the plant samples were analysed annually . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "900",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "varies",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "UK",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "1995",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "900", "span": []}}, {"soilPH": {"value": "varies", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "UK", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "1995", "span": []}}]
+Gold: []
+

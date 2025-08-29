@@ -1,0 +1,141 @@
+=== Comparison for Item 310 ===
+Timestamp: 20250723_131816
+
+=== Original Text ===
+Title : 
+ Trap captures data from the 7 - year Drosophila suzukii monitoring program in southwest Germany 
+
+ Abstract : 
+ A relatively recent invasive pest of soft - skinned fruits in Europe is Drosophila suzukii ( Spotted wing drosophila - SWD ) . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          42,
+          49
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "soybean",
+        "span": [
+          76,
+          85
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "winter",
+        "span": [
+          54,
+          62
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "0 to 10 cm",
+        "span": [
+          90,
+          101
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.2 g/cm³",
+        "span": [
+          113,
+          125
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": [
+          131,
+          136
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "120 kg/ha",
+        "span": [
+          140,
+          153
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "United States",
+        "span": [
+          5,
+          22
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Illinois",
+        "span": [
+          33,
+          41
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "40.0° N",
+        "span": [
+          166,
+          176
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "88.0° W",
+        "span": [
+          177,
+          188
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [42, 49]}}, {"cropSpecies": {"value": "soybean", "span": [76, 85]}}, {"cropVariety": {"value": "winter", "span": [54, 62]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilDepth": {"value": "0 to 10 cm", "span": [90, 101]}}, {"soilBulkDensity": {"value": "1.2 g/cm³", "span": [113, 125]}}, {"soilPH": {"value": "6.5", "span": [131, 136]}}, {"soilAvailableNitrogen": {"value": "120 kg/ha", "span": [140, 153]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "United States", "span": [5, 22]}}, {"region": {"value": "Illinois", "span": [33, 41]}}, {"latitude": {"value": "40.0° N", "span": [166, 176]}}, {"longitude": {"value": "88.0° W", "span": [177, 188]}}]
+Gold: []
+

@@ -1,0 +1,138 @@
+=== Comparison for Item 42 ===
+Timestamp: 20250723_131815
+
+=== Original Text ===
+The three soil types are Arenic Luvisol ( weak loamy sand ) , Gleyic Fluvisol ( heavy sandy loam ) and Luvic - Phaeozem ( medium clayey silt ) according to the World Reference Base – WRB ( and the Bodenkundliche Kartieranleitung – KA4 ) . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sandy loam",
+        "span": []
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "Typic Hapludalf ( 7 )",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "50 cm",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.56 g / cm 3",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.3",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "14.2 g / kg",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "20.9 mg / kg",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Canada",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "45.0",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "75.0",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "50 cm",
+        "span": [
+          10,
+          15
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "25 cm",
+        "span": [
+          61,
+          66
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "coarse - sandy",
+        "span": [
+          79,
+          93
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}, {"cropSpecies": {"value": "barley", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "sandy loam", "span": []}}, {"soilReferenceGroup": {"value": "Typic Hapludalf ( 7 )", "span": []}}, {"soilDepth": {"value": "50 cm", "span": []}}, {"soilBulkDensity": {"value": "1.56 g / cm 3", "span": []}}, {"soilPH": {"value": "6.3", "span": []}}, {"soilOrganicCarbon": {"value": "14.2 g / kg", "span": []}}, {"soilAvailableNitrogen": {"value": "20.9 mg / kg", "span": []}}]
+Gold: [{"soilDepth": {"value": "50 cm", "span": [10, 15]}}, {"soilDepth": {"value": "25 cm", "span": [61, 66]}}, {"soilTexture": {"value": "coarse - sandy", "span": [79, 93]}}]
+
+Category: Location
+Predictions: [{"country": {"value": "Canada", "span": []}}, {"latitude": {"value": "45.0", "span": []}}, {"longitude": {"value": "75.0", "span": []}}]
+Gold: []
+

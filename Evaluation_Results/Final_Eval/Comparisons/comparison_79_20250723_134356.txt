@@ -1,0 +1,172 @@
+=== Comparison for Item 79 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+Title : 
+ Dataset : Residues of boscalid and pyraclostrobin in several bee matrices along the transfer pathway from plants to larvae 
+
+ Abstract : 
+ The data set contains the raw data for the corresponding publication Wueppenhorst et al . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "pH",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "organic carbon",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "Märkisch Oderland",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "52.498272",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "13.696848",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "May 1, 2019",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "September 30, 2019",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "150 days",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          129,
+          134
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Lolium hybridum",
+        "span": [
+          151,
+          166
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Lolium multiflorum",
+        "span": [
+          169,
+          187
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          437,
+          444
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Brandenburg",
+        "span": [
+          447,
+          458
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "M채rkisch Oderland",
+        "span": [
+          461,
+          478
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "M체ncheberg",
+        "span": [
+          481,
+          491
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: [{"cropSpecies": {"value": "wheat", "span": [129, 134]}}, {"cropSpecies": {"value": "Lolium hybridum", "span": [151, 166]}}, {"cropSpecies": {"value": "Lolium multiflorum", "span": [169, 187]}}]
+
+Category: Soil
+Predictions: [{"soilPH": {"value": "pH", "span": []}}, {"soilOrganicCarbon": {"value": "organic carbon", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "Märkisch Oderland", "span": []}}, {"country": {"value": "Germany", "span": []}}, {"latitude": {"value": "52.498272", "span": []}}, {"longitude": {"value": "13.696848", "span": []}}]
+Gold: [{"country": {"value": "Germany", "span": [437, 444]}}, {"region": {"value": "Brandenburg", "span": [447, 458]}}, {"region": {"value": "M채rkisch Oderland", "span": [461, 478]}}, {"city": {"value": "M체ncheberg", "span": [481, 491]}}]
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "May 1, 2019", "span": []}}, {"endTime": {"value": "September 30, 2019", "span": []}}, {"duration": {"value": "150 days", "span": []}}]
+Gold: []
+

@@ -1,0 +1,32 @@
+=== Comparison for Item 160 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+In all files , " Location " is the ID of the flower strips .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "2017",
+        "span": [
+          45,
+          49
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Time Statement
+Predictions: [{"duration": {"value": "2017", "span": [45, 49]}}]
+Gold: []
+

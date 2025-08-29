@@ -1,0 +1,103 @@
+=== Comparison for Item 89 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+Title : 
+ Datensatz mit Fragebögen zur Analyse von Lebensmittelverlusten bei Obst und Gemüse auf Erzeugerebene und in der Wertschöpfungskette 
+
+ Abstract : 
+ Der Datensatz enthält 8 Fragebögen für persönliche Interviews mit Entscheidungstragenden auf Erzeugerebene und in der Wertschöpfungskette zur Analyse der Lebensmittelverluste : - i m Freilandanbau von Möhre , Salat , Apfel und Erdbeere , - i m geschützten Anbau von Erdbeere und Himbeere und - in Verarbeitung und Lebensmitteleinzelhandel 
+
+ 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "alfalfa",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "tomatoes",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sandy loam",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "1.2%",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.4 g/cm³",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "California",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2015",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "alfalfa", "span": []}}, {"cropSpecies": {"value": "wheat", "span": []}}, {"cropSpecies": {"value": "tomatoes", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "sandy loam", "span": []}}, {"soilPH": {"value": "6.5", "span": []}}, {"soilOrganicCarbon": {"value": "1.2%", "span": []}}, {"soilBulkDensity": {"value": "1.4 g/cm³", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "California", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2015", "span": []}}]
+Gold: []
+

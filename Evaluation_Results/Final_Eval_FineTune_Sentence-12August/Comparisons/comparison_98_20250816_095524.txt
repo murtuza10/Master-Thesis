@@ -1,0 +1,86 @@
+=== Comparison for Item 98 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+Die Szenarien betreffen sowohl den landwirtschaftlichen als auch den forstwirtschaftlichen Sektor .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "capitata",
+        "span": [
+          0,
+          9
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "carrot",
+        "span": [
+          15,
+          21
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "cucumber",
+        "span": [
+          27,
+          35
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "leek",
+        "span": [
+          41,
+          45
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "celery",
+        "span": [
+          51,
+          57
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "f. alba",
+        "span": [
+          10,
+          17
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "var.",
+        "span": [
+          60,
+          63
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "capitata", "span": [0, 9]}}, {"cropSpecies": {"value": "carrot", "span": [15, 21]}}, {"cropSpecies": {"value": "cucumber", "span": [27, 35]}}, {"cropSpecies": {"value": "leek", "span": [41, 45]}}, {"cropSpecies": {"value": "celery", "span": [51, 57]}}, {"cropVariety": {"value": "f. alba", "span": [10, 17]}}, {"cropVariety": {"value": "var.", "span": [60, 63]}}]
+Gold: []
+

@@ -1,0 +1,127 @@
+=== Comparison for Item 249 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+Quantification of spider mites in the samples was conducted by HRM real - time PCR ( spider mite number/ 100 g sample ) . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "leaves",
+        "span": [
+          0,
+          5
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay loam",
+        "span": [
+          47,
+          56
+        ]
+      },
+      "soilPH": {
+        "value": "7.1",
+        "span": [
+          114,
+          117
+        ]
+      },
+      "soilBulkDensity": {
+        "value": "1.2 g / cm 3",
+        "span": [
+          119,
+          134
+        ]
+      },
+      "soilAvailableNitrogen": {
+        "value": "23.9 kg / ha",
+        "span": [
+          146,
+          162
+        ]
+      },
+      "soilOrganicCarbon": {
+        "value": "26.1 g / kg",
+        "span": [
+          184,
+          200
+        ]
+      },
+      "soilReferenceGroup": {
+        "value": "one",
+        "span": [
+          227,
+          231
+        ]
+      },
+      "soilDepth": {
+        "value": "50 cm",
+        "span": [
+          234,
+          240
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "latitude": {
+        "value": "",
+        "span": []
+      },
+      "longitude": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "",
+        "span": []
+      },
+      "endTime": {
+        "value": "",
+        "span": []
+      },
+      "duration": {
+        "value": "",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "leaves", "span": [0, 5]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay loam", "span": [47, 56]}, "soilPH": {"value": "7.1", "span": [114, 117]}, "soilBulkDensity": {"value": "1.2 g / cm 3", "span": [119, 134]}, "soilAvailableNitrogen": {"value": "23.9 kg / ha", "span": [146, 162]}, "soilOrganicCarbon": {"value": "26.1 g / kg", "span": [184, 200]}, "soilReferenceGroup": {"value": "one", "span": [227, 231]}, "soilDepth": {"value": "50 cm", "span": [234, 240]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"latitude": {"value": "", "span": []}, "longitude": {"value": "", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "", "span": []}, "endTime": {"value": "", "span": []}, "duration": {"value": "", "span": []}}]
+Gold: []
+

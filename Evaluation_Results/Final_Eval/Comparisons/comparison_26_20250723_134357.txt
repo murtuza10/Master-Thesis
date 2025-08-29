@@ -1,0 +1,85 @@
+=== Comparison for Item 26 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+The presented multi - site , multi - year data set is composed of crop - related data on phenological development stages , canopy height , leaf area index , vegetative and generative biomass and their respective carbon and nitrogen content . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loamy sand",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2.1%",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "United Kingdom",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2009",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "2011",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loamy sand", "span": []}}, {"soilPH": {"value": "6.5", "span": []}}, {"soilOrganicCarbon": {"value": "2.1%", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "United Kingdom", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2009", "span": []}}, {"endTime": {"value": "2011", "span": []}}]
+Gold: []
+

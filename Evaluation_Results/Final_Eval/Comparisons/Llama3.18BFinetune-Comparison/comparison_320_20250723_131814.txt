@@ -1,0 +1,84 @@
+=== Comparison for Item 320 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+The sites were chosen randomly to represent different possible preferred sites of host plants or potential overwintering grounds in the immediate vicinity . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "species",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "variety",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "country",
+        "span": []
+      },
+      "region": {
+        "value": "region",
+        "span": []
+      },
+      "city": {
+        "value": "city",
+        "span": []
+      },
+      "latitude": {
+        "value": "lat",
+        "span": []
+      },
+      "longitude": {
+        "value": "lon",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "latitude": {
+        "value": "‘ lat",
+        "span": [
+          76,
+          81
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "lon",
+        "span": [
+          90,
+          93
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "species", "span": []}, "cropVariety": {"value": "variety", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "country", "span": []}, "region": {"value": "region", "span": []}, "city": {"value": "city", "span": []}, "latitude": {"value": "lat", "span": []}, "longitude": {"value": "lon", "span": []}}]
+Gold: [{"latitude": {"value": "‘ lat", "span": [76, 81]}}, {"longitude": {"value": "lon", "span": [90, 93]}}]
+

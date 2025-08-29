@@ -1,0 +1,170 @@
+=== Comparison for Item 317 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+The data set of D. suzukii captures presented here comes from the monitoring study conducted by the Institute for Plant Protection in Fruit Crops and Viticulture , Dossenheim and Siebeldingen , and the Institute for Biological Plant Protection , Darmstadt of the JKI between 2011 and 2018 . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          45,
+          51
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": [
+          58,
+          64
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "rye",
+        "span": [
+          71,
+          74
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "None",
+        "span": []
+      },
+      "soilReferenceGroup": {
+        "value": "None",
+        "span": []
+      },
+      "soilDepth": {
+        "value": "None",
+        "span": []
+      },
+      "soilBulkDensity": {
+        "value": "None",
+        "span": []
+      },
+      "soilPH": {
+        "value": "None",
+        "span": []
+      },
+      "soilOrganicCarbon": {
+        "value": "None",
+        "span": []
+      },
+      "soilAvailableNitrogen": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "None",
+        "span": []
+      },
+      "region": {
+        "value": "Brandenburg",
+        "span": [
+          76,
+          87
+        ]
+      },
+      "city": {
+        "value": "Berlin",
+        "span": [
+          94,
+          100
+        ]
+      },
+      "latitude": {
+        "value": "None",
+        "span": []
+      },
+      "longitude": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2011",
+        "span": [
+          34,
+          38
+        ]
+      },
+      "endTime": {
+        "value": "2018",
+        "span": [
+          60,
+          64
+        ]
+      },
+      "duration": {
+        "value": "7",
+        "span": [
+          60,
+          63
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2011",
+        "span": [
+          74,
+          78
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "February 2018",
+        "span": [
+          82,
+          95
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [45, 51]}}, {"cropSpecies": {"value": "barley", "span": [58, 64]}}, {"cropSpecies": {"value": "rye", "span": [71, 74]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "None", "span": []}, "soilReferenceGroup": {"value": "None", "span": []}, "soilDepth": {"value": "None", "span": []}, "soilBulkDensity": {"value": "None", "span": []}, "soilPH": {"value": "None", "span": []}, "soilOrganicCarbon": {"value": "None", "span": []}, "soilAvailableNitrogen": {"value": "None", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "None", "span": []}, "region": {"value": "Brandenburg", "span": [76, 87]}, "city": {"value": "Berlin", "span": [94, 100]}, "latitude": {"value": "None", "span": []}, "longitude": {"value": "None", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2011", "span": [34, 38]}, "endTime": {"value": "2018", "span": [60, 64]}, "duration": {"value": "7", "span": [60, 63]}}]
+Gold: [{"startTime": {"value": "2011", "span": [74, 78]}}, {"endTime": {"value": "February 2018", "span": [82, 95]}}]
+

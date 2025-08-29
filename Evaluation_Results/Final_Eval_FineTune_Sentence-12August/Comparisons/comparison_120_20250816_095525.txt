@@ -1,0 +1,32 @@
+=== Comparison for Item 120 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+https://doi.org/10.4060/ca9825en .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "pH of 7.5",
+        "span": [
+          68,
+          75
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilPH": {"value": "pH of 7.5", "span": [68, 75]}}]
+Gold: []
+

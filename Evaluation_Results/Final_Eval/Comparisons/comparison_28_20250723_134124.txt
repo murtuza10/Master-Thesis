@@ -1,0 +1,124 @@
+=== Comparison for Item 28 ===
+Timestamp: 20250723_134124
+
+=== Original Text ===
+Moreover , more than 1,200 soil samples were taken to study changes of carbon and nitrogen contents . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          12,
+          16
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "1.0 m",
+        "span": [
+          83,
+          89
+        ]
+      },
+      "soilBulkDensity": {
+        "value": "1.3 g/cm3",
+        "span": [
+          95,
+          107
+        ]
+      },
+      "soilOrganicCarbon": {
+        "value": "10 g/kg",
+        "span": [
+          113,
+          125
+        ]
+      },
+      "soilPH": {
+        "value": "6.5",
+        "span": [
+          140,
+          143
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "None",
+        "span": []
+      },
+      "region": {
+        "value": "None",
+        "span": []
+      },
+      "city": {
+        "value": "London",
+        "span": [
+          163,
+          169
+        ]
+      },
+      "latitude": {
+        "value": "None",
+        "span": []
+      },
+      "longitude": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "None",
+        "span": []
+      },
+      "endTime": {
+        "value": "None",
+        "span": []
+      },
+      "duration": {
+        "value": "2 years",
+        "span": [
+          180,
+          187
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [12, 16]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilDepth": {"value": "1.0 m", "span": [83, 89]}, "soilBulkDensity": {"value": "1.3 g/cm3", "span": [95, 107]}, "soilOrganicCarbon": {"value": "10 g/kg", "span": [113, 125]}, "soilPH": {"value": "6.5", "span": [140, 143]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "None", "span": []}, "region": {"value": "None", "span": []}, "city": {"value": "London", "span": [163, 169]}, "latitude": {"value": "None", "span": []}, "longitude": {"value": "None", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "None", "span": []}, "endTime": {"value": "None", "span": []}, "duration": {"value": "2 years", "span": [180, 187]}}]
+Gold: []
+

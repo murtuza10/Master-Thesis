@@ -1,0 +1,191 @@
+=== Comparison for Item 34 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+
+ Abstract_text_2 : 
+  The Box Plot Experiment in Grossbeeren was set up in 1972 to investigate the effect of different fertilization strategies within an irrigated vegetable crop rotation system for three different soils . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "rye",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sandy loam",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "1.2%",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "city": {
+        "value": "Grossbeeren",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "Brandenburg",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "1972",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "2022",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "50 years",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "city": {
+        "value": "Grossbeeren",
+        "span": [
+          43,
+          54
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Grossbeeren",
+        "span": [
+          134,
+          145
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "50 years",
+        "span": [
+          11,
+          19
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "1972",
+        "span": [
+          57,
+          61
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2022",
+        "span": [
+          64,
+          68
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "50 years",
+        "span": [
+          102,
+          110
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "1972",
+        "span": [
+          148,
+          152
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2022",
+        "span": [
+          155,
+          159
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}, {"cropSpecies": {"value": "barley", "span": []}}, {"cropSpecies": {"value": "rye", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "sandy loam", "span": []}}, {"soilPH": {"value": "6.5", "span": []}}, {"soilOrganicCarbon": {"value": "1.2%", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"city": {"value": "Grossbeeren", "span": []}}, {"region": {"value": "Brandenburg", "span": []}}, {"country": {"value": "Germany", "span": []}}]
+Gold: [{"city": {"value": "Grossbeeren", "span": [43, 54]}}, {"city": {"value": "Grossbeeren", "span": [134, 145]}}]
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "1972", "span": []}}, {"endTime": {"value": "2022", "span": []}}, {"duration": {"value": "50 years", "span": []}}]
+Gold: [{"duration": {"value": "50 years", "span": [11, 19]}}, {"startTime": {"value": "1972", "span": [57, 61]}}, {"endTime": {"value": "2022", "span": [64, 68]}}, {"duration": {"value": "50 years", "span": [102, 110]}}, {"startTime": {"value": "1972", "span": [148, 152]}}, {"endTime": {"value": "2022", "span": [155, 159]}}]
+

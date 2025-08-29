@@ -1,0 +1,32 @@
+=== Comparison for Item 46 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+Within 10 rotations , the vegetable species white cabbage ( Brassica oleracea L. var .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "grapes",
+        "span": [
+          50,
+          56
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "grapes", "span": [50, 56]}}]
+Gold: []
+

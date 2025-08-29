@@ -1,0 +1,41 @@
+=== Comparison for Item 166 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+The equal soil mass - corrected mass of each layer ( Mass ; Mg / ha ) , SOC stock ( SOC ; Mg C / ha ) , total N ( TN ; Mg N / ha ) and corresponding C : N ratio ( CN , unitless ) is available .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "10 cm",
+        "span": [
+          36,
+          41
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "30 cm",
+        "span": [
+          109,
+          115
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilDepth": {"value": "10 cm", "span": [36, 41]}}, {"soilDepth": {"value": "30 cm", "span": [109, 115]}}]
+Gold: []
+

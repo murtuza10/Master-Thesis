@@ -1,0 +1,99 @@
+=== Comparison for Item 335 ===
+Timestamp: 20250723_131813
+
+=== Original Text ===
+graveolens 
+
+ Abstract : 
+ Published microsatellite primers were evaluated to identify polymorphic markers . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Apium graveolens L. ssp. secalinum",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "",
+        "span": []
+      },
+      "soilReferenceGroup": {
+        "value": "",
+        "span": []
+      },
+      "soilDepth": {
+        "value": "",
+        "span": []
+      },
+      "soilBulkDensity": {
+        "value": "",
+        "span": []
+      },
+      "soilPH": {
+        "value": "",
+        "span": []
+      },
+      "soilOrganicCarbon": {
+        "value": "",
+        "span": []
+      },
+      "soilAvailableNitrogen": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Spain",
+        "span": []
+      },
+      "region": {
+        "value": "",
+        "span": []
+      },
+      "city": {
+        "value": "",
+        "span": []
+      },
+      "latitude": {
+        "value": "",
+        "span": []
+      },
+      "longitude": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "Apium graveolens L. ssp. secalinum", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "", "span": []}, "soilReferenceGroup": {"value": "", "span": []}, "soilDepth": {"value": "", "span": []}, "soilBulkDensity": {"value": "", "span": []}, "soilPH": {"value": "", "span": []}, "soilOrganicCarbon": {"value": "", "span": []}, "soilAvailableNitrogen": {"value": "", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Spain", "span": []}, "region": {"value": "", "span": []}, "city": {"value": "", "span": []}, "latitude": {"value": "", "span": []}, "longitude": {"value": "", "span": []}}]
+Gold: []
+

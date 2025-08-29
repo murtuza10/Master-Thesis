@@ -1,0 +1,50 @@
+=== Comparison for Item 139 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+However , the microform contributions to C uptake strongly differed : At the OS , both hummocks and hollows showed net uptake , while at the TS , most C ( 52 % ) was assimilated by the birches and the understory was a net CO2 source .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "pH 8",
+        "span": [
+          36,
+          39
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH 10",
+        "span": [
+          45,
+          49
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH 12",
+        "span": [
+          67,
+          71
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilPH": {"value": "pH 8", "span": [36, 39]}}, {"soilPH": {"value": "pH 10", "span": [45, 49]}}, {"soilPH": {"value": "pH 12", "span": [67, 71]}}]
+Gold: []
+

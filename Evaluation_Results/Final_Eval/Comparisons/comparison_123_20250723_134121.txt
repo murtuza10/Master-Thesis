@@ -1,0 +1,145 @@
+=== Comparison for Item 123 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+( E - Mail 17.11.2023 ) [ 7 ] Pia Skoczinski , Michael Carus , Gillian Tweddle , Pauline Ruiz , Nicolas Hark , Ann Zhang , Doris de Guzman , Jan Ravenstijn , Harald Käb and Achim Raschka . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "rice",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "soybean",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "winter wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay loam",
+        "span": []
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "reference group",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "40 cm",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.5 g/cm^3",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "10 g/kg",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "80 kg/ha",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "city": {
+        "value": "Beijing",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "39.9042° N",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "116.4074° E",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "January",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "March",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "maize", "span": []}}, {"cropSpecies": {"value": "wheat", "span": []}}, {"cropSpecies": {"value": "rice", "span": []}}, {"cropSpecies": {"value": "soybean", "span": []}}, {"cropSpecies": {"value": "winter wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay loam", "span": []}}, {"soilReferenceGroup": {"value": "reference group", "span": []}}, {"soilDepth": {"value": "40 cm", "span": []}}, {"soilBulkDensity": {"value": "1.5 g/cm^3", "span": []}}, {"soilPH": {"value": "6.5", "span": []}}, {"soilOrganicCarbon": {"value": "10 g/kg", "span": []}}, {"soilAvailableNitrogen": {"value": "80 kg/ha", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"city": {"value": "Beijing", "span": []}}, {"latitude": {"value": "39.9042° N", "span": []}}, {"longitude": {"value": "116.4074° E", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "January", "span": []}}, {"endTime": {"value": "March", "span": []}}]
+Gold: []
+

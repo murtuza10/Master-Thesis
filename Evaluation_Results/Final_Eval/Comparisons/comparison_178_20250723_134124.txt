@@ -1,0 +1,86 @@
+=== Comparison for Item 178 ===
+Timestamp: 20250723_134124
+
+=== Original Text ===
+The composition and crystallinity was confirmed by X - ray diffraction analyses with an Empyrean powder diffractometer ( PANalytical ) with Cu Kα radiation ( λ=0.15418 nm ) . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "goethite",
+        "span": [
+          0,
+          8
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "commercially available goethite",
+        "span": [
+          46,
+          63
+        ]
+      },
+      "soilPH": {
+        "value": "8.5",
+        "span": [
+          93,
+          96
+        ]
+      },
+      "soilBulkDensity": {
+        "value": "73.4 m^2/g",
+        "span": [
+          188,
+          202
+        ]
+      },
+      "soilOrganicCarbon": {
+        "value": "0.24 C/m^2",
+        "span": [
+          259,
+          269
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "supplier",
+        "span": [
+          106,
+          113
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "goethite", "span": [0, 8]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "commercially available goethite", "span": [46, 63]}, "soilPH": {"value": "8.5", "span": [93, 96]}, "soilBulkDensity": {"value": "73.4 m^2/g", "span": [188, 202]}, "soilOrganicCarbon": {"value": "0.24 C/m^2", "span": [259, 269]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "supplier", "span": [106, 113]}}]
+Gold: []
+

@@ -1,0 +1,164 @@
+=== Comparison for Item 211 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+And we expected that ( ii ) that DLB treatment will create a shift in microbial community composition , especially in the subsoil layers . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          82,
+          87
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "rye",
+        "span": [
+          95,
+          99
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "clover",
+        "span": [
+          122,
+          127
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sandy loam",
+        "span": [
+          121,
+          130
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "1:1 Sandy Loam",
+        "span": [
+          131,
+          142
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "20 cm",
+        "span": [
+          143,
+          148
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.5 g/cm³",
+        "span": [
+          149,
+          158
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.0",
+        "span": [
+          159,
+          162
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "10 g/kg",
+        "span": [
+          163,
+          172
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "150 mg/kg",
+        "span": [
+          173,
+          183
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "city": {
+        "value": "Lincoln",
+        "span": [
+          190,
+          195
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Nebraska",
+        "span": [
+          191,
+          198
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "40.81° N",
+        "span": [
+          189,
+          197
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "96.69° W",
+        "span": [
+          199,
+          207
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [82, 87]}}, {"cropSpecies": {"value": "rye", "span": [95, 99]}}, {"cropSpecies": {"value": "clover", "span": [122, 127]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "sandy loam", "span": [121, 130]}}, {"soilReferenceGroup": {"value": "1:1 Sandy Loam", "span": [131, 142]}}, {"soilDepth": {"value": "20 cm", "span": [143, 148]}}, {"soilBulkDensity": {"value": "1.5 g/cm³", "span": [149, 158]}}, {"soilPH": {"value": "6.0", "span": [159, 162]}}, {"soilOrganicCarbon": {"value": "10 g/kg", "span": [163, 172]}}, {"soilAvailableNitrogen": {"value": "150 mg/kg", "span": [173, 183]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"city": {"value": "Lincoln", "span": [190, 195]}}, {"country": {"value": "Nebraska", "span": [191, 198]}}, {"latitude": {"value": "40.81° N", "span": [189, 197]}}, {"longitude": {"value": "96.69° W", "span": [199, 207]}}]
+Gold: []
+

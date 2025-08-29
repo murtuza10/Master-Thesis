@@ -1,0 +1,70 @@
+=== Comparison for Item 203 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+
+ Keywords : 
+  Soil , phosphorus , nonmetals , adsorption , Soil , Phosphorus , Adsorption , pH , Goethite , Hydroxides , Boden , Phosphor , Adsorption 
+ 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "pH 5.0",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH 6.0",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH 7.0",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH 7.0",
+        "span": []
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "", "span": []}, "cropVariety": {"value": "", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilPH": {"value": "pH 5.0", "span": []}}, {"soilPH": {"value": "pH 6.0", "span": []}}, {"soilPH": {"value": "pH 7.0", "span": []}}, {"soilPH": {"value": "pH 7.0", "span": []}}]
+Gold: []
+

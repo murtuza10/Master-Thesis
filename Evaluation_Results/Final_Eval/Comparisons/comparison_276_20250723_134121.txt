@@ -1,0 +1,37 @@
+=== Comparison for Item 276 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+The silica sand used was finely granulated , washed , and calcined . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sand",
+        "span": [
+          212,
+          216
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: []
+Gold: [{"soilTexture": {"value": "sand", "span": [212, 216]}}]
+

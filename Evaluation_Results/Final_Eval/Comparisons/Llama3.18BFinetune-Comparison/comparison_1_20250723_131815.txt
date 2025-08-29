@@ -1,0 +1,87 @@
+=== Comparison for Item 1 ===
+Timestamp: 20250723_131815
+
+=== Original Text ===
+
+ Abstract_text_2 : 
+  Our study reveals the effects of GCFs on a soil - crop system : in general , with an increasing number of GCFs , soil properties , and plant biomass reacted negatively . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "soil bulk density",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "soil organic carbon",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "soil pH",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "soil available nitrogen",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "soil type",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "various studies",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "soil bulk density", "span": []}}, {"soilOrganicCarbon": {"value": "soil organic carbon", "span": []}}, {"soilPH": {"value": "soil pH", "span": []}}, {"soilAvailableNitrogen": {"value": "soil available nitrogen", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "soil type", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"duration": {"value": "various studies", "span": []}}]
+Gold: []
+

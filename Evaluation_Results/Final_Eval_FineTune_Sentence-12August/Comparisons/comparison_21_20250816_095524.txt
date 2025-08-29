@@ -1,0 +1,42 @@
+=== Comparison for Item 21 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+Keywords : 
+  Soil , fertilizers , tillage , agricultural land management , crop rotation , opendata , Boden
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "0 - 30",
+        "span": [
+          58,
+          65
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "30 - 60 cm",
+        "span": [
+          70,
+          80
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilDepth": {"value": "0 - 30", "span": [58, 65]}}, {"soilDepth": {"value": "30 - 60 cm", "span": [70, 80]}}]
+Gold: []
+

@@ -1,0 +1,37 @@
+=== Comparison for Item 96 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+Die Entwicklung der globalen Waldfläche in den Szenarien wird normativ angepasst , sodass beispielweise die Entwaldung abnimmt . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Holzarten",
+        "span": [
+          30,
+          38
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "Holzarten", "span": [30, 38]}}]
+Gold: []
+

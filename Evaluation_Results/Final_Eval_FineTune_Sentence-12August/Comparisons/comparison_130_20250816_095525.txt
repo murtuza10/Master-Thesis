@@ -1,0 +1,32 @@
+=== Comparison for Item 130 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+https://doi.org/10.52548/VXTH2416
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          48,
+          53
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [48, 53]}}]
+Gold: []
+

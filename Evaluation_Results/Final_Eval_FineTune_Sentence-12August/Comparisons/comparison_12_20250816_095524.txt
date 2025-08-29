@@ -1,0 +1,32 @@
+=== Comparison for Item 12 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+The soil is a loess chernozem over limestone with an effective rooting depth of 100 cm , containing 22 % clay , 70 % silt and 8 % sand in the ploughed upper ( Ap ) horizon .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "pH 6",
+        "span": [
+          38,
+          42
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilPH": {"value": "pH 6", "span": [38, 42]}}]
+Gold: []
+

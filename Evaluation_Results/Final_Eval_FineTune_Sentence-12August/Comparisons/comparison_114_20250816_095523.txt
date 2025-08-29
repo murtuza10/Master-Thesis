@@ -1,0 +1,41 @@
+=== Comparison for Item 114 ===
+Timestamp: 20250816_095523
+
+=== Original Text ===
+Forestry Production and Trade , Statistical Database .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          67,
+          72
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "grasses",
+        "span": [
+          53,
+          60
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [67, 72]}}, {"cropSpecies": {"value": "grasses", "span": [53, 60]}}]
+Gold: []
+

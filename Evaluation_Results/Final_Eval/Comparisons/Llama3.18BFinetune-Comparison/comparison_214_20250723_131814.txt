@@ -1,0 +1,71 @@
+=== Comparison for Item 214 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+Subsequently , 16S amplicon sequencing was performed for all bulk soil and root samples and raw sequencing data is available at the sequencing read archive ( SRA ) under the BioProject PRJNA1129315 ( SAMN42150195 , SAMN42152877 ) . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilOrganicCarbon": {
+        "value": "SOC",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "United States",
+        "span": []
+      },
+      "region": {
+        "value": "Midwestern region",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2019",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilOrganicCarbon": {"value": "SOC", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "United States", "span": []}, "region": {"value": "Midwestern region", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2019", "span": []}}]
+Gold: []
+

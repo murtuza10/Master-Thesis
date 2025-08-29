@@ -1,0 +1,443 @@
+158fb92b-70b4-4dbf-9176-2ce4de69afc6:
+
+                       precision    recall  f1-score   support
+
+                 city       1.00      1.00      1.00         1
+          cropSpecies       1.00      0.25      0.40         4
+          cropVariety       0.00      0.00      0.00         5
+              endTime       0.00      0.00      0.00         0
+               region       0.00      0.00      0.00         0
+soilAvailableNitrogen       0.00      0.00      0.00         0
+            soilDepth       0.67      0.33      0.44         6
+   soilReferenceGroup       1.00      1.00      1.00         1
+          soilTexture       1.00      0.33      0.50         3
+            startTime       1.00      0.50      0.67         2
+
+            micro avg       0.58      0.32      0.41        22
+            macro avg       0.57      0.34      0.40        22
+         weighted avg       0.68      0.32      0.41        22
+
+Accuracy: 0.9543973941368078
+
+16111ae4-69ba-477f-a6aa-b6fc4c9c5d58:
+
+                   precision    recall  f1-score   support
+
+          country       0.00      0.00      0.00         0
+soilOrganicCarbon       0.00      0.00      0.00         1
+
+        micro avg       0.00      0.00      0.00         1
+        macro avg       0.00      0.00      0.00         1
+     weighted avg       0.00      0.00      0.00         1
+
+Accuracy: 0.9903381642512077
+
+286a674c-1bcd-4a35-b78f-7e980a89d6fa:
+
+              precision    recall  f1-score   support
+
+        city       0.00      0.00      0.00         1
+     country       1.00      1.00      1.00         1
+ cropSpecies       0.50      0.25      0.33         4
+    duration       0.00      0.00      0.00         0
+     endTime       0.00      0.00      0.00         1
+      region       0.50      0.33      0.40         3
+   startTime       1.00      0.33      0.50         3
+
+   micro avg       0.44      0.31      0.36        13
+   macro avg       0.43      0.27      0.32        13
+weighted avg       0.58      0.31      0.39        13
+
+Accuracy: 0.9409090909090909
+
+05abfa4d-110f-45cc-aabb-b1074b9c4809:
+
+              precision    recall  f1-score   support
+
+ cropSpecies       0.33      0.33      0.33         3
+
+   micro avg       0.33      0.33      0.33         3
+   macro avg       0.33      0.33      0.33         3
+weighted avg       0.33      0.33      0.33         3
+
+Accuracy: 0.9841269841269841
+
+102251:
+
+                       precision    recall  f1-score   support
+
+              country       0.00      0.00      0.00         2
+             duration       0.00      0.00      0.00         1
+             latitude       0.00      0.00      0.00         0
+            longitude       0.00      0.00      0.00         0
+               region       0.00      0.00      0.00         0
+soilAvailableNitrogen       0.00      0.00      0.00         0
+      soilBulkDensity       0.00      0.00      0.00         0
+            soilDepth       0.00      0.00      0.00         0
+    soilOrganicCarbon       0.00      0.00      0.00         3
+               soilPH       0.00      0.00      0.00         0
+          soilTexture       1.00      1.00      1.00         3
+            startTime       1.00      1.00      1.00         1
+
+            micro avg       0.29      0.40      0.33        10
+            macro avg       0.17      0.17      0.17        10
+         weighted avg       0.40      0.40      0.40        10
+
+Accuracy: 0.9423076923076923
+
+102268:
+
+              precision    recall  f1-score   support
+
+ cropSpecies       1.00      0.50      0.67         2
+     endTime       1.00      1.00      1.00         1
+      region       0.00      0.00      0.00         1
+   startTime       1.00      1.00      1.00         1
+
+   micro avg       1.00      0.60      0.75         5
+   macro avg       0.75      0.62      0.67         5
+weighted avg       0.80      0.60      0.67         5
+
+Accuracy: 0.9714285714285714
+
+1aa6a96b-f614-4578-ac1b-7a904079d132:
+
+                       precision    recall  f1-score   support
+
+                 city       1.00      0.33      0.50         3
+              country       1.00      1.00      1.00         1
+          cropSpecies       0.25      0.08      0.12        13
+             latitude       0.00      0.00      0.00         1
+            longitude       1.00      1.00      1.00         1
+               region       0.00      0.00      0.00         0
+soilAvailableNitrogen       0.00      0.00      0.00         0
+      soilBulkDensity       0.00      0.00      0.00         0
+            soilDepth       1.00      0.50      0.67         2
+    soilOrganicCarbon       0.00      0.00      0.00         0
+               soilPH       0.00      0.00      0.00         1
+   soilReferenceGroup       0.00      0.00      0.00         1
+          soilTexture       0.00      0.00      0.00         3
+            startTime       1.00      1.00      1.00         1
+
+            micro avg       0.35      0.22      0.27        27
+            macro avg       0.38      0.28      0.31        27
+         weighted avg       0.42      0.22      0.27        27
+
+Accuracy: 0.8552338530066815
+
+102137:
+
+                   precision    recall  f1-score   support
+
+          country       1.00      1.00      1.00         1
+soilOrganicCarbon       0.00      0.00      0.00         2
+
+        micro avg       1.00      0.33      0.50         3
+        macro avg       0.50      0.50      0.50         3
+     weighted avg       0.33      0.33      0.33         3
+
+Accuracy: 0.9694656488549618
+
+056db80c-ef70-4a14-8161-fc795a0518e8:
+
+              precision    recall  f1-score   support
+
+        city       1.00      0.33      0.50         3
+ cropSpecies       0.00      0.00      0.00         0
+     endTime       0.00      0.00      0.00         0
+ soilTexture       0.00      0.00      0.00         0
+   startTime       0.00      0.00      0.00         2
+
+   micro avg       0.25      0.20      0.22         5
+   macro avg       0.20      0.07      0.10         5
+weighted avg       0.60      0.20      0.30         5
+
+Accuracy: 0.9707317073170731
+
+090f32da-b607-4be8-ab01-37553962104d:
+
+              precision    recall  f1-score   support
+
+        city       0.00      0.00      0.00         1
+     country       1.00      1.00      1.00         1
+ cropSpecies       0.60      0.60      0.60         5
+      region       1.00      0.50      0.67         2
+
+   micro avg       0.71      0.56      0.63         9
+   macro avg       0.65      0.53      0.57         9
+weighted avg       0.67      0.56      0.59         9
+
+Accuracy: 0.9660194174757282
+
+03b52930-0210-4bfc-a4ac-75f7544ce7a5:
+
+                       precision    recall  f1-score   support
+
+                 city       0.00      0.00      0.00         1
+          cropSpecies       0.20      0.06      0.09        17
+          cropVariety       0.00      0.00      0.00         4
+             duration       0.00      0.00      0.00         2
+              endTime       1.00      0.25      0.40         4
+             latitude       0.00      0.00      0.00         1
+            longitude       0.00      0.00      0.00         1
+               region       0.00      0.00      0.00         0
+soilAvailableNitrogen       0.00      0.00      0.00         0
+      soilBulkDensity       0.00      0.00      0.00         0
+            soilDepth       1.00      0.50      0.67         2
+    soilOrganicCarbon       1.00      1.00      1.00         1
+   soilReferenceGroup       0.00      0.00      0.00         6
+          soilTexture       1.00      1.00      1.00         3
+            startTime       1.00      0.25      0.40         4
+
+            micro avg       0.33      0.17      0.23        46
+            macro avg       0.35      0.20      0.24        46
+         weighted avg       0.38      0.17      0.22        46
+
+Accuracy: 0.8796526054590571
+
+102130:
+
+                    precision    recall  f1-score   support
+
+       cropSpecies       0.00      0.00      0.00         0
+          duration       0.00      0.00      0.00         4
+           endTime       0.00      0.00      0.00         0
+   soilBulkDensity       0.00      0.00      0.00         0
+         soilDepth       0.00      0.00      0.00         0
+ soilOrganicCarbon       0.00      0.00      0.00         4
+soilReferenceGroup       0.00      0.00      0.00         0
+         startTime       0.00      0.00      0.00         0
+
+         micro avg       0.00      0.00      0.00         8
+         macro avg       0.00      0.00      0.00         8
+      weighted avg       0.00      0.00      0.00         8
+
+Accuracy: 0.8780487804878049
+
+116d7828-7f69-4896-8d7a-09585f70d493:
+
+              precision    recall  f1-score   support
+
+        city       1.00      1.00      1.00         1
+     country       1.00      1.00      1.00         1
+ cropSpecies       1.00      0.33      0.50         3
+      region       1.00      1.00      1.00         2
+
+   micro avg       1.00      0.71      0.83         7
+   macro avg       1.00      0.83      0.88         7
+weighted avg       1.00      0.71      0.79         7
+
+Accuracy: 0.991304347826087
+
+101017:
+
+              precision    recall  f1-score   support
+
+ cropSpecies       1.00      0.83      0.91         6
+
+   micro avg       1.00      0.83      0.91         6
+   macro avg       1.00      0.83      0.91         6
+weighted avg       1.00      0.83      0.91         6
+
+Accuracy: 0.9864864864864865
+
+102239:
+
+                   precision    recall  f1-score   support
+
+  soilBulkDensity       0.00      0.00      0.00         0
+soilOrganicCarbon       0.00      0.00      0.00         2
+
+        micro avg       0.00      0.00      0.00         2
+        macro avg       0.00      0.00      0.00         2
+     weighted avg       0.00      0.00      0.00         2
+
+Accuracy: 0.9591836734693877
+
+50596:
+
+              precision    recall  f1-score   support
+
+        city       0.00      0.00      0.00         0
+ cropSpecies       1.00      0.12      0.22         8
+    duration       0.00      0.00      0.00         2
+     endTime       0.62      0.83      0.71         6
+   startTime       1.00      0.55      0.71        11
+
+   micro avg       0.75      0.44      0.56        27
+   macro avg       0.53      0.30      0.33        27
+weighted avg       0.84      0.44      0.51        27
+
+Accuracy: 0.9722222222222222
+
+03b1bd49-9d48-43ca-9d54-a7d710c4e62f:
+
+                       precision    recall  f1-score   support
+
+                 city       0.00      0.00      0.00         0
+              country       0.00      0.00      0.00         1
+          cropSpecies       0.00      0.00      0.00         0
+             duration       1.00      1.00      1.00         1
+              endTime       1.00      1.00      1.00         1
+               region       0.00      0.00      0.00         2
+soilAvailableNitrogen       0.00      0.00      0.00         0
+            soilDepth       0.00      0.00      0.00         0
+            startTime       1.00      1.00      1.00         1
+
+            micro avg       0.38      0.50      0.43         6
+            macro avg       0.33      0.33      0.33         6
+         weighted avg       0.50      0.50      0.50         6
+
+Accuracy: 0.9708222811671088
+
+101198:
+
+              precision    recall  f1-score   support
+
+    duration       0.00      0.00      0.00         0
+     endTime       1.00      0.33      0.50         3
+   startTime       1.00      1.00      1.00         1
+
+   micro avg       0.40      0.50      0.44         4
+   macro avg       0.67      0.44      0.50         4
+weighted avg       1.00      0.50      0.62         4
+
+Accuracy: 0.9780907668231612
+
+210e3f7e-bf7e-44f3-9c14-49d4c0068f0d:
+
+              precision    recall  f1-score   support
+
+        city       0.40      1.00      0.57         2
+     country       0.50      0.33      0.40         3
+    duration       0.00      0.00      0.00         8
+      soilPH       1.00      0.10      0.18        10
+ soilTexture       0.00      0.00      0.00         6
+   startTime       0.00      0.00      0.00         0
+
+   micro avg       0.36      0.14      0.20        29
+   macro avg       0.32      0.24      0.19        29
+weighted avg       0.42      0.14      0.14        29
+
+Accuracy: 0.9540094339622641
+
+101378:
+
+              precision    recall  f1-score   support
+
+ cropSpecies       0.00      0.00      0.00         0
+    duration       1.00      1.00      1.00         1
+
+   micro avg       0.50      1.00      0.67         1
+   macro avg       0.50      0.50      0.50         1
+weighted avg       1.00      1.00      1.00         1
+
+Accuracy: 0.995085995085995
+
+36710:
+
+              precision    recall  f1-score   support
+
+     country       1.00      1.00      1.00         1
+ cropSpecies       1.00      0.50      0.67         2
+    duration       0.00      0.00      0.00         2
+     endTime       1.00      1.00      1.00         1
+      region       1.00      0.33      0.50         3
+   startTime       1.00      1.00      1.00         1
+
+   micro avg       1.00      0.50      0.67        10
+   macro avg       0.83      0.64      0.69        10
+weighted avg       0.80      0.50      0.58        10
+
+Accuracy: 0.958904109589041
+
+36149:
+
+                       precision    recall  f1-score   support
+
+              country       0.00      0.00      0.00         2
+          cropSpecies       0.00      0.00      0.00         0
+             duration       1.00      1.00      1.00         1
+              endTime       1.00      0.50      0.67         2
+               region       0.00      0.00      0.00         0
+soilAvailableNitrogen       0.00      0.00      0.00         0
+      soilBulkDensity       1.00      1.00      1.00         1
+    soilOrganicCarbon       0.00      0.00      0.00         0
+               soilPH       0.00      0.00      0.00         0
+            startTime       1.00      0.50      0.67         2
+
+            micro avg       0.44      0.50      0.47         8
+            macro avg       0.40      0.30      0.33         8
+         weighted avg       0.75      0.50      0.58         8
+
+Accuracy: 0.940677966101695
+
+0007bad6-848d-4763-9813-d5ed21cde6ee:
+
+              precision    recall  f1-score   support
+
+ cropSpecies       1.00      1.00      1.00         1
+
+   micro avg       1.00      1.00      1.00         1
+   macro avg       1.00      1.00      1.00         1
+weighted avg       1.00      1.00      1.00         1
+
+Accuracy: 1.0
+
+142faafb-4e71-4b1e-b550-ca6864f5234b:
+
+              precision    recall  f1-score   support
+
+    duration       0.00      0.00      0.00         4
+      soilPH       0.00      0.00      0.00        31
+
+   micro avg       0.00      0.00      0.00        35
+   macro avg       0.00      0.00      0.00        35
+weighted avg       0.00      0.00      0.00        35
+
+Accuracy: 0.9544364508393285
+
+100184:
+
+              precision    recall  f1-score   support
+
+        city       0.00      0.00      0.00         3
+     country       1.00      1.00      1.00         1
+ cropSpecies       0.33      0.50      0.40         2
+     endTime       1.00      1.00      1.00         1
+      region       0.40      1.00      0.57         2
+   startTime       1.00      1.00      1.00         1
+
+   micro avg       0.55      0.60      0.57        10
+   macro avg       0.62      0.75      0.66        10
+weighted avg       0.45      0.60      0.49        10
+
+Accuracy: 0.9774436090225563
+
+
+📊 Overall Performance:
+                       precision    recall  f1-score   support
+
+                 city       0.46      0.38      0.41        16
+              country       0.80      0.53      0.64        15
+          cropSpecies       0.49      0.27      0.35        70
+          cropVariety       0.00      0.00      0.00         9
+             duration       0.27      0.12      0.16        26
+              endTime       0.57      0.60      0.59        20
+             latitude       0.00      0.00      0.00         2
+            longitude       0.33      0.50      0.40         2
+               region       0.41      0.47      0.44        15
+soilAvailableNitrogen       0.00      0.00      0.00         0
+      soilBulkDensity       0.17      1.00      0.29         1
+            soilDepth       0.44      0.40      0.42        10
+    soilOrganicCarbon       0.20      0.08      0.11        13
+               soilPH       0.25      0.02      0.04        42
+   soilReferenceGroup       0.17      0.12      0.14         8
+          soilTexture       0.70      0.39      0.50        18
+            startTime       0.85      0.55      0.67        31
+
+            micro avg       0.48      0.30      0.37       298
+            macro avg       0.36      0.32      0.30       298
+         weighted avg       0.46      0.30      0.34       298
+
+Overall Accuracy: 0.952645935624659

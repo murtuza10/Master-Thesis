@@ -1,0 +1,158 @@
+=== Comparison for Item 342 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+A total of 790 Apium graveolens plants were sampled at 27 localities in 2016 and analyzed using 16 SSR markers . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sandy loam",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "90 cm",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.2 g / cm3",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.8",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "1.3 %",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "120 ppm",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "Quedlinburg",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "51.46 ° N",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "11.34 ° E",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "city": {
+        "value": "Quedlinburg",
+        "span": [
+          61,
+          72
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          75,
+          82
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}, {"cropVariety": {"value": "", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "sandy loam", "span": []}}, {"soilDepth": {"value": "90 cm", "span": []}}, {"soilBulkDensity": {"value": "1.2 g / cm3", "span": []}}, {"soilPH": {"value": "6.8", "span": []}}, {"soilOrganicCarbon": {"value": "1.3 %", "span": []}}, {"soilAvailableNitrogen": {"value": "120 ppm", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": []}}, {"region": {"value": "", "span": []}}, {"city": {"value": "Quedlinburg", "span": []}}, {"latitude": {"value": "51.46 ° N", "span": []}}, {"longitude": {"value": "11.34 ° E", "span": []}}]
+Gold: [{"city": {"value": "Quedlinburg", "span": [61, 72]}}, {"country": {"value": "Germany", "span": [75, 82]}}]
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "", "span": []}}, {"endTime": {"value": "", "span": []}}, {"duration": {"value": "", "span": []}}]
+Gold: []
+

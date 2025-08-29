@@ -1,0 +1,55 @@
+=== Comparison for Item 106 ===
+Timestamp: 20250816_095523
+
+=== Original Text ===
+Die steigende Nachfrage nach holzbasierten Produkten , vom Schnittholz ( bis zu +36 % ) bis zur Textilfaser ( bis zu +447 % ) , kann dadurch gedeckt werden .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          56,
+          62
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "1990",
+        "span": [
+          84,
+          88
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2017",
+        "span": [
+          95,
+          99
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": [56, 62]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "1990", "span": [84, 88]}}, {"endTime": {"value": "2017", "span": [95, 99]}}]
+Gold: []
+

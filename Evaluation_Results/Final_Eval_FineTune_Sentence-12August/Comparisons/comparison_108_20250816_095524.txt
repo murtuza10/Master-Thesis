@@ -1,0 +1,41 @@
+=== Comparison for Item 108 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+Steigende Bedarfe , insbesondere in sich neu bildendenden Energiemärkten , führen zu einem Nachfrageüberhang nach Holznebenprodukten , welche heute vor allem Einsatz in der Plattenindustrie finden .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2020",
+        "span": [
+          15,
+          19
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2021",
+        "span": [
+          24,
+          28
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2020", "span": [15, 19]}}, {"endTime": {"value": "2021", "span": [24, 28]}}]
+Gold: []
+

@@ -1,0 +1,33 @@
+=== Comparison for Item 36 ===
+Timestamp: 20250816_095523
+
+=== Original Text ===
+Abstract_text_2 : 
+  The Box Plot Experiment in Grossbeeren was set up in 1972 to investigate the effect of different fertilization strategies within an irrigated vegetable crop rotation system for three different soils .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          38,
+          43
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [38, 43]}}]
+Gold: []
+

@@ -1,0 +1,37 @@
+=== Comparison for Item 255 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+The 1980–2010 annual average temperature was 9.7 ° C , and the average annual precipitation was 511 mm . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "pH ( 7.0–7.4 )",
+        "span": [
+          17,
+          31
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: []
+Gold: [{"soilPH": {"value": "pH ( 7.0–7.4 )", "span": [17, 31]}}]
+

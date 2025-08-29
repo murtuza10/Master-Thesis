@@ -1,0 +1,121 @@
+=== Comparison for Item 171 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+       - Abundance of Fusaria and Alternaria on weed plants 
+ Abstract_text_1 : 
+  Fusarium abundance and diversity and Alternaria abundance on weeds and wheat ears in transitions zones between kettle hole edge and field and field edge and field . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sandy loam",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2.5%",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "150 kg/ha",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Denmark",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "kettle hole edge",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "transition zone between kettle hole edge and field",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "field edge",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "May 1, 2021",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "October 31, 2021",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          82,
+          87
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: [{"cropSpecies": {"value": "wheat", "span": [82, 87]}}]
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "sandy loam", "span": []}}, {"soilPH": {"value": "6.5", "span": []}}, {"soilOrganicCarbon": {"value": "2.5%", "span": []}}, {"soilAvailableNitrogen": {"value": "150 kg/ha", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Denmark", "span": []}}, {"region": {"value": "kettle hole edge", "span": []}}, {"region": {"value": "transition zone between kettle hole edge and field", "span": []}}, {"region": {"value": "field edge", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "May 1, 2021", "span": []}}, {"endTime": {"value": "October 31, 2021", "span": []}}]
+Gold: []
+

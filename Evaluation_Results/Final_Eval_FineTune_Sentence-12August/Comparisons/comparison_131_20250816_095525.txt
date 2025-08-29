@@ -1,0 +1,56 @@
+=== Comparison for Item 131 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+Title : 
+ Supporting data for the manuscript ‘ Birch ( Betula pubescens Ehrh .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          26,
+          32
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Grossbeeren",
+        "span": [
+          15,
+          25
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "1972",
+        "span": [
+          40,
+          44
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": [26, 32]}}, {"city": {"value": "Grossbeeren", "span": [15, 25]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "1972", "span": [40, 44]}}]
+Gold: []
+

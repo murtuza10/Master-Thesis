@@ -1,0 +1,41 @@
+=== Comparison for Item 77 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+Related datasets are listed in the metadata element ' Related Identifier ' .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilOrganicCarbon": {
+        "value": "SOC",
+        "span": [
+          50,
+          53
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "TN",
+        "span": [
+          79,
+          81
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilOrganicCarbon": {"value": "SOC", "span": [50, 53]}}, {"soilAvailableNitrogen": {"value": "TN", "span": [79, 81]}}]
+Gold: []
+

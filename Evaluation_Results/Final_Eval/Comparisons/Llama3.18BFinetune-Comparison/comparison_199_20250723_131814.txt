@@ -1,0 +1,196 @@
+=== Comparison for Item 199 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+, and for the initial pH of 6 , the final pH was 5.0 . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          34,
+          39
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "winter wheat",
+        "span": [
+          64,
+          76
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Yubileyny",
+        "span": [
+          93,
+          102
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay loam",
+        "span": [
+          141,
+          149
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "40.0 cm",
+        "span": [
+          176,
+          185
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.4 g cm - 3",
+        "span": [
+          190,
+          202
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "4.5",
+        "span": [
+          55,
+          59
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "4.6",
+        "span": [
+          61,
+          65
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "3.9",
+        "span": [
+          21,
+          25
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "12.8 %",
+        "span": [
+          147,
+          156
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Russia",
+        "span": [
+          251,
+          258
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Krasnodar",
+        "span": [
+          219,
+          228
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Krasnodar",
+        "span": [
+          219,
+          228
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "45.2 ° N",
+        "span": [
+          241,
+          251
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "39.1 ° E",
+        "span": [
+          264,
+          274
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "spring",
+        "span": [
+          259,
+          265
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "50 days",
+        "span": [
+          273,
+          283
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [34, 39]}}, {"cropSpecies": {"value": "winter wheat", "span": [64, 76]}}, {"cropVariety": {"value": "Yubileyny", "span": [93, 102]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay loam", "span": [141, 149]}}, {"soilDepth": {"value": "40.0 cm", "span": [176, 185]}}, {"soilBulkDensity": {"value": "1.4 g cm - 3", "span": [190, 202]}}, {"soilPH": {"value": "4.5", "span": [55, 59]}}, {"soilPH": {"value": "4.6", "span": [61, 65]}}, {"soilPH": {"value": "3.9", "span": [21, 25]}}, {"soilAvailableNitrogen": {"value": "12.8 %", "span": [147, 156]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Russia", "span": [251, 258]}}, {"region": {"value": "Krasnodar", "span": [219, 228]}}, {"city": {"value": "Krasnodar", "span": [219, 228]}}, {"latitude": {"value": "45.2 ° N", "span": [241, 251]}}, {"longitude": {"value": "39.1 ° E", "span": [264, 274]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "spring", "span": [259, 265]}}, {"endTime": {"value": "50 days", "span": [273, 283]}}]
+Gold: []
+

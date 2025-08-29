@@ -1,0 +1,61 @@
+=== Comparison for Item 310 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+Title : 
+ Trap captures data from the 7 - year Drosophila suzukii monitoring program in southwest Germany 
+
+ Abstract : 
+ A relatively recent invasive pest of soft - skinned fruits in Europe is Drosophila suzukii ( Spotted wing drosophila - SWD ) . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2%",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "latitude": {
+        "value": "40.7128",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "74.0060",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilPH": {"value": "6.5", "span": []}}, {"soilOrganicCarbon": {"value": "2%", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"latitude": {"value": "40.7128", "span": []}}, {"longitude": {"value": "74.0060", "span": []}}]
+Gold: []
+

@@ -1,0 +1,163 @@
+=== Comparison for Item 13 ===
+Timestamp: 20250723_131816
+
+=== Original Text ===
+The 1980 - 2010 annual average temperature was 9.7 ° C , the average annual precipitation 511 mm . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          69,
+          75
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "7.0 - 7.4",
+        "span": [
+          1,
+          14
+        ]
+      },
+      "soilBulkDensity": {
+        "value": "45 - 70 mg kg-1",
+        "span": [
+          34,
+          51
+        ]
+      },
+      "soilAvailableNitrogen": {
+        "value": "130 - 185 mg kg-1",
+        "span": [
+          57,
+          75
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "European Union ( EU )",
+        "span": [
+          108,
+          123
+        ]
+      },
+      "region": {
+        "value": "Hungary",
+        "span": [
+          126,
+          134
+        ]
+      },
+      "city": {
+        "value": "Szeged",
+        "span": [
+          135,
+          142
+        ]
+      },
+      "latitude": {
+        "value": "48.00",
+        "span": [
+          94,
+          101
+        ]
+      },
+      "longitude": {
+        "value": "16.00",
+        "span": [
+          113,
+          120
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "April 2013",
+        "span": [
+          184,
+          194
+        ]
+      },
+      "endTime": {
+        "value": "April 2013",
+        "span": [
+          184,
+          194
+        ]
+      },
+      "duration": {
+        "value": "20 years",
+        "span": [
+          173,
+          182
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "pH",
+        "span": [
+          17,
+          19
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "7.0",
+        "span": [
+          22,
+          25
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "7.4",
+        "span": [
+          28,
+          31
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [69, 75]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilPH": {"value": "7.0 - 7.4", "span": [1, 14]}, "soilBulkDensity": {"value": "45 - 70 mg kg-1", "span": [34, 51]}, "soilAvailableNitrogen": {"value": "130 - 185 mg kg-1", "span": [57, 75]}}]
+Gold: [{"soilPH": {"value": "pH", "span": [17, 19]}}, {"soilPH": {"value": "7.0", "span": [22, 25]}}, {"soilPH": {"value": "7.4", "span": [28, 31]}}]
+
+Category: Location
+Predictions: [{"country": {"value": "European Union ( EU )", "span": [108, 123]}, "region": {"value": "Hungary", "span": [126, 134]}, "city": {"value": "Szeged", "span": [135, 142]}, "latitude": {"value": "48.00", "span": [94, 101]}, "longitude": {"value": "16.00", "span": [113, 120]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "April 2013", "span": [184, 194]}, "endTime": {"value": "April 2013", "span": [184, 194]}, "duration": {"value": "20 years", "span": [173, 182]}}]
+Gold: []
+

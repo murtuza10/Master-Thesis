@@ -1,0 +1,35 @@
+=== Comparison for Item 81 ===
+Timestamp: 20250816_095523
+
+=== Original Text ===
+General description see mother table : ( https://doi.org/10.4228/zalf-58e8-wm91 ) ; Related datasets are listed in the metadata element ' Related Identifier ' .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "USA",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "Haverhill",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Location
+Predictions: [{"country": {"value": "USA", "span": []}}, {"city": {"value": "Haverhill", "span": []}}]
+Gold: []
+

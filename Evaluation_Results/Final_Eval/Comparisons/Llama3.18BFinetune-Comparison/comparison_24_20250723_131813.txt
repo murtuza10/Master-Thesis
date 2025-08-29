@@ -1,0 +1,55 @@
+=== Comparison for Item 24 ===
+Timestamp: 20250723_131813
+
+=== Original Text ===
+The backbone of the investigation was formed by six eddy - covariance stations ( EC ) which measured fluxes of water , energy and carbon dioxide between the land surface and the atmosphere at half hourly resolution . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "nine cropping seasons",
+        "span": [
+          67,
+          88
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "2009",
+        "span": [
+          94,
+          98
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2018",
+        "span": [
+          102,
+          106
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Time Statement
+Predictions: []
+Gold: [{"duration": {"value": "nine cropping seasons", "span": [67, 88]}}, {"startTime": {"value": "2009", "span": [94, 98]}}, {"endTime": {"value": "2018", "span": [102, 106]}}]
+

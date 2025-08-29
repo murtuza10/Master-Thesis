@@ -1,0 +1,108 @@
+=== Comparison for Item 46 ===
+Timestamp: 20250723_131813
+
+=== Original Text ===
+No celery was cultivated during the first rotation . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay loam",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.3 g / cm3",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.2",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "None",
+        "span": []
+      },
+      "region": {
+        "value": "None",
+        "span": []
+      },
+      "city": {
+        "value": "None",
+        "span": []
+      },
+      "latitude": {
+        "value": "25.4 N",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "None",
+        "span": []
+      },
+      "region": {
+        "value": "None",
+        "span": []
+      },
+      "city": {
+        "value": "None",
+        "span": []
+      },
+      "latitude": {
+        "value": "None",
+        "span": []
+      },
+      "longitude": {
+        "value": "121.4 E",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}, {"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay loam", "span": []}}, {"soilBulkDensity": {"value": "1.3 g / cm3", "span": []}}, {"soilPH": {"value": "6.2", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "None", "span": []}, "region": {"value": "None", "span": []}, "city": {"value": "None", "span": []}, "latitude": {"value": "25.4 N", "span": []}}, {"country": {"value": "None", "span": []}, "region": {"value": "None", "span": []}, "city": {"value": "None", "span": []}, "latitude": {"value": "None", "span": []}, "longitude": {"value": "121.4 E", "span": []}}]
+Gold: []
+

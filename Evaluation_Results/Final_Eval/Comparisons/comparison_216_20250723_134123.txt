@@ -1,0 +1,37 @@
+=== Comparison for Item 216 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+For root samples an increase in bacterial and archaeal abundance was only observed for the genotype Capo , especially for the depths 0 - 30 and 30 - 60 cm . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "soil depths",
+        "span": [
+          90,
+          101
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: []
+Gold: [{"soilDepth": {"value": "soil depths", "span": [90, 101]}}]
+

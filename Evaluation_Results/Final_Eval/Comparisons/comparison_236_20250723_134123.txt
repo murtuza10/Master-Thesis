@@ -1,0 +1,92 @@
+=== Comparison for Item 236 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+Soil colonizing spider mites did not affect spider mite abundance on plants and reversed . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "1.4 g / cm 3",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.8",
+        "span": []
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "moderate",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "higher",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "South Africa",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "1200 m",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "22 ° C",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "maize", "span": []}}, {"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "1.4 g / cm 3", "span": []}}, {"soilPH": {"value": "6.8", "span": []}}, {"soilTexture": {"value": "moderate", "span": []}}, {"soilOrganicCarbon": {"value": "higher", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "South Africa", "span": []}}, {"latitude": {"value": "1200 m", "span": []}}, {"longitude": {"value": "22 ° C", "span": []}}]
+Gold: []
+

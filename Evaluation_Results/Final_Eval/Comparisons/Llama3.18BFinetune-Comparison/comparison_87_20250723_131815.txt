@@ -1,0 +1,151 @@
+=== Comparison for Item 87 ===
+Timestamp: 20250723_131815
+
+=== Original Text ===
+Detailed information about the sampling and methodology can be found in the corresponding publication . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "oat",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "rye",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay loam",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "60 cm",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.31 g cm^-3",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.1",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "1.4%",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "4.5 mg kg^-1",
+        "span": []
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "the same as the soil of the region of Germany",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "France",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "UK",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "20.04.2019",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "18.08.2019",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "90 days",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}, "cropVariety": {"value": "", "span": []}}, {"cropSpecies": {"value": "oat", "span": []}, "cropVariety": {"value": "", "span": []}}, {"cropSpecies": {"value": "rye", "span": []}, "cropVariety": {"value": "", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay loam", "span": []}}, {"soilDepth": {"value": "60 cm", "span": []}}, {"soilBulkDensity": {"value": "1.31 g cm^-3", "span": []}}, {"soilPH": {"value": "6.1", "span": []}}, {"soilOrganicCarbon": {"value": "1.4%", "span": []}}, {"soilAvailableNitrogen": {"value": "4.5 mg kg^-1", "span": []}}, {"soilReferenceGroup": {"value": "the same as the soil of the region of Germany", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "France", "span": []}}, {"country": {"value": "Germany", "span": []}}, {"country": {"value": "UK", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "20.04.2019", "span": []}}, {"endTime": {"value": "18.08.2019", "span": []}}, {"duration": {"value": "90 days", "span": []}}]
+Gold: []
+

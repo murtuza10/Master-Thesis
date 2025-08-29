@@ -1,0 +1,173 @@
+=== Comparison for Item 226 ===
+Timestamp: 20250723_131815
+
+=== Original Text ===
+A scoping literature review is conducted to identify the drivers which will further feed into the analysis of the links between pressures ( changes in soil and land management ) , and states ( soil health objectives ) and the respective impacts ( ecosystem services ) . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "soil",
+        "span": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "crop",
+        "span": [
+          24,
+          28
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          114,
+          119
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "soil",
+        "span": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "soil erosion",
+        "span": [
+          63,
+          74
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "soil depth",
+        "span": [
+          82,
+          91
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "soil bulk density",
+        "span": [
+          93,
+          104
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "soil pH",
+        "span": [
+          106,
+          113
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "soil organic carbon",
+        "span": [
+          115,
+          127
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "soil available nitrogen",
+        "span": [
+          129,
+          141
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Nigeria",
+        "span": [
+          0,
+          7
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "tropics",
+        "span": [
+          34,
+          41
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Nairobi",
+        "span": [
+          121,
+          128
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "0.000",
+        "span": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "0.000",
+        "span": [
+          0,
+          5
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "soil", "span": [0, 5]}}, {"cropSpecies": {"value": "crop", "span": [24, 28]}}, {"cropSpecies": {"value": "wheat", "span": [114, 119]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "soil", "span": [0, 5]}}, {"soilReferenceGroup": {"value": "soil erosion", "span": [63, 74]}}, {"soilDepth": {"value": "soil depth", "span": [82, 91]}}, {"soilBulkDensity": {"value": "soil bulk density", "span": [93, 104]}}, {"soilPH": {"value": "soil pH", "span": [106, 113]}}, {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [115, 127]}}, {"soilAvailableNitrogen": {"value": "soil available nitrogen", "span": [129, 141]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Nigeria", "span": [0, 7]}}, {"region": {"value": "tropics", "span": [34, 41]}}, {"city": {"value": "Nairobi", "span": [121, 128]}}, {"latitude": {"value": "0.000", "span": [0, 5]}}, {"longitude": {"value": "0.000", "span": [0, 5]}}]
+Gold: []
+

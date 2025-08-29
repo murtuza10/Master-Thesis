@@ -1,0 +1,115 @@
+=== Comparison for Item 269 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+The mixed Fe - Al - hydroxides were prepared by mixing 0.1 M Fe(NO3)3 ∙ 9 H2O and 0,1 M Al(NO3)3 ∙ 9 H2O were mixed in molar ratios of 1:0 , 10:1 , 5:1 . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "5.5",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "SOC",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "AN",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "100 μ m",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "humid subtropical climate",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "the country's capital",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "39.91",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "115.87",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "2 months",
+        "span": []
+      }
+    },
+    {
+      "startTime": {
+        "value": "the experimental period",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "the experimental period",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilPH": {"value": "5.5", "span": []}}, {"soilOrganicCarbon": {"value": "SOC", "span": []}}, {"soilAvailableNitrogen": {"value": "AN", "span": []}}, {"soilBulkDensity": {"value": "100 μ m", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "humid subtropical climate", "span": []}}, {"city": {"value": "the country's capital", "span": []}}, {"latitude": {"value": "39.91", "span": []}}, {"longitude": {"value": "115.87", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"duration": {"value": "2 months", "span": []}}, {"startTime": {"value": "the experimental period", "span": []}}, {"endTime": {"value": "the experimental period", "span": []}}]
+Gold: []
+

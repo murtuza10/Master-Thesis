@@ -1,0 +1,46 @@
+=== Comparison for Item 137 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+Overall , the OS had a CO2 balance of -262.4 ± 7.8 g CO2 - C m-2 yr-1 indicating CO2 uptake , while the TS was close to neutral ( -28 ± 5.1 g CO2 - C m-2 yr-1 ) .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "pH 6",
+        "span": [
+          117,
+          121
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "24 h",
+        "span": [
+          15,
+          19
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilPH": {"value": "pH 6", "span": [117, 121]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"duration": {"value": "24 h", "span": [15, 19]}}]
+Gold: []
+

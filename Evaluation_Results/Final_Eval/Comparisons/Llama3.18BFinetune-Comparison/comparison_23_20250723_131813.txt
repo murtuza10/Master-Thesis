@@ -1,0 +1,86 @@
+=== Comparison for Item 23 ===
+Timestamp: 20250723_131813
+
+=== Original Text ===
+In each region , measurements were conducted over a time period of nine cropping seasons from 2009 to 2018 . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "soybean",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "1.42 g / cm3",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.3",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "10 cm",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "34 ° N",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "118 ° E",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}, {"cropSpecies": {"value": "soybean", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "1.42 g / cm3", "span": []}}, {"soilPH": {"value": "6.3", "span": []}}, {"soilDepth": {"value": "10 cm", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "", "span": []}}, {"latitude": {"value": "34 ° N", "span": []}}, {"longitude": {"value": "118 ° E", "span": []}}]
+Gold: []
+

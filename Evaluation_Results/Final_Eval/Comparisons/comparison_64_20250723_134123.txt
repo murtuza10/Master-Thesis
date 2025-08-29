@@ -1,0 +1,71 @@
+=== Comparison for Item 64 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+
+ Abstract_text_2 : 
+  Child table of long - term field experiment V140 Muencheberg . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "city": {
+        "value": "Muencheberg",
+        "span": [
+          45,
+          56
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Muencheberg",
+        "span": [
+          148,
+          159
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "1963",
+        "span": [
+          76,
+          80
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "1963",
+        "span": [
+          179,
+          183
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Location
+Predictions: []
+Gold: [{"city": {"value": "Muencheberg", "span": [45, 56]}}, {"city": {"value": "Muencheberg", "span": [148, 159]}}]
+
+Category: Time Statement
+Predictions: []
+Gold: [{"startTime": {"value": "1963", "span": [76, 80]}}, {"startTime": {"value": "1963", "span": [179, 183]}}]
+

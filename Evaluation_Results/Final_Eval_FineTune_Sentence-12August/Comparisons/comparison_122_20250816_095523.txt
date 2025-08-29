@@ -1,0 +1,64 @@
+=== Comparison for Item 122 ===
+Timestamp: 20250816_095523
+
+=== Original Text ===
+Shared Socioeconomic Pathways Scenario Database ( SSP ) .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          58,
+          64
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "0 - 30",
+        "span": [
+          22,
+          28
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "30 - 60",
+        "span": [
+          30,
+          36
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "60 - 100 cm",
+        "span": [
+          38,
+          47
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [58, 64]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilDepth": {"value": "0 - 30", "span": [22, 28]}}, {"soilDepth": {"value": "30 - 60", "span": [30, 36]}}, {"soilDepth": {"value": "60 - 100 cm", "span": [38, 47]}}]
+Gold: []
+

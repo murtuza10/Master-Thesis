@@ -1,0 +1,161 @@
+=== Comparison for Item 12 ===
+Timestamp: 20250816_094258
+
+=== Original Text ===
+Title : 
+ Raw data for " Plot - scale variability of organic carbon in temperate agricultural soils - Implications for soil monitoring " 
+
+ Abstract : 
+ This dataset is the raw data that belongs to a peer - reviewed study on the small - distance variability of soil organic carbon in agricultural soils in Germany . It consists of three different files . The first file gives the coordinates of the 16 soil cores that were taken at each of the 16 sites ( eight cropland and eight grassland sites ) . The second file gives the soil properties measured at each individual core ( n=16 per site ) and the third file the soil properties measured at each indivdual soil profile ( n=6 per site ) .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "C4 roots",
+        "span": [
+          95,
+          101
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "C3 soil",
+        "span": [
+          103,
+          108
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilOrganicCarbon": {
+        "value": "particulate organic carbon (POC)",
+        "span": [
+          127,
+          147
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "mineral associated organic carbon (MAOC)",
+        "span": [
+          151,
+          173
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "2 - year",
+        "span": [
+          21,
+          27
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilOrganicCarbon": {
+        "value": "particulate organic carbon",
+        "span": [
+          240,
+          266
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "POC",
+        "span": [
+          269,
+          272
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "mineral associated organic carbon",
+        "span": [
+          279,
+          312
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "MAOC",
+        "span": [
+          315,
+          319
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "2 - year",
+        "span": [
+          99,
+          107
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "6",
+        "span": [
+          197,
+          198
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "12",
+        "span": [
+          201,
+          203
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "24 months",
+        "span": [
+          208,
+          217
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "C4 roots", "span": [95, 101]}}, {"cropSpecies": {"value": "C3 soil", "span": [103, 108]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilOrganicCarbon": {"value": "particulate organic carbon (POC)", "span": [127, 147]}}, {"soilOrganicCarbon": {"value": "mineral associated organic carbon (MAOC)", "span": [151, 173]}}]
+Gold: [{"soilOrganicCarbon": {"value": "particulate organic carbon", "span": [240, 266]}}, {"soilOrganicCarbon": {"value": "POC", "span": [269, 272]}}, {"soilOrganicCarbon": {"value": "mineral associated organic carbon", "span": [279, 312]}}, {"soilOrganicCarbon": {"value": "MAOC", "span": [315, 319]}}]
+
+Category: Time Statement
+Predictions: [{"duration": {"value": "2 - year", "span": [21, 27]}}]
+Gold: [{"duration": {"value": "2 - year", "span": [99, 107]}}, {"duration": {"value": "6", "span": [197, 198]}}, {"duration": {"value": "12", "span": [201, 203]}}, {"duration": {"value": "24 months", "span": [208, 217]}}]
+

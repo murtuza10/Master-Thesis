@@ -1,0 +1,109 @@
+=== Comparison for Item 259 ===
+Timestamp: 20250723_131813
+
+=== Original Text ===
+soil inversion ) . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "winter wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "winter wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "30 cm",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "20 cm",
+        "span": []
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "soil texture",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "soil organic carbon",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "south - west",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2011 - 2012",
+        "span": []
+      }
+    },
+    {
+      "startTime": {
+        "value": "2013 - 2014",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "winter season",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "winter wheat", "span": []}}, {"cropSpecies": {"value": "winter wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "30 cm", "span": []}}, {"soilBulkDensity": {"value": "20 cm", "span": []}}, {"soilTexture": {"value": "soil texture", "span": []}}, {"soilOrganicCarbon": {"value": "soil organic carbon", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": []}}, {"latitude": {"value": "south - west", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2011 - 2012", "span": []}}, {"startTime": {"value": "2013 - 2014", "span": []}}, {"duration": {"value": "winter season", "span": []}}]
+Gold: []
+

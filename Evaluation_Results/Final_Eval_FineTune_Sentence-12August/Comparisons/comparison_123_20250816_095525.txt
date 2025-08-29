@@ -1,0 +1,32 @@
+=== Comparison for Item 123 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+https://iiasa.ac.at/models-tools-data/ssp ( Accessed on November 2023 ) [ 5 ] World Trade Organization , 2024 .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "celery",
+        "span": [
+          10,
+          16
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "celery", "span": [10, 16]}}]
+Gold: []
+

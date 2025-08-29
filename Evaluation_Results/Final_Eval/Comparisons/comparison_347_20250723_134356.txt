@@ -1,0 +1,113 @@
+=== Comparison for Item 347 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+Title : 
+ Calculations of gaseous and particulate emissions from German agriculture 1990 - 2017 : Input data and emission results 
+
+ Abstract : 
+ In international conventions Germany has committed to the mitigation of emissions of greenhouse gases and air pollution . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Aldura",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay loam",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2.3%",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "latitude": {
+        "value": "45.6789",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "9.8765",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "Lombardy",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "Italy",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "January 1, 2023",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "December 31, 2023",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}, {"cropVariety": {"value": "Aldura", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay loam", "span": []}}, {"soilPH": {"value": "6.5", "span": []}}, {"soilOrganicCarbon": {"value": "2.3%", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"latitude": {"value": "45.6789", "span": []}}, {"longitude": {"value": "9.8765", "span": []}}, {"region": {"value": "Lombardy", "span": []}}, {"country": {"value": "Italy", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "January 1, 2023", "span": []}}, {"endTime": {"value": "December 31, 2023", "span": []}}]
+Gold: []
+

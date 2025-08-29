@@ -1,0 +1,95 @@
+=== Comparison for Item 15 ===
+Timestamp: 20250723_134358
+
+=== Original Text ===
+All crop residues remain on the fields . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay loam",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.8",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "Iowa",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "USA",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "March 2022",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "October 2022",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          17,
+          22
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: [{"cropSpecies": {"value": "wheat", "span": [17, 22]}}]
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay loam", "span": []}}, {"soilPH": {"value": "6.8", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "Iowa", "span": []}}, {"country": {"value": "USA", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "March 2022", "span": []}}, {"endTime": {"value": "October 2022", "span": []}}]
+Gold: []
+

@@ -1,0 +1,32 @@
+=== Comparison for Item 30 ===
+Timestamp: 20250816_095523
+
+=== Original Text ===
+Moreover , more than 1,200 soil samples were taken to study changes of carbon and nitrogen contents .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          65,
+          71
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [65, 71]}}]
+Gold: []
+

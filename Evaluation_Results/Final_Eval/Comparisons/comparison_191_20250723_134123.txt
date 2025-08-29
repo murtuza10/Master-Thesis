@@ -1,0 +1,80 @@
+=== Comparison for Item 191 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+The concentrations of P and Fe were determined using inductively coupled plasma atomic emission spectroscopy ( ICP - AES ) . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "P - poor",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "15 min",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "3500 rpm",
+        "span": []
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "168",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "24 h",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "P - poor", "span": []}}, {"soilDepth": {"value": "15 min", "span": []}}, {"soilBulkDensity": {"value": "3500 rpm", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2", "span": []}}, {"endTime": {"value": "168", "span": []}}, {"duration": {"value": "24 h", "span": []}}]
+Gold: []
+

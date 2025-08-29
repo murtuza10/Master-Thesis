@@ -1,0 +1,215 @@
+=== Comparison for Item 315 ===
+Timestamp: 20250723_131816
+
+=== Original Text ===
+DrosoMon also provides the means to visualize the data at trap levels and compare variations in captures between traps or with temperature and precipitation data from the nearest weather station . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "SWD",
+        "span": [
+          123,
+          127
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "SWD",
+        "span": [
+          129,
+          133
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          135,
+          141
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "soil texture",
+        "span": [
+          166,
+          177
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "soil reference group",
+        "span": [
+          178,
+          190
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "soil depth",
+        "span": [
+          191,
+          198
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "soil bulk density",
+        "span": [
+          199,
+          213
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "soil pH",
+        "span": [
+          214,
+          220
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "soil organic carbon",
+        "span": [
+          221,
+          235
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "soil available nitrogen",
+        "span": [
+          236,
+          251
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          25,
+          33
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "region",
+        "span": [
+          34,
+          41
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "city",
+        "span": [
+          42,
+          48
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "latitude",
+        "span": [
+          49,
+          57
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "longitude",
+        "span": [
+          58,
+          66
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "start time",
+        "span": [
+          167,
+          177
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "end time",
+        "span": [
+          178,
+          188
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "duration",
+        "span": [
+          189,
+          196
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          199,
+          206
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "SWD", "span": [123, 127]}}, {"cropSpecies": {"value": "SWD", "span": [129, 133]}}, {"cropSpecies": {"value": "wheat", "span": [135, 141]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "soil texture", "span": [166, 177]}}, {"soilReferenceGroup": {"value": "soil reference group", "span": [178, 190]}}, {"soilDepth": {"value": "soil depth", "span": [191, 198]}}, {"soilBulkDensity": {"value": "soil bulk density", "span": [199, 213]}}, {"soilPH": {"value": "soil pH", "span": [214, 220]}}, {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [221, 235]}}, {"soilAvailableNitrogen": {"value": "soil available nitrogen", "span": [236, 251]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": [25, 33]}}, {"region": {"value": "region", "span": [34, 41]}}, {"city": {"value": "city", "span": [42, 48]}}, {"latitude": {"value": "latitude", "span": [49, 57]}}, {"longitude": {"value": "longitude", "span": [58, 66]}}]
+Gold: [{"country": {"value": "Germany", "span": [199, 206]}}]
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "start time", "span": [167, 177]}}, {"endTime": {"value": "end time", "span": [178, 188]}}, {"duration": {"value": "duration", "span": [189, 196]}}]
+Gold: []
+

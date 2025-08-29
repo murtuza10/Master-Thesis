@@ -1,0 +1,179 @@
+=== Comparison for Item 263 ===
+Timestamp: 20250723_131815
+
+=== Original Text ===
+Description of table 1 Related datasets are listed in the metadata element ' Related Identifier ' . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          43,
+          48
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "winter wheat",
+        "span": [
+          83,
+          93
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loamy sand",
+        "span": [
+          111,
+          121
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.42 g / cm3",
+        "span": [
+          58,
+          70
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "1.00 m",
+        "span": [
+          71,
+          76
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "7.1",
+        "span": [
+          94,
+          98
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2.7 %",
+        "span": [
+          99,
+          106
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "2.5 kg / ha",
+        "span": [
+          107,
+          118
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          133,
+          140
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Saxony-Anhalt",
+        "span": [
+          124,
+          135
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Bernburg",
+        "span": [
+          129,
+          137
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "the first day of March",
+        "span": [
+          115,
+          133
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "the last day of October",
+        "span": [
+          134,
+          152
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "8 months",
+        "span": [
+          153,
+          161
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "city": {
+        "value": "Bernburg - Strenzfeld",
+        "span": [
+          110,
+          131
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [43, 48]}}, {"cropSpecies": {"value": "winter wheat", "span": [83, 93]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loamy sand", "span": [111, 121]}}, {"soilBulkDensity": {"value": "1.42 g / cm3", "span": [58, 70]}}, {"soilDepth": {"value": "1.00 m", "span": [71, 76]}}, {"soilPH": {"value": "7.1", "span": [94, 98]}}, {"soilOrganicCarbon": {"value": "2.7 %", "span": [99, 106]}}, {"soilAvailableNitrogen": {"value": "2.5 kg / ha", "span": [107, 118]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": [133, 140]}}, {"region": {"value": "Saxony-Anhalt", "span": [124, 135]}}, {"city": {"value": "Bernburg", "span": [129, 137]}}]
+Gold: [{"city": {"value": "Bernburg - Strenzfeld", "span": [110, 131]}}]
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "the first day of March", "span": [115, 133]}}, {"endTime": {"value": "the last day of October", "span": [134, 152]}}, {"duration": {"value": "8 months", "span": [153, 161]}}]
+Gold: []
+

@@ -1,0 +1,91 @@
+=== Comparison for Item 120 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+Integrated Database ( IDB ) . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loam",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2%",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "United States",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "California",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "January 2023",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "December 2023",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loam", "span": []}}, {"soilPH": {"value": "6.5", "span": []}}, {"soilOrganicCarbon": {"value": "2%", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "United States", "span": []}}, {"region": {"value": "California", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "January 2023", "span": []}}, {"endTime": {"value": "December 2023", "span": []}}]
+Gold: []
+

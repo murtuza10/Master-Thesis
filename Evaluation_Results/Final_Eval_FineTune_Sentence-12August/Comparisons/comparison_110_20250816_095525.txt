@@ -1,0 +1,59 @@
+=== Comparison for Item 110 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+Dies führt erwartungsgemäß zu steigenden Ressourcenkonkurrenzen .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "bulk density",
+        "span": [
+          39,
+          50
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "nitrogen content",
+        "span": [
+          18,
+          31
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "ammonium - N",
+        "span": [
+          32,
+          41
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "nitrate - N",
+        "span": [
+          43,
+          52
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "bulk density", "span": [39, 50]}}, {"soilAvailableNitrogen": {"value": "nitrogen content", "span": [18, 31]}}, {"soilAvailableNitrogen": {"value": "ammonium - N", "span": [32, 41]}}, {"soilAvailableNitrogen": {"value": "nitrate - N", "span": [43, 52]}}]
+Gold: []
+

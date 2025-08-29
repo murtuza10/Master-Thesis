@@ -1,0 +1,166 @@
+=== Comparison for Item 107 ===
+Timestamp: 20250723_131816
+
+=== Original Text ===
+In den hier dargestellten Dokumenten sind Eingangsdaten , Datenkalibrierungen , Modelinputdaten , Ergebnisse der Modellierung der drei Szenarien und Hintergrundinformationen abgelegt . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Winterweizen",
+        "span": [
+          16,
+          29
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Sonnenblumen",
+        "span": [
+          34,
+          43
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Mais",
+        "span": [
+          45,
+          49
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Rostow",
+        "span": [
+          67,
+          72
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "Kachalovka",
+        "span": [
+          81,
+          91
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "Winterweizen", "span": [16, 29]}}, {"cropSpecies": {"value": "Sonnenblumen", "span": [34, 43]}}, {"cropSpecies": {"value": "Mais", "span": [45, 49]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "", "span": []}}, {"soilReferenceGroup": {"value": "", "span": []}}, {"soilDepth": {"value": "", "span": []}}, {"soilBulkDensity": {"value": "", "span": []}}, {"soilPH": {"value": "", "span": []}}, {"soilOrganicCarbon": {"value": "", "span": []}}, {"soilAvailableNitrogen": {"value": "", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Rostow", "span": [67, 72]}}, {"region": {"value": "", "span": []}}, {"city": {"value": "Kachalovka", "span": [81, 91]}}, {"latitude": {"value": "", "span": []}}, {"longitude": {"value": "", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "", "span": []}}, {"endTime": {"value": "", "span": []}}, {"duration": {"value": "", "span": []}}]
+Gold: []
+

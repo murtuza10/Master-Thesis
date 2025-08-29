@@ -1,0 +1,92 @@
+=== Comparison for Item 331 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+These deployments account for a total of 116,602 days and captured 756,717 adult D. suzukii individuals . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "China",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "south-east region of China",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2018-04-01",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "2018-09-30",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "China", "span": []}}, {"region": {"value": "south-east region of China", "span": []}}, {"city": {"value": "None", "span": []}}, {"latitude": {"value": "None", "span": []}}, {"longitude": {"value": "None", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2018-04-01", "span": []}}, {"endTime": {"value": "2018-09-30", "span": []}}, {"duration": {"value": "None", "span": []}}]
+Gold: []
+

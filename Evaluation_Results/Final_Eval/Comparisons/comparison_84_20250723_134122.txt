@@ -1,0 +1,100 @@
+=== Comparison for Item 84 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+No applications were conducted at a second field site , which was designated as the negative control . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "winter",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "0-20 cm",
+        "span": []
+      },
+      "soilBulkDensity": {
+        "value": "None",
+        "span": []
+      },
+      "soilPH": {
+        "value": "None",
+        "span": []
+      },
+      "soilOrganicCarbon": {
+        "value": "None",
+        "span": []
+      },
+      "soilAvailableNitrogen": {
+        "value": "None",
+        "span": []
+      },
+      "soilTexture": {
+        "value": "None",
+        "span": []
+      },
+      "soilReferenceGroup": {
+        "value": "reference field site",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "latitude": {
+        "value": "None",
+        "span": []
+      },
+      "longitude": {
+        "value": "None",
+        "span": []
+      },
+      "country": {
+        "value": "None",
+        "span": []
+      },
+      "region": {
+        "value": "None",
+        "span": []
+      },
+      "city": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}, "cropVariety": {"value": "winter", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilDepth": {"value": "0-20 cm", "span": []}, "soilBulkDensity": {"value": "None", "span": []}, "soilPH": {"value": "None", "span": []}, "soilOrganicCarbon": {"value": "None", "span": []}, "soilAvailableNitrogen": {"value": "None", "span": []}, "soilTexture": {"value": "None", "span": []}, "soilReferenceGroup": {"value": "reference field site", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"latitude": {"value": "None", "span": []}, "longitude": {"value": "None", "span": []}, "country": {"value": "None", "span": []}, "region": {"value": "None", "span": []}, "city": {"value": "None", "span": []}}]
+Gold: []
+

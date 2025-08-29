@@ -1,0 +1,46 @@
+=== Comparison for Item 307 ===
+Timestamp: 20250723_134124
+
+=== Original Text ===
+A total of 70 active substances have been monitored while farmers applied 25 active substances . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "winter",
+        "span": [
+          23,
+          29
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [0, 5]}}, {"cropVariety": {"value": "winter", "span": [23, 29]}}]
+Gold: []
+

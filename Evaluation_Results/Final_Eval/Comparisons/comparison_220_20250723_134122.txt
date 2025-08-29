@@ -1,0 +1,178 @@
+=== Comparison for Item 220 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+In addition , the shared ASVs representing the core microbiome , in soil and root samples , contain more shared ASVs between the genotypes per each depth in DLB treatment in comparison to control plots . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "winter wheat",
+        "span": [
+          34,
+          45
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          114,
+          118
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sandy loam",
+        "span": [
+          64,
+          76
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "upper 15 cm of the soil profile",
+        "span": [
+          128,
+          153
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "15 cm",
+        "span": [
+          154,
+          158
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.2 to 1.5 g cm-3",
+        "span": [
+          159,
+          174
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.0 to 7.0",
+        "span": [
+          175,
+          184
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "0.3 to 0.8 %",
+        "span": [
+          185,
+          198
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "10 to 20 ppm",
+        "span": [
+          199,
+          210
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "N/A",
+        "span": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "N/A",
+        "span": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "N/A",
+        "span": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "37.42°",
+        "span": [
+          38,
+          44
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "115.51°",
+        "span": [
+          46,
+          52
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2019",
+        "span": [
+          123,
+          127
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "winter wheat", "span": [34, 45]}}, {"cropSpecies": {"value": "wheat", "span": [114, 118]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "sandy loam", "span": [64, 76]}}, {"soilReferenceGroup": {"value": "upper 15 cm of the soil profile", "span": [128, 153]}}, {"soilDepth": {"value": "15 cm", "span": [154, 158]}}, {"soilBulkDensity": {"value": "1.2 to 1.5 g cm-3", "span": [159, 174]}}, {"soilPH": {"value": "6.0 to 7.0", "span": [175, 184]}}, {"soilOrganicCarbon": {"value": "0.3 to 0.8 %", "span": [185, 198]}}, {"soilAvailableNitrogen": {"value": "10 to 20 ppm", "span": [199, 210]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "N/A", "span": [0, 0]}}, {"region": {"value": "N/A", "span": [0, 0]}}, {"city": {"value": "N/A", "span": [0, 0]}}, {"latitude": {"value": "37.42°", "span": [38, 44]}}, {"longitude": {"value": "115.51°", "span": [46, 52]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2019", "span": [123, 127]}}]
+Gold: []
+

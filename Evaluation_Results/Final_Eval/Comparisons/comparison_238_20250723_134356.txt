@@ -1,0 +1,85 @@
+=== Comparison for Item 238 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+In 2020 and 2021 , we investigated the efficacy of the predatory mite Neoseiulus californicus ( McGregor ) for suppressing spider mite hotspots in the cropland . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loam",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2.1%",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "USA",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "state of Iowa",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "summer of 2022",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "maize", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loam", "span": []}}, {"soilPH": {"value": "6.5", "span": []}}, {"soilOrganicCarbon": {"value": "2.1%", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "USA", "span": []}}, {"region": {"value": "state of Iowa", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "summer of 2022", "span": []}}]
+Gold: []
+

@@ -1,0 +1,149 @@
+=== Comparison for Item 264 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+Dataset version 1.0 
+ Keywords : 
+  Soil , nitrogen fertilizers , tillage , crop rotation , winter wheat , winter barley , rapeseed , maize , yields , topsoil , roots , rhizosphere , microbiomes , soil bacteria , soil fungi , arid zones , opendata , nitrogenous fertiliser , cultivation , yield ( agricultural ) , Grossbeeren 
+ 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          36,
+          41
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          67,
+          72
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          98,
+          103
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          129,
+          134
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          160,
+          165
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "pH below 6.5",
+        "span": [
+          46,
+          54
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "UK",
+        "span": [
+          22,
+          25
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Australia",
+        "span": [
+          84,
+          92
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "eastern region",
+        "span": [
+          38,
+          51
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "eastern region",
+        "span": [
+          95,
+          108
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "eastern region",
+        "span": [
+          137,
+          150
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [0, 5]}}, {"cropSpecies": {"value": "wheat", "span": [36, 41]}}, {"cropSpecies": {"value": "wheat", "span": [67, 72]}}, {"cropSpecies": {"value": "wheat", "span": [98, 103]}}, {"cropSpecies": {"value": "wheat", "span": [129, 134]}}, {"cropSpecies": {"value": "wheat", "span": [160, 165]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilPH": {"value": "pH below 6.5", "span": [46, 54]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "UK", "span": [22, 25]}}, {"country": {"value": "Australia", "span": [84, 92]}}, {"region": {"value": "eastern region", "span": [38, 51]}}, {"region": {"value": "eastern region", "span": [95, 108]}}, {"region": {"value": "eastern region", "span": [137, 150]}}]
+Gold: []
+

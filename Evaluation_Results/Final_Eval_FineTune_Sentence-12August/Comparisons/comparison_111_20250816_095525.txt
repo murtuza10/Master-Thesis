@@ -1,0 +1,32 @@
+=== Comparison for Item 111 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+In den hier dargestellten Dokumenten sind Eingangsdaten , Datenkalibrierungen , Modelinputdaten , Ergebnisse der Modellierung der drei Szenarien und Hintergrundinformationen abgelegt .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "crops",
+        "span": [
+          48,
+          53
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "crops", "span": [48, 53]}}]
+Gold: []
+

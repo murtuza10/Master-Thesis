@@ -1,0 +1,56 @@
+=== Comparison for Item 11 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+Abstract_text_2 : 
+  The long - term field trial started 1992 in Bernburg , Saxony Anhalt , Germany ( 51 ° 82 ' N , 11 ° 70 ' , 138 m above sea level ) .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "50 m a.s.l.",
+        "span": [
+          36,
+          48
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "latitude": {
+        "value": "13 ° 19’05.47 ’’ N",
+        "span": [
+          17,
+          34
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "52 ° 21’01.30 ’’ E",
+        "span": [
+          5,
+          22
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilDepth": {"value": "50 m a.s.l.", "span": [36, 48]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"latitude": {"value": "13 ° 19’05.47 ’’ N", "span": [17, 34]}}, {"longitude": {"value": "52 ° 21’01.30 ’’ E", "span": [5, 22]}}]
+Gold: []
+

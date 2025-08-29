@@ -1,0 +1,130 @@
+=== Comparison for Item 74 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+Dataset version 1.0 
+ Keywords : 
+  Boden , Langzeitversuch , Landwirtschaft , Versuchsanlage , agriculture , Field experimentation , Agricultural research , Research methods , Field size , Field shape , plot design , Geodesy , Dauerfeldversuch , Dauerversuch , Langzeitfeldversuch , Langzeitversuch , Dauerdüngungversuch , Langzeitdüngungsversuch , DFV , DDV , DV , Long - Term Field Experiment , Long - Term Experiment , Long - Term Trial , Long - Term Field Trial , Long - Term Fertilizer Experiment , Long - Term Soil Experiment , LTFE , LTE , LTSE , opendata , Boden , inspireidentifiziert , long - term experiments , nitrogen fertilizers , organic fertilizers , farmyard manure , maize , winter wheat , winter barley , carbon sequestration 
+ 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "corn",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "soybeans",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loamy",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "4%",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "100 units per hectare",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.2 g/cm³",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.0",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "city": {
+        "value": "Des Moines",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "Midwestern United States",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "United States",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "late April",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "2 weeks",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "summer of 2020",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}, {"cropSpecies": {"value": "corn", "span": []}}, {"cropSpecies": {"value": "soybeans", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loamy", "span": []}}, {"soilOrganicCarbon": {"value": "4%", "span": []}}, {"soilAvailableNitrogen": {"value": "100 units per hectare", "span": []}}, {"soilBulkDensity": {"value": "1.2 g/cm³", "span": []}}, {"soilPH": {"value": "6.0", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"city": {"value": "Des Moines", "span": []}}, {"region": {"value": "Midwestern United States", "span": []}}, {"country": {"value": "United States", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "late April", "span": []}}, {"endTime": {"value": "2 weeks", "span": []}}, {"duration": {"value": "summer of 2020", "span": []}}]
+Gold: []
+

@@ -1,0 +1,148 @@
+=== Comparison for Item 234 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+
+ Abstract_text_2 : 
+  Between 2017 and 2019 we studied the abundance of spider mites in the soil to estimate the potential infestation pressure of soil colonizing spider mites . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "cucumber",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "cucumber",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "0 to 30 cm",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.2 g/cm³",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2.5%",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "North Central Region",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "United States",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "Indiana",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "40.4168° N",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "86.9017° W",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "May",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "October",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "2020",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "cucumbers",
+        "span": [
+          75,
+          84
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "cucumbers",
+        "span": [
+          335,
+          344
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "cucumber", "span": []}}, {"cropSpecies": {"value": "cucumber", "span": []}}]
+Gold: [{"cropSpecies": {"value": "cucumbers", "span": [75, 84]}}, {"cropSpecies": {"value": "cucumbers", "span": [335, 344]}}]
+
+Category: Soil
+Predictions: [{"soilDepth": {"value": "0 to 30 cm", "span": []}}, {"soilBulkDensity": {"value": "1.2 g/cm³", "span": []}}, {"soilPH": {"value": "6.5", "span": []}}, {"soilOrganicCarbon": {"value": "2.5%", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "North Central Region", "span": []}}, {"country": {"value": "United States", "span": []}}, {"city": {"value": "Indiana", "span": []}}, {"latitude": {"value": "40.4168° N", "span": []}}, {"longitude": {"value": "86.9017° W", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "May", "span": []}}, {"endTime": {"value": "October", "span": []}}, {"duration": {"value": "2020", "span": []}}]
+Gold: []
+

@@ -1,0 +1,37 @@
+=== Comparison for Item 247 ===
+Timestamp: 20250723_131815
+
+=== Original Text ===
+Plot dimensions were 500 m long and 30 m wide included 19 plants rows and 6 transects . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "cucumber",
+        "span": [
+          100,
+          108
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropSpecies": {"value": "cucumber", "span": [100, 108]}}]
+

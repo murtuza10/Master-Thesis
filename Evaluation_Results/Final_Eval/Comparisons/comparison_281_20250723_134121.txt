@@ -1,0 +1,37 @@
+=== Comparison for Item 281 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+After shaking horizontally for 24 h at 150 motions min-1 , the hydroxides were centrifuged for 5 min at 929 x G. The supernatant was filtrated and the adsorbed P concentration determined Desorption experiments were conducted with CaCl2 , CaSO4 , humic acid , and citric acid , adjusted to pH 6 . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sand",
+        "span": [
+          18,
+          22
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: []
+Gold: [{"soilTexture": {"value": "sand", "span": [18, 22]}}]
+

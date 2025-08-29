@@ -1,0 +1,37 @@
+=== Comparison for Item 289 ===
+Timestamp: 20250723_134124
+
+=== Original Text ===
+For this purpose we have established a transect starting from the edge of the kettle holes up to 50 m into the surrounding wheat fields . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          87,
+          92
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropSpecies": {"value": "wheat", "span": [87, 92]}}]
+

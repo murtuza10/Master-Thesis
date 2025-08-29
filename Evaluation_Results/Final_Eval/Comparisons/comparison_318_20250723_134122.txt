@@ -1,0 +1,89 @@
+=== Comparison for Item 318 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+All monitoring sites are located in southwest Germany roughly within ~75 km radius near the institutes . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "D. suzukii",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "city": {
+        "value": "Dossenheim",
+        "span": [
+          164,
+          174
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Siebeldingen",
+        "span": [
+          179,
+          191
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Darmstadt",
+        "span": [
+          246,
+          255
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2011",
+        "span": [
+          275,
+          279
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2018",
+        "span": [
+          284,
+          288
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "D. suzukii", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: []
+Gold: [{"city": {"value": "Dossenheim", "span": [164, 174]}}, {"city": {"value": "Siebeldingen", "span": [179, 191]}}, {"city": {"value": "Darmstadt", "span": [246, 255]}}]
+
+Category: Time Statement
+Predictions: []
+Gold: [{"startTime": {"value": "2011", "span": [275, 279]}}, {"endTime": {"value": "2018", "span": [284, 288]}}]
+

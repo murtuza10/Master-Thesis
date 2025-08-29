@@ -1,0 +1,78 @@
+=== Comparison for Item 372 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+In this experiment , additionally to the volatile acidity of the grape clusters , the fly emergence rates and grape cluster weight were determined . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "grapes",
+        "span": [
+          125,
+          131
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "30.8.2017",
+        "span": [
+          44,
+          53
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "6.9.2017",
+        "span": [
+          58,
+          66
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "20.9.2017",
+        "span": [
+          99,
+          108
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "25.9.2017",
+        "span": [
+          113,
+          122
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropSpecies": {"value": "grapes", "span": [125, 131]}}]
+
+Category: Time Statement
+Predictions: []
+Gold: [{"startTime": {"value": "30.8.2017", "span": [44, 53]}}, {"startTime": {"value": "6.9.2017", "span": [58, 66]}}, {"endTime": {"value": "20.9.2017", "span": [99, 108]}}, {"endTime": {"value": "25.9.2017", "span": [113, 122]}}]
+

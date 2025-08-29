@@ -1,0 +1,88 @@
+=== Comparison for Item 302 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+
+
+ 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "crops",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "respective crops",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "1.32 g/cm³",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "30 cm",
+        "span": []
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "silty clay loam",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "110 mg/kg",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.2",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "a region",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "crops", "span": []}}, {"cropSpecies": {"value": "respective crops", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "1.32 g/cm³", "span": []}}, {"soilDepth": {"value": "30 cm", "span": []}}, {"soilTexture": {"value": "silty clay loam", "span": []}}, {"soilAvailableNitrogen": {"value": "110 mg/kg", "span": []}}, {"soilPH": {"value": "6.2", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "a region", "span": []}}]
+Gold: []
+

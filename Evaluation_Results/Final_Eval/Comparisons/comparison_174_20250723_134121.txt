@@ -1,0 +1,57 @@
+=== Comparison for Item 174 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+General description see mother table : ( https://doi.org/10.4228/zalf-zh6h-df38 ) ; Related datasets are listed in the metadata element ' Related Identifier ' . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "potato",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "A",
+        "span": []
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "B",
+        "span": []
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}, {"cropSpecies": {"value": "potato", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "A", "span": []}}, {"soilTexture": {"value": "B", "span": []}}]
+Gold: []
+

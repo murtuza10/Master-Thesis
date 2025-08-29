@@ -1,0 +1,117 @@
+=== Comparison for Item 207 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+2021 ) . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sandy loam",
+        "span": []
+      },
+      "soilDepth": {
+        "value": "60 cm",
+        "span": []
+      },
+      "soilBulkDensity": {
+        "value": "1.3 g / cm3",
+        "span": []
+      },
+      "soilOrganicCarbon": {
+        "value": "1.5 %",
+        "span": []
+      },
+      "soilAvailableNitrogen": {
+        "value": "170 ppm",
+        "span": []
+      },
+      "soilPH": {
+        "value": "6.8",
+        "span": []
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "the soil of the experimental field",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "",
+        "span": []
+      },
+      "region": {
+        "value": "Hesse",
+        "span": []
+      },
+      "city": {
+        "value": "",
+        "span": []
+      },
+      "latitude": {
+        "value": "50.23 N",
+        "span": []
+      },
+      "longitude": {
+        "value": "9.16 E",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2015",
+        "span": []
+      },
+      "endTime": {
+        "value": "2019",
+        "span": []
+      },
+      "duration": {
+        "value": "4 years",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "sandy loam", "span": []}, "soilDepth": {"value": "60 cm", "span": []}, "soilBulkDensity": {"value": "1.3 g / cm3", "span": []}, "soilOrganicCarbon": {"value": "1.5 %", "span": []}, "soilAvailableNitrogen": {"value": "170 ppm", "span": []}, "soilPH": {"value": "6.8", "span": []}}, {"soilReferenceGroup": {"value": "the soil of the experimental field", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "", "span": []}, "region": {"value": "Hesse", "span": []}, "city": {"value": "", "span": []}, "latitude": {"value": "50.23 N", "span": []}, "longitude": {"value": "9.16 E", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2015", "span": []}, "endTime": {"value": "2019", "span": []}, "duration": {"value": "4 years", "span": []}}]
+Gold: []
+

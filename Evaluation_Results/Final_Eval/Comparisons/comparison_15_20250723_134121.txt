@@ -1,0 +1,102 @@
+=== Comparison for Item 15 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+All crop residues remain on the fields . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "napus",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "oats",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "poor",
+        "span": []
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "regions with poor soil",
+        "span": []
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "September",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "June",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "9 months",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          17,
+          22
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "napus", "span": []}}, {"cropSpecies": {"value": "wheat", "span": []}}, {"cropSpecies": {"value": "barley", "span": []}}, {"cropSpecies": {"value": "oats", "span": []}}]
+Gold: [{"cropSpecies": {"value": "wheat", "span": [17, 22]}}]
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "poor", "span": []}}, {"soilReferenceGroup": {"value": "regions with poor soil", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "September", "span": []}}, {"endTime": {"value": "June", "span": []}}, {"duration": {"value": "9 months", "span": []}}]
+Gold: []
+

@@ -1,0 +1,113 @@
+=== Comparison for Item 111 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+www.fao . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Paddy",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "IR64",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "Sandy Loam",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "7.5",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "0.8%",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "250 kg/ha",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "India",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "Andhra Pradesh",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "Krishna",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "Kondavolu",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "June 2023",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "November 2023",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "Paddy", "span": []}, "cropVariety": {"value": "IR64", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "Sandy Loam", "span": []}}, {"soilPH": {"value": "7.5", "span": []}}, {"soilOrganicCarbon": {"value": "0.8%", "span": []}}, {"soilAvailableNitrogen": {"value": "250 kg/ha", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "India", "span": []}}, {"region": {"value": "Andhra Pradesh", "span": []}}, {"city": {"value": "Krishna", "span": []}}, {"city": {"value": "Kondavolu", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "June 2023", "span": []}}, {"endTime": {"value": "November 2023", "span": []}}]
+Gold: []
+

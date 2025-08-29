@@ -1,0 +1,51 @@
+=== Comparison for Item 311 ===
+Timestamp: 20250723_134355
+
+=== Original Text ===
+It has already caused severe economic damages in many fruit - crops and some susceptible grape varieties and seems to have successfully adapted to survive under a variety of conditions . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          98,
+          105
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "7 - year",
+        "span": [
+          38,
+          46
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Location
+Predictions: []
+Gold: [{"country": {"value": "Germany", "span": [98, 105]}}]
+
+Category: Time Statement
+Predictions: []
+Gold: [{"duration": {"value": "7 - year", "span": [38, 46]}}]
+

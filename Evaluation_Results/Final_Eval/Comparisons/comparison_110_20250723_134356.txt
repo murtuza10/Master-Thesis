@@ -1,0 +1,40 @@
+=== Comparison for Item 110 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+Forestry Production and Trade , Statistical Database . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2020",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "2021",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2020", "span": []}}, {"endTime": {"value": "2021", "span": []}}]
+Gold: []
+

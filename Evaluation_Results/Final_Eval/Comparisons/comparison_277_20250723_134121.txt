@@ -1,0 +1,37 @@
+=== Comparison for Item 277 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+10 g of the hydroxide in a 0.01 M NaNO3 - solution were adjusted to pH 6 , resulting in a final volume of 100 ml . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sand",
+        "span": [
+          11,
+          15
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: []
+Gold: [{"soilTexture": {"value": "sand", "span": [11, 15]}}]
+

@@ -1,0 +1,46 @@
+=== Comparison for Item 54 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+Mineral P and K fertilization was uniform for all treatments .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          58,
+          65
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2019",
+        "span": [
+          49,
+          53
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": [58, 65]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2019", "span": [49, 53]}}]
+Gold: []
+

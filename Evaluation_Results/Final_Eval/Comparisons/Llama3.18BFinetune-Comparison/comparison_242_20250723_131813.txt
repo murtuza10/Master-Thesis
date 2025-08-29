@@ -1,0 +1,145 @@
+=== Comparison for Item 242 ===
+Timestamp: 20250723_131813
+
+=== Original Text ===
+Tetranychus urticae served as reference . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "spider mites",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "winter wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay loam",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "0.15 m",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.30 g / cm3",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.2",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "4.9 g / kg",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "35.5 mg / kg",
+        "span": []
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "USDA-760",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "United States",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "Oklahoma",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "Oklahoma",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "36.75 N",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "96.55 W",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "winter season",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "winter season",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "winter season",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "spider mites", "span": []}}, {"cropSpecies": {"value": "winter wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay loam", "span": []}}, {"soilDepth": {"value": "0.15 m", "span": []}}, {"soilBulkDensity": {"value": "1.30 g / cm3", "span": []}}, {"soilPH": {"value": "6.2", "span": []}}, {"soilOrganicCarbon": {"value": "4.9 g / kg", "span": []}}, {"soilAvailableNitrogen": {"value": "35.5 mg / kg", "span": []}}, {"soilReferenceGroup": {"value": "USDA-760", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "United States", "span": []}}, {"region": {"value": "Oklahoma", "span": []}}, {"city": {"value": "Oklahoma", "span": []}}, {"latitude": {"value": "36.75 N", "span": []}}, {"longitude": {"value": "96.55 W", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "winter season", "span": []}}, {"endTime": {"value": "winter season", "span": []}}, {"duration": {"value": "winter season", "span": []}}]
+Gold: []
+

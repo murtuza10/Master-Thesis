@@ -1,0 +1,32 @@
+=== Comparison for Item 152 ===
+Timestamp: 20250816_095523
+
+=== Original Text ===
+The second file gives the soil properties measured at each individual core ( n=16 per site ) and the third file the soil properties measured at each indivdual soil profile ( n=6 per site ) .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "24 h",
+        "span": [
+          52,
+          57
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Time Statement
+Predictions: [{"duration": {"value": "24 h", "span": [52, 57]}}]
+Gold: []
+

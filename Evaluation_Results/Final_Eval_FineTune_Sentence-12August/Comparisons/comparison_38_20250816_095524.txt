@@ -1,0 +1,32 @@
+=== Comparison for Item 38 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+The experimented was halted in 2022 .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "2050",
+        "span": [
+          97,
+          101
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Time Statement
+Predictions: [{"duration": {"value": "2050", "span": [97, 101]}}]
+Gold: []
+

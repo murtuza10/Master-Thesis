@@ -1,0 +1,97 @@
+=== Comparison for Item 325 ===
+Timestamp: 20250723_134355
+
+=== Original Text ===
+For more detailed information on the ingredients , the variations in trap designs between each monitoring group see the methods section in respective paper this data set relates on . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "apple",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loamy sand",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "latitude": {
+        "value": "40.7128° N",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "74.0060° W",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "New York City",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "NY",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "USA",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "June 1, 2023",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "August 31, 2023",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "apple", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loamy sand", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"latitude": {"value": "40.7128° N", "span": []}}, {"longitude": {"value": "74.0060° W", "span": []}}, {"city": {"value": "New York City", "span": []}}, {"region": {"value": "NY", "span": []}}, {"country": {"value": "USA", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "June 1, 2023", "span": []}}, {"endTime": {"value": "August 31, 2023", "span": []}}]
+Gold: []
+

@@ -1,0 +1,104 @@
+=== Comparison for Item 87 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+Detailed information about the sampling and methodology can be found in the corresponding publication . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "soil texture",
+        "span": []
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "soil reference group",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "soil depth",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "soil bulk density",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "soil pH",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "soil organic carbon",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "soil available nitrogen",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Ireland",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "latitude",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "longitude",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "soil texture", "span": []}}, {"soilReferenceGroup": {"value": "soil reference group", "span": []}}, {"soilDepth": {"value": "soil depth", "span": []}}, {"soilBulkDensity": {"value": "soil bulk density", "span": []}}, {"soilPH": {"value": "soil pH", "span": []}}, {"soilOrganicCarbon": {"value": "soil organic carbon", "span": []}}, {"soilAvailableNitrogen": {"value": "soil available nitrogen", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Ireland", "span": []}}, {"latitude": {"value": "latitude", "span": []}}, {"longitude": {"value": "longitude", "span": []}}]
+Gold: []
+

@@ -1,0 +1,84 @@
+=== Comparison for Item 273 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+The final resulting mineral phase of pure Al(OH)3 and FeO(OH ) for the amorphous hydroxides was identified . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "6.8",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2.5%",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "city": {
+        "value": "Oberkochen",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "Abingdon",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "Great Britain",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "", "span": []}, "cropVariety": {"value": "", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilPH": {"value": "6.8", "span": []}}, {"soilOrganicCarbon": {"value": "2.5%", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"city": {"value": "Oberkochen", "span": []}}, {"city": {"value": "Abingdon", "span": []}}, {"country": {"value": "Germany", "span": []}}, {"country": {"value": "Great Britain", "span": []}}]
+Gold: []
+

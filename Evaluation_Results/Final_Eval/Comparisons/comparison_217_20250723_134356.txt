@@ -1,0 +1,69 @@
+=== Comparison for Item 217 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+Alpha diversity was increased in the deep - rooting genotypes in root samples . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropVariety": {
+        "value": "Capo",
+        "span": [
+          100,
+          104
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "depths",
+        "span": [
+          126,
+          132
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "0 - 30",
+        "span": [
+          133,
+          139
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "30 - 60 cm",
+        "span": [
+          144,
+          154
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropVariety": {"value": "Capo", "span": [100, 104]}}]
+
+Category: Soil
+Predictions: []
+Gold: [{"soilDepth": {"value": "depths", "span": [126, 132]}}, {"soilDepth": {"value": "0 - 30", "span": [133, 139]}}, {"soilDepth": {"value": "30 - 60 cm", "span": [144, 154]}}]
+

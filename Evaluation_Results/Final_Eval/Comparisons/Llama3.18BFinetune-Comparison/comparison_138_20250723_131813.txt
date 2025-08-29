@@ -1,0 +1,86 @@
+=== Comparison for Item 138 ===
+Timestamp: 20250723_131813
+
+=== Original Text ===
+Our data shows the possibility to increase C removal from the atmosphere by full rewetting and the establishment of mire - specific vegetation . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "clay loam",
+        "span": [
+          11,
+          19
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilReferenceGroup": {
+        "value": "clay loam",
+        "span": [
+          11,
+          19
+        ]
+      },
+      "soilBulkDensity": {
+        "value": "1.45 g/cm^3",
+        "span": [
+          51,
+          62
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "city": {
+        "value": "Bologna",
+        "span": [
+          71,
+          79
+        ]
+      },
+      "region": {
+        "value": "the region",
+        "span": [
+          43,
+          52
+        ]
+      },
+      "country": {
+        "value": "Europe",
+        "span": [
+          97,
+          102
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "clay loam", "span": [11, 19]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilReferenceGroup": {"value": "clay loam", "span": [11, 19]}, "soilBulkDensity": {"value": "1.45 g/cm^3", "span": [51, 62]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"city": {"value": "Bologna", "span": [71, 79]}, "region": {"value": "the region", "span": [43, 52]}, "country": {"value": "Europe", "span": [97, 102]}}]
+Gold: []
+

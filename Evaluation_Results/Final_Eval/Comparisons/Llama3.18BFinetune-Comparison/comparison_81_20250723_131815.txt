@@ -1,0 +1,196 @@
+=== Comparison for Item 81 ===
+Timestamp: 20250723_131815
+
+=== Original Text ===
+The samples were collected simultaneously at five different locations in Germany ( Bochum , Braunschweig , Celle , Hohenheim , Veitshöchheim ) from spring 2022 to spring 2023 . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "winter",
+        "span": [
+          14,
+          20
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "soil",
+        "span": [
+          29,
+          32
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "several",
+        "span": [
+          34,
+          41
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "along",
+        "span": [
+          42,
+          47
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "a",
+        "span": [
+          48,
+          49
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "transfer",
+        "span": [
+          50,
+          57
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "pathway",
+        "span": [
+          58,
+          65
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "from",
+        "span": [
+          66,
+          70
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "bee",
+        "span": [
+          71,
+          73
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "bee",
+        "span": [
+          74,
+          76
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "bee",
+        "span": [
+          77,
+          79
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "bee",
+        "span": [
+          80,
+          82
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "bee",
+        "span": [
+          83,
+          85
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2024",
+        "span": [
+          88,
+          92
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "10",
+        "span": [
+          93,
+          95
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": ".08",
+        "span": [
+          96,
+          100
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [0, 5]}}, {"cropVariety": {"value": "winter", "span": [14, 20]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "soil", "span": [29, 32]}}, {"soilReferenceGroup": {"value": "several", "span": [34, 41]}}, {"soilDepth": {"value": "along", "span": [42, 47]}}, {"soilBulkDensity": {"value": "a", "span": [48, 49]}}, {"soilPH": {"value": "transfer", "span": [50, 57]}}, {"soilOrganicCarbon": {"value": "pathway", "span": [58, 65]}}, {"soilAvailableNitrogen": {"value": "from", "span": [66, 70]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "bee", "span": [71, 73]}}, {"region": {"value": "bee", "span": [74, 76]}}, {"city": {"value": "bee", "span": [77, 79]}}, {"latitude": {"value": "bee", "span": [80, 82]}}, {"longitude": {"value": "bee", "span": [83, 85]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2024", "span": [88, 92]}}, {"endTime": {"value": "10", "span": [93, 95]}}, {"duration": {"value": ".08", "span": [96, 100]}}]
+Gold: []
+

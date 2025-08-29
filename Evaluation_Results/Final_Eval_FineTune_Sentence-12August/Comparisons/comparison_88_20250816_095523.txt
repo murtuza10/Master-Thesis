@@ -1,0 +1,41 @@
+=== Comparison for Item 88 ===
+Timestamp: 20250816_095523
+
+=== Original Text ===
+No applications were conducted at a second field site , which was designated as the negative control .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2011",
+        "span": [
+          36,
+          40
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "February 2018",
+        "span": [
+          53,
+          64
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2011", "span": [36, 40]}}, {"endTime": {"value": "February 2018", "span": [53, 64]}}]
+Gold: []
+

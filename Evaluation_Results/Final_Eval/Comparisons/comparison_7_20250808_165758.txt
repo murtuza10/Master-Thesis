@@ -1,0 +1,164 @@
+=== Comparison for Item 7 ===
+Timestamp: 20250808_165758
+
+=== Original Text ===
+Title : 
+ Dataset : Residues of boscalid and pyraclostrobin in several bee matrices along the transfer pathway from plants to larvae 
+
+ Abstract : 
+ The data set contains the raw data for the corresponding publication Wueppenhorst et al . ( 2024 ) https://doi.org/10.1016/j.cub.2024.10.008 Residues of two commonly used fungicides ( boscalid and pyraclostrobin ) were measured in several bee matrices along a transfer pathway from plants to larvae . The samples were collected simultaneously at five different locations in Germany ( Bochum , Braunschweig , Celle , Hohenheim , Veitshöchheim ) from spring 2022 to spring 2023 . Therefore a field study was carried out in which honey bee colonies were placed to oilseed rape ( Brassica napus , OSR ) fields . The formulation Pictor ® Active was applied to the treatment field site according to label instructions at the maximum field recommended rate of 1 L ( product)/ha . No applications were conducted at a second field site , which was designated as the negative control . Samples of plant inflorescences , honey bee pollen baskets , honey sacs , stored pollen and nectar , in - hive bees , larval food jelly ( royal , worker , and drone jelly ) , and larvae ( queen , worker , and drone larvae ) were collected in a time dependent interval and analyzed for residues of the active ingredients . The data set contains all raw data of the measured residue concentrations within each sample . Detailed information about the sampling and methodology can be found in the corresponding publication .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          86,
+          93
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "grasses",
+        "span": [
+          121,
+          128
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "potato",
+        "span": [
+          266,
+          273
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Lolium hybridum",
+        "span": [
+          296,
+          310
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Lolium multiflorum",
+        "span": [
+          315,
+          330
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          84,
+          89
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          360,
+          365
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          1015,
+          1020
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Lolium hybridum",
+        "span": [
+          1037,
+          1052
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Lolium multiflorum",
+        "span": [
+          1055,
+          1073
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          1323,
+          1330
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Brandenburg",
+        "span": [
+          1333,
+          1344
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "M채rkisch Oderland",
+        "span": [
+          1347,
+          1364
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "M체ncheberg",
+        "span": [
+          1367,
+          1377
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [86, 93]}}, {"cropSpecies": {"value": "grasses", "span": [121, 128]}}, {"cropSpecies": {"value": "potato", "span": [266, 273]}}, {"cropSpecies": {"value": "Lolium hybridum", "span": [296, 310]}}, {"cropSpecies": {"value": "Lolium multiflorum", "span": [315, 330]}}]
+Gold: [{"cropSpecies": {"value": "wheat", "span": [84, 89]}}, {"cropSpecies": {"value": "wheat", "span": [360, 365]}}, {"cropSpecies": {"value": "wheat", "span": [1015, 1020]}}, {"cropSpecies": {"value": "Lolium hybridum", "span": [1037, 1052]}}, {"cropSpecies": {"value": "Lolium multiflorum", "span": [1055, 1073]}}]
+
+Category: Location
+Predictions: []
+Gold: [{"country": {"value": "Germany", "span": [1323, 1330]}}, {"region": {"value": "Brandenburg", "span": [1333, 1344]}}, {"region": {"value": "M채rkisch Oderland", "span": [1347, 1364]}}, {"city": {"value": "M체ncheberg", "span": [1367, 1377]}}]
+

@@ -1,0 +1,50 @@
+=== Comparison for Item 66 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+rapaceum , farmyard manure , organic amendments , organic fertilizers , slurry , bark mulches , resource management , Luvisols , Fluvisols , Phaeozems , opendata , , Boden , agricultural management , horticulture , crop production , crop rotation , crop waste , cultivation , cultivation system , cultivation method , food production ( agriculture ) , irrigation farming , manure , mineral fertiliser , nitrogenous fertiliser , organic fertiliser , soil fertilisation , soil fertility , vegetable , vegetable cultivation , vegetable waste , yield ( agricultural ) , resource utilisation , organic matter , phosphate
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "UN",
+        "span": [
+          45,
+          47
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "UN",
+        "span": [
+          80,
+          82
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "European Union",
+        "span": [
+          169,
+          180
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Location
+Predictions: [{"country": {"value": "UN", "span": [45, 47]}}, {"country": {"value": "UN", "span": [80, 82]}}, {"country": {"value": "European Union", "span": [169, 180]}}]
+Gold: []
+

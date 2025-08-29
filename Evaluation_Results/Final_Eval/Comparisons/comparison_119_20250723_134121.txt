@@ -1,0 +1,69 @@
+=== Comparison for Item 119 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+https://iiasa.ac.at/models-tools-data/ssp ( Accessed on November 2023 ) [ 5 ] World Trade Organization , 2024 . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          14,
+          18
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "rice",
+        "span": [
+          35,
+          39
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2050",
+        "span": [
+          44,
+          49
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "1.6 % per year",
+        "span": [
+          65,
+          80
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [14, 18]}}, {"cropSpecies": {"value": "rice", "span": [35, 39]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2050", "span": [44, 49]}}, {"duration": {"value": "1.6 % per year", "span": [65, 80]}}]
+Gold: []
+

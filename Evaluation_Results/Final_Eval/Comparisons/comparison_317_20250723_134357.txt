@@ -1,0 +1,46 @@
+=== Comparison for Item 317 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+The data set of D. suzukii captures presented here comes from the monitoring study conducted by the Institute for Plant Protection in Fruit Crops and Viticulture , Dossenheim and Siebeldingen , and the Institute for Biological Plant Protection , Darmstadt of the JKI between 2011 and 2018 . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2011",
+        "span": [
+          74,
+          78
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "February 2018",
+        "span": [
+          82,
+          95
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Time Statement
+Predictions: []
+Gold: [{"startTime": {"value": "2011", "span": [74, 78]}}, {"endTime": {"value": "February 2018", "span": [82, 95]}}]
+

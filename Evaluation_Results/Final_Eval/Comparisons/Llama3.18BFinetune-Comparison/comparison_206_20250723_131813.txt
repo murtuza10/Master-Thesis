@@ -1,0 +1,37 @@
+=== Comparison for Item 206 ===
+Timestamp: 20250723_131813
+
+=== Original Text ===
+To allow the crops an easier access to deep soil layers a mechanical strip - wise subsoil loosing with the addition of biocompost ( DLB treatment ) was established in frame of Soil3 project ( for further details : Schmittmann et al . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "German",
+        "span": [
+          26,
+          32
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Location
+Predictions: []
+Gold: [{"country": {"value": "German", "span": [26, 32]}}]
+

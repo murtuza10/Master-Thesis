@@ -1,0 +1,147 @@
+=== Comparison for Item 254 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+It has a neutral pH ( 7.0–7.4 ) and an appropriate P and K supply ( 45–70 mg kg-1 and 130–185 mg kg-1 in calcium - acetate - lactate extract , respectively ) . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "silt loam",
+        "span": []
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "Eutric Cambisol",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "100 cm",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.22 g cm - 3",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "7.2",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "1.9 %",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "120 mg kg - 1",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "latitude": {
+        "value": "None",
+        "span": []
+      },
+      "longitude": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "winter",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "summer",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "22 % clay",
+        "span": [
+          100,
+          109
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "70 % silt",
+        "span": [
+          112,
+          121
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "8 % sand",
+        "span": [
+          126,
+          134
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "silt loam", "span": []}}, {"soilReferenceGroup": {"value": "Eutric Cambisol", "span": []}}, {"soilDepth": {"value": "100 cm", "span": []}}, {"soilBulkDensity": {"value": "1.22 g cm - 3", "span": []}}, {"soilPH": {"value": "7.2", "span": []}}, {"soilOrganicCarbon": {"value": "1.9 %", "span": []}}, {"soilAvailableNitrogen": {"value": "120 mg kg - 1", "span": []}}]
+Gold: [{"soilTexture": {"value": "22 % clay", "span": [100, 109]}}, {"soilTexture": {"value": "70 % silt", "span": [112, 121]}}, {"soilTexture": {"value": "8 % sand", "span": [126, 134]}}]
+
+Category: Location
+Predictions: [{"latitude": {"value": "None", "span": []}, "longitude": {"value": "None", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "winter", "span": []}}, {"endTime": {"value": "summer", "span": []}}, {"duration": {"value": "None", "span": []}}]
+Gold: []
+

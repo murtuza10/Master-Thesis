@@ -1,0 +1,78 @@
+=== Comparison for Item 364 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+Field experiments were set up in a randomized block design : Blocks comprised four different treatments and were repeated 10 times and randomly distributed over the vineyard . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": [
+          80,
+          83
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "3%",
+        "span": [
+          93,
+          95
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "loamy sand",
+        "span": [
+          107,
+          116
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "Emilia-Romagna",
+        "span": [
+          57,
+          68
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Italy",
+        "span": [
+          71,
+          76
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilPH": {"value": "6.5", "span": [80, 83]}}, {"soilOrganicCarbon": {"value": "3%", "span": [93, 95]}}, {"soilTexture": {"value": "loamy sand", "span": [107, 116]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "Emilia-Romagna", "span": [57, 68]}}, {"country": {"value": "Italy", "span": [71, 76]}}]
+Gold: []
+

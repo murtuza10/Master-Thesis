@@ -1,0 +1,46 @@
+=== Comparison for Item 329 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+The trap_description table lists 100 traps that were set during the monitoring period , the actual number of traps in operation varying over the years . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "D. suzukii",
+        "span": [
+          0,
+          10
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "D. suzukii",
+        "span": [
+          44,
+          54
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "D. suzukii", "span": [0, 10]}}, {"cropSpecies": {"value": "D. suzukii", "span": [44, 54]}}]
+Gold: []
+

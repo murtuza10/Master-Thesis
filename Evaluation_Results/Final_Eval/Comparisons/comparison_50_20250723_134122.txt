@@ -1,0 +1,100 @@
+=== Comparison for Item 50 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+Mineral P and K fertilization was uniform for all treatments . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          43,
+          48
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "20 - 40",
+        "span": [
+          74,
+          84
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Canada",
+        "span": [
+          120,
+          126
+        ]
+      },
+      "region": {
+        "value": "eastern Ontario",
+        "span": [
+          112,
+          126
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2008",
+        "span": [
+          56,
+          62
+        ]
+      },
+      "endTime": {
+        "value": "2008",
+        "span": [
+          56,
+          62
+        ]
+      },
+      "duration": {
+        "value": "fall of 2008",
+        "span": [
+          55,
+          73
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [43, 48]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilDepth": {"value": "20 - 40", "span": [74, 84]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Canada", "span": [120, 126]}, "region": {"value": "eastern Ontario", "span": [112, 126]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2008", "span": [56, 62]}, "endTime": {"value": "2008", "span": [56, 62]}, "duration": {"value": "fall of 2008", "span": [55, 73]}}]
+Gold: []
+

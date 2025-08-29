@@ -1,0 +1,73 @@
+=== Comparison for Item 12 ===
+Timestamp: 20250723_131815
+
+=== Original Text ===
+It has a neutral pH ( 7.0 - 7.4 ) and an appropriate P and K supply ( 45 - 70 mg kg-1 and 130 - 185 mg kg-1 in calcium - acetate - lactate extract , respectively ) . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "depth",
+        "span": [
+          71,
+          76
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "100 cm",
+        "span": [
+          80,
+          86
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "22 % clay",
+        "span": [
+          100,
+          109
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "70 % silt",
+        "span": [
+          112,
+          121
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "8 % sand",
+        "span": [
+          126,
+          134
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: []
+Gold: [{"soilDepth": {"value": "depth", "span": [71, 76]}}, {"soilDepth": {"value": "100 cm", "span": [80, 86]}}, {"soilTexture": {"value": "22 % clay", "span": [100, 109]}}, {"soilTexture": {"value": "70 % silt", "span": [112, 121]}}, {"soilTexture": {"value": "8 % sand", "span": [126, 134]}}]
+

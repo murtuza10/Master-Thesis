@@ -1,0 +1,50 @@
+=== Comparison for Item 56 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+C and N in the soil samples and N in the plant samples were analysed annually .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "rapeseed",
+        "span": [
+          0,
+          7
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          28,
+          33
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "winter",
+        "span": [
+          25,
+          31
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "rapeseed", "span": [0, 7]}}, {"cropSpecies": {"value": "wheat", "span": [28, 33]}}, {"cropVariety": {"value": "winter", "span": [25, 31]}}]
+Gold: []
+

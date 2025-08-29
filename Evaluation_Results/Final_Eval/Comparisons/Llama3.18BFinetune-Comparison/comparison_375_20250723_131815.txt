@@ -1,0 +1,92 @@
+=== Comparison for Item 375 ===
+Timestamp: 20250723_131815
+
+=== Original Text ===
+Again , two experimental repetitions were performed starting at 24.8.2018 and 31.8.2018 and ending with the determination of volatile acidity at 13.9.2018 and 20.9.2018 . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "winter",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "haptic luvisol",
+        "span": []
+      },
+      "soilReferenceGroup": {
+        "value": "fine, montmorillonitic, thermic",
+        "span": []
+      },
+      "soilDepth": {
+        "value": "50 cm",
+        "span": []
+      },
+      "soilBulkDensity": {
+        "value": "1.43 g / cm 3",
+        "span": []
+      },
+      "soilPH": {
+        "value": "6.0",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "None",
+        "span": []
+      },
+      "region": {
+        "value": "None",
+        "span": []
+      },
+      "city": {
+        "value": "vineyard",
+        "span": []
+      },
+      "latitude": {
+        "value": "None",
+        "span": []
+      },
+      "longitude": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}, "cropVariety": {"value": "winter", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "haptic luvisol", "span": []}, "soilReferenceGroup": {"value": "fine, montmorillonitic, thermic", "span": []}, "soilDepth": {"value": "50 cm", "span": []}, "soilBulkDensity": {"value": "1.43 g / cm 3", "span": []}, "soilPH": {"value": "6.0", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "None", "span": []}, "region": {"value": "None", "span": []}, "city": {"value": "vineyard", "span": []}, "latitude": {"value": "None", "span": []}, "longitude": {"value": "None", "span": []}}]
+Gold: []
+

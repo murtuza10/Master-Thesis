@@ -1,0 +1,46 @@
+=== Comparison for Item 14 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+napus ) - winter wheat - are rotated . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "1980",
+        "span": [
+          4,
+          8
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2010",
+        "span": [
+          11,
+          15
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Time Statement
+Predictions: []
+Gold: [{"startTime": {"value": "1980", "span": [4, 8]}}, {"endTime": {"value": "2010", "span": [11, 15]}}]
+

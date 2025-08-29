@@ -1,0 +1,46 @@
+=== Comparison for Item 239 ===
+Timestamp: 20250723_134124
+
+=== Original Text ===
+We compared untreated spider mite hotspots with N. californicus treated hotspots and showed that a single release of predatory mites could result in a high level of control when spider mite infestation density was initially high . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2020",
+        "span": [
+          3,
+          7
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2021",
+        "span": [
+          12,
+          16
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Time Statement
+Predictions: []
+Gold: [{"startTime": {"value": "2020", "span": [3, 7]}}, {"endTime": {"value": "2021", "span": [12, 16]}}]
+

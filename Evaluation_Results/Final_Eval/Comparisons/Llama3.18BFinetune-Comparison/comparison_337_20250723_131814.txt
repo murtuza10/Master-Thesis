@@ -1,0 +1,47 @@
+=== Comparison for Item 337 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+The results of the study were published by Frese , L. , Bönisch , M. , Nachtigall , M. , Schirmak , U. ( 2018 , accepted ): Patterns of genetic diversity and implications for in situ conservation of wild celery ( Apium graveolens L. ssp . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Apium graveolens",
+        "span": [
+          0,
+          21
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Apium graveolens",
+        "span": [
+          113,
+          129
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "Apium graveolens", "span": [0, 21]}}]
+Gold: [{"cropSpecies": {"value": "Apium graveolens", "span": [113, 129]}}]
+

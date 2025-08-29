@@ -1,0 +1,46 @@
+=== Comparison for Item 162 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+Coordinates for each flower strip is also available in UTM32 and lat / lon degrees .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Ländern",
+        "span": [
+          76,
+          83
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "bis zum Jahr 2050",
+        "span": [
+          85,
+          100
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Location
+Predictions: [{"country": {"value": "Ländern", "span": [76, 83]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"duration": {"value": "bis zum Jahr 2050", "span": [85, 100]}}]
+Gold: []
+

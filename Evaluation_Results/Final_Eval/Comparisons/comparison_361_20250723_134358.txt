@@ -1,0 +1,109 @@
+=== Comparison for Item 361 ===
+Timestamp: 20250723_134358
+
+=== Original Text ===
+For that , manipulative experiments with gauze - bagged grapes comprising four different treatments : 1 ) D. suzukii , 2 ) D. melanogaster , 3 ) both Drosophila species combined and 4 ) without flies as control were performed in 2017 and 2018 . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Vitis vinifera",
+        "span": []
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Corvina",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.3 g/cm³",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2.1%",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "Emilia-Romagna",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "Italy",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "44.6458° N",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "11.0812° E",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "June",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "August 2022",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "Vitis vinifera", "span": []}}, {"cropVariety": {"value": "Corvina", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilPH": {"value": "6.5", "span": []}}, {"soilBulkDensity": {"value": "1.3 g/cm³", "span": []}}, {"soilOrganicCarbon": {"value": "2.1%", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "Emilia-Romagna", "span": []}}, {"country": {"value": "Italy", "span": []}}, {"latitude": {"value": "44.6458° N", "span": []}}, {"longitude": {"value": "11.0812° E", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "June", "span": []}}, {"endTime": {"value": "August 2022", "span": []}}]
+Gold: []
+

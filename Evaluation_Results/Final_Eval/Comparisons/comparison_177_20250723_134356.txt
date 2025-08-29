@@ -1,0 +1,42 @@
+=== Comparison for Item 177 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+
+ Abstract_text_2 : 
+  P adsorption was investigated on synthetic and commercially available goethite ( 99 % , Alfa Aesar ) . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "[{'value': 'pH 4', 'span': [50, 54]}, {'value': 'pH 5', 'span': [56, 59]}, {'value': 'pH 6', 'span': [61, 64]}, {'value': 'pH 7', 'span': [66, 69]}, {'value': 'pH 8', 'span': [71, 74]}, {'value': 'pH 9', 'span': [76, 79]}]",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "[{'value': 'pH 7', 'span': [132, 135]}]",
+        "span": []
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilPH": {"value": "[{'value': 'pH 4', 'span': [50, 54]}, {'value': 'pH 5', 'span': [56, 59]}, {'value': 'pH 6', 'span': [61, 64]}, {'value': 'pH 7', 'span': [66, 69]}, {'value': 'pH 8', 'span': [71, 74]}, {'value': 'pH 9', 'span': [76, 79]}]", "span": []}}, {"soilPH": {"value": "[{'value': 'pH 7', 'span': [132, 135]}]", "span": []}}]
+Gold: []
+

@@ -1,0 +1,64 @@
+=== Comparison for Item 133 ===
+Timestamp: 20250816_095523
+
+=== Original Text ===
+This might impact C cycling both at the ecosystem and microform scale in multiple ways , but so far , data is lacking .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "pH 8",
+        "span": [
+          53,
+          57
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH 6",
+        "span": [
+          90,
+          94
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH 4",
+        "span": [
+          118,
+          122
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "168 h",
+        "span": [
+          83,
+          88
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilPH": {"value": "pH 8", "span": [53, 57]}}, {"soilPH": {"value": "pH 6", "span": [90, 94]}}, {"soilPH": {"value": "pH 4", "span": [118, 122]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"duration": {"value": "168 h", "span": [83, 88]}}]
+Gold: []
+

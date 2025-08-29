@@ -1,0 +1,59 @@
+=== Comparison for Item 97 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+Für diesen Zweck werden ein Referenzszenario und zwei alternative Szenarien entworfen , die verschiedene zukünftige Entwicklungspfade beschreiben .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          58,
+          63
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": [
+          70,
+          75
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "rapeseed",
+        "span": [
+          77,
+          83
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": [
+          85,
+          89
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [58, 63]}}, {"cropSpecies": {"value": "barley", "span": [70, 75]}}, {"cropSpecies": {"value": "rapeseed", "span": [77, 83]}}, {"cropSpecies": {"value": "maize", "span": [85, 89]}}]
+Gold: []
+

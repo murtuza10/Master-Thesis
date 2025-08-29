@@ -1,0 +1,37 @@
+=== Comparison for Item 225 ===
+Timestamp: 20250723_131816
+
+=== Original Text ===
+The driving force analysis in the SOLO project ( Work Package 3 ) is built upon a comprehensive analytical framework which recognizes driving forces , pressures , state , impact , and response measures ( DPSIR ) as fundamental components of soil health . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilOrganicCarbon": {
+        "value": "soil organic carbon",
+        "span": [
+          433,
+          452
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: []
+Gold: [{"soilOrganicCarbon": {"value": "soil organic carbon", "span": [433, 452]}}]
+

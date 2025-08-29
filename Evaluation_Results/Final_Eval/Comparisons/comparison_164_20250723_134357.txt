@@ -1,0 +1,261 @@
+=== Comparison for Item 164 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+The mean count of each species across the five plots in given in Count_mean , and the ground cover ( 5 ) is given in Cover_percent . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Getreide",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "Lehm-Sand-Mischung",
+        "span": []
+      },
+      "soilReferenceGroup": {
+        "value": "",
+        "span": []
+      },
+      "soilDepth": {
+        "value": "",
+        "span": []
+      },
+      "soilBulkDensity": {
+        "value": "",
+        "span": []
+      },
+      "soilPH": {
+        "value": "",
+        "span": []
+      },
+      "soilOrganicCarbon": {
+        "value": "",
+        "span": []
+      },
+      "soilAvailableNitrogen": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "",
+        "span": []
+      },
+      "soilReferenceGroup": {
+        "value": "",
+        "span": []
+      },
+      "soilDepth": {
+        "value": "60 cm",
+        "span": []
+      },
+      "soilBulkDensity": {
+        "value": "",
+        "span": []
+      },
+      "soilPH": {
+        "value": "",
+        "span": []
+      },
+      "soilOrganicCarbon": {
+        "value": "",
+        "span": []
+      },
+      "soilAvailableNitrogen": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "",
+        "span": []
+      },
+      "soilReferenceGroup": {
+        "value": "",
+        "span": []
+      },
+      "soilDepth": {
+        "value": "",
+        "span": []
+      },
+      "soilBulkDensity": {
+        "value": "",
+        "span": []
+      },
+      "soilPH": {
+        "value": "6,5",
+        "span": []
+      },
+      "soilOrganicCarbon": {
+        "value": "",
+        "span": []
+      },
+      "soilAvailableNitrogen": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "",
+        "span": []
+      },
+      "soilReferenceGroup": {
+        "value": "",
+        "span": []
+      },
+      "soilDepth": {
+        "value": "",
+        "span": []
+      },
+      "soilBulkDensity": {
+        "value": "",
+        "span": []
+      },
+      "soilPH": {
+        "value": "",
+        "span": []
+      },
+      "soilOrganicCarbon": {
+        "value": "1,5 %",
+        "span": []
+      },
+      "soilAvailableNitrogen": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "",
+        "span": []
+      },
+      "soilReferenceGroup": {
+        "value": "",
+        "span": []
+      },
+      "soilDepth": {
+        "value": "",
+        "span": []
+      },
+      "soilBulkDensity": {
+        "value": "",
+        "span": []
+      },
+      "soilPH": {
+        "value": "",
+        "span": []
+      },
+      "soilOrganicCarbon": {
+        "value": "",
+        "span": []
+      },
+      "soilAvailableNitrogen": {
+        "value": "100 kg pro Hektar",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Deutschland",
+        "span": []
+      },
+      "region": {
+        "value": "",
+        "span": []
+      },
+      "city": {
+        "value": "",
+        "span": []
+      },
+      "latitude": {
+        "value": "",
+        "span": []
+      },
+      "longitude": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "",
+        "span": []
+      },
+      "region": {
+        "value": "",
+        "span": []
+      },
+      "city": {
+        "value": "Gießen",
+        "span": []
+      },
+      "latitude": {
+        "value": "",
+        "span": []
+      },
+      "longitude": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "",
+        "span": []
+      },
+      "endTime": {
+        "value": "",
+        "span": []
+      },
+      "duration": {
+        "value": "letzten drei Jahren",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "Getreide", "span": []}, "cropVariety": {"value": "", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "Lehm-Sand-Mischung", "span": []}, "soilReferenceGroup": {"value": "", "span": []}, "soilDepth": {"value": "", "span": []}, "soilBulkDensity": {"value": "", "span": []}, "soilPH": {"value": "", "span": []}, "soilOrganicCarbon": {"value": "", "span": []}, "soilAvailableNitrogen": {"value": "", "span": []}}, {"soilTexture": {"value": "", "span": []}, "soilReferenceGroup": {"value": "", "span": []}, "soilDepth": {"value": "60 cm", "span": []}, "soilBulkDensity": {"value": "", "span": []}, "soilPH": {"value": "", "span": []}, "soilOrganicCarbon": {"value": "", "span": []}, "soilAvailableNitrogen": {"value": "", "span": []}}, {"soilTexture": {"value": "", "span": []}, "soilReferenceGroup": {"value": "", "span": []}, "soilDepth": {"value": "", "span": []}, "soilBulkDensity": {"value": "", "span": []}, "soilPH": {"value": "6,5", "span": []}, "soilOrganicCarbon": {"value": "", "span": []}, "soilAvailableNitrogen": {"value": "", "span": []}}, {"soilTexture": {"value": "", "span": []}, "soilReferenceGroup": {"value": "", "span": []}, "soilDepth": {"value": "", "span": []}, "soilBulkDensity": {"value": "", "span": []}, "soilPH": {"value": "", "span": []}, "soilOrganicCarbon": {"value": "1,5 %", "span": []}, "soilAvailableNitrogen": {"value": "", "span": []}}, {"soilTexture": {"value": "", "span": []}, "soilReferenceGroup": {"value": "", "span": []}, "soilDepth": {"value": "", "span": []}, "soilBulkDensity": {"value": "", "span": []}, "soilPH": {"value": "", "span": []}, "soilOrganicCarbon": {"value": "", "span": []}, "soilAvailableNitrogen": {"value": "100 kg pro Hektar", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Deutschland", "span": []}, "region": {"value": "", "span": []}, "city": {"value": "", "span": []}, "latitude": {"value": "", "span": []}, "longitude": {"value": "", "span": []}}, {"country": {"value": "", "span": []}, "region": {"value": "", "span": []}, "city": {"value": "Gießen", "span": []}, "latitude": {"value": "", "span": []}, "longitude": {"value": "", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "", "span": []}, "endTime": {"value": "", "span": []}, "duration": {"value": "letzten drei Jahren", "span": []}}]
+Gold: []
+

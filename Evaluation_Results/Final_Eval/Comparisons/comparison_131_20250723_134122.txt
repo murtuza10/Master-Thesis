@@ -1,0 +1,102 @@
+=== Comparison for Item 131 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+) population ( Tree site , TS ) . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          26,
+          33
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilOrganicCarbon": {
+        "value": "11.1 %",
+        "span": [
+          102,
+          112
+        ]
+      },
+      "soilAvailableNitrogen": {
+        "value": "6.5 kg N / ha",
+        "span": [
+          113,
+          126
+        ]
+      },
+      "soilPH": {
+        "value": "4.1",
+        "span": [
+          93,
+          97
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "4.6 %",
+        "span": [
+          145,
+          155
+        ]
+      },
+      "soilAvailableNitrogen": {
+        "value": "2.5 kg N / ha",
+        "span": [
+          156,
+          169
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "latitude": {
+        "value": "64.1° N",
+        "span": [
+          56,
+          65
+        ]
+      },
+      "longitude": {
+        "value": "18.5° E",
+        "span": [
+          66,
+          75
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [26, 33]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilOrganicCarbon": {"value": "11.1 %", "span": [102, 112]}, "soilAvailableNitrogen": {"value": "6.5 kg N / ha", "span": [113, 126]}, "soilPH": {"value": "4.1", "span": [93, 97]}}, {"soilOrganicCarbon": {"value": "4.6 %", "span": [145, 155]}, "soilAvailableNitrogen": {"value": "2.5 kg N / ha", "span": [156, 169]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"latitude": {"value": "64.1° N", "span": [56, 65]}, "longitude": {"value": "18.5° E", "span": [66, 75]}}]
+Gold: []
+

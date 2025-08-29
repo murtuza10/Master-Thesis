@@ -1,0 +1,79 @@
+=== Comparison for Item 221 ===
+Timestamp: 20250723_131815
+
+=== Original Text ===
+Codes of Soil3 genotypes Related datasets are listed in the metadata element ' Related Identifier ' . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "ASVs",
+        "span": [
+          0,
+          4
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "15 cm",
+        "span": [
+          96,
+          102
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "latitude": {
+        "value": "25 %",
+        "span": [
+          130,
+          136
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "25 %",
+        "span": [
+          130,
+          136
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "ASVs", "span": [0, 4]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilDepth": {"value": "15 cm", "span": [96, 102]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"latitude": {"value": "25 %", "span": [130, 136]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"duration": {"value": "25 %", "span": [130, 136]}}]
+Gold: []
+

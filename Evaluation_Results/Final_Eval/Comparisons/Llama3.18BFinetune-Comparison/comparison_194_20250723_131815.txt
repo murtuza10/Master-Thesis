@@ -1,0 +1,134 @@
+=== Comparison for Item 194 ===
+Timestamp: 20250723_131815
+
+=== Original Text ===
+Therefore , the pH change was taken into account both at the beginning and at the end of the adsorption experiments . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": [
+          44,
+          50
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "winter wheat",
+        "span": [
+          57,
+          65
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "4.2",
+        "span": [
+          25,
+          31
+        ]
+      },
+      "soilBulkDensity": {
+        "value": "low",
+        "span": [
+          36,
+          41
+        ]
+      },
+      "soilOrganicCarbon": {
+        "value": "very low",
+        "span": [
+          55,
+          63
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "5.5",
+        "span": [
+          70,
+          76
+        ]
+      },
+      "soilBulkDensity": {
+        "value": "high",
+        "span": [
+          81,
+          86
+        ]
+      },
+      "soilOrganicCarbon": {
+        "value": "high",
+        "span": [
+          65,
+          73
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "São Paulo",
+        "span": [
+          105,
+          115
+        ]
+      },
+      "country": {
+        "value": "Brazil",
+        "span": [
+          117,
+          123
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Minas Gerais",
+        "span": [
+          143,
+          153
+        ]
+      },
+      "country": {
+        "value": "Brazil",
+        "span": [
+          155,
+          161
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "maize", "span": [44, 50]}}, {"cropSpecies": {"value": "winter wheat", "span": [57, 65]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilPH": {"value": "4.2", "span": [25, 31]}, "soilBulkDensity": {"value": "low", "span": [36, 41]}, "soilOrganicCarbon": {"value": "very low", "span": [55, 63]}}, {"soilPH": {"value": "5.5", "span": [70, 76]}, "soilBulkDensity": {"value": "high", "span": [81, 86]}, "soilOrganicCarbon": {"value": "high", "span": [65, 73]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "São Paulo", "span": [105, 115]}, "country": {"value": "Brazil", "span": [117, 123]}}, {"region": {"value": "Minas Gerais", "span": [143, 153]}, "country": {"value": "Brazil", "span": [155, 161]}}]
+Gold: []
+

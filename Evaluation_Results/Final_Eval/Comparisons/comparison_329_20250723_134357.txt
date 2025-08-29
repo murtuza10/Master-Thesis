@@ -1,0 +1,91 @@
+=== Comparison for Item 329 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+The trap_description table lists 100 traps that were set during the monitoring period , the actual number of traps in operation varying over the years . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "apple",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loamy",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.4 g/cm³",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "Trento",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "Italy",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "01/06/2022",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "31/08/2022",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "apple", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loamy", "span": []}}, {"soilBulkDensity": {"value": "1.4 g/cm³", "span": []}}, {"soilPH": {"value": "6.5", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "Trento", "span": []}}, {"country": {"value": "Italy", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "01/06/2022", "span": []}}, {"endTime": {"value": "31/08/2022", "span": []}}]
+Gold: []
+

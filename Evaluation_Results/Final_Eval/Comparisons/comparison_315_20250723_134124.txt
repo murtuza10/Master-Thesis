@@ -1,0 +1,37 @@
+=== Comparison for Item 315 ===
+Timestamp: 20250723_134124
+
+=== Original Text ===
+DrosoMon also provides the means to visualize the data at trap levels and compare variations in captures between traps or with temperature and precipitation data from the nearest weather station . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          199,
+          206
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Location
+Predictions: []
+Gold: [{"country": {"value": "Germany", "span": [199, 206]}}]
+

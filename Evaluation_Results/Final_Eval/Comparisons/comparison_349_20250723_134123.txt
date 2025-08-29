@@ -1,0 +1,139 @@
+=== Comparison for Item 349 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+) are the UN Framework Convention on Climate Change ( UNFCCC ) , the UNECE Convention on Long - Range Transboundary Air Pollution ( CLRTAP ) , and within the European Union the Directive of the European Parliament and of the Council on national emission ceilings for certain atmospheric pollutants ( NEC Directive ) . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "cassava",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "yams",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "plantains",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sandy",
+        "span": []
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "low organic carbon content",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "not mentioned",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "not mentioned",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "not mentioned",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "not mentioned",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "not mentioned",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Ghana",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "savannah region",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "not mentioned",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "not mentioned",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "not mentioned",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "maize", "span": []}}, {"cropSpecies": {"value": "cassava", "span": []}}, {"cropSpecies": {"value": "yams", "span": []}}, {"cropSpecies": {"value": "plantains", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "sandy", "span": []}}, {"soilReferenceGroup": {"value": "low organic carbon content", "span": []}}, {"soilDepth": {"value": "not mentioned", "span": []}}, {"soilBulkDensity": {"value": "not mentioned", "span": []}}, {"soilPH": {"value": "not mentioned", "span": []}}, {"soilOrganicCarbon": {"value": "not mentioned", "span": []}}, {"soilAvailableNitrogen": {"value": "not mentioned", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Ghana", "span": []}}, {"region": {"value": "savannah region", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "not mentioned", "span": []}}, {"endTime": {"value": "not mentioned", "span": []}}, {"duration": {"value": "not mentioned", "span": []}}]
+Gold: []
+

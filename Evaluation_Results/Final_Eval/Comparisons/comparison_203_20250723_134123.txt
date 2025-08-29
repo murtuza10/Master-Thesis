@@ -1,0 +1,154 @@
+=== Comparison for Item 203 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+
+ Keywords : 
+  Soil , phosphorus , nonmetals , adsorption , Soil , Phosphorus , Adsorption , pH , Goethite , Hydroxides , Boden , Phosphor , Adsorption 
+ 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "phosphorus",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "goethite",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "4.6",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "5.6",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "24 h",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "phosphorus", "span": []}}, {"cropSpecies": {"value": "goethite", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "None", "span": []}}, {"soilReferenceGroup": {"value": "None", "span": []}}, {"soilDepth": {"value": "None", "span": []}}, {"soilBulkDensity": {"value": "None", "span": []}}, {"soilPH": {"value": "4.6", "span": []}}, {"soilPH": {"value": "5.6", "span": []}}, {"soilOrganicCarbon": {"value": "None", "span": []}}, {"soilAvailableNitrogen": {"value": "None", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "None", "span": []}}, {"region": {"value": "None", "span": []}}, {"city": {"value": "None", "span": []}}, {"latitude": {"value": "None", "span": []}}, {"longitude": {"value": "None", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "None", "span": []}}, {"endTime": {"value": "None", "span": []}}, {"duration": {"value": "24 h", "span": []}}]
+Gold: []
+

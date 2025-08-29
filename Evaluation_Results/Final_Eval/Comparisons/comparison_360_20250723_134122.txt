@@ -1,0 +1,38 @@
+=== Comparison for Item 360 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+
+  The aim of this study was to investigate the single and combined influence of D. suzukii and D. melanogaster on sour rot development under near - natural conditions in the vineyard , along with laboratory experiments under controlled climate . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "grapes",
+        "span": [
+          40,
+          46
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropSpecies": {"value": "grapes", "span": [40, 46]}}]
+

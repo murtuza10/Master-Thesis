@@ -1,0 +1,168 @@
+=== Comparison for Item 15 ===
+Timestamp: 20250808_162852
+
+=== Original Text ===
+Title : 
+ Wheat field earthworms under divergent farming systems across a European climate gradient 
+
+ Abstract : 
+ Earthworm community metrics data collected during the years 2019 and 2020 from organically and conventionally managed wheat fields ( 188 fields in total ) in nine pedo - climatic zones of Europe , together with associated site information on climate , soil properties and agricultural management of the fields .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sand",
+        "span": [
+          300,
+          304
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "silt",
+        "span": [
+          307,
+          311
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "clay",
+        "span": [
+          314,
+          318
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH",
+        "span": [
+          331,
+          333
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "SOC",
+        "span": [
+          1143,
+          1146
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "0 - 10 cm",
+        "span": [
+          1200,
+          1209
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "10 - 30 cm",
+        "span": [
+          1212,
+          1222
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "0 - 30 cm",
+        "span": [
+          1227,
+          1236
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "SOC",
+        "span": [
+          1311,
+          1314
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "SOC",
+        "span": [
+          1323,
+          1326
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          28,
+          35
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          113,
+          120
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2021",
+        "span": [
+          36,
+          40
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "2019",
+        "span": [
+          105,
+          109
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Soil
+Predictions: []
+Gold: [{"soilTexture": {"value": "sand", "span": [300, 304]}}, {"soilTexture": {"value": "silt", "span": [307, 311]}}, {"soilTexture": {"value": "clay", "span": [314, 318]}}, {"soilPH": {"value": "pH", "span": [331, 333]}}, {"soilOrganicCarbon": {"value": "SOC", "span": [1143, 1146]}}, {"soilDepth": {"value": "0 - 10 cm", "span": [1200, 1209]}}, {"soilDepth": {"value": "10 - 30 cm", "span": [1212, 1222]}}, {"soilDepth": {"value": "0 - 30 cm", "span": [1227, 1236]}}, {"soilOrganicCarbon": {"value": "SOC", "span": [1311, 1314]}}, {"soilOrganicCarbon": {"value": "SOC", "span": [1323, 1326]}}]
+
+Category: Location
+Predictions: []
+Gold: [{"country": {"value": "Germany", "span": [28, 35]}}, {"country": {"value": "Germany", "span": [113, 120]}}]
+
+Category: Time Statement
+Predictions: []
+Gold: [{"startTime": {"value": "2021", "span": [36, 40]}}, {"startTime": {"value": "2019", "span": [105, 109]}}]
+

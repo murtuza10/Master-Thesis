@@ -1,0 +1,66 @@
+=== Comparison for Item 215 ===
+Timestamp: 20250723_131815
+
+=== Original Text ===
+Our data indicate a slightly increase in bacteria in soil samples among all genotypes and soil depths , this trend is not so evident for abundance of archaea in soil samples . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "winter wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "0.90 g / cm 3",
+        "span": []
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "a soil with a lower bulk density",
+        "span": []
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "90 days",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}, "cropVariety": {"value": "winter wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "0.90 g / cm 3", "span": []}}, {"soilReferenceGroup": {"value": "a soil with a lower bulk density", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"duration": {"value": "90 days", "span": []}}]
+Gold: []
+

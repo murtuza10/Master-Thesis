@@ -1,0 +1,53 @@
+=== Comparison for Item 10 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+Title : 
+  Long - term field trial on tillage and fertilization in crop rotation - Westerfeld 
+ Abstract_text_1 : 
+  Long - term field trial on tillage and fertilization in crop rotation - Westerfeld .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "0 - 10 cm",
+        "span": [
+          56,
+          67
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "10 - 30 cm",
+        "span": [
+          70,
+          81
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "0 - 30 cm",
+        "span": [
+          84,
+          93
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilDepth": {"value": "0 - 10 cm", "span": [56, 67]}}, {"soilDepth": {"value": "10 - 30 cm", "span": [70, 81]}}, {"soilDepth": {"value": "0 - 30 cm", "span": [84, 93]}}]
+Gold: []
+

@@ -1,0 +1,82 @@
+=== Comparison for Item 39 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+The experimental site ( 52 ° 21’01.30 ’’ E , 13 ° 19’05.47 ’’ N , 50 m a.s.l .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "grapes",
+        "span": [
+          79,
+          84
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "30.8.2017",
+        "span": [
+          31,
+          39
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "6.9.2017",
+        "span": [
+          50,
+          58
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "20.9.2017",
+        "span": [
+          86,
+          94
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "25.9.2017",
+        "span": [
+          102,
+          110
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "three weeks",
+        "span": [
+          70,
+          78
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "grapes", "span": [79, 84]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "30.8.2017", "span": [31, 39]}}, {"startTime": {"value": "6.9.2017", "span": [50, 58]}}, {"endTime": {"value": "20.9.2017", "span": [86, 94]}}, {"endTime": {"value": "25.9.2017", "span": [102, 110]}}, {"duration": {"value": "three weeks", "span": [70, 78]}}]
+Gold: []
+

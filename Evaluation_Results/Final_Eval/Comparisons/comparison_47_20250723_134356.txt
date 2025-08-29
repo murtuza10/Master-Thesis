@@ -1,0 +1,78 @@
+=== Comparison for Item 47 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+The experiment consists of 12 fertilization treatments in different combinations of mineral N fertilization and organic amendments and as quadruplicate for each of the three soils . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "celery",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "pH of 6.5",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "organic carbon content of 2.1%",
+        "span": []
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2023-05-01",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "2023-07-30",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "celery",
+        "span": [
+          3,
+          9
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "celery", "span": []}}]
+Gold: [{"cropSpecies": {"value": "celery", "span": [3, 9]}}]
+
+Category: Soil
+Predictions: [{"soilPH": {"value": "pH of 6.5", "span": []}}, {"soilOrganicCarbon": {"value": "organic carbon content of 2.1%", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2023-05-01", "span": []}}, {"endTime": {"value": "2023-07-30", "span": []}}]
+Gold: []
+

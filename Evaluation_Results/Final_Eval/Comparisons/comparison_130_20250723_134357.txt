@@ -1,0 +1,97 @@
+=== Comparison for Item 130 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+We established two sites in the same former peat extraction area , one showing permanently high WL and mire - specific vegetation ( Open site , OS ) , while the other one has more fluctuating WL and a dense birch ( Betula pubescens Ehrh . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "corn",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "soybeans",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loamy sand",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH of 6.8",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "bulk density of 1.4 g/cm³",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "North American prairie",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "45.23°N",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "93.75°W",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "5-year period",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "corn", "span": []}}, {"cropSpecies": {"value": "soybeans", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loamy sand", "span": []}}, {"soilPH": {"value": "pH of 6.8", "span": []}}, {"soilBulkDensity": {"value": "bulk density of 1.4 g/cm³", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "North American prairie", "span": []}}, {"latitude": {"value": "45.23°N", "span": []}}, {"longitude": {"value": "93.75°W", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"duration": {"value": "5-year period", "span": []}}]
+Gold: []
+

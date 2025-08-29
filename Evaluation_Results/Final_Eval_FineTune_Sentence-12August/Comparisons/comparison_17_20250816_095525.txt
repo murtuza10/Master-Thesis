@@ -1,0 +1,41 @@
+=== Comparison for Item 17 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+All crop residues remain on the fields .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "6",
+        "span": [
+          22,
+          23
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "5.0",
+        "span": [
+          37,
+          41
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilPH": {"value": "6", "span": [22, 23]}}, {"soilPH": {"value": "5.0", "span": [37, 41]}}]
+Gold: []
+

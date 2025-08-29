@@ -1,0 +1,137 @@
+=== Comparison for Item 377 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+For that , two laboratory repetitions were performed starting at 29.8.2018 and 4.9.2018 by placing one grape cluster per sample in a plastic box . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          23,
+          27
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Zhong 2",
+        "span": [
+          57,
+          65
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "core sampling",
+        "span": [
+          83,
+          95
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "portable soil pH meter",
+        "span": [
+          118,
+          133
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "Walkley - Black method",
+        "span": [
+          146,
+          163
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "KCl extraction method",
+        "span": [
+          184,
+          204
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "China",
+        "span": [
+          123,
+          127
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Yangtze River Delta",
+        "span": [
+          130,
+          144
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Yangtze River Delta",
+        "span": [
+          130,
+          144
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "31.42",
+        "span": [
+          67,
+          72
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "121.42",
+        "span": [
+          73,
+          79
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [23, 27]}}, {"cropVariety": {"value": "Zhong 2", "span": [57, 65]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "core sampling", "span": [83, 95]}}, {"soilPH": {"value": "portable soil pH meter", "span": [118, 133]}}, {"soilOrganicCarbon": {"value": "Walkley - Black method", "span": [146, 163]}}, {"soilAvailableNitrogen": {"value": "KCl extraction method", "span": [184, 204]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "China", "span": [123, 127]}}, {"region": {"value": "Yangtze River Delta", "span": [130, 144]}}, {"city": {"value": "Yangtze River Delta", "span": [130, 144]}}, {"latitude": {"value": "31.42", "span": [67, 72]}}, {"longitude": {"value": "121.42", "span": [73, 79]}}]
+Gold: []
+

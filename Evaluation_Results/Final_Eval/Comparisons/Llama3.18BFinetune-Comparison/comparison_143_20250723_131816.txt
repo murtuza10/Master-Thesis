@@ -1,0 +1,126 @@
+=== Comparison for Item 143 ===
+Timestamp: 20250723_131816
+
+=== Original Text ===
+
+
+ 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": [
+          10,
+          14
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "soybeans",
+        "span": [
+          19,
+          24
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "soil pH",
+        "span": [
+          36,
+          41
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "soil organic carbon",
+        "span": [
+          54,
+          61
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "United States",
+        "span": [
+          63,
+          77
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Great Plains",
+        "span": [
+          92,
+          101
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Northeast",
+        "span": [
+          104,
+          112
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "10 years",
+        "span": [
+          116,
+          122
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [0, 5]}}, {"cropSpecies": {"value": "maize", "span": [10, 14]}}, {"cropSpecies": {"value": "soybeans", "span": [19, 24]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilPH": {"value": "soil pH", "span": [36, 41]}}, {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [54, 61]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "United States", "span": [63, 77]}}, {"region": {"value": "Great Plains", "span": [92, 101]}}, {"region": {"value": "Northeast", "span": [104, 112]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "10 years", "span": [116, 122]}}]
+Gold: []
+

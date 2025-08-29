@@ -1,0 +1,46 @@
+=== Comparison for Item 145 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+The soil was sampled after 6 , 12 and 24 months and fractionated into particulate organic carbon ( POC ) and mineral associated organic carbon ( MAOC ) and each fraction ( plus the bulk soil ) was measured for total carbon content as well as the abundance of the stable isotope 13C , to distinguish between old ( native ) and new ( added ) carbon .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          58,
+          65
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "1990 - 2017",
+        "span": [
+          50,
+          60
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": [58, 65]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"duration": {"value": "1990 - 2017", "span": [50, 60]}}]
+Gold: []
+

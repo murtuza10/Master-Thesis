@@ -1,0 +1,50 @@
+=== Comparison for Item 165 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+The file " FlowerStripSOCstock " contains the calculated SOC stock of each flower strip and adjacent cropland for 0 - 10 cm , 10 - 30 cm and 0 - 30 cm .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "silty clay loam",
+        "span": [
+          68,
+          80
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "Haplic Luvisol",
+        "span": [
+          17,
+          29
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "between 45 and 95 cm",
+        "span": [
+          117,
+          136
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilTexture": {"value": "silty clay loam", "span": [68, 80]}}, {"soilReferenceGroup": {"value": "Haplic Luvisol", "span": [17, 29]}}, {"soilDepth": {"value": "between 45 and 95 cm", "span": [117, 136]}}]
+Gold: []
+

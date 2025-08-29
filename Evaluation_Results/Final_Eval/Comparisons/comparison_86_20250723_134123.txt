@@ -1,0 +1,87 @@
+=== Comparison for Item 86 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+The data set contains all raw data of the measured residue concentrations within each sample . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "plant inflorescences",
+        "span": [
+          0,
+          18
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "honey bee pollen baskets",
+        "span": [
+          19,
+          33
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "honey sacs",
+        "span": [
+          34,
+          41
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "stored pollen and nectar",
+        "span": [
+          42,
+          57
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          0,
+          5
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "time dependent interval",
+        "span": [
+          63,
+          80
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "plant inflorescences", "span": [0, 18]}}, {"cropSpecies": {"value": "honey bee pollen baskets", "span": [19, 33]}}, {"cropSpecies": {"value": "honey sacs", "span": [34, 41]}}, {"cropSpecies": {"value": "stored pollen and nectar", "span": [42, 57]}}, {"cropSpecies": {"value": "wheat", "span": [0, 5]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "time dependent interval", "span": [63, 80]}}]
+Gold: []
+

@@ -1,0 +1,35 @@
+=== Comparison for Item 73 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+Title : 
+  International long - term experiment ( LTE ) ' Organic and Mineral Nitrogen Fertilization Experiment ' ( IOSDV ) - Table ' PROBENAHME_BODEN ' 
+ Abstract_text_1 : 
+  International long - term experiment ( LTE ) ' Organic and Mineral Nitrogen Fertilization Experiment ' ( IOSDV ) - Table ' PROBENAHME_BODEN ' .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "cucumbers",
+        "span": [
+          74,
+          83
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "cucumbers", "span": [74, 83]}}]
+Gold: []
+

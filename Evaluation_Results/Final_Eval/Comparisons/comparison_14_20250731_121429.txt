@@ -1,0 +1,50 @@
+=== Comparison for Item 14 ===
+Timestamp: 20250731_121429
+
+=== Original Text ===
+Title : 
+ Flower strip data Germany 2021 
+
+ Abstract : 
+ The data concerns 23 flower strips , sampled in 2019 in Germany . In all files , " Location " is the ID of the flower strips . The file " FlowerStripInformation " contains data regarding the sampled flower strips , including soil properties ( sand , silt , clay weight% ) , pH , age of the flower strip ( age ; years since establishment ) , aboveground C input ( AGC ; estimated from measured aboveground biomass , Mg C / ha ) belowround C input ( BGC ; estimated from measured belowground biomass , Mg C / ha ) , calculated root exudates ( Exudates ; 0.33*BGC , Mg C / ha ) , and the total belowground C input ( BGC_tot , Mg C / ha ) , and the total C input from the flower strips ( TotC , Mg C / ha ) . Coordinates for each flower strip is also available in UTM32 and lat / lon degrees . The file " FlowerStripClimate " contains monthly information about the mean temperature ( temp , deg . C ) , total precipitation ( precip , mm ) and sunshine duration from the climate station closest to each of the sampled flower strips . The file " FlowerStripSOCstock " contains the calculated SOC stock of each flower strip and adjacent cropland for 0 - 10 cm , 10 - 30 cm and 0 - 30 cm . The equal soil mass - corrected mass of each layer ( Mass ; Mg / ha ) , SOC stock ( SOC ; Mg C / ha ) , total N ( TN ; Mg N / ha ) and corresponding C : N ratio ( CN , unitless ) is available . The file " FlowerStripSpeciesCount " contains the count and ground cover of the observed species in the 23 flower strips . Five plots of 0.5 x 0.5 m ( 0.25 m2 area ) were sampled at each flower strip location . The species name is given in German ( Species_DE ) . The mean count of each species across the five plots in given in Count_mean , and the ground cover ( 5 ) is given in Cover_percent . The a sum of Cover_percent can be greater than 100 due to rounding . If the sum is less than 100 , the remaining area was bare soil .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilOrganicCarbon": {
+        "value": "organic carbon in soils",
+        "span": [
+          67,
+          90
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "organic carbon in soils",
+        "span": [
+          240,
+          263
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: []
+Gold: [{"soilOrganicCarbon": {"value": "organic carbon in soils", "span": [67, 90]}}, {"soilOrganicCarbon": {"value": "organic carbon in soils", "span": [240, 263]}}]
+

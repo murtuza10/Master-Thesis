@@ -1,0 +1,85 @@
+=== Comparison for Item 272 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+The elemental composition of the adsorbents was verified using SEM - EDX , scanning electron microscopy ( DSM 962 , Zeiss , Oberkochen , Germany ) with energy dispersive X - ray spectroscopy ( X - Max 50 mm² with INCA , Oxford Instruments , Abingdon , Great Britain ) . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "soil fertility",
+        "span": []
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "soil structure",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Australia",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "New South Wales",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2018",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}, {"cropSpecies": {"value": "barley", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "soil fertility", "span": []}}, {"soilTexture": {"value": "soil structure", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Australia", "span": []}}, {"region": {"value": "New South Wales", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2018", "span": []}}]
+Gold: []
+

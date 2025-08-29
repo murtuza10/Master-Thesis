@@ -1,0 +1,110 @@
+=== Comparison for Item 332 ===
+Timestamp: 20250723_134358
+
+=== Original Text ===
+The data were manually entered in the Drosomon database and checked for errors concerning dates and trap parameters . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "30 cm",
+        "span": [
+          138,
+          142
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.3 g/cm³",
+        "span": [
+          159,
+          168
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.8",
+        "span": [
+          174,
+          177
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2.5%",
+        "span": [
+          209,
+          213
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "Emilia-Romagna",
+        "span": [
+          77,
+          89
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Italy",
+        "span": [
+          91,
+          96
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "April 1, 2021",
+        "span": [
+          110,
+          121
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "March 31, 2022",
+        "span": [
+          125,
+          137
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilDepth": {"value": "30 cm", "span": [138, 142]}}, {"soilBulkDensity": {"value": "1.3 g/cm³", "span": [159, 168]}}, {"soilPH": {"value": "6.8", "span": [174, 177]}}, {"soilOrganicCarbon": {"value": "2.5%", "span": [209, 213]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "Emilia-Romagna", "span": [77, 89]}}, {"country": {"value": "Italy", "span": [91, 96]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "April 1, 2021", "span": [110, 121]}}, {"endTime": {"value": "March 31, 2022", "span": [125, 137]}}]
+Gold: []
+

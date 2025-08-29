@@ -1,0 +1,68 @@
+=== Comparison for Item 253 ===
+Timestamp: 20250723_131816
+
+=== Original Text ===
+The soil is a loess chernozem over limestone with an effective rooting depth of 100 cm , containing 22 % clay , 70 % silt and 8 % sand in the ploughed upper ( Ap ) horizon . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "0 to 20 cm",
+        "span": []
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2014",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "2015",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "2015 - 2014",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilDepth": {"value": "0 to 20 cm", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2014", "span": []}}, {"endTime": {"value": "2015", "span": []}}, {"duration": {"value": "2015 - 2014", "span": []}}]
+Gold: []
+

@@ -1,0 +1,46 @@
+=== Comparison for Item 40 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+The single plots are quadratic concrete boxes with walls of 10 cm thickness , a surface area of 4 m2 and a depth of 75 cm . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "1991",
+        "span": [
+          24,
+          28
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2020",
+        "span": [
+          31,
+          35
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Time Statement
+Predictions: []
+Gold: [{"startTime": {"value": "1991", "span": [24, 28]}}, {"endTime": {"value": "2020", "span": [31, 35]}}]
+

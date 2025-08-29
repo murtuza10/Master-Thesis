@@ -1,0 +1,37 @@
+=== Comparison for Item 371 ===
+Timestamp: 20250723_134124
+
+=== Original Text ===
+In two experimental repetitions starting at 30.8.2017 and 6.9.2017 and ending three weeks later at 20.9.2017 and 25.9.2017 , grapes were exposed to the four different treatments in gauze sleeves in the field , followed by an incubation in the laboratory . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2017",
+        "span": [
+          53,
+          57
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Time Statement
+Predictions: []
+Gold: [{"startTime": {"value": "2017", "span": [53, 57]}}]
+

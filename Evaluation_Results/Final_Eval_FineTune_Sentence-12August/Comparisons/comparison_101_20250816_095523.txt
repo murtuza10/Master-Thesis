@@ -1,0 +1,68 @@
+=== Comparison for Item 101 ===
+Timestamp: 20250816_095523
+
+=== Original Text ===
+Das Thünen - Institut für Waldwirtschaft nutzt zur Modellierung das Timber market Model for policy - Based Analysis ( TiMBA ) , wobei angebots- und nachfrageseitig 19 Holz und holzbasierte Produkte in 180 Ländern bis zum Jahr 2050 simuliert werden .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "pH 4",
+        "span": [
+          79,
+          83
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH 6",
+        "span": [
+          121,
+          125
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH 8",
+        "span": [
+          145,
+          149
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH 10",
+        "span": [
+          169,
+          173
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH 12",
+        "span": [
+          193,
+          197
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilPH": {"value": "pH 4", "span": [79, 83]}}, {"soilPH": {"value": "pH 6", "span": [121, 125]}}, {"soilPH": {"value": "pH 8", "span": [145, 149]}}, {"soilPH": {"value": "pH 10", "span": [169, 173]}}, {"soilPH": {"value": "pH 12", "span": [193, 197]}}]
+Gold: []
+

@@ -1,0 +1,78 @@
+=== Comparison for Item 353 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+In this context the sector Agriculture comprises the emissions from animal husbandry , the use of agricultural soils and anaerobic digestion of energy crops . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "German",
+        "span": [
+          103,
+          109
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          126,
+          133
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "federal states",
+        "span": [
+          142,
+          156
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "1990",
+        "span": [
+          170,
+          174
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2017",
+        "span": [
+          177,
+          181
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Location
+Predictions: []
+Gold: [{"country": {"value": "German", "span": [103, 109]}}, {"country": {"value": "Germany", "span": [126, 133]}}, {"region": {"value": "federal states", "span": [142, 156]}}]
+
+Category: Time Statement
+Predictions: []
+Gold: [{"startTime": {"value": "1990", "span": [170, 174]}}, {"endTime": {"value": "2017", "span": [177, 181]}}]
+

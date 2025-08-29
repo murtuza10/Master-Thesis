@@ -1,0 +1,50 @@
+=== Comparison for Item 87 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+The formulation Pictor ® Active was applied to the treatment field site according to label instructions at the maximum field recommended rate of 1 L ( product)/ha .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "12.9.2018",
+        "span": [
+          56,
+          66
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "29.9.2018",
+        "span": [
+          73,
+          83
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "two weeks",
+        "span": [
+          11,
+          21
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Time Statement
+Predictions: [{"startTime": {"value": "12.9.2018", "span": [56, 66]}}, {"endTime": {"value": "29.9.2018", "span": [73, 83]}}, {"duration": {"value": "two weeks", "span": [11, 21]}}]
+Gold: []
+

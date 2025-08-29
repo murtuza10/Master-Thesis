@@ -1,0 +1,115 @@
+=== Comparison for Item 330 ===
+Timestamp: 20250723_134358
+
+=== Original Text ===
+The captures_data table contains 9967 records , each record representing a trap deployment . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "soybeans",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "rice",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "0-30 cm",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "organic carbon",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "available nitrogen",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "North",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "Central",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "South",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2000",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "2010",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "maize", "span": []}}, {"cropSpecies": {"value": "soybeans", "span": []}}, {"cropSpecies": {"value": "rice", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilDepth": {"value": "0-30 cm", "span": []}}, {"soilPH": {"value": "pH", "span": []}}, {"soilOrganicCarbon": {"value": "organic carbon", "span": []}}, {"soilAvailableNitrogen": {"value": "available nitrogen", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "North", "span": []}}, {"region": {"value": "Central", "span": []}}, {"region": {"value": "South", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2000", "span": []}}, {"endTime": {"value": "2010", "span": []}}]
+Gold: []
+

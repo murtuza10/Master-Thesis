@@ -1,0 +1,81 @@
+=== Comparison for Item 357 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+The common vinegar fly Drosophila melanogaster ( Diptera : Drosophilidae ) is associated with sour rot in overripe or otherwise damaged grapes . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "grape",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "France",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "June 2022",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "September 2022",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropVariety": {
+        "value": "viticulture",
+        "span": [
+          117,
+          128
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "viticulture",
+        "span": [
+          205,
+          216
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "grape", "span": []}}]
+Gold: [{"cropVariety": {"value": "viticulture", "span": [117, 128]}}, {"cropSpecies": {"value": "viticulture", "span": [205, 216]}}]
+
+Category: Location
+Predictions: [{"country": {"value": "France", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "June 2022", "span": []}}, {"endTime": {"value": "September 2022", "span": []}}]
+Gold: []
+

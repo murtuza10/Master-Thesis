@@ -1,0 +1,78 @@
+=== Comparison for Item 29 ===
+Timestamp: 20250723_131813
+
+=== Original Text ===
+One station in each region has now been set up as continuous observatories of state variables and fluxes in intensively managed agricultural fields . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          10,
+          15
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": [
+          32,
+          38
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "oats",
+        "span": [
+          50,
+          54
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "crops",
+        "span": [
+          68,
+          73
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "total",
+        "span": [
+          null,
+          null
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [10, 15]}}, {"cropSpecies": {"value": "barley", "span": [32, 38]}}, {"cropSpecies": {"value": "oats", "span": [50, 54]}}, {"cropSpecies": {"value": "crops", "span": [68, 73]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilDepth": {"value": "total", "span": [null, null]}}]
+Gold: []
+

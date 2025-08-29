@@ -1,0 +1,128 @@
+=== Comparison for Item 201 ===
+Timestamp: 20250723_131815
+
+=== Original Text ===
+At initial pH 12.0 , the decrease of the solution pH weakened with a final pH of 11.6 . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": [
+          0,
+          6
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          0,
+          5
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "8.0",
+        "span": [
+          28,
+          31
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "10.0",
+        "span": [
+          32,
+          35
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.7",
+        "span": [
+          64,
+          67
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "7.6",
+        "span": [
+          68,
+          71
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "city": {
+        "value": "Paris",
+        "span": [
+          91,
+          96
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Bordeaux",
+        "span": [
+          103,
+          110
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [0, 5]}}, {"cropSpecies": {"value": "barley", "span": [0, 6]}}, {"cropSpecies": {"value": "wheat", "span": [0, 5]}}, {"cropSpecies": {"value": "wheat", "span": [0, 5]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilPH": {"value": "8.0", "span": [28, 31]}}, {"soilPH": {"value": "10.0", "span": [32, 35]}}, {"soilPH": {"value": "6.7", "span": [64, 67]}}, {"soilPH": {"value": "7.6", "span": [68, 71]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"city": {"value": "Paris", "span": [91, 96]}}, {"city": {"value": "Bordeaux", "span": [103, 110]}}]
+Gold: []
+

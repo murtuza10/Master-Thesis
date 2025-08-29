@@ -1,0 +1,37 @@
+=== Comparison for Item 263 ===
+Timestamp: 20250723_134124
+
+=== Original Text ===
+Description of table 1 Related datasets are listed in the metadata element ' Related Identifier ' . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "city": {
+        "value": "Bernburg - Strenzfeld",
+        "span": [
+          110,
+          131
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Location
+Predictions: []
+Gold: [{"city": {"value": "Bernburg - Strenzfeld", "span": [110, 131]}}]
+

@@ -1,0 +1,35 @@
+=== Comparison for Item 67 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+Title : 
+  Long - term field experiment V140 Muencheberg from ( launched in 1963 ) - Yield 
+ Abstract_text_1 : 
+  Long - term field experiment V140 Muencheberg from ( launched in 1963 ) - Yield .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Apium graveolens",
+        "span": [
+          56,
+          70
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "Apium graveolens", "span": [56, 70]}}]
+Gold: []
+

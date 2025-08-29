@@ -1,0 +1,42 @@
+=== Comparison for Item 1 ===
+Timestamp: 20250816_095523
+
+=== Original Text ===
+Abstract_text_2 : 
+  Our study reveals the effects of GCFs on a soil - crop system : in general , with an increasing number of GCFs , soil properties , and plant biomass reacted negatively .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          37,
+          44
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Quedlinburg",
+        "span": [
+          26,
+          35
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": [37, 44]}}, {"city": {"value": "Quedlinburg", "span": [26, 35]}}]
+Gold: []
+

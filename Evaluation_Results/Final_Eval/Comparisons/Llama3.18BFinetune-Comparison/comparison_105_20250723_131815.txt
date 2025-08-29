@@ -1,0 +1,45 @@
+=== Comparison for Item 105 ===
+Timestamp: 20250723_131815
+
+=== Original Text ===
+Neue Nachfragemärkte umschließen beispielsweise die Pelletindustrie , Hersteller von grünem Treibstoff für die Luftfahrt sowie Bioraffinerien . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Holz",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Deutschland",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "Holz", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Deutschland", "span": []}}]
+Gold: []
+

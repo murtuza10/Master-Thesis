@@ -1,0 +1,56 @@
+=== Comparison for Item 68 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+Abstract_text_2 : 
+  Child table of long - term field experiment V140 Muencheberg .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          89,
+          96
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2011/2012",
+        "span": [
+          112,
+          122
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2014/2015",
+        "span": [
+          124,
+          134
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": [89, 96]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2011/2012", "span": [112, 122]}}, {"endTime": {"value": "2014/2015", "span": [124, 134]}}]
+Gold: []
+

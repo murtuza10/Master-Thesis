@@ -1,0 +1,114 @@
+=== Comparison for Item 61 ===
+Timestamp: 20250723_134358
+
+=== Original Text ===
+capitata , leeks , Allium ampeloprasum , celery , Apium graveolens , Apium graveolens var . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "cucumbers",
+        "span": [
+          565,
+          574
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Cucumis",
+        "span": [
+          577,
+          584
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Cucumis sativus",
+        "span": [
+          587,
+          602
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "carrots",
+        "span": [
+          605,
+          612
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Daucus carota",
+        "span": [
+          615,
+          628
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "cabbages",
+        "span": [
+          631,
+          639
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Brassica oleracea",
+        "span": [
+          642,
+          659
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "var .",
+        "span": [
+          660,
+          665
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilOrganicCarbon": {
+        "value": "soil organic carbon",
+        "span": [
+          155,
+          174
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropSpecies": {"value": "cucumbers", "span": [565, 574]}}, {"cropSpecies": {"value": "Cucumis", "span": [577, 584]}}, {"cropSpecies": {"value": "Cucumis sativus", "span": [587, 602]}}, {"cropSpecies": {"value": "carrots", "span": [605, 612]}}, {"cropSpecies": {"value": "Daucus carota", "span": [615, 628]}}, {"cropSpecies": {"value": "cabbages", "span": [631, 639]}}, {"cropSpecies": {"value": "Brassica oleracea", "span": [642, 659]}}, {"cropVariety": {"value": "var .", "span": [660, 665]}}]
+
+Category: Soil
+Predictions: []
+Gold: [{"soilOrganicCarbon": {"value": "soil organic carbon", "span": [155, 174]}}]
+

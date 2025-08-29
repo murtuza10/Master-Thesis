@@ -1,0 +1,41 @@
+=== Comparison for Item 121 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+[ 4 ] International Institute for Applied Systems Analyses , 2018 .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "12.0",
+        "span": [
+          11,
+          15
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "11.6",
+        "span": [
+          42,
+          46
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilPH": {"value": "12.0", "span": [11, 15]}}, {"soilPH": {"value": "11.6", "span": [42, 46]}}]
+Gold: []
+

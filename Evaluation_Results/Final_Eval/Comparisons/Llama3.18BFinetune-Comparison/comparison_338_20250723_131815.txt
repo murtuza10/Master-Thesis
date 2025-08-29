@@ -1,0 +1,46 @@
+=== Comparison for Item 338 ===
+Timestamp: 20250723_131815
+
+=== Original Text ===
+graveolens ) . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "celery",
+        "span": [
+          204,
+          210
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Apium graveolens L. ssp .",
+        "span": [
+          213,
+          238
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropSpecies": {"value": "celery", "span": [204, 210]}}, {"cropSpecies": {"value": "Apium graveolens L. ssp .", "span": [213, 238]}}]
+

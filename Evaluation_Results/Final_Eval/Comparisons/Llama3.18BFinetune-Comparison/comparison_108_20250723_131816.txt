@@ -1,0 +1,38 @@
+=== Comparison for Item 108 ===
+Timestamp: 20250723_131816
+
+=== Original Text ===
+Die Dokumente sind auf Anfrage verfügbar . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "none",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "none",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "none", "span": []}, "cropVariety": {"value": "none", "span": []}}]
+Gold: []
+

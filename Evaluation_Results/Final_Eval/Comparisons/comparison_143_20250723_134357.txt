@@ -1,0 +1,117 @@
+=== Comparison for Item 143 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+
+
+ 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "corn",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "soybeans",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilOrganicCarbon": {
+        "value": "soil organic carbon (SOC)",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "nitrogen availability",
+        "span": []
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "soil texture",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "depth",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "United States",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2016",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "2021",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "5 years",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "corn", "span": []}}, {"cropSpecies": {"value": "soybeans", "span": []}}, {"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilOrganicCarbon": {"value": "soil organic carbon (SOC)", "span": []}}, {"soilPH": {"value": "pH", "span": []}}, {"soilAvailableNitrogen": {"value": "nitrogen availability", "span": []}}, {"soilTexture": {"value": "soil texture", "span": []}}, {"soilDepth": {"value": "depth", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "United States", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2016", "span": []}}, {"endTime": {"value": "2021", "span": []}}, {"duration": {"value": "5 years", "span": []}}]
+Gold: []
+

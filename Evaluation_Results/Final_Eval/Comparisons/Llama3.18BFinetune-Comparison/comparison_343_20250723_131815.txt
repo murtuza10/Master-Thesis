@@ -1,0 +1,51 @@
+=== Comparison for Item 343 ===
+Timestamp: 20250723_131815
+
+=== Original Text ===
+All individuals ( 33 individuals in total ) having a null allele at any of the marker loci were excluded from the dataset . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Apium graveolens",
+        "span": [
+          15,
+          31
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "2016",
+        "span": [
+          72,
+          76
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropSpecies": {"value": "Apium graveolens", "span": [15, 31]}}]
+
+Category: Time Statement
+Predictions: []
+Gold: [{"duration": {"value": "2016", "span": [72, 76]}}]
+

@@ -1,0 +1,46 @@
+=== Comparison for Item 83 ===
+Timestamp: 20250723_134124
+
+=== Original Text ===
+The formulation Pictor ® Active was applied to the treatment field site according to label instructions at the maximum field recommended rate of 1 L ( product)/ha . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "oilseed rape",
+        "span": [
+          83,
+          95
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Brassica napus",
+        "span": [
+          98,
+          112
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropSpecies": {"value": "oilseed rape", "span": [83, 95]}}, {"cropSpecies": {"value": "Brassica napus", "span": [98, 112]}}]
+

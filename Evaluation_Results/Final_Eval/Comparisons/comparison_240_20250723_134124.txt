@@ -1,0 +1,92 @@
+=== Comparison for Item 240 ===
+Timestamp: 20250723_134124
+
+=== Original Text ===
+With this study , soil can be ruled out as a habitat for spider mites , and attention to spider mite pest control can be directed to plant infestations . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "spider mite",
+        "span": [
+          44,
+          55
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "spider mite",
+        "span": [
+          135,
+          146
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "spider mite",
+        "span": [
+          156,
+          167
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [
+    {
+      "city": {
+        "value": "Yucatan",
+        "span": [
+          194,
+          200
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Mexico",
+        "span": [
+          202,
+          208
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "1 week",
+        "span": [
+          165,
+          171
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "spider mite", "span": [44, 55]}}, {"cropSpecies": {"value": "spider mite", "span": [135, 146]}}, {"cropSpecies": {"value": "spider mite", "span": [156, 167]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"city": {"value": "Yucatan", "span": [194, 200]}}, {"country": {"value": "Mexico", "span": [202, 208]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "1 week", "span": [165, 171]}}]
+Gold: []
+

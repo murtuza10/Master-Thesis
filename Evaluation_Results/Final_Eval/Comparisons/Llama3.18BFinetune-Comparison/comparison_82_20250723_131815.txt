@@ -1,0 +1,167 @@
+=== Comparison for Item 82 ===
+Timestamp: 20250723_131815
+
+=== Original Text ===
+Therefore a field study was carried out in which honey bee colonies were placed to oilseed rape ( Brassica napus , OSR ) fields . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "spring",
+        "span": [
+          45,
+          51
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          17,
+          23
+        ]
+      },
+      "region": {
+        "value": "Bochum",
+        "span": [
+          30,
+          36
+        ]
+      },
+      "city": {
+        "value": "Braunschweig",
+        "span": [
+          32,
+          41
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "spring 2022",
+        "span": [
+          10,
+          24
+        ]
+      },
+      "endTime": {
+        "value": "spring 2023",
+        "span": [
+          26,
+          40
+        ]
+      },
+      "duration": {
+        "value": "2 years",
+        "span": [
+          41,
+          49
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          73,
+          80
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Bochum",
+        "span": [
+          83,
+          89
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Braunschweig",
+        "span": [
+          92,
+          104
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Celle",
+        "span": [
+          107,
+          112
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Hohenheim",
+        "span": [
+          115,
+          124
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Veitshöchheim",
+        "span": [
+          127,
+          140
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "spring 2022",
+        "span": [
+          148,
+          159
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "spring 2023",
+        "span": [
+          163,
+          174
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "spring", "span": [45, 51]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": [17, 23]}, "region": {"value": "Bochum", "span": [30, 36]}, "city": {"value": "Braunschweig", "span": [32, 41]}}]
+Gold: [{"country": {"value": "Germany", "span": [73, 80]}}, {"city": {"value": "Bochum", "span": [83, 89]}}, {"city": {"value": "Braunschweig", "span": [92, 104]}}, {"city": {"value": "Celle", "span": [107, 112]}}, {"city": {"value": "Hohenheim", "span": [115, 124]}}, {"city": {"value": "Veitshöchheim", "span": [127, 140]}}]
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "spring 2022", "span": [10, 24]}, "endTime": {"value": "spring 2023", "span": [26, 40]}, "duration": {"value": "2 years", "span": [41, 49]}}]
+Gold: [{"startTime": {"value": "spring 2022", "span": [148, 159]}}, {"startTime": {"value": "spring 2023", "span": [163, 174]}}]
+

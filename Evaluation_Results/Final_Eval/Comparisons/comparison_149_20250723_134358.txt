@@ -1,0 +1,95 @@
+=== Comparison for Item 149 ===
+Timestamp: 20250723_134358
+
+=== Original Text ===
+Title : 
+ Dataset for " Towards an ecosystem capacity to stabilise organic carbon in soils " 
+
+ Abstract : 
+ This dataset includes the data that was used in the Global Change Biology publication " Towards an ecosystem capacity to stabilise organic carbon in soils " by Poeplau et al .. It contains two xlsx files , with dataset_full.xlsx including all sites with soil properties that were used in the first part of the manuscript . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loamy sand",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "1.2%",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "5 cm",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "United States",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "Iowa",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2022",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loamy sand", "span": []}}, {"soilPH": {"value": "6.5", "span": []}}, {"soilOrganicCarbon": {"value": "1.2%", "span": []}}, {"soilDepth": {"value": "5 cm", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "United States", "span": []}}, {"region": {"value": "Iowa", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2022", "span": []}}]
+Gold: []
+

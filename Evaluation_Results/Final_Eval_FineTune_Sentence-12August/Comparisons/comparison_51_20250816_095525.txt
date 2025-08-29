@@ -1,0 +1,68 @@
+=== Comparison for Item 51 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+The experiment consists of 12 fertilization treatments in different combinations of mineral N fertilization and organic amendments and as quadruplicate for each of the three soils .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "24 h",
+        "span": [
+          48,
+          53
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "2 h",
+        "span": [
+          67,
+          70
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "48 h",
+        "span": [
+          73,
+          78
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "168 h",
+        "span": [
+          81,
+          87
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "15 min",
+        "span": [
+          131,
+          137
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Time Statement
+Predictions: [{"duration": {"value": "24 h", "span": [48, 53]}}, {"duration": {"value": "2 h", "span": [67, 70]}}, {"duration": {"value": "48 h", "span": [73, 78]}}, {"duration": {"value": "168 h", "span": [81, 87]}}, {"duration": {"value": "15 min", "span": [131, 137]}}]
+Gold: []
+

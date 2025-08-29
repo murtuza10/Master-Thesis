@@ -1,0 +1,92 @@
+=== Comparison for Item 80 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+( 2024 ) https://doi.org/10.1016/j.cub.2024.10.008 Residues of two commonly used fungicides ( boscalid and pyraclostrobin ) were measured in several bee matrices along a transfer pathway from plants to larvae . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "oilseed rape",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Brassica napus L.",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "50.86217 N",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "9.9247 E",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "51.03118 N",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "9.92393 E",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "April",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "June 2021",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "oilseed rape", "span": []}}, {"cropSpecies": {"value": "Brassica napus L.", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": []}}, {"latitude": {"value": "50.86217 N", "span": []}}, {"longitude": {"value": "9.9247 E", "span": []}}, {"latitude": {"value": "51.03118 N", "span": []}}, {"longitude": {"value": "9.92393 E", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "April", "span": []}}, {"endTime": {"value": "June 2021", "span": []}}]
+Gold: []
+

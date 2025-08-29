@@ -1,0 +1,145 @@
+=== Comparison for Item 316 ===
+Timestamp: 20250723_134124
+
+=== Original Text ===
+Here we present and publish the data from the JKI monitoring program from 2011 to February 2018 . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.4 g/cm³",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.2",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "1.7 %",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "United States",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "region",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "Fayetteville",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "36.2° N",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "94.3° W",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2004",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "2006",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}, {"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "", "span": []}}, {"soilReferenceGroup": {"value": "", "span": []}}, {"soilDepth": {"value": "", "span": []}}, {"soilBulkDensity": {"value": "1.4 g/cm³", "span": []}}, {"soilPH": {"value": "6.2", "span": []}}, {"soilOrganicCarbon": {"value": "1.7 %", "span": []}}, {"soilAvailableNitrogen": {"value": "", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "United States", "span": []}}, {"region": {"value": "region", "span": []}}, {"city": {"value": "Fayetteville", "span": []}}, {"latitude": {"value": "36.2° N", "span": []}}, {"longitude": {"value": "94.3° W", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2004", "span": []}}, {"endTime": {"value": "2006", "span": []}}, {"duration": {"value": "", "span": []}}]
+Gold: []
+

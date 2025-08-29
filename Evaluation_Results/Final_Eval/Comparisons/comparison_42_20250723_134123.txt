@@ -1,0 +1,103 @@
+=== Comparison for Item 42 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+The three soil types are Arenic Luvisol ( weak loamy sand ) , Gleyic Fluvisol ( heavy sandy loam ) and Luvic - Phaeozem ( medium clayey silt ) according to the World Reference Base – WRB ( and the Bodenkundliche Kartieranleitung – KA4 ) . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "soils",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "1.4 g / cm3",
+        "span": []
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "sandy loam",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "75 cm",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.2",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "1.5 %",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "100 ppm",
+        "span": []
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "50 cm",
+        "span": [
+          10,
+          15
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "25 cm",
+        "span": [
+          61,
+          66
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "coarse - sandy",
+        "span": [
+          79,
+          93
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "soils", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "1.4 g / cm3", "span": []}}, {"soilTexture": {"value": "sandy loam", "span": []}}, {"soilDepth": {"value": "75 cm", "span": []}}, {"soilPH": {"value": "6.2", "span": []}}, {"soilOrganicCarbon": {"value": "1.5 %", "span": []}}, {"soilAvailableNitrogen": {"value": "100 ppm", "span": []}}]
+Gold: [{"soilDepth": {"value": "50 cm", "span": [10, 15]}}, {"soilDepth": {"value": "25 cm", "span": [61, 66]}}, {"soilTexture": {"value": "coarse - sandy", "span": [79, 93]}}]
+

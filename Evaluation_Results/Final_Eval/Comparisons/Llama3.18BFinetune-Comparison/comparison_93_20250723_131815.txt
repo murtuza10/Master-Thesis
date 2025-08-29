@@ -1,0 +1,174 @@
+=== Comparison for Item 93 ===
+Timestamp: 20250723_131815
+
+=== Original Text ===
+Für diesen Zweck werden ein Referenzszenario und zwei alternative Szenarien entworfen , die verschiedene zukünftige Entwicklungspfade beschreiben . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Biomasse",
+        "span": [
+          0,
+          7
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Biomasse",
+        "span": [
+          37,
+          44
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Biomasse",
+        "span": [
+          81,
+          88
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Biomasse",
+        "span": [
+          106,
+          113
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "Landwirtschaft",
+        "span": [
+          40,
+          49
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "Forstwirtschaft",
+        "span": [
+          50,
+          62
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "Landwirtschaft",
+        "span": [
+          40,
+          49
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "Landwirtschaft",
+        "span": [
+          40,
+          49
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "Landwirtschaft",
+        "span": [
+          40,
+          49
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "Landwirtschaft",
+        "span": [
+          40,
+          49
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "Landwirtschaft",
+        "span": [
+          40,
+          49
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2050",
+        "span": [
+          67,
+          72
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2050",
+        "span": [
+          67,
+          72
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "2050",
+        "span": [
+          67,
+          72
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "2050",
+        "span": [
+          284,
+          288
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "Biomasse", "span": [0, 7]}}, {"cropSpecies": {"value": "Biomasse", "span": [37, 44]}}, {"cropSpecies": {"value": "Biomasse", "span": [81, 88]}}, {"cropSpecies": {"value": "Biomasse", "span": [106, 113]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "Landwirtschaft", "span": [40, 49]}}, {"soilReferenceGroup": {"value": "Forstwirtschaft", "span": [50, 62]}}, {"soilDepth": {"value": "Landwirtschaft", "span": [40, 49]}}, {"soilBulkDensity": {"value": "Landwirtschaft", "span": [40, 49]}}, {"soilPH": {"value": "Landwirtschaft", "span": [40, 49]}}, {"soilOrganicCarbon": {"value": "Landwirtschaft", "span": [40, 49]}}, {"soilAvailableNitrogen": {"value": "Landwirtschaft", "span": [40, 49]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2050", "span": [67, 72]}}, {"endTime": {"value": "2050", "span": [67, 72]}}, {"duration": {"value": "2050", "span": [67, 72]}}]
+Gold: [{"duration": {"value": "2050", "span": [284, 288]}}]
+

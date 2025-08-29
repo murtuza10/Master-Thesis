@@ -1,0 +1,117 @@
+=== Comparison for Item 258 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+Conservation tillage with a cultivator ( CT ; 10 cm flat non - inversion soil loosening ) is compared to sub - plots with conventional tillage ( MP ; mould - board plough , carrier board with combined alternating ploughshares , ploughing depth 30 cm , incl . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "winter wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "corn",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "soybeans",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay loam",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "United States",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "Midwest",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "None",
+        "span": []
+      },
+      "latitude": {
+        "value": "38.9° N",
+        "span": []
+      },
+      "longitude": {
+        "value": "88.2° W",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "None",
+        "span": []
+      },
+      "endTime": {
+        "value": "None",
+        "span": []
+      },
+      "duration": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}, "cropVariety": {"value": "winter wheat", "span": []}}, {"cropSpecies": {"value": "corn", "span": []}}, {"cropSpecies": {"value": "soybeans", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay loam", "span": []}}, {"soilPH": {"value": "6.5", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "United States", "span": []}}, {"region": {"value": "Midwest", "span": []}}, {"city": {"value": "None", "span": []}, "latitude": {"value": "38.9° N", "span": []}, "longitude": {"value": "88.2° W", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "None", "span": []}, "endTime": {"value": "None", "span": []}, "duration": {"value": "None", "span": []}}]
+Gold: []
+

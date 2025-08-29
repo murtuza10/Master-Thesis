@@ -1,0 +1,41 @@
+=== Comparison for Item 70 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+General description about the V140 experiment can be found in the table V140 - Plots .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loess chernozem",
+        "span": [
+          15,
+          30
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "100 cm",
+        "span": [
+          61,
+          67
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loess chernozem", "span": [15, 30]}}, {"soilDepth": {"value": "100 cm", "span": [61, 67]}}]
+Gold: []
+

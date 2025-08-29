@@ -1,0 +1,91 @@
+=== Comparison for Item 218 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+In soil samples only for the genotype Milaneco a strong increase in alpha diversity was observed , especially in the samples from 30 - 60 cm . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "0-10 cm",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "",
+        "span": []
+      },
+      "soilOrganicCarbon": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "China",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "35.8",
+        "span": []
+      },
+      "longitude": {
+        "value": "114.8",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "1st of April",
+        "span": []
+      },
+      "endTime": {
+        "value": "15th of September",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilDepth": {"value": "0-10 cm", "span": []}}, {"soilPH": {"value": "", "span": []}, "soilOrganicCarbon": {"value": "", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "China", "span": []}}, {"latitude": {"value": "35.8", "span": []}, "longitude": {"value": "114.8", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "1st of April", "span": []}, "endTime": {"value": "15th of September", "span": []}}]
+Gold: []
+

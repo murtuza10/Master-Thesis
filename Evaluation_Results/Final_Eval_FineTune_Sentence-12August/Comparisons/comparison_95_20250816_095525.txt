@@ -1,0 +1,59 @@
+=== Comparison for Item 95 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+Die Studie ist von der Renewable Carbon Initiative ( RCI ) und des Bio - based Industries Consortium ( BIC ) beauftragt .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "24.8.2018",
+        "span": [
+          37,
+          45
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "31.8.2018",
+        "span": [
+          60,
+          68
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "13.9.2018",
+        "span": [
+          86,
+          94
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "20.9.2018",
+        "span": [
+          109,
+          117
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Time Statement
+Predictions: [{"startTime": {"value": "24.8.2018", "span": [37, 45]}}, {"startTime": {"value": "31.8.2018", "span": [60, 68]}}, {"endTime": {"value": "13.9.2018", "span": [86, 94]}}, {"endTime": {"value": "20.9.2018", "span": [109, 117]}}]
+Gold: []
+

@@ -1,0 +1,86 @@
+=== Comparison for Item 311 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+It has already caused severe economic damages in many fruit - crops and some susceptible grape varieties and seems to have successfully adapted to survive under a variety of conditions . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Drosophila suzukii",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Drosophila suzukii",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilReferenceGroup": {
+        "value": "southwest Germany",
+        "span": []
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2011",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          98,
+          105
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "7 - year",
+        "span": [
+          38,
+          46
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "Drosophila suzukii", "span": []}}, {"cropSpecies": {"value": "Drosophila suzukii", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilReferenceGroup": {"value": "southwest Germany", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: []
+Gold: [{"country": {"value": "Germany", "span": [98, 105]}}]
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2011", "span": []}}]
+Gold: [{"duration": {"value": "7 - year", "span": [38, 46]}}]
+

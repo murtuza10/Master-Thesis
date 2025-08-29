@@ -1,0 +1,51 @@
+=== Comparison for Item 183 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+After closing the tubes , the samples were equilibrated for 4 days at 25 ° C to reach an equilibration pH value . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "pH",
+        "span": [
+          93,
+          95
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "24 hours",
+        "span": [
+          66,
+          75
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilPH": {"value": "pH", "span": [93, 95]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"duration": {"value": "24 hours", "span": [66, 75]}}]
+Gold: []
+

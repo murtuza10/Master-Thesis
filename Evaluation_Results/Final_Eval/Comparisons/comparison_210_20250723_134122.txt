@@ -1,0 +1,179 @@
+=== Comparison for Item 210 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+We postulate , that ( i ) the absolute abundance of bacteria and archaea will be increased in DLB treatment plots . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "Milaneco",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "Capo",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "Trebelir",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay loam",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "0.9 g / cm3",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "0.5 %",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "150 kg / ha",
+        "span": []
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "the soil in the 0 - 20 cm layer",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "120 cm",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "latitude": {
+        "value": "45.66 N",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "7.71 E",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "Italy",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "Milan",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "fall of 2001",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "fall of 2002",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropVariety": {
+        "value": "Milaneco",
+        "span": [
+          32,
+          40
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Capo",
+        "span": [
+          45,
+          49
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Trebelir",
+        "span": [
+          89,
+          97
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}, "cropVariety": {"value": "Milaneco", "span": []}}, {"cropSpecies": {"value": "wheat", "span": []}, "cropVariety": {"value": "Capo", "span": []}}, {"cropSpecies": {"value": "wheat", "span": []}, "cropVariety": {"value": "Trebelir", "span": []}}]
+Gold: [{"cropVariety": {"value": "Milaneco", "span": [32, 40]}}, {"cropVariety": {"value": "Capo", "span": [45, 49]}}, {"cropVariety": {"value": "Trebelir", "span": [89, 97]}}]
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay loam", "span": []}}, {"soilBulkDensity": {"value": "0.9 g / cm3", "span": []}}, {"soilOrganicCarbon": {"value": "0.5 %", "span": []}}, {"soilPH": {"value": "6.5", "span": []}}, {"soilAvailableNitrogen": {"value": "150 kg / ha", "span": []}}, {"soilReferenceGroup": {"value": "the soil in the 0 - 20 cm layer", "span": []}}, {"soilDepth": {"value": "120 cm", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"latitude": {"value": "45.66 N", "span": []}}, {"longitude": {"value": "7.71 E", "span": []}}, {"country": {"value": "Italy", "span": []}}, {"city": {"value": "Milan", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "fall of 2001", "span": []}}, {"endTime": {"value": "fall of 2002", "span": []}}]
+Gold: []
+

@@ -1,0 +1,109 @@
+=== Comparison for Item 115 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+Rome : FAO . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loam",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "7.8",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "12 g/kg",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "latitude": {
+        "value": "35°46'N",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "107°59'E",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "Loess Plateau",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "Shanxi Province",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "China",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "April 2020",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "October 2020",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "maize", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loam", "span": []}}, {"soilPH": {"value": "7.8", "span": []}}, {"soilOrganicCarbon": {"value": "12 g/kg", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"latitude": {"value": "35°46'N", "span": []}}, {"longitude": {"value": "107°59'E", "span": []}}, {"region": {"value": "Loess Plateau", "span": []}}, {"region": {"value": "Shanxi Province", "span": []}}, {"country": {"value": "China", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "April 2020", "span": []}}, {"endTime": {"value": "October 2020", "span": []}}]
+Gold: []
+

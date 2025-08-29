@@ -1,0 +1,37 @@
+=== Comparison for Item 93 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+Für diesen Zweck werden ein Referenzszenario und zwei alternative Szenarien entworfen , die verschiedene zukünftige Entwicklungspfade beschreiben . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "2050",
+        "span": [
+          284,
+          288
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Time Statement
+Predictions: []
+Gold: [{"duration": {"value": "2050", "span": [284, 288]}}]
+

@@ -1,0 +1,40 @@
+=== Comparison for Item 223 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+Title : 
+  Meta - analysis : Drivers of soil health across EU - Typology of Drivers 
+ Abstract_text_1 : 
+  Meta - analysis : Drivers of soil health across EU - Typology of Drivers . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          110,
+          115
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropSpecies": {"value": "wheat", "span": [110, 115]}}]
+

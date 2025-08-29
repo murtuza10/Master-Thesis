@@ -1,0 +1,32 @@
+=== Comparison for Item 143 ===
+Timestamp: 20250816_095523
+
+=== Original Text ===
+
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "pH",
+        "span": [
+          9,
+          11
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilPH": {"value": "pH", "span": [9, 11]}}]
+Gold: []
+

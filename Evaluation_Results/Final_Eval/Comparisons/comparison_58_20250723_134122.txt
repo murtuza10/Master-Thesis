@@ -1,0 +1,133 @@
+=== Comparison for Item 58 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+More details about the experiment ’s description can be found in the supplementary material . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "1.3 g / cm3",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "5.1 %",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.1",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "80 mg / kg",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "300 cm",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "400 cm",
+        "span": []
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "different",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Australia",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "Victoria",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "37.5° S",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "144.5° E",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2010",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "2015",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "5 years",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "1.3 g / cm3", "span": []}}, {"soilOrganicCarbon": {"value": "5.1 %", "span": []}}, {"soilPH": {"value": "6.1", "span": []}}, {"soilAvailableNitrogen": {"value": "80 mg / kg", "span": []}}, {"soilDepth": {"value": "300 cm", "span": []}}, {"soilDepth": {"value": "400 cm", "span": []}}, {"soilTexture": {"value": "different", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Australia", "span": []}}, {"region": {"value": "Victoria", "span": []}}, {"latitude": {"value": "37.5° S", "span": []}}, {"longitude": {"value": "144.5° E", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2010", "span": []}}, {"endTime": {"value": "2015", "span": []}}, {"duration": {"value": "5 years", "span": []}}]
+Gold: []
+

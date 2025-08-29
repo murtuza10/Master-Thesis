@@ -1,0 +1,93 @@
+=== Comparison for Item 334 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+Title : 
+ Microsatellite marker data of Apium graveolens L. ssp . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": [
+          10,
+          16
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": [
+          20,
+          24
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2%",
+        "span": [
+          30,
+          34
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Australia",
+        "span": [
+          40,
+          50
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Sydney",
+        "span": [
+          55,
+          63
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [0, 5]}}, {"cropSpecies": {"value": "barley", "span": [10, 16]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilPH": {"value": "6.5", "span": [20, 24]}}, {"soilOrganicCarbon": {"value": "2%", "span": [30, 34]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Australia", "span": [40, 50]}}, {"city": {"value": "Sydney", "span": [55, 63]}}]
+Gold: []
+

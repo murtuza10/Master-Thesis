@@ -1,0 +1,123 @@
+=== Comparison for Item 78 ===
+Timestamp: 20250723_131815
+
+=== Original Text ===
+Dataset version 1.0 
+ Keywords : 
+  Soil , Fusarium sporotrichioides , Fusarium , Fusarium culmorum , Fusarium equiseti , winter wheat , grass weeds , Lolium hybridum , Lolium multiflorum , pathogenic fungi , mycotoxins , trichothecenes , zearalenone , irrigation , microclimate , agricultural sciences , opendata , Boden , Lebensr채ume und Biotope , Verteilung der Arten , Bodenbedeckung , Landwirtschaft , Wissenschaftliche Forschung , Germany , Brandenburg , M채rkisch Oderland , M체ncheberg 
+ 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "winter wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "texture",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "France",
+        "span": []
+      },
+      "region": {
+        "value": "South of France",
+        "span": []
+      },
+      "city": {
+        "value": "Sud-Est",
+        "span": []
+      },
+      "latitude": {
+        "value": "None",
+        "span": []
+      },
+      "longitude": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "France",
+        "span": []
+      },
+      "region": {
+        "value": "South of France",
+        "span": []
+      },
+      "city": {
+        "value": "Sud-Ouest",
+        "span": []
+      },
+      "latitude": {
+        "value": "None",
+        "span": []
+      },
+      "longitude": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "France",
+        "span": []
+      },
+      "region": {
+        "value": "South of France",
+        "span": []
+      },
+      "city": {
+        "value": "Centre",
+        "span": []
+      },
+      "latitude": {
+        "value": "None",
+        "span": []
+      },
+      "longitude": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}, "cropVariety": {"value": "winter wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "texture", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "France", "span": []}, "region": {"value": "South of France", "span": []}, "city": {"value": "Sud-Est", "span": []}, "latitude": {"value": "None", "span": []}, "longitude": {"value": "None", "span": []}}, {"country": {"value": "France", "span": []}, "region": {"value": "South of France", "span": []}, "city": {"value": "Sud-Ouest", "span": []}, "latitude": {"value": "None", "span": []}, "longitude": {"value": "None", "span": []}}, {"country": {"value": "France", "span": []}, "region": {"value": "South of France", "span": []}, "city": {"value": "Centre", "span": []}, "latitude": {"value": "None", "span": []}, "longitude": {"value": "None", "span": []}}]
+Gold: []
+

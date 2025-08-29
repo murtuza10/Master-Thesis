@@ -1,0 +1,46 @@
+=== Comparison for Item 161 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+The file " FlowerStripSpeciesCount " contains the count and ground cover of the observed species in the 23 flower strips . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilOrganicCarbon": {
+        "value": "SOC",
+        "span": [
+          72,
+          75
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "SOC",
+        "span": [
+          84,
+          87
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: []
+Gold: [{"soilOrganicCarbon": {"value": "SOC", "span": [72, 75]}}, {"soilOrganicCarbon": {"value": "SOC", "span": [84, 87]}}]
+

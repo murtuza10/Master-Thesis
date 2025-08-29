@@ -1,0 +1,51 @@
+=== Comparison for Item 336 ===
+Timestamp: 20250723_134358
+
+=== Original Text ===
+Sixteen SSRs proved to be polymorphic and were applied to study the patterns of genetic diversity within diploid Apium graveolens . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "faba bean",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "USA",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "Davis",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "faba bean", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "USA", "span": []}}, {"city": {"value": "Davis", "span": []}}]
+Gold: []
+

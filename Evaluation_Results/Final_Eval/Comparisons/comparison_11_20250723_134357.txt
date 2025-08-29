@@ -1,0 +1,151 @@
+=== Comparison for Item 11 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+The soil is a loess chernozem over limestone with an effective rooting depth of 100 cm , containing 22 % clay , 70 % silt and 8 % sand in the ploughed upper ( Ap ) horizon . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "beet",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "grass",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "clover",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loamy sand",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "1.5%",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "100 mg/kg",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "0-30 cm",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "30-60 cm",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "city": {
+        "value": "Westerfeld",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "Dithmarschen",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "53°36'N",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "10°28'E",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2000",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "2020",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}, {"cropSpecies": {"value": "barley", "span": []}}, {"cropSpecies": {"value": "beet", "span": []}}, {"cropSpecies": {"value": "grass", "span": []}}, {"cropSpecies": {"value": "clover", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loamy sand", "span": []}}, {"soilPH": {"value": "6.5", "span": []}}, {"soilOrganicCarbon": {"value": "1.5%", "span": []}}, {"soilAvailableNitrogen": {"value": "100 mg/kg", "span": []}}, {"soilDepth": {"value": "0-30 cm", "span": []}}, {"soilDepth": {"value": "30-60 cm", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"city": {"value": "Westerfeld", "span": []}}, {"region": {"value": "Dithmarschen", "span": []}}, {"country": {"value": "Germany", "span": []}}, {"latitude": {"value": "53°36'N", "span": []}}, {"longitude": {"value": "10°28'E", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2000", "span": []}}, {"endTime": {"value": "2020", "span": []}}]
+Gold: []
+

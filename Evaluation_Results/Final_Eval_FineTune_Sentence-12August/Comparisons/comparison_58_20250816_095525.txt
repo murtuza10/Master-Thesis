@@ -1,0 +1,68 @@
+=== Comparison for Item 58 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+In autumn , the soil was annually dug up to 20 cm by using a spade .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "pH 4",
+        "span": [
+          72,
+          76
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH 6",
+        "span": [
+          77,
+          81
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH 8",
+        "span": [
+          82,
+          86
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH 10",
+        "span": [
+          87,
+          91
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH 12",
+        "span": [
+          92,
+          96
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilPH": {"value": "pH 4", "span": [72, 76]}}, {"soilPH": {"value": "pH 6", "span": [77, 81]}}, {"soilPH": {"value": "pH 8", "span": [82, 86]}}, {"soilPH": {"value": "pH 10", "span": [87, 91]}}, {"soilPH": {"value": "pH 12", "span": [92, 96]}}]
+Gold: []
+

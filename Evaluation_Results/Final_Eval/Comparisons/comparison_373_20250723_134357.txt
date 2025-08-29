@@ -1,0 +1,86 @@
+=== Comparison for Item 373 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+
+  Dataset 2 is from the field experiments in 2018 and underlies figure 4 and related analyses . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "grapes",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay loam",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.8",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2.5%",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "Tuscany",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "Italy",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "3 months",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "grapes", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay loam", "span": []}}, {"soilPH": {"value": "6.8", "span": []}}, {"soilOrganicCarbon": {"value": "2.5%", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "Tuscany", "span": []}}, {"country": {"value": "Italy", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"duration": {"value": "3 months", "span": []}}]
+Gold: []
+

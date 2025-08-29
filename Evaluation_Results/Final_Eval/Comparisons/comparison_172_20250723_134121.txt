@@ -1,0 +1,84 @@
+=== Comparison for Item 172 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+       - Abundance of Fusaria and Alternaria on weed plants . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Fusarium",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Alternaria",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "soil samples",
+        "span": []
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "soil samples",
+        "span": []
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2013",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          154,
+          159
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "Fusarium", "span": []}}, {"cropSpecies": {"value": "Alternaria", "span": []}}, {"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: [{"cropSpecies": {"value": "wheat", "span": [154, 159]}}]
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "soil samples", "span": []}}, {"soilReferenceGroup": {"value": "soil samples", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2013", "span": []}}]
+Gold: []
+

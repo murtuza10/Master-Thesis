@@ -1,0 +1,59 @@
+=== Comparison for Item 151 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+The first file gives the coordinates of the 16 soil cores that were taken at each of the 16 sites ( eight cropland and eight grassland sites ) .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          67,
+          74
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "South West Germany",
+        "span": [
+          76,
+          90
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Kraichgau region",
+        "span": [
+          111,
+          122
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Swabian",
+        "span": [
+          175,
+          182
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": [67, 74]}}, {"region": {"value": "South West Germany", "span": [76, 90]}}, {"region": {"value": "Kraichgau region", "span": [111, 122]}}, {"region": {"value": "Swabian", "span": [175, 182]}}]
+Gold: []
+

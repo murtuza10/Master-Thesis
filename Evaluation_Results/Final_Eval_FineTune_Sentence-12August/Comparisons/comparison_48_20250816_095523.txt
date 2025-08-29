@@ -1,0 +1,32 @@
+=== Comparison for Item 48 ===
+Timestamp: 20250816_095523
+
+=== Original Text ===
+rapaceum Mill .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "depth",
+        "span": [
+          59,
+          64
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilDepth": {"value": "depth", "span": [59, 64]}}]
+Gold: []
+

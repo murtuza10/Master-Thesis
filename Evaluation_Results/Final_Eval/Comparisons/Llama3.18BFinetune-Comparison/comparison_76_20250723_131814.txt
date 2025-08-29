@@ -1,0 +1,48 @@
+=== Comparison for Item 76 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+
+ Abstract_text_2 : 
+  The table contains the abundances of Fusarium and Alternaria determined by qPCR and culture - dependent methods ( potato dextrose agar with chloramphenicol ) . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          84,
+          89
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          360,
+          365
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropSpecies": {"value": "wheat", "span": [84, 89]}}, {"cropSpecies": {"value": "wheat", "span": [360, 365]}}]
+

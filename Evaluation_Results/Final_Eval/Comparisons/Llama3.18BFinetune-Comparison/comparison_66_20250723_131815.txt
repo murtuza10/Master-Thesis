@@ -1,0 +1,96 @@
+=== Comparison for Item 66 ===
+Timestamp: 20250723_131815
+
+=== Original Text ===
+General description about the V140 experiment can be found in the table V140 - Plots . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Triticum aestivum",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "Winter wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "7.0",
+        "span": []
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "sandy loam",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "30 cm",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.5 g/cm3",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "United States",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "western part of the country",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "California",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "35.0 to 40.0",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "Triticum aestivum", "span": []}, "cropVariety": {"value": "Winter wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilPH": {"value": "7.0", "span": []}}, {"soilTexture": {"value": "sandy loam", "span": []}}, {"soilDepth": {"value": "30 cm", "span": []}}, {"soilBulkDensity": {"value": "1.5 g/cm3", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "United States", "span": []}}, {"region": {"value": "western part of the country", "span": []}}, {"city": {"value": "California", "span": []}}, {"latitude": {"value": "35.0 to 40.0", "span": []}}]
+Gold: []
+

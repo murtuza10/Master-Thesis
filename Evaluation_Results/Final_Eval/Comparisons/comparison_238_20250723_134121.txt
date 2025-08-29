@@ -1,0 +1,151 @@
+=== Comparison for Item 238 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+In 2020 and 2021 , we investigated the efficacy of the predatory mite Neoseiulus californicus ( McGregor ) for suppressing spider mite hotspots in the cropland . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "spider mite",
+        "span": [
+          0,
+          13
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          37,
+          42
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay-loam",
+        "span": [
+          51,
+          61
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "SRG",
+        "span": [
+          95,
+          99
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "soil depth",
+        "span": [
+          100,
+          108
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "soil bulk density",
+        "span": [
+          109,
+          120
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "soil organic carbon",
+        "span": [
+          121,
+          133
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "soil available nitrogen",
+        "span": [
+          134,
+          146
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "latitude": {
+        "value": "38.5° N",
+        "span": [
+          147,
+          154
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "117.0° W",
+        "span": [
+          155,
+          164
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "June",
+        "span": [
+          167,
+          173
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "July",
+        "span": [
+          176,
+          182
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "spider mite", "span": [0, 13]}}, {"cropSpecies": {"value": "wheat", "span": [37, 42]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay-loam", "span": [51, 61]}}, {"soilReferenceGroup": {"value": "SRG", "span": [95, 99]}}, {"soilDepth": {"value": "soil depth", "span": [100, 108]}}, {"soilBulkDensity": {"value": "soil bulk density", "span": [109, 120]}}, {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [121, 133]}}, {"soilAvailableNitrogen": {"value": "soil available nitrogen", "span": [134, 146]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"latitude": {"value": "38.5° N", "span": [147, 154]}}, {"longitude": {"value": "117.0° W", "span": [155, 164]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "June", "span": [167, 173]}}, {"endTime": {"value": "July", "span": [176, 182]}}]
+Gold: []
+

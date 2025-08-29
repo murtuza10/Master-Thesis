@@ -1,0 +1,139 @@
+=== Comparison for Item 52 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+C and N in the soil samples and N in the plant samples were analysed annually . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          52,
+          58
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "fine sandy loam",
+        "span": [
+          121,
+          134
+        ]
+      },
+      "soilReferenceGroup": {
+        "value": "Clay-loam",
+        "span": [
+          95,
+          107
+        ]
+      },
+      "soilDepth": {
+        "value": "0.23 m",
+        "span": [
+          115,
+          124
+        ]
+      },
+      "soilBulkDensity": {
+        "value": "1.2 g / cm 3",
+        "span": [
+          110,
+          128
+        ]
+      },
+      "soilPH": {
+        "value": "5.5",
+        "span": [
+          92,
+          96
+        ]
+      },
+      "soilOrganicCarbon": {
+        "value": "2.5 %",
+        "span": [
+          112,
+          123
+        ]
+      },
+      "soilAvailableNitrogen": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "USA",
+        "span": [
+          147,
+          151
+        ]
+      },
+      "region": {
+        "value": "None",
+        "span": []
+      },
+      "city": {
+        "value": "None",
+        "span": []
+      },
+      "latitude": {
+        "value": "None",
+        "span": []
+      },
+      "longitude": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "None",
+        "span": []
+      },
+      "endTime": {
+        "value": "None",
+        "span": []
+      },
+      "duration": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [52, 58]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "fine sandy loam", "span": [121, 134]}, "soilReferenceGroup": {"value": "Clay-loam", "span": [95, 107]}, "soilDepth": {"value": "0.23 m", "span": [115, 124]}, "soilBulkDensity": {"value": "1.2 g / cm 3", "span": [110, 128]}, "soilPH": {"value": "5.5", "span": [92, 96]}, "soilOrganicCarbon": {"value": "2.5 %", "span": [112, 123]}, "soilAvailableNitrogen": {"value": "None", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "USA", "span": [147, 151]}, "region": {"value": "None", "span": []}, "city": {"value": "None", "span": []}, "latitude": {"value": "None", "span": []}, "longitude": {"value": "None", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "None", "span": []}, "endTime": {"value": "None", "span": []}, "duration": {"value": "None", "span": []}}]
+Gold: []
+

@@ -1,0 +1,159 @@
+=== Comparison for Item 376 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+
+  Dataset 3 is from the laboratory experiments in 2018 and underlies figure 5 and related analyses . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          23,
+          27
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "1.2 g / cm3",
+        "span": [
+          55,
+          66
+        ]
+      },
+      "soilPH": {
+        "value": "6.8",
+        "span": [
+          83,
+          86
+        ]
+      },
+      "soilOrganicCarbon": {
+        "value": "measured in the 0-20 cm soil depth layer",
+        "span": [
+          106,
+          125
+        ]
+      },
+      "soilAvailableNitrogen": {
+        "value": "characterized by its available nitrogen content",
+        "span": [
+          137,
+          154
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "latitude": {
+        "value": "45.6° N",
+        "span": [
+          93,
+          100
+        ]
+      },
+      "longitude": {
+        "value": "15.4° E",
+        "span": [
+          105,
+          112
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "24.8.2018",
+        "span": [
+          1,
+          10
+        ]
+      },
+      "endTime": {
+        "value": "13.9.2018",
+        "span": [
+          33,
+          42
+        ]
+      },
+      "duration": {
+        "value": "around 800 mm",
+        "span": [
+          157,
+          165
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "24.8.2018",
+        "span": [
+          64,
+          73
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "31.8.2018",
+        "span": [
+          78,
+          87
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "13.9.2018",
+        "span": [
+          145,
+          154
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "20.9.2018",
+        "span": [
+          159,
+          168
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [23, 27]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "1.2 g / cm3", "span": [55, 66]}, "soilPH": {"value": "6.8", "span": [83, 86]}, "soilOrganicCarbon": {"value": "measured in the 0-20 cm soil depth layer", "span": [106, 125]}, "soilAvailableNitrogen": {"value": "characterized by its available nitrogen content", "span": [137, 154]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"latitude": {"value": "45.6° N", "span": [93, 100]}, "longitude": {"value": "15.4° E", "span": [105, 112]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "24.8.2018", "span": [1, 10]}, "endTime": {"value": "13.9.2018", "span": [33, 42]}, "duration": {"value": "around 800 mm", "span": [157, 165]}}]
+Gold: [{"startTime": {"value": "24.8.2018", "span": [64, 73]}}, {"startTime": {"value": "31.8.2018", "span": [78, 87]}}, {"endTime": {"value": "13.9.2018", "span": [145, 154]}}, {"endTime": {"value": "20.9.2018", "span": [159, 168]}}]
+

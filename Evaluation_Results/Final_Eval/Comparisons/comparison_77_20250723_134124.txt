@@ -1,0 +1,211 @@
+=== Comparison for Item 77 ===
+Timestamp: 20250723_134124
+
+=== Original Text ===
+General description see mother table : ( https://doi.org/10.4228/zalf-58e8-wm91 ) ; Related datasets are listed in the metadata element ' Related Identifier ' . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Fusarium",
+        "span": [
+          0,
+          10
+        ]
+      },
+      "cropVariety": {
+        "value": "potato dextrose agar with chloramphenicol",
+        "span": [
+          11,
+          50
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Alternaria",
+        "span": [
+          51,
+          62
+        ]
+      },
+      "cropVariety": {
+        "value": "potato dextrose agar with chloramphenicol",
+        "span": [
+          11,
+          50
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          92,
+          98
+        ]
+      },
+      "cropVariety": {
+        "value": "winter wheat",
+        "span": [
+          89,
+          97
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "slightly acidic",
+        "span": [
+          103,
+          115
+        ]
+      },
+      "soilPH": {
+        "value": "5.5-6.0",
+        "span": [
+          103,
+          115
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "acidic",
+        "span": [
+          116,
+          124
+        ]
+      },
+      "soilPH": {
+        "value": "4.5-5.4",
+        "span": [
+          116,
+          124
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "very acidic",
+        "span": [
+          125,
+          137
+        ]
+      },
+      "soilPH": {
+        "value": "3.5-4.4",
+        "span": [
+          125,
+          137
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "",
+        "span": [
+          138,
+          143
+        ]
+      },
+      "soilOrganicCarbon": {
+        "value": "",
+        "span": [
+          144,
+          151
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "",
+        "span": [
+          143,
+          148
+        ]
+      },
+      "soilOrganicCarbon": {
+        "value": "",
+        "span": [
+          149,
+          156
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "wheat country",
+        "span": [
+          99,
+          109
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "region where the field is located",
+        "span": [
+          100,
+          122
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "winter wheat city",
+        "span": [
+          123,
+          134
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "",
+        "span": [
+          135,
+          140
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "",
+        "span": [
+          141,
+          146
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "Fusarium", "span": [0, 10]}, "cropVariety": {"value": "potato dextrose agar with chloramphenicol", "span": [11, 50]}}, {"cropSpecies": {"value": "Alternaria", "span": [51, 62]}, "cropVariety": {"value": "potato dextrose agar with chloramphenicol", "span": [11, 50]}}, {"cropSpecies": {"value": "wheat", "span": [92, 98]}, "cropVariety": {"value": "winter wheat", "span": [89, 97]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "slightly acidic", "span": [103, 115]}, "soilPH": {"value": "5.5-6.0", "span": [103, 115]}}, {"soilTexture": {"value": "acidic", "span": [116, 124]}, "soilPH": {"value": "4.5-5.4", "span": [116, 124]}}, {"soilTexture": {"value": "very acidic", "span": [125, 137]}, "soilPH": {"value": "3.5-4.4", "span": [125, 137]}}, {"soilBulkDensity": {"value": "", "span": [138, 143]}, "soilOrganicCarbon": {"value": "", "span": [144, 151]}}, {"soilBulkDensity": {"value": "", "span": [143, 148]}, "soilOrganicCarbon": {"value": "", "span": [149, 156]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "wheat country", "span": [99, 109]}}, {"region": {"value": "region where the field is located", "span": [100, 122]}}, {"city": {"value": "winter wheat city", "span": [123, 134]}}, {"latitude": {"value": "", "span": [135, 140]}}, {"longitude": {"value": "", "span": [141, 146]}}]
+Gold: []
+

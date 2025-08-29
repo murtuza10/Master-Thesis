@@ -1,0 +1,141 @@
+=== Comparison for Item 339 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+Agriculture , Vol . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "winter",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "spring",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "oats",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "potatoes",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay-loam",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.4 g/cm^3",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "120 kg/ha",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "UK",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "London",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "51.51 N",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "0.12 W",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2023-02-15",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "2023-03-15",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "28 days",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}, "cropVariety": {"value": "winter", "span": []}}, {"cropSpecies": {"value": "barley", "span": []}, "cropVariety": {"value": "spring", "span": []}}, {"cropSpecies": {"value": "oats", "span": []}}, {"cropSpecies": {"value": "potatoes", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay-loam", "span": []}}, {"soilBulkDensity": {"value": "1.4 g/cm^3", "span": []}}, {"soilPH": {"value": "6.5", "span": []}}, {"soilAvailableNitrogen": {"value": "120 kg/ha", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "UK", "span": []}}, {"city": {"value": "London", "span": []}}, {"latitude": {"value": "51.51 N", "span": []}}, {"longitude": {"value": "0.12 W", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2023-02-15", "span": []}}, {"endTime": {"value": "2023-03-15", "span": []}}, {"duration": {"value": "28 days", "span": []}}]
+Gold: []
+

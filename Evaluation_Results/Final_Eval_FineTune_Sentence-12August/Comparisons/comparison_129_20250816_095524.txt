@@ -1,0 +1,59 @@
+=== Comparison for Item 129 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+nova - Institut GmbH ( Ed.),Hürth , Germany , 2024 - 03 .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sand",
+        "span": [
+          69,
+          73
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "silt",
+        "span": [
+          80,
+          84
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "clay weight%",
+        "span": [
+          91,
+          100
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH",
+        "span": [
+          53,
+          55
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilTexture": {"value": "sand", "span": [69, 73]}}, {"soilTexture": {"value": "silt", "span": [80, 84]}}, {"soilTexture": {"value": "clay weight%", "span": [91, 100]}}, {"soilPH": {"value": "pH", "span": [53, 55]}}]
+Gold: []
+

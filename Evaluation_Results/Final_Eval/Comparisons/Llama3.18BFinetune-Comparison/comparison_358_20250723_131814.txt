@@ -1,0 +1,37 @@
+=== Comparison for Item 358 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+Drosophila suzukii ( Diptera : Drosophilidae ) is an invasive species , which is suspected to induce sour rot in previously undamaged grapes due to the flies ’ ability to infest healthy , undamaged soft fruits with its serrated ovipositor . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "grapes",
+        "span": [
+          136,
+          142
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropSpecies": {"value": "grapes", "span": [136, 142]}}]
+

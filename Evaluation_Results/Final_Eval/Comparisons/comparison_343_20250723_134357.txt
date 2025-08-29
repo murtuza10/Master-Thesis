@@ -1,0 +1,117 @@
+=== Comparison for Item 343 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+All individuals ( 33 individuals in total ) having a null allele at any of the marker loci were excluded from the dataset . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Apium graveolens",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "0-30 cm",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.3 g/cm³",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "East Anglia",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "UK",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "April",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "September",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "2016",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Apium graveolens",
+        "span": [
+          15,
+          31
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "2016",
+        "span": [
+          72,
+          76
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "Apium graveolens", "span": []}}]
+Gold: [{"cropSpecies": {"value": "Apium graveolens", "span": [15, 31]}}]
+
+Category: Soil
+Predictions: [{"soilDepth": {"value": "0-30 cm", "span": []}}, {"soilBulkDensity": {"value": "1.3 g/cm³", "span": []}}, {"soilPH": {"value": "6.5", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "East Anglia", "span": []}}, {"country": {"value": "UK", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "April", "span": []}}, {"endTime": {"value": "September", "span": []}}, {"duration": {"value": "2016", "span": []}}]
+Gold: [{"duration": {"value": "2016", "span": [72, 76]}}]
+

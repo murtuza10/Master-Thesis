@@ -1,0 +1,37 @@
+=== Comparison for Item 291 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+Along these transects microclimatic observation stations were installed at 5 different distances ( -1 m ; 1 m ; 5 m ; 20 m ; 50 m ) . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          71,
+          76
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropSpecies": {"value": "wheat", "span": [71, 76]}}]
+

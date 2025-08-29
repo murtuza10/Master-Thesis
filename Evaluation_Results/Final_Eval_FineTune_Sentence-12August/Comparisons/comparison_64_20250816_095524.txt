@@ -1,0 +1,61 @@
+=== Comparison for Item 64 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+Dataset version 1.0 
+ Keywords : 
+  horticulture , long - term experiments , vegetable crops , fertilization , fertilizers , soil types , soil fertility , soil organic carbon , soil organic matter , field crops , crop management , crop production , crop rotation , crop residues , crop residue management , crop yield , nutrient balance , nutrient management , nutrient uptake , nutrient use efficiency , nutrient utilization , nitrogen , nitrogen balance , nitrogen content , nitrogen fertilizers , nitrogen - use efficiency , potassium , phosphorus , magnesium , cucumbers , Cucumis , Cucumis sativus , carrots , Daucus carota , cabbages , Brassica oleracea var .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "cabbage",
+        "span": [
+          25,
+          32
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Brassica oleracea",
+        "span": [
+          34,
+          48
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "white cabbage",
+        "span": [
+          16,
+          25
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "var.",
+        "span": [
+          49,
+          52
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "cabbage", "span": [25, 32]}}, {"cropSpecies": {"value": "Brassica oleracea", "span": [34, 48]}}, {"cropVariety": {"value": "white cabbage", "span": [16, 25]}}, {"cropVariety": {"value": "var.", "span": [49, 52]}}]
+Gold: []
+

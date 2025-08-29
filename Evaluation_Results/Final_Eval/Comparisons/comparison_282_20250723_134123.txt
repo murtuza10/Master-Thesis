@@ -1,0 +1,139 @@
+=== Comparison for Item 282 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+2.5 g of the coated silica sand was treated with 50 ml of 0.01 M CaCl2 or 0.01 M CaSO4 . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "P",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay-loam",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "10 cm",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.26 g cm-3",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.2",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "10 g kg-1",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "9.3 g kg-1",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "P", "span": []}}, {"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay-loam", "span": []}}, {"soilDepth": {"value": "10 cm", "span": []}}, {"soilBulkDensity": {"value": "1.26 g cm-3", "span": []}}, {"soilPH": {"value": "6.2", "span": []}}, {"soilOrganicCarbon": {"value": "10 g kg-1", "span": []}}, {"soilAvailableNitrogen": {"value": "9.3 g kg-1", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "None", "span": []}}, {"region": {"value": "None", "span": []}}, {"city": {"value": "None", "span": []}}, {"latitude": {"value": "None", "span": []}}, {"longitude": {"value": "None", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "None", "span": []}}, {"endTime": {"value": "None", "span": []}}, {"duration": {"value": "None", "span": []}}]
+Gold: []
+

@@ -1,0 +1,87 @@
+=== Comparison for Item 334 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+Title : 
+ Microsatellite marker data of Apium graveolens L. ssp . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "True",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "True",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "True",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "True",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "True",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "True",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "True",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "True",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilTexture": {"value": "True", "span": []}}, {"soilPH": {"value": "True", "span": []}}, {"soilOrganicCarbon": {"value": "True", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "True", "span": []}}, {"region": {"value": "True", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "True", "span": []}}, {"endTime": {"value": "True", "span": []}}, {"duration": {"value": "True", "span": []}}]
+Gold: []
+

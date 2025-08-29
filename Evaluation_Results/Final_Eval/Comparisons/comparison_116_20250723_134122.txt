@@ -1,0 +1,133 @@
+=== Comparison for Item 116 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+https://doi.org/10.4060/ca9825en . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          0,
+          5
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "climate change",
+        "span": [
+          51,
+          63
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "soil",
+        "span": [
+          17,
+          20
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Italy",
+        "span": [
+          63,
+          68
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Italy",
+        "span": [
+          90,
+          95
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Rome",
+        "span": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Italy",
+        "span": [
+          63,
+          68
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2013",
+        "span": [
+          58,
+          62
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2015",
+        "span": [
+          83,
+          87
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "1-20",
+        "span": [
+          97,
+          103
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [0, 5]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilPH": {"value": "climate change", "span": [51, 63]}}, {"soilOrganicCarbon": {"value": "soil", "span": [17, 20]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Italy", "span": [63, 68]}}, {"country": {"value": "Italy", "span": [90, 95]}}, {"city": {"value": "Rome", "span": [0, 4]}}, {"region": {"value": "Italy", "span": [63, 68]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2013", "span": [58, 62]}}, {"endTime": {"value": "2015", "span": [83, 87]}}, {"duration": {"value": "1-20", "span": [97, 103]}}]
+Gold: []
+

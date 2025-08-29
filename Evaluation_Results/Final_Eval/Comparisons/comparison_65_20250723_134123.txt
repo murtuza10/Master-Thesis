@@ -1,0 +1,37 @@
+=== Comparison for Item 65 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+Table with information about yield . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "city": {
+        "value": "Muencheberg",
+        "span": [
+          72,
+          83
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Location
+Predictions: []
+Gold: [{"city": {"value": "Muencheberg", "span": [72, 83]}}]
+

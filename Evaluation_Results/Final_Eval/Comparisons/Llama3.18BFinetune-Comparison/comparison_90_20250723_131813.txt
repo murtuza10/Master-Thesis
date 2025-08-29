@@ -1,0 +1,86 @@
+=== Comparison for Item 90 ===
+Timestamp: 20250723_131813
+
+=== Original Text ===
+Title : 
+ Datensatz Biomassestudie 
+
+ Abstract : 
+ I m Rahmen einer vom nova - Institut durchgeführten Studie modelliert das Thünen - Institut für Waldwirtschaft als Unterauftragnehmer die Auswirkungen verschiedener Politiken und gesellschaftlicher Trends auf den Holzmarkt . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Möhre",
+        "span": [
+          359,
+          364
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Salat",
+        "span": [
+          367,
+          372
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Apfel",
+        "span": [
+          375,
+          380
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Erdbeere",
+        "span": [
+          385,
+          393
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Erdbeere",
+        "span": [
+          424,
+          432
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Himbeere",
+        "span": [
+          437,
+          445
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropSpecies": {"value": "Möhre", "span": [359, 364]}}, {"cropSpecies": {"value": "Salat", "span": [367, 372]}}, {"cropSpecies": {"value": "Apfel", "span": [375, 380]}}, {"cropSpecies": {"value": "Erdbeere", "span": [385, 393]}}, {"cropSpecies": {"value": "Erdbeere", "span": [424, 432]}}, {"cropSpecies": {"value": "Himbeere", "span": [437, 445]}}]
+

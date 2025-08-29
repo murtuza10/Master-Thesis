@@ -1,0 +1,86 @@
+=== Comparison for Item 9 ===
+Timestamp: 20250803_132348
+
+=== Original Text ===
+Title : 
+ Datensatz Biomassestudie 
+
+ Abstract : 
+ I m Rahmen einer vom nova - Institut durchgeführten Studie modelliert das Thünen - Institut für Waldwirtschaft als Unterauftragnehmer die Auswirkungen verschiedener Politiken und gesellschaftlicher Trends auf den Holzmarkt . Die Studie ist von der Renewable Carbon Initiative ( RCI ) und des Bio - based Industries Consortium ( BIC ) beauftragt . Der zentrale Forschungsauftrag der Konsortien lautet : Unter der Prämisse , dass der chemische Industriesektor eine vollständige Defossilisierung anstrebt , soll quantifiziert werden , welcher Anteil des Kohlenstoffinputs , den die chemische Industrien als Input benötigen , i m Jahr 2050 nachhaltig aus agrarischer und forstlicher Biomasse bereitgestellt werden kann . Für diesen Zweck werden ein Referenzszenario und zwei alternative Szenarien entworfen , die verschiedene zukünftige Entwicklungspfade beschreiben . Die Szenarien betreffen sowohl den landwirtschaftlichen als auch den forstwirtschaftlichen Sektor . Die hier dargestellten Forstsektoranalysen untersuchen mögliche Entwicklungen zur Verfügbarkeit forstbasierter Biomassepotentiale . Die Entwicklung der globalen Waldfläche in den Szenarien wird normativ angepasst , sodass beispielweise die Entwaldung abnimmt . Das Thünen - Institut für Waldwirtschaft nutzt zur Modellierung das Timber market Model for policy - Based Analysis ( TiMBA ) , wobei angebots- und nachfrageseitig 19 Holz und holzbasierte Produkte in 180 Ländern bis zum Jahr 2050 simuliert werden . In enger Zusammenarbeit mit dem nova - Institut kalibriert das Thünen - Institut für Waldwirtschaft das Model . I m Anschluss werden mit TiMBA verschiedene Szenarien simuliert , wobei die Eingangsdaten und Parameter von FAOstat[1 ] , World Bank[2 ] , FRA[3 ] , IIASA - SSP[4 ] , WTO[5 ] , the fibre yearbook 2023[6 ] und Skoczinski et al . 2024[7 ] zum Einsatz kommen . Die Modellierungsergebnisse zeigen eine Erhöhung der Rohholzlieferung zwischen 2020 und 2050 um bis zu 38 % . Die steigende Nachfrage nach holzbasierten Produkten , vom Schnittholz ( bis zu +36 % ) bis zur Textilfaser ( bis zu +447 % ) , kann dadurch gedeckt werden . Trotz dieser starken , relativen Produktionssteigerungen bleiben holzbasierte Fasern und chemische Derivate , gemessen am Gesamtvolumen aller holzbasierten Sektoren , weiterhin Nischenprodukte . Steigende Bedarfe , insbesondere in sich neu bildendenden Energiemärkten , führen zu einem Nachfrageüberhang nach Holznebenprodukten , welche heute vor allem Einsatz in der Plattenindustrie finden . Neue Nachfragemärkte umschließen beispielsweise die Pelletindustrie , Hersteller von grünem Treibstoff für die Luftfahrt sowie Bioraffinerien . Dies führt erwartungsgemäß zu steigenden Ressourcenkonkurrenzen . In den hier dargestellten Dokumenten sind Eingangsdaten , Datenkalibrierungen , Modelinputdaten , Ergebnisse der Modellierung der drei Szenarien und Hintergrundinformationen abgelegt . Die Dokumente sind auf Anfrage verfügbar . [ 1 ] FAOStat , 2023 . Forestry Production and Trade , Statistical Database . www.fao . org / FAOSTAT / en/#data / FO ( Accessed on November 2023 ) . [ 2 ] World Bank , 2023 : World Development Indicators : https://datatopics.worldbank.org/world-development-indicators/. [ 3 ] Forest Resource Assessment , 2020 : 2020 : Main Report . 2020 . Rome : FAO . https://doi.org/10.4060/ca9825en . [ 4 ] International Institute for Applied Systems Analyses , 2018 . Shared Socioeconomic Pathways Scenario Database ( SSP ) . https://iiasa.ac.at/models-tools-data/ssp ( Accessed on November 2023 ) [ 5 ] World Trade Organization , 2024 . Integrated Database ( IDB ) . http://tariffdata.wto.org/default.aspx ( Accessed on August 2024 ) [ 6 ] The fibre year consulting , 2023 . Selected data provided by the nova institute . ( E - Mail 17.11.2023 ) [ 7 ] Pia Skoczinski , Michael Carus , Gillian Tweddle , Pauline Ruiz , Nicolas Hark , Ann Zhang , Doris de Guzman , Jan Ravenstijn , Harald Käb and Achim Raschka . 2024 : Bio - based Building Blocks and Polymers – Global Capacities , Production and Trends 2023–2028 . nova - Institut GmbH ( Ed.),Hürth , Germany , 2024 - 03 . https://doi.org/10.52548/VXTH2416
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Möhre",
+        "span": [
+          359,
+          364
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Salat",
+        "span": [
+          367,
+          372
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Apfel",
+        "span": [
+          375,
+          380
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Erdbeere",
+        "span": [
+          385,
+          393
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Erdbeere",
+        "span": [
+          424,
+          432
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Himbeere",
+        "span": [
+          437,
+          445
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropSpecies": {"value": "Möhre", "span": [359, 364]}}, {"cropSpecies": {"value": "Salat", "span": [367, 372]}}, {"cropSpecies": {"value": "Apfel", "span": [375, 380]}}, {"cropSpecies": {"value": "Erdbeere", "span": [385, 393]}}, {"cropSpecies": {"value": "Erdbeere", "span": [424, 432]}}, {"cropSpecies": {"value": "Himbeere", "span": [437, 445]}}]
+

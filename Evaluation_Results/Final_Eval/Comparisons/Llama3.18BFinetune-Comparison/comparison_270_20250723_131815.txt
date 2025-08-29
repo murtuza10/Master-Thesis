@@ -1,0 +1,109 @@
+=== Comparison for Item 270 ===
+Timestamp: 20250723_131815
+
+=== Original Text ===
+1:1 , 1:5 , 1:10 and 0:1 , and brought to a pH of 6 with 5 M KOH . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "0.1 M Fe(NO3)3 ∙ 9 H2O",
+        "span": [
+          0,
+          24
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "0.1 M Al(NO3)3 ∙ 9 H2O",
+        "span": [
+          25,
+          49
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "0.1 M NaOH",
+        "span": [
+          67,
+          74
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "0.1 M",
+        "span": [
+          75,
+          81
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "0,1 M",
+        "span": [
+          76,
+          82
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "60 °C",
+        "span": [
+          91,
+          97
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "550 °C",
+        "span": [
+          104,
+          111
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "24 hours",
+        "span": [
+          113,
+          123
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "4 hours",
+        "span": [
+          126,
+          135
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "0.1 M Fe(NO3)3 ∙ 9 H2O", "span": [0, 24]}}, {"soilBulkDensity": {"value": "0.1 M Al(NO3)3 ∙ 9 H2O", "span": [25, 49]}}, {"soilBulkDensity": {"value": "0.1 M NaOH", "span": [67, 74]}}, {"soilBulkDensity": {"value": "0.1 M", "span": [75, 81]}}, {"soilBulkDensity": {"value": "0,1 M", "span": [76, 82]}}, {"soilBulkDensity": {"value": "60 °C", "span": [91, 97]}}, {"soilBulkDensity": {"value": "550 °C", "span": [104, 111]}}, {"soilBulkDensity": {"value": "24 hours", "span": [113, 123]}}, {"soilBulkDensity": {"value": "4 hours", "span": [126, 135]}}]
+Gold: []
+

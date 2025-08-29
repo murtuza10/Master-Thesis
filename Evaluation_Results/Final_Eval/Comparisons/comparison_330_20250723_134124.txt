@@ -1,0 +1,160 @@
+=== Comparison for Item 330 ===
+Timestamp: 20250723_134124
+
+=== Original Text ===
+The captures_data table contains 9967 records , each record representing a trap deployment . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "soil",
+        "span": [
+          0,
+          5
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay",
+        "span": [
+          97,
+          102
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "silt",
+        "span": [
+          104,
+          110
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "sand",
+        "span": [
+          113,
+          118
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "country",
+        "span": [
+          141,
+          148
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "North region",
+        "span": [
+          163,
+          174
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "South region",
+        "span": [
+          184,
+          195
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "East region",
+        "span": [
+          208,
+          219
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "study area",
+        "span": [
+          11,
+          20
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "37.5° N",
+        "span": [
+          237,
+          245
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "123.4° E",
+        "span": [
+          248,
+          257
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "January 1, 2017",
+        "span": [
+          233,
+          244
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "December 31, 2019",
+        "span": [
+          251,
+          262
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "soil", "span": [0, 5]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay", "span": [97, 102]}}, {"soilTexture": {"value": "silt", "span": [104, 110]}}, {"soilTexture": {"value": "sand", "span": [113, 118]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "country", "span": [141, 148]}}, {"region": {"value": "North region", "span": [163, 174]}}, {"region": {"value": "South region", "span": [184, 195]}}, {"region": {"value": "East region", "span": [208, 219]}}, {"city": {"value": "study area", "span": [11, 20]}}, {"latitude": {"value": "37.5° N", "span": [237, 245]}}, {"longitude": {"value": "123.4° E", "span": [248, 257]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "January 1, 2017", "span": [233, 244]}}, {"endTime": {"value": "December 31, 2019", "span": [251, 262]}}]
+Gold: []
+

@@ -1,0 +1,54 @@
+=== Comparison for Item 1 ===
+Timestamp: 20250808_165555
+
+=== Original Text ===
+Title : 
+  Long - term field trial on tillage and fertilization in crop rotation - Westerfeld 
+ Abstract_text_1 : 
+  Long - term field trial on tillage and fertilization in crop rotation - Westerfeld . 
+ Abstract_text_2 : 
+  The long - term field trial started 1992 in Bernburg , Saxony Anhalt , Germany ( 51 ° 82 ' N , 11 ° 70 ' , 138 m above sea level ) . The soil is a loess chernozem over limestone with an effective rooting depth of 100 cm , containing 22 % clay , 70 % silt and 8 % sand in the ploughed upper ( Ap ) horizon . It has a neutral pH ( 7.0 - 7.4 ) and an appropriate P and K supply ( 45 - 70 mg kg-1 and 130 - 185 mg kg-1 in calcium - acetate - lactate extract , respectively ) . The 1980 - 2010 annual average temperature was 9.7 ° C , the average annual precipitation 511 mm . On five large parcels in strip split plot design ( 1.2 ha each , main plots ) the individual crops - grain maize ( Zea mays ) - winter wheat ( Triticum aestivum ) - winter barley ( Hordeum vulgare ) - winter rapeseed ( Brassica napus ssp . napus ) - winter wheat - are rotated . All crop residues remain on the fields . Conservation tillage cultivator ( CT , 10 cm flat non - inversion soil loosening ) is compared to sub - plots with conventional tillage ( MP ; mould - board plough , carrier board with combined alternating ploughshares , ploughing depth 30 cm , incl . soil inversion ) . The differentially managed soils are either intensively ( Int ) operated according to usual practice regarding N supply and pesticide application or extensively managed ( Ext ; reduced N supply , without fungicides and growth regulators ) . 
+ Keywords : 
+  Soil , fertilizers , tillage , agricultural land management , crop rotation , opendata , Boden
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          107,
+          112
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          1627,
+          1632
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [107, 112]}}]
+Gold: [{"cropSpecies": {"value": "wheat", "span": [1627, 1632]}}]
+

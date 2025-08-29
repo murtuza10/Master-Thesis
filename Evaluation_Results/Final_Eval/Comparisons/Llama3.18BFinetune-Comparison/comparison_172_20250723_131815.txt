@@ -1,0 +1,67 @@
+=== Comparison for Item 172 ===
+Timestamp: 20250723_131815
+
+=== Original Text ===
+       - Abundance of Fusaria and Alternaria on weed plants . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "none",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "kettle hole",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          154,
+          159
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}, {"cropSpecies": {"value": "barley", "span": []}}]
+Gold: [{"cropSpecies": {"value": "wheat", "span": [154, 159]}}]
+
+Category: Location
+Predictions: [{"country": {"value": "none", "span": []}}, {"region": {"value": "kettle hole", "span": []}}]
+Gold: []
+

@@ -1,0 +1,64 @@
+=== Comparison for Item 13 ===
+Timestamp: 20250731_121429
+
+=== Original Text ===
+Title : 
+ Dataset for " Towards an ecosystem capacity to stabilise organic carbon in soils " 
+
+ Abstract : 
+ This dataset includes the data that was used in the Global Change Biology publication " Towards an ecosystem capacity to stabilise organic carbon in soils " by Poeplau et al .. It contains two xlsx files , with dataset_full.xlsx including all sites with soil properties that were used in the first part of the manuscript . It is a combined dataset from several open source datasets with a total of 1396 individual sites . The file modelled_converged.xlsx includes the RothC model results of a total of 587 sites , for which modelling was possible and a convergence of measured and modelled data was reached . Both files include two sheets , one with a short explanation of the variable names and one data sheet .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilOrganicCarbon": {
+        "value": "organic carbon",
+        "span": [
+          53,
+          67
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "soil organic carbon",
+        "span": [
+          261,
+          280
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          306,
+          313
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: []
+Gold: [{"soilOrganicCarbon": {"value": "organic carbon", "span": [53, 67]}}, {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [261, 280]}}]
+
+Category: Location
+Predictions: []
+Gold: [{"country": {"value": "Germany", "span": [306, 313]}}]
+

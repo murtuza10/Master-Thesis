@@ -1,0 +1,83 @@
+=== Comparison for Item 10 ===
+Timestamp: 20250816_094258
+
+=== Original Text ===
+Title : 
+ Supporting data for the manuscript ‘ Birch ( Betula pubescens Ehrh . ) encroachment alters contribution of plant functional groups to ecosystem carbon cycling in a rewetted bog ’ 
+
+ Abstract : 
+ Rewetted bogs with high water levels ( WL ) and mire - specific vegetation are crucial carbon ( C ) sinks , but their function might be threatened by tree encroachment , a phenomenon widespread in the northern hemisphere that often coincides with low WL . This might impact C cycling both at the ecosystem and microform scale in multiple ways , but so far , data is lacking . We established two sites in the same former peat extraction area , one showing permanently high WL and mire - specific vegetation ( Open site , OS ) , while the other one has more fluctuating WL and a dense birch ( Betula pubescens Ehrh . ) population ( Tree site , TS ) . We measured the carbon dioxide ( CO2 ) exchange at ecosystem ( eddy covariance ) and plot scale ( chamber measurements ) for one year to clarify the differences between the sites and the impact of birch encroachment on the contribution of the different bog - specific microforms to the ecosystem ’s CO2 balance . Overall , the OS had a CO2 balance of -262.4 ± 7.8 g CO2 - C m-2 yr-1 indicating CO2 uptake , while the TS was close to neutral ( -28 ± 5.1 g CO2 - C m-2 yr-1 ) . The smaller uptake at the TS was caused by higher ( 151 % ) ecosystem respiration , while gross primary production was only 15 % difference . However , the microform contributions to C uptake strongly differed : At the OS , both hummocks and hollows showed net uptake , while at the TS , most C ( 52 % ) was assimilated by the birches and the understory was a net CO2 source . This indicates a loss of peat C from the TS , while the successfully rewetted site was accumulating new peat . Accounting for plot - scale CH4 fluxes , both sites were a weak source of greenhouse gases , but a distinctly stronger C sink occurred at the OS . Our data shows the possibility to increase C removal from the atmosphere by full rewetting and the establishment of mire - specific vegetation .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "Hürth",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2020",
+        "span": []
+      }
+    },
+    {
+      "startTime": {
+        "value": "2023",
+        "span": []
+      }
+    },
+    {
+      "startTime": {
+        "value": "2024",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "2050",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "2050",
+        "span": [
+          682,
+          686
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": []}}, {"city": {"value": "Hürth", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2020", "span": []}}, {"startTime": {"value": "2023", "span": []}}, {"startTime": {"value": "2024", "span": []}}, {"endTime": {"value": "2050", "span": []}}]
+Gold: [{"duration": {"value": "2050", "span": [682, 686]}}]
+

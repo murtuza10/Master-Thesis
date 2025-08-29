@@ -1,0 +1,77 @@
+=== Comparison for Item 5 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+Our results revealed that the interaction between MP and other GCFs is not an additive response .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loamy sand",
+        "span": [
+          48,
+          59
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "sandy loam",
+        "span": [
+          80,
+          91
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "clayey silt",
+        "span": [
+          117,
+          128
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "Arenic Luvisol",
+        "span": [
+          16,
+          29
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "Gleyic Fluvisol",
+        "span": [
+          35,
+          47
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "Luvic - Phaeozem",
+        "span": [
+          62,
+          77
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loamy sand", "span": [48, 59]}}, {"soilTexture": {"value": "sandy loam", "span": [80, 91]}}, {"soilTexture": {"value": "clayey silt", "span": [117, 128]}}, {"soilReferenceGroup": {"value": "Arenic Luvisol", "span": [16, 29]}}, {"soilReferenceGroup": {"value": "Gleyic Fluvisol", "span": [35, 47]}}, {"soilReferenceGroup": {"value": "Luvic - Phaeozem", "span": [62, 77]}}]
+Gold: []
+

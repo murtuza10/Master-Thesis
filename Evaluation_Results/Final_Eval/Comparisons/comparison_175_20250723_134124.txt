@@ -1,0 +1,167 @@
+=== Comparison for Item 175 ===
+Timestamp: 20250723_134124
+
+=== Original Text ===
+Dataset version 1.0 
+ Keywords : 
+  Soil , Fusarium , Fusarium culmorum , Fusarium equiseti , Fusarium oxysporum , Fusarium sporotrichioides , Gibberella zeae , Fusarium solani , Alternaria , winter wheat , weeds , mycotoxins , trichothecenes , zearalenone , quantitative polymerase chain reaction , kettle holes , glacial lakes , ponds , pathogenic fungi , pathogens , agricultural sciences , agricultural landscape , opendata , Boden , Lebensräume und Biotope , Verteilung der Arten , Landwirtschaft , Wissenschaft , Bodennutzung , Germany , Brandenburg , Uckermark , Quillow 
+ 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Triticum aestivum",
+        "span": [
+          61,
+          75
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "winter wheat",
+        "span": [
+          87,
+          97
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": " ",
+        "span": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": " ",
+        "span": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": " ",
+        "span": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": " ",
+        "span": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": " ",
+        "span": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": " ",
+        "span": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": " ",
+        "span": [
+          null,
+          null
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          129,
+          137
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Brandenburg",
+        "span": [
+          108,
+          119
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": " ",
+        "span": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "52.47° N",
+        "span": [
+          104,
+          115
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "13.38° E",
+        "span": [
+          121,
+          132
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "Triticum aestivum", "span": [61, 75]}}, {"cropSpecies": {"value": "winter wheat", "span": [87, 97]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": " ", "span": [null, null]}}, {"soilReferenceGroup": {"value": " ", "span": [null, null]}}, {"soilDepth": {"value": " ", "span": [null, null]}}, {"soilBulkDensity": {"value": " ", "span": [null, null]}}, {"soilPH": {"value": " ", "span": [null, null]}}, {"soilOrganicCarbon": {"value": " ", "span": [null, null]}}, {"soilAvailableNitrogen": {"value": " ", "span": [null, null]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": [129, 137]}}, {"region": {"value": "Brandenburg", "span": [108, 119]}}, {"city": {"value": " ", "span": [null, null]}}, {"latitude": {"value": "52.47° N", "span": [104, 115]}}, {"longitude": {"value": "13.38° E", "span": [121, 132]}}]
+Gold: []
+

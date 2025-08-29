@@ -1,0 +1,65 @@
+=== Comparison for Item 376 ===
+Timestamp: 20250723_134355
+
+=== Original Text ===
+
+  Dataset 3 is from the laboratory experiments in 2018 and underlies figure 5 and related analyses . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "24.8.2018",
+        "span": [
+          64,
+          73
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "31.8.2018",
+        "span": [
+          78,
+          87
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "13.9.2018",
+        "span": [
+          145,
+          154
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "20.9.2018",
+        "span": [
+          159,
+          168
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Time Statement
+Predictions: []
+Gold: [{"startTime": {"value": "24.8.2018", "span": [64, 73]}}, {"startTime": {"value": "31.8.2018", "span": [78, 87]}}, {"endTime": {"value": "13.9.2018", "span": [145, 154]}}, {"endTime": {"value": "20.9.2018", "span": [159, 168]}}]
+

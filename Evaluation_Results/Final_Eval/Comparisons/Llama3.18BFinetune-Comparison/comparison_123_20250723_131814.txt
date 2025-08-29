@@ -1,0 +1,151 @@
+=== Comparison for Item 123 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+( E - Mail 17.11.2023 ) [ 7 ] Pia Skoczinski , Michael Carus , Gillian Tweddle , Pauline Ruiz , Nicolas Hark , Ann Zhang , Doris de Guzman , Jan Ravenstijn , Harald Käb and Achim Raschka . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay-loam",
+        "span": []
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "silt-loam",
+        "span": []
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "sandy-loam",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "0-20 cm",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "0-30 cm",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "0-50 cm",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.4 g/cm3",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.6 g/cm3",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "5.2",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "7.1",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "0.1%",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "0.4%",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "40.0 kg/ha",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "110.0 kg/ha",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Europe",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "long-term",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}, {"cropSpecies": {"value": "maize", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay-loam", "span": []}}, {"soilTexture": {"value": "silt-loam", "span": []}}, {"soilTexture": {"value": "sandy-loam", "span": []}}, {"soilDepth": {"value": "0-20 cm", "span": []}}, {"soilDepth": {"value": "0-30 cm", "span": []}}, {"soilDepth": {"value": "0-50 cm", "span": []}}, {"soilBulkDensity": {"value": "1.4 g/cm3", "span": []}}, {"soilBulkDensity": {"value": "1.6 g/cm3", "span": []}}, {"soilPH": {"value": "5.2", "span": []}}, {"soilPH": {"value": "7.1", "span": []}}, {"soilOrganicCarbon": {"value": "0.1%", "span": []}}, {"soilOrganicCarbon": {"value": "0.4%", "span": []}}, {"soilAvailableNitrogen": {"value": "40.0 kg/ha", "span": []}}, {"soilAvailableNitrogen": {"value": "110.0 kg/ha", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Europe", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"duration": {"value": "long-term", "span": []}}]
+Gold: []
+

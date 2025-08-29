@@ -1,0 +1,81 @@
+=== Comparison for Item 265 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+Title : 
+  P desorption kinetics from Fe- and Al - hydroxides 
+ Abstract_text_1 : 
+  P desorption kinetics from Fe- and Al - hydroxides    . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          99,
+          104
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": [
+          114,
+          120
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "rapeseed",
+        "span": [
+          123,
+          131
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": [
+          134,
+          139
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [
+    {
+      "city": {
+        "value": "Grossbeeren",
+        "span": [
+          314,
+          325
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropSpecies": {"value": "wheat", "span": [99, 104]}}, {"cropSpecies": {"value": "barley", "span": [114, 120]}}, {"cropSpecies": {"value": "rapeseed", "span": [123, 131]}}, {"cropSpecies": {"value": "maize", "span": [134, 139]}}]
+
+Category: Location
+Predictions: []
+Gold: [{"city": {"value": "Grossbeeren", "span": [314, 325]}}]
+

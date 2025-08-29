@@ -1,0 +1,146 @@
+=== Comparison for Item 8 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+Our study is among the first to systematically examine how microplastic acts in combination with a range of other important environmental drivers , and thus offers a first step toward understanding these elusive interactive effects . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          37,
+          44
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": [
+          63,
+          69
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "heavy clay",
+        "span": [
+          91,
+          102
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "low",
+        "span": [
+          114,
+          117
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "low",
+        "span": [
+          119,
+          122
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "5.5",
+        "span": [
+          128,
+          131
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.8 g/cm3",
+        "span": [
+          133,
+          143
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "the country",
+        "span": [
+          83,
+          92
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "the region of the capital city",
+        "span": [
+          94,
+          117
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "the capital city",
+        "span": [
+          95,
+          107
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "40.7° N",
+        "span": [
+          148,
+          157
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "121.6° W",
+        "span": [
+          159,
+          168
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [37, 44]}}, {"cropSpecies": {"value": "maize", "span": [63, 69]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "heavy clay", "span": [91, 102]}}, {"soilOrganicCarbon": {"value": "low", "span": [114, 117]}}, {"soilAvailableNitrogen": {"value": "low", "span": [119, 122]}}, {"soilPH": {"value": "5.5", "span": [128, 131]}}, {"soilBulkDensity": {"value": "1.8 g/cm3", "span": [133, 143]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "the country", "span": [83, 92]}}, {"region": {"value": "the region of the capital city", "span": [94, 117]}}, {"city": {"value": "the capital city", "span": [95, 107]}}, {"latitude": {"value": "40.7° N", "span": [148, 157]}}, {"longitude": {"value": "121.6° W", "span": [159, 168]}}]
+Gold: []
+

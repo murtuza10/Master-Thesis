@@ -1,0 +1,41 @@
+=== Comparison for Item 117 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+[ 2 ] World Bank , 2023 : World Development Indicators : https://datatopics.worldbank.org/world-development-indicators/. [ 3 ] Forest Resource Assessment , 2020 : 2020 : Main Report .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          87,
+          94
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Europe",
+        "span": [
+          109,
+          115
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": [87, 94]}}, {"country": {"value": "Europe", "span": [109, 115]}}]
+Gold: []
+

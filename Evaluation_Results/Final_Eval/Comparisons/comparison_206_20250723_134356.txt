@@ -1,0 +1,87 @@
+=== Comparison for Item 206 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+To allow the crops an easier access to deep soil layers a mechanical strip - wise subsoil loosing with the addition of biocompost ( DLB treatment ) was established in frame of Soil3 project ( for further details : Schmittmann et al . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay",
+        "span": [
+          98,
+          102
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "silt",
+        "span": [
+          108,
+          112
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "sand",
+        "span": [
+          118,
+          122
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.4 g/cm³",
+        "span": [
+          142,
+          151
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.8",
+        "span": [
+          161,
+          164
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "German",
+        "span": [
+          26,
+          32
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay", "span": [98, 102]}}, {"soilTexture": {"value": "silt", "span": [108, 112]}}, {"soilTexture": {"value": "sand", "span": [118, 122]}}, {"soilBulkDensity": {"value": "1.4 g/cm³", "span": [142, 151]}}, {"soilPH": {"value": "6.8", "span": [161, 164]}}]
+Gold: []
+
+Category: Location
+Predictions: []
+Gold: [{"country": {"value": "German", "span": [26, 32]}}]
+

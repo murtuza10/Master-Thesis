@@ -1,0 +1,97 @@
+=== Comparison for Item 146 ===
+Timestamp: 20250723_131813
+
+=== Original Text ===
+The first file gives the coordinates of the 16 soil cores that were taken at each of the 16 sites ( eight cropland and eight grassland sites ) . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "winter",
+        "span": [
+          15,
+          20
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay",
+        "span": [
+          25,
+          30
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "10cm",
+        "span": [
+          40,
+          45
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "USA",
+        "span": [
+          60,
+          65
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2024-01-01",
+        "span": [
+          80,
+          85
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [0, 5]}}, {"cropVariety": {"value": "winter", "span": [15, 20]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay", "span": [25, 30]}}, {"soilDepth": {"value": "10cm", "span": [40, 45]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "USA", "span": [60, 65]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2024-01-01", "span": [80, 85]}}]
+Gold: []
+

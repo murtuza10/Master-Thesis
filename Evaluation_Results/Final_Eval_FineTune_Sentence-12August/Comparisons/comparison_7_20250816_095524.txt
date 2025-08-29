@@ -1,0 +1,32 @@
+=== Comparison for Item 7 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+With an increasing number of GCFs involved , it becomes more and more complicated to predict effects on ecosystems .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "soil depths",
+        "span": [
+          69,
+          78
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilDepth": {"value": "soil depths", "span": [69, 78]}}]
+Gold: []
+

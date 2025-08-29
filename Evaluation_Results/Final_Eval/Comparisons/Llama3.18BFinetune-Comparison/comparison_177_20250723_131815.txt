@@ -1,0 +1,154 @@
+=== Comparison for Item 177 ===
+Timestamp: 20250723_131815
+
+=== Original Text ===
+
+ Abstract_text_2 : 
+  P adsorption was investigated on synthetic and commercially available goethite ( 99 % , Alfa Aesar ) . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "phosphate",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "goethite",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "",
+        "span": []
+      },
+      "soilReferenceGroup": {
+        "value": "",
+        "span": []
+      },
+      "soilDepth": {
+        "value": "",
+        "span": []
+      },
+      "soilBulkDensity": {
+        "value": "",
+        "span": []
+      },
+      "soilPH": {
+        "value": "3",
+        "span": []
+      },
+      "soilOrganicCarbon": {
+        "value": "",
+        "span": []
+      },
+      "soilAvailableNitrogen": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "",
+        "span": []
+      },
+      "soilReferenceGroup": {
+        "value": "",
+        "span": []
+      },
+      "soilDepth": {
+        "value": "",
+        "span": []
+      },
+      "soilBulkDensity": {
+        "value": "",
+        "span": []
+      },
+      "soilPH": {
+        "value": "9",
+        "span": []
+      },
+      "soilOrganicCarbon": {
+        "value": "",
+        "span": []
+      },
+      "soilAvailableNitrogen": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "",
+        "span": []
+      },
+      "soilReferenceGroup": {
+        "value": "",
+        "span": []
+      },
+      "soilDepth": {
+        "value": "",
+        "span": []
+      },
+      "soilBulkDensity": {
+        "value": "",
+        "span": []
+      },
+      "soilPH": {
+        "value": "7",
+        "span": []
+      },
+      "soilOrganicCarbon": {
+        "value": "",
+        "span": []
+      },
+      "soilAvailableNitrogen": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "",
+        "span": []
+      },
+      "endTime": {
+        "value": "",
+        "span": []
+      },
+      "duration": {
+        "value": "",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "phosphate", "span": []}, "cropVariety": {"value": "goethite", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "", "span": []}, "soilReferenceGroup": {"value": "", "span": []}, "soilDepth": {"value": "", "span": []}, "soilBulkDensity": {"value": "", "span": []}, "soilPH": {"value": "3", "span": []}, "soilOrganicCarbon": {"value": "", "span": []}, "soilAvailableNitrogen": {"value": "", "span": []}}, {"soilTexture": {"value": "", "span": []}, "soilReferenceGroup": {"value": "", "span": []}, "soilDepth": {"value": "", "span": []}, "soilBulkDensity": {"value": "", "span": []}, "soilPH": {"value": "9", "span": []}, "soilOrganicCarbon": {"value": "", "span": []}, "soilAvailableNitrogen": {"value": "", "span": []}}, {"soilTexture": {"value": "", "span": []}, "soilReferenceGroup": {"value": "", "span": []}, "soilDepth": {"value": "", "span": []}, "soilBulkDensity": {"value": "", "span": []}, "soilPH": {"value": "7", "span": []}, "soilOrganicCarbon": {"value": "", "span": []}, "soilAvailableNitrogen": {"value": "", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "", "span": []}, "endTime": {"value": "", "span": []}, "duration": {"value": "", "span": []}}]
+Gold: []
+

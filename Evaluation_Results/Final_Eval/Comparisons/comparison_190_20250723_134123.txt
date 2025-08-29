@@ -1,0 +1,103 @@
+=== Comparison for Item 190 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+The goethite- KH2PO4 mixture was shaken horizontally at 150 motions min-1 for 24 h. The P concentration in the solution was determined after reaction times of 2 , 24 , 48 , and 168 h. The samples have been centrifuged for 15 min at 3500 rpm and the clear supernatant was filtrated by using P - poor Whatmann 512 ½ filters . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "1.4 g cm-3",
+        "span": [
+          85,
+          94
+        ]
+      },
+      "soilOrganicCarbon": {
+        "value": "10 g kg-1",
+        "span": [
+          102,
+          114
+        ]
+      },
+      "soilAvailableNitrogen": {
+        "value": "100 mg kg-1",
+        "span": [
+          115,
+          126
+        ]
+      },
+      "soilPH": {
+        "value": "[{'value': '6.5', 'span': [134, 138]}, {'value': '5.5', 'span': [141, 145]}, {'value': '7.5', 'span': [149, 153]}]",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "latitude": {
+        "value": "[{'value': 'none', 'span': [0, 0]}]",
+        "span": []
+      },
+      "longitude": {
+        "value": "[{'value': 'none', 'span': [0, 0]}]",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "[{'value': 'none', 'span': [0, 0]}]",
+        "span": []
+      },
+      "endTime": {
+        "value": "[{'value': 'none', 'span': [0, 0]}]",
+        "span": []
+      },
+      "duration": {
+        "value": "[{'value': 'none', 'span': [0, 0]}]",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [0, 0]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "1.4 g cm-3", "span": [85, 94]}, "soilOrganicCarbon": {"value": "10 g kg-1", "span": [102, 114]}, "soilAvailableNitrogen": {"value": "100 mg kg-1", "span": [115, 126]}, "soilPH": {"value": "[{'value': '6.5', 'span': [134, 138]}, {'value': '5.5', 'span': [141, 145]}, {'value': '7.5', 'span': [149, 153]}]", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"latitude": {"value": "[{'value': 'none', 'span': [0, 0]}]", "span": []}, "longitude": {"value": "[{'value': 'none', 'span': [0, 0]}]", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "[{'value': 'none', 'span': [0, 0]}]", "span": []}, "endTime": {"value": "[{'value': 'none', 'span': [0, 0]}]", "span": []}, "duration": {"value": "[{'value': 'none', 'span': [0, 0]}]", "span": []}}]
+Gold: []
+

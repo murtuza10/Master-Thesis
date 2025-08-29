@@ -1,0 +1,103 @@
+=== Comparison for Item 139 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+
+
+ 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "pH of 5.6",
+        "span": [
+          79,
+          87
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "organic carbon content of 10%",
+        "span": [
+          92,
+          115
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "depth of 0-30 cm",
+        "span": [
+          119,
+          132
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Netherlands",
+        "span": [
+          137,
+          146
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2018",
+        "span": [
+          153,
+          157
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2020",
+        "span": [
+          162,
+          166
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "6 months",
+        "span": [
+          191,
+          199
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilPH": {"value": "pH of 5.6", "span": [79, 87]}}, {"soilOrganicCarbon": {"value": "organic carbon content of 10%", "span": [92, 115]}}, {"soilDepth": {"value": "depth of 0-30 cm", "span": [119, 132]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Netherlands", "span": [137, 146]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2018", "span": [153, 157]}}, {"endTime": {"value": "2020", "span": [162, 166]}}, {"duration": {"value": "6 months", "span": [191, 199]}}]
+Gold: []
+

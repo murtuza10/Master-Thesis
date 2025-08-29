@@ -1,0 +1,146 @@
+=== Comparison for Item 213 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+The copy numbers of the bacterial 16S rRNA gene and archaeal 16S rRNA gene was quantified by quantitative real - time PCR ( qPCR ) . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "winter",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "silty clay loam",
+        "span": []
+      },
+      "soilReferenceGroup": {
+        "value": "Haplic Luvisol",
+        "span": []
+      },
+      "soilDepth": {
+        "value": "45-95 cm",
+        "span": []
+      },
+      "soilBulkDensity": {
+        "value": "1.47 g/cm^3",
+        "span": []
+      },
+      "soilPH": {
+        "value": "5.5 (0.06 SD)",
+        "span": []
+      },
+      "soilOrganicCarbon": {
+        "value": "2.23%",
+        "span": []
+      },
+      "soilAvailableNitrogen": {
+        "value": "140.0 mg/kg (0.0 SD)",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Greece",
+        "span": []
+      },
+      "region": {
+        "value": "Thessaly",
+        "span": []
+      },
+      "city": {
+        "value": "",
+        "span": []
+      },
+      "latitude": {
+        "value": "39.5 1 N",
+        "span": []
+      },
+      "longitude": {
+        "value": "22.1 2 E",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "silty clay loam",
+        "span": [
+          98,
+          113
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "clay",
+        "span": [
+          127,
+          131
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "45",
+        "span": [
+          170,
+          172
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "95 cm",
+        "span": [
+          177,
+          182
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "soil depth",
+        "span": [
+          183,
+          193
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}, "cropVariety": {"value": "winter", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "silty clay loam", "span": []}, "soilReferenceGroup": {"value": "Haplic Luvisol", "span": []}, "soilDepth": {"value": "45-95 cm", "span": []}, "soilBulkDensity": {"value": "1.47 g/cm^3", "span": []}, "soilPH": {"value": "5.5 (0.06 SD)", "span": []}, "soilOrganicCarbon": {"value": "2.23%", "span": []}, "soilAvailableNitrogen": {"value": "140.0 mg/kg (0.0 SD)", "span": []}}]
+Gold: [{"soilTexture": {"value": "silty clay loam", "span": [98, 113]}}, {"soilTexture": {"value": "clay", "span": [127, 131]}}, {"soilDepth": {"value": "45", "span": [170, 172]}}, {"soilDepth": {"value": "95 cm", "span": [177, 182]}}, {"soilDepth": {"value": "soil depth", "span": [183, 193]}}]
+
+Category: Location
+Predictions: [{"country": {"value": "Greece", "span": []}, "region": {"value": "Thessaly", "span": []}, "city": {"value": "", "span": []}, "latitude": {"value": "39.5 1 N", "span": []}, "longitude": {"value": "22.1 2 E", "span": []}}]
+Gold: []
+

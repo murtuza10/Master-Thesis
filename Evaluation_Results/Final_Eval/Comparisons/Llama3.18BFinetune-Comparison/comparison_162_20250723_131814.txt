@@ -1,0 +1,109 @@
+=== Comparison for Item 162 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+Five plots of 0.5 x 0.5 m ( 0.25 m2 area ) were sampled at each flower strip location . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "corn",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "oats",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "sandy loam",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "",
+        "span": []
+      },
+      "region": {
+        "value": "agricultural area",
+        "span": []
+      },
+      "city": {
+        "value": "",
+        "span": []
+      },
+      "latitude": {
+        "value": "53.4567",
+        "span": []
+      },
+      "longitude": {
+        "value": "11.1111",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "8 am",
+        "span": []
+      },
+      "endTime": {
+        "value": "4 pm",
+        "span": []
+      },
+      "duration": {
+        "value": "8 hours",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "corn", "span": []}}, {"cropSpecies": {"value": "wheat", "span": []}}, {"cropSpecies": {"value": "oats", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilPH": {"value": "6.5", "span": []}}, {"soilTexture": {"value": "sandy loam", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "", "span": []}, "region": {"value": "agricultural area", "span": []}, "city": {"value": "", "span": []}, "latitude": {"value": "53.4567", "span": []}, "longitude": {"value": "11.1111", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "8 am", "span": []}, "endTime": {"value": "4 pm", "span": []}, "duration": {"value": "8 hours", "span": []}}]
+Gold: []
+

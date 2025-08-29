@@ -1,0 +1,64 @@
+=== Comparison for Item 44 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+rapaceum Mill . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropVariety": {
+        "value": "white",
+        "span": [
+          44,
+          49
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "cabbage",
+        "span": [
+          50,
+          57
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Brassica oleracea L.",
+        "span": [
+          60,
+          80
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "var .",
+        "span": [
+          81,
+          86
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropVariety": {"value": "white", "span": [44, 49]}}, {"cropSpecies": {"value": "cabbage", "span": [50, 57]}}, {"cropSpecies": {"value": "Brassica oleracea L.", "span": [60, 80]}}, {"cropVariety": {"value": "var .", "span": [81, 86]}}]
+

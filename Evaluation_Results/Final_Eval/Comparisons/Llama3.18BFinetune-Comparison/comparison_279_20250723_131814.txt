@@ -1,0 +1,37 @@
+=== Comparison for Item 279 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+The supernatant was decanted and the material was washed three to five times with the 0.01 M NaNO3 - solution at pH 6 , and in a final step with ultrapure water to remove hydroxide traces and soluble salts . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sand",
+        "span": [
+          21,
+          25
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: []
+Gold: [{"soilTexture": {"value": "sand", "span": [21, 25]}}]
+

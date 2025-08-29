@@ -1,0 +1,106 @@
+=== Comparison for Item 333 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+
+
+ 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "winter wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "spring wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay loam",
+        "span": []
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "clay loam",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.2 g/cm3",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.8",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "20 g/kg",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "15 g/kg",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "35.5° N and 106.5° E",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}, {"cropSpecies": {"value": "winter wheat", "span": []}}, {"cropSpecies": {"value": "spring wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay loam", "span": []}}, {"soilTexture": {"value": "clay loam", "span": []}}, {"soilBulkDensity": {"value": "1.2 g/cm3", "span": []}}, {"soilPH": {"value": "6.8", "span": []}}, {"soilAvailableNitrogen": {"value": "20 g/kg", "span": []}}, {"soilAvailableNitrogen": {"value": "15 g/kg", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "", "span": []}}, {"region": {"value": "35.5° N and 106.5° E", "span": []}}]
+Gold: []
+

@@ -1,0 +1,215 @@
+=== Comparison for Item 235 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+The spider mites were heterogeneously distributed in small concentrations in the soil . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "spider mites",
+        "span": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "soil-colonizing spider mites",
+        "span": [
+          43,
+          61
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay loam",
+        "span": [
+          114,
+          123
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "silt loam",
+        "span": [
+          115,
+          125
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "sandy loam",
+        "span": [
+          116,
+          126
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "soil",
+        "span": [
+          34,
+          38
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "soil",
+        "span": [
+          34,
+          38
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "soil",
+        "span": [
+          34,
+          38
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH",
+        "span": [
+          81,
+          84
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "organic carbon",
+        "span": [
+          94,
+          106
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "available nitrogen",
+        "span": [
+          105,
+          118
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "UK",
+        "span": [
+          65,
+          68
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "England",
+        "span": [
+          71,
+          79
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Wales",
+        "span": [
+          83,
+          90
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "soil-colonizing spider mites",
+        "span": [
+          43,
+          61
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2017",
+        "span": [
+          12,
+          17
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2019",
+        "span": [
+          19,
+          24
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2017",
+        "span": [
+          31,
+          35
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2019",
+        "span": [
+          40,
+          44
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "spider mites", "span": [0, 5]}}, {"cropVariety": {"value": "soil-colonizing spider mites", "span": [43, 61]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay loam", "span": [114, 123]}}, {"soilTexture": {"value": "silt loam", "span": [115, 125]}}, {"soilTexture": {"value": "sandy loam", "span": [116, 126]}}, {"soilReferenceGroup": {"value": "soil", "span": [34, 38]}}, {"soilDepth": {"value": "soil", "span": [34, 38]}}, {"soilBulkDensity": {"value": "soil", "span": [34, 38]}}, {"soilPH": {"value": "pH", "span": [81, 84]}}, {"soilOrganicCarbon": {"value": "organic carbon", "span": [94, 106]}}, {"soilAvailableNitrogen": {"value": "available nitrogen", "span": [105, 118]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "UK", "span": [65, 68]}}, {"region": {"value": "England", "span": [71, 79]}}, {"region": {"value": "Wales", "span": [83, 90]}}, {"city": {"value": "soil-colonizing spider mites", "span": [43, 61]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2017", "span": [12, 17]}}, {"endTime": {"value": "2019", "span": [19, 24]}}]
+Gold: [{"startTime": {"value": "2017", "span": [31, 35]}}, {"endTime": {"value": "2019", "span": [40, 44]}}]
+

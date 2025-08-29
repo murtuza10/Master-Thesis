@@ -1,0 +1,212 @@
+=== Comparison for Item 210 ===
+Timestamp: 20250723_131815
+
+=== Original Text ===
+We postulate , that ( i ) the absolute abundance of bacteria and archaea will be increased in DLB treatment plots . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          37,
+          43
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "[{'value': 'Kanz', 'span': [106, 112]}, {'value': 'Trebelir', 'span': [113, 121]}, {'value': 'Milaneco', 'span': [122, 131]}, {'value': 'Capo', 'span': [132, 137]}]",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "1.24 g / cm3",
+        "span": [
+          56,
+          72
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "104.1 mg / kg",
+        "span": [
+          74,
+          91
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.8",
+        "span": [
+          95,
+          98
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "30 cm",
+        "span": [
+          144,
+          148
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Poland",
+        "span": [
+          104,
+          112
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Mazovia",
+        "span": [
+          117,
+          126
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Żyrardów",
+        "span": [
+          118,
+          128
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "52.1° N",
+        "span": [
+          149,
+          156
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "21.3° E",
+        "span": [
+          157,
+          164
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2017",
+        "span": [
+          169,
+          173
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2019",
+        "span": [
+          174,
+          178
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "2 years",
+        "span": [
+          179,
+          186
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropVariety": {
+        "value": "Milaneco",
+        "span": [
+          32,
+          40
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Capo",
+        "span": [
+          45,
+          49
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Trebelir",
+        "span": [
+          89,
+          97
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [37, 43]}}, {"cropVariety": {"value": "[{'value': 'Kanz', 'span': [106, 112]}, {'value': 'Trebelir', 'span': [113, 121]}, {'value': 'Milaneco', 'span': [122, 131]}, {'value': 'Capo', 'span': [132, 137]}]", "span": []}}]
+Gold: [{"cropVariety": {"value": "Milaneco", "span": [32, 40]}}, {"cropVariety": {"value": "Capo", "span": [45, 49]}}, {"cropVariety": {"value": "Trebelir", "span": [89, 97]}}]
+
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "1.24 g / cm3", "span": [56, 72]}}, {"soilAvailableNitrogen": {"value": "104.1 mg / kg", "span": [74, 91]}}, {"soilPH": {"value": "6.8", "span": [95, 98]}}, {"soilDepth": {"value": "30 cm", "span": [144, 148]}}, {"soilOrganicCarbon": {"value": "None", "span": []}}, {"soilReferenceGroup": {"value": "None", "span": []}}, {"soilTexture": {"value": "None", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Poland", "span": [104, 112]}}, {"region": {"value": "Mazovia", "span": [117, 126]}}, {"city": {"value": "Żyrardów", "span": [118, 128]}}, {"latitude": {"value": "52.1° N", "span": [149, 156]}}, {"longitude": {"value": "21.3° E", "span": [157, 164]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2017", "span": [169, 173]}}, {"endTime": {"value": "2019", "span": [174, 178]}}, {"duration": {"value": "2 years", "span": [179, 186]}}]
+Gold: []
+

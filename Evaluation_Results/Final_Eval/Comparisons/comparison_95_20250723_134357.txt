@@ -1,0 +1,115 @@
+=== Comparison for Item 95 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+Die hier dargestellten Forstsektoranalysen untersuchen mögliche Entwicklungen zur Verfügbarkeit forstbasierter Biomassepotentiale . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Weizen",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Gerste",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Hafer",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilReferenceGroup": {
+        "value": "Bodenfruchtbarkeit",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Deutschland",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "Bayern",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "Thüringen",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "50.110923",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "8.684171",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2021",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "2026",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "5 Jahre",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "Weizen", "span": []}}, {"cropSpecies": {"value": "Gerste", "span": []}}, {"cropSpecies": {"value": "Hafer", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilReferenceGroup": {"value": "Bodenfruchtbarkeit", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Deutschland", "span": []}}, {"region": {"value": "Bayern", "span": []}}, {"region": {"value": "Thüringen", "span": []}}, {"latitude": {"value": "50.110923", "span": []}}, {"longitude": {"value": "8.684171", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2021", "span": []}}, {"endTime": {"value": "2026", "span": []}}, {"duration": {"value": "5 Jahre", "span": []}}]
+Gold: []
+

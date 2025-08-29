@@ -1,0 +1,59 @@
+=== Comparison for Item 59 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+Weeds were removed by a combination of mechanical ( cultivator , rake or hoe ) and chemical measures .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loess",
+        "span": [
+          15,
+          20
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "chernozem",
+        "span": [
+          22,
+          29
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "limestone",
+        "span": [
+          30,
+          38
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "100 cm",
+        "span": [
+          63,
+          68
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loess", "span": [15, 20]}}, {"soilTexture": {"value": "chernozem", "span": [22, 29]}}, {"soilReferenceGroup": {"value": "limestone", "span": [30, 38]}}, {"soilDepth": {"value": "100 cm", "span": [63, 68]}}]
+Gold: []
+

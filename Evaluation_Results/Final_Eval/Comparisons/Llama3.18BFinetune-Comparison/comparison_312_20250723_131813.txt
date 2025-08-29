@@ -1,0 +1,37 @@
+=== Comparison for Item 312 ===
+Timestamp: 20250723_131813
+
+=== Original Text ===
+The Julius Kühn Institute ( JKI ) set up a primary monitoring program in 2011 in southwest Germany expecting the migration of SWD into Germany . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "grape",
+        "span": [
+          89,
+          94
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropSpecies": {"value": "grape", "span": [89, 94]}}]
+

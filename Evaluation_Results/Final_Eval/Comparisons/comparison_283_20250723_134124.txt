@@ -1,0 +1,37 @@
+=== Comparison for Item 283 ===
+Timestamp: 20250723_134124
+
+=== Original Text ===
+5 g of the coated silica sand was used for desorption with 50 ml of 2 g l-1 humic acid and citric acid ( Alfa Aesar ) . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sand",
+        "span": [
+          27,
+          31
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: []
+Gold: [{"soilTexture": {"value": "sand", "span": [27, 31]}}]
+

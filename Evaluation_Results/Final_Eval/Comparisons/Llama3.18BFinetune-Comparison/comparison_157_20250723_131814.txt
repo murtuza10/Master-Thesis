@@ -1,0 +1,64 @@
+=== Comparison for Item 157 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+Coordinates for each flower strip is also available in UTM32 and lat / lon degrees . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sand",
+        "span": [
+          116,
+          120
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "silt",
+        "span": [
+          123,
+          127
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "clay",
+        "span": [
+          130,
+          134
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH",
+        "span": [
+          147,
+          149
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: []
+Gold: [{"soilTexture": {"value": "sand", "span": [116, 120]}}, {"soilTexture": {"value": "silt", "span": [123, 127]}}, {"soilTexture": {"value": "clay", "span": [130, 134]}}, {"soilPH": {"value": "pH", "span": [147, 149]}}]
+

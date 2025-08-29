@@ -1,0 +1,47 @@
+=== Comparison for Item 63 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+Description of table 1 Related datasets are listed in the metadata element ' Related Identifier ' .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "apple",
+        "span": [
+          58,
+          63
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "[{'value': 'Germany', 'span': [46, 52]}]",
+        "span": []
+      },
+      "region": {
+        "value": "[{'value': 'Lower Saxony', 'span': [30, 39]}]",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "apple", "span": [58, 63]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "[{'value': 'Germany', 'span': [46, 52]}]", "span": []}, "region": {"value": "[{'value': 'Lower Saxony', 'span': [30, 39]}]", "span": []}}]
+Gold: []
+

@@ -1,0 +1,55 @@
+=== Comparison for Item 43 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+Within 10 rotations , the vegetable species white cabbage ( Brassica oleracea L. var . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "weak loamy sand",
+        "span": [
+          42,
+          57
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "heavy sandy loam",
+        "span": [
+          80,
+          96
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "medium clayey silt",
+        "span": [
+          122,
+          140
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: []
+Gold: [{"soilTexture": {"value": "weak loamy sand", "span": [42, 57]}}, {"soilTexture": {"value": "heavy sandy loam", "span": [80, 96]}}, {"soilTexture": {"value": "medium clayey silt", "span": [122, 140]}}]
+

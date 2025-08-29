@@ -1,0 +1,32 @@
+=== Comparison for Item 156 ===
+Timestamp: 20250816_095523
+
+=== Original Text ===
+The file modelled_converged.xlsx includes the RothC model results of a total of 587 sites , for which modelling was possible and a convergence of measured and modelled data was reached .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "grape",
+        "span": [
+          18,
+          23
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "grape", "span": [18, 23]}}]
+Gold: []
+

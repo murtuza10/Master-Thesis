@@ -1,0 +1,109 @@
+=== Comparison for Item 122 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+Selected data provided by the nova institute . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "cotton",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loam",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "1 meter",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.4 g/cm³",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "1.2%",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "150 kg/ha",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "India",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "Maharashtra",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "March 2023",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "October 2023",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "cotton", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loam", "span": []}}, {"soilPH": {"value": "6.5", "span": []}}, {"soilDepth": {"value": "1 meter", "span": []}}, {"soilBulkDensity": {"value": "1.4 g/cm³", "span": []}}, {"soilOrganicCarbon": {"value": "1.2%", "span": []}}, {"soilAvailableNitrogen": {"value": "150 kg/ha", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "India", "span": []}}, {"region": {"value": "Maharashtra", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "March 2023", "span": []}}, {"endTime": {"value": "October 2023", "span": []}}]
+Gold: []
+

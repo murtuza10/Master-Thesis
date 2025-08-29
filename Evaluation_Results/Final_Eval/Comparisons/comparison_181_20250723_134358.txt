@@ -1,0 +1,167 @@
+=== Comparison for Item 181 ===
+Timestamp: 20250723_134358
+
+=== Original Text ===
+The point of zero charge ( PZC ) was determined using potentiometric titration by weighing 0.5 g of goethite into 50 ml PE - tubes and adding of 10 ml of a 0.02 M , 0.2 M , and 2 M KCl solution , respectively . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loam",
+        "span": [
+          182,
+          186
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "30 cm",
+        "span": [
+          139,
+          143
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": [
+          158,
+          161
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2.5%",
+        "span": [
+          167,
+          171
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "USA",
+        "span": [
+          201,
+          204
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Iowa",
+        "span": [
+          195,
+          199
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "June 1",
+        "span": [
+          212,
+          217
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "August 31, 2022",
+        "span": [
+          221,
+          236
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "", "span": []}, "cropVariety": {"value": "", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loam", "span": [182, 186]}}, {"soilReferenceGroup": {"value": "", "span": []}}, {"soilDepth": {"value": "30 cm", "span": [139, 143]}}, {"soilBulkDensity": {"value": "", "span": []}}, {"soilPH": {"value": "6.5", "span": [158, 161]}}, {"soilOrganicCarbon": {"value": "2.5%", "span": [167, 171]}}, {"soilAvailableNitrogen": {"value": "", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "USA", "span": [201, 204]}}, {"region": {"value": "Iowa", "span": [195, 199]}}, {"city": {"value": "", "span": []}}, {"latitude": {"value": "", "span": []}}, {"longitude": {"value": "", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "June 1", "span": [212, 217]}}, {"endTime": {"value": "August 31, 2022", "span": [221, 236]}}, {"duration": {"value": "", "span": []}}]
+Gold: []
+

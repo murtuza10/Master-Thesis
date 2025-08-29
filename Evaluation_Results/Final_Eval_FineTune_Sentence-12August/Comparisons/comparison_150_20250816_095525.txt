@@ -1,0 +1,55 @@
+=== Comparison for Item 150 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+It consists of three different files .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          57,
+          62
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2019",
+        "span": [
+          90,
+          94
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2020",
+        "span": [
+          95,
+          99
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [57, 62]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2019", "span": [90, 94]}}, {"endTime": {"value": "2020", "span": [95, 99]}}]
+Gold: []
+

@@ -1,0 +1,69 @@
+=== Comparison for Item 348 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+These international regulations ( protocols etc . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "German",
+        "span": [
+          65,
+          71
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          175,
+          182
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "1990",
+        "span": [
+          84,
+          88
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2017",
+        "span": [
+          91,
+          95
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Location
+Predictions: []
+Gold: [{"country": {"value": "German", "span": [65, 71]}}, {"country": {"value": "Germany", "span": [175, 182]}}]
+
+Category: Time Statement
+Predictions: []
+Gold: [{"startTime": {"value": "1990", "span": [84, 88]}}, {"endTime": {"value": "2017", "span": [91, 95]}}]
+

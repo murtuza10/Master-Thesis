@@ -1,0 +1,99 @@
+=== Comparison for Item 144 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+Title : 
+ Root litter quality incubation experiment 
+
+ Abstract : 
+ The dataset contains data of a 2 - year incubation experiment of C4 roots litter added to a C3 soil .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          107,
+          112
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "cucumbers",
+        "span": [
+          215,
+          223
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "carrots",
+        "span": [
+          225,
+          232
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "cabbages",
+        "span": [
+          234,
+          242
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Cucumis",
+        "span": [
+          223,
+          229
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Cucumis sativus",
+        "span": [
+          230,
+          240
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Daucus carota",
+        "span": [
+          242,
+          252
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "Brassica oleracea var.",
+        "span": [
+          254,
+          270
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [107, 112]}}, {"cropSpecies": {"value": "cucumbers", "span": [215, 223]}}, {"cropSpecies": {"value": "carrots", "span": [225, 232]}}, {"cropSpecies": {"value": "cabbages", "span": [234, 242]}}, {"cropVariety": {"value": "Cucumis", "span": [223, 229]}}, {"cropVariety": {"value": "Cucumis sativus", "span": [230, 240]}}, {"cropVariety": {"value": "Daucus carota", "span": [242, 252]}}, {"cropVariety": {"value": "Brassica oleracea var.", "span": [254, 270]}}]
+Gold: []
+

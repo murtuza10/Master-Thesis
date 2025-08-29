@@ -1,0 +1,81 @@
+=== Comparison for Item 179 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+The determination of the d - values and the verification of the calculated lattice parameter were performed using the XPowder software . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Cu",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "20 ° C",
+        "span": []
+      }
+    },
+    {
+      "startTime": {
+        "value": "0.02 ° 2 θ",
+        "span": []
+      }
+    },
+    {
+      "startTime": {
+        "value": "0.05 s",
+        "span": []
+      }
+    },
+    {
+      "startTime": {
+        "value": "40 kV",
+        "span": []
+      }
+    },
+    {
+      "startTime": {
+        "value": "30 mA",
+        "span": []
+      }
+    },
+    {
+      "startTime": {
+        "value": "0.5 °",
+        "span": []
+      }
+    },
+    {
+      "startTime": {
+        "value": "10.00 cm",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "Cu", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "20 ° C", "span": []}}, {"startTime": {"value": "0.02 ° 2 θ", "span": []}}, {"startTime": {"value": "0.05 s", "span": []}}, {"startTime": {"value": "40 kV", "span": []}}, {"startTime": {"value": "30 mA", "span": []}}, {"startTime": {"value": "0.5 °", "span": []}}, {"startTime": {"value": "10.00 cm", "span": []}}]
+Gold: []
+

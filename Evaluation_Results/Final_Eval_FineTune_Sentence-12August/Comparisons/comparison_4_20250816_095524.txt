@@ -1,0 +1,32 @@
+=== Comparison for Item 4 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+However , when combined with other individual factors , it significantly altered the effect size , sometimes even causing directional change .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          36,
+          42
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [36, 42]}}]
+Gold: []
+

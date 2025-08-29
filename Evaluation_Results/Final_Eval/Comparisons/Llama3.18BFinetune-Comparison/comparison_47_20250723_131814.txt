@@ -1,0 +1,155 @@
+=== Comparison for Item 47 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+The experiment consists of 12 fertilization treatments in different combinations of mineral N fertilization and organic amendments and as quadruplicate for each of the three soils . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "winter",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.8 g / cm3",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "7.3",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2 %",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "120 kg / ha",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "Tokyo",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "40-50 degrees north",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "10-20 degrees east",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "September 1",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "November 1",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "60 days",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "celery",
+        "span": [
+          3,
+          9
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}, {"cropVariety": {"value": "winter", "span": []}}]
+Gold: [{"cropSpecies": {"value": "celery", "span": [3, 9]}}]
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "", "span": []}}, {"soilReferenceGroup": {"value": "", "span": []}}, {"soilDepth": {"value": "", "span": []}}, {"soilBulkDensity": {"value": "1.8 g / cm3", "span": []}}, {"soilPH": {"value": "7.3", "span": []}}, {"soilOrganicCarbon": {"value": "2 %", "span": []}}, {"soilAvailableNitrogen": {"value": "120 kg / ha", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "", "span": []}}, {"region": {"value": "", "span": []}}, {"city": {"value": "Tokyo", "span": []}}, {"latitude": {"value": "40-50 degrees north", "span": []}}, {"longitude": {"value": "10-20 degrees east", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "September 1", "span": []}}, {"endTime": {"value": "November 1", "span": []}}, {"duration": {"value": "60 days", "span": []}}]
+Gold: []
+

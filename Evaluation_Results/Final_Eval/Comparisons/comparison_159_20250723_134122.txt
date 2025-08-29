@@ -1,0 +1,151 @@
+=== Comparison for Item 159 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+C ) , total precipitation ( precip , mm ) and sunshine duration from the climate station closest to each of the sampled flower strips . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          17,
+          22
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "winter wheat",
+        "span": [
+          23,
+          32
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [17, 22]}}, {"cropVariety": {"value": "winter wheat", "span": [23, 32]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "", "span": []}}, {"soilReferenceGroup": {"value": "", "span": []}}, {"soilDepth": {"value": "", "span": []}}, {"soilBulkDensity": {"value": "", "span": []}}, {"soilPH": {"value": "", "span": []}}, {"soilOrganicCarbon": {"value": "", "span": []}}, {"soilAvailableNitrogen": {"value": "", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "", "span": []}}, {"region": {"value": "", "span": []}}, {"city": {"value": "", "span": []}}, {"latitude": {"value": "", "span": []}}, {"longitude": {"value": "", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "", "span": []}}, {"endTime": {"value": "", "span": []}}, {"duration": {"value": "", "span": []}}]
+Gold: []
+

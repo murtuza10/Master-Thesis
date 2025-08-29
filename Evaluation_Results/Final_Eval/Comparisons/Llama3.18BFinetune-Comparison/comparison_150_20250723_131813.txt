@@ -1,0 +1,145 @@
+=== Comparison for Item 150 ===
+Timestamp: 20250723_131813
+
+=== Original Text ===
+It is a combined dataset from several open source datasets with a total of 1396 individual sites . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "organic carbon",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "None",
+        "span": []
+      },
+      "soilReferenceGroup": {
+        "value": "None",
+        "span": []
+      },
+      "soilDepth": {
+        "value": "None",
+        "span": []
+      },
+      "soilBulkDensity": {
+        "value": "None",
+        "span": []
+      },
+      "soilPH": {
+        "value": "None",
+        "span": []
+      },
+      "soilOrganicCarbon": {
+        "value": "None",
+        "span": []
+      },
+      "soilAvailableNitrogen": {
+        "value": "None",
+        "span": []
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "None",
+        "span": []
+      },
+      "soilReferenceGroup": {
+        "value": "None",
+        "span": []
+      },
+      "soilDepth": {
+        "value": "None",
+        "span": []
+      },
+      "soilBulkDensity": {
+        "value": "None",
+        "span": []
+      },
+      "soilPH": {
+        "value": "None",
+        "span": []
+      },
+      "soilOrganicCarbon": {
+        "value": "None",
+        "span": []
+      },
+      "soilAvailableNitrogen": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "None",
+        "span": []
+      },
+      "region": {
+        "value": "None",
+        "span": []
+      },
+      "city": {
+        "value": "None",
+        "span": []
+      },
+      "latitude": {
+        "value": "None",
+        "span": []
+      },
+      "longitude": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilOrganicCarbon": {
+        "value": "organic carbon in soils",
+        "span": [
+          67,
+          90
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "organic carbon in soils",
+        "span": [
+          240,
+          263
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "organic carbon", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "None", "span": []}, "soilReferenceGroup": {"value": "None", "span": []}, "soilDepth": {"value": "None", "span": []}, "soilBulkDensity": {"value": "None", "span": []}, "soilPH": {"value": "None", "span": []}, "soilOrganicCarbon": {"value": "None", "span": []}, "soilAvailableNitrogen": {"value": "None", "span": []}}, {"soilTexture": {"value": "None", "span": []}, "soilReferenceGroup": {"value": "None", "span": []}, "soilDepth": {"value": "None", "span": []}, "soilBulkDensity": {"value": "None", "span": []}, "soilPH": {"value": "None", "span": []}, "soilOrganicCarbon": {"value": "None", "span": []}, "soilAvailableNitrogen": {"value": "None", "span": []}}]
+Gold: [{"soilOrganicCarbon": {"value": "organic carbon in soils", "span": [67, 90]}}, {"soilOrganicCarbon": {"value": "organic carbon in soils", "span": [240, 263]}}]
+
+Category: Location
+Predictions: [{"country": {"value": "None", "span": []}, "region": {"value": "None", "span": []}, "city": {"value": "None", "span": []}, "latitude": {"value": "None", "span": []}, "longitude": {"value": "None", "span": []}}]
+Gold: []
+

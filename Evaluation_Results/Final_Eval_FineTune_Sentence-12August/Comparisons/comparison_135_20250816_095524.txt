@@ -1,0 +1,32 @@
+=== Comparison for Item 135 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+) population ( Tree site , TS ) .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2018",
+        "span": [
+          32,
+          36
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2018", "span": [32, 36]}}]
+Gold: []
+

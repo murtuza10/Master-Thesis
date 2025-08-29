@@ -1,0 +1,68 @@
+=== Comparison for Item 16 ===
+Timestamp: 20250816_095523
+
+=== Original Text ===
+napus ) - winter wheat - are rotated .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Möhre",
+        "span": [
+          109,
+          114
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Salat",
+        "span": [
+          116,
+          119
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Apfel",
+        "span": [
+          121,
+          124
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Erdbeere",
+        "span": [
+          126,
+          132
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Himbeere",
+        "span": [
+          154,
+          159
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "Möhre", "span": [109, 114]}}, {"cropSpecies": {"value": "Salat", "span": [116, 119]}}, {"cropSpecies": {"value": "Apfel", "span": [121, 124]}}, {"cropSpecies": {"value": "Erdbeere", "span": [126, 132]}}, {"cropSpecies": {"value": "Himbeere", "span": [154, 159]}}]
+Gold: []
+

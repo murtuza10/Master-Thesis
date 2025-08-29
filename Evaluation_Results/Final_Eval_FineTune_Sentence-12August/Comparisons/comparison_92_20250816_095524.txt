@@ -1,0 +1,82 @@
+=== Comparison for Item 92 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          65,
+          72
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Saxony - Anhalt",
+        "span": [
+          34,
+          47
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Bernburg",
+        "span": [
+          22,
+          29
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "51 ° 82 ' N",
+        "span": [
+          81,
+          92
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "11 ° 70 '",
+        "span": [
+          94,
+          105
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "1992",
+        "span": [
+          17,
+          21
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": [65, 72]}}, {"region": {"value": "Saxony - Anhalt", "span": [34, 47]}}, {"city": {"value": "Bernburg", "span": [22, 29]}}, {"latitude": {"value": "51 ° 82 ' N", "span": [81, 92]}}, {"longitude": {"value": "11 ° 70 '", "span": [94, 105]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "1992", "span": [17, 21]}}]
+Gold: []
+

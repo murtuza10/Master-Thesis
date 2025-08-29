@@ -1,0 +1,135 @@
+=== Comparison for Item 231 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+The filtered data is compiled in excel to be uploaded in the repository to further support future use in research and publications . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "winter wheat",
+        "span": [
+          67,
+          81
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "pH",
+        "span": [
+          134,
+          137
+        ]
+      },
+      "soilOrganicCarbon": {
+        "value": "organic carbon",
+        "span": [
+          141,
+          152
+        ]
+      },
+      "soilAvailableNitrogen": {
+        "value": "nitrogen",
+        "span": [
+          141,
+          149
+        ]
+      },
+      "soilTexture": {
+        "value": "soil texture",
+        "span": [
+          141,
+          152
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "city": {
+        "value": "Thessaloniki",
+        "span": [
+          103,
+          114
+        ]
+      },
+      "country": {
+        "value": "Greece",
+        "span": [
+          119,
+          125
+        ]
+      },
+      "latitude": {
+        "value": "42.7° N",
+        "span": [
+          96,
+          108
+        ]
+      },
+      "longitude": {
+        "value": "22.5° E",
+        "span": [
+          113,
+          125
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "in the context of the study",
+        "span": [
+          63,
+          85
+        ]
+      },
+      "endTime": {
+        "value": "in the study",
+        "span": [
+          112,
+          119
+        ]
+      },
+      "duration": {
+        "value": "the presently filtered set of data is sorted",
+        "span": [
+          69,
+          94
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "winter wheat", "span": [67, 81]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilPH": {"value": "pH", "span": [134, 137]}, "soilOrganicCarbon": {"value": "organic carbon", "span": [141, 152]}, "soilAvailableNitrogen": {"value": "nitrogen", "span": [141, 149]}, "soilTexture": {"value": "soil texture", "span": [141, 152]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"city": {"value": "Thessaloniki", "span": [103, 114]}, "country": {"value": "Greece", "span": [119, 125]}, "latitude": {"value": "42.7° N", "span": [96, 108]}, "longitude": {"value": "22.5° E", "span": [113, 125]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "in the context of the study", "span": [63, 85]}, "endTime": {"value": "in the study", "span": [112, 119]}, "duration": {"value": "the presently filtered set of data is sorted", "span": [69, 94]}}]
+Gold: []
+

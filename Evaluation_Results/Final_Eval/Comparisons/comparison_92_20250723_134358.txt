@@ -1,0 +1,101 @@
+=== Comparison for Item 92 ===
+Timestamp: 20250723_134358
+
+=== Original Text ===
+Der zentrale Forschungsauftrag der Konsortien lautet : Unter der Prämisse , dass der chemische Industriesektor eine vollständige Defossilisierung anstrebt , soll quantifiziert werden , welcher Anteil des Kohlenstoffinputs , den die chemische Industrien als Input benötigen , i m Jahr 2050 nachhaltig aus agrarischer und forstlicher Biomasse bereitgestellt werden kann . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "Bodendichte",
+        "span": [
+          105,
+          115
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH - Wert",
+        "span": [
+          120,
+          130
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "0-30 cm",
+        "span": [
+          149,
+          156
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "Nordrhein-Westfalen",
+        "span": [
+          81,
+          97
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Deutschland",
+        "span": [
+          99,
+          108
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2020",
+        "span": [
+          112,
+          116
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2022",
+        "span": [
+          118,
+          122
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "Bodendichte", "span": [105, 115]}}, {"soilPH": {"value": "pH - Wert", "span": [120, 130]}}, {"soilDepth": {"value": "0-30 cm", "span": [149, 156]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "Nordrhein-Westfalen", "span": [81, 97]}}, {"country": {"value": "Deutschland", "span": [99, 108]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2020", "span": [112, 116]}}, {"endTime": {"value": "2022", "span": [118, 122]}}]
+Gold: []
+

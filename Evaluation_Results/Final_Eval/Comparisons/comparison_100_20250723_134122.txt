@@ -1,0 +1,196 @@
+=== Comparison for Item 100 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+2024[7 ] zum Einsatz kommen . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          123,
+          128
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "winter",
+        "span": [
+          142,
+          148
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loamy",
+        "span": [
+          201,
+          206
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "FAOstat",
+        "span": [
+          212,
+          219
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "10 cm",
+        "span": [
+          221,
+          226
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.2 g/cm^3",
+        "span": [
+          231,
+          238
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.8",
+        "span": [
+          240,
+          244
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2%",
+        "span": [
+          251,
+          256
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "100 kg/ha",
+        "span": [
+          266,
+          273
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          100,
+          107
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Europe",
+        "span": [
+          111,
+          118
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Berlin",
+        "span": [
+          119,
+          126
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "52.5200° N",
+        "span": [
+          129,
+          138
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "13.4050° E",
+        "span": [
+          139,
+          148
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "January 2023",
+        "span": [
+          179,
+          191
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "December 2023",
+        "span": [
+          195,
+          208
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "1 year",
+        "span": [
+          209,
+          215
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [123, 128]}}, {"cropVariety": {"value": "winter", "span": [142, 148]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loamy", "span": [201, 206]}}, {"soilReferenceGroup": {"value": "FAOstat", "span": [212, 219]}}, {"soilDepth": {"value": "10 cm", "span": [221, 226]}}, {"soilBulkDensity": {"value": "1.2 g/cm^3", "span": [231, 238]}}, {"soilPH": {"value": "6.8", "span": [240, 244]}}, {"soilOrganicCarbon": {"value": "2%", "span": [251, 256]}}, {"soilAvailableNitrogen": {"value": "100 kg/ha", "span": [266, 273]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": [100, 107]}}, {"region": {"value": "Europe", "span": [111, 118]}}, {"city": {"value": "Berlin", "span": [119, 126]}}, {"latitude": {"value": "52.5200° N", "span": [129, 138]}}, {"longitude": {"value": "13.4050° E", "span": [139, 148]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "January 2023", "span": [179, 191]}}, {"endTime": {"value": "December 2023", "span": [195, 208]}}, {"duration": {"value": "1 year", "span": [209, 215]}}]
+Gold: []
+

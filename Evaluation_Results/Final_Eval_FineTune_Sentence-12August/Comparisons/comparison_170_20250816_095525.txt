@@ -1,0 +1,32 @@
+=== Comparison for Item 170 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+The mean count of each species across the five plots in given in Count_mean , and the ground cover ( 5 ) is given in Cover_percent .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "7.0 - 7.4",
+        "span": [
+          23,
+          31
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilPH": {"value": "7.0 - 7.4", "span": [23, 31]}}]
+Gold: []
+

@@ -1,0 +1,163 @@
+=== Comparison for Item 344 ===
+Timestamp: 20250723_134124
+
+=== Original Text ===
+The raw data were binned and statistically analyzed in 2017 - 2018 . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "oat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "rye",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "triticale",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay loam",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "soil depth",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "bulk density",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "7.5",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "15 g/kg",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "100 mg/kg",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "37.5° N",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "115.5° E",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2010",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}, {"cropSpecies": {"value": "wheat", "span": []}}, {"cropSpecies": {"value": "oat", "span": []}}, {"cropSpecies": {"value": "rye", "span": []}}, {"cropSpecies": {"value": "triticale", "span": []}}, {"cropSpecies": {"value": "barley", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay loam", "span": []}}, {"soilDepth": {"value": "soil depth", "span": []}}, {"soilBulkDensity": {"value": "bulk density", "span": []}}, {"soilPH": {"value": "7.5", "span": []}}, {"soilOrganicCarbon": {"value": "15 g/kg", "span": []}}, {"soilAvailableNitrogen": {"value": "100 mg/kg", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "", "span": []}}, {"region": {"value": "", "span": []}}, {"city": {"value": "", "span": []}}, {"latitude": {"value": "37.5° N", "span": []}}, {"longitude": {"value": "115.5° E", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2010", "span": []}}, {"endTime": {"value": "", "span": []}}, {"duration": {"value": "", "span": []}}]
+Gold: []
+

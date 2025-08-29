@@ -1,0 +1,93 @@
+=== Comparison for Item 309 ===
+Timestamp: 20250723_134358
+
+=== Original Text ===
+
+
+ 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilReferenceGroup": {
+        "value": "Calcaric Cambisol",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH of 8.2",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "1.5%",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "Loess Plateau region",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "China",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "2 years",
+        "span": []
+      }
+    },
+    {
+      "startTime": {
+        "value": "January 2020",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilReferenceGroup": {"value": "Calcaric Cambisol", "span": []}}, {"soilPH": {"value": "pH of 8.2", "span": []}}, {"soilOrganicCarbon": {"value": "1.5%", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "Loess Plateau region", "span": []}}, {"country": {"value": "China", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"duration": {"value": "2 years", "span": []}}, {"startTime": {"value": "January 2020", "span": []}}]
+Gold: []
+

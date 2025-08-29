@@ -1,0 +1,32 @@
+=== Comparison for Item 107 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+Trotz dieser starken , relativen Produktionssteigerungen bleiben holzbasierte Fasern und chemische Derivate , gemessen am Gesamtvolumen aller holzbasierten Sektoren , weiterhin Nischenprodukte .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilDepth": {
+        "value": "75 cm",
+        "span": [
+          62,
+          67
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilDepth": {"value": "75 cm", "span": [62, 67]}}]
+Gold: []
+

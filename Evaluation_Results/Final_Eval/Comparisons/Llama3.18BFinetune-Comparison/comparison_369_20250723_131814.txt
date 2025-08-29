@@ -1,0 +1,112 @@
+=== Comparison for Item 369 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+A legend , explaining the different variables used in the datasets is given in a separate document . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          0,
+          5
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "BD",
+        "span": [
+          123,
+          126
+        ]
+      },
+      "soilOrganicCarbon": {
+        "value": "SOC",
+        "span": [
+          123,
+          128
+        ]
+      },
+      "soilPH": {
+        "value": "SPH",
+        "span": [
+          123,
+          128
+        ]
+      },
+      "soilTexture": {
+        "value": "STX",
+        "span": [
+          123,
+          128
+        ]
+      },
+      "soilAvailableNitrogen": {
+        "value": "AN",
+        "span": [
+          123,
+          127
+        ]
+      },
+      "soilDepth": {
+        "value": "None",
+        "span": []
+      },
+      "soilReferenceGroup": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2015",
+        "span": [
+          143,
+          147
+        ]
+      },
+      "endTime": {
+        "value": "2019",
+        "span": [
+          189,
+          193
+        ]
+      },
+      "duration": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [0, 5]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "BD", "span": [123, 126]}, "soilOrganicCarbon": {"value": "SOC", "span": [123, 128]}, "soilPH": {"value": "SPH", "span": [123, 128]}, "soilTexture": {"value": "STX", "span": [123, 128]}, "soilAvailableNitrogen": {"value": "AN", "span": [123, 127]}, "soilDepth": {"value": "None", "span": []}, "soilReferenceGroup": {"value": "None", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2015", "span": [143, 147]}, "endTime": {"value": "2019", "span": [189, 193]}, "duration": {"value": "None", "span": []}}]
+Gold: []
+

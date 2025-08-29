@@ -1,0 +1,50 @@
+=== Comparison for Item 168 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+Five plots of 0.5 x 0.5 m ( 0.25 m2 area ) were sampled at each flower strip location .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "fruit",
+        "span": [
+          25,
+          29
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "grape",
+        "span": [
+          60,
+          64
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "varieties",
+        "span": [
+          48,
+          56
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "fruit", "span": [25, 29]}}, {"cropSpecies": {"value": "grape", "span": [60, 64]}}, {"cropVariety": {"value": "varieties", "span": [48, 56]}}]
+Gold: []
+

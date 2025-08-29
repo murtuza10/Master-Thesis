@@ -1,0 +1,69 @@
+=== Comparison for Item 197 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+The extent of adsorption decreased from pH 8 to 10 with 0.58 µmol m-2 and was lowest for pH 12 with 0.18 µmol m-2 . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "pH 8",
+        "span": [
+          103,
+          106
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH 6",
+        "span": [
+          139,
+          142
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH 4",
+        "span": [
+          165,
+          168
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "168 h",
+        "span": [
+          113,
+          117
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilPH": {"value": "pH 8", "span": [103, 106]}}, {"soilPH": {"value": "pH 6", "span": [139, 142]}}, {"soilPH": {"value": "pH 4", "span": [165, 168]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"duration": {"value": "168 h", "span": [113, 117]}}]
+Gold: []
+

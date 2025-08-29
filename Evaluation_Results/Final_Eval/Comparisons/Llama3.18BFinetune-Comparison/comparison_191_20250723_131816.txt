@@ -1,0 +1,119 @@
+=== Comparison for Item 191 ===
+Timestamp: 20250723_131816
+
+=== Original Text ===
+The concentrations of P and Fe were determined using inductively coupled plasma atomic emission spectroscopy ( ICP - AES ) . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "",
+        "span": []
+      },
+      "soilReferenceGroup": {
+        "value": "",
+        "span": []
+      },
+      "soilDepth": {
+        "value": "",
+        "span": []
+      },
+      "soilBulkDensity": {
+        "value": "",
+        "span": []
+      },
+      "soilPH": {
+        "value": "",
+        "span": []
+      },
+      "soilOrganicCarbon": {
+        "value": "",
+        "span": []
+      },
+      "soilAvailableNitrogen": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "",
+        "span": []
+      },
+      "region": {
+        "value": "",
+        "span": []
+      },
+      "city": {
+        "value": "",
+        "span": []
+      },
+      "latitude": {
+        "value": "",
+        "span": []
+      },
+      "longitude": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2 h",
+        "span": []
+      },
+      "endTime": {
+        "value": "168 h",
+        "span": []
+      },
+      "duration": {
+        "value": "24 h",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}, "cropVariety": {"value": "", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "", "span": []}, "soilReferenceGroup": {"value": "", "span": []}, "soilDepth": {"value": "", "span": []}, "soilBulkDensity": {"value": "", "span": []}, "soilPH": {"value": "", "span": []}, "soilOrganicCarbon": {"value": "", "span": []}, "soilAvailableNitrogen": {"value": "", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "", "span": []}, "region": {"value": "", "span": []}, "city": {"value": "", "span": []}, "latitude": {"value": "", "span": []}, "longitude": {"value": "", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2 h", "span": []}, "endTime": {"value": "168 h", "span": []}, "duration": {"value": "24 h", "span": []}}]
+Gold: []
+

@@ -1,0 +1,100 @@
+=== Comparison for Item 43 ===
+Timestamp: 20250816_095523
+
+=== Original Text ===
+The single plots are quadratic concrete boxes with walls of 10 cm thickness , a surface area of 4 m2 and a depth of 75 cm .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          49,
+          56
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Bochum",
+        "span": [
+          73,
+          79
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Braunschweig",
+        "span": [
+          81,
+          91
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Celle",
+        "span": [
+          93,
+          98
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Hohenheim",
+        "span": [
+          100,
+          109
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Veitshöchheim",
+        "span": [
+          111,
+          122
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "spring 2022",
+        "span": [
+          59,
+          69
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "spring 2023",
+        "span": [
+          71,
+          81
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": [49, 56]}}, {"city": {"value": "Bochum", "span": [73, 79]}}, {"city": {"value": "Braunschweig", "span": [81, 91]}}, {"city": {"value": "Celle", "span": [93, 98]}}, {"city": {"value": "Hohenheim", "span": [100, 109]}}, {"city": {"value": "Veitshöchheim", "span": [111, 122]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "spring 2022", "span": [59, 69]}}, {"endTime": {"value": "spring 2023", "span": [71, 81]}}]
+Gold: []
+

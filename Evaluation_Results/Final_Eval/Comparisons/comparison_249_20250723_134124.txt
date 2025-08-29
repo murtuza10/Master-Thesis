@@ -1,0 +1,121 @@
+=== Comparison for Item 249 ===
+Timestamp: 20250723_134124
+
+=== Original Text ===
+Quantification of spider mites in the samples was conducted by HRM real - time PCR ( spider mite number/ 100 g sample ) . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "1.6 g / cm3",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "100 cm",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "5.4 g / kg",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "0.06 g / kg",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "7.1",
+        "span": []
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "clay loam",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "the country",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "the central region",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "0.32",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "25.1 ° C",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2010-06-01",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "2010-09-30",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "1.6 g / cm3", "span": []}}, {"soilDepth": {"value": "100 cm", "span": []}}, {"soilOrganicCarbon": {"value": "5.4 g / kg", "span": []}}, {"soilAvailableNitrogen": {"value": "0.06 g / kg", "span": []}}, {"soilPH": {"value": "7.1", "span": []}}, {"soilTexture": {"value": "clay loam", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "the country", "span": []}}, {"region": {"value": "the central region", "span": []}}, {"latitude": {"value": "0.32", "span": []}}, {"longitude": {"value": "25.1 ° C", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2010-06-01", "span": []}}, {"endTime": {"value": "2010-09-30", "span": []}}]
+Gold: []
+

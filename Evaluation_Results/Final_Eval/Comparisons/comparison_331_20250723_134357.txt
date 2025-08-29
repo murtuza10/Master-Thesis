@@ -1,0 +1,74 @@
+=== Comparison for Item 331 ===
+Timestamp: 20250723_134357
+
+=== Original Text ===
+These deployments account for a total of 116,602 days and captured 756,717 adult D. suzukii individuals . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "1.4 g/cm³",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.8",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "state",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "USA",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "05/15/2022",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "08/31/2022",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "1.4 g/cm³", "span": []}}, {"soilPH": {"value": "6.8", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "state", "span": []}}, {"country": {"value": "USA", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "05/15/2022", "span": []}}, {"endTime": {"value": "08/31/2022", "span": []}}]
+Gold: []
+

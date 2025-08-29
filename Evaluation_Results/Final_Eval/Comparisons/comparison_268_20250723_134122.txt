@@ -1,0 +1,93 @@
+=== Comparison for Item 268 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+The developed precipitate was centrifuged and washed for 5 min at 12134 x G , subsequently frozen , freeze - dried , and stored in a desiccator . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilReferenceGroup": {
+        "value": "ferrihydrite",
+        "span": []
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "powder",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "30 minutes",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "60 °C",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "7.5",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "0.2 M Fe(NO3)3 ∙ 9 H2O",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "1 M KOH",
+        "span": []
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "30 minutes",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "60 °C",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "30 minutes",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilReferenceGroup": {"value": "ferrihydrite", "span": []}}, {"soilTexture": {"value": "powder", "span": []}}, {"soilDepth": {"value": "30 minutes", "span": []}}, {"soilBulkDensity": {"value": "60 °C", "span": []}}, {"soilPH": {"value": "7.5", "span": []}}, {"soilOrganicCarbon": {"value": "0.2 M Fe(NO3)3 ∙ 9 H2O", "span": []}}, {"soilAvailableNitrogen": {"value": "1 M KOH", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "30 minutes", "span": []}}, {"endTime": {"value": "60 °C", "span": []}}, {"duration": {"value": "30 minutes", "span": []}}]
+Gold: []
+

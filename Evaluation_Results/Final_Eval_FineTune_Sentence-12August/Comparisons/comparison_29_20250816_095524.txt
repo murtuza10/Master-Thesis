@@ -1,0 +1,82 @@
+=== Comparison for Item 29 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+Time series of soil temperature and soil water content were monitored with 30 - min resolution at various points in the soil profile , including ground heat fluxes .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          46,
+          53
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Saxony Anhalt",
+        "span": [
+          32,
+          44
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Bernburg",
+        "span": [
+          24,
+          31
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "51 ° 82 ' N",
+        "span": [
+          72,
+          82
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "11 ° 70 '",
+        "span": [
+          84,
+          94
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "1992",
+        "span": [
+          17,
+          21
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": [46, 53]}}, {"region": {"value": "Saxony Anhalt", "span": [32, 44]}}, {"city": {"value": "Bernburg", "span": [24, 31]}}, {"latitude": {"value": "51 ° 82 ' N", "span": [72, 82]}}, {"longitude": {"value": "11 ° 70 '", "span": [84, 94]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "1992", "span": [17, 21]}}]
+Gold: []
+

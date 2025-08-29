@@ -1,0 +1,72 @@
+=== Comparison for Item 363 ===
+Timestamp: 20250723_131816
+
+=== Original Text ===
+
+  All experiments were performed around the harvest , started with the adding of the flies and ended with the determination of the volatile acid levels ( as an indicator for sour rot ) . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "rice",
+        "span": []
+      },
+      "cropVariety": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "3 months after planting",
+        "span": []
+      },
+      "endTime": {
+        "value": "",
+        "span": []
+      },
+      "duration": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "startTime": {
+        "value": "5 months after planting",
+        "span": []
+      },
+      "endTime": {
+        "value": "",
+        "span": []
+      },
+      "duration": {
+        "value": "",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "rice", "span": []}, "cropVariety": {"value": "", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "3 months after planting", "span": []}, "endTime": {"value": "", "span": []}, "duration": {"value": "", "span": []}}, {"startTime": {"value": "5 months after planting", "span": []}, "endTime": {"value": "", "span": []}, "duration": {"value": "", "span": []}}]
+Gold: []
+

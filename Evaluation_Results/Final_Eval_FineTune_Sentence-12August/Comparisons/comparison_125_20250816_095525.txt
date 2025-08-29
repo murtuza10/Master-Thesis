@@ -1,0 +1,73 @@
+=== Comparison for Item 125 ===
+Timestamp: 20250816_095525
+
+=== Original Text ===
+http://tariffdata.wto.org/default.aspx ( Accessed on August 2024 ) [ 6 ] The fibre year consulting , 2023 .
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "rapaceum",
+        "span": [
+          0,
+          9
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "vegetable",
+        "span": [
+          186,
+          193
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilReferenceGroup": {
+        "value": "Luvisols",
+        "span": [
+          45,
+          52
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "Fluvisols",
+        "span": [
+          54,
+          61
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "Phaeozems",
+        "span": [
+          63,
+          70
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "rapaceum", "span": [0, 9]}}, {"cropSpecies": {"value": "vegetable", "span": [186, 193]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilReferenceGroup": {"value": "Luvisols", "span": [45, 52]}}, {"soilReferenceGroup": {"value": "Fluvisols", "span": [54, 61]}}, {"soilReferenceGroup": {"value": "Phaeozems", "span": [63, 70]}}]
+Gold: []
+

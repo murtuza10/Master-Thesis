@@ -1,0 +1,40 @@
+=== Comparison for Item 10 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+Title : 
+  Long - term field trial on tillage and fertilization in crop rotation - Westerfeld 
+ Abstract_text_1 : 
+  Long - term field trial on tillage and fertilization in crop rotation - Westerfeld . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          74,
+          79
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropSpecies": {"value": "wheat", "span": [74, 79]}}]
+

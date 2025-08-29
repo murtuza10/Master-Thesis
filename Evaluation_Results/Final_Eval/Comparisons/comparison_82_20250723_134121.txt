@@ -1,0 +1,105 @@
+=== Comparison for Item 82 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+Therefore a field study was carried out in which honey bee colonies were placed to oilseed rape ( Brassica napus , OSR ) fields . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          73,
+          80
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Bochum",
+        "span": [
+          83,
+          89
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Braunschweig",
+        "span": [
+          92,
+          104
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Celle",
+        "span": [
+          107,
+          112
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Hohenheim",
+        "span": [
+          115,
+          124
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Veitshöchheim",
+        "span": [
+          127,
+          140
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "spring 2022",
+        "span": [
+          148,
+          159
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "spring 2023",
+        "span": [
+          163,
+          174
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Location
+Predictions: []
+Gold: [{"country": {"value": "Germany", "span": [73, 80]}}, {"city": {"value": "Bochum", "span": [83, 89]}}, {"city": {"value": "Braunschweig", "span": [92, 104]}}, {"city": {"value": "Celle", "span": [107, 112]}}, {"city": {"value": "Hohenheim", "span": [115, 124]}}, {"city": {"value": "Veitshöchheim", "span": [127, 140]}}]
+
+Category: Time Statement
+Predictions: []
+Gold: [{"startTime": {"value": "spring 2022", "span": [148, 159]}}, {"startTime": {"value": "spring 2023", "span": [163, 174]}}]
+

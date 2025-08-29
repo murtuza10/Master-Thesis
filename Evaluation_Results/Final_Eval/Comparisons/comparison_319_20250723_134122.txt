@@ -1,0 +1,113 @@
+=== Comparison for Item 319 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+The coordinates of the trap locations were recorded with a handheld - GPS ( ‘ lat ’ and ‘ lon ’ in the table / dataset ) . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loamy sand and clay",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.5 g / cm3",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "between 6.2 and 7.5",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "1.5%",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "10 ppm",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "Swabia",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "1st April",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "30th September",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "from 1st April to 30th September",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          46,
+          53
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loamy sand and clay", "span": []}}, {"soilBulkDensity": {"value": "1.5 g / cm3", "span": []}}, {"soilPH": {"value": "between 6.2 and 7.5", "span": []}}, {"soilOrganicCarbon": {"value": "1.5%", "span": []}}, {"soilAvailableNitrogen": {"value": "10 ppm", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "Swabia", "span": []}}]
+Gold: [{"country": {"value": "Germany", "span": [46, 53]}}]
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "1st April", "span": []}}, {"endTime": {"value": "30th September", "span": []}}, {"duration": {"value": "from 1st April to 30th September", "span": []}}]
+Gold: []
+

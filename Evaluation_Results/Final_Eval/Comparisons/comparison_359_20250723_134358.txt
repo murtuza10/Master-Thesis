@@ -1,0 +1,37 @@
+=== Comparison for Item 359 ===
+Timestamp: 20250723_134358
+
+=== Original Text ===
+As a consequence , infection of healthy grapes by D. suzukii may facilitate the colonization by D. melanogaster . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "grapes",
+        "span": [
+          134,
+          140
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropSpecies": {"value": "grapes", "span": [134, 140]}}]
+

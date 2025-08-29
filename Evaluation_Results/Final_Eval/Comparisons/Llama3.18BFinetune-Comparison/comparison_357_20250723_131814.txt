@@ -1,0 +1,65 @@
+=== Comparison for Item 357 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+The common vinegar fly Drosophila melanogaster ( Diptera : Drosophilidae ) is associated with sour rot in overripe or otherwise damaged grapes . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "D. melanogaster",
+        "span": [
+          72,
+          81
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "D. melanogaster",
+        "span": [
+          72,
+          81
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropVariety": {
+        "value": "viticulture",
+        "span": [
+          117,
+          128
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "viticulture",
+        "span": [
+          205,
+          216
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "D. melanogaster", "span": [72, 81]}}, {"cropSpecies": {"value": "D. melanogaster", "span": [72, 81]}}]
+Gold: [{"cropVariety": {"value": "viticulture", "span": [117, 128]}}, {"cropSpecies": {"value": "viticulture", "span": [205, 216]}}]
+

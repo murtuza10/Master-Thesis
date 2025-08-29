@@ -1,0 +1,103 @@
+=== Comparison for Item 54 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+In autumn , the soil was annually dug up to 20 cm by using a spade . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "leaf",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "stalk",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "root",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "loamy sand",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "0.9%",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Netherlands",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "Flevoland",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "January 2010",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "December 2012",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "leaf", "span": []}}, {"cropSpecies": {"value": "stalk", "span": []}}, {"cropSpecies": {"value": "root", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "loamy sand", "span": []}}, {"soilOrganicCarbon": {"value": "0.9%", "span": []}}, {"soilPH": {"value": "6.5", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Netherlands", "span": []}}, {"region": {"value": "Flevoland", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "January 2010", "span": []}}, {"endTime": {"value": "December 2012", "span": []}}]
+Gold: []
+

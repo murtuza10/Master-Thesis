@@ -1,0 +1,116 @@
+=== Comparison for Item 142 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+The second file is related to the first , but contains the final dataset which was used to produce the graphs and tables in the paper . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "carbon",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "texture triangle",
+        "span": []
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "USA",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "50 cm",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.2 g / cm 3",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "7.0",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "1.1 %",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "20 mg / kg",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "China",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "Beijing",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "Yangtze River Delta",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "31.5 ° N",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "121.5 ° E",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "carbon", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "texture triangle", "span": []}}, {"soilReferenceGroup": {"value": "USA", "span": []}}, {"soilDepth": {"value": "50 cm", "span": []}}, {"soilBulkDensity": {"value": "1.2 g / cm 3", "span": []}}, {"soilPH": {"value": "7.0", "span": []}}, {"soilOrganicCarbon": {"value": "1.1 %", "span": []}}, {"soilAvailableNitrogen": {"value": "20 mg / kg", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "China", "span": []}}, {"city": {"value": "Beijing", "span": []}}, {"region": {"value": "Yangtze River Delta", "span": []}}, {"latitude": {"value": "31.5 ° N", "span": []}}, {"longitude": {"value": "121.5 ° E", "span": []}}]
+Gold: []
+

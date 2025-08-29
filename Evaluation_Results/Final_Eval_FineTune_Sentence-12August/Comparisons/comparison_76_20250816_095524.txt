@@ -1,0 +1,32 @@
+=== Comparison for Item 76 ===
+Timestamp: 20250816_095524
+
+=== Original Text ===
+General description about the IOSDV experiment can be found in the table ' Plots ' .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          106,
+          113
+        ]
+      }
+    }
+  ],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": [106, 113]}}]
+Gold: []
+

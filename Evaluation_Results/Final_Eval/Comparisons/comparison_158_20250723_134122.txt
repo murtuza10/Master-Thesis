@@ -1,0 +1,184 @@
+=== Comparison for Item 158 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+The file " FlowerStripClimate " contains monthly information about the mean temperature ( temp , deg . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          0,
+          5
+        ]
+      },
+      "cropVariety": {
+        "value": "winter wheat",
+        "span": [
+          6,
+          16
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay loam",
+        "span": [
+          17,
+          24
+        ]
+      },
+      "soilReferenceGroup": {
+        "value": "clay loam",
+        "span": [
+          43,
+          50
+        ]
+      },
+      "soilDepth": {
+        "value": "50 cm",
+        "span": [
+          52,
+          59
+        ]
+      },
+      "soilBulkDensity": {
+        "value": "1.2 g/cm^3",
+        "span": [
+          61,
+          74
+        ]
+      },
+      "soilPH": {
+        "value": "6.5",
+        "span": [
+          76,
+          81
+        ]
+      },
+      "soilOrganicCarbon": {
+        "value": "30 g/kg",
+        "span": [
+          83,
+          95
+        ]
+      },
+      "soilAvailableNitrogen": {
+        "value": "90 kg/ha",
+        "span": [
+          98,
+          113
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Australia",
+        "span": [
+          34,
+          43
+        ]
+      },
+      "region": {
+        "value": "New South Wales",
+        "span": [
+          44,
+          59
+        ]
+      },
+      "city": {
+        "value": "Sydney",
+        "span": [
+          60,
+          67
+        ]
+      },
+      "latitude": {
+        "value": "None",
+        "span": []
+      },
+      "longitude": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "15 March",
+        "span": [
+          18,
+          25
+        ]
+      },
+      "endTime": {
+        "value": "20 March",
+        "span": [
+          26,
+          33
+        ]
+      },
+      "duration": {
+        "value": "300 days",
+        "span": [
+          135,
+          143
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "10 October",
+        "span": [
+          114,
+          121
+        ]
+      },
+      "endTime": {
+        "value": "20 October",
+        "span": [
+          122,
+          129
+        ]
+      },
+      "duration": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": [0, 5]}, "cropVariety": {"value": "winter wheat", "span": [6, 16]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay loam", "span": [17, 24]}, "soilReferenceGroup": {"value": "clay loam", "span": [43, 50]}, "soilDepth": {"value": "50 cm", "span": [52, 59]}, "soilBulkDensity": {"value": "1.2 g/cm^3", "span": [61, 74]}, "soilPH": {"value": "6.5", "span": [76, 81]}, "soilOrganicCarbon": {"value": "30 g/kg", "span": [83, 95]}, "soilAvailableNitrogen": {"value": "90 kg/ha", "span": [98, 113]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Australia", "span": [34, 43]}, "region": {"value": "New South Wales", "span": [44, 59]}, "city": {"value": "Sydney", "span": [60, 67]}, "latitude": {"value": "None", "span": []}, "longitude": {"value": "None", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "15 March", "span": [18, 25]}, "endTime": {"value": "20 March", "span": [26, 33]}, "duration": {"value": "300 days", "span": [135, 143]}}, {"startTime": {"value": "10 October", "span": [114, 121]}, "endTime": {"value": "20 October", "span": [122, 129]}, "duration": {"value": "None", "span": []}}]
+Gold: []
+

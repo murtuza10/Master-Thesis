@@ -1,0 +1,155 @@
+=== Comparison for Item 24 ===
+Timestamp: 20250723_134121
+
+=== Original Text ===
+The backbone of the investigation was formed by six eddy - covariance stations ( EC ) which measured fluxes of water , energy and carbon dioxide between the land surface and the atmosphere at half hourly resolution . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay loam soil",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.25 Mg/m3",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.2",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "120 kg/ha",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2.1 %",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "30 cm",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "region": {
+        "value": "each region",
+        "span": []
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "48.7° N",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "9.0° E",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2009",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "2018",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "nine cropping seasons",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "nine cropping seasons",
+        "span": [
+          67,
+          88
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "2009",
+        "span": [
+          94,
+          98
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2018",
+        "span": [
+          102,
+          106
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay loam soil", "span": []}}, {"soilBulkDensity": {"value": "1.25 Mg/m3", "span": []}}, {"soilPH": {"value": "6.2", "span": []}}, {"soilAvailableNitrogen": {"value": "120 kg/ha", "span": []}}, {"soilOrganicCarbon": {"value": "2.1 %", "span": []}}, {"soilDepth": {"value": "30 cm", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"region": {"value": "each region", "span": []}}, {"country": {"value": "Germany", "span": []}}, {"latitude": {"value": "48.7° N", "span": []}}, {"longitude": {"value": "9.0° E", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2009", "span": []}}, {"endTime": {"value": "2018", "span": []}}, {"duration": {"value": "nine cropping seasons", "span": []}}]
+Gold: [{"duration": {"value": "nine cropping seasons", "span": [67, 88]}}, {"startTime": {"value": "2009", "span": [94, 98]}}, {"endTime": {"value": "2018", "span": [102, 106]}}]
+

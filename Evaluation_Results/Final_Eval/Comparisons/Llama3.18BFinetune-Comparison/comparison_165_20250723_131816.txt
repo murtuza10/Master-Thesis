@@ -1,0 +1,103 @@
+=== Comparison for Item 165 ===
+Timestamp: 20250723_131816
+
+=== Original Text ===
+The a sum of Cover_percent can be greater than 100 due to rounding . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "alfalfa",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "1.6 g cm-3",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "7.1",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "13.8 g kg-1",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "19.6 g kg-1",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "latitude": {
+        "value": "40.73 °N",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "-120.73 °W",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2.5 years",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}, {"cropSpecies": {"value": "maize", "span": []}}, {"cropSpecies": {"value": "alfalfa", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilBulkDensity": {"value": "1.6 g cm-3", "span": []}}, {"soilPH": {"value": "7.1", "span": []}}, {"soilOrganicCarbon": {"value": "13.8 g kg-1", "span": []}}, {"soilAvailableNitrogen": {"value": "19.6 g kg-1", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"latitude": {"value": "40.73 °N", "span": []}}, {"longitude": {"value": "-120.73 °W", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "2.5 years", "span": []}}]
+Gold: []
+

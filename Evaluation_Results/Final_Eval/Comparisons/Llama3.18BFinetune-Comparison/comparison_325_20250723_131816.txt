@@ -1,0 +1,196 @@
+=== Comparison for Item 325 ===
+Timestamp: 20250723_131816
+
+=== Original Text ===
+For more detailed information on the ingredients , the variations in trap designs between each monitoring group see the methods section in respective paper this data set relates on . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "winter wheat",
+        "span": [
+          123,
+          136
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": [
+          137,
+          142
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "soybean",
+        "span": [
+          143,
+          151
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "clay-loam",
+        "span": [
+          162,
+          172
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "local soil ( field soil )",
+        "span": [
+          173,
+          191
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "15 cm",
+        "span": [
+          192,
+          198
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "1.2 g / cm 3",
+        "span": [
+          199,
+          213
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "6.5",
+        "span": [
+          214,
+          216
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "2 %",
+        "span": [
+          217,
+          222
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "150 ppm",
+        "span": [
+          223,
+          231
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "USA",
+        "span": [
+          246,
+          248
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Illinois",
+        "span": [
+          249,
+          257
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "40.5 N",
+        "span": [
+          258,
+          267
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "90.2 W",
+        "span": [
+          268,
+          276
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "8:00 am",
+        "span": [
+          277,
+          285
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "8:00 am + 72 hours",
+        "span": [
+          286,
+          299
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "72 hours",
+        "span": [
+          300,
+          308
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "winter wheat", "span": [123, 136]}}, {"cropSpecies": {"value": "maize", "span": [137, 142]}}, {"cropSpecies": {"value": "soybean", "span": [143, 151]}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "clay-loam", "span": [162, 172]}}, {"soilReferenceGroup": {"value": "local soil ( field soil )", "span": [173, 191]}}, {"soilDepth": {"value": "15 cm", "span": [192, 198]}}, {"soilBulkDensity": {"value": "1.2 g / cm 3", "span": [199, 213]}}, {"soilPH": {"value": "6.5", "span": [214, 216]}}, {"soilOrganicCarbon": {"value": "2 %", "span": [217, 222]}}, {"soilAvailableNitrogen": {"value": "150 ppm", "span": [223, 231]}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "USA", "span": [246, 248]}}, {"region": {"value": "Illinois", "span": [249, 257]}}, {"latitude": {"value": "40.5 N", "span": [258, 267]}}, {"longitude": {"value": "90.2 W", "span": [268, 276]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "8:00 am", "span": [277, 285]}}, {"endTime": {"value": "8:00 am + 72 hours", "span": [286, 299]}}, {"duration": {"value": "72 hours", "span": [300, 308]}}]
+Gold: []
+

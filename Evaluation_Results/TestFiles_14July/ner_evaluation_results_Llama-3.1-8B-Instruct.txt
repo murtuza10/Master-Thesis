@@ -1,0 +1,48 @@
+03b52930-0210-4bfc-a4ac-75f7544ce7a5:
+
+                   precision    recall  f1-score   support
+
+             city       0.00      0.00      0.00         3
+      cropSpecies       0.00      0.00      0.00        23
+      cropVariety       0.00      0.00      0.00         5
+         duration       0.00      0.00      0.00         2
+          endTime       0.00      0.00      0.00         4
+         latitude       0.00      0.00      0.00         1
+        longitude       0.00      0.00      0.00         1
+        soilDepth       0.00      0.00      0.00         4
+soilOrganicCarbon       0.00      0.00      0.00         1
+      soilTexture       0.00      0.00      0.00         4
+        startTime       0.00      0.00      0.00         4
+
+        micro avg       0.00      0.00      0.00        52
+        macro avg       0.00      0.00      0.00        52
+     weighted avg       0.00      0.00      0.00        52
+
+Accuracy: 0.8722084367245657
+
+101378:
+
+{'overall_precision': np.float64(0.0), 'overall_recall': np.float64(0.0), 'overall_f1': np.float64(0.0), 'overall_accuracy': 1.0}
+Accuracy: 1.0
+
+
+📊 Overall Performance:
+                   precision    recall  f1-score   support
+
+             city       0.00      0.00      0.00         3
+      cropSpecies       0.00      0.00      0.00        23
+      cropVariety       0.00      0.00      0.00         5
+         duration       0.00      0.00      0.00         2
+          endTime       0.00      0.00      0.00         4
+         latitude       0.00      0.00      0.00         1
+        longitude       0.00      0.00      0.00         1
+        soilDepth       0.00      0.00      0.00         4
+soilOrganicCarbon       0.00      0.00      0.00         1
+      soilTexture       0.00      0.00      0.00         4
+        startTime       0.00      0.00      0.00         4
+
+        micro avg       0.00      0.00      0.00        52
+        macro avg       0.00      0.00      0.00        52
+     weighted avg       0.00      0.00      0.00        52
+
+Overall Accuracy: 0.9150865622423743

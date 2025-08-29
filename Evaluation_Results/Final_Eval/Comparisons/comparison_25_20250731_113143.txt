@@ -1,0 +1,141 @@
+=== Comparison for Item 25 ===
+Timestamp: 20250731_113143
+
+=== Original Text ===
+Title : 
+ Three - year pesticide monitoring in ditches of the apple orchard region ' Altes Land ' 
+
+ Abstract : 
+ The data presented in this file are related to the research article ‘ Süß A ,   Bischoff G , Mueller A , Buhr L ( 2006 ) Chemical and biological monitoring of the load of plant protection products and of zoocoenoses in ditches of the orchard region ‘ Altes Land ’ . Nachrichtenblatt des Deutschen Pflanzenschutzdienstes 58:28 - 42 ’ which is only available in German language . The pesticide data presented here were acquired in four ditches in Lower Saxony , Germany ( three ditches located in apple plantations , one ditch located in grassland ) between 2001 and 2003 . Two different monitoring strategies have been applied ; event - driven sampling after pesticide applications and weekly integrated sampling using automatic water samplers . A total of 70 active substances have been monitored while farmers applied 25 active substances . LC - MS / MS ( PE Sciex API 2000 ) , GC - MS ( Finnigan GCQ ) , GC coupled with electron capture detector ( ECD ) and inductively coupled plasma optical emission spectrometry ( ICP - OES ) were used for identification and quantification of the target substances .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilAvailableNitrogen": {
+        "value": "nitrogen content",
+        "span": [
+          768,
+          784
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "ammonium - N",
+        "span": [
+          787,
+          799
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "nitrate - N",
+        "span": [
+          802,
+          813
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "bulk density",
+        "span": [
+          816,
+          828
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          160,
+          167
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          375,
+          382
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "three years",
+        "span": [
+          312,
+          323
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "2011/2012",
+        "span": [
+          326,
+          335
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2014/2015",
+        "span": [
+          338,
+          347
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "2007",
+        "span": [
+          484,
+          488
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2016",
+        "span": [
+          491,
+          495
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Soil
+Predictions: []
+Gold: [{"soilAvailableNitrogen": {"value": "nitrogen content", "span": [768, 784]}}, {"soilAvailableNitrogen": {"value": "ammonium - N", "span": [787, 799]}}, {"soilAvailableNitrogen": {"value": "nitrate - N", "span": [802, 813]}}, {"soilBulkDensity": {"value": "bulk density", "span": [816, 828]}}]
+
+Category: Location
+Predictions: []
+Gold: [{"country": {"value": "Germany", "span": [160, 167]}}, {"country": {"value": "Germany", "span": [375, 382]}}]
+
+Category: Time Statement
+Predictions: []
+Gold: [{"duration": {"value": "three years", "span": [312, 323]}}, {"startTime": {"value": "2011/2012", "span": [326, 335]}}, {"endTime": {"value": "2014/2015", "span": [338, 347]}}, {"startTime": {"value": "2007", "span": [484, 488]}}, {"endTime": {"value": "2016", "span": [491, 495]}}]
+

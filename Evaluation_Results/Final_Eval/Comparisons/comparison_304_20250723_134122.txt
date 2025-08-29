@@ -1,0 +1,74 @@
+=== Comparison for Item 304 ===
+Timestamp: 20250723_134122
+
+=== Original Text ===
+Nachrichtenblatt des Deutschen Pflanzenschutzdienstes 58:28 - 42 ’ which is only available in German language . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "apple",
+        "span": [
+          62,
+          67
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [
+    {
+      "region": {
+        "value": "Altes Land",
+        "span": [
+          85,
+          95
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Altes Land",
+        "span": [
+          365,
+          375
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "Three - year",
+        "span": [
+          10,
+          22
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropSpecies": {"value": "apple", "span": [62, 67]}}]
+
+Category: Location
+Predictions: []
+Gold: [{"region": {"value": "Altes Land", "span": [85, 95]}}, {"region": {"value": "Altes Land", "span": [365, 375]}}]
+
+Category: Time Statement
+Predictions: []
+Gold: [{"duration": {"value": "Three - year", "span": [10, 22]}}]
+

@@ -1,0 +1,115 @@
+=== Comparison for Item 71 ===
+Timestamp: 20250723_134123
+
+=== Original Text ===
+This data set contains information on the soil cultivation measures that were carried out each year . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "None",
+        "span": []
+      },
+      "soilReferenceGroup": {
+        "value": "None",
+        "span": []
+      },
+      "soilDepth": {
+        "value": "100 cm",
+        "span": []
+      },
+      "soilBulkDensity": {
+        "value": "1.23 g / cm3",
+        "span": []
+      },
+      "soilPH": {
+        "value": "8.3",
+        "span": []
+      },
+      "soilOrganicCarbon": {
+        "value": "None",
+        "span": []
+      },
+      "soilAvailableNitrogen": {
+        "value": "22.5 kg / ha",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "the country",
+        "span": []
+      },
+      "region": {
+        "value": "the southeastern part of the country",
+        "span": []
+      },
+      "city": {
+        "value": "Xining",
+        "span": []
+      },
+      "latitude": {
+        "value": "None",
+        "span": []
+      },
+      "longitude": {
+        "value": "None",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "June 15",
+        "span": []
+      },
+      "endTime": {
+        "value": "August 31",
+        "span": []
+      },
+      "duration": {
+        "value": "30 days",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "wheat", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "None", "span": []}, "soilReferenceGroup": {"value": "None", "span": []}, "soilDepth": {"value": "100 cm", "span": []}, "soilBulkDensity": {"value": "1.23 g / cm3", "span": []}, "soilPH": {"value": "8.3", "span": []}, "soilOrganicCarbon": {"value": "None", "span": []}, "soilAvailableNitrogen": {"value": "22.5 kg / ha", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "the country", "span": []}, "region": {"value": "the southeastern part of the country", "span": []}, "city": {"value": "Xining", "span": []}, "latitude": {"value": "None", "span": []}, "longitude": {"value": "None", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "June 15", "span": []}, "endTime": {"value": "August 31", "span": []}, "duration": {"value": "30 days", "span": []}}]
+Gold: []
+

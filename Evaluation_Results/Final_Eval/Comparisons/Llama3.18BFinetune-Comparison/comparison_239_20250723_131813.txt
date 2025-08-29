@@ -1,0 +1,188 @@
+=== Comparison for Item 239 ===
+Timestamp: 20250723_131813
+
+=== Original Text ===
+We compared untreated spider mite hotspots with N. californicus treated hotspots and showed that a single release of predatory mites could result in a high level of control when spider mite infestation density was initially high . 
+
+=== Predictions ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "spider mite",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "winter wheat",
+        "span": []
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "californicus",
+        "span": []
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "region of Pernambuco",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "0 - 20 cm",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "20 - 40 cm",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "5.7",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "5.9",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "0.55%",
+        "span": []
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "22.8 mg kg-1",
+        "span": []
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Brazil",
+        "span": []
+      }
+    },
+    {
+      "region": {
+        "value": "Pernambuco",
+        "span": []
+      }
+    },
+    {
+      "city": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "latitude": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "longitude": {
+        "value": "",
+        "span": []
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "spring season",
+        "span": []
+      }
+    },
+    {
+      "endTime": {
+        "value": "fall season",
+        "span": []
+      }
+    },
+    {
+      "duration": {
+        "value": "3 years",
+        "span": []
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2020",
+        "span": [
+          3,
+          7
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2021",
+        "span": [
+          12,
+          16
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: [{"cropSpecies": {"value": "spider mite", "span": []}}, {"cropSpecies": {"value": "wheat", "span": []}}, {"cropSpecies": {"value": "winter wheat", "span": []}}, {"cropSpecies": {"value": "californicus", "span": []}}]
+Gold: []
+
+Category: Soil
+Predictions: [{"soilTexture": {"value": "", "span": []}}, {"soilReferenceGroup": {"value": "region of Pernambuco", "span": []}}, {"soilDepth": {"value": "0 - 20 cm", "span": []}}, {"soilDepth": {"value": "20 - 40 cm", "span": []}}, {"soilBulkDensity": {"value": "", "span": []}}, {"soilPH": {"value": "5.7", "span": []}}, {"soilPH": {"value": "5.9", "span": []}}, {"soilOrganicCarbon": {"value": "0.55%", "span": []}}, {"soilAvailableNitrogen": {"value": "22.8 mg kg-1", "span": []}}]
+Gold: []
+
+Category: Location
+Predictions: [{"country": {"value": "Brazil", "span": []}}, {"region": {"value": "Pernambuco", "span": []}}, {"city": {"value": "", "span": []}}, {"latitude": {"value": "", "span": []}}, {"longitude": {"value": "", "span": []}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"startTime": {"value": "spring season", "span": []}}, {"endTime": {"value": "fall season", "span": []}}, {"duration": {"value": "3 years", "span": []}}]
+Gold: [{"startTime": {"value": "2020", "span": [3, 7]}}, {"endTime": {"value": "2021", "span": [12, 16]}}]
+

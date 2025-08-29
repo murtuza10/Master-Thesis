@@ -1,0 +1,84 @@
+=== Comparison for Item 281 ===
+Timestamp: 20250723_134356
+
+=== Original Text ===
+After shaking horizontally for 24 h at 150 motions min-1 , the hydroxides were centrifuged for 5 min at 929 x G. The supernatant was filtrated and the adsorbed P concentration determined Desorption experiments were conducted with CaCl2 , CaSO4 , humic acid , and citric acid , adjusted to pH 6 . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sand",
+        "span": [
+          19,
+          23
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          247,
+          254
+        ]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "48 h",
+        "span": [
+          29,
+          33
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "24 h",
+        "span": [
+          172,
+          176
+        ]
+      }
+    }
+  ]
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "sand",
+        "span": [
+          18,
+          22
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilTexture": {"value": "sand", "span": [19, 23]}}]
+Gold: [{"soilTexture": {"value": "sand", "span": [18, 22]}}]
+
+Category: Location
+Predictions: [{"country": {"value": "Germany", "span": [247, 254]}}]
+Gold: []
+
+Category: Time Statement
+Predictions: [{"duration": {"value": "48 h", "span": [29, 33]}}, {"duration": {"value": "24 h", "span": [172, 176]}}]
+Gold: []
+

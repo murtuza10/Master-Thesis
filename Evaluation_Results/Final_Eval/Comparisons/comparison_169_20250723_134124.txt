@@ -1,0 +1,71 @@
+=== Comparison for Item 169 ===
+Timestamp: 20250723_134124
+
+=== Original Text ===
+
+
+ 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Wheat",
+        "span": [
+          10,
+          15
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          234,
+          239
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2019",
+        "span": [
+          176,
+          180
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2020",
+        "span": [
+          185,
+          189
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Crops
+Predictions: []
+Gold: [{"cropSpecies": {"value": "Wheat", "span": [10, 15]}}, {"cropSpecies": {"value": "wheat", "span": [234, 239]}}]
+
+Category: Time Statement
+Predictions: []
+Gold: [{"startTime": {"value": "2019", "span": [176, 180]}}, {"endTime": {"value": "2020", "span": [185, 189]}}]
+

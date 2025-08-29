@@ -1,0 +1,32 @@
+=== Comparison for Item 90 ===
+Timestamp: 20250816_095523
+
+=== Original Text ===
+The data set contains all raw data of the measured residue concentrations within each sample .
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilPH": {
+        "value": "pH 6",
+        "span": [
+          55,
+          58
+        ]
+      }
+    }
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{}
+
+=== Differences ===
+Category: Soil
+Predictions: [{"soilPH": {"value": "pH 6", "span": [55, 58]}}]
+Gold: []
+

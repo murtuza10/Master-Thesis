@@ -1,0 +1,37 @@
+=== Comparison for Item 37 ===
+Timestamp: 20250723_131814
+
+=== Original Text ===
+) is located in the transition zone between the more maritime - affected Northern German Plain and the continental climate of the European mainland . 
+
+=== Predictions ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+
+=== Gold Standard ===
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {
+      "endTime": {
+        "value": "2022",
+        "span": [
+          31,
+          35
+        ]
+      }
+    }
+  ]
+}
+
+=== Differences ===
+Category: Time Statement
+Predictions: []
+Gold: [{"endTime": {"value": "2022", "span": [31, 35]}}]
+
