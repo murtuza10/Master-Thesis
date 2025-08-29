@@ -1,4 +1,5 @@
 import os
+from pyexpat.errors import messages
 import sys
 import json
 import torch
@@ -7,6 +8,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from transformers.utils.quantization_config import QuantizationMethod
 from transformers import AutoConfig
 import bitsandbytes as bnb
+from peft import PeftModel
 
 sys.path.append(os.path.abspath('..'))
 
@@ -18,12 +20,12 @@ from Evaluation_Files.calculate_metrics_multiple import evaluate_all
 def load_model(model_path):
     print(f"Loading model from: {model_path}")
     
-    bnb_config = BitsAndBytesConfig(
-    load_in_4bit=True,
-    bnb_4bit_use_double_quant=True,
-    bnb_4bit_quant_type="nf4",  # Or "fp4"
-    bnb_4bit_compute_dtype="float16",  # Use float16 or bfloat16 depending on hardware
-)
+#     bnb_config = BitsAndBytesConfig(
+#     load_in_4bit=True,
+#     bnb_4bit_use_double_quant=True,
+#     bnb_4bit_quant_type="nf4",  # Or "fp4"
+#     bnb_4bit_compute_dtype="float16",  # Use float16 or bfloat16 depending on hardware
+# )
 
     
     # Load tokenizer first
@@ -37,8 +39,32 @@ def load_model(model_path):
     model = AutoModelForCausalLM.from_pretrained(
     model_path,
     device_map="auto",  # Will place model on the correct GPU/CPU automatically
-    quantization_config= bnb_config
-)
+).eval()
+    
+#     # 2. Add new tokens (if any were added during fine-tuning)
+    new_tokens = [ "</tool_call>", "<tool_call>", "<|box_end|>", "<|box_start|>", "<|endoftext|>", "<|file_sep|>" ,
+  "<|fim_middle|>" ,
+  "<|fim_pad|>",
+  "<|fim_prefix|>",
+  "<|fim_suffix|>",
+  "<|im_end|>",
+  "<|im_start|>",
+  "<|image_pad|>",
+  "<|object_ref_end|>",
+  "<|object_ref_start|>",
+  "<|quad_end|>",
+  "<|quad_start|>",
+  "<|repo_name|>",
+  "<|video_pad|>",
+  "<|vision_end|>",
+  "<|vision_pad|>",
+  "<|vision_start|>" ]  
+    tokenizer.add_tokens(new_tokens)
+    model.resize_token_embeddings(len(tokenizer))  # Expands embedding layer
+
+    adapter_path = "/home/s27mhusa_hpc/Master-Thesis/Fine-tune-LLM-Document/autotrain-Qwen2-5-14B-Document-7-Aug"
+    model = PeftModel.from_pretrained(model, adapter_path)
+
     return model, tokenizer
 
 def perform_ner(model, tokenizer, prompt_text, max_length):
@@ -54,25 +80,28 @@ def perform_ner(model, tokenizer, prompt_text, max_length):
     Returns:
         str: The model's decoded response.
     """
-    # Tokenize the prompt
-    inputs = tokenizer(prompt_text, return_tensors="pt", truncation=True,
-                       max_length=max_length, padding=True)
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    inputs = {k: v.to(device) for k, v in inputs.items()}
 
-    # Generate output from the model
-    with torch.no_grad():
-        outputs = model.generate(
-            **inputs,
-            max_new_tokens=1500,
-            temperature=0.7,
-            top_p=0.9,
-        )
+    messages = [
+    {"role": "user", "content": prompt_text}
+]
+    # Tokenize the prompt
+    input_ids = tokenizer.apply_chat_template(
+    messages,
+    tokenize=True,
+    add_generation_prompt=True,
+    return_tensors="pt",
+).to(device)
+    attention_mask = torch.ones_like(input_ids)
+
+    output_ids = model.generate(input_ids=input_ids,
+    attention_mask=attention_mask,max_new_tokens=1024)
+
+
 
     # Decode and return
-    response = tokenizer.decode(outputs[0], skip_special_tokens=True)
-
+    response = tokenizer.decode(output_ids[0][input_ids.shape[1]:], skip_special_tokens=True)
     # Optional: postprocess to extract just the JSON part
     # json_start = response.find('{')
     # json_end = response.rfind('}') + 1

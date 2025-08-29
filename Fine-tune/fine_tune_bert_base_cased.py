@@ -134,7 +134,7 @@ if __name__ == "__main__":
         direction="maximize",
         hp_space=optuna_hp_space,
         backend="optuna",
-        n_trials=5
+        n_trials=10
     )
 
     print("Best trial:", best_trial)

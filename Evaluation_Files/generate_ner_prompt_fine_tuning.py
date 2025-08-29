@@ -43,7 +43,7 @@ Focus on identifying the following categories and their subtypes:
 - Do **not infer** — extract **only** what is **explicitly** stated in the text.
 - If no entity is found for a category, return an empty list.
 - Use the keys exactly as listed (e.g., `"soilPH"`, `"latitude"`).
-
+### Text ###
     {text}
     """
     

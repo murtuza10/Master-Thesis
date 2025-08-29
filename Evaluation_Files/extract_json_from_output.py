@@ -3,19 +3,11 @@ import regex
 import json
 import os
 
-def extract_second_json_block_from_directory(input_dir, output_dir,model_name):
-    """
-    Extracts the second JSON block from each .txt file in the input directory
-    and saves it as a pretty-printed JSON file in the output directory.
-    
-    Args:
-        input_dir (str): Path to the input directory containing .txt files.
-        output_dir (str): Path to the output directory to save extracted JSON.
-    """
-    # Ensure output directory exists
+def extract_json_block_from_directory(input_dir, output_dir, model_name, start):
+    import os, json
+
     os.makedirs(output_dir, exist_ok=True)
 
-    # Loop through all .txt files in the input directory
     for filename in os.listdir(input_dir):
         if filename.endswith(".txt"):
             input_file = os.path.join(input_dir, filename)
@@ -25,39 +17,43 @@ def extract_second_json_block_from_directory(input_dir, output_dir,model_name):
                 if os.path.exists(output_file):
                     print(f"Skipping {output_file} (already processed).")
                     continue
+
                 with open(input_file, "r", encoding="utf-8") as f:
                     content = f.read()
 
-                # Extract all JSON blocks
-                pattern = r'\{(?:[^{}]|(?R))*\}'
-                matches = regex.findall(pattern, content)
-                # for i,match in enumerate(matches):
-                #     print(f"Match {i}: {match}")
                 if model_name == "DeepSeekV3":
-                    # Strip code block markers
                     data = json.loads(content)  
                     content = data['choices'][0]['message']['content']
-                    clean_json_str = content.strip('`').replace("json\n", "", 1)
-                    # Parse JSON
-                    parsed_json = json.loads(clean_json_str)
-                    with open(output_file, "w", encoding="utf-8") as out:
-                        json.dump(parsed_json, out, indent=2)
-                else:
-                    for i in range(1, len(matches)):
-                        try:
-                            data = json.loads(matches[i])
-                            with open(output_file, "w", encoding="utf-8") as out:
-                                json.dump(data, out, indent=2)
-                            print(f"✅ Processed: {filename} (using block {i + 1})")
-                            break  # Stop after the first successful parse
-                        except json.JSONDecodeError as je:
-                            print(f"⚠️ Block {i + 1} in {filename} is not valid JSON, trying next...")
 
-                    else:
-                        print(f"⚠️ No valid JSON block found in {filename} after the first one.")
+                # --- Extract JSON block between ```json and ``` ---
+                cleaned_content = content.strip()
+                
+                # Find the start of JSON block
+                json_start = cleaned_content.find("```json")
+                if json_start == -1:
+                    print(f"⚠️  No ```json found in {filename}")
+                    continue
+                
+                # Move past the ```json marker
+                json_start += 7  # len("```json")
+                
+                # Find the closing ``` after the json block
+                json_end = cleaned_content.find("```", json_start)
+                if json_end == -1:
+                    print(f"⚠️  No closing ``` found in {filename}")
+                    continue
+                
+                # Extract the JSON block
+                json_block = cleaned_content[json_start:json_end].strip()
+                
+                # Save the extracted JSON block
+                with open(output_file, "w", encoding="utf-8") as out:
+                    out.write(json_block)
+
+                print(f"✅ Processed: {filename}")
+
             except Exception as e:
                 print(f"❌ Error processing {filename}: {e}")
-
 # Example usage:
 # extract_second_json_block_from_directory("/path/to/input", "/path/to/output")
 

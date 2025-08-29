@@ -69,25 +69,22 @@ def perform_ner(model, tokenizer, text, max_length):
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": user_prompt}
     ]
-
-    # Apply chat template to format prompt correctly for the model
-    prompt = tokenizer.apply_chat_template(messages,tokenize=False, add_generation_prompt=True)
-
-    print(prompt)
-    # Tokenize the formatted prompt
-    inputs = tokenizer(prompt, return_tensors="pt", truncation=True, max_length=max_length, padding=True)
-
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    inputs = {k: v.to(device) for k, v in inputs.items()}
 
-    # Generate response
-    outputs = model.generate(
-        **inputs,
-        max_new_tokens=1500,
+    # Tokenize the prompt
+    input_ids = tokenizer.apply_chat_template(
+    messages,
+    tokenize=True,
+    add_generation_prompt=True,
+    return_tensors="pt",
+).to(device)
+    attention_mask = torch.ones_like(input_ids)
+
+    output_ids = model.generate(input_ids=input_ids, attention_mask=attention_mask, max_new_tokens=1500,
         temperature=0.7,
-        top_p=0.9,
-    )
-    response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+        top_p=0.9,)
+
+    response = tokenizer.decode(output_ids[0][input_ids.shape[1]:], skip_special_tokens=True)
     return response
 
 
@@ -137,6 +134,7 @@ def main():
         args.input_dir,
         args.output_dir,
         args.output_dir_json,
+        0,
         xmi_dir)
     print("NER processing complete.")
 

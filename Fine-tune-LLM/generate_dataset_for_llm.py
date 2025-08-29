@@ -76,8 +76,8 @@ def process_file(input_file, output_file):
 
 def main():
     
-    input_file = "/home/s27mhusa_hpc/Master-Thesis/FinalDatasets-21July/Test_ner_dataset_sentence_text_entity.json"
-    output_file = "/home/s27mhusa_hpc/Master-Thesis/FinalDatasets-21July/Test_ner_dataset_sentence_input_output.jsonl"
+    input_file = "/home/s27mhusa_hpc/Master-Thesis/Dataset-25-July-Document-Level/Combined_ner_dataset_document_text_entity.json"
+    output_file = "/home/s27mhusa_hpc/Master-Thesis/Dataset-25-July-Document-Level/Combined_ner_dataset_document_input_output.jsonl"
     process_file(input_file, output_file)
 
 if __name__ == "__main__":

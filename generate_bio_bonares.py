@@ -5,9 +5,9 @@ sys.path.append(os.path.abspath(os.path.dirname(__file__)))  # ensures current d
 sys.path.append("/home/s27mhusa_hpc/Master-Thesis/Evaluation_Files")
 from generate_bio_from_cas import generate_bio_annotations_from_cas
 
-XMI_DIR = "/home/s27mhusa_hpc/Master-Thesis/XMI_Files"
-OUTPUT_DIR_LABELS = "/home/s27mhusa_hpc/Master-Thesis/Bonares_BIO_labels"
-OUTPUT_DIR_TOKENS = "/home/s27mhusa_hpc/Master-Thesis/Bonares_BIO_tokens"
+XMI_DIR = "/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/Train_XMI_Files"
+OUTPUT_DIR_LABELS = "/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/Train_BIO_labels"
+OUTPUT_DIR_TOKENS = "/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/Train_BIO_tokens"
 if __name__ == "__main__":
     for filename in os.listdir(XMI_DIR):
         xmi_path = os.path.join(XMI_DIR, filename)

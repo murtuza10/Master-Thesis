@@ -14,7 +14,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 sys.path.append(os.path.abspath('..'))
 
 from Evaluation_Files.generate_ner_prompt import generate_ner_prompts
-from Evaluation_Files.calculate_metrics_multiple_embeddings_excel import evaluate_all
+from Evaluation_Files.calculate_metrics_multiple_excel_partial_exact  import evaluate_all
 
 
 

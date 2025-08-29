@@ -15,14 +15,15 @@ def convert_json_to_bio(text, annotation_json):
     for category, entries in annotation_json.items():
         for entry in entries:
             for sublabel, data in entry.items():
-                value = data.get("value", "")
-                span = data.get("span", [])
-                if value:
-                    entity_spans.append({
-                        "label": sublabel,
-                        "value": value,
-                        "span": span
-                    })
+                if isinstance(data, dict):
+                    value = data.get("value", "")
+                    span = data.get("span", [])
+                    if value:
+                        entity_spans.append({
+                            "label": sublabel,
+                            "value": value,
+                            "span": span
+                        })
 
     correct_spans = 0
     fallbacks_used = 0

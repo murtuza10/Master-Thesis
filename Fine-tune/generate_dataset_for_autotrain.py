@@ -20,8 +20,8 @@ def convert_jsonl_to_chat_format(input_path, output_path):
 
 def main():
     
-    input_file = "/home/s27mhusa_hpc/Master-Thesis/Dataset-25-July-Document-Level/Combined_ner_dataset_document_input_output.jsonl"
-    output_file = "/home/s27mhusa_hpc/Master-Thesis/Dataset-25-July-Document-Level/Combined_ner_dataset_document_chat.jsonl"
+    input_file = "/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/Train_ner_dataset_sentence_filtered_input_output.jsonl"
+    output_file = "/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/Train_ner_dataset_sentence_chat.jsonl"
     convert_jsonl_to_chat_format(input_file, output_file)
 
 if __name__ == "__main__":

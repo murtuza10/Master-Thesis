@@ -18,7 +18,7 @@ def perform_ner(text,max_length):
     response = requests.post(
     url="https://openrouter.ai/api/v1/chat/completions",
     headers={
-        "Authorization": "Bearer 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",
+        "Authorization": "Bearer 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",
         "Content-Type": "application/json"
     },
     data=json.dumps({
@@ -94,6 +94,7 @@ def main():
         args.input_dir,
         args.output_dir,
         args.output_dir_json,
+        0,
         xmi_dir)
     print("NER processing complete.")
 

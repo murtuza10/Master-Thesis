@@ -20,6 +20,6 @@ def convert_jsonl_to_autotrain_format(input_file, output_file):
 
 
 if __name__ == "__main__":
-    input_file = "/home/s27mhusa_hpc/Master-Thesis/Dataset-25-July-Document-Level/Test_ner_dataset_document_chat.jsonl"
-    output_file = "/home/s27mhusa_hpc/Master-Thesis/Dataset-25-July-Document-Level/Test_ner_dataset_document_chat_final.jsonl"
+    input_file = "/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/Test_ner_dataset_sentence_chat.jsonl"
+    output_file = "/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/Test_ner_dataset_sentence_chat_final.jsonl"
     convert_jsonl_to_autotrain_format(input_file, output_file)

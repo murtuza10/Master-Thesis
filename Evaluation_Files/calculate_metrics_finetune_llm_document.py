@@ -67,29 +67,17 @@ def save_comparison_files(pred_ann: Dict[str, Any], gold_ann: Dict[str, Any],
 
     print(f"Saved comparison files to:\n- {json_path}\n- {txt_path}")
 
+
+
 def normalize_pred_entities(pred_entry: Dict) -> Dict:
     """
     Normalize prediction entities to match the gold standard format while preserving structure.
-    
+
     Args:
-        pred_entry: Prediction entry in format:
-            {
-                "id": 1,
-                "entities": {
-                    "crops": [
-                        {"cropSpecies": {"value": "wheat", "span": [11, 16]}},
-                        ...
-                    ],
-                    "soil": [
-                        {"soilPH": {"value": "6.5", "span": [30, 33]}},
-                        ...
-                    ],
-                    ...
-                }
-            }
-    
+        pred_entry: Prediction entry in various possible formats.
+
     Returns:
-        Normalized dictionary in format:
+        Normalized dictionary in the standardized format.
             {
                 "Crops": [
                     {"cropSpecies": {"value": "wheat", "span": [11, 16]}},
@@ -111,7 +99,6 @@ def normalize_pred_entities(pred_entry: Dict) -> Dict:
             "Time Statement": []
         }
 
-    raw_entities = pred_entry.get("entities", {})
     result = {
         "Crops": [],
         "Soil": [],
@@ -139,46 +126,88 @@ def normalize_pred_entities(pred_entry: Dict) -> Dict:
         "Time Statement": ["startTime", "endTime", "duration"]
     }
 
-    for raw_cat, entries in raw_entities.items():
-        # Skip if category not in our mapping
-        normalized_cat = category_map.get(raw_cat.lower())
+    # Determine the source of the entity data
+    raw_entities = {}
+    if "entities" in pred_entry and isinstance(pred_entry["entities"], dict):
+        raw_entities = pred_entry["entities"]
+    else:
+        # If no "entities" key, check for top-level category keys
+        raw_entities = pred_entry
+
+    for raw_key, raw_value in raw_entities.items():
+        normalized_cat = category_map.get(raw_key.lower())
+        
+        # If the raw_key is not a category, it might be a sublabel
         if not normalized_cat:
-            continue
-
-        # Skip if entries is not a list
-        if not isinstance(entries, list):
-            continue
-
-        for entry in entries:
-            if not isinstance(entry, dict):
+            for cat, sublabels in valid_sublabels.items():
+                if raw_key in sublabels:
+                    normalized_cat = cat
+                    # Transform the raw_value to the expected list format
+                    if isinstance(raw_value, dict) and "value" in raw_value:
+                        raw_value = [{raw_key: raw_value}]
+                    elif isinstance(raw_value, list):
+                        # The list contains items that need to be wrapped in the sublabel key
+                        temp_list = []
+                        for item in raw_value:
+                            if isinstance(item, dict) and "value" in item:
+                                temp_list.append({raw_key: item})
+                            else:
+                                temp_list.append({raw_key: {"value": str(item), "span": []}})
+                        raw_value = temp_list
+                    elif not isinstance(raw_value, (list, dict)):
+                        raw_value = [{raw_key: {"value": str(raw_value), "span": []}}]
+                    break
+            if not normalized_cat:
                 continue
 
+        # Handle the case where the value is a list of entries (e.g., "crops")
+        if isinstance(raw_value, list):
+            for entry in raw_value:
+                if not isinstance(entry, dict):
+                    continue
+
+                normalized_entry = {}
+                for sublabel, value_info in entry.items():
+                    if sublabel not in valid_sublabels.get(normalized_cat, []):
+                        continue
+
+                    if isinstance(value_info, dict) and "value" in value_info:
+                        normalized_entry[sublabel] = {
+                            "value": str(value_info["value"]),
+                            "span": value_info.get("span", [])
+                        }
+                    else:
+                        normalized_entry[sublabel] = {
+                            "value": str(value_info),
+                            "span": []
+                        }
+                
+                if normalized_entry:
+                    result[normalized_cat].append(normalized_entry)
+
+        # Handle the case where the value is a dictionary of sublabels (e.g., "soil")
+        elif isinstance(raw_value, dict):
             normalized_entry = {}
-            for sublabel, value_info in entry.items():
-                # Skip if sublabel not valid for this category
+            for sublabel, value_info in raw_value.items():
                 if sublabel not in valid_sublabels.get(normalized_cat, []):
                     continue
 
-                # Handle both formats: {"value": ..., "span": ...} and direct value
-                if isinstance(value_info, dict):
-                    if "value" not in value_info:
-                        continue
-                    normalized_value_info = {
+                if isinstance(value_info, dict) and "value" in value_info:
+                    normalized_entry[sublabel] = {
                         "value": str(value_info["value"]),
                         "span": value_info.get("span", [])
                     }
                 else:
-                    normalized_value_info = {
+                    normalized_entry[sublabel] = {
                         "value": str(value_info),
                         "span": []
                     }
-
-                normalized_entry[sublabel] = normalized_value_info
-
+            
             if normalized_entry:
                 result[normalized_cat].append(normalized_entry)
 
     return result
+
 
 def evaluate_predictions_from_json(model_name, text_json_path, pred_json_path, gold_json_path):
     with open(text_json_path, "r", encoding="utf-8") as f:
@@ -214,16 +243,16 @@ def evaluate_predictions_from_json(model_name, text_json_path, pred_json_path, g
     comparison_lines = []
 
     # Output paths
-    output_base = "/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_Eval"
+    output_base = "/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_Eval_FineTune_Document-12August"
     output_path = f"{output_base}/ner_eval_{model_name}.txt"
     stats_output_path = f"{output_base}/Stats/ner_evaluation_stats_{model_name}.txt"
-    comparison_output_path = f"{output_base}/Comparisons/Llama3.1-8B-Instruct-Document/ner_comparison_{model_name}.jsonl"
+    comparison_output_path = f"{output_base}/Comparisons/Qwen2.5-14B-Document/ner_comparison_{model_name}.jsonl"
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     os.makedirs(os.path.dirname(stats_output_path), exist_ok=True)
     os.makedirs(os.path.dirname(comparison_output_path), exist_ok=True)
 
-    output_base = "/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_Eval"
+    output_base = "/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_Eval_FineTune_Document-12August"
     comparison_dir = os.path.join(output_base, "Comparisons")
 
     for item_id in all_ids:
@@ -312,6 +341,6 @@ if __name__ == "__main__":
     evaluate_predictions_from_json(
         model_name=args.model_name,
         text_json_path="/home/s27mhusa_hpc/Master-Thesis/Dataset-25-July-Document-Level/Test_ner_dataset_document_converted.json",
-        pred_json_path="/home/s27mhusa_hpc/Master-Thesis/LLM-Predictions-Document/Test_predictions_Llama3.1-8B-Instruct-Document_extracted.json",
-        gold_json_path="/home/s27mhusa_hpc/Master-Thesis/LLM-Predictions-Document/Test_gold_Llama3.1-8B-Instruct-Document_extracted.json"
+        pred_json_path="/home/s27mhusa_hpc/Master-Thesis/LLM-Predictions-Document-12Aug/Test_predictions_Qwen2.5-14B-Instruct-Document_extracted.json",
+        gold_json_path="/home/s27mhusa_hpc/Master-Thesis/LLM-Predictions-Document-12Aug/Test_gold_Qwen2.5-14B-Instruct-Document_extracted.json"
     )

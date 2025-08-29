@@ -4,8 +4,8 @@ from pathlib import Path
 import shutil
 
 # Define input root and output folder
-input_root = Path("/home/s27mhusa_hpc/Master-Thesis/admin-510084584112192272708/annotation")
-output_dir = Path("/home/s27mhusa_hpc/Master-Thesis/XMI_Files_OpenAgrar")
+input_root = Path("/home/s27mhusa_hpc/Master-Thesis/admin-513190511581933932295/annotation")
+output_dir = Path("/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/XMI_Files_OpenAgrar")
 output_dir.mkdir(parents=True, exist_ok=True)
 
 # Traverse folders in the annotation directory

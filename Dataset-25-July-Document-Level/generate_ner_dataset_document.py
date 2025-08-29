@@ -10,9 +10,9 @@ from pathlib import Path
 # labels_path = Path("/path/to/your/Test_BIO_labels_indexed")
 # output_path = Path("/path/to/your/Test_ner_dataset_document.json")
 
-tokens_path = Path("/home/s27mhusa_hpc/Master-Thesis/Dataset-25-July-Document-Level/Test_BIO_tokens")
-labels_path = Path("/home/s27mhusa_hpc/Master-Thesis/Dataset-25-July-Document-Level/Test_BIO_labels_indexed")
-output_path = Path("/home/s27mhusa_hpc/Master-Thesis/Dataset-25-July-Document-Level/Test_ner_dataset_document.json") # Changed output filename to reflect document-level processing
+tokens_path = Path("/home/s27mhusa_hpc/Master-Thesis/Dataset-25-July-Document-Level/Combined_BIO_tokens")
+labels_path = Path("/home/s27mhusa_hpc/Master-Thesis/Dataset-25-July-Document-Level/Combined_BIO_labels_indexed")
+output_path = Path("/home/s27mhusa_hpc/Master-Thesis/Dataset-25-July-Document-Level/Combined_ner_dataset_document.json") # Changed output filename to reflect document-level processing
 
 all_data = [] # This list will store data for each complete document
 

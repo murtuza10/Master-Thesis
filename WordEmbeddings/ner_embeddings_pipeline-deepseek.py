@@ -14,7 +14,7 @@ import numpy as np
 import requests
 from sentence_transformers import SentenceTransformer
 from Evaluation_Files.generate_ner_prompt import generate_ner_prompts
-from Evaluation_Files.calculate_metrics_multiple_embeddings import evaluate_all
+from Evaluation_Files.calculate_metrics_multiple_excel_partial_exact import evaluate_all
 
 
 
@@ -160,13 +160,16 @@ def main():
     
     
     process_text_files(args.input_dir, args.output_dir, args.max_length, embedder, index, corpus_texts, corpus_entities, top_k=args.top_k)
-    xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/XMI_Files"
+    log_dir = os.environ.get('LOG_DIR')
+
+    xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/Test_XMI_Files"
     evaluate_all(args.model_name,
         args.input_dir,
         args.output_dir,
         args.output_dir_json,
         int(args.top_k),
-        xmi_dir)
+        xmi_dir,
+        log_dir)
     print("NER processing complete.")
     
     

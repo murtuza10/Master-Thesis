@@ -4,7 +4,7 @@ import shutil
 
 # Define input root and output folder
 input_root = Path("/home/s27mhusa_hpc/Master-Thesis/curation")
-output_dir = Path("/home/s27mhusa_hpc/Master-Thesis/XMI_Files_Bonares")
+output_dir = Path("/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/XMI_Files_Bonares")
 output_dir.mkdir(parents=True, exist_ok=True)
 
 for folder in input_root.iterdir():

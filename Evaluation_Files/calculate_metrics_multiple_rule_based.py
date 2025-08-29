@@ -1,10 +1,12 @@
 import os
 import evaluate
 import argparse
+import ast
+
 import sys
 sys.path.append(os.path.abspath(os.path.dirname(__file__)))  # ensures current directory is included
 sys.path.append("/home/s27mhusa_hpc/Master-Thesis/Evaluation_Files")
-from generate_bio_from_cas_timestatement import generate_bio_annotations_from_cas
+from generate_bio_from_cas import generate_bio_annotations_from_cas
 from seqeval.metrics import classification_report
 import spacy
 
@@ -34,9 +36,9 @@ def evaluate_all(rule_based_dir, xmi_dir):
     all_y_true = []
     all_y_pred = []
     results_per_file = []
-    y_true_dir = f"/home/s27mhusa_hpc/Master-Thesis/OpenAgrar_BIO_labels_generic_timestatement"
-    results_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/ner_evaluation_results_rule_based.txt"
-    stats_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Stats/ner_evaluation_stats_rule_based.txt"
+    y_true_dir = f"/home/s27mhusa_hpc/Master-Thesis/Test_BIO_labels"
+    results_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/RuleBased_22August/ner_evaluation_results_rule_based_specific_location.txt"
+    stats_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/RuleBased_22August/Stats/ner_evaluation_stats_rule_based_specific_location.txt"
 
     results_lines = []  # Collect output to write to file later
     stats_lines = []
@@ -45,7 +47,7 @@ def evaluate_all(rule_based_dir, xmi_dir):
     for filename in os.listdir(xmi_dir):
         filename = filename.replace(".xmi", "")
         xmi_path = os.path.join(xmi_dir, f"{filename}.xmi")
-        rule_based_path = os.path.join(rule_based_dir, f"{filename}_inception.xmi")
+        rule_based_path = os.path.join(rule_based_dir, f"{filename}_inception_inception.xmi")
 
         if not os.path.exists(xmi_path):
             msg = f"⚠️ XMI file not found for {filename}"
@@ -58,7 +60,9 @@ def evaluate_all(rule_based_dir, xmi_dir):
             if os.path.exists(y_true_path):
                 # File exists: read and convert to list
                 with open(y_true_path, "r", encoding="utf-8") as f:
-                    y_true = f.read().splitlines()
+                    # y_true = f.read().splitlines()
+                    content = f.read().strip()
+                    y_true = ast.literal_eval(content)
             else:
                 # File doesn't exist: generate and save
                 tokens,y_true = generate_bio_annotations_from_cas(xmi_path)
@@ -139,8 +143,8 @@ def evaluate_all(rule_based_dir, xmi_dir):
 
 if __name__ == "__main__":
     
-    xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/XMI_Files_OpenAgrar"
-    rule_based_dir = "/home/s27mhusa_hpc/Master-Thesis/datasets_annotations"
+    xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/XMI_Files"
+    rule_based_dir = "/home/s27mhusa_hpc/Master-Thesis/Test_Rule_Based_Annotations"
 
     evaluate_all(
         rule_based_dir,

@@ -10,7 +10,7 @@ from generate_bio_from_cas import generate_bio_annotations_from_cas
 from generate_bio_from_json import generate_bio_from_json
 from seqeval.metrics import classification_report
 import spacy
-from extract_json_from_output import extract_second_json_block_from_directory
+from extract_json_from_output import extract_json_block_from_directory
 
 
 def has_named_entities(labels):
@@ -29,7 +29,7 @@ def generate_empty_bio(text_path):
         labels = ["O"] * len(tokens)
     return labels
 
-def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_json, xmi_dir):
+def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_json, start, xmi_dir):
     """
     Evaluate NER predictions across multiple documents with corresponding .xmi files.
 
@@ -38,11 +38,12 @@ def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_js
         input_annot_dir (str): Directory with annotation JSON files.
         xmi_dir (str): Directory with ground truth .xmi files.
     """
+    start = int(start)
 
-    extract_second_json_block_from_directory(
+    extract_json_block_from_directory(
     input_annot_dir,
     input_annot_dir_json,
-    model_name
+    model_name, start
     )
     ner_metric = evaluate.load("seqeval")
 
@@ -50,8 +51,8 @@ def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_js
     all_y_pred = []
     results_per_file = []
     y_true_dir = f"/home/s27mhusa_hpc/Master-Thesis/Test_BIO_labels"
-    results_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/TestFiles_29July/ner_evaluation_results_{model_name}.txt"
-    stats_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/TestFiles_29July/Stats/ner_evaluation_stats_{model_name}.txt"
+    results_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/TestFiles_23thAugust_DeepSeek/ner_evaluation_results_{model_name}_{start}_shot.txt"
+    stats_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/TestFiles_23thAugust_DeepSeek/Stats/ner_evaluation_stats_{model_name}_{start}_shot.txt"
 
     results_lines = []  # Collect output to write to file later
     stats_lines = []
@@ -106,9 +107,9 @@ def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_js
                     # results_lines.append(msg)                    
                     continue
 
-                # print(f"File_name:{filename}")
-                # print(f"Y_true:{y_true}")
-                # print(f"Y_pred:{y_pred}")
+                print(f"File_name:{filename}")
+                print(f"Y_true:{y_true}")
+                print(f"Y_pred:{y_pred}")
 
                 all_y_true.append(y_true)
                 all_y_pred.append(y_pred)
@@ -166,8 +167,8 @@ if __name__ == "__main__":
 
     model_name = args.model_name
     input_text_dir = "/home/s27mhusa_hpc/Master-Thesis/Text_Files_For_LLM_Input"
-    input_annot_dir = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_TestFiles_29July/LLM_annotated_{model_name}"
-    input_annot_dir_json = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_TestFiles_29July_json/LLM_annotated_{model_name}"
+    input_annot_dir = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_TestFiles_22thAugust/LLM_annotated_Llama-3.1-8B-Instruct_1shot"
+    input_annot_dir_json = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_TestFiles_22thAugust_json/LLM_annotated_Llama-3.1-8B-Instruct_1shot"
     xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/XMI_Files"
 
     evaluate_all(
@@ -175,5 +176,6 @@ if __name__ == "__main__":
         input_text_dir,
         input_annot_dir,
         input_annot_dir_json,
-        xmi_dir
+        4,
+        xmi_dir,
     )
