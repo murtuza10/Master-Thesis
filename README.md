@@ -3,6 +3,7 @@
 A complete, reproducible pipeline for domain-specific Named Entity Recognition (NER) over OpenAgrar/Bonares corpora. It covers:
 - Data extraction from INCEpTION CAS/XMI → text/BIO
 - Zero-/Few-shot prompting with multiple LLMs
+- Fine Tuning Encoder Models
 - Classic and LLM fine-tuning
 - Vector embeddings workflow
 - Evaluation (strict, partial, embeddings-assisted)
