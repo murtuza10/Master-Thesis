@@ -1,4 +1,4 @@
-## Master Thesis: Domain NER Pipeline (OpenAgrar & Bonares)
+## Master Thesis: Comparative Evaluation of NER Techniques for Agriculture Entities 
 
 A complete, reproducible pipeline for domain-specific Named Entity Recognition (NER) over OpenAgrar/Bonares corpora. It covers:
 - Data extraction from INCEpTION CAS/XMI → text/BIO
