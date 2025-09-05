@@ -1,0 +1,174 @@
+### Code Implementation ###
+```python
+import json
+import re
+
+def extract_entities(text):
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Crops
+    crop_species = ["barley", "maize", "oats", "potatoes", "rape", "rye", "sugarbeet", "triticale", "wheat"]
+    for species in crop_species:
+        matches = re.finditer(r"\b" + species + r"\b", text)
+        for match in matches:
+            entity = {
+                "cropSpecies": {
+                    "value": match.group(),
+                    "span": [match.start(), match.end()]
+                }
+            }
+            entities["Crops"].append(entity)
+
+    # Soil
+    # No explicit mentions of "Soil" in the text
+    pass
+
+    # Location
+    location_types = ["Germany"]
+    for location_type in location_types:
+        matches = re.search(r"\b" + location_type + r"\b", text)
+        if matches:
+            entity = {
+                location_type: {
+                    "value": matches.group(),
+                    "span": [matches.start(), matches.end()]
+                }
+            }
+            entities["Location"].append(entity)
+
+    # Time Statement
+    time_types = ["1979", "2020", "2021"]
+    for time_type in time_types:
+        matches = re.search(r"\b" + time_type + r"\b", text)
+        if matches:
+            if time_type == "1979":
+                entity = {
+                    "startTime": {
+                        "value": time_type,
+                        "span": [matches.start(), matches.end()]
+                    }
+                }
+            elif time_type == "2021":
+                entity = {
+                    "endTime": {
+                        "value": time_type,
+                        "span": [matches.start(), matches.end()]
+                    }
+                }
+            elif time_type == "2020":
+                entity = {
+                    "endTime": {
+                        "value": time_type,
+                        "span": [matches.start(), matches.end()]
+                    }
+                }
+            entities["Time Statement"].append(entity)
+
+    return entities
+
+text = """
+Crop yields and area in Germany from 1979 to 2021 at a harmonized district-level
+
+Abstract:
+In this publication we provide a dataset with crop yield and area for Germany from 1979 to 2021. The data are spatially resolved to 397 districts with an average size of 900 km2 and include the crops spring barley, winter barley, grain maize, silage maize, oats, potatoes, winter rape, rye, sugarbeet, triticale and winter wheat. The crop-yield data cover on average about 9.5 million hectares per year and 80% of Germany’s total arable land. The final dataset contains 214,820 yield and area data points. These were obtained by collecting and digitizing crop data from multiple statistical sources and transforming the data to match the district boundaries in 2020. A comprehensive description and validation of the dataset is published in Scientific Data (https://doi.org/10.1038/s41597-024-02951-8). We therefore recommend that you also refer the Scientific Data article when using the dataset.
+"""
+
+entities = extract_entities(text)
+print(json.dumps(entities, indent=4))
+```
+
+### Output ###
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "barley",
+                "span": [77, 84]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "maize",
+                "span": [106, 113]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "oats",
+                "span": [141, 147]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "potatoes",
+                "span": [158, 168]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "rape",
+                "span": [177, 183]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "rye",
+                "span": [194, 200]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "sugarbeet",
+                "span": [214, 224]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "triticale",
+                "span": [235, 244]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "wheat",
+                "span": [262, 269]
+            }
+        }
+    ],
+    "Soil": [],
+    "Location": [
+        {
+            "Germany": {
+                "value": "Germany",
+                "span": [41, 51]
+            }
+        }
+    ],
+    "Time Statement": [
+        {
+            "startTime": {
+                "value": "1979",
+                "span": [64, 71]
+            }
+        },
+        {
+            "endTime": {
+                "value": "2021",
+                "span": [127, 134]
+            }
+        },
+        {
+            "endTime": {
+                "value": "2020",
+                "span": [287, 294]
+            }
+        }
+    ]
+}
+```

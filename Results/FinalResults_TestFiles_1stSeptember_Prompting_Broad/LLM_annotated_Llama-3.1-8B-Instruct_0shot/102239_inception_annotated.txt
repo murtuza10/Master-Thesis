@@ -1,0 +1,14 @@
+### Entities Extraction ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"Soil": { "value": "soils", "span": [13, 17] }},
+    {"Soil": { "value": "soil properties", "span": [63, 76] }},
+    {"Soil": { "value": "soil", "span": [94, 98] }}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+Note that only the explicit mentions of "soils" and "soil properties" and "soil" are included in the "Soil" category. Other mentions of "soil" in the text are part of compound phrases and are not annotated as separate entities.

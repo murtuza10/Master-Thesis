@@ -1,0 +1,20 @@
+### Extracted Entities
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Picea abies", "span": [49, 61] }},
+    {"cropSpecies": { "value": "Norway spruce", "span": [92, 105] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": { "value": "Germany", "span": [155, 163] }},
+    {"region": { "value": "Western Germany", "span": [168, 183] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1964", "span": [145, 149] }},
+    {"startTime": { "value": "1968", "span": [155, 159] }},
+    {"duration": { "value": "51 years", "span": [104, 115] }}
+  ]
+}
+```

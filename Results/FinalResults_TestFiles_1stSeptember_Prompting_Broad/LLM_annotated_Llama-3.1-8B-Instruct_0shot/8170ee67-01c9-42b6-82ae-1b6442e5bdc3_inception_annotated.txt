@@ -1,0 +1,159 @@
+### Text ###
+ Field experiment FV 4 Braunschweig – harvest of winter barley 2014
+
+### Code ###
+```python
+import re
+from typing import Dict, List
+
+def extract_entities(text: str) -> Dict[str, List[Dict[str, Dict[str, str]]]]:
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Crop Species
+    crop_species = ["barley", "oilseed rape", "wheat", "lupine", "rye"]
+    for species in crop_species:
+        matches = re.finditer(r"\b" + species + r"\b", text, re.IGNORECASE)
+        for match in matches:
+            entities["Crops"].append({
+                "cropSpecies": {
+                    "value": match.group(),
+                    "span": [match.start(), match.end()]
+                }
+            })
+
+    # Soil
+    soil = ["Soil"]
+    for soil_type in soil:
+        matches = re.finditer(r"\b" + soil_type + r"\b", text, re.IGNORECASE)
+        for match in matches:
+            entities["Soil"].append({
+                "Soil": {
+                    "value": match.group(),
+                    "span": [match.start(), match.end()]
+                }
+            })
+
+    # Location
+    location = ["Braunschweig"]
+    for location_name in location:
+        matches = re.finditer(r"\b" + location_name + r"\b", text, re.IGNORECASE)
+        for match in matches:
+            entities["Location"].append({
+                "country": {
+                    "value": location_name,
+                    "span": [match.start(), match.end()]
+                }
+            })
+
+    # Time Statement
+    time_statement = ["2014", "2013", "1985-2008"]
+    for time in time_statement:
+        matches = re.finditer(r"\b" + time + r"\b", text, re.IGNORECASE)
+        for match in matches:
+            if time == "2014":
+                entities["Time Statement"].append({
+                    "startTime": {
+                        "value": time,
+                        "span": [match.start(), match.end()]
+                    }
+                })
+            elif time == "2013":
+                entities["Time Statement"].append({
+                    "endTime": {
+                        "value": time,
+                        "span": [match.start(), match.end()]
+                    }
+                })
+            else:
+                entities["Time Statement"].append({
+                    "duration": {
+                        "value": time,
+                        "span": [match.start(), match.end()]
+                    }
+                })
+
+    return entities
+
+text = """
+Field experiment FV 4 Braunschweig – harvest of winter barley 2014.
+Abstract_text_1: 
+ Field experiment FV 4 Braunschweig – harvest of winter barley 2014.
+Abstract_text_2: 
+ The phosphorus (P) taken up by organisms cannot be substituted from any other element; the only source of an increasing P demand for feeding the growing global population is mineable rock phosphate, upgraded to mineral P fertilizer. There are concerns about the global reserves of rock phosphates, expressed in terms of “peak phosphorus” (demand production). Bone char (BC) produced of de-fatted and de-gelatinized bones (15% P, 28% Calcium, 1% Magnesium) from slaughterhouses by a pyrolysis process could be an alternative source of P. Phosphorus in BC is mainly bound in a structure similar to hydroxylapatite (HA) in accordance with their origin from bones. Generally, P in HA is of low solubility and, consequently, it cannot be expected that bones or BC have a high fertilization value. Consequently, further attempts were directed to increase the P solubility of BC by a sulfur (S) enrichment leading to so called BCplus (patent DE102011010525). A former long-term field P fertilization trial (1985-2008) led to distinctive differences in available soil P (PCAL) concentrations. For some detailed description of the former experiment and further soil information see: Vogeler, I.; Rogasik, J.; Funder, U.; Panten, K.; Schnug, E. (2009) Effect of tillage systems and P-fertilization on soil physical and chemical properties, crop yield and nutrient uptake. Soil and Tillage Research 103 (1): 137-143.The resulting differences in soil P were conserved below an extensively managed grassland until 2013 when the experiment was ploughed to a depth of 25 cm and oat was seeded. After the harvest of 2013, the newly designed experiment (FV 4) was established testing the fertilizing potential of BC and BCplus. According to their mean PCAL concentrations (0-30 cm) one third of the plots were assigned to soil class A (11 mg kg-1 PCAL), B (21 mg kg-1 PCAL), and C (47 mg kg-1 PCAL) each. The experiment was set up as a completely randomized block design with three replicates, a plot size of 5.75 m * 17.5 m, and crop rotation of winter barley, winter oilseed rape, winter wheat, lupine and winter rye. Chisel ploughing and ploughing to a depth of 25 cm incorporates crop residues before seeding. Additionally to a control without P fertilization (P0), three different types of P fertilizer (BC, BCplus, TSP) are applied to an equivalent of 45 kg ha-1 P once a year shortly before seeding since autumn 2013. This data set presents the first harvest of winter barley (Hordeum vulgare L., variety OTTO) in 2014. Research domain: Plant Nutrition
+Keywords: 
+ Soil, Phosphate fertilizers, Phosphates, Phosphate fertilizers, farm inputs, opendata, Boden
+"""
+
+entities = extract_entities(text)
+print(entities)
+```
+
+### Output ###
+```json
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "barley",
+        "span": [
+          115,
+          122
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "oilseed rape",
+        "span": [
+          161,
+          170
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [
+          180,
+          186
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "lupine",
+        "span": [
+          194,
+          200
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "rye",
+        "span": [
+          207,
+          211
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "Soil": {
+        "value": "Soil",
+        "span": [
+          306,
+          311
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country":

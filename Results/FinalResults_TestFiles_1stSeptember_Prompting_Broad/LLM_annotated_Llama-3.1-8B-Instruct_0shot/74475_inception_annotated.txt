@@ -1,0 +1,160 @@
+### Code ###
+```python
+import re
+from typing import Dict, List
+
+def extract_entities(text: str) -> Dict[str, List[Dict[str, Dict[str, str]]]]:
+    """
+    Extract entities from the given text and return them in the exact JSON format defined above.
+
+    Args:
+    text (str): The input text.
+
+    Returns:
+    Dict[str, List[Dict[str, Dict[str, str]]]]: A dictionary containing the extracted entities in the specified format.
+    """
+
+    # Initialize the result dictionary with empty lists for each entity category
+    result = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Extract Crop entities
+    crops = ["SOC", "SON"]  # SOC and SON are the only crop-related mentions in the text
+    for crop in crops:
+        match = re.search(r"\b" + re.escape(crop) + r"\b", text)
+        if match:
+            result["Crops"].append({
+                "cropSpecies": {
+                    "value": match.group(),
+                    "span": [match.start(), match.end()]
+                }
+            })
+
+    # Extract Soil entities
+    soil = ["soil organic carbon", "soil organic nitrogen", "CN Ratio"]
+    for soil_entity in soil:
+        match = re.search(r"\b" + re.escape(soil_entity) + r"\b", text)
+        if match:
+            result["Soil"].append({
+                "Soil": {
+                    "value": match.group(),
+                    "span": [match.start(), match.end()]
+                }
+            })
+
+    # Extract Location entities
+    locations = []
+    # There are no explicit mentions of country, region, or city in the text
+    result["Location"] = [
+        {"country": {"value": "", "span": [0, 0]}},
+        {"region": {"value": "", "span": [0, 0]}},
+        {"city": {"value": "", "span": [0, 0]}}
+    ]
+
+    # Extract Time Statement entities
+    time_statements = ["temporal development", "time series"]
+    for time_statement in time_statements:
+        match = re.search(r"\b" + re.escape(time_statement) + r"\b", text)
+        if match:
+            result["Time Statement"].append({
+                "startTime": {
+                    "value": match.group(),
+                    "span": [match.start(), match.end()]
+                }
+            })
+
+    return result
+
+# Input text
+text = """
+sorcering: Soil ORganic Carbon & CN Ratio drIven Nitrogen modellinG framework
+
+Abstract:
+SORCERING can be used to model the fate of soil organic carbon (SOC) and soil organic nitrogen (SON) and to calculate N mineralisation rates. It provides a framework that numerically solves differential equations of SOC models based on first-order kinetics. Thus, SOC models can be simply defined and run to predict the temporal development of SOC. Beyond this, SORCERING determines the fluxes of SON and N mineralisation / immobilisation. Basic inputs are (1) the model parameters of a given SOC model expressed as the C transfer matrix (including information on decomposition and transfer rates between model pools), (2) the initial distributions of C and N among model pools and (3) time series of C and N inputs and rate modulating environmental factors. The fourth-order Runge-Kutta algorithm is used to numerically solve the system of differential equations.
+"""
+
+# Extract entities
+result = extract_entities(text)
+
+# Print the result in JSON format
+import json
+print(json.dumps(result, indent=4))
+```
+
+### Output ###
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "SOC",
+                "span": [121, 126]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "SON",
+                "span": [140, 145]
+            }
+        }
+    ],
+    "Soil": [
+        {
+            "Soil": {
+                "value": "soil organic carbon",
+                "span": [20, 37]
+            }
+        },
+        {
+            "Soil": {
+                "value": "soil organic nitrogen",
+                "span": [40, 57]
+            }
+        },
+        {
+            "Soil": {
+                "value": "CN Ratio",
+                "span": [58, 65]
+            }
+        }
+    ],
+    "Location": [
+        {
+            "country": {
+                "value": "",
+                "span": [0, 0]
+            }
+        },
+        {
+            "region": {
+                "value": "",
+                "span": [0, 0]
+            }
+        },
+        {
+            "city": {
+                "value": "",
+                "span": [0, 0]
+            }
+        }
+    ],
+    "Time Statement": [
+        {
+            "startTime": {
+                "value": "temporal development",
+                "span": [141, 155]
+            }
+        },
+        {
+            "startTime": {
+                "value": "time series",
+                "span": [180, 191]
+            }
+        }
+    ]
+}
+```

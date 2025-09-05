@@ -1,0 +1,74 @@
+Manual Hyperparameter Sweep Log
+
+=== autotrain-llama3-1-8b-sft-manual-lr1e-05-bs2-ep3 ===
+Learning Rate: 1e-05, Batch Size: 2, Epochs: 3
+usage: autotrain <command> [<args>]
+AutoTrain advanced CLI: error: unrecognized arguments: --base_model meta-llama/Meta-Llama-3.1-8B-Instruct --column_mapping messages=text --use_peft --eval_steps 100 --save_strategy epoch --evaluation_strategy steps --metric_for_best_model eval_loss --load_best_model_at_end --hub_token hf_4d6F51WHf61AjoGx1cqqFE6ksHtCcir4gjdg1guX5mcV --hub_username murtuza10
+
+
+=== autotrain-llama3-1-8b-sft-manual-lr1e-05-bs2-ep5 ===
+Learning Rate: 1e-05, Batch Size: 2, Epochs: 5
+usage: autotrain <command> [<args>]
+AutoTrain advanced CLI: error: unrecognized arguments: --base_model meta-llama/Meta-Llama-3.1-8B-Instruct --column_mapping messages=text --use_peft --eval_steps 100 --save_strategy epoch --evaluation_strategy steps --metric_for_best_model eval_loss --load_best_model_at_end --hub_token hf_4d6F51WHf61AjoGx1cqqFE6ksHtCcir4gjdg1guX5mcV --hub_username murtuza10
+
+
+=== autotrain-llama3-1-8b-sft-manual-lr1e-05-bs4-ep3 ===
+Learning Rate: 1e-05, Batch Size: 4, Epochs: 3
+usage: autotrain <command> [<args>]
+AutoTrain advanced CLI: error: unrecognized arguments: --base_model meta-llama/Meta-Llama-3.1-8B-Instruct --column_mapping messages=text --use_peft --eval_steps 100 --save_strategy epoch --evaluation_strategy steps --metric_for_best_model eval_loss --load_best_model_at_end --hub_token hf_4d6F51WHf61AjoGx1cqqFE6ksHtCcir4gjdg1guX5mcV --hub_username murtuza10
+
+
+=== autotrain-llama3-1-8b-sft-manual-lr1e-05-bs4-ep5 ===
+Learning Rate: 1e-05, Batch Size: 4, Epochs: 5
+usage: autotrain <command> [<args>]
+AutoTrain advanced CLI: error: unrecognized arguments: --base_model meta-llama/Meta-Llama-3.1-8B-Instruct --column_mapping messages=text --use_peft --eval_steps 100 --save_strategy epoch --evaluation_strategy steps --metric_for_best_model eval_loss --load_best_model_at_end --hub_token hf_4d6F51WHf61AjoGx1cqqFE6ksHtCcir4gjdg1guX5mcV --hub_username murtuza10
+
+
+=== autotrain-llama3-1-8b-sft-manual-lr3e-05-bs2-ep3 ===
+Learning Rate: 3e-05, Batch Size: 2, Epochs: 3
+usage: autotrain <command> [<args>]
+AutoTrain advanced CLI: error: unrecognized arguments: --base_model meta-llama/Meta-Llama-3.1-8B-Instruct --column_mapping messages=text --use_peft --eval_steps 100 --save_strategy epoch --evaluation_strategy steps --metric_for_best_model eval_loss --load_best_model_at_end --hub_token hf_4d6F51WHf61AjoGx1cqqFE6ksHtCcir4gjdg1guX5mcV --hub_username murtuza10
+
+
+=== autotrain-llama3-1-8b-sft-manual-lr3e-05-bs2-ep5 ===
+Learning Rate: 3e-05, Batch Size: 2, Epochs: 5
+usage: autotrain <command> [<args>]
+AutoTrain advanced CLI: error: unrecognized arguments: --base_model meta-llama/Meta-Llama-3.1-8B-Instruct --column_mapping messages=text --use_peft --eval_steps 100 --save_strategy epoch --evaluation_strategy steps --metric_for_best_model eval_loss --load_best_model_at_end --hub_token hf_4d6F51WHf61AjoGx1cqqFE6ksHtCcir4gjdg1guX5mcV --hub_username murtuza10
+
+
+=== autotrain-llama3-1-8b-sft-manual-lr3e-05-bs4-ep3 ===
+Learning Rate: 3e-05, Batch Size: 4, Epochs: 3
+usage: autotrain <command> [<args>]
+AutoTrain advanced CLI: error: unrecognized arguments: --base_model meta-llama/Meta-Llama-3.1-8B-Instruct --column_mapping messages=text --use_peft --eval_steps 100 --save_strategy epoch --evaluation_strategy steps --metric_for_best_model eval_loss --load_best_model_at_end --hub_token hf_4d6F51WHf61AjoGx1cqqFE6ksHtCcir4gjdg1guX5mcV --hub_username murtuza10
+
+
+=== autotrain-llama3-1-8b-sft-manual-lr3e-05-bs4-ep5 ===
+Learning Rate: 3e-05, Batch Size: 4, Epochs: 5
+usage: autotrain <command> [<args>]
+AutoTrain advanced CLI: error: unrecognized arguments: --base_model meta-llama/Meta-Llama-3.1-8B-Instruct --column_mapping messages=text --use_peft --eval_steps 100 --save_strategy epoch --evaluation_strategy steps --metric_for_best_model eval_loss --load_best_model_at_end --hub_token hf_4d6F51WHf61AjoGx1cqqFE6ksHtCcir4gjdg1guX5mcV --hub_username murtuza10
+
+
+=== autotrain-llama3-1-8b-sft-manual-lr5e-05-bs2-ep3 ===
+Learning Rate: 5e-05, Batch Size: 2, Epochs: 3
+usage: autotrain <command> [<args>]
+AutoTrain advanced CLI: error: unrecognized arguments: --base_model meta-llama/Meta-Llama-3.1-8B-Instruct --column_mapping messages=text --use_peft --eval_steps 100 --save_strategy epoch --evaluation_strategy steps --metric_for_best_model eval_loss --load_best_model_at_end --hub_token hf_4d6F51WHf61AjoGx1cqqFE6ksHtCcir4gjdg1guX5mcV --hub_username murtuza10
+
+
+=== autotrain-llama3-1-8b-sft-manual-lr5e-05-bs2-ep5 ===
+Learning Rate: 5e-05, Batch Size: 2, Epochs: 5
+usage: autotrain <command> [<args>]
+AutoTrain advanced CLI: error: unrecognized arguments: --base_model meta-llama/Meta-Llama-3.1-8B-Instruct --column_mapping messages=text --use_peft --eval_steps 100 --save_strategy epoch --evaluation_strategy steps --metric_for_best_model eval_loss --load_best_model_at_end --hub_token hf_4d6F51WHf61AjoGx1cqqFE6ksHtCcir4gjdg1guX5mcV --hub_username murtuza10
+
+
+=== autotrain-llama3-1-8b-sft-manual-lr5e-05-bs4-ep3 ===
+Learning Rate: 5e-05, Batch Size: 4, Epochs: 3
+usage: autotrain <command> [<args>]
+AutoTrain advanced CLI: error: unrecognized arguments: --base_model meta-llama/Meta-Llama-3.1-8B-Instruct --column_mapping messages=text --use_peft --eval_steps 100 --save_strategy epoch --evaluation_strategy steps --metric_for_best_model eval_loss --load_best_model_at_end --hub_token hf_4d6F51WHf61AjoGx1cqqFE6ksHtCcir4gjdg1guX5mcV --hub_username murtuza10
+
+
+=== autotrain-llama3-1-8b-sft-manual-lr5e-05-bs4-ep5 ===
+Learning Rate: 5e-05, Batch Size: 4, Epochs: 5
+usage: autotrain <command> [<args>]
+AutoTrain advanced CLI: error: unrecognized arguments: --base_model meta-llama/Meta-Llama-3.1-8B-Instruct --column_mapping messages=text --use_peft --eval_steps 100 --save_strategy epoch --evaluation_strategy steps --metric_for_best_model eval_loss --load_best_model_at_end --hub_token hf_4d6F51WHf61AjoGx1cqqFE6ksHtCcir4gjdg1guX5mcV --hub_username murtuza10
+
+

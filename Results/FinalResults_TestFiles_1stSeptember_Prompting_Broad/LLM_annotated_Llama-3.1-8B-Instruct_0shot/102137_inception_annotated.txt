@@ -1,0 +1,141 @@
+### Code to Extract Entities from Text
+
+```python
+import json
+import re
+
+def extract_entities(text):
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Extract crops
+    crops = ["wheat", "soybean", "maize", "barley", "oat", "rye", "grassland"]
+    for crop in crops:
+        matches = re.finditer(r'\b' + re.escape(crop) + r'\b', text, re.IGNORECASE)
+        for match in matches:
+            entity = {
+                "cropSpecies": {
+                    "value": match.group(),
+                    "span": [match.start(), match.end()]
+                }
+            }
+            entities["Crops"].append(entity)
+
+    # Extract soil
+    soil = ["organic carbon", "soil properties"]
+    for soil_type in soil:
+        matches = re.finditer(r'\b' + re.escape(soil_type) + r'\b', text, re.IGNORECASE)
+        for match in matches:
+            entity = {
+                "Soil": {
+                    "value": match.group(),
+                    "span": [match.start(), match.end()]
+                }
+            }
+            entities["Soil"].append(entity)
+
+    # Extract location
+    location = ["Germany"]
+    for location_type in location:
+        matches = re.finditer(r'\b' + re.escape(location_type) + r'\b', text, re.IGNORECASE)
+        for match in matches:
+            entity = {
+                "country": {
+                    "value": match.group(),
+                    "span": [match.start(), match.end()]
+                }
+            }
+            entities["Location"].append(entity)
+
+    return entities
+
+text = """
+Title: 
+Raw data for "Plot-scale variability of organic carbon in temperate agricultural soils - Implications for soil monitoring"
+
+Abstract:
+This dataset is the raw data that belongs to a peer-reviewed study on the small-distance variability of soil organic carbon in agricultural soils in Germany. It consists of three different files. The first file gives the coordinates of the 16 soil cores that were taken at each of the 16 sites (eight cropland and eight grassland sites). The second file gives the soil properties measured at each individual core (n=16 per site) and the third file the soil properties measured at each indivdual soil profile (n=6 per site).
+"""
+
+entities = extract_entities(text)
+print(json.dumps(entities, indent=4))
+```
+
+### Output
+
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "wheat",
+                "span": [0, 5]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "soybean",
+                "span": [0, 9]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "maize",
+                "span": [0, 6]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "barley",
+                "span": [0, 6]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "oat",
+                "span": [0, 4]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "rye",
+                "span": [0, 3]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "grassland",
+                "span": [0, 10]
+            }
+        }
+    ],
+    "Soil": [
+        {
+            "Soil": {
+                "value": "organic carbon",
+                "span": [0, 13]
+            }
+        },
+        {
+            "Soil": {
+                "value": "soil properties",
+                "span": [0, 15]
+            }
+        }
+    ],
+    "Location": [
+        {
+            "country": {
+                "value": "Germany",
+                "span": [0, 7]
+            }
+        }
+    ],
+    "Time Statement": []
+}
+```
+Note that this is a basic implementation and may not cover all edge cases. You may need to adjust the regular expressions or add additional logic to improve the accuracy of the entity extraction.

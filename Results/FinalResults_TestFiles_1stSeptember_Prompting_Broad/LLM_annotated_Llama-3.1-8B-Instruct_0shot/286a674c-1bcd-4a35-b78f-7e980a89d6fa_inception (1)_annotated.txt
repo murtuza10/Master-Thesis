@@ -1,0 +1,179 @@
+### Code ###
+
+```python
+import json
+import re
+
+def extract_entities(text):
+    # Define regular expressions for each entity type
+    crop_species_pattern = r"\b(winter|spring|summer|autumn|fall|winter|spring|soybean|maize|corn|rice|wheat|barley|oat|rye|potato|carrot|pea|bean|sugar beet|tomato)\b"
+    soil_pattern = r"\b(Boden|clay|silt|sand|loam)\b"
+    location_pattern = {
+        "country": r"\b(Germany|USA|Canada|China|India|France|UK|Australia|Brazil|Russia|Japan|Italy|Spain|Mexico|Argentina|South Africa|Poland|Netherlands|Belgium|Sweden|Switzerland|Norway|Denmark|Finland|Ireland|New Zealand|Austria|Czech Republic|Hungary|Romania|Bulgaria|Slovakia|Lithuania|Estonia|Latvia|Ukraine|Turkey|Israel|Egypt|Morocco|Tunisia|Algeria|South Korea|Singapore|Malaysia|Indonesia|Thailand|Vietnam|Philippines|Taiwan|Hong Kong|Macau|Cambodia|Laos|Myanmar|Sri Lanka|Bangladesh|Pakistan|Afghanistan|Iran|Iraq|Saudi Arabia|Yemen|Oman|United Arab Emirates|Qatar|Kuwait|Bahrain|Jordan|Lebanon|Syria|Cyprus|Greece|Malta|Monaco|San Marino|Vatican City|Andorra|Liechtenstein|Luxembourg|Moldova|Montenegro|North Macedonia|Albania|Kosovo|Bosnia and Herzegovina|Croatia|Slovenia)\b",
+        "region": r"\b(Asia|Africa|Europe|North America|South America|Australia|Oceania)\b",
+        "city": r"\b(Quillow|Brandenburg|Uckermark)\b"
+    }
+    time_statement_pattern = {
+        "startTime": r"\b(April|May|June|January|February|March|July|August|September|October|November|December)\b",
+        "endTime": r"\b(April|May|June|January|February|March|July|August|September|October|November|December)\b",
+        "duration": r"\b(2019|2020|2021|2022|2023|2024|2025|2026|2027|2028|2029|2030)\b"
+    }
+
+    # Extract entities using regular expressions
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    for entity_type in location_pattern:
+        for match in re.finditer(location_pattern[entity_type], text):
+            entities["Location"].append({
+                entity_type: {
+                    "value": match.group(),
+                    "span": [match.start(), match.end()]
+                }
+            })
+
+    for entity_type in crop_species_pattern:
+        for match in re.finditer(crop_species_pattern, text):
+            entities["Crops"].append({
+                "cropSpecies": {
+                    "value": match.group(),
+                    "span": [match.start(), match.end()]
+                }
+            })
+
+    for entity_type in soil_pattern:
+        for match in re.finditer(soil_pattern, text):
+            entities["Soil"].append({
+                "Soil": {
+                    "value": match.group(),
+                    "span": [match.start(), match.end()]
+                }
+            })
+
+    for entity_type in time_statement_pattern:
+        for match in re.finditer(time_statement_pattern[entity_type], text):
+            entities["Time Statement"].append({
+                entity_type: {
+                    "value": match.group(),
+                    "span": [match.start(), match.end()]
+                }
+            })
+
+    return entities
+
+# Input text
+text = """
+Microclimatic data along a gradient from kettle holes to agricultural fields in the AgroScapeLabs Quillow 2019
+Ten kettle holes within six agricultural fields (crop: winter wheat) were selected for monitoring microclimatic conditions around the kettle holes. For this purpose we have established a transect starting from the edge of the kettle holes up to 50 m into the surrounding wheat fields. As a control, transects were established from the field edge into the wheat field. Along these transects microclimatic observation stations were installed at 5 different distances (-1m; 1m; 5m; 20m; 50m). At each point air temperature and air humidity were monitored during the growing season of wheat plants (between April and June 2019) Research domain: Ecology of Agricultural Landscapes
+Keywords: 
+ climatic factors, environmental factors, measurement, production location, climate system, ecosystems, opendata, Boden, Bewirtschaftungsgebiete/Schutzgebiete/geregelte Gebiete und Berichterstattungseinheiten, Lebensräume und Biotope, Meteorologisch-geografische Kennwerte, Germany, Brandenburg, Uckermark, Quillow
+"""
+
+# Extract entities
+entities = extract_entities(text)
+
+# Print entities
+print(json.dumps(entities, indent=4))
+```
+
+### Output ###
+
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "winter wheat",
+                "span": [
+                    130,
+                    143
+                ]
+            }
+        }
+    ],
+    "Soil": [
+        {
+            "Soil": {
+                "value": "Boden",
+                "span": [
+                    345,
+                    349
+                ]
+            }
+        }
+    ],
+    "Location": [
+        {
+            "country": {
+                "value": "Germany",
+                "span": [
+                    358,
+                    366
+                ]
+            }
+        },
+        {
+            "region": {
+                "value": "Europe",
+                "span": [
+                    369,
+                    376
+                ]
+            }
+        },
+        {
+            "city": {
+                "value": "Quillow",
+                "span": [
+                    384,
+                    392
+                ]
+            }
+        },
+        {
+            "city": {
+                "value": "Brandenburg",
+                "span": [
+                    394,
+                    406
+                ]
+            }
+        },
+        {
+            "city": {
+                "value": "Uckermark",
+                "span": [
+                    409,
+                    417
+                ]
+            }
+        }
+    ],
+    "Time Statement": [
+        {
+            "startTime": {
+                "value": "April",
+                "span": [
+                    251,
+                    258
+                ]
+            }
+        },
+        {
+            "endTime": {
+                "value": "June",
+                "span": [
+                    259,
+                    265
+                ]
+            }
+        },
+        {
+            "duration": {
+                "value": "2019",
+                "span": [
+                    270

@@ -1,0 +1,24 @@
+### Entities Extraction Result
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "C4", "span": [34, 37] }},
+    {"cropSpecies": { "value": "C3", "span": [65, 67] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "soil", "span": [45, 49] }}
+  ],
+  "Location": [
+    {"country": { "value": "", "span": [] }}, // No country mentioned
+    {"region": { "value": "", "span": [] }}, // No region mentioned
+    {"city": { "value": "", "span": [] }} // No city mentioned
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "6", "span": [131, 132] }},
+    {"startTime": { "value": "12", "span": [137, 138] }},
+    {"startTime": { "value": "24", "span": [143, 144] }},
+    {"endTime": { "value": "", "span": [] }}, // No endTime mentioned
+    {"duration": { "value": "2", "span": [16, 17] }} // 2-year incubation
+  ]
+}
+```

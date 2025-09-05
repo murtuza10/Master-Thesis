@@ -1,0 +1,17 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "birch", "span": [121, 127]}},
+    {"cropSpecies": {"value": "wheat", "span": [null, null]}}  # Wheat is not present in the text
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "northern hemisphere", "span": [91, 113]}},
+    {"region": {"value": "bog", "span": [142, 146]}},
+    {"city": {"value": "", "span": [null, null]}}  # City is not present in the text
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "one year", "span": [215, 223]}}
+  ]
+}
+```

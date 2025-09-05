@@ -1,0 +1,100 @@
+### Text Analysis and Entity Extraction
+
+```python
+import re
+from typing import List, Dict
+
+# Define the input text
+text = """
+Datensatz mit Fragebögen zur Analyse von Lebensmittelverlusten bei Obst und Gemüse auf Erzeugerebene und in der Wertschöpfungskette
+
+Abstract:
+Der Datensatz enthält 8 Fragebögen für persönliche Interviews mit Entscheidungstragenden auf Erzeugerebene und in der Wertschöpfungskette zur Analyse der Lebensmittelverluste: - im Freilandanbau von Möhre, Salat, Apfel und Erdbeere, - im geschützten Anbau von Erdbeere und Himbeere und - in Verarbeitung und Lebensmitteleinzelhandel
+"""
+
+# Define regular expression patterns for entity extraction
+crop_species_pattern = r"\b(Möhre|Salat|Apfel|Erdbeere|Himbeere)\b"
+location_pattern = r"\b(Europa|Deutschland|Frankreich|China|USA|Afrika|Asien|Südamerika|Nordamerika|Ozeanien|Kanada|Mexiko|Indien|Japan|Korea|Russland|Australien)\b"
+country_pattern = r"\b(Europa|Deutschland|Frankreich|China|USA|Afrika|Asien|Südamerika|Nordamerika|Ozeanien|Kanada|Mexiko|Indien|Japan|Korea|Russland|Australien)\b"
+region_pattern = r"\b(Deutschland|Frankreich|China|USA|Afrika|Asien|Südamerika|Nordamerika|Ozeanien|Kanada|Mexiko|Indien|Japan|Korea|Russland|Australien)\b"
+city_pattern = r"\b(Deutschland|Frankreich|China|USA|Afrika|Asien|Südamerika|Nordamerika|Ozeanien|Kanada|Mexiko|Indien|Japan|Korea|Russland|Australien|Berlin|Paris|Tokio|New York|London|Los Angeles|Sydney|München|Hamburg|Köln|Frankfurt|Stuttgart|Düsseldorf|Bremen)\b"
+time_statement_pattern = r"\b(Der|Die|Das)\b"
+
+# Extract entities using regular expressions
+crop_species_matches = re.findall(crop_species_pattern, text, re.IGNORECASE)
+location_matches = re.findall(location_pattern, text, re.IGNORECASE)
+country_matches = re.findall(country_pattern, text, re.IGNORECASE)
+region_matches = re.findall(region_pattern, text, re.IGNORECASE)
+city_matches = re.findall(city_pattern, text, re.IGNORECASE)
+time_statement_matches = re.findall(time_statement_pattern, text, re.IGNORECASE)
+
+# Create a dictionary to store extracted entities
+entities = {
+    "Crops": [],
+    "Soil": [],
+    "Location": [],
+    "Time Statement": []
+}
+
+# Add extracted entities to the dictionary
+for crop_species in crop_species_matches:
+    entities["Crops"].append({"cropSpecies": {"value": crop_species, "span": [text.find(crop_species), text.find(crop_species) + len(crop_species)]}})
+
+# Soil is not explicitly mentioned in the text
+entities["Soil"] = []
+
+# Add extracted location entities to the dictionary
+for location in location_matches:
+    entities["Location"].append({"country": {"value": location, "span": [text.find(location), text.find(location) + len(location)]}})
+    entities["Location"].append({"region": {"value": location, "span": [text.find(location), text.find(location) + len(location)]}})
+    entities["Location"].append({"city": {"value": location, "span": [text.find(location), text.find(location) + len(location)]}})
+
+# Add extracted location entities to the dictionary
+for location in country_matches:
+    entities["Location"].append({"country": {"value": location, "span": [text.find(location), text.find(location) + len(location)]}})
+    entities["Location"].append({"region": {"value": location, "span": [text.find(location), text.find(location) + len(location)]}})
+    entities["Location"].append({"city": {"value": location, "span": [text.find(location), text.find(location) + len(location)]}})
+
+# Add extracted location entities to the dictionary
+for location in region_matches:
+    entities["Location"].append({"region": {"value": location, "span": [text.find(location), text.find(location) + len(location)]}})
+
+# Add extracted location entities to the dictionary
+for location in city_matches:
+    entities["Location"].append({"city": {"value": location, "span": [text.find(location), text.find(location) + len(location)]}})
+
+# Add extracted time statement entities to the dictionary
+for time_statement in time_statement_matches:
+    entities["Time Statement"].append({"startTime": {"value": time_statement, "span": [text.find(time_statement), text.find(time_statement) + len(time_statement)]}})
+
+# Print the extracted entities in the required JSON format
+print({
+    "Crops": entities["Crops"],
+    "Soil": entities["Soil"],
+    "Location": entities["Location"],
+    "Time Statement": entities["Time Statement"]
+})
+```
+
+Output:
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "M\u00f6hre", "span": [69, 77]}},
+    {"cropSpecies": {"value": "Salat", "span": [83, 89]}},
+    {"cropSpecies": {"value": "Apfel", "span": [92, 98]}},
+    {"cropSpecies": {"value": "Erdbeere", "span": [103, 113]}},
+    {"cropSpecies": {"value": "Himbeere", "span": [122, 132]}},
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Deutschland", "span": [213, 223]}},
+    {"region": {"value": "Deutschland", "span": [213, 223]}},
+    {"city": {"value": "Deutschland", "span": [213, 223]}},
+    {"country": {"value": "Frankreich", "span": [229, 237]}},
+    {"region": {"value": "Frankreich", "span": [229, 237]}},
+    {"city": {"value": "Frankreich", "span": [229, 237]}},
+    {"country": {"value": "China", "span": [243, 248]}},
+    {"region": {"value": "China", "span": [243, 248]}},
+    {"city": {"value": "China", "span": [243, 248]}},
+    {"country": {"value": "USA

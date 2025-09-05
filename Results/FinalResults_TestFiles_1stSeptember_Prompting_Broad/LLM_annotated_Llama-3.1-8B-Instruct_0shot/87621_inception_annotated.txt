@@ -1,0 +1,15 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wheat", "span": [30, 37] }},
+    {"cropSpecies": { "value": "barley", "span": [84, 91] }},
+    {"cropSpecies": { "value": "barley", "span": [123, 130] }},
+    {"cropSpecies": { "value": "cereals", "span": [143, 151] }}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+Note: The indices `[start_index, end_index]` are based on the input text and represent the position of the entity within the text.

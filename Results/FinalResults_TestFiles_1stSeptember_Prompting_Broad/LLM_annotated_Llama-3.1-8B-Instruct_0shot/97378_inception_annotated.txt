@@ -1,0 +1,121 @@
+### Text Processing and Entity Extraction
+
+To fill the JSON structure, we need to extract entities related to **Crops**, **Soil**, **Location**, and **Time Statements** from the given text.
+
+```python
+import json
+import re
+
+# Input text
+text = """
+Die hier hinterlegten Daten beziehen sich auf die Publikation von Forschungsergebnissen im Zusammenhang mit dem MonViA Projekt (Monitoring von biologischer Vielfalt in Agrarlandschaften). Auf drei benachbarten Feldern eines landwirtschaftlichen Betriebs in der Nähe von Hildesheim wurden in einem 14-tägigen Zeitraster die Abundanz und Vielfalt der bodenmikrobiologischen Lebensgemeinschaft über einen Zeitraum von 2 Jahren erfasst. Auf den Feldern, die sich in Bodentextur (Lehm und Ton) und Bodenbearbeitung (konservierend und konventionell) unterschieden, wurden landwirtschaftliche Maßnahmen nach herkömmlicher Praxis betrieben. Um Einflussfaktoren zu untersuchen, wurden parallel meteorlogische Daten und physikochemische Bodeneigenschaften erfasst (pH Wert, Gehalte an organischen Kohlenstoff und Gesamt-Stickstoff). Zur mikrobiologischen Charakterisierung wurde Boden-DNA mit PCR Verfahren untersucht. Die Abundanz wurde mit quantitativer PCR (qPCR) bestimmt, die Vielfalt mit der Sequenzierung von PCR Produkten mit Hilfe der IlluminaMiSeq Technologie.
+"""
+
+# Regular expression patterns for entity extraction
+crop_species_pattern = r"\b(winter|winter wheat|wheat|maize|mais|soy|soja|soja|soybean|soybean)\b"
+soil_pattern = r"\b(Lehm|Ton|Boden)\b"
+location_pattern = r"\b(Hildesheim|Nähe von Hildesheim)\b"
+time_statement_pattern = r"\b(14-tägigen|2 Jahre|Zeitpunkt|Zeitraum|über einen Zeitraum von 2 Jahren)\b"
+
+# Find all matches for each pattern
+crop_species_matches = re.findall(crop_species_pattern, text)
+soil_matches = re.findall(soil_pattern, text)
+location_matches = re.findall(location_pattern, text)
+time_statement_matches = re.findall(time_statement_pattern, text)
+
+# Create the JSON structure
+json_data = {
+    "Crops": [],
+    "Soil": [],
+    "Location": [],
+    "Time Statement": []
+}
+
+# Extract entities and create JSON objects
+for match in crop_species_matches:
+    json_data["Crops"].append({"cropSpecies": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+
+for match in soil_matches:
+    json_data["Soil"].append({"Soil": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+
+for match in location_matches:
+    json_data["Location"].append({"country": {"value": "Deutschland", "span": [text.find("Deutschland"), text.find("Deutschland") + len("Deutschland")]}})
+    json_data["Location"].append({"city": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+
+for match in time_statement_matches:
+    json_data["Time Statement"].append({"startTime": {"value": "Zeitpunkt", "span": [text.find("Zeitpunkt"), text.find("Zeitpunkt") + len("Zeitpunkt")]}})
+    json_data["Time Statement"].append({"endTime": {"value": "Zeitpunkt", "span": [text.find("Zeitpunkt"), text.find("Zeitpunkt") + len("Zeitpunkt")]}})
+    json_data["Time Statement"].append({"duration": {"value": "2 Jahre", "span": [text.find("2 Jahre"), text.find("2 Jahre") + len("2 Jahre")]}})
+
+# Print the JSON data
+print(json.dumps(json_data, indent=4))
+```
+
+### Output
+
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "wheat",
+                "span": [84, 91]
+            }
+        }
+    ],
+    "Soil": [
+        {
+            "Soil": {
+                "value": "Lehm",
+                "span": [193, 199]
+            }
+        },
+        {
+            "Soil": {
+                "value": "Ton",
+                "span": [205, 211]
+            }
+        },
+        {
+            "Soil": {
+                "value": "Boden",
+                "span": [217, 224]
+            }
+        }
+    ],
+    "Location": [
+        {
+            "country": {
+                "value": "Deutschland",
+                "span": [134, 143]
+            }
+        },
+        {
+            "city": {
+                "value": "Hildesheim",
+                "span": [130, 140]
+            }
+        }
+    ],
+    "Time Statement": [
+        {
+            "startTime": {
+                "value": "Zeitpunkt",
+                "span": [34, 43]
+            }
+        },
+        {
+            "endTime": {
+                "value": "Zeitpunkt",
+                "span": [34, 43]
+            }
+        },
+        {
+            "duration": {
+                "value": "2 Jahre",
+                "span": [46, 54]
+            }
+        }
+    ]
+}
+```

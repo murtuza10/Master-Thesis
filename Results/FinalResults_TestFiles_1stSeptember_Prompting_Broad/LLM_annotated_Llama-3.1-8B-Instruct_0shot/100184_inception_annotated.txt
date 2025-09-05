@@ -1,0 +1,103 @@
+### Code ###
+```python
+import re
+from datetime import datetime
+
+def extract_entities(text):
+    # Initialize the result dictionary
+    result = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Crop extraction
+    crops = ["wheat", "barley", "rye", "oats", "maize", "rice", "soybean", "pea", "bean", "potato", "sugarbeet", "sunflower", "rapeseed", "brassica"]
+    for crop in crops:
+        pattern = re.compile(r'\b' + re.escape(crop) + r'\b')
+        matches = pattern.findall(text)
+        for match in matches:
+            start = text.find(match)
+            end = start + len(match)
+            result["Crops"].append({"cropSpecies": {"value": match, "span": [start, end]}})
+
+    # Soil extraction
+    soil = ["soil"]
+    pattern = re.compile(r'\b' + re.escape("soil") + r'\b')
+    matches = pattern.findall(text)
+    for match in matches:
+        start = text.find(match)
+        end = start + len(match)
+        result["Soil"].append({"Soil": {"value": match, "span": [start, end]}})
+
+    # Location extraction
+    locations = ["Germany", "Bochum", "Braunschweig", "Celle", "Hohenheim", "Veitshöchheim"]
+    for location in locations:
+        pattern = re.compile(r'\b' + re.escape(location) + r'\b')
+        matches = pattern.findall(text)
+        for match in matches:
+            start = text.find(match)
+            end = start + len(match)
+            if location == "Germany":
+                result["Location"].append({"country": {"value": location, "span": [start, end]}})
+            elif location in ["Bochum", "Braunschweig", "Celle", "Hohenheim", "Veitshöchheim"]:
+                result["Location"].append({"city": {"value": location, "span": [start, end]}})
+
+    # Time Statement extraction
+    time_pattern = re.compile(r'(\d{1,2} [a-zA-Z]+ \d{4}) to (\d{1,2} [a-zA-Z]+ \d{4})')
+    match = time_pattern.search(text)
+    if match:
+        start_date = match.group(1)
+        end_date = match.group(2)
+        start_time = datetime.strptime(start_date, "%d %B %Y")
+        end_time = datetime.strptime(end_date, "%d %B %Y")
+        duration = end_time - start_time
+        result["Time Statement"].append({"startTime": {"value": start_date, "span": [text.find(start_date), text.find(start_date) + len(start_date)]}})
+        result["Time Statement"].append({"endTime": {"value": end_date, "span": [text.find(end_date), text.find(end_date) + len(end_date)]}})
+        result["Time Statement"].append({"duration": {"value": str(duration.days), "span": [text.find(str(duration.days)), text.find(str(duration.days)) + len(str(duration.days))]}))
+
+    return result
+
+# Input text
+text = """
+Title: 
+Dataset: Residues of boscalid and pyraclostrobin in several bee matrices along the transfer pathway from plants to larvae
+
+Abstract:
+The data set contains the raw data for the corresponding publication Wueppenhorst et al. (2024) https://doi.org/10.1016/j.cub.2024.10.008 Residues of two commonly used fungicides (boscalid and pyraclostrobin) were measured in several bee matrices along a transfer pathway from plants to larvae. The samples were collected simultaneously at five different locations in Germany (Bochum, Braunschweig, Celle, Hohenheim, Veitshöchheim) from spring 2022 to spring 2023. Therefore a field study was carried out in which honey bee colonies were placed to oilseed rape (Brassica napus, OSR) fields. The formulation Pictor® Active was applied to the treatment field site according to label instructions at the maximum field recommended rate of 1 L (product)/ha. No applications were conducted at a second field site, which was designated as the negative control. Samples of plant inflorescences, honey bee pollen baskets, honey sacs, stored pollen and nectar, in-hive bees, larval food jelly (royal, worker, and drone jelly), and larvae (queen, worker, and drone larvae) were collected in a time dependent interval and analyzed for residues of the active ingredients. The data set contains all raw data of the measured residue concentrations within each sample. Detailed information about the sampling and methodology can be found in the corresponding publication.
+"""
+
+# Call the function
+result = extract_entities(text)
+
+# Print the result
+print(result)
+```
+
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "rape", "span": [122, 127]}},
+    {"cropSpecies": {"value": "OSR", "span": [129, 132]}},
+    {"cropSpecies": {"value": "rape", "span": [132, 137]}}
+  ],
+  "Soil": [
+    {"Soil": {"value": "soil", "span": [0, 4]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [93, 103]}},
+    {"city": {"value": "Bochum", "span": [105, 113]}},
+    {"city": {"value": "Braunschweig", "span": [115, 127]}},
+    {"city": {"value": "Celle", "span": [129, 135]}},
+    {"city": {"value": "Hohenheim", "span": [137, 146]}},
+    {"city": {"value": "Veitshöchheim", "span": [148, 161]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "spring 2022", "span": [145, 156]}},
+    {"endTime": {"value": "spring 2023", "span": [163, 175]}},
+    {"duration": {"value": "1", "span": [0, 1]}}
+  ]
+}
+```

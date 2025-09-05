@@ -1,0 +1,27 @@
+### Output JSON Structure ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "rye", "span": [ 14, 17 ] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": { "value": "Germany", "span": [ 73, 80 ] }},
+    {"country": { "value": "Europe", "span": [ 98, 106 ] }}
+  ],
+  "Time Statement": []
+}
+```
+
+Explanation:
+
+1.  **Crops**: 
+    *   The crop species "rye" is explicitly mentioned in the text. The span `[14, 17]` represents the start and end character positions from the beginning of the full text.
+2.  **Soil**: 
+    *   There is no mention of soil in the given text.
+3.  **Location**: 
+    *   The country "Germany" is mentioned in the text at position `[73, 80]`.
+    *   The region "Northern Europe" is also mentioned in the text at position `[98, 106]`.
+4.  **Time Statement**: 
+    *   There is no mention of time or duration in the given text.

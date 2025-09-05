@@ -1,0 +1,31 @@
+### Output JSON ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "", "span": [0, 0] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "", "span": [0, 0] }}
+  ],
+  "Location": [
+    {"country": { "value": "Deutschland", "span": [33, 45] }},
+    {"region": { "value": "", "span": [0, 0] }},
+    {"city": { "value": "", "span": [0, 0] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2012", "span": [123, 127] }},
+    {"endTime": { "value": "2012", "span": [139, 143] }},
+    {"duration": { "value": "", "span": [0, 0] }}
+  ]
+}
+```
+
+### Explanation ###
+
+- No crops were mentioned in the text.
+- No specific type of soil was mentioned, so the entity is empty.
+- The country "Deutschland" (Germany) is mentioned.
+- No region or city was mentioned, so their entities are empty.
+- The start time "2012" is mentioned, and it is explicitly stated to be the end time as well. The end time is also mentioned as "2012". Duration is not mentioned.
+- The start and end character positions are based on the given text, with the first character at index 0.

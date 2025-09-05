@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><xmi:XMI xmlns:pos="http:///de/tudarmstadt/ukp/dkpro/core/api/lexmorph/type/pos.ecore" xmlns:tcas="http:///uima/tcas.ecore" xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:tweet="http:///de/tudarmstadt/ukp/dkpro/core/api/lexmorph/type/pos/tweet.ecore" xmlns:morph="http:///de/tudarmstadt/ukp/dkpro/core/api/lexmorph/type/morph.ecore" xmlns:type="http:///de/tudarmstadt/ukp/clarin/webanno/api/type.ecore" xmlns:dependency="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type/dependency.ecore" xmlns:type6="http:///de/tudarmstadt/ukp/dkpro/core/api/semantics/type.ecore" xmlns:type9="http:///de/tudarmstadt/ukp/dkpro/core/api/transform/type.ecore" xmlns:type8="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type.ecore" xmlns:type3="http:///de/tudarmstadt/ukp/dkpro/core/api/metadata/type.ecore" xmlns:type11="http:///org/dkpro/core/api/xml/type.ecore" xmlns:type4="http:///de/tudarmstadt/ukp/dkpro/core/api/ner/type.ecore" xmlns:type10="http:///org/dkpro/core/api/pdf/type.ecore" xmlns:type5="http:///de/tudarmstadt/ukp/dkpro/core/api/segmentation/type.ecore" xmlns:type2="http:///de/tudarmstadt/ukp/dkpro/core/api/coref/type.ecore" xmlns:type7="http:///de/tudarmstadt/ukp/dkpro/core/api/structure/type.ecore" xmlns:constituent="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type/constituent.ecore" xmlns:chunk="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type/chunk.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+    <cas:NULL xmi:id="0"/>
+    <type3:DocumentMetaData xmi:id="8" sofa="1" begin="0" end="177" language="x-unspecified" documentTitle="98225_inception.xmi" documentId="CURATION_USER" documentUri="admin-7/CURATION_USER" collectionId="admin-7/CURATION_USER" documentBaseUri="admin-7" isLastSegment="false"/>
+    <type5:Token xmi:id="19" sofa="1" begin="0" end="5" order="0"/>
+    <type5:Token xmi:id="32" sofa="1" begin="5" end="6" order="0"/>
+    <type5:Token xmi:id="45" sofa="1" begin="7" end="8" order="0"/>
+    <type5:Token xmi:id="58" sofa="1" begin="8" end="11" order="0"/>
+    <type5:Token xmi:id="71" sofa="1" begin="12" end="15" order="0"/>
+    <type5:Token xmi:id="84" sofa="1" begin="16" end="17" order="0"/>
+    <type5:Token xmi:id="97" sofa="1" begin="18" end="42" order="0"/>
+    <type5:Token xmi:id="110" sofa="1" begin="43" end="46" order="0"/>
+    <type5:Token xmi:id="123" sofa="1" begin="47" end="61" order="0"/>
+    <type5:Token xmi:id="136" sofa="1" begin="61" end="62" order="0"/>
+    <type5:Token xmi:id="149" sofa="1" begin="63" end="66" order="0"/>
+    <type5:Token xmi:id="162" sofa="1" begin="67" end="70" order="0"/>
+    <type5:Token xmi:id="175" sofa="1" begin="71" end="82" order="0"/>
+    <type5:Token xmi:id="188" sofa="1" begin="82" end="83" order="0"/>
+    <type5:Token xmi:id="201" sofa="1" begin="83" end="86" order="0"/>
+    <type5:Token xmi:id="214" sofa="1" begin="87" end="99" order="0"/>
+    <type5:Token xmi:id="227" sofa="1" begin="100" end="111" order="0"/>
+    <type5:Token xmi:id="240" sofa="1" begin="112" end="115" order="0"/>
+    <type5:Token xmi:id="253" sofa="1" begin="116" end="123" order="0"/>
+    <type5:Token xmi:id="266" sofa="1" begin="124" end="127" order="0"/>
+    <type5:Token xmi:id="279" sofa="1" begin="128" end="145" order="0"/>
+    <type5:Token xmi:id="292" sofa="1" begin="146" end="154" order="0"/>
+    <type5:Token xmi:id="305" sofa="1" begin="154" end="156" order="0"/>
+    <type5:Token xmi:id="318" sofa="1" begin="156" end="164" order="0"/>
+    <type5:Token xmi:id="331" sofa="1" begin="164" end="165" order="0"/>
+    <type5:Token xmi:id="344" sofa="1" begin="165" end="166" order="0"/>
+    <type5:Token xmi:id="357" sofa="1" begin="166" end="169" order="0"/>
+    <type5:Token xmi:id="370" sofa="1" begin="170" end="175" order="0"/>
+    <type5:Token xmi:id="383" sofa="1" begin="175" end="177" order="0"/>
+    <type5:Sentence xmi:id="396" sofa="1" begin="0" end="177"/>
+    <type:LayerDefinition xmi:id="434" name="webanno.custom.Timestatement" uiName="Time statement"/>
+    <type:LayerDefinition xmi:id="401" name="webanno.custom.Crops" uiName="Crops"/>
+    <type:LayerDefinition xmi:id="412" name="webanno.custom.Location" uiName="Location"/>
+    <type:LayerDefinition xmi:id="423" name="webanno.custom.Soil" uiName="Soil"/>
+    <type:FeatureDefinition xmi:id="408" layer="401" name="identifier" uiName="identifier"/>
+    <type:FeatureDefinition xmi:id="415" layer="412" name="Location" uiName="Location"/>
+    <type:FeatureDefinition xmi:id="441" layer="434" name="identifier" uiName="identifier"/>
+    <type:FeatureDefinition xmi:id="437" layer="434" name="Timestatement" uiName="Time statement"/>
+    <type:FeatureDefinition xmi:id="430" layer="423" name="identifier" uiName="identifier"/>
+    <type:FeatureDefinition xmi:id="419" layer="412" name="identifier" uiName="identifier"/>
+    <type:FeatureDefinition xmi:id="404" layer="401" name="crops" uiName="crops"/>
+    <type:FeatureDefinition xmi:id="426" layer="423" name="Soil" uiName="Soil"/>
+    <type3:TagsetDescription xmi:id="445" sofa="1" begin="0" end="0" layer="webanno.custom.Crops" name="Crop" input="false"/>
+    <type3:TagsetDescription xmi:id="458" sofa="1" begin="0" end="0" layer="webanno.custom.Location" name="Location" input="false"/>
+    <type3:TagsetDescription xmi:id="471" sofa="1" begin="0" end="0" layer="webanno.custom.Soil" name="Soil" input="false"/>
+    <type3:TagsetDescription xmi:id="484" sofa="1" begin="0" end="0" layer="webanno.custom.Timestatement" name="Time statement" input="false"/>
+    <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="Title: &#10;Das JKI - Bundesforschungsinstitut für Kulturpflanzen: Ein und attraktiver&#10;und vielfältiger Arbeitgeber mit Zukunft und unterschiedlichen Facetten&#10;&#10;Abstract:&#10;Not Found&#10;&#10;"/>
+    <cas:View sofa="1" members="8 19 32 45 58 71 84 97 110 123 136 149 162 175 188 201 214 227 240 253 266 279 292 305 318 331 344 357 370 383 396 434 401 412 423 408 415 441 437 430 419 404 426 445 458 471 484"/>
+</xmi:XMI>

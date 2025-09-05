@@ -1,0 +1,25 @@
+### Entity Extraction Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Winter wheat", "span": [63, 74] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "Soil", "span": [123, 126] }},
+    {"Soil": { "value": "soil", "span": [133, 136] }},
+    {"Soil": { "value": "Boden", "span": [241, 244] }}
+  ],
+  "Location": [
+    {"country": { "value": "", "span": [] }},
+    {"region": { "value": "", "span": [] }},
+    {"city": { "value": "", "span": [] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "", "span": [] }},
+    {"endTime": { "value": "", "span": [] }},
+    {"duration": { "value": "", "span": [] }}
+  ]
+}
+```
+
+However, as you can see the Location, Time Statement, and Crops list is empty because there was no relevant information present in the text.

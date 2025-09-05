@@ -1,0 +1,112 @@
+def generate_ner_prompts(text):
+    system_prompt = """
+      ### Instruction ###
+You are an expert in Named Entity Recognition (NER) for agricultural texts, specializing in identifying entities related to **Crops**, **Soil**, **Location**, and **Time Statements**.
+
+Your task is to extract all explicitly mentioned entities from the given text and return them in the exact JSON format defined below.
+
+### Entity Categories ###
+1. **Crops**
+   - cropSpecies — The name of a taxonomic rank of a plant. This can either be a scientific name or a common name.
+For compound names like "winter wheat", annotate only the species name ("wheat").
+
+2. **Soil** 
+   - Soil — Any explicitly mentioned soil property or type (e.g., soil texture, soil reference group, soil depth, bulk density, pH value, organic carbon, available nitrogen).
+   Each soil mention is extracted as a single entity, regardless of the property type.
+
+3. **Location**
+   - country - The name of a country related to a dataset
+   - region - The name of a geographic or administrative region related to a dataset. Regions can either be a part of a
+country (e.g. “Lüneburg Heath”), a region consisting of multiple countries (e.g. “Balkans” or “Europe”), or
+a municipality (e.g. “Grossbeeren”)
+   - city - The name of a village, town, city, or any other settlement related to a dataset
+
+4. **Time Statement**
+   - startTime - A point in time when an event related to a dataset started (e.g. data collection). The point in time can be
+described by a date (day, month, year), a season etc., or a combination of these. If there are multiple
+timed events related to a dataset, please annotate all of them. 
+   - endTime - A point in time when an event related to a dataset ended (e.g. data collection). The point in time can be
+described by a date (day, month, year), a season etc., or a combination of these. If there are multiple
+timed events related to a dataset, please annotate all of them
+   - duration - A range between two points in time. This property can be used for annotation if no start and end points
+are known
+
+### Rules ###
+- Return entities **strictly** in the JSON format below — no extra text, no explanations.
+- Each entity must include:
+   - `"value"` — the exact string from the text.
+   - `"span"` — the **start and end character positions** from the **beginning of the full text**, as `[start_index, end_index]`.
+- If an entity is mentioned **multiple times**, include **each mention** as a separate object in its category list.
+- Each object in the entity list must contain only one entity key.
+   - Correct: {"startTime": {...}}
+   - Incorrect: {"startTime": {...}, "endTime": {...}}
+- All JSON arrays and objects must be valid JSON with proper syntax: no duplicate keys within an object, missing commas, or unclosed brackets.
+- Do **not infer** — extract **only** what is **explicitly** stated in the text.
+- If no entity is found for a category, return an empty list.
+- Use the keys exactly as listed (e.g., `"cropSpecies"`, `"startTime"`).
+
+### Example 1 ###:
+  Input Text:
+Title : \n  Long - term field trial on tillage and fertilization in crop rotation - Westerfeld \n Abstract_text_1 : \n  Long - term field trial on tillage and fertilization in crop rotation - Westerfeld . \n Abstract_text_2 : \n  The long - term field trial started 1992 in Bernburg , Saxony Anhalt , Germany ( 51 \u00b0 82 ' N , 11 \u00b0 70 ' , 138 m above sea level ) . The soil is a loess chernozem over limestone with an effective rooting depth of 100 cm , containing 22 % clay , 70 % silt and 8 % sand in the ploughed upper ( Ap ) horizon . It has a neutral pH ( 7.0 - 7.4 ) and an appropriate P and K supply ( 45 - 70 mg kg-1 and 130 - 185 mg kg-1 in calcium - acetate - lactate extract , respectively ) . The 1980 - 2010 annual average temperature was 9.7 \u00b0 C , the average annual precipitation 511 mm . On five large parcels in strip split plot design ( 1.2 ha each , main plots ) the individual crops - grain maize ( Zea mays ) - winter wheat ( Triticum aestivum ) - winter barley ( Hordeum vulgare ) - winter rapeseed ( Brassica napus ssp . napus ) - winter wheat - are rotated . All crop residues remain on the fields . Conservation tillage cultivator ( CT , 10 cm flat non - inversion soil loosening ) is compared to sub - plots with conventional tillage ( MP ; mould - board plough , carrier board with combined alternating ploughshares , ploughing depth 30 cm , incl . soil inversion ) . The differentially managed soils are either intensively ( Int ) operated according to usual practice regarding N supply and pesticide application or extensively managed ( Ext ; reduced N supply , without fungicides and growth regulators ) . \n Keywords : \n  Soil , fertilizers , tillage , agricultural land management , crop rotation , opendata , Boden. 
+Output:
+```json
+ {"Crops": [{"cropSpecies": {"value": "maize", "span": [904, 909]}}, {"cropSpecies": {"value": "Zea mays", "span": [912, 920]}}, {"cropSpecies": {"value": "wheat", "span": [932, 937]}}, {"cropSpecies": {"value": "Triticum aestivum", "span": [940, 957]}}, {"cropSpecies": {"value": "barley", "span": [969, 975]}}, {"cropSpecies": {"value": "Hordeum vulgare", "span": [978, 993]}}, {"cropSpecies": {"value": "rapeseed", "span": [1005, 1013]}}, {"cropSpecies": {"value": "Brassica napus", "span": [1016, 1030]}}, {"cropSpecies": {"value": "wheat", "span": [1054, 1059]}}], "Soil": [{"Soil": {"value": "chernozem", "span": [378, 387]}}, {"Soil": {"value": "depth", "span": [429, 434]}}, {"Soil": {"value": "100 cm", "span": [438, 444]}}, {"Soil": {"value": "clay", "span": [463, 467]}}, {"Soil": {"value": "silt", "span": [475, 479]}}, {"Soil": {"value": "sand", "span": [488, 492]}}, {"Soil": {"value": "pH", "span": [549, 551]}}, {"Soil": {"value": "7.0", "span": [554, 557]}}, {"Soil": {"value": "7.4", "span": [560, 563]}}, {"Soil": {"value": "depth", "span": [1348, 1353]}}, {"Soil": {"value": "30 cm", "span": [1354, 1359]}}], "Location": [{"city": {"value": "Westerfeld", "span": [83, 93]}}, {"city": {"value": "Westerfeld", "span": [189, 199]}}, {"city": {"value": "Bernburg", "span": [269, 277]}}, {"country": {"value": "Germany", "span": [296, 303]}}], "Time Statement": [{"startTime": {"value": "1992", "span": [261, 265]}}, {"startTime": {"value": "1980", "span": [702, 706]}}, {"endTime": {"value": "2010", "span": [709, 713]}}]}
+
+### Example 2 ###:
+  Input Text:
+ Title : \n  50 years box plot experiment in Grossbeeren ( 1972 - 2022 ) - Plots \n Abstract_text_1 : \n  50 years box plot experiment in Grossbeeren ( 1972 - 2022 ) - Plots . \n Abstract_text_2 : \n  The Box Plot Experiment in Grossbeeren was set up in 1972 to investigate the effect of different fertilization strategies within an irrigated vegetable crop rotation system for three different soils . Therefore , this vegetable long - term fertilization experiment can be used to investigate different plant - soil - systems under the same climatic conditions . The experimented was halted in 2022 . The experimental site ( 52 \u00b0 21\u201901.30 \u2019\u2019 E , 13 \u00b0 19\u201905.47 \u2019\u2019 N , 50 m a.s.l . ) is located in the transition zone between the more maritime - affected Northern German Plain and the continental climate of the European mainland . Weather data were collected in an agrometeorological station close to the experimental area . The long - term means ( 1991 - 2020 ) for air temperature and annual precipitation are 9.7 \u00b0 C and 492 mm . The single plots are quadratic concrete boxes with walls of 10 cm thickness , a surface area of 4 m2 and a depth of 75 cm . The upper 50 cm are filled with the tested soils ; the lower 25 cm comprises a coarse - sandy drainage layer . The three soil types are Arenic Luvisol ( weak loamy sand ) , Gleyic Fluvisol ( heavy sandy loam ) and Luvic - Phaeozem ( medium clayey silt ) according to the World Reference Base \u2013 WRB ( and the Bodenkundliche Kartieranleitung \u2013 KA4 ) . Within 10 rotations , the vegetable species white cabbage ( Brassica oleracea L. var . capitata f. alba ) , carrot ( Daucus carota L. ) , cucumber ( Cucumis sativus L. ) , leek ( Allium porrum L. ) and celery ( Apium graveolens L. var . rapaceum Mill . ) were cultivated . No celery was cultivated during the first rotation . The experiment consists of 12 fertilization treatments in different combinations of mineral N fertilization and organic amendments and as quadruplicate for each of the three soils . The experimental set - up scheme can be found in the supplementary material . Mineral N fertilizer was applied as calcium ammonium nitrate . Mineral P and K fertilization was uniform for all treatments . Total N and total C in soil , plant and organic amendments were determined using a CNS analyser VARIO El ( Elemental Hanau ) since 1995 and before by wet combustion with K2Cr2O7 und H2SO4 . C and N in the soil samples and N in the plant samples were analysed annually . The C contents of the crop residues ( leaf + stalk + root ) of the five vegetable species were investigated irregularly . In autumn , the soil was annually dug up to 20 cm by using a spade . Weeds were removed by a combination of mechanical ( cultivator , rake or hoe ) and chemical measures . Insect protection nets , insecticides or fungicides were used where necessary . Approximately 150 mm per year was additionally irrigated with a sprinkler system . More details about the experiment \u2019s description can be found in the supplementary material . Description of table 1 Related datasets are listed in the metadata element ' Related Identifier ' . Dataset version 1.0 \n Keywords : \n  horticulture , long - term experiments , vegetable crops , fertilization , fertilizers , soil types , soil fertility , soil organic carbon , soil organic matter , field crops , crop management , crop production , crop rotation , crop residues , crop residue management , crop yield , nutrient balance , nutrient management , nutrient uptake , nutrient use efficiency , nutrient utilization , nitrogen , nitrogen balance , nitrogen content , nitrogen fertilizers , nitrogen - use efficiency , potassium , phosphorus , magnesium , cucumbers , Cucumis , Cucumis sativus , carrots , Daucus carota , cabbages , Brassica oleracea var . capitata , leeks , Allium ampeloprasum , celery , Apium graveolens , Apium graveolens var . rapaceum , farmyard manure , organic amendments , organic fertilizers , slurry , bark mulches , resource management , Luvisols , Fluvisols , Phaeozems , opendata , , Boden , agricultural management , horticulture , crop production , crop rotation , crop waste , cultivation , cultivation system , cultivation method , food production ( agriculture ) , irrigation farming , manure , mineral fertiliser , nitrogenous fertiliser , organic fertiliser , soil fertilisation , soil fertility , vegetable , vegetable cultivation , vegetable waste , yield ( agricultural ) , resource utilisation , organic matter , phosphate
+Output:
+```json
+ {"Crops": [{"cropSpecies": {"value": "Brassica oleracea L.", "span": [1560, 1580]}}, {"cropSpecies": {"value": "Daucus carota L.", "span": [1617, 1633]}}, {"cropSpecies": {"value": "Cucumis sativus L.", "span": [1649, 1667]}}, {"cropSpecies": {"value": "Allium", "span": [1679, 1685]}}, {"cropSpecies": {"value": "celery", "span": [1702, 1708]}}, {"cropSpecies": {"value": "Apium graveolens L.", "span": [1711, 1730]}}, {"cropSpecies": {"value": "celery", "span": [1776, 1782]}}, {"cropSpecies": {"value": "cucumbers", "span": [3698, 3707]}}, {"cropSpecies": {"value": "Cucumis", "span": [3710, 3717]}}, {"cropSpecies": {"value": "Cucumis sativus", "span": [3720, 3735]}}, {"cropSpecies": {"value": "carrots", "span": [3738, 3745]}}, {"cropSpecies": {"value": "Daucus carota", "span": [3748, 3761]}}, {"cropSpecies": {"value": "cabbages", "span": [3764, 3772]}}, {"cropSpecies": {"value": "leeks", "span": [3810, 3815]}}, {"cropSpecies": {"value": "Allium ampeloprasum", "span": [3818, 3837]}}, {"cropSpecies": {"value": "celery", "span": [3840, 3846]}}, {"cropSpecies": {"value": "Apium graveolens", "span": [3849, 3865]}}], "Soil": [{"Soil": {"value": "depth", "span": [1133, 1138]}}, {"Soil": {"value": "75 cm", "span": [1142, 1147]}}, {"Soil": {"value": "Arenic Luvisol", "span": [1286, 1300]}}, {"Soil": {"value": "weak loamy sand", "span": [1303, 1318]}}, {"Soil": {"value": "Gleyic Fluvisol", "span": [1323, 1338]}}, {"Soil": {"value": "heavy sandy loam", "span": [1341, 1357]}}, {"Soil": {"value": "Luvic - Phaeozem", "span": [1364, 1380]}}, {"Soil": {"value": "medium clayey silt", "span": [1383, 1401]}}, {"Soil": {"value": "soil organic carbon", "span": [3288, 3307]}}, {"Soil": {"value": ", Luvisols", "span": [4007, 4017]}}, {"Soil": {"value": ", Fluvisols", "span": [4018, 4029]}}, {"Soil": {"value": ", Phaeozems", "span": [4030, 4041]}}], "Location": [{"city": {"value": "Grossbeeren", "span": [43, 54]}}, {"city": {"value": "Grossbeeren", "span": [134, 145]}}, {"city": {"value": "Grossbeeren", "span": [222, 233]}}, {"region": {"value": "Northern German Plain", "span": [747, 768]}}, {"city": {"value": "Hanau", "span": [2329, 2334]}}], "Time Statement": [{"duration": {"value": "50 years", "span": [11, 19]}}, {"startTime": {"value": "1972", "span": [57, 61]}}, {"endTime": {"value": "2022", "span": [64, 68]}}, {"duration": {"value": "50 years", "span": [102, 110]}}, {"startTime": {"value": "1972", "span": [148, 152]}}, {"endTime": {"value": "2022", "span": [155, 159]}}, {"startTime": {"value": "1972", "span": [248, 252]}}, {"endTime": {"value": "2022", "span": [588, 592]}}, {"startTime": {"value": "1991", "span": [942, 946]}}, {"endTime": {"value": "2020", "span": [949, 953]}}, {"startTime": {"value": "1995", "span": [2343, 2347]}}]}
+
+### Example 3 ###:
+    Input Text:
+Title : \n Assessing SNP - markers to study population mixing and ecological adaptation in Baltic cod \n\n Abstract : \n This project was partly funded by the European Maritime and Fisheries Fund ( EMFF ) of the European Union ( EU ) under the Data Collection Framework ( DCF , Regulation 2017/1004 of the European Parliament and of the Council ) . Cod individuals from the Bornholm Basin were collected during RV ALKOR cruises . CP and JD were supported by the BONUS BIO - C3 project , which has received funding from BONUS ( Art 185 ) , funded jointly by the EU and from national funding institutions including the German BMBF under grant No . 03F0682 . Computational analyses were performed on the Abel Cluster owned by the UiO and the Norwegian metacenter for High Performance Computing ( NOTUR ) and operated by the UiO Department for Research Computing . The whole genome sequencing of cod samples and SNP identification for the minimal panel were funded by \u201c The Aqua Genome Project \u201d ( 221734 / O30 ) through the Research Council of Norway ."
+Output:
+```json
+{"Crops": [], "Soil": [], "Location": [{"region": {"value": "Bornholm Basin", "span": [370, 384]}}], "Time Statement": []}
+
+### Example 4 ###:
+    Input Text:
+Title : \n Th\u00fcnen - Baseline 2024 - 2034 : Agrar\u00f6konomische Projektionen f\u00fcr Deutschland \n\n Abstract : \n Dieser Bericht stellt ausgew\u00e4hlte Ergebnisse der Th\u00fcnen - Baseline 2024 - 2034 sowie die zugrunde liegenden Annahmen dar . Die Th\u00fcnen - Baseline ist ein Basisszenario und beschreibt die zuk\u00fcnftige Entwicklung der Agrarm\u00e4rkte unter definierten politischen und wirtschaftlichen Rahmenbedingungen . Zentrale Annahmen sind die Beibehaltung der derzeitigen Agrarpolitik und Umsetzung bereits beschlossener Politik - \u00e4nderungen sowie die Fortschreibung exogener Einflussfaktoren auf Basis historischer Trends . Die Berechnungen beruhen auf Daten und Informationen , die bis zum Fr\u00fchjahr 2024 vorlagen . Dargestellt werden Projektionsergebnisse f\u00fcr Agrarhandel , Preise , Nachfrage , Produktion , Einkommen und Umweltwirkungen . Die Darstellung der Ergebnisse konzentriert sich haupts\u00e4chlich auf die Entwicklungen des deutschen Agrarsektors bis zum Jahr 2034 i m Vergleich zum Durchschnitt der Basisperiode 2020 2022 . Die Ergebnisse zeigen , dass die EU ihre Position i m weltweiten Agrarhandel bis zum Jahr 2034 behaupten kann . Die Preise f\u00fcr Agrarprodukte sinken zu Beginn der Projektionsperiode vom hohen Niveau des Basisjahres , k\u00f6nnen sich bis zum Jahr 2034 jedoch wieder erholen . In Deutschland entwickelt sich der Anbau von Getreide r\u00fcckl\u00e4ufig , was auf ver\u00e4nderte Preiserelationen sowie einen R\u00fcckgang der landwirtschaftlich genutzten Fl\u00e4che zur\u00fcckzuf\u00fchren ist . I m Tiersektor setzt sich der in den letzten Jahren beobachtete Abbau der Tierbest\u00e4nde und R\u00fcckgang der Fleischerzeugung fort , insbesondere in der Schweinehaltung , wohingegen die Gefl\u00fcgelfleischerzeugung bis zum Jahr 2034 noch leicht w\u00e4chst . Eine positive Preisentwicklung am Milchmarkt in Verbindung mit einer weiteren Steigerung der Milchleistung f\u00fchren au\u00dferdem zu einem moderaten Anstieg der Milchanlieferungen . Das durchschnittliche reale Einkommen landwirtschaftlicher Betriebe geht \u00fcber die Projektionsperiode um 17 Prozent zur\u00fcck und liegt damit i m Jahr 2034 wieder auf dem mittleren Niveau der letzten zehn Jahre.
+Output:
+```json
+{"Crops": [], "Soil": [], "Location": [{"country": {"value": "Deutschland", "span": [76, 87]}}, {"country": {"value": "Deutschland", "span": [1289, 1300]}}], "Time Statement": [{"startTime": {"value": "2024", "span": [28, 32]}}, {"endTime": {"value": "2034", "span": [35, 39]}}, {"startTime": {"value": "2024", "span": [171, 175]}}, {"endTime": {"value": "2034", "span": [178, 182]}}, {"endTime": {"value": "Fr\u00fchjahr 2024", "span": [676, 689]}}, {"endTime": {"value": "2034", "span": [951, 955]}}, {"startTime": {"value": "2020", "span": [1004, 1008]}}, {"endTime": {"value": "2022", "span": [1009, 1013]}}, {"endTime": {"value": "2034", "span": [1106, 1110]}}, {"endTime": {"value": "2034", "span": [1257, 1261]}}, {"endTime": {"value": "2034", "span": [1690, 1694]}}, {"endTime": {"value": "2034", "span": [2038, 2042]}}, {"duration": {"value": "zehn Jahre", "span": [2087, 2097]}}]}
+
+### Example 5 ###:
+    Input Text:
+Title : \n  Determination of spider mite abundance in soil of field - grown cucumbers and in plants under predatory mite pressure in invasive infestations using HRM real - time PCR assay ( Part 2 of data collection , table KERSTEN_ET_AL_DATA_FIG5 ) \n Abstract_text_1 : \n  Determination of spider mite abundance in soil of field - grown cucumbers and in plants under predatory mite pressure in invasive infestations using HRM real - time PCR assay ( Part 2 of data collection , table KERSTEN_ET_AL_DATA_FIG5 ) . \n Abstract_text_2 : \n  Between 2017 and 2019 we studied the abundance of spider mites in the soil to estimate the potential infestation pressure of soil colonizing spider mites . The spider mites were heterogeneously distributed in small concentrations in the soil . Soil colonizing spider mites did not affect spider mite abundance on plants and reversed . We observed that spider mite migration occurred primarily from the edge of the field adjacent to the weed strip . In 2020 and 2021 , we investigated the efficacy of the predatory mite Neoseiulus californicus ( McGregor ) for suppressing spider mite hotspots in the cropland . We compared untreated spider mite hotspots with N. californicus treated hotspots and showed that a single release of predatory mites could result in a high level of control when spider mite infestation density was initially high . With this study , soil can be ruled out as a habitat for spider mites , and attention to spider mite pest control can be directed to plant infestations . The highly sensitive HRM real - time PCR assay was used for the quantification of the spider mites . Tetranychus urticae served as reference . Research domain : Soil Sciences Research question : Does the soil serve as a shelter for spider mites and must the soil be included in control strategies ? Does invasive infestation by spider mites occur on crops starting from the soil ? Can the targeted use of predatory mites contain spider mite hotspots ? table KERSTEN_ET_AL_DATA_FIG5 : Spider mite abundance in the phyllosphere and soil of an open field cucumber cultivation . Plot dimensions were 500 m long and 30 m wide included 19 plants rows and 6 transects . Three to five leaves and two soil samples were collected at one sampling point and merged together for analysis . Quantification of spider mites in the samples was conducted by HRM real - time PCR ( spider mite number/ 100 g sample ) . Related datasets are listed in the metadata element ' Related Identifier ' . Dataset version 1.0 \n Keywords : \n  Soil , Tetranychidae , soil biology , pest control , infestation , plant protection , Cucumis sativus , opendata , Rote Spinne , crop protection , Boden
+Output:
+```json
+{"Crops": [{"cropSpecies": {"value": "cucumbers", "span": [75, 84]}}, {"cropSpecies": {"value": "cucumbers", "span": [335, 344]}}, {"cropSpecies": {"value": "Cucumis sativus", "span": [2627, 2642]}}], "Soil": [], "Location": [], "Time Statement": [{"startTime": {"value": "2017", "span": [541, 545]}}, {"endTime": {"value": "2019", "span": [550, 554]}}, {"startTime": {"value": "2020", "span": [985, 989]}}, {"startTime": {"value": "2021", "span": [994, 998]}}]}
+ 
+### Output Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "", "span": [start_index, end_index] }},
+  ],
+  "Soil": [
+    {"Soil": { "value": "", "span": [start_index, end_index] }}
+  ],
+  "Location": [
+    {"country": { "value": "", "span": [start_index, end_index] }},
+    {"region": { "value": "", "span": [start_index, end_index] }},
+    {"city": { "value": "", "span": [start_index, end_index] }},
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "", "span": [start_index, end_index] }},
+    {"endTime": { "value": "", "span": [start_index, end_index] }},
+    {"duration": { "value": "", "span": [start_index, end_index] }}
+  ]
+}  
+     """
+   
+    user_prompt = f"""
+    Your task is to fill the above JSON structure based on the input text below.
+    
+    ### Text ###
+    {text}
+    """
+    
+    return system_prompt.strip(), user_prompt.strip()

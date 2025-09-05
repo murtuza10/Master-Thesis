@@ -1,0 +1,98 @@
+### Code to Extract Entities from the Given Text
+```python
+import re
+from datetime import datetime
+
+def extract_entities(text):
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Crop Species Extraction
+    crop_species = ["Riesling", "Felicia", "Regent"]
+    for species in crop_species:
+        matches = re.finditer(r'\b' + species + r'\b', text, re.IGNORECASE)
+        for match in matches:
+            entity = {
+                "cropSpecies": {
+                    "value": species,
+                    "span": [match.start(), match.end()]
+                }
+            }
+            entities["Crops"].append(entity)
+
+    # Soil Extraction
+    # No soil entities found in the text
+
+    # Location Extraction
+    locations = ["2018"]
+    for location in locations:
+        matches = re.finditer(r'\b' + location + r'\b', text)
+        for match in matches:
+            entity = {
+                "country": {
+                    "value": location,
+                    "span": [match.start(), match.end()]
+                }
+            }
+            entities["Location"].append(entity)
+
+    # Time Statement Extraction
+    time_statement = ["before", "after"]
+    for statement in time_statement:
+        matches = re.finditer(r'\b' + statement + r'\b', text)
+        for match in matches:
+            if statement == "before":
+                entity = {
+                    "startTime": {
+                        "value": statement,
+                        "span": [match.start(), match.end()]
+                    }
+                }
+            elif statement == "after":
+                entity = {
+                    "endTime": {
+                        "value": statement,
+                        "span": [match.start(), match.end()]
+                    }
+                }
+            entities["Time Statement"].append(entity)
+
+    return entities
+
+text = """
+Title: 
+Segmentation of wine berries
+
+Abstract:
+Dataset contains high resolution images collected with a moving field phenotyping platform, the Phenoliner. 
+ The collected images show 3 different varieties (Riesling, Felicia, Regent) in 2 different training systems (VSP=vertical shoot positioning and SMPH= semi minimal pruned hedges), collected in 2 points in time (before and after thinning) in 2018. For each image we provide a manual masks which allow the identification of single berries.
+ The folder contains: 1. List with image details (imagename, acquisition date, year, variety, training system and variety number)and 2. Dataset folder with 2 subfolders, namely 1. img – 42 original RGB images and 2. lbl – 42 corresponding labels (manual annotation, with berry, edge, background definition)
+ The data were used to train a neural network with the main goal to detect single berries in images. The method is described in detail in the specified papers.
+"""
+
+entities = extract_entities(text)
+print(entities)
+```
+
+### Output
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Riesling", "span": [47, 54]}},
+    {"cropSpecies": {"value": "Felicia", "span": [63, 70]}},
+    {"cropSpecies": {"value": "Regent", "span": [85, 92]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "2018", "span": [113, 118]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "before", "span": [134, 140]}},
+    {"endTime": {"value": "after", "span": [156, 162]}}
+  ]
+}
+```

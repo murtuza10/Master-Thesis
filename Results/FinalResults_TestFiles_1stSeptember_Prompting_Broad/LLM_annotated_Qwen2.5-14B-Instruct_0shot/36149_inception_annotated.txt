@@ -1,0 +1,21 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "", "span": [82, 86] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "soil", "span": [457, 461] }},
+    {"Soil": { "value": "soil", "span": [500, 504] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [79, 86] }},
+    {"country": { "value": "Germany", "span": [128, 135] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2011/2012", "span": [142, 151] }},
+    {"endTime": { "value": "2014/2015", "span": [153, 162] }}
+  ]
+}
+```
+
+**Note:** The term "crops" is not explicitly mentioned as a specific crop species in the text, so it's left blank in the JSON output under `cropSpecies`. Please confirm if you'd like this entry removed or if there's a specific crop species that should be included based on additional context.

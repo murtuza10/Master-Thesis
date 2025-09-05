@@ -1,0 +1,21 @@
+### Entities Extraction and JSON Output
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "energy crop", "span": [44, 53] }},
+    {"cropSpecies": { "value": "crops", "span": [157, 163] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "soil", "span": [116, 120] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [15, 24] }},
+    {"city": { "value": "Germany", "span": [87, 94] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2011/2012", "span": [69, 81] }},
+    {"endTime": { "value": "2014/2015", "span": [71, 83] }},
+    {"duration": { "value": "three years", "span": [69, 79] }}
+  ]
+}
+```
