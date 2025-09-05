@@ -1,0 +1,22 @@
+#!/bin/bash
+sbatch job-embeddings.sbatch Qwen2.5-7B-Instruct 5
+sbatch job-embeddings.sbatch Qwen2.5-7B-Instruct 4
+sbatch job-embeddings.sbatch Qwen2.5-7B-Instruct 3
+sbatch job-embeddings.sbatch Qwen2.5-7B-Instruct 2
+sbatch job-embeddings.sbatch Qwen2.5-7B-Instruct 1
+sbatch job-embeddings.sbatch Qwen2.5-14B-Instruct 5
+sbatch job-embeddings.sbatch Qwen2.5-14B-Instruct 4
+sbatch job-embeddings.sbatch Qwen2.5-14B-Instruct 3
+sbatch job-embeddings.sbatch Qwen2.5-14B-Instruct 2
+sbatch job-embeddings.sbatch Qwen2.5-14B-Instruct 1
+sbatch job-embeddings.sbatch Qwen2.5-32B-Instruct 5
+sbatch job-embeddings.sbatch Qwen2.5-32B-Instruct 4
+sbatch job-embeddings.sbatch Qwen2.5-32B-Instruct 3
+sbatch job-embeddings.sbatch Qwen2.5-32B-Instruct 2
+sbatch job-embeddings.sbatch Qwen2.5-32B-Instruct 1
+sbatch job-embeddings.sbatch Llama-3.1-8B-Instruct 5
+sbatch job-embeddings.sbatch Llama-3.1-8B-Instruct 4
+sbatch job-embeddings.sbatch Llama-3.1-8B-Instruct 3
+sbatch job-embeddings.sbatch Llama-3.1-8B-Instruct 2
+sbatch job-embeddings.sbatch Llama-3.1-8B-Instruct 1
+
