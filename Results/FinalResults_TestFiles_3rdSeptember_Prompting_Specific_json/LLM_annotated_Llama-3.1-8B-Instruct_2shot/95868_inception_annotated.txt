@@ -1,0 +1,15 @@
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Norway spruce", "span": [108, 120] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": { "value": "Western Germany", "span": [104, 117] }},
+    {"region": { "value": "Germany", "span": [136, 143] }},
+    {"city": { "value": "", "span": [0, 0] }} // No city mentioned
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1964", "span": [126, 130] }},
+    {"endTime": { "value": "2015", "span": [174, 178] }} // Calculated endTime by adding 51 years to the start year
+  ]
+}

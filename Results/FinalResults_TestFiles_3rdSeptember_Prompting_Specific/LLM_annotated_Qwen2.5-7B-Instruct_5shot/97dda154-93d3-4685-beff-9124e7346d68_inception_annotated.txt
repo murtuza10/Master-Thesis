@@ -1,0 +1,26 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "maize", "span": [65, 69] }}
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "Wanna Sand", "span": [116, 125] }},
+    {"soilTexture": { "value": "Wanna Sand without biogas slurry", "span": [126, 153] }},
+    {"soilTexture": { "value": "Rostock Sand", "span": [154, 164] }},
+    {"soilTexture": { "value": "Wanna Marsch", "span": [165, 175] }}
+  ],
+  "Location": [
+    {"region": { "value": "Europe", "span": [269, 274] }},
+    {"country": { "value": "Germany", "span": [275, 281] }},
+    {"region": { "value": "Lower Saxony", "span": [282, 292] }},
+    {"region": { "value": "Mecklenburg-Vorpommern", "span": [293, 310] }},
+    {"city": { "value": "Rostock", "span": [311, 316] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2021", "span": [45, 48] }},
+    {"startTime": { "value": "2022", "span": [49, 52] }},
+    {"startTime": { "value": "2023", "span": [53, 56] }},
+    {"duration": { "value": "years 2021, 2022 and 2023", "span": [35, 58] }}
+  ]
+}
+```

@@ -1,0 +1,23 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Mais", "span": [69, 72]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "Parabraunerde", "span": [246, 259]}},
+    {"soilTexture": {"value": "Löss", "span": [262, 266]}},
+    {"soilDepth": {"value": "28 cm", "span": [310, 315]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2017", "span": [156, 160]}}
+  ]
+}
+```
+
+### Explanation ###
+- **Crops**: Extracted the crop species "Mais" (maize) from the text.
+- **Soil**: Extracted the soil reference group "Parabraunerde", soil texture "Löss", and soil depth "28 cm" from the text.
+- **Location**: No location information was found in the text.
+- **Time Statement**: Extracted the start time "2017" from the text.

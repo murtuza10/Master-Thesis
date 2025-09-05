@@ -1,0 +1,99 @@
+### Code ###
+```python
+import json
+import re
+
+def extract_entities(text):
+    # Initialize the entity lists
+    crops = []
+    soil = []
+    location = []
+    time_statement = []
+
+    # Regular expressions for entity extraction
+    crop_species_pattern = r'\b(wheat|rapeseed|barley|oats|maize|sunflower|soybean|cotton|peanut|potato|carrot|cucumber|tomato|pepper|eggplant|onion|garlic|soybean|sesame|coriander|mustard|fennel|celery|parsnip|parsnip|parsnip|parsnip)\b'
+    soil_texture_pattern = r'\b(loamy|clay|sandy|silt|loam|clay loam|sandy loam|silt loam|sandy clay loam|sandy clay|clay loam|loam|clay|sandy loam|sandy)\b'
+    soil_reference_group_pattern = r'\b(alkaline|acidic|neutral|alkaline|acidic|alkaline|alkaline|alkaline|acidic|acidic|alkaline|alkaline|alkaline|alkaline|alkaline)\b'
+    soil_depth_pattern = r'\b(\d+)cm\b'
+    soil_bulk_density_pattern = r'\b(\d+\.\d+)g\/cm3\b'
+    soil_ph_pattern = r'\b(\d+\.\d+)\b'
+    soil_organic_carbon_pattern = r'\b(\d+\.\d+)%\b'
+    soil_available_nitrogen_pattern = r'\b(\d+\.\d+)kg\/ha\b'
+    country_pattern = r'\b(Europe|Germany|France|UK|Spain|Italy|Portugal|Greece|Czech Republic|Poland|Netherlands|Belgium|Ireland|Austria|Slovenia|Croatia|Bulgaria|Hungary|Romania|Sweden|Norway|Denmark|Finland|Iceland|Switzerland|Lithuania|Latvia|Estonia)\b'
+    region_pattern = r'\b(pedo-climatic zones|climate zones)\b'
+    city_pattern = r'\b\w+\b'
+    latitude_pattern = r'\b(-?\d+\.\d+)\b'
+    longitude_pattern = r'\b(-?\d+\.\d+)\b'
+    start_time_pattern = r'\b(\d{4})\b'
+    end_time_pattern = r'\b(\d{4})\b'
+    duration_pattern = r'\b(\d+) years\b'
+
+    # Find all occurrences of the patterns in the text
+    crop_species_matches = re.findall(crop_species_pattern, text)
+    soil_texture_matches = re.findall(soil_texture_pattern, text)
+    soil_reference_group_matches = re.findall(soil_reference_group_pattern, text)
+    soil_depth_matches = re.findall(soil_depth_pattern, text)
+    soil_bulk_density_matches = re.findall(soil_bulk_density_pattern, text)
+    soil_ph_matches = re.findall(soil_ph_pattern, text)
+    soil_organic_carbon_matches = re.findall(soil_organic_carbon_pattern, text)
+    soil_available_nitrogen_matches = re.findall(soil_available_nitrogen_pattern, text)
+    country_matches = re.findall(country_pattern, text)
+    region_matches = re.findall(region_pattern, text)
+    city_matches = re.findall(city_pattern, text)
+    latitude_matches = re.findall(latitude_pattern, text)
+    longitude_matches = re.findall(longitude_pattern, text)
+    start_time_matches = re.findall(start_time_pattern, text)
+    end_time_matches = re.findall(end_time_pattern, text)
+    duration_matches = re.findall(duration_pattern, text)
+
+    # Extract the entities
+    for match in crop_species_matches:
+        crops.append({"cropSpecies": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in soil_texture_matches:
+        soil.append({"soilTexture": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in soil_reference_group_matches:
+        soil.append({"soilReferenceGroup": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in soil_depth_matches:
+        soil.append({"soilDepth": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in soil_bulk_density_matches:
+        soil.append({"soilBulkDensity": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in soil_ph_matches:
+        soil.append({"soilPH": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in soil_organic_carbon_matches:
+        soil.append({"soilOrganicCarbon": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in soil_available_nitrogen_matches:
+        soil.append({"soilAvailableNitrogen": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in country_matches:
+        location.append({"country": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in region_matches:
+        location.append({"region": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in city_matches:
+        location.append({"city": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in latitude_matches:
+        location.append({"latitude": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in longitude_matches:
+        location.append({"longitude": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in start_time_matches:
+        time_statement.append({"startTime": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in end_time_matches:
+        time_statement.append({"endTime": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in duration_matches:
+        time_statement.append({"duration": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+
+    # Create the output JSON
+    output = {
+        "Crops": crops,
+        "Soil": soil,
+        "Location": location,
+        "Time Statement": time_statement
+    }
+
+    return json.dumps(output, indent=4)
+
+# Example usage
+text = """
+Title: 
+Wheat field earthworms under divergent farming systems across a European climate gradient
+
+Abstract:
+Earthworm community metrics

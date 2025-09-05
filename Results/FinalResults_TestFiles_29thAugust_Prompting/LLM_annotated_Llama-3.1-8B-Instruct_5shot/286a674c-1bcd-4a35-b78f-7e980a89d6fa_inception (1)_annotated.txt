@@ -1,0 +1,22 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "winter wheat", "span": [213, 226] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": { "value": "Germany", "span": [528, 535] }},
+    {"region": { "value": "Brandenburg", "span": [540, 548] }},
+    {"city": { "value": "Quillow", "span": [553, 561] }}
+  ],
+  "Time Statement": [
+    {"duration": { "value": "April and June 2019", "span": [294, 311] }}
+  ]
+}
+```
+### Explanation ###
+- In the "Crops" section, the text mentions "winter wheat" which is a crop species, hence it is extracted and added to the JSON structure.
+- In the "Soil" section, there are no mentions of soil-related entities in the text, hence it remains empty.
+- In the "Location" section, the text mentions "Germany", "Brandenburg", and "Quillow" which are country, region, and city respectively. These are added to the JSON structure.
+- In the "Time Statement" section, the text mentions a time duration of "April and June 2019" which is added to the JSON structure.

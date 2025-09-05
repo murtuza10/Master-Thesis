@@ -1,0 +1,116 @@
+### Code ###
+```python
+import re
+import json
+
+text = """
+Three-year pesticide monitoring in ditches of the apple orchard region 'Altes Land'
+
+Abstract:
+The data presented in this file are related to the research article ‘Süß A,  Bischoff G, Mueller A, Buhr L (2006) Chemical and biological monitoring of the load of plant protection products and of zoocoenoses in ditches of the orchard region ‘Altes Land’. Nachrichtenblatt des Deutschen Pflanzenschutzdienstes 58:28-42’ which is only available in German language. The pesticide data presented here were acquired in four ditches in Lower Saxony, Germany (three ditches located in apple plantations, one ditch located in grassland) between 2001 and 2003. Two different monitoring strategies have been applied; event-driven sampling after pesticide applications and weekly integrated sampling using automatic water samplers. A total of 70 active substances have been monitored while farmers applied 25 active substances. LC-MS/MS (PE Sciex API 2000), GC-MS (Finnigan GCQ), GC coupled with electron capture detector (ECD) and inductively coupled plasma optical emission spectrometry (ICP-OES) were used for identification and quantification of the target substances.
+"""
+
+def extract_entities(text):
+    entities = {"Crops": [], "Soil": [], "Location": [], "Time Statement": []}
+
+    # Crops
+    crops = ["apple"]
+    for crop in crops:
+        match = re.search(r'\b' + re.escape(crop) + r'\b', text)
+        if match:
+            entities["Crops"].append({"cropSpecies": {"value": crop, "span": [match.start(), match.end()]} })
+
+    # Soil
+    soil = ["orchard region 'Altes Land'", "grassland"]
+    for soil_type in soil:
+        match = re.search(r'\b' + re.escape(soil_type) + r'\b', text)
+        if match:
+            if soil_type == "orchard region 'Altes Land'":
+                entities["Soil"].append({"soilReferenceGroup": {"value": soil_type, "span": [match.start(), match.end()]} })
+            else:
+                entities["Soil"].append({"soilReferenceGroup": {"value": soil_type, "span": [match.start(), match.end()]} })
+
+    # Location
+    location = ["Lower Saxony", "Germany"]
+    for location_name in location:
+        match = re.search(r'\b' + re.escape(location_name) + r'\b', text)
+        if match:
+            if location_name == "Lower Saxony":
+                entities["Location"].append({"region": {"value": location_name, "span": [match.start(), match.end()]} })
+            elif location_name == "Germany":
+                entities["Location"].append({"country": {"value": location_name, "span": [match.start(), match.end()]} })
+
+    # Time Statement
+    time_statement = ["2001", "2002", "2003"]
+    for time in time_statement:
+        match = re.search(r'\b' + re.escape(time) + r'\b', text)
+        if match:
+            entities["Time Statement"].append({"startTime": {"value": time, "span": [match.start(), match.end()]} })
+
+    return entities
+
+entities = extract_entities(text)
+print(json.dumps(entities, indent=4))
+```
+
+### Output ###
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "apple",
+                "span": [47, 52]
+            }
+        }
+    ],
+    "Soil": [
+        {
+            "soilReferenceGroup": {
+                "value": "orchard region 'Altes Land'",
+                "span": [67, 93]
+            }
+        },
+        {
+            "soilReferenceGroup": {
+                "value": "grassland",
+                "span": [94, 104]
+            }
+        }
+    ],
+    "Location": [
+        {
+            "region": {
+                "value": "Lower Saxony",
+                "span": [120, 133]
+            }
+        },
+        {
+            "country": {
+                "value": "Germany",
+                "span": [135, 142]
+            }
+        }
+    ],
+    "Time Statement": [
+        {
+            "startTime": {
+                "value": "2001",
+                "span": [158, 162]
+            }
+        },
+        {
+            "startTime": {
+                "value": "2002",
+                "span": [163, 167]
+            }
+        },
+        {
+            "startTime": {
+                "value": "2003",
+                "span": [168, 172]
+            }
+        }
+    ]
+}
+```

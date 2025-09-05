@@ -1,0 +1,27 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "oilseed rape", "span": [306, 316]}},
+    {"cropSpecies": {"value": "Brassica napus", "span": [340, 350]}},
+    {"cropSpecies": {"value": "OSR", "span": [351, 353]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"city": {"value": "Bochum", "span": [143, 150]}},
+    {"city": {"value": "Braunschweig", "span": [155, 165]}},
+    {"city": {"value": "Celle", "span": [169, 175]}},
+    {"city": {"value": "Hohenheim", "span": [179, 185]}},
+    {"city": {"value": "Veitshöchheim", "span": [193, 203]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "spring 2022", "span": [220, 233]}},
+    {"endTime": {"value": "spring 2023", "span": [237, 250]}}
+  ]
+}
+```
+### Note ###
+- "Crops" contains three mentions of "oilseed rape" and its synonym "OSR".
+- "Soil" is empty because the text does not mention any soil-related entities.
+- "Location" contains five mentions of cities in Germany.
+- "Time Statement" contains two mentions of time intervals.

@@ -1,0 +1,23 @@
+### Entities Extraction Result
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "cropland", "span": [63, 71] }},
+    {"cropSpecies": { "value": "grassland", "span": [95, 105] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "soil", "span": [16, 20] }},
+    {"Soil": { "value": "soil organic carbon", "span": [34, 50] }},
+    {"Soil": { "value": "soil properties", "span": [23, 36] }},
+    {"Soil": { "value": "soil properties", "span": [78, 94] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [56, 65] }},
+    {"region": { "value": "temperate", "span": [10, 17] }}
+  ],
+  "Time Statement": []
+}
+```
+
+Note: The indices are based on the full text.

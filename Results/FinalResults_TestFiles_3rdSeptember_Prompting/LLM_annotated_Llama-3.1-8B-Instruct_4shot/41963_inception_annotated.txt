@@ -1,0 +1,28 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Deutschland", "span": [166, 173]}},
+    {"region": {"value": "German National Forest Inventory", "span": [113, 144]}},
+    {"latitude": {"value": "47,15766000", "span": [333, 344]}},
+    {"latitude": {"value": "55,08484000", "span": [352, 363]}},
+    {"longitude": {"value": "5,79922100", "span": [309, 320]}},
+    {"longitude": {"value": "15,08954000", "span": [326, 337]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1961", "span": [95, 99]}},
+    {"endTime": {"value": "2100", "span": [132, 136]}},
+    {"startTime": {"value": "2011", "span": [182, 186]}},
+    {"endTime": {"value": "2050", "span": [192, 196]}},
+    {"startTime": {"value": "2011", "span": [202, 206]}},
+    {"endTime": {"value": "2100", "span": [212, 216]}},
+    {"startTime": {"value": "1961", "span": [262, 266]}},
+    {"endTime": {"value": "2013", "span": [272, 276]}},
+    {"startTime": {"value": "01.01.1961", "span": [283, 297]}},
+    {"endTime": {"value": "31.12.2099", "span": [300, 314]}}
+  ]
+}
+```
+Note: The start and end character positions are 1-indexed, i.e., the first character is at position 1.

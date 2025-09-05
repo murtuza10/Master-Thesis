@@ -1,0 +1,26 @@
+### Filled JSON Structure ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "C4 roots", "span": [13, 19] }},
+    {"cropSpecies": { "value": "C3 soil", "span": [53, 59] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "C3 soil", "span": [53, 59] }}
+  ],
+  "Location": [
+    {"country": { "value": "", "span": [] }},
+    {"region": { "value": "", "span": [] }},
+    {"city": { "value": "", "span": [] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "6 months", "span": [103, 110] }},
+    {"startTime": { "value": "12 months", "span": [115, 122] }},
+    {"startTime": { "value": "24 months", "span": [129, 136] }},
+    {"endTime": { "value": "2 years", "span": [82, 89] }},
+    {"duration": { "value": "2 years", "span": [82, 89] }}
+  ]
+}
+```
+Note that for the `Location` category, no location was explicitly mentioned in the text. Therefore, the lists for `country`, `region`, and `city` are empty.

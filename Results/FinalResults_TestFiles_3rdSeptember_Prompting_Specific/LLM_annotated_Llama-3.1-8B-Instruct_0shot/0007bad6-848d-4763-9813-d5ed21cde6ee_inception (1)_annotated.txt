@@ -1,0 +1,90 @@
+### Code ###
+```python
+import json
+import re
+from collections import defaultdict
+
+def extract_entities(text):
+    # Define regular expressions for each entity type
+    crop_species_re = r"\b(wheat|soybean|maize|rice|barley|oats|rye|canola|sunflower|cotton|sorghum|peanut|tobacco|potato|tomato|cassava|banana|plantain|yam|taro|sweetpotato)\b"
+    crop_variety_re = r"\b(winter|spring|summer|autumn)\b"
+    soil_texture_re = r"\b(sandy|clay|loamy|silt|peaty|calcareous|acidic|alkaline|neutral)\b"
+    soil_reference_group_re = r"\b(Entisol|Inceptisol|Alfisol|Spodosol|Ultisol|Oxisol|Aridisol|Mollisol|Aquoll|Histosol|Gelisol|Andisol|Vertisol)\b"
+    soil_depth_re = r"\b(\d+)cm\b"
+    soil_bulk_density_re = r"\b(\d+\.\d+)g/cm3\b"
+    soil_ph_re = r"\b(\d+\.\d+)pH\b"
+    soil_organic_carbon_re = r"\b(\d+\.\d+)%\b"
+    soil_available_nitrogen_re = r"\b(\d+\.\d+)kg/ha\b"
+    location_re = r"\b(USA|Europe|Asia|Africa|Australia|South America|North America|Germany|France|China|India|Brazil|Canada|Russia|Australia|South Africa)\b"
+    country_re = r"\b(USA|Europe|Asia|Africa|Australia|South America|North America|Germany|France|China|India|Brazil|Canada|Russia|Australia|South Africa)\b"
+    region_re = r"\b(North|South|East|West|Central|Northeast|Northwest|Southeast|Southwest)\b"
+    city_re = r"\b(\w+)\b"
+    latitude_re = r"\b(\d+\.\d+)°\b"
+    longitude_re = r"\b(\d+\.\d+)°\b"
+    time_statement_re = r"\b(\d+:\d+|\d+ hours?|\d+ days?)\b"
+
+    # Find all matches for each entity type
+    crop_species_matches = re.findall(crop_species_re, text)
+    crop_variety_matches = re.findall(crop_variety_re, text)
+    soil_texture_matches = re.findall(soil_texture_re, text)
+    soil_reference_group_matches = re.findall(soil_reference_group_re, text)
+    soil_depth_matches = re.findall(soil_depth_re, text)
+    soil_bulk_density_matches = re.findall(soil_bulk_density_re, text)
+    soil_ph_matches = re.findall(soil_ph_re, text)
+    soil_organic_carbon_matches = re.findall(soil_organic_carbon_re, text)
+    soil_available_nitrogen_matches = re.findall(soil_available_nitrogen_re, text)
+    location_matches = re.findall(location_re, text)
+    country_matches = re.findall(country_re, text)
+    region_matches = re.findall(region_re, text)
+    city_matches = re.findall(city_re, text)
+    latitude_matches = re.findall(latitude_re, text)
+    longitude_matches = re.findall(longitude_re, text)
+    time_statement_matches = re.findall(time_statement_re, text)
+
+    # Create a dictionary to store the entities
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Add each match to the corresponding list
+    for match in crop_species_matches:
+        entities["Crops"].append({"cropSpecies": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in crop_variety_matches:
+        entities["Crops"].append({"cropVariety": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in soil_texture_matches:
+        entities["Soil"].append({"soilTexture": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in soil_reference_group_matches:
+        entities["Soil"].append({"soilReferenceGroup": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in soil_depth_matches:
+        entities["Soil"].append({"soilDepth": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in soil_bulk_density_matches:
+        entities["Soil"].append({"soilBulkDensity": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in soil_ph_matches:
+        entities["Soil"].append({"soilPH": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in soil_organic_carbon_matches:
+        entities["Soil"].append({"soilOrganicCarbon": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in soil_available_nitrogen_matches:
+        entities["Soil"].append({"soilAvailableNitrogen": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in location_matches:
+        entities["Location"].append({"country": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in country_matches:
+        entities["Location"].append({"country": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in region_matches:
+        entities["Location"].append({"region": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in city_matches:
+        entities["Location"].append({"city": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in latitude_matches:
+        entities["Location"].append({"latitude": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in longitude_matches:
+        entities["Location"].append({"longitude": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in time_statement_matches:
+        entities["Time Statement"].append({"duration": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+
+    # Return the entities as a JSON string
+    return json.dumps(entities, indent=4)
+
+text = """
+Interactive effects of microplastics with other environmental drivers in a plant

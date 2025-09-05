@@ -1,0 +1,32 @@
+### Entities Extraction
+
+After analyzing the given text, I have extracted the entities according to the specified categories and returned them in the exact JSON format required.
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Helosciadium nodiflorum", "span": [0, 17] }},
+    {"cropSpecies": { "value": "celery", "span": [247, 253] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": { "value": "Germany", "span": [57, 64] }},
+    {"region": { "value": "Germany", "span": [57, 64] }},
+    {"city": { "value": "Gatersleben", "span": [58, 69] }},
+    {"city": { "value": "London", "span": [133, 140] }},
+    {"latitude": []},
+    {"longitude": []}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2015", "span": [175, 179] }},
+    {"startTime": { "value": "2016", "span": [176, 180] }},
+    {"endTime": { "value": "2018", "span": [223, 227] }},
+    {"endTime": { "value": "2019", "span": [224, 228] }},
+    {"duration": []}
+  ]
+}
+```
+
+### Note:
+- The `latitude` and `longitude` entities are missing as they are not explicitly mentioned in the text.
+- The `duration` entity is also missing as it is not explicitly mentioned in the text.

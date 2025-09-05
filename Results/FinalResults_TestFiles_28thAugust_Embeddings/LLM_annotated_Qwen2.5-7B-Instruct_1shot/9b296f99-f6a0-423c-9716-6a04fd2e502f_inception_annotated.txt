@@ -1,0 +1,32 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [112, 117]}},
+    {"cropSpecies": {"value": "barley", "span": [124, 130]}},
+    {"cropSpecies": {"value": "beet", "span": [137, 141]}},
+    {"cropSpecies": {"value": "barley", "span": [419, 425]}},
+    {"cropSpecies": {"value": "beet", "span": [432, 436]}}
+  ],
+  "Soil": [
+    {"soilOrganicCarbon": {"value": "humus", "span": [57, 61]}},
+    {"soilAvailableNitrogen": {"value": "mineral nutrients", "span": [148, 163]}},
+    {"soilOrganicCarbon": {"value": "humus", "span": [238, 242]}},
+    {"soilOrganicCarbon": {"value": "humus", "span": [371, 375]}},
+    {"soilOrganicCarbon": {"value": "horse manure", "span": [549, 558]}},
+    {"soilOrganicCarbon": {"value": "crop residues", "span": [561, 571]}},
+    {"soilOrganicCarbon": {"value": "bacterial bulk soil community", "span": [702, 720]}},
+    {"soilOrganicCarbon": {"value": "bacterial 16S rRNA gene", "span": [731, 747]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [27, 34]}},
+    {"region": {"value": "LUFA Speyer", "span": [35, 43]}},
+    {"city": {"value": "Speyer", "span": [44, 49]}},
+    {"region": {"value": "Rinkenbergerhof", "span": [50, 59]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1984", "span": [104, 109]}},
+    {"duration": {"value": "long term", "span": [476, 482]}},
+    {"duration": {"value": "four sampling seasons", "span": [612, 624]}}
+  ]
+}
+```

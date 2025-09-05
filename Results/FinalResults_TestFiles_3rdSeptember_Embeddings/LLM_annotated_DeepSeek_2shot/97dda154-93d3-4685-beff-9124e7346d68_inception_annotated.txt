@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892149-CKEkaHrJXIzJVjQEDsT6",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892149,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"maize\", \"span\": [183, 188]}},\n    {\"cropSpecies\": {\"value\": \"maize\", \"span\": [675, 680]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"soil\", \"span\": [47, 51]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [101, 105]}},\n    {\"Soil\": {\"value\": \"Wanna Sand\", \"span\": [288, 298]}},\n    {\"Soil\": {\"value\": \"Wanna Sand\", \"span\": [320, 330]}},\n    {\"Soil\": {\"value\": \"Rostock Sand\", \"span\": [348, 360]}},\n    {\"Soil\": {\"value\": \"Wanna Marsch\", \"span\": [366, 378]}},\n    {\"Soil\": {\"value\": \"biogas slurry\", \"span\": [402, 416]}},\n    {\"Soil\": {\"value\": \"Soil\", \"span\": [1513, 1517]}},\n    {\"Soil\": {\"value\": \"Boden\", \"span\": [1623, 1628]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"Europe\", \"span\": [1615, 1621]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [1624, 1631]}},\n    {\"region\": {\"value\": \"Lower Saxony\", \"span\": [1634, 1647]}},\n    {\"city\": {\"value\": \"Wanna\", \"span\": [1650, 1655]}},\n    {\"region\": {\"value\": \"Mecklenburg-Vorpommern\", \"span\": [1658, 1680]}},\n    {\"city\": {\"value\": \"Rostock\", \"span\": [1683, 1690]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2021\", \"span\": [230, 234]}},\n    {\"endTime\": {\"value\": \"2023\", \"span\": [239, 243]}},\n    {\"startTime\": {\"value\": \"April\", \"span\": [747, 752]}},\n    {\"endTime\": {\"value\": \"August\", \"span\": [757, 763]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2972,
+    "completion_tokens": 510,
+    "total_tokens": 3482,
+    "prompt_tokens_details": null
+  }
+}

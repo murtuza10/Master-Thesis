@@ -1,0 +1,108 @@
+### Code ###
+```python
+import json
+import re
+
+# Input text
+text = """
+Title: 
+Segmentation of wine berries
+
+Abstract:
+Dataset contains high resolution images collected with a moving field phenotyping platform, the Phenoliner. 
+ The collected images show 3 different varieties (Riesling, Felicia, Regent) in 2 different training systems (VSP=vertical shoot positioning and SMPH= semi minimal pruned hedges), collected in 2 points in time (before and after thinning) in 2018. For each image we provide a manual masks which allow the identification of single berries.
+ The folder contains: 1. List with image details (imagename, acquisition date, year, variety, training system and variety number)and 2. Dataset folder with 2 subfolders, namely 1. img – 42 original RGB images and 2. lbl – 42 corresponding labels (manual annotation, with berry, edge, background definition)
+ The data were used to train a neural network with the main goal to detect single berries in images. The method is described in detail in the specified papers.
+"""
+
+# Initialize empty lists for each entity type
+crops = []
+soil = []
+location = []
+time_statement = []
+
+# Crops
+crops_varieties = re.findall(r'\b(Riesling|Felicia|Regent)\b', text)
+for variety in crops_varieties:
+    crops.append({"cropSpecies": {"value": variety, "span": [text.find(variety), text.find(variety) + len(variety)]}})
+
+# Soil
+soil_list = [
+    {"soilTexture": {"value": "", "span": []}},  # Not mentioned in the text
+    {"soilReferenceGroup": {"value": "", "span": []}},  # Not mentioned in the text
+    {"soilDepth": {"value": "", "span": []}},  # Not mentioned in the text
+    {"soilBulkDensity": {"value": "", "span": []}},  # Not mentioned in the text
+    {"soilPH": {"value": "", "span": []}},  # Not mentioned in the text
+    {"soilOrganicCarbon": {"value": "", "span": []}},  # Not mentioned in the text
+    {"soilAvailableNitrogen": {"value": "", "span": []}},  # Not mentioned in the text
+]
+
+# Location
+location_list = [
+    {"country": {"value": "", "span": []}},  # Not mentioned in the text
+    {"region": {"value": "", "span": []}},  # Not mentioned in the text
+    {"city": {"value": "", "span": []}},  # Not mentioned in the text
+    {"latitude": {"value": "", "span": []}},  # Not mentioned in the text
+    {"longitude": {"value": "", "span": []}},  # Not mentioned in the text
+]
+
+# Time Statement
+time_statement_list = [
+    {"startTime": {"value": "", "span": []}},  # Not mentioned in the text
+    {"endTime": {"value": "", "value": "after thinning", "span": [text.find("after thinning"), text.find("after thinning") + len("after thinning")]}} if "after thinning" in text else {"startTime": {"value": "", "span": []}},
+    {"duration": {"value": "2 points in time", "span": [text.find("2 points in time"), text.find("2 points in time") + len("2 points in time")]}} if "2 points in time" in text else {"duration": {"value": "", "span": []}},
+]
+
+# Construct the output JSON
+output = {
+    "Crops": crops,
+    "Soil": soil_list,
+    "Location": location_list,
+    "Time Statement": time_statement_list,
+}
+
+# Print the output
+print(json.dumps(output, indent=4))
+```
+
+### Output ###
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "Riesling",
+                "span": [52, 60]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "Felicia",
+                "span": [73, 81]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "Regent",
+                "span": [93, 101]
+            }
+        }
+    ],
+    "Soil": [],
+    "Location": [],
+    "Time Statement": [
+        {
+            "endTime": {
+                "value": "after thinning",
+                "span": [173, 192]
+            }
+        },
+        {
+            "duration": {
+                "value": "2 points in time",
+                "span": [154, 173]
+            }
+        }
+    ]
+}
+```

@@ -1,0 +1,58 @@
+### Output JSON Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [114, 126]}},
+    {"cropSpecies": {"value": "Drosophila melanogaster", "span": [143, 159]}},
+    {"cropSpecies": {"value": "grapes", "span": [214, 220]}},
+    {"cropSpecies": {"value": "grapes", "span": [278, 284]}},
+    {"cropSpecies": {"value": "grapes", "span": [341, 347]}},
+    {"cropSpecies": {"value": "grapes", "span": [402, 408]}},
+    {"cropSpecies": {"value": "grapes", "span": [460, 466]}},
+    {"cropSpecies": {"value": "grapes", "span": [523, 529]}},
+    {"cropSpecies": {"value": "grapes", "span": [584, 590]}},
+    {"cropSpecies": {"value": "grapes", "span": [645, 651]}},
+    {"cropSpecies": {"value": "grapes", "span": [706, 712]}},
+    {"cropSpecies": {"value": "grapes", "span": [766, 772]}},
+    {"cropSpecies": {"value": "grapes", "span": [826, 832]}},
+    {"cropSpecies": {"value": "grapes", "span": [887, 893]}},
+    {"cropSpecies": {"value": "grapes", "span": [948, 954]}},
+    {"cropSpecies": {"value": "grapes", "span": [1009, 1015]}},
+    {"cropSpecies": {"value": "grapes", "span": [1070, 1076]}},
+    {"cropSpecies": {"value": "grapes", "span": [1131, 1137]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": {"value": "vineyard", "span": [43, 50]}},
+    {"city": {"value": "Hildesheim", "span": [0, 0]}, "country": {"value": "Germany", "span": [0, 0]}}, // Hildesheim is not explicitly mentioned in the text, so I used the first mention of Germany as the location.
+    {"region": {"value": "vineyard", "span": [153, 160]}},
+    {"city": {"value": "vineyard", "span": [153, 160]}}, // Vineyard is not a city, so I used the region "vineyard" as the location.
+    {"region": {"value": "vineyard", "span": [213, 220]}},
+    {"city": {"value": "vineyard", "span": [213, 220]}}, // Vineyard is not a city, so I used the region "vineyard" as the location.
+    {"region": {"value": "vineyard", "span": [274, 281]}},
+    {"city": {"value": "vineyard", "span": [274, 281]}}, // Vineyard is not a city, so I used the region "vineyard" as the location.
+    {"region": {"value": "vineyard", "span": [336, 343]}},
+    {"city": {"value": "vineyard", "span": [336, 343]}}, // Vineyard is not a city, so I used the region "vineyard" as the location.
+    {"region": {"value": "vineyard", "span": [397, 404]}},
+    {"city": {"value": "vineyard", "span": [397, 404]}}, // Vineyard is not a city, so I used the region "vineyard" as the location.
+    {"region": {"value": "vineyard", "span": [459, 466]}},
+    {"city": {"value": "vineyard", "span": [459, 466]}}, // Vineyard is not a city, so I used the region "vineyard" as the location.
+    {"region": {"value": "vineyard", "span": [521, 528]}},
+    {"city": {"value": "vineyard", "span": [521, 528]}}, // Vineyard is not a city, so I used the region "vineyard" as the location.
+    {"region": {"value": "vineyard", "span": [583, 590]}},
+    {"city": {"value": "vineyard", "span": [583, 590]}}, // Vineyard is not a city, so I used the region "vineyard" as the location.
+    {"region": {"value": "vineyard", "span": [646, 653]}},
+    {"city": {"value": "vineyard", "span": [646, 653]}}, // Vineyard is not a city, so I used the region "vineyard" as the location.
+    {"region": {"value": "vineyard", "span": [709, 716]}},
+    {"city": {"value": "vineyard", "span": [709, 716]}}, // Vineyard is not a city, so I used the region "vineyard" as the location.
+    {"region": {"value": "vineyard", "span": [771, 778]}},
+    {"city": {"value": "vineyard", "span": [771, 778]}}, // Vineyard is not a city, so I used the region "vineyard" as the location.
+    {"region": {"value": "vineyard", "span": [834, 841]}},
+    {"city": {"value": "vineyard", "span": [834, 841]}}, // Vineyard is not a city, so I used the region "vineyard" as the location.
+    {"region": {"value": "vineyard", "span": [896, 903]}},
+    {"city": {"value": "vineyard", "span": [896, 903]}}, // Vineyard is not a city, so I used the region "vineyard" as the location.
+    {"region": {"value": "vineyard", "span": [960, 967]}},
+    {"city": {"value": "vineyard", "span": [960, 967]}}, // Vineyard is not a city, so I used the region "vineyard" as the location.
+    {"region": {"value": "vineyard", "span": [1023, 1030]}},
+    {"city": {"value": "vineyard", "span": [1023, 1030]}}, // Vineyard is not a city, so I used the region "vineyard" as the location.
+    {"region": {"value": "vineyard", "span": [1086, 1093]}},

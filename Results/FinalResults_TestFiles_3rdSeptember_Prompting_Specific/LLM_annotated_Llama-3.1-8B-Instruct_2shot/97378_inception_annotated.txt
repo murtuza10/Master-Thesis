@@ -1,0 +1,28 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "cropland", "span": [92, 99] }}
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "Lehm", "span": [185, 190] }},
+    {"soilTexture": { "value": "Ton", "span": [191, 194] }},
+    {"soilReferenceGroup": { "value": "Lehm und Ton", "span": [185, 196] }}
+  ],
+  "Location": [
+    {"city": { "value": "Hildesheim", "span": [220, 228] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "14-tägig", "span": [78, 86] }},
+    {"duration": { "value": "2 Jahre", "span": [104, 112] }}
+  ]
+}
+```
+
+### Explanation ###
+
+*   "Crops": The input text mentions "cropland" which is a type of crop. It is included in the "cropSpecies" category.
+*   "Soil": The input text mentions "Lehm" and "Ton" as soil textures. Additionally, it mentions "Lehm und Ton" as a combination of soil textures. These are included in the "soilTexture" and "soilReferenceGroup" categories, respectively.
+*   "Location": The input text mentions "Hildesheim" as a city. It is included in the "city" category.
+*   "Time Statement": The input text mentions a 14-tägig (14-day) time frame and a duration of 2 Jahre (2 years). These are included in the "startTime" and "duration" categories, respectively.

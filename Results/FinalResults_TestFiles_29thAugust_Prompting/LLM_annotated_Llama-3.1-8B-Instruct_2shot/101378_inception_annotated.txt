@@ -1,0 +1,69 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "birch", "span": [83, 89]}},
+    {"cropSpecies": {"value": "Betula pubescens Ehrh.", "span": [84, 113]}}
+  ],
+  "Soil": [
+    {"soilTexture": {}},
+    {"soilReferenceGroup": {}},
+    {"soilDepth": {}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}}
+  ],
+  "Location": [
+    {"region": {}},
+    {"city": {}},
+    {"latitude": {}},
+    {"longitude": {}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "one year", "span": [141, 147]}}
+  ]
+}
+```
+
+However, this JSON output only partially fills the required structure. To fill the required structure completely, we need to perform a more detailed analysis of the input text.
+
+### Complete JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "birch", "span": [83, 89]}},
+    {"cropSpecies": {"value": "Betula pubescens Ehrh.", "span": [84, 113]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "mire-specific vegetation", "span": [57, 81]}},
+    {"soilDepth": {}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}}
+  ],
+  "Location": [
+    {"region": {"value": "northern hemisphere", "span": [101, 115]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "one year", "span": [141, 147]}},
+    {"endTime": {}},
+    {"duration": {}}
+  ]
+}
+```
+
+### Note: The fields that were not filled are as follows: 
+
+- SoilTexture: This field is empty because there is no mention of the soil texture in the given text.
+- SoilDepth: This field is empty because there is no mention of the soil depth in the given text.
+- SoilBulkDensity: This field is empty because there is no mention of the soil bulk density in the given text.
+- SoilPH: This field is empty because there is no mention of the soil pH in the given text.
+- SoilOrganicCarbon: This field is empty because there is no mention of the soil organic carbon in the given text.
+- SoilAvailableNitrogen: This field is empty because there is no mention of the soil available nitrogen in the given text.
+- EndTime: This field is empty because there is no mention of the end time in the given text.
+- Duration: This field is empty because there is no mention of the duration in the given text.
+- Latitude: This field is empty because there is no mention of the latitude in the given text.
+- Longitude: This field is empty because there is no mention of the longitude in the given text.
+- City: This field is empty because there is no mention of the city in the given text.

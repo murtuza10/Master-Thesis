@@ -1,0 +1,42 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "barley", "span": [52, 58] }},
+    {"cropSpecies": { "value": "barley", "span": [347, 353] }},
+    {"cropSpecies": { "value": "oilseed rape", "span": [515, 527] }},
+    {"cropSpecies": { "value": "wheat", "span": [530, 535] }},
+    {"cropSpecies": { "value": "lupine", "span": [537, 543] }},
+    {"cropSpecies": { "value": "rye", "span": [545, 548] }},
+    {"cropSpecies": { "value": "barley", "span": [823, 829] }},
+    {"cropVariety": { "value": "OTTO", "span": [844, 848] }}
+  ],
+  "Soil": [
+    {"soilAvailablePhosphorus": { "value": "PCAL", "span": [387, 391] }},
+    {"soilAvailablePhosphorus": { "value": "PCAL", "span": [424, 428] }},
+    {"soilAvailablePhosphorus": { "value": "PCAL", "span": [438, 442] }},
+    {"soilAvailablePhosphorus": { "value": "PCAL", "span": [463, 467] }},
+    {"soilAvailablePhosphorus": { "value": "PCAL", "span": [486, 490] }},
+    {"soilAvailablePhosphorus": { "value": "PCAL", "span": [501, 505] }},
+    {"soilAvailablePhosphorus": { "value": "PCAL", "span": [539, 543] }},
+    {"soilDepth": { "value": "0-30 cm", "span": [401, 407] }},
+    {"soilDepth": { "value": "25 cm", "span": [648, 653] }},
+    {"soilDepth": { "value": "25 cm", "span": [813, 818] }},
+    {"soilReferenceGroup": { "value": "A", "span": [472, 473] }},
+    {"soilReferenceGroup": { "value": "B", "span": [480, 481] }},
+    {"soilReferenceGroup": { "value": "C", "span": [488, 489] }}
+  ],
+  "Location": [
+    {"city": { "value": "Braunschweig", "span": [20, 32] }},
+    {"city": { "value": "Braunschweig", "span": [73, 85] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2014", "span": [60, 64] }},
+    {"startTime": { "value": "2014", "span": [839, 843] }},
+    {"startTime": { "value": "1985", "span": [335, 340] }},
+    {"endTime": { "value": "2008", "span": [342, 346] }},
+    {"endTime": { "value": "2013", "span": [414, 418] }},
+    {"duration": { "value": "1985-2008", "span": [335, 346] }},
+    {"duration": { "value": "autumn 2013", "span": [806, 817] }}
+  ]
+}
+```

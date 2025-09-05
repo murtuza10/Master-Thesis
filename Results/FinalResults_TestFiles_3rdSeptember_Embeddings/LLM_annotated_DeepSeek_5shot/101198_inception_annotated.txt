@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892241-GpKKUFh5co1Aoc0eCRPn",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892241,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"180 Ländern\", \"span\": [1023, 1034]}}\n  ],\n  \"Time Statement\": [\n    {\"endTime\": {\"value\": \"2050\", \"span\": [530, 534]}},\n    {\"endTime\": {\"value\": \"2050\", \"span\": [1020, 1024]}},\n    {\"startTime\": {\"value\": \"2020\", \"span\": [1478, 1484]}},\n    {\"endTime\": {\"value\": \"2050\", \"span\": [1489, 1493]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5992,
+    "completion_tokens": 151,
+    "total_tokens": 6143,
+    "prompt_tokens_details": null
+  }
+}

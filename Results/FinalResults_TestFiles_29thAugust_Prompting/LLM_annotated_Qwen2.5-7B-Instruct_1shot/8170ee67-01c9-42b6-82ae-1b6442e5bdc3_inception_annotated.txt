@@ -1,0 +1,34 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "winter barley", "span": [25, 35]}},
+    {"cropSpecies": { "value": "winter oilseed rape", "span": [139, 153]}},
+    {"cropSpecies": { "value": "winter wheat", "span": [154, 162]}},
+    {"cropSpecies": { "value": "lupine", "span": [163, 168]}},
+    {"cropSpecies": { "value": "winter rye", "span": [169, 176]}},
+    {"cropVariety": { "value": "OTTO", "span": [285, 288]}}
+  ],
+  "Soil": [
+    {"soilPH": { "value": "PCAL", "span": [113, 117]}},
+    {"soilDepth": { "value": "0-30 cm", "span": [183, 190]}},
+    {"soilReferenceGroup": { "value": "extensively managed grassland", "span": [205, 226]}},
+    {"soilClass": { "value": "A", "span": [261, 262]},
+     {"soilClass": { "value": "B", "span": [265, 266]},
+     {"soilClass": { "value": "C", "span": [269, 270]}
+  ],
+  "Location": [
+    {"region": { "value": "Braunschweig", "span": [27, 35]},
+     {"country": { "value": "Germany", "span": [172, 178]}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2014", "span": [51, 55]},
+     {"startTime": { "value": "1985", "span": [120, 124]},
+     {"startTime": { "value": "2008", "span": [125, 129]},
+     {"startTime": { "value": "2013", "span": [232, 236]},
+     {"startTime": { "value": "autumn 2013", "span": [293, 302]},
+     {"endTime": { "value": "2013", "span": [232, 236]},
+     {"endTime": { "value": "2014", "span": [51, 55]},
+     {"duration": { "value": "33 years", "span": [120, 134]}
+  ]
+}
+```

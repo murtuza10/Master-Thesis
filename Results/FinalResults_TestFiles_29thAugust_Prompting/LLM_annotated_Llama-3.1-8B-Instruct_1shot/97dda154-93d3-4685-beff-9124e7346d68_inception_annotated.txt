@@ -1,0 +1,35 @@
+### Output Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "maize", "span": [122, 127] }}
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "Wanna Sand", "span": [134, 144] }},
+    {"soilTexture": { "value": "Wanna Sand without biogas slurry", "span": [145, 162] }},
+    {"soilTexture": { "value": "Rostock Sand", "span": [166, 176] }},
+    {"soilTexture": { "value": "Wanna Marsch", "span": [180, 189] }},
+    {"soilDepth": { "value": "30 m³", "span": [196, 203] }},
+    {"soilBulkDensity": { "value": "biogas slurry", "span": [204, 215] }},
+    {"soilPH": { "value": "DAP", "span": [220, 223] }},
+    {"soilOrganicCarbon": { "value": "microgranular fertilizer", "span": [224, 242] }},
+    {"soilAvailableNitrogen": { "value": "without (control)", "span": [246, 265] }}
+  ],
+  "Location": [
+    {"country": { "value": "Europe", "span": [282, 286] }},
+    {"country": { "value": "Germany", "span": [288, 294] }},
+    {"region": { "value": "Lower Saxony", "span": [301, 308] }},
+    {"city": { "value": "Wanna", "span": [312, 317] }},
+    {"city": { "value": "Mecklenburg-Vorpommern", "span": [320, 334] }},
+    {"city": { "value": "Rostock", "span": [336, 341] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2021", "span": [346, 350] }},
+    {"startTime": { "value": "2022", "span": [352, 356] }},
+    {"endTime": { "value": "2023", "span": [358, 362] }},
+    {"startTime": { "value": "April", "span": [370, 376] }},
+    {"endTime": { "value": "August", "span": [382, 388] }}
+  ]
+}
+```
+Note: The "soilBulkDensity" key in the "Soil" list is not the best choice, since "biogas slurry" is more related to the application of the fertilizer, not the bulk density of the soil. It would be better to use a different key for that value.

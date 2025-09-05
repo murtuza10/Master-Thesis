@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756918311-1l6DYqRIM24ENsUVIvbO",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756918311,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"apple\", \"span\": [72, 77] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"region\": { \"value\": \"Lower Saxony\", \"span\": [409, 421] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [423, 430] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2001\", \"span\": [440, 444] }},\n    {\"endTime\": { \"value\": \"2003\", \"span\": [449, 453] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 2311,
+    "completion_tokens": 149,
+    "total_tokens": 2460
+  }
+}

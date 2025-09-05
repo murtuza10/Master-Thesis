@@ -1,0 +1,30 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Birch", "span": [146, 151]}},
+    {"cropSpecies": {"value": "Betula pubescens", "span": [156, 171]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "bog", "span": [24, 28]}},
+    {"soilReferenceGroup": {"value": "rewetted bog", "span": [61, 74]}},
+    {"soilDepth": {"value": "peat", "span": [130, 134]}}
+  ],
+  "Location": [
+    {"region": {"value": "northern hemisphere", "span": [69, 87]}},
+    {"region": {"value": "former peat extraction area", "span": [123, 143]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "one year", "span": [171, 176]}}
+  ]
+}
+```
+
+### Notes ###
+
+- Extracted entities related to "Crops" are "Birch" and "Betula pubescens".
+- Extracted entities related to "Soil" are "bog", "rewetted bog", and "peat".
+- Extracted entities related to "Location" are "northern hemisphere" and "former peat extraction area".
+- Extracted entities related to "Time Statement" is "one year".
+- Entity spans are relative to the beginning of the full text.
+- All JSON arrays and objects are valid JSON with proper syntax.

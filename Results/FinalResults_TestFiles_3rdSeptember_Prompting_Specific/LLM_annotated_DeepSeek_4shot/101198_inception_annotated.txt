@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756918157-l36NF6NU8h2F7jNJkMR5",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756918161,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [2175, 2182]}}\n  ],\n  \"Time Statement\": [\n    {\"endTime\": {\"value\": \"2050\", \"span\": [665, 669]}},\n    {\"endTime\": {\"value\": \"2050\", \"span\": [1143, 1147]}},\n    {\"startTime\": {\"value\": \"2020\", \"span\": [1531, 1534]}},\n    {\"endTime\": {\"value\": \"2050\", \"span\": [1538, 1542]}},\n    {\"endTime\": {\"value\": \"2023\", \"span\": [1878, 1882]}},\n    {\"endTime\": {\"value\": \"2024\", \"span\": [2038, 2042]}},\n    {\"endTime\": {\"value\": \"2023\", \"span\": [2124, 2128]}},\n    {\"endTime\": {\"value\": \"2028\", \"span\": [2161, 2165]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4935,
+    "completion_tokens": 245,
+    "total_tokens": 5180,
+    "prompt_tokens_details": null
+  }
+}

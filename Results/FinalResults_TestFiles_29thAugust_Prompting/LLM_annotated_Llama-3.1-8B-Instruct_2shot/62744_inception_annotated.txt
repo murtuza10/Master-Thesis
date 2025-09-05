@@ -1,0 +1,28 @@
+### Output JSON Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "rye", "span": [84, 88]}},
+    {"cropSpecies": {"value": "Secale cereale L.", "span": [83, 105]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Explanation ###
+From the given input text, the following entities were extracted:
+
+1. **Crops**:
+   - "rye" (Secale cereale L.) is the crop species mentioned in the text.
+   - Both mentions of "Secale cereale L." were considered as crop species.
+
+2. **Soil**:
+   - No soil-related entities were found in the text.
+
+3. **Location**:
+   - No location-related entities were found in the text.
+
+4. **Time Statement**:
+   - No time-related entities were found in the text.

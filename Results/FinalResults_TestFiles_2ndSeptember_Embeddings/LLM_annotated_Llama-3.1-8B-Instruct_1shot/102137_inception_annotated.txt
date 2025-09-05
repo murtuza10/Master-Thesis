@@ -1,0 +1,21 @@
+### Output JSON ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "cropland", "span": [121, 129]}},
+    {"cropSpecies": {"value": "grassland", "span": [138, 146]}},
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [106, 113]}},
+  ],
+  "Time Statement": []
+}
+```
+
+### Explanation: ###
+
+- In the text, "cropland" and "grassland" are explicitly mentioned as different types of agricultural land, which can be classified as crops. 
+- The text does not explicitly mention any soil properties, so the "Soil" list is empty.
+- "Germany" is explicitly mentioned as the country where the study took place, so it is included in the "Location" list.
+- There is no mention of time or duration in the text, so the "Time Statement" list is empty.

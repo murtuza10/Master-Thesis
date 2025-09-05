@@ -1,0 +1,28 @@
+### Output Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "energy crops", "span": [266, 277] }}
+  ],
+  "Soil": [
+    {"soilTexture": []},
+    {"soilReferenceGroup": []},
+    {"soilDepth": []},
+    {"soilBulkDensity": []},
+    {"soilPH": []},
+    {"soilOrganicCarbon": []},
+    {"soilAvailableNitrogen": []}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [38, 45] }},
+    {"region": { "value": "Germany", "span": [61, 66] }},
+    {"city": []},
+    {"latitude": []},
+    {"longitude": []}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1990", "span": [93, 97] }},
+    {"endTime": { "value": "2017", "span": [126, 130] }}
+  ]
+}
+```

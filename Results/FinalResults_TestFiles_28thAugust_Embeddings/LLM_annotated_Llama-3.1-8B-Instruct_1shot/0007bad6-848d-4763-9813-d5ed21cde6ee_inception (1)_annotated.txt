@@ -1,0 +1,20 @@
+### JSON Output: ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [249, 255]}}
+  ],
+  "Soil": [
+    {"soilProperties": {"value": "soil water stable aggregation", "span": [141, 164]}},
+    {"soilProperties": {"value": "soil properties", "span": [235, 245]}},
+    {"soil": {"value": "soil", "span": [6, 11]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Notes: ###
+
+- The keywords "Boden" and "Soil" are both referring to soil, so I've created a new key "soil" and also kept the original key "soilProperties" to represent different aspects of soil.

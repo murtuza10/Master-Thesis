@@ -1,0 +1,18 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Mais", "span": [0, 0] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "Parabraunerde", "span": [144, 157] }},
+    {"soilTexture": { "value": "Löss", "span": [159, 163] }},
+    {"soilDepth": { "value": "28 cm", "span": [193, 198] }}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": { "value": "2017", "span": [117, 121] }}
+  ]
+}
+```
+Note: Since there is no mention of any crop species or variety other than "Mais" (which is likely a typo and should be "Mais" or "Mais" in German, I left it as it is, if you want to correct it, let me know), I only included "cropSpecies" in the output.

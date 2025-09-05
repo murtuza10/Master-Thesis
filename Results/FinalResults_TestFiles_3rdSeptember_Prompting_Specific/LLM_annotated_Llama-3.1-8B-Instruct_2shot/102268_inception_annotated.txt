@@ -1,0 +1,34 @@
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [71, 76]}}
+  ],
+  "Soil": [
+    {"soilTexture": {}},
+    {"soilReferenceGroup": {}},
+    {"soilDepth": {}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}}
+  ],
+  "Location": [
+    {"region": {"value": "Europe", "span": [99, 105]}},
+    {"country": {}},
+    {"city": {}},
+    {"latitude": {}},
+    {"longitude": {}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2019", "span": [44, 48]}},
+    {"endTime": {"value": "2020", "span": [53, 57]}}
+  ]
+}
+```
+### Notes: ###
+
+- For "Crops", I only found the species "wheat".
+- For "Soil", I found no explicit information about soil texture, reference group, depth, bulk density, pH, organic carbon, or available nitrogen. The text only mentions "pedo-climatic zones".
+- For "Location", I found "Europe" as the region, but no country, city, latitude, or longitude information.
+- For "Time Statement", I found the start time as 2019 and the end time as 2020.

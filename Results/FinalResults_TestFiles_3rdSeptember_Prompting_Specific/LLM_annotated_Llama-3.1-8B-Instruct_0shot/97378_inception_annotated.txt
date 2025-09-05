@@ -1,0 +1,126 @@
+### Text Processing and Entity Extraction ###
+
+```python
+import re
+import json
+
+text = """
+Die hier hinterlegten Daten beziehen sich auf die Publikation von Forschungsergebnissen im Zusammenhang mit dem MonViA Projekt (Monitoring von biologischer Vielfalt in Agrarlandschaften). Auf drei benachbarten Feldern eines landwirtschaftlichen Betriebs in der Nähe von Hildesheim wurden in einem 14-tägigen Zeitraster die Abundanz und Vielfalt der bodenmikrobiologischen Lebensgemeinschaft über einen Zeitraum von 2 Jahren erfasst. Auf den Feldern, die sich in Bodentextur (Lehm und Ton) und Bodenbearbeitung (konservierend und konventionell) unterschieden, wurden landwirtschaftliche Maßnahmen nach herkömmlicher Praxis betrieben. Um Einflussfaktoren zu untersuchen, wurden parallel meteorlogische Daten und physikochemische Bodeneigenschaften erfasst (pH Wert, Gehalte an organischen Kohlenstoff und Gesamt-Stickstoff). Zur mikrobiologischen Charakterisierung wurde Boden-DNA mit PCR Verfahren untersucht. Die Abundanz wurde mit quantitativer PCR (qPCR) bestimmt, die Vielfalt mit der Sequenzierung von PCR Produkten mit Hilfe der IlluminaMiSeq Technologie.
+"""
+
+# Define regular expression patterns for each entity type
+crop_species_pattern = r"\b(winter|spring|summer|fall|wheat|maize|soybean|rice|barley|oats|rye|potatoes|carrots|cucumbers|tomatoes|lettuce|spinach|peas|beans|corn|sunflower|sorghum|millet|tobacco|coffee|tea|cocoa|cotton|flax|hemp|tobacco|cassava|yam|sweet potato|taro|plantain|banana|palm|sugarcane|tapioca)\b"
+soil_texture_pattern = r"\b(Lehm|Ton|Sand|Loam|Clay|Silt)\b"
+location_pattern = r"\b(Hildesheim|Germany|Europe)\b"
+time_statement_pattern = r"\b(2 Jahre|14-tägig|1 Jahr|6 Monate|3 Monate|1 Monat|1 Woche|1 Tag|1 Stunde|1 Minute|1 Sekunde)\b"
+pH_value_pattern = r"\b(pH \d+\.\d+)\b"
+organic_carbon_pattern = r"\b(Gehalte an organischen Kohlenstoff \d+\.\d+%\b)"
+total_nitrogen_pattern = r"\b(Gesamt-Stickstoff \d+\.\d+%\b)"
+
+# Find all matches for each entity type
+crop_species_matches = re.findall(crop_species_pattern, text)
+soil_texture_matches = re.findall(soil_texture_pattern, text)
+location_matches = re.findall(location_pattern, text)
+time_statement_matches = re.findall(time_statement_pattern, text)
+pH_value_matches = re.findall(pH_value_pattern, text)
+organic_carbon_matches = re.findall(organic_carbon_pattern, text)
+total_nitrogen_matches = re.findall(total_nitrogen_pattern, text)
+
+# Extract span information for each match
+text_without_spaces = text.replace(" ", "")
+crop_species_spans = [{"cropSpecies": {"value": match, "span": [text_without_spaces.find(match), text_without_spaces.find(match) + len(match)]}} for match in crop_species_matches]
+soil_texture_spans = [{"soilTexture": {"value": match, "span": [text_without_spaces.find(match), text_without_spaces.find(match) + len(match)]}} for match in soil_texture_matches]
+location_spans = [{"country": {"value": match, "span": [text_without_spaces.find(match), text_without_spaces.find(match) + len(match)]}} for match in location_matches]
+time_statement_spans = [{"startTime": {"value": match, "span": [text_without_spaces.find(match), text_without_spaces.find(match) + len(match)]}} for match in time_statement_matches]
+pH_value_spans = [{"soilPH": {"value": match, "span": [text_without_spaces.find(match), text_without_spaces.find(match) + len(match)]}} for match in pH_value_matches]
+organic_carbon_spans = [{"soilOrganicCarbon": {"value": match, "span": [text_without_spaces.find(match), text_without_spaces.find(match) + len(match)]}} for match in organic_carbon_matches]
+total_nitrogen_spans = [{"soilAvailableNitrogen": {"value": match, "span": [text_without_spaces.find(match), text_without_spaces.find(match) + len(match)]}} for match in total_nitrogen_matches]
+
+# Create the final JSON output
+output = {
+    "Crops": crop_species_spans,
+    "Soil": soil_texture_spans,
+    "Location": location_spans,
+    "Time Statement": time_statement_spans,
+    "Soil": soil_texture_spans,
+    "Soil": pH_value_spans,
+    "Soil": organic_carbon_spans,
+    "Soil": total_nitrogen_spans
+}
+
+# Print the final JSON output
+print(json.dumps(output, indent=4))
+```
+
+This code will output the following JSON:
+
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "wheat",
+                "span": [102, 107]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "maize",
+                "span": [151, 157]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "soybean",
+                "span": [166, 174]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "rice",
+                "span": [181, 186]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "barley",
+                "span": [192, 198]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "oats",
+                "span": [205, 210]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "rye",
+                "span": [218, 223]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "potatoes",
+                "span": [229, 239]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "carrots",
+                "span": [250, 258]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "cucumbers",
+                "span": [269, 279]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "tomatoes",
+                "span": [291, 301]
+            }
+        },
+        {

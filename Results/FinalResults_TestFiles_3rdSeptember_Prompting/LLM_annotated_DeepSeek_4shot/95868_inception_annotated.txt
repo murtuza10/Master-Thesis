@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756906845-VShgaHoQfQYeOVZvPtcE",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756906845,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Picea abies\", \"span\": [44, 55] }},\n    {\"cropSpecies\": { \"value\": \"Norway spruce\", \"span\": [109, 123] }},\n    {\"cropSpecies\": { \"value\": \"Picea abies\", \"span\": [125, 136] }},\n    {\"cropSpecies\": { \"value\": \"Norway spruce\", \"span\": [302, 316] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [197, 204] }},\n    {\"country\": { \"value\": \"Western Germany\", \"span\": [183, 198] }},\n    {\"country\": { \"value\": \"Europe\", \"span\": [355, 361] }},\n    {\"country\": { \"value\": \"German\", \"span\": [501, 507] }}\n  ],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"50 years\", \"span\": [35, 43] }},\n    {\"duration\": { \"value\": \"51 years\", \"span\": [158, 166] }},\n    {\"startTime\": { \"value\": \"1964\", \"span\": [292, 296] }},\n    {\"endTime\": { \"value\": \"68\", \"span\": [297, 299] }},\n    {\"duration\": { \"value\": \"age 7\", \"span\": [432, 437] }},\n    {\"duration\": { \"value\": \"age 10\", \"span\": [439, 445] }},\n    {\"duration\": { \"value\": \"age 13\", \"span\": [447, 453] }},\n    {\"duration\": { \"value\": \"age 16\", \"span\": [455, 461] }},\n    {\"duration\": { \"value\": \"age 16\", \"span\": [484, 490] }},\n    {\"duration\": { \"value\": \"age 21\", \"span\": [492, 498] }},\n    {\"duration\": { \"value\": \"age 29\", \"span\": [500, 506] }},\n    {\"duration\": { \"value\": \"age 39\", \"span\": [508, 514] }},\n    {\"duration\": { \"value\": \"age 51\", \"span\": [516, 522] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4045,
+    "completion_tokens": 538,
+    "total_tokens": 4583
+  }
+}

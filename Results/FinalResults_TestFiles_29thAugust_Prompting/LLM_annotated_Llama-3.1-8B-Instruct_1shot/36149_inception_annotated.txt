@@ -1,0 +1,35 @@
+### Filled JSON Structure ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "energy crop", "span": [43, 51] }},
+    {"cropSpecies": { "value": "energy crop", "span": [123, 131] }},
+    {"cropSpecies": { "value": "energy crop", "span": [157, 165] }},
+    {"cropSpecies": { "value": "energy crop", "span": [203, 211] }}
+  ],
+  "Soil": [
+    {"soilTexture": {}},
+    {"soilReferenceGroup": {}},
+    {"soilDepth": {}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": { "value": "nitrogen content", "span": [93, 104] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [23, 30] }},
+    {"region": {}},
+    {"city": {}},
+    {"latitude": {}},
+    {"longitude": {}}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2011/2012", "span": [33, 43] }},
+    {"endTime": { "value": "2014/2015", "span": [97, 107] }},
+    {"duration": { "value": "three years", "span": [97, 107] }}
+  ]
+}
+```
+
+Note: Some of the categories like `"soilTexture"`, `"soilReferenceGroup"`, `"region"`, `"city"`, `"latitude"`, `"longitude"` are left empty as they do not appear in the text.

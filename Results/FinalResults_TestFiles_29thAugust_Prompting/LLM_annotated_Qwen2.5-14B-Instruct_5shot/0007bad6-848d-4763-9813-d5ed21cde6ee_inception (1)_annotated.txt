@@ -1,0 +1,14 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [243, 249]}}
+  ],
+  "Soil": [
+    {"soilProperty": {"value": "soil water stable aggregation", "span": [147, 164]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+``` 
+
+Please note that `soilProperty` was used instead of a specific soil key because the provided list does not contain "soil water stable aggregation". If this property should be categorized under a specific soil key, please specify.

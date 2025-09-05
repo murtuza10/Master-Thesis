@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892293-VnihzJ1C5lZXHiy0wpWt",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892293,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"nitrogen content\", \"span\": [608, 624]}},\n    {\"Soil\": {\"value\": \"ammonium-N\", \"span\": [626, 636]}},\n    {\"Soil\": {\"value\": \"nitrate-N\", \"span\": [638, 647]}},\n    {\"Soil\": {\"value\": \"bulk density\", \"span\": [649, 661]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [224, 231]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [349, 356]}}\n  ],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"three years\", \"span\": [183, 194]}},\n    {\"startTime\": {\"value\": \"2011/2012\", \"span\": [197, 206]}},\n    {\"endTime\": {\"value\": \"2014/2015\", \"span\": [209, 218]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1776,
+    "completion_tokens": 235,
+    "total_tokens": 2011,
+    "prompt_tokens_details": null
+  }
+}

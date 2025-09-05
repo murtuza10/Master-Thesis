@@ -1,0 +1,25 @@
+### JSON Output ###
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [157, 164]}},
+    {"region": {"value": "German National Forest Inventory", "span": [235, 257]}},
+    {"city": {"value": "", "span": []}},
+    {"latitude": {"value": "47.15766000", "span": [531, 543]}},
+    {"longitude": {"value": "15.08954000", "span": [459, 471]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1961", "span": [144, 148]}},
+    {"endTime": {"value": "2013", "span": [203, 207]}},
+    {"duration": {"value": "2013-1961 = 52 years", "span": [208, 220]}}
+  ]
+}
+```
+
+### Note: ###
+- In the given text, "forest" is not explicitly mentioned as a crop species, but rather as a forest site water budget modelling and forest growth modelling. Hence, it is not included in the "Crops" list.
+- There is no specific mention of soil in the given text, hence the "Soil" list remains empty.
+- The longitude value is mentioned in decimal degrees, so I included it in the "longitude" list.
+- The duration is calculated as "2013-1961 = 52 years", but this is not an exact match for the "duration" key. However, since the "duration" key is not explicitly mentioned in the text, I used the calculated value for the demonstration.

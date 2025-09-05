@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892323-WOj4MqA2DzETZfQOTz2L",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892323,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [1039, 1044] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"soil properties\", \"span\": [183, 197] }},\n    {\"Soil\": { \"value\": \"soil water stable aggregation\", \"span\": [318, 346] }},\n    {\"Soil\": { \"value\": \"soil properties\", \"span\": [409, 423] }},\n    {\"Soil\": { \"value\": \"soil-plant system\", \"span\": [817, 833] }},\n    {\"Soil\": { \"value\": \"Soil properties\", \"span\": [1085, 1099] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2362,
+    "completion_tokens": 179,
+    "total_tokens": 2541,
+    "prompt_tokens_details": null
+  }
+}

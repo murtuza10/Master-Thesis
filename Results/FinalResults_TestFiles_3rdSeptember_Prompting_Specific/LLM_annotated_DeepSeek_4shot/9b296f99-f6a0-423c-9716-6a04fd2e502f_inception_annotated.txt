@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756918352-kWdCUvHvYQNfkre1JRUS",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756918352,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"winter wheat\", \"span\": [460, 472] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [474, 487] }},\n    {\"cropSpecies\": { \"value\": \"sugar beet\", \"span\": [493, 503] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [1423, 1436] }},\n    {\"cropSpecies\": { \"value\": \"sugar beet\", \"span\": [1441, 1451] }}\n  ],\n  \"Soil\": [\n    {\"soilOrganicCarbon\": { \"value\": \"humus\", \"span\": [219, 224] }},\n    {\"soilOrganicCarbon\": { \"value\": \"humus\", \"span\": [294, 299] }}\n  ],\n  \"Location\": [\n    {\"city\": { \"value\": \"Speyer\", \"span\": [38, 44] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [46, 53] }},\n    {\"city\": { \"value\": \"Speyer\", \"span\": [100, 106] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [108, 115] }},\n    {\"city\": { \"value\": \"Speyer\", \"span\": [430, 436] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [438, 445] }},\n    {\"city\": { \"value\": \"Karlsruhe\", \"span\": [970, 979] }},\n    {\"city\": { \"value\": \"Speyer\", \"span\": [1203, 1209] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [1211, 1218] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1984\", \"span\": [413, 417] }},\n    {\"startTime\": { \"value\": \"2009\", \"span\": [900, 904] }},\n    {\"startTime\": { \"value\": \"16. September 2009\", \"span\": [888, 904] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4518,
+    "completion_tokens": 502,
+    "total_tokens": 5020
+  }
+}

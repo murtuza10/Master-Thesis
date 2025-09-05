@@ -1,0 +1,20 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Winter wheat", "span": [1145, 1155]}},
+    {"cropSpecies": {"value": "plant", "span": [1042, 1046]}},
+    {"cropSpecies": {"value": "crop", "span": [1032, 1036]}}
+  ],
+  "Soil": [
+    {"Soil": {"value": "soil properties", "span": [1038, 1049]}},
+    {"Soil": {"value": "soil water stable aggregation", "span": [761, 778]}}
+  ],
+  "Location": [
+    {"city": {"value": "", "span": []}}
+  ],
+  "Time Statement": []
+}
+```
+### Note: ###
+- For the `Location` category, since there's no specific location mentioned in the text, the JSON output for this category is an empty list.

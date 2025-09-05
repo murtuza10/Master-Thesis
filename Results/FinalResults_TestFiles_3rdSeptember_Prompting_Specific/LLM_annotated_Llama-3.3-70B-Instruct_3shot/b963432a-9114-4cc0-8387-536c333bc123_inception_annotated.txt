@@ -1,0 +1,39 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [564, 570]}},
+    {"cropSpecies": {"value": "serradella", "span": [594, 603]}},
+    {"cropSpecies": {"value": "barley", "span": [631, 637]}}
+  ],
+  "Soil": [
+    {"soilPH": {"value": "pH", "span": [104, 106]}},
+    {"soilPH": {"value": "pH", "span": [427, 429]}},
+    {"soilPH": {"value": "pH-Wert", "span": [1046, 1052]}},
+    {"soilOrganicCarbon": {"value": "Gelöster organischer Kohlenstoff", "span": [1024, 1045]}},
+    {"soilOrganicCarbon": {"value": "organischer", "span": [466, 475]}},
+    {"soilAvailableNitrogen": {"value": "NH4+ -N", "span": [441, 447]}},
+    {"soilAvailableNitrogen": {"value": "NO2- -N", "span": [452, 459]}},
+    {"soilAvailableNitrogen": {"value": "NO3- -N", "span": [463, 470]}},
+    {"soilAvailableNitrogen": {"value": "Nitrat", "span": [960, 966]}},
+    {"soilAvailableNitrogen": {"value": "Nitrit", "span": [971, 977]}},
+    {"soilAvailableNitrogen": {"value": "Ammonium", "span": [1057, 1066]}},
+    {"soilAvailableNitrogen": {"value": "Stickstoff", "span": [1071, 1080]}},
+    {"soilDepth": {"value": "three sampling depths", "span": [216, 233]}},
+    {"soilDepth": {"value": "three different depths", "span": [512, 530]}}
+  ],
+  "Location": [
+    {"region": {"value": "Northern Germany", "span": [244, 258]}},
+    {"city": {"value": "Rostock", "span": [15, 22]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2018", "span": [607, 611]}},
+    {"startTime": {"value": "2019", "span": [618, 622]}},
+    {"startTime": {"value": "2020", "span": [34, 38]}},
+    {"startTime": {"value": "2020", "span": [106, 110]}},
+    {"startTime": {"value": "2020", "span": [624, 628]}},
+    {"startTime": {"value": "2020", "span": [684, 688]}},
+    {"duration": {"value": "3.5 months", "span": [743, 753]}},
+    {"endTime": {"value": "2020", "span": [34, 38]}}
+  ]
+}
+```

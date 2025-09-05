@@ -1,0 +1,18 @@
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilPH": {"value": "pH Wert", "span": [187, 192]}},
+    {"soilOrganicCarbon": {"value": "Gehalte an organischen Kohlenstoff", "span": [201, 219]}},
+    {"soilAvailableNitrogen": {"value": "Gehalte an Gesamt-Stickstoff", "span": [222, 234]}}
+  ],
+  "Location": [
+    {"city": {"value": "Hildesheim", "span": [153, 161]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2022-01-01T00:00:00Z", "span": [126, 145]}},
+    {"duration": {"value": "14-tägigen Zeitraster", "span": [146, 162]}},
+    {"duration": {"value": "2 Jahre", "span": [165, 171]}}
+  ]
+}
+```

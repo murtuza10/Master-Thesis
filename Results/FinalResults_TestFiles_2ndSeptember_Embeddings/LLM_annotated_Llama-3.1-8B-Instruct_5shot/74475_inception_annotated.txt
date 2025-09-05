@@ -1,0 +1,20 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"Soil": {"value": "soil organic carbon", "span": [97, 116]}},
+    {"Soil": {"value": "soil organic nitrogen", "span": [129, 146]}},
+    {"Soil": {"value": "SOC", "span": [148, 151]}},
+    {"Soil": {"value": "SON", "span": [155, 158]}},
+    {"Soil": {"value": "SOC", "span": [275, 278]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+### Explanation ###
+
+1.  The text mentions "soil organic carbon" and "soil organic nitrogen" in the abstract, which are related to the soil entity. These are extracted as separate entities in the "Soil" list.
+2.  The text also mentions "SOC" (short for soil organic carbon) and "SON" (short for soil organic nitrogen), which are extracted as separate entities in the "Soil" list.
+3.  The text does not mention any crops, locations, or time statements, so the corresponding lists in the JSON structure remain empty.

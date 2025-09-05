@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892081-OCTy4vAwHCZg9otXKmeR",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892081,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"Bodenleitprofile\", \"span\": [108, 123]}},\n    {\"Soil\": {\"value\": \"boden-physikalischen Grundlagendaten\", \"span\": [127, 160]}},\n    {\"Soil\": {\"value\": \"Standorts- und Bodeninformationen\", \"span\": [223, 253]}},\n    {\"Soil\": {\"value\": \"Standorts- und Bodenkartierung\", \"span\": [290, 319]}},\n    {\"Soil\": {\"value\": \"Standorts- und Leitprofildaten\", \"span\": [494, 521]}},\n    {\"Soil\": {\"value\": \"Bodentyp\", \"span\": [588, 596]}},\n    {\"Soil\": {\"value\": \"Bodenart\", \"span\": [673, 682]}},\n    {\"Soil\": {\"value\": \"Skelett\", \"span\": [685, 692]}},\n    {\"Soil\": {\"value\": \"Trockenrohdichte (TRD)\", \"span\": [695, 717]}},\n    {\"Soil\": {\"value\": \"nutzbare Feldkapazität (nFK)\", \"span\": [721, 748]}},\n    {\"Soil\": {\"value\": \"Basensättigung\", \"span\": [780, 793]}},\n    {\"Soil\": {\"value\": \"organischer Kohlenstoffgehalt (Corg)\", \"span\": [797, 830]}},\n    {\"Soil\": {\"value\": \"Entkalkungstiefe\", \"span\": [834, 849]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"deutschen\", \"span\": [140, 148]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2012\", \"span\": [1121, 1125]}},\n    {\"endTime\": {\"value\": \"2012\", \"span\": [1137, 1141]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5243,
+    "completion_tokens": 439,
+    "total_tokens": 5682,
+    "prompt_tokens_details": null
+  }
+}

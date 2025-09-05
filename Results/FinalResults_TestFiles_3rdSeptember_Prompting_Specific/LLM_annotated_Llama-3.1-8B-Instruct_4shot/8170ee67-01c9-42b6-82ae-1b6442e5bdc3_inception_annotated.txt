@@ -1,0 +1,30 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "winter barley", "span": [111, 123]}},
+    {"cropSpecies": {"value": "winter oilseed rape", "span": [131, 144]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [149, 159]}},
+    {"cropSpecies": {"value": "lupine", "span": [166, 172]}},
+    {"cropSpecies": {"value": "winter rye", "span": [179, 186]}},
+    {"cropSpecies": {"value": "Hordeum vulgare", "span": [229, 242]}},
+    {"cropSpecies": {"value": "OTTO", "span": [247, 251]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "extensively managed grassland", "span": [157, 175]}},
+    {"soilReferenceGroup": {"value": "soil class A", "span": [224, 231]}},
+    {"soilReferenceGroup": {"value": "soil class B", "span": [234, 241]}},
+    {"soilReferenceGroup": {"value": "soil class C", "span": [246, 253]}},
+    {"soilDepth": {"value": "25 cm", "span": [293, 297]}},
+    {"soilDepth": {"value": "0-30 cm", "span": [313, 320]}}
+  ],
+  "Location": [
+    {"city": {"value": "Braunschweig", "span": [5, 14]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2013", "span": [214, 218]}},
+    {"endTime": {"value": "2013", "span": [225, 229]}},
+    {"startTime": {"value": "2014", "span": [237, 241]}}
+  ]
+}
+```

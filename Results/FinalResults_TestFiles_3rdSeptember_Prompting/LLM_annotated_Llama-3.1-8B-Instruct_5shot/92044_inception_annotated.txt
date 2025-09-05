@@ -1,0 +1,28 @@
+### Output ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "spring barley", "span": [144, 155]}},
+    {"cropSpecies": {"value": "winter barley", "span": [166, 177]}},
+    {"cropSpecies": {"value": "grain maize", "span": [184, 193]}},
+    {"cropSpecies": {"value": "silage maize", "span": [204, 213]}},
+    {"cropSpecies": {"value": "oats", "span": [225, 228]}},
+    {"cropSpecies": {"value": "potatoes", "span": [234, 239]}},
+    {"cropSpecies": {"value": "winter rape", "span": [249, 256]}},
+    {"cropSpecies": {"value": "rye", "span": [265, 268]}},
+    {"cropSpecies": {"value": "sugarbeet", "span": [274, 281]}},
+    {"cropSpecies": {"value": "triticale", "span": [291, 298]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [309, 318]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [30, 39]}},
+    {"region": {"value": "Germany", "span": [30, 39]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1979", "span": [61, 65]}},
+    {"endTime": {"value": "2021", "span": [69, 73]}}
+  ]
+}
+```

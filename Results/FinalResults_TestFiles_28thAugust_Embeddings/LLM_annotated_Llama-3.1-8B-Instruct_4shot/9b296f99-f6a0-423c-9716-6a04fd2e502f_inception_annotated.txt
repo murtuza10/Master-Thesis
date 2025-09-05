@@ -1,0 +1,125 @@
+### Code to Extract Entities from Text ###
+```python
+import json
+import re
+
+def extract_entities(text):
+    # Define regular expressions for each entity type
+    crop_species_pattern = r'\b(winter|spring)(\w+) (barley|wheat|sugar beet|maize|potatoes)\b'
+    soil_organic_carbon_pattern = r'\bsoil organic carbon\b'
+    soil_available_nitrogen_pattern = r'\btotal nitrogen\b'
+    country_pattern = r'\b(Germany|Speyer|Brandenburg)\b'
+    region_pattern = r'\b(Markisch Oderland|M체ncheberg)\b'
+    city_pattern = r'\b(Speyer|Brandenburg|M체ncheberg)\b'
+    latitude_pattern = r'\b\(\d+\.\d+\)\b'
+    longitude_pattern = r'\b\d+\.\d+\b'
+    start_time_pattern = r'\b1984\b'
+    duration_pattern = r'\bfour sampling seasons\b'
+
+    # Extract entities using regular expressions
+    crop_species_matches = re.findall(crop_species_pattern, text, re.IGNORECASE)
+    soil_organic_carbon_matches = re.findall(soil_organic_carbon_pattern, text)
+    soil_available_nitrogen_matches = re.findall(soil_available_nitrogen_pattern, text)
+    country_matches = re.findall(country_pattern, text)
+    region_matches = re.findall(region_pattern, text)
+    city_matches = re.findall(city_pattern, text)
+    latitude_matches = re.findall(latitude_pattern, text)
+    longitude_matches = re.findall(longitude_pattern, text)
+    start_time_matches = re.findall(start_time_pattern, text)
+    duration_matches = re.findall(duration_pattern, text)
+
+    # Create a dictionary to store the extracted entities
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Add crop species entities
+    for match in crop_species_matches:
+        crop_species = match[1]  # Extract the crop species (e.g., "wheat")
+        entities["Crops"].append({
+            "cropSpecies": {
+                "value": crop_species,
+                "span": [text.find(match[1]), text.find(match[1]) + len(match[1])]
+            }
+        })
+
+    # Add soil organic carbon entities
+    for match in soil_organic_carbon_matches:
+        entities["Soil"].append({
+            "soilOrganicCarbon": {
+                "value": match,
+                "span": [text.find(match), text.find(match) + len(match)]
+            }
+        })
+
+    # Add soil available nitrogen entities
+    for match in soil_available_nitrogen_matches:
+        entities["Soil"].append({
+            "soilAvailableNitrogen": {
+                "value": match,
+                "span": [text.find(match), text.find(match) + len(match)]
+            }
+        })
+
+    # Add location entities
+    for match in country_matches:
+        entities["Location"].append({
+            "country": {
+                "value": match,
+                "span": [text.find(match), text.find(match) + len(match)]
+            }
+        })
+    for match in region_matches:
+        entities["Location"].append({
+            "region": {
+                "value": match,
+                "span": [text.find(match), text.find(match) + len(match)]
+            }
+        })
+    for match in city_matches:
+        entities["Location"].append({
+            "city": {
+                "value": match,
+                "span": [text.find(match), text.find(match) + len(match)]
+            }
+        })
+    for match in latitude_matches:
+        entities["Location"].append({
+            "latitude": {
+                "value": match,
+                "span": [text.find(match), text.find(match) + len(match)]
+            }
+        })
+    for match in longitude_matches:
+        entities["Location"].append({
+            "longitude": {
+                "value": match,
+                "span": [text.find(match), text.find(match) + len(match)]
+            }
+        })
+
+    # Add time statement entities
+    for match in start_time_matches:
+        entities["Time Statement"].append({
+            "startTime": {
+                "value": match,
+                "span": [text.find(match), text.find(match) + len(match)]
+            }
+        })
+    for match in duration_matches:
+        entities["Time Statement"].append({
+            "duration": {
+                "value": match,
+                "span": [text.find(match), text.find(match) + len(match)]
+            }
+        })
+
+    return entities
+
+# Example usage
+text = """
+Soil Bacterial Community IOSDV Speyer, Germany
+Organic and mineral fertilization in combination are relevant factors which are controlling availability of mineral nutrients and humus development. In contrast to mineral fertilizer, humus acts as long-term source of nutrients and is a basis element of soil fertility. The international fertilization trial (IOSDV) at the research facility Rinkenbergerhof at the LUFA Speyer (Germany) was set up in the year 1984 and planted with a repeating crop rotation: winter wheat, winter barley, and sugar beet. This data set comprises only the soil management variant “ploughing”. Other treatment factors were: (1) no organic amendment, farmyard (horse) manure treatment every three years to sugar beet fields, and crop residues + catch crop treatment; (2) without and with mineral N fertilization. More experimental details are available in German from the LUFA Speyer (Germany): VDLUFA, 121. VDLUFA-Kongress, Kongressband, Teil 2, Beiträge aus den öffentlichen Sitzungen der Fachrichtung Pflanzen- und Tierproduktion am 16. September 2009, Karlsruhe, Schriftenreihe Bd. 65/2009, ISBN 978-3-941273-07-8 (German): https://www.vdlufa.de/kongress2009/KB2009Teil2.pdf. Parameters of the data set were determined on basis of standardized VDLUFA and DIN guidelines by the LUFA Speyer (Germany). The data set contains data of 72 samples, which were sampled during four sampling seasons with winter barley and sugar beet as crop plant and contained 3 field replicates of 6 treatment combinations. The bacterial bulk soil community structure of all samples was characterised by amplicon sequencing of the V1-V2 region of the bacterial 16S rRNA gene using primers 27F (5′-AGAGTTTGATCMTGGC-3′) and 357R (5'-CTGCTGCCTYCCGTA-3'). Results show that the bacterial community in the long term is mainly altered by mineral fertilization and, on a lower level by horse manure. The bacterial class Bacilli was an evident positive responder to manure application. However, both manure and crop residues are valueable amendments for farmland, since both mitigate the negative effects of mineral fertilizer on the connectivity of bacterial interaction networks. Related publications: Schmid, C. A., Schröder, P., Armbruster, M

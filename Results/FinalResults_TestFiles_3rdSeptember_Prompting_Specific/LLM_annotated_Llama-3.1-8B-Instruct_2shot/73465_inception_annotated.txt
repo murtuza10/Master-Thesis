@@ -1,0 +1,22 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Helosciadium nodiflorum", "span": [115, 133] }},
+    {"cropSpecies": { "value": "celery", "span": [394, 401] }},
+    {"cropSpecies": { "value": "wild celery", "span": [417, 426] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"city": { "value": "Gatersleben", "span": [96, 106] }},
+    {"city": { "value": "London", "span": [184, 190] }},
+    {"city": { "value": "Berlin", "span": [344, 350] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2015", "span": [264, 268] }},
+    {"startTime": { "value": "2016", "span": [269, 273] }},
+    {"endTime": { "value": "2018", "span": [313, 317] }},
+    {"endTime": { "value": "2019", "span": [318, 322] }}
+  ]
+}
+```

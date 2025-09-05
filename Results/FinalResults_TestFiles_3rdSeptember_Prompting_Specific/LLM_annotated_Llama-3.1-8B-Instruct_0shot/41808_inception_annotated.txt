@@ -1,0 +1,21 @@
+### Entity Extraction Output
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Apium graveolens", "span": [0, 14] }},
+    {"cropSpecies": { "value": "wild celery", "span": [124, 136] }},
+    {"cropSpecies": { "value": "celery", "span": [135, 143] }},
+    {"cropSpecies": { "value": "Apium graveolens L.", "span": [161, 177] }},
+    {"cropSpecies": { "value": "Apium graveolens L. ssp. graveolens", "span": [161, 189] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": { "value": "Germany", "span": [104, 112] }}
+  ],
+  "Time Statement": [
+    {"year": { "value": "2016", "span": [86, 92] }},
+    {"year": { "value": "2017", "span": [104, 110] }},
+    {"year": { "value": "2018", "span": [122, 128] }}
+  ]
+}
+```

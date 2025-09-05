@@ -1,0 +1,84 @@
+### Code ###
+```python
+import json
+import re
+
+def extract_entities(text):
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Crops
+    crop_species = re.findall(r'\b(Pyrus|Pyrus communis|Helosciadium|Helosciadium nodiflorum|Celery|Wild celery|Celery species|wild celery species|wild celery relatives|wild celery species relatives|wild celery species relatives)\b', text, re.IGNORECASE)
+    crop_varieties = re.findall(r'\b(L|nodiflorum)\b', text, re.IGNORECASE)
+
+    for species in crop_species:
+        entities["Crops"].append({"cropSpecies": {"value": species, "span": [text.find(species), text.find(species) + len(species)]}})
+    for variety in crop_varieties:
+        entities["Crops"].append({"cropVariety": {"value": variety, "span": [text.find(variety), text.find(variety) + len(variety)]}})
+
+    # Soil
+    soil_textures = re.findall(r'\b(soil|soil texture|soil type|soil composition|soil structure|soil properties|soil characteristics)\b', text, re.IGNORECASE)
+    soil_reference_groups = re.findall(r'\b(soil reference group|soil group|soil type)\b', text, re.IGNORECASE)
+    soil_depths = re.findall(r'\b(soil depth|depth)\b', text, re.IGNORECASE)
+    soil_bulk_densities = re.findall(r'\b(soil bulk density|soil density|density)\b', text, re.IGNORECASE)
+    soil_phs = re.findall(r'\b(soil pH|soil acidity|pH)\b', text, re.IGNORECASE)
+    soil_organic_carbons = re.findall(r'\b(soil organic carbon|soil organic matter|organic carbon|organic matter)\b', text, re.IGNORECASE)
+    soil_available_nitrogens = re.findall(r'\b(soil available nitrogen|soil nitrogen|nitrogen)\b', text, re.IGNORECASE)
+
+    for texture in soil_textures:
+        entities["Soil"].append({"soilTexture": {"value": texture, "span": [text.find(texture), text.find(texture) + len(texture)]}})
+    for reference_group in soil_reference_groups:
+        entities["Soil"].append({"soilReferenceGroup": {"value": reference_group, "span": [text.find(reference_group), text.find(reference_group) + len(reference_group)]}})
+    for depth in soil_depths:
+        entities["Soil"].append({"soilDepth": {"value": depth, "span": [text.find(depth), text.find(depth) + len(depth)]}})
+    for bulk_density in soil_bulk_densities:
+        entities["Soil"].append({"soilBulkDensity": {"value": bulk_density, "span": [text.find(bulk_density), text.find(bulk_density) + len(bulk_density)]}})
+    for ph in soil_phs:
+        entities["Soil"].append({"soilPH": {"value": ph, "span": [text.find(ph), text.find(ph) + len(ph)]}})
+    for organic_carbon in soil_organic_carbons:
+        entities["Soil"].append({"soilOrganicCarbon": {"value": organic_carbon, "span": [text.find(organic_carbon), text.find(organic_carbon) + len(organic_carbon)]}})
+    for available_nitrogen in soil_available_nitrogens:
+        entities["Soil"].append({"soilAvailableNitrogen": {"value": available_nitrogen, "span": [text.find(available_nitrogen), text.find(available_nitrogen) + len(available_nitrogen)]}})
+
+    # Location
+    countries = re.findall(r'\b(Germany|Germany|Deutschland)\b', text, re.IGNORECASE)
+    regions = re.findall(r'\b(Berlin|HU Berlin|Berlin, Germany)\b', text, re.IGNORECASE)
+    cities = re.findall(r'\b(Gatersleben|Kew Gardens|London)\b', text, re.IGNORECASE)
+    latitudes = re.findall(r'\b(latitude|lat|latitudes)\b', text, re.IGNORECASE)
+    longitudes = re.findall(r'\b(longitude|long|longitudes)\b', text, re.IGNORECASE)
+
+    for country in countries:
+        entities["Location"].append({"country": {"value": country, "span": [text.find(country), text.find(country) + len(country)]}})
+    for region in regions:
+        entities["Location"].append({"region": {"value": region, "span": [text.find(region), text.find(region) + len(region)]}})
+    for city in cities:
+        entities["Location"].append({"city": {"value": city, "span": [text.find(city), text.find(city) + len(city)]}})
+    for latitude in latitudes:
+        entities["Location"].append({"latitude": {"value": latitude, "span": [text.find(latitude), text.find(latitude) + len(latitude)]}})
+    for longitude in longitudes:
+        entities["Location"].append({"longitude": {"value": longitude, "span": [text.find(longitude), text.find(longitude) + len(longitude)]}})
+
+    # Time Statement
+    start_times = re.findall(r'\b(2015|2016|2018|2019)\b', text, re.IGNORECASE)
+    end_times = re.findall(r'\b(preparation|in prep|in preparation|2018-2019)\b', text, re.IGNORECASE)
+    durations = re.findall(r'\b(duration|time|timeframe|period)\b', text, re.IGNORECASE)
+
+    for start_time in start_times:
+        entities["Time Statement"].append({"startTime": {"value": start_time, "span": [text.find(start_time), text.find(start_time) + len(start_time)]}})
+    for end_time in end_times:
+        entities["Time Statement"].append({"endTime": {"value": end_time, "span": [text.find(end_time), text.find(end_time) + len(end_time)]}})
+    for duration in durations:
+        entities["Time Statement"].append({"duration": {"value": duration, "span": [text.find(duration), text.find(duration) + len(duration)]}})
+
+    return entities
+
+text = """
+Title: 
+Microsatellite marker data of Helosciadium nodiflorum L.
+
+Abstract:
+The development of SSR markers was performed by SGS Trait Genetics GmbH (Gatersleben, Germany) using a proprietary standard protocol. The nuclear DNA was extracted from the H. nodiflorum type line (Kew Gardens London, Ser. No 0200497). The partial sequencing was carried out with MiSeq (Illumina) equipment. Seventeen SSRs proved to be polymorphic and were applied to study the patterns of genetic diversity within diploid Helosciadium nodiflorum. The results of the study will likely be

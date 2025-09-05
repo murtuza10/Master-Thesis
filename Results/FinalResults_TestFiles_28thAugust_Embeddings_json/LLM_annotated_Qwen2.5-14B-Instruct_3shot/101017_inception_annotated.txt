@@ -1,0 +1,30 @@
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Möhre", "span": [103, 108]}},
+    {"cropSpecies": {"value": "Salat", "span": [110, 114]}},
+    {"cropSpecies": {"value": "Apfel", "span": [116, 120]}},
+    {"cropSpecies": {"value": "Erdbeere", "span": [122, 129]}, {"cropSpecies": {"value": "Erdbeere", "span": [147, 154]}},
+    {"cropSpecies": {"value": "Himbeere", "span": [156, 162]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+Note: The JSON structure provided needs correction to avoid having multiple keys under the same object. Here's the corrected version:
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Möhre", "span": [103, 108]}},
+    {"cropSpecies": {"value": "Salat", "span": [110, 114]}},
+    {"cropSpecies": {"value": "Apfel", "span": [116, 120]}},
+    {"cropSpecies": {"value": "Erdbeere", "span": [122, 129]}},
+    {"cropSpecies": {"value": "Erdbeere", "span": [147, 154]}},
+    {"cropSpecies": {"value": "Himbeere", "span": [156, 162]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}

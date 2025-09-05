@@ -1,0 +1,34 @@
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Birch", "span": [121, 126] }, 
+     "cropSpecies": { "value": "Betula pubescens", "span": [130, 143] }, 
+     "cropSpecies": { "value": "Birch", "span": [230, 235] }, 
+     "cropSpecies": { "value": "Birch", "span": [276, 281] }
+    ]
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "peat", "span": [65, 69] }, 
+     "soilReferenceGroup": { "value": "mire-specific", "span": [85, 97] }, 
+     "soilDepth": { "value": "peat", "span": [105, 109] }, 
+     "soilBulkDensity": { "value": "peat", "span": [115, 119] }, 
+     "soilPH": { "value": "peat", "span": [125, 129] }, 
+     "soilOrganicCarbon": { "value": "peat C", "span": [169, 174] }, 
+     "soilAvailableNitrogen": { "value": "peat", "span": [183, 187] }
+  ],
+  "Location": [
+    {"region": { "value": "northern hemisphere", "span": [24, 41] }}, 
+    {"city": { "value": "former peat extraction area", "span": [71, 94] }}, 
+    {"country": { "value": "northern hemisphere", "span": [24, 41] }}
+  ],
+  "Time Statement": [
+    {"duration": { "value": "one year", "span": [159, 165] }}, 
+    {"duration": { "value": "one year", "span": [221, 227] }}, 
+    {"duration": { "value": "one year", "span": [241, 247] }}, 
+    {"startTime": { "value": "year", "span": [250, 254] }}, 
+    {"endTime": { "value": "year", "span": [259, 263] }}, 
+    {"duration": { "value": "year", "span": [269, 273] }}
+  ]
+}
+```

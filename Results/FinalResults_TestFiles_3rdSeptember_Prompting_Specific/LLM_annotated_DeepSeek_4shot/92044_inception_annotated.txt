@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756918192-unythZHQcttTlQODeukD",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756918192,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"spring barley\", \"span\": [312, 325] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [327, 340] }},\n    {\"cropSpecies\": { \"value\": \"grain maize\", \"span\": [342, 353] }},\n    {\"cropSpecies\": { \"value\": \"silage maize\", \"span\": [355, 367] }},\n    {\"cropSpecies\": { \"value\": \"oats\", \"span\": [369, 373] }},\n    {\"cropSpecies\": { \"value\": \"potatoes\", \"span\": [375, 383] }},\n    {\"cropSpecies\": { \"value\": \"winter rape\", \"span\": [385, 396] }},\n    {\"cropSpecies\": { \"value\": \"rye\", \"span\": [398, 401] }},\n    {\"cropSpecies\": { \"value\": \"sugarbeet\", \"span\": [403, 412] }},\n    {\"cropSpecies\": { \"value\": \"triticale\", \"span\": [414, 422] }},\n    {\"cropSpecies\": { \"value\": \"winter wheat\", \"span\": [424, 436] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [69, 76] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [524, 531] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1979\", \"span\": [83, 87] }},\n    {\"endTime\": { \"value\": \"2021\", \"span\": [91, 95] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [761, 765] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4074,
+    "completion_tokens": 430,
+    "total_tokens": 4504
+  }
+}

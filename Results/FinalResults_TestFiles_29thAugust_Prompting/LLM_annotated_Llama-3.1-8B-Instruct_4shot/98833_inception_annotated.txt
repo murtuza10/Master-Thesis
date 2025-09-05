@@ -1,0 +1,23 @@
+### Output Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Mais", "span": [57, 61] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "Parabraunerde", "span": [155, 168] }},
+    {"soilTexture": { "value": "Löss", "span": [173, 177] }},
+    {"soilDepth": { "value": "28 cm", "span": [192, 196] }}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": { "value": "2017", "span": [109, 113] }}
+  ]
+}
+```
+### Explanation ###
+
+- **Crops**: The only crop mentioned in the text is "Mais" (which is German for "corn" or "maize"), so there is only one entry in the "Crops" list.
+- **Soil**: The soil is described as a "Parabraunerde" and it is made of "Löss". The soil depth is also mentioned as 28 cm. Therefore, there are three entries in the "Soil" list.
+- **Location**: There is no mention of a specific location in the text, so the "Location" list is empty.
+- **Time Statement**: The experiment was conducted in 2017, so there is one entry in the "Time Statement" list.

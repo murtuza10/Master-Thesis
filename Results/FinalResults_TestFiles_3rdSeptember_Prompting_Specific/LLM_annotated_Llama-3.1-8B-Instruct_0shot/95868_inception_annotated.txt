@@ -1,0 +1,32 @@
+### Entities Extraction and JSON Construction
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Picea abies", "span": [35, 44] }},
+    {"cropSpecies": { "value": "Norway spruce", "span": [93, 103] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": { "value": "Germany", "span": [144, 151] }},
+    {"region": { "value": "Western Germany", "span": [124, 138] }},
+    {"city": []},
+    {"latitude": []},
+    {"longitude": []}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1964", "span": [104, 108] }},
+    {"endTime": { "value": "2015", "span": [236, 240] }},
+    {"duration": { "value": "51 years", "span": [228, 238] }}
+  ]
+}
+```
+
+### Note
+
+- "Picea abies" is extracted as the crop species, as it is the scientific name of the Norway spruce.
+- "Norway spruce" is also extracted as the crop species, as it is the common name of the tree.
+- No soil-related entities are found in the text.
+- "Germany" is extracted as the country, and "Western Germany" is extracted as the region.
+- No city, latitude, or longitude are mentioned in the text, so these entities are left empty.
+- "1964" is extracted as the start time, and "2015" is extracted as the end time, assuming the period of measurement is 51 years.

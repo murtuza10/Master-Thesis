@@ -1,0 +1,30 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [null, null]}},  // This entity is missing from the text, so the span is set to null
+    {"cropSpecies": {"value": "grass", "span": [null, null]}}  // This entity is missing from the text, so the span is set to null
+  ],
+  "Soil": [
+    {"soilTexture": {}},
+    {"soilReferenceGroup": {}},
+    {"soilDepth": {}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [104, 111]}}
+  ],
+  "Time Statement": []
+}
+```
+
+### Explanation ###
+
+- The input text does not contain any specific crop species or varieties, so the "Crops" list is populated with two empty objects.
+- The text does not provide any specific information about the soil texture, reference group, depth, bulk density, pH, organic carbon, or available nitrogen, so the "Soil" list is populated with empty objects.
+- The text mentions "Germany" as the country, so it is added to the "Location" list.
+- There is no information about time statements in the text, so the "Time Statement" list is empty.

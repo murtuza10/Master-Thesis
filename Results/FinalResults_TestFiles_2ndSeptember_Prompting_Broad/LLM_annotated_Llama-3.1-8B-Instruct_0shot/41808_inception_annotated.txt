@@ -1,0 +1,21 @@
+### Filled JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Apium graveolens", "span": [43, 59]}},
+    {"cropSpecies": {"value": "wild celery", "span": [137, 146]}},
+    {"cropSpecies": {"value": "Apium graveolens L. ssp. graveolens", "span": [165, 189]}},
+    {"cropSpecies": {"value": "celery", "span": [227, 234]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [221, 227]}},
+    {"city": {"value": "Quedlinburg", "span": [219, 229]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2016", "span": [186, 190]}},
+    {"endTime": {"value": "2017-2018", "span": [245, 253]}}
+  ]
+}
+```
+Note that the `Soil` category is empty because there are no soil-related mentions in the text.

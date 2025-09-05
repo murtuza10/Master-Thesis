@@ -1,0 +1,35 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "maize", "span": [246, 251]}},
+    {"cropSpecies": {"value": "maize", "span": [434, 439]}},
+    {"cropSpecies": {"value": "maize", "span": [463, 468]}},
+    {"cropSpecies": {"value": "maize", "span": [756, 761]}}
+  ],
+  "Soil": [
+    {"soilTexture": {"value": "Sand", "span": [296, 300]}},
+    {"soilTexture": {"value": "Sand", "span": [323, 327]}},
+    {"soilTexture": {"value": "Marsch", "span": [355, 361]}},
+    {"soilDepth": {"value": "30 m³", "span": [372, 377]}},
+    {"soilTexture": {"value": "Sand", "span": [409, 413]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [921, 928]}},
+    {"region": {"value": "Lower Saxony", "span": [931, 943]}},
+    {"city": {"value": "Wanna", "span": [946, 951]}},
+    {"region": {"value": "Mecklenburg-Vorpommern", "span": [954, 973]}},
+    {"city": {"value": "Rostock", "span": [976, 983]}},
+    {"region": {"value": "Europe", "span": [986, 992]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2021", "span": [280, 284]}},
+    {"endTime": {"value": "2023", "span": [291, 295]}},
+    {"duration": {"value": "April", "span": [540, 545]}},
+    {"duration": {"value": "August", "span": [553, 559]}},
+    {"startTime": {"value": "2021", "span": [1034, 1038]}},
+    {"endTime": {"value": "2022", "span": [1041, 1045]}},
+    {"endTime": {"value": "2023", "span": [1048, 1052]}},
+    {"duration": {"value": "Dataset version 1.0", "span": [1086, 1102]}}
+  ]
+}
+```

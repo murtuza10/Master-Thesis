@@ -1,0 +1,32 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wheat", "span": [159, 165] }},
+    {"cropSpecies": { "value": "barley", "span": [183, 189] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [191, 198] }}
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "", "span": [] }},
+    {"soilReferenceGroup": { "value": "", "span": [] }},
+    {"soilDepth": { "value": "", "span": [] }},
+    {"soilBulkDensity": { "value": "", "span": [] }},
+    {"soilPH": { "value": "", "span": [] }},
+    {"soilOrganicCarbon": { "value": "", "span": [] }},
+    {"soilAvailableNitrogen": { "value": "", "span": [] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [12, 18] }},
+    {"region": { "value": "", "span": [] }},
+    {"city": { "value": "", "span": [] }},
+    {"latitude": { "value": "", "span": [] }},
+    {"longitude": { "value": "", "span": [] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1984", "span": [242, 246] }},
+    {"endTime": { "value": "", "span": [] }},
+    {"duration": { "value": "", "span": [] }}
+  ]
+}
+```
+Note that the `"soilTexture"`, `"soilReferenceGroup"`, `"soilDepth"`, `"soilBulkDensity"`, `"soilPH"`, `"soilOrganicCarbon"`, and `"soilAvailableNitrogen"` categories in the "Soil" list are empty because these entities were not explicitly mentioned in the text.

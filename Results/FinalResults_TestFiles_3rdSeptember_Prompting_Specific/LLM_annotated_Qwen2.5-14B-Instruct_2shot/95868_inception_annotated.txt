@@ -1,0 +1,18 @@
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [99, 106]}},
+    {"region": {"value": "Western Germany", "span": [109, 119]}},
+    {"city": []}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1964", "span": [147, 151]}},
+    {"endTime": {"value": "2015", "span": [245, 249]}},
+    {"duration": {"value": "51 years", "span": [227, 234]}}
+  ]
+}
+``` 
+
+Note: The time statements are calculated based on the start year '1964' and the duration '51 years'. The end year '2015' is inferred but not explicitly stated in the text. However, according to the rules, only explicitly stated information should be included, so the duration of '51 years' is used for the time statement.

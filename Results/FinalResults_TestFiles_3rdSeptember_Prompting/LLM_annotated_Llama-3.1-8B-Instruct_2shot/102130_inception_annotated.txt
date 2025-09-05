@@ -1,0 +1,31 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "C4", "span": [96, 98]}},
+    {"cropSpecies": {"value": "C3", "span": [125, 127]}}
+  ],
+  "Soil": [
+    {"soilTexture": {"value": "C3 soil", "span": [128, 135]}},
+    {"soilReferenceGroup": {"value": "C3 soil", "span": [128, 135]}},
+    {"soilDepth": {"value": "6 months", "span": [143, 151]}},
+    {"soilDepth": {"value": "12 months", "span": [157, 165]}},
+    {"soilDepth": {"value": "24 months", "span": [172, 180]}},
+    {"soilBulkDensity": {"value": "particulate organic carbon (POC)", "span": [193, 215]}},
+    {"soilBulkDensity": {"value": "mineral associated organic carbon (MAOC)", "span": [217, 240]}},
+    {"soilPH": {"value": "total carbon content", "span": [241, 253]}},
+    {"soilOrganicCarbon": {"value": "13C", "span": [262, 265]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2 years", "span": [15, 21]}},
+    {"endTime": {"value": "2 years", "span": [15, 21]}}
+  ]
+}
+```
+### Notes ###
+
+- In the "Soil" category, "C3 soil" is both a "soilTexture" and a "soilReferenceGroup".
+- In the "Soil" category, "particulate organic carbon (POC)" and "mineral associated organic carbon (MAOC)" are both related to "soilBulkDensity".
+- In the "Soil" category, "total carbon content" and "13C" are related to "soilPH" and "soilOrganicCarbon" respectively.
+- The "startTime" and "endTime" in the "Time Statement" category are the same because the incubation experiment is for 2 years.

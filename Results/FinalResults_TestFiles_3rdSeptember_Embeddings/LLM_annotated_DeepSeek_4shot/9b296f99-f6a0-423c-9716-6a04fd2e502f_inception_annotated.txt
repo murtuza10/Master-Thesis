@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892329-a2BOV7hPHvkxIowHRln1",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892329,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [436, 441]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [453, 459]}},\n    {\"cropSpecies\": {\"value\": \"sugar beet\", \"span\": [465, 475]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [1259, 1265]}},\n    {\"cropSpecies\": {\"value\": \"sugar beet\", \"span\": [1270, 1280]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"humus\", \"span\": [153, 158]}},\n    {\"Soil\": {\"value\": \"soil fertility\", \"span\": [183, 196]}},\n    {\"Soil\": {\"value\": \"bulk soil\", \"span\": [1365, 1374]}}\n  ],\n  \"Location\": [\n    {\"city\": {\"value\": \"Speyer\", \"span\": [38, 44]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [46, 53]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [285, 291]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [293, 300]}},\n    {\"city\": {\"value\": \"Karlsruhe\", \"span\": [806, 815]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [1037, 1043]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [1045, 1052]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"1984\", \"span\": [344, 348]}},\n    {\"startTime\": {\"value\": \"2009\", \"span\": [813, 817]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5968,
+    "completion_tokens": 419,
+    "total_tokens": 6387,
+    "prompt_tokens_details": null
+  }
+}

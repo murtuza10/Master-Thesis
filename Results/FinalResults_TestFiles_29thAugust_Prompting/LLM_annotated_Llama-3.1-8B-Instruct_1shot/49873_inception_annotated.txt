@@ -1,0 +1,17 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2012", "span": [143, 146]}},
+    {"endTime": {"value": "2012", "span": [155, 158]}}
+  ]
+}
+```
+### Reasoning and Explanation ###
+1.  There are no crops mentioned in the text.
+2.  There are no soil-related entities mentioned in the text.
+3.  There are no locations mentioned in the text.
+4.  There are time-related entities mentioned in the text. The time statement includes start and end dates, both of which are "2012." These are explicitly mentioned in the text as part of the "temporal coverage" section.

@@ -1,0 +1,32 @@
+### Output JSON Structure Filled with Entities from the Input Text ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "energy crops", "span": [235, 245]}},
+    {"cropSpecies": {"value": "energy crops", "span": [243, 253]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "agricultural soils", "span": [143, 158]}},
+    {"soilTexture": {"value": "soils", "span": [166, 169]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [11, 17]}},
+    {"country": {"value": "Germany", "span": [76, 82]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1990", "span": [94, 98]}},
+    {"endTime": {"value": "2017", "span": [114, 118]}}
+  ]
+}
+```
+
+### Explanation of the Output JSON Structure Filled with Entities from the Input Text ###
+
+- **Crops**: The entities related to crops extracted from the input text are "energy crops" mentioned twice. The corresponding JSON objects are added to the "Crops" list with the exact string from the text and their start and end character positions from the beginning of the full text.
+
+- **Soil**: The entities related to soil extracted from the input text are "agricultural soils" and "soils". The corresponding JSON objects are added to the "Soil" list with the exact string from the text and their start and end character positions from the beginning of the full text.
+
+- **Location**: The entities related to location extracted from the input text are "Germany" mentioned twice. The corresponding JSON objects are added to the "Location" list with the exact string from the text and their start and end character positions from the beginning of the full text.
+
+- **Time Statement**: The entities related to time statements extracted from the input text are "1990" as the start year and "2017" as the end year. The corresponding JSON objects are added to the "Time Statement" list with the exact string from the text and their start and end character positions from the beginning of the full text.

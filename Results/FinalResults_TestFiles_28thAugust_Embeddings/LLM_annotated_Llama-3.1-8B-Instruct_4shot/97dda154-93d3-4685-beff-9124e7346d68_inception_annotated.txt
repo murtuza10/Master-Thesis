@@ -1,0 +1,35 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "maize", "span": [294, 300]}}
+  ],
+  "Soil": [
+    {"soilTexture": {"value": "Wanna Sand", "span": [255, 268]}},
+    {"soilTexture": {"value": "Wanna Sand without biogas slurry", "span": [272, 296]}},
+    {"soilTexture": {"value": "Rostock Sand", "span": [300, 312]}},
+    {"soilTexture": {"value": "Wanna Marsch", "span": [316, 326]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [441, 448]}},
+    {"region": {"value": "Lower Saxony", "span": [454, 465]}},
+    {"city": {"value": "Wanna", "span": [467, 473]}},
+    {"region": {"value": "Mecklenburg-Vorpommern", "span": [480, 496]}},
+    {"city": {"value": "Rostock", "span": [500, 506]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2021", "span": [236, 240]}},
+    {"endTime": {"value": "2022", "span": [242, 246]}},
+    {"endTime": {"value": "2023", "span": [248, 252]}},
+    {"duration": {"value": "April and August", "span": [220, 236]}}
+  ]
+}
+```
+
+### Explanation ###
+
+1.  The text mentions "maize" as a crop species, which is extracted and included in the "Crops" category.
+2.  The soil textures "Wanna Sand", "Wanna Sand without biogas slurry", "Rostock Sand", and "Wanna Marsch" are identified and added to the "Soil" category.
+3.  The locations "Germany", "Lower Saxony", "Wanna", "Mecklenburg-Vorpommern", and "Rostock" are extracted and included in the "Location" category.
+4.  The time statements "2021", "2022", and "2023" are identified as start and end times, and the duration "April and August" is included in the "Time Statement" category.

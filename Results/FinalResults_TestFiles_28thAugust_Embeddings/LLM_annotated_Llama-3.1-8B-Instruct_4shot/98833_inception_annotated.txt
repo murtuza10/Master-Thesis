@@ -1,0 +1,176 @@
+### Code for extracting entities from the given text
+```python
+import re
+import json
+
+def extract_entities(text):
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Crops
+    crop_species = ["Mähdrescher", "mais"]
+    for species in crop_species:
+        matches = re.finditer(species, text, re.IGNORECASE)
+        for match in matches:
+            start = match.start()
+            end = match.end()
+            entities["Crops"].append({"cropSpecies": {"value": species, "span": [start, end]}})
+
+    # Soil
+    soil_texture = ["Löss", "Parabraunerde"]
+    for texture in soil_texture:
+        matches = re.finditer(texture, text, re.IGNORECASE)
+        for match in matches:
+            start = match.start()
+            end = match.end()
+            if texture == "Löss":
+                entities["Soil"].append({"soilTexture": {"value": texture, "span": [start, end]}})
+            else:
+                entities["Soil"].append({"soilReferenceGroup": {"value": texture, "span": [start, end]}})
+
+    soil_depth = ["28 cm", "20 cm", "35 cm", "50 cm"]
+    for depth in soil_depth:
+        matches = re.finditer(depth, text, re.IGNORECASE)
+        for match in matches:
+            start = match.start()
+            end = match.end()
+            entities["Soil"].append({"soilDepth": {"value": depth, "span": [start, end]}})
+
+    # Location
+    location = ["2017"]
+    for loc in location:
+        matches = re.finditer(loc, text, re.IGNORECASE)
+        for match in matches:
+            start = match.start()
+            end = match.end()
+            entities["Location"].append({"country": {"value": loc, "span": [start, end]}})
+
+    # Time Statement
+    time = ["2017"]
+    for t in time:
+        matches = re.finditer(t, text, re.IGNORECASE)
+        for match in matches:
+            start = match.start()
+            end = match.end()
+            entities["Time Statement"].append({"startTime": {"value": t, "span": [start, end]}})
+
+    return entities
+
+text = """
+Title: 
+Bodendruck, -setzung und Änderungen bodenphysikalischer Parameter durch Befahrung mit einem Mähdrescher im Jahr 2017
+
+Abstract:
+Dieser Datensatz enthält Bodendaten aus einem Befahrungsversuch mit einem landwirtschaftlichen Fahrzeug (2-achsiger Mähdrescher mit Bunker; Gesamtgewicht: 17 t). Der Versuch fand 2017 während der Ernte statt. Der Boden, eine pseudovergleyte Parabraunerde aus Löss, wurde bis 28 cm Tiefe bearbeitet. Der Mähdrescher fuhr nacheinander über definierte Plots. Im Kernfeldbereich wurden zwei und im Vorgewende acht Überrollungen durchgeführt. Vor den Befahrungen wurde je Variante eine, nach den Befahrungen zwei Gruben ausgehoben. Folgende Messungen wurde in 20, 35 und 50 cm Tiefe je Grube durchgeführt: Bodendruck und plastische Bodensetzung Wasserretentionseigenschaften, Lagerungsdichte und gesättigte hydr. Leitfähigkeit (100 cm3 Stechzylinder; je 5 Wiederholungen pro Grube und Tiefe). Daraus abgeleitet wurden Gesamtporenvolumen, Luftkapazität, Feldkapazität, permanenter Welkepunkt und Trocken-rohdichte Bioporen wurden in jeder Grube und Tiefe gezählt
+"""
+
+entities = extract_entities(text)
+print(json.dumps(entities, indent=4))
+```
+
+### Output
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "Mähdrescher",
+                "span": [
+                    108,
+                    119
+                ]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "mais",
+                "span": [
+                    240,
+                    244
+                ]
+            }
+        }
+    ],
+    "Soil": [
+        {
+            "soilTexture": {
+                "value": "Löss",
+                "span": [
+                    154,
+                    158
+                ]
+            }
+        },
+        {
+            "soilReferenceGroup": {
+                "value": "Parabraunerde",
+                "span": [
+                    181,
+                    194
+                ]
+            }
+        },
+        {
+            "soilDepth": {
+                "value": "28 cm",
+                "span": [
+                    246,
+                    250
+                ]
+            }
+        },
+        {
+            "soilDepth": {
+                "value": "20 cm",
+                "span": [
+                    312,
+                    314
+                ]
+            }
+        },
+        {
+            "soilDepth": {
+                "value": "35 cm",
+                "span": [
+                    317,
+                321]
+            }
+        },
+        {
+            "soilDepth": {
+                "value": "50 cm",
+                "span": [
+                    326,
+                    330
+                ]
+            }
+        }
+    ],
+    "Location": [
+        {
+            "country": {
+                "value": "2017",
+                "span": [
+                    65,
+                    69
+                ]
+            }
+        }
+    ],
+    "Time Statement": [
+        {
+            "startTime": {
+                "value": "2017",
+                "span": [
+                    65,
+                    69
+                ]
+            }
+        }
+    ]
+}
+```

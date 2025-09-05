@@ -1,0 +1,23 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "spring barley", "span": [367, 377] }},
+    {"cropSpecies": { "value": "spring barley", "span": [422, 432] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "soil profiles", "span": [106, 115] }},
+    {"soilDepth": { "value": "three sampling depths", "span": [116, 130] }}
+  ],
+  "Location": [
+    {"region": { "value": "Northern Germany", "span": [86, 97] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2018", "span": [224, 228] }},
+    {"startTime": { "value": "2019", "span": [246, 250] }},
+    {"startTime": { "value": "2020", "span": [265, 269] }},
+    {"startTime": { "value": "2020", "span": [332, 336] }},
+    {"endTime": { "value": "2020", "span": [359, 363] }},
+    {"duration": { "value": "3.5 months", "span": [364, 373] }}
+  ]
+}
+```

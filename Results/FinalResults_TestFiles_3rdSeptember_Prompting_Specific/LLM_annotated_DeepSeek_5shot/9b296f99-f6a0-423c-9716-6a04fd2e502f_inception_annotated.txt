@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756918661-HfzGNAuCnqIp75xxLBr2",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756918661,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"winter wheat\", \"span\": [423, 435] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [437, 450] }},\n    {\"cropSpecies\": { \"value\": \"sugar beet\", \"span\": [456, 466] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [1112, 1125] }},\n    {\"cropSpecies\": { \"value\": \"sugar beet\", \"span\": [1130, 1140] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"city\": { \"value\": \"Speyer\", \"span\": [35, 41] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [43, 50] }},\n    {\"city\": { \"value\": \"Speyer\", \"span\": [290, 296] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [298, 305] }},\n    {\"city\": { \"value\": \"Karlsruhe\", \"span\": [788, 797] }},\n    {\"city\": { \"value\": \"Speyer\", \"span\": [1000, 1006] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [1008, 1015] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1984\", \"span\": [373, 377] }},\n    {\"startTime\": { \"value\": \"2009\", \"span\": [761, 765] }},\n    {\"startTime\": { \"value\": \"16. September 2009\", \"span\": [775, 792] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 5240,
+    "completion_tokens": 405,
+    "total_tokens": 5645
+  }
+}

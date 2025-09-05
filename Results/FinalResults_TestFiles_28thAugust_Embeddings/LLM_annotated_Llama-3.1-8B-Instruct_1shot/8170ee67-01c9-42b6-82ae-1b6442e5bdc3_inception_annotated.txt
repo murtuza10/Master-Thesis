@@ -1,0 +1,33 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [245, 251]}},
+    {"cropSpecies": {"value": "rape", "span": [268, 274]}},
+    {"cropSpecies": {"value": "wheat", "span": [279, 285]}},
+    {"cropSpecies": {"value": "lupine", "span": [289, 295]}},
+    {"cropSpecies": {"value": "rye", "span": [301, 306]}},
+    {"cropSpecies": {"value": "barley", "span": [336, 342]}}
+  ],
+  "Soil": [
+    {"soilTexture": {}},
+    {"soilReferenceGroup": {}},
+    {"soilDepth": {"value": "25 cm", "span": [417, 423]}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}}
+  ],
+  "Location": [
+    {"country": {}},
+    {"region": {}},
+    {"city": {"value": "Braunschweig", "span": [14, 24]}},
+    {"latitude": {}},
+    {"longitude": {}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "autumn 2013", "span": [425, 438]}},
+    {"endTime": {"value": "2014", "span": [440, 445]}},
+    {"duration": {}}
+  ]
+}
+```

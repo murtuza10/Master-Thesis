@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892176-wpg1E2iXRYDJ7EXcfGtL",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892176,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [38, 44] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [63, 76] }},\n    {\"cropSpecies\": { \"value\": \"oat\", \"span\": [1005, 1008] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [1237, 1250] }},\n    {\"cropSpecies\": { \"value\": \"winter oilseed rape\", \"span\": [1253, 1273] }},\n    {\"cropSpecies\": { \"value\": \"winter wheat\", \"span\": [1276, 1288] }},\n    {\"cropSpecies\": { \"value\": \"lupine\", \"span\": [1291, 1298] }},\n    {\"cropSpecies\": { \"value\": \"winter rye\", \"span\": [1303, 1313] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [1476, 1489] }},\n    {\"cropSpecies\": { \"value\": \"Hordeum vulgare L.\", \"span\": [1492, 1510] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"soil P\", \"span\": [832, 838] }},\n    {\"Soil\": { \"value\": \"PCAL\", \"span\": [840, 844] }},\n    {\"Soil\": { \"value\": \"depth\", \"span\": [1009, 1014] }},\n    {\"Soil\": { \"value\": \"25 cm\", \"span\": [1015, 1020] }},\n    {\"Soil\": { \"value\": \"PCAL\", \"span\": [1147, 1151] }},\n    {\"Soil\": { \"value\": \"11 mg kg-1 PCAL\", \"span\": [1173, 1190] }},\n    {\"Soil\": { \"value\": \"21 mg kg-1 PCAL\", \"span\": [1195, 1212] }},\n    {\"Soil\": { \"value\": \"47 mg kg-1 PCAL\", \"span\": [1217, 1234] }},\n    {\"Soil\": { \"value\": \"depth\", \"span\": [1431, 1436] }},\n    {\"Soil\": { \"value\": \"25 cm\", \"span\": [1437, 1442] }}\n  ],\n  \"Location\": [\n    {\"city\": { \"value\": \"Braunschweig\", \"span\": [23, 35] }},\n    {\"city\": { \"value\": \"Braunschweig\", \"span\": [48, 60] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1985\", \"span\": [774, 788] }},\n    {\"endTime\": { \"value\": \"2008\", \"span\": [790, 794] }},\n    {\"endTime\": { \"value\": \"2013\", \"span\": [992, 996] }},\n    {\"startTime\": { \"value\": \"autumn 2013\", \"span\": [1455, 1467] }},\n    {\"endTime\": { \"value\": \"2014\", \"span\": [1512, 1516] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4879,
+    "completion_tokens": 750,
+    "total_tokens": 5629,
+    "prompt_tokens_details": null
+  }
+}

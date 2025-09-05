@@ -1,0 +1,36 @@
+### Entities Extraction Output
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "energy crops", "span": [134, 144] }}
+  ],
+  "Soil": [
+    {"soilTexture": []},
+    {"soilReferenceGroup": []},
+    {"soilDepth": []},
+    {"soilBulkDensity": []},
+    {"soilPH": []},
+    {"soilOrganicCarbon": []},
+    {"soilAvailableNitrogen": []}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [36, 43] }},
+    {"region": { "value": "federal states", "span": [102, 113] }},
+    {"city": []},
+    {"latitude": []},
+    {"longitude": []}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1990", "span": [92, 96] }},
+    {"endTime": { "value": "2017", "span": [96, 100] }},
+    {"duration": { "value": "27 years", "span": [96, 103] }}
+  ]
+}
+```
+
+### Notes
+
+- The entity extraction focused on the provided text and extracted relevant entities based on the specified categories.
+- No soil-related entities were found in the text, which resulted in empty lists for the "Soil" category.
+- The extracted time-related entities included the start and end years as well as the duration of the period.

@@ -1,0 +1,24 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "winter wheat", "span": [229, 239]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": {"value": "Germany", "span": [434, 439]}},
+    {"region": {"value": "Brandenburg", "span": [444, 452]}},
+    {"city": {"value": "Uckermark", "span": [459, 467]}},
+    {"location": {"value": "Quillow", "span": [473, 481]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "April", "span": [282, 287]}},
+    {"endTime": {"value": "June", "span": [294, 298]}}
+  ]
+}
+```
+
+### Notes ###
+- The text mentions "winter wheat" as a crop species.
+- The text mentions various locations including Germany, Brandenburg, Uckermark, and Quillow. However, "Quillow" seems to be a specific location, so it's annotated as "location" instead of "city".
+- The text mentions a time period from April to June 2019, so the start and end times are annotated accordingly.

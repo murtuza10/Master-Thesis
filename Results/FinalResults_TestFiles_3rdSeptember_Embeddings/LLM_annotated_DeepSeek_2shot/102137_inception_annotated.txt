@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892088-fqEEQivvDlXmn2nImfVy",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892088,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"organic carbon\", \"span\": [116, 130] }},\n    {\"Soil\": { \"value\": \"soil organic carbon\", \"span\": [116, 134] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [154, 161] }}\n  ],\n  \"Time Statement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2107,
+    "completion_tokens": 101,
+    "total_tokens": 2208,
+    "prompt_tokens_details": null
+  }
+}

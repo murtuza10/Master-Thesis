@@ -1,0 +1,27 @@
+### Output Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Helosciadium nodiflorum", "span": [54, 75] }},
+    {"cropSpecies": { "value": "H. nodiflorum", "span": [83, 94] }},
+    {"cropSpecies": { "value": "Helosciadium nodiflorum", "span": [134, 155] }},
+    {"cropSpecies": { "value": "wild celery", "span": [249, 258] }},
+    {"cropSpecies": { "value": "wild celery species", "span": [265, 277] }},
+    {"cropSpecies": { "value": "wild celery relatives", "span": [306, 319] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": { "value": "Germany", "span": [40, 48] }},
+    {"city": { "value": "Gatersleben", "span": [74, 84] }},
+    {"city": { "value": "London", "span": [129, 135] }},
+    {"country": { "value": "Germany", "span": [182, 190] }},
+    {"country": { "value": "Germany", "span": [244, 252] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2015", "span": [207, 211] }},
+    {"endTime": { "value": "2016", "span": [212, 216] }},
+    {"startTime": { "value": "2018", "span": [275, 279] }},
+    {"endTime": { "value": "2019", "span": [280, 284] }}
+  ]
+}
+```

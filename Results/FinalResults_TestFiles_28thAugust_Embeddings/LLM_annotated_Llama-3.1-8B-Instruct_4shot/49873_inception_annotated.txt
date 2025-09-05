@@ -1,0 +1,19 @@
+### JSON Output ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilDepth": { "value": "TRD", "span": [141, 144] }},
+    {"soilBulkDensity": { "value": "nutzbare Feldkapazität (nFK)", "span": [169, 187] }},
+    {"soilOrganicCarbon": { "value": "organischer Kohlenstoffgehalt (Corg)", "span": [222, 240] }}
+  ],
+  "Location": [
+    {"country": { "value": "Deutschland", "span": [14, 23] }},
+    {"region": { "value": "Bundesländer", "span": [44, 53] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2012", "span": [105, 109] }},
+    {"endTime": { "value": "2012", "span": [110, 114] }}
+  ]
+}
+```

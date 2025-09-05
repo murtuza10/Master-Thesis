@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892209-Djd52Jpvt61qShCvCzU9",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892209,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"Bodentextur\", \"span\": [390, 401] }},\n    {\"Soil\": { \"value\": \"Lehm\", \"span\": [403, 407] }},\n    {\"Soil\": { \"value\": \"Ton\", \"span\": [412, 415] }},\n    {\"Soil\": { \"value\": \"Bodenbearbeitung\", \"span\": [420, 435] }},\n    {\"Soil\": { \"value\": \"pH Wert\", \"span\": [623, 630] }},\n    {\"Soil\": { \"value\": \"organischen Kohlenstoff\", \"span\": [642, 662] }},\n    {\"Soil\": { \"value\": \"Gesamt-Stickstoff\", \"span\": [667, 683] }},\n    {\"Soil\": { \"value\": \"Boden-DNA\", \"span\": [722, 731] }}\n  ],\n  \"Location\": [\n    {\"city\": { \"value\": \"Hildesheim\", \"span\": [313, 323] }}\n  ],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"14-tägigen Zeitraster\", \"span\": [336, 355] }},\n    {\"duration\": { \"value\": \"2 Jahren\", \"span\": [392, 399] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2190,
+    "completion_tokens": 305,
+    "total_tokens": 2495,
+    "prompt_tokens_details": null
+  }
+}

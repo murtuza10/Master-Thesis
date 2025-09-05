@@ -1,0 +1,23 @@
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Winter wheat", "span": [294, 305]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "soil", "span": [4, 9]}},
+    {"soilDepth": {"value": "soil-water stable aggregation", "span": [163, 187]}},
+    {"soilBulkDensity": {"value": "soil properties", "span": [137, 152]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Explanation ###
+1.  "Winter wheat" is extracted as the crop species because it is explicitly mentioned in the abstract text as part of the study.
+2.  "soil" is extracted as the soil reference group because it is explicitly mentioned in the title and abstract text as part of the study.
+3.  "soil-water stable aggregation" is extracted as the soil depth because it is explicitly mentioned in the abstract text as a property affected by the increasing number of GCFs.
+4.  "soil properties" is extracted as the soil bulk density because it is explicitly mentioned in the abstract text as a property affected by the increasing number of GCFs.
+5.  No location is extracted because there is no explicit mention of a specific location in the text.
+6.  No time statement is extracted because there is no explicit mention of a specific time or duration in the text.

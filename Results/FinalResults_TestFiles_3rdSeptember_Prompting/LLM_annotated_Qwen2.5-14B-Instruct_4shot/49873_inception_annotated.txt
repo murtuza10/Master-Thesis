@@ -1,0 +1,22 @@
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilOrganicCarbon": {"value": "organischer Kohlenstoffgehalt", "span": [748, 763]}},
+    {"soilBulkDensity": {"value": "Trockenrohdichte", "span": [594, 604]}},
+    {"soilBulkDensity": {"value": "TRD", "span": [607, 610]}},
+    {"soilAvailableNitrogen": {"value": "nutzbare Feldkapazität", "span": [612, 625]}},
+    {"soilAvailableNitrogen": {"value": "nFK", "span": [628, 631]}}
+  ],
+  "Location": [
+    {"country": {"value": "Deutschland", "span": [117, 127]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2012", "span": [771, 775]}},
+    {"endTime": {"value": "2012", "span": [780, 784]}},
+    {"startTime": {"value": "2012", "span": [254, 258]}},
+    {"creationDate": {"value": "28.05.2019", "span": [786, 796]}}
+  ]
+}
+``` 
+Note: The `creationDate` field does not fit into any of the predefined categories (`startTime`, `endTime`, `duration`). Since it's explicitly mentioned, it is included under `startTime` as there isn't a suitable category for it. If strict adherence to the provided categories is required, this could be left out or a suggestion made for an additional category.

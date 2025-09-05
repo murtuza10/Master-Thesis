@@ -1,0 +1,44 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [346, 351]}},
+    {"cropSpecies": {"value": "barley", "span": [356, 362]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [365, 375]}},
+    {"cropSpecies": {"value": "barley", "span": [761, 767]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [772, 782]}},
+    {"cropSpecies": {"value": "barley", "span": [1005, 1011]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [1016, 1026]}}
+  ],
+  "Soil": [
+    {"Soil": {"value": "humus", "span": [156, 161]}},
+    {"Soil": {"value": "mineral nutrients", "span": [173, 188]}},
+    {"Soil": {"value": "soil fertility", "span": [1071, 1084]}},
+    {"Soil": {"value": "bacterial bulk soil community", "span": [1141, 1166]}},
+    {"Soil": {"value": "bacterial interaction networks", "span": [1436, 1459]}},
+    {"Soil": {"value": "soil", "span": [34, 38]}},
+    {"Soil": {"value": "soil", "span": [51, 55]}},
+    {"Soil": {"value": "Boden", "span": [1871, 1875]}},
+    {"Soil": {"value": "soil", "span": [1915, 1919]}}
+  ],
+  "Location": [
+    {"city": {"value": "Speyer", "span": [24, 30]}},
+    {"city": {"value": "Speyer", "span": [43, 49]}},
+    {"country": {"value": "Germany", "span": [31, 37]}},
+    {"country": {"value": "Germany", "span": [50, 56]}},
+    {"city": {"value": "Speyer", "span": [295, 301]}},
+    {"country": {"value": "Germany", "span": [302, 308]}},
+    {"city": {"value": "Karlsruhe", "span": [933, 942]}},
+    {"city": {"value": "Speyer", "span": [973, 979]}},
+    {"country": {"value": "Germany", "span": [980, 986]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1984", "span": [323, 327]}},
+    {"startTime": {"value": "2009", "span": [958, 962]}},
+    {"startTime": {"value": "2017", "span": [1653, 1657]}},
+    {"duration": {"value": "long-term", "span": [1057, 1065]}},
+    {"duration": {"value": "long-term", "span": [1313, 1321]}},
+    {"duration": {"value": "four sampling seasons", "span": [1042, 1060]}},
+    {"duration": {"value": "three years", "span": [398, 408]}}
+  ]
+}
+```

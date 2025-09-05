@@ -1,0 +1,24 @@
+### Entity Extraction Result ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "energy crops", "span": [276, 285]}},
+    {"cropSpecies": {"value": "energy crops", "span": [276, 285]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "agricultural soils", "span": [253, 267]}},
+    {"soilReferenceGroup": {"value": "agricultural soils", "span": [253, 267]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [31, 39]}},
+    {"country": {"value": "Germany", "span": [31, 39]}},
+    {"region": {"value": "the federal states", "span": [214, 224]}},
+    {"region": {"value": "the federal states", "span": [214, 224]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1990", "span": [95, 99]}},
+    {"endTime": {"value": "2017", "span": [117, 121]}}
+  ]
+}
+```
+Note: I have considered the word "energy crops" as a crop species, "agricultural soils" as a soil reference group, and the federal states as a region.

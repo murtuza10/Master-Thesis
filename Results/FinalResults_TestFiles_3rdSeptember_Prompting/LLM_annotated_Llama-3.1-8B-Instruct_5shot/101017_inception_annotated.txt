@@ -1,0 +1,19 @@
+### Output JSON Structure Filled with Extracted Entities ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Möhre", "span": [65, 70] }},
+    {"cropSpecies": { "value": "Salat", "span": [73, 78] }},
+    {"cropSpecies": { "value": "Apfel", "span": [81, 86] }},
+    {"cropSpecies": { "value": "Erdbeere", "span": [89, 98] }},
+    {"cropSpecies": { "value": "Erdbeere", "span": [106, 115] }},
+    {"cropSpecies": { "value": "Himbeere", "span": [119, 126] }}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+Note: No soil, location or time-related entities were found in the input text.

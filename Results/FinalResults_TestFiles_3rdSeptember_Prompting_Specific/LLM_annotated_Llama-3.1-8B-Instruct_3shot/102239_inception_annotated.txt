@@ -1,0 +1,27 @@
+### Output JSON Structure Filled Based on the Input Text
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilTexture": {"value": "soils", "span": [144, 148]}},
+    {"soilReferenceGroup": {"value": "soil properties", "span": [106, 122]}},
+    {"soilDepth": {"value": "several", "span": [123, 128]}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {"value": "organic carbon", "span": [77, 92]}},
+    {"soilAvailableNitrogen": {}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+### Explanation of the JSON Structure Filled Based on the Input Text
+
+1. The `Crops` list is empty because there are no mentions of crops in the text.
+2. The `Soil` list includes several soil-related entities:
+   - `"soilTexture"`: The text mentions "soils" which can be inferred as the texture of the soil.
+   - `"soilReferenceGroup"`: The text mentions "soil properties" which is a reference group for the soil.
+   - `"soilDepth"`: The text mentions "several" sites which can be inferred as the depth of the soil.
+   - `"soilBulkDensity"`, `"soilPH"`, `"soilOrganicCarbon"`, and `"soilAvailableNitrogen"`: These entities are empty because they are not mentioned in the text.
+3. The `Location` list is empty because there are no mentions of locations in the text.
+4. The `Time Statement` list is empty because there are no mentions of time-related entities in the text.

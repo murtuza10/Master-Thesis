@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892149-AiAyxE4C2LvdxGcKN6ua",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892149,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"maize\", \"span\": [187, 192]}},\n    {\"cropSpecies\": {\"value\": \"maize\", \"span\": [682, 687]}},\n    {\"cropSpecies\": {\"value\": \"R. irregulare\", \"span\": [593, 606]}},\n    {\"cropSpecies\": {\"value\": \"F. mosseae\", \"span\": [609, 619]}},\n    {\"cropSpecies\": {\"value\": \"F. caledonium\", \"span\": [622, 635]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"Wanna Sand\", \"span\": [265, 275]}},\n    {\"Soil\": {\"value\": \"Wanna Sand without biogas slurry\", \"span\": [279, 311]}},\n    {\"Soil\": {\"value\": \"Rostock Sand\", \"span\": [316, 329]}},\n    {\"Soil\": {\"value\": \"Wanna Marsch\", \"span\": [336, 348]}},\n    {\"Soil\": {\"value\": \"biogas slurry\", \"span\": [361, 374]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [1024, 1028]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [1093, 1097]}},\n    {\"Soil\": {\"value\": \"Boden\", \"span\": [1577, 1582]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"Europe\", \"span\": [1569, 1575]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [1578, 1585]}},\n    {\"region\": {\"value\": \"Lower Saxony\", \"span\": [1588, 1601]}},\n    {\"city\": {\"value\": \"Wanna\", \"span\": [1604, 1609]}},\n    {\"region\": {\"value\": \"Mecklenburg-Vorpommern\", \"span\": [1612, 1634]}},\n    {\"city\": {\"value\": \"Rostock\", \"span\": [1637, 1644]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2021\", \"span\": [225, 229]}},\n    {\"endTime\": {\"value\": \"2023\", \"span\": [234, 238]}},\n    {\"startTime\": {\"value\": \"April\", \"span\": [816, 821]}},\n    {\"endTime\": {\"value\": \"August\", \"span\": [826, 832]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2014,
+    "completion_tokens": 575,
+    "total_tokens": 2589,
+    "prompt_tokens_details": null
+  }
+}

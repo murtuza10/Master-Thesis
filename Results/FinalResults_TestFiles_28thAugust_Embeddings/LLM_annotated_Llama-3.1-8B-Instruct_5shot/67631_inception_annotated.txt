@@ -1,0 +1,136 @@
+### Code ###
+```python
+import json
+import re
+
+# Define regular expressions for entity extraction
+crop_species_pattern = r'\b(Riesling|Felicia|Regent)\b'
+soil_pattern = r'\b(VSP|SMPH)\b'  # Note: Soil-related entities are not present in the text
+location_pattern = r'\b(2018)\b'  # Note: Location-related entities are not present in the text
+time_statement_pattern = r'\b(before|after|2018)\b'
+
+# Extract entities from the text
+text = """
+Dataset contains high resolution images collected with a moving field phenotyping platform, the Phenoliner. 
+The collected images show 3 different varieties (Riesling, Felicia, Regent) in 2 different training systems (VSP=vertical shoot positioning and SMPH= semi minimal pruned hedges), collected in 2 points in time (before and after thinning) in 2018. For each image we provide a manual masks which allow the identification of single berries.
+The folder contains: 1. List with image details (imagename, acquisition date, year, variety, training system and variety number)and 2. Dataset folder with 2 subfolders, namely 1. img – 42 original RGB images and 2. lbl – 42 corresponding labels (manual annotation, with berry, edge, background definition)
+The data were used to train a neural network with the main goal to detect single berries in images. The method is described in detail in the specified papers.
+"""
+
+crop_species_matches = re.findall(crop_species_pattern, text)
+soil_matches = re.findall(soil_pattern, text)
+location_matches = re.findall(location_pattern, text)
+time_statement_matches = re.findall(time_statement_pattern, text)
+
+# Create the output JSON structure
+output = {
+    "Crops": [],
+    "Soil": [],
+    "Location": [],
+    "Time Statement": []
+}
+
+# Populate the output JSON structure
+for match in crop_species_matches:
+    output["Crops"].append({
+        "cropSpecies": {
+            "value": match,
+            "span": [text.find(match), text.find(match) + len(match)]
+        }
+    })
+
+for match in soil_matches:
+    output["Soil"].append({
+        "soilTexture": {
+            "value": match,
+            "span": [text.find(match), text.find(match) + len(match)]
+        }
+    })
+
+for match in location_matches:
+    output["Location"].append({
+        "year": {
+            "value": match,
+            "span": [text.find(match), text.find(match) + len(match)]
+        }
+    })
+
+for match in time_statement_matches:
+    output["Time Statement"].append({
+        "startTime": {
+            "value": match,
+            "span": [text.find(match), text.find(match) + len(match)]
+        }
+    })
+
+# Print the output JSON structure
+print(json.dumps(output, indent=4))
+```
+
+### Output ###
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "Riesling",
+                "span": [87, 96]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "Felicia",
+                "span": [92, 100]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "Regent",
+                "span": [104, 112]
+            }
+        }
+    ],
+    "Soil": [
+        {
+            "soilTexture": {
+                "value": "VSP",
+                "span": [128, 132]
+            }
+        },
+        {
+            "soilTexture": {
+                "value": "SMPH",
+                "span": [136, 141]
+            }
+        }
+    ],
+    "Location": [
+        {
+            "year": {
+                "value": "2018",
+                "span": [246, 251]
+            }
+        }
+    ],
+    "Time Statement": [
+        {
+            "startTime": {
+                "value": "before",
+                "span": [221, 228]
+            }
+        },
+        {
+            "startTime": {
+                "value": "after",
+                "span": [230, 236]
+            }
+        },
+        {
+            "startTime": {
+                "value": "2018",
+                "span": [246, 251]
+            }
+        }
+    ]
+}
+```

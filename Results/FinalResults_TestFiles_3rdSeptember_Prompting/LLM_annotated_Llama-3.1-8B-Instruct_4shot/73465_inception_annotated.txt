@@ -1,0 +1,24 @@
+### Output Format ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Helosciadium nodiflorum", "span": [143, 162] }},
+    {"cropSpecies": { "value": "wild celery", "span": [531, 541] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"city": { "value": "Gatersleben", "span": [114, 123] }},
+    {"city": { "value": "London", "span": [234, 238] }},
+    {"country": { "value": "Germany", "span": [130, 137] }},
+    {"country": { "value": "Germany", "span": [306, 313] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2015", "span": [434, 438] }},
+    {"startTime": { "value": "2016", "span": [439, 443] }},
+    {"endTime": { "value": "2018", "span": [542, 546] }},
+    {"endTime": { "value": "2019", "span": [547, 551] }}
+  ]
+}
+```
+Note: The span positions are based on the full text of the abstract.

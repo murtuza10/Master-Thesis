@@ -1,0 +1,26 @@
+### Output JSON Structure ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Picea abies", "span": [97, 108]}},
+    {"cropSpecies": {"value": "Norway spruce", "span": [135, 145]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [123, 130]}},
+    {"country": {"value": "Europe", "span": [173, 179]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1964", "span": [224, 228]}},
+    {"endTime": {"value": "2015", "span": [239, 243]}},
+    {"duration": {"value": "51 years", "span": [247, 255]}}
+  ]
+}
+```
+
+### Explanation ###
+
+*   We identified two crop species: "Picea abies" and "Norway spruce".
+*   We found two locations: "Germany" and "Europe".
+*   We found three time-related statements: the start time of the experiment ("1964"), the end time implied by the duration ("2015"), and the duration itself ("51 years").

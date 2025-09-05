@@ -1,0 +1,41 @@
+### JSON Structure Filled with Entities from Input Text ###
+
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilTexture": {"value": "Lehm und Ton", "span": [342, 351]}},
+    {"soilReferenceGroup": {"value": "Ton", "span": [342, 346]}},
+    {"soilReferenceGroup": {"value": "Lehm", "span": [348, 353]}},
+    {"soilDepth": {"value": "Boden", "span": [343, 346]}},
+    {"soilBulkDensity": {"value": "Boden", "span": [348, 351]}},
+    {"soilPH": {"value": "pH Wert", "span": [380, 386]}},
+    {"soilOrganicCarbon": {"value": "organischen Kohlenstoff", "span": [397, 414]}},
+    {"soilAvailableNitrogen": {"value": "Gesamt-Stickstoff", "span": [423, 435]}}
+  ],
+  "Location": [
+    {"country": {"value": "Deutschland", "span": [1, 9]}},
+    {"city": {"value": "Hildesheim", "span": [174, 184]}}
+  ],
+  "Time Statement": [
+    {"duration": {"value": "14-tägigen Zeitraster", "span": [164, 178]}},
+    {"duration": {"value": "2 Jahre", "span": [187, 192]}}
+  ]
+}
+```
+In the JSON output, I have identified the following entities:
+
+- **Crops**: None mentioned in the text.
+- **Soil**:
+  - "Lehm und Ton" is identified as the soil texture.
+  - "Ton" and "Lehm" are identified as soil reference groups.
+  - "Boden" is identified as a mention of soil depth and bulk density.
+  - "pH Wert" is identified as the pH value of the soil.
+  - "organischen Kohlenstoff" is identified as the soil organic carbon content.
+  - "Gesamt-Stickstoff" is identified as the soil available nitrogen content.
+- **Location**:
+  - "Deutschland" is identified as the country.
+  - "Hildesheim" is identified as the city.
+- **Time Statement**:
+  - "14-tägigen Zeitraster" is identified as a 14-day time frame.
+  - "2 Jahre" is identified as a duration of 2 years.

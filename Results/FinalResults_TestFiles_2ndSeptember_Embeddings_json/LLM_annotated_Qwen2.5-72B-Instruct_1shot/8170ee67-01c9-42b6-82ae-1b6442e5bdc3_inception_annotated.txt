@@ -1,0 +1,34 @@
+{
+  "Crops": [
+    {"cropSpecies": { "value": "barley", "span": [84, 90] }},
+    {"cropSpecies": { "value": "oat", "span": [1024, 1027] }},
+    {"cropSpecies": { "value": "oilseed rape", "span": [1059, 1069] }},
+    {"cropSpecies": { "value": "wheat", "span": [1071, 1076] }},
+    {"cropSpecies": { "value": "lupine", "span": [1078, 1084] }},
+    {"cropSpecies": { "value": "rye", "span": [1086, 1089] }},
+    {"cropSpecies": { "value": "Hordeum vulgare L.", "span": [1249, 1263] }},
+    {"cropSpecies": { "value": "OTTO", "span": [1266, 1270] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "soil P (PCAL)", "span": [443, 455] }},
+    {"Soil": { "value": "soil P", "span": [504, 509] }},
+    {"Soil": { "value": "soil P (PCAL)", "span": [632, 644] }},
+    {"Soil": { "value": "soil class A (11 mg kg-1 PCAL)", "span": [705, 733] }},
+    {"Soil": { "value": "soil class B (21 mg kg-1 PCAL)", "span": [737, 765] }},
+    {"Soil": { "value": "soil class C (47 mg kg-1 PCAL)", "span": [769, 797] }},
+    {"Soil": { "value": "soil physical and chemical properties", "span": [873, 902] }},
+    {"Soil": { "value": "soil P", "span": [1194, 1199] }},
+    {"Soil": { "value": "soil", "span": [1281, 1285] }}
+  ],
+  "Location": [
+    {"city": { "value": "Braunschweig", "span": [33, 45] }},
+    {"country": { "value": "Germany", "span": [] }}  // No explicit mention of Germany in the text
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1985", "span": [469, 473] }},
+    {"endTime": { "value": "2008", "span": [474, 478] }},
+    {"endTime": { "value": "2013", "span": [609, 613] }},
+    {"startTime": { "value": "autumn 2013", "span": [1144, 1154] }},
+    {"endTime": { "value": "2014", "span": [1212, 1216] }}
+  ]
+}

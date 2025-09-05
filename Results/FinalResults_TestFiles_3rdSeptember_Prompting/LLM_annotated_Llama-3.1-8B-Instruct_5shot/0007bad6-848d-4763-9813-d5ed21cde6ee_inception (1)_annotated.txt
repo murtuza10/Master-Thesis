@@ -1,0 +1,27 @@
+### Output Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Winter wheat", "span": [332, 342] }}
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "soil", "span": [35, 40] }},
+    {"soilReferenceGroup": { "value": "soil", "span": [35, 40] }},
+    {"soilDepth": { "value": "soil water stable aggregation", "span": [234, 257] }},
+    {"soilBulkDensity": { "value": "soil properties", "span": [224, 235] }},
+    {"soilPH": { "value": "soil properties", "span": [224, 235] }},
+    {"soilOrganicCarbon": { "value": "soil properties", "span": [224, 235] }},
+    {"soilAvailableNitrogen": { "value": "soil properties", "span": [224, 235] }}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+### Explanation of the Output ###
+In the output, the `Crops` list contains one crop species, `Winter wheat`, which is mentioned in the abstract text.
+
+The `Soil` list contains several soil-related entities, including `soil`, `soil water stable aggregation`, and `soil properties`, which are mentioned in the abstract text. However, the exact soil properties such as `soilPH`, `soilOrganicCarbon`, and `soilAvailableNitrogen` are not explicitly mentioned in the text, but are included in the output as they are part of the predefined entity categories.
+
+The `Location` list is empty because no specific location is mentioned in the text.
+
+The `Time Statement` list is also empty because no specific time or duration is mentioned in the text.

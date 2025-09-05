@@ -1,0 +1,31 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "winter wheat", "span": [143, 153]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [213, 223]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [233, 243]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [251, 261]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [273, 283]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [293, 303]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [313, 323]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [333, 343]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [355, 365]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [381, 391]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": {"value": "AgroScapeLabs Quillow", "span": [41, 59]}},
+    {"region": {"value": "Quillow", "span": [137, 145]}},
+    {"region": {"value": "Brandenburg", "span": [153, 162]}},
+    {"region": {"value": "Uckermark", "span": [163, 172]}},
+    {"region": {"value": "Germany", "span": [173, 180]}},
+    {"city": {"value": "Quillow", "span": [189, 196]}},
+    {"city": {"value": "Germany", "span": [219, 226]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "April 2019", "span": [217, 231]}},
+    {"endTime": {"value": "June 2019", "span": [239, 253]}}
+  ]
+}
+```

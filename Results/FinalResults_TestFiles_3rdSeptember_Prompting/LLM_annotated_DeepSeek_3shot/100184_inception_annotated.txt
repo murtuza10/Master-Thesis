@@ -1,0 +1,32 @@
+{
+  "id": "gen-1756906919-qO3jItaanBtSkLpQGHtW",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756906919,
+  "choices": [
+    {
+      "error": {
+        "message": "Error processing stream",
+        "code": 502,
+        "metadata": {
+          "provider_name": "SiliconFlow",
+          "raw": {
+            "retryable": true
+          }
+        }
+      },
+      "logprobs": null,
+      "finish_reason": "error",
+      "native_finish_reason": "error",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"oilseed rape\", \"span\": [597, 609]}},\n    {\"cropSpecies\": {\"value\": \"Brassica napus\", \"span\": [611, 625]}},\n    {\"cropSpecies\": {\"value\": \"OSR\", \"span\": [627, 630]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"city\": {\"value\": \"Bochum\", \"span\": [383",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": ""
+}

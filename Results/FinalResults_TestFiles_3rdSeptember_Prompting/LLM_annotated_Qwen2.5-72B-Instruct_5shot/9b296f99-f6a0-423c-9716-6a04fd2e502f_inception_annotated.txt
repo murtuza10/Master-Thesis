@@ -1,0 +1,30 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "winter wheat", "span": [257, 270] }},
+    {"cropSpecies": { "value": "winter barley", "span": [272, 284] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [286, 295] }},
+    {"cropSpecies": { "value": "winter barley", "span": [683, 695] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [697, 706] }}
+  ],
+  "Soil": [
+    {"soilOrganicCarbon": { "value": "humus", "span": [113, 118] }},
+    {"soilAvailableNitrogen": { "value": "mineral N", "span": [195, 203] }},
+    {"soilAvailableNitrogen": { "value": "nitrogen", "span": [1034, 1042] }},
+    {"soilAvailableNitrogen": { "value": "Stickstoffd채nger", "span": [1568, 1582] }},
+    {"soilAvailableNitrogen": { "value": "N채hrstoffgehalt", "span": [1594, 1606] }}
+  ],
+  "Location": [
+    {"city": { "value": "Speyer", "span": [22, 28] }},
+    {"city": { "value": "Speyer", "span": [151, 157] }},
+    {"city": { "value": "Rinkenbergerhof", "span": [199, 214] }},
+    {"country": { "value": "Germany", "span": [29, 36] }},
+    {"country": { "value": "Germany", "span": [158, 165] }},
+    {"city": { "value": "Karlsruhe", "span": [445, 454] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1984", "span": [225, 229] }},
+    {"duration": { "value": "four sampling seasons", "span": [651, 672] }}
+  ]
+}
+```

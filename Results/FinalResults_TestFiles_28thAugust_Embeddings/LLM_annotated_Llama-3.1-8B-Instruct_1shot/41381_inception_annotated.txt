@@ -1,0 +1,34 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "raspberry", "span": [236, 244]}},
+    {"cropSpecies": {"value": "apple", "span": [444, 450]}},
+    {"cropSpecies": {"value": "grape", "span": [565, 570]}},
+    {"cropSpecies": {"value": "apple", "span": [672, 677]}},
+    {"cropSpecies": {"value": "apple", "span": [761, 766]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [23, 29]}},
+    {"country": {"value": "Europe", "span": [174, 179]}},
+    {"region": {"value": "southwest Germany", "span": [93, 108]}},
+    {"city": {"value": "Darmstadt", "span": [396, 405]}},
+    {"city": {"value": "Dossenheim", "span": [420, 428]}},
+    {"city": {"value": "Siebeldingen", "span": [435, 443]}},
+    {"latitude": {"value": "~75 km radius", "span": [247, 258]}},
+    {"longitude": {"value": "~75 km radius", "span": [263, 274]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2011", "span": [124, 128]}},
+    {"endTime": {"value": "February 2018", "span": [219, 233]}},
+    {"duration": {"value": "7 years", "span": [15, 21]}}
+  ]
+}
+```
+### Explanation ###
+- The JSON output is in the specified format with the required keys and values.
+- The "Crops" list contains all the crop species mentioned in the text.
+- The "Soil" list is empty since no soil-related information was found in the text.
+- The "Location" list contains the country, region, city, and latitude/longitude information mentioned in the text.
+- The "Time Statement" list contains the start time, end time, and duration information mentioned in the text.

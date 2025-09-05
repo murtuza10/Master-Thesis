@@ -1,0 +1,30 @@
+### JSON Output: ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Mais", "span": [0, 4]}},
+    {"cropSpecies": {"value": "Mais", "span": [0, 4]}}  # Duplicate mention, included as separate object
+  ],
+  "Soil": [
+    {"Soil": {"value": "Parabraunerde", "span": [157, 170]}},
+    {"Soil": {"value": "Löss", "span": [170, 174]}},
+    {"Soil": {"value": "pseudovergleyte Parabraunerde", "span": [181, 210]}},
+    {"Soil": {"value": "Löss", "span": [211, 215]}},
+    {"Soil": {"value": "28 cm", "span": [236, 240]}},
+    {"Soil": {"value": "20", "span": [394, 396]}},
+    {"Soil": {"value": "35", "span": [399, 401]}},
+    {"Soil": {"value": "50 cm", "span": [406, 411]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2017", "span": [123, 127]}},
+    {"startTime": {"value": "2017", "span": [183, 187]}}
+  ]
+}
+```
+### Note: ###
+
+*   I've annotated "Mais" as the crop species, as it is mentioned twice in the text.
+*   I've included all the soil mentions as separate objects in the "Soil" list.
+*   I've annotated the year "2017" as the start time for the experiment, as it is mentioned twice in the text.

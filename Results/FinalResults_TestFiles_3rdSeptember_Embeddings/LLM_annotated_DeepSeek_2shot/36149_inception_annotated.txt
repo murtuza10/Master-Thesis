@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892292-pK8hzzZrEqjfY5JyUQvu",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892292,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"crop\", \"span\": [414, 418]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"soil\", \"span\": [313, 317]}},\n    {\"Soil\": {\"value\": \"nitrogen content\", \"span\": [518, 534]}},\n    {\"Soil\": {\"value\": \"ammonium-N\", \"span\": [536, 545]}},\n    {\"Soil\": {\"value\": \"nitrate-N\", \"span\": [547, 555]}},\n    {\"Soil\": {\"value\": \"bulk density\", \"span\": [557, 569]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [183, 190]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [268, 275]}}\n  ],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"three years\", \"span\": [223, 234]}},\n    {\"startTime\": {\"value\": \"2011/2012\", \"span\": [237, 246]}},\n    {\"endTime\": {\"value\": \"2014/2015\", \"span\": [249, 258]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2179,
+    "completion_tokens": 280,
+    "total_tokens": 2459,
+    "prompt_tokens_details": null
+  }
+}

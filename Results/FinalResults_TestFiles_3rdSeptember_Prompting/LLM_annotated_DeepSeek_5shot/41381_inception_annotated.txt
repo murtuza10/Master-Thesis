@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756907157-uRFudITtbIb80nv5tFyi",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756907161,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"grape\", \"span\": [184, 189] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [343, 350] }},\n    {\"region\": { \"value\": \"southwest Germany\", \"span\": [343, 361] }},\n    {\"city\": { \"value\": \"Dossenheim\", \"span\": [806, 816] }},\n    {\"city\": { \"value\": \"Siebeldingen\", \"span\": [821, 833] }},\n    {\"city\": { \"value\": \"Darmstadt\", \"span\": [890, 899] }},\n    {\"region\": { \"value\": \"southwest Germany\", \"span\": [1011, 1029] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2011\", \"span\": [303, 307] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [386, 390] }},\n    {\"endTime\": { \"value\": \"2018\", \"span\": [618, 622] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [768, 772] }},\n    {\"endTime\": { \"value\": \"2018\", \"span\": [777, 781] }},\n    {\"duration\": { \"value\": \"7-year\", \"span\": [33, 39] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5267,
+    "completion_tokens": 347,
+    "total_tokens": 5614,
+    "prompt_tokens_details": null
+  }
+}

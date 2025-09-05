@@ -1,0 +1,19 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilOrganicCarbon": {"value": "organic carbon", "span": [97, 113]}},
+    {"soilOrganicCarbon": {"value": "soil properties", "span": [136, 149]}},
+    {"soilOrganicCarbon": {"value": "organic carbon", "span": [189, 205]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Explanation ###
+
+- I extracted the following soil-related entities: `"organic carbon"`, `"soil properties"`. Each entity is included in the `"Soil"` list, with its corresponding `"value"` and `"span"`.
+- I did not find any entities related to crops, locations, or time statements in the given text.

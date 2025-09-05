@@ -1,0 +1,23 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [433, 438]}}
+  ],
+  "Soil": [
+    {"soilTexture": {"value": "soil", "span": [1, 4]}},
+    {"soilReferenceGroup": {"value": "soil", "span": [1, 4]}},
+    {"soilDepth": {"value": "water", "span": [134, 140]}},
+    {"soilBulkDensity": {"value": "aggregation", "span": [164, 176]}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+### Notes on JSON Output: ###
+
+- No time-related information is present in the text, so the "Time Statement" category is empty.
+- The keyword "Boden" is recognized as "soil" in the text, so it is annotated as "soil" in the JSON output.

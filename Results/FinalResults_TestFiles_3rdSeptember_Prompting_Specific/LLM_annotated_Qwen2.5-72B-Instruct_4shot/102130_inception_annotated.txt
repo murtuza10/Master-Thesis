@@ -1,0 +1,22 @@
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilDepth": { "value": "6 months", "span": [102, 109] }},
+    {"soilDepth": { "value": "12 months", "span": [111, 118] }},
+    {"soilDepth": { "value": "24 months", "span": [120, 127] }},
+    {"soilOrganicCarbon": { "value": "particulate organic carbon", "span": [145, 165] }},
+    {"soilOrganicCarbon": { "value": "mineral associated organic carbon", "span": [168, 195] }},
+    {"soilOrganicCarbon": { "value": "total carbon content", "span": [204, 220] }},
+    {"soilOrganicCarbon": { "value": "old (native) carbon", "span": [248, 264] }},
+    {"soilOrganicCarbon": { "value": "new (added) carbon", "span": [269, 285] }}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"duration": { "value": "2-year", "span": [33, 38] }},
+    {"startTime": { "value": "6 months", "span": [102, 109] }},
+    {"startTime": { "value": "12 months", "span": [111, 118] }},
+    {"startTime": { "value": "24 months", "span": [120, 127] }}
+  ]
+}
+```

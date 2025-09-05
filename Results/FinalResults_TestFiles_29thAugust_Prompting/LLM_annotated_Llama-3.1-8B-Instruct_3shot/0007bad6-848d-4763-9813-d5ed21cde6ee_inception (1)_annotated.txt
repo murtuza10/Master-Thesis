@@ -1,0 +1,20 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Winter wheat", "span": [219, 228]}}
+  ],
+  "Soil": [
+    {"soilTexture": {"value": "soil", "span": [19, 24]}},
+    {"soilReferenceGroup": {"value": "soil-crop system", "span": [29, 41]}},
+    {"soilDepth": {"value": "soil water stable aggregation", "span": [105, 123]}},
+    {"soilBulkDensity": {"value": "soil properties", "span": [134, 142]}},
+    {"soilPH": {"value": "soil properties", "span": [134, 142]}},
+    {"soilOrganicCarbon": {"value": "soil properties", "span": [134, 142]}},
+    {"soilAvailableNitrogen": {"value": "soil properties", "span": [134, 142]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+Note: The JSON structure does not contain any location information, time statements, or other specific soil information that was not mentioned in the input text.

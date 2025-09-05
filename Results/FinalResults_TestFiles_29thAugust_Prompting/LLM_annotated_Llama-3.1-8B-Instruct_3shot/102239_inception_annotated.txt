@@ -1,0 +1,25 @@
+### Output Format ###
+
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "soils", "span": [170, 175] }},
+    {"soilTexture": { "value": "organic carbon", "span": [177, 191] }},
+    {"soilDepth": { "value": "", "span": [0, 0] }},  // Not found
+    {"soilBulkDensity": { "value": "", "span": [0, 0] }},  // Not found
+    {"soilPH": { "value": "", "span": [0, 0] }},  // Not found
+    {"soilOrganicCarbon": { "value": "", "span": [0, 0] }},  // Not found
+    {"soilAvailableNitrogen": { "value": "", "span": [0, 0] }}  // Not found
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Explanation ###
+- The text does not mention any crop species or varieties.
+- The text mentions "soils" which is related to the soil category, but not a specific soil property. We can include it as `soilReferenceGroup`.
+- The text mentions "organic carbon" which is related to the soil category, specifically `soilOrganicCarbon`. However, it is not explicitly mentioned as a soil property, so we will include it as `soilTexture`.
+- The text does not mention any specific location.
+- The text does not mention any time-related information.

@@ -1,0 +1,36 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "spring barley", "span": [212, 221]}},
+    {"cropSpecies": {"value": "spring barley", "span": [414, 423]}},
+    {"cropVariety": {"value": "serradella", "span": [306, 315]}}
+  ],
+  "Soil": [
+    {"soilPH": {"value": "pH", "span": [254, 256]}},
+    {"soilPH": {"value": "pH", "span": [457, 459]}},
+    {"soilAvailableNitrogen": {"value": "NH4+-N", "span": [585, 593]}},
+    {"soilAvailableNitrogen": {"value": "NO2--N", "span": [595, 601]}},
+    {"soilAvailableNitrogen": {"value": "NO3--N-", "span": [603, 611]}},
+    {"soilOrganicCarbon": {"value": "DOC", "span": [633, 636]}},
+    {"soilOrganicCarbon": {"value": "DIC", "span": [627, 630]}},
+    {"soilPH": {"value": "pH", "span": [703, 705]}},
+    {"soilAvailableNitrogen": {"value": "NH4+-N", "span": [741, 749]}},
+    {"soilAvailableNitrogen": {"value": "NO2--N", "span": [751, 757]}},
+    {"soilAvailableNitrogen": {"value": "NO3--N-", "span": [759, 767]}},
+    {"soilPH": {"value": "pH", "span": [833, 835]}}
+  ],
+  "Location": [
+    {"region": {"value": "Northern Germany", "span": [85, 96]}},
+    {"country": {"value": "Germany", "span": [85, 96]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2020", "span": [122, 126]}},
+    {"startTime": {"value": "2020", "span": [257, 261]}},
+    {"startTime": {"value": "2020", "span": [369, 373]}},
+    {"startTime": {"value": "2018", "span": [277, 281]}},
+    {"startTime": {"value": "2019", "span": [318, 322]}},
+    {"startTime": {"value": "2020", "span": [338, 342]}},
+    {"endTime": {"value": "2020", "span": [725, 729]}}
+  ]
+}
+```

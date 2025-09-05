@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756906579-4aZKH5r6ZdPOmvJevhdt",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756906579,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"maize\", \"span\": [158, 163]}},\n    {\"cropSpecies\": {\"value\": \"maize\", \"span\": [770, 775]}}\n  ],\n  \"Soil\": [\n    {\"soilTexture\": {\"value\": \"Wanna Sand\", \"span\": [283, 294]}},\n    {\"soilTexture\": {\"value\": \"Wanna Sand\", \"span\": [302, 313]}},\n    {\"soilTexture\": {\"value\": \"Rostock Sand\", \"span\": [335, 348]}},\n    {\"soilTexture\": {\"value\": \"Wanna Marsch\", \"span\": [353, 366]}},\n    {\"soilTexture\": {\"value\": \"WS\", \"span\": [371, 373]}},\n    {\"soilTexture\": {\"value\": \"WM\", \"span\": [378, 380]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"Europe\", \"span\": [1524, 1530]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [1532, 1539]}},\n    {\"region\": {\"value\": \"Lower Saxony\", \"span\": [1541, 1554]}},\n    {\"city\": {\"value\": \"Wanna\", \"span\": [1556, 1561]}},\n    {\"region\": {\"value\": \"Mecklenburg-Vorpommern\", \"span\": [1563, 1586]}},\n    {\"city\": {\"value\": \"Rostock\", \"span\": [1588, 1595]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2021\", \"span\": [173, 177]}},\n    {\"startTime\": {\"value\": \"2022\", \"span\": [179, 183]}},\n    {\"startTime\": {\"value\": \"2023\", \"span\": [188, 192]}},\n    {\"startTime\": {\"value\": \"April\", \"span\": [633, 638]}},\n    {\"endTime\": {\"value\": \"August\", \"span\": [643, 649]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4309,
+    "completion_tokens": 471,
+    "total_tokens": 4780,
+    "prompt_tokens_details": null
+  }
+}

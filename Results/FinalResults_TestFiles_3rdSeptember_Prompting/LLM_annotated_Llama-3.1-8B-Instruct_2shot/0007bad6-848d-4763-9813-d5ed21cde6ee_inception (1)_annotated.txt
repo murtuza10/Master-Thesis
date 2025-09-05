@@ -1,0 +1,28 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Winter wheat", "span": [275, 286]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "soil", "span": [5, 10]}},
+    {"soilTexture": {"value": "soil-crop system", "span": [13, 23]}},
+    {"soilReferenceGroup": {"value": "soil properties", "span": [144, 155]}},
+    {"soilBulkDensity": {"value": "soil water stable aggregation", "span": [170, 184]}},
+    {"soilPH": {"value": "soil properties", "span": [144, 155]}},
+    {"soilOrganicCarbon": {"value": "soil properties", "span": [144, 155]}},
+    {"soilAvailableNitrogen": {"value": "soil properties", "span": [144, 155]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+### Explanation for the Output JSON Structure: ###
+
+1.  The entity `"Winter wheat"` is mentioned in the abstract as the crop species.
+2.  The entity `"soil"` is mentioned multiple times as a reference group.
+3.  The entity `"soil-crop system"` is mentioned as a texture, although it's more of a system description than a soil texture.
+4.  The entity `"soil properties"` is mentioned as a reference group and is associated with several other entities.
+5.  The entity `"soil water stable aggregation"` is mentioned as a bulk density property.
+6.  The entities `"soil properties"`, `"soil organic carbon"`, and `"soil available nitrogen"` are not explicitly mentioned in the text. I included them in the output based on their association with the entity `"soil properties"`.
+7.  The entities `"Location"` and `"Time Statement"` are not mentioned in the text, so their lists are empty.

@@ -1,0 +1,28 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wheat", "span": [206, 211] }},
+    {"cropSpecies": { "value": "barley", "span": [213, 219] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [221, 231] }},
+    {"cropSpecies": { "value": "barley", "span": [643, 649] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [651, 661] }}
+  ],
+  "Soil": [
+    {"soilOrganicCarbon": { "value": "humus", "span": [86, 91] }},
+    {"soilAvailableNitrogen": { "value": "mineral nutrients", "span": [72, 85] }},
+    {"soilAvailableNitrogen": { "value": "nutrients", "span": [94, 102] }},
+    {"soilFertility": { "value": "soil fertility", "span": [106, 119] }},
+    {"soilBulkDensity": { "value": "bulk soil", "span": [631, 638] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [37, 44] }},
+    {"region": { "value": "Speyer", "span": [46, 52] }},
+    {"city": { "value": "Speyer", "span": [46, 52] }},
+    {"city": { "value": "Karlsruhe", "span": [323, 332] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1984", "span": [263, 267] }},
+    {"duration": { "value": "long term", "span": [695, 704] }}
+  ]
+}
+```

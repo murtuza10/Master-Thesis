@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892322-2U0K5dx6QicpfQ5DSGI1",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892322,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"apple\", \"span\": [64, 69] }},\n    {\"cropSpecies\": { \"value\": \"apple\", \"span\": [459, 464] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"region\": { \"value\": \"Altes Land\", \"span\": [87, 97] }},\n    {\"region\": { \"value\": \"Altes Land\", \"span\": [295, 305] }},\n    {\"region\": { \"value\": \"Lower Saxony\", \"span\": [471, 483] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [485, 492] }}\n  ],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"Three-year\", \"span\": [10, 20] }},\n    {\"startTime\": { \"value\": \"2001\", \"span\": [518, 522] }},\n    {\"endTime\": { \"value\": \"2003\", \"span\": [527, 531] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3186,
+    "completion_tokens": 246,
+    "total_tokens": 3432,
+    "prompt_tokens_details": null
+  }
+}

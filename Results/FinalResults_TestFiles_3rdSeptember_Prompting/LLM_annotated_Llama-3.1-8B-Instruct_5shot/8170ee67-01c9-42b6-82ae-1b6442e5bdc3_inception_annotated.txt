@@ -1,0 +1,26 @@
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "winter barley", "span": [43, 54]}},
+    {"cropSpecies": {"value": "winter oilseed rape", "span": [74, 90]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [93, 102]}},
+    {"cropSpecies": {"value": "lupine", "span": [109, 115]}},
+    {"cropSpecies": {"value": "winter rye", "span": [125, 132]}},
+    {"cropSpecies": {"value": "Hordeum vulgare", "span": [266, 280]}},
+    {"cropSpecies": {"value": "winter barley", "span": [314, 325]}}
+  ],
+  "Soil": [
+    {"soilTexture": {"value": "extensively managed grassland", "span": [143, 164]}},
+    {"soilDepth": {"value": "25 cm", "span": [305, 310]}},
+    {"soilBulkDensity": {"value": "bulk density", "span": [1729, 1739]}}
+  ],
+  "Location": [
+    {"city": {"value": "Braunschweig", "span": [29, 40]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2013", "span": [340, 344]}},
+    {"endTime": {"value": "2014", "span": [346, 350]}}
+  ]
+}
+```

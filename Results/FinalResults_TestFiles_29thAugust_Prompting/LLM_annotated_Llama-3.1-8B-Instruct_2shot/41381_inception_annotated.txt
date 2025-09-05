@@ -1,0 +1,27 @@
+### Filled JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [83, 97]}},
+    {"cropSpecies": {"value": "apple", "span": [384, 390]}},
+    {"cropSpecies": {"value": "grape", "span": [403, 409]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": {"value": "southwest Germany", "span": [43, 62]}},
+    {"city": {"value": "Darmstadt", "span": [384, 391]}},
+    {"city": {"value": "Dossenheim", "span": [396, 403]}},
+    {"city": {"value": "Siebeldingen", "span": [409, 416]}},
+    {"latitude": {"value": "~75 km", "span": [264, 269]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2011", "span": [104, 108]}},
+    {"endTime": {"value": "2018", "span": [223, 227]}}
+  ]
+}
+```
+### Explanation ###
+- The JSON structure contains the extracted entities from the given text.
+- The "Crops" category includes the species of Drosophila suzukii, apple, and grape, which are mentioned as host plants for D. suzukii.
+- The "Location" category includes the region of southwest Germany, cities of Darmstadt, Dossenheim, and Siebeldingen, and the latitude range of ~75 km.
+- The "Time Statement" category includes the start year of 2011 and the end year of 2018, which are mentioned as the time period of the monitoring program.

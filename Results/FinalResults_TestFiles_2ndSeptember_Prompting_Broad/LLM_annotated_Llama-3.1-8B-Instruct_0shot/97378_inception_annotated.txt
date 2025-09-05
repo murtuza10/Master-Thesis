@@ -1,0 +1,33 @@
+### Text Entities Extraction
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "cropland", "span": [18, 26] }},
+    {"cropSpecies": { "value": "wheat", "span": [32, 38] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "Lehm", "span": [133, 138] }},
+    {"Soil": { "value": "Ton", "span": [140, 144] }},
+    {"Soil": { "value": "pH Wert", "span": [175, 183] }},
+    {"Soil": { "value": "organischen Kohlenstoff", "span": [184, 204] }},
+    {"Soil": { "value": "Gesamt-Stickstoff", "span": [205, 219] }}
+  ],
+  "Location": [
+    {"region": { "value": "Nähe von Hildesheim", "span": [114, 132] }},
+    {"city": { "value": "Hildesheim", "span": [112, 121] }}
+  ],
+  "Time Statement": [
+    {"duration": { "value": "14-tägigen Zeitraster", "span": [56, 72] }},
+    {"duration": { "value": "2 Jahre", "span": [83, 89] }},
+    {"startTime": { "value": "2 Jahre", "span": [83, 89] }},
+    {"endTime": { "value": "14-tägigen Zeitraster", "span": [56, 72] }}
+  ]
+}
+```
+### Explanation
+
+- The text mentions "cropland" and "wheat" as crops, which are extracted as "cropSpecies".
+- The text mentions "Lehm", "Ton", "pH Wert", "organischen Kohlenstoff", and "Gesamt-Stickstoff" as soil properties, which are extracted as "Soil".
+- The text mentions "Nähe von Hildesheim" as a region and "Hildesheim" as a city, which are extracted as "region" and "city", respectively.
+- The text mentions "14-tägigen Zeitraster" and "2 Jahre" as time intervals, which are extracted as "duration".
+- The text mentions "2 Jahre" as the start time and "14-tägigen Zeitraster" as the end time, which are extracted as "startTime" and "endTime", respectively.

@@ -1,0 +1,28 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "maize", "span": [169, 173]}},
+    {"cropSpecies": {"value": "maize", "span": [245, 249]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "Wanna Sand", "span": [141, 153]}},
+    {"soilReferenceGroup": {"value": "Wanna Sand without biogas slurry", "span": [154, 173]}},
+    {"soilReferenceGroup": {"value": "Rostock Sand", "span": [184, 194]}},
+    {"soilReferenceGroup": {"value": "Wanna Marsch", "span": [207, 218]}},
+    {"soilDepth": {"value": "30 m³", "span": [233, 237]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [349, 354]}},
+    {"region": {"value": "Lower Saxony", "span": [358, 365]}},
+    {"city": {"value": "Wanna", "span": [370, 376]}},
+    {"region": {"value": "Mecklenburg-Vorpommern", "span": [382, 392]}},
+    {"city": {"value": "Rostock", "span": [395, 401]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2021", "span": [59, 63]}},
+    {"endTime": {"value": "2023", "span": [64, 68]}}
+  ]
+}
+```

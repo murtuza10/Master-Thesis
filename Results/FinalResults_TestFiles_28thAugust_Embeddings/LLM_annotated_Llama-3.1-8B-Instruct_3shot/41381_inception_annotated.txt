@@ -1,0 +1,91 @@
+### Code ###
+
+```python
+import re
+from collections import defaultdict
+
+def extract_entities(text):
+    entities = defaultdict(list)
+
+    # Crops
+    crops = {
+        "cropSpecies": r"\b(raspberry|strawberry|blackberry|blueberry|gooseberry|currant|apple)\b",
+        "cropVariety": r"\b(variety|cultivar| cultivar)\b"
+    }
+    for entity, pattern in crops.items():
+        for match in re.finditer(pattern, text, re.IGNORECASE):
+            value = match.group()
+            span = [match.start(), match.end()]
+            entities["Crops"].append({entity: {"value": value, "span": span}})
+
+    # Soil
+    soil = {
+        "soilTexture": r"\b( clay|silt|sand|loam|peat)\b",
+        "soilReferenceGroup": r"\b(reference group|soil reference group)\b",
+        "soilDepth": r"\b(depth|soil depth)\b",
+        "soilBulkDensity": r"\b(bulk density|soil bulk density)\b",
+        "soilPH": r"\b(pH|soil pH)\b",
+        "soilOrganicCarbon": r"\b(organic carbon|soil organic carbon)\b",
+        "soilAvailableNitrogen": r"\b(available nitrogen|soil available nitrogen)\b"
+    }
+    for entity, pattern in soil.items():
+        for match in re.finditer(pattern, text, re.IGNORECASE):
+            value = match.group()
+            span = [match.start(), match.end()]
+            entities["Soil"].append({entity: {"value": value, "span": span}})
+
+    # Location
+    location = {
+        "country": r"\b(Germany|Europe)\b",
+        "region": r"\b(southwest|south western)\b",
+        "city": r"\b(Darmstadt|Dossenheim|Siebeldingen)\b",
+        "latitude": r"\b(latitude|lat)\b",
+        "longitude": r"\b(longitude|lon)\b"
+    }
+    for entity, pattern in location.items():
+        for match in re.finditer(pattern, text, re.IGNORECASE):
+            value = match.group()
+            span = [match.start(), match.end()]
+            entities["Location"].append({entity: {"value": value, "span": span}})
+
+    # Time Statement
+    time = {
+        "startTime": r"\b(2011|2018|February)\b",
+        "endTime": r"\b(2018|February)\b",
+        "duration": r"\b(days|deployment)\b"
+    }
+    for entity, pattern in time.items():
+        for match in re.finditer(pattern, text, re.IGNORECASE):
+            value = match.group()
+            span = [match.start(), match.end()]
+            entities["Time Statement"].append({entity: {"value": value, "span": span}})
+
+    return entities
+
+### Input Text ###
+text = """
+    Trap captures data from the 7-year Drosophila suzukii monitoring program in southwest Germany
+
+Abstract:
+A relatively recent invasive pest of soft-skinned fruits in Europe is Drosophila suzukii (Spotted wing drosophila - SWD). It has already caused severe economic damages in many fruit-crops and some susceptible grape varieties and seems to have successfully adapted to survive under a variety of conditions. The Julius Kühn Institute (JKI) set up a primary monitoring program in 2011 in southwest Germany expecting the migration of SWD into Germany. Following its appearance in late summer 2011, the monitoring of SWD gathered more momentum with more traps and other institutes joining in the study. The online tool DrosoMon (http://drosomon.julius-kuehn.de/) was created to act as a hub for gathering and harmonizing the trap capture data from the SWD monitoring programs from different parts of Germany and Europe. DrosoMon also provides the means to visualize the data at trap levels and compare variations in captures between traps or with temperature and precipitation data from the nearest weather station. Here we present and publish the data from the JKI monitoring program from 2011 to February 2018. The data set of D. suzukii captures presented here comes from the monitoring study conducted by the Institute for Plant Protection in Fruit Crops and Viticulture, Dossenheim and Siebeldingen, and the Institute for Biological Plant Protection, Darmstadt of the JKI between 2011 and 2018. All monitoring sites are located in southwest Germany roughly within ~75 km radius near the institutes. The coordinates of the trap locations were recorded with a handheld-GPS (‘lat’ and ‘lon’ in the table/dataset). The sites were chosen randomly to represent different possible preferred sites of host plants or potential overwintering grounds in the immediate vicinity. The traps were installed in semi-natural habitats, mainly on hedges with wild host plants of D. suzukii, in the surroundings of the institutes. The trap designs were quite similar between the three institutes following the instructions in the JKI-flyer (https://drosophila.julius-kuehn.de/index.php?menuid=61 and in Briem et al. 2018) with minor variations. The traps were filled with a mixture of unfiltered apple cider vinegar (ACV) (acetic acid content 5 %) diluted with water. For more detailed information on the ingredients, the variations in trap designs between each monitoring group see the methods section in respective paper this data set relates on. The monitoring data set is provided as two tab-separated ascii tables: captures_data.txt and trap_description.txt. In the trap_description table, each record describes the characteristics and location of a single trap along with the baiting mixture used. In the captures_data table, each record describes the number of male and female D. suzukii from a single trap deployment, for each individual trap. The trap_description table lists 100 traps that were set during the monitoring period, the actual number of traps in operation varying over the years. The captures_data table contains 9967 records, each record representing a trap deployment. These deployments account for a total of 116,602 days and captured 756,717 adult D. suzukii individuals. The data were manually entered in the Drosomon database and checked for errors concerning dates and trap parameters.
+"""
+
+### Extract Entities ###
+entities = extract_entities(text)
+
+### Print Entities ###
+print(entities)
+```
+
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [143, 157]}},
+    {"cropSpecies": {"value": "grape", "span": [215, 221]}},
+    {"cropSpecies": {"value": "apple", "span": [413, 419]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [28, 36]}},
+    {"region": {"value":

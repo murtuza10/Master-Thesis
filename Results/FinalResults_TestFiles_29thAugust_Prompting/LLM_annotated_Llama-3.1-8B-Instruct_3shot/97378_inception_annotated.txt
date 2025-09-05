@@ -1,0 +1,20 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "cropland", "span": [134, 141] }}
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "Lehm", "span": [231, 236] }},
+    {"soilTexture": { "value": "Ton", "span": [240, 243] }}
+  ],
+  "Location": [
+    {"region": { "value": "Nähe von Hildesheim", "span": [173, 192] }},
+    {"city": { "value": "Hildesheim", "span": [193, 203] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "14-tägigen Zeitraster", "span": [116, 132] }},
+    {"duration": { "value": "2 Jahre", "span": [204, 209] }}
+  ]
+}
+```

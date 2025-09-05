@@ -1,0 +1,25 @@
+### Output JSON ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Riesling", "span": [105, 112]}},
+    {"cropSpecies": {"value": "Felicia", "span": [114, 121]}},
+    {"cropSpecies": {"value": "Regent", "span": [123, 129]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2018", "span": [142, 146]}},
+    {"endTime": {"value": "2018", "span": [149, 153]}}
+  ]
+}
+```
+
+### Explanation ###
+
+*   The entities in the text are:
+    *   Crops: "Riesling", "Felicia", "Regent"
+    *   Time Statement: "2018" (before and after thinning)
+*   The start and end indices are based on the text's content and are counted from the beginning of the text.
+*   The JSON output structure matches the required format with the extracted entities and their corresponding indices.

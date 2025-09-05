@@ -1,0 +1,28 @@
+### Filled JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "maize", "span": [249, 253]}},
+    {"cropSpecies": {"value": "maize", "span": [305, 309]}}
+  ],
+  "Soil": [
+    {"Soil": {"value": "Wanna Sand", "span": [177, 189]}},
+    {"Soil": {"value": "Wanna Sand without biogas slurry", "span": [193, 216]}},
+    {"Soil": {"value": "Rostock Sand", "span": [219, 230]}},
+    {"Soil": {"value": "Wanna Marsch", "span": [233, 243]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [322, 329]}},
+    {"region": {"value": "Lower Saxony", "span": [331, 339]}},
+    {"region": {"value": "Wanna", "span": [353, 358]}},
+    {"region": {"value": "Mecklenburg-Vorpommern", "span": [365, 379]}},
+    {"city": {"value": "Rostock", "span": [381, 388]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2021", "span": [235, 238]}},
+    {"endTime": {"value": "2022", "span": [241, 244]}},
+    {"endTime": {"value": "2023", "span": [247, 250]}},
+    {"duration": {"value": "April", "span": [271, 276]}}
+  ]
+}
+```

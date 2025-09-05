@@ -1,0 +1,25 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilTexture": { "value": "Bodenart", "span": [145, 151] }},
+    {"soilReferenceGroup": { "value": "Bodentyp", "span": [139, 145] }},
+    {"soilDepth": { "value": "Horizontangaben", "span": [177, 189] }},
+    {"soilBulkDensity": { "value": "Trockenrohdichte (TRD)", "span": [202, 215] }},
+    {"soilPH": { "value": "Entkalkungstiefe", "span": [243, 253] }},
+    {"soilOrganicCarbon": { "value": "organischer Kohlenstoffgehalt (Corg)", "span": [231, 245] }},
+    {"soilAvailableNitrogen": { "value": "Nährstoffansprache", "span": [158, 168] }}
+  ],
+  "Location": [
+    {"country": { "value": "Deutschland", "span": [20, 30] }},
+    {"city": { "value": "BWI", "span": [35, 38] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2012", "span": [244, 248] }},
+    {"endTime": { "value": "2012", "span": [249, 253] }},
+    {"duration": { "value": "", "span": [] }}
+  ]
+}
+```
+Note that the `duration` key in the `Time Statement` category has an empty value because it's not explicitly mentioned in the text.

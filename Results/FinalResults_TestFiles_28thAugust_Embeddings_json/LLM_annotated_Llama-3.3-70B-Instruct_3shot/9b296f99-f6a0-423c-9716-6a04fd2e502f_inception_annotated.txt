@@ -1,0 +1,37 @@
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [346, 351]}},
+    {"cropSpecies": {"value": "barley", "span": [356, 362]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [366, 376]}},
+    {"cropSpecies": {"value": "barley", "span": [821, 827]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [831, 841]}},
+    {"cropSpecies": {"value": "barley", "span": [1001, 1007]}},
+    {"cropSpecies": {"value": "beet", "span": [1011, 1015]}
+  ],
+  "Soil": [
+    {"soilOrganicCarbon": {"value": "humus", "span": [238, 243]}},
+    {"soilFertility": {"value": "soil fertility", "span": [548, 561]}},
+    {"soilAvailableNitrogen": {"value": "mineral nutrients", "span": [217, 233]}},
+    {"soilAvailableNitrogen": {"value": "nutrient availability", "span": [1048, 1066]}},
+    {"soilAvailableNitrogen": {"value": "N채hrstoffgehalt", "span": [1284, 1298]}},
+    {"soilTexture": {"value": "bulk soil", "span": [863, 871]}},
+    {"soilReferenceGroup": {"value": "Boden", "span": [1314, 1319]}},
+    {"soilReferenceGroup": {"value": "Boden", "span": [1391, 1396]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [34, 40]}},
+    {"country": {"value": "Germany", "span": [192, 198]}},
+    {"city": {"value": "Speyer", "span": [29, 34]}},
+    {"city": {"value": "Speyer", "span": [187, 192]}},
+    {"city": {"value": "Karlsruhe", "span": [1141, 1149]}},
+    {"region": {"value": "Rinkenbergerhof", "span": [203, 217]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1984", "span": [258, 262]}},
+    {"duration": {"value": "long-term", "span": [271, 279]}},
+    {"duration": {"value": "long-term", "span": [933, 941]}},
+    {"duration": {"value": "Langzeitversuch", "span": [1279, 1292]}},
+    {"duration": {"value": "Seasonal development", "span": [1050, 1067]}},
+    {"duration": {"value": "four sampling seasons", "span": [880, 898]}}
+  ]
+}

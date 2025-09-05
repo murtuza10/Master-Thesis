@@ -1,0 +1,36 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "energy crop", "span": [134, 146]}},
+    {"cropSpecies": {"value": "crops", "span": [744, 750]}},
+    {"cropSpecies": {"value": "crop rotations", "span": [934, 948]}},
+    {"cropSpecies": {"value": "crops", "span": [963, 969]}}
+  ],
+  "Soil": [
+    {"soilAvailableNitrogen": {"value": "nitrogen content", "span": [599, 614}}},
+    {"soilAvailableNitrogen": {"value": "ammonium-N", "span": [616, 626}}},
+    {"soilAvailableNitrogen": {"value": "nitrate-N", "span": [628, 636}}},
+    {"soilBulkDensity": {"value": "bulk density", "span": [639, 651}}},
+    {"soilTexture": {"value": "soil", "span": [554, 559}}},
+    {"soilTexture": {"value": "soil", "span": [783, 788}}},
+    {"soilTexture": {"value": "soil", "span": [860, 865}}},
+    {"soilTexture": {"value": "soil", "span": [1045, 1050]}},
+    {"soilPH": {"value": "soil temperatures", "span": [693, 708]}},
+    {"soilOrganicCarbon": {"value": "C content", "span": [581, 591}}},
+    {"soilOrganicCarbon": {"value": "C balances", "span": [950, 961}}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [156, 163}}},
+    {"country": {"value": "Germany", "span": [281, 288]}},
+    {"region": {"value": "eight sites", "span": [202, 213}}},
+    {"region": {"value": "eight field trials", "span": [307, 324}}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2011/2012", "span": [231, 241}}},
+    {"endTime": {"value": "2014/2015", "span": [245, 255}}},
+    {"duration": {"value": "three years", "span": [219, 229}}},
+    {"startTime": {"value": "2007", "span": [365, 370}}},
+    {"endTime": {"value": "2016", "span": [371, 376]}}}
+  ]
+}
+```

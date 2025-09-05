@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892124-luBevGiES2FGQoT4wi1M",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892124,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"C3 soil\", \"span\": [81, 88] }},\n    {\"Soil\": { \"value\": \"particulate organic carbon\", \"span\": [147, 172] }},\n    {\"Soil\": { \"value\": \"mineral associated organic carbon\", \"span\": [177, 207] }},\n    {\"Soil\": { \"value\": \"bulk soil\", \"span\": [224, 233] }},\n    {\"Soil\": { \"value\": \"total carbon content\", \"span\": [248, 267] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"2-year\", \"span\": [63, 69] }},\n    {\"startTime\": { \"value\": \"6\", \"span\": [111, 112] }},\n    {\"endTime\": { \"value\": \"12\", \"span\": [114, 116] }},\n    {\"endTime\": { \"value\": \"24 months\", \"span\": [118, 127] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1410,
+    "completion_tokens": 248,
+    "total_tokens": 1658,
+    "prompt_tokens_details": null
+  }
+}

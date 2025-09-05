@@ -1,0 +1,21 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "C4", "span": [76, 78]}},
+    {"cropSpecies": {"value": "C3", "span": [105, 107]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "C3 soil", "span": [105, 113]}},
+    {"soilReferenceGroup": {"value": "C4 roots litter", "span": [76, 90]}},
+    {"soilDepth": {"value": "6 months", "span": [88, 96]}},
+    {"soilDepth": {"value": "12 months", "span": [93, 101]}},
+    {"soilDepth": {"value": "24 months", "span": [100, 108]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2 years", "span": [5, 10]}},
+    {"endTime": {"value": "24 months", "span": [100, 108]}}
+  ]
+}
+```

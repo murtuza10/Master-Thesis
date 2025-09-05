@@ -1,0 +1,23 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "winter wheat", "span": [148, 156] }},
+    {"cropSpecies": { "value": "winter barley", "span": [162, 171] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [177, 184] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "soil", "span": [11, 15] }},
+    {"Soil": { "value": "bulk soil", "span": [615, 622] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [22, 28] }},
+    {"region": { "value": "LUFA Speyer", "span": [35, 44] }},
+    {"region": { "value": "Rinkenbergerhof", "span": [45, 55] }},
+    {"city": { "value": "Speyer", "span": [39, 44] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1984", "span": [188, 193] }},
+    {"duration": { "value": "long term", "span": [632, 638] }}
+  ]
+}
+```

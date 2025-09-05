@@ -1,0 +1,113 @@
+### Code ###
+
+```python
+import re
+from collections import defaultdict
+
+def extract_entities(text):
+    # Initialize entity dictionaries
+    crops = defaultdict(list)
+    soil = defaultdict(list)
+    location = defaultdict(list)
+    time_statement = defaultdict(list)
+
+    # Crops
+    crops_pattern = r'\b(Brassica|wheat|maize|soybean|corn|rice|barley|oat|rye|canola|OSR|oilseed rape|rapeseed|sunflower|sorghum|potato|tomato|pepper|cotton|soy|wheat|waxy|maize)\b'
+    crops_matches = re.findall(crops_pattern, text, re.IGNORECASE)
+    for match in crops_matches:
+        crops["cropSpecies"].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+
+    # Soil
+    soil_pattern = r'\b(fertile|clay|sandy|loamy|silty|silty clay|sandy clay loam|clay loam|sandy loam|loamy sand|clay|sand|silt)\b'
+    soil_matches = re.findall(soil_pattern, text, re.IGNORECASE)
+    for match in soil_matches:
+        soil["soilTexture"].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+
+    # Location
+    location_pattern = r'\b(Germany|Bochum|Braunschweig|Celle|Hohenheim|Veitshöchheim|Europe|Asia|Africa|North America|South America|Australia|Europe|Germany|Germany)\b'
+    location_matches = re.findall(location_pattern, text, re.IGNORECASE)
+    for match in location_matches:
+        location["country"].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+    location_pattern = r'\b(Bochum|Braunschweig|Celle|Hohenheim|Veitshöchheim|Brandenburg|Müncheberg|Markisch Oderland)\b'
+    location_matches = re.findall(location_pattern, text, re.IGNORECASE)
+    for match in location_matches:
+        location["city"].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+    location_pattern = r'\b(Spring|Autumn)\b'
+    location_matches = re.findall(location_pattern, text, re.IGNORECASE)
+    for match in location_matches:
+        location["region"].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+    location_pattern = r'\b(2022|2023)\b'
+    location_matches = re.findall(location_pattern, text, re.IGNORECASE)
+    for match in location_matches:
+        location["time"].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+
+    # Time Statement
+    time_pattern = r'\b(2022|2023)\b'
+    time_matches = re.findall(time_pattern, text, re.IGNORECASE)
+    for match in time_matches:
+        time_statement["startTime"].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+    time_pattern = r'\b(spring|autumn|summer|winter)\b'
+    time_matches = re.findall(time_pattern, text, re.IGNORECASE)
+    for match in time_matches:
+        time_statement["startTime"].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+    time_pattern = r'\b(2022|2023)\b'
+    time_matches = re.findall(time_pattern, text, re.IGNORECASE)
+    for match in time_matches:
+        time_statement["endTime"].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+    time_pattern = r'\b(one|two|three|four|five|six|seven|eight|nine|ten)\b'
+    time_matches = re.findall(time_pattern, text, re.IGNORECASE)
+    for match in time_matches:
+        time_statement["duration"].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+
+    # Convert to JSON format
+    result = {
+        "Crops": [{"cropSpecies": entity} for entity in crops["cropSpecies"]],
+        "Soil": [{"soilTexture": entity} for entity in soil["soilTexture"]],
+        "Location": [{"country": entity} for entity in location["country"] if entity["value"]!= "Germany"],
+        "Time Statement": [{"startTime": entity} for entity in time_statement["startTime"]],
+    }
+
+    # Return result
+    return result
+
+### Text ###
+text = """
+Title: 
+Dataset: Residues of boscalid and pyraclostrobin in several bee matrices along the transfer pathway from plants to larvae
+
+Abstract:
+The data set contains the raw data for the corresponding publication Wueppenhorst et al. (2024) https://doi.org/10.1016/j.cub.2024.10.008 Residues of two commonly used fungicides (boscalid and pyraclostrobin) were measured in several bee matrices along a transfer pathway from plants to larvae. The samples were collected simultaneously at five different locations in Germany (Bochum, Braunschweig, Celle, Hohenheim, Veitshöchheim) from spring 2022 to spring 2023. Therefore a field study was carried out in which honey bee colonies were placed to oilseed rape (Brassica napus, OSR) fields. The formulation Pictor® Active was applied to the treatment field site according to label instructions at the maximum field recommended rate of 1 L (product)/ha. No applications were conducted at a second field site, which was designated as the negative control. Samples of plant inflorescences, honey bee pollen baskets, honey sacs, stored pollen and nectar, in-hive bees, larval food jelly (royal, worker, and drone jelly), and larvae (queen, worker, and drone larvae) were collected in a time dependent interval and analyzed for residues of the active ingredients. The data set contains all raw data of the measured residue concentrations within each sample. Detailed information about the sampling and methodology can be found in the corresponding publication.
+"""
+
+print(extract_entities(text))
+```
+
+### Output ###
+
+```json
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "Brassica",
+        "span": [
+          243,
+          250
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "OSR",
+        "span": [
+          246,
+          249
+        ]
+      }
+    }
+  ],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany

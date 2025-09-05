@@ -1,0 +1,29 @@
+### Filled JSON Structure ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "energy crops", "span": [170, 179]}}
+  ],
+  "Soil": [
+    {"Soil": {"value": "agricultural soils", "span": [161, 174]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [25, 34]}},
+    {"country": {"value": "Germany", "span": [120, 129]}},
+    {"region": {"value": "European Union", "span": [97, 115]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1990", "span": [74, 78]}},
+    {"endTime": {"value": "2017", "span": [93, 97]}}
+  ]
+}
+```
+
+### Explanation ###
+
+- Extracted "energy crops" as the only crop mention, which is part of the "anaerobic digestion of energy crops" phrase.
+- Extracted "agricultural soils" as the only soil mention.
+- Extracted "Germany" as the country, twice, in different parts of the text. 
+- Extracted "European Union" as the region.
+- Extracted "1990" and "2017" as start and end times, respectively.

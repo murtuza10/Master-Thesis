@@ -1,0 +1,24 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "energy crops", "span": [281, 291] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "agricultural soils", "span": [251, 264] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [15, 21] }},
+    {"region": { "value": "Germany", "span": [23, 30] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1990", "span": [34, 38] }},
+    {"endTime": { "value": "2017", "span": [60, 64] }}
+  ]
+}
+```
+### Explanation ###
+- "energy crops" is the only crop species mentioned in the text.
+- "agricultural soils" is the only type of soil mentioned in the text.
+- "Germany" is mentioned as a country and also as a region.
+- The time period "1990 - 2017" is explicitly mentioned, so both start and end years are included.

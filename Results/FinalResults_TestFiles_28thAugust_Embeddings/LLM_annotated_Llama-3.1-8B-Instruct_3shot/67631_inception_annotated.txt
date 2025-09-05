@@ -1,0 +1,19 @@
+### Output JSON
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wine berries", "span": [35, 47] }},
+    {"cropSpecies": { "value": "Riesling", "span": [85, 93] }},
+    {"cropSpecies": { "value": "Felicia", "span": [97, 104] }},
+    {"cropSpecies": { "value": "Regent", "span": [109, 116] }}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": { "value": "before", "span": [113, 118] }},
+    {"endTime": { "value": "after", "span": [125, 130] }},
+    {"duration": { "value": "2018", "span": [131, 135] }}
+  ]
+}
+```
+Note: The character positions are calculated based on the input text, considering the start of the text as the beginning of the string. The positions are zero-based, meaning the first character is at position 0.

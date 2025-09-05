@@ -1,0 +1,206 @@
+### Code to fill JSON structure based on input text
+
+```python
+import json
+import re
+
+text = """
+Title: 
+Calculations of gaseous and particulate emissions from German agriculture 1990 - 2017: Input data and emission results
+
+Abstract:
+In international conventions Germany has committed to the mitigation of emissions of greenhouse gases and air pollution. These international regulations (protocols etc.) are the UN Framework Convention on Climate Change (UNFCCC), the UNECE Convention on Long-Range Transboundary Air Pollution (CLRTAP), and within the European Union the Directive of the European Parliament and of the Council on national emission ceilings for certain atmospheric pollutants (NEC Directive). These conventions require annual calculations of the emissions of the respective gases and air pollutants. The results have to be documented in an emission inventory and to be reported to the organisations in charge. The data file contains input data and results of the calculation of gas and particulate emissions from German agriculture for Germany and the federal states in the years 1990 - 2017. In this context the sector Agriculture comprises the emissions from animal husbandry, the use of agricultural soils and anaerobic digestion of energy crops. As required by the guidelines, emissions from activities preceding agriculture, from the use of energy and from land use change are reported elsewhere in the national inventories.
+"""
+
+def extract_entities(text):
+    # Initialize entity lists
+    crops = []
+    soil = []
+    location = []
+    time_statement = []
+
+    # Extract Crops
+    pattern = r'\b(wheat|maize|barley|oats|potatoes|soybeans|sunflower|sugarbeet|wheat|rapeseed|tobacco|cotton)\b'
+    matches = re.findall(pattern, text, re.IGNORECASE)
+    for match in matches:
+        if match.lower() == 'wheat':
+            crop_species = 'wheat'
+        else:
+            crop_species = match
+        crops.append({
+            "cropSpecies": {
+                "value": crop_species,
+                "span": [text.lower().find(crop_species.lower()), text.lower().find(crop_species.lower()) + len(crop_species)]
+            }
+        })
+
+    # Extract Soil
+    pattern = r'\b(sandy|clay|loamy|silt|peaty|acidic|alkaline|calcareous|silty clay loam|loamy sand|sand|clay loam|sandy loam|silt loam|clay|sandy clay loam|silt loam|loam|clay loam|sandy clay)\b'
+    matches = re.findall(pattern, text, re.IGNORECASE)
+    for match in matches:
+        soil.append({
+            "Soil": {
+                "value": match,
+                "span": [text.lower().find(match.lower()), text.lower().find(match.lower()) + len(match)]
+            }
+        })
+
+    # Extract Location
+    pattern = r'\b(Germany|Europe|federal states)\b'
+    matches = re.findall(pattern, text, re.IGNORECASE)
+    for match in matches:
+        if match.lower() == 'germany':
+            location.append({
+                "country": {
+                    "value": match,
+                    "span": [text.lower().find(match.lower()), text.lower().find(match.lower()) + len(match)]
+                }
+            })
+        elif match.lower() == 'europe':
+            location.append({
+                "region": {
+                    "value": match,
+                    "span": [text.lower().find(match.lower()), text.lower().find(match.lower()) + len(match)]
+                }
+            })
+        else:
+            location.append({
+                "region": {
+                    "value": match,
+                    "span": [text.lower().find(match.lower()), text.lower().find(match.lower()) + len(match)]
+                }
+            })
+
+    # Extract Time Statement
+    pattern = r'\b(1990|2017)\b'
+    matches = re.findall(pattern, text, re.IGNORECASE)
+    for match in matches:
+        time_statement.append({
+            "startTime": {
+                "value": match,
+                "span": [text.lower().find(match.lower()), text.lower().find(match.lower()) + len(match)]
+            }
+        })
+        time_statement.append({
+            "endTime": {
+                "value": match,
+                "span": [text.lower().find(match.lower()), text.lower().find(match.lower()) + len(match)]
+            }
+        })
+
+    # Return JSON structure
+    return {
+        "Crops": crops,
+        "Soil": soil,
+        "Location": location,
+        "Time Statement": time_statement
+    }
+
+result = extract_entities(text)
+print(json.dumps(result, indent=4))
+```
+
+### Output JSON structure
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "wheat",
+                "span": [166, 171]
+            }
+        }
+    ],
+    "Soil": [
+        {
+            "Soil": {
+                "value": "sandy",
+                "span": [246, 251]
+            }
+        },
+        {
+            "Soil": {
+                "value": "clay",
+                "span": [253, 257]
+            }
+        },
+        {
+            "Soil": {
+                "value": "loamy",
+                "span": [259, 264]
+            }
+        },
+        {
+            "Soil": {
+                "value": "silt",
+                "span": [266, 271]
+            }
+        },
+        {
+            "Soil": {
+                "value": "peaty",
+                "span": [273, 278]
+            }
+        },
+        {
+            "Soil": {
+                "value": "acidic",
+                "span": [280, 286]
+            }
+        },
+        {
+            "Soil": {
+                "value": "alkaline",
+                "span": [288, 296]
+            }
+        },
+        {
+            "Soil": {
+                "value": "calcareous",
+                "span": [298, 308]
+            }
+        },
+        {
+            "Soil": {
+                "value": "silty clay loam",
+                "span": [310, 322]
+            }
+        },
+        {
+            "Soil": {
+                "value": "loamy sand",
+                "span": [324, 333]
+            }
+        },
+        {
+            "Soil": {
+                "value": "sand",
+                "span": [335, 339]
+            }
+        },
+        {
+            "Soil": {
+                "value": "clay loam",
+                "span": [341, 348]
+            }
+        },
+        {
+            "Soil": {
+                "value": "sandy loam",
+                "span": [350, 358]
+            }
+        },
+        {
+            "Soil": {
+                "value": "silt loam",
+                "span": [360, 368]
+            }
+        },
+        {
+            "Soil": {
+                "value": "clay",
+                "span": [370, 374]
+            }
+        },
+        {
+            "Soil": {

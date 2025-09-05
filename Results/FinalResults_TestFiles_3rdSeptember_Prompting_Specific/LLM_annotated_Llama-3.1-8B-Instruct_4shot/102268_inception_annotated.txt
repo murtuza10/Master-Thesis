@@ -1,0 +1,103 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wheat", "span": [111, 117] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "pedo-climatic zones", "span": [103, 123] }},
+    {"soilDepth": { "value": "Europe", "span": [130, 136] }}
+  ],
+  "Location": [
+    {"region": { "value": "Europe", "span": [140, 146] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2019", "span": [155, 159] }},
+    {"endTime": { "value": "2020", "span": [164, 168] }}
+  ]
+}
+```
+
+### Code Explanation ###
+Here's how the code can be written in Python to achieve the desired output:
+
+```python
+import json
+import re
+
+def extract_entities(text):
+    # Define the regular expression patterns
+    crop_pattern = r"(\w+) field"
+    soil_pattern = r"pedo-climatic zones|Europe"
+    location_pattern = r"Europe"
+    time_pattern = r"\d{4}"
+
+    # Extract the entities using regular expressions
+    crops = re.findall(crop_pattern, text)
+    soils = re.findall(soil_pattern, text)
+    locations = re.findall(location_pattern, text)
+    times = re.findall(time_pattern, text)
+
+    # Create the JSON output structure
+    output = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Populate the JSON output structure with the extracted entities
+    for crop in crops:
+        output["Crops"].append({
+            "cropSpecies": {
+                "value": crop,
+                "span": [text.find(crop), text.find(crop) + len(crop)]
+            }
+        })
+
+    for soil in soils:
+        if "pedo-climatic zones" in soil:
+            output["Soil"].append({
+                "soilReferenceGroup": {
+                    "value": soil,
+                    "span": [text.find(soil), text.find(soil) + len(soil)]
+                }
+            })
+        elif "Europe" in soil:
+            output["Soil"].append({
+                "soilDepth": {
+                    "value": soil,
+                    "span": [text.find(soil), text.find(soil) + len(soil)]
+                }
+            })
+
+    for location in locations:
+        output["Location"].append({
+            "region": {
+                "value": location,
+                "span": [text.find(location), text.find(location) + len(location)]
+            }
+        })
+
+    for time in times:
+        output["Time Statement"].append({
+            "startTime": {
+                "value": time,
+                "span": [text.find(time), text.find(time) + len(time)]
+            }
+        })
+
+    return json.dumps(output, indent=4)
+
+text = """
+Title: 
+Wheat field earthworms under divergent farming systems across a European climate gradient
+
+Abstract:
+Earthworm community metrics data collected during the years 2019 and 2020 from organically and conventionally managed wheat fields (188 fields in total) in nine pedo-climatic zones of Europe, together with associated site information on climate, soil properties and agricultural management of the fields.
+"""
+
+print(extract_entities(text))
+```
+
+This code uses regular expressions to extract the entities from the text and then creates the JSON output structure based on the extracted entities. The `extract_entities` function takes the text as input and returns the JSON output structure as a string. The `json.dumps` function is used to convert the Python dictionary to a JSON string with proper indentation.

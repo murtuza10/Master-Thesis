@@ -1,0 +1,41 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "maize", "span": [121, 126] }},
+    {"cropSpecies": { "value": "maize", "span": [239, 244] }},
+    {"cropSpecies": { "value": "maize", "span": [344, 349] }}
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "Sand", "span": [172, 176] }},
+    {"soilTexture": { "value": "Sand", "span": [186, 190] }},
+    {"soilTexture": { "value": "Sand", "span": [200, 204] }},
+    {"soilTexture": { "value": "Marsch", "span": [211, 216] }},
+    {"soilTexture": { "value": "Sand", "span": [225, 229] }},
+    {"soilTexture": { "value": "Marsch", "span": [234, 239] }},
+    {"soilReferenceGroup": { "value": "Wanna Sand (WS)", "span": [172, 185] }},
+    {"soilReferenceGroup": { "value": "Wanna Sand without biogas slurry (WSo)", "span": [186, 222] }},
+    {"soilReferenceGroup": { "value": "Rostock Sand (RS)", "span": [225, 240] }},
+    {"soilReferenceGroup": { "value": "Wanna Marsch (WM)", "span": [243, 257] }},
+    {"soilDepth": { "value": "between April and August each year", "span": [301, 334] }},
+    {"soilDepth": { "value": "in and between the maize rows", "span": [338, 362] }},
+    {"soilDepth": { "value": "plot by plot", "span": [381, 391] }},
+    {"soilDepth": { "value": "in blocks or randomly", "span": [410, 427] }}
+  ],
+  "Location": [
+    {"country": { "value": "Europe", "span": [779, 785] }},
+    {"country": { "value": "Germany", "span": [787, 794] }},
+    {"region": { "value": "Lower Saxony", "span": [796, 807] }},
+    {"city": { "value": "Wanna", "span": [809, 813] }},
+    {"region": { "value": "Mecklenburg-Vorpommern", "span": [815, 836] }},
+    {"city": { "value": "Rostock", "span": [838, 844] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2021", "span": [154, 158] }},
+    {"endTime": { "value": "2023", "span": [164, 168] }},
+    {"duration": { "value": "over the years 2021, 2022 and 2023", "span": [154, 177] }},
+    {"startTime": { "value": "April", "span": [301, 305] }},
+    {"endTime": { "value": "August", "span": [314, 319] }},
+    {"duration": { "value": "between April and August each year", "span": [301, 334] }}
+  ]
+}
+```

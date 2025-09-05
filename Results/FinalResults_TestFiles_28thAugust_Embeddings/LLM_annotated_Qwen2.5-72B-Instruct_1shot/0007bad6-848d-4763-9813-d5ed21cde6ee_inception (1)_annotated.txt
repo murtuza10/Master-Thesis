@@ -1,0 +1,26 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wheat", "span": [423, 428] }}
+  ],
+  "Soil": [
+    {"soilProperties": { "value": "soil properties", "span": [335, 348] }},
+    {"soilWaterStableAggregation": { "value": "soil water stable aggregation", "span": [365, 388] }}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+Note: The `soilProperties` and `soilWaterStableAggregation` entities are not part of the predefined categories, so they should not be included in the final output. Here is the corrected output:
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wheat", "span": [423, 428] }}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```

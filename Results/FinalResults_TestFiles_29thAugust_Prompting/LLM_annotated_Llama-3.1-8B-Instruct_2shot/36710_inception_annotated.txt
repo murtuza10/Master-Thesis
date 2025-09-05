@@ -1,0 +1,21 @@
+### Entities Extraction for the Given Text ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "apple", "span": [81, 86]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": {"value": "Altes Land", "span": [22, 31]}},
+    {"country": {"value": "Germany", "span": [106, 114]}},
+    {"region": {"value": "Lower Saxony", "span": [119, 130]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2001", "span": [134, 138]}},
+    {"endTime": {"value": "2003", "span": [140, 144]}}
+  ]
+}
+```
+
+Note: The `"span"` values are calculated from the beginning of the full text.

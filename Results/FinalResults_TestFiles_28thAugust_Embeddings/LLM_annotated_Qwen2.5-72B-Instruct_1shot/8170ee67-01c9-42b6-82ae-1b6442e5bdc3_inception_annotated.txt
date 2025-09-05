@@ -1,0 +1,36 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "barley", "span": [111, 117] }},
+    {"cropSpecies": { "value": "oat", "span": [651, 654] }},
+    {"cropSpecies": { "value": "oilseed rape", "span": [834, 845] }},
+    {"cropSpecies": { "value": "wheat", "span": [847, 852] }},
+    {"cropSpecies": { "value": "lupine", "span": [854, 860] }},
+    {"cropSpecies": { "value": "rye", "span": [862, 865] }},
+    {"cropSpecies": { "value": "barley", "span": [981, 987] }},
+    {"cropVariety": { "value": "OTTO", "span": [1013, 1017] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "soil class A", "span": [755, 767] }},
+    {"soilReferenceGroup": { "value": "soil class B", "span": [776, 788] }},
+    {"soilReferenceGroup": { "value": "soil class C", "span": [797, 809] }},
+    {"soilAvailablePhosphorus": { "value": "11 mg kg-1 PCAL", "span": [769, 785] }},
+    {"soilAvailablePhosphorus": { "value": "21 mg kg-1 PCAL", "span": [791, 807] }},
+    {"soilAvailablePhosphorus": { "value": "47 mg kg-1 PCAL", "span": [811, 827] }},
+    {"soilDepth": { "value": "0-30 cm", "span": [739, 746] }},
+    {"soilDepth": { "value": "25 cm", "span": [684, 689] }},
+    {"soilDepth": { "value": "25 cm", "span": [1029, 1034] }}
+  ],
+  "Location": [
+    {"city": { "value": "Braunschweig", "span": [24, 35] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1985", "span": [426, 430] }},
+    {"endTime": { "value": "2008", "span": [431, 435] }},
+    {"startTime": { "value": "2013", "span": [636, 640] }},
+    {"endTime": { "value": "2014", "span": [1042, 1046] }},
+    {"duration": { "value": "once a year", "span": [957, 967] }},
+    {"startTime": { "value": "autumn 2013", "span": [972, 981] }}
+  ]
+}
+```

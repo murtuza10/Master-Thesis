@@ -1,0 +1,30 @@
+### Output JSON Structure ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Helosciadium nodiflorum", "span": [84, 106] }},
+    {"cropSpecies": { "value": "celery", "span": [266, 272] }},
+    {"cropSpecies": { "value": "Helosciadium nodiflorum", "span": [294, 316] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"city": { "value": "London", "span": [137, 142] }},
+    {"country": { "value": "Germany", "span": [169, 176] }},
+    {"country": { "value": "Germany", "span": [247, 254] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2015", "span": [259, 263] }},
+    {"startTime": { "value": "2016", "span": [264, 268] }},
+    {"endTime": { "value": "2018", "span": [322, 326] }},
+    {"endTime": { "value": "2019", "span": [327, 331] }}
+  ]
+}
+```
+
+### Explanation ###
+
+- Crops: The text mentions two species of crops, Helosciadium nodiflorum and celery. 
+- Soil: There is no mention of soil in the text.
+- Location: The text mentions two cities and two countries, London and Germany.
+- Time Statement: The text mentions the years 2015, 2016, 2018, and 2019.

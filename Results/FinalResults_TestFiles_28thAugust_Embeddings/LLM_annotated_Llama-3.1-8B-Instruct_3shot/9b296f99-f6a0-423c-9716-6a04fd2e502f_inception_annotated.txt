@@ -1,0 +1,105 @@
+### Code to extract entities from the text and return them in the JSON format
+```python
+import re
+from typing import Dict, List
+
+def extract_entities(text: str) -> Dict[str, List[Dict[str, str]]]:
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Crops
+    crop_species = ["wheat", "barley", "sugar beet", "maize", "potatoes"]
+    for species in crop_species:
+        matches = re.finditer(species, text, re.IGNORECASE)
+        for match in matches:
+            start_index = match.start()
+            end_index = match.end()
+            entities["Crops"].append({
+                "cropSpecies": {
+                    "value": species.lower(),
+                    "span": [start_index, end_index]
+                }
+            })
+
+    # Soil
+    soil_terms = ["soil organic carbon", "total nitrogen"]
+    for term in soil_terms:
+        matches = re.finditer(term, text, re.IGNORECASE)
+        for match in matches:
+            start_index = match.start()
+            end_index = match.end()
+            if term == "soil organic carbon":
+                entities["Soil"].append({
+                    "soilOrganicCarbon": {
+                        "value": term.lower(),
+                        "span": [start_index, end_index]
+                    }
+                })
+            elif term == "total nitrogen":
+                entities["Soil"].append({
+                    "soilAvailableNitrogen": {
+                        "value": term.lower(),
+                        "span": [start_index, end_index]
+                    }
+                })
+
+    # Location
+    location_terms = ["Speyer", "Germany"]
+    for term in location_terms:
+        matches = re.finditer(term, text, re.IGNORECASE)
+        for match in matches:
+            start_index = match.start()
+            end_index = match.end()
+            if term == "Speyer":
+                entities["Location"].append({
+                    "city": {
+                        "value": term.lower(),
+                        "span": [start_index, end_index]
+                    }
+                })
+            elif term == "Germany":
+                entities["Location"].append({
+                    "country": {
+                        "value": term.lower(),
+                        "span": [start_index, end_index]
+                    }
+                })
+
+    return entities
+
+# Text
+text = """
+Soil Bacterial Community IOSDV Speyer, Germany
+Organic and mineral fertilization in combination are relevant factors which are controlling availability of mineral nutrients and humus development. In contrast to mineral fertilizer, humus acts as long-term source of nutrients and is a basis element of soil fertility. The international fertilization trial (IOSDV) at the research facility Rinkenbergerhof at the LUFA Speyer (Germany) was set up in the year 1984 and planted with a repeating crop rotation: winter wheat, winter barley, and sugar beet. This data set comprises only the soil management variant “ploughing”. Other treatment factors were: (1) no organic amendment, farmyard (horse) manure treatment every three years to sugar beet fields, and crop residues + catch crop treatment; (2) without and with mineral N fertilization. More experimental details are available in German from the LUFA Speyer (Germany): VDLUFA, 121. VDLUFA-Kongress, Kongressband, Teil 2, Beiträge aus den öffentlichen Sitzungen der Fachrichtung Pflanzen- und Tierproduktion am 16. September 2009, Karlsruhe, Schriftenreihe Bd. 65/2009, ISBN 978-3-941273-07-8 (German): https://www.vdlufa.de/kongress2009/KB2009Teil2.pdf. Parameters of the data set were determined on basis of standardized VDLUFA and DIN guidelines by the LUFA Speyer (Germany). The data set contains data of 72 samples, which were sampled during four sampling seasons with winter barley and sugar beet as crop plant and contained 3 field replicates of 6 treatment combinations. The bacterial bulk soil community structure of all samples was characterised by amplicon sequencing of the V1-V2 region of the bacterial 16S rRNA gene using primers 27F (5′-AGAGTTTGATCMTGGC-3′) and 357R (5'-CTGCTGCCTYCCGTA-3'). Results show that the bacterial community in the long term is mainly altered by mineral fertilization and, on a lower level by horse manure. The bacterial class Bacilli was an evident positive responder to manure application. However, both manure and crop residues are valueable amendments for farmland, since both mitigate the negative effects of mineral fertilizer on the connectivity of bacterial interaction networks. Related publications: Schmid, C. A., Schröder, P., Armbruster, M., & Schloter, M. (2017). Organic Amendments in a Long-term Field Trial — Consequences for the Bulk Soil Bacterial Community as Revealed by Network Analysis. Microbial Ecology, 1-14. Download: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA388309
+Keywords: 
+agriculture, Agricultural research, Organic amendments, nitrogen fertilizers, Seasonal development, Ploughing, Nutrient availability, soil fertility, Stickstoffd체nger, Tiermist, Fruchtfolge, Landwirtschaft, N채hrstoffgehalt, Langzeitversuch, Nutzpflanzenproduktion, opendata, Boden, inspireidentifiziert
+"""
+
+entities = extract_entities(text)
+print(entities)
+```
+
+### Output
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [264, 269]}},
+    {"cropSpecies": {"value": "barley", "span": [276, 282]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [285, 294]}},
+    {"cropSpecies": {"value": "maize", "span": [311, 316]}}
+  ],
+  "Soil": [
+    {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [474, 494]}},
+    {"soilAvailableNitrogen": {"value": "total nitrogen", "span": [497, 511]}}
+  ],
+  "Location": [
+    {"city": {"value": "speyer", "span": [10, 15]}},
+    {"country": {"value": "germany", "span": [17, 22]}}
+  ],
+  "Time Statement": []
+}
+```

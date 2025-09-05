@@ -1,0 +1,31 @@
+### Output Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "maize", "span": [245, 250] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "Wanna Sand (WS)", "span": [273, 293] }},
+    {"soilReferenceGroup": { "value": "Wanna Sand without biogas slurry (WSo)", "span": [297, 319] }},
+    {"soilReferenceGroup": { "value": "Rostock Sand (RS)", "span": [327, 337] }},
+    {"soilReferenceGroup": { "value": "Wanna Marsch (WM)", "span": [345, 356] }},
+    {"soilTexture": { "value": "Sand", "span": [273, 277] }},
+    {"soilTexture": { "value": "Sand", "span": [297, 301] }},
+    {"soilTexture": { "value": "Sand", "span": [327, 331] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [434, 438] }},
+    {"region": { "value": "Lower Saxony", "span": [445, 452] }},
+    {"region": { "value": "Mecklenburg-Vorpommern", "span": [459, 472] }},
+    {"city": { "value": "Wanna", "span": [445, 451] }},
+    {"city": { "value": "Rostock", "span": [459, 465] }},
+    {"latitude": { "value": "Europe", "span": [434, 438] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2021", "span": [232, 236] }},
+    {"startTime": { "value": "2022", "span": [238, 242] }},
+    {"startTime": { "value": "2023", "span": [244, 248] }},
+    {"endTime": { "value": "August", "span": [361, 366] }}
+  ]
+}
+```

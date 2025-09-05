@@ -1,0 +1,25 @@
+### Output Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Winter wheat", "span": [145, 156] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "soil", "span": [25, 30]}},
+    {"soilReferenceGroup": { "value": "soil-crop system", "span": [74, 89]}},
+    {"soilReferenceGroup": { "value": "soil-plant system", "span": [243, 258]}},
+    {"soilReferenceGroup": { "value": "soil", "span": [297, 302]}},
+    {"soilTexture": { "value": "water stable aggregation", "span": [123, 136]}},
+    {"soilReferenceGroup": { "value": "soil", "span": [311, 316]}},
+    {"soilOrganicCarbon": { "value": "soil properties", "span": [134, 146]}},
+    {"soilReferenceGroup": { "value": "soil", "span": [345, 350]}},
+    {"soilReferenceGroup": { "value": "soil-plant system", "span": [403, 418]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Note: 
+- The text does not contain any information about location or time statements.
+- The text contains information about soil, but it does not contain specific information about soil texture, bulk density, pH, available nitrogen, or depth. Therefore, the "soilTexture", "soilBulkDensity", "soilPH", "soilAvailableNitrogen", and "soilDepth" categories are empty.

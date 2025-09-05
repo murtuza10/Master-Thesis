@@ -1,0 +1,36 @@
+### Filled JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "grapes", "span": [144, 149]}},
+    {"cropSpecies": {"value": "grapes", "span": [222, 227]}},
+    {"cropSpecies": {"value": "grapes", "span": [338, 343]}},
+    {"cropSpecies": {"value": "grapes", "span": [412, 417]}},
+    {"cropSpecies": {"value": "grapes", "span": [456, 461]}},
+    {"cropSpecies": {"value": "grapes", "span": [538, 543]}},
+    {"cropSpecies": {"value": "grapes", "span": [624, 629]}},
+    {"cropSpecies": {"value": "grapes", "span": [706, 711]}},
+    {"cropSpecies": {"value": "grapes", "span": [790, 795]}},
+    {"cropSpecies": {"value": "grapes", "span": [876, 881]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": {"value": "vineyard", "span": [95, 106]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2017", "span": [170, 173]}},
+    {"endTime": {"value": "2017", "span": [178, 181]}},
+    {"duration": {"value": "three weeks", "span": [183, 193]}},
+    {"startTime": {"value": "2018", "span": [230, 233]}},
+    {"endTime": {"value": "2018", "span": [240, 243]}},
+    {"duration": {"value": "three weeks", "span": [247, 257]}},
+    {"startTime": {"value": "29.8.2018", "span": [404, 414]}},
+    {"endTime": {"value": "12.9.2018", "span": [422, 432]}},
+    {"duration": {"value": "two weeks", "span": [439, 449]}},
+    {"startTime": {"value": "4.9.2018", "span": [470, 478]}},
+    {"endTime": {"value": "29.9.2018", "span": [486, 496]}},
+    {"duration": {"value": "two weeks", "span": [503, 513]}}
+  ]
+}
+```
+Note that I have used the `value` and `span` keys as specified in the problem statement, where `value` is the text of the entity and `span` is the start and end indices of the entity in the original text.

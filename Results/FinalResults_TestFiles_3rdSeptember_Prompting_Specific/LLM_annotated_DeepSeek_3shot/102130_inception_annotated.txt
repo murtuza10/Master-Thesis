@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756917959-0yob7gDgU8dsZ2D1mRoO",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756917962,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilOrganicCarbon\": { \"value\": \"particulate organic carbon\", \"span\": [204, 229] }},\n    {\"soilOrganicCarbon\": { \"value\": \"mineral associated organic carbon\", \"span\": [234, 263] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"2-year\", \"span\": [76, 82] }},\n    {\"startTime\": { \"value\": \"6\", \"span\": [174, 175] }},\n    {\"startTime\": { \"value\": \"12\", \"span\": [177, 179] }},\n    {\"startTime\": { \"value\": \"24 months\", \"span\": [181, 190] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2234,
+    "completion_tokens": 180,
+    "total_tokens": 2414,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,19 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [24, 43]}},
+    {"soilOrganicCarbon": {"value": "SOC", "span": [83, 86]}},
+    {"soilOrganicCarbon": {"value": "SON", "span": [90, 93]}},
+    {"soilBulkDensity": {"value": "C transfer matrix", "span": [126, 143]}},
+    {"soilAvailableNitrogen": {"value": "N mineralisation", "span": [161, 174]}},
+    {"soilAvailableNitrogen": {"value": "N immobilisation", "span": [180, 193]}},
+    {"soilDepth": {"value": "model pools", "span": [222, 230]}},
+    {"soilPH": {"value": "differential equations", "span": [246, 262]}},
+    {"soilReferenceGroup": {"value": "first-order kinetics", "span": [267, 281]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```

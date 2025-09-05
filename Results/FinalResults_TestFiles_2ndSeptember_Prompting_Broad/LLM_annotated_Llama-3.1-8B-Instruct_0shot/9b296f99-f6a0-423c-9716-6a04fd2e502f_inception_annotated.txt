@@ -1,0 +1,31 @@
+### Text Analysis and JSON Output
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "winter wheat", "span": [144, 153] }},
+    {"cropSpecies": { "value": "winter barley", "span": [173, 182] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [184, 193] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "humus", "span": [94, 100] }},
+    {"Soil": { "value": "bacterial community", "span": [230, 243] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [38, 45] }},
+    {"region": { "value": "Speyer", "span": [50, 56] }},
+    {"city": { "value": "Karlsruhe", "span": [265, 274] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1984", "span": [123, 127] }},
+    {"endTime": { "value": "2009", "span": [269, 273] }},
+    {"duration": { "value": "four sampling seasons", "span": [201, 212] }}
+  ]
+}
+```
+
+### Notes
+- The output is based on the explicit mentions of the entities in the provided text.
+- The `span` value represents the start and end character positions from the beginning of the full text.
+- Multiple mentions of the same entity are included as separate objects in their respective categories.
+- The output follows the exact JSON format as specified.

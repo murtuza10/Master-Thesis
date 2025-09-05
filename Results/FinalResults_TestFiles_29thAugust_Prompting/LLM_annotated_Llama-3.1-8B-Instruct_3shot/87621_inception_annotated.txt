@@ -1,0 +1,13 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [143, 149]}},
+    {"cropSpecies": {"value": "Wheat", "span": [28, 33]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+Note: The JSON output only contains the entities that were explicitly mentioned in the text.

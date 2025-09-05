@@ -1,0 +1,37 @@
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilCharacteristics": { "value": "bulk density", "span": [328, 337] }},
+    {"soilCharacteristics": { "value": "nitrogen content", "span": [293, 305] }},
+    {"soilCharacteristics": { "value": "ammonium-N", "span": [307, 316] }},
+    {"soilCharacteristics": { "value": "nitrate-N", "span": [318, 326] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [123, 129] }}
+  ],
+  "Time Statement": [
+    {"duration": { "value": "three years (2011/2012 – 2014/2015)", "span": [103, 135] }}
+  ]
+}
+```
+
+Note: The provided JSON structure includes `soilCharacteristics` as a catch-all for soil-related entities that do not fit into the specific categories listed. However, since the task requires strict adherence to the provided categories, the correct JSON should only include the explicitly listed categories. Here is the corrected version:
+
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilBulkDensity": { "value": "bulk density", "span": [328, 337] }},
+    {"soilAvailableNitrogen": { "value": "nitrogen content", "span": [293, 305] }},
+    {"soilAvailableNitrogen": { "value": "ammonium-N", "span": [307, 316] }},
+    {"soilAvailableNitrogen": { "value": "nitrate-N", "span": [318, 326] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [123, 129] }}
+  ],
+  "Time Statement": [
+    {"duration": { "value": "three years (2011/2012 – 2014/2015)", "span": [103, 135] }}
+  ]
+}
+```

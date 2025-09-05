@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756906795-iKrQOb1wYgKzsD5GAeS9",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756906795,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"energy crop\", \"span\": [118, 129] }}\n  ],\n  \"Soil\": [\n    {\"soilAvailableNitrogen\": { \"value\": \"nitrogen content\", \"span\": [640, 655] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"ammonium-N\", \"span\": [657, 667] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"nitrate-N\", \"span\": [669, 677] }},\n    {\"soilBulkDensity\": { \"value\": \"bulk density\", \"span\": [679, 691] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [192, 199] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2011/2012\", \"span\": [214, 223] }},\n    {\"endTime\": { \"value\": \"2014/2015\", \"span\": [227, 236] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 2306,
+    "completion_tokens": 243,
+    "total_tokens": 2549
+  }
+}

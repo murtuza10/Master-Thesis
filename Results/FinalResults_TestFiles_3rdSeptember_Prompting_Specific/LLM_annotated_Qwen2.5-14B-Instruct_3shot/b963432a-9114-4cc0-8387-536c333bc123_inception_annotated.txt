@@ -1,0 +1,37 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "spring barley", "span": [326, 336] }},
+    {"cropSpecies": { "value": "serradella", "span": [360, 369] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "soil profile", "span": [120, 130] }},
+    {"soilDepth": { "value": "three sampling depths", "span": [134, 149] }},
+    {"soilPH": { "value": "pH", "span": [157, 159] }},
+    {"soilPH": { "value": "pH", "span": [312, 314] }},
+    {"soilPH": { "value": "pH", "span": [423, 425] }},
+    {"soilAvailableNitrogen": { "value": "NH4+-N", "span": [495, 503] }},
+    {"soilAvailableNitrogen": { "value": "NO2-- and NO3--N-", "span": [507, 523] }},
+    {"soilAvailableNitrogen": { "value": "total N", "span": [526, 532] }},
+    {"soilOrganicCarbon": { "value": "total C", "span": [534, 541] }},
+    {"soilOrganicCarbon": { "value": "DOC", "span": [571, 575] }},
+    {"soilOrganicCarbon": { "value": "DIC", "span": [567, 571] }},
+    {"soilOrganicCarbon": { "value": "Gel√∂ster organischer Kohlenstoff", "span": [602, 635] }},
+    {"soilAvailableNitrogen": { "value": "total N", "span": [644, 650] }},
+    {"soilAvailableNitrogen": { "value": "Ammonium", "span": [674, 682] }},
+    {"soilAvailableNitrogen": { "value": "Stickstoff", "span": [685, 693] }}
+  ],
+  "Location": [
+    {"region": { "value": "Northern Germany", "span": [88, 102] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2020", "span": [36, 40] }},
+    {"startTime": { "value": "2020", "span": [153, 157] }},
+    {"startTime": { "value": "2020", "span": [164, 168] }},
+    {"startTime": { "value": "2020", "span": [241, 245] }},
+    {"startTime": { "value": "2020", "span": [311, 315] }},
+    {"startTime": { "value": "2020", "span": [421, 425] }},
+    {"duration": { "value": "3.5 months", "span": [459, 468] }}
+  ]
+}
+```

@@ -1,0 +1,27 @@
+{
+  "Crops": [
+    {"cropSpecies": { "value": "energy crop", "span": [83, 93] }},
+    {"cropVariety": { "value": "", "span": [0, 0] }}  // No crop variety mentioned
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "", "span": [0, 0] }},  // No soil texture mentioned
+    {"soilReferenceGroup": { "value": "", "span": [0, 0] }},  // No soil reference group mentioned
+    {"soilDepth": { "value": "", "span": [0, 0] }},  // No soil depth mentioned
+    {"soilBulkDensity": { "value": "", "span": [0, 0] }},  // No soil bulk density mentioned
+    {"soilPH": { "value": "", "span": [0, 0] }},  // No soil pH mentioned
+    {"soilOrganicCarbon": { "value": "", "span": [0, 0] }},  // No soil organic carbon mentioned
+    {"soilAvailableNitrogen": { "value": "", "span": [0, 0] }}  // No soil available nitrogen mentioned
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [133, 140] }},
+    {"region": { "value": "", "span": [0, 0] }},  // No region mentioned
+    {"city": { "value": "", "span": [0, 0] }},  // No city mentioned
+    {"latitude": { "value": "", "span": [0, 0] }},  // No latitude mentioned
+    {"longitude": { "value": "", "span": [0, 0] }}  // No longitude mentioned
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2011/2012", "span": [98, 111] }},
+    {"endTime": { "value": "2014/2015", "span": [123, 136] }},
+    {"duration": { "value": "three years", "span": [97, 106] }}
+  ]
+}

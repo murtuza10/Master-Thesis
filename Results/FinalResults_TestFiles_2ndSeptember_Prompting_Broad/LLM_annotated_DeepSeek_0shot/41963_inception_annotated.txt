@@ -1,0 +1,34 @@
+{
+  "id": "gen-1756897775-gas0kH3WK9yXUz0cwpH9",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756897775,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"German\", \"span\": [218, 224] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1961\", \"span\": [176, 180] }},\n    {\"endTime\": { \"value\": \"2100\", \"span\": [184, 188] }},\n    {\"startTime\": { \"value\": \"1961\", \"span\": [234, 238] }},\n    {\"endTime\": { \"value\": \"2013\", \"span\": [242, 246] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [390, 395] }},\n    {\"endTime\": { \"value\": \"2050\", \"span\": [399, 403] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [408, 415] }},\n    {\"endTime\": { \"value\": \"2100\", \"span\": [419, 423] }},\n    {\"startTime\": { \"value\": \"01.01.1961\", \"span\": [691, 701] }},\n    {\"endTime\": { \"value\": \"31.12.2099\", \"span\": [705, 715] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 1262,
+    "completion_tokens": 300,
+    "total_tokens": 1562,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,16 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [34, 50]}},
+    {"soilOrganicCarbon": {"value": "SOC", "span": [59, 62]}},
+    {"soilOrganicNitrogen": {"value": "soil organic nitrogen", "span": [63, 80]}},
+    {"soilOrganicNitrogen": {"value": "SON", "span": [122, 125]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "temporal", "span": [108, 115]}}
+  ]
+}
+```

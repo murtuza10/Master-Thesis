@@ -1,0 +1,29 @@
+### Filled JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "winter barley", "span": [173, 187]}},
+    {"cropSpecies": {"value": "winter oilseed rape", "span": [246, 260]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [263, 271]}},
+    {"cropSpecies": {"value": "lupine", "span": [283, 290]}},
+    {"cropSpecies": {"value": "winter rye", "span": [304, 311]}},
+    {"cropSpecies": {"value": "oat", "span": [638, 643]}},
+    {"cropSpecies": {"value": "Hordeum vulgare L.", "span": [1043, 1057]}},
+    {"cropSpecies": {"value": "OTTO", "span": [1058, 1063]}}
+  ],
+  "Soil": [
+    {"Soil": {"value": "soil class A", "span": [545, 555]}},
+    {"Soil": {"value": "soil class B", "span": [553, 562]}},
+    {"Soil": {"value": "soil class C", "span": [569, 578]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "1985", "span": [141, 145]}},
+    {"startTime": {"value": "2008", "span": [163, 167]}},
+    {"startTime": {"value": "2013", "span": [627, 631]}},
+    {"endTime": {"value": "2013", "span": [637, 641]}},
+    {"duration": {"value": "1985-2008", "span": [141, 152]}},
+    {"duration": {"value": "2013-2014", "span": [627, 638]}}
+  ]
+}
+```

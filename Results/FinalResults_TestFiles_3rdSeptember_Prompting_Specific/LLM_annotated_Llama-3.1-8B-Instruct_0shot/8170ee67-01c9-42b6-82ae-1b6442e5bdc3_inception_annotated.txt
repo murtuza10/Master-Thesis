@@ -1,0 +1,49 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "barley", "span": [74, 80] }},
+    {"cropSpecies": { "value": "oat", "span": [281, 286] }},
+    {"cropSpecies": { "value": "oilseed rape", "span": [295, 308] }},
+    {"cropSpecies": { "value": "wheat", "span": [322, 327] }},
+    {"cropSpecies": { "value": "lupine", "span": [334, 339] }},
+    {"cropSpecies": { "value": "rye", "span": [346, 350] }}
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "soil", "span": [403, 407] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [18, 25] }},
+    {"city": { "value": "Braunschweig", "span": [38, 49] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1985", "span": [144, 148] }},
+    {"endTime": { "value": "2008", "span": [149, 153] }},
+    {"startTime": { "value": "2013", "span": [266, 270] }},
+    {"endTime": { "value": "2014", "span": [92, 96] }}
+  ]
+}
+```
+### Note: ###
+
+- The text's title, abstract, and keywords are not included in the output as they do not contain the required entities.
+- The text mentions "Hordeum vulgare L." which is a scientific name for barley. However, only "barley" is extracted as it is the commonly used name.
+- The text mentions "BCplus" which is a type of fertilizer, but it is not extracted as it does not fit into any of the required categories.
+- The text mentions "TSP" which is a type of fertilizer, but it is not extracted as it does not fit into any of the required categories.
+- The text mentions "opendata" which is a keyword, but it is not extracted as it does not fit into any of the required categories.
+- The text mentions "Boden" which is a German word for "soil", but it is not extracted as it is not in English.
+- The text mentions "farm inputs" which is a keyword, but it is not extracted as it does not fit into any of the required categories.
+- The text mentions "Phosphate fertilizers" which is a keyword, but it is not extracted as it does not fit into any of the required categories.
+- The text mentions "Phosphates" which is a keyword, but it is not extracted as it does not fit into any of the required categories.
+- The text mentions "peak phosphorus" which is a concept, but it is not extracted as it does not fit into any of the required categories.
+- The text mentions "bone char" which is a type of fertilizer, but it is not extracted as it does not fit into any of the required categories.
+- The text mentions "sulfur" which is a chemical element, but it is not extracted as it does not fit into any of the required categories.
+- The text mentions "hydroxylapatite" which is a chemical compound, but it is not extracted as it does not fit into any of the required categories.
+- The text mentions "patent DE102011010525" which is a patent number, but it is not extracted as it does not fit into any of the required categories.
+- The text mentions "PCAL" which is a chemical symbol, but it is not extracted as it does not fit into any of the required categories.
+- The text mentions "P" which is a chemical symbol, but it is not extracted as it does not fit into any of the required categories.
+- The text mentions "K" which is a chemical symbol, but it is not extracted as it does not fit into any of the required categories.
+- The text mentions "Mg" which is a chemical symbol, but it is not extracted as it does not fit into any of the required categories.
+- The text mentions "Ca" which is a chemical symbol, but it is not extracted as it does not fit into any of the required categories.
+- The text mentions "S" which is a chemical symbol, but it is not extracted as it does not fit into any of the required categories.
+- The text mentions "HA" which is a chemical symbol, but it is not extracted as it does not fit into any of the required categories.

@@ -1,0 +1,26 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [289, 295]}},
+    {"cropSpecies": {"value": "serradella", "span": [305, 314]}}
+  ],
+  "Soil": [
+    {"soilPH": {"value": "pH", "span": [112, 114]}},
+    {"soilPH": {"value": "pH", "span": [284, 286]}},
+    {"soilPH": {"value": "pH", "span": [357, 359]}},
+    {"soilPH": {"value": "pH", "span": [420, 422]}}
+  ],
+  "Location": [
+    {"region": {"value": "Northern Germany", "span": [212, 223]}},
+    {"city": {"value": "Rostock", "span": [6, 13]}},
+    {"city": {"value": "Rostock", "span": [146, 153]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2020", "span": [162, 166]}},
+    {"startTime": {"value": "2020", "span": [239, 243]}},
+    {"startTime": {"value": "2018", "span": [318, 322]}},
+    {"endTime": {"value": "2020", "span": [369, 373]}},
+    {"duration": {"value": "3.5 months", "span": [499, 508]}}
+  ]
+}
+```

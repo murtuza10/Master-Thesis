@@ -1,0 +1,24 @@
+### Output JSON Structure Filled with Entities from the Input Text
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Riesling", "span": [85, 92]}},
+    {"cropSpecies": {"value": "Felicia", "span": [95, 102]}},
+    {"cropSpecies": {"value": "Regent", "span": [109, 116]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2018", "span": [129, 133]}},
+    {"endTime": {"value": "2018", "span": [139, 143]}}
+  ]
+}
+```
+
+### Explanation
+
+*   **Crops**: The text mentions three different varieties of crops: "Riesling", "Felicia", and "Regent". These are extracted as crop species with their corresponding character positions in the text.
+*   **Soil**: There is no mention of soil-related entities in the text, so the soil category remains empty.
+*   **Location**: The text does not contain any information about locations, so the location category is also empty.
+*   **Time Statement**: The text mentions two time points: "before" and "after thinning" in the year "2018". These are extracted as time statements with their corresponding character positions in the text.

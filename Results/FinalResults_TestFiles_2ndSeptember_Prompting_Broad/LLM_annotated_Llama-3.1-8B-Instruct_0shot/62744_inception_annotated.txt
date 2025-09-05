@@ -1,0 +1,27 @@
+### Output JSON ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "rye", "span": [43, 47] }},
+    {"cropSpecies": { "value": "Secale cereale L.", "span": [64, 81] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "drought", "span": [134, 141] }},
+    {"Soil": { "value": "well-watered", "span": [266, 277] }}
+  ],
+  "Location": [
+    {"country": { "value": "Europe", "span": [116, 123] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "", "span": [null, null] }},
+    {"endTime": { "value": "", "span": [null, null] }},
+    {"duration": { "value": "", "span": [null, null] }}
+  ]
+}
+```
+
+### Notes: ###
+- In the provided text, there is only one mention of a crop species ("rye" and "Secale cereale L.").
+- There are two mentions of "drought" as soil, and one mention of "well-watered" as soil.
+- "Europe" is mentioned as a country.
+- There are no explicit time statements in the text, so the "Time Statement" list is empty.

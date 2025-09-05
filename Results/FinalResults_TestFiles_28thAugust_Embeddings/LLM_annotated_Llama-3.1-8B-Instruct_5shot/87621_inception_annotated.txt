@@ -1,0 +1,21 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [135, 141]}},
+    {"cropSpecies": {"value": "barley", "span": [159, 165]}},
+    {"cropSpecies": {"value": "wheat", "span": [192, 197]}},
+    {"cropSpecies": {"value": "Hordeum vulgare", "span": [194, 213]}},
+    {"cropSpecies": {"value": "Hordeum vulgare ssp. vulgare", "span": [215, 239]}},
+    {"cropSpecies": {"value": "wheat", "span": [260, 265]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+### Explanation ###
+- **Crops**: Identified crop species are "barley", "barley", "wheat", "Hordeum vulgare", "Hordeum vulgare ssp. vulgare", and "wheat". Note that "Hordeum vulgare" and "Hordeum vulgare ssp. vulgare" are the same species but are mentioned separately in the text.
+- **Soil**: No information about soil is provided in the text, so the list is empty.
+- **Location**: No specific locations are mentioned in the text, so the list is empty.
+- **Time Statement**: No time-related information is provided in the text, so the list is empty.

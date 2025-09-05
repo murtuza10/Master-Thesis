@@ -1,0 +1,27 @@
+### Text Analysis Result
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "oilseed rape", "span": [73, 87] }},
+    {"cropSpecies": { "value": "Brassica napus", "span": [97, 110] }},
+    {"cropSpecies": { "value": "OSR", "span": [128, 130] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "Germany", "span": [134, 142] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [134, 142] }},
+    {"region": { "value": "Europe", "span": [not found] }},
+    {"city": { "value": "Bochum", "span": [143, 151] }},
+    {"city": { "value": "Braunschweig", "span": [153, 164] }},
+    {"city": { "value": "Celle", "span": [165, 173] }},
+    {"city": { "value": "Hohenheim", "span": [175, 185] }},
+    {"city": { "value": "Veitshöchheim", "span": [187, 199] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "spring 2022", "span": [179, 191] }},
+    {"endTime": { "value": "spring 2023", "span": [195, 207] }}
+  ]
+}
+```

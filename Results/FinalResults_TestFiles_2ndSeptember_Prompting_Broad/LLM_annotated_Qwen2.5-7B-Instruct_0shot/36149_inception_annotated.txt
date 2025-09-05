@@ -1,0 +1,19 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "energy crop", "span": [89, 98] }},
+    {"cropSpecies": { "value": "crops", "span": [319, 323] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "soil characteristics", "span": [261, 271] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [156, 161] }},
+    {"region": { "value": "Balkans", "span": [163, 169] }}  // Assuming "Balkans" is a region related to a dataset
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2011/2012", "span": [45, 53] }},
+    {"startTime": { "value": "2014/2015", "span": [61, 69] }}
+  ]
+}
+```

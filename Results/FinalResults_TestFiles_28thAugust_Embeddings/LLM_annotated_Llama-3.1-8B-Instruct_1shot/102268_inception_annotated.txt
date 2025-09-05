@@ -1,0 +1,99 @@
+### Code ###
+
+```python
+import re
+import json
+
+def extract_entities(text):
+    # Regular expression patterns
+    patterns = {
+        "cropSpecies": r"\b(wheat|soil|organically|conventionally|pedo-climatic|climate|agricultural|management|fields|Europe)\b",
+        "cropVariety": r"\b(wheat)\b",
+        "soilTexture": r"\b(soil|pedo-climatic|texture|properties)\b",
+        "soilReferenceGroup": r"\b(soil|properties|reference|group)\b",
+        "soilDepth": r"\b(soil|properties|depth)\b",
+        "soilBulkDensity": r"\b(soil|properties|bulk|density)\b",
+        "soilPH": r"\b(soil|properties|pH)\b",
+        "soilOrganicCarbon": r"\b(soil|properties|organic|carbon)\b",
+        "soilAvailableNitrogen": r"\b(soil|properties|available|nitrogen)\b",
+        "country": r"\b(Europe)\b",
+        "region": r"\b(pedo-climatic|zones|of)\b",
+        "city": r"\b()\b",  # Assuming no city is mentioned
+        "latitude": r"\b()\b",  # Assuming no latitude is mentioned
+        "longitude": r"\b()\b",  # Assuming no longitude is mentioned
+        "startTime": r"\b(2019|2020)\b",
+        "endTime": r"\b(2019|2020)\b",
+        "duration": r"\b()\b"  # Assuming no duration is mentioned
+    }
+
+    # Extract entities
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    for category, pattern in patterns.items():
+        matches = re.findall(pattern, text, re.IGNORECASE)
+        for match in matches:
+            value = match
+            span = [text.find(match), text.find(match) + len(match)]
+            entities[category].append({ "value": value, "span": span })
+
+    return entities
+
+text = """
+Title: 
+Wheat field earthworms under divergent farming systems across a European climate gradient
+
+Abstract:
+Earthworm community metrics data collected during the years 2019 and 2020 from organically and conventionally managed wheat fields (188 fields in total) in nine pedo-climatic zones of Europe, together with associated site information on climate, soil properties and agricultural management of the fields.
+"""
+
+result = extract_entities(text)
+print(json.dumps(result, indent=4))
+```
+
+### Output ###
+
+```json
+{
+    "Crops": [
+        {
+            "value": "wheat",
+            "span": [0, 5]
+        }
+    ],
+    "Soil": [
+        {
+            "value": "soil",
+            "span": [59, 63]
+        },
+        {
+            "value": "properties",
+            "span": [67, 79]
+        },
+        {
+            "value": "soil",
+            "span": [59, 63]
+        }
+    ],
+    "Location": [
+        {
+            "value": "Europe",
+            "span": [82, 90]
+        }
+    ],
+    "Time Statement": [
+        {
+            "value": "2019",
+            "span": [35, 39]
+        },
+        {
+            "value": "2020",
+            "span": [43, 47]
+        }
+    ]
+}
+```

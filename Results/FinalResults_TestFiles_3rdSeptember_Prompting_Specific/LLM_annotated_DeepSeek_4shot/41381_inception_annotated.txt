@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756918226-4yJk44REqLYYqVQz1CWZ",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756918226,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"soft-skinned fruits\", \"span\": [70, 89] }},\n    {\"cropSpecies\": { \"value\": \"fruit-crops\", \"span\": [144, 154] }},\n    {\"cropVariety\": { \"value\": \"grape varieties\", \"span\": [174, 189] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"region\": { \"value\": \"southwest Germany\", \"span\": [58, 75] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [259, 266] }},\n    {\"country\": { \"value\": \"Europe\", \"span\": [469, 475] }},\n    {\"city\": { \"value\": \"Dossenheim\", \"span\": [752, 763] }},\n    {\"city\": { \"value\": \"Siebeldingen\", \"span\": [768, 780] }},\n    {\"city\": { \"value\": \"Darmstadt\", \"span\": [819, 828] }},\n    {\"region\": { \"value\": \"southwest Germany\", \"span\": [857, 874] }},\n    {\"latitude\": { \"value\": \"lat\", \"span\": [1023, 1026] }},\n    {\"longitude\": { \"value\": \"lon\", \"span\": [1031, 1034] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2011\", \"span\": [308, 315] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [369, 373] }},\n    {\"endTime\": { \"value\": \"February 2018\", \"span\": [659, 672] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [735, 739] }},\n    {\"endTime\": { \"value\": \"2018\", \"span\": [743, 747] }},\n    {\"duration\": { \"value\": \"7-year\", \"span\": [24, 30] }},\n    {\"duration\": { \"value\": \"116,602 days\", \"span\": [1472, 1485] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4545,
+    "completion_tokens": 500,
+    "total_tokens": 5045
+  }
+}

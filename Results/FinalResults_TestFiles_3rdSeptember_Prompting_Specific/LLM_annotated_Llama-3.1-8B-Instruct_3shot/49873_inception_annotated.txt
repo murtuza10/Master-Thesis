@@ -1,0 +1,36 @@
+### Output JSON Format ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "Bodentyp", "span": [155, 162]}},
+    {"soilDepth": {"value": "TRD", "span": [207, 209]}},
+    {"soilDepth": {"value": "nFK", "span": [213, 216]}},
+    {"soilBulkDensity": {"value": "TRD", "span": [207, 209]}},
+    {"soilOrganicCarbon": {"value": "Corg", "span": [229, 235]}},
+    {"soilAvailableNitrogen": {}}
+  ],
+  "Location": [
+    {"region": {"value": "Deutschland", "span": [53, 61]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2012", "span": [266, 270]}},
+    {"endTime": {"value": "2012", "span": [273, 277]}}
+  ]
+}
+```
+### JSON Explanation ###
+
+- **Soil:** 
+  - **soilReferenceGroup:** "Bodentyp" is mentioned in the text.
+  - **soilDepth:** "TRD" and "nFK" are mentioned in the text. 
+  - **soilBulkDensity:** "TRD" is mentioned in the text.
+  - **soilOrganicCarbon:** "Corg" is mentioned in the text.
+  - **soilAvailableNitrogen:** This entity is not explicitly mentioned in the text, so it is an empty object.
+
+- **Location:** 
+  - **region:** "Deutschland" (Germany) is mentioned in the text.
+
+- **Time Statement:** 
+  - **startTime:** "2012" is mentioned in the text.
+  - **endTime:** "2012" is mentioned in the text.

@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756918040-13bG8qjHx6yHDKUgNwk6",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756918040,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [63, 69] }},\n    {\"cropSpecies\": { \"value\": \"oat\", \"span\": [1235, 1238] }},\n    {\"cropSpecies\": { \"value\": \"lupine\", \"span\": [1728, 1734] }},\n    {\"cropSpecies\": { \"value\": \"rye\", \"span\": [1740, 1743] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [2082, 2088] }},\n    {\"cropVariety\": { \"value\": \"OTTO\", \"span\": [2113, 2117] }}\n  ],\n  \"Soil\": [\n    {\"soilDepth\": { \"value\": \"25 cm\", \"span\": [1244, 1249] }},\n    {\"soilDepth\": { \"value\": \"0-30 cm\", \"span\": [1561, 1568] }},\n    {\"soilDepth\": { \"value\": \"25 cm\", \"span\": [1758, 1763] }}\n  ],\n  \"Location\": [\n    {\"city\": { \"value\": \"Braunschweig\", \"span\": [26, 38] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2014\", \"span\": [71, 75] }},\n    {\"startTime\": { \"value\": \"1985\", \"span\": [1003, 1007] }},\n    {\"endTime\": { \"value\": \"2008\", \"span\": [1008, 1012] }},\n    {\"startTime\": { \"value\": \"2013\", \"span\": [1132, 1136] }},\n    {\"endTime\": { \"value\": \"2013\", \"span\": [1158, 1162] }},\n    {\"startTime\": { \"value\": \"2014\", \"span\": [2109, 2113] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 2730,
+    "completion_tokens": 453,
+    "total_tokens": 3183
+  }
+}

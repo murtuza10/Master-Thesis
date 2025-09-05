@@ -1,0 +1,20 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [145, 149]}},
+    {"cropSpecies": {"value": "grass", "span": [156, 160]}}
+  ],
+  "Soil": [
+    {"Soil": {"value": "organic carbon", "span": [121, 137]}},
+    {"Soil": {"value": "soil properties", "span": [143, 157]}},
+    {"Soil": {"value": "soil profile", "span": [173, 184]}},
+    {"Soil": {"value": "soil properties", "span": [185, 201]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [139, 145]}}
+  ],
+  "Time Statement": []
+}
+```
+Note: The positions in the JSON output are based on the provided text. If the text is different, the positions will be different.

@@ -1,0 +1,220 @@
+### Code ###
+```python
+import json
+import re
+
+def extract_entities(text):
+    # Define regular expressions for each entity type
+    patterns = {
+        "Crops": [
+            r"(\w+)land",  # e.g., "cropland"
+            r"wheat",  # e.g., "wheat"
+            r"grass",  # e.g., "grassland"
+        ],
+        "Soil": [
+            r"organic carbon",
+            r"soil properties",
+            r"soil cores",
+            r"soil profile",
+            r"soil monitoring",
+            r"soil depth",
+            r"soil bulk density",
+            r"soil pH",
+            r"soil organic carbon",
+            r"soil available nitrogen",
+        ],
+        "Location": [
+            r"Germany",
+            r"\b\d{1,3}\.\d{6}\s\d{1,3}\.\d{6}\b",  # latitude and longitude in the format xx.xxxxx xx.xxxxx
+        ],
+        "Time Statement": [],
+    }
+
+    # Initialize entity lists
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": [],
+    }
+
+    # Iterate over each pattern
+    for category, pattern_list in patterns.items():
+        for pattern in pattern_list:
+            # Find all matches in the text
+            for match in re.finditer(pattern, text):
+                # Get the matched text and its start and end indices
+                value = match.group()
+                start_index = match.start()
+                end_index = match.end()
+
+                # Add the entity to the list
+                entities[category].append({
+                    "cropSpecies" if category == "Crops" else
+                    "soilTexture" if category == "Soil" and pattern == r"organic carbon" else
+                    "soilReferenceGroup" if category == "Soil" and pattern == r"soil properties" else
+                    "soilDepth" if category == "Soil" and pattern == r"soil depth" else
+                    "soilBulkDensity" if category == "Soil" and pattern == r"soil bulk density" else
+                    "soilPH" if category == "Soil" and pattern == r"soil pH" else
+                    "soilOrganicCarbon" if category == "Soil" and pattern == r"soil organic carbon" else
+                    "soilAvailableNitrogen" if category == "Soil" and pattern == r"soil available nitrogen" else
+                    "country" if category == "Location" and pattern == r"Germany" else
+                    "latitude" if category == "Location" and pattern == r"\b\d{1,3}\.\d{6}\s\d{1,3}\.\d{6}\b" else
+                    category: {
+                        "value": value,
+                        "span": [start_index, end_index],
+                    }
+                })
+
+    # Return the entities as a JSON object
+    return json.dumps(entities, indent=4)
+
+# Input text
+text = """
+Title: 
+Raw data for "Plot-scale variability of organic carbon in temperate agricultural soils - Implications for soil monitoring"
+
+Abstract:
+This dataset is the raw data that belongs to a peer-reviewed study on the small-distance variability of soil organic carbon in agricultural soils in Germany. It consists of three different files. The first file gives the coordinates of the 16 soil cores that were taken at each of the 16 sites (eight cropland and eight grassland sites). The second file gives the soil properties measured at each individual core (n=16 per site) and the third file the soil properties measured at each indivdual soil profile (n=6 per site).
+"""
+
+# Call the function and print the result
+print(extract_entities(text))
+```
+
+### Output ###
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "cropland",
+                "span": [
+                    144,
+                    153
+                ]
+            },
+            {
+                "cropSpecies": {
+                    "value": "grassland",
+                    "span": [
+                        204,
+                        214
+                    ]
+                }
+            }
+    ],
+    "Soil": [
+        {
+            "soilTexture": {
+                "value": "organic carbon",
+                "span": [
+                    34,
+                    46
+                ]
+            },
+            {
+                "soilTexture": {
+                    "value": "soil properties",
+                    "span": [
+                        117,
+                        132
+                    ]
+                }
+            },
+            {
+                "soilTexture": {
+                    "value": "soil cores",
+                    "span": [
+                        155,
+                        165
+                    ]
+                }
+            },
+            {
+                "soilTexture": {
+                    "value": "soil profile",
+                    "span": [
+                        231,
+                        241
+                    ]
+                }
+            },
+            {
+                "soilTexture": {
+                    "value": "soil monitoring",
+                    "span": [
+                        67,
+                        84
+                    ]
+                }
+            },
+            {
+                "soilTexture": {
+                    "value": "soil depth",
+                    "span": [
+                        169,
+                        179
+                    ]
+                }
+            },
+            {
+                "soilTexture": {
+                    "value": "soil bulk density",
+                    "span": [
+                        181,
+                        202
+                    ]
+                }
+            },
+            {
+                "soilTexture": {
+                    "value": "soil pH",
+                    "span": [
+                        206,
+                        212
+                    ]
+                }
+            },
+            {
+                "soilTexture": {
+                    "value": "soil organic carbon",
+                    "span": [
+                        34,
+                        46
+                    ]
+                }
+            },
+            {
+                "soilTexture": {
+                    "value": "soil available nitrogen",
+                    "span": [
+                        213,
+                        233
+                    ]
+                }
+            }
+    ],
+    "Location": [
+        {
+            "country": {
+                "value": "Germany",
+                "span": [
+                    102,
+                    110
+                ]
+            }
+        },
+        {
+            "latitude": {
+                "value": "xx.xxxxx xx.xxxxx",
+                "span": [
+                    164,
+                    184
+                ]
+            }
+        }
+    ],
+    "Time Statement": []
+}
+```

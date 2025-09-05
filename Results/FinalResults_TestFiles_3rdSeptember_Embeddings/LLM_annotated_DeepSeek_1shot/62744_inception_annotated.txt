@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892273-lEmOAm73AkeTmOwrVrax",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892273,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"rye\", \"span\": [60, 63]}},\n    {\"cropSpecies\": {\"value\": \"Secale cereale L.\", \"span\": [65, 81]}},\n    {\"cropSpecies\": {\"value\": \"rye\", \"span\": [155, 158]}},\n    {\"cropSpecies\": {\"value\": \"rye\", \"span\": [1033, 1036]}},\n    {\"cropSpecies\": {\"value\": \"rye\", \"span\": [1506, 1509]}},\n    {\"cropSpecies\": {\"value\": \"cereals\", \"span\": [1528, 1535]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Northern Europe\", \"span\": [120, 135]}},\n    {\"country\": {\"value\": \"German\", \"span\": [473, 479]}}\n  ],\n  \"Time Statement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2217,
+    "completion_tokens": 223,
+    "total_tokens": 2440,
+    "prompt_tokens_details": null
+  }
+}

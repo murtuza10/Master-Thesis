@@ -1,0 +1,29 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "winter wheat", "span": [191, 201 ]}},
+    {"cropSpecies": { "value": "winter barley", "span": [203, 215 ]}},
+    {"cropSpecies": { "value": "sugar beet", "span": [217, 224 ]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "mineral nutrients", "span": [49, 62 ]}},
+    {"soilReferenceGroup": { "value": "humus", "span": [64, 69 ]}},
+    {"soilReferenceGroup": { "value": "soil fertility", "span": [88, 101 ]}},
+    {"soilReferenceGroup": { "value": "bacterial bulk soil community", "span": [265, 281 ]}},
+    {"soilReferenceGroup": { "value": "bacterial interaction networks", "span": [414, 432 ]}}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [26, 33 ]}},
+    {"region": { "value": "LUFA Speyer", "span": [115, 124 ]}},
+    {"city": { "value": "Speyer", "span": [120, 125 ]}},
+    {"country": { "value": "Germany", "span": [251, 258 ]}},
+    {"country": { "value": "Germany", "span": [321, 328 ]}},
+    {"country": { "value": "Germany", "span": [480, 487 ]}},
+    {"country": { "value": "Germany", "span": [511, 518 ]}}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1984", "span": [173, 177 ]}},
+    {"duration": { "value": "four sampling seasons", "span": [331, 344 ]}}
+  ]
+}
+```

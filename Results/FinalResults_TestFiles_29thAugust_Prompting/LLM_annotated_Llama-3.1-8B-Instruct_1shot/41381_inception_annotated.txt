@@ -1,0 +1,46 @@
+### Output JSON Structure ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [54, 72]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [133, 151]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [341, 359]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [441, 459]}},
+    {"cropSpecies": {"value": "grape", "span": [186, 191]}},
+    {"cropSpecies": {"value": "fruits", "span": [104, 109]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": {"value": "southwest Germany", "span": [14, 28]}},
+    {"region": {"value": "Germany", "span": [32, 39]}},
+    {"city": {"value": "Dossenheim", "span": [244, 251]}},
+    {"city": {"value": "Siebeldingen", "span": [256, 263]}},
+    {"city": {"value": "Darmstadt", "span": [278, 285]}},
+    {"country": {"value": "Germany", "span": [32, 39]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2011", "span": [113, 117]}},
+    {"endTime": {"value": "2018", "span": [233, 237]}},
+    {"duration": {"value": "7 years", "span": [10, 17]}}
+  ]
+}
+```
+
+### Notes on the Output JSON Structure ###
+
+*   In the "Crops" category, the following crop species were identified:
+    *   "Drosophila suzukii" (Spotted wing drosophila)
+    *   "grape"
+    *   "fruits"
+*   In the "Soil" category, no soil-related entities were found.
+*   In the "Location" category, the following locations were identified:
+    *   "southwest Germany"
+    *   "Germany"
+    *   "Dossenheim"
+    *   "Siebeldingen"
+    *   "Darmstadt"
+*   In the "Time Statement" category, the following time-related entities were identified:
+    *   "2011" (start year)
+    *   "2018" (end year)
+    *   "7 years" (duration)

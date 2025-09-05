@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756918074-IW6g4kTHAzwPAhyFElvY",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756918074,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [243, 249] }},\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [456, 462] }},\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [1222, 1228] }},\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [1578, 1584] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2017\", \"span\": [1057, 1061] }},\n    {\"startTime\": { \"value\": \"2018\", \"span\": [1065, 1069] }},\n    {\"startTime\": { \"value\": \"30.8.2017\", \"span\": [1626, 1635] }},\n    {\"startTime\": { \"value\": \"6.9.2017\", \"span\": [1640, 1648] }},\n    {\"endTime\": { \"value\": \"20.9.2017\", \"span\": [1665, 1674] }},\n    {\"endTime\": { \"value\": \"25.9.2017\", \"span\": [1679, 1688] }},\n    {\"startTime\": { \"value\": \"24.8.2018\", \"span\": [1883, 1892] }},\n    {\"startTime\": { \"value\": \"31.8.2018\", \"span\": [1897, 1906] }},\n    {\"endTime\": { \"value\": \"13.9.2018\", \"span\": [1933, 1942] }},\n    {\"endTime\": { \"value\": \"20.9.2018\", \"span\": [1947, 1956] }},\n    {\"startTime\": { \"value\": \"29.8.2018\", \"span\": [2072, 2081] }},\n    {\"startTime\": { \"value\": \"4.9.2018\", \"span\": [2086, 2094] }},\n    {\"endTime\": { \"value\": \"12.9.2018\", \"span\": [2171, 2180] }},\n    {\"endTime\": { \"value\": \"29.9.2018\", \"span\": [2185, 2194] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 2854,
+    "completion_tokens": 550,
+    "total_tokens": 3404
+  }
+}

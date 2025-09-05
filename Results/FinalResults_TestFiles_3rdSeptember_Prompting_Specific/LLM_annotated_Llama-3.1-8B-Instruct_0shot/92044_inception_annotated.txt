@@ -1,0 +1,136 @@
+### Code and Output ###
+```python
+import json
+import re
+from collections import defaultdict
+
+def extract_entities(text):
+    # Initialize entity lists
+    crops = defaultdict(list)
+    soil = defaultdict(list)
+    location = defaultdict(list)
+    time = defaultdict(list)
+
+    # Crops
+    crop_species = ['barley','maize', 'oats', 'potatoes', 'rape', 'rye','sugarbeet', 'triticale', 'wheat']
+    for species in crop_species:
+        pattern = r'\b' + species + r'\b'
+        matches = re.findall(pattern, text, re.IGNORECASE)
+        for match in matches:
+            crops['cropSpecies'].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+
+    crop_varieties = ['spring barley', 'winter barley', 'grain maize','silage maize', 'winter wheat']
+    for variety in crop_varieties:
+        pattern = r'\b' + variety + r'\b'
+        matches = re.findall(pattern, text, re.IGNORECASE)
+        for match in matches:
+            crops['cropVariety'].append({"value": re.sub(r'\b(winter|spring)\b', '', match, flags=re.IGNORECASE), "span": [text.find(match), text.find(match) + len(match)]})
+
+    # Soil
+    soil_patterns = [
+        r'\b(average|total)\b',
+        r'\b hectares\b',
+        r'\bland\b',
+        r'\bkm2\b',
+        r'\bPH\b',
+        r'\bcarbon\b',
+        r'\bnitrogen\b',
+        r'\btexture\b',
+        r'\breference group\b',
+        r'\bdepth\b',
+        r'\bdensity\b'
+    ]
+    for pattern in soil_patterns:
+        matches = re.findall(pattern, text, re.IGNORECASE)
+        for match in matches:
+            if match.lower() == 'ph':
+                soil['soilPH'].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+            elif match.lower() == 'carbon':
+                soil['soilOrganicCarbon'].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+            elif match.lower() == 'nitrogen':
+                soil['soilAvailableNitrogen'].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+            elif match.lower() == 'depth':
+                soil['soilDepth'].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+            elif match.lower() == 'density':
+                soil['soilBulkDensity'].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+            elif match.lower() == 'texture':
+                soil['soilTexture'].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+            elif match.lower() =='reference group':
+                soil['soilReferenceGroup'].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+            elif match.lower() == 'land':
+                soil['soilReferenceGroup'].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+
+    # Location
+    location_patterns = [
+        r'\bGermany\b',
+        r'\bdistricts\b',
+        r'\bkm2\b',
+        r'\b(90|9)\b'
+    ]
+    for pattern in location_patterns:
+        matches = re.findall(pattern, text, re.IGNORECASE)
+        for match in matches:
+            if match.lower() == 'germany':
+                location['country'].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+            elif match.lower() == 'districts':
+                location['region'].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+            elif match.lower() == 'km2':
+                location['region'].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+            elif match == '90':
+                location['city'].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+
+    # Time
+    time_patterns = [
+        r'\b(1979|2021)\b',
+        r'\b(80)\b'
+    ]
+    for pattern in time_patterns:
+        matches = re.findall(pattern, text, re.IGNORECASE)
+        for match in matches:
+            if match.isdigit():
+                if int(match) > 0 and int(match) < 100:
+                    time['duration'].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+                else:
+                    if int(match) == 2021:
+                        time['endTime'].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+                    else:
+                        time['startTime'].append({"value": match, "span": [text.find(match), text.find(match) + len(match)]})
+
+    # Format output
+    output = {
+        "Crops": list(crops.values()),
+        "Soil": list(soil.values()),
+        "Location": list(location.values()),
+        "Time Statement": list(time.values())
+    }
+
+    return output
+
+text = """
+Crop yields and area in Germany from 1979 to 2021 at a harmonized district-level
+
+Abstract:
+In this publication we provide a dataset with crop yield and area for Germany from 1979 to 2021. The data are spatially resolved to 397 districts with an average size of 900 km2 and include the crops spring barley, winter barley, grain maize, silage maize, oats, potatoes, winter rape, rye, sugarbeet, triticale and winter wheat. The crop-yield data cover on average about 9.5 million hectares per year and 80% of Germany’s total arable land. The final dataset contains 214,820 yield and area data points. These were obtained by collecting and digitizing crop data from multiple statistical sources and transforming the data to match the district boundaries in 2020. A comprehensive description and validation of the dataset is published in Scientific Data (https://doi.org/10.1038/s41597-024-02951-8). We therefore recommend that you also refer the Scientific Data article when using the dataset.
+"""
+
+output = extract_entities(text)
+print(json.dumps(output, indent=4))
+```
+
+### Output JSON ###
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "barley",
+                "span": [146, 152]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "maize",
+                "span": [164, 169]
+            }
+        },
+       

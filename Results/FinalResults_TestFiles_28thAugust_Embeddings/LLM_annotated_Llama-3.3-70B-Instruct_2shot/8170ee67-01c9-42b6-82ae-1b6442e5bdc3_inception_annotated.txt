@@ -1,0 +1,41 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [31, 36}}},
+    {"cropSpecies": {"value": "barley", "span": [191, 196}}},
+    {"cropSpecies": {"value": "oat", "span": [444, 448}}},
+    {"cropSpecies": {"value": "wheat", "span": [538, 543}}},
+    {"cropSpecies": {"value": "lupine", "span": [548, 554}}},
+    {"cropSpecies": {"value": "rye", "span": [559, 563}}},
+    {"cropSpecies": {"value": "barley", "span": [630, 635}}},
+    {"cropVariety": {"value": "OTTO", "span": [696, 700]}},
+    {"cropSpecies": {"value": "oilseed rape", "span": [526, 539]}},
+    {"cropSpecies": {"value": "winter barley", "span": [14, 25]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [543, 554]}},
+    {"cropSpecies": {"value": "winter rye", "span": [559, 568]}},
+    {"cropSpecies": {"value": "winter oilseed rape", "span": [526, 543]}}
+  ],
+  "Soil": [
+    {"soilDepth": {"value": "25 cm", "span": [459, 464}}},
+    {"soilDepth": {"value": "0-30 cm", "span": [513, 521}}},
+    {"soilPH": {"value": "", "span": []}},
+    {"soilOrganicCarbon": {"value": "", "span": []}},
+    {"soilAvailableNitrogen": {"value": "", "span": []}},
+    {"soilBulkDensity": {"value": "", "span": []}},
+    {"soilTexture": {"value": "", "span": []}},
+    {"soilReferenceGroup": {"value": "", "span": []}}
+  ],
+  "Location": [
+    {"city": {"value": "Braunschweig", "span": [20, 31]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1985", "span": [373, 378}}},
+    {"endTime": {"value": "2008", "span": [383, 388}}},
+    {"startTime": {"value": "2013", "span": [405, 410}}},
+    {"startTime": {"value": "2013", "span": [567, 572}}},
+    {"startTime": {"value": "2014", "span": [36, 41}}},
+    {"startTime": {"value": "2014", "span": [196, 201]}},
+    {"duration": {"value": "", "span": []}}
+  ]
+}
+```

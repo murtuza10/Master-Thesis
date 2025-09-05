@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756907241-cWCc5N9tFuhkrGZC6iDs",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756907245,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"region\": {\"value\": \"Lower Saxony\", \"span\": [396, 409]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [411, 418]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2001\", \"span\": [422, 426]}},\n    {\"endTime\": {\"value\": \"2003\", \"span\": [431, 435]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4819,
+    "completion_tokens": 119,
+    "total_tokens": 4938,
+    "prompt_tokens_details": null
+  }
+}

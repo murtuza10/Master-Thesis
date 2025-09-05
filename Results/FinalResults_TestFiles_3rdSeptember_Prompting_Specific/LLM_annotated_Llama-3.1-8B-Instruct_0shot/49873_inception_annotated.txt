@@ -1,0 +1,71 @@
+### Code Implementation in Python
+```python
+import re
+from datetime import datetime
+
+def extract_entities(text):
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Crops
+    crop_species = re.findall(r'\b(wheat|corn|soybean|maize)\b', text, re.IGNORECASE)
+    for species in crop_species:
+        entities["Crops"].append({"cropSpecies": {"value": species, "span": [text.find(species), text.find(species) + len(species)]}})
+
+    # Soil
+    soil_texture = re.findall(r'\b(sand|clay|loam)\b', text, re.IGNORECASE)
+    soil_reference_group = re.findall(r'\b(BW|BW-)\b', text, re.IGNORECASE)
+    soil_depth = re.findall(r'\b(\d+) cm\b', text)
+    soil_bulk_density = re.findall(r'\b(\d+) g/cm³\b', text)
+    soil_ph = re.findall(r'\b(\d+) pH\b', text)
+    soil_organic_carbon = re.findall(r'\b(\d+) %\b', text)
+    soil_available_nitrogen = re.findall(r'\b(\d+) kg/ha\b', text)
+    for texture in soil_texture:
+        entities["Soil"].append({"soilTexture": {"value": texture, "span": [text.find(texture), text.find(texture) + len(texture)]}})
+    for reference_group in soil_reference_group:
+        entities["Soil"].append({"soilReferenceGroup": {"value": reference_group, "span": [text.find(reference_group), text.find(reference_group) + len(reference_group)]}})
+    for depth in soil_depth:
+        entities["Soil"].append({"soilDepth": {"value": depth, "span": [text.find(depth), text.find(depth) + len(depth)]}})
+    for bulk_density in soil_bulk_density:
+        entities["Soil"].append({"soilBulkDensity": {"value": bulk_density, "span": [text.find(bulk_density), text.find(bulk_density) + len(bulk_density)]}})
+    for ph in soil_ph:
+        entities["Soil"].append({"soilPH": {"value": ph, "span": [text.find(ph), text.find(ph) + len(ph)]}})
+    for organic_carbon in soil_organic_carbon:
+        entities["Soil"].append({"soilOrganicCarbon": {"value": organic_carbon, "span": [text.find(organic_carbon), text.find(organic_carbon) + len(organic_carbon)]}})
+    for available_nitrogen in soil_available_nitrogen:
+        entities["Soil"].append({"soilAvailableNitrogen": {"value": available_nitrogen, "span": [text.find(available_nitrogen), text.find(available_nitrogen) + len(available_nitrogen)]}})
+
+    # Location
+    country = re.findall(r'\b(Deutschland)\b', text, re.IGNORECASE)
+    for country_value in country:
+        entities["Location"].append({"country": {"value": country_value, "span": [text.find(country_value), text.find(country_value) + len(country_value)]}})
+
+    # Time Statement
+    start_date = re.search(r'start date: (\d{4})', text)
+    if start_date:
+        entities["Time Statement"].append({"startTime": {"value": start_date.group(1), "span": [text.find(start_date.group(0)), text.find(start_date.group(0)) + len(start_date.group(0))]}})
+    end_date = re.search(r'end date: (\d{4})', text)
+    if end_date:
+        entities["Time Statement"].append({"endTime": {"value": end_date.group(1), "span": [text.find(end_date.group(0)), text.find(end_date.group(0)) + len(end_date.group(0))]}})
+    creation_date = re.search(r'Creation date: (\d{2}\.\d{2}\.\d{4})', text)
+    if creation_date:
+        creation_date = datetime.strptime(creation_date.group(1), '%d.%m.%Y')
+        entities["Time Statement"].append({"startTime": {"value": creation_date.strftime('%Y'), "span": [text.find(creation_date.strftime('%Y')), text.find(creation_date.strftime('%Y')) + len(creation_date.strftime('%Y'))]}})
+        entities["Time Statement"].append({"endTime": {"value": creation_date.strftime('%Y'), "span": [text.find(creation_date.strftime('%Y')), text.find(creation_date.strftime('%Y')) + len(creation_date.strftime('%Y'))]}})
+    duration = re.search(r'temporal coverage: start date: (\d{4}), end date: (\d{4})', text)
+    if duration:
+        start_year = int(duration.group(1))
+        end_year = int(duration.group(2))
+        entities["Time Statement"].append({"duration": {"value": str(end_year - start_year), "span": [text.find(str(end_year - start_year)), text.find(str(end_year - start_year)) + len(str(end_year - start_year))]} })
+
+    return entities
+
+text = """
+BWI 2012 Umweltdatenbank Bodenprofile
+
+Abstract:
+Ziel des Moduls Bodenprofile im Projekt WP-KS-KW (Waldproduktivität - Klimawandel - Kohlenstoffspeicherung) war es, für 26.450 Punkte der deutschen Bundeswaldinventur (BWI) Bodenleitprofile mit boden-physikalischen Grundlagendaten zu erstellen. Die Grundlage der Ableitung der Standorts- und Bodeninformationen bildeten die in den Bundesländern zur Verfügung stehenden Informationen aus der Standorts- und Bodenkartierung. Um den oft historisch gewachsenen Feinheiten der einzelnen Kartierungsverfahren gerecht zu werden, wurden Standorts- und Bodenkundler aus jedem Bundesland in das Projekt eingebunden. Für 26.450 Traktecken wurden Standorts- und Leitprofildaten nach einheitlichen Vorgaben erhoben und in der Datenbank zusammengeführt. Das Parameterspektrum umfasst im Wesentlichen: (1) Standortseinheit mit Bodentyp, Wasserhaushalts-/ Nährstoffansprache, Kalkung, (2) Leitprofil mit obligatorischen Horizontangaben zu Bodenart, Skelett, Trockenrohdichte (TRD), nutzbare Feldkapazität (nFK), (3) Leitprofil mit fakultativen Horizontangaben zu Basensättigung, organischer Kohlenstoffgehalt (Corg), Entkalkungstiefe, (4) Quellen- und Qualitätsschlüssel zu allen Parametern. Die Standortseinheit liegt für 25.069 (95 %) Traktecken vor, das Leitprofil für 24

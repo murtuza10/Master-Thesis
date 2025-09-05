@@ -1,0 +1,85 @@
+### Code ###
+```python
+import re
+from typing import List, Dict
+
+def extract_entities(text: str) -> Dict:
+    # Regular expression patterns for entity extraction
+    patterns = {
+        "Crops": [
+            r"spring barley",
+            r"winter barley",
+            r"grain maize",
+            r"silage maize",
+            r"oats",
+            r"potatoes",
+            r"winter rape",
+            r"rye",
+            r"sugarbeet",
+            r"triticale",
+            r"winter wheat"
+        ],
+        "Location": [
+            r"Germany"
+        ],
+        "Time Statement": [
+            r"\b\d{4}\b"  # 4-digit year
+        ]
+    }
+
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    for category, regex_patterns in patterns.items():
+        for i, pattern in enumerate(regex_patterns):
+            matches = re.finditer(pattern, text)
+            for match in matches:
+                value = match.group()
+                start_index = match.start()
+                end_index = match.end()
+                entities[category].append({f"{category}": {"value": value, "span": [start_index, end_index]}})
+
+    return entities
+
+text = """
+Title: 
+Crop yields and area in Germany from 1979 to 2021 at a harmonized district-level
+
+Abstract:
+In this publication we provide a dataset with crop yield and area for Germany from 1979 to 2021. The data are spatially resolved to 397 districts with an average size of 900 km2 and include the crops spring barley, winter barley, grain maize, silage maize, oats, potatoes, winter rape, rye, sugarbeet, triticale and winter wheat. The crop-yield data cover on average about 9.5 million hectares per year and 80% of Germany’s total arable land. The final dataset contains 214,820 yield and area data points. These were obtained by collecting and digitizing crop data from multiple statistical sources and transforming the data to match the district boundaries in 2020. A comprehensive description and validation of the dataset is published in Scientific Data (https://doi.org/10.1038/s41597-024-02951-8). We therefore recommend that you also refer the Scientific Data article when using the dataset.
+"""
+
+result = extract_entities(text)
+print(result)
+```
+
+### Output ###
+```json
+{
+  "Crops": [
+    {"Crops": {"value": "spring barley", "span": [105, 117]}},
+    {"Crops": {"value": "winter barley", "span": [118, 129]}},
+    {"Crops": {"value": "grain maize", "span": [130, 140]}},
+    {"Crops": {"value": "silage maize", "span": [141, 152]}},
+    {"Crops": {"value": "oats", "span": [153, 156]}},
+    {"Crops": {"value": "potatoes", "span": [157, 164]}},
+    {"Crops": {"value": "winter rape", "span": [165, 174]}},
+    {"Crops": {"value": "rye", "span": [175, 178]}},
+    {"Crops": {"value": "sugarbeet", "span": [179, 187]}},
+    {"Crops": {"value": "triticale", "span": [188, 196]}},
+    {"Crops": {"value": "winter wheat", "span": [197, 206]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"Location": {"value": "Germany", "span": [26, 34]}}
+  ],
+  "Time Statement": [
+    {"Time Statement": {"value": "1979", "span": [82, 86]}},
+    {"Time Statement": {"value": "2021", "span": [90, 94]}}
+  ]
+}
+```

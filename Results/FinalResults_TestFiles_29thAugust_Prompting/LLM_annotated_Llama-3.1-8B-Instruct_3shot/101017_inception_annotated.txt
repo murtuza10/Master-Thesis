@@ -1,0 +1,34 @@
+### Entities Extraction ###
+### Crops ###
+- Möhre (Beet)
+- Salat (Lettuce)
+- Apfel (Apple)
+- Erdbeere (Strawberry)
+- Erdbeere (Strawberry)
+- Himbeere (Raspberry)
+
+### Soil ###
+- No relevant information found
+
+### Location ###
+- No relevant information found
+
+### Time Statement ###
+- No relevant information found
+
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Möhre", "span": [44, 49]}},
+    {"cropSpecies": {"value": "Salat", "span": [53, 58]}},
+    {"cropSpecies": {"value": "Apfel", "span": [60, 65]}},
+    {"cropSpecies": {"value": "Erdbeere", "span": [67, 76]}},
+    {"cropSpecies": {"value": "Erdbeere", "span": [86, 95]}},
+    {"cropSpecies": {"value": "Himbeere", "span": [104, 113]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```

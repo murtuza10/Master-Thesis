@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756918292-3wuHA0Hp0vZ6bBcoG1Sz",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756918292,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Picea abies\", \"span\": [28, 39] }},\n    {\"cropSpecies\": { \"value\": \"Norway spruce\", \"span\": [94, 108] }},\n    {\"cropSpecies\": { \"value\": \"Picea abies\", \"span\": [110, 121] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [165, 172] }},\n    {\"region\": { \"value\": \"Western Germany\", \"span\": [142, 157] }},\n    {\"country\": { \"value\": \"Europe\", \"span\": [322, 328] }}\n  ],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"50 years\", \"span\": [45, 53] }},\n    {\"duration\": { \"value\": \"51 years\", \"span\": [124, 132] }},\n    {\"startTime\": { \"value\": \"1964\", \"span\": [245, 249] }},\n    {\"endTime\": { \"value\": \"68\", \"span\": [250, 252] }},\n    {\"duration\": { \"value\": \"7\", \"span\": [421, 422] }},\n    {\"duration\": { \"value\": \"10\", \"span\": [424, 426] }},\n    {\"duration\": { \"value\": \"13\", \"span\": [428, 430] }},\n    {\"duration\": { \"value\": \"16\", \"span\": [432, 434] }},\n    {\"duration\": { \"value\": \"16\", \"span\": [455, 457] }},\n    {\"duration\": { \"value\": \"21\", \"span\": [459, 461] }},\n    {\"duration\": { \"value\": \"29\", \"span\": [463, 465] }},\n    {\"duration\": { \"value\": \"39\", \"span\": [467, 469] }},\n    {\"duration\": { \"value\": \"51\", \"span\": [471, 473] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4045,
+    "completion_tokens": 472,
+    "total_tokens": 4517
+  }
+}

@@ -1,0 +1,18 @@
+### Output JSON Structure ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [143, 149]}},
+    {"cropSpecies": {"value": "wheat", "span": [206, 211]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Explanation ###
+
+- Two crop species were identified in the text: "barley" and "wheat".
+- No information about soil, location, or time was found in the text.

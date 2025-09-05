@@ -1,0 +1,35 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "spring barley", "span": [568, 576] }},
+    {"cropSpecies": { "value": "spring barley", "span": [667, 675] }},
+    {"cropSpecies": { "value": "serradella", "span": [635, 643] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "pH", "span": [156, 158] }},
+    {"Soil": { "value": "pH", "span": [473, 475] }},
+    {"Soil": { "value": "pH", "span": [1062, 1064] }},
+    {"Soil": { "value": "redox potential", "span": [175, 185] }},
+    {"Soil": { "value": "redox potential", "span": [491, 501] }},
+    {"Soil": { "value": "redox potential", "span": [1095, 1105] }},
+    {"Soil": { "value": "organic C", "span": [1213, 1222] }},
+    {"Soil": { "value": "DOC", "span": [1231, 1234] }},
+    {"Soil": { "value": "PO43- -P", "span": [1193, 1202] }},
+    {"Soil": { "value": "NH4+ -N", "span": [1204, 1212] }},
+    {"Soil": { "value": "NO2- -N", "span": [1214, 1222] }},
+    {"Soil": { "value": "NO3- -N", "span": [1224, 1232] }}
+  ],
+  "Location": [
+    {"region": { "value": "Northern Germany", "span": [308, 320] }},
+    {"city": { "value": "Rostock", "span": [26, 33] }},
+    {"city": { "value": "Rostock", "span": [165, 172] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2020", "span": [183, 187] }},
+    {"startTime": { "value": "2018", "span": [746, 750] }},
+    {"startTime": { "value": "2019", "span": [779, 783] }},
+    {"startTime": { "value": "2020", "span": [808, 812] }},
+    {"duration": { "value": "3.5 months", "span": [1150, 1160] }}
+  ]
+}
+```

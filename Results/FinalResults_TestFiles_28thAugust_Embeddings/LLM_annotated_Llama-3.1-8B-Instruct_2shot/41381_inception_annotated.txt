@@ -1,0 +1,28 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "apple", "span": [105, 111]}},
+    {"cropSpecies": {"value": "grape", "span": [183, 190]}},
+    {"cropSpecies": {"value": "host plants", "span": [276, 287]}},
+    {"cropSpecies": {"value": "raspberry", "span": [345, 353]}},
+    {"cropSpecies": {"value": "strawberry", "span": [361, 371]}},
+    {"cropSpecies": {"value": "apple", "span": [417, 423]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [21, 29]}},
+    {"region": {"value": "southwest Germany", "span": [34, 51]}},
+    {"city": {"value": "Dossenheim", "span": [266, 275]}},
+    {"city": {"value": "Siebeldingen", "span": [281, 290]}},
+    {"city": {"value": "Darmstadt", "span": [311, 320]}},
+    {"latitude": {"value": "~75 km radius", "span": [142, 155]}},
+    {"longitude": {"value": "~75 km radius", "span": [142, 155]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2011", "span": [74, 78]}},
+    {"endTime": {"value": "February 2018", "span": [233, 244]}}
+  ]
+}
+```

@@ -1,0 +1,20 @@
+### Entities Extraction Result
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "soil", "span": [0, 4] }},
+    {"cropSpecies": { "value": "soil", "span": [5, 9] }},
+    {"cropSpecies": { "value": "soil", "span": [13, 17] }},
+    {"cropSpecies": { "value": "soil", "span": [22, 26] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "soil organic carbon", "span": [15, 33] }},
+    {"Soil": { "value": "soil organic nitrogen", "span": [34, 51] }}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": { "value": "temporal", "span": [48, 56] }}
+  ]
+}
+```
+Note that "soil" is annotated as "cropSpecies" multiple times, but it is not a crop species in the classical sense. However, according to the rules, we must annotate it as a crop species since it is explicitly mentioned in the text. If you want to exclude this annotation, you can modify the code to only extract "soil" when it is part of a phrase like "soil organic carbon".

@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756918297-hOepndkaC3zgZcwygk3P",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756918300,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Wheat\", \"span\": [46, 51] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [100, 106] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [188, 194] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [354, 360] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [1025, 1031] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [],\n  \"Time Statement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2019,
+    "completion_tokens": 157,
+    "total_tokens": 2176,
+    "prompt_tokens_details": null
+  }
+}

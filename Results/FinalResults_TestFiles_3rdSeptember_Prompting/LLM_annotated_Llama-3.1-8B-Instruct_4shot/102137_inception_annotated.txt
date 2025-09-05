@@ -1,0 +1,27 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [null, null]}},  // Assuming wheat is the crop, but it's not explicitly mentioned in the text
+    {"cropSpecies": {"value": "grass", "span": [null, null]}},  // Assuming grass is the crop, but it's not explicitly mentioned in the text
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "temperate agricultural soils", "span": [104, 126]}},
+    {"soilReferenceGroup": {"value": "soil cores", "span": [134, 144]}},
+    {"soilReferenceGroup": {"value": "soil profiles", "span": [163, 176]}},
+    {"soilDepth": {"value": "16", "span": [57, 61]}},
+    {"soilDepth": {"value": "6", "span": [175, 179]}},
+    {"soilOrganicCarbon": {"value": "organic carbon", "span": [99, 115]}},
+    {"soilOrganicCarbon": {"value": "organic carbon", "span": [137, 153]}},
+    {"soilAvailableNitrogen": {"value": "nitrogen", "span": [null, null]}},  // Not explicitly mentioned in the text
+    {"soilTexture": {"value": "null", "span": [null, null]}},  // Not explicitly mentioned in the text
+    {"soilBulkDensity": {"value": "null", "span": [null, null]}},  // Not explicitly mentioned in the text
+    {"soilPH": {"value": "null", "span": [null, null]}},  // Not explicitly mentioned in the text
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [94, 101]}},
+    {"region": {"value": "Germany", "span": [94, 101]}},
+  ],
+  "Time Statement": []
+}
+```

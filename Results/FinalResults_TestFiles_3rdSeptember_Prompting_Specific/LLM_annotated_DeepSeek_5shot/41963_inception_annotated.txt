@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756918189-44TrKN2XPHsdmfsQ1cdn",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756918189,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"German\", \"span\": [180, 186]}},\n    {\"latitude\": {\"value\": \"5,79922100\", \"span\": [1140, 1151]}},\n    {\"longitude\": {\"value\": \"15,08954000\", \"span\": [1177, 1189]}},\n    {\"latitude\": {\"value\": \"47,15766000\", \"span\": [1213, 1225]}},\n    {\"longitude\": {\"value\": \"55,08484000\", \"span\": [1252, 1264]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"1961\", \"span\": [136, 140]}},\n    {\"endTime\": {\"value\": \"2100\", \"span\": [143, 147]}},\n    {\"startTime\": {\"value\": \"1961\", \"span\": [229, 233]}},\n    {\"endTime\": {\"value\": \"2013\", \"span\": [236, 240]}},\n    {\"startTime\": {\"value\": \"2011\", \"span\": [472, 475]}},\n    {\"endTime\": {\"value\": \"2050\", \"span\": [478, 482]}},\n    {\"startTime\": {\"value\": \"2011\", \"span\": [493, 495]}},\n    {\"endTime\": {\"value\": \"2100\", \"span\": [498, 502]}},\n    {\"startTime\": {\"value\": \"01.01.1961\", \"span\": [1100, 1110]}},\n    {\"endTime\": {\"value\": \"31.12.2099\", \"span\": [1114, 1125]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4883,
+    "completion_tokens": 391,
+    "total_tokens": 5274
+  }
+}

@@ -1,0 +1,18 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Winter wheat", "span": [467, 477]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "Soil", "span": [18, 22]}},
+    {"soilReferenceGroup": {"value": "Soil", "span": [141, 145]}},
+    {"soilReferenceGroup": {"value": "Boden", "span": [494, 498]}},
+    {"soilProperties": {"value": "soil properties", "span": [78, 88]}},
+    {"soilProperties": {"value": "soil water stable aggregation", "span": [151, 169]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+``` 
+
+Please note that `"soilProperties"` is used instead of any of the predefined soil categories since the provided text mentions "soil properties" but does not specify further details about soil texture, bulk density, pH, organic carbon, or available nitrogen. If `"soilProperties"` is not acceptable and you need a specific category, please let me know.

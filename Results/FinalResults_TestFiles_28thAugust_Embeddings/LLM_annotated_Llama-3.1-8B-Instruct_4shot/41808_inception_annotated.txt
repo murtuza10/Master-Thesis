@@ -1,0 +1,21 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Apium graveolens L. ssp. graveolens", "span": [56, 81]}},
+    {"cropSpecies": {"value": "wild celery", "span": [266, 278]}},
+    {"cropSpecies": {"value": "Apium graveolens", "span": [313, 326]}},
+    {"cropSpecies": {"value": "Apium graveolens", "span": [369, 382]}},
+    {"cropSpecies": {"value": "Apium graveolens", "span": [415, 428]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [184, 191]}},
+    {"city": {"value": "Quedlinburg", "span": [198, 208]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2016", "span": [231, 235]}},
+    {"endTime": {"value": "2017-2018", "span": [272, 283]}}
+  ]
+}
+```

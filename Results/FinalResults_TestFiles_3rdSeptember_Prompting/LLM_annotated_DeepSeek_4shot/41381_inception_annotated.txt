@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756906766-k0OiCMZlRfNnOA46iVvJ",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756906766,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"soft-skinned fruits\", \"span\": [63, 82] }},\n    {\"cropSpecies\": { \"value\": \"fruit-crops\", \"span\": [174, 185] }},\n    {\"cropVariety\": { \"value\": \"grape varieties\", \"span\": [190, 205] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"region\": { \"value\": \"southwest Germany\", \"span\": [46, 63] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [332, 339] }},\n    {\"country\": { \"value\": \"Europe\", \"span\": [610, 616] }},\n    {\"city\": { \"value\": \"Dossenheim\", \"span\": [777, 787] }},\n    {\"city\": { \"value\": \"Siebeldingen\", \"span\": [792, 804] }},\n    {\"city\": { \"value\": \"Darmstadt\", \"span\": [851, 860] }},\n    {\"region\": { \"value\": \"southwest Germany\", \"span\": [900, 917] }},\n    {\"latitude\": { \"value\": \"lat\", \"span\": [1045, 1048] }},\n    {\"longitude\": { \"value\": \"lon\", \"span\": [1053, 1056] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2011\", \"span\": [300, 305] }},\n    {\"endTime\": { \"value\": \"late summer 2011\", \"span\": [366, 382] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [722, 726] }},\n    {\"endTime\": { \"value\": \"February 2018\", \"span\": [730, 743] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [824, 828] }},\n    {\"endTime\": { \"value\": \"2018\", \"span\": [832, 836] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4545,
+    "completion_tokens": 477,
+    "total_tokens": 5022
+  }
+}

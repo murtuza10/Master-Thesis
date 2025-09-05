@@ -1,0 +1,39 @@
+### Filled JSON Structure ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "cropland", "span": [106, 113]}}
+  ],
+  "Soil": [
+    {"soilTexture": {"value": "Lehm", "span": [123, 128]}},
+    {"soilTexture": {"value": "Ton", "span": [129, 132]}},
+    {"soilReferenceGroup": {"value": "konservierend", "span": [145, 157]}},
+    {"soilReferenceGroup": {"value": "konventionell", "span": [160, 173]}},
+    {"soilDepth": {}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {"value": "pH Wert", "span": [191, 197]}},
+    {"soilOrganicCarbon": {"value": "organischen Kohlenstoff", "span": [198, 215]}},
+    {"soilAvailableNitrogen": {"value": "Gesamt-Stickstoff", "span": [216, 227]}}
+  ],
+  "Location": [
+    {"city": {"value": "Hildesheim", "span": [33, 41]}},
+    {"country": {}},
+    {"latitude": {}},
+    {"longitude": {}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "14-tägig", "span": [55, 63]}},
+    {"endTime": {"value": "2 Jahre", "span": [64, 69]}},
+    {"duration": {"value": "14-tägig", "span": [55, 63]}}
+  ]
+}
+```
+
+### Explanation ###
+The input text is in German and contains various information about a research project on the temporal dynamics of cropland microbiomes. The JSON structure is filled with the relevant information as follows:
+
+*   "Crops": Only one mention of "cropland" is found, which is classified as a crop species.
+*   "Soil": Several mentions of soil texture, reference groups, pH value, organic carbon, and available nitrogen are found. Note that some of these values are not explicitly mentioned, so they are left empty.
+*   "Location": Only the city "Hildesheim" is mentioned, but the country, latitude, and longitude are not mentioned explicitly.
+*   "Time Statement": The time period of 14 days and 2 years are mentioned, along with the duration of 14 days.

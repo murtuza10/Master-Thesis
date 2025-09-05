@@ -1,0 +1,45 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "spring barley", "span": [459, 470] }},
+    {"cropSpecies": { "value": "spring barley", "span": [540, 551] }},
+    {"cropVariety": { "value": "serradella", "span": [501, 510] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "Boden", "span": [674, 679] }},
+    {"soilPH": { "value": "pH-Wert", "span": [731, 737] }},
+    {"soilOrganicCarbon": { "value": "Gelöster organischer Kohlenstoff", "span": [687, 712] }},
+    {"soilOrganicCarbon": { "value": "OC", "span": [317, 319] }},
+    {"soilOrganicCarbon": { "value": "DOC", "span": [644, 647] }},
+    {"soilOrganicCarbon": { "value": "Kohlenstoff", "span": [714, 725] }},
+    {"soilAvailableNitrogen": { "value": "Nitrat", "span": [728, 733] }},
+    {"soilAvailableNitrogen": { "value": "Nitrit", "span": [736, 741] }},
+    {"soilAvailableNitrogen": { "value": "NH4+-N", "span": [658, 664] }},
+    {"soilAvailableNitrogen": { "value": "NO2--N", "span": [667, 672] }},
+    {"soilAvailableNitrogen": { "value": "NO3--N", "span": [675, 680] }},
+    {"soilAvailableNitrogen": { "value": "Stickstoff", "span": [756, 765] }},
+    {"soilAvailableNitrogen": { "value": "TN", "span": [322, 324] }},
+    {"soilAvailableNitrogen": { "value": "PO43--P", "span": [651, 657] }},
+    {"soilAvailableNitrogen": { "value": "Phosphat", "span": [744, 751] }},
+    {"soilAvailableNitrogen": { "value": "Aluminium", "span": [749, 758] }},
+    {"soilAvailableNitrogen": { "value": "Calcium", "span": [759, 767] }},
+    {"soilAvailableNitrogen": { "value": "Eisen", "span": [768, 772] }},
+    {"soilAvailableNitrogen": { "value": "total Ca", "span": [345, 351] }},
+    {"soilAvailableNitrogen": { "value": "Fe", "span": [354, 356] }},
+    {"soilAvailableNitrogen": { "value": "Al", "span": [359, 361] }},
+    {"soilAvailableNitrogen": { "value": "Mn", "span": [364, 366] }},
+    {"soilAvailableNitrogen": { "value": "Ammonium", "span": [769, 779] }}
+  ],
+  "Location": [
+    {"city": { "value": "Rostock", "span": [7, 15] }},
+    {"region": { "value": "Northern Germany", "span": [143, 158] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2020", "span": [43, 47] }},
+    {"startTime": { "value": "2018", "span": [425, 429] }},
+    {"startTime": { "value": "2019", "span": [487, 491] }},
+    {"startTime": { "value": "2020", "span": [546, 550] }},
+    {"duration": { "value": "about 3.5 months", "span": [625, 641] }}
+  ]
+}
+```

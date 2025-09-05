@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756918079-OqRwMhK2wTIVgDS96hPI",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756918079,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [1038, 1044] }},\n    {\"cropSpecies\": { \"value\": \"serradella\", \"span\": [1075, 1085] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [1133, 1139] }}\n  ],\n  \"Soil\": [\n    {\"soilPH\": { \"value\": \"pH\", \"span\": [42, 44] }},\n    {\"soilPH\": { \"value\": \"pH\", \"span\": [112, 114] }},\n    {\"soilPH\": { \"value\": \"pH\", \"span\": [1388, 1390] }},\n    {\"soilPH\": { \"value\": \"pH-Wert\", \"span\": [1833, 1840] }}\n  ],\n  \"Location\": [\n    {\"city\": { \"value\": \"Rostock\", \"span\": [16, 23] }},\n    {\"city\": { \"value\": \"Rostock\", \"span\": [86, 93] }},\n    {\"region\": { \"value\": \"Northern Germany\", \"span\": [245, 261] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2020\", \"span\": [76, 80] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [146, 150] }},\n    {\"startTime\": { \"value\": \"2018\", \"span\": [981, 985] }},\n    {\"startTime\": { \"value\": \"2019\", \"span\": [1056, 1060] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [1111, 1115] }},\n    {\"endTime\": { \"value\": \"2020\", \"span\": [76, 80] }},\n    {\"endTime\": { \"value\": \"2020\", \"span\": [146, 150] }},\n    {\"endTime\": { \"value\": \"2020\", \"span\": [1111, 1115] }},\n    {\"duration\": { \"value\": \"3.5 months\", \"span\": [1685, 1695] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 2144,
+    "completion_tokens": 508,
+    "total_tokens": 2652
+  }
+}

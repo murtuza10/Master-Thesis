@@ -1,0 +1,26 @@
+{
+  "id": "gen-1756897735-17qlKN05RYBVEKH7eeJm",
+  "provider": "Phala",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756897735,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"Bodenprofile\", \"span\": [18, 30] }},\n    {\"Soil\": { \"value\": \"Bodenleitprofile\", \"span\": [104, 120] }},\n    {\"Soil\": { \"value\": \"boden-physikalischen Grundlagendaten\", \"span\": [124, 157] }},\n    {\"Soil\": { \"value\": \"Standorts- und Bodeninformationen\", \"span\": [181, 213] }},\n    {\"Soil\": { \"value\": \"Standorts- und Bodenkartierung\", \"span\": [234, 263] }},\n    {\"Soil\": { \"value\": \"Standorts- und Leitprofildaten\", \"span\": [416, 443] }},\n    {\"Soil\": { \"value\": \"Bodentyp\", \"span\": [528, 536] }},\n    {\"Soil\": { \"value\": \"Bodenart\", \"span\": [611, 619] }},\n    {\"Soil\": { \"value\": \"Skelett\", \"span\": [621, 628] }},\n    {\"Soil\": { \"value\": \"Trockenrohdichte\", \"span\": [630, 645] }},\n    {\"Soil\": { \"value\": \"nutzbare Feldkapazität\", \"span\": [648, 669] }},\n    {\"Soil\": { \"value\": \"Basensättigung\", \"span\": [715, 728] }},\n    {\"Soil\": { \"value\": \"organischer Kohlenstoffgehalt\", \"span\": [730, 757] }},\n    {\"Soil\": { \"value\": \"Entkalkungstiefe\", \"span\": [759, 774] }},\n    {\"Soil\": { \"value\": \"Standortseinheit\", \"span\": [843, 859] }},\n    {\"Soil\": { \"value\": \"Leitprofil\", \"span\": [875, 885] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"deutschen\", \"span\": [86, 94] }},\n    {\"region\": { \"value\": \"Bundesländern\", \"span\": [225, 238] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2012\", \"span\": [1053, 1057] }},\n    {\"endTime\": { \"value\": \"2012\", \"span\": [1069, 1073] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1361,
+    "completion_tokens": 559,
+    "total_tokens": 1920
+  }
+}

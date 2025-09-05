@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892295-x81WJv9PCVPWQKM8dOLr",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892295,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Betula pubescens Ehrh.\", \"span\": [243, 266] }},\n    {\"cropSpecies\": { \"value\": \"birch\", \"span\": [303, 308] }},\n    {\"cropSpecies\": { \"value\": \"Betula pubescens Ehrh.\", \"span\": [311, 334] }},\n    {\"cropSpecies\": { \"value\": \"birches\", \"span\": [1096, 1103] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"carbon\", \"span\": [162, 168] }},\n    {\"Soil\": { \"value\": \"C\", \"span\": [171, 172] }},\n    {\"Soil\": { \"value\": \"carbon\", \"span\": [489, 495] }},\n    {\"Soil\": { \"value\": \"C\", \"span\": [498, 499] }},\n    {\"Soil\": { \"value\": \"peat\", \"span\": [1196, 1200] }},\n    {\"Soil\": { \"value\": \"peat\", \"span\": [1263, 1267] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"one year\", \"span\": [708, 716] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4987,
+    "completion_tokens": 304,
+    "total_tokens": 5291,
+    "prompt_tokens_details": null
+  }
+}

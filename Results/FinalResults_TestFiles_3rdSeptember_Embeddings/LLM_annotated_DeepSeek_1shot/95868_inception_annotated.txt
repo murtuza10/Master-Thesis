@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892285-xiGt1oW3xG4bMWLIFxv0",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892286,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"Picea abies\", \"span\": [49, 60]}},\n    {\"cropSpecies\": {\"value\": \"Norway spruce\", \"span\": [101, 114]}},\n    {\"cropSpecies\": {\"value\": \"Picea abies\", \"span\": [116, 127]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [171, 178]}},\n    {\"country\": {\"value\": \"Western Germany\", \"span\": [188, 203]}},\n    {\"country\": {\"value\": \"Europe\", \"span\": [353, 359]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [521, 528]}}\n  ],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"50 years\", \"span\": [35, 43]}},\n    {\"duration\": {\"value\": \"51 years\", \"span\": [145, 152]}},\n    {\"startTime\": {\"value\": \"1964\", \"span\": [275, 279]}},\n    {\"endTime\": {\"value\": \"68\", \"span\": [280, 282]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1771,
+    "completion_tokens": 277,
+    "total_tokens": 2048,
+    "prompt_tokens_details": null
+  }
+}

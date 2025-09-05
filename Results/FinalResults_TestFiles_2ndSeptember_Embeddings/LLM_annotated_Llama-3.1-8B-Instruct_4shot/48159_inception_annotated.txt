@@ -1,0 +1,200 @@
+### Code to Extract Entities from Text and Create JSON Response
+```python
+import json
+import re
+
+def extract_entities(text):
+    # Initialize entity lists
+    crops = []
+    soil = []
+    location = []
+    time_statement = []
+
+    # Regular expressions to match entities
+    crop_pattern = r"\b(energy crops|anaerobic digestion of energy crops)\b"
+    soil_pattern = r"\b(agricultural soils)\b"
+    country_pattern = r"\b(Germany)\b"
+    region_pattern = r"\b(European Union|Germany|federal states)\b"
+    city_pattern = r"\b(\w+\s\w+)\b"  # Assuming city names are in the format "City Name"
+    start_time_pattern = r"\b(1990)\b"
+    end_time_pattern = r"\b(2017)\b"
+
+    # Find all matches for each pattern
+    crops_matches = re.findall(crop_pattern, text)
+    soil_matches = re.findall(soil_pattern, text)
+    country_matches = re.findall(country_pattern, text)
+    region_matches = re.findall(region_pattern, text)
+    city_matches = re.findall(city_pattern, text)
+    start_time_matches = re.findall(start_time_pattern, text)
+    end_time_matches = re.findall(end_time_pattern, text)
+
+    # Extract start and end indices for each match
+    for match in crops_matches:
+        start_idx = text.find(match)
+        end_idx = start_idx + len(match)
+        crops.append({"cropSpecies": {"value": match, "span": [start_idx, end_idx]}})
+
+    for match in soil_matches:
+        start_idx = text.find(match)
+        end_idx = start_idx + len(match)
+        soil.append({"Soil": {"value": match, "span": [start_idx, end_idx]}})
+
+    for match in country_matches:
+        start_idx = text.find(match)
+        end_idx = start_idx + len(match)
+        location.append({"country": {"value": match, "span": [start_idx, end_idx]}})
+
+    for match in region_matches:
+        start_idx = text.find(match)
+        end_idx = start_idx + len(match)
+        location.append({"region": {"value": match, "span": [start_idx, end_idx]}})
+
+    for match in city_matches:
+        start_idx = text.find(match)
+        end_idx = start_idx + len(match)
+        location.append({"city": {"value": match, "span": [start_idx, end_idx]}})
+
+    for match in start_time_matches:
+        start_idx = text.find(match)
+        end_idx = start_idx + len(match)
+        time_statement.append({"startTime": {"value": match, "span": [start_idx, end_idx]}})
+
+    for match in end_time_matches:
+        start_idx = text.find(match)
+        end_idx = start_idx + len(match)
+        time_statement.append({"endTime": {"value": match, "span": [start_idx, end_idx]}})
+
+    # Create JSON response
+    response = {
+        "Crops": crops,
+        "Soil": soil,
+        "Location": location,
+        "Time Statement": time_statement
+    }
+
+    return json.dumps(response, indent=4)
+
+# Example usage
+text = """
+Title: 
+Calculations of gaseous and particulate emissions from German agriculture 1990 - 2017: Input data and emission results
+
+Abstract:
+In international conventions Germany has committed to the mitigation of emissions of greenhouse gases and air pollution. These international regulations (protocols etc.) are the UN Framework Convention on Climate Change (UNFCCC), the UNECE Convention on Long-Range Transboundary Air Pollution (CLRTAP), and within the European Union the Directive of the European Parliament and of the Council on national emission ceilings for certain atmospheric pollutants (NEC Directive). These conventions require annual calculations of the emissions of the respective gases and air pollutants. The results have to be documented in an emission inventory and to be reported to the organisations in charge. The data file contains input data and results of the calculation of gas and particulate emissions from German agriculture for Germany and the federal states in the years 1990 - 2017. In this context the sector Agriculture comprises the emissions from animal husbandry, the use of agricultural soils and anaerobic digestion of energy crops. As required by the guidelines, emissions from activities preceding agriculture, from the use of energy and from land use change are reported elsewhere in the national inventories.
+"""
+
+print(extract_entities(text))
+```
+
+### Output
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "energy crops",
+                "span": [
+                    123,
+                    133
+                ]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "anaerobic digestion of energy crops",
+                "span": [
+                    139,
+                    164
+                ]
+            }
+        }
+    ],
+    "Soil": [
+        {
+            "Soil": {
+                "value": "agricultural soils",
+                "span": [
+                    105,
+                    117
+                ]
+            }
+        }
+    ],
+    "Location": [
+        {
+            "country": {
+                "value": "Germany",
+                "span": [
+                    175,
+                    183
+                ]
+            }
+        },
+        {
+            "region": {
+                "value": "European Union",
+                "span": [
+                    192,
+                    208
+                ]
+            }
+        },
+        {
+            "region": {
+                "value": "Germany",
+                "span": [
+                    210,
+                    218
+                ]
+            }
+        },
+        {
+            "region": {
+                "value": "federal states",
+                "span": [
+                    222,
+                236
+                ]
+            }
+        }
+    ],
+    "Time Statement": [
+        {
+            "startTime": {
+                "value": "1990",
+                "span": [
+                    84,
+                    88
+                ]
+            }
+        },
+        {
+            "endTime": {
+                "value": "2017",
+                "span": [
+                    91,
+                    95
+                ]
+            }
+        },
+        {
+            "startTime": {
+                "value": "1990",
+                "span": [
+                    1025,
+                    1029
+                ]
+            }
+        },
+        {
+            "endTime": {
+                "value": "2017",
+                "span": [
+                    1032,
+                    1036
+                ]
+            }
+        }
+    ]
+}
+```

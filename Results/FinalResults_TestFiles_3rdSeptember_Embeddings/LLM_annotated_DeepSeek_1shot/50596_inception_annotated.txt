@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892197-g5ZS0zU281ihPTf1J0qg",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892197,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [135, 141] }},\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [343, 349] }},\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [1261, 1267] }},\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [1723, 1729] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2017\", \"span\": [723, 727] }},\n    {\"endTime\": { \"value\": \"2018\", \"span\": [730, 734] }},\n    {\"startTime\": { \"value\": \"30.8.2017\", \"span\": [1449, 1458] }},\n    {\"startTime\": { \"value\": \"6.9.2017\", \"span\": [1463, 1471] }},\n    {\"endTime\": { \"value\": \"20.9.2017\", \"span\": [1488, 1497] }},\n    {\"endTime\": { \"value\": \"25.9.2017\", \"span\": [1502, 1510] }},\n    {\"startTime\": { \"value\": \"24.8.2018\", \"span\": [1779, 1788] }},\n    {\"startTime\": { \"value\": \"31.8.2018\", \"span\": [1793, 1802] }},\n    {\"endTime\": { \"value\": \"13.9.2018\", \"span\": [1833, 1842] }},\n    {\"endTime\": { \"value\": \"20.9.2018\", \"span\": [1847, 1856] }},\n    {\"startTime\": { \"value\": \"29.8.2018\", \"span\": [2039, 2048] }},\n    {\"startTime\": { \"value\": \"4.9.2018\", \"span\": [2053, 2061] }},\n    {\"endTime\": { \"value\": \"12.9.2018\", \"span\": [2115, 2124] }},\n    {\"endTime\": { \"value\": \"29.9.2018\", \"span\": [2129, 2138] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2646,
+    "completion_tokens": 547,
+    "total_tokens": 3193,
+    "prompt_tokens_details": null
+  }
+}

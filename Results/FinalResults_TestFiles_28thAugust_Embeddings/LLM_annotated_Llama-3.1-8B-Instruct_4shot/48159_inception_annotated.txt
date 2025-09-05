@@ -1,0 +1,23 @@
+### Output JSON ###
+
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [54, 64]}},
+    {"region": {"value": "the federal states", "span": [141, 152]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1990", "span": [81, 85]}},
+    {"endTime": {"value": "2017", "span": [122, 126]}}
+  ]
+}
+```
+
+### Explanation ###
+
+- The crop species and varieties are not explicitly mentioned in the text.
+- The soil type is not mentioned in the text.
+- The country "Germany" and the region "the federal states" are mentioned.
+- The time period from 1990 to 2017 is mentioned, which is used to extract the start time (1990) and end time (2017).

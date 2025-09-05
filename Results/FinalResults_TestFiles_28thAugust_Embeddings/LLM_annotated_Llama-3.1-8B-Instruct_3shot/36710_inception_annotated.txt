@@ -1,0 +1,23 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "apple", "span": [130, 135]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": {"value": "Altes Land", "span": [143, 153]}},
+    {"country": {"value": "Germany", "span": [185, 190]}},
+    {"region": {"value": "Lower Saxony", "span": [184, 194]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2001", "span": [261, 265]}},
+    {"endTime": {"value": "2003", "span": [270, 274]}}
+  ]
+}
+```
+
+### Explanation ###
+- The input text mentions "apple" as a crop species, so it is included in the "Crops" list.
+- The text mentions "Altes Land" as a region, "Germany" as a country, and "Lower Saxony" as a region, so they are included in the "Location" list.
+- The text mentions the years "2001" and "2003" as a time period, so they are included in the "Time Statement" list.

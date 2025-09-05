@@ -1,0 +1,40 @@
+### Output JSON Structure: ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [145, 159]}},
+    {"cropSpecies": {"value": "apple", "span": [266, 271]}},
+    {"cropSpecies": {"value": "grapes", "span": [278, 283]}},
+    {"cropSpecies": {"value": "wild host plants of D. suzukii", "span": [343, 363]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [23, 30]}},
+    {"region": {"value": "southwest Germany", "span": [43, 58]}},
+    {"city": {"value": "Dossenheim", "span": [234, 242]}},
+    {"city": {"value": "Siebeldingen", "span": [244, 253]}},
+    {"city": {"value": "Darmstadt", "span": [275, 283]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2011", "span": [119, 123]}},
+    {"endTime": {"value": "2018", "span": [229, 233]}}
+  ]
+}
+```
+
+### Explanation: ###
+
+*   The "Crops" list contains the following entities:
+    *   "Drosophila suzukii" is a pest species mentioned in the text.
+    *   "apple" is mentioned as a host plant.
+    *   "grapes" are mentioned as a susceptible fruit crop.
+    *   "wild host plants of D. suzukii" are mentioned as the preferred sites of the pest species.
+*   The "Location" list contains the following entities:
+    *   "Germany" is mentioned as the country where the monitoring program was conducted.
+    *   "southwest Germany" is mentioned as the region where the monitoring program took place.
+    *   "Dossenheim" and "Siebeldingen" are mentioned as cities near the institutes where the monitoring program was conducted.
+    *   "Darmstadt" is mentioned as another city near the institutes.
+*   The "Time Statement" list contains the following entities:
+    *   "2011" is mentioned as the start year of the monitoring program.
+    *   "2018" is mentioned as the end year of the monitoring program.

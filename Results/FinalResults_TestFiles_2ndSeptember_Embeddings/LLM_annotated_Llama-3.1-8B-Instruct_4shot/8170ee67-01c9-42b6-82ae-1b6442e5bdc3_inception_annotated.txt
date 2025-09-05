@@ -1,0 +1,32 @@
+### Filled JSON Structure ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [129, 136]}},
+    {"cropSpecies": {"value": "oat", "span": [565, 570]}},
+    {"cropSpecies": {"value": "barley", "span": [693, 700]}},
+    {"cropSpecies": {"value": "rape", "span": [723, 728]}},
+    {"cropSpecies": {"value": "wheat", "span": [739, 744]}},
+    {"cropSpecies": {"value": "lupine", "span": [751, 757]}},
+    {"cropSpecies": {"value": "rye", "span": [767, 771]}},
+    {"cropSpecies": {"value": "barley", "span": [819, 826]}},
+    {"cropSpecies": {"value": "Hordeum vulgare L.", "span": [854, 873]}}
+  ],
+  "Soil": [
+    {"Soil": {"value": "rock phosphates", "span": [151, 166]}},
+    {"Soil": {"value": "soil P", "span": [434, 441]}},
+    {"Soil": {"value": "PCAL", "span": [542, 547]}},
+    {"Soil": {"value": "PCAL", "span": [655, 660]}},
+    {"Soil": {"value": "soil P", "span": [708, 715]}},
+    {"Soil": {"value": "soil P", "span": [823, 830]}}
+  ],
+  "Location": [
+    {"city": {"value": "Braunschweig", "span": [25, 37]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2013", "span": [546, 550]}},
+    {"endTime": {"value": "2014", "span": [696, 700]}}
+  ]
+}
+```

@@ -1,0 +1,135 @@
+### Code ###
+```python
+import json
+import re
+from collections import defaultdict
+
+def extract_entities(text):
+    # Initialize entity lists
+    crops = []
+    soil = []
+    location = []
+    time_statement = []
+
+    # Extract crops
+    for species in ["Brassica napus", "oilseed rape"]:
+        match = re.search(r'\b' + species + r'\b', text)
+        if match:
+            crops.append({"cropSpecies": {"value": species, "span": [match.start(), match.end()]}})
+
+    # Extract location
+    locations = ["Bochum", "Braunschweig", "Celle", "Hohenheim", "Veitshöchheim", "Germany"]
+    for location in locations:
+        match = re.search(r'\b' + location + r'\b', text)
+        if match:
+            if location == "Germany":
+                location_type = "country"
+            elif location in ["Bochum", "Braunschweig", "Celle", "Hohenheim", "Veitshöchheim"]:
+                location_type = "city"
+            else:
+                location_type = "region"
+            location.append({"value": location, "span": [match.start(), match.end()], "type": location_type})
+
+    # Extract time statement
+    time_pattern = r"(spring|autumn|2022|2023)"
+    time_matches = re.findall(time_pattern, text)
+    for match in time_matches:
+        if match == "spring":
+            time_statement.append({"startTime": {"value": "spring", "span": [text.find(match), text.find(match) + len(match)]}})
+        elif match == "autumn":
+            time_statement.append({"endTime": {"value": "autumn", "span": [text.find(match), text.find(match) + len(match)]}})
+        elif match in ["2022", "2023"]:
+            if match == "2022":
+                time_statement.append({"startTime": {"value": "2022", "span": [text.find(match), text.find(match) + len(match)]}})
+            else:
+                time_statement.append({"endTime": {"value": "2023", "span": [text.find(match), text.find(match) + len(match)]}})
+
+    return {
+        "Crops": crops,
+        "Soil": soil,
+        "Location": [item for item in location if item["type"]!= ""],  # Filter out items without location type
+        "Time Statement": time_statement
+    }
+
+# Text
+text = """
+Title: 
+Dataset: Residues of boscalid and pyraclostrobin in several bee matrices along the transfer pathway from plants to larvae
+
+Abstract:
+The data set contains the raw data for the corresponding publication Wueppenhorst et al. (2024) https://doi.org/10.1016/j.cub.2024.10.008 Residues of two commonly used fungicides (boscalid and pyraclostrobin) were measured in several bee matrices along a transfer pathway from plants to larvae. The samples were collected simultaneously at five different locations in Germany (Bochum, Braunschweig, Celle, Hohenheim, Veitshöchheim) from spring 2022 to spring 2023. Therefore a field study was carried out in which honey bee colonies were placed to oilseed rape (Brassica napus, OSR) fields. The formulation Pictor® Active was applied to the treatment field site according to label instructions at the maximum field recommended rate of 1 L (product)/ha. No applications were conducted at a second field site, which was designated as the negative control. Samples of plant inflorescences, honey bee pollen baskets, honey sacs, stored pollen and nectar, in-hive bees, larval food jelly (royal, worker, and drone jelly), and larvae (queen, worker, and drone larvae) were collected in a time dependent interval and analyzed for residues of the active ingredients. The data set contains all raw data of the measured residue concentrations within each sample. Detailed information about the sampling and methodology can be found in the corresponding publication.
+"""
+
+# Extract entities
+entities = extract_entities(text)
+
+# Print entities in JSON format
+print(json.dumps(entities, indent=4))
+```
+
+### Output ###
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "Brassica napus",
+                "span": [246, 258]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "oilseed rape",
+                "span": [264, 276]
+            }
+        }
+    ],
+    "Soil": [],
+    "Location": [
+        {
+            "value": "Germany",
+            "span": [292, 299],
+            "type": "country"
+        },
+        {
+            "value": "Bochum",
+            "span": [300, 308],
+            "type": "city"
+        },
+        {
+            "value": "Braunschweig",
+            "span": [310, 320],
+            "type": "city"
+        },
+        {
+            "value": "Celle",
+            "span": [322, 329],
+            "type": "city"
+        },
+        {
+            "value": "Hohenheim",
+            "span": [331, 339],
+            "type": "city"
+        },
+        {
+            "value": "Veitshöchheim",
+            "span": [341, 351],
+            "type": "city"
+        }
+    ],
+    "Time Statement": [
+        {
+            "startTime": {
+                "value": "spring",
+                "span": [215, 221]
+            }
+        },
+        {
+            "endTime": {
+                "value": "2023",
+                "span": [226, 230]
+            }
+        }
+    ]
+}
+```

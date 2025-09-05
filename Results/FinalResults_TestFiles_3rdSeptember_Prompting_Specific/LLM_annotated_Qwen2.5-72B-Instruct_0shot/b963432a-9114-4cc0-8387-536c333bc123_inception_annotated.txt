@@ -1,0 +1,37 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "barley", "span": [692, 697] }},
+    {"cropSpecies": { "value": "barley", "span": [755, 760] }},
+    {"cropSpecies": { "value": "serradella", "span": [735, 744] }}
+  ],
+  "Soil": [
+    {"soilDepth": { "value": "three sampling depths", "span": [121, 139] }},
+    {"soilDepth": { "value": "three different depths", "span": [653, 670] }},
+    {"soilPH": { "value": "pH", "span": [59, 61] }},
+    {"soilPH": { "value": "pH", "span": [145, 147] }},
+    {"soilPH": { "value": "pH", "span": [683, 685] }},
+    {"soilReferenceGroup": { "value": "redoximorphic features", "span": [434, 451] }},
+    {"soilAvailableNitrogen": { "value": "NH4+ -N", "span": [182, 188] }},
+    {"soilAvailableNitrogen": { "value": "NO2- -N", "span": [190, 196] }},
+    {"soilAvailableNitrogen": { "value": "NO3- -N", "span": [198, 204] }},
+    {"soilOrganicCarbon": { "value": "OC", "span": [152, 154] }},
+    {"soilOrganicCarbon": { "value": "DOC", "span": [690, 693] }},
+    {"soilOrganicCarbon": { "value": "Gelöster organischer Kohlenstoff", "span": [818, 844] }}
+  ],
+  "Location": [
+    {"region": { "value": "Northern Germany", "span": [114, 128] }},
+    {"region": { "value": "Rostock", "span": [20, 26] }},
+    {"region": { "value": "Rostock", "span": [49, 55] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2020", "span": [102, 106] }},
+    {"startTime": { "value": "2020", "span": [664, 668] }},
+    {"duration": { "value": "about 3.5 months", "span": [710, 725] }},
+    {"endTime": { "value": "2020", "span": [719, 723] }},
+    {"startTime": { "value": "2018", "span": [413, 417] }},
+    {"startTime": { "value": "2019", "span": [466, 470] }},
+    {"startTime": { "value": "2019", "span": [731, 735] }}
+  ]
+}
+```

@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756906819-63BscVnTmvYvV7JCVxd7",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756906828,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Betula pubescens Ehrh.\", \"span\": [247, 269] }},\n    {\"cropSpecies\": { \"value\": \"birch\", \"span\": [273, 278] }},\n    {\"cropSpecies\": { \"value\": \"birches\", \"span\": [1008, 1015] }}\n  ],\n  \"Soil\": [\n    {\"soilOrganicCarbon\": { \"value\": \"carbon\", \"span\": [104, 110] }},\n    {\"soilOrganicCarbon\": { \"value\": \"C\", \"span\": [112, 113] }},\n    {\"soilOrganicCarbon\": { \"value\": \"C\", \"span\": [343, 344] }},\n    {\"soilOrganicCarbon\": { \"value\": \"carbon\", \"span\": [347, 353] }},\n    {\"soilOrganicCarbon\": { \"value\": \"C\", \"span\": [689, 690] }},\n    {\"soilOrganicCarbon\": { \"value\": \"C\", \"span\": [708, 709] }},\n    {\"soilOrganicCarbon\": { \"value\": \"C\", \"span\": [776, 777] }},\n    {\"soilOrganicCarbon\": { \"value\": \"C\", \"span\": [1018, 1019] }},\n    {\"soilOrganicCarbon\": { \"value\": \"C\", \"span\": [1085, 1086] }},\n    {\"soilOrganicCarbon\": { \"value\": \"carbon\", \"span\": [1111, 1117] }},\n    {\"soilOrganicCarbon\": { \"value\": \"C\", \"span\": [1195, 1196] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"one year\", \"span\": [607, 615] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4295,
+    "completion_tokens": 409,
+    "total_tokens": 4704,
+    "prompt_tokens_details": null
+  }
+}

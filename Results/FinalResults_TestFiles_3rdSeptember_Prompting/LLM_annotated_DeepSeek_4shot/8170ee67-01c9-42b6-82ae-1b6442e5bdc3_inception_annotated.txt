@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756906609-7l93HThHsdnu5Iz28801",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756906609,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [41, 54] }},\n    {\"cropSpecies\": { \"value\": \"oat\", \"span\": [1035, 1038] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [1273, 1286] }},\n    {\"cropSpecies\": { \"value\": \"winter oilseed rape\", \"span\": [1288, 1308] }},\n    {\"cropSpecies\": { \"value\": \"winter wheat\", \"span\": [1310, 1322] }},\n    {\"cropSpecies\": { \"value\": \"lupine\", \"span\": [1324, 1331] }},\n    {\"cropSpecies\": { \"value\": \"winter rye\", \"span\": [1336, 1346] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [1711, 1724] }},\n    {\"cropVariety\": { \"value\": \"OTTO\", \"span\": [1751, 1755] }}\n  ],\n  \"Soil\": [\n    {\"soilDepth\": { \"value\": \"25 cm\", \"span\": [1039, 1044] }},\n    {\"soilDepth\": { \"value\": \"0-30 cm\", \"span\": [1405, 1411] }},\n    {\"soilDepth\": { \"value\": \"25 cm\", \"span\": [1593, 1598] }}\n  ],\n  \"Location\": [\n    {\"city\": { \"value\": \"Braunschweig\", \"span\": [24, 36] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2014\", \"span\": [55, 59] }},\n    {\"startTime\": { \"value\": \"1985\", \"span\": [859, 863] }},\n    {\"endTime\": { \"value\": \"2008\", \"span\": [865, 869] }},\n    {\"endTime\": { \"value\": \"2013\", \"span\": [1071, 1075] }},\n    {\"startTime\": { \"value\": \"2013\", \"span\": [1080, 1084] }},\n    {\"startTime\": { \"value\": \"2014\", \"span\": [1760, 1764] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4516,
+    "completion_tokens": 539,
+    "total_tokens": 5055,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,24 @@
+### Output JSON ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilTexture": {"value": "Lehm", "span": [133, 137]}},
+    {"soilTexture": {"value": "Ton", "span": [141, 144]}},
+    {"soilReferenceGroup": {"value": "Boden", "span": [155, 159]}},
+    {"soilDepth": {"value": "14-tägig", "span": [185, 191]}},
+    {"soilBulkDensity": {"value": "kein Wert", "span": [197, 205]}},
+    {"soilPH": {"value": "pH Wert", "span": [213, 219]}},
+    {"soilOrganicCarbon": {"value": "organischen Kohlenstoff", "span": [225, 238]}},
+    {"soilAvailableNitrogen": {"value": "Gesamt-Stickstoff", "span": [243, 254]}}
+  ],
+  "Location": [
+    {"region": {"value": "Hildesheim", "span": [30, 38]}},
+    {"city": {"value": "Hildesheim", "span": [30, 38]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "14-tägig", "span": [185, 191]}},
+    {"duration": {"value": "2 Jahre", "span": [223, 227]}}
+  ]
+}
+```

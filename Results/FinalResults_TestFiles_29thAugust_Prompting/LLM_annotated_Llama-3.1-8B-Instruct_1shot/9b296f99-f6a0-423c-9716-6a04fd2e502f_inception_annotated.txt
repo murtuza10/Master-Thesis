@@ -1,0 +1,30 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "winter wheat", "span": [156, 167]}},
+    {"cropSpecies": {"value": "winter barley", "span": [168, 179]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [180, 190]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [234, 244]}},
+    {"cropSpecies": {"value": "winter barley", "span": [250, 261]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [24, 29]}},
+    {"city": {"value": "Speyer", "span": [30, 36]}},
+    {"country": {"value": "Germany", "span": [113, 118]}},
+    {"city": {"value": "Speyer", "span": [114, 120]}},
+    {"country": {"value": "Germany", "span": [142, 147]}},
+    {"city": {"value": "Speyer", "span": [143, 149]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1984", "span": [146, 150]}}
+  ]
+}
+```
+### Notes ###
+
+- The only time statement extracted is the year 1984 when the trial was set up.
+- The location mentions Germany and the city of Speyer multiple times, but they are extracted only once under the "country" and "city" categories, respectively.
+- No soil-related entities were found in the text.
+- Crop species like winter wheat, winter barley, and sugar beet are extracted multiple times due to their repeated mentions in the text.

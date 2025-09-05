@@ -1,0 +1,21 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "Bundeswaldinventur", "span": [59, 73]}},
+    {"soilTexture": {"value": "Bodenleitprofile", "span": [84, 98]}},
+    {"soilDepth": {"value": "25.069 Traktecken", "span": [433, 443]}},
+    {"soilDepth": {"value": "24.735 Traktecken", "span": [459, 469]}},
+    {"soilBulkDensity": {"value": "Trockenrohdichte (TRD)", "span": [130, 143]}},
+    {"soilAvailableNitrogen": {"value": "nutzbare Feldkapazität (nFK)", "span": [145, 158]}}
+  ],
+  "Location": [
+    {"region": {"value": "Deutschland", "span": [38, 46]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2012", "span": [219, 221]}},
+    {"endTime": {"value": "2012", "span": [223, 225]}}
+  ]
+}
+```

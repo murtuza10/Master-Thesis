@@ -1,0 +1,44 @@
+### Output JSON Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Winter wheat", "span": [141, 151] }}
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "Boden", "span": [256, 262] }},
+    {"soilReferenceGroup": { "value": "Soil", "span": [1, 5] }},
+    {"soilDepth": { "value": "", "span": [] }},
+    {"soilBulkDensity": { "value": "", "span": [] }},
+    {"soilPH": { "value": "", "span": [] }},
+    {"soilOrganicCarbon": { "value": "", "span": [] }},
+    {"soilAvailableNitrogen": { "value": "", "span": [] }}
+  ],
+  "Location": [
+    {"country": { "value": "", "span": [] }},
+    {"region": { "value": "", "span": [] }},
+    {"city": { "value": "", "span": [] }},
+    {"latitude": { "value": "", "span": [] }},
+    {"longitude": { "value": "", "span": [] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "", "span": [] }},
+    {"endTime": { "value": "", "span": [] }},
+    {"duration": { "value": "", "span": [] }}
+  ]
+}
+```
+### Corrected JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Winter wheat", "span": [141, 151] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "Soil", "span": [1, 5] }},
+    {"soilTexture": { "value": "Boden", "span": [256, 262] }}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+I have removed the empty entities from the output JSON.

@@ -1,0 +1,27 @@
+### Output JSON ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Holz", "span": [143, 146]}},
+    {"cropSpecies": {"value": "holzbasierte Produkte", "span": [143, 161]}},
+    {"cropSpecies": {"value": "holzbasierte Fasern", "span": [283, 294]}},
+    {"cropSpecies": {"value": "Biomasse", "span": [43, 51]}},
+    {"cropSpecies": {"value": "agrarische Biomasse", "span": [63, 74]}},
+    {"cropSpecies": {"value": "forstliche Biomasse", "span": [79, 90]}},
+    {"cropSpecies": {"value": "holznebenprodukte", "span": [295, 307]}},
+    {"cropSpecies": {"value": "Pellets", "span": [323, 329]}},
+    {"cropSpecies": {"value": "grüner Treibstoff", "span": [333, 343]}},
+    {"cropSpecies": {"value": "Bioraffinerien", "span": [349, 358]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2020", "span": [191, 194]}},
+    {"endTime": {"value": "2050", "span": [193, 197]}},
+    {"startTime": {"value": "2023", "span": [531, 535]}},
+    {"endTime": {"value": "2028", "span": [563, 567]}},
+    {"startTime": {"value": "2018", "span": [421, 425]}},
+    {"endTime": {"value": "2023", "span": [432, 436]}}
+  ]
+}
+```

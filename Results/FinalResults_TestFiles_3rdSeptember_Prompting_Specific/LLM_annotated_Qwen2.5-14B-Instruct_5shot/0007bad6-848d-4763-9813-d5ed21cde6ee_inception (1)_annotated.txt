@@ -1,0 +1,17 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Winter wheat", "span": [256, 264] }}
+  ],
+  "Soil": [
+    {"soilProperty": { "value": "soil properties", "span": [81, 92] }},
+    {"soilProperty": { "value": "soil properties", "span": [122, 133] }},
+    {"soilProperty": { "value": "soil water stable aggregation", "span": [143, 165] }},
+    {"soilProperty": { "value": "soil properties", "span": [188, 199] }}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+Note: The `soilProperty` key is used here as there is no direct match for the mentioned soil attributes in the predefined keys (`soilTexture`, `soilReferenceGroup`, etc.). If you need the soil attributes to be classified into specific soil keys, please let me know.

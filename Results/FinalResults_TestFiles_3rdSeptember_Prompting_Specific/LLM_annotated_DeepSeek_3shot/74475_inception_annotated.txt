@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756918232-ODv6y3ESiaYx5gGRR5i7",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756918235,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilOrganicCarbon\": { \"value\": \"soil organic carbon\", \"span\": [85, 102] }},\n    {\"soilOrganicCarbon\": { \"value\": \"SOC\", \"span\": [104, 107] }},\n    {\"soilOrganicCarbon\": { \"value\": \"SOC\", \"span\": [253, 256] }},\n    {\"soilOrganicCarbon\": { \"value\": \"SOC\", \"span\": [308, 311] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"soil organic nitrogen\", \"span\": [111, 129] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"SON\", \"span\": [131, 134] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"SON\", \"span\": [290, 293] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2257,
+    "completion_tokens": 206,
+    "total_tokens": 2463,
+    "prompt_tokens_details": null
+  }
+}

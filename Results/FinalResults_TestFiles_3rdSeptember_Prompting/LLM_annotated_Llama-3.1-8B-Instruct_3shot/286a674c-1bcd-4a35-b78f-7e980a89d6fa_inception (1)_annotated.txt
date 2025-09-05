@@ -1,0 +1,22 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [342, 346]}},
+    {"cropVariety": {"value": "winter wheat", "span": [330, 341]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [644, 648]}},
+    {"region": {"value": "Brandenburg", "span": [649, 656]}},
+    {"city": {"value": "Uckermark", "span": [657, 664]}},
+    {"latitude": {}},
+    {"longitude": {}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "April 2019", "span": [425, 436]}},
+    {"endTime": {"value": "June 2019", "span": [438, 443]}}
+  ]
+}
+```
+Note: The latitude and longitude are missing as they are not explicitly mentioned in the given text.

@@ -1,0 +1,26 @@
+### Output JSON Structure Filled with Input Text Entities
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "spring barley", "span": [146, 158]}},
+    {"cropSpecies": {"value": "winter barley", "span": [164, 176]}},
+    {"cropSpecies": {"value": "grain maize", "span": [181, 192]}},
+    {"cropSpecies": {"value": "silage maize", "span": [199, 210]}},
+    {"cropSpecies": {"value": "oats", "span": [217, 220]}},
+    {"cropSpecies": {"value": "potatoes", "span": [223, 227]}},
+    {"cropSpecies": {"value": "winter rape", "span": [234, 241]}},
+    {"cropSpecies": {"value": "rye", "span": [248, 250]}},
+    {"cropSpecies": {"value": "sugarbeet", "span": [255, 262]}},
+    {"cropSpecies": {"value": "triticale", "span": [269, 276]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [283, 291]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [83, 91]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1979", "span": [129, 133]}},
+    {"endTime": {"value": "2021", "span": [141, 145]}}
+  ]
+}
+```

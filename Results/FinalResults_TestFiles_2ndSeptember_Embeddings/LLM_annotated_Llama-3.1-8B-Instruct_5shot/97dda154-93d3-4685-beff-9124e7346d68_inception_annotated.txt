@@ -1,0 +1,40 @@
+### Filled JSON Structure ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "maize", "span": [273, 278]}},
+    {"cropSpecies": {"value": "maize", "span": [346, 351]}},
+    {"cropSpecies": {"value": "maize", "span": [413, 418]}}
+  ],
+  "Soil": [
+    {"Soil": {"value": "Wanna Sand", "span": [259, 272]}},
+    {"Soil": {"value": "Wanna Sand without biogas slurry", "span": [274, 306]}},
+    {"Soil": {"value": "Rostock Sand", "span": [308, 322]}},
+    {"Soil": {"value": "Wanna Marsch", "span": [324, 338]}},
+    {"Soil": {"value": "biogas slurry", "span": [349, 362]}},
+    {"Soil": {"value": "diammonium phosphate", "span": [384, 405]}},
+    {"Soil": {"value": "microgranular fertilizer", "span": [407, 426]}},
+    {"Soil": {"value": "Bacillus atrophaeus Abi05", "span": [447, 462]}},
+    {"Soil": {"value": "R. irregulare", "span": [464, 473]}},
+    {"Soil": {"value": "F. mosseae", "span": [475, 484]}},
+    {"Soil": {"value": "F. caledonium", "span": [485, 494]}},
+    {"Soil": {"value": "silty clay loam", "span": [527, 539]}},
+    {"Soil": {"value": "clay", "span": [542, 546]}},
+    {"Soil": {"value": "45 and 95", "span": [576, 585]}},
+    {"Soil": {"value": "0", "span": [586, 587]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [447, 453]}},
+    {"region": {"value": "Lower Saxony", "span": [454, 466]}},
+    {"region": {"value": "Mecklenburg-Vorpommern", "span": [468, 482]}},
+    {"region": {"value": "Wanna", "span": [484, 489]}},
+    {"region": {"value": "Rostock", "span": [492, 498]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2021", "span": [239, 242]}},
+    {"startTime": {"value": "2022", "span": [243, 246]}},
+    {"startTime": {"value": "2023", "span": [247, 250]}}
+  ]
+}
+```

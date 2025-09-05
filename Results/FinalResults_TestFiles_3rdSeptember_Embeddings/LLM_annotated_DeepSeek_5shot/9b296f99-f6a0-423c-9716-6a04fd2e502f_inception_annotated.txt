@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892323-blaHPMLoYC5FCcJbRda4",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892323,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [440, 445]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [457, 463]}},\n    {\"cropSpecies\": {\"value\": \"sugar beet\", \"span\": [468, 478]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [1195, 1201]}},\n    {\"cropSpecies\": {\"value\": \"sugar beet\", \"span\": [1206, 1216]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"humus\", \"span\": [169, 174]}},\n    {\"Soil\": {\"value\": \"soil fertility\", \"span\": [200, 213]}}\n  ],\n  \"Location\": [\n    {\"city\": {\"value\": \"Speyer\", \"span\": [36, 42]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [44, 51]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [253, 259]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [261, 268]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [1051, 1057]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [1059, 1066]}},\n    {\"city\": {\"value\": \"Karlsruhe\", \"span\": [910, 919]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [1265, 1271]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [1273, 1280]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"1984\", \"span\": [343, 347]}},\n    {\"startTime\": {\"value\": \"2009\", \"span\": [876, 880]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6452,
+    "completion_tokens": 439,
+    "total_tokens": 6891,
+    "prompt_tokens_details": null
+  }
+}

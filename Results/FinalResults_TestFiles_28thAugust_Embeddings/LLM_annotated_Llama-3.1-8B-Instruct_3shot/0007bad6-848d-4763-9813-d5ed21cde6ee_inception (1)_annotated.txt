@@ -1,0 +1,25 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [246, 251]}}
+  ],
+  "Soil": [
+    {"soilTexture": {}},
+    {"soilReferenceGroup": {}},
+    {"soilDepth": {}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+### Notes ###
+
+*   No explicit mention of crop variety.
+*   Soil properties are mentioned, but no specific values for texture, reference group, depth, bulk density, pH, organic carbon, or available nitrogen.
+*   No mention of location.
+*   No time-related statements.

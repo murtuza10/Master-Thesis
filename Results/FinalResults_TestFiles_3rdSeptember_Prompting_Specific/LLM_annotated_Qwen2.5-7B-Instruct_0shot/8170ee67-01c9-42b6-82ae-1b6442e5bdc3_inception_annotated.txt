@@ -1,0 +1,29 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "winter barley", "span": [35, 43] }},
+    {"cropSpecies": { "value": "winter oilseed rape", "span": [168, 180] }},
+    {"cropSpecies": { "value": "winter wheat", "span": [184, 191] }},
+    {"cropSpecies": { "value": "lupine", "span": [194, 198] }},
+    {"cropSpecies": { "value": "winter rye", "span": [199, 205] }},
+    {"cropVariety": { "value": "OTTO", "span": [467, 470] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "soil class A", "span": [238, 248] }},
+    {"soilReferenceGroup": { "value": "soil class B", "span": [251, 261] }},
+    {"soilReferenceGroup": { "value": "soil class C", "span": [264, 274] }},
+    {"soilPH": { "value": "PCAL", "span": [291, 295] }}
+  ],
+  "Location": [
+    {"region": { "value": "Braunschweig", "span": [24, 34] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1985", "span": [135, 139] }},
+    {"startTime": { "value": "2008", "span": [140, 144] }},
+    {"startTime": { "value": "2013", "span": [206, 210] }},
+    {"startTime": { "value": "autumn 2013", "span": [335, 345] }},
+    {"endTime": { "value": "2014", "span": [349, 353] }},
+    {"duration": { "value": "25 cm", "span": [285, 290] }}
+  ]
+}
+```

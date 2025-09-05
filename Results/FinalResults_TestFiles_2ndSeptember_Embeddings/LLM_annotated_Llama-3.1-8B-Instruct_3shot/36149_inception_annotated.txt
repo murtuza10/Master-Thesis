@@ -1,0 +1,26 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "energy crop", "span": [128, 137]}},
+    {"cropSpecies": {"value": "crops", "span": [187, 192]}},
+    {"cropSpecies": {"value": "crops", "span": [223, 228]}}
+  ],
+  "Soil": [
+    {"Soil": {"value": "soil", "span": [157, 161]}},
+    {"Soil": {"value": "nitrogen content", "span": [170, 183]}},
+    {"Soil": {"value": "ammonium-N", "span": [187, 195]}},
+    {"Soil": {"value": "nitrate-N", "span": [193, 200]}},
+    {"Soil": {"value": "bulk density", "span": [213, 223]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [134, 141]}},
+    {"country": {"value": "Germany", "span": [236, 243]}},
+    {"city": {"value": "Germany", "span": [236, 243]}}  # Assuming 'Germany' is a city here, which might not be accurate
+  ],
+  "Time Statement": [
+    {"duration": {"value": "three years", "span": [96, 107]}},
+    {"startTime": {"value": "2011/2012", "span": [102, 111]}},
+    {"endTime": {"value": "2014/2015", "span": [118, 127]}}
+  ]
+}
+```

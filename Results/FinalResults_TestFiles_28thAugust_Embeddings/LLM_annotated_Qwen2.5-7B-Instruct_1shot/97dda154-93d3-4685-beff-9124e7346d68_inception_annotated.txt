@@ -1,0 +1,31 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "maize", "span": [36, 40]}}
+  ],
+  "Soil": [
+    {"soilTexture": {"value": "Wanna Sand", "span": [123, 131]}},
+    {"soilTexture": {"value": "Rostock Sand", "span": [143, 151]}},
+    {"soilTexture": {"value": "Wanna Marsch", "span": [154, 163]}},
+    {"soilReferenceGroup": {"value": "Wanna Sand (WS)", "span": [123, 136]}},
+    {"soilReferenceGroup": {"value": "Wanna Sand without biogas slurry (WSo)", "span": [139, 161]}},
+    {"soilReferenceGroup": {"value": "Rostock Sand (RS)", "span": [143, 156]}},
+    {"soilReferenceGroup": {"value": "Wanna Marsch (WM)", "span": [154, 167]}},
+    {"soilDepth": {"value": "between April and August", "span": [266, 285]}},
+    {"soilBulkDensity": {"value": "not mentioned"}, "soilPH": {"value": "not mentioned"}, "soilOrganicCarbon": {"value": "not mentioned"}, "soilAvailableNitrogen": {"value": "not mentioned"}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [347, 353]}},
+    {"region": {"value": "Lower Saxony", "span": [356, 366]}},
+    {"region": {"value": "Mecklenburg-Vorpommern", "span": [369, 387]}},
+    {"city": {"value": "Wanna", "span": [118, 122]}},
+    {"city": {"value": "Rostock", "span": [141, 146]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2021", "span": [65, 68]}},
+    {"startTime": {"value": "2022", "span": [70, 73]}},
+    {"startTime": {"value": "2023", "span": [75, 78]}},
+    {"startTime": {"value": "between April and August each year", "span": [259, 265]}}
+  ]
+}
+```

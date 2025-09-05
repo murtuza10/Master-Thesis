@@ -1,0 +1,26 @@
+### Extracted Entities ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "energy crop", "span": [83, 95]}},
+    {"cropVariety": {"value": "grain", "span": [154, 159]}},
+    {"cropVariety": {"value": "straw", "span": [160, 165]}}
+  ],
+  "Soil": [
+    {"soilTexture": {"value": "bulk density", "span": [175, 186]}},
+    {"soilReferenceGroup": {"value": "nitrogen content", "span": [189, 203]}},
+    {"soilReferenceGroup": {"value": "ammonium-N", "span": [206, 216]}},
+    {"soilReferenceGroup": {"value": "nitrate-N", "span": [218, 225]}},
+    {"soilDepth": {"value": "soil depth", "span": [231, 239]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [56, 65]}},
+    {"region": {"value": "Germany", "span": [65, 71]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2011/2012", "span": [95, 107]}},
+    {"endTime": {"value": "2014/2015", "span": [109, 121]}}
+  ]
+}
+```

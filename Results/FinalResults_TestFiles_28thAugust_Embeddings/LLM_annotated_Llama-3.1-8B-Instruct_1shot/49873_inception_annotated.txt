@@ -1,0 +1,28 @@
+### Output JSON ###
+
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilBulkDensity": {"value": "Skelett", "span": [134, 140]}},
+    {"soilOrganicCarbon": {"value": "organischer Kohlenstoffgehalt", "span": [276, 304]}},
+    {"soilAvailableNitrogen": {}},
+    {"soilPH": {}},
+    {"soilDepth": {"value": "Entkalkungstiefe", "span": [258, 272]}},
+    {"soilTexture": {}},
+    {"soilReferenceGroup": {}}
+  ],
+  "Location": [
+    {"country": {"value": "Deutschland", "span": [21, 29]}},
+    {"region": {"value": "Bundesländer", "span": [43, 51]}},
+    {"city": {}},
+    {"latitude": {}},
+    {"longitude": {}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2012", "span": [141, 145]}},
+    {"endTime": {"value": "2012", "span": [146, 150]}},
+    {"duration": {"value": "Creation date: 28.05.2019", "span": [169, 183]}}
+  ]
+}
+```

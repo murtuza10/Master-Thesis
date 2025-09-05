@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892150-tpg673AnhG01GpL1ah5c",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892150,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"maize\", \"span\": [180, 185] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"Wanna Sand\", \"span\": [342, 352] }},\n    {\"Soil\": { \"value\": \"Wanna Sand without biogas slurry\", \"span\": [355, 387] }},\n    {\"Soil\": { \"value\": \"Rostock Sand\", \"span\": [392, 404] }},\n    {\"Soil\": { \"value\": \"Wanna Marsch\", \"span\": [409, 421] }},\n    {\"Soil\": { \"value\": \"30 m³ of biogas slurry\", \"span\": [433, 454] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Europe\", \"span\": [1573, 1579] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [1582, 1589] }},\n    {\"region\": { \"value\": \"Lower Saxony\", \"span\": [1592, 1605] }},\n    {\"city\": { \"value\": \"Wanna\", \"span\": [1608, 1613] }},\n    {\"region\": { \"value\": \"Mecklenburg-Vorpommern\", \"span\": [1616, 1637] }},\n    {\"city\": { \"value\": \"Rostock\", \"span\": [1640, 1647] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2021\", \"span\": [211, 215] }},\n    {\"endTime\": { \"value\": \"2023\", \"span\": [220, 224] }},\n    {\"startTime\": { \"value\": \"April\", \"span\": [742, 747] }},\n    {\"endTime\": { \"value\": \"August\", \"span\": [752, 758] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3593,
+    "completion_tokens": 436,
+    "total_tokens": 4029,
+    "prompt_tokens_details": null
+  }
+}

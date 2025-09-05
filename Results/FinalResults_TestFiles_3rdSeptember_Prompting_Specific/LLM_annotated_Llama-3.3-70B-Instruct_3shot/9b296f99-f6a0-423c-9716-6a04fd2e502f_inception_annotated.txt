@@ -1,0 +1,50 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "winter wheat", "span": [236, 248]}},
+    {"cropSpecies": {"value": "winter barley", "span": [250, 264]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [266, 276]}},
+    {"cropSpecies": {"value": "winter barley", "span": [444, 458]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [460, 470]}},
+    {"cropSpecies": {"value": "crop", "span": [533, 538]}},
+    {"cropSpecies": {"value": "crop", "span": [552, 557]}},
+    {"cropSpecies": {"value": "Nutzpflanzen", "span": [934, 946]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "Boden", "span": [959, 964]}},
+    {"soilTexture": {"value": "mineral", "span": [141, 147]}},
+    {"soilTexture": {"value": "mineral", "span": [328, 334]}},
+    {"soilPH": {"value": "pH", "span": [0, 0]}},
+    {"soilOrganicCarbon": {"value": "humus", "span": [152, 157]}},
+    {"soilOrganicCarbon": {"value": "humus", "span": [201, 206]}},
+    {"soilAvailableNitrogen": {"value": "mineral nutrients", "span": [120, 135]}},
+    {"soilAvailableNitrogen": {"value": "Nitrogen", "span": [286, 294]}},
+    {"soilAvailableNitrogen": {"value": "Stickstoffd체nger", "span": [846, 863]}},
+    {"soilAvailableNitrogen": {"value": "N채hrstoffgehalt", "span": [894, 908]}},
+    {"soilDepth": {"value": "bulk soil", "span": [513, 522]}},
+    {"soilDepth": {"value": "bulk soil", "span": [573, 582]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [45, 52]}},
+    {"country": {"value": "Germany", "span": [79, 86]}},
+    {"city": {"value": "Speyer", "span": [34, 40]}},
+    {"city": {"value": "Speyer", "span": [68, 74]}},
+    {"city": {"value": "Karlsruhe", "span": [382, 391]}},
+    {"region": {"value": "LUFA Speyer", "span": [90, 101]}},
+    {"region": {"value": "LUFA Speyer", "span": [346, 357]}},
+    {"region": {"value": "Germany", "span": [418, 425]}},
+    {"region": {"value": "VDLUFA", "span": [271, 277]}},
+    {"region": {"value": "Rinkenbergerhof", "span": [212, 226]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1984", "span": [227, 232]}},
+    {"startTime": {"value": "2009", "span": [360, 364]}},
+    {"startTime": {"value": "2017", "span": [821, 825]}},
+    {"duration": {"value": "long-term", "span": [192, 200]}},
+    {"duration": {"value": "long-term", "span": [588, 596]}},
+    {"duration": {"value": "three years", "span": [246, 257]}},
+    {"duration": {"value": "four sampling seasons", "span": [435, 454]}},
+    {"duration": {"value": "Langzeitversuch", "span": [907, 921]}}
+  ]
+}
+```

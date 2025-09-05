@@ -1,0 +1,23 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "apple", "span": [115, 120]}},
+    {"cropSpecies": {"value": "grape", "span": [142, 147]}},
+    {"cropSpecies": {"value": "fruits", "span": [156, 164]}},
+    {"cropSpecies": {"value": "apple", "span": [266, 271]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [39, 44]}},
+    {"country": {"value": "Europe", "span": [63, 70]}},
+    {"city": {"value": "Darmstadt", "span": [273, 282]}},
+    {"city": {"value": "Dossenheim", "span": [285, 294]}},
+    {"city": {"value": "Siebeldingen", "span": [297, 306]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2011", "span": [110, 114]}},
+    {"endTime": {"value": "February 2018", "span": [225, 239]}},
+    {"duration": {"value": "2011 to February 2018", "span": [226, 242]}}
+  ]
+}
+```

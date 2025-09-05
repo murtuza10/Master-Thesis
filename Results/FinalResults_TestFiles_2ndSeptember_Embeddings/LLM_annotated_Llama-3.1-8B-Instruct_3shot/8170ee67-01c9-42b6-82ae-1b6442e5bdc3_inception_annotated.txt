@@ -1,0 +1,27 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [115, 121]}},
+    {"cropSpecies": {"value": "oilseed rape", "span": [222, 233]}},
+    {"cropSpecies": {"value": "wheat", "span": [242, 247]}},
+    {"cropSpecies": {"value": "lupine", "span": [253, 259]}},
+    {"cropSpecies": {"value": "rye", "span": [271, 275]}},
+    {"cropSpecies": {"value": "oat", "span": [344, 348]}}
+  ],
+  "Soil": [
+    {"Soil": {"value": "soil P", "span": [161, 168]}},
+    {"Soil": {"value": "available soil P", "span": [194, 208]}},
+    {"Soil": {"value": "PCAL", "span": [235, 239]}},
+    {"Soil": {"value": "grassland", "span": [291, 299]}},
+    {"Soil": {"value": "Boden", "span": [416, 421]}}
+  ],
+  "Location": [
+    {"city": {"value": "Braunschweig", "span": [25, 37]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2013", "span": [337, 341]}},
+    {"endTime": {"value": "2014", "span": [395, 399]}}
+  ]
+}
+```

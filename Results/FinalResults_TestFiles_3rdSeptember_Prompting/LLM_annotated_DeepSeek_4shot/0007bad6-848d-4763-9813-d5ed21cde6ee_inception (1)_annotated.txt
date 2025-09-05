@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756906898-XBzTVJbdkEYQjEMJPWdP",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756906902,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [1041, 1046] }}\n  ],\n  \"Soil\": [\n    {\"soilOrganicCarbon\": { \"value\": \"soil\", \"span\": [104, 108] }},\n    {\"soilOrganicCarbon\": { \"value\": \"soil\", \"span\": [151, 155] }},\n    {\"soilOrganicCarbon\": { \"value\": \"soil\", \"span\": [215, 219] }},\n    {\"soilOrganicCarbon\": { \"value\": \"soil\", \"span\": [301, 305] }},\n    {\"soilOrganicCarbon\": { \"value\": \"soil\", \"span\": [1037, 1041] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4157,
+    "completion_tokens": 180,
+    "total_tokens": 4337,
+    "prompt_tokens_details": null
+  }
+}

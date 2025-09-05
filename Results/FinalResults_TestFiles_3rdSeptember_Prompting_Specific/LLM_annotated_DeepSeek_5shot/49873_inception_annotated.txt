@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756918135-O6gRp4nPYaQUM8iNO0kC",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756918145,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilTexture\": {\"value\": \"Bodenart\", \"span\": [1001, 1010]}},\n    {\"soilBulkDensity\": {\"value\": \"Trockenrohdichte\", \"span\": [1021, 1037]}},\n    {\"soilOrganicCarbon\": {\"value\": \"organischer Kohlenstoffgehalt\", \"span\": [1122, 1150]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"deutschen\", \"span\": [193, 201]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2012\", \"span\": [1371, 1375]}},\n    {\"endTime\": {\"value\": \"2012\", \"span\": [1387, 1391]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4979,
+    "completion_tokens": 191,
+    "total_tokens": 5170,
+    "prompt_tokens_details": null
+  }
+}

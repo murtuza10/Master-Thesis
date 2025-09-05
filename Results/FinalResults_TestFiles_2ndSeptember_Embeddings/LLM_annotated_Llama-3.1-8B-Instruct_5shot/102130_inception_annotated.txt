@@ -1,0 +1,20 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "C4 roots", "span": [76, 84]}},
+    {"cropSpecies": {"value": "C3 soil", "span": [94, 100]}}
+  ],
+  "Soil": [
+    {"Soil": {"value": "particulate organic carbon", "span": [142, 161]}},
+    {"Soil": {"value": "mineral associated organic carbon", "span": [165, 185]}},
+    {"Soil": {"value": "bulk soil", "span": [236, 242]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "6 months", "span": [106, 116]}},
+    {"startTime": {"value": "12 months", "span": [119, 129]}},
+    {"startTime": {"value": "24 months", "span": [134, 144]}}
+  ]
+}
+```

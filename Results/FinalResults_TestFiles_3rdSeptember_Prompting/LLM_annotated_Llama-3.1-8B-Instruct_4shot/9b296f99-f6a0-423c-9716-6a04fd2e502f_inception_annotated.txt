@@ -1,0 +1,27 @@
+### Output JSON Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "winter wheat", "span": [186, 195] }},
+    {"cropSpecies": { "value": "winter barley", "span": [206, 215] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [217, 225] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "ploughing", "span": [157, 166] }},
+    {"soilReferenceGroup": { "value": "farmyard (horse) manure", "span": [222, 241] }},
+    {"soilReferenceGroup": { "value": "crop residues + catch crop", "span": [229, 247] }},
+    {"soilBulkDensity": { "value": "72", "span": [344, 346] }},
+    {"soilBulkDensity": { "value": "4", "span": [376, 378] }},
+    {"soilPH": { "value": "long-term source of nutrients", "span": [81, 98] }},
+    {"soilOrganicCarbon": { "value": "humus", "span": [83, 89] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [30, 37] }},
+    {"city": { "value": "Speyer", "span": [34, 41] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1984", "span": [139, 143] }},
+    {"duration": { "value": "four sampling seasons", "span": [321, 335] }}
+  ]
+}
+```

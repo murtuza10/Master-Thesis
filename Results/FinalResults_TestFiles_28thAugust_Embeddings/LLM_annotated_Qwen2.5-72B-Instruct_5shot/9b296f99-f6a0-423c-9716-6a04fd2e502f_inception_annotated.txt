@@ -1,0 +1,31 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wheat", "span": [232, 237] }},
+    {"cropSpecies": { "value": "barley", "span": [242, 248] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [253, 263] }},
+    {"cropSpecies": { "value": "barley", "span": [423, 429] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [434, 444] }}
+  ],
+  "Soil": [
+    {"soilOrganicCarbon": { "value": "humus", "span": [124, 129] }},
+    {"soilAvailableNitrogen": { "value": "nitrogen", "span": [133, 141] }},
+    {"soilAvailableNitrogen": { "value": "nitrogen", "span": [149, 157] }},
+    {"soilAvailableNitrogen": { "value": "N", "span": [165, 166] }},
+    {"soilAvailableNitrogen": { "value": "N", "span": [174, 175] }},
+    {"soilAvailableNitrogen": { "value": "N", "span": [481, 482] }},
+    {"soilAvailableNitrogen": { "value": "Stickstoffdcher", "span": [822, 836] }},
+    {"soilAvailableNitrogen": { "value": "N채hrstoffgehalt", "span": [851, 865] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [37, 44] }},
+    {"region": { "value": "Speyer", "span": [51, 57] }},
+    {"region": { "value": "Speyer", "span": [193, 199] }},
+    {"region": { "value": "Speyer", "span": [775, 781] }},
+    {"region": { "value": "Speyer", "span": [815, 821] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1984", "span": [199, 203] }}
+  ]
+}
+```

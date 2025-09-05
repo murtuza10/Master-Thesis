@@ -1,0 +1,37 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "maize", "span": [166, 171]}},
+    {"cropSpecies": {"value": "maize", "span": [247, 252]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "Wanna Sand", "span": [123, 133]}},
+    {"soilReferenceGroup": {"value": "Wanna Sand without biogas slurry", "span": [134, 155]}},
+    {"soilReferenceGroup": {"value": "Rostock Sand", "span": [156, 166]}},
+    {"soilReferenceGroup": {"value": "Wanna Marsch", "span": [167, 177]}},
+    {"soilTexture": {"value": "Sand", "span": [123, 127]}},
+    {"soilTexture": {"value": "Sand", "span": [134, 138]}},
+    {"soilTexture": {"value": "Sand", "span": [156, 160]}},
+    {"soilDepth": {"value": "30 m³", "span": [183, 189]}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}}
+  ],
+  "Location": [
+    {"country": {"value": "Europe", "span": [279, 284]}},
+    {"country": {"value": "Germany", "span": [285, 291]}},
+    {"region": {"value": "Lower Saxony", "span": [292, 302]}},
+    {"city": {"value": "Wanna", "span": [303, 308]}},
+    {"city": {"value": "Rostock", "span": [309, 315]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2021", "span": [219, 223]}},
+    {"startTime": {"value": "2022", "span": [224, 228]}},
+    {"startTime": {"value": "2023", "span": [229, 233]}},
+    {"endTime": {"value": "2023", "span": [229, 233]}}
+  ]
+}
+```
+Note: Some entities like `soilBulkDensity`, `soilPH`, `soilOrganicCarbon` and `soilAvailableNitrogen` are not found in the text, so their corresponding JSON objects are empty.

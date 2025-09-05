@@ -1,0 +1,23 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilTexture": {"value": "Bodentyp", "span": [123, 128]}},
+    {"soilDepth": {"value": "Entkalkungstiefe", "span": [394, 406]}},
+    {"soilOrganicCarbon": {"value": "organischer Kohlenstoffgehalt", "span": [369, 386]}},
+    {"soilAvailableNitrogen": {"value": "Nährstoffansprache", "span": [113, 124]}}
+  ],
+  "Location": [
+    {"country": {"value": "Deutschland", "span": [51, 63]}},
+    {"region": {"value": "Bundesländer", "span": [95, 106]}},
+    {"city": {"value": "keine", "span": [0, 0]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2012", "span": [246, 249]}},
+    {"endTime": {"value": "2012", "span": [252, 255]}},
+    {"duration": {"value": "Creation date: 28.05.2019", "span": [219, 236]}}
+  ]
+}
+```
+Note: The span values are calculated based on the text length and the position of the entity in the text. The span values may vary based on the actual text length.

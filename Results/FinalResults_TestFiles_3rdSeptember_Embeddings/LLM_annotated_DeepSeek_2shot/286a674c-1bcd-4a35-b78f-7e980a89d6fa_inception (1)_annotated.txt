@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892250-Ml7PKB41ubpPpMwuqZPV",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892250,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"winter wheat\", \"span\": [183, 194]}},\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [311, 316]}},\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [364, 369]}},\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [563, 568]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"region\": {\"value\": \"AgroScapeLabs Quillow\", \"span\": [92, 114]}},\n    {\"region\": {\"value\": \"AgroScapeLabs Quillow\", \"span\": [168, 190]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [794, 801]}},\n    {\"city\": {\"value\": \"Brandenburg\", \"span\": [804, 815]}},\n    {\"region\": {\"value\": \"Uckermark\", \"span\": [818, 826]}},\n    {\"region\": {\"value\": \"Quillow\", \"span\": [829, 835]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2019\", \"span\": [115, 119]}},\n    {\"startTime\": {\"value\": \"2019\", \"span\": [191, 195]}},\n    {\"startTime\": {\"value\": \"April\", \"span\": [641, 646]}},\n    {\"endTime\": {\"value\": \"June 2019\", \"span\": [651, 660]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2816,
+    "completion_tokens": 359,
+    "total_tokens": 3175,
+    "prompt_tokens_details": null
+  }
+}

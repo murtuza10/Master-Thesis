@@ -1,0 +1,26 @@
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Helosciadium nodiflorum", "span": [67, 86] }},
+    {"cropSpecies": { "value": "celery", "span": [343, 349] }},
+    {"cropSpecies": { "value": "wild celery", "span": [345, 355] }},
+    {"cropSpecies": { "value": "wild celery species", "span": [355, 373] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"city": { "value": "Gatersleben", "span": [109, 118] }},
+    {"region": { "value": "Germany", "span": [114, 121] }},
+    {"city": { "value": "London", "span": [195, 202] }},
+    {"region": { "value": "Germany", "span": [268, 275] }},
+    {"city": { "value": "Berlin", "span": [324, 331] }},
+    {"region": { "value": "Germany", "span": [330, 337] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2015", "span": [233, 237] }},
+    {"startTime": { "value": "2016", "span": [235, 239] }},
+    {"startTime": { "value": "2018", "span": [287, 291] }},
+    {"endTime": { "value": "2019", "span": [291, 295] }}
+  ]
+}
+```

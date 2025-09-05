@@ -1,0 +1,32 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "spring barley", "span": [358, 368]}},
+    {"cropSpecies": {"value": "spring barley", "span": [520, 530]}},
+    {"cropVariety": {"value": "serradella", "span": [467, 477]}}
+  ],
+  "Soil": [
+    {"soilPH": {"value": "pH", "span": [324, 326]}},
+    {"soilPH": {"value": "pH", "span": [559, 561]}},
+    {"soilOrganicCarbon": {"value": "Gelöster organischer Kohlenstoff", "span": [696, 714]}},
+    {"soilOrganicCarbon": {"value": "Kohlenstoff", "span": [715, 722]}},
+    {"soilAvailableNitrogen": {"value": "NH4+-N", "span": [723, 731]}},
+    {"soilAvailableNitrogen": {"value": "NO2-- and NO3--N-", "span": [733, 750]}},
+    {"soilOrganicCarbon": {"value": "DIC, DOC", "span": [752, 760]}},
+    {"soilAvailableNitrogen": {"value": "PO43--P", "span": [762, 771]}},
+    {"soilAvailableNitrogen": {"value": "NH4+-N", "span": [773, 781]}},
+    {"soilAvailableNitrogen": {"value": "NO2-- and NO3--N-", "span": [783, 799]}}
+  ],
+  "Location": [
+    {"region": {"value": "Northern Germany", "span": [142, 153]}},
+    {"region": {"value": "along a hill slope", "span": [155, 168]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2020", "span": [174, 178]}},
+    {"startTime": {"value": "2020", "span": [212, 216]}},
+    {"startTime": {"value": "2020", "span": [388, 392]}},
+    {"startTime": {"value": "2018", "span": [414, 418]}},
+    {"duration": {"value": "about 3.5 months", "span": [583, 596]}}
+  ]
+}
+```

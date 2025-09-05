@@ -1,0 +1,22 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Betula pubescens", "span": [142, 157]}},
+    {"cropSpecies": {"value": "Betula pubescens", "span": [282, 297]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"duration": {"value": "one year", "span": [226, 231]}}
+  ]
+}
+```
+
+### Explanation of the Output ###
+- In the "Crops" category, two mentions of the crop species "Betula pubescens" are found. 
+  - The first mention is at character positions [142, 157].
+  - The second mention is at character positions [282, 297].
+- In the "Soil" category, no entities are found.
+- In the "Location" category, no entities are found.
+- In the "Time Statement" category, one mention of a time duration is found, which is "one year" at character positions [226, 231].

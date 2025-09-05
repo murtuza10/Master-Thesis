@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756918032-RReh1BgaAWHtMW5jeA7k",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756918032,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Obst\", \"span\": [66, 70] }},\n    {\"cropSpecies\": { \"value\": \"Gemüse\", \"span\": [75, 81] }},\n    {\"cropSpecies\": { \"value\": \"Möhre\", \"span\": [327, 332] }},\n    {\"cropSpecies\": { \"value\": \"Salat\", \"span\": [334, 339] }},\n    {\"cropSpecies\": { \"value\": \"Apfel\", \"span\": [341, 346] }},\n    {\"cropSpecies\": { \"value\": \"Erdbeere\", \"span\": [351, 359] }},\n    {\"cropSpecies\": { \"value\": \"Erdbeere\", \"span\": [384, 392] }},\n    {\"cropSpecies\": { \"value\": \"Himbeere\", \"span\": [397, 405] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [],\n  \"Time Statement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 2201,
+    "completion_tokens": 238,
+    "total_tokens": 2439
+  }
+}

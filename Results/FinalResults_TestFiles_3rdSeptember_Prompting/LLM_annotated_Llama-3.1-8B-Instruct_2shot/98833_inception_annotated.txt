@@ -1,0 +1,24 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Mais", "span": [143, 147]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "Parabraunerde", "span": [217, 230]}},
+    {"soilTexture": {"value": "Löss", "span": [231, 235]}},
+    {"soilDepth": {"value": "28 cm", "span": [259, 264]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2017", "span": [83, 87]}},
+    {"endTime": {"value": "2017", "span": [98, 102]}}
+  ]
+}
+```
+
+### Notes: ###
+- In the input text, the crop species is "Mais" (Maize), but it is not explicitly mentioned as "Mais". However, it can be inferred from the context that the Mähdrescher (Combine Harvester) is used for maize harvesting. Since the task is to extract only explicitly mentioned entities, I did not infer the crop species.
+- In the soil category, the soil texture is mentioned as "Löss" and the soil reference group is mentioned as "Parabraunerde". The soil depth is mentioned as "28 cm".
+- In the time statement category, the start and end times are both mentioned as "2017".

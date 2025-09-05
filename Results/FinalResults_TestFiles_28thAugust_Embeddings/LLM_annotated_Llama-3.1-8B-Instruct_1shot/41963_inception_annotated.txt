@@ -1,0 +1,22 @@
+### Filled JSON Structure ###
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [100, 107]}},
+    {"region": {"value": "German National Forest Inventory", "span": [223, 248]}},
+    {"city": {"value": "", "span": [0, 0]}},
+    {"latitude": {"value": "47.15766000", "span": [345, 357]}},
+    {"longitude": {"value": "5.79922100", "span": [290, 300]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1961", "span": [143, 147]}},
+    {"endTime": {"value": "2013", "span": [154, 158]}},
+    {"duration": {"value": "52", "span": [158, 160]}},
+    {"startTime": {"value": "2011", "span": [272, 276]}},
+    {"endTime": {"value": "2100", "span": [294, 300]}},
+    {"duration": {"value": "90", "span": [300, 302]}}
+  ]
+}
+```

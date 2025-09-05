@@ -1,0 +1,34 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "spring barley", "span": [174, 186]}},
+    {"cropSpecies": {"value": "serradella", "span": [233, 241]}}
+  ],
+  "Soil": [
+    {"soilTexture": {}},
+    {"soilReferenceGroup": {}},
+    {"soilDepth": {}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}}
+  ],
+  "Location": [
+    {"country": {"value": "Northern Germany", "span": [94, 111]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2018", "span": [148, 152]}},
+    {"endTime": {"value": "2020", "span": [13, 17]}},
+    {"duration": {"value": "3.5 months", "span": [351, 363]}}
+  ]
+}
+```
+
+Explanation:
+- For "Crops", I found the species "spring barley" and "serradella".
+- For "Soil", I left the categories empty since there's no specific information about the soil properties in the text.
+- For "Location", I found the country "Northern Germany".
+- For "Time Statement", I found the start time "2018", the end time "2020", and the duration "3.5 months".
+
+Note: The JSON structure is based on the input text, and some categories like "Soil" might be empty since there's no specific information about the soil properties.

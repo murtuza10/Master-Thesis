@@ -1,0 +1,18 @@
+### Filled JSON Structure ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "rye", "span": [44, 48]}},
+    {"cropSpecies": {"value": "Secale cereale L.", "span": [44, 63]}},
+    {"cropSpecies": {"value": "rye", "span": [141, 145]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": {"value": "Northern Europe", "span": [67, 85]}}
+  ],
+  "Time Statement": []
+}
+```
+
+This JSON structure contains the extracted entities from the input text. The "Crops" category includes the mentions of "rye" and "Secale cereale L." as crop species. The "Location" category includes the mention of "Northern Europe" as a region. The "Soil" and "Time Statement" categories are empty since no relevant information was found in the text.

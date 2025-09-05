@@ -1,0 +1,27 @@
+### Output JSON ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [63, 69]}},
+    {"cropSpecies": {"value": "wheat", "span": [123, 129]}},
+    {"cropSpecies": {"value": "Hordeum vulgare ssp. vulgare", "span": [159, 178]}},
+    {"cropSpecies": {"value": "cereals", "span": [204, 211]}},
+    {"cropSpecies": {"value": "wheat", "span": [242, 248]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Explanation ###
+- **Crops**: 
+  - "barley" is mentioned at position [63, 69] and [159, 178] (Hordeum vulgare ssp. vulgare is a scientific name for barley) and [204, 211] (cereals include barley) and [242, 248] (wheat).
+  - "wheat" is mentioned at position [123, 129] and [242, 248] (wheat dwarfing virus).
+- **Soil**: 
+  - No mention of soil in the text.
+- **Location**: 
+  - No mention of location in the text.
+- **Time Statement**: 
+  - No mention of time in the text.

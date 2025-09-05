@@ -1,0 +1,29 @@
+### Filled JSON Structure ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "spring barley", "span": [143, 153]}},
+    {"cropSpecies": {"value": "serradella", "span": [186, 194]}},
+    {"cropSpecies": {"value": "spring barley", "span": [242, 252]}}
+  ],
+  "Soil": [
+    {"soilTexture": []},
+    {"soilReferenceGroup": []},
+    {"soilDepth": []},
+    {"soilBulkDensity": []},
+    {"soilPH": []},
+    {"soilOrganicCarbon": []},
+    {"soilAvailableNitrogen": []}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [127, 133]}},
+    {"region": {"value": "Northern Germany", "span": [103, 116]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2018", "span": [178, 182]}},
+    {"endTime": {"value": "2020", "span": [26, 30]}},
+    {"duration": {"value": "3.5 months", "span": [333, 341]}}
+  ]
+}
+```

@@ -1,0 +1,17 @@
+### Output JSON ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Möhre", "span": [91, 96]}},
+    {"cropSpecies": {"value": "Salat", "span": [97, 102]}},
+    {"cropSpecies": {"value": "Apfel", "span": [103, 108]}},
+    {"cropSpecies": {"value": "Erdbeere", "span": [109, 116]}},
+    {"cropSpecies": {"value": "Himbeere", "span": [123, 130]}},
+    {"cropSpecies": {"value": "Erdbeere", "span": [124, 131]}}  # Duplicate entity, included as per the rules
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+Note: The indices for the `"span"` field are based on the input text, starting from the first character.

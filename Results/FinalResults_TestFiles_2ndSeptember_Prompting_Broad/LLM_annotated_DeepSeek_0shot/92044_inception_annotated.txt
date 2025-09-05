@@ -1,0 +1,26 @@
+{
+  "id": "gen-1756897957-UN6gyS3vDdjbpWEUow7t",
+  "provider": "Crusoe",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756897957,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [232, 238] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [240, 253] }},\n    {\"cropSpecies\": { \"value\": \"maize\", \"span\": [255, 265] }},\n    {\"cropSpecies\": { \"value\": \"maize\", \"span\": [267, 278] }},\n    {\"cropSpecies\": { \"value\": \"oats\", \"span\": [280, 284] }},\n    {\"cropSpecies\": { \"value\": \"potatoes\", \"span\": [286, 294] }},\n    {\"cropSpecies\": { \"value\": \"rape\", \"span\": [296, 307] }},\n    {\"cropSpecies\": { \"value\": \"rye\", \"span\": [309, 312] }},\n    {\"cropSpecies\": { \"value\": \"sugarbeet\", \"span\": [314, 323] }},\n    {\"cropSpecies\": { \"value\": \"triticale\", \"span\": [325, 334] }},\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [336, 347] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [53, 60] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [385, 392] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1979\", \"span\": [61, 65] }},\n    {\"endTime\": { \"value\": \"2021\", \"span\": [69, 73] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [568, 572] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1177,
+    "completion_tokens": 426,
+    "total_tokens": 1603
+  }
+}

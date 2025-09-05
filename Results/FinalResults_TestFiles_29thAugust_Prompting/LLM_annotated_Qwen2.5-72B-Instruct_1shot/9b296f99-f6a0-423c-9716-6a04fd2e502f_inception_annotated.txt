@@ -1,0 +1,31 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "winter wheat", "span": [244, 255] }},
+    {"cropSpecies": { "value": "winter barley", "span": [257, 268] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [270, 279] }},
+    {"cropSpecies": { "value": "winter barley", "span": [726, 737] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [739, 748] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "bulk soil", "span": [839, 847] }},
+    {"soilFertility": { "value": "soil fertility", "span": [142, 154] }},
+    {"soilPH": { "value": "", "span": [] }},
+    {"soilOrganicCarbon": { "value": "humus", "span": [92, 97] }},
+    {"soilAvailableNitrogen": { "value": "mineral nutrients", "span": [118, 133] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [57, 64] }},
+    {"city": { "value": "Speyer", "span": [49, 55] }},
+    {"city": { "value": "Rinkenbergerhof", "span": [197, 212] }},
+    {"city": { "value": "LUFA Speyer", "span": [218, 229] }},
+    {"city": { "value": "Karlsruhe", "span": [625, 635] }},
+    {"city": { "value": "LUFA Speyer", "span": [678, 689] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1984", "span": [222, 226] }},
+    {"duration": { "value": "long term", "span": [812, 820] }},
+    {"startTime": { "value": "16. September 2009", "span": [612, 629] }}
+  ]
+}
+```

@@ -1,0 +1,19 @@
+### Output ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilOrganicCarbon": { "value": "soil organic carbon", "span": [41, 61] }},
+    {"soilAvailableNitrogen": { "value": "soil organic nitrogen", "span": [93, 113] }},
+    {"soilPH": { "value": "first-order kinetics", "span": [153, 168] }},
+    {"soilBulkDensity": { "value": "C transfer matrix", "span": [196, 212] }},
+    {"soilDepth": { "value": "model pools", "span": [227, 234] }},
+    {"soilReferenceGroup": { "value": "model pools", "span": [227, 234] }},
+    {"soilTexture": { "value": "", "span": [0, 0] }}  # Added an empty soilTexture entry
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"duration": { "value": "temporal development", "span": [126, 140] }}
+  ]
+}
+```

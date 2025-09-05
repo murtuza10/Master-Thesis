@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892195-6kNCLaYHhtQ4wcZtiNCr",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892195,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [1005, 1011] }},\n    {\"cropSpecies\": { \"value\": \"serradella\", \"span\": [1031, 1041] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [1071, 1077] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"pH\", \"span\": [42, 44] }},\n    {\"Soil\": { \"value\": \"Eh\", \"span\": [408, 410] }},\n    {\"Soil\": { \"value\": \"pH\", \"span\": [412, 414] }},\n    {\"Soil\": { \"value\": \"OC\", \"span\": [440, 442] }},\n    {\"Soil\": { \"value\": \"organic C\", \"span\": [1242, 1251] }},\n    {\"Soil\": { \"value\": \"DOC\", \"span\": [1260, 1263] }},\n    {\"Soil\": { \"value\": \"Eh\", \"span\": [1313, 1315] }},\n    {\"Soil\": { \"value\": \"pH\", \"span\": [1408, 1410] }}\n  ],\n  \"Location\": [\n    {\"city\": { \"value\": \"Rostock\", \"span\": [19, 26] }},\n    {\"city\": { \"value\": \"Rostock\", \"span\": [153, 160] }},\n    {\"region\": { \"value\": \"Northern Germany\", \"span\": [297, 313] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2020\", \"span\": [108, 112] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [242, 246] }},\n    {\"startTime\": { \"value\": \"2018\", \"span\": [877, 881] }},\n    {\"startTime\": { \"value\": \"2019\", \"span\": [1000, 1004] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [1058, 1062] }},\n    {\"duration\": { \"value\": \"3.5 months\", \"span\": [1562, 1572] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4845,
+    "completion_tokens": 523,
+    "total_tokens": 5368,
+    "prompt_tokens_details": null
+  }
+}

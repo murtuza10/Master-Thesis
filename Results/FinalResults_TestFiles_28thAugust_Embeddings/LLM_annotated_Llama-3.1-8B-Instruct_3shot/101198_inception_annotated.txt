@@ -1,0 +1,20 @@
+### JSON Output
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2020", "span": [134, 138]}},
+    {"startTime": {"value": "2050", "span": [234, 238]}},
+    {"endTime": {"value": "2050", "span": [234, 238]}}
+  ]
+}
+```
+### Explanation
+From the given text, the following entities were identified:
+
+- Time Statement: 
+  - "2020" as the start time
+  - "2050" as the start and end time
+- No other entities were found in the text.

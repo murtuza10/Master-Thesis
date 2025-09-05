@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756906682-azimOq4m9yL5YAU4XoPi",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756906682,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"energy crops\", \"span\": [931, 943]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [36, 43]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [770, 777]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"1990\", \"span\": [45, 49]}},\n    {\"endTime\": {\"value\": \"2017\", \"span\": [52, 56]}},\n    {\"startTime\": {\"value\": \"1990\", \"span\": [779, 783]}},\n    {\"endTime\": {\"value\": \"2017\", \"span\": [786, 790]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 1935,
+    "completion_tokens": 186,
+    "total_tokens": 2121
+  }
+}

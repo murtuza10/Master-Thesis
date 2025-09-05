@@ -1,0 +1,27 @@
+### JSON Output
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "rye", "span": [25, 29] }},
+    {"cropSpecies": { "value": "wheat", "span": [95, 100] }},
+    {"cropSpecies": { "value": "rye", "span": [145, 149] }},
+    {"cropSpecies": { "value": "rye", "span": [225, 229] }},
+    {"cropSpecies": { "value": "rye", "span": [292, 296] }}
+  ],
+  "Soil": [
+  ],
+  "Location": [
+    {"country": { "value": "Europe", "span": [36, 43] }},
+    {"region": { "value": "Northern Europe", "span": [36, 51] }}
+  ],
+  "Time Statement": [
+  ]
+}
+```
+
+### Notes
+
+- **Crops**: Rye is the main crop mentioned in the text. However, there is a mention of wheat in the text, which is also a cereal crop. 
+- **Soil**: There is no mention of soil in the text.
+- **Location**: Northern Europe is mentioned as a region, and Europe is mentioned as a country.
+- **Time Statement**: There is no mention of time or duration in the text.

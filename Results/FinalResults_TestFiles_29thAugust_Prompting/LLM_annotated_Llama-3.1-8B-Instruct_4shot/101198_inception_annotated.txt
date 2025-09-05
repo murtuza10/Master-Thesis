@@ -1,0 +1,22 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Biomasse", "span": [63, 74]}},
+    {"cropSpecies": {"value": "Holz", "span": [166, 171]}},
+    {"cropSpecies": {"value": "holzbasierte Produkte", "span": [187, 205]}},
+    {"cropSpecies": {"value": "holzbasierte Fasern", "span": [246, 259]}},
+    {"cropSpecies": {"value": "chemische Derivate", "span": [264, 277]}},
+    {"cropSpecies": {"value": "Textilfaser", "span": [314, 323]}},
+    {"cropSpecies": {"value": "Schnittholz", "span": [320, 328]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2020", "span": [231, 235]}},
+    {"endTime": {"value": "2050", "span": [237, 241]}},
+    {"duration": {"value": "30 Jahre", "span": [247, 253]}}
+  ]
+}
+```

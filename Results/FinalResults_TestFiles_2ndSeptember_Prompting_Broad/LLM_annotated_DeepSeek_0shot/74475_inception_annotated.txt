@@ -1,0 +1,34 @@
+{
+  "id": "gen-1756898013-SwFHvcOCOCjUhETTVcOe",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756898013,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"soil organic carbon\", \"span\": [84, 102] }},\n    {\"Soil\": { \"value\": \"soil organic nitrogen\", \"span\": [107, 127] }},\n    {\"Soil\": { \"value\": \"N mineralisation rates\", \"span\": [132, 155] }},\n    {\"Soil\": { \"value\": \"SOC\", \"span\": [194, 197] }},\n    {\"Soil\": { \"value\": \"SOC\", \"span\": [241, 244] }},\n    {\"Soil\": { \"value\": \"SON\", \"span\": [290, 293] }},\n    {\"Soil\": { \"value\": \"N mineralisation\", \"span\": [298, 314] }},\n    {\"Soil\": { \"value\": \"C\", \"span\": [443, 444] }},\n    {\"Soil\": { \"value\": \"N\", \"span\": [449, 450] }},\n    {\"Soil\": { \"value\": \"C\", \"span\": [496, 497] }},\n    {\"Soil\": { \"value\": \"N\", \"span\": [500, 501] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 1144,
+    "completion_tokens": 280,
+    "total_tokens": 1424,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892104-P9iFaKFcZqFahHuklNcA",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892104,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Apium graveolens L. ssp. graveolens\", \"span\": [40, 73] }},\n    {\"cropSpecies\": { \"value\": \"Apium graveolens\", \"span\": [283, 299] }},\n    {\"cropSpecies\": { \"value\": \"wild celery\", \"span\": [377, 388] }},\n    {\"cropSpecies\": { \"value\": \"Apium graveolens L. ssp. graveolens\", \"span\": [391, 424] }},\n    {\"cropSpecies\": { \"value\": \"Apium graveolens\", \"span\": [590, 606] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"city\": { \"value\": \"Quedlinburg\", \"span\": [538, 549] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [551, 558] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2016\", \"span\": [613, 617] }},\n    {\"startTime\": { \"value\": \"2017\", \"span\": [710, 714] }},\n    {\"endTime\": { \"value\": \"2018\", \"span\": [717, 721] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4885,
+    "completion_tokens": 304,
+    "total_tokens": 5189,
+    "prompt_tokens_details": null
+  }
+}

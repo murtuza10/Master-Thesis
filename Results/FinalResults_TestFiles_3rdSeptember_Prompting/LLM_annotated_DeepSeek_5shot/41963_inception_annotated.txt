@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756906921-PLOb3WpK47E6Bq9QbxI7",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756906925,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"German\", \"span\": [187, 193] }},\n    {\"longitude\": { \"value\": \"5,79922100\", \"span\": [1043, 1054] }},\n    {\"longitude\": { \"value\": \"15,08954000\", \"span\": [1083, 1095] }},\n    {\"latitude\": { \"value\": \"47,15766000\", \"span\": [1126, 1138] }},\n    {\"latitude\": { \"value\": \"55,08484000\", \"span\": [1168, 1180] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1961\", \"span\": [148, 152] }},\n    {\"endTime\": { \"value\": \"2100\", \"span\": [156, 160] }},\n    {\"startTime\": { \"value\": \"1961\", \"span\": [234, 238] }},\n    {\"endTime\": { \"value\": \"2013\", \"span\": [242, 246] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [479, 485] }},\n    {\"endTime\": { \"value\": \"2050\", \"span\": [488, 492] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [497, 503] }},\n    {\"endTime\": { \"value\": \"2100\", \"span\": [506, 510] }},\n    {\"startTime\": { \"value\": \"01.01.1961\", \"span\": [1012, 1022] }},\n    {\"endTime\": { \"value\": \"31.12.2099\", \"span\": [1025, 1036] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4883,
+    "completion_tokens": 420,
+    "total_tokens": 5303,
+    "prompt_tokens_details": null
+  }
+}

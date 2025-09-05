@@ -1,0 +1,23 @@
+### Filled JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Mais", "span": [104, 108]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "Parabraunerde", "span": [174, 187]}},
+    {"soilTexture": {"value": "Löss", "span": [189, 193]}},
+    {"soilDepth": {"value": "28 cm", "span": [223, 227]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2017", "span": [95, 99]}},
+    {"endTime": {"value": "2017", "span": [232, 236]}}
+  ]
+}
+```
+Note: I've filled in the JSON structure based on the provided text. The entities extracted are:
+
+* Crop: "Mais" (species)
+* Soil: "Parabraunerde" (reference group), "Löss" (texture), and "28 cm" (depth)
+* Time: "2017" (start and end time)

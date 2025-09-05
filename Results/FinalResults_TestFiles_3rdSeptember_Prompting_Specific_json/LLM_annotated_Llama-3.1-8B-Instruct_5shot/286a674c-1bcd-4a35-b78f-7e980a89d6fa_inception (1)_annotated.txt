@@ -1,0 +1,18 @@
+{
+  "Crops": [
+    {"cropSpecies": { "value": "winter wheat", "span": [306, 316] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": { "value": "Germany", "span": [1105, 1112] }},
+    {"region": { "value": "Brandenburg", "span": [1123, 1132] }},
+    {"city": { "value": "Quillow", "span": [1138, 1146] }},
+    {"latitude": {}},  // No mention of latitude in the text
+    {"longitude": {}},  // No mention of longitude in the text
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "April", "span": [295, 300] }},
+    {"endTime": { "value": "June", "span": [311, 315] }},
+    {"duration": { "value": "growing season", "span": [313, 320] }}
+  ]
+}

@@ -1,0 +1,89 @@
+### Code ###
+```python
+import re
+from collections import defaultdict
+
+def extract_entities(text):
+    entities = defaultdict(list)
+
+    # Crops
+    crops = ["wheat", "barley", "serradella"]
+    for crop in crops:
+        pattern = re.compile(r"\b" + re.escape(crop) + r"\b", re.IGNORECASE)
+        matches = pattern.finditer(text)
+        for match in matches:
+            entities["Crops"].append({"cropSpecies": {"value": crop, "span": [match.start(), match.end()]}})
+
+    # Soil
+    soil = ["Boden", "Bodenwasser", "Phosphor", "Gel√∂ster organischer Kohlenstoff", "Kohlenstoff", "Nitrat", "Nitrit", "Aluminium", "Calcium", "Eisen", "pH-Wert", "Phosphat", "Ammonium", "Stickstoff"]
+    for soil_item in soil:
+        pattern = re.compile(r"\b" + re.escape(soil_item) + r"\b", re.IGNORECASE)
+        matches = pattern.finditer(text)
+        for match in matches:
+            if soil_item == "pH-Wert":
+                entities["Soil"].append({"soilPH": {"value": "pH", "span": [match.start(), match.end()]}})
+            else:
+                entities["Soil"].append({soil_item: {"value": soil_item, "span": [match.start(), match.end()]}})
+
+    # Location
+    location = ["Rostock", "Northern Germany"]
+    for location_item in location:
+        pattern = re.compile(r"\b" + re.escape(location_item) + r"\b")
+        matches = pattern.finditer(text)
+        for match in matches:
+            if location_item == "Rostock":
+                entities["Location"].append({"city": {"value": "Rostock", "span": [match.start(), match.end()]}})
+            elif location_item == "Northern Germany":
+                entities["Location"].append({"country": {"value": "Germany", "span": [match.start(), match.end()]}})
+
+    # Time Statement
+    time_statement = ["2020", "2018", "2019"]
+    for time_statement_item in time_statement:
+        pattern = re.compile(r"\b" + re.escape(time_statement_item) + r"\b")
+        matches = pattern.finditer(text)
+        for match in matches:
+            if time_statement_item == "2020":
+                entities["Time Statement"].append({"startTime": {"value": "2020", "span": [match.start(), match.end()]}})
+            elif time_statement_item == "2018":
+                entities["Time Statement"].append({"startTime": {"value": "2018", "span": [match.start(), match.end()]}})
+            elif time_statement_item == "2019":
+                entities["Time Statement"].append({"startTime": {"value": "2019", "span": [match.start(), match.end()]}})
+
+    return entities
+
+text = """
+Title: 
+ Lysimeter data Rostock: Redox potential, pH and element concentrations of pore water in 2020
+Abstract_text_1: 
+ Lysimeter data Rostock: Redox potential, pH and element concentrations of pore water in 2020.
+Abstract_text_2: 
+ The dataset contains soil pore water data from three sampling depths of three soil profiles from along a hill slope in Northern Germany. Data inform about weekly redox potential (Eh), pH and element concentrations (TC, IC, OC, TN, NH4+ -N, NO2- -N, NO3- -N, PO43- -P, total Ca, P, Fe, Al, and Mn) in filtered (0.45 µm) soil pore water samples collected in 2020. Research domain: Soil Sciences Research question: Controlled drainage may affect phosphorus mobilization in soil. To assess P mobilization at different redox conditions, three soil profiles with redoximorphic features were selected along a slight hill slope and lysimeter monoliths were collected by drilling in 2018. Lysimeters had been cropped with spring barley and catch-cropped with serradella in 2019. Also in 2020, lysimeters were cropped with spring barley and water levels of the monoliths were adjusted to high and low water table to mimic closed and open drainage, respectively. The redox potential (Eh) was measured in situ and pore water was sampled weekly from three different depths of the lysimeters to determine pH and the element concentrations total C, N, P, Al, Fe, Mn, and Ca as well as inorganic and organic C (DIC, DOC), PO43--P, NH4+-N, NO2-- and NO3--N- in solutions (0.45 µm). Thus, information about different element concentrations at different redox potentials and pH was gained over a period of about 3.5 months in 2020.
+Keywords: 
+, specific UV absorbance (SUVA), Boden, Bodenwasser, Phosphor, Gel√∂ster organischer Kohlenstoff, Kohlenstoff, Nitrat, Nitrit, Aluminium, Calcium, Eisen, pH-Wert, Phosphat, Ammonium, Stickstoff
+"""
+
+entities = extract_entities(text)
+print(entities)
+```
+
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [238, 243]}},
+    {"cropSpecies": {"value": "barley", "span": [364, 369]}},
+    {"cropSpecies": {"value": "serradella", "span": [246, 256]}}
+  ],
+  "Soil": [
+    {"Boden": {"value": "Boden", "span": [431, 437]}},
+    {"Bodenwasser": {"value": "Bodenwasser", "span": [433, 443]}},
+    {"Phosphor": {"value": "Phosphor", "span": [442, 449]}},
+    {"Gel√∂ster organischer Kohlenstoff": {"value": "Gel√∂ster organischer Kohlenstoff", "span": [450, 470]}},
+    {"Kohlenstoff": {"value": "Kohlenstoff", "span": [450, 457]}},
+    {"Nitrat": {"value": "Nitrat", "span": [458, 464]}},
+    {"Nitrit": {"value": "Nitrit", "span": [464, 469]}},
+    {"Aluminium": {"value": "Aluminium", "span": [470, 478]}},
+    {"Calcium": {"value": "Calcium", "span": [478, 484]}},
+    {"Eisen": {"value": "Eisen", "span": [484, 489]}},
+    {"pH-Wert": {"value": "pH", "span": [490, 492]}},
+    {"Phosphat": {"value": "Phosphat", "span

@@ -1,0 +1,29 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wheat", "span": [227, 232] }},
+    {"cropSpecies": { "value": "barley", "span": [237, 243] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [248, 258] }},
+    {"cropSpecies": { "value": "barley", "span": [564, 570] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [574, 584] }}
+  ],
+  "Soil": [
+    {"soilOrganicCarbon": { "value": "humus", "span": [158, 163] }},
+    {"soilAvailableNitrogen": { "value": "mineral nutrients", "span": [137, 152] }},
+    {"soilAvailableNitrogen": { "value": "nitrogen", "span": [501, 509] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [45, 52] }},
+    {"country": { "value": "Germany", "span": [214, 221] }},
+    {"city": { "value": "Speyer", "span": [54, 60] }},
+    {"city": { "value": "Speyer", "span": [223, 229] }},
+    {"region": { "value": "Rinkenbergerhof", "span": [236, 252] }},
+    {"city": { "value": "Karlsruhe", "span": [344, 353] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1984", "span": [202, 206] }},
+    {"duration": { "value": "long term", "span": [545, 552] }},
+    {"duration": { "value": "long-term", "span": [693, 701] }}
+  ]
+}
+```

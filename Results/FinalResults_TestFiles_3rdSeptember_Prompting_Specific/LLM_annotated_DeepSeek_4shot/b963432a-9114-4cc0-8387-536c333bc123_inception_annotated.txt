@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756918045-k8SMoTOHufolBW4UzBu6",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756918045,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"spring barley\", \"span\": [1065, 1078] }},\n    {\"cropSpecies\": { \"value\": \"serradella\", \"span\": [1104, 1114] }},\n    {\"cropSpecies\": { \"value\": \"spring barley\", \"span\": [1148, 1161] }}\n  ],\n  \"Soil\": [\n    {\"soilPH\": { \"value\": \"pH\", \"span\": [47, 49] }},\n    {\"soilPH\": { \"value\": \"pH\", \"span\": [374, 376] }},\n    {\"soilPH\": { \"value\": \"pH\", \"span\": [1299, 1301] }},\n    {\"soilOrganicCarbon\": { \"value\": \"OC\", \"span\": [390, 392] }},\n    {\"soilOrganicCarbon\": { \"value\": \"organic C\", \"span\": [1318, 1327] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"TN\", \"span\": [388, 390] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"NH4+ -N\", \"span\": [393, 400] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"NO2- -N\", \"span\": [403, 410] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"NO3- -N\", \"span\": [413, 420] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"NO2--\", \"span\": [1332, 1337] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"NO3--N\", \"span\": [1339, 1345] }}\n  ],\n  \"Location\": [\n    {\"city\": { \"value\": \"Rostock\", \"span\": [17, 24] }},\n    {\"region\": { \"value\": \"Northern Germany\", \"span\": [280, 296] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2020\", \"span\": [82, 86] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [476, 480] }},\n    {\"startTime\": { \"value\": \"2018\", \"span\": [870, 874] }},\n    {\"startTime\": { \"value\": \"2019\", \"span\": [1056, 1060] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [1126, 1130] }},\n    {\"duration\": { \"value\": \"3.5 months\", \"span\": [1489, 1499] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [1503, 1507] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4297,
+    "completion_tokens": 631,
+    "total_tokens": 4928
+  }
+}

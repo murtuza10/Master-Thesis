@@ -1,0 +1,34 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Picea abies", "span": [71, 81]}},
+    {"cropSpecies": {"value": "Norway spruce", "span": [121, 130]}},
+    {"cropSpecies": {"value": "Picea abies", "span": [172, 182]}},
+    {"cropSpecies": {"value": "Picea abies", "span": [203, 213]}},
+    {"cropSpecies": {"value": "Picea abies", "span": [246, 256]}},
+    {"cropSpecies": {"value": "Picea abies", "span": [297, 307]}},
+    {"cropSpecies": {"value": "Picea abies", "span": [338, 348]}},
+    {"cropSpecies": {"value": "Norway spruce", "span": [385, 394]}},
+    {"cropSpecies": {"value": "Picea abies", "span": [431, 441]}},
+    {"cropSpecies": {"value": "Picea abies", "span": [470, 480]}},
+    {"cropSpecies": {"value": "Picea abies", "span": [514, 524]}},
+    {"cropSpecies": {"value": "Picea abies", "span": [555, 565]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [182, 187]}},
+    {"region": {"value": "Western Germany", "span": [202, 213]}},
+    {"city": {"value": "Germany", "span": [222, 227]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1964", "span": [223, 227]}},
+    {"endTime": {"value": "1968", "span": [227, 231]}},
+    {"duration": {"value": "51", "span": [234, 236]}},
+    {"startTime": {"value": "7", "span": [273, 274]}},
+    {"endTime": {"value": "51", "span": [294, 295]}},
+    {"duration": {"value": "50", "span": [299, 301]}}
+  ]
+}
+```

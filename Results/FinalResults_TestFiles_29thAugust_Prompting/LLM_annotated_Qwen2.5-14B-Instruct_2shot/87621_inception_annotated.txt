@@ -1,0 +1,14 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "barley", "span": [59, 65] }},
+    {"cropSpecies": { "value": "cereals", "span": [128, 135] }},
+    {"cropSpecies": { "value": "Wheat", "span": [22, 27] }}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+``` 
+
+Note that "Wheat" is included even though it's not the main crop being studied, as it is explicitly mentioned in the text. The species name "Wheat" refers to the context of the virus affecting cereals generally, not specifically as a crop being studied here.

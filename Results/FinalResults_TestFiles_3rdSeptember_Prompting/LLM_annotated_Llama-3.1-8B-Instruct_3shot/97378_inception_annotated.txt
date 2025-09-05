@@ -1,0 +1,34 @@
+### Filled JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "cropland", "span": [21, 29]}}
+  ],
+  "Soil": [
+    {"soilTexture": {"value": "Lehm", "span": [173, 177]}},
+    {"soilTexture": {"value": "Ton", "span": [183, 186]}},
+    {"soilReferenceGroup": {"value": "Bodentextur", "span": [173, 185]}},
+    {"soilReferenceGroup": {"value": "Bodenbearbeitung", "span": [187, 202]}},
+    {"soilBulkDensity": {"value": "pH Wert", "span": [206, 212]}},
+    {"soilOrganicCarbon": {"value": "organischen Kohlenstoff", "span": [213, 231]}},
+    {"soilAvailableNitrogen": {"value": "Gesamt-Stickstoff", "span": [233, 244]}},
+    {"soilDepth": {"value": "2 Jahre", "span": [41, 47]}}
+  ],
+  "Location": [
+    {"city": {"value": "Hildesheim", "span": [133, 141]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "14-tägigen Zeitraster", "span": [29, 43]}},
+    {"endTime": {"value": "2 Jahre", "span": [41, 47]}}
+  ]
+}
+```
+
+### Notes ###
+
+- The text mentions "cropland" as a type of land use, which is classified as a crop.
+- The text mentions two types of soil textures, "Lehm" and "Ton", which are classified as soil textures.
+- The text mentions "Bodentextur" and "Bodenbearbeitung" as factors that differ between the fields, which are classified as soil reference groups.
+- The text mentions "pH Wert", "organischen Kohlenstoff", and "Gesamt-Stickstoff" as physicochemical properties of the soil, which are classified as soil bulk density, soil organic carbon, and soil available nitrogen, respectively.
+- The text mentions a duration of "14-tägigen Zeitraster" and "2 Jahre", which are classified as start and end times, respectively.
+- The text mentions the city "Hildesheim" as the location of the fields.

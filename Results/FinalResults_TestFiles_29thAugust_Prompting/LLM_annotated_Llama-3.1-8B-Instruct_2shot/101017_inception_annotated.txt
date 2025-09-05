@@ -1,0 +1,21 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Möhre", "span": [145, 150] }},
+    {"cropSpecies": { "value": "Salat", "span": [154, 158] }},
+    {"cropSpecies": { "value": "Apfel", "span": [164, 168] }},
+    {"cropSpecies": { "value": "Erdbeere", "span": [170, 176] }},
+    {"cropSpecies": { "value": "Erdbeere", "span": [182, 188] }},
+    {"cropSpecies": { "value": "Himbeere", "span": [192, 198] }}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Explanation ###
+- In the input text, the following crops are mentioned: Möhre, Salat, Apfel, Erdbeere, Erdbeere, and Himbeere. The corresponding crop species are extracted and listed in the "Crops" section of the output JSON structure.
+- No soil-related entities are mentioned in the text, so the "Soil" section remains empty.
+- No location or time-related entities are mentioned in the text, so the "Location" and "Time Statement" sections remain empty.

@@ -1,0 +1,26 @@
+{
+  "id": "gen-1756898088-FbCmeBrqPgQ2ToPnlJyz",
+  "provider": "Phala",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756898088,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [570, 575] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"soil properties\", \"span\": [153, 167] }},\n    {\"Soil\": { \"value\": \"soil water stable aggregation\", \"span\": [234, 262] }},\n    {\"Soil\": { \"value\": \"soil properties\", \"span\": [296, 310] }},\n    {\"Soil\": { \"value\": \"soil-plant system\", \"span\": [601, 618] }},\n    {\"Soil\": { \"value\": \"Soil\", \"span\": [661, 665] }},\n    {\"Soil\": { \"value\": \"Boden\", \"span\": [733, 738] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1261,
+    "completion_tokens": 198,
+    "total_tokens": 1459
+  }
+}

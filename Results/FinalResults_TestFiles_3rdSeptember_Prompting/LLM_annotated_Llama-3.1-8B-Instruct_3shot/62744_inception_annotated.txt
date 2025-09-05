@@ -1,0 +1,20 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "rye", "span": [84, 88]}},
+    {"cropSpecies": {"value": "Secale cereale L.", "span": [87, 104]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": {"value": "Northern Europe", "span": [140, 152]}}
+  ],
+  "Time Statement": []
+}
+```
+### Explanation ###
+
+- The input text mentions the crop "rye" (Secale cereale L.) multiple times, which is correctly identified as a crop species and added to the JSON output.
+- The text does not provide any information about the soil, so the "Soil" category in the JSON output is empty.
+- The text mentions "Northern Europe" as the region where rye is an important crop, which is correctly identified as a location and added to the JSON output.
+- The text does not provide any information about time statements, so the "Time Statement" category in the JSON output is empty.

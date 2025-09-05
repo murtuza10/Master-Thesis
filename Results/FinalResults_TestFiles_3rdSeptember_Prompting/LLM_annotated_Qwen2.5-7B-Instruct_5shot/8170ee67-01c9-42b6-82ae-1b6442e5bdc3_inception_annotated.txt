@@ -1,0 +1,28 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "winter barley", "span": [76, 86] }},
+    {"cropSpecies": { "value": "winter oilseed rape", "span": [117, 130] }},
+    {"cropSpecies": { "value": "winter wheat", "span": [131, 139] }},
+    {"cropSpecies": { "value": "lupine", "span": [140, 145] }},
+    {"cropSpecies": { "value": "winter rye", "span": [146, 152] }},
+    {"cropSpecies": { "value": "Hordeum vulgare L.", "span": [238, 255] }},
+    {"cropVariety": { "value": "OTTO", "span": [257, 261] }}
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "extensively managed grassland", "span": [296, 319] }},
+    {"soilDepth": { "value": "25 cm", "span": [329, 335] }},
+    {"soilPH": { "value": "PCAL", "span": [366, 369] }}
+  ],
+  "Location": [
+    {"city": { "value": "Braunschweig", "span": [28, 36] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1985-2008", "span": [190, 200] }},
+    {"endTime": { "value": "2013", "span": [201, 205] }},
+    {"startTime": { "value": "2013", "span": [226, 230] }},
+    {"endTime": { "value": "2014", "span": [231, 235] }},
+    {"duration": { "value": "once a year", "span": [377, 386] }}
+  ]
+}
+```

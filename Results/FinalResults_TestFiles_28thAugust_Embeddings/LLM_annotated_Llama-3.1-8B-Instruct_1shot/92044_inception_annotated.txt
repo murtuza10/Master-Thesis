@@ -1,0 +1,28 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "spring barley", "span": [131, 144]}},
+    {"cropSpecies": {"value": "winter barley", "span": [146, 159]}},
+    {"cropSpecies": {"value": "grain maize", "span": [163, 175]}},
+    {"cropSpecies": {"value": "silage maize", "span": [179, 191]}},
+    {"cropSpecies": {"value": "oats", "span": [195, 200]}},
+    {"cropSpecies": {"value": "potatoes", "span": [203, 210]}},
+    {"cropSpecies": {"value": "winter rape", "span": [214, 223]}},
+    {"cropSpecies": {"value": "rye", "span": [228, 232]}},
+    {"cropSpecies": {"value": "sugarbeet", "span": [235, 243]}},
+    {"cropSpecies": {"value": "triticale", "span": [249, 257]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [262, 271]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [26, 33]}},
+    {"latitude": {"value": "900 km2", "span": [85, 95]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1979", "span": [97, 101]}},
+    {"endTime": {"value": "2021", "span": [106, 110]}}
+  ]
+}
+```
+Note that the latitude is not a typical location, but rather the average size of the districts. Therefore, it is annotated as a location, but it might be more accurate to annotate it as a soil characteristic.

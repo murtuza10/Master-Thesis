@@ -1,0 +1,148 @@
+### Code
+
+```python
+import re
+from typing import List, Dict
+
+def extract_entities(text: str) -> Dict:
+    """
+    Extracts entities from the text based on the given categories.
+
+    Args:
+    text (str): The input text to extract entities from.
+
+    Returns:
+    Dict: A dictionary containing the extracted entities.
+    """
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Crops
+    crop_species = re.findall(r"Hordeum vulgare L\.\, (?:var\. )?[A-Za-z0-9\s]+", text)
+    for species in crop_species:
+        entities["Crops"].append({
+            "cropSpecies": {
+                "value": species,
+                "span": [text.find(species), text.find(species) + len(species)]
+            }
+        })
+
+    # Soil
+    soil_text = re.search(r"Soil\, Phosphate fertilizers\, Phosphates\, Phosphate fertilizers\, farm inputs\, opendata\, Boden", text)
+    if soil_text:
+        soil_text = soil_text.group()
+        entities["Soil"].append({
+            "soilTexture": {
+                "value": "Boden",
+                "span": [text.find(soil_text) + text.find("Boden"), text.find(soil_text) + text.find("Boden") + len("Boden")]
+            }
+        })
+
+    # Location
+    location_text = re.search(r"Braunschweig", text)
+    if location_text:
+        location_text = location_text.group()
+        entities["Location"].append({
+            "city": {
+                "value": location_text,
+                "span": [text.find(location_text), text.find(location_text) + len(location_text)]
+            }
+        })
+        entities["Location"].append({
+            "country": {
+                "value": "Germany",
+                "span": [text.find("Germany"), text.find("Germany") + len("Germany")]
+            }
+        })
+
+    # Time Statement
+    time_text = re.search(r"2014", text)
+    if time_text:
+        time_text = time_text.group()
+        entities["Time Statement"].append({
+            "startTime": {
+                "value": time_text,
+                "span": [text.find(time_text), text.find(time_text) + len(time_text)]
+            }
+        })
+
+    return entities
+
+text = """
+Field experiment FV 4 Braunschweig – harvest of winter barley 2014.
+The phosphorus (P) taken up by organisms cannot be substituted from any other element; the only source of an increasing P demand for feeding the growing global population is mineable rock phosphate, upgraded to mineral P fertilizer. There are concerns about the global reserves of rock phosphates, expressed in terms of “peak phosphorus” (demand production). Bone char (BC) produced of de-fatted and de-gelatinized bones (15% P, 28% Calcium, 1% Magnesium) from slaughterhouses by a pyrolysis process could be an alternative source of P. Phosphorus in BC is mainly bound in a structure similar to hydroxylapatite (HA) in accordance with their origin from bones. Generally, P in HA is of low solubility and, consequently, it cannot be expected that bones or BC have a high fertilization value. Consequently, further attempts were directed to increase the P solubility of BC by a sulfur (S) enrichment leading to so called BCplus (patent DE102011010525). A former long-term field P fertilization trial (1985-2008) led to distinctive differences in available soil P (PCAL) concentrations. For some detailed description of the former experiment and further soil information see: Vogeler, I.; Rogasik, J.; Funder, U.; Panten, K.; Schnug, E. (2009) Effect of tillage systems and P-fertilization on soil physical and chemical properties, crop yield and nutrient uptake. Soil and Tillage Research 103 (1): 137-143.The resulting differences in soil P were conserved below an extensively managed grassland until 2013 when the experiment was ploughed to a depth of 25 cm and oat was seeded. After the harvest of 2013, the newly designed experiment (FV 4) was established testing the fertilizing potential of BC and BCplus. According to their mean PCAL concentrations (0-30 cm) one third of the plots were assigned to soil class A (11 mg kg-1 PCAL), B (21 mg kg-1 PCAL), and C (47 mg kg-1 PCAL) each. The experiment was set up as a completely randomized block design with three replicates, a plot size of 5.75 m * 17.5 m, and crop rotation of winter barley, winter oilseed rape, winter wheat, lupine and winter rye. Chisel ploughing and ploughing to a depth of 25 cm incorporates crop residues before seeding. Additionally to a control without P fertilization (P0), three different types of P fertilizer (BC, BCplus, TSP) are applied to an equivalent of 45 kg ha-1 P once a year shortly before seeding since autumn 2013. This data set presents the first harvest of winter barley (Hordeum vulgare L., variety OTTO) in 2014. Research domain: Plant Nutrition
+Keywords: 
+Soil, Phosphate fertilizers, Phosphates, Phosphate fertilizers, farm inputs, opendata, Boden
+"""
+
+entities = extract_entities(text)
+print(entities)
+```
+
+### Output
+
+```json
+{
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "winter barley",
+        "span": [54, 65]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Hordeum vulgare L\.",
+        "span": [223, 234]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "winter oilseed rape",
+        "span": [250, 262]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "winter wheat",
+        "span": [264, 272]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "lupine",
+        "span": [277, 283]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "winter rye",
+        "span": [291, 297]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "winter barley",
+        "span": [309, 320]
+      }
+    }
+  ],
+  "Soil": [
+    {
+      "soilTexture": {
+        "value": "Boden",
+        "span": [44, 51]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "city": {
+        "value": "Braunschweig",
+        "span": [17, 28]
+      }
+   

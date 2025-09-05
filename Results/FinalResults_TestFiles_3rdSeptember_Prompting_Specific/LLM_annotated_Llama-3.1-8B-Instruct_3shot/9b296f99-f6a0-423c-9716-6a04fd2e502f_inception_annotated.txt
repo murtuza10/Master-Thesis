@@ -1,0 +1,28 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "winter wheat", "span": [241, 251]}},
+    {"cropSpecies": {"value": "winter barley", "span": [257, 265]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [273, 281]}},
+    {"cropVariety": {"value": "sugar beet", "span": [276, 281]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "ploughing", "span": [179, 188]}},
+    {"soilTexture": {"value": "Boden", "span": [509, 514]}},
+    {"soilBulkDensity": {"value": "nutrient availability", "span": [205, 221]}},
+    {"soilPH": {"value": "soil fertility", "span": [213, 225]}},
+    {"soilOrganicCarbon": {"value": "humus development", "span": [123, 134]}},
+    {"soilAvailableNitrogen": {"value": "nitrogen fertilizers", "span": [161, 173]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [38, 46]}},
+    {"city": {"value": "Speyer", "span": [39, 45]}},
+    {"latitude": {"value": "Germany", "span": [38, 46]}},
+    {"longitude": {"value": "Speyer", "span": [39, 45]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1984", "span": [96, 100]}},
+    {"endTime": {"value": "2009", "span": [383, 387]}}
+  ]
+}
+```

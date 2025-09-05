@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892210-cPnGiCYN1ukQhhzTSfw3",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892210,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [186, 192] }},\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [320, 326] }},\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [1043, 1049] }},\n    {\"cropSpecies\": { \"value\": \"grape\", \"span\": [1279, 1284] }},\n    {\"cropSpecies\": { \"value\": \"grape\", \"span\": [1456, 1461] }},\n    {\"cropSpecies\": { \"value\": \"grape\", \"span\": [1736, 1741] }},\n    {\"cropSpecies\": { \"value\": \"grape\", \"span\": [1835, 1840] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2017\", \"span\": [658, 661] }},\n    {\"endTime\": { \"value\": \"2018\", \"span\": [665, 669] }},\n    {\"startTime\": { \"value\": \"30.8.2017\", \"span\": [1187, 1196] }},\n    {\"startTime\": { \"value\": \"6.9.2017\", \"span\": [1201, 1209] }},\n    {\"endTime\": { \"value\": \"20.9.2017\", \"span\": [1228, 1238] }},\n    {\"endTime\": { \"value\": \"25.9.2017\", \"span\": [1243, 1252] }},\n    {\"startTime\": { \"value\": \"24.8.2018\", \"span\": [1466, 1475] }},\n    {\"startTime\": { \"value\": \"31.8.2018\", \"span\": [1480, 1488] }},\n    {\"endTime\": { \"value\": \"13.9.2018\", \"span\": [1507, 1516] }},\n    {\"endTime\": { \"value\": \"20.9.2018\", \"span\": [1521, 1530] }},\n    {\"startTime\": { \"value\": \"29.8.2018\", \"span\": [1746, 1755] }},\n    {\"startTime\": { \"value\": \"4.9.2018\", \"span\": [1760, 1767] }},\n    {\"endTime\": { \"value\": \"12.9.2018\", \"span\": [1806, 1815] }},\n    {\"endTime\": { \"value\": \"29.9.2018\", \"span\": [1820, 1829] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4647,
+    "completion_tokens": 627,
+    "total_tokens": 5274,
+    "prompt_tokens_details": null
+  }
+}

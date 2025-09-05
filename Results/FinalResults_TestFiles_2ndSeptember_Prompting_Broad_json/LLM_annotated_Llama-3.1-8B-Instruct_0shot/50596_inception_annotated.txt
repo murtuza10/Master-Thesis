@@ -1,0 +1,30 @@
+{
+  "Crops": [
+    {"cropSpecies": { "value": "grapes", "span": [59, 64] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "vineyard", "span": [142, 149] }}
+  ],
+  "Location": [
+    {"country": { "value": "", "span": [] }}, // No country mentioned
+    {"region": { "value": "", "span": [] }}, // No region mentioned
+    {"city": { "value": "", "span": [] }}, // No city mentioned
+    {"region": { "value": "vineyard", "span": [142, 149] }} // Vineyard can be considered a region
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "30.8.2017", "span": [246, 255] }},
+    {"endTime": { "value": "20.9.2017", "span": [261, 270] }},
+    {"duration": { "value": "three weeks", "span": [255, 265] }},
+    {"startTime": { "value": "6.9.2017", "span": [272, 281] }},
+    {"endTime": { "value": "25.9.2017", "span": [287, 296] }},
+    {"duration": { "value": "three weeks", "span": [281, 291] }},
+    {"startTime": { "value": "24.8.2018", "span": [381, 390] }},
+    {"endTime": { "value": "13.9.2018", "span": [405, 414] }},
+    {"startTime": { "value": "31.8.2018", "span": [421, 430] }},
+    {"endTime": { "value": "20.9.2018", "span": [435, 444] }},
+    {"startTime": { "value": "29.8.2018", "span": [449, 458] }},
+    {"endTime": { "value": "12.9.2018", "span": [473, 482] }},
+    {"startTime": { "value": "4.9.2018", "span": [486, 495] }},
+    {"endTime": { "value": "29.9.2018", "span": [500, 509] }}
+  ]
+}

@@ -1,0 +1,83 @@
+### Code ###
+```python
+import json
+import re
+
+def extract_entities(text):
+    # Initialize entity lists
+    crops = []
+    soil = []
+    location = []
+    time_statement = []
+
+    # Regular expression patterns
+    crop_species_pattern = r'\b(wheat|corn|soybean|rice|maize|barley|oat|rye|pea|bean|sunflower|sorghum|millet|canola|potato|tomato|cotton|peanut|coffee|tea|cocoa|rubber|sugarcane|tobacco|cassava|yam|sweet potato|taro|banana|plantain|pineapple|papaya|mango|palm oil|coconut)\b'
+    crop_variety_pattern = r'\b(winter|spring|summer|autumn|red|white|yellow|green|black)\b'
+    soil_texture_pattern = r'\b(sand|clay|silt|loam|chert|gravel|pebble|cobble|boulder)\b'
+    soil_reference_group_pattern = r'\b(USDA|FAO|ISO)\b'
+    soil_depth_pattern = r'\b(\d+(?:\.\d+)?)\b'
+    soil_bulk_density_pattern = r'\b(\d+(?:\.\d+)?)\b'
+    soil_ph_pattern = r'\b(\d+(?:\.\d+)?)\b'
+    soil_organic_carbon_pattern = r'\b(\d+(?:\.\d+)?)\b'
+    soil_available_nitrogen_pattern = r'\b(\d+(?:\.\d+)?)\b'
+    location_country_pattern = r'\b(Germany|Lower Saxony|USA|Canada|Australia|China|India|Brazil|Russia|France|UK|Japan|South Africa|South Korea|Mexico|Italy|Spain|Turkey|Thailand|Indonesia|Poland|Argentina|Nigeria|Egypt|Pakistan|Bangladesh|Vietnam|Philippines|Iran|Iraq|Syria|Israel|Jordan|Lebanon|Oman|Qatar|Saudi Arabia|United Arab Emirates|Yemen|Myanmar|North Korea|Cuba|Ecuador|Peru|Colombia|Venezuela|Chile|Turkey|Morocco|Algeria|Sudan|Ethiopia|Kenya|Tanzania|Uganda|Rwanda|Burundi|Malawi|Zambia|Zimbabwe|Botswana|Namibia|Lesotho|Swaziland|Madagascar|Mauritius|Seychelles|Tunisia)\b'
+    location_region_pattern = r'\b(Altes Land|Hamburg|Schleswig-Holstein|North Rhine-Westphalia|Bavaria|Baden-Württemberg|Hesse|Rhineland-Palatinate|Saarland|Brandenburg|Berlin|Mecklenburg-Vorpommern|Saxony-Anhalt|Saxony|Thuringia)\b'
+    location_city_pattern = r'\b(Hamburg|Berlin|Munich|Cologne|Frankfurt|Stuttgart|Düsseldorf|Dortmund|Essen|Leipzig|Dresden|Aachen|Bremen|Nuremberg|Duisburg|Bochum|Wuppertal|Bielefeld|Mannheim|Heidelberg|Karlsruhe|Wiesbaden|Kassel|Kiel)\b'
+    time_statement_start_time_pattern = r'\b(\d{4})\b'
+    time_statement_end_time_pattern = r'\b(\d{4})\b'
+    time_statement_duration_pattern = r'\b(\d+(?:\d{2})?(?:\d{2})?)\b'
+
+    # Find crop species
+    crop_species_matches = re.findall(crop_species_pattern, text, re.IGNORECASE)
+    for match in crop_species_matches:
+        crops.append({"cropSpecies": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+
+    # Find crop variety
+    crop_variety_matches = re.findall(crop_variety_pattern, text, re.IGNORECASE)
+    for match in crop_variety_matches:
+        crops.append({"cropVariety": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+
+    # Find soil texture
+    soil_texture_matches = re.findall(soil_texture_pattern, text, re.IGNORECASE)
+    for match in soil_texture_matches:
+        soil.append({"soilTexture": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+
+    # Find soil reference group
+    soil_reference_group_matches = re.findall(soil_reference_group_pattern, text, re.IGNORECASE)
+    for match in soil_reference_group_matches:
+        soil.append({"soilReferenceGroup": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+
+    # Find soil depth
+    soil_depth_matches = re.findall(soil_depth_pattern, text)
+    for match in soil_depth_matches:
+        soil.append({"soilDepth": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+
+    # Find soil bulk density
+    soil_bulk_density_matches = re.findall(soil_bulk_density_pattern, text)
+    for match in soil_bulk_density_matches:
+        soil.append({"soilBulkDensity": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+
+    # Find soil pH
+    soil_ph_matches = re.findall(soil_ph_pattern, text)
+    for match in soil_ph_matches:
+        soil.append({"soilPH": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+
+    # Find soil organic carbon
+    soil_organic_carbon_matches = re.findall(soil_organic_carbon_pattern, text)
+    for match in soil_organic_carbon_matches:
+        soil.append({"soilOrganicCarbon": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+
+    # Find soil available nitrogen
+    soil_available_nitrogen_matches = re.findall(soil_available_nitrogen_pattern, text)
+    for match in soil_available_nitrogen_matches:
+        soil.append({"soilAvailableNitrogen": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+
+    # Find location country
+    location_country_matches = re.findall(location_country_pattern, text, re.IGNORECASE)
+    for match in location_country_matches:
+        location.append({"country": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+
+    # Find location region
+    location_region_matches = re.findall(location_region_pattern, text, re.IGNORECASE)
+    for match in location_region_matches:
+        location.append({"region": {"value":

@@ -1,0 +1,29 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [246, 250]}},
+    {"cropVariety": {"value": "winter wheat", "span": [241, 253]}}
+  ],
+  "Soil": [
+    {"soilDepth": {"value": "50 m", "span": [317, 322]}},
+    {"soilDepth": {"value": "1m", "span": [391, 393]}},
+    {"soilDepth": {"value": "5m", "span": [396, 398]}},
+    {"soilDepth": {"value": "20m", "span": [401, 404]}},
+    {"soilDepth": {"value": "50m", "span": [407, 412]}},
+    {"soilDepth": {"value": "-1m", "span": [388, 391]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [731, 738]}},
+    {"region": {"value": "Brandenburg", "span": [739, 749]}},
+    {"region": {"value": "Uckermark", "span": [750, 759]}},
+    {"city": {"value": "Quillow", "span": [760, 767]}},
+    {"city": {"value": "Quillow", "span": [134, 141]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "April", "span": [442, 447]}},
+    {"endTime": {"value": "June", "span": [457, 462]}},
+    {"startTime": {"value": "2019", "span": [140, 144]}},
+    {"startTime": {"value": "2019", "span": [472, 476]}}
+  ]
+}
+```

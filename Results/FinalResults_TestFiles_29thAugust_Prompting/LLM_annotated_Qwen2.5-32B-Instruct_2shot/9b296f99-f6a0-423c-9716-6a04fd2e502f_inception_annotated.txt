@@ -1,0 +1,22 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "winter wheat", "span": [336, 346] }},
+    {"cropSpecies": { "value": "winter barley", "span": [348, 360] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [362, 371] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "ploughing", "span": [242, 250] }}
+  ],
+  "Location": [
+    {"city": { "value": "Speyer", "span": [19, 25] }},
+    {"region": { "value": "Germany", "span": [27, 34] }},
+    {"city": { "value": "Speyer", "span": [145, 151] }},
+    {"region": { "value": "Germany", "span": [153, 160] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1984", "span": [196, 200] }},
+    {"startTime": { "value": "2009", "span": [396, 400] }}
+  ]
+}
+```

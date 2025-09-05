@@ -1,0 +1,21 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [66, 72]}}
+  ],
+  "Soil": [
+    {"soilDepth": {"value": "pedo-climatic", "span": [93, 108]}},
+    {"soilPH": {"value": "soil properties", "span": [95, 112]}},
+    {"soilOrganicCarbon": {"value": "soil properties", "span": [95, 112]}}
+  ],
+  "Location": [
+    {"country": {"value": "Europe", "span": [115, 121]}},
+    {"region": {"value": "pedo-climatic zones", "span": [91, 109]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2019", "span": [83, 87]}},
+    {"endTime": {"value": "2020", "span": [90, 94]}}
+  ]
+}
+```

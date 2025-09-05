@@ -1,0 +1,48 @@
+### Entities Extraction
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "grapes", "span": [56, 61] }}
+  ],
+  "Soil": [
+    {"soilTexture": []},
+    {"soilReferenceGroup": []},
+    {"soilDepth": []},
+    {"soilBulkDensity": []},
+    {"soilPH": []},
+    {"soilOrganicCarbon": []},
+    {"soilAvailableNitrogen": []}
+  ],
+  "Location": [
+    {"country": []},
+    {"region": []},
+    {"city": []},
+    {"latitude": []},
+    {"longitude": []}
+  ],
+  "Time Statement": [
+    {"startTime": [
+      {"value": "30.8.2017", "span": [135, 143]},
+      {"value": "6.9.2017", "span": [155, 163]},
+      {"value": "24.8.2018", "span": [261, 269]},
+      {"value": "31.8.2018", "span": [274, 282]},
+      {"value": "29.8.2018", "span": [304, 312]},
+      {"value": "4.9.2018", "span": [321, 329]}
+    ]},
+    {"endTime": [
+      {"value": "20.9.2017", "span": [172, 180]},
+      {"value": "25.9.2017", "span": [189, 197]},
+      {"value": "13.9.2018", "span": [286, 294]},
+      {"value": "20.9.2018", "span": [301, 309]},
+      {"value": "12.9.2018", "span": [335, 343]},
+      {"value": "29.9.2018", "span": [353, 361]}
+    ]},
+    {"duration": [
+      {"value": "two weeks", "span": [340, 348]},
+      {"value": "three weeks", "span": [183, 191]}
+    ]}
+  ]
+}
+```
+Note that no entities of the types "Crop Variety", "Soil Texture", "Soil Reference Group", "Soil Depth", "Soil Bulk Density", "Soil PH", "Soil Organic Carbon", "Soil Available Nitrogen", "Country", "Region", "City", and "Latitude" or "Longitude" were found in the text.

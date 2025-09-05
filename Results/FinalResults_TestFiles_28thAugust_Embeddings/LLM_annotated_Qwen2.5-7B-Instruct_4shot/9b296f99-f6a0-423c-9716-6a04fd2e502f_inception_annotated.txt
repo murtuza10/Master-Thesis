@@ -1,0 +1,30 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [136, 140]}},
+    {"cropSpecies": {"value": "barley", "span": [143, 148]}},
+    {"cropSpecies": {"value": "beet", "span": [151, 155]}},
+    {"cropSpecies": {"value": "barley", "span": [491, 496]}},
+    {"cropSpecies": {"value": "beet", "span": [501, 505]}}
+  ],
+  "Soil": [
+    {"soilOrganicCarbon": {"value": "humus", "span": [55, 59]}},
+    {"soilAvailableNitrogen": {"value": "nutrients", "span": [64, 70]}},
+    {"soilAvailableNitrogen": {"value": "humus", "span": [80, 85]}},
+    {"soilBulkDensity": {"value": "connectivity", "span": [561, 569]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [198, 203]}},
+    {"region": {"value": "Speyer", "span": [204, 208]}},
+    {"region": {"value": "LUFA Speyer", "span": [226, 234]}},
+    {"region": {"value": "Rinkenbergerhof", "span": [235, 244]}},
+    {"region": {"value": "M채rkisch Oderland", "span": [472, 489]}},
+    {"region": {"value": "M체ncheberg", "span": [490, 500]},
+    {"city": {"value": "Karlsruhe", "span": [546, 553]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1984", "span": [255, 259]}},
+    {"duration": {"value": "long term", "span": [535, 542]}}
+  ]
+}
+```

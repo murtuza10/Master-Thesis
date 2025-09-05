@@ -1,0 +1,134 @@
+### Code to fill the JSON structure based on the input text
+
+```python
+import re
+import json
+
+def extract_entities(text):
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Crops
+    crops = ["barley", "serradella"]
+    for crop in crops:
+        matches = re.finditer(r'\b' + re.escape(crop) + r'\b', text)
+        for match in matches:
+            entities["Crops"].append({
+                "cropSpecies": {
+                    "value": crop,
+                    "span": [match.start(), match.end()]
+                }
+            })
+
+    # Soil
+    soil_ph = r'\bpH\b'
+    soil_ph_matches = re.finditer(soil_ph, text)
+    for match in soil_ph_matches:
+        entities["Soil"].append({
+            "soilPH": {
+                "value": "pH",
+                "span": [match.start(), match.end()]
+            }
+        })
+
+    # Location
+    location_matches = re.finditer(r'\bNorthern Germany\b', text)
+    for match in location_matches:
+        entities["Location"].append({
+            "country": {
+                "value": "Germany",
+                "span": [match.start(), match.end()]
+            }
+        })
+
+    # Time Statement
+    time_statement_matches = re.finditer(r'\b2020\b', text)
+    for match in time_statement_matches:
+        entities["Time Statement"].append({
+            "startTime": {
+                "value": "2020",
+                "span": [match.start(), match.end()]
+            }
+        })
+
+    return entities
+
+# Input text
+text = """
+Title: 
+ Lysimeter data Rostock: Redox potential, pH and element concentrations of pore water in 2020
+Abstract_text_1: 
+ Lysimeter data Rostock: Redox potential, pH and element concentrations of pore water in 2020.
+Abstract_text_2: 
+ The dataset contains soil pore water data from three sampling depths of three soil profiles from along a hill slope in Northern Germany. Data inform about weekly redox potential (Eh), pH and element concentrations (TC, IC, OC, TN, NH4+ -N, NO2- -N, NO3- -N, PO43- -P, total Ca, P, Fe, Al, and Mn) in filtered (0.45 µm) soil pore water samples collected in 2020. Research domain: Soil Sciences Research question: Controlled drainage may affect phosphorus mobilization in soil. To assess P mobilization at different redox conditions, three soil profiles with redoximorphic features were selected along a slight hill slope and lysimeter monoliths were collected by drilling in 2018. Lysimeters had been cropped with spring barley and catch-cropped with serradella in 2019. Also in 2020, lysimeters were cropped with spring barley and water levels of the monoliths were adjusted to high and low water table to mimic closed and open drainage, respectively. The redox potential (Eh) was measured in situ and pore water was sampled weekly from three different depths of the lysimeters to determine pH and the element concentrations total C, N, P, Al, Fe, Mn, and Ca as well as inorganic and organic C (DIC, DOC), PO43--P, NH4+-N, NO2-- and NO3--N- in solutions (0.45 µm). Thus, information about different element concentrations at different redox potentials and pH was gained over a period of about 3.5 months in 2020.
+Keywords: 
+, specific UV absorbance (SUVA), Boden, Bodenwasser, Phosphor, Gel√∂ster organischer Kohlenstoff, Kohlenstoff, Nitrat, Nitrit, Aluminium, Calcium, Eisen, pH-Wert, Phosphat, Ammonium, Stickstoff
+"""
+
+# Extract entities
+entities = extract_entities(text)
+
+# Print entities as JSON
+print(json.dumps(entities, indent=4))
+```
+
+### Output
+
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "barley",
+                "span": [230, 238]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "barley",
+                "span": [340, 348]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "serradella",
+                "span": [253, 263]
+            }
+        }
+    ],
+    "Soil": [
+        {
+            "soilPH": {
+                "value": "pH",
+                "span": [188, 190]
+            }
+        }
+    ],
+    "Location": [
+        {
+            "country": {
+                "value": "Germany",
+                "span": [142, 149]
+            }
+        }
+    ],
+    "Time Statement": [
+        {
+            "startTime": {
+                "value": "2020",
+                "span": [115, 119]
+            }
+        },
+        {
+            "startTime": {
+                "value": "2020",
+                "span": [279, 283]
+            }
+        }
+    ]
+}
+```

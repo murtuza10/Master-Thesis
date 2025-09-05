@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892136-HbRLMInmdvDDbbRClIk0",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892136,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"Helosciadium nodiflorum\", \"span\": [22, 43]}},\n    {\"cropSpecies\": {\"value\": \"Helosciadium nodiflorum\", \"span\": [239, 260]}},\n    {\"cropSpecies\": {\"value\": \"Helosciadium nodiflorum\", \"span\": [536, 557]}},\n    {\"cropSpecies\": {\"value\": \"celery\", \"span\": [693, 699]}},\n    {\"cropSpecies\": {\"value\": \"Helosciadium nodiflorum\", \"span\": [738, 759]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [108, 115]}},\n    {\"city\": {\"value\": \"Gatersleben\", \"span\": [98, 109]}},\n    {\"city\": {\"value\": \"London\", \"span\": [188, 194]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [728, 735]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [1121, 1128]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2015\", \"span\": [628, 632]}},\n    {\"endTime\": {\"value\": \"2016\", \"span\": [637, 641]}},\n    {\"startTime\": {\"value\": \"2018\", \"span\": [784, 788]}},\n    {\"endTime\": {\"value\": \"2019\", \"span\": [789, 793]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2156,
+    "completion_tokens": 362,
+    "total_tokens": 2518,
+    "prompt_tokens_details": null
+  }
+}

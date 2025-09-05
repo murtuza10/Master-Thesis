@@ -1,0 +1,16 @@
+### Extracted Entities
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "barley", "span": [69, 76] }},
+    {"cropSpecies": { "value": "wheat", "span": [121, 127] }},
+    {"cropSpecies": { "value": "cereals", "span": [169, 176] }}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+Note: The indices are 0-based and correspond to the beginning of the full text.

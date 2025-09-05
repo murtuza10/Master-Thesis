@@ -1,0 +1,21 @@
+### Output JSON Structure Filled Based on the Given Input Text ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "apple", "span": [134, 140]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [165, 170]}},
+    {"region": {"value": "Altes Land", "span": [112, 122]}},
+    {"region": {"value": "Lower Saxony", "span": [138, 147]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2001", "span": [172, 176]}},
+    {"endTime": {"value": "2003", "span": [184, 188]}}
+  ]
+}
+```
+
+Note that only the explicitly mentioned entities in the text have been included in the JSON output. The text does not mention any soil-related entities, nor does it mention any time-related entities other than the start and end years of the monitoring period.

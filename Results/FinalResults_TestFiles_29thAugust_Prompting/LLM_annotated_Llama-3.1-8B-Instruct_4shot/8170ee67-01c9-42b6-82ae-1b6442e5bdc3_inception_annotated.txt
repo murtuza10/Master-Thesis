@@ -1,0 +1,34 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "winter barley", "span": [134, 146]}},
+    {"cropSpecies": {"value": "winter oilseed rape", "span": [184, 198]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [204, 216]}},
+    {"cropSpecies": {"value": "lupine", "span": [220, 226]}},
+    {"cropSpecies": {"value": "winter rye", "span": [234, 238]}},
+    {"cropSpecies": {"value": "Hordeum vulgare L.", "span": [275, 292]}},
+    {"cropSpecies": {"value": "OTTO", "span": [307, 311]}},
+    {"cropSpecies": {"value": "winter barley", "span": [327, 339]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "extensively managed grassland", "span": [235, 254]}},
+    {"soilTexture": {"value": "soil", "span": [434, 438]}},
+    {"soilReferenceGroup": {"value": "soil class A", "span": [492, 503]}},
+    {"soilReferenceGroup": {"value": "soil class B", "span": [506, 517]}},
+    {"soilReferenceGroup": {"value": "soil class C", "span": [523, 534]}},
+    {"soilDepth": {"value": "25 cm", "span": [555, 559]}},
+    {"soilBulkDensity": {"value": "below", "span": [567, 571]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "1985", "span": [104, 108]}},
+    {"endTime": {"value": "2008", "span": [113, 117]}},
+    {"startTime": {"value": "2013", "span": [161, 165]}},
+    {"endTime": {"value": "2013", "span": [166, 170]}},
+    {"startTime": {"value": "2014", "span": [174, 178]}}
+  ]
+}
+```
+
+Note that there are no mentions of "country", "region", "city", "latitude", "longitude" in the text, so their corresponding lists in the JSON output are empty.

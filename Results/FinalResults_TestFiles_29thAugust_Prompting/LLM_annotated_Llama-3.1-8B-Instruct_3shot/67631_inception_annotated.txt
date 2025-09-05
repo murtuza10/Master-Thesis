@@ -1,0 +1,93 @@
+### Code ###
+```python
+import re
+from typing import List, Dict
+
+def extract_entities(text: str) -> Dict:
+    # Initialize the entity list
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Extract Crops
+    crop_pattern = r"\b(wine berries|Riesling|Felicia|Regent)\b"
+    for match in re.finditer(crop_pattern, text, re.IGNORECASE):
+        start_index, end_index = match.span()
+        if "wine berries" in match.group():
+            entity_type = "cropSpecies"
+        else:
+            entity_type = "cropVariety"
+        entities["Crops"].append({"cropVariety": {"value": match.group(), "span": [start_index, end_index]}})
+
+    # Extract Soil
+    soil_pattern = r"\b(Parabraunerde|Löss|Lössboden)\b"
+    for match in re.finditer(soil_pattern, text, re.IGNORECASE):
+        start_index, end_index = match.span()
+        if "Parabraunerde" in match.group():
+            entity_type = "soilReferenceGroup"
+        elif "Löss" in match.group():
+            entity_type = "soilTexture"
+        entities["Soil"].append({entity_type: {"value": match.group(), "span": [start_index, end_index]}})
+
+    # Extract Location
+    location_pattern = r"\b(Niedersachsen|Bremen|2018)\b"
+    for match in re.finditer(location_pattern, text, re.IGNORECASE):
+        start_index, end_index = match.span()
+        if "Niedersachsen" in match.group():
+            entity_type = "region"
+        elif "Bremen" in match.group():
+            entity_type = "city"
+        elif "2018" in match.group():
+            entity_type = "year"
+        entities["Location"].append({entity_type: {"value": match.group(), "span": [start_index, end_index]}})
+
+    # Extract Time Statement
+    time_pattern = r"\b(before|after|2018)\b"
+    for match in re.finditer(time_pattern, text, re.IGNORECASE):
+        start_index, end_index = match.span()
+        if "before" in match.group():
+            entity_type = "startTime"
+        elif "after" in match.group():
+            entity_type = "endTime"
+        elif "2018" in match.group():
+            entity_type = "startTime"
+        entities["Time Statement"].append({entity_type: {"value": match.group(), "span": [start_index, end_index]}})
+
+    return entities
+
+### Text ###
+text = """
+Segmentation of wine berries
+
+Dataset contains high resolution images collected with a moving field phenotyping platform, the Phenoliner. 
+ The collected images show 3 different varieties (Riesling, Felicia, Regent) in 2 different training systems (VSP=vertical shoot positioning and SMPH= semi minimal pruned hedges), collected in 2 points in time (before and after thinning) in 2018. For each image we provide a manual masks which allow the identification of single berries.
+ The folder contains: 1. List with image details (imagename, acquisition date, year, variety, training system and variety number)and 2. Dataset folder with 2 subfolders, namely 1. img – 42 original RGB images and 2. lbl – 42 corresponding labels (manual annotation, with berry, edge, background definition)
+ The data were used to train a neural network with the main goal to detect single berries in images. The method is described in detail in the specified papers.
+"""
+
+### Output ###
+entities = extract_entities(text)
+print(entities)
+```
+
+### Output Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wine berries", "span": [26, 38]}},
+    {"cropVariety": {"value": "Riesling", "span": [218, 226]}},
+    {"cropVariety": {"value": "Felicia", "span": [229, 236]}},
+    {"cropVariety": {"value": "Regent", "span": [239, 245]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2018", "span": [419, 423]}},
+    {"endTime": {"value": "before", "span": [426, 431]}},
+    {"startTime": {"value": "after", "span": [433, 438]}}
+  ]
+}
+```

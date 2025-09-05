@@ -1,0 +1,15 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2012", "span": [153, 157]}},
+    {"endTime": {"value": "2012", "span": [163, 167]}},
+    {"startTime": {"value": "28.05.2019", "span": [292, 303]}}
+  ]
+}
+```
+
+Note: The output JSON structure only contains the "Time Statement" category as there are no mentions of "Crops", "Soil", and "Location" in the given text.

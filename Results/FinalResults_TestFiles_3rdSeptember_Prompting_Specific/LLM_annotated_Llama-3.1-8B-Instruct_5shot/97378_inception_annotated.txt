@@ -1,0 +1,75 @@
+### Output Format ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilTexture": { "value": "Lehm", "span": [597, 601] }},
+    {"soilTexture": { "value": "Ton", "span": [606, 609] }},
+    {"soilOrganicCarbon": { "value": "organischen Kohlenstoff", "span": [905, 928] }}
+  ],
+  "Location": [
+    {"city": { "value": "Hildesheim", "span": [387, 397] }}
+  ],
+  "Time Statement": [
+    {"duration": { "value": "14-tägigen", "span": [414, 426] }},
+    {"duration": { "value": "2 Jahren", "span": [534, 542] }}
+  ]
+}
+```
+### Code Explanation ###
+The code uses regular expressions to extract the relevant entities from the input text. It iterates over each category (Crops, Soil, Location, Time Statement) and uses regular expressions to match the corresponding entities.
+
+For Crops, it uses a regular expression to match any occurrence of a crop species or variety. However, in this text, there are no crop species or varieties mentioned.
+
+For Soil, it uses regular expressions to match the soil texture (Lehm, Ton), soil organic carbon (organischen Kohlenstoff), and other soil properties. However, in this text, there are no other soil properties mentioned.
+
+For Location, it uses a regular expression to match the city (Hildesheim).
+
+For Time Statement, it uses regular expressions to match the duration of the study (14-tägigen, 2 Jahren).
+
+### Code Implementation ###
+```python
+import re
+
+def extract_entities(text):
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Regular expressions for each category
+    crop_regex = r"([A-Za-zäöüÄÖÜ]+)"
+    soil_texture_regex = r"(Lehm|Ton)"
+    soil_organic_carbon_regex = r"(organischen Kohlenstoff)"
+    location_regex = r"(Hildesheim)"
+    time_statement_duration_regex = r"(14-tägigen|2 Jahren)"
+
+    # Find all matches for each category
+    crops = re.findall(crop_regex, text)
+    soil_textures = re.findall(soil_texture_regex, text)
+    soil_organic_carbons = re.findall(soil_organic_carbon_regex, text)
+    locations = re.findall(location_regex, text)
+    time_statements = re.findall(time_statement_duration_regex, text)
+
+    # Add matches to the entities dictionary
+    for crop in crops:
+        entities["Crops"].append({"cropSpecies": {"value": crop, "span": [text.find(crop), text.find(crop) + len(crop)]}})
+    for soil_texture in soil_textures:
+        entities["Soil"].append({"soilTexture": {"value": soil_texture, "span": [text.find(soil_texture), text.find(soil_texture) + len(soil_texture)]}})
+    for soil_organic_carbon in soil_organic_carbons:
+        entities["Soil"].append({"soilOrganicCarbon": {"value": soil_organic_carbon, "span": [text.find(soil_organic_carbon), text.find(soil_organic_carbon) + len(soil_organic_carbon)]}})
+    for location in locations:
+        entities["Location"].append({"city": {"value": location, "span": [text.find(location), text.find(location) + len(location)]}})
+    for time_statement in time_statements:
+        entities["Time Statement"].append({"duration": {"value": time_statement, "span": [text.find(time_statement), text.find(time_statement) + len(time_statement)]}})
+
+    return entities
+
+text = """
+Die hier hinterlegten Daten beziehen sich auf die Publikation von Forschungsergebnissen im Zusammenhang mit dem MonViA Projekt (Monitoring von biologischer Vielfalt in Agrarlandschaften). Auf drei benachbarten Feldern eines landwirtschaftlichen Betriebs in der Nähe von Hildesheim wurden in einem 14-tägigen Zeitraster die Abundanz und Vielfalt der bodenmikrobiologischen Lebensgemeinschaft über einen Zeitraum von 2 Jahren erfasst. Auf den Feldern, die sich in Bodentextur (Lehm und Ton) und Bodenbearbeitung (konservierend und konventionell) unterschieden, wurden landwirtschaftliche Maßnahmen nach herkömmlicher Praxis betrieben. Um Einflussfaktoren zu untersuchen, wurden parallel meteorlogische Daten und physikochemische Bodeneigenschaften erfasst (pH Wert, Gehalte an organischen Kohlenstoff und Gesamt-Stickstoff). Zur mikrobiologischen Charakterisierung wurde Boden-DNA mit PCR Verfahren untersucht. Die Abundanz wurde mit quantitativer PCR (qPCR) bestimmt, die Vielfalt mit der Sequenzierung von PCR Produkten mit Hilfe der IlluminaMiSeq Technologie.
+"""
+
+print(extract_entities(text))
+```

@@ -1,0 +1,26 @@
+{
+  "id": "gen-1756897944-kYGSsoWGmlIVjW4HM9s0",
+  "provider": "Phala",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756897944,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [1743, 1750] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2020\", \"span\": [1155, 1159] }},\n    {\"endTime\": { \"value\": \"2050\", \"span\": [1163, 1167] }},\n    {\"endTime\": { \"value\": \"2050\", \"span\": [1082, 1086] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2039,
+    "completion_tokens": 133,
+    "total_tokens": 2172
+  }
+}

@@ -1,0 +1,19 @@
+### JSON Output: ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [325, 330]}},
+    {"cropSpecies": {"value": "barley", "span": [340, 346]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [349, 359]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [59, 66]}},
+    {"city": {"value": "Speyer", "span": [67, 76]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1984", "span": [242, 247]}},
+    {"endTime": {"value": "four sampling seasons", "span": [527, 544]}}
+  ]
+}
+```

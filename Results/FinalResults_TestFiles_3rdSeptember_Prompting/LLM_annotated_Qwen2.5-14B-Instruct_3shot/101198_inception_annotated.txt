@@ -1,0 +1,48 @@
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {
+      "country": {
+        "value": "180 Länder",
+        "span": [246, 255]
+      }
+    },
+    {
+      "country": {
+        "value": "Deutschland",
+        "span": [1104, 1112]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "startTime": {
+        "value": "2020",
+        "span": [471, 475]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2050",
+        "span": [476, 480]
+      }
+    },
+    {
+      "startTime": {
+        "value": "2023",
+        "span": [1012, 1016]
+      }
+    },
+    {
+      "startTime": {
+        "value": "2024",
+        "span": [1053, 1057]
+      }
+    }
+  ]
+}
+``` 
+
+Please note that "180 Länder" was treated as a country entity due to the context and "Deutschland" is inferred from the context of nova-Institut and Thünen-Institut being German institutions, but strictly following your rule of not inferring, I've added it as per explicit text in footnotes.

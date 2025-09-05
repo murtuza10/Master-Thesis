@@ -1,0 +1,23 @@
+### Output JSON ###
+
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {"region": {"value": "Deutschland", "span": [136, 144]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2020", "span": [1414, 1418]}},
+    {"endTime": {"value": "2050", "span": [1419, 1423]}},
+    {"duration": {"value": "2020 bis 2050", "span": [1436, 1446]}},
+    {"startTime": {"value": "2050", "span": [1743, 1747]}},
+    {"endTime": {"value": "2028", "span": [1806, 1810]}},
+    {"duration": {"value": "2023-2028", "span": [1825, 1834]}},
+    {"startTime": {"value": "2023", "span": [1941, 1945]}},
+    {"endTime": {"value": "2024", "span": [1984, 1988]}}
+  ]
+}
+```
+
+Note that the "Location" category only contains a single region ("Deutschland") because it was the only location explicitly mentioned in the text. The "Crops" category is empty because no crops were mentioned in the text. The "Soil" category is also empty because no soil-related information was mentioned. The "Time Statement" category contains several time-related entities, including start times, end times, and durations.

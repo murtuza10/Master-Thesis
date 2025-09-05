@@ -1,0 +1,29 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Helosciadium nodiflorum", "span": [35, 52]}},
+    {"cropSpecies": {"value": "celery", "span": [241, 247]}},
+    {"cropSpecies": {"value": "wild celery", "span": [283, 292]}},
+    {"cropSpecies": {"value": "Helosciadium nodiflorum", "span": [311, 328]}},
+    {"cropSpecies": {"value": "celery", "span": [432, 438]}},
+    {"cropSpecies": {"value": "wild celery", "span": [456, 465]}},
+    {"cropSpecies": {"value": "Helosciadium nodiflorum", "span": [493, 510]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [94, 101]}},
+    {"country": {"value": "Germany", "span": [164, 171]}},
+    {"city": {"value": "Gatersleben", "span": [215, 225]}},
+    {"city": {"value": "London", "span": [278, 284]}},
+    {"city": {"value": "Berlin", "span": [384, 389]}},
+    {"region": {"value": "Germany", "span": [439, 446]}},
+    {"region": {"value": "Germany", "span": [519, 526]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2015", "span": [236, 240]}},
+    {"startTime": {"value": "2016", "span": [236, 240]}},
+    {"endTime": {"value": "2019", "span": [184, 188]}}
+  ]
+}
+```

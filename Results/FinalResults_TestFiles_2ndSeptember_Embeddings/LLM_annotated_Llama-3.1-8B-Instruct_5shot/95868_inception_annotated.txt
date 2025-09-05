@@ -1,0 +1,23 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Norway spruce", "span": [142, 152]}},
+    {"cropSpecies": {"value": "Picea abies (L.) Karst.", "span": [145, 162]}},
+    {"cropSpecies": {"value": "Picea abies", "span": [145, 153]}},
+    {"cropSpecies": {"value": "Picea abies", "span": [199, 207]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [96, 103]}},
+    {"region": {"value": "Western Germany", "span": [109, 122]}},
+    {"region": {"value": "Europe", "span": [163, 169]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1964", "span": [68, 72]}},
+    {"endTime": {"value": "2015", "span": [224, 228]}},
+    {"duration": {"value": "51 years", "span": [225, 236]}}
+  ]
+}
+```

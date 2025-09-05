@@ -1,0 +1,36 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [144, 150]}},
+    {"cropSpecies": {"value": "oat", "span": [384, 388]}},
+    {"cropSpecies": {"value": "oilseed rape", "span": [244, 253]}},
+    {"cropSpecies": {"value": "wheat", "span": [275, 281]}},
+    {"cropSpecies": {"value": "lupine", "span": [296, 302]}},
+    {"cropSpecies": {"value": "rye", "span": [314, 318]}},
+    {"cropSpecies": {"value": "winter barley", "span": [164, 176]}},
+    {"cropVariety": {"value": "OTTO", "span": [409, 413]}}
+  ],
+  "Soil": [
+    {"soilDepth": {"value": "25 cm", "span": [396, 401]}},
+    {"soilReferenceGroup": {"value": "grassland", "span": [246, 253]}},
+    {"soilReferenceGroup": {"value": "Boden", "span": [531, 535]}}
+  ],
+  "Location": [
+    {"region": {"value": "Braunschweig", "span": [19, 29]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2014", "span": [145, 149]}},
+    {"endTime": {"value": "2013", "span": [395, 399]}}
+  ]
+}
+```
+
+### Explanation ###
+
+*   The JSON structure is filled with the entities extracted from the given text.
+*   The "Crops" list contains the extracted crop species and variety.
+*   The "Soil" list contains the extracted soil depth and reference groups.
+*   The "Location" list contains the extracted region.
+*   The "Time Statement" list contains the extracted start and end time.

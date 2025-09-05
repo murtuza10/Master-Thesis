@@ -1,0 +1,24 @@
+### Solution ###
+
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilOrganicCarbon": {"value": "Soil ORganic Carbon", "span": [22, 41]}},
+    {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [148, 167]}},
+    {"soilOrganicCarbon": {"value": "SOC", "span": [170, 173]}},
+    {"soilAvailableNitrogen": {"value": "soil organic nitrogen", "span": [180, 201]}},
+    {"soilAvailableNitrogen": {"value": "SON", "span": [204, 207]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Explanation ###
+
+The input text mentions several entities related to Soil. Specifically, it mentions "Soil ORganic Carbon" (twice) and "soil organic nitrogen" (twice). These are related to the soilOrganicCarbon and soilAvailableNitrogen entities, respectively.
+
+The text does not mention any crops, locations, or time-related statements. Therefore, the corresponding categories in the JSON output are empty.
+
+Note that the span values in the JSON output represent the start and end character positions from the beginning of the full text, as required by the problem statement.

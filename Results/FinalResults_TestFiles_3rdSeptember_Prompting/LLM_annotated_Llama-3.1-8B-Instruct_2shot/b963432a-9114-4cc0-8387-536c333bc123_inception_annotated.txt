@@ -1,0 +1,34 @@
+### Filled JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "spring barley", "span": [124, 136]}},
+    {"cropSpecies": {"value": "serradella", "span": [177, 186]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "redoximorphic features", "span": [234, 253]}},
+    {"soilTexture": {"value": "Boden", "span": [285, 291]}},
+    {"soilReferenceGroup": {"value": "Boden", "span": [297, 303]}},
+    {"soilDepth": {"value": "three sampling depths", "span": [314, 334]}},
+    {"soilBulkDensity": {"value": "Bodenwasser", "span": [355, 366]}}
+  ],
+  "Location": [
+    {"country": {"value": "Northern Germany", "span": [121, 135]}},
+    {"region": {"value": "along a hill slope", "span": [146, 159]}},
+    {"city": {"value": "Rostock", "span": [26, 33]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2018", "span": [245, 249]}},
+    {"startTime": {"value": "2019", "span": [198, 202]}},
+    {"startTime": {"value": "2020", "span": [12, 16]}},
+    {"endTime": {"value": "2020", "span": [12, 16]}},
+    {"duration": {"value": "about 3.5 months", "span": [373, 391]}}
+  ]
+}
+```
+
+### Note: 
+- The text is divided into two parts: Title and Abstract_text_1. 
+- However, I have used the abstract part for entity extraction as it contains more relevant information.
+- The keywords section is not used for entity extraction as it is a list of keywords.
+- The extracted entities are based on the provided rules and entity categories.

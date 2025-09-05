@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892076-WVAAZVkRkdkookQrYcRl",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892076,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"boden-physikalischen Grundlagendaten\", \"span\": [164, 195]}},\n    {\"Soil\": {\"value\": \"Bodentyp\", \"span\": [714, 722]}},\n    {\"Soil\": {\"value\": \"Bodenart\", \"span\": [843, 851]}},\n    {\"Soil\": {\"value\": \"Skelett\", \"span\": [854, 861]}},\n    {\"Soil\": {\"value\": \"Trockenrohdichte\", \"span\": [864, 880]}},\n    {\"Soil\": {\"value\": \"nutzbare Feldkapazität\", \"span\": [885, 906]}},\n    {\"Soil\": {\"value\": \"Basensättigung\", \"span\": [952, 965]}},\n    {\"Soil\": {\"value\": \"organischer Kohlenstoffgehalt\", \"span\": [969, 994]}},\n    {\"Soil\": {\"value\": \"Entkalkungstiefe\", \"span\": [998, 1013]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"deutschen\", \"span\": [126, 134]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2012\", \"span\": [1238, 1242]}},\n    {\"endTime\": {\"value\": \"2012\", \"span\": [1254, 1258]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2754,
+    "completion_tokens": 328,
+    "total_tokens": 3082,
+    "prompt_tokens_details": null
+  }
+}

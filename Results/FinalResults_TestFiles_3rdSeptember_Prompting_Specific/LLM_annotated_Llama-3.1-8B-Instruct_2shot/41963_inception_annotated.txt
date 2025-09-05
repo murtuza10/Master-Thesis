@@ -1,0 +1,30 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [165, 171]}},
+    {"region": {"value": "German National Forest Inventory", "span": [173, 202]}},
+    {"city": {}},
+    {"latitude": {"value": "47.15766000", "span": [273, 283]}},
+    {"longitude": {"value": "5.79922100", "span": [284, 294]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1961", "span": [33, 37]}},
+    {"endTime": {"value": "2013", "span": [40, 44]}},
+    {"startTime": {"value": "2011", "span": [123, 127]}},
+    {"endTime": {"value": "2050", "span": [128, 132]}},
+    {"startTime": {"value": "2011", "span": [133, 137]}},
+    {"endTime": {"value": "2100", "span": [138, 142]}},
+    {"startTime": {"value": "1961", "span": [236, 240]}},
+    {"endTime": {"value": "2099", "span": [241, 245]}}
+  ]
+}
+```
+### Explanation ###
+The JSON structure includes the entities extracted from the input text. The entities are categorized into "Crops", "Soil", "Location", and "Time Statement".
+
+In the "Location" category, the country is Germany, and the region is the German National Forest Inventory. The latitude and longitude values are extracted from the text.
+
+In the "Time Statement" category, several time-related entities are extracted, including start and end times for different periods.

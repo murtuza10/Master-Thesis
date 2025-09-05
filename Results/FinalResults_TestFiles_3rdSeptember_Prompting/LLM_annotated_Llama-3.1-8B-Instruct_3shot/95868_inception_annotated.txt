@@ -1,0 +1,18 @@
+### Output JSON Structure Filled with the Given Text ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Picea abies", "span": [124, 135]}},
+    {"cropSpecies": {"value": "Norway spruce", "span": [157, 167]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": {"value": "Western Germany", "span": [97, 115]}},
+    {"city": {"value": "Germany", "span": [183, 189]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1964", "span": [179, 183]}},
+    {"endTime": {"value": "2015", "span": [206, 210]}}
+  ]
+}
+```

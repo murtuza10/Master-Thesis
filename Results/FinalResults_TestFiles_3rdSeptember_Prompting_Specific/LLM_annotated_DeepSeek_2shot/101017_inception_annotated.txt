@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756918031-RB2RgdGSvVTccxGl3htS",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756918031,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Möhre\", \"span\": [276, 281] }},\n    {\"cropSpecies\": { \"value\": \"Salat\", \"span\": [283, 288] }},\n    {\"cropSpecies\": { \"value\": \"Apfel\", \"span\": [290, 295] }},\n    {\"cropSpecies\": { \"value\": \"Erdbeere\", \"span\": [297, 305] }},\n    {\"cropSpecies\": { \"value\": \"Erdbeere\", \"span\": [345, 353] }},\n    {\"cropSpecies\": { \"value\": \"Himbeere\", \"span\": [358, 366] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [],\n  \"Time Statement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 1834,
+    "completion_tokens": 187,
+    "total_tokens": 2021
+  }
+}

@@ -1,0 +1,25 @@
+### Output JSON Structure ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "C4", "span": [85, 87]}},
+    {"cropSpecies": {"value": "C3", "span": [124, 126]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "C3 soil", "span": [124, 132]}},
+    {"soilDepth": {"value": "6 months", "span": [146, 155]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2 years", "span": [27, 33]}},
+    {"startTime": {"value": "6 months", "span": [146, 155]}}
+  ]
+}
+```
+
+### Notes on JSON Output ###
+- Two crop species are identified: `C4` and `C3`.
+- One soil reference group is identified as `C3 soil`.
+- Two time statements are identified: a `2-year` incubation period and sampling at `6 months`.
+- No location information is found in the abstract.

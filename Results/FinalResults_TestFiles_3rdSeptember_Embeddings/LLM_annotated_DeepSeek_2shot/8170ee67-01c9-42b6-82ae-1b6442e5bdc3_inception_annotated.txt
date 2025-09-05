@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892167-2bu9dMGAAq5z0bZAIa5k",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892167,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [59, 65] }},\n    {\"cropSpecies\": { \"value\": \"oat\", \"span\": [1011, 1014] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [1313, 1319] }},\n    {\"cropSpecies\": { \"value\": \"oilseed rape\", \"span\": [1322, 1335] }},\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [1338, 1343] }},\n    {\"cropSpecies\": { \"value\": \"lupine\", \"span\": [1346, 1353] }},\n    {\"cropSpecies\": { \"value\": \"rye\", \"span\": [1358, 1361] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [1671, 1677] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"soil P\", \"span\": [1018, 1024] }},\n    {\"Soil\": { \"value\": \"PCAL\", \"span\": [1071, 1075] }},\n    {\"Soil\": { \"value\": \"PCAL\", \"span\": [1119, 1123] }},\n    {\"Soil\": { \"value\": \"PCAL\", \"span\": [1143, 1147] }},\n    {\"Soil\": { \"value\": \"Soil\", \"span\": [1765, 1769] }},\n    {\"Soil\": { \"value\": \"Boden\", \"span\": [1838, 1843] }}\n  ],\n  \"Location\": [\n    {\"city\": { \"value\": \"Braunschweig\", \"span\": [25, 37] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1985\", \"span\": [781, 785] }},\n    {\"endTime\": { \"value\": \"2008\", \"span\": [786, 790] }},\n    {\"endTime\": { \"value\": \"2013\", \"span\": [1025, 1029] }},\n    {\"startTime\": { \"value\": \"autumn 2013\", \"span\": [1645, 1656] }},\n    {\"endTime\": { \"value\": \"2014\", \"span\": [1698, 1702] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3024,
+    "completion_tokens": 552,
+    "total_tokens": 3576,
+    "prompt_tokens_details": null
+  }
+}

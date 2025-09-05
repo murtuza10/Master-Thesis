@@ -1,0 +1,176 @@
+### Code
+```python
+import json
+import re
+
+def extract_entities(text):
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Crops
+    crops = ["Brassica napus", "OSR", "oilseed rape"]
+    for crop in crops:
+        matches = re.finditer(r'\b' + re.escape(crop) + r'\b', text)
+        for match in matches:
+            entities["Crops"].append({
+                "cropSpecies": {
+                    "value": match.group(),
+                    "span": [match.start(), match.end()]
+                }
+            })
+
+    # Location
+    locations = ["Germany", "Bochum", "Braunschweig", "Celle", "Hohenheim", "Veitshöchheim"]
+    for location in locations:
+        matches = re.finditer(r'\b' + re.escape(location) + r'\b', text)
+        for match in matches:
+            if location == "Germany":
+                entities["Location"].append({
+                    "country": {
+                        "value": location,
+                        "span": [match.start(), match.end()]
+                    }
+                })
+            else:
+                entities["Location"].append({
+                    "city": {
+                        "value": location,
+                        "span": [match.start(), match.end()]
+                    }
+                })
+
+    # Time Statement
+    time = ["spring 2022", "spring 2023", "2022", "2023"]
+    for t in time:
+        matches = re.finditer(r'\b' + re.escape(t) + r'\b', text)
+        for match in matches:
+            if t == "spring 2022":
+                entities["Time Statement"].append({
+                    "startTime": {
+                        "value": t,
+                        "span": [match.start(), match.end()]
+                    }
+                })
+            elif t == "spring 2023":
+                entities["Time Statement"].append({
+                    "endTime": {
+                        "value": t,
+                        "span": [match.start(), match.end()]
+                    }
+                })
+            else:
+                entities["Time Statement"].append({
+                    "startTime": {
+                        "value": t,
+                        "span": [match.start(), match.end()]
+                    }
+                })
+
+    return json.dumps(entities, indent=4)
+
+# Input text
+text = """
+Title: 
+Dataset: Residues of boscalid and pyraclostrobin in several bee matrices along the transfer pathway from plants to larvae
+
+Abstract:
+The data set contains the raw data for the corresponding publication Wueppenhorst et al. (2024) https://doi.org/10.1016/j.cub.2024.10.008 Residues of two commonly used fungicides (boscalid and pyraclostrobin) were measured in several bee matrices along a transfer pathway from plants to larvae. The samples were collected simultaneously at five different locations in Germany (Bochum, Braunschweig, Celle, Hohenheim, Veitshöchheim) from spring 2022 to spring 2023. Therefore a field study was carried out in which honey bee colonies were placed to oilseed rape (Brassica napus, OSR) fields. The formulation Pictor® Active was applied to the treatment field site according to label instructions at the maximum field recommended rate of 1 L (product)/ha. No applications were conducted at a second field site, which was designated as the negative control. Samples of plant inflorescences, honey bee pollen baskets, honey sacs, stored pollen and nectar, in-hive bees, larval food jelly (royal, worker, and drone jelly), and larvae (queen, worker, and drone larvae) were collected in a time dependent interval and analyzed for residues of the active ingredients. The data set contains all raw data of the measured residue concentrations within each sample. Detailed information about the sampling and methodology can be found in the corresponding publication.
+"""
+
+print(extract_entities(text))
+```
+
+### Output
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "Brassica napus",
+                "span": [141, 152]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "OSR",
+                "span": [153, 157]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "oilseed rape",
+                "span": [159, 173]
+            }
+        }
+    ],
+    "Soil": [],
+    "Location": [
+        {
+            "country": {
+                "value": "Germany",
+                "span": [226, 233]
+            }
+        },
+        {
+            "city": {
+                "value": "Bochum",
+                "span": [235, 242]
+            }
+        },
+        {
+            "city": {
+                "value": "Braunschweig",
+                "span": [244, 253]
+            }
+        },
+        {
+            "city": {
+                "value": "Celle",
+                "span": [255, 261]
+            }
+        },
+        {
+            "city": {
+                "value": "Hohenheim",
+                "span": [263, 272]
+            }
+        },
+        {
+            "city": {
+                "value": "Veitshöchheim",
+                "span": [274, 285]
+            }
+        }
+    ],
+    "Time Statement": [
+        {
+            "startTime": {
+                "value": "spring 2022",
+                "span": [216, 228]
+            }
+        },
+        {
+            "endTime": {
+                "value": "spring 2023",
+                "span": [230, 242]
+            }
+        },
+        {
+            "startTime": {
+                "value": "2022",
+                "span": [216, 222]
+            }
+        },
+        {
+            "startTime": {
+                "value": "2023",
+                "span": [230, 236]
+            }
+        }
+    ]
+}
+```

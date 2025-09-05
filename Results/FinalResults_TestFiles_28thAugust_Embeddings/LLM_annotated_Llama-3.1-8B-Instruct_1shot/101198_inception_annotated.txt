@@ -1,0 +1,21 @@
+### JSON Output ###
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [106, 114]}},
+    {"region": {"value": "Hürth", "span": [844, 850]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2020", "span": [442, 446]}},
+    {"startTime": {"value": "2050", "span": [526, 530]}},
+    {"duration": {"value": "30", "span": [539, 541]}}
+  ]
+}
+```
+### Explanation ###
+- **Crops**: No crops are mentioned in the text.
+- **Soil**: No information about soil is provided in the text.
+- **Location**: Two locations are identified: "Germany" and "Hürth".
+- **Time Statement**: Three time-related entities are extracted: "2020", "2050", and "30" (duration of 30 years).

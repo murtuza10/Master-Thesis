@@ -1,0 +1,21 @@
+### JSON Output ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [61, 78]}},
+    {"soilAvailableNitrogen": {"value": "soil organic nitrogen", "span": [92, 108]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"duration": {"value": "temporal development", "span": [145, 155]}}
+  ]
+}
+```
+### Explanation ###
+From the input text, we can see that SORCERING is a framework for modeling soil organic carbon (SOC) and soil organic nitrogen (SON). Therefore, we can extract the following entities:
+
+*   **Soil**: We can see that SORCERING models the fate of soil organic carbon (SOC) and soil organic nitrogen (SON). This gives us two entities: `"soilOrganicCarbon"` and `"soilAvailableNitrogen"`.
+*   **Time Statement**: We can see that SORCERING can predict the "temporal development" of SOC. This gives us one entity: `"duration"`.
+
+Since there are no mentions of crops or locations in the text, the corresponding entities in the JSON output will be empty.

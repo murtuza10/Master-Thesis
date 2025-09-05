@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756906628-SLdOeihVejnMYk4V0VKF",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756906628,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"spring barley\", \"span\": [1016, 1029] }},\n    {\"cropSpecies\": { \"value\": \"serradella\", \"span\": [1056, 1066] }},\n    {\"cropSpecies\": { \"value\": \"spring barley\", \"span\": [1095, 1108] }}\n  ],\n  \"Soil\": [\n    {\"soilPH\": { \"value\": \"pH\", \"span\": [38, 40] }},\n    {\"soilPH\": { \"value\": \"pH\", \"span\": [283, 285] }},\n    {\"soilPH\": { \"value\": \"pH\", \"span\": [1383, 1385] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"NH4+ -N\", \"span\": [317, 324] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"NO2- -N\", \"span\": [326, 333] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"NO3- -N\", \"span\": [335, 342] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"NH4+-N\", \"span\": [1431, 1438] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"NO2--\", \"span\": [1440, 1445] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"NO3--N\", \"span\": [1447, 1454] }}\n  ],\n  \"Location\": [\n    {\"city\": { \"value\": \"Rostock\", \"span\": [14, 21] }},\n    {\"region\": { \"value\": \"Northern Germany\", \"span\": [229, 244] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2020\", \"span\": [65, 69] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [433, 437] }},\n    {\"startTime\": { \"value\": \"2018\", \"span\": [789, 793] }},\n    {\"startTime\": { \"value\": \"2019\", \"span\": [1039, 1043] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [1079, 1083] }},\n    {\"duration\": { \"value\": \"3.5 months\", \"span\": [1581, 1591] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4297,
+    "completion_tokens": 560,
+    "total_tokens": 4857,
+    "prompt_tokens_details": null
+  }
+}

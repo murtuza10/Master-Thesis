@@ -1,0 +1,20 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Birch", "span": [104, 109]}},
+    {"cropSpecies": {"value": "Betula pubescens Ehrh.", "span": [105, 127]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "bog", "span": [24, 27]}},
+    {"soilTexture": {"value": "peat", "span": [74, 78]}},
+    {"soilDepth": {"value": "m-2", "span": [247, 251]}}
+  ],
+  "Location": [
+    {"region": {"value": "northern hemisphere", "span": [57, 74]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "one year", "span": [193, 200]}}
+  ]
+}
+```

@@ -1,0 +1,31 @@
+### Output JSON ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Boden", "span": [56, 60] }},
+    {"cropSpecies": { "value": "Löss", "span": [104, 108] }},
+    {"cropSpecies": { "value": "Parabraunerde", "span": [109, 123] }}
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "pseudovergleyt", "span": [81, 92] }},
+    {"soilReferenceGroup": { "value": "Parabraunerde", "span": [109, 123] }},
+    {"soilDepth": { "value": "28 cm", "span": [143, 146] }},
+    {"soilBulkDensity": { "value": "nicht explizit angegeben", "span": [null, null] }},
+    {"soilPH": { "value": "nicht explizit angegeben", "span": [null, null] }},
+    {"soilOrganicCarbon": { "value": "nicht explizit angegeben", "span": [null, null] }},
+    {"soilAvailableNitrogen": { "value": "nicht explizit angegeben", "span": [null, null] }}
+  ],
+  "Location": [
+    {"region": { "value": "nicht explizit angegeben", "span": [null, null] }},
+    {"city": { "value": "nicht explizit angegeben", "span": [null, null] }},
+    {"country": { "value": "nicht explizit angegeben", "span": [null, null] }},
+    {"latitude": { "value": "nicht explizit angegeben", "span": [null, null] }},
+    {"longitude": { "value": "nicht explizit angegeben", "span": [null, null] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2017", "span": [35, 39] }},
+    {"endTime": { "value": "2017", "span": [35, 39] }},
+    {"duration": { "value": "nicht explizit angegeben", "span": [null, null] }}
+  ]
+}
+```

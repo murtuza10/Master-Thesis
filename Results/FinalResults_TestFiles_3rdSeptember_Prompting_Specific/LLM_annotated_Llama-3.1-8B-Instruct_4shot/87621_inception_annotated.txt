@@ -1,0 +1,17 @@
+### Output JSON Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "barley", "span": [67, 73]}},
+    {"cropSpecies": { "value": "barley", "span": [77, 83]}},
+    {"cropSpecies": { "value": "Wheat", "span": [84, 88]}},
+    {"cropSpecies": { "value": "barley", "span": [141, 147]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Note: 
+No entities were found in the given text for the categories "Soil" and "Time Statement".

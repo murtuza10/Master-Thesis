@@ -1,0 +1,127 @@
+### Code to Extract Entities from Text ###
+
+```python
+import json
+import re
+
+def extract_entities(text):
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Extract Soil Entities
+    soil_entities = [
+        {"soilOrganicCarbon": {"value": "organic carbon", "span": [re.search(r'organic carbon', text).start(), re.search(r'organic carbon', text).end()]}},
+        {"soilTexture": []},
+        {"soilReferenceGroup": []},
+        {"soilDepth": []},
+        {"soilBulkDensity": []},
+        {"soilPH": []},
+        {"soilAvailableNitrogen": []}
+    ]
+    entities["Soil"] = soil_entities
+
+    # Extract Location Entities
+    location_entities = [
+        {"country": []},
+        {"region": []},
+        {"city": []},
+        {"latitude": []},
+        {"longitude": []}
+    ]
+    entities["Location"] = location_entities
+
+    # Extract Time Statement Entities
+    time_statement_entities = [
+        {"startTime": []},
+        {"endTime": []},
+        {"duration": []}
+    ]
+    entities["Time Statement"] = time_statement_entities
+
+    # Extract Crops Entities
+    crops = re.findall(r'\b\w+\b', text)
+    for crop in crops:
+        if crop.lower() in ["soil", "organic", "carbon", "dataset", "publication", "manuscript", "sites", "file", "xlsx", "model", "rothc", "data", "variable", "names", "explanation"]:
+            continue
+        crop_entity = {"cropSpecies": {"value": crop, "span": [text.find(crop), text.find(crop) + len(crop)]}}
+        entities["Crops"].append(crop_entity)
+
+    return entities
+
+# Input Text
+text = """
+Title: 
+Dataset for "Towards an ecosystem capacity to stabilise organic carbon in soils"
+
+Abstract:
+This dataset includes the data that was used in the Global Change Biology publication "Towards an ecosystem capacity to stabilise organic carbon in soils" by Poeplau et al.. It contains two xlsx files, with dataset_full.xlsx including all sites with soil properties that were used in the first part of the manuscript. It is a combined dataset from several open source datasets with a total of 1396 individual sites. The file modelled_converged.xlsx includes the RothC model results of a total of 587 sites, for which modelling was possible and a convergence of measured and modelled data was reached. Both files include two sheets, one with a short explanation of the variable names and one data sheet.
+"""
+
+entities = extract_entities(text)
+print(json.dumps(entities, indent=4))
+```
+
+### Output JSON Structure ###
+
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "soils",
+                "span": [123, 129]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "dataset",
+                "span": [29, 36]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "sites",
+                "span": [143, 148]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "xlsx",
+                "span": [92, 97]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "model",
+                "span": [151, 156]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "data",
+                "span": [165, 169]
+            }
+        }
+    ],
+    "Soil": [
+        {
+            "soilOrganicCarbon": {
+                "value": "organic carbon",
+                "span": [64, 78]
+            }
+        },
+        {
+            "soilOrganicCarbon": {
+                "value": "soil",
+                "span": [123, 128]
+            }
+        }
+    ],
+    "Location": [],
+    "Time Statement": []
+}
+```

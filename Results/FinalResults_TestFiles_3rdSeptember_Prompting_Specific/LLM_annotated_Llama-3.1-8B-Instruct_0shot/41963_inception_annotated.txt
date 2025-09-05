@@ -1,0 +1,28 @@
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {"country": { "value": "Germany", "span": [54, 63] }},
+    {"region": { "value": "German National Forest Inventory", "span": [134, 155] }},
+    {"city": []},
+    {"latitude": { "value": "47.15766", "span": [268, 278] }},
+    {"longitude": { "value": "5.79922", "span": [287, 297] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1961", "span": [61, 66] }},
+    {"endTime": { "value": "2013", "span": [95, 100] }},
+    {"duration": { "value": "52", "span": [122, 126] }},
+    {"startTime": { "value": "2011", "span": [170, 175] }},
+    {"endTime": { "value": "2050", "span": [183, 188] }},
+    {"duration": { "value": "39", "span": [196, 200] }},
+    {"startTime": { "value": "2011", "span": [204, 209] }},
+    {"endTime": { "value": "2100", "span": [216, 221] }},
+    {"duration": { "value": "89", "span": [229, 233] }},
+    {"startTime": { "value": "1961", "span": [245, 250] }},
+    {"endTime": { "value": "2099", "span": [257, 262] }},
+    {"duration": { "value": "138", "span": [270, 274] }}
+  ]
+}
+```
+The above JSON contains the extracted entities from the text with their corresponding spans. Note that the "Crops" category is empty because no crop-related entities were found in the text.

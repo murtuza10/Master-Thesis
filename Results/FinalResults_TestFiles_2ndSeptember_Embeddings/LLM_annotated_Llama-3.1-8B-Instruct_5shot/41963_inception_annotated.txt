@@ -1,0 +1,26 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [147, 154]}},
+    {"region": {"value": "Germany", "span": [211, 218]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1961", "span": [71, 75]}},
+    {"endTime": {"value": "2013", "span": [78, 82]}},
+    {"startTime": {"value": "2011", "span": [184, 188]}},
+    {"endTime": {"value": "2050", "span": [191, 195]}},
+    {"startTime": {"value": "2011", "span": [207, 211]}},
+    {"endTime": {"value": "2100", "span": [214, 218]}},
+    {"duration": {"value": "monthly", "span": [342, 349]}},
+    {"duration": {"value": "seasonal", "span": [354, 362]}},
+    {"duration": {"value": "yearly", "span": [369, 375]}},
+    {"duration": {"value": "multiyearly", "span": [383, 392]}},
+    {"startTime": {"value": "1961", "span": [427, 431]}},
+    {"endTime": {"value": "2099", "span": [434, 438]}}
+  ]
+}
+```

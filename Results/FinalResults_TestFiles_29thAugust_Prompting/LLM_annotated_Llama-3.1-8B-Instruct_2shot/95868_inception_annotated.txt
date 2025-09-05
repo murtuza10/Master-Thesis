@@ -1,0 +1,25 @@
+### Output JSON ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Norway spruce", "span": [123, 136]}},
+    {"cropSpecies": {"value": "Picea abies", "span": [121, 132]}},
+    {"cropSpecies": {"value": "Picea abies", "span": [204, 215]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": {"value": "Western Germany", "span": [90, 104]}},
+    {"country": {"value": "Germany", "span": [168, 174]}},
+    {"region": {"value": "Europe", "span": [232, 238]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1964", "span": [65, 69]}},
+    {"endTime": {"value": "2015", "span": [118, 122]}}
+  ]
+}
+```
+### Notes ###
+- The start and end character positions are based on the beginning of the full text.
+- The output includes all explicitly mentioned entities from the given text.
+- Each entity is included only once, even if it appears multiple times in the text.
+- The JSON structure matches the specified format.

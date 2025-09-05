@@ -1,0 +1,26 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [143, 149]}},
+    {"cropSpecies": {"value": "barley", "span": [164, 170]}},
+    {"cropSpecies": {"value": "maize", "span": [179, 184]}},
+    {"cropSpecies": {"value": "maize", "span": [199, 204]}},
+    {"cropSpecies": {"value": "oats", "span": [207, 211]}},
+    {"cropSpecies": {"value": "potatoes", "span": [214, 222]}},
+    {"cropSpecies": {"value": "rape", "span": [232, 236]}},
+    {"cropSpecies": {"value": "rye", "span": [239, 242]}},
+    {"cropSpecies": {"value": "sugarbeet", "span": [245, 254]}},
+    {"cropSpecies": {"value": "triticale", "span": [256, 265]}},
+    {"cropSpecies": {"value": "wheat", "span": [278, 283]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [12, 19]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1979", "span": [29, 33]}},
+    {"endTime": {"value": "2021", "span": [37, 41]}}
+  ]
+}
+```

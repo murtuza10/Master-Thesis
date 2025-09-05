@@ -1,0 +1,20 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "C4", "span": [44, 47]}},
+    {"cropSpecies": {"value": "C3", "span": [93, 96]}}
+  ],
+  "Soil": [
+    {"Soil": {"value": "C3 soil", "span": [92, 98]}},
+    {"Soil": {"value": "particulate organic carbon", "span": [130, 149]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2 years", "span": [17, 23]}},
+    {"startTime": {"value": "6 months", "span": [107, 113]}},
+    {"endTime": {"value": "24 months", "span": [122, 128]}},
+    {"duration": {"value": "2 years", "span": [17, 23]}}
+  ]
+}
+```

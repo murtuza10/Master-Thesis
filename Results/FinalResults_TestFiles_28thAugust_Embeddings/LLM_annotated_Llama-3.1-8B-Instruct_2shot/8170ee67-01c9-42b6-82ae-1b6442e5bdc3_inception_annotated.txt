@@ -1,0 +1,25 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [245, 251]}},
+    {"cropSpecies": {"value": "rape", "span": [286, 291]}},
+    {"cropSpecies": {"value": "wheat", "span": [300, 305]}},
+    {"cropSpecies": {"value": "lupine", "span": [317, 323]}},
+    {"cropSpecies": {"value": "rye", "span": [331, 335]}},
+    {"cropSpecies": {"value": "barley", "span": [373, 379]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+### Explanation ###
+
+- In the "Crops" category, the following crop species are identified:
+  - Winter barley (`Hordeum vulgare L.`)
+  - Winter oilseed rape
+  - Winter wheat
+  - Lupine
+  - Winter rye
+- The remaining categories (`Soil`, `Location`, and `Time Statement`) are empty because the text does not provide any relevant information for these categories.

@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756918276-SuXkrTg2fbvgZR6vFsxP",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756918279,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"winter barley\", \"span\": [33, 46]}},\n    {\"cropSpecies\": {\"value\": \"oat\", \"span\": [1038, 1041]}},\n    {\"cropSpecies\": {\"value\": \"winter barley\", \"span\": [1367, 1380]}},\n    {\"cropSpecies\": {\"value\": \"winter oilseed rape\", \"span\": [1382, 1402]}},\n    {\"cropSpecies\": {\"value\": \"winter wheat\", \"span\": [1404, 1416]}},\n    {\"cropSpecies\": {\"value\": \"lupine\", \"span\": [1418, 1424]}},\n    {\"cropSpecies\": {\"value\": \"winter rye\", \"span\": [1429, 1439]}},\n    {\"cropSpecies\": {\"value\": \"winter barley\", \"span\": [1579, 1592]}},\n    {\"cropVariety\": {\"value\": \"OTTO\", \"span\": [1611, 1615]}}\n  ],\n  \"Soil\": [\n    {\"soilDepth\": {\"value\": \"25 cm\", \"span\": [1043, 1048]}},\n    {\"soilDepth\": {\"value\": \"25 cm\", \"span\": [1485, 1490]}},\n    {\"soilDepth\": {\"value\": \"0-30 cm\", \"span\": [1522, 1529]}}\n  ],\n  \"Location\": [\n    {\"city\": {\"value\": \"Braunschweig\", \"span\": [21, 33]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"1985\", \"span\": [856, 860]}},\n    {\"endTime\": {\"value\": \"2008\", \"span\": [861, 865]}},\n    {\"endTime\": {\"value\": \"2013\", \"span\": [1074, 1078]}},\n    {\"startTime\": {\"value\": \"2013\", \"span\": [1566, 1570]}},\n    {\"endTime\": {\"value\": \"2014\", \"span\": [1617, 1621]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5238,
+    "completion_tokens": 483,
+    "total_tokens": 5721,
+    "prompt_tokens_details": null
+  }
+}

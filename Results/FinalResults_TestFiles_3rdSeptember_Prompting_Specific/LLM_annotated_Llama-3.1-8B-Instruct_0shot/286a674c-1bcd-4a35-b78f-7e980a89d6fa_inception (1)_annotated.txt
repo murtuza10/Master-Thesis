@@ -1,0 +1,34 @@
+### Text ###
+ Microclimatic data along a gradient from kettle holes to agricultural fields in the AgroScapeLabs Quillow 2019
+Ten kettle holes within six agricultural fields (crop: winter wheat) were selected for monitoring microclimatic conditions around the kettle holes. For this purpose we have established a transect starting from the edge of the kettle holes up to 50 m into the surrounding wheat fields. As a control, transects were established from the field edge into the wheat field. Along these transects microclimatic observation stations were installed at 5 different distances (-1m; 1m; 5m; 20m; 50m). At each point air temperature and air humidity were monitored during the growing season of wheat plants (between April and June 2019)
+
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wheat", "span": [44, 50] }}
+  ],
+  "Soil": [
+    {"soilTexture": []},
+    {"soilReferenceGroup": []},
+    {"soilDepth": []},
+    {"soilBulkDensity": []},
+    {"soilPH": []},
+    {"soilOrganicCarbon": []},
+    {"soilAvailableNitrogen": []}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [122, 129] }},
+    {"region": { "value": "Brandenburg", "span": [135, 145] }},
+    {"city": { "value": "Uckermark", "span": [151, 159] }},
+    {"latitude": []},
+    {"longitude": []}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "April", "span": [169, 176] }},
+    {"endTime": { "value": "June", "span": [177, 183] }},
+    {"duration": { "value": "between April and June 2019", "span": [169, 184] }}
+  ]
+}
+```
+Note that we were able to find entities for **Crops**, **Location**, and **Time Statement** categories, but not for the **Soil** category as no information about soil was provided in the text.

@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756906914-5aqvi5QehVsCdXWmxVe8",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756906914,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Apium graveolens\", \"span\": [41, 57] }},\n    {\"cropSpecies\": { \"value\": \"Apium graveolens\", \"span\": [250, 266] }},\n    {\"cropSpecies\": { \"value\": \"Apium graveolens\", \"span\": [460, 476] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"city\": { \"value\": \"Quedlinburg\", \"span\": [517, 528] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [531, 538] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2016\", \"span\": [587, 591] }},\n    {\"startTime\": { \"value\": \"2017\", \"span\": [685, 689] }},\n    {\"endTime\": { \"value\": \"2018\", \"span\": [690, 694] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4807,
+    "completion_tokens": 234,
+    "total_tokens": 5041
+  }
+}

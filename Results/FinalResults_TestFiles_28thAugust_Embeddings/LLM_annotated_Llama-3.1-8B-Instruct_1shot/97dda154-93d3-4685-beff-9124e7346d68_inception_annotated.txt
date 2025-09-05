@@ -1,0 +1,29 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "maize", "span": [145, 150]}},
+    {"cropSpecies": {"value": "maize", "span": [214, 219]}}
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "Wanna Sand", "span": [93, 106] }},
+    {"soilTexture": { "value": "Wanna Sand without biogas slurry", "span": [107, 127] }},
+    {"soilTexture": { "value": "Rostock Sand", "span": [129, 139] }},
+    {"soilTexture": { "value": "Wanna Marsch", "span": [141, 151] }}
+  ],
+  "Location": [
+    {"country": {"value": "Europe", "span": [234, 239]}},
+    {"country": {"value": "Germany", "span": [241, 247]}},
+    {"region": {"value": "Lower Saxony", "span": [249, 259]}},
+    {"city": {"value": "Wanna", "span": [261, 267]}},
+    {"region": {"value": "Mecklenburg-Vorpommern", "span": [269, 284]}},
+    {"city": {"value": "Rostock", "span": [286, 292]}}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2021", "span": [123, 127] }},
+    {"startTime": { "value": "2022", "span": [128, 132] }},
+    {"startTime": { "value": "2023", "span": [133, 137] }},
+    {"duration": { "value": "April and August", "span": [91, 109] }}
+  ]
+}
+```

@@ -1,0 +1,17 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "C4", "span": [54, 56]}},
+    {"cropSpecies": {"value": "C3", "span": [76, 78]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2-year", "span": [7, 13]}},
+    {"endTime": {"value": "6 months", "span": [95, 103]}},
+    {"endTime": {"value": "12 months", "span": [106, 114]}},
+    {"endTime": {"value": "24 months", "span": [122, 130]}}
+  ]
+}
+```

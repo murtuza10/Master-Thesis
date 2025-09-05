@@ -1,0 +1,33 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "energy crops", "span": [214, 223]}}
+  ],
+  "Soil": [
+    {"soilTexture": {}},
+    {"soilReferenceGroup": {}},
+    {"soilDepth": {}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [32, 40]}},
+    {"region": {"value": "Germany", "span": [63, 68]}},
+    {"city": {}},
+    {"latitude": {}},
+    {"longitude": {}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1990", "span": [95, 99]}},
+    {"endTime": {"value": "2017", "span": [129, 133]}}
+  ]
+}
+```
+### Explanation ###
+- The input text does not explicitly mention any soil texture, reference group, depth, bulk density, pH, organic carbon, or available nitrogen.
+- The text does not mention any specific crop variety.
+- The country, region, city, latitude, and longitude are not explicitly mentioned, but we can infer the country as Germany and the region as Germany.
+- The start and end time are explicitly mentioned as 1990 and 2017, respectively.

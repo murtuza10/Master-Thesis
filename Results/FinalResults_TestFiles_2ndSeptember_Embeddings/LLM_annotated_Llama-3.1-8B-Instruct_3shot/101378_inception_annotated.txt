@@ -1,0 +1,28 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Betula pubescens Ehrh.", "span": [129, 147]}},
+    {"cropSpecies": {"value": "Birch", "span": [131, 136]}},
+    {"cropSpecies": {"value": "Betula pubescens", "span": [144, 162]}},
+    {"cropSpecies": {"value": "Birch", "span": [146, 151]}},
+    {"cropSpecies": {"value": "Betula pubescens", "span": [167, 185]}},
+    {"cropSpecies": {"value": "Birch", "span": [169, 174]}}
+  ],
+  "Soil": [
+    {"Soil": {"value": "peat", "span": [245, 248]}},
+    {"Soil": {"value": "peat", "span": [263, 266]}},
+    {"Soil": {"value": "peat", "span": [274, 277]}}
+  ],
+  "Location": [
+    {"region": {"value": "northern hemisphere", "span": [59, 74]}},
+    {"region": {"value": "bog", "span": [104, 108]}},
+    {"region": {"value": "bog", "span": [123, 127]}},
+    {"city": {"value": "former peat extraction area", "span": [186, 208]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "one year", "span": [216, 222]}}
+  ]
+}
+```

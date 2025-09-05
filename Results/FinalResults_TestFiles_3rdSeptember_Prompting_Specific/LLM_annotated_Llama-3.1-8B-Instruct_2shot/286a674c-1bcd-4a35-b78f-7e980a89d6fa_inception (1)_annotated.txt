@@ -1,0 +1,23 @@
+### Output JSON ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "winter wheat", "span": [135, 145]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "Boden", "span": [246, 250]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [262, 267]}},
+    {"region": {"value": "Brandenburg", "span": [268, 276]}},
+    {"city": {"value": "Uckermark", "span": [277, 285]}},
+    {"region": {"value": "Quillow", "span": [292, 299]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "April", "span": [234, 238]}},
+    {"endTime": {"value": "June", "value": "2019", "span": [238, 240]}},
+    {"duration": {"value": "2019", "span": [238, 240]}}
+  ]
+}
+```

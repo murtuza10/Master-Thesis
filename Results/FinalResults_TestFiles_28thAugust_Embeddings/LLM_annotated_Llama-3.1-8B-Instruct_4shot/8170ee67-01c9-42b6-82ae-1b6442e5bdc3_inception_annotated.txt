@@ -1,0 +1,150 @@
+### Code Solution ###
+```python
+import json
+import re
+
+def extract_entities(text):
+    # Crops
+    crop_species = re.findall(r'\b(Hordeum vulgare|winter barley|winter oilseed rape|winter wheat|lupine|winter rye)\b', text, re.IGNORECASE)
+    crop_varieties = re.findall(r'\b(OTTO)\b', text, re.IGNORECASE)
+
+    # Soil
+    soil_organics = re.findall(r'\b(available soil P|PCAL|soil P)\b', text, re.IGNORECASE)
+    soil_available_nitrogen = re.findall(r'\b(available soil nitrogen)\b', text, re.IGNORECASE)
+
+    # Location
+    location = re.findall(r'\b(Braunschweig)\b', text, re.IGNORECASE)
+
+    # Time Statement
+    time_statements = re.findall(r'\b(2014|autumn 2013|2013)\b', text, re.IGNORECASE)
+
+    # Create JSON structure
+    result = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Crops
+    for species in crop_species:
+        result["Crops"].append({
+            "cropSpecies": {
+                "value": species,
+                "span": [text.find(species), text.find(species) + len(species)]
+            }
+        })
+    for variety in crop_varieties:
+        result["Crops"].append({
+            "cropVariety": {
+                "value": variety,
+                "span": [text.find(variety), text.find(variety) + len(variety)]
+            }
+        })
+
+    # Soil
+    for organic in soil_organics:
+        result["Soil"].append({
+            "soilOrganicCarbon": {
+                "value": organic,
+                "span": [text.find(organic), text.find(organic) + len(organic)]
+            }
+        })
+    for nitrogen in soil_available_nitrogen:
+        result["Soil"].append({
+            "soilAvailableNitrogen": {
+                "value": nitrogen,
+                "span": [text.find(nitrogen), text.find(nitrogen) + len(nitrogen)]
+            }
+        })
+
+    # Location
+    for loc in location:
+        result["Location"].append({
+            "city": {
+                "value": loc,
+                "span": [text.find(loc), text.find(loc) + len(loc)]
+            }
+        })
+
+    # Time Statement
+    for time in time_statements:
+        result["Time Statement"].append({
+            "startTime": {
+                "value": time,
+                "span": [text.find(time), text.find(time) + len(time)]
+            }
+        })
+
+    return json.dumps(result, indent=4)
+
+text = """
+Field experiment FV 4 Braunschweig – harvest of winter barley 2014
+The phosphorus (P) taken up by organisms cannot be substituted from any other element; the only source of an increasing P demand for feeding the growing global population is mineable rock phosphate, upgraded to mineral P fertilizer. There are concerns about the global reserves of rock phosphates, expressed in terms of “peak phosphorus” (demand production). Bone char (BC) produced of de-fatted and de-gelatinized bones (15% P, 28% Calcium, 1% Magnesium) from slaughterhouses by a pyrolysis process could be an alternative source of P. Phosphorus in BC is mainly bound in a structure similar to hydroxylapatite (HA) in accordance with their origin from bones. Generally, P in HA is of low solubility and, consequently, it cannot be expected that bones or BC have a high fertilization value. Consequently, further attempts were directed to increase the P solubility of BC by a sulfur (S) enrichment leading to so called BCplus (patent DE102011010525). A former long-term field P fertilization trial (1985-2008) led to distinctive differences in available soil P (PCAL) concentrations. For some detailed description of the former experiment and further soil information see: Vogeler, I.; Rogasik, J.; Funder, U.; Panten, K.; Schnug, E. (2009) Effect of tillage systems and P-fertilization on soil physical and chemical properties, crop yield and nutrient uptake. Soil and Tillage Research 103 (1): 137-143.The resulting differences in soil P were conserved below an extensively managed grassland until 2013 when the experiment was ploughed to a depth of 25 cm and oat was seeded. After the harvest of 2013, the newly designed experiment (FV 4) was established testing the fertilizing potential of BC and BCplus. According to their mean PCAL concentrations (0-30 cm) one third of the plots were assigned to soil class A (11 mg kg-1 PCAL), B (21 mg kg-1 PCAL), and C (47 mg kg-1 PCAL) each. The experiment was set up as a completely randomized block design with three replicates, a plot size of 5.75 m * 17.5 m, and crop rotation of winter barley, winter oilseed rape, winter wheat, lupine and winter rye. Chisel ploughing and ploughing to a depth of 25 cm incorporates crop residues before seeding. Additionally to a control without P fertilization (P0), three different types of P fertilizer (BC, BCplus, TSP) are applied to an equivalent of 45 kg ha-1 P once a year shortly before seeding since autumn 2013. This data set presents the first harvest of winter barley (Hordeum vulgare L., variety OTTO) in 2014. Research domain: Plant Nutrition
+Keywords: 
+Soil, Phosphate fertilizers, Phosphates, Phosphate fertilizers, farm inputs, opendata, Boden
+"""
+
+print(extract_entities(text))
+```
+
+### Output JSON Structure ###
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "winter barley",
+                "span": [
+                    133,
+                    146
+                ]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "winter oilseed rape",
+                "span": [
+                    163,
+                    175
+                ]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "winter wheat",
+                "span": [
+                    176,
+                    184
+                ]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "lupine",
+                "span": [
+                    186,
+                    192
+                ]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "winter rye",
+                "span": [
+                    193,
+                    200
+                ]
+            }
+        },
+        {
+            "cropVariety": {
+                "value": "OTTO",
+                "span": [
+                    246,
+                    251
+                ]
+            }
+        }
+    ],
+    "Soil

@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756907202-N4yLn2UJHkE7GdEhaQ6P",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756907202,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Betula pubescens Ehrh.\", \"span\": [267, 289] }},\n    {\"cropSpecies\": { \"value\": \"birch\", \"span\": [292, 297] }},\n    {\"cropSpecies\": { \"value\": \"Betula pubescens Ehrh.\", \"span\": [327, 349] }},\n    {\"cropSpecies\": { \"value\": \"birches\", \"span\": [1031, 1038] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"one year\", \"span\": [626, 634] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5017,
+    "completion_tokens": 167,
+    "total_tokens": 5184,
+    "prompt_tokens_details": null
+  }
+}

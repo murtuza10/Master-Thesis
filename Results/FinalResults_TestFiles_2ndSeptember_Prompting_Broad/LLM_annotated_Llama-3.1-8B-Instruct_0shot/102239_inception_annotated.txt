@@ -1,0 +1,21 @@
+### Entities Extraction for the Given Text
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "soils", "span": [0, 5] }},
+    {"cropSpecies": { "value": "soils", "span": [37, 42] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "soil properties", "span": [37, 51] }},
+    {"Soil": { "value": "soil", "span": [57, 61] }},
+    {"Soil": { "value": "soil", "span": [65, 69] }},
+    {"Soil": { "value": "soil", "span": [73, 77] }}
+  ],
+  "Location": [
+    {"country": { "value": "Global", "span": [1, 6] }}
+  ],
+  "Time Statement": []
+}
+```
+Note that "soils" is annotated as "cropSpecies" because it is the only term related to crops in the text.

@@ -1,0 +1,29 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "maize", "span": [245, 249]}}
+  ],
+  "Soil": [
+    {"soilTexture": {"value": "Wanna Sand", "span": [163, 173]}},
+    {"soilTexture": {"value": "Wanna Sand without biogas slurry", "span": [179, 201]}},
+    {"soilTexture": {"value": "Rostock Sand", "span": [207, 219]}},
+    {"soilTexture": {"value": "Wanna Marsch", "span": [225, 235]}},
+    {"soilReferenceGroup": {"value": "biogas slurry", "span": [257, 267]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [394, 398]}},
+    {"region": {"value": "Lower Saxony", "span": [404, 412]}},
+    {"city": {"value": "Wanna", "span": [419, 424]}},
+    {"city": {"value": "Rostock", "span": [430, 435]}},
+    {"latitude": {"value": "", "span": []}},
+    {"longitude": {"value": "", "span": []}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2021", "span": [136, 140]}},
+    {"endTime": {"value": "2023", "span": [143, 147]}},
+    {"duration": {"value": "April to August", "span": [183, 194]}},
+    {"duration": {"value": "vegetation period", "span": [201, 212]}}
+  ]
+}
+```

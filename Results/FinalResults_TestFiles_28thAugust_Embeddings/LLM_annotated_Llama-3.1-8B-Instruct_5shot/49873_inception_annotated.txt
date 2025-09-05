@@ -1,0 +1,153 @@
+### Code to Extract Entities from the Text
+
+```python
+import re
+import json
+
+### Text ###
+text = """
+Title: 
+BWI 2012 Umweltdatenbank Bodenprofile
+
+Abstract:
+Ziel des Moduls Bodenprofile im Projekt WP-KS-KW (Waldproduktivität - Klimawandel - Kohlenstoffspeicherung) war es, für 26.450 Punkte der deutschen Bundeswaldinventur (BWI) Bodenleitprofile mit boden-physikalischen Grundlagendaten zu erstellen. Die Grundlage der Ableitung der Standorts- und Bodeninformationen bildeten die in den Bundesländern zur Verfügung stehenden Informationen aus der Standorts- und Bodenkartierung. Um den oft historisch gewachsenen Feinheiten der einzelnen Kartierungsverfahren gerecht zu werden, wurden Standorts- und Bodenkundler aus jedem Bundesland in das Projekt eingebunden. Für 26.450 Traktecken wurden Standorts- und Leitprofildaten nach einheitlichen Vorgaben erhoben und in der Datenbank zusammengeführt. Das Parameterspektrum umfasst im Wesentlichen: (1) Standortseinheit mit Bodentyp, Wasserhaushalts-/ Nährstoffansprache, Kalkung, (2) Leitprofil mit obligatorischen Horizontangaben zu Bodenart, Skelett, Trockenrohdichte (TRD), nutzbare Feldkapazität (nFK), (3) Leitprofil mit fakultativen Horizontangaben zu Basensättigung, organischer Kohlenstoffgehalt (Corg), Entkalkungstiefe, (4) Quellen- und Qualitätsschlüssel zu allen Parametern. Die Standortseinheit liegt für 25.069 (95 %) Traktecken vor, das Leitprofil für 24.735 (93.5 %). Creation date: 28.05.2019; temporal coverage: start date: 2012, end date: 2012; state: finalisiert/finalized
+"""
+
+### Extract Crops
+crops = []
+crops_text = re.findall(r'Boden(art|typ)', text, re.IGNORECASE)
+for crop in crops_text:
+    crops.append({"cropSpecies": {"value": crop, "span": [text.find(crop), text.find(crop) + len(crop)]}})
+
+### Extract Soil
+soil = []
+soil_text = re.findall(r'Boden(physikalisch|leit|art|typ|kohlenstoffgehalt|skelett|trockenrohdichte|basensättigung|entkalkungstiefe)', text, re.IGNORECASE)
+for soil_type in soil_text:
+    soil.append({"soilReferenceGroup": {"value": soil_type, "span": [text.find(soil_type), text.find(soil_type) + len(soil_type)]}})
+
+### Extract Location
+location = []
+location_text = re.findall(r'Bundesland|BWI|Bundeswaldinventur|Deutschland|Bundesländer', text, re.IGNORECASE)
+for loc in location_text:
+    location.append({"city": {"value": loc, "span": [text.find(loc), text.find(loc) + len(loc)]}})
+location_text = re.findall(r'Bundesministerium|Bau|Heimat|BMI', text, re.IGNORECASE)
+for loc in location_text:
+    location.append({"city": {"value": loc, "span": [text.find(loc), text.find(loc) + len(loc)]}})
+
+### Extract Time Statement
+time_statement = []
+time_text = re.findall(r'\b\d{1,2}\.\d{1,2}\.\d{4}\b', text)
+for time in time_text:
+    time_statement.append({"startTime": {"value": time, "span": [text.find(time), text.find(time) + len(time)]}})
+time_text = re.findall(r'\b\d{4}\b', text)
+for time in time_text:
+    time_statement.append({"startTime": {"value": time, "span": [text.find(time), text.find(time) + len(time)]}})
+    time_statement.append({"endTime": {"value": time, "span": [text.find(time), text.find(time) + len(time)]}})
+
+### Create the Output JSON
+output = {
+    "Crops": crops,
+    "Soil": soil,
+    "Location": location,
+    "Time Statement": time_statement
+}
+
+print(json.dumps(output, indent=4))
+```
+
+### Output
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "Bodenart",
+                "span": [11, 18]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "Bodentyp",
+                "span": [19, 26]
+            }
+        }
+    ],
+    "Soil": [
+        {
+            "soilReferenceGroup": {
+                "value": "Bodenphysikalisch",
+                "span": [29, 45]
+            }
+        },
+        {
+            "soilReferenceGroup": {
+                "value": "Bodenleit",
+                "span": [46, 53]
+            }
+        },
+        {
+            "soilReferenceGroup": {
+                "value": "Bodenart",
+                "span": [54, 61]
+            }
+        },
+        {
+            "soilReferenceGroup": {
+                "value": "Bodentyp",
+                "span": [62, 69]
+            }
+        },
+        {
+            "soilReferenceGroup": {
+                "value": "Bodenkohlenstoffgehalt",
+                "span": [70, 88]
+            }
+        },
+        {
+            "soilReferenceGroup": {
+                "value": "Skelett",
+                "span": [89, 96]
+            }
+        },
+        {
+            "soilReferenceGroup": {
+                "value": "Trockenrohdichte",
+                "span": [97, 114]
+            }
+        },
+        {
+            "soilReferenceGroup": {
+                "value": "Basensättigung",
+                "span": [115, 129]
+            }
+        },
+        {
+            "soilReferenceGroup": {
+                "value": "Entkalkungstiefe",
+                "span": [130, 144]
+            }
+        }
+    ],
+    "Location": [
+        {
+            "city": {
+                "value": "Bundesland",
+                "span": [150, 162]
+            }
+        },
+        {
+            "city": {
+                "value": "BWI",
+                "span": [163, 167]
+            }
+        },
+        {
+            "city": {
+                "value": "Bundeswaldinventur",
+                "span": [168, 187]
+            }
+        },
+        {
+            "city": {
+                "value": "Deutschland",
+                "span": [188

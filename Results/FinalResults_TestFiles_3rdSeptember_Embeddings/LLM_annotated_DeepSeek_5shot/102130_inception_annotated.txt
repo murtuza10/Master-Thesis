@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892135-LqCKnNjGAjT2GHObBGyU",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892135,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"C3 soil\", \"span\": [86, 93] }},\n    {\"Soil\": { \"value\": \"particulate organic carbon\", \"span\": [156, 182] }},\n    {\"Soil\": { \"value\": \"mineral associated organic carbon\", \"span\": [187, 218] }},\n    {\"Soil\": { \"value\": \"total carbon\", \"span\": [240, 253] }},\n    {\"Soil\": { \"value\": \"stable isotope 13C\", \"span\": [276, 296] }},\n    {\"Soil\": { \"value\": \"carbon\", \"span\": [311, 318] }},\n    {\"Soil\": { \"value\": \"C contents\", \"span\": [469, 479] }},\n    {\"Soil\": { \"value\": \"delta 13C\", \"span\": [485, 495] }},\n    {\"Soil\": { \"value\": \"carbon\", \"span\": [553, 560] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"2-year\", \"span\": [50, 56] }},\n    {\"startTime\": { \"value\": \"6\", \"span\": [113, 114] }},\n    {\"startTime\": { \"value\": \"12\", \"span\": [116, 118] }},\n    {\"startTime\": { \"value\": \"24 months\", \"span\": [120, 129] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4028,
+    "completion_tokens": 342,
+    "total_tokens": 4370,
+    "prompt_tokens_details": null
+  }
+}

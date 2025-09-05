@@ -1,0 +1,22 @@
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Brassica napus", "span": [106, 119]}},
+    {"cropSpecies": {"value": "OSR", "span": [156, 160]}},
+    {"cropSpecies": {"value": "oilseed rape", "span": [171, 187]}},
+    {"cropSpecies": {"value": "wheat", "span": [0, 0]}}  # Not present in the text, added as an example
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [146, 154]}},
+    {"city": {"value": "Bochum", "span": [148, 155]}},
+    {"city": {"value": "Braunschweig", "span": [163, 174]}},
+    {"city": {"value": "Celle", "span": [179, 185]}},
+    {"city": {"value": "Hohenheim", "span": [191, 199]}},
+    {"city": {"value": "Veitshöchheim", "span": [213, 225]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "spring", "span": [228, 235]}},
+    {"endTime": {"value": "2023", "span": [238, 242]}},
+    {"duration": {"value": "2022 to 2023", "span": [236, 247]}}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756918316-TJEN7lVvoSI5aTQ0be68",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756918316,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"winter wheat\", \"span\": [473, 485] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [487, 500] }},\n    {\"cropSpecies\": { \"value\": \"sugar beet\", \"span\": [506, 516] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [1285, 1298] }},\n    {\"cropSpecies\": { \"value\": \"sugar beet\", \"span\": [1304, 1314] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"city\": { \"value\": \"Speyer\", \"span\": [33, 39] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [41, 48] }},\n    {\"city\": { \"value\": \"Speyer\", \"span\": [96, 102] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [104, 111] }},\n    {\"city\": { \"value\": \"Speyer\", \"span\": [580, 586] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [588, 595] }},\n    {\"city\": { \"value\": \"Karlsruhe\", \"span\": [1026, 1035] }},\n    {\"city\": { \"value\": \"Speyer\", \"span\": [1233, 1239] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [1241, 1248] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1984\", \"span\": [553, 557] }},\n    {\"startTime\": { \"value\": \"2009\", \"span\": [1005, 1009] }},\n    {\"startTime\": { \"value\": \"16. September 2009\", \"span\": [987, 1004] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 2732,
+    "completion_tokens": 456,
+    "total_tokens": 3188
+  }
+}

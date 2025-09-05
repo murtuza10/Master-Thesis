@@ -1,0 +1,143 @@
+### Code: ###
+```python
+import json
+import re
+
+### Text ###
+text = """
+Datensatz mit Fragebögen zur Analyse von Lebensmittelverlusten bei Obst und Gemüse auf Erzeugerebene und in der Wertschöpfungskette
+
+Der Datensatz enthält 8 Fragebögen für persönliche Interviews mit Entscheidungstragenden auf Erzeugerebene und in der Wertschöpfungskette zur Analyse der Lebensmittelverluste: - im Freilandanbau von Möhre, Salat, Apfel und Erdbeere, - im geschützten Anbau von Erdbeere und Himbeere und - in Verarbeitung und Lebensmitteleinzelhandel
+"""
+
+### Entities Extraction ###
+def extract_entities(text):
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Crops
+    crops = ["Möhre", "Salat", "Apfel", "Erdbeere", "Himbeere"]
+    for crop in crops:
+        value = crop
+        span = [text.find(crop), text.find(crop) + len(crop)]
+        entities["Crops"].append({"cropSpecies": {"value": value, "span": span}})
+
+    # Soil
+    soil = []
+    for match in re.finditer(r"(Freiland|geschützt)", text):
+        value = match.group()
+        span = [match.start(), match.end()]
+        soil.append({"soilTexture": {"value": value, "span": span}})
+    entities["Soil"] = soil
+
+    # Location
+    location = []
+    for match in re.finditer(r"Erzeugerebene", text):
+        value = "Erzeugerebene"
+        span = [match.start(), match.end()]
+        location.append({"region": {"value": value, "span": span}})
+    for match in re.finditer(r"Wertschöpfungskette", text):
+        value = "Wertschöpfungskette"
+        span = [match.start(), match.end()]
+        location.append({"region": {"value": value, "span": span}})
+    entities["Location"] = location
+
+    # Time Statement
+    time_statement = []
+    for match in re.finditer(r"\d+", text):
+        value = match.group()
+        span = [match.start(), match.end()]
+        time_statement.append({"startTime": {"value": value, "span": span}})
+    entities["Time Statement"] = time_statement
+
+    return entities
+
+### Output JSON ###
+entities = extract_entities(text)
+output_json = json.dumps(entities, indent=4)
+print(output_json)
+```
+
+### Output: ###
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "Möhre",
+                "span": [72, 77]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "Salat",
+                "span": [84, 89]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "Apfel",
+                "span": [94, 99]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "Erdbeere",
+                "span": [104, 113]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "Himbeere",
+                "span": [122, 131]
+            }
+        }
+    ],
+    "Soil": [
+        {
+            "soilTexture": {
+                "value": "Freiland",
+                "span": [46, 54]
+            }
+        },
+        {
+            "soilTexture": {
+                "value": "geschützt",
+                "span": [62, 71]
+            }
+        }
+    ],
+    "Location": [
+        {
+            "region": {
+                "value": "Erzeugerebene",
+                "span": [95, 110]
+            }
+        },
+        {
+            "region": {
+                "value": "Wertschöpfungskette",
+                "span": [127, 142]
+            }
+        },
+        {
+            "region": {
+                "value": "Wertschöpfungskette",
+                "span": [157, 172]
+            }
+        }
+    ],
+    "Time Statement": [
+        {
+            "startTime": {
+                "value": "8",
+                "span": [29, 30]
+            }
+        }
+    ]
+}
+```

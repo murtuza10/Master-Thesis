@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756918022-GBqOSeu1Aq3JTHwWEhsG",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756918022,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [50, 63] }},\n    {\"cropSpecies\": { \"value\": \"oat\", \"span\": [902, 905] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [1172, 1185] }},\n    {\"cropSpecies\": { \"value\": \"winter oilseed rape\", \"span\": [1187, 1207] }},\n    {\"cropSpecies\": { \"value\": \"winter wheat\", \"span\": [1209, 1221] }},\n    {\"cropSpecies\": { \"value\": \"lupine\", \"span\": [1223, 1230] }},\n    {\"cropSpecies\": { \"value\": \"winter rye\", \"span\": [1235, 1245] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [1429, 1442] }},\n    {\"cropVariety\": { \"value\": \"OTTO\", \"span\": [1475, 1479] }}\n  ],\n  \"Soil\": [\n    {\"soilDepth\": { \"value\": \"25 cm\", \"span\": [896, 901] }},\n    {\"soilDepth\": { \"value\": \"0-30 cm\", \"span\": [1079, 1086] }}\n  ],\n  \"Location\": [\n    {\"city\": { \"value\": \"Braunschweig\", \"span\": [23, 35] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2014\", \"span\": [65, 69] }},\n    {\"startTime\": { \"value\": \"1985\", \"span\": [650, 654] }},\n    {\"endTime\": { \"value\": \"2008\", \"span\": [657, 661] }},\n    {\"endTime\": { \"value\": \"2013\", \"span\": [818, 822] }},\n    {\"startTime\": { \"value\": \"2013\", \"span\": [1014, 1018] }},\n    {\"startTime\": { \"value\": \"2014\", \"span\": [1465, 1469] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4516,
+    "completion_tokens": 506,
+    "total_tokens": 5022
+  }
+}

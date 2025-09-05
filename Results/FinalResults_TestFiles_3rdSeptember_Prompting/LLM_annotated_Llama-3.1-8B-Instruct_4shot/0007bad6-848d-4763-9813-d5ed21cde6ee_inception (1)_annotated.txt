@@ -1,0 +1,20 @@
+### Output JSON Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Winter wheat", "span": [173, 184] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "soil", "span": [13, 16] }},
+    {"soilReferenceGroup": { "value": "soil", "span": [55, 58] }},
+    {"soilDepth": { "value": "water", "span": [103, 107] }},
+    {"soilBulkDensity": { "value": "soil water stable aggregation", "span": [124, 144] }},
+    {"soilPH": { "value": "soil properties", "span": [129, 138] }},
+    {"soilOrganicCarbon": { "value": "soil properties", "span": [129, 138] }},
+    {"soilAvailableNitrogen": { "value": "soil properties", "span": [129, 138] }}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+Note that the "Keywords" field does not contain any relevant information for this task.

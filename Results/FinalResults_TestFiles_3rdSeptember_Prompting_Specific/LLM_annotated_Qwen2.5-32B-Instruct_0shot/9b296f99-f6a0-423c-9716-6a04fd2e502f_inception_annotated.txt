@@ -1,0 +1,26 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "winter wheat", "span": [205, 215] }},
+    {"cropSpecies": { "value": "winter barley", "span": [217, 228] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [230, 239] }},
+    {"cropSpecies": { "value": "winter barley", "span": [413, 424] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [426, 435] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"city": { "value": "Speyer", "span": [6, 12] }},
+    {"city": { "value": "Speyer", "span": [139, 145] }},
+    {"city": { "value": "Speyer", "span": [603, 609] }},
+    {"country": { "value": "Germany", "span": [14, 21] }},
+    {"country": { "value": "Germany", "span": [153, 160] }},
+    {"country": { "value": "Germany", "span": [609, 616] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1984", "span": [186, 190] }},
+    {"duration": { "value": "every three years", "span": [283, 299] }},
+    {"endTime": { "value": "September 2009", "span": [485, 500] }},
+    {"duration": { "value": "four sampling seasons", "span": [401, 418] }}
+  ]
+}
+```

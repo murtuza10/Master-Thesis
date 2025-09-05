@@ -1,0 +1,21 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Mähdrescher", "span": [73, 84]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "Parabraunerde", "span": [217, 230]}},
+    {"soilTexture": {"value": "Löss", "span": [231, 235]}},
+    {"soilDepth": {"value": "28 cm", "span": [264, 269]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2017", "span": [134, 138]}},
+    {"startTime": {"value": "2017", "span": [236, 240]}}
+  ]
+}
+```
+
+Note: I've extracted the relevant entities from the input text based on the provided categories and rules. The JSON output is in the exact format specified.

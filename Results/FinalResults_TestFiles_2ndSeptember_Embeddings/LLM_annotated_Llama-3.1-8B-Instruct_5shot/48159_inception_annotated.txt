@@ -1,0 +1,65 @@
+### Code to fill the JSON structure
+
+```python
+import re
+from typing import Dict, List
+
+def extract_entities(text: str) -> Dict[str, List[Dict[str, Dict[str, str]]]]:
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Extract location entities
+    locations = re.findall(r'Germany|European Union', text)
+    for location in locations:
+        if location == 'Germany':
+            entities['Location'].append({"country": {"value": location, "span": [text.find(location), text.find(location) + len(location)]}})
+        elif location == 'European Union':
+            entities['Location'].append({"region": {"value": location, "span": [text.find(location), text.find(location) + len(location)]}})
+
+    # Extract time entities
+    times = re.findall(r'\b\d{4}\b', text)
+    for time in times:
+        entities['Time Statement'].append({"startTime": {"value": time, "span": [text.find(time), text.find(time) + len(time)]}})
+        entities['Time Statement'].append({"endTime": {"value": time, "span": [text.find(time), text.find(time) + len(time)]}})
+
+    return entities
+
+### Text ###
+text = """
+Title: 
+Calculations of gaseous and particulate emissions from German agriculture 1990 - 2017: Input data and emission results
+
+Abstract:
+In international conventions Germany has committed to the mitigation of emissions of greenhouse gases and air pollution. These international regulations (protocols etc.) are the UN Framework Convention on Climate Change (UNFCCC), the UNECE Convention on Long-Range Transboundary Air Pollution (CLRTAP), and within the European Union the Directive of the European Parliament and of the Council on national emission ceilings for certain atmospheric pollutants (NEC Directive). These conventions require annual calculations of the emissions of the respective gases and air pollutants. The results have to be documented in an emission inventory and to be reported to the organisations in charge. The data file contains input data and results of the calculation of gas and particulate emissions from German agriculture for Germany and the federal states in the years 1990 - 2017. In this context the sector Agriculture comprises the emissions from animal husbandry, the use of agricultural soils and anaerobic digestion of energy crops. As required by the guidelines, emissions from activities preceding agriculture, from the use of energy and from land use change are reported elsewhere in the national inventories.
+"""
+
+### Fill the JSON structure
+entities = extract_entities(text)
+
+### Print the JSON structure
+print(entities)
+```
+
+### Output JSON structure
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [175, 189]}},
+    {"region": {"value": "European Union", "span": [281, 297]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1990", "span": [134, 138]}},
+    {"endTime": {"value": "1990", "span": [134, 138]}},
+    {"startTime": {"value": "2017", "span": [304, 308]}},
+    {"endTime": {"value": "2017", "span": [304, 308]}},
+    {"startTime": {"value": "1990", "span": [316, 320]}},
+    {"endTime": {"value": "2017", "span": [323, 327]}}
+  ]
+}
+```

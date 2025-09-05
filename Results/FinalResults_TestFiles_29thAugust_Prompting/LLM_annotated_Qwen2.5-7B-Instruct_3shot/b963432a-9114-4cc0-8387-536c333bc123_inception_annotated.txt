@@ -1,0 +1,38 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "spring barley", "span": [329, 340]}},
+    {"cropVariety": {"value": "serradella", "span": [345, 352]}}
+  ],
+  "Soil": [
+    {"soilDepth": {"value": "three sampling depths", "span": [109, 124]}},
+    {"soilReferenceGroup": {"value": "three soil profiles", "span": [125, 140]}},
+    {"soilTexture": {"value": "Not specified", "span": [-1, -1]}},
+    {"soilPH": {"value": "pH", "span": [185, 187]}},
+    {"soilOrganicCarbon": {"value": "organic C", "span": [256, 264]}},
+    {"soilOrganicCarbon": {"value": "DIC", "span": [365, 368]}},
+    {"soilOrganicCarbon": {"value": "DOC", "span": [369, 372]}},
+    {"soilAvailableNitrogen": {"value": "NH4+ -N", "span": [373, 381]}},
+    {"soilAvailableNitrogen": {"value": "NO2- -N", "span": [382, 388]}},
+    {"soilAvailableNitrogen": {"value": "NO3- -N", "span": [389, 395]}},
+    {"soilAvailableNitrogen": {"value": "PO43- -P", "span": [396, 404]}},
+    {"soilAvailableNitrogen": {"value": "total Ca", "span": [405, 413]}},
+    {"soilAvailableNitrogen": {"value": "P", "span": [414, 416]}},
+    {"soilAvailableNitrogen": {"value": "Fe", "span": [417, 419]}},
+    {"soilAvailableNitrogen": {"value": "Al", "span": [420, 422]}},
+    {"soilAvailableNitrogen": {"value": "Mn", "span": [423, 425]}}
+  ],
+  "Location": [
+    {"region": {"value": "Northern Germany", "span": [69, 82]}},
+    {"region": {"value": "slight hill slope", "span": [216, 230]}},
+    {"city": {"value": "Rostock", "span": [23, 29]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2018", "span": [280, 284]}},
+    {"startTime": {"value": "2019", "span": [300, 304]}},
+    {"startTime": {"value": "2020", "span": [314, 318]}},
+    {"endTime": {"value": "2020", "span": [314, 318]}},
+    {"duration": {"value": "about 3.5 months", "span": [437, 451]}}
+  ]
+}
+```

@@ -1,0 +1,33 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "maize", "span": [342, 347] }}
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "Wanna Sand", "span": [273, 286] }},
+    {"soilTexture": { "value": "Wanna Sand without biogas slurry", "span": [289, 307] }},
+    {"soilTexture": { "value": "Rostock Sand", "span": [313, 324] }},
+    {"soilTexture": { "value": "Wanna Marsch", "span": [328, 339] }},
+    {"soilDepth": { "value": "before the experiment", "span": [219, 235] }},
+    {"soilBulkDensity": { "value": "in and between the maize rows", "span": [394, 411] }},
+    {"soilBulkDensity": { "value": "plot by plot", "span": [416, 424] }},
+    {"soilPH": { "value": "April", "span": [473, 478] }},
+    {"soilPH": { "value": "August", "span": [486, 491] }}
+  ],
+  "Location": [
+    {"country": { "value": "Europe", "span": [546, 551] }},
+    {"country": { "value": "Germany", "span": [557, 562] }},
+    {"region": { "value": "Lower Saxony", "span": [567, 576] }},
+    {"city": { "value": "Wanna", "span": [582, 587] }},
+    {"city": { "value": "Rostock", "span": [592, 597] }},
+    {"latitude": { "value": "Mecklenburg-Vorpommern", "span": [605, 618] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2021", "span": [229, 233] }},
+    {"startTime": { "value": "2022", "span": [241, 245] }},
+    {"endTime": { "value": "2023", "span": [253, 257] }},
+    {"duration": { "value": "between April and August", "span": [478, 495] }}
+  ]
+}
+```

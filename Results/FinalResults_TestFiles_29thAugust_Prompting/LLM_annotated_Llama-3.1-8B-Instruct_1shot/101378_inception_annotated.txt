@@ -1,0 +1,26 @@
+### Output Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Betula pubescens", "span": [134, 146] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": { "value": "", "span": [] }},
+    {"region": { "value": "", "span": [] }},
+    {"city": { "value": "", "span": [] }},
+    {"latitude": { "value": "", "span": [] }},
+    {"longitude": { "value": "", "span": [] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "one year", "span": [243, 249] }}
+  ]
+}
+```
+Explanation:
+
+*   We found a mention of the crop species "Betula pubescens" in the text, so we added it to the "Crops" list.
+*   We did not find any mentions of crops in the text, so the "Crops" list only contains the "cropSpecies" entity.
+*   We did not find any mentions of soil-related entities in the text, so the "Soil" list is empty.
+*   We did not find any mentions of locations (countries, regions, cities, latitudes, or longitudes) in the text, so the "Location" list is empty.
+*   We found a mention of a time period ("one year") in the text, so we added it to the "Time Statement" list.

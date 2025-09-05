@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892207-AHM9Ay1ISrEEol7EqVjQ",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892207,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [203, 209]}},\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [373, 379]}},\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [1079, 1085]}},\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [1232, 1238]}},\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [1501, 1507]}},\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [1726, 1732]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2017\", \"span\": [631, 635]}},\n    {\"endTime\": {\"value\": \"2018\", \"span\": [639, 643]}},\n    {\"startTime\": {\"value\": \"30.8.2017\", \"span\": [1162, 1171]}},\n    {\"startTime\": {\"value\": \"6.9.2017\", \"span\": [1176, 1183]}},\n    {\"endTime\": {\"value\": \"20.9.2017\", \"span\": [1203, 1212]}},\n    {\"endTime\": {\"value\": \"25.9.2017\", \"span\": [1217, 1225]}},\n    {\"startTime\": {\"value\": \"24.8.2018\", \"span\": [1451, 1460]}},\n    {\"startTime\": {\"value\": \"31.8.2018\", \"span\": [1465, 1473]}},\n    {\"endTime\": {\"value\": \"13.9.2018\", \"span\": [1493, 1502]}},\n    {\"endTime\": {\"value\": \"20.9.2018\", \"span\": [1507, 1515]}},\n    {\"startTime\": {\"value\": \"29.8.2018\", \"span\": [1705, 1714]}},\n    {\"startTime\": {\"value\": \"4.9.2018\", \"span\": [1719, 1726]}},\n    {\"endTime\": {\"value\": \"12.9.2018\", \"span\": [1759, 1768]}},\n    {\"endTime\": {\"value\": \"29.9.2018\", \"span\": [1773, 1781]}},\n    {\"duration\": {\"value\": \"three weeks\", \"span\": [1188, 1199]}},\n    {\"duration\": {\"value\": \"two weeks\", \"span\": [1745, 1754]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5055,
+    "completion_tokens": 611,
+    "total_tokens": 5666,
+    "prompt_tokens_details": null
+  }
+}

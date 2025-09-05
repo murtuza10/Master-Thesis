@@ -1,0 +1,95 @@
+### Code and Output ###
+
+```python
+import json
+import re
+
+def extract_entities(text):
+    # Initialize entities
+    crops = []
+    soil = []
+    location = []
+    time_statement = []
+
+    # Crops
+    crop_pattern = r"(\w+(?: \w+)*)"
+    crop_matches = re.findall(crop_pattern, text)
+    for match in crop_matches:
+        crops.append({"cropSpecies": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+
+    # Soil
+    soil_pattern = r"organischer Kohlenstoffgehalt|Kalkung|Wasserhaushalts-/ Nährstoffansprache|Trockenrohdichte|nutzbare Feldkapazität|Basensättigung|Entkalkungstiefe|Bodenart|Skelett|Kohlenstoffgehalt"
+    soil_matches = re.findall(soil_pattern, text)
+    for match in soil_matches:
+        soil.append({"Soil": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+
+    # Location
+    location_pattern = r"Bundeswaldinventur|BWI|Deutschland|Sachsen|Niedersachsen|Bayern|Baden - Württemberg"
+    location_matches = re.findall(location_pattern, text)
+    for match in location_matches:
+        if match == "BWI":
+            location.append({"country": {"value": "Deutschland", "span": [text.find("BWI"), text.find("BWI") + 3]}})
+        elif match == "Deutschland":
+            location.append({"country": {"value": "Deutschland", "span": [text.find(match), text.find(match) + len(match)]}})
+        else:
+            location.append({"region": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+
+    # Time Statement
+    time_pattern = r"2012|2019|28\.05\.2019|28\.05\.2019|start date: 2012|end date: 2012|temporal coverage: start date: 2012|temporal coverage: end date: 2012|Creation date: 28\.05\.2019|Creation date: 28\.05\.2019|finalisiert/finalized"
+    time_matches = re.findall(time_pattern, text)
+    for match in time_matches:
+        if match == "2012":
+            time_statement.append({"startTime": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+            time_statement.append({"endTime": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+        elif match == "2019":
+            time_statement.append({"startTime": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+            time_statement.append({"endTime": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+        elif match == "28.05.2019":
+            time_statement.append({"startTime": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+            time_statement.append({"endTime": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+        elif "start date" in match:
+            time_statement.append({"startTime": {"value": "2012", "span": [text.find("start date: 2012"), text.find("start date: 2012") + len("2012")]}})
+        elif "end date" in match:
+            time_statement.append({"endTime": {"value": "2012", "span": [text.find("end date: 2012"), text.find("end date: 2012") + len("2012")]}})
+        elif "Creation date" in match:
+            time_statement.append({"startTime": {"value": "28.05.2019", "span": [text.find("28.05.2019"), text.find("28.05.2019") + len("28.05.2019")]}})
+        elif "finalisiert/finalized" in match:
+            time_statement.append({"endTime": {"value": "2012", "span": [text.find("2012"), text.find("2012") + len("2012")]}})
+
+    # Return entities
+    return {
+        "Crops": crops,
+        "Soil": soil,
+        "Location": location,
+        "Time Statement": time_statement
+    }
+
+# Text
+text = """
+BWI 2012 Umweltdatenbank Bodenprofile
+
+Ziel des Moduls Bodenprofile im Projekt WP-KS-KW (Waldproduktivität - Klimawandel - Kohlenstoffspeicherung) war es, für 26.450 Punkte der deutschen Bundeswaldinventur (BWI) Bodenleitprofile mit boden-physikalischen Grundlagendaten zu erstellen. Die Grundlage der Ableitung der Standorts- und Bodeninformationen bildeten die in den Bundesländern zur Verfügung stehenden Informationen aus der Standorts- und Bodenkartierung. Um den oft historisch gewachsenen Feinheiten der einzelnen Kartierungsverfahren gerecht zu werden, wurden Standorts- und Bodenkundler aus jedem Bundesland in das Projekt eingebunden. Für 26.450 Traktecken wurden Standorts- und Leitprofildaten nach einheitlichen Vorgaben erhoben und in der Datenbank zusammengeführt. Das Parameterspektrum umfasst im Wesentlichen: (1) Standortseinheit mit Bodentyp, Wasserhaushalts-/ Nährstoffansprache, Kalkung, (2) Leitprofil mit obligatorischen Horizontangaben zu Bodenart, Skelett, Trockenrohdichte (TRD), nutzbare Feldkapazität (nFK), (3) Leitprofil mit fakultativen Horizontangaben zu Basensättigung, organischer Kohlenstoffgehalt (Corg), Entkalkungstiefe, (4) Quellen- und Qualitätsschlüssel zu allen Parametern. Die Standortseinheit liegt für 25.069 (95 %) Traktecken vor, das Leitprofil für 24.735 (93.5 %). Creation date: 28.05.2019; temporal coverage: start date: 2012, end date: 2012; state: finalisiert/finalized
+"""
+
+# Extract entities
+entities = extract_entities(text)
+
+# Print entities
+print(json.dumps(entities, indent=4))
+```
+
+### Output ###
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "Bodenart",
+                "span": [
+                    347,
+                    355
+                ]
+            }
+        },
+        {
+            "cropSpecies

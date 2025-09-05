@@ -1,0 +1,24 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [246, 251]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [343, 350]}},
+    {"region": {"value": "Brandenburg", "span": [354, 366]}},
+    {"region": {"value": "Uckermark", "span": [373, 381]}}
+  ],
+  "Time Statement": [
+    {"duration": {"value": "between April and June 2019", "span": [259, 281]}}
+  ]
+}
+```
+
+### Explanation ###
+
+*   In the "Crops" category, we found a mention of "winter wheat", which is annotated as "wheat" since "winter" is not considered a crop species.
+*   In the "Location" category, we found mentions of "Germany", "Brandenburg", and "Uckermark".
+*   In the "Time Statement" category, we found a mention of "between April and June 2019", which is annotated as a duration.

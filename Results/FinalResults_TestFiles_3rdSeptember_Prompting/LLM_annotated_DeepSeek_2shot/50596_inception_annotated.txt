@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756906642-nigm58Zregbm8EWg3qw1",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756906642,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [153, 159]}},\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [224, 230]}},\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [291, 297]}},\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [1115, 1121]}},\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [1233, 1239]}},\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [1483, 1489]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2017\", \"span\": [722, 726]}},\n    {\"startTime\": {\"value\": \"2018\", \"span\": [730, 734]}},\n    {\"startTime\": {\"value\": \"30.8.2017\", \"span\": [1295, 1304]}},\n    {\"startTime\": {\"value\": \"6.9.2017\", \"span\": [1309, 1317]}},\n    {\"endTime\": {\"value\": \"20.9.2017\", \"span\": [1339, 1348]}},\n    {\"endTime\": {\"value\": \"25.9.2017\", \"span\": [1353, 1362]}},\n    {\"startTime\": {\"value\": \"24.8.2018\", \"span\": [1542, 1551]}},\n    {\"startTime\": {\"value\": \"31.8.2018\", \"span\": [1556, 1565]}},\n    {\"endTime\": {\"value\": \"13.9.2018\", \"span\": [1597, 1606]}},\n    {\"endTime\": {\"value\": \"20.9.2018\", \"span\": [1611, 1620]}},\n    {\"startTime\": {\"value\": \"29.8.2018\", \"span\": [1755, 1764]}},\n    {\"startTime\": {\"value\": \"4.9.2018\", \"span\": [1769, 1777]}},\n    {\"endTime\": {\"value\": \"12.9.2018\", \"span\": [1845, 1854]}},\n    {\"endTime\": {\"value\": \"29.9.2018\", \"span\": [1859, 1868]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2487,
+    "completion_tokens": 563,
+    "total_tokens": 3050,
+    "prompt_tokens_details": null
+  }
+}

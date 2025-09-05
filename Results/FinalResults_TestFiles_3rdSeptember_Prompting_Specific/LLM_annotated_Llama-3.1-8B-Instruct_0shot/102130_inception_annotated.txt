@@ -1,0 +1,21 @@
+### JSON Output
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "C4", "span": [69, 72] }},
+    {"cropSpecies": { "value": "C3", "span": [140, 143] }}
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "soil", "span": [104, 110] }},
+    {"soilReferenceGroup": { "value": "C3 soil", "span": [140, 146] }}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": { "value": "6", "span": [94, 96] }},
+    {"startTime": { "value": "12", "span": [98, 100] }},
+    {"startTime": { "value": "24", "span": [102, 104] }},
+    {"endTime": { "value": "24", "span": [102, 104] }},
+    {"duration": { "value": "2", "span": [13, 15] }}
+  ]
+}
+```

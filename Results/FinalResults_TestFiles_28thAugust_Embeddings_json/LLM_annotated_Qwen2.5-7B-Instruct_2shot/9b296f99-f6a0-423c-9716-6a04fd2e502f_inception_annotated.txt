@@ -1,0 +1,26 @@
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [323, 328]}},
+    {"cropSpecies": {"value": "barley", "span": [337, 343]}},
+    {"cropSpecies": {"value": "beet", "span": [353, 357]}}
+  ],
+  "Soil": [
+    {"soilOrganicCarbon": {"value": "humus", "span": [109, 113]}},
+    {"soilAvailableNitrogen": {"value": "mineral nutrients", "span": [146, 158]}},
+    {"soilPH": {"value": "soil pH", "span": [474, 483]}},
+    {"soilOrganicCarbon": {"value": "organic fertilizers", "span": [494, 507]}},
+    {"soilOrganicCarbon": {"value": "farmyard manure", "span": [561, 574]}},
+    {"soilOrganicCarbon": {"value": "crop residues", "span": [606, 616]}},
+    {"soilOrganicCarbon": {"value": "catch crop", "span": [622, 630]}},
+    {"soilOrganicCarbon": {"value": "horse manure", "span": [775, 785]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [24, 30]}},
+    {"region": {"value": "Speyer", "span": [31, 36]}},
+    {"region": {"value": "LUFA Speyer", "span": [89, 97]}},
+    {"region": {"value": "Rinkenbergerhof", "span": [119, 130]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1984", "span": [219, 224]}}
+  ]
+}

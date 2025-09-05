@@ -1,0 +1,25 @@
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "C4", "span": [114, 116] }},
+    {"cropSpecies": { "value": "C3", "span": [118, 120] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "C3 soil", "span": [119, 123] }},
+    {"soilTexture": { "value": "C4 roots litter", "span": [99, 112] }},
+    {"soilDepth": { "value": "6 months", "span": [94, 104] }},
+    {"soilDepth": { "value": "12 months", "span": [97, 107] }},
+    {"soilDepth": { "value": "24 months", "span": [97, 107] }},
+    {"soilBulkDensity": { "value": "particulate organic carbon (POC)", "span": [153, 178] }},
+    {"soilBulkDensity": { "value": "mineral associated organic carbon (MAOC)", "span": [179, 206] }},
+    {"soilPH": { "value": "total carbon content", "span": [137, 152] }},
+    {"soilOrganicCarbon": { "value": "stable isotope 13C", "span": [161, 173] }}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": { "value": "2 years", "span": [43, 49] }},
+    {"endTime": { "value": "6, 12 and 24 months", "span": [94, 115] }}
+  ]
+}
+```

@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892077-Kc9q62TVQnDNXkUGOU9e",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892077,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"Bodenleitprofile\", \"span\": [117, 132]}},\n    {\"Soil\": {\"value\": \"boden-physikalischen Grundlagendaten\", \"span\": [136, 169]}},\n    {\"Soil\": {\"value\": \"Bodeninformationen\", \"span\": [236, 253]}},\n    {\"Soil\": {\"value\": \"Bodenkartierung\", \"span\": [300, 315]}},\n    {\"Soil\": {\"value\": \"Bodentyp\", \"span\": [737, 745]}},\n    {\"Soil\": {\"value\": \"Bodenart\", \"span\": [841, 850]}},\n    {\"Soil\": {\"value\": \"Trockenrohdichte\", \"span\": [853, 869]}},\n    {\"Soil\": {\"value\": \"nutzbare Feldkapazität\", \"span\": [873, 895]}},\n    {\"Soil\": {\"value\": \"organischer Kohlenstoffgehalt\", \"span\": [962, 989]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"deutschen\", \"span\": [176, 184]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2012\", \"span\": [1123, 1127]}},\n    {\"endTime\": {\"value\": \"2012\", \"span\": [1139, 1143]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3476,
+    "completion_tokens": 327,
+    "total_tokens": 3803,
+    "prompt_tokens_details": null
+  }
+}

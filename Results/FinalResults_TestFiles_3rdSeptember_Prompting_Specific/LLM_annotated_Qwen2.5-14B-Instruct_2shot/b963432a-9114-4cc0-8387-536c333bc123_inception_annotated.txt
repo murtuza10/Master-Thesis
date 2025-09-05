@@ -1,0 +1,30 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "barley", "span": [234, 239] }},
+    {"cropSpecies": { "value": "serradella", "span": [245, 253] }}
+  ],
+  "Soil": [
+    {"soilPH": { "value": "pH", "span": [183, 185] }},
+    {"soilPH": { "value": "pH", "span": [292, 294] }},
+    {"soilReferenceGroup": { "value": "soil profile", "span": [420, 427] }},
+    {"soilReferenceGroup": { "value": "soil profile", "span": [451, 458] }},
+    {"soilDepth": { "value": "three different depths", "span": [489, 501] }},
+    {"soilAvailableNitrogen": { "value": "NH4+-N, NO2-- and NO3--N-", "span": [561, 585] }},
+    {"soilOrganicCarbon": { "value": "DOC", "span": [545, 548] }},
+    {"soilOrganicCarbon": { "value": "OC", "span": [532, 534] }}
+  ],
+  "Location": [
+    {"region": { "value": "Northern Germany", "span": [125, 136] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2020", "span": [27, 31] }},
+    {"startTime": { "value": "2020", "span": [105, 109] }},
+    {"startTime": { "value": "2020", "span": [230, 234] }},
+    {"startTime": { "value": "2018", "span": [262, 266] }},
+    {"startTime": { "value": "2019", "span": [315, 319] }},
+    {"startTime": { "value": "2020", "span": [343, 347] }},
+    {"duration": { "value": "about 3.5 months", "span": [419, 431] }}
+  ]
+}
+```

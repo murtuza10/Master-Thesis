@@ -1,0 +1,21 @@
+### Output JSON ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Norway spruce", "span": [135, 147] }},
+    {"cropSpecies": { "value": "Picea abies", "span": [127, 135] }},
+    {"cropSpecies": { "value": "spruce", "span": [135, 140] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": { "value": "Germany", "span": [104, 111] }},
+    {"region": { "value": "Western Germany", "span": [157, 169] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1964", "span": [182, 187] }},
+    {"endTime": { "value": "2015", "span": [214, 219] }},
+    {"duration": { "value": "51 years", "span": [158, 166] }}
+  ]
+}
+```

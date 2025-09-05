@@ -1,0 +1,21 @@
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "C4", "span": [55, 58] }},
+    {"cropSpecies": { "value": "C3", "span": [72, 74] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "C3 soil", "span": [75, 83] }},
+    {"soilTexture": { "value": "particulate organic carbon", "span": [123, 146] }},
+    {"soilReferenceGroup": { "value": "mineral associated organic carbon", "span": [155, 179] }}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": { "value": "2 years", "span": [28, 33] }},
+    {"startTime": { "value": "6 months", "span": [105, 112] }},
+    {"startTime": { "value": "12 months", "span": [119, 126] }},
+    {"startTime": { "value": "24 months", "span": [137, 144] }}
+  ]
+}
+```

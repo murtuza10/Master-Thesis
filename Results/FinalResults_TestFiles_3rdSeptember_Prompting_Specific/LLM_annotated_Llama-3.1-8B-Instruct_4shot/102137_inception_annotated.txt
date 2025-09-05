@@ -1,0 +1,22 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wheat", "span": [null, null] }, "cropSpecies": { "value": "maize", "span": [null, null] }, "cropSpecies": { "value": "barley", "span": [null, null] }, "cropSpecies": { "value": "oats", "span": [null, null] }, "cropSpecies": { "value": "rye", "span": [null, null] }, "cropSpecies": { "value": "triticale", "span": [null, null] }, "cropSpecies": { "value": "potatoes", "span": [null, null] }, "cropSpecies": { "value": "sugar beets", "span": [null, null] }, "cropSpecies": { "value": "soybeans", "span": [null, null] }, "cropSpecies": { "value": "sunflowers", "span": [null, null] } },
+    {"cropVariety": { "value": "winter wheat", "span": [null, null] }, "cropVariety": { "value": "spring wheat", "span": [null, null] }, "cropVariety": { "value": "winter barley", "span": [null, null] }, "cropVariety": { "value": "spring barley", "span": [null, null] }, "cropVariety": { "value": "winter oats", "span": [null, null] }, "cropVariety": { "value": "spring oats", "span": [null, null] }, "cropVariety": { "value": "winter rye", "span": [null, null] }, "cropVariety": { "value": "spring rye", "span": [null, null] }, "cropVariety": { "value": "winter triticale", "span": [null, null] }, "cropVariety": { "value": "spring triticale", "span": [null, null] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "temperate agricultural soils", "span": [null, null] }, "soilReferenceGroup": { "value": "soil in Germany", "span": [null, null] }, "soilReferenceGroup": { "value": "cropland soils", "span": [null, null] }, "soilReferenceGroup": { "value": "grassland soils", "span": [null, null] }, "soilTexture": { "value": "soil cores", "span": [null, null] }, "soilDepth": { "value": "16 sites", "span": [null, null] }, "soilDepth": { "value": "16 soil cores", "span": [null, null] }, "soilDepth": { "value": "8 cropland sites", "span": [null, null] }, "soilDepth": { "value": "8 grassland sites", "span": [null, null] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [null, null] }}
+  ],
+  "Time Statement": []
+}
+```
+
+### Notes ###
+* For "Crops", I have assumed that the text is referring to common agricultural crops in Germany. If you want to include only the specific crops mentioned in the text, you can modify the output accordingly.
+* For "Soil", I have extracted the relevant information from the text, but note that the text does not provide specific values for soil properties such as bulk density, pH, or organic carbon content.
+* For "Location", I have extracted the country mentioned in the text.
+* For "Time Statement", I have not found any explicit time-related information in the text, so the list is empty.

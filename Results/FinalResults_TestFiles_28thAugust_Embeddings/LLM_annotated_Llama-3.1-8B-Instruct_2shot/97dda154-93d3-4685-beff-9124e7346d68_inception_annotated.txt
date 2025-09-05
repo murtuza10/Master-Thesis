@@ -1,0 +1,39 @@
+### Filled JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "maize", "span": [234, 239]}},
+    {"cropSpecies": {"value": "maize", "span": [844, 849]}}
+  ],
+  "Soil": [
+    {"soilTexture": {}},
+    {"soilReferenceGroup": {}},
+    {"soilDepth": {}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}}
+  ],
+  "Location": [
+    {"country": {"value": "Europe", "span": [844, 851]}},
+    {"region": {"value": "Germany", "span": [859, 866]}},
+    {"city": {"value": "Lower Saxony", "span": [871, 883]}},
+    {"city": {"value": "Wanna", "span": [885, 891]}},
+    {"region": {"value": "Mecklenburg-Vorpommern", "span": [895, 908]}},
+    {"city": {"value": "Rostock", "span": [911, 918]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2021", "span": [221, 224]}},
+    {"startTime": {"value": "2022", "span": [226, 229]}},
+    {"startTime": {"value": "2023", "span": [230, 233]}},
+    {"endTime": {}},
+    {"duration": {}}
+  ]
+}
+```
+### Notes ###
+
+- The `Crops` category contains two mentions of "maize".
+- The `Soil` category is incomplete as the input text does not provide specific information about soil texture, reference group, depth, bulk density, pH, organic carbon, or available nitrogen.
+- The `Location` category contains six mentions of different locations, including countries, regions, and cities.
+- The `Time Statement` category contains three mentions of start times (2021, 2022, and 2023) but no end times or durations.

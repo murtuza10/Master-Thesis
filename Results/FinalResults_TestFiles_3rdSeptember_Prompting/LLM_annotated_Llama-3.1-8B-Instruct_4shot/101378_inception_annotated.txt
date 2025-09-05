@@ -1,0 +1,23 @@
+### Output JSON ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Betula pubescens Ehrh.", "span": [144, 165] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "bog", "span": [47, 51] }},
+    {"soilTexture": { "value": "peat", "span": [121, 126] }},
+    {"soilDepth": { "value": "mire-specific", "span": [146, 155] }}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"duration": { "value": "one year", "span": [211, 217] }}
+  ]
+}
+```
+
+### Notes on JSON Output ###
+
+- The JSON output only contains the relevant entities mentioned in the text.
+- The `"span"` value for each entity is the start and end character position from the beginning of the full text.
+- The `"value"` field for each entity is the exact string mentioned in the text.

@@ -1,0 +1,21 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "soil organic carbon", "span": [148, 167]}},
+    {"cropSpecies": {"value": "SOC", "span": [170, 173]}}
+  ],
+  "Soil": [
+    {"soilOrganicCarbon": {"value": "Soil ORganic Carbon", "span": [22, 41]}},
+    {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [148, 167]}},
+    {"soilOrganicCarbon": {"value": "SOC", "span": [170, 173]}},
+    {"soilAvailableNitrogen": {"value": "soil organic nitrogen", "span": [180, 201]}},
+    {"soilAvailableNitrogen": {"value": "SON", "span": [204, 207]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "temporal", "span": [124, 131]}}
+  ]
+}
+```
+Note that there are no "cropVariety" entities mentioned in the text, so the "Crops" list only contains "cropSpecies" entities. Additionally, the only "Time Statement" entity is the "startTime" entity mentioned in the text.

@@ -1,0 +1,104 @@
+### Code
+```python
+import json
+import re
+
+def extract_entities(text):
+    # Initialize entities dictionary
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Define regular expressions for entity extraction
+    crop_species_pattern = r"\b(Riesling|Felicia|Regent)\b"
+    soil_pattern = r""  # No soil entities mentioned in the text
+    location_pattern = r""  # No location entities mentioned in the text
+    time_statement_pattern = r"(before|after)\s+thinning|2018"
+
+    # Extract crop species
+    for match in re.finditer(crop_species_pattern, text):
+        start_index = match.start()
+        end_index = match.end()
+        entities["Crops"].append({
+            "cropSpecies": {
+                "value": re.search(crop_species_pattern, text).group(),
+                "span": [start_index, end_index]
+            }
+        })
+
+    # Extract time statements
+    for match in re.finditer(time_statement_pattern, text):
+        start_index = match.start()
+        end_index = match.end()
+        entities["Time Statement"].append({
+            "startTime": {
+                "value": re.search(time_statement_pattern, text).group(),
+                "span": [start_index, end_index]
+            }
+        })
+
+    return entities
+
+# Input text
+text = """
+Title: 
+Segmentation of wine berries
+
+Abstract:
+Dataset contains high resolution images collected with a moving field phenotyping platform, the Phenoliner. 
+ The collected images show 3 different varieties (Riesling, Felicia, Regent) in 2 different training systems (VSP=vertical shoot positioning and SMPH= semi minimal pruned hedges), collected in 2 points in time (before and after thinning) in 2018. For each image we provide a manual masks which allow the identification of single berries.
+ The folder contains: 1. List with image details (imagename, acquisition date, year, variety, training system and variety number)and 2. Dataset folder with 2 subfolders, namely 1. img – 42 original RGB images and 2. lbl – 42 corresponding labels (manual annotation, with berry, edge, background definition)
+ The data were used to train a neural network with the main goal to detect single berries in images. The method is described in detail in the specified papers.
+"""
+
+# Extract entities
+entities = extract_entities(text)
+
+# Print entities in JSON format
+print(json.dumps(entities, indent=4))
+```
+
+### Output
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "Riesling",
+                "span": [83, 90]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "Felicia",
+                "span": [100, 107]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "Regent",
+                "span": [118, 125]
+            }
+        }
+    ],
+    "Soil": [],
+    "Location": [],
+    "Time Statement": [
+        {
+            "startTime": {
+                "value": "before and after thinning",
+                "span": [149, 168]
+            }
+        },
+        {
+            "startTime": {
+                "value": "2018",
+                "span": [183, 187]
+            }
+        }
+    ]
+}
+```

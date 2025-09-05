@@ -1,0 +1,32 @@
+### Output JSON ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "maize", "span": [247, 251]}}
+  ],
+  "Soil": [
+    {"soilTexture": {"value": "Wanna Sand", "span": [233, 242]}},
+    {"soilReferenceGroup": {"value": "Wanna Sand", "span": [233, 242]}},
+    {"soilTexture": {"value": "Wanna Sand without biogas slurry", "span": [243, 262]}},
+    {"soilReferenceGroup": {"value": "Wanna Sand without biogas slurry", "span": [243, 262]}},
+    {"soilTexture": {"value": "Rostock Sand", "span": [263, 272]}},
+    {"soilReferenceGroup": {"value": "Rostock Sand", "span": [263, 272]}},
+    {"soilTexture": {"value": "Wanna Marsch", "span": [273, 282]}},
+    {"soilReferenceGroup": {"value": "Wanna Marsch", "span": [273, 282]}},
+    {"soilDepth": {"value": "30 m³", "span": [316, 321]}}
+  ],
+  "Location": [
+    {"region": {"value": "Europe", "span": [354, 359]}},
+    {"region": {"value": "Germany", "span": [360, 366]}},
+    {"region": {"value": "Lower Saxony", "span": [367, 376]}},
+    {"city": {"value": "Wanna", "span": [377, 383]}},
+    {"region": {"value": "Mecklenburg-Vorpommern", "span": [384, 395]}},
+    {"city": {"value": "Rostock", "span": [396, 402]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2021", "span": [418, 422]}},
+    {"startTime": {"value": "2022", "span": [423, 427]}},
+    {"startTime": {"value": "2023", "span": [428, 432]}}
+  ]
+}
+```

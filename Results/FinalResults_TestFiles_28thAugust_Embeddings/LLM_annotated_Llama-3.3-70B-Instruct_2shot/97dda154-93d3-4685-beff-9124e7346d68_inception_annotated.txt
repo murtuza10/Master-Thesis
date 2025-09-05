@@ -1,0 +1,40 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "maize", "span": [246, 251]}},
+    {"cropSpecies": {"value": "maize", "span": [364, 369]}},
+    {"cropSpecies": {"value": "maize", "span": [631, 636]}},
+    {"cropSpecies": {"value": "maize", "span": [726, 731]}}
+  ],
+  "Soil": [
+    {"soilTexture": {"value": "Sand", "span": [291, 295]}},
+    {"soilTexture": {"value": "Sand", "span": [313, 317]}},
+    {"soilTexture": {"value": "Marsch", "span": [341, 347]}},
+    {"soilReferenceGroup": {"value": "Wanna Sand", "span": [282, 293]}},
+    {"soilReferenceGroup": {"value": "Wanna Sand without biogas slurry", "span": [297, 326]}},
+    {"soilReferenceGroup": {"value": "Rostock Sand", "span": [329, 342]}},
+    {"soilReferenceGroup": {"value": "Wanna Marsch", "span": [344, 356]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [884, 891]}},
+    {"region": {"value": "Lower Saxony", "span": [898, 911]}},
+    {"region": {"value": "Mecklenburg-Vorpommern", "span": [915, 934]}},
+    {"city": {"value": "Rostock", "span": [936, 943]}},
+    {"city": {"value": "Wanna", "span": [945, 950]}},
+    {"region": {"value": "Europe", "span": [879, 884]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2021", "span": [265, 269]}},
+    {"startTime": {"value": "2022", "span": [270, 274]}},
+    {"startTime": {"value": "2023", "span": [275, 279]}},
+    {"duration": {"value": "April", "span": [444, 449]}},
+    {"duration": {"value": "August", "span": [457, 463]}},
+    {"duration": {"value": "before", "span": [395, 400]}},
+    {"duration": {"value": "during", "span": [422, 428]}},
+    {"duration": {"value": "at certain times", "span": [555, 569]}},
+    {"duration": {"value": "in some cases", "span": [594, 604]}},
+    {"startTime": {"value": "before", "span": [395, 400]}},
+    {"endTime": {"value": "after", "span": [616, 621]}}
+  ]
+}
+```

@@ -1,0 +1,87 @@
+### Solution ###
+
+```python
+import re
+from typing import Dict, List
+
+def extract_entities(text: str) -> Dict[str, List[Dict[str, Dict[str, str]]]]:
+    # Initialize the result dictionary with empty lists for each entity category
+    result = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Split the text into sentences
+    sentences = text.split(". ")
+
+    # Iterate over each sentence
+    for sentence in sentences:
+        # Crop species and variety extraction
+        crop_species_match = re.findall(r"(\w+)\s(barley|maize|oats|potatoes|rape|rye|sugarbeet|triticale|wheat)", sentence)
+        for match in crop_species_match:
+            species = match[0]
+            crop_type = match[1]
+            if crop_type in ["barley", "maize", "oats", "potatoes", "rape", "rye", "sugarbeet", "triticale", "wheat"]:
+                result["Crops"].append({"cropSpecies": {"value": species, "span": [text.find(sentence), text.find(sentence) + len(sentence)]}})
+            if crop_type in ["barley", "maize"]:
+                result["Crops"].append({"cropVariety": {"value": species, "span": [text.find(sentence), text.find(sentence) + len(sentence)]}})
+
+        # Location extraction
+        location_match = re.findall(r"(\w+)\s(Germany)", sentence)
+        for match in location_match:
+            location = match[0]
+            result["Location"].append({"country": {"value": "Germany", "span": [text.find(sentence), text.find(sentence) + len(sentence)]}})
+            result["Location"].append({"region": {"value": location, "span": [text.find(sentence), text.find(sentence) + len(sentence)]}})
+
+        # Time statement extraction
+        time_match = re.findall(r"(\d{4})\s*to\s*(\d{4})", sentence)
+        for match in time_match:
+            start_year = match[0]
+            end_year = match[1]
+            result["Time Statement"].append({"startTime": {"value": start_year, "span": [text.find(sentence), text.find(sentence) + len(sentence)]}})
+            result["Time Statement"].append({"endTime": {"value": end_year, "span": [text.find(sentence), text.find(sentence) + len(sentence)]}})
+            result["Time Statement"].append({"duration": {"value": f"{start_year}-{end_year}", "span": [text.find(sentence), text.find(sentence) + len(sentence)]}})
+
+    return result
+
+# Example usage
+text = """
+Title: 
+Crop yields and area in Germany from 1979 to 2021 at a harmonized district-level
+
+Abstract:
+In this publication we provide a dataset with crop yield and area for Germany from 1979 to 2021. The data are spatially resolved to 397 districts with an average size of 900 km2 and include the crops spring barley, winter barley, grain maize, silage maize, oats, potatoes, winter rape, rye, sugarbeet, triticale and winter wheat. The crop-yield data cover on average about 9.5 million hectares per year and 80% of Germany’s total arable land. The final dataset contains 214,820 yield and area data points. These were obtained by collecting and digitizing crop data from multiple statistical sources and transforming the data to match the district boundaries in 2020. A comprehensive description and validation of the dataset is published in Scientific Data (https://doi.org/10.1038/s41597-024-02951-8). We therefore recommend that you also refer the Scientific Data article when using the dataset.
+"""
+print(extract_entities(text))
+```
+
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [120, 126]}},
+    {"cropSpecies": {"value": "barley", "span": [139, 145]}},
+    {"cropSpecies": {"value": "maize", "span": [153, 158]}},
+    {"cropSpecies": {"value": "maize", "span": [168, 173]}},
+    {"cropSpecies": {"value": "oats", "span": [176, 180]}},
+    {"cropSpecies": {"value": "potatoes", "span": [183, 191]}},
+    {"cropSpecies": {"value": "rape", "span": [199, 203]}},
+    {"cropSpecies": {"value": "rye", "span": [206, 209]}},
+    {"cropSpecies": {"value": "sugarbeet", "span": [213, 222]}},
+    {"cropSpecies": {"value": "triticale", "span": [225, 234]}},
+    {"cropSpecies": {"value": "wheat", "span": [237, 242]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [34, 41]}},
+    {"region": {"value": "Germany", "span": [34, 41]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1979", "span": [56, 60]}},
+    {"endTime": {"value": "2021", "span": [62, 66]}},
+    {"duration": {"value": "1979-2021", "span": [56, 66]}}
+  ]
+}
+```

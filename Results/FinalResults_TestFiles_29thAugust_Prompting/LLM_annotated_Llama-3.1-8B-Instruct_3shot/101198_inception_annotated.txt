@@ -1,0 +1,17 @@
+### Entity Extraction Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Biomasse", "span": [21, 29]}},
+    {"cropSpecies": {"value": "agrarische und forstliche Biomasse", "span": [123, 144]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2020", "span": [275, 278]}},
+    {"startTime": {"value": "2050", "span": [295, 300]}},
+    {"endTime": {"value": "2050", "span": [304, 309]}}
+  ]
+}
+```
+Note that only the explicitly mentioned entities in the text have been extracted and included in the JSON output.

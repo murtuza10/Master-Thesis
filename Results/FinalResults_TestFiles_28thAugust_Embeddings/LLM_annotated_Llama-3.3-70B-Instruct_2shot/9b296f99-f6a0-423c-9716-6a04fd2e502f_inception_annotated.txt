@@ -1,0 +1,43 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [417, 422}}},
+    {"cropSpecies": {"value": "barley", "span": [427, 433}}},
+    {"cropSpecies": {"value": "sugar beet", "span": [438, 448]}},
+    {"cropSpecies": {"value": "barley", "span": [814, 820}}},
+    {"cropSpecies": {"value": "sugar beet", "span": [825, 835]}},
+    {"cropSpecies": {"value": "barley", "span": [1208, 1214]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [1219, 1229]}}
+  ],
+  "Soil": [
+    {"soilOrganicCarbon": {"value": "humus", "span": [272, 277}}},
+    {"soilOrganicCarbon": {"value": "humus", "span": [333, 338}}},
+    {"soilOrganicCarbon": {"value": "humus development", "span": [244, 260}}},
+    {"soilAvailableNitrogen": {"value": "mineral nutrients", "span": [230, 246}}},
+    {"soilAvailableNitrogen": {"value": "mineral N fertilization", "span": [549, 570}}},
+    {"soilAvailableNitrogen": {"value": "nitrogen fertilizers", "span": [1078, 1096}}},
+    {"soilAvailableNitrogen": {"value": "Nitrogen", "span": [1141, 1148}}},
+    {"soilAvailableNitrogen": {"value": "Stickstoffd체nger", "span": [1340, 1356}}},
+    {"soilPH": {"value": "soil fertility", "span": [304, 316}}},
+    {"soilTexture": {"value": "bulk soil", "span": [756, 764}}},
+    {"soilDepth": {"value": "long-term", "span": [470, 477}}},
+    {"soilBulkDensity": {"value": "long-term", "span": [782, 789}}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [34, 40}}},
+    {"country": {"value": "Germany", "span": [421, 427}}},
+    {"city": {"value": "Speyer", "span": [26, 32}}},
+    {"city": {"value": "Speyer", "span": [413, 419}}},
+    {"city": {"value": "Karlsruhe", "span": [963, 972}}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1984", "span": [446, 450}}},
+    {"duration": {"value": "long-term", "span": [470, 477}}},
+    {"duration": {"value": "long-term", "span": [782, 789}}},
+    {"duration": {"value": "four sampling seasons", "span": [860, 883}}},
+    {"startTime": {"value": "2009", "span": [1003, 1007}}},
+    {"duration": {"value": "Langzeitversuch", "span": [1165, 1178}}},
+    {"duration": {"value": "long-term field trial", "span": [1041, 1060}}}
+  ]
+}
+```

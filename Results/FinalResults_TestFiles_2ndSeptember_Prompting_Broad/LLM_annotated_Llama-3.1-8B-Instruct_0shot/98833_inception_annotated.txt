@@ -1,0 +1,39 @@
+### Text Analysis and Extraction Results
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Weizen", "span": [130, 136] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "pseudovergleyte Parabraunerde", "span": [219, 238] }},
+    {"Soil": { "value": "Löss", "span": [239, 244] }}
+  ],
+  "Location": [
+    {"region": { "value": "Bodendruck", "span": [1, 10] }},
+    {"region": { "value": "Befahrungsversuch", "span": [15, 30] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2017", "span": [67, 72] }},
+    {"endTime": { "value": "2017", "span": [67, 72] }},
+    {"duration": { "value": "Ernte", "span": [73, 78] }}
+  ]
+}
+```
+
+Explanation:
+
+- **Crops:** 
+  - "Weizen" (wheat) is mentioned at the character position 130-136.
+
+- **Soil:**
+  - "pseudovergleyte Parabraunerde" (pseudovergleyte Parabraunerde soil) is mentioned at the character position 219-238.
+  - "Löss" (Löss soil) is mentioned at the character position 239-244.
+
+- **Location:**
+  - "Bodendruck" (bodendruck) is mentioned at the character position 1-10.
+  - "Befahrungsversuch" (Befahrungsversuch) is mentioned at the character position 15-30.
+
+- **Time Statement:**
+  - "2017" is mentioned at the character position 67-72 as both the start and end time.
+  - "Ernte" (harvest) is mentioned at the character position 73-78 as the duration.

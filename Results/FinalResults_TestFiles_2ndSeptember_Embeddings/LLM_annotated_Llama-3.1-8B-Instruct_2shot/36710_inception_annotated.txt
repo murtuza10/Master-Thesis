@@ -1,0 +1,92 @@
+### Code to extract entities from the given text ###
+
+```python
+import re
+from typing import Dict, List
+
+def extract_entities(text: str) -> Dict:
+    # Define regular expressions for entity extraction
+    crop_pattern = r'\b(apple|grassland)\b'
+    location_pattern = r'\b(Lower Saxony|Altes Land|Germany)\b'
+    time_pattern = r'\b(2001|2003|Three-year|between 2001 and 2003)\b'
+    soil_pattern = r'\b(orchard|ditches|plantations|grassland|Lower Saxony|Altes Land|Germany)\b'
+
+    # Find all matches for each pattern
+    crops = re.findall(crop_pattern, text, re.IGNORECASE)
+    locations = re.findall(location_pattern, text, re.IGNORECASE)
+    times = re.findall(time_pattern, text, re.IGNORECASE)
+    soils = re.findall(soil_pattern, text, re.IGNORECASE)
+
+    # Create the JSON structure
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Populate the JSON structure
+    for crop in crops:
+        entities["Crops"].append({"cropSpecies": {"value": crop, "span": [text.find(crop), text.find(crop) + len(crop)]}})
+    for location in locations:
+        if location == "Altes Land":
+            entities["Location"].append({"region": {"value": location, "span": [text.find(location), text.find(location) + len(location)]}})
+        elif location == "Lower Saxony":
+            entities["Location"].append({"region": {"value": location, "span": [text.find(location), text.find(location) + len(location)]}})
+        elif location == "Germany":
+            entities["Location"].append({"country": {"value": location, "span": [text.find(location), text.find(location) + len(location)]}})
+    for time in times:
+        if time == "2001":
+            entities["Time Statement"].append({"startTime": {"value": time, "span": [text.find(time), text.find(time) + len(time)]}})
+        elif time == "2003":
+            entities["Time Statement"].append({"endTime": {"value": time, "span": [text.find(time), text.find(time) + len(time)]}})
+        elif time == "Three-year":
+            entities["Time Statement"].append({"duration": {"value": time, "span": [text.find(time), text.find(time) + len(time)]}})
+        elif time == "between 2001 and 2003":
+            entities["Time Statement"].append({"duration": {"value": time, "span": [text.find(time), text.find(time) + len(time)]}})
+    for soil in soils:
+        entities["Soil"].append({"Soil": {"value": soil, "span": [text.find(soil), text.find(soil) + len(soil)]}})
+
+    return entities
+
+text = """
+Title: 
+Three-year pesticide monitoring in ditches of the apple orchard region 'Altes Land'
+
+Abstract:
+The data presented in this file are related to the research article ‘Süß A,  Bischoff G, Mueller A, Buhr L (2006) Chemical and biological monitoring of the load of plant protection products and of zoocoenoses in ditches of the orchard region ‘Altes Land’. Nachrichtenblatt des Deutschen Pflanzenschutzdienstes 58:28-42’ which is only available in German language. The pesticide data presented here were acquired in four ditches in Lower Saxony, Germany (three ditches located in apple plantations, one ditch located in grassland) between 2001 and 2003. Two different monitoring strategies have been applied; event-driven sampling after pesticide applications and weekly integrated sampling using automatic water samplers. A total of 70 active substances have been monitored while farmers applied 25 active substances. LC-MS/MS (PE Sciex API 2000), GC-MS (Finnigan GCQ), GC coupled with electron capture detector (ECD) and inductively coupled plasma optical emission spectrometry (ICP-OES) were used for identification and quantification of the target substances.
+"""
+
+entities = extract_entities(text)
+print(entities)
+```
+
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "apple", "span": [63, 68]}},
+    {"cropSpecies": {"value": "grassland", "span": [157, 165]}}
+  ],
+  "Soil": [
+    {"Soil": {"value": "orchard", "span": [69, 77]}},
+    {"Soil": {"value": "ditches", "span": [83, 90]}},
+    {"Soil": {"value": "plantations", "span": [102, 112]}},
+    {"Soil": {"value": "grassland", "span": [157, 165]}},
+    {"Soil": {"value": "Lower Saxony", "span": [144, 155]}},
+    {"Soil": {"value": "Altes Land", "span": [69, 77]}},
+    {"Soil": {"value": "Germany", "span": [131, 138]}}
+  ],
+  "Location": [
+    {"region": {"value": "Altes Land", "span": [69, 77]}},
+    {"region": {"value": "Lower Saxony", "span": [144, 155]}},
+    {"country": {"value": "Germany", "span": [131, 138]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2001", "span": [176, 180]}},
+    {"endTime": {"value": "2003", "span": [185, 189]}},
+    {"duration": {"value": "Three-year", "span": [10, 22]}},
+    {"duration": {"value": "between 2001 and 2003", "span": [175, 199]}}
+  ]
+}
+```

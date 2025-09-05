@@ -1,0 +1,24 @@
+### JSON Output ###
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2020", "span": [104, 108]}},
+    {"endTime": {"value": "2050", "span": [113, 117]}},
+    {"duration": {"value": "30", "span": [118, 120]}}
+  ]
+}
+```
+
+### Explanation ###
+
+The input text mentions several key terms that can be categorized into the given entity types. However, none of these terms directly relate to the specified entity categories except for some indirect mentions.
+
+- **Crops**: There is no direct mention of crops in the text. However, the text does mention "agrarischer und forstlicher Biomasse" which could imply crops, but it's not specific enough to be categorized as a crop species or variety.
+- **Soil**: There is no direct mention of soil in the text. The text does mention "forstbasierter Biomassepotentiale" and "Waldfläche" which relate to forestry, but it's not specific enough to be categorized as soil texture, reference group, depth, bulk density, pH, organic carbon, or available nitrogen.
+- **Location**: There is no direct mention of location in the text. The text does mention "Ländern" which could imply a location, but it's not specific enough to be categorized as a country, region, city, latitude, or longitude.
+- **Time Statement**: The text does mention several time-related terms that can be categorized into the given entity types. These include "2020" and "2050" which can be categorized as start and end times, and "30" which can be categorized as a duration.
+
+Note that the output JSON structure is based on the input text and the specified entity categories. If the input text does not contain any entities of a particular category, that category will be represented by an empty list in the output JSON structure.

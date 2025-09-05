@@ -1,0 +1,25 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [101, 107]}},
+    {"cropSpecies": {"value": "barley", "span": [529, 535]}},
+    {"cropSpecies": {"value": "wheat", "span": [549, 554]}},
+    {"cropSpecies": {"value": "lupine", "span": [561, 567]}},
+    {"cropSpecies": {"value": "rye", "span": [573, 576]}},
+    {"cropVariety": {"value": "OTTO", "span": [626, 630]}}
+  ],
+  "Soil": [
+    {"soilAvailableNitrogen": {"value": "PCAL", "span": [321, 325]}},
+    {"soilAvailableNitrogen": {"value": "PCAL", "span": [358, 362]}},
+    {"soilAvailableNitrogen": {"value": "PCAL", "span": [382, 386]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "1985", "span": [292, 296]}},
+    {"endTime": {"value": "2008", "span": [302, 306]}},
+    {"startTime": {"value": "2013", "span": [452, 456]}},
+    {"startTime": {"value": "autumn 2013", "span": [598, 608]}},
+    {"endTime": {"value": "2014", "span": [652, 656]}}
+  ]
+}
+```

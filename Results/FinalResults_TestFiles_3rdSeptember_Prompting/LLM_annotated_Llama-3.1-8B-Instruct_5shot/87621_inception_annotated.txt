@@ -1,0 +1,23 @@
+### Output JSON Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [134, 140]}},
+    {"cropSpecies": {"value": "wheat", "span": [246, 251]}},
+    {"cropSpecies": {"value": "barley", "span": [314, 320]}},
+    {"cropSpecies": {"value": "Hordeum vulgare", "span": [351, 366]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Explanation ###
+The text mentions the following entities:
+- **Crops**: "barley", "wheat", "Hordeum vulgare"
+- **Soil**: No information about soil is provided in the text.
+- **Location**: No location information is provided in the text.
+- **Time Statement**: No time information is provided in the text.
+
+The JSON output contains the identified entities, each with a `"value"` key containing the entity value and a `"span"` key containing the start and end character positions from the beginning of the full text.

@@ -1,0 +1,22 @@
+### Output ###
+
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2020", "span": [234, 238]}},
+    {"endTime": {"value": "2050", "span": [246, 250]}},
+    {"duration": {"value": "30", "span": [255, 257]}}
+  ]
+}
+```
+
+### Explanation ###
+
+*   The only entities that were found in the text are related to time statements, specifically the years 2020 and 2050, and the duration of 30 years.
+*   These entities were extracted based on the keywords "2020" and "2050" which are mentioned in the context of the study's timeframe and the expected increase in production.
+*   The duration of 30 years was extracted from the phrase "2020 und 2050" which implies a 30-year period.
+*   No entities related to crops, soil, or location were found in the text.
+*   The extracted entities are listed in the JSON output as time statements with their respective values and spans.

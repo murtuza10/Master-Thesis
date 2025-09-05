@@ -1,0 +1,37 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "winter barley", "span": [154, 167]}},
+    {"cropSpecies": {"value": "winter oilseed rape", "span": [208, 223]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [230, 238]}},
+    {"cropSpecies": {"value": "lupine", "span": [243, 248]}},
+    {"cropSpecies": {"value": "winter rye", "span": [251, 257]}},
+    {"cropSpecies": {"value": "Hordeum vulgare", "span": [292, 304]}},
+    {"cropSpecies": {"value": "Hordeum vulgare", "span": [309, 321]}},
+    {"cropSpecies": {"value": "Hordeum vulgare", "span": [326, 338]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "rock phosphate", "span": [101, 113]}},
+    {"soilReferenceGroup": {"value": "mineral P fertilizer", "span": [116, 129]}},
+    {"soilReferenceGroup": {"value": "bone char", "span": [140, 147]}},
+    {"soilReferenceGroup": {"value": "BCplus", "span": [174, 179]}},
+    {"soilReferenceGroup": {"value": "BCplus", "span": [196, 201]}},
+    {"soilPH": {"value": "PCAL", "span": [263, 266]}},
+    {"soilPH": {"value": "PCAL", "span": [273, 276]}},
+    {"soilPH": {"value": "PCAL", "span": [284, 287]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "1985", "span": [104, 108]}},
+    {"endTime": {"value": "2008", "span": [109, 113]}},
+    {"startTime": {"value": "2013", "span": [163, 167]}},
+    {"endTime": {"value": "2013", "span": [168, 172]}},
+    {"startTime": {"value": "2013", "span": [174, 178]}},
+    {"endTime": {"value": "2014", "span": [192, 196]}},
+    {"startTime": {"value": "autumn 2013", "span": [223, 235]}},
+    {"endTime": {"value": "2014", "span": [241, 245]}}
+  ]
+}
+```
+Note that I have considered the keywords "Soil" as a soil reference group.

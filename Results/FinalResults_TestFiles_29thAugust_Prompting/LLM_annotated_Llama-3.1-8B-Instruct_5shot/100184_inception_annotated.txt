@@ -1,0 +1,22 @@
+### Output JSON Structure Filled with Input Text Entities ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "oilseed rape", "span": [211, 224]}},
+    {"cropSpecies": {"value": "Brassica napus", "span": [231, 242]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"city": {"value": "Bochum", "span": [173, 180]}},
+    {"city": {"value": "Braunschweig", "span": [184, 192]}},
+    {"city": {"value": "Celle", "span": [194, 200]}},
+    {"city": {"value": "Hohenheim", "span": [203, 210]}},
+    {"city": {"value": "Veitshöchheim", "span": [215, 224]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "spring 2022", "span": [128, 141]}},
+    {"endTime": {"value": "spring 2023", "span": [146, 159]}}
+  ]
+}
+```
+Note that the input text does not explicitly mention entities related to soil or time statements (e.g., start and end times, durations), so these categories are left empty in the output.

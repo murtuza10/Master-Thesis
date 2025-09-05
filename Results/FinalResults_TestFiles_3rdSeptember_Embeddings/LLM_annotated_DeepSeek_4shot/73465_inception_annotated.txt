@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892143-juX5T7L2W4FRtivunNwo",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892143,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum L.\", \"span\": [25, 49] }},\n    {\"cropSpecies\": { \"value\": \"H. nodiflorum\", \"span\": [185, 198] }},\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [362, 385] }},\n    {\"cropSpecies\": { \"value\": \"celery\", \"span\": [573, 579] }},\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [642, 665] }},\n    {\"cropSpecies\": { \"value\": \"wild celery species\", \"span\": [1091, 1111] }},\n    {\"cropSpecies\": { \"value\": \"wild celery relatives\", \"span\": [1349, 1370] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"city\": { \"value\": \"Gatersleben\", \"span\": [93, 104] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [107, 114] }},\n    {\"city\": { \"value\": \"London\", \"span\": [154, 160] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [567, 574] }},\n    {\"city\": { \"value\": \"Berlin\", \"span\": [627, 633] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [635, 642] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2015\", \"span\": [699, 703] }},\n    {\"startTime\": { \"value\": \"2016\", \"span\": [708, 712] }},\n    {\"startTime\": { \"value\": \"2018\", \"span\": [821, 825] }},\n    {\"endTime\": { \"value\": \"2019\", \"span\": [826, 830] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4332,
+    "completion_tokens": 464,
+    "total_tokens": 4796,
+    "prompt_tokens_details": null
+  }
+}

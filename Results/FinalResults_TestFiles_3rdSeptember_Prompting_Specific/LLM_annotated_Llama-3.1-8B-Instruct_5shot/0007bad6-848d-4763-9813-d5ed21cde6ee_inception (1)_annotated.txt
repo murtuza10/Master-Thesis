@@ -1,0 +1,27 @@
+### Output JSON ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Winter wheat", "span": [278, 291]}}
+  ],
+  "Soil": [
+    {"soilTexture": {}},
+    {"soilReferenceGroup": {}},
+    {"soilDepth": {}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+### Reasoning ###
+
+- The input text mentions "Winter wheat" as a crop species in the abstract text.
+- There are no specific mentions of soil types, properties, or reference groups.
+- The keywords "Soil" and "Boden" (German for "Soil") are mentioned but do not contain specific information about soil types or properties.
+- There are no specific locations mentioned in the text.
+- There are no specific time statements mentioned in the text.

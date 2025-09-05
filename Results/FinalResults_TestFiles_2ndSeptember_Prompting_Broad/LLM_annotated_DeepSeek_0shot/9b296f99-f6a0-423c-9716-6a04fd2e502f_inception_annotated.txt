@@ -1,0 +1,26 @@
+{
+  "id": "gen-1756898076-a8jyNk6RjdaVIPufFYu8",
+  "provider": "Crusoe",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756898076,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [387, 392] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [394, 400] }},\n    {\"cropSpecies\": { \"value\": \"sugar beet\", \"span\": [406, 416] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [1074, 1080] }},\n    {\"cropSpecies\": { \"value\": \"sugar beet\", \"span\": [1085, 1095] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"soil fertility\", \"span\": [227, 240] }},\n    {\"Soil\": { \"value\": \"bulk soil\", \"span\": [1166, 1175] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [32, 39] }},\n    {\"city\": { \"value\": \"Speyer\", \"span\": [29, 35] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [295, 302] }},\n    {\"city\": { \"value\": \"Karlsruhe\", \"span\": [678, 687] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [835, 842] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1984\", \"span\": [305, 309] }},\n    {\"duration\": { \"value\": \"long term\", \"span\": [1203, 1212] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1621,
+    "completion_tokens": 376,
+    "total_tokens": 1997
+  }
+}

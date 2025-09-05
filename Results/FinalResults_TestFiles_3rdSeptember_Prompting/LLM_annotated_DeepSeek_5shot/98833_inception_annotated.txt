@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756907089-Ryg2nPEaDfXyRiwa3aGL",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756907089,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilTexture\": {\"value\": \"Löss\", \"span\": [283, 287]}},\n    {\"soilDepth\": {\"value\": \"28 cm\", \"span\": [292, 297]}},\n    {\"soilDepth\": {\"value\": \"20 cm\", \"span\": [690, 695]}},\n    {\"soilDepth\": {\"value\": \"35 cm\", \"span\": [698, 703]}},\n    {\"soilDepth\": {\"value\": \"50 cm\", \"span\": [706, 711]}},\n    {\"soilBulkDensity\": {\"value\": \"Lagerungsdichte\", \"span\": [744, 760]}}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2017\", \"span\": [136, 140]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4883,
+    "completion_tokens": 194,
+    "total_tokens": 5077,
+    "prompt_tokens_details": null
+  }
+}

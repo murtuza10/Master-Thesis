@@ -1,0 +1,31 @@
+### Text Analysis and Entity Extraction
+
+#### Text: 
+Datensatz mit Fragebögen zur Analyse von Lebensmittelverlusten bei Obst und Gemüse auf Erzeugerebene und in der Wertschöpfungskette
+
+Abstract:
+Der Datensatz enthält 8 Fragebögen für persönliche Interviews mit Entscheidungstragenden auf Erzeugerebene und in der Wertschöpfungskette zur Analyse der Lebensmittelverluste: - im Freilandanbau von Möhre, Salat, Apfel und Erdbeere, - im geschützten Anbau von Erdbeere und Himbeere und - in Verarbeitung und Lebensmitteleinzelhandel
+
+#### Entities Extraction
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Möhre", "span": [34, 39] }},
+    {"cropSpecies": { "value": "Salat", "span": [40, 44] }},
+    {"cropSpecies": { "value": "Apfel", "span": [45, 49] }},
+    {"cropSpecies": { "value": "Erdbeere", "span": [50, 58] }},
+    {"cropSpecies": { "value": "Himbeere", "span": [63, 70] }}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Explanation
+
+- **Crops**: We found five crop species mentioned in the text: Möhre, Salat, Apfel, Erdbeere, and Himbeere. Each is included as a separate object in the "cropSpecies" list, with the exact text value and character span from the beginning of the text.
+- **Soil**: There are no explicit mentions of soil properties or types in the text, so the "Soil" list is empty.
+- **Location**: There are no explicit mentions of locations (countries, regions, cities) in the text, so the "Location" list is empty.
+- **Time Statement**: There are no explicit mentions of time-related events (start time, end time, duration) in the text, so the "Time Statement" list is empty.

@@ -1,0 +1,32 @@
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Mais", "span": [null, null]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "Parabraunerde", "span": [209, 224]}},
+    {"soilTexture": {"value": "Löss", "span": [226, 230]}},
+    {"soilDepth": {"value": "28 cm", "span": [163, 166]}},
+    {"soilBulkDensity": {"value": "17 t", "span": [96, 99]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2017", "span": [69, 73]}}
+  ]
+}
+```
+
+### Explanation ###
+
+In this example, we can extract the following entities:
+
+*   **Crop**: "Mais" (maize) is mentioned in the title.
+*   **Soil**: 
+    *   "Parabraunerde" is mentioned as the soil reference group.
+    *   "Löss" is mentioned as the soil texture.
+    *   "28 cm" is mentioned as the soil depth.
+    *   "17 t" is mentioned as the total weight of the vehicle, which can be interpreted as soil bulk density.
+*   **Time Statement**: "2017" is mentioned as the start time of the experiment.
+*   **Location**: No location is mentioned in the text.
+*   **Time Statement**: "2017" is mentioned as the start time of the experiment.

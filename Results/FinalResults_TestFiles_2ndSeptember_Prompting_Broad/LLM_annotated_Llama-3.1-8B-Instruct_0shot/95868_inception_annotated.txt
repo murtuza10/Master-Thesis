@@ -1,0 +1,27 @@
+### Extracted Entities
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Norway spruce", "span": [68, 84] }},
+    {"cropSpecies": { "value": "Picea abies", "span": [31, 41] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "Germany", "span": [122, 130] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [122, 130] }},
+    {"region": { "value": "Western Germany", "span": [96, 114] }},
+    {"city": { "value": "Europe", "span": [73, 81] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1964", "span": [53, 59] }},
+    {"startTime": { "value": "1968", "span": [63, 69] }},
+    {"duration": { "value": "51 years", "span": [85, 96] }}
+  ]
+}
+```
+
+### Notes
+- Multiple mentions of the same entity are included as separate objects in their respective categories.
+- The span indices are calculated from the beginning of the full text.

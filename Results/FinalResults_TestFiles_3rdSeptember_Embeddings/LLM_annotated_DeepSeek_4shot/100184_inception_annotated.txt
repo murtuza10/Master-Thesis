@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892342-9kFQvOZi4tCZL4eS5Iji",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892342,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"rape\", \"span\": [536, 540]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [414, 421]}},\n    {\"city\": {\"value\": \"Bochum\", \"span\": [423, 429]}},\n    {\"city\": {\"value\": \"Braunschweig\", \"span\": [432, 444]}},\n    {\"city\": {\"value\": \"Celle\", \"span\": [447, 452]}},\n    {\"city\": {\"value\": \"Hohenheim\", \"span\": [455, 464]}},\n    {\"city\": {\"value\": \"Veitshöchheim\", \"span\": [467, 480]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"spring 2022\", \"span\": [484, 495]}},\n    {\"endTime\": {\"value\": \"spring 2023\", \"span\": [499, 510]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4118,
+    "completion_tokens": 239,
+    "total_tokens": 4357,
+    "prompt_tokens_details": null
+  }
+}

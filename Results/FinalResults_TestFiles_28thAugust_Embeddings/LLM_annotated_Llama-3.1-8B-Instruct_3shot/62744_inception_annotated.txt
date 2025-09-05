@@ -1,0 +1,28 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "rye", "span": [0, 3]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Explanation ###
+Based on the input text, the following entities are identified:
+
+- **Crops**: 
+  - "rye" is mentioned as a crop species. 
+
+- **Soil**: 
+  - No mentions of soil-related entities are found in the text.
+
+- **Location**: 
+  - No mentions of location-related entities are found in the text.
+
+- **Time Statement**: 
+  - No mentions of time-related entities are found in the text.
+
+The JSON structure is filled with the identified entities, following the specified format.

@@ -1,0 +1,22 @@
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilOrganicCarbon": { "value": "soil organic carbon", "span": [113, 131] }},
+    {"soilOrganicCarbon": { "value": "SOC", "span": [134, 137] }},
+    {"soilOrganicCarbon": { "value": "SOC", "span": [203, 206] }},
+    {"soilOrganicCarbon": { "value": "SOC", "span": [234, 237] }},
+    {"soilOrganicCarbon": { "value": "SOC", "span": [266, 269] }},
+    {"soilOrganicCarbon": { "value": "SOC", "span": [323, 326] }},
+    {"soilOrganicCarbon": { "value": "SOC", "span": [345, 348] }},
+    {"soilOrganicNitrogen": { "value": "soil organic nitrogen", "span": [139, 158] }},
+    {"soilOrganicNitrogen": { "value": "SON", "span": [161, 164] }},
+    {"soilOrganicNitrogen": { "value": "SON", "span": [212, 215] }},
+    {"soilOrganicCarbon": { "value": "SOC", "span": [377, 380] }}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+``` 
+
+Note: There is no explicit mention of "soilOrganicNitrogen" in the categories, but "SON" is mentioned in the text and can be interpreted as soil organic nitrogen. Therefore, I have included it under `soilOrganicNitrogen` as it is a reasonable interpretation. If "SON" should not be included, the entries for "soilOrganicNitrogen" can be omitted.

@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756892198-Q7QtJq8TNnD4dNDm5FPi",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756892198,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [1018, 1024] }},\n    {\"cropSpecies\": { \"value\": \"serradella\", \"span\": [1043, 1053] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [1083, 1089] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"Redox potential\", \"span\": [26, 41] }},\n    {\"Soil\": { \"value\": \"pH\", \"span\": [44, 46] }},\n    {\"Soil\": { \"value\": \"Redox potential\", \"span\": [164, 179] }},\n    {\"Soil\": { \"value\": \"pH\", \"span\": [182, 184] }},\n    {\"Soil\": { \"value\": \"Eh\", \"span\": [388, 390] }},\n    {\"Soil\": { \"value\": \"pH\", \"span\": [393, 395] }},\n    {\"Soil\": { \"value\": \"OC\", \"span\": [422, 424] }},\n    {\"Soil\": { \"value\": \"Eh\", \"span\": [1221, 1223] }},\n    {\"Soil\": { \"value\": \"pH\", \"span\": [1293, 1295] }},\n    {\"Soil\": { \"value\": \"organic C\", \"span\": [1365, 1374] }},\n    {\"Soil\": { \"value\": \"DOC\", \"span\": [1383, 1386] }}\n  ],\n  \"Location\": [\n    {\"city\": { \"value\": \"Rostock\", \"span\": [26, 33] }},\n    {\"city\": { \"value\": \"Rostock\", \"span\": [164, 171] }},\n    {\"region\": { \"value\": \"Northern Germany\", \"span\": [311, 327] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2020\", \"span\": [115, 119] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [255, 259] }},\n    {\"startTime\": { \"value\": \"2018\", \"span\": [844, 848] }},\n    {\"startTime\": { \"value\": \"2019\", \"span\": [1013, 1017] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [1068, 1072] }},\n    {\"duration\": { \"value\": \"3.5 months\", \"span\": [1555, 1565] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4441,
+    "completion_tokens": 593,
+    "total_tokens": 5034,
+    "prompt_tokens_details": null
+  }
+}

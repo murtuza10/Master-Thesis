@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756906950-jDluTLd9czRzyFCMmPbr",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756906950,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [25, 47] }},\n    {\"cropSpecies\": { \"value\": \"H. nodiflorum\", \"span\": [160, 173] }},\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [330, 352] }},\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [549, 571] }},\n    {\"cropSpecies\": { \"value\": \"celery\", \"span\": [627, 633] }},\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [728, 750] }},\n    {\"cropSpecies\": { \"value\": \"celery\", \"span\": [1181, 1187] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"city\": { \"value\": \"Gatersleben\", \"span\": [86, 97] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [100, 107] }},\n    {\"city\": { \"value\": \"London\", \"span\": [155, 161] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [639, 646] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [788, 795] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2015\", \"span\": [800, 804] }},\n    {\"endTime\": { \"value\": \"2016\", \"span\": [808, 812] }},\n    {\"startTime\": { \"value\": \"2018\", \"span\": [898, 902] }},\n    {\"endTime\": { \"value\": \"2019\", \"span\": [905, 909] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4991,
+    "completion_tokens": 440,
+    "total_tokens": 5431
+  }
+}

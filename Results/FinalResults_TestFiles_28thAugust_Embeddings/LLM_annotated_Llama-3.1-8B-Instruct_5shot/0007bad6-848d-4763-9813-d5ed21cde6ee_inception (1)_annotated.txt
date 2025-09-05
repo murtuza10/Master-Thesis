@@ -1,0 +1,26 @@
+### JSON Structure Filled with Input Text Entities
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [342, 348]}},
+    {"cropSpecies": {"value": "wheat", "span": [381, 387]}}
+  ],
+  "Soil": [
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}},
+    {"soilWaterStableAggregation": {"value": "soil water stable aggregation", "span": [266, 289]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Explanation
+
+1. The input text is analyzed for entities related to "Crops", "Soil", "Location", and "Time Statement".
+2. The text mentions "Winter wheat" twice, which corresponds to the "cropSpecies" entity. The start and end character positions are calculated as [342, 348] and [381, 387] respectively.
+3. The text mentions "soil properties" which corresponds to the "soilOrganicCarbon" entity. However, the exact value is not specified, so it is left as an empty dictionary.
+4. The text mentions "soil water stable aggregation" which corresponds to the "soilWaterStableAggregation" entity.
+5. The text does not mention any entities related to "Location" or "Time Statement".
+6. The JSON structure is filled with the extracted entities, with their corresponding values and start and end character positions.

@@ -1,0 +1,27 @@
+{
+  "id": "gen-1756897907-CEtVqzbWkyTIHxu6e1dq",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756897907,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"energy crops\", \"span\": [836, 848] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [20, 27] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [704, 711] }},\n    {\"region\": { \"value\": \"federal states\", \"span\": [715, 730] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1990\", \"span\": [734, 738] }},\n    {\"endTime\": { \"value\": \"2017\", \"span\": [740, 744] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1189,
+    "completion_tokens": 173,
+    "total_tokens": 1362,
+    "prompt_tokens_details": null
+  }
+}

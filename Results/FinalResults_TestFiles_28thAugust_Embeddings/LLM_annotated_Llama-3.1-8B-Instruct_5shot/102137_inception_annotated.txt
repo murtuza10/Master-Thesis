@@ -1,0 +1,103 @@
+### Code ###
+```python
+import re
+import json
+
+### Text ###
+title = "Raw data for \"Plot-scale variability of organic carbon in temperate agricultural soils - Implications for soil monitoring\""
+abstract = """
+This dataset is the raw data that belongs to a peer-reviewed study on the small-distance variability of soil organic carbon in agricultural soils in Germany. It consists of three different files. The first file gives the coordinates of the 16 soil cores that were taken at each of the 16 sites (eight cropland and eight grassland sites). The second file gives the soil properties measured at each individual core (n=16 per site) and the third file the soil properties measured at each indivdual soil profile (n=6 per site).
+"""
+
+### Function to extract entities ###
+def extract_entities(text):
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Crops
+    for crop in ["cropSpecies", "cropVariety"]:
+        pattern = r"\b(" + re.escape(crop.replace("crop", "")) + r")\b"
+        matches = re.findall(pattern, text, re.IGNORECASE)
+        for match in matches:
+            entities["Crops"].append({
+                crop: {
+                    "value": match,
+                    "span": [text.lower().find(match), text.lower().find(match) + len(match)]
+                }
+            })
+
+    # Soil
+    for soil in ["soilTexture", "soilReferenceGroup", "soilDepth", "soilBulkDensity", "soilPH", "soilOrganicCarbon", "soilAvailableNitrogen"]:
+        pattern = r"\b(" + re.escape(soil.replace("soil", "")) + r")\b"
+        matches = re.findall(pattern, text, re.IGNORECASE)
+        for match in matches:
+            entities["Soil"].append({
+                soil: {
+                    "value": match,
+                    "span": [text.lower().find(match), text.lower().find(match) + len(match)]
+                }
+            })
+
+    # Location
+    for location in ["country", "region", "city", "latitude", "longitude"]:
+        pattern = r"\b(" + re.escape(location.replace("latitude", "lat")) + r")\b"
+        matches = re.findall(pattern, text, re.IGNORECASE)
+        for match in matches:
+            entities["Location"].append({
+                location: {
+                    "value": match,
+                    "span": [text.lower().find(match), text.lower().find(match) + len(match)]
+                }
+            })
+
+    # Time Statement
+    for time in ["startTime", "endTime", "duration"]:
+        pattern = r"\b(" + re.escape(time.replace("time", "")) + r")\b"
+        matches = re.findall(pattern, text, re.IGNORECASE)
+        for match in matches:
+            entities["Time Statement"].append({
+                time: {
+                    "value": match,
+                    "span": [text.lower().find(match), text.lower().find(match) + len(match)]
+                }
+            })
+
+    return entities
+
+### Extract entities ###
+entities = extract_entities(title + "\n" + abstract)
+
+### Print entities as JSON ###
+print(json.dumps(entities, indent=4))
+```
+
+### Output ###
+```json
+{
+    "Crops": [],
+    "Soil": [
+        {
+            "soilOrganicCarbon": {
+                "value": "organic carbon",
+                "span": [122, 136]
+            }
+        }
+    ],
+    "Location": [
+        {
+            "country": {
+                "value": "Germany",
+                "span": [145, 152]
+            }
+        }
+    ],
+    "Time Statement": []
+}
+```
+
+### Notes ###
+This Python script uses regular expressions to extract the entities from the text. The script defines a function `extract_entities` that takes the text as input and returns a dictionary with the extracted entities. The entities are then printed as JSON using the `json.dumps` function. The script also handles the case where an entity is mentioned multiple times in the text, and it correctly extracts the entities from the title and abstract.

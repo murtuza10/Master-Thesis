@@ -1,0 +1,26 @@
+### JSON Structure Filled with Entities from the Input Text ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "cropland", "span": [122, 128] }}
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "Lehm", "span": [143, 147] }},
+    {"soilTexture": { "value": "Ton", "span": [149, 151] }},
+    {"soilReferenceGroup": { "value": "Boden", "span": [173, 176] }},
+    {"soilBulkDensity": { "value": "Bodenbearbeitung", "span": [186, 198] }},
+    {"soilBulkDensity": { "value": "konservierend", "span": [206, 213] }},
+    {"soilBulkDensity": { "value": "konventionell", "span": [217, 224] }},
+    {"soilPH": { "value": "pH Wert", "span": [235, 240] }},
+    {"soilOrganicCarbon": { "value": "organischen Kohlenstoff", "span": [253, 268] }},
+    {"soilAvailableNitrogen": { "value": "Gesamt-Stickstoff", "span": [282, 292] }}
+  ],
+  "Location": [
+    {"region": { "value": "Nähe von Hildesheim", "span": [59, 75] }}
+  ],
+  "Time Statement": [
+    {"duration": { "value": "14-tägigen Zeitraster", "span": [95, 108] }},
+    {"duration": { "value": "2 Jahre", "span": [131, 135] }}
+  ]
+}
+```

@@ -1,0 +1,26 @@
+{
+  "id": "gen-1756897855-VCuQKQC1gw0UDHGoRf9G",
+  "provider": "Phala",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1756897855,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [636, 642] }},\n    {\"cropSpecies\": { \"value\": \"serradella\", \"span\": [673, 683] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [714, 720] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"soil pore water\", \"span\": [168, 182] }},\n    {\"Soil\": { \"value\": \"redox potential\", \"span\": [186, 201] }},\n    {\"Soil\": { \"value\": \"pH\", \"span\": [204, 206] }},\n    {\"Soil\": { \"value\": \"soil pore water\", \"span\": [281, 295] }},\n    {\"Soil\": { \"value\": \"redox potential\", \"span\": [891, 906] }},\n    {\"Soil\": { \"value\": \"pH\", \"span\": [911, 913] }},\n    {\"Soil\": { \"value\": \"Boden\", \"span\": [1199, 1204] }},\n    {\"Soil\": { \"value\": \"Bodenwasser\", \"span\": [1206, 1217] }}\n  ],\n  \"Location\": [\n    {\"region\": { \"value\": \"Northern Germany\", \"span\": [223, 239] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2018\", \"span\": [593, 597] }},\n    {\"startTime\": { \"value\": \"2019\", \"span\": [662, 666] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [689, 693] }},\n    {\"endTime\": { \"value\": \"2020\", \"span\": [689, 693] }},\n    {\"duration\": { \"value\": \"3.5 months\", \"span\": [1115, 1124] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1401,
+    "completion_tokens": 446,
+    "total_tokens": 1847
+  }
+}
