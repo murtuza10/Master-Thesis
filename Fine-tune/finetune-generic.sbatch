@@ -1,8 +1,8 @@
 #!/bin/bash
-#SBATCH --partition=sgpu_short
-#SBATCH --time=8:00:00
-#SBATCH --gpus=12
-#SBATCH --output=finetune_gpu_xlm-roberta-large_job_%j.out
+#SBATCH --partition=mlgpu_medium
+#SBATCH --time=24:00:00
+#SBATCH --gpus=16
+#SBATCH --output=/home/s27mhusa_hpc/Master-Thesis/OutputNewDatasets3rdSeptemberFineTune/finetune_gpu_xlm_roberta_xl_job_%j.out
 
 MODEL_NAME=$1
 
@@ -18,7 +18,7 @@ conda activate Llama
 start_time=$(date +%s)
 
 # === Begin Resource Monitoring ===
-LOG_DIR="job_monitor_logs_${MODEL_NAME}_${SLURM_JOB_ID}_$(date +%Y%m%d_%H%M%S)"
+LOG_DIR="/home/s27mhusa_hpc/Master-Thesis/OutputNewDatasets3rdSeptemberFineTune/job_monitor_logs_${MODEL_NAME}_${SLURM_JOB_ID}_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$LOG_DIR"
 INTERVAL=30
 
@@ -51,7 +51,7 @@ echo $CPU_PID >> "$LOG_DIR/pids.txt"
 echo $IO_PID >> "$LOG_DIR/pids.txt"
 
 # === Run Main Script ===
-python /home/s27mhusa_hpc/Master-Thesis/Fine-tune/fine_tune_xlm-roberta-large.py
+python /home/s27mhusa_hpc/Master-Thesis/Fine-tune/fine_tune_xlm_roberta_xl_broad.py
 
 # === Stop Resource Monitoring ===
 echo "Stopping resource monitoring..."

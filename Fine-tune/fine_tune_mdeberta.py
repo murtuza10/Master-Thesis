@@ -149,8 +149,8 @@ if __name__ == "__main__":
         return {
             "learning_rate": trial.suggest_float("learning_rate", 1e-5, 5e-5, log=True),
             "num_train_epochs": trial.suggest_int("num_train_epochs", 3, 30),
-            "per_device_train_batch_size": trial.suggest_categorical("per_device_train_batch_size", [8, 16, 32]),
-            "weight_decay": trial.suggest_float("weight_decay", 0.0, 0.3),
+            "per_device_train_batch_size": trial.suggest_categorical("per_device_train_batch_size", [1, 2, 4, 8]),
+            "weight_decay": trial.suggest_float("weight_decay", 0.0, 0.5),
         }
 
     def model_init():
@@ -160,11 +160,11 @@ if __name__ == "__main__":
         )
 
     training_args = TrainingArguments(
-        output_dir="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/mdeberta_ner_model_27_August",
+        output_dir="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/mdeberta_ner_model_31_August",
         eval_strategy="epoch",
         save_strategy="epoch", 
         logging_dir="./logs",
-        run_name="mdeberta-v3-base_optuna_tuning_27_August",
+        run_name="mdeberta-v3-base_optuna_tuning_31_August",
         metric_for_best_model="f1",
         greater_is_better=True,
         load_best_model_at_end=True,
@@ -181,7 +181,7 @@ if __name__ == "__main__":
         eval_dataset=tokenized_dataset["validation"],
         tokenizer=tokenizer,
         compute_metrics=compute_metrics,
-        callbacks=[EarlyStoppingCallback(early_stopping_patience=3)]
+        callbacks=[EarlyStoppingCallback(early_stopping_patience=5)]
     )
 
     # Run Optuna search
@@ -196,11 +196,11 @@ if __name__ == "__main__":
     
     # Optionally retrain with best config:
     best_args = TrainingArguments(
-        output_dir="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/mdeberta_ner_model_27_August_best",
+        output_dir="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/mdeberta_ner_model_31_August_best",
         eval_strategy="epoch",
         save_strategy="epoch", 
         logging_dir="./logs_best",
-        run_name="mdeberta-v3-base_best_run_27_August",
+        run_name="mdeberta-v3-base_best_run_31_August",
         learning_rate=best_trial.hyperparameters["learning_rate"],
         num_train_epochs=best_trial.hyperparameters["num_train_epochs"],
         per_device_train_batch_size=best_trial.hyperparameters["per_device_train_batch_size"],
