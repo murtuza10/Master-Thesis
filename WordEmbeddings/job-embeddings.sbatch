@@ -2,14 +2,14 @@
 #SBATCH --partition=mlgpu_short
 #SBATCH --time=8:00:00
 #SBATCH --gpus=4
-#SBATCH --output=/home/s27mhusa_hpc/Master-Thesis/FinalOutput-28thAugust-Embeddings/gpu_job_TestFiles_%j_28thAugust.out
+#SBATCH --output=/home/s27mhusa_hpc/Master-Thesis/FinalOutput-29thAugust-Embeddings/gpu_job_TestFiles_%j_29thAugust.out
 
 MODEL_NAME=$1
 EXAMPLES=$2
 
 INPUT_DIR="/home/s27mhusa_hpc/Master-Thesis/Text_Files_Test_Data"
-OUTPUT_DIR="/home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_28thAugust_Embeddings/LLM_annotated_${MODEL_NAME}_${EXAMPLES}shot"
-OUTPUT_DIR_JSON="/home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_28thAugust_Embeddings_json/LLM_annotated_${MODEL_NAME}_${EXAMPLES}shot"
+OUTPUT_DIR="/home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_29thAugust_Embeddings/LLM_annotated_${MODEL_NAME}_${EXAMPLES}shot"
+OUTPUT_DIR_JSON="/home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_29thAugust_Embeddings_json/LLM_annotated_${MODEL_NAME}_${EXAMPLES}shot"
 MODEL_PATH="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/${MODEL_NAME}"
 
 module load CUDA/12.6.0
@@ -86,7 +86,7 @@ echo "Total GPU execution time: $elapsed seconds"
 echo "$elapsed" > "$LOG_DIR/elapsed_time_seconds.txt"
 
 # === Save execution time into Excel sheet ===
-EXCEL_PATH="/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_28thAugust_FewShotTest_Embeddings/ner_evaluation_results_${MODEL_NAME}_${EXAMPLES}_shot.xlsx"
+EXCEL_PATH="/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_29thAugust_FewShotTest_Embeddings/ner_evaluation_results_${MODEL_NAME}_${EXAMPLES}_shot.xlsx"
 
 python <<EOF
 import openpyxl

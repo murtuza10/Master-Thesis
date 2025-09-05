@@ -72,7 +72,7 @@ def perform_ner(text, max_length, examples):
     response = requests.post(
     url="https://openrouter.ai/api/v1/chat/completions",
     headers={
-        "Authorization": "Bearer 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",
+        "Authorization": "Bearer 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",
         "Content-Type": "application/json"
     },
     data=json.dumps({

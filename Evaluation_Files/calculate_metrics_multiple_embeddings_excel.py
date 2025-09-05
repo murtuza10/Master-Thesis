@@ -75,12 +75,12 @@ def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_js
     all_y_true = []
     all_y_pred = []
     results_per_file = []
-    y_true_dir = f"/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/Test_BIO_labels"
-    results_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_29thAugust_FewShotTests/ner_evaluation_results_{model_name}_{start}_shot.txt"
-    stats_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_29thAugust_FewShotTests/Stats/ner_evaluation_stats_{model_name}_{start}_shot.txt"
+    y_true_dir = f"/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptemberDocumentLevel/Test_BIO_labels"
+    results_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_1stSeptember_ZeroShot/ner_evaluation_results_{model_name}_{start}_shot.txt"
+    stats_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_1stSeptember_ZeroShot/Stats/ner_evaluation_stats_{model_name}_{start}_shot.txt"
 
     # Excel output path
-    excel_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_29thAugust_FewShotTests/ner_evaluation_results_{model_name}_{start}_shot.xlsx"
+    excel_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_1stSeptember_ZeroShot/ner_evaluation_results_{model_name}_{start}_shot.xlsx"
 
     results_lines = []
     stats_lines = []

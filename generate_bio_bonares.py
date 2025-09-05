@@ -3,7 +3,7 @@ import os
 import sys
 sys.path.append(os.path.abspath(os.path.dirname(__file__)))  # ensures current directory is included
 sys.path.append("/home/s27mhusa_hpc/Master-Thesis/Evaluation_Files")
-from generate_bio_from_cas import generate_bio_annotations_from_cas
+from generate_bio_from_cas_sentence import generate_bio_annotations_from_cas
 
 XMI_DIR = "/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/Train_XMI_Files"
 OUTPUT_DIR_LABELS = "/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/Train_BIO_labels"

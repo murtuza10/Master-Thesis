@@ -3,28 +3,29 @@
               precision    recall  f1-score   support
 
  cropSpecies       1.00      0.50      0.67         2
-     endTime       1.00      1.00      1.00         1
+     endTime       0.00      0.00      0.00         1
       region       0.00      0.00      0.00         1
-   startTime       1.00      1.00      1.00         1
+   startTime       0.50      1.00      0.67         1
 
-   micro avg       1.00      0.60      0.75         5
-   macro avg       0.75      0.62      0.67         5
-weighted avg       0.80      0.60      0.67         5
+   micro avg       0.67      0.40      0.50         5
+   macro avg       0.38      0.38      0.33         5
+weighted avg       0.50      0.40      0.40         5
 
-Accuracy: 0.9714285714285714
+Accuracy: 0.9571428571428572
 
 102137:
 
                    precision    recall  f1-score   support
 
           country       1.00      1.00      1.00         1
+           region       0.00      0.00      0.00         0
 soilOrganicCarbon       0.00      0.00      0.00         2
 
-        micro avg       1.00      0.33      0.50         3
-        macro avg       0.50      0.50      0.50         3
+        micro avg       0.50      0.33      0.40         3
+        macro avg       0.33      0.33      0.33         3
      weighted avg       0.33      0.33      0.33         3
 
-Accuracy: 0.9694656488549618
+Accuracy: 0.9618320610687023
 
 41808:
 
@@ -33,15 +34,14 @@ Accuracy: 0.9694656488549618
         city       1.00      1.00      1.00         1
      country       1.00      1.00      1.00         1
  cropSpecies       0.00      0.00      0.00         5
-    duration       0.00      0.00      0.00         0
      endTime       0.00      0.00      0.00         0
    startTime       0.00      0.00      0.00         0
 
    micro avg       0.33      0.29      0.31         7
-   macro avg       0.33      0.33      0.33         7
+   macro avg       0.40      0.40      0.40         7
 weighted avg       0.29      0.29      0.29         7
 
-Accuracy: 0.9153439153439153
+Accuracy: 0.9259259259259259
 
 102130:
 
@@ -62,28 +62,28 @@ Accuracy: 0.8902439024390244
 
               precision    recall  f1-score   support
 
- cropSpecies       1.00      0.83      0.91         6
+ cropSpecies       1.00      0.67      0.80         6
 
-   micro avg       1.00      0.83      0.91         6
-   macro avg       1.00      0.83      0.91         6
-weighted avg       1.00      0.83      0.91         6
+   micro avg       1.00      0.67      0.80         6
+   macro avg       1.00      0.67      0.80         6
+weighted avg       1.00      0.67      0.80         6
 
-Accuracy: 0.9864864864864865
+Accuracy: 0.972972972972973
 
 50596:
 
               precision    recall  f1-score   support
 
  cropSpecies       0.00      0.00      0.00         8
-    duration       0.00      0.00      0.00         2
-     endTime       0.67      0.67      0.67         6
-   startTime       1.00      0.55      0.71        11
+    duration       1.00      0.50      0.67         2
+     endTime       0.00      0.00      0.00         6
+   startTime       0.50      0.09      0.15        11
 
-   micro avg       0.83      0.37      0.51        27
-   macro avg       0.42      0.30      0.34        27
-weighted avg       0.56      0.37      0.44        27
+   micro avg       0.67      0.07      0.13        27
+   macro avg       0.38      0.15      0.21        27
+weighted avg       0.28      0.07      0.11        27
 
-Accuracy: 0.970679012345679
+Accuracy: 0.9598765432098766
 
 102239:
 
@@ -128,50 +128,52 @@ Accuracy: 0.9906103286384976
 
               precision    recall  f1-score   support
 
-        city       0.33      1.00      0.50         1
+        city       0.00      0.00      0.00         1
      country       0.00      0.00      0.00         5
  cropSpecies       0.00      0.00      0.00         2
     duration       0.00      0.00      0.00         2
-     endTime       1.00      0.50      0.67         2
+     endTime       0.00      0.00      0.00         2
    longitude       0.00      0.00      0.00         0
       region       0.00      0.00      0.00         4
-   startTime       1.00      0.25      0.40         4
+   startTime       1.00      0.50      0.67         4
 
-   micro avg       0.43      0.15      0.22        20
-   macro avg       0.29      0.22      0.20        20
-weighted avg       0.32      0.15      0.17        20
+   micro avg       0.33      0.10      0.15        20
+   macro avg       0.12      0.06      0.08        20
+weighted avg       0.20      0.10      0.13        20
 
-Accuracy: 0.9592529711375212
+Accuracy: 0.9609507640067911
 
 101378:
 
               precision    recall  f1-score   support
 
-    duration       1.00      1.00      1.00         1
+    duration       0.00      0.00      0.00         1
+   startTime       0.00      0.00      0.00         0
 
-   micro avg       1.00      1.00      1.00         1
-   macro avg       1.00      1.00      1.00         1
-weighted avg       1.00      1.00      1.00         1
+   micro avg       0.00      0.00      0.00         1
+   macro avg       0.00      0.00      0.00         1
+weighted avg       0.00      0.00      0.00         1
 
-Accuracy: 1.0
+Accuracy: 0.995085995085995
 
 36149:
 
-                 precision    recall  f1-score   support
+                       precision    recall  f1-score   support
 
-        country       1.00      0.50      0.67         2
-    cropSpecies       0.00      0.00      0.00         0
-       duration       1.00      1.00      1.00         1
-        endTime       1.00      0.50      0.67         2
-soilBulkDensity       1.00      1.00      1.00         1
-      soilDepth       0.00      0.00      0.00         0
-      startTime       1.00      0.50      0.67         2
+              country       0.00      0.00      0.00         2
+          cropSpecies       0.00      0.00      0.00         0
+             duration       1.00      1.00      1.00         1
+              endTime       0.00      0.00      0.00         2
+               region       0.00      0.00      0.00         0
+soilAvailableNitrogen       0.00      0.00      0.00         0
+      soilBulkDensity       1.00      1.00      1.00         1
+            startTime       0.50      0.50      0.50         2
 
-      micro avg       0.71      0.62      0.67         8
-      macro avg       0.71      0.50      0.57         8
-   weighted avg       1.00      0.62      0.75         8
+            micro avg       0.43      0.38      0.40         8
+            macro avg       0.31      0.31      0.31         8
+         weighted avg       0.38      0.38      0.38         8
 
-Accuracy: 0.9703389830508474
+Accuracy: 0.961864406779661
 
 36710:
 
@@ -181,51 +183,51 @@ Accuracy: 0.9703389830508474
  cropSpecies       0.00      0.00      0.00         2
     duration       0.00      0.00      0.00         2
      endTime       1.00      1.00      1.00         1
-      region       0.50      0.33      0.40         3
+      region       1.00      0.33      0.50         3
    startTime       1.00      1.00      1.00         1
 
-   micro avg       0.80      0.40      0.53        10
-   macro avg       0.58      0.56      0.57        10
-weighted avg       0.45      0.40      0.42        10
+   micro avg       1.00      0.40      0.57        10
+   macro avg       0.67      0.56      0.58        10
+weighted avg       0.60      0.40      0.45        10
 
-Accuracy: 0.9406392694063926
+Accuracy: 0.954337899543379
 
 100184:
 
               precision    recall  f1-score   support
 
-        city       0.60      1.00      0.75         3
+        city       0.75      1.00      0.86         3
      country       1.00      1.00      1.00         1
  cropSpecies       0.50      0.50      0.50         2
      endTime       1.00      1.00      1.00         1
       region       0.00      0.00      0.00         2
    startTime       1.00      1.00      1.00         1
 
-   micro avg       0.70      0.70      0.70        10
-   macro avg       0.68      0.75      0.71        10
-weighted avg       0.58      0.70      0.62        10
+   micro avg       0.78      0.70      0.74        10
+   macro avg       0.71      0.75      0.73        10
+weighted avg       0.62      0.70      0.66        10
 
 Accuracy: 0.9849624060150376
 
 
 📊 Overall Performance:
-                    precision    recall  f1-score   support
+                       precision    recall  f1-score   support
 
-              city       0.56      1.00      0.71         5
-           country       1.00      0.46      0.63        13
-       cropSpecies       0.70      0.26      0.38        27
-          duration       0.67      0.17      0.27        12
-           endTime       0.79      0.61      0.69        18
-         longitude       0.00      0.00      0.00         0
-            region       0.33      0.10      0.15        10
-   soilBulkDensity       1.00      1.00      1.00         1
-         soilDepth       0.00      0.00      0.00         0
- soilOrganicCarbon       0.00      0.00      0.00         8
-soilReferenceGroup       0.00      0.00      0.00         0
-         startTime       0.76      0.57      0.65        23
+                 city       0.80      0.80      0.80         5
+              country       1.00      0.38      0.56        13
+          cropSpecies       0.67      0.22      0.33        27
+             duration       1.00      0.17      0.29        12
+              endTime       0.57      0.22      0.32        18
+            longitude       0.00      0.00      0.00         0
+               region       0.25      0.10      0.14        10
+soilAvailableNitrogen       0.00      0.00      0.00         0
+      soilBulkDensity       1.00      1.00      1.00         1
+    soilOrganicCarbon       0.00      0.00      0.00         8
+   soilReferenceGroup       0.00      0.00      0.00         0
+            startTime       0.50      0.39      0.44        23
 
-         micro avg       0.70      0.39      0.50       117
-         macro avg       0.48      0.35      0.37       117
-      weighted avg       0.67      0.39      0.47       117
+            micro avg       0.59      0.27      0.37       117
+            macro avg       0.48      0.27      0.32       117
+         weighted avg       0.62      0.27      0.36       117
 
-Overall Accuracy: 0.9698103792415169
+Overall Accuracy: 0.967814371257485

@@ -1,8 +1,8 @@
 #!/bin/bash
-#SBATCH --partition=sgpu_devel
-#SBATCH --time=1:00:00
+#SBATCH --partition=sgpu_short
+#SBATCH --time=8:00:00
 #SBATCH --gpus=4
-#SBATCH --output=/home/s27mhusa_hpc/Master-Thesis/Output-FineTune-Document/finetune_gpu_Llama3.1-8B-Instruct_Document_job_%j_30_July.out
+#SBATCH --output=/home/s27mhusa_hpc/Master-Thesis/Output-FineTune-Document-11August/finetune_gpu_Llama-3.1-8B_Instruct_Document_job_%j_11_August.out
 
 MODEL_NAME=$1
 
@@ -12,13 +12,13 @@ module load CUDA/12.6.0
 source ~/.bashrc
 conda init
 conda deactivate 
-conda activate Llama
+conda activate autotrain
 
 # Record start time
 start_time=$(date +%s)
 
 # === Begin Resource Monitoring ===
-LOG_DIR="/home/s27mhusa_hpc/Master-Thesis/Output-FineTune-Document/job_monitor_logs_${MODEL_NAME}_${SLURM_JOB_ID}_$(date +%Y%m%d_%H%M%S)"
+LOG_DIR="/home/s27mhusa_hpc/Master-Thesis/Output-FineTune-Document-11August/job_monitor_logs_${MODEL_NAME}_${SLURM_JOB_ID}_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$LOG_DIR"
 INTERVAL=1
 

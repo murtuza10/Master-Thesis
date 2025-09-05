@@ -1,14 +1,14 @@
 #!/bin/bash
-#SBATCH --partition=sgpu_medium
-#SBATCH --time=24:00:00
-#SBATCH --gpus=4
-#SBATCH --output=/home/s27mhusa_hpc/Master-Thesis/Output-29July-ZeroShotPrompting/gpu_job_TestFiles_%j_29July.out
+#SBATCH --partition=mlgpu_devel
+#SBATCH --time=1:00:00
+#SBATCH --gpus=1
+#SBATCH --output=/home/s27mhusa_hpc/Master-Thesis/Output-23thAugust-DeepSeek/gpu_job_TestFiles_%j_23thAugust.out
 
 MODEL_NAME=$1
 
 INPUT_DIR="/home/s27mhusa_hpc/Master-Thesis/Text_Files_For_LLM_Input"
-OUTPUT_DIR="/home/s27mhusa_hpc/Master-Thesis/Results/Results_TestFiles_29July/LLM_annotated_${MODEL_NAME}"
-OUTPUT_DIR_JSON="/home/s27mhusa_hpc/Master-Thesis/Results/Results_TestFiles_29July_json/LLM_annotated_${MODEL_NAME}"
+OUTPUT_DIR="/home/s27mhusa_hpc/Master-Thesis/Results/Results_TestFiles_23thAugust_DeepSeek/LLM_annotated_${MODEL_NAME}"
+OUTPUT_DIR_JSON="/home/s27mhusa_hpc/Master-Thesis/Results/Results_TestFiles_23thAugust_DeepSeek_json/LLM_annotated_${MODEL_NAME}"
 MODEL_PATH="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/${MODEL_NAME}"
 
 module load CUDA/12.6.0
@@ -24,7 +24,7 @@ conda activate Llama
 start_time=$(date +%s)
 
 # === Begin Resource Monitoring ===
-LOG_DIR="/home/s27mhusa_hpc/Master-Thesis/Output-29July-ZeroShotPrompting/job_monitor_logs_TestFiles${MODEL_NAME}_$(date +%Y%m%d_%H%M%S)"
+LOG_DIR="/home/s27mhusa_hpc/Master-Thesis/Output-23thAugust-DeepSeek/job_monitor_logs_TestFiles${MODEL_NAME}_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$LOG_DIR"
 INTERVAL=1
 
@@ -57,7 +57,7 @@ echo $CPU_PID >> "$LOG_DIR/pids.txt"
 echo $IO_PID >> "$LOG_DIR/pids.txt"
 
 # === Run Main Script ===
-python /home/s27mhusa_hpc/Master-Thesis/Zero-Shot-Prompting/NER_Prompting_chat_deepseekV3.py \
+python /home/s27mhusa_hpc/Master-Thesis/Zero-Shot-Prompting/NER_Prompting_chat_deepseekV3-5.py \
   --input_dir "$INPUT_DIR" \
   --output_dir "$OUTPUT_DIR" \
   --output_dir_json "$OUTPUT_DIR_JSON" \

@@ -108,7 +108,7 @@ def main():
     # input_text_dir = "/home/s27mhusa_hpc/Master-Thesis/Text_Files_For_LLM_Input"
     # input_annot_dir = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_new_prompt/LLM_annotated_{model_name}"
     # input_annot_dir_json = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_new_prompt_json/LLM_annotated_{model_name}"
-    xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/XMI_Files"
+    xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/Test_XMI_Files"
     evaluate_all(model_name,
         args.input_dir,
         args.output_dir,

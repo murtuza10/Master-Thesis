@@ -2,14 +2,14 @@
 #SBATCH --partition=sgpu_medium
 #SBATCH --time=24:00:00
 #SBATCH --gpus=4
-#SBATCH --output=/home/s27mhusa_hpc/Master-Thesis/Output-FineTune-Document/gpu_job_Prompting_Llama3.1-8B-Instruct_Document_%j_30-7-2025.out
+#SBATCH --output=/home/s27mhusa_hpc/Master-Thesis/Output-FineTune-Document-12Aug-Prompting/gpu_job_FineTune_Prompting_Document_%j_12-8-2025.out
 
 MODEL_NAME=$1
 
-JSONL_PATH="/home/s27mhusa_hpc/Master-Thesis/Fine-tune-LLM-Document/Test_ner_dataset_document_input_output.jsonl"
-OUTPUT_PRED="/home/s27mhusa_hpc/Master-Thesis/LLM-Predictions-Document/Test_predictions_Llama3.1-8B-Instruct-Document.jsonl"
-OUTPUT_GOLD="/home/s27mhusa_hpc/Master-Thesis/LLM-Predictions-Document/Test_gold_Llama3.1-8B-Instruct-Document.jsonl"
-MODEL_PATH="/home/s27mhusa_hpc/Master-Thesis/Fine-tune-LLM-Document/autotrain-Llama-3-1-8B-Instruct-Document-30-July"
+JSONL_PATH="/home/s27mhusa_hpc/Master-Thesis/Dataset-25-July-Document-Level/Test_ner_dataset_document_input_output.jsonl"
+OUTPUT_PRED="/home/s27mhusa_hpc/Master-Thesis/LLM-Predictions-Document-12Aug/Test_predictions_${MODEL_NAME}-Document.jsonl"
+OUTPUT_GOLD="/home/s27mhusa_hpc/Master-Thesis/LLM-Predictions-Document-12Aug/Test_gold_${MODEL_NAME}-Document.jsonl"
+MODEL_PATH="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/${MODEL_NAME}"
 
 module load CUDA/12.6.0
 module load sysstat
@@ -18,13 +18,13 @@ module load sysstat
 source ~/.bashrc
 conda init
 conda deactivate 
-conda activate Llama
+conda activate autotrain
 
 # Record start time
 start_time=$(date +%s)
 
 # === Begin Resource Monitoring ===
-LOG_DIR="/home/s27mhusa_hpc/Master-Thesis/Output-29July-ZeroShotPrompting/job_monitor_logs_OpenAgrar${MODEL_NAME}_$(date +%Y%m%d_%H%M%S)"
+LOG_DIR="/home/s27mhusa_hpc/Master-Thesis/Output-FineTune-Document-12Aug-Prompting/job_monitor_logs_${MODEL_NAME}_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$LOG_DIR"
 INTERVAL=30
 
@@ -63,7 +63,7 @@ python /home/s27mhusa_hpc/Master-Thesis/Zero-Shot-Prompting/NER_Prompting_generi
   --output_gold "$OUTPUT_GOLD" \
   --model_name "$MODEL_NAME" \
   --model_path "$MODEL_PATH" \
-  --max_length 1512
+  --max_length 2048
 
 # === Stop Resource Monitoring ===
 echo "Stopping resource monitoring..."

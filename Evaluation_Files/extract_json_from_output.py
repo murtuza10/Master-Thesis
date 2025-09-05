@@ -3,6 +3,12 @@ import regex
 import json
 import os
 
+
+def decode_escape_sequences(text):
+    """Decode escape sequences like \\n to actual newlines"""
+    return text.encode().decode('unicode_escape')
+
+
 def extract_json_block_from_directory(input_dir, output_dir, model_name, start):
     import os, json
 
@@ -46,9 +52,25 @@ def extract_json_block_from_directory(input_dir, output_dir, model_name, start):
                 # Extract the JSON block
                 json_block = cleaned_content[json_start:json_end].strip()
                 
+                # Decode escape sequences
+                json_block = decode_escape_sequences(json_block)
+                
                 # Save the extracted JSON block
-                with open(output_file, "w", encoding="utf-8") as out:
-                    out.write(json_block)
+                # with open(output_file, "w", encoding="utf-8") as out:
+                #     out.write(json_block)
+                
+                                # OPTION 2: Parse and save pretty-printed JSON (uncomment if you want formatted output)
+                try:
+                    parsed_json = json.loads(json_block)
+                    formatted_json = json.dumps(parsed_json, indent=2, ensure_ascii=False)
+                    with open(output_file, "w", encoding="utf-8") as out:
+                        out.write(formatted_json)
+                except json.JSONDecodeError as e:
+                    print(f"⚠️ Invalid JSON in {filename}: {e}")
+                    # Fallback to raw content
+                    with open(output_file, "w", encoding="utf-8") as out:
+                        out.write(json_block)
+
 
                 print(f"✅ Processed: {filename}")
 
