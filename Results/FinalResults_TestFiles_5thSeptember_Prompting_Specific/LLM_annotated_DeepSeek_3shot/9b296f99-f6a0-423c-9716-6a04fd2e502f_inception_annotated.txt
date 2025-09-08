@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757083135-PoiEOknJo9IKG6H6gtfN",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757083135,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"winter wheat\", \"span\": [494, 506] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [508, 521] }},\n    {\"cropSpecies\": { \"value\": \"sugar beet\", \"span\": [527, 537] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [1297, 1310] }},\n    {\"cropSpecies\": { \"value\": \"sugar beet\", \"span\": [1315, 1325] }}\n  ],\n  \"Soil\": [\n    {\"soilTexture\": { \"value\": \"humus\", \"span\": [240, 245] }},\n    {\"soilReferenceGroup\": { \"value\": \"soil fertility\", \"span\": [300, 314] }}\n  ],\n  \"Location\": [\n    {\"city\": { \"value\": \"Speyer\", \"span\": [31, 37] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [39, 46] }},\n    {\"city\": { \"value\": \"Speyer\", \"span\": [91, 97] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [99, 106] }},\n    {\"city\": { \"value\": \"Speyer\", \"span\": [1027, 1033] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [1035, 1042] }},\n    {\"city\": { \"value\": \"Karlsruhe\", \"span\": [902, 911] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1984\", \"span\": [489, 493] }},\n    {\"startTime\": { \"value\": \"2009\", \"span\": [865, 869] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 2732,
+    "completion_tokens": 428,
+    "total_tokens": 3160
+  }
+}

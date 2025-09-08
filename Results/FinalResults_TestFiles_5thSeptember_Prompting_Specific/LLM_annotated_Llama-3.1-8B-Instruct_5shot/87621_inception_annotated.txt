@@ -1,0 +1,25 @@
+### Output JSON Format ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [59, 64]}},
+    {"cropSpecies": {"value": "barley", "span": [246, 251]}},
+    {"cropSpecies": {"value": "barley", "span": [261, 266]}},
+    {"cropSpecies": {"value": "barley", "span": [282, 287]}},
+    {"cropSpecies": {"value": "barley", "span": [296, 301]}},
+    {"cropSpecies": {"value": "barley", "span": [314, 319]}},
+    {"cropSpecies": {"value": "barley", "span": [330, 335]}},
+    {"cropSpecies": {"value": "barley", "span": [344, 349]}},
+    {"cropSpecies": {"value": "barley", "span": [355, 360]}},
+    {"cropSpecies": {"value": "barley", "span": [368, 373]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Output JSON Format Explanation ###
+
+The provided input text does not contain any information about soil, location, or time-related entities. However, it does contain information about barley, which is a crop. Therefore, the JSON output includes a list of crop species entities, each with a value and a span. The span represents the start and end character positions from the beginning of the full text.

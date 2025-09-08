@@ -1,0 +1,53 @@
+### Output JSON ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Drosophila suzukii", "span": [56, 72] }},
+    {"cropSpecies": { "value": "D. melanogaster", "span": [82, 95] }},
+    {"cropSpecies": { "value": "Drosophila suzukii", "span": [142, 158] }},
+    {"cropSpecies": { "value": "D. melanogaster", "span": [162, 175] }},
+    {"cropSpecies": { "value": "Drosophila suzukii", "span": [211, 227] }},
+    {"cropSpecies": { "value": "D. melanogaster", "span": [231, 244] }},
+    {"cropSpecies": { "value": "Drosophila suzukii", "span": [279, 295] }},
+    {"cropSpecies": { "value": "D. melanogaster", "span": [299, 312] }},
+    {"cropSpecies": { "value": "Drosophila suzukii", "span": [349, 365] }},
+    {"cropSpecies": { "value": "D. melanogaster", "span": [369, 382] }},
+    {"cropSpecies": { "value": "Drosophila suzukii", "span": [418, 434] }},
+    {"cropSpecies": { "value": "D. melanogaster", "span": [438, 451] }},
+    {"cropSpecies": { "value": "Drosophila suzukii", "span": [488, 504] }},
+    {"cropSpecies": { "value": "D. melanogaster", "span": [508, 521] }},
+    {"cropSpecies": { "value": "Drosophila suzukii", "span": [557, 573] }},
+    {"cropSpecies": { "value": "D. melanogaster", "span": [577, 590] }},
+    {"cropSpecies": { "value": "Drosophila suzukii", "span": [626, 642] }},
+    {"cropSpecies": { "value": "D. melanogaster", "span": [646, 659] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": { "value": "vineyard", "span": [134, 142] }},
+    {"region": { "value": "vineyard", "span": [242, 250] }},
+    {"region": { "value": "vineyard", "span": [292, 300] }},
+    {"region": { "value": "vineyard", "span": [384, 392] }},
+    {"region": { "value": "vineyard", "span": [436, 444] }},
+    {"region": { "value": "vineyard", "span": [494, 502] }},
+    {"region": { "value": "vineyard", "span": [556, 564] }},
+    {"region": { "value": "vineyard", "span": [628, 636] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2017", "span": [177, 181] }},
+    {"endTime": { "value": "2017", "span": [184, 188] }},
+    {"duration": { "value": "three weeks", "span": [206, 215] }},
+    {"startTime": { "value": "30.8.2017", "span": [233, 241] }},
+    {"endTime": { "value": "20.9.2017", "span": [240, 248] }},
+    {"startTime": { "value": "6.9.2017", "span": [259, 267] }},
+    {"endTime": { "value": "25.9.2017", "span": [266, 274] }},
+    {"startTime": { "value": "24.8.2018", "span": [316, 324] }},
+    {"endTime": { "value": "13.9.2018", "span": [323, 331] }},
+    {"startTime": { "value": "31.8.2018", "span": [342, 350] }},
+    {"endTime": { "value": "20.9.2018", "span": [349, 357] }},
+    {"startTime": { "value": "29.8.2018", "span": [378, 386] }},
+    {"endTime": { "value": "12.9.2018", "span": [385, 393] }},
+    {"startTime": { "value": "4.9.2018", "span": [404, 412] }},
+    {"endTime": { "value": "29.9.2018", "span": [411, 419] }}
+  ]
+}
+```

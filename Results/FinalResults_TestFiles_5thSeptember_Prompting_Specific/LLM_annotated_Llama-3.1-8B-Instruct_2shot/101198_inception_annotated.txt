@@ -1,0 +1,18 @@
+### JSON Output ###
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2020", "span": [1145, 1148]}},
+    {"endTime": {"value": "2050", "span": [1305, 1308]}},
+    {"duration": {"value": "30", "span": [1309, 1311]}}
+  ]
+}
+```
+
+### Explanation ###
+- The JSON output contains only the "Time Statement" category, as it's the only category mentioned in the text.
+- The "startTime" value is "2020" (character positions 1145-1148), and the "endTime" value is "2050" (character positions 1305-1308).
+- The duration is not explicitly mentioned in the text, but we can infer it from the context. The text mentions that the model simulates the period from 2020 to 2050, which is a duration of 30 years. Therefore, we added the "duration" value as "30" (character positions 1309-1311).

@@ -1,0 +1,18 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "apple", "span": [128, 133]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": {"value": "Lower Saxony", "span": [141, 152]}},
+    {"city": {"value": "Germany", "span": [154, 161]}},
+    {"region": {"value": "Altes Land", "span": [165, 175]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2001", "span": [188, 192]}},
+    {"endTime": {"value": "2003", "span": [201, 205]}}
+  ]
+}
+```

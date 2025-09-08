@@ -1,0 +1,30 @@
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Mais", "span": [85, 89]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "Parabraunerde", "span": [145, 158]}},
+    {"soilTexture": {"value": "Löss", "span": [163, 167]}},
+    {"soilDepth": {"value": "28 cm", "span": [193, 198]}},
+    {"soilBulkDensity": {"value": "", "span": [0, 0]}}  // no mention of soil bulk density
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2017", "span": [122, 126]}}
+  ]
+}
+```
+
+### Explanation ###
+The JSON structure has been filled based on the input text. The following entities have been extracted:
+
+- **Crops**: Only "Mais" (corn) is mentioned, which is a crop species.
+- **Soil**: Several soil-related entities have been extracted:
+  - "Parabraunerde" is a soil reference group.
+  - "Löss" is a soil texture.
+  - "28 cm" is a soil depth.
+  - Note that "soil bulk density" is not mentioned in the text, so it is included with an empty string as its value.
+- **Location**: No location-related entities are mentioned in the text.
+- **Time Statement**: The start time "2017" is mentioned, indicating the year when the experiment took place.

@@ -1,0 +1,21 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "rye", "span": [122, 125]}},
+    {"cropSpecies": {"value": "rye", "span": [186, 189]}},
+    {"cropSpecies": {"value": "Secale cereale L.", "span": [186, 203]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": {"value": "Northern Europe", "span": [143, 157]}}
+  ],
+  "Time Statement": []
+}
+```
+
+### Explanation ###
+- **Crops**: We found three mentions of "rye" which is the species name. The species name was annotated as "Secale cereale L." in the abstract.
+- **Soil**: There is no mention of soil in the abstract.
+- **Location**: The region "Northern Europe" was mentioned in the abstract.
+- **Time Statement**: There is no mention of time in the abstract.

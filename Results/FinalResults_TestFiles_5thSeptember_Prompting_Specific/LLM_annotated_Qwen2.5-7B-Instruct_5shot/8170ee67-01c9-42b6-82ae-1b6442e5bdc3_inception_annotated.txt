@@ -1,0 +1,33 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "winter barley", "span": [46, 54]}},
+    {"cropSpecies": { "value": "winter oilseed rape", "span": [87, 98]}},
+    {"cropSpecies": { "value": "winter wheat", "span": [99, 107]}},
+    {"cropSpecies": { "value": "lupine", "span": [108, 113]}},
+    {"cropSpecies": { "value": "winter rye", "span": [114, 121]}},
+    {"cropSpecies": { "value": "Hordeum vulgare L.", "span": [188, 199]}},
+    {"cropVariety": { "value": "OTTO", "span": [202, 206]}}
+  ],
+  "Soil": [
+    {"soilClass": { "value": "soil class A", "span": [318, 329]}},
+    {"soilClass": { "value": "soil class B", "span": [330, 341]}},
+    {"soilClass": { "value": "soil class C", "span": [342, 353]},
+    {"soilDepth": { "value": "25 cm", "span": [361, 366]},
+    {"soilPH": { "value": "PCAL", "span": [422, 425]},
+    {"soilOrganicCarbon": { "value": "11 mg kg-1 PCAL", "span": [447, 460]},
+    {"soilOrganicCarbon": { "value": "21 mg kg-1 PCAL", "span": [461, 474]},
+    {"soilOrganicCarbon": { "value": "47 mg kg-1 PCAL", "span": [475, 488]}
+  ],
+  "Location": [
+    {"city": { "value": "Braunschweig", "span": [19, 28]}}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2013", "span": [301, 305]}},
+    {"startTime": { "value": "autumn 2013", "span": [385, 393]}},
+    {"startTime": { "value": "2014", "span": [492, 496]},
+    {"endTime": { "value": "2014", "span": [492, 496]},
+    {"duration": { "value": "1 year", "span": [394, 399]}
+  ]
+}
+```

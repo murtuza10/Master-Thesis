@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757082575-bZhxrIroy7EkKHHKgwZm",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757082575,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"winter barley\", \"span\": [48, 61]}},\n    {\"cropSpecies\": {\"value\": \"oat\", \"span\": [1124, 1127]}},\n    {\"cropSpecies\": {\"value\": \"winter barley\", \"span\": [1312, 1325]}},\n    {\"cropSpecies\": {\"value\": \"winter oilseed rape\", \"span\": [1336, 1355]}},\n    {\"cropSpecies\": {\"value\": \"winter wheat\", \"span\": [1357, 1369]}},\n    {\"cropSpecies\": {\"value\": \"lupine\", \"span\": [1371, 1377]}},\n    {\"cropSpecies\": {\"value\": \"winter rye\", \"span\": [1382, 1392]}},\n    {\"cropSpecies\": {\"value\": \"winter barley\", \"span\": [1695, 1708]}},\n    {\"cropVariety\": {\"value\": \"OTTO\", \"span\": [1729, 1733]}}\n  ],\n  \"Soil\": [\n    {\"soilDepth\": {\"value\": \"25 cm\", \"span\": [1129, 1134]}},\n    {\"soilDepth\": {\"value\": \"0-30 cm\", \"span\": [1486, 1493]}}\n  ],\n  \"Location\": [\n    {\"city\": {\"value\": \"Braunschweig\", \"span\": [26, 38]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2014\", \"span\": [62, 66]}},\n    {\"startTime\": {\"value\": \"1985\", \"span\": [828, 832]}},\n    {\"endTime\": {\"value\": \"2008\", \"span\": [833, 837]}},\n    {\"startTime\": {\"value\": \"2013\", \"span\": [1036, 1040]}},\n    {\"endTime\": {\"value\": \"2013\", \"span\": [1060, 1064]}},\n    {\"startTime\": {\"value\": \"2014\", \"span\": [1710, 1714]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 2363,
+    "completion_tokens": 480,
+    "total_tokens": 2843
+  }
+}

@@ -1,0 +1,23 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "C4", "span": [62, 65]}},
+    {"cropSpecies": {"value": "C3", "span": [121, 123]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "C3 soil", "span": [121, 128]}},
+    {"soilTexture": {"value": "particulate organic carbon (POC)", "span": [176, 205]}},
+    {"soilTexture": {"value": "mineral associated organic carbon (MAOC)", "span": [206, 239]}},
+    {"soilDepth": {"value": "6", "span": [143, 144]}},
+    {"soilDepth": {"value": "12", "span": [149, 151]}},
+    {"soilDepth": {"value": "24", "span": [157, 159]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2", "span": [7, 8]}}
+  ]
+}
+```
+Note: Since the text does not contain information about a specific location, city, latitude, longitude, country, region, or longitude, these categories in the JSON output are left empty.

@@ -1,0 +1,27 @@
+### Output Format ###
+
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "soils", "span": [146, 150]}},
+    {"soilReferenceGroup": {"value": "soil properties", "span": [112, 125]}},
+    {"soilDepth": {"value": "1396 individual sites", "span": [135, 147]}},
+    {"soilDepth": {"value": "587 sites", "span": [213, 219]}},
+    {"soilBulkDensity": {"value": "RothC model results", "span": [204, 219]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Explanation ###
+
+Based on the input text, the following entities were identified:
+
+* "soils" and "soil properties" were identified as soilReferenceGroup entities.
+* "1396 individual sites" and "587 sites" were identified as soilDepth entities, as they refer to the number of sites.
+* "RothC model results" was identified as soilBulkDensity entity, as it refers to the density of the model results.
+* No crops were mentioned in the text.
+* No location was mentioned in the text.
+* No time statement was mentioned in the text.

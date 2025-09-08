@@ -1,0 +1,33 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [243, 247]}},
+    {"cropSpecies": {"value": "barley", "span": [255, 259]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [261, 268]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "IOSDV", "span": [5, 9]}},
+    {"soilReferenceGroup": {"value": "LUFA Speyer", "span": [141, 152]}},
+    {"soilTexture": {"value": "farmyard manure", "span": [221, 233]}},
+    {"soilTexture": {"value": "crop residues", "span": [234, 242]}},
+    {"soilDepth": {"value": "3 field replicates", "span": [311, 321]}},
+    {"soilDepth": {"value": "6 treatment combinations", "span": [324, 336]}},
+    {"soilBulkDensity": {"value": "72 samples", "span": [340, 346]}},
+    {"soilBulkDensity": {"value": "4 sampling seasons", "span": [349, 357]}},
+    {"soilPH": {"value": "VDLUFA", "span": [186, 190]}},
+    {"soilPH": {"value": "DIN guidelines", "span": [193, 200]}},
+    {"soilOrganicCarbon": {"value": "amplicon sequencing", "span": [278, 291]}},
+    {"soilAvailableNitrogen": {"value": "mineral fertilization", "span": [220, 232]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [12, 18]}},
+    {"region": {"value": "Speyer", "span": [19, 25]}},
+    {"city": {"value": "Speyer", "span": [19, 25]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1984", "span": [127, 131]}}
+  ]
+}
+```
+Note: The indices in the `"span"` key represent the character positions in the text, starting from the beginning of the full text.

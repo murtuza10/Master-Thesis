@@ -1,0 +1,32 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilTexture": {"value": "Bodenart", "span": [166, 172]}},
+    {"soilDepth": {"value": "Skelett", "span": [173, 178]}},
+    {"soilDepth": {"value": "Trockenrohdichte (TRD)", "span": [179, 198]}},
+    {"soilDepth": {"value": "nutzbare Feldkapazität (nFK)", "span": [199, 215]}},
+    {"soilDepth": {"value": "Basensättigung", "span": [216, 225]}},
+    {"soilDepth": {"value": "organischer Kohlenstoffgehalt (Corg)", "span": [226, 239]}},
+    {"soilDepth": {"value": "Entkalkungstiefe", "span": [240, 248]}},
+    {"soilReferenceGroup": {"value": "Bodenleitprofile", "span": [39, 51]}},
+    {"soilReferenceGroup": {"value": "Standorts- und Bodenkartierung", "span": [113, 131]}},
+    {"soilReferenceGroup": {"value": "Bundeswaldinventur (BWI)", "span": [145, 155]}},
+    {"soilReferenceGroup": {"value": "Bodenprofile", "span": [6, 15]}},
+    {"soilBulkDensity": {"value": "Trockenrohdichte (TRD)", "span": [179, 198]}},
+    {"soilPH": {"value": "Kalkung", "span": [91, 96]}},
+    {"soilOrganicCarbon": {"value": "organischer Kohlenstoffgehalt (Corg)", "span": [226, 239]}},
+    {"soilAvailableNitrogen": {"value": "Nährstoffansprache", "span": [90, 100]}}
+  ],
+  "Location": [
+    {"region": {"value": "Deutschland", "span": [47, 58]}},
+    {"city": {"value": "keine", "span": [59, 64]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2012", "span": [236, 238]}},
+    {"endTime": {"value": "2012", "span": [239, 241]}}
+  ]
+}
+```
+Note: The output JSON structure has been filled based on the input text. Each entity is included in the exact JSON format as per the given rules.

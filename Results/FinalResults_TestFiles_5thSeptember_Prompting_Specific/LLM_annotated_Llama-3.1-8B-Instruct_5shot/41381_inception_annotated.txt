@@ -1,0 +1,24 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [170, 183]}},
+    {"cropSpecies": {"value": "apple", "span": [541, 545]}},
+    {"cropSpecies": {"value": "grape", "span": [571, 576]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [83, 91]}},
+    {"region": {"value": "southwest Germany", "span": [143, 156]}},
+    {"city": {"value": "Dossenheim", "span": [383, 391]}},
+    {"city": {"value": "Siebeldingen", "span": [398, 406]}},
+    {"city": {"value": "Darmstadt", "span": [429, 437]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2011", "span": [121, 125]}},
+    {"endTime": {"value": "February 2018", "span": [236, 251]}}
+  ]
+}
+```
+Note: The span is based on the character positions from the beginning of the full text.

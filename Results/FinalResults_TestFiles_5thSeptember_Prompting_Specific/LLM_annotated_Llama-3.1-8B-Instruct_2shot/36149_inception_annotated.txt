@@ -1,0 +1,28 @@
+### Output JSON Structure Filled with Extracted Entities ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "energy crop", "span": [43, 52] }},
+    {"cropVariety": { "value": "crops", "span": [115, 120] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "soil emissions", "span": [25, 38] }},
+    {"soilTexture": { "value": "soil", "span": [29, 32] }},
+    {"soilDepth": { "value": "soil", "span": [83, 86] }},
+    {"soilBulkDensity": { "value": "bulk density", "span": [117, 129] }},
+    {"soilPH": { "value": "soil", "span": [83, 86] }},
+    {"soilOrganicCarbon": { "value": "C content", "span": [103, 110] }},
+    {"soilAvailableNitrogen": { "value": "N content", "span": [91, 98] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [54, 63] }},
+    {"region": { "value": "Germany", "span": [54, 63] }},
+    {"city": { "value": "Germany", "span": [54, 63] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2011/2012", "span": [65, 76] }},
+    {"endTime": { "value": "2014/2015", "span": [88, 99] }}
+  ]
+}
+```
+Note that some entities may have the same span because the text does not explicitly mention them separately.

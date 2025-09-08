@@ -1,0 +1,27 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "winter wheat", "span": [213, 223]}},
+    {"cropSpecies": {"value": "winter barley", "span": [229, 238]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [246, 255]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "ploughing", "span": [272, 281]}},
+    {"soilTexture": {"value": "long-term source", "span": [111, 123]}},
+    {"soilReferenceGroup": {"value": "farmyard manure", "span": [167, 180]}},
+    {"soilReferenceGroup": {"value": "crop residues", "span": [195, 206]}},
+    {"soilReferenceGroup": {"value": "catch crop", "span": [211, 219]}},
+    {"soilBulkDensity": {"value": "mineral fertilizer", "span": [141, 155]}}
+  ],
+  "Location": [
+    {"city": {"value": "Speyer", "span": [23, 29]}},
+    {"country": {"value": "Germany", "span": [35, 43]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1984", "span": [179, 183]}},
+    {"endTime": {"value": "2009", "span": [445, 449]}}
+  ]
+}
+```
+Note: The `span` values are based on the character positions in the original text.

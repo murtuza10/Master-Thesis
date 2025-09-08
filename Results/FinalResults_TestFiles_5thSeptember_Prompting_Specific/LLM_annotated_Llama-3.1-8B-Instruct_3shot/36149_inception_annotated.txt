@@ -1,0 +1,32 @@
+### Filled JSON Structure ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "energy crop", "span": [134, 142]}},
+    {"cropSpecies": {"value": "crops", "span": [242, 247]}},
+    {"cropSpecies": {"value": "crops", "span": [276, 280]}},
+    {"cropVariety": {"value": "energy crop", "span": [133, 141]}}
+  ],
+  "Soil": [
+    {"soilTexture": {"value": "soil", "span": [176, 179]}},
+    {"soilReferenceGroup": {"value": "soil", "span": [179, 182]}},
+    {"soilDepth": {"value": "bulk density", "span": [206, 213]}},
+    {"soilBulkDensity": {"value": "bulk density", "span": [206, 213]}},
+    {"soilPH": {"value": "nitrogen content", "span": [196, 207]}},
+    {"soilOrganicCarbon": {"value": "C content", "span": [229, 233]}},
+    {"soilAvailableNitrogen": {"value": "N content", "span": [234, 238]}},
+    {"soilAvailableNitrogen": {"value": "N content", "span": [238, 241]}},
+    {"soilAvailableNitrogen": {"value": "N and C content", "span": [245, 253]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [81, 90]}},
+    {"region": {"value": "Germany", "span": [81, 90]}},
+    {"city": {"value": "Germany", "span": [81, 90]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2011/2012", "span": [91, 101]}},
+    {"endTime": {"value": "2014/2015", "span": [102, 112]}}
+  ]
+}
+```

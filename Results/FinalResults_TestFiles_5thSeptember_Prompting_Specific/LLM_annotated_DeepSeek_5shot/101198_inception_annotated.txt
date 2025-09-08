@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757083520-QLwZEpFz4zZyUHaJ59Sa",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757083520,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [2201, 2208]}}\n  ],\n  \"Time Statement\": [\n    {\"endTime\": {\"value\": \"2050\", \"span\": [625, 629]}},\n    {\"endTime\": {\"value\": \"2050\", \"span\": [1021, 1025]}},\n    {\"startTime\": {\"value\": \"2020\", \"span\": [1426, 1430]}},\n    {\"endTime\": {\"value\": \"2050\", \"span\": [1434, 1438]}},\n    {\"endTime\": {\"value\": \"2023\", \"span\": [1691, 1695]}},\n    {\"endTime\": {\"value\": \"2023\", \"span\": [1811, 1815]}},\n    {\"endTime\": {\"value\": \"2020\", \"span\": [1863, 1867]}},\n    {\"endTime\": {\"value\": \"2023\", \"span\": [2017, 2021]}},\n    {\"endTime\": {\"value\": \"2024\", \"span\": [2094, 2098]}},\n    {\"endTime\": {\"value\": \"2023\", \"span\": [2165, 2169]}},\n    {\"endTime\": {\"value\": \"2028\", \"span\": [2172, 2176]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5657,
+    "completion_tokens": 317,
+    "total_tokens": 5974,
+    "prompt_tokens_details": null
+  }
+}

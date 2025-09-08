@@ -1,0 +1,29 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Möhre", "span": [121, 126]}},
+    {"cropSpecies": {"value": "Salat", "span": [130, 134]}},
+    {"cropSpecies": {"value": "Apfel", "span": [138, 142]}},
+    {"cropSpecies": {"value": "Erdbeere", "span": [145, 153]}},
+    {"cropSpecies": {"value": "Erdbeere", "span": [183, 191]}},
+    {"cropSpecies": {"value": "Himbeere", "span": [194, 200]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+### Explanation ###
+From the input text, we can extract the following entities:
+
+*   Crops:
+    *   Möhre (carrot)
+    *   Salat (lettuce)
+    *   Apfel (apple)
+    *   Erdbeere (strawberry)
+    *   Erdbeere (strawberry) - This is a duplicate mention, so it's included in the list
+    *   Himbeere (raspberry)
+*   Soil: There are no mentions of soil-related entities in the text.
+*   Location: There are no mentions of location-related entities in the text.
+*   Time Statement: There are no mentions of time-related entities in the text.

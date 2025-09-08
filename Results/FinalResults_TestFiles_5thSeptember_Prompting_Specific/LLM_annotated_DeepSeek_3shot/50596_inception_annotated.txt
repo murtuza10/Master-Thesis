@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757082959-7bdPeMTl37nW8y4DNb8f",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757082959,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [104, 110] }},\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [223, 229] }},\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [1279, 1285] }},\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [1515, 1521] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2017\", \"span\": [815, 821] }},\n    {\"startTime\": { \"value\": \"2018\", \"span\": [824, 828] }},\n    {\"startTime\": { \"value\": \"30.8.2017\", \"span\": [1262, 1271] }},\n    {\"startTime\": { \"value\": \"6.9.2017\", \"span\": [1276, 1283] }},\n    {\"endTime\": { \"value\": \"20.9.2017\", \"span\": [1301, 1310] }},\n    {\"endTime\": { \"value\": \"25.9.2017\", \"span\": [1315, 1323] }},\n    {\"startTime\": { \"value\": \"24.8.2018\", \"span\": [1498, 1507] }},\n    {\"startTime\": { \"value\": \"31.8.2018\", \"span\": [1512, 1520] }},\n    {\"endTime\": { \"value\": \"13.9.2018\", \"span\": [1543, 1552] }},\n    {\"endTime\": { \"value\": \"20.9.2018\", \"span\": [1557, 1565] }},\n    {\"startTime\": { \"value\": \"29.8.2018\", \"span\": [1688, 1697] }},\n    {\"startTime\": { \"value\": \"4.9.2018\", \"span\": [1702, 1709] }},\n    {\"endTime\": { \"value\": \"12.9.2018\", \"span\": [1771, 1780] }},\n    {\"endTime\": { \"value\": \"29.9.2018\", \"span\": [1785, 1793] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 2854,
+    "completion_tokens": 546,
+    "total_tokens": 3400
+  }
+}

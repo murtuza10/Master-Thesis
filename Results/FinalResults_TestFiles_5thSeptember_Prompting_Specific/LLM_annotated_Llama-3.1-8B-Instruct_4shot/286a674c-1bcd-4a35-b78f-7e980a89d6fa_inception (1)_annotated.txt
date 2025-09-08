@@ -1,0 +1,20 @@
+### Output JSON ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "winter wheat", "span": [164, 173]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [395, 401]}},
+    {"region": {"value": "Brandenburg", "span": [412, 421]}},
+    {"city": {"value": "Quillow", "span": [424, 431]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "April 2019", "span": [223, 235]}},
+    {"endTime": {"value": "June 2019", "span": [239, 251]}},
+    {"duration": {"value": "between April and June 2019", "span": [223, 251]}}
+  ]
+}
+```

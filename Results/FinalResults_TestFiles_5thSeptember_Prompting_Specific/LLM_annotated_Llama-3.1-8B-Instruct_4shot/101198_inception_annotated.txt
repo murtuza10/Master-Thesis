@@ -1,0 +1,48 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Explanation ###
+The provided text does not contain any information about crops, soil, or time-related entities, but it does mention the "nova-Institut" and "Thünen-Institut für Waldwirtschaft", which could be related to locations. However, since the text does not provide any specific information about locations, the location list remains empty.
+
+The text does mention specific years, such as 2020, 2023, 2024, 2025, and 2050, which could be related to time statements. However, since the text does not provide any specific information about time intervals or durations, the time statement list remains empty.
+
+### Output JSON Structure with time statements added manually ###
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2020", "span": [0, 5]}},
+    {"endTime": {"value": "2050", "span": [0, 6]}},
+    {"startTime": {"value": "2023", "span": [0, 7]}},
+    {"endTime": {"value": "2024", "span": [0, 8]}},
+    {"startTime": {"value": "2024", "span": [0, 9]}},
+    {"endTime": {"value": "2028", "span": [0, 10]}}
+  ]
+}
+```
+
+### Final Output ###
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2020", "span": [0, 5]}},
+    {"endTime": {"value": "2050", "span": [0, 6]}},
+    {"startTime": {"value": "2023", "span": [0, 7]}},
+    {"endTime": {"value": "2024", "span": [0, 8]}},
+    {"startTime": {"value": "2024", "span": [0, 9]}},
+    {"endTime": {"value": "2028", "span": [0, 10]}}
+  ]
+}
+```

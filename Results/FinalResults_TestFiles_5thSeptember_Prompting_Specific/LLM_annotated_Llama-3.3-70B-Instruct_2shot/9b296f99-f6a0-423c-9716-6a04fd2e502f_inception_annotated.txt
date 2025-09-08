@@ -1,0 +1,67 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "winter wheat", "span": [234, 246]}},
+    {"cropSpecies": {"value": "winter barley", "span": [247, 260]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [261, 271]}},
+    {"cropSpecies": {"value": "winter barley", "span": [405, 418]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [419, 429]}},
+    {"cropSpecies": {"value": "crop", "span": [456, 460]}},
+    {"cropSpecies": {"value": "catch crop", "span": [474, 485]}},
+    {"cropSpecies": {"value": "crop", "span": [529, 533]}},
+    {"cropSpecies": {"value": "crop plant", "span": [571, 582]}},
+    {"cropSpecies": {"value": "winter barley", "span": [593, 606]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [607, 617]}},
+    {"cropSpecies": {"value": "crop plant", "span": [629, 640]}},
+    {"cropSpecies": {"value": "crop", "span": [703, 707]}},
+    {"cropSpecies": {"value": "Nutzpflanzenproduktion", "span": [944, 963]}},
+    {"cropSpecies": {"value": "Fruchtfolge", "span": [964, 975]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "Boden", "span": [105, 110]}},
+    {"soilReferenceGroup": {"value": "Boden", "span": [976, 981]}},
+    {"soilTexture": {"value": "mineral", "span": [143, 149]}},
+    {"soilTexture": {"value": "mineral", "span": [194, 200]}},
+    {"soilTexture": {"value": "humus", "span": [155, 160]}},
+    {"soilTexture": {"value": "humus", "span": [221, 226]}},
+    {"soilBulkDensity": {"value": "bulk soil", "span": [537, 546]}},
+    {"soilPH": {"value": "fertility", "span": [208, 215]}},
+    {"soilOrganicCarbon": {"value": "organic", "span": [141, 147]}},
+    {"soilOrganicCarbon": {"value": "organic", "span": [192, 198]}},
+    {"soilOrganicCarbon": {"value": "Organic", "span": [831, 837]}},
+    {"soilOrganicCarbon": {"value": "organic", "span": [912, 918]}},
+    {"soilAvailableNitrogen": {"value": "nitrogen", "span": [199, 207]}},
+    {"soilAvailableNitrogen": {"value": "Nitrogen", "span": [850, 858]}},
+    {"soilAvailableNitrogen": {"value": "Stickstoffd체nger", "span": [925, 940]}},
+    {"soilAvailableNitrogen": {"value": "N채hrstoffgehalt", "span": [941, 955]}},
+    {"soilDepth": {"value": "long-term", "span": [259, 266]}},
+    {"soilDepth": {"value": "long-term", "span": [616, 623]}},
+    {"soilDepth": {"value": "Langzeitversuch", "span": [956, 969]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [97, 104]}},
+    {"city": {"value": "Speyer", "span": [87, 93]}},
+    {"country": {"value": "Germany", "span": [124, 131]}},
+    {"city": {"value": "Speyer", "span": [114, 120]}},
+    {"country": {"value": "Germany", "span": [344, 351]}},
+    {"city": {"value": "Karlsruhe", "span": [389, 398]}},
+    {"country": {"value": "Germany", "span": [463, 470]}},
+    {"city": {"value": "Speyer", "span": [471, 477]}},
+    {"country": {"value": "Germany", "span": [533, 540]}},
+    {"region": {"value": "LUFA Speyer", "span": [275, 286]}},
+    {"region": {"value": "LUFA Speyer", "span": [446, 457]}},
+    {"region": {"value": "LUFA Speyer", "span": [542, 553]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1984", "span": [282, 287]}},
+    {"startTime": {"value": "2009", "span": [360, 364]}},
+    {"startTime": {"value": "2017", "span": [819, 823]}},
+    {"endTime": {"value": "2009", "span": [360, 364]}},
+    {"duration": {"value": "three years", "span": [252, 263]}},
+    {"duration": {"value": "four sampling seasons", "span": [566, 585]}},
+    {"duration": {"value": "long-term", "span": [259, 266]}},
+    {"duration": {"value": "long-term", "span": [616, 623]}},
+    {"duration": {"value": "Langzeitversuch", "span": [956, 969]}}
+  ]
+}
+```

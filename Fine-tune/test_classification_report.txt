@@ -5,40 +5,40 @@ Token-level Classification Report:
 --------------------------------------------------
                precision    recall  f1-score   support
 
-       B-Soil       0.70      0.50      0.58        62
-       B-city       0.57      0.67      0.62        52
-    B-country       0.70      0.92      0.79        25
-B-cropSpecies       0.80      0.83      0.82       158
-   B-duration       0.30      0.52      0.38        33
-    B-endTime       0.86      0.55      0.67        66
-     B-region       0.53      0.43      0.48        37
-  B-startTime       0.64      0.78      0.71       109
-       I-Soil       0.87      0.63      0.73        41
-I-cropSpecies       0.62      0.82      0.71        73
-   I-duration       0.70      0.67      0.68        24
-    I-endTime       0.57      0.67      0.62         6
-     I-region       0.62      0.71      0.67         7
-  I-startTime       0.21      0.67      0.32         6
-            O       0.99      0.98      0.99     10576
+       B-Soil       0.65      0.48      0.55        69
+       B-city       0.56      0.90      0.69        39
+    B-country       0.79      0.92      0.85        25
+B-cropSpecies       0.86      0.85      0.85       193
+   B-duration       0.84      0.50      0.63        32
+    B-endTime       0.74      0.67      0.70        39
+     B-region       0.60      0.51      0.55        35
+  B-startTime       0.68      0.90      0.78        70
+       I-Soil       0.68      0.60      0.64        43
+I-cropSpecies       0.73      0.58      0.65        81
+   I-duration       0.76      0.88      0.81        32
+    I-endTime       0.00      0.00      0.00         5
+     I-region       0.31      0.71      0.43         7
+  I-startTime       0.14      0.50      0.22         6
+            O       0.99      0.99      0.99     13524
 
-     accuracy                           0.97     11275
-    macro avg       0.65      0.69      0.65     11275
- weighted avg       0.97      0.97      0.97     11275
+     accuracy                           0.98     14200
+    macro avg       0.62      0.67      0.62     14200
+ weighted avg       0.98      0.98      0.98     14200
 
 
 Entity-level Classification Report:
 --------------------------------------------------
               precision    recall  f1-score   support
 
-        Soil       0.66      0.50      0.57        62
-        city       0.57      0.67      0.62        52
-     country       0.70      0.92      0.79        25
- cropSpecies       0.76      0.80      0.78       158
-    duration       0.28      0.48      0.35        33
-     endTime       0.82      0.55      0.65        66
-      region       0.53      0.43      0.48        37
-   startTime       0.62      0.77      0.69       109
+        Soil       0.51      0.42      0.46        69
+        city       0.56      0.90      0.69        39
+     country       0.79      0.92      0.85        25
+ cropSpecies       0.82      0.82      0.82       193
+    duration       0.52      0.38      0.44        32
+     endTime       0.66      0.59      0.62        39
+      region       0.50      0.46      0.48        35
+   startTime       0.60      0.80      0.68        70
 
-   micro avg       0.64      0.68      0.66       542
-   macro avg       0.62      0.64      0.62       542
-weighted avg       0.66      0.68      0.66       542
+   micro avg       0.67      0.70      0.69       502
+   macro avg       0.62      0.66      0.63       502
+weighted avg       0.67      0.70      0.68       502

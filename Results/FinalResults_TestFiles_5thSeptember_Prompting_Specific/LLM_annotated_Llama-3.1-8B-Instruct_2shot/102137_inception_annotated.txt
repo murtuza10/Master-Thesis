@@ -1,0 +1,20 @@
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wheat", "span": [95, 101] }},
+    {"cropSpecies": { "value": "grass", "span": [143, 149] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "temperate agricultural soils", "span": [41, 62] }},
+    {"soilTexture": { "value": "organic carbon", "span": [51, 66] }},
+    {"soilReferenceGroup": { "value": "soil", "span": [104, 108] }},
+    {"soilReferenceGroup": { "value": "soil", "span": [124, 128] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [122, 128] }},
+    {"region": { "value": "Germany", "span": [122, 128] }}
+  ],
+  "Time Statement": []
+}
+```

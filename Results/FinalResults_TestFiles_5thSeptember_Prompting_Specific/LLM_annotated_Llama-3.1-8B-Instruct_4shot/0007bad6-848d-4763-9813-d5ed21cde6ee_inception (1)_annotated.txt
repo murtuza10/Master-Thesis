@@ -1,0 +1,27 @@
+### Output JSON Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Winter wheat", "span": [182, 193] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "soil", "span": [36, 42]}},
+    {"soilReferenceGroup": { "value": "soil", "span": [109, 115]}},
+    {"soilReferenceGroup": { "value": "soil", "span": [140, 146]}},
+    {"soilReferenceGroup": { "value": "soil", "span": [213, 219]}},
+    {"soilDepth": { "value": "soil water stable aggregation", "span": [146, 164]}},
+    {"soilBulkDensity": { "value": "soil properties", "span": [123, 133]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+### Explanation for output JSON format ###
+
+1.  **Crops**: The text explicitly mentions the species "Winter wheat". Therefore, it is included in the "Crops" section.
+2.  **Soil**: The text mentions the following soil-related entities:
+    *   "soil" is mentioned four times in the abstract, which is included in the "soilReferenceGroup" section.
+    *   "soil water stable aggregation" is mentioned once, which is included in the "soilDepth" section.
+    *   "soil properties" is mentioned twice, which is included in the "soilBulkDensity" section.
+3.  **Location**: The text does not mention any location.
+4.  **Time Statement**: The text does not mention any time-related information.

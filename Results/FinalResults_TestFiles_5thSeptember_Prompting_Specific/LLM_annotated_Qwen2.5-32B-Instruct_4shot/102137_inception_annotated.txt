@@ -1,0 +1,17 @@
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilOrganicCarbon": {"value": "organic carbon", "span": [84, 98]}},
+    {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [209, 226}}},
+    {"soilDepth": {"value": "soil cores", "span": [144, 152]}},
+    {"soilDepth": {"value": "soil profile", "span": [307, 317]]}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [106, 113]}}
+  ],
+  "Time Statement": []
+}
+``` 
+
+*Note: The term "soil cores" and "soil profile" were included under `soilDepth` category as they refer to the depthwise sampling of soil. However, if the guideline strictly demands `soilDepth` to have depth values in terms of measurements (like centimeters), then these should not be included.*

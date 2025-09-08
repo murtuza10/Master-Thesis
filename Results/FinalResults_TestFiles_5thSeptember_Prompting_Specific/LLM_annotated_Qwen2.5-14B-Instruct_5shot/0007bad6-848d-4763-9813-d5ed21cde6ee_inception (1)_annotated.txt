@@ -1,0 +1,21 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Winter wheat", "span": [621, 631 ]}}
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "", "span": []}},
+    {"soilReferenceGroup": { "value": "", "span": []}},
+    {"soilDepth": { "value": "", "span": []}},
+    {"soilBulkDensity": { "value": "", "span": []}},
+    {"soilPH": { "value": "", "span": []}},
+    {"soilOrganicCarbon": { "value": "", "span": []}},
+    {"soilAvailableNitrogen": { "value": "", "span": []}},
+    {"soilProperties": {"value": "soil water stable aggregation", "span": [208, 228]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+``` 
+
+Note: The term "soil properties" was included under Soil although there isn't a direct match to any of the specified subcategories. Given the specificity of the provided categories, "soil water stable aggregation" does not directly fit into any, so it's listed outside the main subcategories under an implied broader category "soilProperties".

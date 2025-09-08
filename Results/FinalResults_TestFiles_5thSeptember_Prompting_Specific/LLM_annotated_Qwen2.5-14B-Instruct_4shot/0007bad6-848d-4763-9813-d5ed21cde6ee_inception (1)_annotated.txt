@@ -1,0 +1,18 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [429, 435]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "soil", "span": [6, 10]}},
+    {"soilReferenceGroup": {"value": "soil", "span": [371, 375]}},
+    {"soilReferenceGroup": {"value": "Boden", "span": [468, 472]}},
+    {"soilProperties": {"value": "soil properties", "span": [117, 128]}},
+    {"soilProperties": {"value": "soil properties", "span": [279, 290]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+Note: The `soilProperties` is used here as there isn't a direct key for "soil properties" in the provided list. If it should fit under another category, please let me know.

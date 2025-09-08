@@ -1,0 +1,23 @@
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "C4", "span": [83, 86]}},
+    {"cropSpecies": {"value": "C3", "span": [116, 119]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "C3 soil", "span": [115, 123]}},
+    {"soilReferenceGroup": {"value": "C4 roots litter", "span": [83, 95]}},
+    {"soilDepth": {"value": "6", "span": [173, 174]}},
+    {"soilDepth": {"value": "12", "span": [177, 179]}},
+    {"soilDepth": {"value": "24", "span": [183, 185]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "6", "span": [173, 173]}},
+    {"startTime": {"value": "12", "span": [177, 177]}},
+    {"startTime": {"value": "24", "span": [183, 183]}},
+    {"endTime": {"value": "24", "span": [183, 183]}}
+  ]
+}
+```

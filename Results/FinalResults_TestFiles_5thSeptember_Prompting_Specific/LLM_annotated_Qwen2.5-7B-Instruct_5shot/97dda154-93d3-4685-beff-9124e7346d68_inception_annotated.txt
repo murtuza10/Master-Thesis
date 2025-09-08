@@ -1,0 +1,24 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "maize", "span": [78, 83] }}
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "Wanna Sand", "span": [116, 123] }},
+    {"soilTexture": { "value": "Wanna Sand without biogas slurry", "span": [126, 144] }},
+    {"soilTexture": { "value": "Rostock Sand", "span": [147, 156] }},
+    {"soilTexture": { "value": "Wanna Marsch", "span": [159, 168] }}
+  ],
+  "Location": [
+    {"region": { "value": "Lower Saxony", "span": [245, 253] }},
+    {"region": { "value": "Mecklenburg-Vorpommern", "span": [256, 269] }},
+    {"city": { "value": "Rostock", "span": [272, 277] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2021", "span": [47, 51] }},
+    {"startTime": { "value": "2022", "span": [54, 58] }},
+    {"startTime": { "value": "2023", "span": [61, 65] }},
+    {"duration": { "value": "between April and August each year", "span": [224, 244] }}
+  ]
+}
+```

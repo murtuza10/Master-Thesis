@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757083505-CfrpIdbhwQmWdB1M9vUe",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757083506,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [42, 49] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [1082, 1089] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [1110, 1117] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1990\", \"span\": [66, 70] }},\n    {\"endTime\": { \"value\": \"2017\", \"span\": [73, 77] }},\n    {\"startTime\": { \"value\": \"1990\", \"span\": [1094, 1098] }},\n    {\"endTime\": { \"value\": \"2017\", \"span\": [1101, 1105] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4810,
+    "completion_tokens": 200,
+    "total_tokens": 5010
+  }
+}

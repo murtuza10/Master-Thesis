@@ -1,0 +1,27 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "energy crops", "span": [338, 348] }}
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "agricultural soils", "span": [266, 283] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [53, 60] }},
+    {"region": { "value": "Germany", "span": [66, 70] }},
+    {"region": { "value": "federal states", "span": [83, 92] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1990", "span": [213, 217] }},
+    {"endTime": { "value": "2017", "span": [223, 227] }},
+    {"duration": { "value": "28 years", "span": [229, 237] }}
+  ]
+}
+```
+
+### Explanation for Output JSON Structure ###
+1. **Crops**: The only crop mentioned in the text is "energy crops".
+2. **Soil**: The only soil-related entity mentioned in the text is "agricultural soils".
+3. **Location**: Germany is mentioned as a country, and "Germany" and "federal states" are mentioned as regions.
+4. **Time Statement**: The years 1990 and 2017 are mentioned as start and end times, and the duration of the period is 28 years.

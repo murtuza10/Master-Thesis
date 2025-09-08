@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757083679-QH8iFCM1VW3tEM5xTdXh",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757083679,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"oilseed rape\", \"span\": [516, 528] }},\n    {\"cropSpecies\": { \"value\": \"Brassica napus\", \"span\": [530, 544] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [361, 368] }},\n    {\"city\": { \"value\": \"Bochum\", \"span\": [371, 377] }},\n    {\"city\": { \"value\": \"Braunschweig\", \"span\": [379, 391] }},\n    {\"city\": { \"value\": \"Celle\", \"span\": [393, 398] }},\n    {\"city\": { \"value\": \"Hohenheim\", \"span\": [400, 409] }},\n    {\"city\": { \"value\": \"Veitshöchheim\", \"span\": [411, 425] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"spring 2022\", \"span\": [429, 440] }},\n    {\"endTime\": { \"value\": \"spring 2023\", \"span\": [444, 455] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4904,
+    "completion_tokens": 283,
+    "total_tokens": 5187
+  }
+}

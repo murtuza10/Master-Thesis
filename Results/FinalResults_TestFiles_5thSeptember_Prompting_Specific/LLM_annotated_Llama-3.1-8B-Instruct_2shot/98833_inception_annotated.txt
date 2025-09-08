@@ -1,0 +1,33 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Mähdrescher", "span": [25, 34]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "Parabraunerde", "span": [81, 94]}},
+    {"soilTexture": {"value": "Löss", "span": [95, 99]}},
+    {"soilDepth": {"value": "28 cm", "span": [133, 138]}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2017", "span": [53, 57]}},
+    {"endTime": {"value": "", "span": []}}
+  ]
+}
+```
+### Explanation ###
+
+*   The input text mentions "Mähdrescher" (combine harvester), which is a type of crop or agricultural equipment. This is the only crop-related entity mentioned.
+*   The soil-related entities mentioned are:
+    *   "Parabraunerde" (a type of soil), which is a soil reference group.
+    *   "Löss" (a type of soil texture).
+    *   "28 cm" (a soil depth).
+    Note that soil bulk density, pH, organic carbon, and available nitrogen are not explicitly mentioned in the text.
+*   The location-related entities are not mentioned in the text.
+*   The time-related entities mentioned are:
+    *   "2017" (start year). The end year is not explicitly mentioned, so it is left empty.

@@ -1,0 +1,33 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "barley", "span": [46, 51] }},
+    {"cropSpecies": { "value": "oat", "span": [683, 685] }},
+    {"cropSpecies": { "value": "oilseed rape", "span": [755, 764] }},
+    {"cropSpecies": { "value": "wheat", "span": [768, 773] }},
+    {"cropSpecies": { "value": "lupine", "span": [777, 782] }},
+    {"cropSpecies": { "value": "rye", "span": [786, 788] }},
+    {"cropSpecies": { "value": "barley", "span": [856, 861] }},
+    {"cropVariety": { "value": "OTTO", "span": [886, 889] }}
+  ],
+  "Soil": [
+    {"soilDepth": { "value": "25 cm", "span": [673, 678] }},
+    {"soilDepth": { "value": "25 cm", "span": [816, 821] }},
+    {"soilDepth": { "value": "0-30 cm", "span": [569, 575] }},
+    {"soilDepth": { "value": "0-30 cm", "span": [589, 595] }},
+    {"soilDepth": { "value": "0-30 cm", "span": [609, 615] }}
+  ],
+  "Location": [
+    {"city": { "value": "Braunschweig", "span": [12, 25] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2014", "span": [50, 54] }},
+    {"startTime": { "value": "2014", "span": [862, 866] }},
+    {"startTime": { "value": "1985", "span": [427, 431] }},
+    {"endTime": { "value": "2008", "span": [432, 436] }},
+    {"startTime": { "value": "2013", "span": [550, 554] }},
+    {"endTime": { "value": "2013", "span": [669, 673] }},
+    {"startTime": { "value": "autumn 2013", "span": [846, 854] }}
+  ]
+}
+```

@@ -1,0 +1,24 @@
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "Bodenleitprofile", "span": [55, 67]}},
+    {"soilReferenceGroup": {"value": "Boden", "span": [76, 81]}},
+    {"soilReferenceGroup": {"value": "Bodentyp", "span": [186, 193]}},
+    {"soilBulkDensity": {"value": "Trockenrohdichte (TRD)", "span": [376, 395]}},
+    {"soilAvailableNitrogen": {"value": "nutzbare Feldkapazität (nFK)", "span": [405, 429]}},
+    {"soilOrganicCarbon": {"value": "organischer Kohlenstoffgehalt (Corg)", "span": [459, 484]}}
+  ],
+  "Location": [
+    {"country": {"value": "Deutschland", "span": [99, 107]}},
+    {"region": {"value": "Bundesländer", "span": [118, 127]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2012", "span": [329, 333]}},
+    {"endTime": {"value": "2012", "span": [341, 345]}},
+    {"creationDate": {"value": "28.05.2019", "span": [476, 486]}}
+  ]
+}
+```
+
+Note: The `creationDate` field is not part of the predefined categories but has been included as an additional piece of information extracted from the text. If strictly adhering to the predefined categories, it should be excluded or placed under another relevant category if applicable. In this case, it's closest to `temporal coverage`, but since `temporal coverage` was not directly mentioned as a predefined entity, it's left as `creationDate`.

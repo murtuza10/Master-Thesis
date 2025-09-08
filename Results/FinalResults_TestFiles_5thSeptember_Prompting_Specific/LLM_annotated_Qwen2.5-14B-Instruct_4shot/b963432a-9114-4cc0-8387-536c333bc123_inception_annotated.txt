@@ -1,0 +1,31 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "spring barley", "span": [423, 434]}},
+    {"cropSpecies": {"value": "spring barley", "span": [494, 505]}}
+  ],
+  "Soil": [
+    {"soilPH": {"value": "pH", "span": [116, 118]}},
+    {"soilPH": {"value": "pH", "span": [267, 269]}},
+    {"soilPH": {"value": "pH", "span": [443, 445]}},
+    {"soilPH": {"value": "pH", "span": [513, 515]}},
+    {"soilOrganicCarbon": {"value": "OC", "span": [166, 168]}},
+    {"soilOrganicCarbon": {"value": "DOC", "span": [457, 460]}},
+    {"soilAvailableNitrogen": {"value": "NH4+-N", "span": [182, 188]}},
+    {"soilAvailableNitrogen": {"value": "NO2--N", "span": [194, 200]}},
+    {"soilAvailableNitrogen": {"value": "NO3--N-", "span": [204, 211]}}
+  ],
+  "Location": [
+    {"region": {"value": "Northern Germany", "span": [155, 168]}},
+    {"city": {"value": "Rostock", "span": [0, 7]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2020", "span": [102, 106]}},
+    {"startTime": {"value": "2020", "span": [224, 228]}},
+    {"startTime": {"value": "2020", "span": [285, 289]}},
+    {"startTime": {"value": "2020", "span": [334, 338]}},
+    {"startTime": {"value": "2020", "span": [353, 357]}},
+    {"duration": {"value": "3.5 months", "span": [525, 536]}}
+  ]
+}
+```

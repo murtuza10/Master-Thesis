@@ -1,0 +1,23 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "energy crop", "span": [154, 162]}}
+  ],
+  "Soil": [
+    {"soilBulkDensity": {"value": "bulk density", "span": [387, 396]}},
+    {"soilAvailableNitrogen": {"value": "nitrogen content", "span": [400, 410]}},
+    {"soilAvailableNitrogen": {"value": "ammonium-N", "span": [412, 419]}},
+    {"soilAvailableNitrogen": {"value": "nitrate-N", "span": [421, 428]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [186, 193]}, "region": {"value": "Germany", "span": [186, 193]}},
+    {"country": {"value": "Germany", "span": [309, 316]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2011/2012", "span": [206, 216]}},
+    {"endTime": {"value": "2014/2015", "span": [218, 228]}}
+  ]
+}
+``` 
+
+Note that the JSON structure has been adjusted to fit the rules provided, ensuring each object contains only one entity key as required.

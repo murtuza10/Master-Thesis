@@ -1,0 +1,51 @@
+### Output JSON Structure ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "spring barley", "span": [266, 276]}},
+    {"cropVariety": {"value": "serradella", "span": [287, 294]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "soil profiles", "span": [141, 153]}},
+    {"soilTexture": {"value": "redoximorphic features", "span": [214, 229]}},
+    {"soilDepth": {"value": "three sampling depths", "span": [136, 150]}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [175, 179]}},
+    {"region": {"value": "Northern Germany", "span": [163, 174]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2018", "span": [246, 250]}},
+    {"startTime": {"value": "2019", "span": [296, 300]}},
+    {"startTime": {"value": "2020", "span": [104, 108]}},
+    {"endTime": {"value": "2020", "span": [116, 120]}},
+    {"duration": {"value": "3.5 months", "span": [336, 343]}}
+  ]
+}
+```
+
+### Explanation ###
+
+1. **Crops**: Identified crop species and varieties.
+   - "spring barley" is mentioned as a crop species (span: 266-276) and "serradella" is mentioned as a crop variety (span: 287-294).
+
+2. **Soil**: Identified soil types and properties.
+   - "soil profiles" is mentioned as a soil reference group (span: 141-153).
+   - "redoximorphic features" is mentioned as a soil texture (span: 214-229).
+   - "three sampling depths" is mentioned as a soil depth (span: 136-150).
+   - Other soil properties like "soil bulk density," "soil pH," "soil organic carbon," and "soil available nitrogen" are not mentioned in the text.
+
+3. **Location**: Identified country and region.
+   - "Germany" is mentioned as a country (span: 175-179).
+   - "Northern Germany" is mentioned as a region (span: 163-174).
+
+4. **Time Statement**: Identified start and end times, and duration.
+   - "2018" is mentioned as a start time (span: 246-250).
+   - "2019" is mentioned as a start time (span: 296-300).
+   - "2020" is mentioned as a start time (span: 104-108) and end time (span: 116-120).
+   - "3.5 months" is mentioned as a duration (span: 336-343).

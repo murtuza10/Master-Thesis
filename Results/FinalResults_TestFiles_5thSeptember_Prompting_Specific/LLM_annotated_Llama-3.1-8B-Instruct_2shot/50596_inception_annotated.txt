@@ -1,0 +1,47 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "grapes", "span": [123, 128]}},
+    {"cropSpecies": {"value": "grapes", "span": [233, 238]}},
+    {"cropSpecies": {"value": "grapes", "span": [273, 278]}},
+    {"cropSpecies": {"value": "grapes", "span": [323, 328]}},
+    {"cropSpecies": {"value": "grapes", "span": [423, 428]}},
+    {"cropSpecies": {"value": "grapes", "span": [523, 528]}},
+    {"cropSpecies": {"value": "grapes", "span": [623, 628]}},
+    {"cropSpecies": {"value": "grapes", "span": [723, 728]}},
+    {"cropSpecies": {"value": "grapes", "span": [823, 828]}},
+    {"cropSpecies": {"value": "grapes", "span": [923, 928]}}
+  ],
+  "Soil": [
+    {"soilTexture": {"value": "vineyard", "span": [159, 168]}},
+    {"soilTexture": {"value": "vineyard", "span": [369, 378]}},
+    {"soilTexture": {"value": "vineyard", "span": [469, 478]}},
+    {"soilTexture": {"value": "vineyard", "span": [569, 578]}},
+    {"soilTexture": {"value": "vineyard", "span": [669, 678]}},
+    {"soilTexture": {"value": "vineyard", "span": [769, 778]}},
+    {"soilTexture": {"value": "vineyard", "span": [869, 878]}},
+    {"soilTexture": {"value": "vineyard", "span": [969, 978]}}
+  ],
+  "Location": [
+    {"region": {"value": "vineyard", "span": [143, 152]}},
+    {"region": {"value": "vineyard", "span": [343, 352]}},
+    {"region": {"value": "vineyard", "span": [443, 452]}},
+    {"region": {"value": "vineyard", "span": [543, 552]}},
+    {"region": {"value": "vineyard", "span": [643, 652]}},
+    {"region": {"value": "vineyard", "span": [743, 752]}},
+    {"region": {"value": "vineyard", "span": [843, 852]}},
+    {"region": {"value": "vineyard", "span": [943, 952]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2017", "span": [179, 183]}},
+    {"endTime": {"value": "2017", "span": [188, 192]}},
+    {"startTime": {"value": "2018", "span": [233, 237]}},
+    {"endTime": {"value": "2018", "span": [242, 246]}},
+    {"startTime": {"value": "29.8.2018", "span": [449, 459]}},
+    {"endTime": {"value": "12.9.2018", "span": [465, 475]}},
+    {"startTime": {"value": "4.9.2018", "span": [479, 489]}},
+    {"endTime": {"value": "29.9.2018", "span": [495, 505]}}
+  ]
+}
+```

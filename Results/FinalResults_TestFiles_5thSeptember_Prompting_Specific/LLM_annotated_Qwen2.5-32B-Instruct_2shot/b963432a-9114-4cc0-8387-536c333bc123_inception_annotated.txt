@@ -1,0 +1,24 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "spring barley", "span": [420, 432] }},
+    {"cropSpecies": { "value": "serradella", "span": [442, 451] }},
+    {"cropSpecies": { "value": "spring barley", "span": [482, 494] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "Boden", "span": [674, 679] }},
+    {"soilPH": { "value": "pH-Wert", "span": [735, 741] }}
+  ],
+  "Location": [
+    {"city": { "value": "Rostock", "span": [20, 28] }},
+    {"region": { "value": "Northern Germany", "span": [307, 321] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2020", "span": [48, 52] }},
+    {"startTime": { "value": "2018", "span": [386, 390] }},
+    {"startTime": { "value": "2019", "span": [452, 456] }},
+    {"startTime": { "value": "2020", "span": [496, 500] }},
+    {"duration": { "value": "3.5 months", "span": [763, 774] }}
+  ]
+}
+```

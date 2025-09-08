@@ -1,0 +1,25 @@
+{
+  "Crops": [
+    {"cropSpecies": {"value": "spring barley", "span": [141, 153]}},
+    {"cropSpecies": {"value": "winter barley", "span": [156, 167]}},
+    {"cropSpecies": {"value": "grain maize", "span": [170, 178]}},
+    {"cropSpecies": {"value": "silage maize", "span": [182, 190]}},
+    {"cropSpecies": {"value": "oats", "span": [194, 198]}},
+    {"cropSpecies": {"value": "potatoes", "span": [201, 207]}},
+    {"cropSpecies": {"value": "winter rape", "span": [210, 217]}},
+    {"cropSpecies": {"value": "rye", "span": [220, 223]}},
+    {"cropSpecies": {"value": "sugarbeet", "span": [226, 233]}},
+    {"cropSpecies": {"value": "triticale", "span": [237, 244]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [248, 256]}},
+    {"cropVariety": {"value": "barley", "span": [141, 148]}}  # only species name is annotated
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [55, 64]}},
+    {"region": {"value": "Germany", "span": [55, 64]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1979", "span": [111, 115]}},
+    {"endTime": {"value": "2021", "span": [130, 134]}}
+  ]
+}

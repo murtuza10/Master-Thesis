@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757083140-1BVCpzWbFiHagqpUhhwA",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757083140,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [188, 193] }},\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [272, 277] }},\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [598, 603] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [1003, 1010] }},\n    {\"region\": { \"value\": \"Brandenburg\", \"span\": [1012, 1023] }},\n    {\"region\": { \"value\": \"Uckermark\", \"span\": [1025, 1034] }},\n    {\"city\": { \"value\": \"Quillow\", \"span\": [1036, 1043] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2019\", \"span\": [94, 98] }},\n    {\"startTime\": { \"value\": \"April\", \"span\": [687, 692] }},\n    {\"endTime\": { \"value\": \"June 2019\", \"span\": [697, 706] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4140,
+    "completion_tokens": 282,
+    "total_tokens": 4422,
+    "prompt_tokens_details": null
+  }
+}

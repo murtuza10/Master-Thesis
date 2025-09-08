@@ -1,0 +1,22 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [23, 43]}},
+    {"soilAvailableNitrogen": {"value": "soil organic nitrogen", "span": [44, 62]}},
+    {"soilPH": {"value": "CN Ratio", "span": [81, 88]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "temporal", "span": [96, 105]}}
+  ]
+}
+```
+
+### Note: ###
+
+*   "soil organic carbon" and "soil organic nitrogen" are extracted as soil organic carbon and soil available nitrogen respectively.
+*   "CN Ratio" is extracted as soil pH because it is the ratio of carbon to nitrogen.
+*   "temporal" is extracted as start time as it is related to time in the context of the given text.

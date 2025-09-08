@@ -1,0 +1,22 @@
+### Entity Extraction Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "energy crops", "span": [235, 245]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [15, 23]}},
+    {"region": {"value": "Germany", "span": [63, 69]}},
+    {"region": {"value": "federal states", "span": [71, 82]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1990", "span": [30, 34]}},
+    {"endTime": {"value": "2017", "span": [37, 41]}}
+  ]
+}
+```
+### Explanation ###
+- The input text mentions "energy crops" as a type of crop, which is extracted as a `cropSpecies`.
+- The country "Germany" is explicitly mentioned, and the region "Germany" and "federal states" are also mentioned, which are extracted as `country`, `region`, and another `region` respectively.
+- The time period "1990-2017" is extracted as `startTime` and `endTime` for the `Time Statement` category.

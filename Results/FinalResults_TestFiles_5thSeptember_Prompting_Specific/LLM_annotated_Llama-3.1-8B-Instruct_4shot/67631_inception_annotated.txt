@@ -1,0 +1,24 @@
+### Output Format ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Riesling", "span": [123, 128] }},
+    {"cropSpecies": { "value": "Felicia", "span": [129, 135] }},
+    {"cropSpecies": { "value": "Regent", "span": [141, 147] }}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": { "value": "2018", "span": [170, 174] }},
+    {"endTime": { "value": "2018", "span": [183, 187] }}
+  ]
+}
+```
+
+Explanation:
+- The JSON structure is filled according to the provided input text.
+- The "Crops" section contains three entries for the three different varieties of wine berries mentioned in the text: Riesling, Felicia, and Regent.
+- The "Soil" section is empty since there is no mention of soil-related entities in the text.
+- The "Location" section is also empty since there is no mention of specific locations in the text.
+- The "Time Statement" section contains two entries for the start and end time of the data collection in 2018.

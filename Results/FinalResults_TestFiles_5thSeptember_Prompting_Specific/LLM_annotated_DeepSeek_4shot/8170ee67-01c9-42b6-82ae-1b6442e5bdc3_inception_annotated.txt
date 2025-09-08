@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757082998-W0AHoOmfLMDkXUX3Wr3G",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757082998,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [47, 60] }},\n    {\"cropSpecies\": { \"value\": \"oat\", \"span\": [1063, 1066] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [1357, 1370] }},\n    {\"cropSpecies\": { \"value\": \"winter oilseed rape\", \"span\": [1372, 1391] }},\n    {\"cropSpecies\": { \"value\": \"winter wheat\", \"span\": [1393, 1405] }},\n    {\"cropSpecies\": { \"value\": \"lupine\", \"span\": [1407, 1414] }},\n    {\"cropSpecies\": { \"value\": \"winter rye\", \"span\": [1419, 1429] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [1642, 1655] }},\n    {\"cropVariety\": { \"value\": \"OTTO\", \"span\": [1678, 1682] }}\n  ],\n  \"Soil\": [\n    {\"soilDepth\": { \"value\": \"25 cm\", \"span\": [1068, 1073] }},\n    {\"soilDepth\": { \"value\": \"0-30 cm\", \"span\": [1266, 1273] }},\n    {\"soilDepth\": { \"value\": \"25 cm\", \"span\": [1463, 1468] }}\n  ],\n  \"Location\": [\n    {\"city\": { \"value\": \"Braunschweig\", \"span\": [24, 36] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2014\", \"span\": [61, 65] }},\n    {\"startTime\": { \"value\": \"1985\", \"span\": [855, 859] }},\n    {\"endTime\": { \"value\": \"2008\", \"span\": [862, 866] }},\n    {\"endTime\": { \"value\": \"2013\", \"span\": [1015, 1019] }},\n    {\"startTime\": { \"value\": \"2013\", \"span\": [1127, 1131] }},\n    {\"startTime\": { \"value\": \"2014\", \"span\": [1695, 1699] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4516,
+    "completion_tokens": 538,
+    "total_tokens": 5054
+  }
+}

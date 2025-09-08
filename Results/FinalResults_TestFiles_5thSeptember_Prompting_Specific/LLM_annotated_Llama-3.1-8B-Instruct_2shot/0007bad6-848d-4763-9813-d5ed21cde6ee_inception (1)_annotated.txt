@@ -1,0 +1,33 @@
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Winter wheat", "span": [247, 256]}},
+    {"cropSpecies": {"value": "Winter wheat", "span": [317, 326]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "soil-crop system", "span": [16, 29]}},
+    {"soilReferenceGroup": {"value": "soil-plant system", "span": [236, 249]}},
+    {"soilReferenceGroup": {"value": "soil properties", "span": [267, 278]}},
+    {"soilTexture": {"value": "soil", "span": [115, 118]}},
+    {"soilDepth": {"value": "soil water stable aggregation", "span": [134, 148]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Explanation ###
+
+- We have identified the following entities in the input text:
+  - **Crops**:
+    - "Winter wheat" (first mention at character position 247-256)
+    - "Winter wheat" (second mention at character position 317-326)
+  - **Soil**:
+    - "soil-crop system" (at character position 16-29)
+    - "soil-plant system" (at character position 236-249)
+    - "soil properties" (at character position 267-278)
+    - "soil" (at character position 115-118)
+    - "soil water stable aggregation" (at character position 134-148)
+  - **Location**: None found
+  - **Time Statement**: None found

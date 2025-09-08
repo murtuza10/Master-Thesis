@@ -1,0 +1,23 @@
+### Filled JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "cropland", "span": [34, 42]}}
+  ],
+  "Soil": [
+    {"soilTexture": {"value": "Lehm", "span": [134, 138]}},
+    {"soilTexture": {"value": "Ton", "span": [141, 144]}},
+    {"soilReferenceGroup": {"value": "Boden", "span": [178, 182]}},
+    {"soilBulkDensity": {"value": "pH Wert", "span": [224, 231]}},
+    {"soilOrganicCarbon": {"value": "organischen Kohlenstoff", "span": [236, 253]}},
+    {"soilAvailableNitrogen": {"value": "Gesamt-Stickstoff", "span": [258, 271]}}
+  ],
+  "Location": [
+    {"city": {"value": "Hildesheim", "span": [129, 136]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "14-tägigen Zeitraster", "span": [56, 75]}},
+    {"startTime": {"value": "2 Jahre", "span": [81, 87]}}
+  ]
+}
+```

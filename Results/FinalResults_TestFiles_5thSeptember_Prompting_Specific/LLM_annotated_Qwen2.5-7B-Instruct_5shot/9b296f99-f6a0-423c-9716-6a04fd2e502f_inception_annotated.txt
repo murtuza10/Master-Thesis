@@ -1,0 +1,30 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "winter wheat", "span": [112, 122] }},
+    {"cropSpecies": { "value": "winter barley", "span": [131, 141] }},
+    {"cropSpecies": { "value": "winter barley", "span": [417, 427] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [428, 434] }}
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "not specified", "span": [0, 0] }},
+    {"soilReferenceGroup": { "value": "not specified", "span": [0, 0] }},
+    {"soilDepth": { "value": "not specified", "span": [0, 0] }},
+    {"soilBulkDensity": { "value": "not specified", "span": [0, 0] }},
+    {"soilPH": { "value": "not specified", "span": [0, 0] }},
+    {"soilOrganicCarbon": { "value": "not specified", "span": [0, 0] }},
+    {"soilAvailableNitrogen": { "value": "mineral nutrients", "span": [158, 170] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [44, 49] }},
+    {"region": { "value": "Speyer", "span": [50, 55] }},
+    {"region": { "value": "LUFA Speyer", "span": [65, 74] }},
+    {"city": { "value": "Speyer", "span": [50, 55] }}
+  ],
+  "Time Statement": [
+    {"duration": { "value": "long-term", "span": [211, 218] }},
+    {"duration": { "value": "four sampling seasons", "span": [353, 366] }},
+    {"duration": { "value": "1984", "span": [256, 261] }}
+  ]
+}
+```

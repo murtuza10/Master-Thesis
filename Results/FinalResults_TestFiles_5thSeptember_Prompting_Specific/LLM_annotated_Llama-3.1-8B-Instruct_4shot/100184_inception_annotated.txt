@@ -1,0 +1,21 @@
+### Output JSON ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Brassica napus", "span": [145, 155]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": {"value": "Germany", "span": [95, 103]}},
+    {"city": {"value": "Bochum", "span": [108, 116]}},
+    {"city": {"value": "Braunschweig", "span": [120, 129]}},
+    {"city": {"value": "Celle", "span": [132, 138]}},
+    {"city": {"value": "Hohenheim", "span": [140, 146]}},
+    {"city": {"value": "Veitshöchheim", "span": [148, 157]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "spring 2022", "span": [157, 170]}},
+    {"endTime": {"value": "spring 2023", "span": [173, 184]}}
+  ]
+}
+```

@@ -1,0 +1,41 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "winter barley", "span": [58, 71] }},
+    {"cropSpecies": { "value": "oat", "span": [1043, 1046] }},
+    {"cropSpecies": { "value": "winter barley", "span": [1141, 1154] }},
+    {"cropSpecies": { "value": "winter oilseed rape", "span": [1158, 1174] }},
+    {"cropSpecies": { "value": "winter wheat", "span": [1176, 1187] }},
+    {"cropSpecies": { "value": "lupine", "span": [1189, 1195] }},
+    {"cropSpecies": { "value": "winter rye", "span": [1197, 1208] }},
+    {"cropSpecies": { "value": "Hordeum vulgare L.", "span": [1240, 1258] }},
+    {"cropVariety": { "value": "OTTO", "span": [1260, 1264] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "Boden", "span": [1218, 1223] }},
+    {"soilReferenceGroup": { "value": "Boden", "span": [1304, 1309] }},
+    {"soilAvailableNitrogen": { "value": "PCAL", "span": [665, 669] }},
+    {"soilAvailableNitrogen": { "value": "PCAL", "span": [684, 688] }},
+    {"soilAvailableNitrogen": { "value": "PCAL", "span": [703, 707] }},
+    {"soilDepth": { "value": "0-30 cm", "span": [815, 822] }},
+    {"soilAvailableNitrogen": { "value": "11 mg kg-1 PCAL", "span": [828, 847] }},
+    {"soilAvailableNitrogen": { "value": "21 mg kg-1 PCAL", "span": [852, 871] }},
+    {"soilAvailableNitrogen": { "value": "47 mg kg-1 PCAL", "span": [876, 895] }},
+    {"soilDepth": { "value": "25 cm", "span": [1024, 1030] }},
+    {"soilDepth": { "value": "25 cm", "span": [1086, 1092] }}
+  ],
+  "Location": [
+    {"city": { "value": "Braunschweig", "span": [19, 30] }},
+    {"city": { "value": "Braunschweig", "span": [52, 63] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2014", "span": [73, 77] }},
+    {"startTime": { "value": "2014", "span": [1268, 1272] }},
+    {"startTime": { "value": "1985", "span": [536, 540] }},
+    {"endTime": { "value": "2008", "span": [542, 546] }},
+    {"endTime": { "value": "2013", "span": [805, 809] }},
+    {"startTime": { "value": "2013", "span": [1028, 1032] }},
+    {"startTime": { "value": "autumn 2013", "span": [1108, 1120] }}
+  ]
+}
+```

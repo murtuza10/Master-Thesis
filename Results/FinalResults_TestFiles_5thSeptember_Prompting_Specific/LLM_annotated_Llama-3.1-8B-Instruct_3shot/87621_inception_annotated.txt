@@ -1,0 +1,25 @@
+### Output Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Wheat dwarf virus", "span": [34, 51] }},
+    {"cropSpecies": { "value": "barley", "span": [97, 105] }},
+    {"cropSpecies": { "value": "Hordeum vulgare", "span": [107, 119] }},
+    {"cropSpecies": { "value": "cereals", "span": [124, 131] }},
+    {"cropVariety": { "value": "WDV-resistant/tolerant", "span": [66, 82] }}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+The entities were extracted as follows:
+
+- "Wheat dwarf virus" and "barley" are crop species.
+- "Hordeum vulgare" is a scientific name of the barley species.
+- "cereals" is a category of crops.
+- "WDV-resistant/tolerant" is a type of crop variety.
+- No soil-related entities were found.
+- No location-related entities were found.
+- No time-related entities were found.

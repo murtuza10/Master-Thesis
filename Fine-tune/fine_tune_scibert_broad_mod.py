@@ -128,6 +128,7 @@ combined_dataset = concatenate_datasets([train_dataset, val_dataset])
 
 dataset_dict = DatasetDict({
     'train_val': combined_dataset,
+    'validation': val_dataset,  # Keep original validation set for monitoring
     'test': test_dataset
 })
 
@@ -239,14 +240,12 @@ final_training_args = TrainingArguments(
     weight_decay=best_params['weight_decay'],
 )
 
-# Use the full train_val set for training and the last validation fold for monitoring
-# This is just for monitoring progress; the final model uses all train_val data
+# Use the full train_val set for training and the original validation set for monitoring
 final_trainer = Trainer(
     model_init=model_init,
     args=final_training_args,
     train_dataset=tokenized_datasets['train_val'],
-    # Use the original, tokenized validation set for monitoring
-    eval_dataset=tokenized_datasets['validation'], 
+    eval_dataset=tokenized_datasets['validation'],  # Now this key exists!
     compute_metrics=compute_metrics,
     callbacks=[EarlyStoppingCallback(early_stopping_patience=3)]
 )
@@ -269,9 +268,7 @@ print(test_results.metrics)
 final_trainer.save_model("./results/final_model_saved")
 tokenizer.save_pretrained("./results/final_model_saved")
 
-
 print_classification_reports(test_results.predictions, test_results.label_ids, "Final Test")
-
 
 print("\n" + "="*80)
 print("WORKFLOW COMPLETED SUCCESSFULLY!")

@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757083437-aoDVADrnFil8joa7sUTl",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757083437,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"spring barley\", \"span\": [753, 766] }},\n    {\"cropSpecies\": { \"value\": \"serradella\", \"span\": [789, 799] }},\n    {\"cropSpecies\": { \"value\": \"spring barley\", \"span\": [831, 844] }}\n  ],\n  \"Soil\": [\n    {\"soilPH\": { \"value\": \"pH\", \"span\": [49, 51] }},\n    {\"soilPH\": { \"value\": \"pH\", \"span\": [311, 313] }},\n    {\"soilPH\": { \"value\": \"pH\", \"span\": [1258, 1260] }},\n    {\"soilPH\": { \"value\": \"pH-Wert\", \"span\": [1598, 1605] }},\n    {\"soilOrganicCarbon\": { \"value\": \"OC\", \"span\": [323, 325] }},\n    {\"soilOrganicCarbon\": { \"value\": \"organic C\", \"span\": [1291, 1299] }},\n    {\"soilOrganicCarbon\": { \"value\": \"DOC\", \"span\": [1315, 1318] }},\n    {\"soilOrganicCarbon\": { \"value\": \"Gel√∂ster organischer Kohlenstoff\", \"span\": [1577, 1612] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"NH4+ -N\", \"span\": [329, 336] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"NO2- -N\", \"span\": [338, 345] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"NO3- -N\", \"span\": [347, 354] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"NH4+-N\", \"span\": [1293, 1300] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"NO2--\", \"span\": [1302, 1307] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"NO3--N\", \"span\": [1309, 1316] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"Nitrat\", \"span\": [1618, 1624] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"Nitrit\", \"span\": [1626, 1632] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"Ammonium\", \"span\": [1643, 1652] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"Stickstoff\", \"span\": [1654, 1665] }}\n  ],\n  \"Location\": [\n    {\"city\": { \"value\": \"Rostock\", \"span\": [17, 24] }},\n    {\"region\": { \"value\": \"Northern Germany\", \"span\": [169, 185] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2020\", \"span\": [69, 74] }},\n    {\"startTime\": { \"value\": \"2018\", \"span\": [708, 712] }},\n    {\"startTime\": { \"value\": \"2019\", \"span\": [768, 772] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [814, 818] }},\n    {\"duration\": { \"value\": \"3.5 months\", \"span\": [1402, 1412] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 5019,
+    "completion_tokens": 779,
+    "total_tokens": 5798
+  }
+}

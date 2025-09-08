@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757083190-WDxANgRyTm8lDPztXX4R",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757083190,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Betula pubescens Ehrh.\", \"span\": [233, 255] }},\n    {\"cropSpecies\": { \"value\": \"birch\", \"span\": [372, 377] }},\n    {\"cropSpecies\": { \"value\": \"Betula pubescens Ehrh.\", \"span\": [380, 402] }},\n    {\"cropSpecies\": { \"value\": \"birches\", \"span\": [1201, 1208] }}\n  ],\n  \"Soil\": [\n    {\"soilOrganicCarbon\": { \"value\": \"carbon\", \"span\": [144, 151] }},\n    {\"soilOrganicCarbon\": { \"value\": \"C\", \"span\": [153, 154] }},\n    {\"soilOrganicCarbon\": { \"value\": \"C\", \"span\": [313, 314] }},\n    {\"soilOrganicCarbon\": { \"value\": \"carbon\", \"span\": [316, 323] }},\n    {\"soilOrganicCarbon\": { \"value\": \"C\", \"span\": [617, 618] }},\n    {\"soilOrganicCarbon\": { \"value\": \"CO2-C\", \"span\": [770, 775] }},\n    {\"soilOrganicCarbon\": { \"value\": \"CO2-C\", \"span\": [804, 809] }},\n    {\"soilOrganicCarbon\": { \"value\": \"C\", \"span\": [914, 915] }},\n    {\"soilOrganicCarbon\": { \"value\": \"C\", \"span\": [1017, 1018] }},\n    {\"soilOrganicCarbon\": { \"value\": \"peat C\", \"span\": [1099, 1105] }},\n    {\"soilOrganicCarbon\": { \"value\": \"peat\", \"span\": [1113, 1117] }},\n    {\"soilOrganicCarbon\": { \"value\": \"C\", \"span\": [1149, 1150] }},\n    {\"soilOrganicCarbon\": { \"value\": \"C\", \"span\": [1284, 1285] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"one year\", \"span\": [617, 625] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4295,
+    "completion_tokens": 494,
+    "total_tokens": 4789
+  }
+}

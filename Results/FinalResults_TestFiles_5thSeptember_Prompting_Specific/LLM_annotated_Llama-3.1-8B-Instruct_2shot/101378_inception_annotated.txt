@@ -1,0 +1,30 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Birch", "span": [246, 250]}},
+    {"cropSpecies": {"value": "Betula pubescens Ehrh.", "span": [241, 264]}}
+  ],
+  "Soil": [
+    {"soilTexture": {}},
+    {"soilReferenceGroup": {}},
+    {"soilDepth": {}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}}
+  ],
+  "Location": [
+    {"region": {"value": "northern hemisphere", "span": [95, 113]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "one year", "span": [236, 241]}}
+  ]
+}
+```
+### Explanation ###
+
+- **Crops**: The text mentions "Birch" and "Betula pubescens Ehrh." as the species, which are extracted as "cropSpecies".
+- **Soil**: Since the text doesn't mention any specific information about the soil, the list remains empty.
+- **Location**: The text mentions "northern hemisphere" as the region, which is extracted as "region".
+- **Time Statement**: The text mentions "one year" as the duration, which is extracted as "startTime".

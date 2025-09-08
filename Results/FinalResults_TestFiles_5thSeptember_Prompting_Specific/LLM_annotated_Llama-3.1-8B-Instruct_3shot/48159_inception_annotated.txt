@@ -1,0 +1,19 @@
+### Filled JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "energy crops", "span": [242, 251]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "agricultural soils", "span": [177, 191]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [34, 42]}},
+    {"region": {"value": "German", "span": [43, 51]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1990", "span": [63, 67]}},
+    {"endTime": {"value": "2017", "span": [96, 100]}}
+  ]
+}
+```

@@ -1,0 +1,14 @@
+### Filled JSON Structure ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "soils", "span": [134, 139]}},
+    {"soilOrganicCarbon": {"value": "organic carbon", "span": [104, 121]}},
+    {"soilProperties": {"value": "soil properties", "span": [83, 96]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+Note that I have only extracted the entities that are explicitly mentioned in the text, and ignored any inferred information. I have also followed the exact keys and format specified in the output format.

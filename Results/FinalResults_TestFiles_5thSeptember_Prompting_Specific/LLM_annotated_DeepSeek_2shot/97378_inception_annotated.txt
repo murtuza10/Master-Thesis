@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757082630-nnYn38ksEADUvwPZuoIj",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757082630,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilTexture\": {\"value\": \"Lehm\", \"span\": [444, 448]}},\n    {\"soilTexture\": {\"value\": \"Ton\", \"span\": [453, 456]}},\n    {\"soilPH\": {\"value\": \"pH Wert\", \"span\": [589, 596]}},\n    {\"soilOrganicCarbon\": {\"value\": \"organischen Kohlenstoff\", \"span\": [600, 622]}}\n  ],\n  \"Location\": [\n    {\"city\": {\"value\": \"Hildesheim\", \"span\": [307, 317]}}\n  ],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"14-tägigen\", \"span\": [342, 352]}},\n    {\"duration\": {\"value\": \"2 Jahren\", \"span\": [397, 405]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 1971,
+    "completion_tokens": 193,
+    "total_tokens": 2164
+  }
+}

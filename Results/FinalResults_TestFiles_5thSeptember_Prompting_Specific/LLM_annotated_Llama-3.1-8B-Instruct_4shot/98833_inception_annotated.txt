@@ -1,0 +1,27 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Mais", "span": [87, 91] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "Parabraunerde", "span": [121, 134] }},
+    {"soilTexture": { "value": "Löss", "span": [135, 139] }},
+    {"soilDepth": { "value": "28 cm", "span": [159, 164] }}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": { "value": "2017", "span": [106, 110] }},
+    {"endTime": { "value": "2017", "span": [106, 110] }}
+  ]
+}
+```
+### JSON Explanation ###
+- "Crops": 
+  - The text explicitly mentions "Mais" (which is German for "maize" or "corn"), so a crop species is extracted.
+- "Soil": 
+  - The text explicitly mentions "Parabraunerde" (a type of soil), "Löss" (a type of soil texture), and "28 cm" (a soil depth), so these are extracted as soil reference group, soil texture, and soil depth, respectively.
+- "Location": 
+  - No location is explicitly mentioned in the text.
+- "Time Statement": 
+  - The text explicitly mentions "2017" as the start and end time of the experiment, so this is extracted as a start time.

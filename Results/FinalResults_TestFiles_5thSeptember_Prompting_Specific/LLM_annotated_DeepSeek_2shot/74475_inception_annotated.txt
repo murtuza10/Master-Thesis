@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757082728-0ucgRCLyrH7fk4w7klWQ",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757082728,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilOrganicCarbon\": { \"value\": \"soil organic carbon\", \"span\": [65, 83] }},\n    {\"soilOrganicCarbon\": { \"value\": \"SOC\", \"span\": [86, 89] }},\n    {\"soilOrganicCarbon\": { \"value\": \"SOC\", \"span\": [244, 247] }},\n    {\"soilOrganicCarbon\": { \"value\": \"SOC\", \"span\": [365, 368] }},\n    {\"soilOrganicCarbon\": { \"value\": \"SOC\", \"span\": [442, 445] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"soil organic nitrogen\", \"span\": [93, 113] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"SON\", \"span\": [116, 119] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"SON\", \"span\": [276, 279] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"N\", \"span\": [516, 517] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 1890,
+    "completion_tokens": 254,
+    "total_tokens": 2144
+  }
+}

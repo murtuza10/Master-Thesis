@@ -210,11 +210,11 @@ def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_js
     stats_lines = []
 
     y_true_dir = f"/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/Test_BIO_labels"
-    results_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_3rdSeptember_ZeroShotSpecific/ner_evaluation_results_{model_name}_{start}_shot.txt"
-    stats_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_3rdSeptember_ZeroShotSpecific/Stats/ner_evaluation_stats_{model_name}_{start}_shot.txt"
+    results_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_5thSeptember_FewShotTest_Specific/ner_evaluation_results_{model_name}_{start}_shot.txt"
+    stats_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_5thSeptember_FewShotTest_Specific/Stats/ner_evaluation_stats_{model_name}_{start}_shot.txt"
 
     # Excel output path
-    excel_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_3rdSeptember_ZeroShot_Specific/ner_evaluation_results_{model_name}_{start}_shot.xlsx"
+    excel_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_5thSeptember_FewShotTest_Specific/ner_evaluation_results_{model_name}_{start}_shot.xlsx"
 
     for filename in os.listdir(input_text_dir):
         if filename.endswith("_inception.txt"):

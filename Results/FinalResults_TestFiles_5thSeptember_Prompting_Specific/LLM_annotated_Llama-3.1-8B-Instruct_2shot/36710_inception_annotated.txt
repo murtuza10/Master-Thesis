@@ -1,0 +1,19 @@
+### Output JSON ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "apple", "span": [69, 74]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "orchard region", "span": [95, 112]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [117, 122]}},
+    {"region": {"value": "Lower Saxony", "span": [125, 136]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2001", "span": [138, 142]}},
+    {"endTime": {"value": "2003", "span": [146, 150]}}
+  ]
+}
+```

@@ -1,0 +1,53 @@
+TEST CLASSIFICATION REPORTS (Training Only Approach)
+============================================================
+
+Token-level Classification Report:
+--------------------------------------------------
+               precision    recall  f1-score   support
+
+       B-Soil       0.00      0.00      0.00        33
+       B-city       1.00      0.06      0.12        16
+    B-country       0.80      0.84      0.82        19
+B-cropSpecies       0.69      0.80      0.74       171
+   B-duration       1.00      0.07      0.14        27
+    B-endTime       0.73      0.30      0.42        37
+     B-region       0.29      0.07      0.11        28
+  B-startTime       0.44      0.91      0.59        57
+       I-Soil       0.00      0.00      0.00        26
+I-cropSpecies       0.54      0.48      0.51        79
+   I-duration       0.41      0.65      0.50        17
+    I-endTime       0.00      0.00      0.00         5
+     I-region       0.00      0.00      0.00         6
+  I-startTime       0.00      0.00      0.00         6
+            O       0.99      0.99      0.99     10740
+
+     accuracy                           0.97     11267
+    macro avg       0.46      0.34      0.33     11267
+ weighted avg       0.96      0.97      0.96     11267
+
+
+Entity-level Classification Report:
+--------------------------------------------------
+              precision    recall  f1-score   support
+
+        Soil       0.00      0.00      0.00        33
+        city       1.00      0.06      0.12        16
+     country       0.80      0.84      0.82        19
+ cropSpecies       0.59      0.71      0.64       171
+    duration       0.35      0.22      0.27        27
+     endTime       0.67      0.27      0.38        37
+      region       0.00      0.00      0.00        28
+   startTime       0.42      0.88      0.57        57
+
+   micro avg       0.53      0.53      0.53       388
+   macro avg       0.48      0.37      0.35       388
+weighted avg       0.49      0.53      0.47       388
+
+
+Training Configuration:
+-------------------------
+learning_rate: 3e-05
+num_train_epochs: 10
+per_device_train_batch_size: 4
+weight_decay: 0.05
+warmup_ratio: 0.15

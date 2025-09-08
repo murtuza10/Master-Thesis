@@ -1,0 +1,20 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "soil cores", "span": [134, 142] }},
+    {"cropSpecies": { "value": "cropland", "span": [94, 104] }},
+    {"cropSpecies": { "value": "grassland", "span": [114, 124] }},
+    {"cropSpecies": { "value": "soil", "span": [43, 50] }}
+  ],
+  "Soil": [
+    {"soilDepth": { "value": "soil cores", "span": [134, 142] }},
+    {"soilBulkDensity": { "value": "soil properties", "span": [173, 192] }},
+    {"soilOrganicCarbon": { "value": "soil organic carbon", "span": [159, 176] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [141, 149] }}
+  ],
+  "Time Statement": []
+}
+```

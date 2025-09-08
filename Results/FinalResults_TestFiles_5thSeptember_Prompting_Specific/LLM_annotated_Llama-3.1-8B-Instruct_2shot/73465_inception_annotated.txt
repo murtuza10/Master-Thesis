@@ -1,0 +1,22 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "celery", "span": [343, 349] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": { "value": "Germany", "span": [43, 51] }},
+    {"city": { "value": "Gatersleben", "span": [69, 80] }},
+    {"city": { "value": "London", "span": [223, 228] }},
+    {"city": { "value": "Berlin", "span": [396, 403] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2015", "span": [255, 259] }},
+    {"startTime": { "value": "2016", "span": [262, 266] }},
+    {"endTime": { "value": "2018", "span": [384, 388] }},
+    {"endTime": { "value": "2019", "span": [389, 393] }}
+  ]
+}
+```

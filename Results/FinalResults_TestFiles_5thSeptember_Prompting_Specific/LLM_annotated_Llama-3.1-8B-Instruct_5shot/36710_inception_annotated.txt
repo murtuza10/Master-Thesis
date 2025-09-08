@@ -1,0 +1,29 @@
+### Output Format ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "apple", "span": [166, 171] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": { "value": "Germany", "span": [145, 152] }},
+    {"region": { "value": "Lower Saxony", "span": [164, 176] }},
+    {"city": { "value": "Altes Land", "span": [208, 218] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2001", "span": [204, 208] }},
+    {"endTime": { "value": "2003", "span": [213, 217] }}
+  ]
+}
+```
+
+### Explanation ###
+
+The provided text mentions the following entities:
+
+- **Crop**: "apple" is mentioned as a crop species.
+- **Location**: "Germany", "Lower Saxony", and "Altes Land" are mentioned as locations.
+- **Time Statement**: The time period from 2001 to 2003 is mentioned, which can be extracted as a start and end time.
+
+The corresponding entities are extracted and formatted according to the specified JSON structure.
