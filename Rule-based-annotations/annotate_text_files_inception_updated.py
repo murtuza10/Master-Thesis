@@ -619,8 +619,8 @@ def process_directory_inception(input_directory, output_directory, nlp, matcher)
 
 if __name__ == "__main__":
     nlp, matcher = initialize_nlp_with_entity_ruler()
-    input_directory = r"/home/s27mhusa_hpc/Master-Thesis/Text_Files_For_LLM_Input"
-    output_directory = r"/home/s27mhusa_hpc/Master-Thesis/Test_Rule_Based_Annotations"
+    input_directory = r"/home/s27mhusa_hpc/Master-Thesis/Text_Files_Test_Data"
+    output_directory = r"/home/s27mhusa_hpc/Master-Thesis/Test_Rule_Based_Annotations_8thSeptember"
 
     print(f"Processing text files in Inception format from: {input_directory}")
     process_directory_inception(input_directory, output_directory, nlp, matcher)
