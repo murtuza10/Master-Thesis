@@ -1,0 +1,38 @@
+### Output Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "maize", "span": [146, 151] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "Wanna Sand", "span": [184, 195] }},
+    {"soilReferenceGroup": { "value": "Wanna Sand without biogas slurry", "span": [197, 215] }},
+    {"soilReferenceGroup": { "value": "Rostock Sand", "span": [218, 227] }},
+    {"soilReferenceGroup": { "value": "Wanna Marsch", "span": [230, 239] }},
+    {"soilTexture": { "value": "Sand", "span": [184, 187] }},
+    {"soilTexture": { "value": "Sand", "span": [197, 200] }},
+    {"soilTexture": { "value": "Sand", "span": [218, 221] }},
+    {"soilTexture": { "value": "Marsch", "span": [230, 233] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [292, 297] }},
+    {"region": { "value": "Europe", "span": [301, 306] }},
+    {"region": { "value": "Lower Saxony", "span": [310, 318] }},
+    {"region": { "value": "Mecklenburg-Vorpommern", "span": [322, 335] }},
+    {"city": { "value": "Wanna", "span": [184, 190] }},
+    {"city": { "value": "Rostock", "span": [218, 224] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2021", "span": [156, 160] }},
+    {"startTime": { "value": "2022", "span": [162, 166] }},
+    {"endTime": { "value": "2023", "span": [168, 172] }}
+  ]
+}
+```
+### Explanation of the Output ###
+The output JSON contains the extracted entities from the given text.
+
+- In the **Crops** category, the only crop mentioned in the text is "maize".
+- In the **Soil** category, we have extracted different soil reference groups and textures mentioned in the text.
+- In the **Location** category, we have extracted the country, region, and city names mentioned in the text.
+- In the **Time Statement** category, we have extracted the start and end years of the experiment mentioned in the text.

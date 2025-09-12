@@ -1,21 +1,22 @@
 {
-  "Crops": [],
-  "Soil": [
+  "Crops": [
     {
-      "soilBulkDensity": {
-        "value": "bulk density",
+      "cropSpecies": {
+        "value": "energy crop",
         "span": [
-          381,
-          392
+          91,
+          101
         ]
       }
-    },
+    }
+  ],
+  "Soil": [
     {
       "soilAvailableNitrogen": {
         "value": "nitrogen content",
         "span": [
-          350,
-          363
+          422,
+          438
         ]
       }
     },
@@ -23,8 +24,8 @@
       "soilAvailableNitrogen": {
         "value": "ammonium-N",
         "span": [
-          365,
-          374
+          441,
+          451
         ]
       }
     },
@@ -32,8 +33,17 @@
       "soilAvailableNitrogen": {
         "value": "nitrate-N",
         "span": [
-          376,
-          383
+          454,
+          462
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "bulk density",
+        "span": [
+          466,
+          476
         ]
       }
     }
@@ -43,8 +53,8 @@
       "country": {
         "value": "Germany",
         "span": [
-          129,
-          136
+          111,
+          118
         ]
       }
     },
@@ -52,8 +62,8 @@
       "country": {
         "value": "Germany",
         "span": [
-          222,
-          229
+          177,
+          184
         ]
       }
     }
@@ -63,8 +73,8 @@
       "startTime": {
         "value": "2011/2012",
         "span": [
-          203,
-          212
+          198,
+          208
         ]
       }
     },
@@ -72,17 +82,8 @@
       "endTime": {
         "value": "2014/2015",
         "span": [
-          215,
-          224
-        ]
-      }
-    },
-    {
-      "duration": {
-        "value": "three years",
-        "span": [
-          193,
-          202
+          211,
+          221
         ]
       }
     }

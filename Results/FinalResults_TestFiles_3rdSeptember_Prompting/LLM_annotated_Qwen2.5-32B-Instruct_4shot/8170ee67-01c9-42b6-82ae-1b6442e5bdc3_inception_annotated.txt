@@ -1,35 +1,33 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "winter barley", "span": [46, 59] }},
-    {"cropSpecies": { "value": "winter oilseed rape", "span": [455, 470] }},
-    {"cropSpecies": { "value": "winter wheat", "span": [472, 481] }},
-    {"cropSpecies": { "value": "lupine", "span": [483, 489] }},
-    {"cropSpecies": { "value": "winter rye", "span": [491, 500] }},
-    {"cropSpecies": { "value": "winter barley", "span": [613, 626] }},
-    {"cropSpecies": { "value": "Hordeum vulgare L.", "span": [630, 647] }},
-    {"cropVariety": { "value": "OTTO", "span": [652, 656] }}
+    {"cropSpecies": { "value": "winter barley", "span": [42, 54] }},
+    {"cropSpecies": { "value": "winter oilseed rape", "span": [524, 539] }},
+    {"cropSpecies": { "value": "winter wheat", "span": [541, 551] }},
+    {"cropSpecies": { "value": "lupine", "span": [553, 559] }},
+    {"cropSpecies": { "value": "winter rye", "span": [561, 570] }},
+    {"cropSpecies": { "value": "oat", "span": [239, 242] }},
+    {"cropSpecies": { "value": "winter barley", "span": [615, 627] }},
+    {"cropSpecies": { "value": "Hordeum vulgare", "span": [647, 663] }},
+    {"cropVariety": { "value": "OTTO", "span": [667, 671] }}
   ],
   "Soil": [
-    {"soilDepth": { "value": "25 cm", "span": [300, 305] }},
-    {"soilAvailableNitrogen": { "value": "PCAL", "span": [191, 195] }},
-    {"soilAvailableNitrogen": { "value": "PCAL", "span": [259, 263] }},
-    {"soilAvailableNitrogen": { "value": "PCAL", "span": [363, 367] }},
-    {"soilAvailableNitrogen": { "value": "PCAL", "span": [386, 390] }},
-    {"soilAvailableNitrogen": { "value": "PCAL", "span": [404, 408] }},
-    {"soilAvailableNitrogen": { "value": "PCAL", "span": [424, 428] }}
+    {"soilDepth": { "value": "25 cm", "span": [222, 227] }},
+    {"soilDepth": { "value": "0-30 cm", "span": [374, 380] }},
+    {"soilOrganicCarbon": { "value": "PCAL", "span": [165, 169] }},
+    {"soilOrganicCarbon": { "value": "PCAL", "span": [381, 385] }},
+    {"soilOrganicCarbon": { "value": "PCAL", "span": [393, 397] }},
+    {"soilOrganicCarbon": { "value": "PCAL", "span": [403, 407] }}
   ],
   "Location": [
-    {"city": { "value": "Braunschweig", "span": [14, 27] }}
+    {"city": { "value": "Braunschweig", "span": [13, 26] }}
   ],
   "Time Statement": [
-    {"startTime": { "value": "2014", "span": [41, 45] }},
-    {"startTime": { "value": "1985", "span": [165, 169] }},
-    {"endTime": { "value": "2008", "span": [170, 174] }},
-    {"startTime": { "value": "2013", "span": [287, 291] }},
-    {"endTime": { "value": "2013", "span": [317, 321] }},
-    {"startTime": { "value": "autumn 2013", "span": [572, 581] }},
-    {"startTime": { "value": "2014", "span": [619, 623] }}
+    {"startTime": { "value": "1985", "span": [280, 284] }},
+    {"endTime": { "value": "2008", "span": [286, 290] }},
+    {"startTime": { "value": "2013", "span": [329, 333] }},
+    {"endTime": { "value": "2013", "span": [365, 369] }},
+    {"endTime": { "value": "2014", "span": [628, 632] }}
   ]
 }
 ```

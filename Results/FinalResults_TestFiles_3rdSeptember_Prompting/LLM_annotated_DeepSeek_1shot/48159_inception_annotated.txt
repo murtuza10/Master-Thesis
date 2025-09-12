@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757409740-GgGSbDmIwk4IVDUGI92W",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757409740,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"energy crops\", \"span\": [698, 710] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [37, 44] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [583, 590] }},\n    {\"region\": { \"value\": \"European Union\", \"span\": [290, 305] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1990\", \"span\": [21, 25] }},\n    {\"endTime\": { \"value\": \"2017\", \"span\": [28, 32] }},\n    {\"startTime\": { \"value\": \"1990\", \"span\": [622, 626] }},\n    {\"endTime\": { \"value\": \"2017\", \"span\": [629, 633] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2169,
+    "completion_tokens": 220,
+    "total_tokens": 2389,
+    "prompt_tokens_details": null
+  }
+}

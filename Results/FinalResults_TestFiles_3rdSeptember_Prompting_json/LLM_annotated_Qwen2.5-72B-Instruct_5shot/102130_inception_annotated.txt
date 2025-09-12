@@ -2,11 +2,11 @@
   "Crops": [],
   "Soil": [
     {
-      "soilTexture": {
-        "value": "C3 soil",
+      "soilDepth": {
+        "value": "6, 12 and 24 months",
         "span": [
-          101,
-          107
+          106,
+          126
         ]
       }
     },
@@ -14,8 +14,8 @@
       "soilOrganicCarbon": {
         "value": "particulate organic carbon (POC)",
         "span": [
-          143,
-          174
+          131,
+          161
         ]
       }
     },
@@ -23,8 +23,8 @@
       "soilOrganicCarbon": {
         "value": "mineral associated organic carbon (MAOC)",
         "span": [
-          180,
-          219
+          166,
+          205
         ]
       }
     },
@@ -32,17 +32,26 @@
       "soilOrganicCarbon": {
         "value": "total carbon content",
         "span": [
-          224,
-          242
+          212,
+          231
         ]
       }
     },
     {
       "soilOrganicCarbon": {
-        "value": "old (native) and new (added) carbon",
+        "value": "delta 13C values",
         "span": [
-          272,
-          306
+          245,
+          261
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "new and old carbon",
+        "span": [
+          311,
+          329
         ]
       }
     }
@@ -53,35 +62,35 @@
       "duration": {
         "value": "2-year",
         "span": [
-          48,
-          53
+          47,
+          52
         ]
       }
     },
     {
-      "endTime": {
-        "value": "6 months",
+      "startTime": {
+        "value": "6",
         "span": [
-          62,
-          71
+          106,
+          107
         ]
       }
     },
     {
-      "endTime": {
-        "value": "12 months",
+      "startTime": {
+        "value": "12",
         "span": [
-          76,
-          86
+          109,
+          111
         ]
       }
     },
     {
-      "endTime": {
+      "startTime": {
         "value": "24 months",
         "span": [
-          91,
-          100
+          114,
+          126
         ]
       }
     }

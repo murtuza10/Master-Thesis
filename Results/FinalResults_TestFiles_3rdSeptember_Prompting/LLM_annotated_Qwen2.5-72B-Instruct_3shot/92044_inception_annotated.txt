@@ -1,27 +1,27 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "spring barley", "span": [204, 216] }},
-    {"cropSpecies": { "value": "winter barley", "span": [218, 230] }},
-    {"cropSpecies": { "value": "grain maize", "span": [232, 242] }},
-    {"cropSpecies": { "value": "silage maize", "span": [244, 255] }},
-    {"cropSpecies": { "value": "oats", "span": [257, 261] }},
-    {"cropSpecies": { "value": "potatoes", "span": [263, 271] }},
-    {"cropSpecies": { "value": "winter rape", "span": [273, 283] }},
-    {"cropSpecies": { "value": "rye", "span": [285, 288] }},
-    {"cropSpecies": { "value": "sugarbeet", "span": [290, 298] }},
-    {"cropSpecies": { "value": "triticale", "span": [300, 308] }},
-    {"cropSpecies": { "value": "winter wheat", "span": [310, 321] }}
+    {"cropSpecies": { "value": "spring barley", "span": [191, 203] }},
+    {"cropSpecies": { "value": "winter barley", "span": [205, 217] }},
+    {"cropSpecies": { "value": "grain maize", "span": [219, 229] }},
+    {"cropSpecies": { "value": "silage maize", "span": [231, 242] }},
+    {"cropSpecies": { "value": "oats", "span": [244, 248] }},
+    {"cropSpecies": { "value": "potatoes", "span": [250, 258] }},
+    {"cropSpecies": { "value": "winter rape", "span": [260, 270] }},
+    {"cropSpecies": { "value": "rye", "span": [272, 275] }},
+    {"cropSpecies": { "value": "sugarbeet", "span": [277, 285] }},
+    {"cropSpecies": { "value": "triticale", "span": [287, 296] }},
+    {"cropSpecies": { "value": "winter wheat", "span": [298, 309] }}
   ],
   "Soil": [],
   "Location": [
-    {"country": { "value": "Germany", "span": [57, 64] }},
-    {"region": { "value": "districts", "span": [125, 132] }}
+    {"country": { "value": "Germany", "span": [46, 53] }},
+    {"region": { "value": "districts", "span": [124, 131] }}
   ],
   "Time Statement": [
-    {"startTime": { "value": "1979", "span": [69, 73] }},
-    {"endTime": { "value": "2021", "span": [77, 81] }},
-    {"endTime": { "value": "2020", "span": [543, 547] }}
+    {"startTime": { "value": "1979", "span": [65, 69] }},
+    {"endTime": { "value": "2021", "span": [73, 77] }},
+    {"duration": { "value": "1979 to 2021", "span": [65, 77] }}
   ]
 }
 ```

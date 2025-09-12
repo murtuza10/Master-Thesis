@@ -1,17 +1,9 @@
 ```json
 {
-  "Crops": [
-    {"cropSpecies": {"value": "apple", "span": [109, 114]}}
-  ],
+  "Crops": [{"cropSpecies": {"value": "apple", "span": [144, 149]}}],
   "Soil": [],
-  "Location": [
-    {"region": {"value": "Lower Saxony", "span": [326, 336]}},
-    {"country": {"value": "Germany", "span": [338, 344]}},
-    {"region": {"value": "'Altes Land'", "span": [41, 51]}}
-  ],
-  "Time Statement": [
-    {"startTime": {"value": "2001", "span": [257, 261]}},
-    {"endTime": {"value": "2003", "span": [265, 269]}}
-  ]
+  "Location": [{"region": {"value": "Altes Land", "span": [23, 32]}, "country": {"value": "Germany", "span": [300, 307]}, "region": {"value": "Lower Saxony", "span": [291, 300]}},
+               {"region": {"value": "Altes Land", "span": [169, 178]}}],
+  "Time Statement": [{"startTime": {"value": "2001", "span": [215, 219]}, "endTime": {"value": "2003", "span": [224, 228]}}]
 }
 ```

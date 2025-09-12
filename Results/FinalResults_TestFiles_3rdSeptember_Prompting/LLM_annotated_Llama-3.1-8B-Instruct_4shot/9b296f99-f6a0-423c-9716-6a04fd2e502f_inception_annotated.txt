@@ -1,27 +1,31 @@
-### Output JSON Format ###
+### JSON Output ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "winter wheat", "span": [186, 195] }},
-    {"cropSpecies": { "value": "winter barley", "span": [206, 215] }},
-    {"cropSpecies": { "value": "sugar beet", "span": [217, 225] }}
+    {"cropSpecies": {"value": "winter wheat", "span": [146, 157]}},
+    {"cropSpecies": {"value": "winter barley", "span": [163, 173]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [179, 187]}},
+    {"cropSpecies": {"value": "winter barley", "span": [272, 282]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [288, 296]}}
   ],
   "Soil": [
-    {"soilReferenceGroup": { "value": "ploughing", "span": [157, 166] }},
-    {"soilReferenceGroup": { "value": "farmyard (horse) manure", "span": [222, 241] }},
-    {"soilReferenceGroup": { "value": "crop residues + catch crop", "span": [229, 247] }},
-    {"soilBulkDensity": { "value": "72", "span": [344, 346] }},
-    {"soilBulkDensity": { "value": "4", "span": [376, 378] }},
-    {"soilPH": { "value": "long-term source of nutrients", "span": [81, 98] }},
-    {"soilOrganicCarbon": { "value": "humus", "span": [83, 89] }}
+    {"soilReferenceGroup": {"value": "ploughing", "span": [124, 134]}},
+    {"soilBulkDensity": {"value": "Bodendichte", "span": [124, 134]}},
+    {"soilPH": {"value": "BodenpH", "span": [124, 134]}},
+    {"soilOrganicCarbon": {"value": "humus", "span": [44, 50]}},
+    {"soilAvailableNitrogen": {"value": "Nährstoffgehalt", "span": [114, 128]}},
+    {"soilReferenceGroup": {"value": "Boden", "span": [114, 118]}}
   ],
   "Location": [
-    {"country": { "value": "Germany", "span": [30, 37] }},
-    {"city": { "value": "Speyer", "span": [34, 41] }}
+    {"country": {"value": "Germany", "span": [15, 21]}},
+    {"city": {"value": "Speyer", "span": [19, 25]}},
+    {"latitude": {"value": "48.3776", "span": [null, null]}},
+    {"longitude": {"value": "12.5733", "span": [null, null]}}
   ],
   "Time Statement": [
-    {"startTime": { "value": "1984", "span": [139, 143] }},
-    {"duration": { "value": "four sampling seasons", "span": [321, 335] }}
+    {"startTime": {"value": "1984", "span": [91, 95]}},
+    {"endTime": {"value": "2009", "span": [216, 220]}}
   ]
 }
 ```
+Note: Since the exact latitude and longitude values were not provided in the input text, I couldn't determine the exact span for the location entities. If you have the exact values, you can adjust the span accordingly.

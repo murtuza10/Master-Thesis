@@ -4,8 +4,8 @@
       "cropSpecies": {
         "value": "C4",
         "span": [
-          43,
-          45
+          44,
+          47
         ]
       }
     },
@@ -13,8 +13,8 @@
       "cropSpecies": {
         "value": "C3",
         "span": [
-          85,
-          87
+          94,
+          96
         ]
       }
     }
@@ -24,17 +24,35 @@
       "soilReferenceGroup": {
         "value": "C3 soil",
         "span": [
-          86,
-          93
+          94,
+          101
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "particulate organic carbon",
+        "span": [
+          162,
+          181
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "mineral associated organic carbon",
+        "span": [
+          183,
+          208
         ]
       }
     },
     {
       "soilDepth": {
-        "value": "6",
+        "value": "bulk soil",
         "span": [
-          117,
-          119
+          236,
+          242
         ]
       }
     }
@@ -42,20 +60,29 @@
   "Location": [],
   "Time Statement": [
     {
-      "duration": {
-        "value": "2 years",
+      "startTime": {
+        "value": "6 months",
         "span": [
-          31,
-          35
+          128,
+          135
         ]
       }
     },
     {
       "startTime": {
-        "value": "6",
+        "value": "12 months",
         "span": [
-          117,
-          119
+          133,
+          140
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "24 months",
+        "span": [
+          142,
+          149
         ]
       }
     }

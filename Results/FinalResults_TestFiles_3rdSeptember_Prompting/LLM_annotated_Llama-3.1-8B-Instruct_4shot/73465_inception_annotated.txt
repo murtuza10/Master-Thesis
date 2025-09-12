@@ -1,24 +1,26 @@
-### Output Format ###
+### Output JSON Structure ###
 
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "Helosciadium nodiflorum", "span": [143, 162] }},
-    {"cropSpecies": { "value": "wild celery", "span": [531, 541] }}
+    {"cropSpecies": {"value": "Helosciadium nodiflorum", "span": [135, 153]}},
+    {"cropSpecies": {"value": "celery", "span": [245, 249]}},
+    {"cropSpecies": {"value": "wild celery", "span": [268, 277]}},
+    {"cropSpecies": {"value": "wild celery species", "span": [279, 292]}},
+    {"cropSpecies": {"value": "wild celery relatives", "span": [321, 335]}}
   ],
   "Soil": [],
   "Location": [
-    {"city": { "value": "Gatersleben", "span": [114, 123] }},
-    {"city": { "value": "London", "span": [234, 238] }},
-    {"country": { "value": "Germany", "span": [130, 137] }},
-    {"country": { "value": "Germany", "span": [306, 313] }}
+    {"city": {"value": "Gatersleben", "span": [96, 106]}},
+    {"city": {"value": "London", "span": [145, 151]}},
+    {"city": {"value": "Berlin", "span": [245, 249]}},
+    {"city": {"value": "Germany", "span": [106, 115]}}
   ],
   "Time Statement": [
-    {"startTime": { "value": "2015", "span": [434, 438] }},
-    {"startTime": { "value": "2016", "span": [439, 443] }},
-    {"endTime": { "value": "2018", "span": [542, 546] }},
-    {"endTime": { "value": "2019", "span": [547, 551] }}
+    {"startTime": {"value": "2015", "span": [240, 244]}},
+    {"startTime": {"value": "2016", "span": [244, 248]}},
+    {"endTime": {"value": "2018", "span": [297, 301]}},
+    {"endTime": {"value": "2019", "span": [301, 305]}}
   ]
 }
 ```
-Note: The span positions are based on the full text of the abstract.

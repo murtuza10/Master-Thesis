@@ -1,13 +1,15 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "wheat", "span": [25, 29] }}
+    {"cropSpecies": {"value": "wheat", "span": [22, 26]}}
   ],
   "Soil": [],
-  "Location": [],
+  "Location": [
+    {"region": {"value": "Europe", "span": [54, 59]}}
+  ],
   "Time Statement": [
-    {"startTime": { "value": "2019", "span": [42, 46] }},
-    {"startTime": { "value": "2020", "span": [47, 51] }}
+    {"startTime": {"value": "2019", "span": [42, 46]}},
+    {"startTime": {"value": "2020", "span": [48, 52]}}
   ]
 }
 ```

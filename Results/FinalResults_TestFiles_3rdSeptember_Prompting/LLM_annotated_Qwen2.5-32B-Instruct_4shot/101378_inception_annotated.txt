@@ -1,15 +1,34 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "Betula pubescens Ehrh.", "span": [84, 101] }},
-    {"cropSpecies": { "value": "birch", "span": [291, 296] }},
-    {"cropSpecies": { "value": "birch", "span": [443, 448] }},
-    {"cropSpecies": { "value": "birches", "span": [652, 658] }}
+    {
+      "cropSpecies": {
+        "value": "Betula pubescens",
+        "span": [128, 144]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "birch",
+        "span": [224, 229]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "birch",
+        "span": [541, 546]
+      }
+    }
   ],
   "Soil": [],
   "Location": [],
   "Time Statement": [
-    {"duration": { "value": "one year", "span": [339, 347] }}
+    {
+      "duration": {
+        "value": "one year",
+        "span": [277, 285]
+      }
+    }
   ]
 }
 ```

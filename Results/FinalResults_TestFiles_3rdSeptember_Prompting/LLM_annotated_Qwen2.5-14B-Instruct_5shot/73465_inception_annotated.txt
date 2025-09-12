@@ -1,24 +1,89 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "Helosciadium nodiflorum", "span": [56, 76] }},
-    {"cropSpecies": { "value": "Helosciadium nodiflorum", "span": [157, 177] }},
-    {"cropSpecies": { "value": "Helosciadium nodiflorum", "span": [409, 429] }},
-    {"cropSpecies": { "value": "wild celery", "span": [623, 631] }}
+    {
+      "cropSpecies": {
+        "value": "Helosciadium nodiflorum",
+        "span": [47, 64]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Helosciadium nodiflorum",
+        "span": [169, 186]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Helosciadium nodiflorum",
+        "span": [424, 441]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wild celery",
+        "span": [573, 581]
+      }
+    }
   ],
   "Soil": [],
   "Location": [
-    {"city": { "value": "Gatersleben", "span": [85, 96] }},
-    {"country": { "value": "Germany", "span": [99, 106] }},
-    {"city": { "value": "London", "span": [119, 126] }},
-    {"city": { "value": "Berlin", "span": [475, 481] }},
-    {"country": { "value": "Germany", "span": [484, 491] }}
+    {
+      "city": {
+        "value": "Gatersleben",
+        "span": [95, 106]
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": [111, 118]
+      }
+    },
+    {
+      "city": {
+        "value": "London",
+        "span": [149, 156]
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": [365, 372]
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": [461, 468]
+      }
+    }
   ],
   "Time Statement": [
-    {"startTime": { "value": "2015", "span": [415, 419] }},
-    {"startTime": { "value": "2016", "span": [424, 428] }},
-    {"startTime": { "value": "2018", "span": [529, 533] }},
-    {"endTime": { "value": "2019", "span": [536, 540] }}
+    {
+      "startTime": {
+        "value": "2015",
+        "span": [454, 458]
+      }
+    },
+    {
+      "startTime": {
+        "value": "2016",
+        "span": [460, 464]
+      }
+    },
+    {
+      "startTime": {
+        "value": "2018",
+        "span": [503, 507]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2019",
+        "span": [510, 514]
+      }
+    }
   ]
 }
 ```

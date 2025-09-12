@@ -1,27 +1,15 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "wheat", "span": [55, 60] }}
+    {"cropSpecies": { "value": "wheat", "span": [75, 80] }}
   ],
-  "Soil": [
-    {"soilTexture": { "value": "", "span": [] }},
-    {"soilReferenceGroup": { "value": "", "span": [] }},
-    {"soilDepth": { "value": "", "span": [] }},
-    {"soilBulkDensity": { "value": "", "span": [] }},
-    {"soilPH": { "value": "", "span": [] }},
-    {"soilOrganicCarbon": { "value": "", "span": [] }},
-    {"soilAvailableNitrogen": { "value": "", "span": [] }}
-  ],
+  "Soil": [],
   "Location": [
-    {"country": { "value": "", "span": [] }},
-    {"region": { "value": "", "span": [] }},
-    {"city": { "value": "", "span": [] }},
-    {"latitude": { "value": "", "span": [] }},
-    {"longitude": { "value": "", "span": [] }}
+    {"region": { "value": "Europe", "span": [137, 143] }}
   ],
   "Time Statement": [
-    {"startTime": { "value": "2019", "span": [36, 40] }},
-    {"endTime": { "value": "2020", "span": [43, 47] }}
+    {"startTime": { "value": "2019", "span": [44, 48] }},
+    {"endTime": { "value": "2020", "span": [50, 54] }}
   ]
 }
 ```

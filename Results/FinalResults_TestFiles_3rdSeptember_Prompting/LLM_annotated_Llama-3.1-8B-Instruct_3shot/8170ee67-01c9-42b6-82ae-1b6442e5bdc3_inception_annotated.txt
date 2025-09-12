@@ -1,36 +1,27 @@
-### JSON Output ###
-
+### Output ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "barley", "span": [144, 150]}},
-    {"cropSpecies": {"value": "oat", "span": [384, 388]}},
-    {"cropSpecies": {"value": "oilseed rape", "span": [244, 253]}},
-    {"cropSpecies": {"value": "wheat", "span": [275, 281]}},
-    {"cropSpecies": {"value": "lupine", "span": [296, 302]}},
-    {"cropSpecies": {"value": "rye", "span": [314, 318]}},
-    {"cropSpecies": {"value": "winter barley", "span": [164, 176]}},
-    {"cropVariety": {"value": "OTTO", "span": [409, 413]}}
+    {"cropSpecies": {"value": "winter barley", "span": [34, 45]}},
+    {"cropSpecies": {"value": "winter oilseed rape", "span": [111, 123]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [124, 132]}},
+    {"cropSpecies": {"value": "lupine", "span": [133, 139]}},
+    {"cropSpecies": {"value": "winter rye", "span": [140, 146]}},
+    {"cropVariety": {"value": "OTTO", "span": [175, 179]}}
   ],
   "Soil": [
-    {"soilDepth": {"value": "25 cm", "span": [396, 401]}},
-    {"soilReferenceGroup": {"value": "grassland", "span": [246, 253]}},
-    {"soilReferenceGroup": {"value": "Boden", "span": [531, 535]}}
+    {"soilDepth": {"value": "25 cm", "span": [236, 240]}},
+    {"soilClass": {"value": "A", "span": [281, 282]}}
   ],
   "Location": [
-    {"region": {"value": "Braunschweig", "span": [19, 29]}}
+    {"region": {"value": "Braunschweig", "span": [10, 20]}}
   ],
   "Time Statement": [
-    {"startTime": {"value": "2014", "span": [145, 149]}},
-    {"endTime": {"value": "2013", "span": [395, 399]}}
+    {"startTime": {"value": "1985", "span": [69, 73]}},
+    {"endTime": {"value": "2008", "span": [85, 89]}},
+    {"startTime": {"value": "2013", "span": [182, 186]}},
+    {"endTime": {"value": "2013", "span": [190, 194]}},
+    {"startTime": {"value": "2014", "span": [32, 36]}}
   ]
 }
 ```
-
-### Explanation ###
-
-*   The JSON structure is filled with the entities extracted from the given text.
-*   The "Crops" list contains the extracted crop species and variety.
-*   The "Soil" list contains the extracted soil depth and reference groups.
-*   The "Location" list contains the extracted region.
-*   The "Time Statement" list contains the extracted start and end time.

@@ -4,57 +4,57 @@
       "cropSpecies": {
         "value": "maize",
         "span": [
-          129,
-          134
+          113,
+          118
         ]
       }
     }
   ],
   "Soil": [
     {
-      "soilTexture": {
-        "value": "Sand",
+      "soilReferenceGroup": {
+        "value": "Wanna Sand",
         "span": [
-          155,
-          159
+          183,
+          193
         ]
       }
     },
     {
-      "soilTexture": {
-        "value": "Sand",
+      "soilReferenceGroup": {
+        "value": "Wanna Sand without biogas slurry",
         "span": [
-          180,
-          184
+          206,
+          236
         ]
       }
     },
     {
-      "soilTexture": {
-        "value": "Marsch",
+      "soilReferenceGroup": {
+        "value": "Rostock Sand",
         "span": [
-          204,
-          210
+          249,
+          262
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "Wanna Marsch",
+        "span": [
+          275,
+          287
         ]
       }
     }
   ],
   "Location": [
     {
-      "country": {
-        "value": "Germany",
-        "span": [
-          864,
-          871
-        ]
-      }
-    },
-    {
       "region": {
         "value": "Lower Saxony",
         "span": [
-          874,
-          886
+          897,
+          909
         ]
       }
     },
@@ -62,8 +62,8 @@
       "region": {
         "value": "Mecklenburg-Vorpommern",
         "span": [
-          889,
-          909
+          912,
+          933
         ]
       }
     },
@@ -71,8 +71,26 @@
       "city": {
         "value": "Rostock",
         "span": [
-          912,
-          919
+          936,
+          943
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Europe",
+        "span": [
+          888,
+          894
+        ]
+      }
+    },
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          901,
+          908
         ]
       }
     }
@@ -82,44 +100,17 @@
       "startTime": {
         "value": "2021",
         "span": [
-          55,
-          59
-        ]
-      }
-    },
-    {
-      "startTime": {
-        "value": "2022",
-        "span": [
-          60,
-          64
-        ]
-      }
-    },
-    {
-      "startTime": {
-        "value": "2023",
-        "span": [
-          65,
-          69
-        ]
-      }
-    },
-    {
-      "startTime": {
-        "value": "April",
-        "span": [
-          269,
-          274
+          135,
+          139
         ]
       }
     },
     {
       "endTime": {
-        "value": "August",
+        "value": "2023",
         "span": [
-          276,
-          282
+          147,
+          151
         ]
       }
     }

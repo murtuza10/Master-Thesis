@@ -1,23 +1,19 @@
-### Output JSON ###
+### Output JSON Structure ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "Betula pubescens Ehrh.", "span": [144, 165] }}
+    {"cropSpecies": { "value": "Birch", "span": [143, 148] }, "cropSpecies": { "value": "Birch", "span": [234, 239] }, "cropSpecies": { "value": "Betula pubescens Ehrh.", "span": [143, 163] }}
   ],
-  "Soil": [
-    {"soilReferenceGroup": { "value": "bog", "span": [47, 51] }},
-    {"soilTexture": { "value": "peat", "span": [121, 126] }},
-    {"soilDepth": { "value": "mire-specific", "span": [146, 155] }}
-  ],
+  "Soil": [],
   "Location": [],
   "Time Statement": [
-    {"duration": { "value": "one year", "span": [211, 217] }}
+    {"duration": { "value": "one year", "span": [213, 219] }}
   ]
 }
 ```
 
-### Notes on JSON Output ###
-
-- The JSON output only contains the relevant entities mentioned in the text.
-- The `"span"` value for each entity is the start and end character position from the beginning of the full text.
-- The `"value"` field for each entity is the exact string mentioned in the text.
+### Explanation ###
+- The input text mentions "Birch" as a plant species, which is extracted as a "cropSpecies" entity. The same species is mentioned again as "Betula pubescens Ehrh.", which is also extracted as a "cropSpecies" entity. 
+- There are no soil-related entities mentioned in the text.
+- The text mentions a location, but it is not specific enough to be extracted as a location entity.
+- The text mentions a time duration of "one year" for the measurements, which is extracted as a "duration" entity in the Time Statement category.

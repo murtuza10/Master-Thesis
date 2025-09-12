@@ -1,19 +1,20 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "winter wheat", "span": [124, 134] }},
-    {"cropSpecies": { "value": "winter barley", "span": [158, 167] }},
-    {"cropSpecies": { "value": "sugar beet", "span": [170, 178] }}
+    {"cropSpecies": { "value": "winter wheat", "span": [122, 131] }},
+    {"cropSpecies": { "value": "winter barley", "span": [134, 144] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [147, 154] }}
   ],
   "Soil": [],
   "Location": [
-    {"country": { "value": "Germany", "span": [29, 35] }},
-    {"region": { "value": "LUFA Speyer", "span": [36, 44] }},
-    {"region": { "value": "Speyer", "span": [45, 50] }},
-    {"region": { "value": "Rinkenbergerhof", "span": [51, 61] }}
+    {"region": { "value": "Speyer, Germany", "span": [16, 31] }},
+    {"country": { "value": "Germany", "span": [33, 39] }},
+    {"region": { "value": "LUFA Speyer", "span": [50, 58] }},
+    {"region": { "value": "Rinkenbergerhof", "span": [60, 70] }}
   ],
   "Time Statement": [
-    {"startTime": { "value": "1984", "span": [111, 116] }}
+    {"startTime": { "value": "1984", "span": [81, 85] }},
+    {"startTime": { "value": "2009", "span": [279, 284] }}
   ]
 }
 ```

@@ -1,8 +1,13 @@
 ```json
 {
   "Crops": [],
-  "Soil": [{"soilOrganicCarbon": {"value": "soil organic carbon", "span": [38, 51]}, "soilOrganicCarbon": {"value": "SOC", "span": [59, 62]}, "soilOrganicCarbon": {"value": "SON", "span": [64, 67]}}, {"soilOrganicCarbon": {"value": "decomposition and transfer rates", "span": [195, 217]}}],
+  "Soil": [
+    {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [28, 40]}},
+    {"soilOrganicCarbon": {"value": "SOC", "span": [47, 51]}},
+    {"soilOrganicNitrogen": {"value": "soil organic nitrogen", "span": [52, 65]}},
+    {"soilOrganicNitrogen": {"value": "SON", "span": [66, 69]}}
+  ],
   "Location": [],
-  "Time Statement": [{"duration": {"value": "temporal development", "span": [139, 151]}}]
+  "Time Statement": []
 }
 ```

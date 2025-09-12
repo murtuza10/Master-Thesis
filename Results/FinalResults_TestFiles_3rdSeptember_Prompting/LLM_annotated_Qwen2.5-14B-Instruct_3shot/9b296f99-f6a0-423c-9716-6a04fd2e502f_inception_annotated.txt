@@ -1,17 +1,19 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "winter wheat", "span": [144, 152]}},
-    {"cropSpecies": { "value": "winter barley", "span": [155, 165]}},
-    {"cropSpecies": { "value": "sugar beet", "span": [168, 175]}}
+    {"cropSpecies": {"value": "winter wheat", "span": [191, 199]}},
+    {"cropSpecies": {"value": "winter barley", "span": [201, 212]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [214, 222]}}
   ],
   "Soil": [],
   "Location": [
-    {"country": { "value": "Germany", "span": [18, 25]}},
-    {"city": { "value": "Speyer", "span": [10, 15]}}
+    {"city": {"value": "Speyer", "span": [46, 52]}},
+    {"country": {"value": "Germany", "span": [53, 60]}},
+    {"city": {"value": "Speyer", "span": [231, 237]}},
+    {"country": {"value": "Germany", "span": [238, 245]}}
   ],
   "Time Statement": [
-    {"startTime": { "value": "1984", "span": [188, 192]}}
+    {"startTime": {"value": "1984", "span": [139, 143]}}
   ]
 }
 ```

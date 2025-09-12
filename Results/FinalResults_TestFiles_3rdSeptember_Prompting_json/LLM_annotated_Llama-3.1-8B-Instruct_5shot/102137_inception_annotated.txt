@@ -1,35 +1,87 @@
 {
   "Crops": [
-    {"cropSpecies": { "value": "maize", "span": [] }, 
-     "cropSpecies": { "value": "wheat", "span": [] },
-     "cropSpecies": { "value": "barley", "span": [] },
-     "cropSpecies": { "value": "oats", "span": [] },
-     "cropSpecies": { "value": "potatoes", "span": [] },
-     "cropSpecies": { "value": "sugar beets", "span": [] },
-     "cropSpecies": { "value": "sunflowers", "span": [] },
-     "cropSpecies": { "value": "soybeans", "span": [] },
-     "cropSpecies": { "value": "cotton", "span": [] },
-     "cropSpecies": { "value": "corn", "span": [] },
-     "cropSpecies": { "value": "sorghum", "span": [] },
-     "cropSpecies": { "value": "rice", "span": [] },
-     "cropSpecies": { "value": "wheat", "span": [] },
-     "cropSpecies": { "value": "barley", "span": [] },
-     "cropSpecies": { "value": "oats", "span": [] },
-     "cropSpecies": { "value": "potatoes", "span": [] },
-     "cropSpecies": { "value": "sugar beets", "span": [] },
-     "cropSpecies": { "value": "sunflowers", "span": [] },
-     "cropSpecies": { "value": "soybeans", "span": [] },
-     "cropSpecies": { "value": "cotton", "span": [] },
-     "cropSpecies": { "value": "corn", "span": [] },
-     "cropSpecies": { "value": "sorghum", "span": [] },
-     "cropSpecies": { "value": "rice", "span": [] }
-    ],
+    {
+      "cropSpecies": {
+        "value": "maize",
+        "span": [
+          145,
+          151
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "grass",
+        "span": [
+          186,
+          192
+        ]
+      }
+    }
+  ],
   "Soil": [
-    {"soilTexture": { "value": "temperate agricultural soils", "span": [144, 164] }},
-    {"soilReferenceGroup": { "value": "Germany", "span": [128, 135] }}
+    {
+      "soilTexture": {
+        "value": "temperate",
+        "span": [
+          14,
+          23
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "agricultural",
+        "span": [
+          43,
+          54
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilPH": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "organic carbon",
+        "span": [
+          111,
+          128
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "",
+        "span": []
+      }
+    }
   ],
   "Location": [
-    {"country": { "value": "Germany", "span": [128, 135] }}
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          69,
+          77
+        ]
+      }
+    }
   ],
   "Time Statement": []
 }

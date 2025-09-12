@@ -1,14 +1,15 @@
-### Output JSON ###
+### JSON Output ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "Betula pubescens", "span": [234, 247] }}
+    {"cropSpecies": { "value": "Betula pubescens", "span": [121, 136] }}
   ],
   "Soil": [],
   "Location": [],
   "Time Statement": [
-    {"duration": { "value": "one year", "span": [273, 279] }}
+    {"duration": { "value": "one year", "span": [255, 262] }}
   ]
 }
 ```
-Note that there is only one mention of a crop species in the text, which is "Betula pubescens". The other mentions of "Betula pubescens" are compound names and are not extracted as a separate entity. The "Soil" and "Location" categories are empty because there are no mentions of soil or location in the text. The "Time Statement" category has one entry for the duration of the study.
+
+This JSON output includes the mentioned crop species `"Betula pubescens"`, and a duration of `"one year"` for the time period of the study.

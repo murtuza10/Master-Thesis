@@ -1,12 +1,13 @@
-### Output ###
+### Filled JSON Structure ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "Möhre", "span": [64, 69]}},
-    {"cropSpecies": {"value": "Salat", "span": [71, 76]}},
-    {"cropSpecies": {"value": "Apfel", "span": [78, 83]}},
-    {"cropSpecies": {"value": "Erdbeere", "span": [85, 93]}},
-    {"cropSpecies": {"value": "Himbeere", "span": [104, 111]}}
+    {"cropSpecies": { "value": "Möhre", "span": [59, 65] }},
+    {"cropSpecies": { "value": "Salat", "span": [74, 79] }},
+    {"cropSpecies": { "value": "Apfel", "span": [96, 101] }},
+    {"cropSpecies": { "value": "Erdbeere", "span": [110, 117] }},
+    {"cropSpecies": { "value": "Erdbeere", "span": [157, 164] }},
+    {"cropSpecies": { "value": "Himbeere", "span": [184, 190] }}
   ],
   "Soil": [],
   "Location": [],

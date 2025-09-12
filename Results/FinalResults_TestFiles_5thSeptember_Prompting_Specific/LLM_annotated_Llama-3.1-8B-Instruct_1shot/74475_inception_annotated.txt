@@ -1,0 +1,22 @@
+### JSON Output ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [26, 44]}},
+    {"soilAvailableNitrogen": {"value": "soil organic nitrogen", "span": [46, 62]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "temporal development", "span": [85, 100]}}
+  ]
+}
+```
+### Explanation ###
+From the given text, the following entities were identified:
+
+- Under **Soil**:
+  - "soil organic carbon" (mentioned as SOC) is related to `soilOrganicCarbon`.
+  - "soil organic nitrogen" (mentioned as SON) is related to `soilAvailableNitrogen`.
+- Under **Time Statement**:
+  - "temporal development" is related to `startTime`, as it indicates the start of the development of soil organic carbon.

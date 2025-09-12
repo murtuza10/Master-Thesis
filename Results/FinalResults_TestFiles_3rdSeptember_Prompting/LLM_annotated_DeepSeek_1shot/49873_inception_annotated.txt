@@ -1,0 +1,34 @@
+{
+  "id": "gen-1757409425-BUIRhi3VcvY9iMmjo1R0",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757409425,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilTexture\": {\"value\": \"Bodenart\", \"span\": [1025, 1034]}},\n    {\"soilBulkDensity\": {\"value\": \"Trockenrohdichte\", \"span\": [1047, 1063]}},\n    {\"soilOrganicCarbon\": {\"value\": \"organischer Kohlenstoffgehalt\", \"span\": [1125, 1153]}},\n    {\"soilPH\": {\"value\": \"Basensättigung\", \"span\": [1103, 1117]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"deutschen\", \"span\": [288, 296]}},\n    {\"region\": {\"value\": \"Bundesländern\", \"span\": [469, 483]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2012\", \"span\": [1448, 1452]}},\n    {\"endTime\": {\"value\": \"2012\", \"span\": [1464, 1468]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 2338,
+    "completion_tokens": 240,
+    "total_tokens": 2578,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

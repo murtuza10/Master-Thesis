@@ -1,23 +1,22 @@
-### Output JSON Structure ###
+### JSON Output ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "Mais", "span": [69, 72]}}
+    {"cropSpecies": {"value": "Mähdrescher", "span": [115, 123]}}
   ],
   "Soil": [
-    {"soilReferenceGroup": {"value": "Parabraunerde", "span": [246, 259]}},
-    {"soilTexture": {"value": "Löss", "span": [262, 266]}},
-    {"soilDepth": {"value": "28 cm", "span": [310, 315]}}
+    {"soilReferenceGroup": {"value": "Parabraunerde", "span": [236, 249]}},
+    {"soilTexture": {"value": "Löss", "span": [254, 258]}},
+    {"soilDepth": {"value": "28 cm", "span": [294, 299]}},
+    {"soilBulkDensity": { "value": "", "span": [] }},
+    {"soilPH": { "value": "", "span": [] }},
+    {"soilOrganicCarbon": { "value": "", "span": [] }},
+    {"soilAvailableNitrogen": { "value": "", "span": [] }}
   ],
   "Location": [],
   "Time Statement": [
-    {"startTime": {"value": "2017", "span": [156, 160]}}
+    {"startTime": {"value": "2017", "span": [144, 148]}},
+    {"endTime": {"value": "", "span": [] }}
   ]
 }
 ```
-
-### Explanation ###
-- **Crops**: Extracted the crop species "Mais" (maize) from the text.
-- **Soil**: Extracted the soil reference group "Parabraunerde", soil texture "Löss", and soil depth "28 cm" from the text.
-- **Location**: No location information was found in the text.
-- **Time Statement**: Extracted the start time "2017" from the text.

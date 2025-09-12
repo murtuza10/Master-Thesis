@@ -1,16 +1,90 @@
 {
-  "Crops": [],
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "birch",
+        "span": [
+          247,
+          252
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Betula pubescens Ehrh.",
+        "span": [
+          255,
+          271
+        ]
+      }
+    }
+  ],
   "Soil": [
     {
       "soilOrganicCarbon": {
-        "value": "peat C",
+        "value": "carbon (C)",
         "span": [
-          416,
-          421
+          41,
+          51
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "carbon (C)",
+        "span": [
+          111,
+          121
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "CO2-C",
+        "span": [
+          230,
+          235
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "CO2-C",
+        "span": [
+          262,
+          267
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "CO2-C",
+        "span": [
+          357,
+          362
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "CH4",
+        "span": [
+          614,
+          618
         ]
       }
     }
   ],
   "Location": [],
-  "Time Statement": []
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "one year",
+        "span": [
+          312,
+          320
+        ]
+      }
+    }
+  ]
 }

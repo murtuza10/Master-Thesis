@@ -1,32 +1,29 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "spring barley", "span": [183, 195] }},
-    {"cropSpecies": { "value": "winter barley", "span": [197, 209] }},
-    {"cropSpecies": { "value": "grain maize", "span": [211, 221] }},
-    {"cropSpecies": { "value": "silage maize", "span": [223, 234] }},
-    {"cropSpecies": { "value": "oats", "span": [236, 240] }},
-    {"cropSpecies": { "value": "potatoes", "span": [242, 251] }},
-    {"cropSpecies": { "value": "winter rape", "span": [253, 263] }},
-    {"cropSpecies": { "value": "rye", "span": [265, 268] }},
-    {"cropSpecies": { "value": "sugarbeet", "span": [270, 278] }},
-    {"cropSpecies": { "value": "triticale", "span": [280, 288] }},
-    {"cropSpecies": { "value": "winter wheat", "span": [290, 301] }}
+    {"cropSpecies": { "value": "spring barley", "span": [211, 224] }},
+    {"cropSpecies": { "value": "winter barley", "span": [226, 239] }},
+    {"cropSpecies": { "value": "grain maize", "span": [241, 251] }},
+    {"cropSpecies": { "value": "silage maize", "span": [253, 264] }},
+    {"cropSpecies": { "value": "oats", "span": [266, 270] }},
+    {"cropSpecies": { "value": "potatoes", "span": [272, 281] }},
+    {"cropSpecies": { "value": "winter rape", "span": [283, 294] }},
+    {"cropSpecies": { "value": "rye", "span": [296, 300] }},
+    {"cropSpecies": { "value": "sugarbeet", "span": [302, 311] }},
+    {"cropSpecies": { "value": "triticale", "span": [313, 322] }},
+    {"cropSpecies": { "value": "winter wheat", "span": [324, 335] }}
   ],
   "Soil": [],
   "Location": [
-    {"country": { "value": "Germany", "span": [48, 55] }},
-    {"country": { "value": "Germany", "span": [117, 124] }},
-    {"country": { "value": "Germany", "span": [153, 160] }},
-    {"country": { "value": "Germany", "span": [177, 184] }},
-    {"country": { "value": "Germany", "span": [337, 344] }}
+    {"country": { "value": "Germany", "span": [54, 61] }},
+    {"country": { "value": "Germany", "span": [113, 120] }},
+    {"country": { "value": "Germany’s", "span": [200, 208] }}
   ],
   "Time Statement": [
     {"startTime": { "value": "1979", "span": [68, 72] }},
     {"endTime": { "value": "2021", "span": [76, 80] }},
-    {"startTime": { "value": "1979", "span": [327, 331] }},
-    {"endTime": { "value": "2021", "span": [333, 337] }},
-    {"startTime": { "value": "2020", "span": [489, 493] }}
+    {"duration": { "value": "from 1979 to 2021", "span": [64, 80] }},
+    {"endTime": { "value": "2020", "span": [376, 380] }}
   ]
 }
 ```

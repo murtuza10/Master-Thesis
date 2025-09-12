@@ -1,0 +1,26 @@
+### Filled JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Helosciadium nodiflorum L.", "span": [16, 35]}},
+    {"cropSpecies": {"value": "H. nodiflorum", "span": [74, 86]}},
+    {"cropSpecies": {"value": "Helosciadium nodiflorum", "span": [87, 104]}},
+    {"cropSpecies": {"value": "wild celery", "span": [236, 245]}},
+    {"cropSpecies": {"value": "wild celery relatives", "span": [275, 288]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [43, 50]}},
+    {"city": {"value": "Gatersleben", "span": [44, 53]}},
+    {"city": {"value": "London", "span": [113, 118]}},
+    {"region": {"value": "Germany", "span": [253, 258]}},
+    {"region": {"value": "Kew Gardens", "span": [113, 122]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2015", "span": [166, 170]}},
+    {"startTime": {"value": "2016", "span": [166, 170]}},
+    {"endTime": {"value": "2018", "span": [220, 224]}},
+    {"endTime": {"value": "2019", "span": [226, 230]}}
+  ]
+}
+```

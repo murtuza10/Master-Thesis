@@ -1,17 +1,20 @@
-### Output ###
+### Output JSON Format ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "apple", "span": [123, 128]}}
+    {"cropSpecies": {"value": "apple", "span": [83, 90]}}
   ],
-  "Soil": [],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "orchard region", "span": [95, 111]}},
+    {"soilReferenceGroup": {"value": "grassland", "span": [140, 147]}}
+  ],
   "Location": [
-    {"region": {"value": "Altes Land", "span": [114, 125]}},
-    {"country": {"value": "Germany", "span": [133, 140]}}
+    {"country": {"value": "Germany", "span": [113, 118]}},
+    {"region": {"value": "Lower Saxony", "span": [121, 134]}}
   ],
   "Time Statement": [
-    {"startTime": {"value": "2001", "span": [169, 173]}},
-    {"endTime": {"value": "2003", "span": [179, 183]}}
+    {"startTime": {"value": "2001", "span": [170, 172]}},
+    {"endTime": {"value": "2003", "span": [176, 178]}}
   ]
 }
 ```

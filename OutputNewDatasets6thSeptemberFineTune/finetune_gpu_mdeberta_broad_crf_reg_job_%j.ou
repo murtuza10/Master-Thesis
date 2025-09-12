@@ -1,0 +1,33 @@
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/condabin/conda
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/conda
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/conda-env
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/activate
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/deactivate
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/etc/profile.d/conda.sh
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/etc/fish/conf.d/conda.fish
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/shell/condabin/Conda.psm1
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/shell/condabin/conda-hook.ps1
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/lib/python3.10/site-packages/xontrib/conda.xsh
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/etc/profile.d/conda.csh
+no change     /home/s27mhusa_hpc/.bashrc
+No action taken.
+Starting resource monitoring every 30 seconds...
+Logs will be stored in: /home/s27mhusa_hpc/Master-Thesis/OutputNewDatasets6thSeptemberFineTune/job_monitor_logs_mdeberta-crf-reg_23185568_20250908_223434
+Applying data augmentation...
+Training set size after augmentation: 1413
+
+=== Running Cross-Validation ===
+
+=== Cross-Validation Fold 1/3 ===
+[1;34mwandb[0m: 
+[1;34mwandb[0m: 🚀 View run [33mwhole-salad-676[0m at: [34mhttps://wandb.ai/murtuzanh-university-bonn/huggingface/runs/vyu5g34t[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20250908_223447-vyu5g34t/logs[0m
+Stopping resource monitoring...
+Total GPU execution time: 16 seconds
+Fetching SLURM job summary...
+JobID           Elapsed     MaxRSS    CPUTime ExitCode 
+------------ ---------- ---------- ---------- -------- 
+23185568       02:24:36            6-10:14:24      0:0 
+23185568.ex+   02:24:36            6-10:14:24      0:0 
+23185568.0     02:24:22            6-09:59:28      0:0 
+All logs are saved in: /home/s27mhusa_hpc/Master-Thesis/OutputNewDatasets6thSeptemberFineTune/job_monitor_logs_mdeberta-crf-reg_23185568_20250908_223434

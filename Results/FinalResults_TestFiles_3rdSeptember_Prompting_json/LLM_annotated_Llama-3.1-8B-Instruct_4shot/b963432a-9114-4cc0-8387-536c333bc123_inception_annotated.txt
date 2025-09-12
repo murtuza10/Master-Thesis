@@ -4,17 +4,8 @@
       "cropSpecies": {
         "value": "spring barley",
         "span": [
-          124,
-          134
-        ]
-      }
-    },
-    {
-      "cropSpecies": {
-        "value": "spring barley",
-        "span": [
-          261,
-          271
+          234,
+          244
         ]
       }
     },
@@ -22,8 +13,8 @@
       "cropSpecies": {
         "value": "serradella",
         "span": [
-          286,
-          294
+          314,
+          323
         ]
       }
     }
@@ -31,10 +22,19 @@
   "Soil": [
     {
       "soilReferenceGroup": {
-        "value": "hilly soil",
+        "value": "hillslope",
         "span": [
-          94,
-          105
+          124,
+          132
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "redoximorphic features",
+        "span": [
+          158,
+          173
         ]
       }
     },
@@ -42,23 +42,14 @@
       "soilDepth": {
         "value": "three sampling depths",
         "span": [
-          143,
-          158
-        ]
-      }
-    },
-    {
-      "soilDepth": {
-        "value": "three sampling depths",
-        "span": [
-          230,
-          245
+          183,
+          199
         ]
       }
     },
     {
       "soilBulkDensity": {
-        "value": "not mentioned",
+        "value": "none",
         "span": [
           0,
           0
@@ -69,8 +60,8 @@
       "soilPH": {
         "value": "pH",
         "span": [
-          161,
-          164
+          255,
+          258
         ]
       }
     },
@@ -78,17 +69,17 @@
       "soilOrganicCarbon": {
         "value": "organic C",
         "span": [
-          242,
-          251
+          296,
+          306
         ]
       }
     },
     {
       "soilAvailableNitrogen": {
-        "value": "N",
+        "value": "NH4+-N",
         "span": [
-          276,
-          278
+          347,
+          354
         ]
       }
     }
@@ -96,28 +87,19 @@
   "Location": [
     {
       "country": {
-        "value": "Germany",
-        "span": [
-          67,
-          74
-        ]
-      }
-    },
-    {
-      "region": {
         "value": "Northern Germany",
         "span": [
-          131,
-          143
+          94,
+          110
         ]
       }
     },
     {
-      "city": {
-        "value": "Rostock",
+      "latitude": {
+        "value": "none",
         "span": [
-          34,
-          41
+          0,
+          0
         ]
       }
     }
@@ -127,8 +109,8 @@
       "startTime": {
         "value": "2018",
         "span": [
-          182,
-          186
+          228,
+          232
         ]
       }
     },
@@ -136,8 +118,17 @@
       "endTime": {
         "value": "2020",
         "span": [
-          7,
-          11
+          5,
+          9
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "2020",
+        "span": [
+          10,
+          14
         ]
       }
     },
@@ -145,8 +136,8 @@
       "duration": {
         "value": "3.5 months",
         "span": [
-          342,
-          351
+          341,
+          349
         ]
       }
     }

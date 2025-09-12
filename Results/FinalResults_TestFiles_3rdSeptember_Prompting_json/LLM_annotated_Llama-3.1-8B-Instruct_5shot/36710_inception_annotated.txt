@@ -1,72 +1,18 @@
 {
   "Crops": [
-    {
-      "cropSpecies": {
-        "value": "apple",
-        "span": [
-          157,
-          162
-        ]
-      }
-    }
+    {"cropSpecies": { "value": "apple", "span": [166, 171] }}
   ],
   "Soil": [],
   "Location": [
-    {
-      "country": {
-        "value": "Germany",
-        "span": [
-          243,
-          248
-        ]
-      }
-    },
-    {
-      "region": {
-        "value": "Lower Saxony",
-        "span": [
-          257,
-          267
-        ]
-      }
-    },
-    {
-      "city": {
-        "value": "Altes Land",
-        "span": [
-          183,
-          192
-        ]
-      }
-    }
+    {"country": { "value": "Germany", "span": [247, 252] }},
+    {"region": { "value": "Lower Saxony", "span": [256, 267] }},
+    {"city": {} },  # no city mentioned
+    {"latitude": {} },  # no latitude mentioned
+    {"longitude": {} }   # no longitude mentioned
   ],
   "Time Statement": [
-    {
-      "startTime": {
-        "value": "2001",
-        "span": [
-          245,
-          249
-        ]
-      }
-    },
-    {
-      "endTime": {
-        "value": "2003",
-        "span": [
-          253,
-          257
-        ]
-      }
-    },
-    {
-      "duration": {
-        "value": "three-year",
-        "span": [
-          219,
-          226
-        ]
-      }
-    }
+    {"startTime": { "value": "2001", "span": [243, 247] }},
+    {"endTime": { "value": "2003", "span": [255, 259] }},
+    {"duration": { "value": "three years", "span": [233, 240] }}
   ]
 }

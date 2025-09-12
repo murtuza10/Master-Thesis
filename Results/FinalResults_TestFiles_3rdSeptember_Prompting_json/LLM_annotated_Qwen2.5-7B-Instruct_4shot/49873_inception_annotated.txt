@@ -3,21 +3,87 @@
   "Soil": [
     {
       "soilOrganicCarbon": {
-        "value": "organischer Kohlenstoffgehalt",
+        "value": "organisacher Kohlenstoffgehalt",
         "span": [
-          186,
-          205
+          393,
+          410
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "Entkalkungstiefe",
+        "span": [
+          411,
+          419
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "nutzbare FeldkapazitÃ¤t",
+        "span": [
+          235,
+          246
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "Skelett",
+        "span": [
+          247,
+          250
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "Bodenart",
+        "span": [
+          251,
+          257
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "nicht erwÃ¤hnt"
+      },
+      "soilBulkDensity": {
+        "value": "Trockenrohdichte",
+        "span": [
+          258,
+          268
         ]
       }
     }
   ],
   "Location": [
     {
-      "country": {
-        "value": "Deutschland",
+      "region": {
+        "value": "deutsche Bundeswaldinventur",
         "span": [
-          94,
-          101
+          53,
+          77
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "BundeslÃ¤nder",
+        "span": [
+          83,
+          89
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Standorts- und Bodenkartierung",
+        "span": [
+          96,
+          114
         ]
       }
     }
@@ -27,8 +93,8 @@
       "startTime": {
         "value": "2012",
         "span": [
-          129,
-          133
+          428,
+          432
         ]
       }
     },
@@ -36,17 +102,15 @@
       "endTime": {
         "value": "2012",
         "span": [
-          134,
-          138
+          433,
+          437
         ]
-      }
-    },
-    {
-      "creationDate": {
+      },
+      "duration": {
         "value": "28.05.2019",
         "span": [
-          326,
-          339
+          439,
+          451
         ]
       }
     }

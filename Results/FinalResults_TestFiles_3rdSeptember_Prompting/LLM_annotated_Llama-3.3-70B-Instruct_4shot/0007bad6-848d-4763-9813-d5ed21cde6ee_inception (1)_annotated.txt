@@ -1,15 +1,16 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "Winter wheat", "span": [1566, 1579] }}
+    {"cropSpecies": {"value": "Winter wheat", "span": [1564, 1577]}
   ],
   "Soil": [
-    {"soilTexture": { "value": "soil", "span": [73, 77] }},
-    {"soilTexture": { "value": "soil", "span": [1584, 1588] }},
-    {"soilTexture": { "value": "Boden", "span": [1735, 1740] }},
-    {"soilProperties": { "value": "soil properties", "span": [307, 321] }},
-    {"soilProperties": { "value": "soil properties", "span": [444, 458] }},
-    {"soilProperties": { "value": "soil water stable aggregation", "span": [351, 379] }}
+    {"soilTexture": {"value": "soil", "span": [64, 68]}},
+    {"soilTexture": {"value": "Soil", "span": [1579, 1583]}},
+    {"soilTexture": {"value": "soil", "span": [1633, 1637]}},
+    {"soilTexture": {"value": "Boden", "span": [1735, 1740]}},
+    {"soilProperties": {"value": "soil properties", "span": [704, 717]}},
+    {"soilProperties": {"value": "soil properties", "span": [1024, 1037]}},
+    {"soilWaterStableAggregation": {"value": "soil water stable aggregation", "span": [823, 846]}}
   ],
   "Location": [],
   "Time Statement": []

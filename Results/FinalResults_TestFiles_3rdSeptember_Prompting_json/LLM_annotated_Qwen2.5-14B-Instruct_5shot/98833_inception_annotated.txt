@@ -2,20 +2,38 @@
   "Crops": [],
   "Soil": [
     {
-      "soilTexture": {
-        "value": "LÃ¶ss",
+      "soilReferenceGroup": {
+        "value": "Parabraunerde",
         "span": [
-          114,
-          118
+          86,
+          95
         ]
       }
     },
     {
-      "soilReferenceGroup": {
-        "value": "Parabraunerde",
+      "soilTexture": {
+        "value": "LÃ¶ss",
         "span": [
-          119,
-          129
+          97,
+          101
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "28 cm Tiefe",
+        "span": [
+          103,
+          112
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "Lagerungsdichte",
+        "span": [
+          253,
+          266
         ]
       }
     }
@@ -26,8 +44,8 @@
       "startTime": {
         "value": "2017",
         "span": [
-          46,
-          50
+          28,
+          32
         ]
       }
     }

@@ -1,24 +1,21 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "wheat", "span": [194, 199] }},
-    {"cropSpecies": { "value": "wheat", "span": [226, 231] }},
-    {"cropSpecies": { "value": "wheat", "span": [243, 248] }}
+    {"cropSpecies": { "value": "wheat", "span": [169, 174] }},
+    {"cropSpecies": { "value": "wheat", "span": [274, 279] }}
   ],
   "Soil": [],
   "Location": [
-    {"region": { "value": "AgroScapeLabs Quillow", "span": [96, 119] }},
-    {"region": { "value": "AgroScapeLabs Quillow", "span": [135, 158] }},
-    {"country": { "value": "Germany", "span": [599, 606] }},
-    {"region": { "value": "Brandenburg", "span": [608, 619] }},
-    {"region": { "value": "Uckermark", "span": [621, 630] }},
-    {"region": { "value": "Quillow", "span": [632, 638] }}
+    {"region": { "value": "Brandenburg", "span": [584, 595] }},
+    {"region": { "value": "Uckermark", "span": [597, 606] }},
+    {"city": { "value": "Quillow", "span": [608, 615] }},
+    {"country": { "value": "Germany", "span": [576, 583] }}
   ],
   "Time Statement": [
-    {"startTime": { "value": "2019", "span": [114, 118] }},
-    {"startTime": { "value": "2019", "span": [151, 155] }},
-    {"startTime": { "value": "April", "span": [269, 274] }},
-    {"endTime": { "value": "June 2019", "span": [282, 291] }}
+    {"startTime": { "value": "April", "span": [339, 344] }},
+    {"endTime": { "value": "June 2019", "span": [349, 358] }},
+    {"startTime": { "value": "2019", "span": [107, 111] }},
+    {"startTime": { "value": "2019", "span": [148, 152] }}
   ]
 }
 ```

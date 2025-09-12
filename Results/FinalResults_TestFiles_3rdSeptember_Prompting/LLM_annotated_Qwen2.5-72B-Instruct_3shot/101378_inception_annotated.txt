@@ -1,47 +1,18 @@
 ```json
 {
-  "Crops": [],
-  "Soil": [
-    {
-      "soilReferenceGroup": {
-        "value": "bog",
-        "span": [161, 164]
-      }
-    },
-    {
-      "soilReferenceGroup": {
-        "value": "mire",
-        "span": [184, 188]
-      }
-    },
-    {
-      "soilReferenceGroup": {
-        "value": "peat",
-        "span": [1251, 1255]
-      }
-    }
+  "Crops": [
+    {"cropSpecies": { "value": "Betula pubescens Ehrh.", "span": [126, 148] }},
+    {"cropSpecies": { "value": "birch", "span": [456, 461] }},
+    {"cropSpecies": { "value": "birches", "span": [885, 892] }}
   ],
+  "Soil": [],
   "Location": [
-    {
-      "region": {
-        "value": "northern hemisphere",
-        "span": [229, 246]
-      }
-    },
-    {
-      "region": {
-        "value": "former peat extraction area",
-        "span": [315, 344]
-      }
-    }
+    {"region": { "value": "northern hemisphere", "span": [288, 302] }}
   ],
   "Time Statement": [
-    {
-      "duration": {
-        "value": "one year",
-        "span": [525, 533]
-      }
-    }
+    {"duration": { "value": "one year", "span": [498, 506] }},
+    {"duration": { "value": "yr-1", "span": [627, 632] }},
+    {"duration": { "value": "yr-1", "span": [661, 666] }}
   ]
 }
 ```

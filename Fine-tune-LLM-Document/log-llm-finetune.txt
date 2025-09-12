@@ -1,0 +1,121 @@
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/condabin/conda
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/conda
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/conda-env
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/activate
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/deactivate
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/etc/profile.d/conda.sh
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/etc/fish/conf.d/conda.fish
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/shell/condabin/Conda.psm1
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/shell/condabin/conda-hook.ps1
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/lib/python3.10/site-packages/xontrib/conda.xsh
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/etc/profile.d/conda.csh
+no change     /home/s27mhusa_hpc/.bashrc
+No action taken.
+Starting resource monitoring every 1 seconds...
+Logs will be stored in: /home/s27mhusa_hpc/Master-Thesis/Fine-tune-LLM-Document/job_monitor_logs_llm-finetune_23218812_20250910_151856
+finetune-generic-llm-bash.bash: line 41: iostat: command not found
+/home/s27mhusa_hpc/.conda/envs/autotrain2/lib/python3.10/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+INFO     | 2025-09-10 15:18:59 | autotrain.cli.autotrain:main:58 - Using AutoTrain configuration: config_xinxin.yaml
+INFO     | 2025-09-10 15:19:00 | autotrain.parser:__post_init__:165 - Running task: lm_training
+INFO     | 2025-09-10 15:19:00 | autotrain.parser:__post_init__:166 - Using backend: local
+WARNING  | 2025-09-10 15:19:00 | autotrain.trainers.common:__init__:286 - Parameters supplied but not used: messages
+INFO     | 2025-09-10 15:19:00 | autotrain.parser:run:224 - {'model': 'meta-llama/Llama-3.2-3B-Instruct', 'project_name': 'Llama-3-1-8B-Document-10-Sept-2025', 'data_path': '/home/s27mhusa_hpc/Master-Thesis/xinxin', 'train_split': 'train', 'valid_split': None, 'add_eos_token': True, 'block_size': 8192, 'model_max_length': 8192, 'padding': 'right', 'trainer': 'sft', 'use_flash_attention_2': False, 'log': 'wandb', 'disable_gradient_checkpointing': False, 'logging_steps': -1, 'eval_strategy': 'epoch', 'save_total_limit': 1, 'auto_find_batch_size': False, 'mixed_precision': 'fp16', 'lr': 1e-05, 'epochs': 10, 'batch_size': 2, 'warmup_ratio': 0.1, 'gradient_accumulation': 4, 'optimizer': 'adamw_torch', 'scheduler': 'linear', 'weight_decay': 0.0, 'max_grad_norm': 1.0, 'seed': 42, 'chat_template': 'tokenizer', 'quantization': 'int4', 'target_modules': 'all-linear', 'merge_adapter': False, 'peft': True, 'lora_r': 16, 'lora_alpha': 32, 'lora_dropout': 0.05, 'model_ref': None, 'dpo_beta': 0.1, 'max_prompt_length': 4096, 'max_completion_length': None, 'prompt_text_column': None, 'text_column': 'messages', 'rejected_text_column': None, 'push_to_hub': False, 'username': 'murtuza10', 'token': '*****', 'unsloth': False, 'distributed_backend': None}
+Saving the dataset (0/1 shards):   0%|          | 0/12 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 12/12 [00:00<00:00, 2641.39 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 12/12 [00:00<00:00, 2564.28 examples/s]
+Saving the dataset (0/1 shards):   0%|          | 0/12 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 12/12 [00:00<00:00, 2838.94 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 12/12 [00:00<00:00, 2775.54 examples/s]
+INFO     | 2025-09-10 15:19:00 | autotrain.backends.local:create:20 - Starting local training...
+INFO     | 2025-09-10 15:19:00 | autotrain.commands:launch_command:514 - ['accelerate', 'launch', '--multi_gpu', '--num_machines', '1', '--num_processes', '2', '--mixed_precision', 'fp16', '-m', 'autotrain.trainers.clm', '--training_config', 'Llama-3-1-8B-Document-10-Sept-2025/training_params.json']
+INFO     | 2025-09-10 15:19:00 | autotrain.commands:launch_command:515 - {'model': 'meta-llama/Llama-3.2-3B-Instruct', 'project_name': 'Llama-3-1-8B-Document-10-Sept-2025', 'data_path': 'Llama-3-1-8B-Document-10-Sept-2025/autotrain-data', 'train_split': 'train', 'valid_split': None, 'add_eos_token': True, 'block_size': 8192, 'model_max_length': 8192, 'padding': 'right', 'trainer': 'sft', 'use_flash_attention_2': False, 'log': 'wandb', 'disable_gradient_checkpointing': False, 'logging_steps': -1, 'eval_strategy': 'epoch', 'save_total_limit': 1, 'auto_find_batch_size': False, 'mixed_precision': 'fp16', 'lr': 1e-05, 'epochs': 10, 'batch_size': 2, 'warmup_ratio': 0.1, 'gradient_accumulation': 4, 'optimizer': 'adamw_torch', 'scheduler': 'linear', 'weight_decay': 0.0, 'max_grad_norm': 1.0, 'seed': 42, 'chat_template': 'tokenizer', 'quantization': 'int4', 'target_modules': 'all-linear', 'merge_adapter': False, 'peft': True, 'lora_r': 16, 'lora_alpha': 32, 'lora_dropout': 0.05, 'model_ref': None, 'dpo_beta': 0.1, 'max_prompt_length': 4096, 'max_completion_length': None, 'prompt_text_column': 'autotrain_prompt', 'text_column': 'autotrain_text', 'rejected_text_column': 'autotrain_rejected_text', 'push_to_hub': False, 'username': 'murtuza10', 'token': '*****', 'unsloth': False, 'distributed_backend': None}
+/home/s27mhusa_hpc/.conda/envs/autotrain2/lib/python3.10/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+The following values were not passed to `accelerate launch` and had defaults used instead:
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+/home/s27mhusa_hpc/.conda/envs/autotrain2/lib/python3.10/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/home/s27mhusa_hpc/.conda/envs/autotrain2/lib/python3.10/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+INFO     | 2025-09-10 15:19:10 | autotrain.trainers.clm.train_clm_sft:train:11 - Starting SFT training...
+INFO     | 2025-09-10 15:19:10 | autotrain.trainers.clm.utils:process_input_data:487 - loading dataset from disk
+INFO     | 2025-09-10 15:19:10 | autotrain.trainers.clm.utils:process_input_data:550 - Train data: Dataset({
+    features: ['autotrain_text'],
+    num_rows: 12
+})
+INFO     | 2025-09-10 15:19:10 | autotrain.trainers.clm.utils:process_input_data:551 - Valid data: None
+Map:   0%|          | 0/12 [00:00<?, ? examples/s]INFO     | 2025-09-10 15:19:13 | autotrain.trainers.clm.utils:process_data_with_chat_template:634 - Applying chat template
+INFO     | 2025-09-10 15:19:13 | autotrain.trainers.clm.utils:process_data_with_chat_template:635 - For ORPO/DPO, `prompt` will be extracted from chosen messages
+Map: 100%|██████████| 12/12 [00:00<00:00, 534.85 examples/s]
+INFO     | 2025-09-10 15:19:13 | autotrain.trainers.clm.utils:configure_logging_steps:671 - configuring logging steps
+INFO     | 2025-09-10 15:19:13 | autotrain.trainers.clm.utils:configure_logging_steps:684 - Logging steps: 1
+INFO     | 2025-09-10 15:19:13 | autotrain.trainers.clm.utils:configure_training_args:723 - configuring training args
+INFO     | 2025-09-10 15:19:13 | autotrain.trainers.clm.utils:configure_block_size:801 - Using block size 8192
+INFO     | 2025-09-10 15:19:13 | autotrain.trainers.clm.utils:get_model:877 - Can use unsloth: False
+WARNING  | 2025-09-10 15:19:13 | autotrain.trainers.clm.utils:get_model:919 - Unsloth not available, continuing without it...
+INFO     | 2025-09-10 15:19:13 | autotrain.trainers.clm.utils:get_model:921 - loading model config...
+INFO     | 2025-09-10 15:19:13 | autotrain.trainers.clm.utils:get_model:929 - loading model...
+`low_cpu_mem_usage` was None, now default to True since model is quantized.
+`low_cpu_mem_usage` was None, now default to True since model is quantized.
+Downloading shards:   0%|          | 0/2 [00:00<?, ?it/s]Downloading shards:   0%|          | 0/2 [00:00<?, ?it/s]Downloading shards:  50%|█████     | 1/2 [00:43<00:43, 43.45s/it]Downloading shards:  50%|█████     | 1/2 [00:43<00:43, 43.46s/it]Downloading shards: 100%|██████████| 2/2 [00:56<00:00, 25.45s/it]Downloading shards: 100%|██████████| 2/2 [00:56<00:00, 28.15s/it]
+Downloading shards: 100%|██████████| 2/2 [00:56<00:00, 25.47s/it]Downloading shards: 100%|██████████| 2/2 [00:56<00:00, 28.17s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:04<00:04,  4.21s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:04<00:04,  4.52s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.55s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.80s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.72s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.99s/it]
+INFO     | 2025-09-10 15:20:17 | autotrain.trainers.clm.utils:get_model:960 - model dtype: torch.float16
+INFO     | 2025-09-10 15:20:17 | autotrain.trainers.clm.train_clm_sft:train:39 - creating trainer
+[rank1]:[W910 15:20:17.676494182 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+Generating train split: 0 examples [00:00, ? examples/s]Token indices sequence length is longer than the specified maximum sequence length for this model (15898 > 8192). Running this sequence through the model will result in indexing errors
+Generating train split: 1 examples [00:00,  6.47 examples/s]Generating train split: 14 examples [00:00, 71.59 examples/s]
+[rank0]:[W910 15:20:18.166484483 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[2025-09-10 15:20:18,303] [INFO] [real_accelerator.py:260:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Warning: The cache directory for DeepSpeed Triton autotune, /home/s27mhusa_hpc/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+[2025-09-10 15:20:18,420] [INFO] [real_accelerator.py:260:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Warning: The cache directory for DeepSpeed Triton autotune, /home/s27mhusa_hpc/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+[2025-09-10 15:20:19,528] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-09-10 15:20:19,528] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+wandb: WARNING The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+wandb: Currently logged in as: murtuzanh (murtuzanh-university-bonn) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.21.3
+wandb: Run data is saved locally in /home/s27mhusa_hpc/Master-Thesis/Fine-tune-LLM-Document/wandb/run-20250910_152020-83z1bydn
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run Llama-3-1-8B-Document-10-Sept-2025
+wandb: ⭐️ View project at https://wandb.ai/murtuzanh-university-bonn/huggingface
+wandb: 🚀 View run at https://wandb.ai/murtuzanh-university-bonn/huggingface/runs/83z1bydn
+INFO     | 2025-09-10 15:20:21 | autotrain.trainers.common:on_train_begin:386 - Starting to train...
+  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [00:40<06:06, 40.71s/it]INFO     | 2025-09-10 15:21:01 | autotrain.trainers.common:on_log:367 - {'loss': 4.1864, 'grad_norm': 1.0497032403945923, 'learning_rate': 1e-05, 'epoch': 1.0}
+                                              {'loss': 4.1864, 'grad_norm': 1.0497032403945923, 'learning_rate': 1e-05, 'epoch': 1.0}
+ 10%|█         | 1/10 [00:40<06:06, 40.71s/it] 20%|██        | 2/10 [01:21<05:25, 40.69s/it]INFO     | 2025-09-10 15:21:42 | autotrain.trainers.common:on_log:367 - {'loss': 4.4938, 'grad_norm': 1.2303133010864258, 'learning_rate': 8.888888888888888e-06, 'epoch': 2.0}
+                                              {'loss': 4.4938, 'grad_norm': 1.2303133010864258, 'learning_rate': 8.888888888888888e-06, 'epoch': 2.0}
+ 20%|██        | 2/10 [01:21<05:25, 40.69s/it] 30%|███       | 3/10 [02:02<04:45, 40.75s/it]INFO     | 2025-09-10 15:22:23 | autotrain.trainers.common:on_log:367 - {'loss': 4.703, 'grad_norm': 1.1053110361099243, 'learning_rate': 7.77777777777778e-06, 'epoch': 3.0}
+                                              {'loss': 4.703, 'grad_norm': 1.1053110361099243, 'learning_rate': 7.77777777777778e-06, 'epoch': 3.0}
+ 30%|███       | 3/10 [02:02<04:45, 40.75s/it] 40%|████      | 4/10 [02:43<04:04, 40.79s/it]INFO     | 2025-09-10 15:23:04 | autotrain.trainers.common:on_log:367 - {'loss': 4.9693, 'grad_norm': 1.132214903831482, 'learning_rate': 6.666666666666667e-06, 'epoch': 4.0}
+                                              {'loss': 4.9693, 'grad_norm': 1.132214903831482, 'learning_rate': 6.666666666666667e-06, 'epoch': 4.0}
+ 40%|████      | 4/10 [02:43<04:04, 40.79s/it] 50%|█████     | 5/10 [03:23<03:24, 40.82s/it]INFO     | 2025-09-10 15:23:45 | autotrain.trainers.common:on_log:367 - {'loss': 4.8972, 'grad_norm': 1.144860029220581, 'learning_rate': 5.555555555555557e-06, 'epoch': 5.0}
+                                              {'loss': 4.8972, 'grad_norm': 1.144860029220581, 'learning_rate': 5.555555555555557e-06, 'epoch': 5.0}
+ 50%|█████     | 5/10 [03:23<03:24, 40.82s/it] 60%|██████    | 6/10 [04:04<02:43, 40.83s/it]INFO     | 2025-09-10 15:24:25 | autotrain.trainers.common:on_log:367 - {'loss': 4.5219, 'grad_norm': 0.9836646914482117, 'learning_rate': 4.444444444444444e-06, 'epoch': 6.0}
+                                              {'loss': 4.5219, 'grad_norm': 0.9836646914482117, 'learning_rate': 4.444444444444444e-06, 'epoch': 6.0}
+ 60%|██████    | 6/10 [04:04<02:43, 40.83s/it] 70%|███████   | 7/10 [04:45<02:02, 40.84s/it]INFO     | 2025-09-10 15:25:06 | autotrain.trainers.common:on_log:367 - {'loss': 4.6437, 'grad_norm': 1.0798498392105103, 'learning_rate': 3.3333333333333333e-06, 'epoch': 7.0}
+                                              {'loss': 4.6437, 'grad_norm': 1.0798498392105103, 'learning_rate': 3.3333333333333333e-06, 'epoch': 7.0}
+ 70%|███████   | 7/10 [04:45<02:02, 40.84s/it] 80%|████████  | 8/10 [05:26<01:21, 40.85s/it]INFO     | 2025-09-10 15:25:47 | autotrain.trainers.common:on_log:367 - {'loss': 4.6253, 'grad_norm': 0.9777699708938599, 'learning_rate': 2.222222222222222e-06, 'epoch': 8.0}
+                                              {'loss': 4.6253, 'grad_norm': 0.9777699708938599, 'learning_rate': 2.222222222222222e-06, 'epoch': 8.0}
+ 80%|████████  | 8/10 [05:26<01:21, 40.85s/it] 90%|█████████ | 9/10 [06:07<00:40, 40.85s/it]INFO     | 2025-09-10 15:26:28 | autotrain.trainers.common:on_log:367 - {'loss': 4.5081, 'grad_norm': 1.055083990097046, 'learning_rate': 1.111111111111111e-06, 'epoch': 9.0}
+                                              {'loss': 4.5081, 'grad_norm': 1.055083990097046, 'learning_rate': 1.111111111111111e-06, 'epoch': 9.0}
+ 90%|█████████ | 9/10 [06:07<00:40, 40.85s/it]100%|██████████| 10/10 [06:48<00:00, 40.85s/it]INFO     | 2025-09-10 15:27:09 | autotrain.trainers.common:on_log:367 - {'loss': 4.5056, 'grad_norm': 1.0484338998794556, 'learning_rate': 0.0, 'epoch': 10.0}
+                                               {'loss': 4.5056, 'grad_norm': 1.0484338998794556, 'learning_rate': 0.0, 'epoch': 10.0}
+100%|██████████| 10/10 [06:48<00:00, 40.85s/it]INFO     | 2025-09-10 15:27:09 | autotrain.trainers.common:on_log:367 - {'train_runtime': 409.4408, 'train_samples_per_second': 0.342, 'train_steps_per_second': 0.024, 'train_loss': 4.605425453186035, 'epoch': 10.0}
+                                               {'train_runtime': 409.4408, 'train_samples_per_second': 0.342, 'train_steps_per_second': 0.024, 'train_loss': 4.605425453186035, 'epoch': 10.0}
+100%|██████████| 10/10 [06:48<00:00, 40.85s/it]100%|██████████| 10/10 [06:48<00:00, 40.82s/it]
+INFO     | 2025-09-10 15:27:09 | autotrain.trainers.clm.utils:post_training_steps:416 - Finished training, saving model...
+[1;34mwandb[0m: 
+[1;34mwandb[0m: 🚀 View run [33mLlama-3-1-8B-Document-10-Sept-2025[0m at: [34mhttps://wandb.ai/murtuzanh-university-bonn/huggingface/runs/83z1bydn[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20250910_152020-83z1bydn/logs[0m
+[rank0]:[W910 15:27:11.583205350 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+INFO     | 2025-09-10 15:27:13 | autotrain.parser:run:229 - Job ID: 1095138
+Stopping resource monitoring...
+finetune-generic-llm-bash.bash: line 55: kill: (1095076) - No such process
+Total GPU execution time: 497 seconds
+Fetching SLURM job summary...
+JobID           Elapsed     MaxRSS    CPUTime ExitCode 
+------------ ---------- ---------- ---------- -------- 
+23218812       06:35:50            17-14:13:20      0:0 
+23218812.ex+   06:35:50            17-14:13:20      0:0 
+23218812.0     06:35:37            17-13:59:28      0:0 
+All logs are saved in: /home/s27mhusa_hpc/Master-Thesis/Fine-tune-LLM-Document/job_monitor_logs_llm-finetune_23218812_20250910_151856

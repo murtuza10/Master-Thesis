@@ -1,15 +1,41 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "wheat", "span": [65, 70] }}
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [35, 39]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "wheat",
+        "span": [65, 69]
+      }
+    }
   ],
   "Soil": [],
   "Location": [
-    {"region": { "value": "Europe", "span": [138, 144] }}
+    {
+      "region": {
+        "value": "Europe",
+        "span": [127, 133]
+      }
+    }
   ],
   "Time Statement": [
-    {"startTime": { "value": "2019", "span": [34, 38] }},
-    {"endTime": { "value": "2020", "span": [42, 46] }}
+    {
+      "startTime": {
+        "value": "2019",
+        "span": [30, 34]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2020",
+        "span": [36, 40]
+      }
+    }
   ]
 }
 ```

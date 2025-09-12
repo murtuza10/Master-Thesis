@@ -2,11 +2,13 @@
 {
   "Crops": [],
   "Soil": [],
-  "Location": [],
+  "Location": [
+    {"region": { "value": "northern hemisphere", "span": [166, 182] }}
+  ],
   "Time Statement": [
-    {"duration": { "value": "one year", "span": [477, 485] }},
-    {"duration": { "value": "yr-1", "span": [559, 563] }},
-    {"duration": { "value": "yr-1", "span": [592, 596] }}
+    {"duration": { "value": "one year", "span": [331, 339] }},
+    {"endTime": { "value": "yr-1", "span": [454, 459] }},
+    {"endTime": { "value": "yr-1", "span": [486, 491] }}
   ]
 }
 ```

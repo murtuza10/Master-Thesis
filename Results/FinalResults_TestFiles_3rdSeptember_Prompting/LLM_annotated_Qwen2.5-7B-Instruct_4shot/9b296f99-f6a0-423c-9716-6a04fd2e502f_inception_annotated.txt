@@ -1,26 +1,22 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "winter wheat", "span": [123, 132] }},
-    {"cropSpecies": { "value": "winter barley", "span": [137, 146] }},
-    {"cropSpecies": { "value": "winter barley", "span": [356, 365] }},
-    {"cropSpecies": { "value": "sugar beet", "span": [368, 375] }},
-    {"cropSpecies": { "value": "winter barley", "span": [875, 884] }},
-    {"cropSpecies": { "value": "sugar beet", "span": [887, 894] }}
+    {"cropSpecies": { "value": "winter wheat", "span": [67, 76] }},
+    {"cropSpecies": { "value": "winter barley", "span": [78, 88] }},
+    {"cropSpecies": { "value": "winter barley", "span": [232, 242] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [244, 251] }}
   ],
   "Soil": [
-    {"soilTexture": { "value": "bulk soil", "span": [55, 63] }},
-    {"soilReferenceGroup": { "value": "Bacilli", "span": [762, 770] }}
+    {"soilOrganicCarbon": { "value": "humus", "span": [52, 57] }},
+    {"soilOrganicCarbon": { "value": "humus", "span": [262, 267] }}
   ],
   "Location": [
-    {"country": { "value": "Germany", "span": [23, 29] }},
-    {"region": { "value": "LUFA Speyer", "span": [30, 38] }},
-    {"region": { "value": "Rinkenbergerhof", "span": [43, 52] }},
-    {"city": { "value": "Speyer", "span": [53, 58] }}
+    {"country": { "value": "Germany", "span": [15, 21] }},
+    {"region": { "value": "LUFA Speyer", "span": [22, 30] }},
+    {"region": { "value": "Rinkenbergerhof", "span": [31, 40] }}
   ],
   "Time Statement": [
-    {"startTime": { "value": "1984", "span": [114, 118] }},
-    {"duration": { "value": "long term", "span": [679, 685] }}
+    {"startTime": { "value": "1984", "span": [108, 113] }}
   ]
 }
 ```

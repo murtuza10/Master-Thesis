@@ -1,0 +1,32 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Apium graveolens L.", "span": [24, 43]}},
+    {"cropSpecies": { "value": "Apium graveolens", "span": [113, 129]}},
+    {"cropSpecies": { "value": "wild celery", "span": [246, 253]}},
+    {"cropSpecies": { "value": "Apium graveolens L. ssp. graveolens", "span": [266, 284]}},
+    {"cropSpecies": { "value": "Apium graveolens", "span": [314, 330]}},
+    {"cropSpecies": { "value": "Apium graveolens plants", "span": [329, 343]}},
+    {"cropSpecies": { "value": "Apium graveolens", "span": [394, 410]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"city": { "value": "Quedlinburg", "span": [144, 153]}},
+    {"country": { "value": "Germany", "span": [156, 163]}}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2016", "span": [272, 276]}},
+    {"endTime": { "value": "2018", "span": [296, 300]}},
+    {"startTime": { "value": "2017", "span": [334, 338]}},
+    {"endTime": { "value": "2018", "span": [340, 344]}}
+  ]
+}
+```
+
+### Explanation: ###
+
+- **Crops**: The text mentions "Apium graveolens L." and its subspecies, "Apium graveolens L. ssp. graveolens", multiple times as crop species. The phrase "wild celery" is also mentioned, referring to the crop species "Apium graveolens". The text also mentions "Apium graveolens plants" and "Apium graveolens" multiple times.
+- **Soil**: There is no mention of soil-related entities in the text.
+- **Location**: The text mentions "Quedlinburg" as a city and "Germany" as the country where the SSR data were generated.
+- **Time Statement**: The text mentions "2016" as the year when the plants were sampled, and "2017-2018" as the period when the raw data were analyzed.

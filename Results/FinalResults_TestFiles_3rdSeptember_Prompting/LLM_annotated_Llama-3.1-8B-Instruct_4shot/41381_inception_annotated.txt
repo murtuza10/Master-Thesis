@@ -1,26 +1,55 @@
-### Output JSON Structure ###
+### Output ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "Drosophila suzukii", "span": [143, 158] }},
-    {"cropSpecies": { "value": "Drosophila suzukii", "span": [344, 359] }},
-    {"cropSpecies": { "value": "Drosophila suzukii", "span": [432, 447] }},
-    {"cropSpecies": { "value": "apple", "span": [549, 555] }},
-    {"cropSpecies": { "value": "grapes", "span": [575, 581] }}
-  ],
-  "Soil": [],
-  "Location": [
-    {"country": { "value": "Germany", "span": [31, 37] }},
-    {"region": { "value": "southwest Germany", "span": [43, 60] }},
-    {"city": { "value": "Dossenheim", "span": [276, 284] }},
-    {"city": { "value": "Siebeldingen", "span": [286, 294] }},
-    {"city": { "value": "Darmstadt", "span": [330, 338] }}
-  ],
-  "Time Statement": [
-    {"startTime": { "value": "2011", "span": [94, 98] }},
-    {"endTime": { "value": "2018", "span": [213, 217] }},
-    {"startTime": { "value": "February 2018", "span": [222, 236] }}
-  ]
-}
-```
-Note that the crop species 'apple' and 'grapes' were identified as they are mentioned as host plants of Drosophila suzukii. The coordinates of the trap locations were not included in the output as they were not explicitly mentioned in the provided text.
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [69, 86]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [134, 151]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [242, 259]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [351, 368]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [446, 463]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [550, 567]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [654, 671]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [758, 775]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [864, 881]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [968, 985]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [1074, 1091]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [1178, 1195]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [1282, 1299]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [1386, 1403]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [1486, 1503]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [1582, 1599]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [1686, 1703]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [1790, 1807]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [1894, 1911]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [1998, 2015]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [2102, 2119]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [2216, 2233]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [2320, 2337]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [2424, 2441]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [2528, 2545]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [2632, 2649]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [2736, 2753]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [2840, 2857]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [2944, 2961]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [3048, 3065]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [3152, 3169]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [3256, 3273]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [3360, 3377]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [3464, 3481]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [3568, 3585]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [3672, 3689]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [3776, 3793]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [3880, 3897]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [3984, 4001]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [4088, 4105]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [4192, 4209]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [4296, 4313]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [4400, 4417]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [4504, 4521]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [4608, 4625]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [4712, 4729]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [4816, 4833]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [4920, 4937]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [5024, 5041]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [5128, 5145]}},
+    {"cropSpecies": {"value

@@ -1,22 +1,32 @@
 {
-  "Crops": [],
+  "Crops": [
+    {
+      "cropSpecies": {
+        "value": "fruit-crops",
+        "span": [
+          99,
+          110
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "grape",
+        "span": [
+          126,
+          130
+        ]
+      }
+    }
+  ],
   "Soil": [],
   "Location": [
     {
       "region": {
         "value": "southwest Germany",
         "span": [
-          176,
-          191
-        ]
-      }
-    },
-    {
-      "region": {
-        "value": "southwest Germany",
-        "span": [
-          469,
-          484
+          148,
+          163
         ]
       }
     },
@@ -24,8 +34,8 @@
       "city": {
         "value": "Dossenheim",
         "span": [
-          580,
-          590
+          545,
+          555
         ]
       }
     },
@@ -33,8 +43,8 @@
       "city": {
         "value": "Siebeldingen",
         "span": [
-          595,
-          606
+          557,
+          569
         ]
       }
     },
@@ -42,8 +52,17 @@
       "city": {
         "value": "Darmstadt",
         "span": [
-          612,
-          620
+          574,
+          582
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Darmstadt",
+        "span": [
+          653,
+          661
         ]
       }
     }
@@ -53,8 +72,8 @@
       "startTime": {
         "value": "2011",
         "span": [
-          131,
-          135
+          249,
+          253
         ]
       }
     },
@@ -62,8 +81,8 @@
       "endTime": {
         "value": "February 2018",
         "span": [
-          230,
-          243
+          258,
+          271
         ]
       }
     },
@@ -71,8 +90,17 @@
       "duration": {
         "value": "7-year",
         "span": [
-          35,
-          41
+          16,
+          22
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "between 2011 and 2018",
+        "span": [
+          481,
+          504
         ]
       }
     }

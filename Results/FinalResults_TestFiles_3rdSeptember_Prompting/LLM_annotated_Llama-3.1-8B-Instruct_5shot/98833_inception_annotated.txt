@@ -1,16 +1,15 @@
-### Ausgabe ###
+### JSON Output ###
+
 ```json
 {
   "Crops": [],
   "Soil": [
-    {"soilTexture": { "value": "pseudovergleyte Parabraunerde", "span": [148, 165] }},
-    {"soilReferenceGroup": { "value": "Löss", "span": [166, 169] }},
-    {"soilDepth": { "value": "28 cm", "span": [170, 173] }}
+    {"soilTexture": {"value": "pseudovergleyte Parabraunerde", "span": [141, 164]}},
+    {"soilDepth": {"value": "28 cm", "span": [173, 177]}}
   ],
   "Location": [],
   "Time Statement": [
-    {"startTime": { "value": "2017", "span": [93, 97] }},
-    {"endTime": { "value": "2017", "span": [105, 109] }}
+    {"startTime": {"value": "2017", "span": [134, 138]}}
   ]
 }
 ```

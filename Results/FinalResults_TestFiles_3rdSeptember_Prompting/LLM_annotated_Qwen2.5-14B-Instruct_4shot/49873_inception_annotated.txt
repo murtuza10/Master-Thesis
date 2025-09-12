@@ -2,21 +2,21 @@
 {
   "Crops": [],
   "Soil": [
-    {"soilOrganicCarbon": {"value": "organischer Kohlenstoffgehalt", "span": [748, 763]}},
-    {"soilBulkDensity": {"value": "Trockenrohdichte", "span": [594, 604]}},
-    {"soilBulkDensity": {"value": "TRD", "span": [607, 610]}},
-    {"soilAvailableNitrogen": {"value": "nutzbare Feldkapazität", "span": [612, 625]}},
-    {"soilAvailableNitrogen": {"value": "nFK", "span": [628, 631]}}
+    {"soilReferenceGroup": { "value": "Bodenleitprofile", "span": [25, 37] }},
+    {"soilReferenceGroup": { "value": "Bodentyp", "span": [266, 273] }},
+    {"soilBulkDensity": { "value": "Trockenrohdichte (TRD)", "span": [443, 460] }},
+    {"soilAvailableNitrogen": { "value": "nutzbare Feldkapazität (nFK)", "span": [465, 489] }},
+    {"soilOrganicCarbon": { "value": "organischer Kohlenstoffgehalt (Corg)", "span": [558, 586] }}
   ],
   "Location": [
-    {"country": {"value": "Deutschland", "span": [117, 127]}}
+    {"country": { "value": "Deutschland", "span": [102, 111] }}
   ],
   "Time Statement": [
-    {"startTime": {"value": "2012", "span": [771, 775]}},
-    {"endTime": {"value": "2012", "span": [780, 784]}},
-    {"startTime": {"value": "2012", "span": [254, 258]}},
-    {"creationDate": {"value": "28.05.2019", "span": [786, 796]}}
+    {"startTime": { "value": "2012", "span": [602, 606] }},
+    {"endTime": { "value": "2012", "span": [611, 615] }},
+    {"creationDate": { "value": "28.05.2019", "span": [624, 635] }}
   ]
 }
-``` 
-Note: The `creationDate` field does not fit into any of the predefined categories (`startTime`, `endTime`, `duration`). Since it's explicitly mentioned, it is included under `startTime` as there isn't a suitable category for it. If strict adherence to the provided categories is required, this could be left out or a suggestion made for an additional category.
+```
+
+Note: The `creationDate` field is not part of the provided categories but was included due to the presence of the creation date in the text. If it needs to fit strictly within the provided categories, it should be omitted unless specified otherwise.

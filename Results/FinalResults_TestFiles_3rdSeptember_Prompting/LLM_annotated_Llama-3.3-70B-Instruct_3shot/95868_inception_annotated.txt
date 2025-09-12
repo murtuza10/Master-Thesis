@@ -1,31 +1,30 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "Norway spruce", "span": [154, 166]}},
-    {"cropSpecies": {"value": "Picea abies", "span": [173, 183]}},
-    {"cropSpecies": {"value": "Picea abies", "span": [227, 237]}}
+    {"cropSpecies": { "value": "Norway spruce", "span": [154, 166] }},
+    {"cropSpecies": { "value": "Picea abies", "span": [104, 114] }},
+    {"cropSpecies": { "value": "Picea abies", "span": [191, 201] }}
   ],
   "Soil": [],
   "Location": [
-    {"country": {"value": "Germany", "span": [201, 208]}},
-    {"region": {"value": "Western Germany", "span": [241, 255]}},
-    {"region": {"value": "Europe", "span": [344, 350]}},
-    {"country": {"value": "Germany", "span": [466, 473]}}
+    {"country": { "value": "Germany", "span": [241, 248] }},
+    {"region": { "value": "Western Germany", "span": [253, 267] }},
+    {"region": { "value": "Europe", "span": [346, 352] }}
   ],
   "Time Statement": [
-    {"duration": {"value": "50 years", "span": [93, 102]}},
-    {"duration": {"value": "51 years", "span": [264, 273]}},
-    {"startTime": {"value": "1964", "span": [316, 320]}},
-    {"endTime": {"value": "1968", "span": [321, 325]}},
-    {"startTime": {"value": "7", "span": [398, 399]}},
-    {"startTime": {"value": "10", "span": [400, 401]}},
-    {"startTime": {"value": "13", "span": [402, 403]}},
-    {"startTime": {"value": "16", "span": [404, 405]}},
-    {"startTime": {"value": "16", "span": [415, 416]}},
-    {"startTime": {"value": "21", "span": [417, 418]}},
-    {"startTime": {"value": "29", "span": [419, 420]}},
-    {"startTime": {"value": "39", "span": [421, 422]}},
-    {"endTime": {"value": "51", "span": [423, 424]}}
+    {"duration": { "value": "50 years", "span": [94, 102] }},
+    {"duration": { "value": "51 years", "span": [216, 224] }},
+    {"startTime": { "value": "1964", "span": [310, 314] }},
+    {"endTime": { "value": "1968", "span": [315, 319] }},
+    {"startTime": { "value": "7", "span": [436, 437] }},
+    {"startTime": { "value": "10", "span": [439, 441] }},
+    {"startTime": { "value": "13", "span": [443, 445] }},
+    {"startTime": { "value": "16", "span": [447, 449] }},
+    {"startTime": { "value": "16", "span": [462, 464] }},
+    {"startTime": { "value": "21", "span": [466, 468] }},
+    {"startTime": { "value": "29", "span": [470, 472] }},
+    {"startTime": { "value": "39", "span": [474, 476] }},
+    {"startTime": { "value": "51", "span": [478, 480] }}
   ]
 }
 ```

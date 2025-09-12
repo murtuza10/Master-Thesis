@@ -1,21 +1,25 @@
-### Output ###
+### Output Format ###
 ```json
 {
   "Crops": [],
   "Soil": [
-    {"soilReferenceGroup": {"value": "Bodentyp", "span": [136, 142]}},
-    {"soilTexture": {"value": "Skelett", "span": [170, 175]}},
-    {"soilBulkDensity": {"value": "Trockenrohdichte (TRD)", "span": [187, 203]}},
-    {"soilAvailableNitrogen": {"value": "nährstoffansprache", "span": [134, 144]}},
-    {"soilOrganicCarbon": {"value": "organischer Kohlenstoffgehalt (Corg)", "span": [228, 246]}}
+    {"soilTexture": {"value": "Bodenart", "span": [245, 251]}},
+    {"soilReferenceGroup": {"value": "Bodentyp", "span": [241, 247]}},
+    {"soilBulkDensity": {"value": "Trockenrohdichte", "span": [292, 308]}},
+    {"soilOrganicCarbon": {"value": "organischer Kohlenstoffgehalt", "span": [361, 386]}},
+    {"soilPH": {"value": "Kalkung", "span": [179, 184]}},
+    {"soilAvailableNitrogen": {"value": "Nährstoffansprache", "span": [202, 214]}}
   ],
   "Location": [
-    {"country": {"value": "Deutschland", "span": [67, 76]}},
-    {"region": {"value": "Bundesländer", "span": [123, 132]}}
+    {"country": {"value": "Deutschland", "span": [59, 72]}},
+    {"region": {"value": "Bundesländer", "span": [93, 104]}},
+    {"city": {"value": "keine", "span": [None, None]}}
   ],
   "Time Statement": [
-    {"startTime": {"value": "2012", "span": [259, 263]}},
-    {"endTime": {"value": "2012", "span": [270, 274]}}
+    {"startTime": {"value": "2012", "span": [236, 240]}},
+    {"endTime": {"value": "2012", "span": [243, 247]}}
   ]
 }
 ```
+
+Note: The "city" value is set to "keine" (which means "no city" in German) since there is no specific city mentioned in the text.

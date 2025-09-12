@@ -1,18 +1,23 @@
 ```json
 {
-  "Crops": [],
+  "Crops": [
+    {"cropSpecies": {"value": "soft-skinned fruits", "span": [64, 78]}},
+    {"cropSpecies": {"value": "grape", "span": [84, 89]}}
+  ],
   "Soil": [],
   "Location": [
-    {"country": {"value": "Germany", "span": [112, 118]}},
-    {"region": {"value": "southwest Germany", "span": [137, 148]}},
-    {"city": {"value": "Dossenheim", "span": [569, 579]}},
-    {"city": {"value": "Siebeldingen", "span": [584, 595]}},
-    {"city": {"value": "Darmstadt", "span": [608, 616]}}
+    {"region": {"value": "southwest Germany", "span": [105, 117]}},
+    {"region": {"value": "southwest Germany", "span": [465, 477]}},
+    {"city": {"value": "Dossenheim", "span": [513, 523]}},
+    {"city": {"value": "Siebeldingen", "span": [528, 539]}},
+    {"city": {"value": "Darmstadt", "span": [565, 574]}},
+    {"latitude": {"value": "lat", "span": [866, 870]}},
+    {"longitude": {"value": "lon", "span": [875, 879]}}
   ],
   "Time Statement": [
-    {"startTime": {"value": "2011", "span": [154, 158]}},
-    {"endTime": {"value": "February 2018", "span": [217, 229]}},
-    {"duration": {"value": "7-year", "span": [106, 110]}}
+    {"startTime": {"value": "2011", "span": [194, 198]}},
+    {"endTime": {"value": "February 2018", "span": [212, 224]}},
+    {"duration": {"value": "7-year", "span": [228, 234]}}
   ]
 }
 ```

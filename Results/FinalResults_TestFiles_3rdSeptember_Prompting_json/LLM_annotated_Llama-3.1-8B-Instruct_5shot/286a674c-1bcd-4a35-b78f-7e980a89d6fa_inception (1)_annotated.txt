@@ -4,20 +4,30 @@
       "cropSpecies": {
         "value": "winter wheat",
         "span": [
-          157,
-          168
+          234,
+          246
         ]
       }
     }
   ],
-  "Soil": [],
+  "Soil": [
+    {
+      "soilReferenceGroup": {
+        "value": "Boden",
+        "span": [
+          1061,
+          1065
+        ]
+      }
+    }
+  ],
   "Location": [
     {
       "country": {
         "value": "Germany",
         "span": [
-          261,
-          267
+          1103,
+          1108
         ]
       }
     },
@@ -25,8 +35,8 @@
       "region": {
         "value": "Brandenburg",
         "span": [
-          273,
-          280
+          1113,
+          1120
         ]
       }
     },
@@ -34,28 +44,43 @@
       "city": {
         "value": "Quillow",
         "span": [
-          298,
-          306
+          1131,
+          1137
         ]
       }
+    },
+    {
+      "latitude": {}
+    },
+    {
+      "longitude": {}
     }
   ],
   "Time Statement": [
     {
       "startTime": {
-        "value": "April 2019",
+        "value": "April",
         "span": [
-          213,
-          224
+          276,
+          280
         ]
       }
     },
     {
       "endTime": {
-        "value": "June 2019",
+        "value": "June",
         "span": [
-          228,
-          238
+          287,
+          291
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "growing season",
+        "span": [
+          291,
+          299
         ]
       }
     }

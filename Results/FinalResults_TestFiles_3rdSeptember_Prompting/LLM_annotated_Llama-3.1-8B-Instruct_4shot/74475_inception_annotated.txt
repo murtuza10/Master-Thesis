@@ -1,26 +1,23 @@
-### Output ###
+### Output JSON ###
 ```json
 {
   "Crops": [],
   "Soil": [
-    {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [22, 40]}},
-    {"soilOrganicCarbon": {"value": "SOC", "span": [60, 63]}},
-    {"soilOrganicNitrogen": {"value": "soil organic nitrogen", "span": [65, 85]}},
-    {"soilOrganicNitrogen": {"value": "SON", "span": [103, 106]}},
-    {"soilBulkDensity": {"value": "decomposition", "span": [143, 152]}},
-    {"soilBulkDensity": {"value": "transfer rates", "span": [157, 171]}},
-    {"soilBulkDensity": {"value": "decomposition", "span": [176, 186]}},
-    {"soilBulkDensity": {"value": "transfer rates", "span": [192, 206]}},
-    {"soilPH": {"value": "N mineralisation", "span": [234, 245]}},
-    {"soilPH": {"value": "N mineralisation", "span": [253, 264]}},
-    {"soilPH": {"value": "N immobilisation", "span": [265, 275]}},
-    {"soilOrganicCarbon": {"value": "SOC", "span": [276, 279]}}
+    {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [17, 34]}},
+    {"soilOrganicCarbon": {"value": "SOC", "span": [61, 63]}},
+    {"soilAvailableNitrogen": {"value": "soil organic nitrogen", "span": [46, 63]}},
+    {"soilAvailableNitrogen": {"value": "SON", "span": [115, 118]}}
   ],
   "Location": [],
   "Time Statement": [
-    {"duration": {"value": "temporal", "span": [114, 121]}},
-    {"duration": {"value": "temporal", "span": [134, 141]}},
-    {"startTime": {"value": "temporal", "span": [182, 189]}}
+    {"startTime": {"value": "temporal", "span": [75, 83]}}
   ]
 }
 ```
+### Explanation ###
+In the provided text, the following entities were identified and extracted:
+
+1.  **Soil**: The text mentions "soil organic carbon" (SOC) and "soil organic nitrogen" (SON). These are related to the soil's organic carbon and nitrogen content. Additionally, the text mentions "C transfer matrix", which is related to the soil's carbon transfer rates. However, since "C" is not explicitly mentioned in the text, I have only extracted the SOC and SON entities.
+2.  **Location**: There is no mention of any specific location in the text.
+3.  **Time Statement**: The text mentions the temporal development of SOC, which implies a time-related concept. However, the exact start and end times are not specified, so I have only extracted the "startTime" entity with the value "temporal".
+4.  **Crops**: There is no mention of any crops in the text.

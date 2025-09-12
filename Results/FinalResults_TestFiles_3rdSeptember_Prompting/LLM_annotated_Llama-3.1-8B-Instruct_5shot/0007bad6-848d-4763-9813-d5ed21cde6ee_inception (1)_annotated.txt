@@ -1,27 +1,25 @@
-### Output Format ###
+### Output JSON Structure ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "Winter wheat", "span": [332, 342] }}
+    {"cropSpecies": {"value": "Winter wheat", "span": [341, 351]}}
   ],
   "Soil": [
-    {"soilTexture": { "value": "soil", "span": [35, 40] }},
-    {"soilReferenceGroup": { "value": "soil", "span": [35, 40] }},
-    {"soilDepth": { "value": "soil water stable aggregation", "span": [234, 257] }},
-    {"soilBulkDensity": { "value": "soil properties", "span": [224, 235] }},
-    {"soilPH": { "value": "soil properties", "span": [224, 235] }},
-    {"soilOrganicCarbon": { "value": "soil properties", "span": [224, 235] }},
-    {"soilAvailableNitrogen": { "value": "soil properties", "span": [224, 235] }}
+    {"soilTexture": []},
+    {"soilReferenceGroup": []},
+    {"soilDepth": []},
+    {"soilBulkDensity": []},
+    {"soilPH": []},
+    {"soilOrganicCarbon": []},
+    {"soilAvailableNitrogen": []}
   ],
   "Location": [],
   "Time Statement": []
 }
 ```
-### Explanation of the Output ###
-In the output, the `Crops` list contains one crop species, `Winter wheat`, which is mentioned in the abstract text.
-
-The `Soil` list contains several soil-related entities, including `soil`, `soil water stable aggregation`, and `soil properties`, which are mentioned in the abstract text. However, the exact soil properties such as `soilPH`, `soilOrganicCarbon`, and `soilAvailableNitrogen` are not explicitly mentioned in the text, but are included in the output as they are part of the predefined entity categories.
-
-The `Location` list is empty because no specific location is mentioned in the text.
-
-The `Time Statement` list is also empty because no specific time or duration is mentioned in the text.
+### Detailed Explanation ###
+- The input text contains a mention of "Winter wheat", which is a crop species. This is the only mention of a crop in the text.
+- The text does not explicitly mention any soil properties, such as texture, reference group, depth, bulk density, pH, organic carbon, or available nitrogen.
+- There is no mention of a specific location.
+- The text mentions several time-related concepts, such as "an increasing number of GCFs" and "a range of other important environmental drivers", but these are not specific enough to be included in the time statement category.
+- Therefore, the output JSON structure contains only a single entry in the "Crops" category, corresponding to the mention of "Winter wheat". The "Soil", "Location", and "Time Statement" categories are empty.

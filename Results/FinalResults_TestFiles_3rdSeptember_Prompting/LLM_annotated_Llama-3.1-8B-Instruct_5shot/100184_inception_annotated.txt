@@ -1,27 +1,23 @@
-### Output JSON Structure ###
+### Output JSON Format ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "oilseed rape", "span": [306, 316]}},
-    {"cropSpecies": {"value": "Brassica napus", "span": [340, 350]}},
-    {"cropSpecies": {"value": "OSR", "span": [351, 353]}}
+    {"cropSpecies": {"value": "oilseed rape", "span": [342, 353]}}
   ],
   "Soil": [],
   "Location": [
-    {"city": {"value": "Bochum", "span": [143, 150]}},
-    {"city": {"value": "Braunschweig", "span": [155, 165]}},
-    {"city": {"value": "Celle", "span": [169, 175]}},
-    {"city": {"value": "Hohenheim", "span": [179, 185]}},
-    {"city": {"value": "Veitshöchheim", "span": [193, 203]}}
+    {"country": {"value": "Germany", "span": [143, 150]}},
+    {"city": {"value": "Bochum", "span": [183, 191]}},
+    {"city": {"value": "Braunschweig", "span": [200, 211]}},
+    {"city": {"value": "Celle", "span": [218, 225]}},
+    {"city": {"value": "Hohenheim", "span": [235, 242]}},
+    {"city": {"value": "Veitshöchheim", "span": [254, 264]}}
   ],
   "Time Statement": [
-    {"startTime": {"value": "spring 2022", "span": [220, 233]}},
-    {"endTime": {"value": "spring 2023", "span": [237, 250]}}
+    {"startTime": {"value": "spring 2022", "span": [281, 292]}},
+    {"endTime": {"value": "spring 2023", "span": [301, 312]}}
   ]
 }
 ```
-### Note ###
-- "Crops" contains three mentions of "oilseed rape" and its synonym "OSR".
-- "Soil" is empty because the text does not mention any soil-related entities.
-- "Location" contains five mentions of cities in Germany.
-- "Time Statement" contains two mentions of time intervals.
+
+This JSON output structure contains the extracted entities from the given text, categorized into `Crops`, `Soil`, `Location`, and `Time Statement`. The `cropSpecies` entity is identified as "oilseed rape", and the `country` and `city` entities are identified for the locations where the samples were collected. The `startTime` and `endTime` entities are identified as "spring 2022" and "spring 2023", respectively, indicating the time period when the samples were collected.

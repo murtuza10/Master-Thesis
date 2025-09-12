@@ -1,28 +1,63 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "maize", "span": [113, 118] }},
-    {"cropSpecies": { "value": "maize", "span": [484, 489] }}
+    {
+      "cropSpecies": { "value": "maize", "span": [85, 90] }
+    },
+    {
+      "cropSpecies": { "value": "maize", "span": [318, 323] }
+    }
   ],
   "Soil": [
-    {"soilReferenceGroup": { "value": "Wanna Sand", "span": [153, 163] }},
-    {"soilReferenceGroup": { "value": "Wanna Sand", "span": [205, 215] }},
-    {"soilReferenceGroup": { "value": "Rostock Sand", "span": [233, 245] }},
-    {"soilReferenceGroup": { "value": "Wanna Marsch", "span": [257, 269] }},
-    {"soilReferenceGroup": { "value": "Wanna Sand", "span": [275, 285] }}
+    {
+      "soilTexture": { "value": "Wanna Sand", "span": [123, 133] }
+    },
+    {
+      "soilTexture": { "value": "Wanna Sand", "span": [154, 164] }
+    },
+    {
+      "soilTexture": { "value": "Rostock Sand", "span": [168, 180] }
+    },
+    {
+      "soilTexture": { "value": "Wanna Marsch", "span": [184, 196] }
+    }
   ],
   "Location": [
-    {"region": { "value": "Europe", "span": [664, 670] }},
-    {"country": { "value": "Germany", "span": [673, 680] }},
-    {"region": { "value": "Lower Saxony", "span": [683, 696] }},
-    {"region": { "value": "Mecklenburg-Vorpommern", "span": [708, 728] }},
-    {"city": { "value": "Rostock", "span": [731, 738] }}
+    {
+      "region": { "value": "Europe", "span": [673, 679] }
+    },
+    {
+      "country": { "value": "Germany", "span": [681, 688] }
+    },
+    {
+      "region": { "value": "Lower Saxony", "span": [690, 700] }
+    },
+    {
+      "city": { "value": "Wanna", "span": [702, 707] }
+    },
+    {
+      "region": { "value": "Mecklenburg-Vorpommern", "span": [709, 729] }
+    },
+    {
+      "city": { "value": "Rostock", "span": [731, 738] }
+    }
   ],
   "Time Statement": [
-    {"startTime": { "value": "2021", "span": [84, 88] }},
-    {"startTime": { "value": "2022", "span": [89, 93] }},
-    {"startTime": { "value": "2023", "span": [94, 98] }},
-    {"duration": { "value": "between April and August", "span": [427, 450] }}
+    {
+      "startTime": { "value": "2021", "span": [62, 67] }
+    },
+    {
+      "endTime": { "value": "2022", "span": [69, 74] }
+    },
+    {
+      "endTime": { "value": "2023", "span": [76, 81] }
+    },
+    {
+      "startTime": { "value": "April", "span": [337, 342] }
+    },
+    {
+      "endTime": { "value": "August", "span": [344, 350] }
+    }
   ]
 }
 ```

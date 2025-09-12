@@ -1,0 +1,27 @@
+### Output JSON Structure Filled with the Given Input Text ###
+
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "soil properties", "span": [124, 136]}},
+    {"soilReferenceGroup": {"value": "soil properties", "span": [186, 198]}},
+    {"soilReferenceGroup": {"value": "soil properties", "span": [240, 252]}},
+    {"soilReferenceGroup": {"value": "soil properties", "span": [295, 307]}},
+    {"soilDepth": {"value": "1396 individual sites", "span": [114, 128]}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Notes: ###
+
+- Since no entities of type "Crops" were found in the text, an empty list was returned.
+- Entities of type "Soil" were found, specifically "soilReferenceGroup" and "soilDepth". However, "soilBulkDensity", "soilPH", "soilOrganicCarbon", and "soilAvailableNitrogen" were not found in the text.
+- No entities of type "Location" were found in the text, so an empty list was returned.
+- No entities of type "Time Statement" were found in the text, so an empty list was returned.

@@ -1,0 +1,30 @@
+### Input Text: 
+Title: 
+Root litter quality incubation experiment
+
+Abstract:
+The dataset contains data of a 2-year incubation experiment of C4 roots litter added to a C3 soil. The soil was sampled after 6, 12 and 24 months and fractionated into particulate organic carbon (POC) and mineral associated organic carbon (MAOC) and each fraction (plus the bulk soil) was measured for total carbon content as well as the abundance of the stable isotope 13C, to distinguish between old (native) and new (added) carbon. There are two files: One contains the raw data with measured C contents, delta 13C values, fraction weights and the subsequently calculated amounts of new and old carbon in all fractions. The second file is related to the first, but contains the final dataset which was used to produce the graphs and tables in the paper.
+
+### Output: 
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "C4", "span": [55, 57]}},
+    {"cropSpecies": {"value": "C3", "span": [82, 84]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "C3 soil", "span": [81, 90]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2 years", "span": [15, 21]}},
+    {"duration": {"value": "2 years", "span": [15, 21]}}
+  ]
+}
+```
+
+### Note: 
+- I only found one mention of a crop species (C4 and C3) in the text, which matches the Crops category.
+- I found one mention of a soil reference group (C3 soil) in the text, which matches the Soil category.
+- I found two time-related expressions in the text: "2 years" (both start and end time) and "2 years" (duration), which match the Time Statement category.
+- I did not find any mentions of a location in the text, so the Location category is empty.

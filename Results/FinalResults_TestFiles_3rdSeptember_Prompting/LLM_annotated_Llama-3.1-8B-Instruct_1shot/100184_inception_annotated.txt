@@ -1,0 +1,22 @@
+### JSON Output Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "oilseed rape", "span": [144, 153] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"city": { "value": "Bochum", "span": [126, 132] }},
+    {"city": { "value": "Braunschweig", "span": [133, 141] }},
+    {"city": { "value": "Celle", "span": [142, 148] }},
+    {"city": { "value": "Hohenheim", "span": [149, 155] }},
+    {"city": { "value": "Veitshöchheim", "span": [156, 165] }},
+    {"country": { "value": "Germany", "span": [121, 127] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "spring 2022", "span": [104, 116] }},
+    {"endTime": { "value": "spring 2023", "span": [117, 129] }}
+  ]
+}
+```
+Note that no soil-related entities were found in the text. Also, no time duration was found, only start and end times.

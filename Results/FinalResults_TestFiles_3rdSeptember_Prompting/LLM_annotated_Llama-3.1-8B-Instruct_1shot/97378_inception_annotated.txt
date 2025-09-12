@@ -1,0 +1,23 @@
+### Entity Extraction Results ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "cropland", "span": [34, 41] }},
+    {"cropSpecies": { "value": "cropland", "span": [34, 41] }}
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "Lehm", "span": [96, 100] }},
+    {"soilTexture": { "value": "Ton", "span": [101, 104] }},
+    {"soilBulkDensity": { "value": "pH Wert", "span": [182, 188] }},
+    {"soilOrganicCarbon": { "value": "organischen Kohlenstoff", "span": [193, 213] }},
+    {"soilAvailableNitrogen": { "value": "Gesamt-Stickstoff", "span": [220, 234] }}
+  ],
+  "Location": [
+    {"region": { "value": "Nähe von Hildesheim", "span": [67, 85] }}
+  ],
+  "Time Statement": [
+    {"duration": { "value": "14-tägigen Zeitraster", "span": [26, 42] }},
+    {"startTime": { "value": "2 Jahre", "span": [61, 67] }}
+  ]
+}
+```

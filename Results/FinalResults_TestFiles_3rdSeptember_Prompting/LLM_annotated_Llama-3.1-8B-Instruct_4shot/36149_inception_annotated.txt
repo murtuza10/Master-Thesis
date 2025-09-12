@@ -1,25 +1,24 @@
-### Output JSON Format Filled with Entities from the Input Text ###
-
+### Output ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "energy crop", "span": [120, 130] }},
-    {"cropSpecies": { "value": "crop", "span": [222, 226] }}
+    {"cropSpecies": {"value": "energy crop", "span": [147, 156]}},
+    {"cropSpecies": {"value": "energy crop", "span": [243, 252]}}
   ],
   "Soil": [
-    {"soilReferenceGroup": { "value": "soil", "span": [145, 149] }},
-    {"soilBulkDensity": { "value": "bulk density", "span": [243, 253] }},
-    {"soilOrganicCarbon": { "value": "carbon", "span": [283, 286] }}
+    {"soilReferenceGroup": {"value": "soil", "span": [123, 126]}},
+    {"soilDepth": {"value": "bulk density", "span": [211, 221]}},
+    {"soilAvailableNitrogen": {"value": "nitrogen content", "span": [228, 239]}},
+    {"soilAvailableNitrogen": {"value": "ammonium-N", "span": [245, 253]}},
+    {"soilAvailableNitrogen": {"value": "nitrate-N", "span": [261, 268]}}
   ],
   "Location": [
-    {"country": { "value": "Germany", "span": [92, 99] }},
-    {"city": { "value": "Germany", "span": [95, 102] }}
+    {"country": {"value": "Germany", "span": [79, 86]}},
+    {"country": {"value": "Germany", "span": [134, 141]}}
   ],
   "Time Statement": [
-    {"startTime": { "value": "2011/2012", "span": [117, 125] }},
-    {"endTime": { "value": "2014/2015", "span": [134, 142] }}
+    {"startTime": {"value": "2011/2012", "span": [97, 107]}},
+    {"endTime": {"value": "2014/2015", "span": [113, 123]}}
   ]
 }
 ```
-
-### Note: The start and end indices in the "span" field are based on the character positions in the input text.

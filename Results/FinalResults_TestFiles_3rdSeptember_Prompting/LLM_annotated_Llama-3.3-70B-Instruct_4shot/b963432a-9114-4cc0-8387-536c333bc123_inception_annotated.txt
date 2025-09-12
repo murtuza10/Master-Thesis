@@ -1,34 +1,36 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "spring barley", "span": [564, 577]}},
-    {"cropSpecies": {"value": "serradella", "span": [603, 612]}},
-    {"cropSpecies": {"value": "spring barley", "span": [644, 657]}}
+    {"cropSpecies": {"value": "spring barley", "span": [546, 559]}},
+    {"cropSpecies": {"value": "serradella", "span": [573, 582]}},
+    {"cropSpecies": {"value": "spring barley", "span": [612, 625]}}
   ],
   "Soil": [
-    {"soilPH": {"value": "pH", "span": [231, 233]}},
-    {"soilPH": {"value": "pH", "span": [710, 712]}},
-    {"soilPH": {"value": "pH-Wert", "span": [1041, 1047]}},
-    {"soilOrganicCarbon": {"value": "Gelöster organischer Kohlenstoff", "span": [1023, 1041]}},
-    {"soilOrganicCarbon": {"value": "organischer Kohlenstoff", "span": [1011, 1023]}},
-    {"soilAvailableNitrogen": {"value": "Nitrat", "span": [1004, 1009]}},
-    {"soilAvailableNitrogen": {"value": "Nitrit", "span": [1010, 1015]}},
-    {"soilAvailableNitrogen": {"value": "Ammonium", "span": [1033, 1040]}},
-    {"soilAvailableNitrogen": {"value": "Stickstoff", "span": [1048, 1055]}},
-    {"soilDepth": {"value": "three sampling depths", "span": [193, 211]}},
-    {"soilDepth": {"value": "three different depths", "span": [734, 752]}}
+    {"soilPH": {"value": "pH", "span": [104, 106]}},
+    {"soilPH": {"value": "pH", "span": [330, 332]}},
+    {"soilPH": {"value": "pH-Wert", "span": [944, 950]}},
+    {"soilOrganicCarbon": {"value": "Gelöster organischer Kohlenstoff", "span": [926, 950]}},
+    {"soilOrganicCarbon": {"value": "organischer Kohlenstoff", "span": [864, 884]}},
+    {"soilAvailableNitrogen": {"value": "Nitrat", "span": [885, 892]}},
+    {"soilAvailableNitrogen": {"value": "Nitrit", "span": [893, 899]}},
+    {"soilAvailableNitrogen": {"value": "Ammonium", "span": [918, 927]}},
+    {"soilAvailableNitrogen": {"value": "Stickstoff", "span": [951, 960]}},
+    {"soilDepth": {"value": "three sampling depths", "span": [274, 292]}},
+    {"soilDepth": {"value": "three different depths", "span": [659, 677]}}
   ],
   "Location": [
-    {"region": {"value": "Northern Germany", "span": [207, 223]}}
+    {"region": {"value": "Northern Germany", "span": [240, 256]}}
   ],
   "Time Statement": [
-    {"startTime": {"value": "2018", "span": [588, 592]}},
-    {"startTime": {"value": "2019", "span": [614, 618]}},
-    {"startTime": {"value": "2020", "span": [230, 234]}},
-    {"startTime": {"value": "2020", "span": [661, 665]}},
-    {"duration": {"value": "3.5 months", "span": [783, 794]}},
-    {"startTime": {"value": "2020", "span": [53, 57]}},
-    {"startTime": {"value": "2020", "span": [142, 146]}}
+    {"startTime": {"value": "2018", "span": [584, 588]}},
+    {"startTime": {"value": "2019", "span": [600, 604]}},
+    {"startTime": {"value": "2020", "span": [104, 108]}},
+    {"startTime": {"value": "2020", "span": [330, 334]}},
+    {"startTime": {"value": "2020", "span": [692, 696]}},
+    {"duration": {"value": "3.5 months", "span": [737, 746]}},
+    {"endTime": {"value": "2020", "span": [104, 108]}},
+    {"endTime": {"value": "2020", "span": [330, 334]}},
+    {"endTime": {"value": "2020", "span": [692, 696]}}
   ]
 }
 ```

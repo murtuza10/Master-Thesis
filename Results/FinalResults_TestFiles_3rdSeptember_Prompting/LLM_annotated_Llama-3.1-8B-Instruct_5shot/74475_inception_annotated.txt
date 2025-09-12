@@ -1,16 +1,19 @@
-### Output ###
+### Output JSON Structure ###
 ```json
 {
   "Crops": [],
   "Soil": [
-    {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [23, 40]}},
-    {"soilAvailableNitrogen": {"value": "soil organic nitrogen", "span": [41, 58]}},
-    {"soilOrganicCarbon": {"value": "SOC", "span": [84, 86]}},
-    {"soilAvailableNitrogen": {"value": "SON", "span": [90, 93]}}
+    {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [25, 42]}},
+    {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [73, 90]}},
+    {"soilAvailableNitrogen": {"value": "soil organic nitrogen", "span": [25, 43]}},
+    {"soilAvailableNitrogen": {"value": "soil organic nitrogen", "span": [73, 91]}},
+    {"soilPH": {"value": "CN Ratio", "span": [93, 100]}}
   ],
   "Location": [],
   "Time Statement": [
-    {"duration": {"value": "temporal development", "span": [102, 116]}}
+    {"duration": {"value": "temporal development", "span": [104, 115]}}
   ]
 }
 ```
+
+Note that the input text mentions "soil organic carbon", "soil organic nitrogen", and "CN Ratio", which are related to soil properties. It does not mention any specific crop species. Therefore, the "Crops" list is empty. The "Location" list is also empty as there is no mention of any location. The "Time Statement" list includes a duration related to the temporal development of soil organic carbon.

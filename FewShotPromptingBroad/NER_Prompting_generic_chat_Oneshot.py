@@ -9,7 +9,7 @@ from transformers import AutoConfig
 sys.path.append(os.path.abspath('..'))
 
 from Evaluation_Files.generate_ner_prompt_1Example_Broad import generate_ner_prompts
-from Evaluation_Files.calculate_metrics_multiple_excel_partial_exact import evaluate_all
+from Evaluation_Files.calculate_metrics_multiple_excel_partial_exact_count import evaluate_all
 
 
 
@@ -113,7 +113,7 @@ def main():
         args.input_dir,
         args.output_dir,
         args.output_dir_json,
-        int(args.top_k),
+        int(args.start),
         xmi_dir,
         log_dir)
     print("NER processing complete.")

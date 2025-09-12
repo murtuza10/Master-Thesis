@@ -1,22 +1,20 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "oilseed rape", "span": [268, 276] }},
-    {"cropSpecies": { "value": "Brassica napus", "span": [278, 288] }},
-    {"cropSpecies": { "value": "OSR", "span": [290, 293] }}
+    {"cropSpecies": {"value": "oilseed rape", "span": [476, 486]}},
+    {"cropSpecies": {"value": "Brassica napus", "span": [489, 502]}}
   ],
   "Soil": [],
   "Location": [
-    {"city": { "value": "Bochum", "span": [367, 373] }},
-    {"city": { "value": "Braunschweig", "span": [376, 386] }},
-    {"city": { "value": "Celle", "span": [389, 393] }},
-    {"city": { "value": "Hohenheim", "span": [396, 405] }},
-    {"city": { "value": "Veitshöchheim", "span": [408, 419] }},
-    {"country": { "value": "Germany", "span": [355, 361] }}
+    {"city": {"value": "Bochum", "span": [315, 321]}},
+    {"city": {"value": "Braunschweig", "span": [323, 333]}},
+    {"city": {"value": "Celle", "span": [335, 339]}},
+    {"city": {"value": "Hohenheim", "span": [341, 351]}},
+    {"city": {"value": "Veitshöchheim", "span": [353, 365]}}
   ],
   "Time Statement": [
-    {"startTime": { "value": "spring 2022", "span": [423, 432] }},
-    {"endTime": { "value": "spring 2023", "span": [435, 444] }}
+    {"startTime": {"value": "spring 2022", "span": [371, 382]}},
+    {"endTime": {"value": "spring 2023", "span": [385, 397]}}
   ]
 }
 ```

@@ -1,17 +1,81 @@
 {
   "Crops": [],
   "Soil": [
-    {"soilTexture": { "value": "Lehm", "span": [346, 350] }},
-    {"soilTexture": { "value": "Ton", "span": [352, 355] }},
-    {"soilPH": { "value": "pH Wert", "span": [ecast: 594, 600] }},
-    {"soilOrganicCarbon": { "value": "organischen Kohlenstoff", "span": [611, 630] }},
-    {"soilAvailableNitrogen": { "value": "Gesamt-Stickstoff", "span": [638, 653] }}
+    {
+      "soilTexture": {
+        "value": "Lehm",
+        "span": [
+          346,
+          350
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "Ton",
+        "span": [
+          352,
+          355
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH Wert",
+        "span": [
+          581,
+          587
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "organischen Kohlenstoff",
+        "span": [
+          603,
+          624
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "Gesamt-Stickstoff",
+        "span": [
+          630,
+          646
+        ]
+      }
+    }
   ],
   "Location": [
-    {"city": { "value": "Hildesheim", "span": [281, 290] }}
+    {
+      "city": {
+        "value": "Hildesheim",
+        "span": [
+          274,
+          283
+        ]
+      }
+    }
   ],
   "Time Statement": [
-    {"duration": { "value": "14-tÃ¤gigen", "span": [313, 323] }},
-    {"duration": { "value": "2 Jahren", "span": [339, 347] }}
+    {
+      "duration": {
+        "value": "14-tÃ¤gigen",
+        "span": [
+          294,
+          303
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "2 Jahren",
+        "span": [
+          314,
+          323
+        ]
+      }
+    }
   ]
 }

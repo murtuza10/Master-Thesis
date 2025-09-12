@@ -1,24 +1,31 @@
-### JSON Output ###
+### Output JSON ###
+
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "grapes", "span": [44, 49]}},
-    {"cropSpecies": {"value": "grapes", "span": [144, 149]}},
-    {"cropSpecies": {"value": "grapes", "span": [217, 222]}},
-    {"cropSpecies": {"value": "grapes", "span": [295, 300]}},
-    {"cropSpecies": {"value": "grapes", "span": [369, 374]}},
-    {"cropSpecies": {"value": "grapes", "span": [432, 437]}},
-    {"cropSpecies": {"value": "grapes", "span": [498, 503]}},
-    {"cropSpecies": {"value": "grapes", "span": [567, 572]}},
-    {"cropSpecies": {"value": "grapes", "span": [640, 645]}}
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [123, 136]}},
+    {"cropSpecies": {"value": "Drosophila melanogaster", "span": [138, 153]}},
+    {"cropSpecies": {"value": "grapes", "span": [194, 201]}},
+    {"cropVariety": {"value": "sour rot", "span": [25, 34]}}
   ],
   "Soil": [],
   "Location": [],
   "Time Statement": [
-    {"startTime": {"value": "2017", "span": [102, 106]}},
-    {"endTime": {"value": "2017", "span": [111, 115]}},
-    {"startTime": {"value": "2018", "span": [121, 125]}},
-    {"endTime": {"value": "2018", "span": [130, 134]}}
+    {"startTime": {"value": "2017", "span": [216, 220]}},
+    {"startTime": {"value": "2018", "span": [221, 225]}},
+    {"endTime": {"value": "2018", "span": [283, 287]}},
+    {"startTime": {"value": "30.8.2017", "span": [312, 323]}},
+    {"endTime": {"value": "20.9.2017", "span": [333, 338]}},
+    {"startTime": {"value": "6.9.2017", "span": [340, 346]}},
+    {"endTime": {"value": "25.9.2017", "span": [357, 362]}},
+    {"startTime": {"value": "24.8.2018", "span": [383, 392]}},
+    {"endTime": {"value": "13.9.2018", "span": [404, 409]}},
+    {"startTime": {"value": "31.8.2018", "span": [411, 420]}},
+    {"endTime": {"value": "20.9.2018", "span": [432, 437]}},
+    {"startTime": {"value": "29.8.2018", "span": [444, 453]}},
+    {"endTime": {"value": "12.9.2018", "span": [465, 470]}},
+    {"startTime": {"value": "4.9.2018", "span": [472, 479]}},
+    {"endTime": {"value": "29.9.2018", "span": [491, 496]}}
   ]
 }
 ```

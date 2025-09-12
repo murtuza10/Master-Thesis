@@ -4,28 +4,46 @@
       "cropSpecies": {
         "value": "wheat",
         "span": [
-          121,
-          126
+          91,
+          97
         ]
       }
     }
   ],
   "Soil": [
     {
-      "soilTexture": {
-        "value": "pedo-climatic",
+      "soilReferenceGroup": {
+        "value": "soil",
         "span": [
-          73,
-          88
+          137,
+          140
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "fields",
+        "span": [
+          157,
+          162
         ]
       }
     },
     {
       "soilReferenceGroup": {
+        "value": "pedo-climatic zones",
+        "span": [
+          169,
+          189
+        ]
+      }
+    },
+    {
+      "soilTexture": {
         "value": "soil properties",
         "span": [
-          108,
-          122
+          203,
+          214
         ]
       }
     }
@@ -35,8 +53,8 @@
       "country": {
         "value": "Europe",
         "span": [
-          94,
-          101
+          31,
+          38
         ]
       }
     }
@@ -46,8 +64,8 @@
       "startTime": {
         "value": "2019",
         "span": [
-          123,
-          127
+          74,
+          78
         ]
       }
     },
@@ -55,8 +73,8 @@
       "endTime": {
         "value": "2020",
         "span": [
-          130,
-          134
+          85,
+          89
         ]
       }
     }

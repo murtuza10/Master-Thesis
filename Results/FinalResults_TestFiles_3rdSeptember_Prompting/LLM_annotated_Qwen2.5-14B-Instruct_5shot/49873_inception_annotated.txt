@@ -2,15 +2,18 @@
 {
   "Crops": [],
   "Soil": [
-    {"soilBulkDensity": {"value": "Trockenrohdichte (TRD)", "span": [276, 305]}},
-    {"soilOrganicCarbon": {"value": "organischer Kohlenstoffgehalt (Corg)", "span": [424, 457]}}
+    {"soilBulkDensity": {"value": "Trockenrohdichte (TRD)", "span": [222, 246]}},
+    {"soilOrganicCarbon": {"value": "organischer Kohlenstoffgehalt (Corg)", "span": [305, 339]}}
   ],
   "Location": [
-    {"country": {"value": "Deutschland", "span": [129, 138]}}
+    {"country": {"value": "Deutschland", "span": [123, 134]}}
   ],
   "Time Statement": [
-    {"startTime": {"value": "2012", "span": [571, 575]}},
-    {"endTime": {"value": "2012", "span": [581, 585]}}
+    {"startTime": {"value": "2012", "span": [415, 419]}},
+    {"endTime": {"value": "2012", "span": [424, 428]}},
+    {"creationDate": {"value": "28.05.2019", "span": [436, 447]}}
   ]
 }
 ```
+
+*Note: The `creationDate` key does not fit into any of the predefined categories (`startTime`, `endTime`, `duration`). Therefore, it's included directly under `Time Statement`. If this is not allowed, please clarify the rules regarding such cases.*

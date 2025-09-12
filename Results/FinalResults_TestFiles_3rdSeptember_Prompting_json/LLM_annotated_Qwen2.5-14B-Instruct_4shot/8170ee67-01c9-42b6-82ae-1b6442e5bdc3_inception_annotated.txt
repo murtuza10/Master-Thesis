@@ -4,44 +4,17 @@
       "cropSpecies": {
         "value": "barley",
         "span": [
-          66,
-          72
+          100,
+          106
         ]
       }
     },
     {
       "cropSpecies": {
-        "value": "oilseed rape",
+        "value": "barley",
         "span": [
-          417,
-          426
-        ]
-      }
-    },
-    {
-      "cropSpecies": {
-        "value": "wheat",
-        "span": [
-          430,
-          436
-        ]
-      }
-    },
-    {
-      "cropSpecies": {
-        "value": "lupine",
-        "span": [
-          439,
-          445
-        ]
-      }
-    },
-    {
-      "cropSpecies": {
-        "value": "rye",
-        "span": [
-          447,
-          450
+          109,
+          115
         ]
       }
     },
@@ -49,8 +22,8 @@
       "cropVariety": {
         "value": "OTTO",
         "span": [
-          497,
-          501
+          650,
+          654
         ]
       }
     }
@@ -58,28 +31,37 @@
   "Soil": [
     {
       "soilReferenceGroup": {
-        "value": "soil class A",
+        "value": "soil",
         "span": [
-          372,
-          382
+          701,
+          705
         ]
       }
     },
     {
-      "soilReferenceGroup": {
-        "value": "soil class B",
+      "soilOrganicCarbon": {
+        "value": "PCAL",
         "span": [
-          384,
-          394
+          395,
+          399
         ]
       }
     },
     {
-      "soilReferenceGroup": {
-        "value": "soil class C",
+      "soilOrganicCarbon": {
+        "value": "PCAL",
         "span": [
-          396,
-          406
+          420,
+          424
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "PCAL",
+        "span": [
+          445,
+          449
         ]
       }
     },
@@ -87,35 +69,8 @@
       "soilDepth": {
         "value": "25 cm",
         "span": [
-          342,
-          346
-        ]
-      }
-    },
-    {
-      "soilDepth": {
-        "value": "0-30 cm",
-        "span": [
-          408,
-          415
-        ]
-      }
-    },
-    {
-      "soilAvailableNitrogen": {
-        "value": "PCAL",
-        "span": [
-          316,
-          320
-        ]
-      }
-    },
-    {
-      "soilAvailableNitrogen": {
-        "value": "PCAL",
-        "span": [
-          408,
-          412
+          528,
+          533
         ]
       }
     }
@@ -125,8 +80,8 @@
       "city": {
         "value": "Braunschweig",
         "span": [
-          15,
-          25
+          34,
+          44
         ]
       }
     }
@@ -134,37 +89,46 @@
   "Time Statement": [
     {
       "startTime": {
+        "value": "2013",
+        "span": [
+          451,
+          455
+        ]
+      }
+    },
+    {
+      "startTime": {
         "value": "2014",
         "span": [
-          6,
-          10
-        ]
-      }
-    },
-    {
-      "startTime": {
-        "value": "2013",
-        "span": [
-          299,
-          303
-        ]
-      }
-    },
-    {
-      "startTime": {
-        "value": "2013",
-        "span": [
-          464,
-          468
+          617,
+          621
         ]
       }
     },
     {
       "endTime": {
-        "value": "2014",
+        "value": "2008",
         "span": [
-          494,
-          498
+          195,
+          199
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "1985",
+        "span": [
+          183,
+          187
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2013",
+        "span": [
+          505,
+          509
         ]
       }
     }

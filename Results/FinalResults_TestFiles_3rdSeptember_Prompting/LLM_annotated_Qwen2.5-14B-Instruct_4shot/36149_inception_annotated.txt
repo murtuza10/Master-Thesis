@@ -1,20 +1,20 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "energy crop", "span": [178, 188]}}
+    {"cropSpecies": { "value": "energy crop", "span": [135, 143] }}
   ],
   "Soil": [
-    {"soilBulkDensity": {"value": "bulk density", "span": [586, 596]}},
-    {"soilAvailableNitrogen": {"value": "nitrogen content", "span": [600, 612]}},
-    {"soilAvailableNitrogen": {"value": "ammonium-N", "span": [617, 625]}},
-    {"soilAvailableNitrogen": {"value": "nitrate-N", "span": [628, 636]}}
+    {"soilBulkDensity": { "value": "bulk density", "span": [315, 325] }},
+    {"soilAvailableNitrogen": { "value": "nitrogen content", "span": [331, 342] }},
+    {"soilAvailableNitrogen": { "value": "ammonium-N", "span": [345, 353] }},
+    {"soilAvailableNitrogen": { "value": "nitrate-N", "span": [356, 364] }}
   ],
   "Location": [
-    {"country": {"value": "Germany", "span": [163, 169]}}
+    {"country": { "value": "Germany", "span": [101, 108] }}
   ],
   "Time Statement": [
-    {"startTime": {"value": "2011/2012", "span": [244, 254]}},
-    {"endTime": {"value": "2014/2015", "span": [257, 267]}}
+    {"startTime": { "value": "2011/2012", "span": [173, 182] }},
+    {"endTime": { "value": "2014/2015", "span": [185, 194] }}
   ]
 }
 ```

@@ -3,46 +3,13 @@
   "Crops": [],
   "Soil": [],
   "Location": [
-    {
-      "country": {
-        "value": "180 Länder",
-        "span": [246, 255]
-      }
-    },
-    {
-      "country": {
-        "value": "Deutschland",
-        "span": [1104, 1112]
-      }
-    }
+    {"country": {"value": "180 Ländern", "span": [148, 156]}}
   ],
   "Time Statement": [
-    {
-      "startTime": {
-        "value": "2020",
-        "span": [471, 475]
-      }
-    },
-    {
-      "endTime": {
-        "value": "2050",
-        "span": [476, 480]
-      }
-    },
-    {
-      "startTime": {
-        "value": "2023",
-        "span": [1012, 1016]
-      }
-    },
-    {
-      "startTime": {
-        "value": "2024",
-        "span": [1053, 1057]
-      }
-    }
+    {"startTime": {"value": "2020", "span": [361, 365]}},
+    {"endTime": {"value": "2050", "span": [161, 165], "span": [223, 227], "span": [366, 370], "span": [461, 465], "span": [482, 486], "span": [520, 524], "span": [551, 555], "span": [647, 651], "span": [667, 671]}}
   ]
 }
 ``` 
 
-Please note that "180 Länder" was treated as a country entity due to the context and "Deutschland" is inferred from the context of nova-Institut and Thünen-Institut being German institutions, but strictly following your rule of not inferring, I've added it as per explicit text in footnotes.
+Note: The value "180 Ländern" was included under `country` since it's the only geographical reference in terms of countries mentioned. The year "2050" appears multiple times and has been listed once with multiple spans to indicate all occurrences.

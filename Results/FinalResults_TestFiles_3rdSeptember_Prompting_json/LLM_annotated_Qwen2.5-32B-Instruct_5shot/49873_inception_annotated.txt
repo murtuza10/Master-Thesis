@@ -2,20 +2,20 @@
   "Crops": [],
   "Soil": [
     {
-      "soilTexture": {
-        "value": "Bodentyp",
+      "soilBulkDensity": {
+        "value": "Trockenrohdichte (TRD)",
         "span": [
-          258,
-          266
+          326,
+          349
         ]
       }
     },
     {
-      "soilBulkDensity": {
-        "value": "Trockenrohdichte (TRD)",
+      "soilAvailableNitrogen": {
+        "value": "nutzbare FeldkapazitÃ¤t (nFK)",
         "span": [
-          447,
-          466
+          352,
+          379
         ]
       }
     },
@@ -23,8 +23,8 @@
       "soilOrganicCarbon": {
         "value": "organischen Kohlenstoffgehalt (Corg)",
         "span": [
-          518,
-          550
+          412,
+          449
         ]
       }
     }
@@ -32,10 +32,10 @@
   "Location": [
     {
       "country": {
-        "value": "deutschen",
+        "value": "Deutschland",
         "span": [
-          75,
-          83
+          116,
+          126
         ]
       }
     }
@@ -45,8 +45,8 @@
       "startTime": {
         "value": "2012",
         "span": [
-          669,
-          673
+          529,
+          533
         ]
       }
     },
@@ -54,8 +54,8 @@
       "endTime": {
         "value": "2012",
         "span": [
-          686,
-          690
+          548,
+          552
         ]
       }
     }

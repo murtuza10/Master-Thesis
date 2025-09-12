@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757363424-r2oGs7zLI8vpUE0UfhD8",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757363424,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilOrganicCarbon\": { \"value\": \"soil organic carbon\", \"span\": [91, 109] }},\n    {\"soilOrganicCarbon\": { \"value\": \"SOC\", \"span\": [111, 114] }},\n    {\"soilOrganicCarbon\": { \"value\": \"SOC\", \"span\": [212, 215] }},\n    {\"soilOrganicCarbon\": { \"value\": \"SOC\", \"span\": [306, 309] }},\n    {\"soilOrganicCarbon\": { \"value\": \"SOC\", \"span\": [406, 409] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"soil organic nitrogen\", \"span\": [119, 138] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"SON\", \"span\": [140, 143] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"N\", \"span\": [173, 174] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"SON\", \"span\": [342, 345] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"N\", \"span\": [348, 349] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"C\", \"span\": [513, 514] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"N\", \"span\": [517, 518] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"C\", \"span\": [525, 526] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"N\", \"span\": [529, 530] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2124,
+    "completion_tokens": 379,
+    "total_tokens": 2503,
+    "prompt_tokens_details": null
+  }
+}

@@ -2,19 +2,19 @@
   "Crops": [
     {
       "cropSpecies": {
-        "value": "C4 roots",
+        "value": "C4",
         "span": [
-          64,
-          71
+          105,
+          108
         ]
       }
     },
     {
       "cropSpecies": {
-        "value": "C3 soil",
+        "value": "C3",
         "span": [
-          85,
-          91
+          134,
+          137
         ]
       }
     }
@@ -24,26 +24,35 @@
       "soilReferenceGroup": {
         "value": "C3 soil",
         "span": [
-          85,
-          91
+          134,
+          141
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "C4 roots litter",
+        "span": [
+          98,
+          110
         ]
       }
     },
     {
       "soilTexture": {
-        "value": "particulate organic carbon (POC)",
+        "value": "particulate organic carbon",
         "span": [
-          121,
-          146
+          165,
+          184
         ]
       }
     },
     {
       "soilTexture": {
-        "value": "mineral associated organic carbon (MAOC)",
+        "value": "mineral associated organic carbon",
         "span": [
-          147,
-          171
+          185,
+          205
         ]
       }
     },
@@ -51,8 +60,8 @@
       "soilDepth": {
         "value": "6 months",
         "span": [
-          97,
-          104
+          146,
+          154
         ]
       }
     },
@@ -60,8 +69,8 @@
       "soilDepth": {
         "value": "12 months",
         "span": [
-          106,
-          113
+          154,
+          162
         ]
       }
     },
@@ -69,8 +78,8 @@
       "soilDepth": {
         "value": "24 months",
         "span": [
-          115,
-          122
+          162,
+          170
         ]
       }
     }
@@ -81,8 +90,17 @@
       "startTime": {
         "value": "2 years",
         "span": [
-          10,
-          17
+          23,
+          29
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "6",
+        "span": [
+          146,
+          148
         ]
       }
     }

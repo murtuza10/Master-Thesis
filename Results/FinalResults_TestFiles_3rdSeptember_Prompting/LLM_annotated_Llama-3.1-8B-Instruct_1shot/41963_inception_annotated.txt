@@ -1,0 +1,28 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [114, 119]}},
+    {"region": {"value": "German National Forest Inventory", "span": [106, 133]}},
+    {"latitude": {"value": "47.15766000", "span": [245, 258]}},
+    {"latitude": {"value": "55.08484000", "span": [262, 275]}},
+    {"longitude": {"value": "5.79922100", "span": [238, 247]}},
+    {"longitude": {"value": "15.08954000", "span": [255, 264]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1961", "span": [35, 39]}},
+    {"endTime": {"value": "2100", "span": [67, 71]}},
+    {"startTime": {"value": "1961", "span": [35, 39]}},
+    {"endTime": {"value": "2013", "span": [50, 54]}},
+    {"startTime": {"value": "2011", "span": [144, 148]}},
+    {"endTime": {"value": "2050", "span": [151, 155]}},
+    {"startTime": {"value": "2011", "span": [144, 148]}},
+    {"endTime": {"value": "2100", "span": [162, 166]}},
+    {"startTime": {"value": "1961", "span": [206, 210]}},
+    {"endTime": {"value": "2099", "span": [219, 223]}}
+  ]
+}
+```

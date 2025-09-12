@@ -1,0 +1,46 @@
+### Input Text Analysis
+
+#### Crops
+- **cropSpecies**: "winter wheat"
+
+#### Location
+- **region**: "Germany"
+- **region**: "Brandenburg"
+- **region**: "Uckermark"
+- **city**: Not explicitly mentioned
+- **latitude**: Not explicitly mentioned
+- **longitude**: Not explicitly mentioned
+
+#### Soil
+- **soilReferenceGroup**: "Boden"
+- **soilReferenceGroup**: "Bewirtschaftungsgebiete/Schutzgebiete/geregelte Gebiete und Berichterstattungseinheiten"
+- **soilReferenceGroup**: "Lebensräume und Biotope"
+- **soilReferenceGroup**: "Meteorologisch-geografische Kennwerte"
+
+#### Time Statement
+- **startTime**: "April 2019"
+- **endTime**: "June 2019"
+
+#### Output JSON
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "winter wheat", "span": [145, 156] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "Boden", "span": [251, 255] }},
+    {"soilReferenceGroup": { "value": "Bewirtschaftungsgebiete/Schutzgebiete/geregelte Gebiete und Berichterstattungseinheiten", "span": [256, 293] }},
+    {"soilReferenceGroup": { "value": "Lebensr\u00e4ume und Biotope", "span": [294, 310] }},
+    {"soilReferenceGroup": { "value": "Meteorologisch-geografische Kennwerte", "span": [311, 334] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [207, 213] }},
+    {"region": { "value": "Brandenburg", "span": [214, 223] }},
+    {"region": { "value": "Uckermark", "span": [224, 233] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "April 2019", "span": [123, 130] }},
+    {"endTime": { "value": "June 2019", "span": [131, 138] }}
+  ]
+}
+```

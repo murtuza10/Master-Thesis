@@ -1,23 +1,26 @@
-### Output ###
+### Filled JSON Structure ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "Winter wheat", "span": [294, 305]}}
+    {"cropSpecies": {"value": "Winter wheat", "span": [241, 253]}}
   ],
   "Soil": [
-    {"soilReferenceGroup": {"value": "soil", "span": [4, 9]}},
-    {"soilDepth": {"value": "soil-water stable aggregation", "span": [163, 187]}},
-    {"soilBulkDensity": {"value": "soil properties", "span": [137, 152]}}
+    {"soilReferenceGroup": {"value": "soil", "span": [16, 20]}},
+    {"soilReferenceGroup": {"value": "soil-crop system", "span": [36, 49]}},
+    {"soilDepth": {"value": "soil water stable aggregation", "span": [154, 175]}},
+    {"soilBulkDensity": {"value": "soil properties", "span": [141, 153]}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}}
   ],
   "Location": [],
   "Time Statement": []
 }
 ```
 
-### Explanation ###
-1.  "Winter wheat" is extracted as the crop species because it is explicitly mentioned in the abstract text as part of the study.
-2.  "soil" is extracted as the soil reference group because it is explicitly mentioned in the title and abstract text as part of the study.
-3.  "soil-water stable aggregation" is extracted as the soil depth because it is explicitly mentioned in the abstract text as a property affected by the increasing number of GCFs.
-4.  "soil properties" is extracted as the soil bulk density because it is explicitly mentioned in the abstract text as a property affected by the increasing number of GCFs.
-5.  No location is extracted because there is no explicit mention of a specific location in the text.
-6.  No time statement is extracted because there is no explicit mention of a specific time or duration in the text.
+Note: I have filled the JSON structure based on the input text provided. The JSON structure contains the following entities:
+
+- "Crops": contains the species of the crop, which is "Winter wheat".
+- "Soil": contains several soil-related entities, including soil reference groups, depth, bulk density, and other properties. However, some of the soil properties (soil PH, soil Organic Carbon, and soil Available Nitrogen) are not mentioned in the text and are therefore empty objects.
+- "Location": is empty because there is no mention of location in the text.
+- "Time Statement": is empty because there is no mention of time or duration in the text.

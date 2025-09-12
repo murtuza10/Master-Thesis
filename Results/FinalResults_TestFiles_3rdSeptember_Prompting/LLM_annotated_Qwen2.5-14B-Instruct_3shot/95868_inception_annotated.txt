@@ -1,18 +1,47 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "Norway spruce", "span": [49, 60]}},
-    {"cropSpecies": {"value": "Picea abies", "span": [65, 75]}},
-    {"cropSpecies": {"value": "Picea abies", "span": [111, 121]}}
+    {
+      "cropSpecies": {
+        "value": "Norway spruce",
+        "span": [68, 80]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "Picea abies",
+        "span": [84, 96]
+      }
+    }
   ],
   "Soil": [],
   "Location": [
-    {"country": {"value": "Germany", "span": [144, 150]}},
-    {"region": {"value": "Western Germany", "span": [153, 164]}}
+    {
+      "country": {
+        "value": "Germany",
+        "span": [206, 213]
+      }
+    }
   ],
   "Time Statement": [
-    {"startTime": {"value": "1964/68", "span": [172, 180]}},
-    {"duration": {"value": "51 years", "span": [204, 211]}}
+    {
+      "startTime": {
+        "value": "1964",
+        "span": [223, 227]
+      }
+    },
+    {
+      "endTime": {
+        "value": "1968",
+        "span": [233, 238]
+      }
+    },
+    {
+      "duration": {
+        "value": "51 years",
+        "span": [116, 123]
+      }
+    }
   ]
 }
 ```

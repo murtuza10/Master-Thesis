@@ -1,39 +1,30 @@
-### Output JSON Format ###
-
+### Output ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "energy crop", "span": [159, 168] }}
+    {"cropSpecies": { "value": "energy crop", "span": [134, 143] }},
+    {"cropSpecies": { "value": "energy crop", "span": [182, 191] }},
+    {"cropSpecies": { "value": "energy crop", "span": [223, 232] }}
   ],
   "Soil": [
-    {"soilTexture": { "value": "bulk density", "span": [221, 233] }},
-    {"soilOrganicCarbon": { "value": "C content", "span": [266, 273] }},
-    {"soilAvailableNitrogen": { "value": "nitrogen content", "span": [274, 286] }},
-    {"soilPH": { "value": "pH", "span": [312, 314] }},
-    {"soilReferenceGroup": { "value": "nitrate-N", "span": [324, 331] }},
-    {"soilReferenceGroup": { "value": "ammonium-N", "span": [338, 346] }}
+    {"soilTexture": { "value": "bulk density", "span": [278, 289] }},
+    {"soilReferenceGroup": { "value": "nitrogen content", "span": [324, 336] }},
+    {"soilDepth": { "value": "bulk density", "span": [324, 336] }},
+    {"soilBulkDensity": { "value": "bulk density", "span": [278, 289] }},
+    {"soilPH": { "value": "nitrogen content", "span": [324, 336] }},
+    {"soilOrganicCarbon": { "value": "N and C content", "span": [242, 253] }},
+    {"soilAvailableNitrogen": { "value": "ammonium-N", "span": [357, 366] }}
   ],
   "Location": [
-    {"country": { "value": "Germany", "span": [77, 85] }},
-    {"region": { "value": "Germany", "span": [124, 132] }}
+    {"country": { "value": "Germany", "span": [85, 94] }},
+    {"country": { "value": "Germany", "span": [175, 184] }}
   ],
   "Time Statement": [
-    {"startTime": { "value": "2011/2012", "span": [104, 113] }},
-    {"endTime": { "value": "2014/2015", "span": [117, 126] }},
-    {"duration": { "value": "three years", "span": [126, 134] }}
+    {"startTime": { "value": "2011", "span": [128, 132] }},
+    {"endTime": { "value": "2012", "span": [133, 137] }},
+    {"duration": { "value": "three years", "span": [118, 126] }},
+    {"startTime": { "value": "2014", "span": [209, 213] }},
+    {"endTime": { "value": "2015", "span": [214, 218] }}
   ]
 }
 ```
-
-### Explanation ###
-
-- **Crops**: The only crop species mentioned in the text is "energy crop", which is found at character positions 159-168.
-- **Soil**: The following soil-related entities are found in the text:
-  - "bulk density" (positions 221-233)
-  - "C content" (positions 266-273)
-  - "nitrogen content" (positions 274-286)
-  - "pH" (positions 312-314)
-  - "nitrate-N" (positions 324-331)
-  - "ammonium-N" (positions 338-346)
-- **Location**: The text mentions "Germany" as the country and region, found at positions 77-85 and 124-132, respectively.
-- **Time Statement**: The text mentions the time period "2011/2012-2014/2015" and duration of "three years", found at positions 104-113, 117-126, and 126-134, respectively.

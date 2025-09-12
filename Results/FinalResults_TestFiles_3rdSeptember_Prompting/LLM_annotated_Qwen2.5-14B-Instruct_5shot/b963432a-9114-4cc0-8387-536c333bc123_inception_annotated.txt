@@ -1,28 +1,41 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "spring barley", "span": [332, 342]}},
-    {"cropSpecies": {"value": "spring barley", "span": [376, 386]}},
-    {"cropSpecies": {"value": "serradella", "span": [358, 367]}}
+    {"cropSpecies": {"value": "spring barley", "span": [312, 323]}},
+    {"cropSpecies": {"value": "spring barley", "span": [538, 549]}},
+    {"cropVariety": {"value": "serradella", "span": [407, 417]}}
   ],
   "Soil": [
-    {"soilPH": {"value": "pH", "span": [393, 395]}},
-    {"soilPH": {"value": "pH", "span": [498, 500]}},
-    {"soilOrganicCarbon": {"value": "Gelöster organischer Kohlenstoff", "span": [713, 734]}},
-    {"soilOrganicCarbon": {"value": "Kohlenstoff", "span": [737, 744]}},
-    {"soilAvailableNitrogen": {"value": "NH4+-N", "span": [749, 756]}},
-    {"soilAvailableNitrogen": {"value": "NO2-- and NO3--N-", "span": [760, 775]}}
+    {"soilPH": {"value": "pH", "span": [452, 454]}},
+    {"soilPH": {"value": "pH", "span": [647, 649]}},
+    {"soilOrganicCarbon": {"value": "total C", "span": [656, 662]}},
+    {"soilOrganicCarbon": {"value": "organic C (DOC)", "span": [691, 703]}},
+    {"soilAvailableNitrogen": {"value": "NH4+-N", "span": [718, 728]}},
+    {"soilAvailableNitrogen": {"value": "NO2--N", "span": [733, 741]}},
+    {"soilAvailableNitrogen": {"value": "NO3--N-", "span": [746, 755]}},
+    {"soilPH": {"value": "pH-Wert", "span": [1084, 1091]}},
+    {"soilOrganicCarbon": {"value": "Gelöster organischer Kohlenstoff", "span": [1102, 1120]}},
+    {"soilOrganicCarbon": {"value": "Kohlenstoff", "span": [1122, 1131]}},
+    {"soilAvailableNitrogen": {"value": "Nitrat", "span": [1133, 1139]}},
+    {"soilAvailableNitrogen": {"value": "Nitrit", "span": [1141, 1147]}},
+    {"soilOrganicCarbon": {"value": "Aluminium", "span": [1149, 1157]}},
+    {"soilOrganicCarbon": {"value": "Calcium", "span": [1159, 1165]}},
+    {"soilOrganicCarbon": {"value": "Eisen", "span": [1167, 1170]}},
+    {"soilAvailableNitrogen": {"value": "Phosphor", "span": [1172, 1178]}},
+    {"soilAvailableNitrogen": {"value": "Phosphat", "span": [1180, 1186]}},
+    {"soilAvailableNitrogen": {"value": "Stickstoff", "span": [1188, 1195]}}
   ],
   "Location": [
-    {"region": {"value": "Northern Germany", "span": [102, 113]}},
+    {"region": {"value": "Northern Germany", "span": [125, 136]}},
     {"city": {"value": "Rostock", "span": [0, 7]}}
   ],
   "Time Statement": [
-    {"startTime": {"value": "2018", "span": [239, 243]}},
-    {"startTime": {"value": "2019", "span": [265, 269]}},
-    {"startTime": {"value": "2020", "span": [135, 139]}},
-    {"startTime": {"value": "2020", "span": [294, 298]}},
-    {"duration": {"value": "about 3.5 months", "span": [621, 637]}}
+    {"startTime": {"value": "2018", "span": [256, 260]}},
+    {"startTime": {"value": "2019", "span": [342, 346]}},
+    {"startTime": {"value": "2020", "span": [381, 385]}},
+    {"startTime": {"value": "2020", "span": [429, 433]}},
+    {"startTime": {"value": "2020", "span": [632, 636]}},
+    {"duration": {"value": "3.5 months", "span": [757, 766]}}
   ]
 }
 ```

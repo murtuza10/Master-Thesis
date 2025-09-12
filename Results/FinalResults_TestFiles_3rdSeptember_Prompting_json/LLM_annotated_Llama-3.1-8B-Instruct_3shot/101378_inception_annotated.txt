@@ -2,7 +2,7 @@
   "Crops": [
     {
       "cropSpecies": {
-        "value": "birch",
+        "value": "Birch",
         "span": [
           145,
           151
@@ -11,10 +11,10 @@
     },
     {
       "cropSpecies": {
-        "value": "Betula pubescens",
+        "value": "Betula pubescens Ehrh.",
         "span": [
           146,
-          162
+          164
         ]
       }
     }
@@ -24,38 +24,48 @@
       "soilReferenceGroup": {
         "value": "peat",
         "span": [
-          136,
-          140
+          117,
+          121
         ]
       }
     },
     {
       "soilReferenceGroup": {
-        "value": "bog",
+        "value": "peat",
         "span": [
-          143,
-          146
+          236,
+          239
         ]
       }
     },
     {
-      "soilTexture": {
-        "value": "mire-specific",
+      "soilDepth": {
+        "value": "m-2",
         "span": [
-          182,
-          193
+          253,
+          258
         ]
       }
     }
   ],
-  "Location": [],
+  "Location": [
+    {
+      "region": {
+        "value": "northern hemisphere",
+        "span": [
+          82,
+          103
+        ]
+      }
+    }
+  ],
   "Time Statement": [
     {
       "startTime": {
         "value": "one year",
         "span": [
-          246,
-          251
+          230,
+          236
         ]
       }
     }

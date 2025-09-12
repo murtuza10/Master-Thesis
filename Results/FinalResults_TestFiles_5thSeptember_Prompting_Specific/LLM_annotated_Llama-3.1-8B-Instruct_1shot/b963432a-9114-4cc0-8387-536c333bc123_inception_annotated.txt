@@ -1,0 +1,28 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "spring barley", "span": [346, 354] }},
+    {"cropSpecies": { "value": "serradella", "span": [380, 388] }}
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "soil", "span": [120, 125] }},
+    {"soilReferenceGroup": { "value": "soil", "span": [120, 125] }},
+    {"soilDepth": { "value": "three sampling depths", "span": [136, 154] }},
+    {"soilBulkDensity": { "value": "", "span": [] }},
+    {"soilPH": { "value": "pH", "span": [159, 162] }},
+    {"soilOrganicCarbon": { "value": "OC", "span": [240, 242] }},
+    {"soilAvailableNitrogen": { "value": "TN", "span": [234, 236] }}
+  ],
+  "Location": [
+    {"country": { "value": "Northern Germany", "span": [177, 193] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2018", "span": [294, 298] }},
+    {"endTime": { "value": "2020", "span": [17, 21] }},
+    {"duration": { "value": "about 3.5 months", "span": [342, 357] }}
+  ]
+}
+```
+
+Note that I have not included any "region" or "city" as there was no mention of them in the text. Similarly, I have not included any "latitude" or "longitude" as there was no mention of them in the text. Also, "soilBulkDensity" is empty as there was no mention of it in the text.

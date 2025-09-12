@@ -1,15 +1,16 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "Riesling", "span": [46, 52] }},
-    {"cropSpecies": { "value": "Felicia", "span": [53, 59] }},
-    {"cropSpecies": { "value": "Regent", "span": [60, 65] }}
+    {"cropVariety": { "value": "Riesling", "span": [77, 83] }},
+    {"cropVariety": { "value": "Felicia", "span": [86, 91] }},
+    {"cropVariety": { "value": "Regent", "span": [94, 100] }}
   ],
   "Soil": [],
   "Location": [],
   "Time Statement": [
-    {"startTime": { "value": "before and after thinning", "span": [112, 132] }},
-    {"duration": { "value": "2018", "span": [133, 138] }}
+    {"startTime": { "value": "before", "span": [178, 182] }},
+    {"endTime": { "value": "after", "span": [187, 191] }},
+    {"duration": { "value": "2018", "span": [213, 217] }}
   ]
 }
 ```

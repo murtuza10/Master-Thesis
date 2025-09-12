@@ -1,22 +1,21 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "Birch", "span": [156, 161] }},
-    {"cropSpecies": { "value": "Betula pubescens Ehrh.", "span": [162, 181] }}
+    {"cropSpecies": {"value": "Birch", "span": [156, 161]}},
+    {"cropSpecies": {"value": "Betula pubescens Ehrh.", "span": [162, 181]}
   ],
   "Soil": [
-    {"soilReferenceGroup": { "value": "peat", "span": [104, 108] }},
-    {"soilReferenceGroup": { "value": "bog", "span": [146, 149] }},
-    {"soilReferenceGroup": { "value": "mire", "span": [214, 218] }},
-    {"soilReferenceGroup": { "value": "bog", "span": [366, 369] }},
-    {"soilReferenceGroup": { "value": "peat", "span": [442, 446] }},
-    {"soilReferenceGroup": { "value": "peat", "span": [504, 508] }}
-  ],
-  "Location": [
-    {"region": { "value": "northern hemisphere", "span": [240, 257] }}
-  ],
+    {"soilReferenceGroup": {"value": "peat", "span": [91, 95]}},
+    {"soilReferenceGroup": {"value": "bog", "span": [105, 108]}},
+    {"soilReferenceGroup": {"value": "mire", "span": [123, 127]}},
+    {"soilReferenceGroup": {"value": "bog", "span": [234, 237]}},
+    {"soilReferenceGroup": {"value": "peat", "span": [407, 411]}},
+    {"soilReferenceGroup": {"value": "peat", "span": [442, 446]}},
+    {"soilReferenceGroup": {"value": "mire", "span": [504, 508]}
+  },
+  "Location": [],
   "Time Statement": [
-    {"duration": { "value": "one year", "span": [326, 334] }}
+    {"duration": {"value": "one year", "span": [291, 298]}
   ]
 }
 ```

@@ -1,19 +1,20 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "Apium graveolens L. ssp. graveolens", "span": [46, 77] }}
+    {"cropSpecies": {"value": "Apium graveolens L. ssp. graveolens", "span": [42, 68]}},
+    {"cropSpecies": {"value": "Apium graveolens L. ssp. graveolens", "span": [187, 213]}}
   ],
   "Soil": [],
   "Location": [
-    {"city": { "value": "Quedlinburg", "span": [436, 447] }},
-    {"country": { "value": "Germany", "span": [450, 457] }}
+    {"city": {"value": "Quedlinburg", "span": [298, 309]},
+     "country": {"value": "Germany", "span": [312, 319]}
+    }
   ],
   "Time Statement": [
-    {"startTime": { "value": "2016", "span": [361, 365] }},
-    {"startTime": { "value": "2017", "span": [397, 401] }},
-    {"startTime": { "value": "2018", "span": [406, 410] }},
-    {"endTime": { "value": "2018", "span": [415, 419] }},
-    {"duration": { "value": "2017-2018", "span": [393, 400] }}
+    {"startTime": {"value": "2016", "span": [249, 253]}},
+    {"endTime": {"value": "2018", "span": [259, 263]}},
+    {"startTime": {"value": "2017", "span": [333, 337]}},
+    {"endTime": {"value": "2018", "span": [342, 346]}}
   ]
 }
 ```

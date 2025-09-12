@@ -2,16 +2,16 @@
 {
   "Crops": [],
   "Soil": [
-    {"soilTexture": {"value": "Bodentyp", "span": [258, 266]}},
-    {"soilBulkDensity": {"value": "Trockenrohdichte (TRD)", "span": [447, 466]}},
-    {"soilOrganicCarbon": {"value": "organischen Kohlenstoffgehalt (Corg)", "span": [518, 550]}}
+    {"soilBulkDensity": { "value": "Trockenrohdichte (TRD)", "span": [326, 349] }},
+    {"soilAvailableNitrogen": { "value": "nutzbare Feldkapazität (nFK)", "span": [352, 379] }},
+    {"soilOrganicCarbon": { "value": "organischen Kohlenstoffgehalt (Corg)", "span": [412, 449] }}
   ],
   "Location": [
-    {"country": {"value": "deutschen", "span": [75, 83]}}
+    {"country": { "value": "Deutschland", "span": [116, 126] }}
   ],
   "Time Statement": [
-    {"startTime": {"value": "2012", "span": [669, 673]}},
-    {"endTime": {"value": "2012", "span": [686, 690]}}
+    {"startTime": { "value": "2012", "span": [529, 533] }},
+    {"endTime": { "value": "2012", "span": [548, 552] }}
   ]
 }
 ```

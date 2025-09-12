@@ -1,0 +1,30 @@
+### Filled JSON Structure ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilTexture": { "value": "Bodenart", "span": [128, 133] }},
+    {"soilReferenceGroup": { "value": "Bodentyp", "span": [116, 121] }},
+    {"soilDepth": { "value": "Entkalkungstiefe", "span": [257, 273] }},
+    {"soilBulkDensity": { "value": "Trockenrohdichte (TRD)", "span": [186, 205] }},
+    {"soilPH": []},
+    {"soilOrganicCarbon": { "value": "organischer Kohlenstoffgehalt (Corg)", "span": [234, 253] }},
+    {"soilAvailableNitrogen": []}
+  ],
+  "Location": [
+    {"country": { "value": "Deutschland", "span": [30, 36] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2012", "span": [220, 223] }},
+    {"endTime": { "value": "2012", "span": [225, 228] }},
+    {"duration": { "value": "", "span": [] }}
+  ]
+}
+```
+
+### Explanation ###
+- The text mentions "Bodenart" (soil type), "Bodentyp" (soil type), and "Entkalkungstiefe" (lime depth) which are related to soil characteristics. Therefore, I added them to the "Soil" category.
+- The text mentions "Deutschland" (Germany) which is a country. Therefore, I added it to the "Location" category.
+- The text mentions the year "2012" as the start and end date. Therefore, I added it to the "Time Statement" category.
+- I did not find any mentions of crops, soil texture, soil reference group, soil bulk density, soil PH, soil organic carbon, or soil available nitrogen. Therefore, the corresponding lists in the JSON structure are empty.
+- I did not find any mentions of latitude, longitude, or duration. Therefore, the corresponding lists in the JSON structure are empty.

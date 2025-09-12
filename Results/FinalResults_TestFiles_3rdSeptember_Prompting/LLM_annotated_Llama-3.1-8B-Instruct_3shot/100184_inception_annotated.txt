@@ -1,22 +1,21 @@
-### Output JSON ###
-
+### JSON Output ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "oilseed rape", "span": [246, 256]}},
-    {"cropSpecies": {"value": "Brassica napus", "span": [265, 275]}}
+    {"cropSpecies": {"value": "oilseed rape", "span": [234, 244]}},
+    {"cropSpecies": {"value": "Brassica napus", "span": [247, 256]}}
   ],
   "Soil": [],
   "Location": [
-    {"city": {"value": "Bochum", "span": [182, 189]}},
-    {"city": {"value": "Braunschweig", "span": [190, 199]}},
-    {"city": {"value": "Celle", "span": [200, 206]}},
-    {"city": {"value": "Hohenheim", "span": [207, 214]}},
-    {"city": {"value": "Veitshöchheim", "span": [215, 224]}}
+    {"city": {"value": "Bochum", "span": [187, 194]}},
+    {"city": {"value": "Braunschweig", "span": [197, 206]}},
+    {"city": {"value": "Celle", "span": [209, 216]}},
+    {"city": {"value": "Hohenheim", "span": [220, 228]}},
+    {"city": {"value": "Veitshöchheim", "span": [231, 241]}}
   ],
   "Time Statement": [
-    {"startTime": {"value": "2022", "span": [233, 236]}},
-    {"endTime": {"value": "2023", "span": [240, 243]}}
+    {"startTime": {"value": "2022", "span": [231, 235]}},
+    {"endTime": {"value": "2023", "span": [237, 241]}}
   ]
 }
 ```

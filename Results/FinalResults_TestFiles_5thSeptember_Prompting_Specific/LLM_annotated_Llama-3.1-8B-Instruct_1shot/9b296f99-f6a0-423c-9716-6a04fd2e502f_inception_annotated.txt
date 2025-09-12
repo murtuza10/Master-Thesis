@@ -1,0 +1,31 @@
+### JSON Output for the given text ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "winter wheat", "span": [123, 133]}},
+    {"cropSpecies": {"value": "winter barley", "span": [135, 145]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [149, 157]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [174, 182]}},
+    {"cropSpecies": {"value": "winter barley", "span": [185, 195]}}
+  ],
+  "Soil": [
+    {"soilTexture": []},
+    {"soilReferenceGroup": []},
+    {"soilDepth": []},
+    {"soilBulkDensity": []},
+    {"soilPH": []},
+    {"soilOrganicCarbon": []},
+    {"soilAvailableNitrogen": []}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [16, 20]}},
+    {"region": {"value": "Speyer", "span": [27, 33]}},
+    {"city": {"value": "Speyer", "span": [27, 33]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1984", "span": [94, 98]}},
+    {"startTime": {"value": "2009", "span": [261, 265]}}
+  ]
+}
+```
+Note that the 'Soil' category is empty as there is no mention of any soil-related entities in the given text.

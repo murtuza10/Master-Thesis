@@ -1,0 +1,23 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Birch", "span": [53, 59] }, "cropSpecies": { "value": "Betula pubescens Ehrh.", "span": [60, 77] }},
+    {"cropSpecies": { "value": "Betula pubescens", "span": [213, 230] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": { "value": "northern hemisphere", "span": [31, 46] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "one year", "span": [174, 179] }}
+  ]
+}
+```
+### Explanation ###
+From the given text, the following entities were identified:
+
+*   **Crops**: Birch (Betula pubescens Ehrh.) was mentioned twice as a crop species.
+*   **Soil**: No specific information about soil was mentioned in the text.
+*   **Location**: The northern hemisphere was mentioned as a region.
+*   **Time Statement**: One year was mentioned as the duration for the measurements.

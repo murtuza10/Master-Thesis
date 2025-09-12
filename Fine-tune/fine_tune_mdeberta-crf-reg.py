@@ -13,6 +13,8 @@ from sklearn.metrics import classification_report
 from seqeval.metrics import classification_report as seqeval_classification_report
 from sklearn.model_selection import StratifiedKFold
 import random
+import shutil
+import os
 
 def tokenize_and_align_labels(example):
     tokenized_inputs = tokenizer(
@@ -163,9 +165,10 @@ class DebertaV3CRFForTokenClassification(nn.Module):
         self.layer_norm = nn.LayerNorm(hidden_size)
         
     def forward(self, input_ids=None, attention_mask=None, labels=None, **kwargs):
-        # Filter out training-specific kwargs
+        # Filter out training-specific kwargs that might cause issues
         model_kwargs = {k: v for k, v in kwargs.items() 
-                       if k not in ['labels', 'num_items_in_batch', 'return_loss']}
+                       if k not in ['labels', 'num_items_in_batch', 'return_loss', 
+                                   'output_attentions', 'output_hidden_states', 'use_cache']}
         
         # Get mDeBERTa-v3 outputs - use the base model
         outputs = self.deberta.deberta(
@@ -234,15 +237,16 @@ class DebertaV3CRFForTokenClassification(nn.Module):
             )
 
 
-# Custom Trainer for mDeBERTa-v3 CRF with regularization
+# FIXED Custom Trainer for mDeBERTa-v3 CRF with regularization
 class DebertaCRFTrainer(Trainer):
     def __init__(self, *args, label_smoothing=0.1, **kwargs):
         super().__init__(*args, **kwargs)
         self.label_smoothing = label_smoothing
     
-    def compute_loss(self, model, inputs, return_outputs=False):
+    def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
         """
         Override compute_loss to add label smoothing and other regularization
+        FIXED: Added num_items_in_batch parameter for compatibility with newer transformers
         """
         labels = inputs.get("labels")
         outputs = model(**inputs)
@@ -291,7 +295,7 @@ class DebertaCRFTrainer(Trainer):
                 
                 # Get loss if labels are present
                 loss = None
-                if 'labels' in inputs:
+                if 'labels' in inputs and not prediction_loss_only:
                     labels = inputs['labels']
                     mask_loss = (labels != -100) & (attention_mask == 1)
                     mask_loss[:, 0] = True
@@ -310,7 +314,7 @@ class DebertaCRFTrainer(Trainer):
                 return super().prediction_step(model, inputs, prediction_loss_only, ignore_keys)
 
 
-# Cross-validation function
+# FIXED Cross-validation function
 def run_cross_validation(dataset, k_folds=5):
     """Run k-fold cross validation to better assess model performance"""
     # Combine train and validation for CV
@@ -348,7 +352,7 @@ def run_cross_validation(dataset, k_folds=5):
         fold_train_tokenized = fold_train_dataset.map(tokenize_and_align_labels, remove_columns=fold_train_dataset.column_names)
         fold_val_tokenized = fold_val_dataset.map(tokenize_and_align_labels, remove_columns=fold_val_dataset.column_names)
         
-        # Train model for this fold
+        # Train model for this fold - FIXED TRAINING ARGUMENTS
         fold_trainer = DebertaCRFTrainer(
             model_init=lambda: DebertaV3CRFForTokenClassification(
                 model_checkpoint=model_checkpoint,
@@ -358,19 +362,20 @@ def run_cross_validation(dataset, k_folds=5):
             args=TrainingArguments(
                 output_dir=f"./cv_fold_{fold}",
                 eval_strategy="epoch",
-                save_strategy="no",  # Don't save CV models
+                save_strategy="epoch",  # CHANGED: Match eval strategy
                 num_train_epochs=10,  # Fewer epochs for CV
                 per_device_train_batch_size=8,
                 per_device_eval_batch_size=8,
                 learning_rate=3e-5,
                 weight_decay=0.1,
                 warmup_ratio=0.1,
-                load_best_model_at_end=True,
+                load_best_model_at_end=True,  # Now this will work
                 metric_for_best_model="f1",
                 greater_is_better=True,
                 logging_steps=50,
                 remove_unused_columns=False,
                 report_to=None,  # Disable wandb for CV
+                save_total_limit=1,  # ADDED: Only keep the best checkpoint
             ),
             train_dataset=fold_train_tokenized,
             eval_dataset=fold_val_tokenized,
@@ -383,6 +388,10 @@ def run_cross_validation(dataset, k_folds=5):
         fold_results = fold_trainer.evaluate()
         cv_scores.append(fold_results['eval_f1'])
         print(f"Fold {fold + 1} F1 Score: {fold_results['eval_f1']:.4f}")
+        
+        # ADDED: Clean up fold checkpoint directory to save space
+        if os.path.exists(f"./cv_fold_{fold}"):
+            shutil.rmtree(f"./cv_fold_{fold}")
     
     mean_cv_score = np.mean(cv_scores)
     std_cv_score = np.std(cv_scores)
@@ -408,24 +417,24 @@ if __name__ == "__main__":
     val_dataset   = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptember/NER_dataset_sentence_val_stratified.json")
     test_dataset  = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptember/Test_NER_dataset.json")
 
-    # Apply data augmentation to training set
-    print("Applying data augmentation...")
-    augmented_train_data = []
-    for example in train_dataset:
-        # Original example
-        augmented_train_data.append(example)
+    # # Apply data augmentation to training set
+    # print("Applying data augmentation...")
+    # augmented_train_data = []
+    # for example in train_dataset:
+    #     # Original example
+    #     augmented_train_data.append(example)
         
-        # Add augmented version with 50% probability
-        if random.random() < 0.5:
-            aug_tokens, aug_tags = augment_sentence(example['tokens'], example['ner_tags'])
-            augmented_train_data.append({
-                'tokens': aug_tokens,
-                'ner_tags': aug_tags
-            })
+    #     # Add augmented version with 50% probability
+    #     if random.random() < 0.5:
+    #         aug_tokens, aug_tags = augment_sentence(example['tokens'], example['ner_tags'])
+    #         augmented_train_data.append({
+    #             'tokens': aug_tokens,
+    #             'ner_tags': aug_tags
+    #         })
     
-    # Create augmented training dataset
-    train_dataset = Dataset.from_list(augmented_train_data)
-    print(f"Training set size after augmentation: {len(train_dataset)}")
+    # # Create augmented training dataset
+    # train_dataset = Dataset.from_list(augmented_train_data)
+    # print(f"Training set size after augmentation: {len(train_dataset)}")
 
     dataset = DatasetDict({
         "train": train_dataset,
@@ -490,7 +499,6 @@ if __name__ == "__main__":
         dataloader_pin_memory=False,
         remove_unused_columns=False,
         save_total_limit=2,  # Only keep best 2 models
-        evaluation_strategy="epoch",
         logging_steps=50,
     )
 

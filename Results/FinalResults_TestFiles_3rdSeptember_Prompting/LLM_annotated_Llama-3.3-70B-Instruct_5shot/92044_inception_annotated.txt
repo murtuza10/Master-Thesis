@@ -1,28 +1,36 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "spring barley", "span": [256, 268]}},
-    {"cropSpecies": {"value": "winter barley", "span": [270, 283]}},
-    {"cropSpecies": {"value": "grain maize", "span": [285, 297]}},
-    {"cropSpecies": {"value": "silage maize", "span": [299, 311]}},
-    {"cropSpecies": {"value": "oats", "span": [313, 317]}},
-    {"cropSpecies": {"value": "potatoes", "span": [319, 327]}},
-    {"cropSpecies": {"value": "winter rape", "span": [329, 339]}},
-    {"cropSpecies": {"value": "rye", "span": [341, 344]}},
-    {"cropSpecies": {"value": "sugarbeet", "span": [346, 355]}},
-    {"cropSpecies": {"value": "triticale", "span": [357, 366]}},
-    {"cropSpecies": {"value": "winter wheat", "span": [368, 379]}}
+    {"cropSpecies": {"value": "spring barley", "span": [346, 358]}},
+    {"cropSpecies": {"value": "winter barley", "span": [360, 373]}},
+    {"cropSpecies": {"value": "grain maize", "span": [375, 386]}},
+    {"cropSpecies": {"value": "silage maize", "span": [388, 400]}},
+    {"cropSpecies": {"value": "oats", "span": [402, 406]}},
+    {"cropSpecies": {"value": "potatoes", "span": [408, 416]}},
+    {"cropSpecies": {"value": "winter rape", "span": [418, 428]}},
+    {"cropSpecies": {"value": "rye", "span": [430, 433]}},
+    {"cropSpecies": {"value": "sugarbeet", "span": [435, 444]}},
+    {"cropSpecies": {"value": "triticale", "span": [446, 455]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [457, 468]}},
+    {"cropSpecies": {"value": "maize", "span": [375, 380]}},
+    {"cropSpecies": {"value": "maize", "span": [388, 393]}},
+    {"cropSpecies": {"value": "barley", "span": [346, 353]}},
+    {"cropSpecies": {"value": "barley", "span": [360, 367]}},
+    {"cropSpecies": {"value": "wheat", "span": [457, 463]}},
+    {"cropSpecies": {"value": "rape", "span": [418, 423]}}
   ],
   "Soil": [],
   "Location": [
     {"country": {"value": "Germany", "span": [156, 163]}},
-    {"country": {"value": "Germany", "span": [446, 453]}},
-    {"country": {"value": "Germany", "span": [493, 500]}}
+    {"country": {"value": "Germany", "span": [283, 290]}},
+    {"country": {"value": "Germany", "span": [541, 548]}}
   ],
   "Time Statement": [
-    {"startTime": {"value": "1979", "span": [173, 177]}},
-    {"endTime": {"value": "2021", "span": [182, 186]}},
-    {"startTime": {"value": "2020", "span": [544, 548]}}
+    {"startTime": {"value": "1979", "span": [204, 209]}},
+    {"endTime": {"value": "2021", "span": [213, 218]}},
+    {"startTime": {"value": "2020", "span": [623, 628]}},
+    {"duration": {"value": "year", "span": [234, 238]}},
+    {"duration": {"value": "year", "span": [449, 453]}}
   ]
 }
 ```

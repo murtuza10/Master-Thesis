@@ -1,0 +1,28 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wheat", "span": [196, 201] }},
+    {"cropSpecies": { "value": "barley", "span": [206, 212] }},
+    {"cropSpecies": { "value": "beet", "span": [217, 221] }},
+    {"cropSpecies": { "value": "barley", "span": [452, 458] }},
+    {"cropSpecies": { "value": "beet", "span": [464, 468] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "soil fertility", "span": [305, 318] }},
+    {"Soil": { "value": "soil", "span": [405, 409] }},
+    {"Soil": { "value": "soil", "span": [434, 438] }},
+    {"Soil": { "value": "soil", "span": [506, 510] }}
+  ],
+  "Location": [
+    {"city": { "value": "Speyer", "span": [15, 21] }},
+    {"city": { "value": "Speyer", "span": [45, 51] }},
+    {"city": { "value": "Speyer", "span": [101, 107] }},
+    {"city": { "value": "Karlsruhe", "span": [342, 351] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1984", "span": [121, 125] }},
+    {"startTime": { "value": "2009", "span": [335, 339] }},
+    {"startTime": { "value": "2017", "span": [703, 707] }}
+  ]
+}
+```

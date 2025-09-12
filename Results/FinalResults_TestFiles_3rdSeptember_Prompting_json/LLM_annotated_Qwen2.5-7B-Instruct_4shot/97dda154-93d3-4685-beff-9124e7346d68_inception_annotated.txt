@@ -12,38 +12,38 @@
   ],
   "Soil": [
     {
-      "soilTexture": {
+      "soilReferenceGroup": {
         "value": "Wanna Sand",
         "span": [
-          114,
+          113,
           123
         ]
       }
     },
     {
-      "soilTexture": {
-        "value": "Rostock Sand",
+      "soilReferenceGroup": {
+        "value": "Wanna Sand without biogas slurry",
         "span": [
-          133,
-          142
-        ]
-      }
-    },
-    {
-      "soilTexture": {
-        "value": "Wanna Marsch",
-        "span": [
-          147,
-          157
+          126,
+          144
         ]
       }
     },
     {
       "soilReferenceGroup": {
-        "value": "Boden",
+        "value": "Rostock Sand",
         "span": [
-          385,
-          389
+          147,
+          156
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "Wanna Marsch",
+        "span": [
+          159,
+          170
         ]
       }
     }
@@ -53,8 +53,8 @@
       "region": {
         "value": "Europe",
         "span": [
-          411,
-          416
+          259,
+          263
         ]
       }
     },
@@ -62,8 +62,8 @@
       "country": {
         "value": "Germany",
         "span": [
-          417,
-          423
+          266,
+          272
         ]
       }
     },
@@ -71,8 +71,17 @@
       "region": {
         "value": "Lower Saxony",
         "span": [
-          424,
-          434
+          275,
+          285
+        ]
+      }
+    },
+    {
+      "city": {
+        "value": "Wanna",
+        "span": [
+          288,
+          292
         ]
       }
     },
@@ -80,8 +89,8 @@
       "region": {
         "value": "Mecklenburg-Vorpommern",
         "span": [
-          435,
-          451
+          295,
+          314
         ]
       }
     },
@@ -89,8 +98,8 @@
       "city": {
         "value": "Rostock",
         "span": [
-          452,
-          456
+          317,
+          321
         ]
       }
     }
@@ -100,8 +109,8 @@
       "startTime": {
         "value": "2021",
         "span": [
-          74,
-          78
+          66,
+          69
         ]
       }
     },
@@ -109,8 +118,8 @@
       "startTime": {
         "value": "2022",
         "span": [
-          79,
-          83
+          72,
+          75
         ]
       }
     },
@@ -118,8 +127,8 @@
       "startTime": {
         "value": "2023",
         "span": [
-          84,
-          88
+          78,
+          81
         ]
       }
     }

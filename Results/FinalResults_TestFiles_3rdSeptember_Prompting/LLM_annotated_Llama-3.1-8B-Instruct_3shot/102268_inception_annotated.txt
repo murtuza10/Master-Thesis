@@ -2,21 +2,18 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "wheat", "span": [86, 91]}}
+    {"cropSpecies": {"value": "wheat", "span": [84, 90]}}
   ],
   "Soil": [
-    {"soilReferenceGroup": {"value": "organically managed", "span": [65, 84]}},
-    {"soilReferenceGroup": {"value": "conventionally managed", "span": [85, 104]}},
-    {"soilTexture": {"value": "pedo-climatic zones", "span": [109, 127]}},
-    {"soilDepth": {"value": "fields", "span": [132, 136]}},
-    {"soilBulkDensity": {"value": "soil properties", "span": [137, 150]}}
+    {"soilReferenceGroup": {"value": "pedo-climatic zones", "span": [122, 138]}},
+    {"soilTexture": {"value": "soil properties", "span": [142, 151]}}
   ],
   "Location": [
-    {"region": {"value": "Europe", "span": [142, 147]}}
+    {"region": {"value": "Europe", "span": [57, 65]}}
   ],
   "Time Statement": [
-    {"startTime": {"value": "2019", "span": [148, 152]}},
-    {"endTime": {"value": "2020", "span": [153, 157]}}
+    {"startTime": {"value": "2019", "span": [84, 88]}},
+    {"endTime": {"value": "2020", "span": [93, 97]}}
   ]
 }
 ```

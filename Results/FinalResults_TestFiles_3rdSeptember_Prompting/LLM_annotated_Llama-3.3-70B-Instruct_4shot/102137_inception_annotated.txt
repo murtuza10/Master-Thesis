@@ -1,21 +1,21 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "cropland", "span": [236, 244]}},
-    {"cropSpecies": {"value": "grassland", "span": [248, 257]}}
+    {"cropSpecies": {"value": "cropland", "span": [256, 264]}},
+    {"cropSpecies": {"value": "grassland", "span": [270, 279]}}
   ],
   "Soil": [
-    {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [156, 175]}},
-    {"soilProperties": {"value": "soil properties", "span": [294, 307]}},
-    {"soilProperties": {"value": "soil properties", "span": [351, 364]}},
-    {"soilProfile": {"value": "soil profile", "span": [398, 410]}},
-    {"soilCore": {"value": "soil cores", "span": [263, 274]}},
-    {"soilCore": {"value": "soil core", "span": [295, 303]}},
-    {"soilCore": {"value": "soil core", "span": [324, 332]}}
+    {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [146, 165]}},
+    {"soilProperties": {"value": "soil properties", "span": [346, 361]}},
+    {"soilProperties": {"value": "soil properties", "span": [418, 433]}},
+    {"soilProfile": {"value": "soil profile", "span": [457, 469]}},
+    {"soilCore": {"value": "soil cores", "span": [294, 303]}},
+    {"soilCore": {"value": "core", "span": [314, 318]}},
+    {"soilCore": {"value": "core", "span": [351, 355]}},
+    {"soilProfile": {"value": "soil profile", "span": [443, 455]}}
   ],
   "Location": [
-    {"country": {"value": "Germany", "span": [191, 198]}},
-    {"region": {"value": "temperate", "span": [104, 112]}}
+    {"country": {"value": "Germany", "span": [201, 208]}}
   ],
   "Time Statement": []
 }

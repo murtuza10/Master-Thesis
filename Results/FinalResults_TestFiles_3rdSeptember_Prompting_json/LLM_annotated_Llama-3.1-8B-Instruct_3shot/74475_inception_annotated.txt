@@ -5,8 +5,8 @@
       "soilOrganicCarbon": {
         "value": "soil organic carbon",
         "span": [
-          57,
-          73
+          34,
+          54
         ]
       }
     },
@@ -14,8 +14,26 @@
       "soilAvailableNitrogen": {
         "value": "soil organic nitrogen",
         "span": [
-          93,
-          109
+          55,
+          74
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "soil organic carbon",
+        "span": [
+          85,
+          106
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "soil organic nitrogen",
+        "span": [
+          107,
+          128
         ]
       }
     },
@@ -23,35 +41,8 @@
       "soilBulkDensity": {
         "value": "C transfer matrix",
         "span": [
-          146,
-          159
-        ]
-      }
-    },
-    {
-      "soilReferenceGroup": {
-        "value": "SOC",
-        "span": [
-          174,
-          177
-        ]
-      }
-    },
-    {
-      "soilReferenceGroup": {
-        "value": "SON",
-        "span": [
-          189,
-          191
-        ]
-      }
-    },
-    {
-      "soilPH": {
-        "value": "first-order kinetics",
-        "span": [
-          221,
-          234
+          149,
+          164
         ]
       }
     },
@@ -59,35 +50,35 @@
       "soilDepth": {
         "value": "model pools",
         "span": [
-          244,
-          251
-        ]
-      }
-    },
-    {
-      "soilTexture": {
-        "value": "decomposition",
-        "span": [
-          272,
-          280
-        ]
-      }
-    },
-    {
-      "soilTexture": {
-        "value": "transfer rates",
-        "span": [
-          289,
-          300
+          185,
+          193
         ]
       }
     },
     {
       "soilDepth": {
-        "value": "time series",
+        "value": "model pools",
         "span": [
-          312,
-          321
+          194,
+          202
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "decomposition and transfer rates",
+        "span": [
+          214,
+          244
+        ]
+      }
+    },
+    {
+      "soilTexture": {
+        "value": "C transfer matrix",
+        "span": [
+          246,
+          261
         ]
       }
     }
@@ -98,17 +89,8 @@
       "startTime": {
         "value": "temporal development",
         "span": [
-          140,
-          151
-        ]
-      }
-    },
-    {
-      "endTime": {
-        "value": "numerically solves",
-        "span": [
-          224,
-          234
+          136,
+          150
         ]
       }
     }

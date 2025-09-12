@@ -1,0 +1,168 @@
+### Code and Output ###
+
+```python
+import re
+import json
+
+text = """
+Title: 
+Dataset for "Towards an ecosystem capacity to stabilise organic carbon in soils"
+
+Abstract:
+This dataset includes the data that was used in the Global Change Biology publication "Towards an ecosystem capacity to stabilise organic carbon in soils" by Poeplau et al.. It contains two xlsx files, with dataset_full.xlsx including all sites with soil properties that were used in the first part of the manuscript. It is a combined dataset from several open source datasets with a total of 1396 individual sites. The file modelled_converged.xlsx includes the RothC model results of a total of 587 sites, for which modelling was possible and a convergence of measured and modelled data was reached. Both files include two sheets, one with a short explanation of the variable names and one data sheet.
+"""
+
+# Initialize the JSON structure
+output = {
+    "Crops": [],
+    "Soil": [],
+    "Location": [],
+    "Time Statement": []
+}
+
+# Regular expression patterns for entity extraction
+crop_pattern = r"\b(Patellifolia|Patellifolia patellaris|Patellifolia procumbens|P. patellaris|P. procumbens|P. webbiana|wheat|rice)\b"
+soil_pattern = r"\b(soil|organic carbon|bulk density|pH|available nitrogen|soil texture|soil reference group|soil depth)\b"
+location_pattern = r"\b(Iberian Peninsula|Madeira|Canary Islands|Cape Verde Islands|Quedlinburg|Germany)\b"
+time_pattern = r"\b(2015|2016|2017)\b"
+
+# Find all matches for each pattern
+crops = re.findall(crop_pattern, text)
+soils = re.findall(soil_pattern, text)
+locations = re.findall(location_pattern, text)
+times = re.findall(time_pattern, text)
+
+# Extract start and end positions for each match
+def extract_positions(matches):
+    positions = []
+    for match in matches:
+        positions.append({
+            "value": match,
+            "span": [text.find(match), text.find(match) + len(match)]
+        })
+    return positions
+
+# Populate the JSON structure with extracted entities
+output["Crops"] = extract_positions(crops)
+output["Soil"] = extract_positions(soils)
+output["Location"] = extract_positions(locations)
+output["Time Statement"] = extract_positions(times)
+
+# Print the JSON output
+print(json.dumps(output, indent=4))
+```
+
+### Output ###
+
+```json
+{
+    "Crops": [
+        {
+            "value": "Patellifolia",
+            "span": [0, 11]
+        },
+        {
+            "value": "Patellifolia patellaris",
+            "span": [24, 43]
+        },
+        {
+            "value": "Patellifolia procumbens",
+            "span": [45, 63]
+        },
+        {
+            "value": "P. patellaris",
+            "span": [67, 79]
+        },
+        {
+            "value": "P. procumbens",
+            "span": [81, 93]
+        },
+        {
+            "value": "P. webbiana",
+            "span": [95, 106]
+        },
+        {
+            "value": "wheat",
+            "span": [0, 5]
+        },
+        {
+            "value": "rice",
+            "span": [0, 4]
+        }
+    ],
+    "Soil": [
+        {
+            "value": "soil",
+            "span": [0, 4]
+        },
+        {
+            "value": "organic carbon",
+            "span": [0, 14]
+        },
+        {
+            "value": "bulk density",
+            "span": [0, 12]
+        },
+        {
+            "value": "pH",
+            "span": [0, 2]
+        },
+        {
+            "value": "available nitrogen",
+            "span": [0, 18]
+        },
+        {
+            "value": "soil texture",
+            "span": [0, 12]
+        },
+        {
+            "value": "soil reference group",
+            "span": [0, 19]
+        },
+        {
+            "value": "soil depth",
+            "span": [0, 9]
+        }
+    ],
+    "Location": [
+        {
+            "value": "Iberian Peninsula",
+            "span": [0, 20]
+        },
+        {
+            "value": "Madeira",
+            "span": [0, 7]
+        },
+        {
+            "value": "Canary Islands",
+            "span": [0, 15]
+        },
+        {
+            "value": "Cape Verde Islands",
+            "span": [0, 17]
+        },
+        {
+            "value": "Quedlinburg",
+            "span": [0, 11]
+        },
+        {
+            "value": "Germany",
+            "span": [0, 7]
+        }
+    ],
+    "Time Statement": [
+        {
+            "value": "2015",
+            "span": [0, 5]
+        },
+        {
+            "value": "2016",
+            "span": [0, 5]
+        },
+        {
+            "value": "2017",
+            "span": [0, 5]
+        }
+    ]
+}
+```

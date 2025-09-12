@@ -19,7 +19,7 @@ sbatch job-generic-usage-complete_4.sbatch Llama-3.1-8B-Instruct
 sbatch job-generic-usage-complete_3.sbatch Llama-3.1-8B-Instruct 
 sbatch job-generic-usage-complete_2.sbatch Llama-3.1-8B-Instruct 
 sbatch job-generic-usage-complete.sbatch Llama-3.1-8B-Instruct
-sbatch job-generic-usage-complete_DeepSeek_1.sbatch DeepSeek
+sbatch job-generic-usage-complete_DeepSeek.sbatch DeepSeek
 sbatch job-generic-usage-complete_DeepSeek_2.sbatch DeepSeek
 sbatch job-generic-usage-complete_DeepSeek_3.sbatch DeepSeek
 sbatch job-generic-usage-complete_DeepSeek_4.sbatch DeepSeek

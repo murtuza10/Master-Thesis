@@ -1,15 +1,12 @@
-### JSON Output ###
+### Output JSON Structure Filled Based on Input Text ###
 
 ```json
 {
   "Crops": [],
-  "Soil": [
-    {"soilReferenceGroup": {"value": "soils", "span": [114, 118]}},
-    {"soilDepth": {"value": "soil properties", "span": [63, 77]}},
-    {"soilOrganicCarbon": {"value": "organic carbon", "span": [134, 148]}},
-    {"soilOrganicCarbon": {"value": "organic carbon", "span": [223, 237]}}
-  ],
+  "Soil": [],
   "Location": [],
   "Time Statement": []
 }
 ```
+
+Since there is no mention of any crop species, soil types, locations, or time statements in the given text, the output JSON structure remains empty for all categories.

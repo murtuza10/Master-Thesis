@@ -1,0 +1,29 @@
+### Filled JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "cropland", "span": [109, 116] }}
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "Lehm", "span": [143, 148] }},
+    {"soilTexture": { "value": "Ton", "span": [152, 155] }},
+    {"soilReferenceGroup": { "value": "herkömmliche Praxis", "span": [224, 238] }},
+    {"soilDepth": { "value": "", "span": [] }},
+    {"soilBulkDensity": { "value": "", "span": [] }},
+    {"soilPH": { "value": "pH Wert", "span": [216, 223] }},
+    {"soilOrganicCarbon": { "value": "organischen Kohlenstoff", "span": [209, 226] }},
+    {"soilAvailableNitrogen": { "value": "Gesamt-Stickstoff", "span": [229, 240] }}
+  ],
+  "Location": [
+    {"city": { "value": "Hildesheim", "span": [134, 142] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2 Jahre", "span": [59, 66] }},
+    {"duration": { "value": "14-tägig", "span": [114, 121] }},
+    {"startTime": { "value": "2 Jahre", "span": [59, 66] }}
+  ]
+}
+```
+
+### Explanation ###
+Die Entitäten wurden basierend auf dem Eingabetext identifiziert und in die JSON-Struktur eingefügt. Die Entitäten "Crops" enthält eine cropSpecies, die "Soil" enthält mehrere Entitäten wie soilTexture, soilReferenceGroup, soilPH, soilOrganicCarbon und soilAvailableNitrogen. Die Entitäten "Location" enthält eine city und die Entitäten "Time Statement" enthält mehrere Entitäten wie startTime und duration.

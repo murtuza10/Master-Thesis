@@ -1,21 +1,19 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "winter wheat", "span": [93, 103]}}
+    {"cropSpecies": {"value": "winter wheat", "span": [82, 92]}},
+    {"cropVariety": {"value": "winter wheat", "span": [82, 92]}}
   ],
   "Soil": [],
   "Location": [
-    {"region": {"value": "AgroScapeLabs Quillow", "span": [45, 64]}},
-    {"region": {"value": "Germany", "span": [151, 157]}},
-    {"region": {"value": "Brandenburg", "span": [159, 167]}},
-    {"region": {"value": "Uckermark", "span": [169, 176]}}
+    {"region": {"value": "Uckermark", "span": [392, 399]}},
+    {"city": {"value": "Quillow", "span": [400, 407]}},
+    {"country": {"value": "Germany", "span": [418, 424]}}
   ],
   "Time Statement": [
-    {"startTime": {"value": "April", "span": [178, 182]}},
-    {"startTime": {"value": "2019", "span": [182, 186]}},
-    {"endTime": {"value": "June", "span": [191, 194]}},
-    {"endTime": {"value": "2019", "span": [194, 198]}},
-    {"duration": {"value": "between April and June 2019", "span": [177, 198]}}
+    {"startTime": {"value": "April 2019", "span": [244, 252]}},
+    {"startTime": {"value": "June 2019", "span": [257, 265]}},
+    {"duration": {"value": "between April and June 2019", "span": [266, 285]}}
   ]
 }
 ```

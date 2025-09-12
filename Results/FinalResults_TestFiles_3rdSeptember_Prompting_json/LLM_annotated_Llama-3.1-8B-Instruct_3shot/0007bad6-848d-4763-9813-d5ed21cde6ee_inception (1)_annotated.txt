@@ -4,8 +4,8 @@
       "cropSpecies": {
         "value": "Winter wheat",
         "span": [
-          294,
-          305
+          241,
+          253
         ]
       }
     }
@@ -15,17 +15,26 @@
       "soilReferenceGroup": {
         "value": "soil",
         "span": [
-          4,
-          9
+          16,
+          20
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "soil-crop system",
+        "span": [
+          36,
+          49
         ]
       }
     },
     {
       "soilDepth": {
-        "value": "soil-water stable aggregation",
+        "value": "soil water stable aggregation",
         "span": [
-          163,
-          187
+          154,
+          175
         ]
       }
     },
@@ -33,10 +42,19 @@
       "soilBulkDensity": {
         "value": "soil properties",
         "span": [
-          137,
-          152
+          141,
+          153
         ]
       }
+    },
+    {
+      "soilPH": {}
+    },
+    {
+      "soilOrganicCarbon": {}
+    },
+    {
+      "soilAvailableNitrogen": {}
     }
   ],
   "Location": [],

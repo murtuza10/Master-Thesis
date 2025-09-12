@@ -1,0 +1,33 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "spring barley", "span": [156, 169]}},
+    {"cropSpecies": {"value": "serradella", "span": [183, 193]}},
+    {"cropSpecies": {"value": "spring barley", "span": [221, 234]}}
+  ],
+  "Soil": [
+    {"soilPH": {"value": "pH", "span": [94, 96]}},
+    {"soilOrganicCarbon": {"value": "Gelöster organischer Kohlenstoff", "span": [433, 463]}},
+    {"soilAvailableNitrogen": {"value": "NH4+-N", "span": [281, 287]}},
+    {"soilAvailableNitrogen": {"value": "NO2--N", "span": [294, 300]}},
+    {"soilAvailableNitrogen": {"value": "NO3--N", "span": [306, 313]}},
+    {"soilDepth": {"value": "three sampling depths", "span": [76, 96]}},
+    {"soilReferenceGroup": {"value": "Boden", "span": [384, 390]}},
+    {"soilReferenceGroup": {"value": "Bodenwasser", "span": [391, 403]}},
+    {"soilTexture": {"value": "redoximorphic features", "span": [124, 145]}}
+  ],
+  "Location": [
+    {"region": {"value": "Northern Germany", "span": [103, 120]}},
+    {"city": {"value": "Rostock", "span": [15, 22]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2018", "span": [204, 208]}},
+    {"startTime": {"value": "2019", "span": [215, 219]}},
+    {"startTime": {"value": "2020", "span": [29, 34]}},
+    {"startTime": {"value": "2020", "span": [64, 69]}},
+    {"startTime": {"value": "2020", "span": [245, 250]}},
+    {"duration": {"value": "3.5 months", "span": [358, 368]}},
+    {"startTime": {"value": "2020", "span": [377, 382]}}
+  ]
+}
+```

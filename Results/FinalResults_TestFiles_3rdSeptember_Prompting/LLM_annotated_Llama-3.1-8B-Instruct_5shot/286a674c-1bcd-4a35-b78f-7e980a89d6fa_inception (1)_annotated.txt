@@ -1,18 +1,28 @@
-### Output ###
+### Output JSON Structure Filled with Data from the Input Text ###
+
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "winter wheat", "span": [157, 168]}}
+    {"cropSpecies": {"value": "winter wheat", "span": [234, 246]}}
   ],
-  "Soil": [],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "Boden", "span": [1061, 1065]}}
+  ],
   "Location": [
-    {"country": {"value": "Germany", "span": [261, 267]}},
-    {"region": {"value": "Brandenburg", "span": [273, 280]}},
-    {"city": {"value": "Quillow", "span": [298, 306]}}
+    {"country": {"value": "Germany", "span": [1103, 1108]}},
+    {"region": {"value": "Brandenburg", "span": [1113, 1120]}},
+    {"city": {"value": "Quillow", "span": [1131, 1137]}},
+    {"latitude": {}},
+    {"longitude": {}}
   ],
   "Time Statement": [
-    {"startTime": {"value": "April 2019", "span": [213, 224]}},
-    {"endTime": {"value": "June 2019", "span": [228, 238]}}
+    {"startTime": {"value": "April", "span": [276, 280]}},
+    {"endTime": {"value": "June", "span": [287, 291]}},
+    {"duration": {"value": "growing season", "span": [291, 299]}}
   ]
 }
 ```
+
+### Note: ###
+- Since the text does not contain any information about latitude or longitude, I have left the corresponding fields empty in the output JSON structure.
+- Similarly, I have not included any information about soil texture, soil depth, soil bulk density, soil pH, soil organic carbon, or soil available nitrogen as they are not mentioned in the text.

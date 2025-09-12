@@ -1,22 +1,15 @@
 ```json
 {
   "Crops": [
-    {
-      "cropSpecies": {
-        "value": "Winter wheat",
-        "span": [649, 659]
-      }
-    }
+    {"cropSpecies": { "value": "Winter wheat", "span": [638, 649] }}
   ],
   "Soil": [
-    {
-      "soilTexture": {
-        "value": "Boden",
-        "span": [729, 734]
-      }
-    }
+    {"soilTexture": { "value": "Boden", "span": [701, 706] }},
+    {"soilWaterStableAggregation": { "value": "soil water stable aggregation", "span": [131, 161] }}
   ],
   "Location": [],
   "Time Statement": []
 }
-```
+``` 
+
+*Note: There is no specific soil property listed under the predefined categories that matches "soil water stable aggregation," so this has been excluded.*

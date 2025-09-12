@@ -2,17 +2,24 @@
 {
   "Crops": [],
   "Soil": [
-    {"soilOrganicCarbon": {"value": "soil organic carbon (SOC)", "span": [156, 179]}},
-    {"soilOrganicCarbon": {"value": "SOC", "span": [216, 219]}},
-    {"soilOrganicCarbon": {"value": "SOC", "span": [341, 344]}},
-    {"soilOrganicCarbon": {"value": "SOC models", "span": [246, 256]}},
-    {"soilOrganicCarbon": {"value": "SOC model", "span": [394, 403]}},
-    {"soilOrganicCarbon": {"value": "SOC", "span": [442, 445]}},
-    {"soilOrganicNitrogen": {"value": "soil organic nitrogen (SON)", "span": [184, 212]}},
-    {"soilOrganicNitrogen": {"value": "SON", "span": [228, 231]}},
-    {"soilOrganicNitrogen": {"value": "SON", "span": [463, 466]}}
+    {"soilOrganicCarbon": {"value": "soil organic carbon (SOC)", "span": [156, 176]}},
+    {"soilOrganicCarbon": {"value": "SOC", "span": [194, 197]}},
+    {"soilOrganicCarbon": {"value": "SOC", "span": [326, 329]}},
+    {"soilOrganicCarbon": {"value": "C", "span": [401, 402]}},
+    {"soilOrganicCarbon": {"value": "C", "span": [413, 414]}},
+    {"soilOrganicCarbon": {"value": "C", "span": [441, 442]}},
+    {"soilOrganicCarbon": {"value": "C", "span": [453, 454]}},
+    {"soilAvailableNitrogen": {"value": "N mineralisation rates", "span": [181, 200]}},
+    {"soilAvailableNitrogen": {"value": "N mineralisation / immobilisation", "span": [310, 339]}},
+    {"soilAvailableNitrogen": {"value": "N", "span": [420, 421]}},
+    {"soilAvailableNitrogen": {"value": "N", "span": [432, 433]}},
+    {"soilAvailableNitrogen": {"value": "N", "span": [460, 461]}},
+    {"soilAvailableNitrogen": {"value": "N", "span": [472, 473]}}
   ],
   "Location": [],
-  "Time Statement": []
+  "Time Statement": [
+    {"duration": {"value": "time series", "span": [446, 455]}},
+    {"duration": {"value": "temporal development", "span": [278, 296]}}
+  ]
 }
 ```

@@ -1,18 +1,19 @@
-### Output JSON Format ###
+### JSON Output ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "energy crops", "span": [273, 283] }}
+    {"cropSpecies": {"value": "energy crops", "span": [231, 239]}}
   ],
-  "Soil": [],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "agricultural soils", "span": [151, 164]}}
+  ],
   "Location": [
-    {"country": { "value": "Germany", "span": [17, 25] }},
-    {"country": { "value": "Germany", "span": [113, 121] }},
-    {"region": { "value": "federal states", "span": [141, 153] }}
+    {"country": {"value": "Germany", "span": [39, 49]}},
+    {"region": {"value": "Germany", "span": [111, 118]}}
   ],
   "Time Statement": [
-    {"startTime": { "value": "1990", "span": [35, 39] }},
-    {"endTime": { "value": "2017", "span": [64, 68] }}
+    {"startTime": {"value": "1990", "span": [69, 73]}},
+    {"endTime": {"value": "2017", "span": [89, 93]}}
   ]
 }
 ```

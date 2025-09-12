@@ -1,0 +1,26 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "barley", "span": [44, 50] }},
+    {"cropVariety": { "value": "OTTO", "span": [448, 452] }},
+    {"cropSpecies": { "value": "oilseed rape", "span": [465, 473] }},
+    {"cropSpecies": { "value": "wheat", "span": [475, 480] }},
+    {"cropSpecies": { "value": "lupine", "span": [482, 487] }},
+    {"cropSpecies": { "value": "rye", "span": [489, 492] }}
+  ],
+  "Soil": [
+    {"soilAvailableNitrogen": { "value": "PCAL", "span": [261, 265] }},
+    {"soilAvailableNitrogen": { "value": "PCAL", "span": [286, 290] }},
+    {"soilAvailableNitrogen": { "value": "PCAL", "span": [304, 308] }},
+    {"soilDepth": { "value": "25 cm", "span": [370, 375] }}
+  ],
+  "Location": [
+    {"city": { "value": "Braunschweig", "span": [22, 31] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2013", "span": [377, 381] }},
+    {"startTime": { "value": "2013", "span": [444, 448] }},
+    {"startTime": { "value": "2014", "span": [454, 458] }}
+  ]
+}
+```

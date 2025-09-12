@@ -1,33 +1,33 @@
-### Output JSON Structure ###
+### Output JSON Format ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "maize", "span": [342, 347] }}
+    {"cropSpecies": {"value": "maize", "span": [278, 283]}}
   ],
   "Soil": [
-    {"soilTexture": { "value": "Wanna Sand", "span": [273, 286] }},
-    {"soilTexture": { "value": "Wanna Sand without biogas slurry", "span": [289, 307] }},
-    {"soilTexture": { "value": "Rostock Sand", "span": [313, 324] }},
-    {"soilTexture": { "value": "Wanna Marsch", "span": [328, 339] }},
-    {"soilDepth": { "value": "before the experiment", "span": [219, 235] }},
-    {"soilBulkDensity": { "value": "in and between the maize rows", "span": [394, 411] }},
-    {"soilBulkDensity": { "value": "plot by plot", "span": [416, 424] }},
-    {"soilPH": { "value": "April", "span": [473, 478] }},
-    {"soilPH": { "value": "August", "span": [486, 491] }}
+    {"soilTexture": {"value": "Wanna Sand", "span": [155, 168]}},
+    {"soilTexture": {"value": "Rostock Sand", "span": [191, 203]}},
+    {"soilTexture": {"value": "Wanna Marsch", "span": [219, 232]}},
+    {"soilDepth": {"value": "between April and August", "span": [259, 273]}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}}
   ],
   "Location": [
-    {"country": { "value": "Europe", "span": [546, 551] }},
-    {"country": { "value": "Germany", "span": [557, 562] }},
-    {"region": { "value": "Lower Saxony", "span": [567, 576] }},
-    {"city": { "value": "Wanna", "span": [582, 587] }},
-    {"city": { "value": "Rostock", "span": [592, 597] }},
-    {"latitude": { "value": "Mecklenburg-Vorpommern", "span": [605, 618] }}
+    {"country": {"value": "Europe", "span": [342, 346]}},
+    {"region": {"value": "Germany", "span": [357, 362]}},
+    {"region": {"value": "Lower Saxony", "span": [367, 375]}},
+    {"city": {"value": "Wanna", "span": [386, 392]}},
+    {"city": {"value": "Rostock", "span": [405, 412]}},
+    {"latitude": {}},
+    {"longitude": {}}
   ],
   "Time Statement": [
-    {"startTime": { "value": "2021", "span": [229, 233] }},
-    {"startTime": { "value": "2022", "span": [241, 245] }},
-    {"endTime": { "value": "2023", "span": [253, 257] }},
-    {"duration": { "value": "between April and August", "span": [478, 495] }}
+    {"startTime": {"value": "2021", "span": [134, 138]}},
+    {"endTime": {"value": "2022", "span": [143, 147]}},
+    {"endTime": {"value": "2023", "span": [152, 156]}},
+    {"duration": {"value": "vegetation period", "span": [235, 242]}}
   ]
 }
 ```

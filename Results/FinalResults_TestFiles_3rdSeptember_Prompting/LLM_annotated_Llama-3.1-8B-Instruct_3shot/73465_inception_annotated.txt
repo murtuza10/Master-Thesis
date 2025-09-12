@@ -1,22 +1,24 @@
-### Output JSON Structure ###
+### Entities Extraction Result ###
+
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "Helosciadium nodiflorum", "span": [71, 91] }},
-    {"cropSpecies": { "value": "celery", "span": [444, 449] }}
+    {"cropSpecies": {"value": "Helosciadium nodiflorum", "span": [63, 79]}},
+    {"cropSpecies": {"value": "celery", "span": [384, 389]}}
   ],
   "Soil": [],
   "Location": [
-    {"city": { "value": "Gatersleben", "span": [94, 103] }},
-    {"city": { "value": "London", "span": [155, 160] }},
-    {"city": { "value": "Berlin", "span": [351, 356] }}
+    {"city": {"value": "Gatersleben", "span": [87, 96]}},
+    {"city": {"value": "London", "span": [131, 136]}},
+    {"city": {"value": "Berlin", "span": [348, 353]}},
+    {"region": {"value": "Germany", "span": [88, 95]}},
+    {"region": {"value": "Germany", "span": [351, 358]}}
   ],
   "Time Statement": [
-    {"startTime": { "value": "2015", "span": [265, 268] }},
-    {"startTime": { "value": "2016", "span": [269, 272] }},
-    {"startTime": { "value": "2018", "span": [375, 378] }},
-    {"endTime": { "value": "2019", "span": [379, 382] }}
+    {"startTime": {"value": "2015", "span": [233, 237]}},
+    {"startTime": {"value": "2016", "span": [238, 242]}},
+    {"endTime": {"value": "2018", "span": [272, 276]}},
+    {"endTime": {"value": "2019", "span": [277, 281]}}
   ]
 }
 ```
-Note: The span is based on the character positions from the beginning of the text.

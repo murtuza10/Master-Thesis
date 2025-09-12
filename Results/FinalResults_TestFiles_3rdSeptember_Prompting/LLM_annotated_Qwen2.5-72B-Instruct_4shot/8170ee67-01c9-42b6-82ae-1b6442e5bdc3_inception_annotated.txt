@@ -1,44 +1,39 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "barley", "span": [117, 123] }},
-    {"cropSpecies": { "value": "oat", "span": [1207, 1210] }},
-    {"cropSpecies": { "value": "barley", "span": [1429, 1435] }},
-    {"cropSpecies": { "value": "oilseed rape", "span": [1449, 1460] }},
-    {"cropSpecies": { "value": "wheat", "span": [1465, 1470] }},
-    {"cropSpecies": { "value": "lupine", "span": [1472, 1478] }},
-    {"cropSpecies": { "value": "rye", "span": [1480, 1483] }},
-    {"cropSpecies": { "value": "barley", "span": [1517, 1523] }},
-    {"cropSpecies": { "value": "Hordeum vulgare L.", "span": [1526, 1542] }},
-    {"cropVariety": { "value": "OTTO", "span": [1545, 1549] }}
+    {"cropSpecies": { "value": "winter barley", "span": [57, 69] }},
+    {"cropSpecies": { "value": "oat", "span": [949, 952] }},
+    {"cropSpecies": { "value": "winter barley", "span": [1158, 1170] }},
+    {"cropSpecies": { "value": "winter oilseed rape", "span": [1172, 1189] }},
+    {"cropSpecies": { "value": "winter wheat", "span": [1191, 1202] }},
+    {"cropSpecies": { "value": "lupine", "span": [1204, 1209] }},
+    {"cropSpecies": { "value": "winter rye", "span": [1211, 1222] }},
+    {"cropSpecies": { "value": "Hordeum vulgare L.", "span": [1238, 1254] }},
+    {"cropVariety": { "value": "OTTO", "span": [1256, 1260] }}
   ],
   "Soil": [
-    {"soilReferenceGroup": { "value": "grassland", "span": [1225, 1234] }},
-    {"soilDepth": { "value": "25 cm", "span": [1246, 1251] }},
-    {"soilDepth": { "value": "25 cm", "span": [1488, 1493] }},
-    {"soilDepth": { "value": "0-30 cm", "span": [1322, 1330] }},
-    {"soilAvailableNitrogen": { "value": "PCAL", "span": [1340, 1344] }},
-    {"soilAvailableNitrogen": { "value": "PCAL", "span": [1358, 1362] }},
-    {"soilAvailableNitrogen": { "value": "PCAL", "span": [1379, 1383] }},
-    {"soilAvailableNitrogen": { "value": "PCAL", "span": [1405, 1409] }},
-    {"soilAvailableNitrogen": { "value": "PCAL", "span": [1418, 1422] }},
-    {"soilAvailableNitrogen": { "value": "PCAL", "span": [1438, 1442] }},
-    {"soilAvailableNitrogen": { "value": "PCAL", "span": [1452, 1456] }},
-    {"soilAvailableNitrogen": { "value": "PCAL", "span": [1468, 1472] }},
-    {"soilAvailableNitrogen": { "value": "PCAL", "span": [1483, 1487] }},
-    {"soilAvailableNitrogen": { "value": "PCAL", "span": [1505, 1509] }}
+    {"soilReferenceGroup": { "value": "Boden", "span": [1318, 1322] }},
+    {"soilAvailableNitrogen": { "value": "available soil P (PCAL)", "span": [654, 673] }},
+    {"soilAvailableNitrogen": { "value": "available soil P (PCAL)", "span": [888, 907] }},
+    {"soilAvailableNitrogen": { "value": "PCAL concentrations", "span": [930, 945] }},
+    {"soilAvailableNitrogen": { "value": "11 mg kg-1 PCAL", "span": [988, 1006] }},
+    {"soilAvailableNitrogen": { "value": "21 mg kg-1 PCAL", "span": [1011, 1029] }},
+    {"soilAvailableNitrogen": { "value": "47 mg kg-1 PCAL", "span": [1034, 1052] }},
+    {"soilDepth": { "value": "0-30 cm", "span": [964, 970] }},
+    {"soilDepth": { "value": "25 cm", "span": [916, 921] }},
+    {"soilDepth": { "value": "25 cm", "span": [1142, 1147] }}
   ],
   "Location": [
-    {"city": { "value": "Braunschweig", "span": [27, 39] }},
-    {"city": { "value": "Braunschweig", "span": [64, 76] }}
+    {"city": { "value": "Braunschweig", "span": [17, 29] }},
+    {"city": { "value": "Braunschweig", "span": [44, 56] }}
   ],
   "Time Statement": [
-    {"startTime": { "value": "2014", "span": [106, 110] }},
-    {"startTime": { "value": "2014", "span": [1437, 1441] }},
-    {"startTime": { "value": "1985", "span": [855, 859] }},
-    {"endTime": { "value": "2008", "span": [860, 864] }},
-    {"endTime": { "value": "2013", "span": [1214, 1218] }},
-    {"startTime": { "value": "autumn 2013", "span": [1501, 1512] }}
+    {"startTime": { "value": "2014", "span": [70, 74] }},
+    {"startTime": { "value": "2014", "span": [1273, 1277] }},
+    {"startTime": { "value": "1985", "span": [623, 627] }},
+    {"endTime": { "value": "2008", "span": [629, 633] }},
+    {"endTime": { "value": "2013", "span": [865, 869] }},
+    {"duration": { "value": "autumn 2013", "span": [1207, 1217] }}
   ]
 }
 ```

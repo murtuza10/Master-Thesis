@@ -1,25 +1,26 @@
-### Output JSON Structure ###
+### JSON Output ###
+
 ```json
 {
   "Crops": [],
   "Soil": [
-    {"soilReferenceGroup": {"value": "Bodenleitprofile", "span": [108, 123]}},
-    {"soilTexture": {"value": "Bodenart", "span": [242, 247]}},
-    {"soilDepth": {"value": "TRD", "span": [256, 258]}},
-    {"soilBulkDensity": {"value": "nFK", "span": [260, 264]}},
-    {"soilPH": {"value": "Basensättigung", "span": [306, 320]}},
-    {"soilOrganicCarbon": {"value": "organischer Kohlenstoffgehalt", "span": [320, 342]}},
-    {"soilAvailableNitrogen": {"value": "Nährstoffansprache", "span": [128, 136]}}
+    {"soilReferenceGroup": {"value": "Bodentyp", "span": [173, 179]}},
+    {"soilDepth": {"value": "TRD", "span": [220, 223]}},
+    {"soilBulkDensity": {"value": "nutzbare Feldkapazität (nFK)", "span": [231, 251]}},
+    {"soilOrganicCarbon": {"value": "organischer Kohlenstoffgehalt (Corg)", "span": [284, 304]}},
+    {"soilPH": {"value": "Kalkung", "span": [157, 162]}},
+    {"soilAvailableNitrogen": {"value": "Wasserhaushalts-/ Nährstoffansprache", "span": [166, 190]}}
   ],
   "Location": [
-    {"country": {"value": "Deutschland", "span": [36, 43]}},
-    {"region": {"value": "Bundesländer", "span": [70, 79]}}
+    {"country": {"value": "Deutschland", "span": [25, 33]}}
   ],
   "Time Statement": [
-    {"startTime": {"value": "2012", "span": [155, 159]}},
-    {"endTime": {"value": "2012", "span": [164, 168]}},
-    {"duration": {"value": "28.05.2019", "span": [206, 217]}},
-    {"duration": {"value": "28.05.2019", "span": [218, 229]}}
+    {"startTime": {"value": "2012", "span": [247, 251]}},
+    {"endTime": {"value": "2012", "span": [253, 257]}}
   ]
 }
 ```
+
+### Note ###
+
+The JSON output is based on the provided input text. The entities are extracted according to the specified categories and rules.

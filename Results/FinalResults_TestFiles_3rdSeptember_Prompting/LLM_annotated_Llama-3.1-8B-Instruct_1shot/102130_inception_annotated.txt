@@ -1,0 +1,28 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "C4", "span": [74, 76]}},
+    {"cropSpecies": {"value": "C3", "span": [129, 131]}}
+  ],
+  "Soil": [
+    {"soilTexture": {}},
+    {"soilReferenceGroup": {}},
+    {"soilDepth": {}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2 years", "span": [17, 21]}},
+    {"endTime": {"value": "24 months", "span": [93, 97]}}
+  ]
+}
+```
+### Notes ###
+
+- We found two instances of crop species ("C4" and "C3") and no other relevant entities for "Crops".
+- No relevant soil information was provided, so the "Soil" list remains empty.
+- We found two time-related entities: "2 years" and "24 months", which are used as the start and end times, respectively.

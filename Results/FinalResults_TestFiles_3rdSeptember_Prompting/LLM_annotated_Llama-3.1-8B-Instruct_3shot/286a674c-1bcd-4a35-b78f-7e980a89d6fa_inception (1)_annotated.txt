@@ -1,22 +1,21 @@
-### Output JSON Structure ###
+### JSON Output ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "wheat", "span": [342, 346]}},
-    {"cropVariety": {"value": "winter wheat", "span": [330, 341]}}
+    {"cropSpecies": {"value": "wheat", "span": [342, 346]}}
   ],
   "Soil": [],
   "Location": [
-    {"country": {"value": "Germany", "span": [644, 648]}},
-    {"region": {"value": "Brandenburg", "span": [649, 656]}},
-    {"city": {"value": "Uckermark", "span": [657, 664]}},
-    {"latitude": {}},
-    {"longitude": {}}
+    {"country": {"value": "Germany", "span": [537, 542]}},
+    {"region": {"value": "Brandenburg", "span": [547, 554]}},
+    {"city": {"value": "Quillow", "span": [558, 565]}}
   ],
   "Time Statement": [
-    {"startTime": {"value": "April 2019", "span": [425, 436]}},
-    {"endTime": {"value": "June 2019", "span": [438, 443]}}
+    {"startTime": {"value": "April", "span": [394, 400]}},
+    {"endTime": {"value": "June", "span": [405, 409]}}
   ]
 }
 ```
-Note: The latitude and longitude are missing as they are not explicitly mentioned in the given text.
+
+### Explanation ###
+The entities were identified based on the given text and matched to the corresponding categories. The extracted entities include a crop species ("wheat"), a country ("Germany"), a region ("Brandenburg"), and a city ("Quillow"). Time statements include the start time ("April") and end time ("June") of the growing season of the wheat plants.

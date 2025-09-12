@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757409717-oNtVwHxvnU1RXjmD9AHR",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757409717,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilTexture\": { \"value\": \"Lehm\", \"span\": [316, 320] }},\n    {\"soilTexture\": { \"value\": \"Ton\", \"span\": [325, 328] }},\n    {\"soilPH\": { \"value\": \"pH Wert\", \"span\": [515, 522] }},\n    {\"soilOrganicCarbon\": { \"value\": \"organischen Kohlenstoff\", \"span\": [529, 549] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"Gesamt-Stickstoff\", \"span\": [554, 569] }}\n  ],\n  \"Location\": [\n    {\"city\": { \"value\": \"Hildesheim\", \"span\": [229, 239] }}\n  ],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"14-tägigen Zeitraster\", \"span\": [253, 273] }},\n    {\"duration\": { \"value\": \"2 Jahren\", \"span\": [311, 318] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2205,
+    "completion_tokens": 236,
+    "total_tokens": 2441,
+    "prompt_tokens_details": null
+  }
+}

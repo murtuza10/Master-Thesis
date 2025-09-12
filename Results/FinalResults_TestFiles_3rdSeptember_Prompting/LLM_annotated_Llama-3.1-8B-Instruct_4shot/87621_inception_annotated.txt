@@ -1,24 +1,18 @@
-### Output Format ###
+### Output ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "Wheat dwarf virus", "span": [25, 40] }},
-    {"cropSpecies": { "value": "barley", "span": [71, 78] }},
-    {"cropSpecies": { "value": "Hordeum vulgare ssp. vulgare", "span": [82, 103] }},
-    {"cropSpecies": { "value": "barley", "span": [143, 150] }}
+    {"cropSpecies": {"value": "Wheat dwarf virus", "span": [69, 86]}},
+    {"cropSpecies": {"value": "barley", "span": [101, 108]}},
+    {"cropSpecies": {"value": "barley", "span": [157, 164]}},
+    {"cropSpecies": {"value": "barley", "span": [233, 240]}},
+    {"cropSpecies": {"value": "barley", "span": [268, 275]}},
+    {"cropSpecies": {"value": "barley", "span": [345, 352]}},
+    {"cropSpecies": {"value": "cereals", "span": [121, 128]}},
+    {"cropSpecies": {"value": "barley", "span": [422, 429]}}
   ],
   "Soil": [],
   "Location": [],
   "Time Statement": []
 }
 ```
-
-Explanation:
-- **Crops**:
-  - "Wheat dwarf virus" is a crop species (value: "Wheat dwarf virus", span: [25, 40]).
-  - "barley" is a crop species (value: "barley", span: [71, 78]).
-  - "Hordeum vulgare ssp. vulgare" is a crop species (value: "Hordeum vulgare ssp. vulgare", span: [82, 103]).
-  - "barley" is a crop species (value: "barley", span: [143, 150]).
-- **Soil**: No mentions of soil-related entities.
-- **Location**: No mentions of locations.
-- **Time Statement**: No mentions of time-related entities.

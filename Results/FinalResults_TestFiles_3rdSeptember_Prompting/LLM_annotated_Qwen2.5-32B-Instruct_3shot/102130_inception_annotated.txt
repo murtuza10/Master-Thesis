@@ -2,15 +2,16 @@
 {
   "Crops": [],
   "Soil": [
-    {"soilDepth": { "value": "C3 soil", "span": [49, 55] }},
-    {"soilDepth": { "value": "bulk soil", "span": [136, 144] }}
+    {"soilReferenceGroup": { "value": "C3 soil", "span": [47, 52] }},
+    {"soilOrganicCarbon": { "value": "particulate organic carbon", "span": [101, 125] }},
+    {"soilOrganicCarbon": { "value": "mineral associated organic carbon", "span": [128, 155] }}
   ],
   "Location": [],
   "Time Statement": [
-    {"startTime": { "value": "6", "span": [65, 66] }},
-    {"startTime": { "value": "12", "span": [68, 70] }},
-    {"startTime": { "value": "24", "span": [73, 75] }},
-    {"duration": { "value": "2-year", "span": [27, 32] }}
+    {"startTime": { "value": "2-year", "span": [32, 38] }},
+    {"startTime": { "value": "6", "span": [57, 58] }},
+    {"startTime": { "value": "12", "span": [61, 63] }},
+    {"startTime": { "value": "24", "span": [66, 68] }}
   ]
 }
 ```

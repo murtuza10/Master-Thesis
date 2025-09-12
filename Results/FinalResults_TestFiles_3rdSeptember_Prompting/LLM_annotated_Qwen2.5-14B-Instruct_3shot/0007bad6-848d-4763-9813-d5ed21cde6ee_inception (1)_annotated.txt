@@ -1,11 +1,13 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "Winter wheat", "span": [301, 311]}}
+    {"cropSpecies": { "value": "wheat", "span": [297, 303] }}
   ],
   "Soil": [
-    {"soilReferenceGroup": {"value": "Soil", "span": [26, 31]}},
-    {"soilReferenceGroup": {"value": "Boden", "span": [331, 335]}}
+    {"soilReferenceGroup": { "value": "soil", "span": [5, 9] }},
+    {"soilReferenceGroup": { "value": "soil", "span": [13, 17] }},
+    {"soilReferenceGroup": { "value": "soil", "span": [282, 286] }},
+    {"soilReferenceGroup": { "value": "Boden", "span": [318, 323] }}
   ],
   "Location": [],
   "Time Statement": []

@@ -1,28 +1,27 @@
-### Output ###
-
+### Output JSON ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "spring barley", "span": [144, 155]}},
-    {"cropSpecies": {"value": "winter barley", "span": [166, 177]}},
-    {"cropSpecies": {"value": "grain maize", "span": [184, 193]}},
-    {"cropSpecies": {"value": "silage maize", "span": [204, 213]}},
-    {"cropSpecies": {"value": "oats", "span": [225, 228]}},
-    {"cropSpecies": {"value": "potatoes", "span": [234, 239]}},
-    {"cropSpecies": {"value": "winter rape", "span": [249, 256]}},
-    {"cropSpecies": {"value": "rye", "span": [265, 268]}},
-    {"cropSpecies": {"value": "sugarbeet", "span": [274, 281]}},
-    {"cropSpecies": {"value": "triticale", "span": [291, 298]}},
-    {"cropSpecies": {"value": "winter wheat", "span": [309, 318]}}
+    {"cropSpecies": { "value": "spring barley", "span": [144, 154] }},
+    {"cropSpecies": { "value": "winter barley", "span": [161, 172] }},
+    {"cropSpecies": { "value": "grain maize", "span": [179, 189] }},
+    {"cropSpecies": { "value": "silage maize", "span": [196, 208] }},
+    {"cropSpecies": { "value": "oats", "span": [215, 219] }},
+    {"cropSpecies": { "value": "potatoes", "span": [221, 227] }},
+    {"cropSpecies": { "value": "winter rape", "span": [234, 242] }},
+    {"cropSpecies": { "value": "rye", "span": [249, 252] }},
+    {"cropSpecies": { "value": "sugarbeet", "span": [258, 267] }},
+    {"cropSpecies": { "value": "triticale", "span": [274, 283] }},
+    {"cropSpecies": { "value": "winter wheat", "span": [291, 301] }}
   ],
   "Soil": [],
   "Location": [
-    {"country": {"value": "Germany", "span": [30, 39]}},
-    {"region": {"value": "Germany", "span": [30, 39]}}
+    {"country": { "value": "Germany", "span": [25, 32] }}
   ],
   "Time Statement": [
-    {"startTime": {"value": "1979", "span": [61, 65]}},
-    {"endTime": {"value": "2021", "span": [69, 73]}}
+    {"startTime": { "value": "1979", "span": [49, 53] }},
+    {"endTime": { "value": "2021", "span": [63, 67] }},
+    {"duration": { "value": "2 years", "span": [68, 75] }}
   ]
 }
 ```

@@ -1,32 +1,109 @@
 {
   "Crops": [
-    {"cropSpecies": {"value": "energy crop", "span": [121, 131]}},
-    {"cropVariety": {"value": "wheat", "span": [0, 5]}}, //not clear but as per rules only the species name should be annotated
-    {"cropVariety": {"value": "barley", "span": [0, 5]}}, //not clear but as per rules only the species name should be annotated
-    {"cropVariety": {"value": "oats", "span": [0, 4]}}, //not clear but as per rules only the species name should be annotated
-    {"cropVariety": {"value": "rye", "span": [0, 3]}}, //not clear but as per rules only the species name should be annotated
-    {"cropVariety": {"value": "maize", "span": [0, 5]}}, //not clear but as per rules only the species name should be annotated
-    {"cropVariety": {"value": "sugar beet", "span": [0, 10]}}, //not clear but as per rules only the species name should be annotated
-    {"cropVariety": {"value": "potato", "span": [0, 6]}}, //not clear but as per rules only the species name should be annotated
-    {"cropVariety": {"value": "sunflower", "span": [0, 9]}}, //not clear but as per rules only the species name should be annotated
+    {
+      "cropSpecies": {
+        "value": "energy crop",
+        "span": [
+          77,
+          89
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "crops",
+        "span": [
+          113,
+          118
+        ]
+      }
+    }
   ],
   "Soil": [
-    {"soilTexture": {"value": "nitrogen content", "span": [193, 206]}},
-    {"soilReferenceGroup": {"value": "bulk density", "span": [220, 229]}},
-    {"soilReferenceGroup": {"value": "ammonium-N", "span": [239, 248]}},
-    {"soilReferenceGroup": {"value": "nitrate-N", "span": [255, 263]}},
-    {"soilDepth": {"value": "etc.", "span": [274, 277]}},
-    {"soilBulkDensity": {"value": "bulk density", "span": [220, 229]}},
-    {"soilPH": {"value": "etc.", "span": [274, 277]}},
-    {"soilOrganicCarbon": {"value": "etc.", "span": [274, 277]}},
-    {"soilAvailableNitrogen": {"value": "N and C content", "span": [169, 182]}}
+    {
+      "soilTexture": {
+        "value": "bulk density",
+        "span": [
+          185,
+          193
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "nitrogen content",
+        "span": [
+          137,
+          149
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "ammonium-N",
+        "span": [
+          159,
+          166
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "nitrate-N",
+        "span": [
+          171,
+          178
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "soil depth",
+        "span": [
+          347,
+          353
+        ]
+      }
+    }
   ],
   "Location": [
-    {"country": {"value": "Germany", "span": [77, 84]}},
-    {"region": {"value": "Germany", "span": [77, 84]}}
+    {
+      "country": {
+        "value": "Germany",
+        "span": [
+          93,
+          101
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Germany",
+        "span": [
+          93,
+          101
+        ]
+      }
+    }
   ],
   "Time Statement": [
-    {"startTime": {"value": "2011/2012", "span": [114, 123]}},
-    {"endTime": {"value": "2014/2015", "span": [131, 140]}}
+    {
+      "startTime": {
+        "value": "2011/2012",
+        "span": [
+          94,
+          103
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2014/2015",
+        "span": [
+          110,
+          119
+        ]
+      }
+    }
   ]
 }

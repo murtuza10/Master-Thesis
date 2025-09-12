@@ -1,17 +1,30 @@
+### JSON Structure Filling: ###
+
 ```json
 {
   "Crops": [],
   "Soil": [
-    {"soilTexture": { "value": "Lehm", "span": [597, 601] }},
-    {"soilTexture": { "value": "Ton", "span": [606, 609] }},
-    {"soilOrganicCarbon": { "value": "organischen Kohlenstoff", "span": [905, 928] }}
+    {"soilTexture": {"value": "Lehm", "span": [597, 601]}},
+    {"soilTexture": {"value": "Ton", "span": [606, 609]}},
+    {"soilOrganicCarbon": {"value": "organischen Kohlenstoff", "span": [905, 928]}}
   ],
   "Location": [
-    {"city": { "value": "Hildesheim", "span": [387, 397] }}
+    {"city": {"value": "Hildesheim", "span": [387, 397]}}
   ],
   "Time Statement": [
-    {"duration": { "value": "14-tägigen", "span": [414, 426] }},
-    {"duration": { "value": "2 Jahren", "span": [534, 542] }}
+    {"duration": {"value": "14-tägigen", "span": [414, 426]}},
+    {"duration": {"value": "2 Jahren", "span": [534, 542]}}
   ]
 }
 ```
+
+### Entity Extraction Explanation: ###
+
+*   **Crops:** No crop species or variety is mentioned in the text.
+*   **Soil:** The text mentions the following soil-related entities:
+    *   **Soil Texture:** "Lehm" (clay) and "Ton" (clay) are mentioned as soil textures.
+    *   **Soil Organic Carbon:** "organischen Kohlenstoff" (organic carbon) is mentioned as a soil property.
+*   **Location:** The text mentions the following location-related entities:
+    *   **City:** "Hildesheim" is mentioned as a city.
+*   **Time Statement:** The text mentions the following time-related entities:
+    *   **Duration:** "14-tägigen" (14-day) and "2 Jahren" (2 years) are mentioned as time durations.

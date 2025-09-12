@@ -3,33 +3,41 @@
   "Soil": [
     {
       "soilOrganicCarbon": {
-        "value": "SON",
+        "value": "soil organic carbon",
         "span": [
-          64,
-          67
+          28,
+          40
         ]
       }
     },
     {
       "soilOrganicCarbon": {
-        "value": "decomposition and transfer rates",
+        "value": "SOC",
         "span": [
-          195,
-          217
+          47,
+          51
+        ]
+      }
+    },
+    {
+      "soilOrganicNitrogen": {
+        "value": "soil organic nitrogen",
+        "span": [
+          52,
+          65
+        ]
+      }
+    },
+    {
+      "soilOrganicNitrogen": {
+        "value": "SON",
+        "span": [
+          66,
+          69
         ]
       }
     }
   ],
   "Location": [],
-  "Time Statement": [
-    {
-      "duration": {
-        "value": "temporal development",
-        "span": [
-          139,
-          151
-        ]
-      }
-    }
-  ]
+  "Time Statement": []
 }

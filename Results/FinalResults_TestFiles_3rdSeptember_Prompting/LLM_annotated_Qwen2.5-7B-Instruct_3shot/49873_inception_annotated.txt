@@ -2,44 +2,12 @@
 {
   "Crops": [],
   "Soil": [
-    {
-      "soilDepth": {
-        "value": "Bodenleitprofile",
-        "span": [14, 26]
-      }
-    },
-    {
-      "soilBulkDensity": {
-        "value": "Trockenrohdichte (TRD)",
-        "span": [136, 153]
-      }
-    },
-    {
-      "soilOrganicCarbon": {
-        "value": "organischer Kohlenstoffgehalt (Corg)",
-        "span": [167, 187]
-      }
-    }
+    {"soilDepth": {"value": "Bodenleitprofile", "span": [16, 27]}},
+    {"soilTexture": {"value": "Bodentyp", "span": [65, 72]}},
+    {"soilBulkDensity": {"value": "Trockenrohdichte (TRD)", "span": [186, 200]}},
+    {"soilOrganicCarbon": {"value": "organischer Kohlenstoffgehalt (Corg)", "span": [358, 378]}}
   ],
-  "Location": [
-    {
-      "region": {
-        "value": "Bundesländer",
-        "span": [99, 108]
-      }
-    }
-  ],
-  "Time Statement": [
-    {
-      "startTime": {
-        "value": "2012",
-        "span": [197, 201]
-      },
-      "endTime": {
-        "value": "2012",
-        "span": [202, 206]
-      }
-    }
-  ]
+  "Location": [{"region": {"value": "deutsche Bundesländer", "span": [104, 120]}}],
+  "Time Statement": [{"startTime": {"value": "2012", "span": [311, 315]}, "endTime": {"value": "2012", "span": [320, 324]}}]
 }
 ```

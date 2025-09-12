@@ -1,24 +1,27 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "winter barley", "span": [73, 82] }},
-    {"cropVariety": { "value": "OTTO", "span": [95, 99] }}
+    {"cropSpecies": { "value": "winter barley", "span": [49, 58] }},
+    {"cropSpecies": { "value": "winter oilseed rape", "span": [86, 97] }},
+    {"cropSpecies": { "value": "winter wheat", "span": [100, 108] }},
+    {"cropSpecies": { "value": "lupine", "span": [111, 116] }},
+    {"cropSpecies": { "value": "winter rye", "span": [119, 125] }},
+    {"cropVariety": { "value": "OTTO", "span": [444, 447] }}
   ],
   "Soil": [
-    {"soilReferenceGroup": { "value": "extensively managed grassland", "span": [259, 280] }},
-    {"soilDepth": { "value": "25 cm", "span": [345, 350] }},
-    {"soilPH": { "value": "PCAL", "span": [368, 371] }}
+    {"soilReferenceGroup": { "value": "extensively managed grassland", "span": [266, 293] }},
+    {"soilDepth": { "value": "0-30 cm", "span": [408, 416] }},
+    {"soilPH": { "value": "PCAL", "span": [429, 432] }}
   ],
   "Location": [
-    {"region": { "value": "Braunschweig", "span": [28, 36] }}
+    {"region": { "value": "Braunschweig", "span": [21, 29] }}
   ],
   "Time Statement": [
-    {"startTime": { "value": "2014", "span": [83, 87] }},
-    {"startTime": { "value": "1985", "span": [309, 313] }},
-    {"endTime": { "value": "2013", "span": [328, 332] }},
-    {"startTime": { "value": "autumn 2013", "span": [403, 412] }},
-    {"endTime": { "value": "2013", "span": [426, 430] }},
-    {"startTime": { "value": "2014", "span": [443, 447] }}
+    {"startTime": { "value": "2014", "span": [39, 43] }},
+    {"startTime": { "value": "1985", "span": [217, 221] }},
+    {"startTime": { "value": "2008", "span": [222, 226] }},
+    {"startTime": { "value": "2013", "span": [277, 281] }},
+    {"startTime": { "value": "autumn 2013", "span": [368, 377] }}
   ]
 }
 ```

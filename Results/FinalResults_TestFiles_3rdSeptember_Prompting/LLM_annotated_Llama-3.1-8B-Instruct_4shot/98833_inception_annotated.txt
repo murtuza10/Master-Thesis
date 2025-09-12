@@ -1,18 +1,30 @@
-### Output ###
+### Output JSON ###
+
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "Mähdrescher", "span": [94, 104] }}
+    {"cropSpecies": {"value": "Mais", "span": [null, null]}},
+    {"cropSpecies": {"value": "Mais", "span": [null, null]}}
   ],
   "Soil": [
-    {"soilReferenceGroup": { "value": "Parabraunerde", "span": [221, 234] }},
-    {"soilTexture": { "value": "Löss", "span": [236, 240] }},
-    {"soilDepth": { "value": "28 cm", "span": [256, 260] }}
+    {"soilReferenceGroup": {"value": "Parabraunerde", "span": [null, null]}},
+    {"soilTexture": {"value": "Löss", "span": [null, null]}},
+    {"soilDepth": {"value": "28 cm", "span": [null, null]}},
+    {"soilBulkDensity": {"value": null, "span": [null, null]}},
+    {"soilPH": {"value": null, "span": [null, null]}},
+    {"soilOrganicCarbon": {"value": null, "span": [null, null]}},
+    {"soilAvailableNitrogen": {"value": null, "span": [null, null]}}
   ],
   "Location": [],
   "Time Statement": [
-    {"startTime": { "value": "2017", "span": [143, 147] }},
-    {"endTime": { "value": "2017", "span": [169, 173] }}
+    {"startTime": {"value": "2017", "span": [null, null]}},
+    {"endTime": {"value": null, "span": [null, null]}}
   ]
 }
 ```
+
+### Note: ###
+
+*   Since the input text does not mention any crop variety, I have not included any crop variety in the output.
+*   The soil bulk density, soil pH, soil organic carbon, and soil available nitrogen are not mentioned in the input text, so I have set their values to null in the output.
+*   The end time is not specified in the input text, so I have set its value to null in the output.

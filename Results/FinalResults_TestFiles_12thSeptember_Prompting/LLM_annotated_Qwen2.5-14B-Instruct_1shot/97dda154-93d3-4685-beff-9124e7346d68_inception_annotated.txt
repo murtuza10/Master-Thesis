@@ -1,0 +1,23 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "maize", "span": [124, 129]}}
+  ],
+  "Soil": [
+    {"Soil": { "value": "biogas slurry", "span": [222, 230]}}
+  ],
+  "Location": [
+    {"region": { "value": "Europe", "span": [557, 563] }},
+    {"country": { "value": "Germany", "span": [565, 571] }},
+    {"region": { "value": "Lower Saxony", "span": [573, 582] }},
+    {"city": { "value": "Wanna", "span": [584, 589] }},
+    {"region": { "value": "Mecklenburg-Vorpommern", "span": [591, 607] }},
+    {"city": { "value": "Rostock", "span": [609, 616] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2021", "span": [85, 89] }},
+    {"endTime": { "value": "2023", "span": [96, 100] }},
+    {"duration": { "value": "over the years 2021, 2022 and 2023", "span": [85, 100] }}
+  ]
+}
+```

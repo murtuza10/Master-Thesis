@@ -1,24 +1,107 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "grape", "span": [84, 88] }},
-    {"cropSpecies": { "value": "fruit-crops", "span": [76, 86] }}
+    {
+      "cropSpecies": {
+        "value": "soft-skinned fruits",
+        "span": [100, 115]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "grape",
+        "span": [135, 139]
+      }
+    }
   ],
   "Soil": [],
   "Location": [
-    {"region": { "value": "southwest Germany", "span": [169, 184] }},
-    {"city": { "value": "Dossenheim", "span": [474, 484] }},
-    {"city": { "value": "Siebeldingen", "span": [487, 498] }},
-    {"city": { "value": "Darmstadt", "span": [501, 510] }},
-    {"city": { "value": "Germany", "span": [219, 226] }},
-    {"latitude": { "value": "lat", "span": [723, 726] }},
-    {"longitude": { "value": "lon", "span": [730, 733] }}
+    {
+      "region": {
+        "value": "southwest Germany",
+        "span": [226, 240]
+      }
+    },
+    {
+      "city": {
+        "value": "Dossenheim",
+        "span": [671, 681]
+      }
+    },
+    {
+      "city": {
+        "value": "Siebeldingen",
+        "span": [683, 694]
+      }
+    },
+    {
+      "city": {
+        "value": "Darmstadt",
+        "span": [706, 714]
+      }
+    },
+    {
+      "city": {
+        "value": "Dossenheim",
+        "span": [778, 788]
+      }
+    },
+    {
+      "city": {
+        "value": "Siebeldingen",
+        "span": [790, 801]
+      }
+    },
+    {
+      "latitude": {
+        "value": "'lat'",
+        "span": [892, 897]
+      }
+    },
+    {
+      "longitude": {
+        "value": "'lon'",
+        "span": [900, 904]
+      }
+    }
   ],
   "Time Statement": [
-    {"startTime": { "value": "2011", "span": [158, 162] }},
-    {"endTime": { "value": "February 2018", "span": [276, 288] }},
-    {"endTime": { "value": "2018", "span": [465, 469] }},
-    {"startTime": { "value": "2011", "span": [456, 459] }}
+    {
+      "startTime": {
+        "value": "2011",
+        "span": [254, 258]
+      }
+    },
+    {
+      "endTime": {
+        "value": "February 2018",
+        "span": [337, 349]
+      }
+    },
+    {
+      "startTime": {
+        "value": "2011",
+        "span": [557, 561]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2018",
+        "span": [564, 568]
+      }
+    },
+    {
+      "startTime": {
+        "value": "2011",
+        "span": [983, 987]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2018",
+        "span": [990, 994]
+      }
+    }
   ]
 }
 ```

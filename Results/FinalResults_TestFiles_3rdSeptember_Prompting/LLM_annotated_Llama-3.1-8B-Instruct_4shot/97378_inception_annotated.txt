@@ -1,24 +1,28 @@
-### Output JSON ###
+### Output Format ###
 ```json
 {
   "Crops": [],
   "Soil": [
-    {"soilTexture": {"value": "Lehm", "span": [133, 137]}},
-    {"soilTexture": {"value": "Ton", "span": [141, 144]}},
-    {"soilReferenceGroup": {"value": "Boden", "span": [155, 159]}},
-    {"soilDepth": {"value": "14-tägig", "span": [185, 191]}},
-    {"soilBulkDensity": {"value": "kein Wert", "span": [197, 205]}},
-    {"soilPH": {"value": "pH Wert", "span": [213, 219]}},
-    {"soilOrganicCarbon": {"value": "organischen Kohlenstoff", "span": [225, 238]}},
-    {"soilAvailableNitrogen": {"value": "Gesamt-Stickstoff", "span": [243, 254]}}
+    {"soilTexture": { "value": "Lehm", "span": [124, 128] }},
+    {"soilTexture": { "value": "Ton", "span": [134, 136] }}
   ],
   "Location": [
-    {"region": {"value": "Hildesheim", "span": [30, 38]}},
-    {"city": {"value": "Hildesheim", "span": [30, 38]}}
+    {"city": { "value": "Hildesheim", "span": [134, 142] }}
   ],
   "Time Statement": [
-    {"startTime": {"value": "14-tägig", "span": [185, 191]}},
-    {"duration": {"value": "2 Jahre", "span": [223, 227]}}
+    {"startTime": { "value": "2 Jahre", "span": [62, 68] }},
+    {"startTime": { "value": "14-tägig", "span": [76, 84] }}
   ]
 }
 ```
+### Explanation ###
+- Die in der Abstract-Sektion des Textes genannten Daten beziehen sich auf die Publikation von Forschungsergebnissen im Zusammenhang mit dem MonViA Projekt (Monitoring von biologischer Vielfalt in Agrarlandschaften).
+- In drei benachbarten Feldern eines landwirtschaftlichen Betriebs in der Nähe von Hildesheim wurden in einem 14-tägigen Zeitraster die Abundanz und Vielfalt der bodenmikrobiologischen Lebensgemeinschaft über einen Zeitraum von 2 Jahren erfasst.
+- Die genannten Bodentexturen sind Lehm und Ton, was zu den folgenden Ergebnissen führte:
+  - Lehm: {"soilTexture": {"value": "Lehm", "span": [124, 128]}}
+  - Ton: {"soilTexture": {"value": "Ton", "span": [134, 136]}}
+- Die Stadt Hildesheim wurde genannt, was zu dem folgenden Ergebnis führte:
+  - Hildesheim: {"city": {"value": "Hildesheim", "span": [134, 142]}}
+- Die Zeitraumangaben sind 2 Jahre für die Überwachung der bodenmikrobiologischen Lebensgemeinschaft und 14-tägig für den Zeitraum der Überwachung, was zu den folgenden Ergebnissen führte:
+  - 2 Jahre: {"startTime": {"value": "2 Jahre", "span": [62, 68]}}
+  - 14-tägig: {"startTime": {"value": "14-tägig", "span": [76, 84]}}

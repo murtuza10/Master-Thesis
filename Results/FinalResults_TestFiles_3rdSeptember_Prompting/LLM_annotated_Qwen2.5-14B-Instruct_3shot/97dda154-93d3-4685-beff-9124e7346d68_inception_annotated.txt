@@ -1,23 +1,25 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "maize", "span": [165, 170] }}
+    {"cropSpecies": {"value": "maize", "span": [112, 117]}}
   ],
   "Soil": [
-    {"soilTexture": { "value": "Sand", "span": [213, 217] }},
-    {"soilTexture": { "value": "Sand", "span": [253, 257] }},
-    {"soilTexture": { "value": "Sand", "span": [296, 300] }},
-    {"soilTexture": { "value": "Marsch", "span": [335, 341] }}
+    {"soilTexture": {"value": "Sand", "span": [158, 162]}},
+    {"soilTexture": {"value": "Sand", "span": [178, 182]}},
+    {"soilTexture": {"value": "Sand", "span": [199, 203]}},
+    {"soilTexture": {"value": "Marsch", "span": [218, 223]}}
   ],
   "Location": [
-    {"region": { "value": "Lower Saxony", "span": [734, 744] }},
-    {"city": { "value": "Wanna", "span": [749, 754] }},
-    {"region": { "value": "Mecklenburg-Vorpommern", "span": [759, 775] }},
-    {"city": { "value": "Rostock", "span": [780, 787] }}
+    {"country": {"value": "Germany", "span": [324, 331]}},
+    {"region": {"value": "Lower Saxony", "span": [333, 342]}},
+    {"region": {"value": "Mecklenburg-Vorpommern", "span": [344, 359]}},
+    {"city": {"value": "Rostock", "span": [361, 368]}},
+    {"city": {"value": "Wanna", "span": [306, 311]}}
   ],
   "Time Statement": [
-    {"startTime": { "value": "2021", "span": [175, 179] }},
-    {"endTime": { "value": "2023", "span": [185, 189] }}
+    {"startTime": {"value": "2021", "span": [91, 95]}},
+    {"endTime": {"value": "2023", "span": [96, 100]}},
+    {"duration": {"value": "between April and August", "span": [264, 280]}}
   ]
 }
 ```

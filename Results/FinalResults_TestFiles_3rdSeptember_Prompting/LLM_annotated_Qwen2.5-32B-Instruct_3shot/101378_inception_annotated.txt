@@ -1,15 +1,14 @@
 ```json
 {
   "Crops": [],
-  "Soil": [],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "bog", "span": [114, 117] }},
+    {"soilReferenceGroup": { "value": "peat", "span": [207, 211] }},
+    {"soilReferenceGroup": { "value": "peat", "span": [523, 527] }}
+  ],
   "Location": [],
   "Time Statement": [
-    {
-      "duration": {
-        "value": "one year",
-        "span": [345, 352]
-      }
-    }
+    {"duration": { "value": "one year", "span": [288, 294] }}
   ]
 }
 ```

@@ -1,47 +1,36 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "winter barley", "span": [34, 46]}},
-    {"cropSpecies": {"value": "winter barley", "span": [157, 169]}},
-    {"cropSpecies": {"value": "oat", "span": [494, 498]}},
-    {"cropSpecies": {"value": "winter oilseed rape", "span": [637, 656]}},
-    {"cropSpecies": {"value": "winter wheat", "span": [657, 670]}},
-    {"cropSpecies": {"value": "lupine", "span": [671, 677]}},
-    {"cropSpecies": {"value": "winter rye", "span": [678, 688]}},
-    {"cropSpecies": {"value": "Hordeum vulgare L.", "span": [813, 828]}},
-    {"cropVariety": {"value": "OTTO", "span": [841, 845]}},
-    {"cropSpecies": {"value": "winter barley", "span": [846, 858]}}
+    {"cropSpecies": {"value": "winter barley", "span": [23, 36]}},
+    {"cropSpecies": {"value": "winter barley", "span": [154, 167]}},
+    {"cropSpecies": {"value": "oat", "span": [481, 484]}},
+    {"cropSpecies": {"value": "winter oilseed rape", "span": [732, 751]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [752, 765]}},
+    {"cropSpecies": {"value": "lupine", "span": [766, 772]}},
+    {"cropSpecies": {"value": "winter rye", "span": [773, 784]}},
+    {"cropSpecies": {"value": "Hordeum vulgare L.", "span": [914, 929]}},
+    {"cropVariety": {"value": "OTTO", "span": [942, 946]}}
   ],
   "Soil": [
-    {"soilDepth": {"value": "25 cm", "span": [523, 529]}},
-    {"soilDepth": {"value": "0-30 cm", "span": [591, 598]}},
-    {"soilAvailableNitrogen": {"value": "PCAL", "span": [461, 465]}},
-    {"soilAvailableNitrogen": {"value": "PCAL", "span": [602, 606]}},
-    {"soilAvailableNitrogen": {"value": "PCAL", "span": [609, 613]}},
-    {"soilAvailableNitrogen": {"value": "PCAL", "span": [615, 619]}},
-    {"soilPH": {"value": "pH", "span": [1063, 1065]}},
-    {"soilTexture": {"value": "Boden", "span": [1091, 1096]}},
-    {"soilAvailableNitrogen": {"value": "PCAL concentrations", "span": [573, 591]}},
-    {"soilAvailableNitrogen": {"value": "11 mg kg-1 PCAL", "span": [621, 638]}},
-    {"soilAvailableNitrogen": {"value": "21 mg kg-1 PCAL", "span": [640, 657]}},
-    {"soilAvailableNitrogen": {"value": "47 mg kg-1 PCAL", "span": [659, 676]}}
+    {"soilDepth": {"value": "25 cm", "span": [499, 504]}},
+    {"soilDepth": {"value": "0-30 cm", "span": [625, 633]}},
+    {"soilAvailableNitrogen": {"value": "PCAL", "span": [459, 463]}},
+    {"soilAvailableNitrogen": {"value": "PCAL", "span": [630, 634]}},
+    {"soilTexture": {"value": "Boden", "span": [1084, 1089]}},
+    {"soilPH": {"value": "pH", "span": [291, 293]}}
   ],
   "Location": [
-    {"city": {"value": "Braunschweig", "span": [24, 35]}},
-    {"city": {"value": "Braunschweig", "span": [147, 158]}}
+    {"city": {"value": "Braunschweig", "span": [15, 26]}},
+    {"country": {"value": "Germany", "span": [None, None]}}
   ],
   "Time Statement": [
-    {"startTime": {"value": "1985", "span": [381, 385]}},
-    {"endTime": {"value": "2008", "span": [386, 390]}},
-    {"startTime": {"value": "2013", "span": [429, 433]}},
-    {"startTime": {"value": "2013", "span": [732, 736]}},
-    {"endTime": {"value": "2013", "span": [751, 755]}},
-    {"startTime": {"value": "2013", "span": [808, 812]}},
-    {"startTime": {"value": "2014", "span": [43, 47]}},
-    {"startTime": {"value": "2014", "span": [166, 170]}},
-    {"startTime": {"value": "2014", "span": [859, 863]}},
-    {"duration": {"value": "once a year", "span": [783, 796]}},
-    {"startTime": {"value": "autumn 2013", "span": [797, 810]}}
+    {"startTime": {"value": "1985", "span": [388, 392]}},
+    {"endTime": {"value": "2008", "span": [393, 397]}},
+    {"startTime": {"value": "2013", "span": [402, 406]}},
+    {"startTime": {"value": "2013", "span": [567, 571]}},
+    {"startTime": {"value": "2013", "span": [824, 828]}},
+    {"startTime": {"value": "2014", "span": [175, 179]}},
+    {"startTime": {"value": "2014", "span": [935, 939]}}
   ]
 }
 ```

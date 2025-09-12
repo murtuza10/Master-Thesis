@@ -1,0 +1,44 @@
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/condabin/conda
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/conda
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/conda-env
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/activate
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/deactivate
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/etc/profile.d/conda.sh
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/etc/fish/conf.d/conda.fish
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/shell/condabin/Conda.psm1
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/shell/condabin/conda-hook.ps1
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/lib/python3.10/site-packages/xontrib/conda.xsh
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/etc/profile.d/conda.csh
+no change     /home/s27mhusa_hpc/.bashrc
+No action taken.
+Starting resource monitoring every 1 seconds...
+Logs will be stored in: /home/s27mhusa_hpc/Master-Thesis/Fine-tune-LLM-Document/job_monitor_logs_qwen_23201462_20250909_233728
+finetune-generic-llm-bash.bash: line 41: iostat: command not found
+/home/s27mhusa_hpc/.conda/envs/autotrain/lib/python3.10/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/s27mhusa_hpc/Master-Thesis/Fine-tune-LLM-Document/fine-tune-qwen-mod.py", line 4, in <module>
+    from peft import LoraConfig
+  File "/home/s27mhusa_hpc/.conda/envs/autotrain/lib/python3.10/site-packages/peft/__init__.py", line 22, in <module>
+    from .auto import (
+  File "/home/s27mhusa_hpc/.conda/envs/autotrain/lib/python3.10/site-packages/peft/auto.py", line 31, in <module>
+    from .config import PeftConfig
+  File "/home/s27mhusa_hpc/.conda/envs/autotrain/lib/python3.10/site-packages/peft/config.py", line 24, in <module>
+    from .utils import CONFIG_NAME, PeftType, TaskType
+  File "/home/s27mhusa_hpc/.conda/envs/autotrain/lib/python3.10/site-packages/peft/utils/__init__.py", line 24, in <module>
+    from .other import (
+  File "/home/s27mhusa_hpc/.conda/envs/autotrain/lib/python3.10/site-packages/peft/utils/other.py", line 34, in <module>
+    from .constants import (
+  File "/home/s27mhusa_hpc/.conda/envs/autotrain/lib/python3.10/site-packages/peft/utils/constants.py", line 16, in <module>
+    from transformers import BloomPreTrainedModel
+ImportError: cannot import name 'BloomPreTrainedModel' from 'transformers' (/home/s27mhusa_hpc/.conda/envs/autotrain/lib/python3.10/site-packages/transformers/__init__.py)
+Stopping resource monitoring...
+finetune-generic-llm-bash.bash: line 55: kill: (1286927) - No such process
+Total GPU execution time: 7 seconds
+Fetching SLURM job summary...
+JobID           Elapsed     MaxRSS    CPUTime ExitCode 
+------------ ---------- ---------- ---------- -------- 
+23201462       12:26:47            33-04:34:08      0:0 
+23201462.ex+   12:26:47            33-04:34:08      0:0 
+23201462.0     12:26:33            33-04:19:12      0:0 
+All logs are saved in: /home/s27mhusa_hpc/Master-Thesis/Fine-tune-LLM-Document/job_monitor_logs_qwen_23201462_20250909_233728

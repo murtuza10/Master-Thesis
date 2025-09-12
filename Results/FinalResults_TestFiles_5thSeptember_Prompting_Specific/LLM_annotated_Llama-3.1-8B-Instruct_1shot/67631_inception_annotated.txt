@@ -1,0 +1,22 @@
+### Output JSON Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Riesling", "span": [115, 121]}},
+    {"cropSpecies": {"value": "Felicia", "span": [126, 132]}},
+    {"cropSpecies": {"value": "Regent", "span": [138, 144]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2018", "span": [184, 188]}},
+    {"endTime": {"value": "2018", "span": [202, 206]}}
+  ]
+}
+```
+
+### Explanation ###
+- The text mentions three crop species: Riesling, Felicia, and Regent, which are included in the "Crops" list as "cropSpecies".
+- There are no mentions of soil-related entities in the text, so the "Soil" list is empty.
+- The text does not mention any location, so the "Location" list is empty.
+- The text mentions two time-related entities: "2018" as the start and end time, which are included in the "Time Statement" list as "startTime" and "endTime" respectively.

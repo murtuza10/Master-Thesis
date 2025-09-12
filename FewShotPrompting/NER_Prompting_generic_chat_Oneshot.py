@@ -113,7 +113,7 @@ def main():
         args.input_dir,
         args.output_dir,
         args.output_dir_json,
-        int(args.top_k),
+        int(args.start),
         xmi_dir,
         log_dir)
     print("NER processing complete.")

@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757409861-FwDasQ1oNUBD69ZJ6V18",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757409861,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilOrganicCarbon\": { \"value\": \"soil organic carbon\", \"span\": [89, 107] }},\n    {\"soilOrganicCarbon\": { \"value\": \"SOC\", \"span\": [110, 113] }},\n    {\"soilOrganicCarbon\": { \"value\": \"SOC\", \"span\": [213, 216] }},\n    {\"soilOrganicCarbon\": { \"value\": \"SOC\", \"span\": [293, 296] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"soil organic nitrogen\", \"span\": [118, 137] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"SON\", \"span\": [140, 143] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"N mineralisation\", \"span\": [148, 163] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"SON\", \"span\": [261, 264] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"N mineralisation\", \"span\": [269, 284] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2124,
+    "completion_tokens": 260,
+    "total_tokens": 2384,
+    "prompt_tokens_details": null
+  }
+}

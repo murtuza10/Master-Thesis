@@ -4,29 +4,48 @@
       "cropSpecies": {
         "value": "apple",
         "span": [
-          123,
-          128
+          83,
+          90
         ]
       }
     }
   ],
-  "Soil": [],
-  "Location": [
+  "Soil": [
     {
-      "region": {
-        "value": "Altes Land",
+      "soilReferenceGroup": {
+        "value": "orchard region",
         "span": [
-          114,
-          125
+          95,
+          111
         ]
       }
     },
     {
+      "soilReferenceGroup": {
+        "value": "grassland",
+        "span": [
+          140,
+          147
+        ]
+      }
+    }
+  ],
+  "Location": [
+    {
       "country": {
         "value": "Germany",
         "span": [
-          133,
-          140
+          113,
+          118
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Lower Saxony",
+        "span": [
+          121,
+          134
         ]
       }
     }
@@ -36,8 +55,8 @@
       "startTime": {
         "value": "2001",
         "span": [
-          169,
-          173
+          170,
+          172
         ]
       }
     },
@@ -45,8 +64,8 @@
       "endTime": {
         "value": "2003",
         "span": [
-          179,
-          183
+          176,
+          178
         ]
       }
     }

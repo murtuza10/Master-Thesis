@@ -4,26 +4,53 @@
       "cropSpecies": {
         "value": "wheat",
         "span": [
-          245,
-          251
+          213,
+          218
         ]
       }
     },
     {
       "cropSpecies": {
-        "value": "beet",
+        "value": "barley",
         "span": [
-          252,
-          257
+          226,
+          231
         ]
       }
     },
     {
       "cropSpecies": {
-        "value": "beet",
+        "value": "sugar beet",
         "span": [
-          252,
-          257
+          235,
+          242
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "winter wheat",
+        "span": [
+          210,
+          219
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "winter barley",
+        "span": [
+          224,
+          231
+        ]
+      }
+    },
+    {
+      "cropVariety": {
+        "value": "sugar beet",
+        "span": [
+          233,
+          240
         ]
       }
     }
@@ -31,66 +58,42 @@
   "Soil": [
     {
       "soilReferenceGroup": {
-        "value": "IOSDV",
+        "value": "ploughing",
         "span": [
-          10,
-          15
-        ]
-      }
-    },
-    {
-      "soilReferenceGroup": {
-        "value": "LUFA Speyer",
-        "span": [
-          83,
-          96
+          143,
+          150
         ]
       }
     },
     {
       "soilTexture": {
-        "value": "ploughing",
-        "span": [
-          124,
-          133
-        ]
-      }
-    },
-    {
-      "soilBulkDensity": {
-        "value": "mineral fertilizer",
-        "span": [
-          155,
-          174
-        ]
-      }
-    },
-    {
-      "soilPH": {
-        "value": "humus development",
+        "value": "farmyard",
         "span": [
           179,
-          193
+          185
         ]
       }
     },
     {
-      "soilOrganicCarbon": {
-        "value": "mineral nutrients",
+      "soilDepth": {
+        "value": "72 samples",
         "span": [
-          204,
-          216
+          342,
+          349
         ]
       }
     },
     {
-      "soilAvailableNitrogen": {
-        "value": "mineral fertilization",
-        "span": [
-          234,
-          248
-        ]
-      }
+      "soilBulkDensity": {}
+    },
+    {
+      "soilPH": {}
+    },
+    {
+      "soilOrganicCarbon": {}
+    },
+    {
+      "soilAvailableNitrogen": {}
     }
   ],
   "Location": [
@@ -98,8 +101,17 @@
       "country": {
         "value": "Germany",
         "span": [
-          28,
-          33
+          44,
+          51
+        ]
+      }
+    },
+    {
+      "region": {
+        "value": "Speyer",
+        "span": [
+          52,
+          58
         ]
       }
     },
@@ -107,17 +119,8 @@
       "city": {
         "value": "Speyer",
         "span": [
-          40,
-          46
-        ]
-      }
-    },
-    {
-      "region": {
-        "value": "Germany",
-        "span": [
-          83,
-          88
+          52,
+          58
         ]
       }
     }
@@ -127,17 +130,8 @@
       "startTime": {
         "value": "1984",
         "span": [
-          141,
-          145
-        ]
-      }
-    },
-    {
-      "duration": {
-        "value": "four sampling seasons",
-        "span": [
-          305,
-          318
+          121,
+          125
         ]
       }
     }

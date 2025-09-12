@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757363390-qhXW63BMt3vaaaCm5K2N",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757363390,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"fruits\", \"span\": [111, 117] }},\n    {\"cropSpecies\": { \"value\": \"grape\", \"span\": [174, 179] }},\n    {\"cropVariety\": { \"value\": \"soft-skinned fruits\", \"span\": [103, 121] }},\n    {\"cropVariety\": { \"value\": \"susceptible grape varieties\", \"span\": [167, 193] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [276, 283] }},\n    {\"region\": { \"value\": \"southwest Germany\", \"span\": [266, 283] }},\n    {\"city\": { \"value\": \"Dossenheim\", \"span\": [1001, 1011] }},\n    {\"city\": { \"value\": \"Siebeldingen\", \"span\": [1017, 1029] }},\n    {\"city\": { \"value\": \"Darmstadt\", \"span\": [1085, 1094] }},\n    {\"region\": { \"value\": \"southwest Germany\", \"span\": [1153, 1170] }},\n    {\"latitude\": { \"value\": \"lat\", \"span\": [1269, 1272] }},\n    {\"longitude\": { \"value\": \"lon\", \"span\": [1278, 1281] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2011\", \"span\": [290, 295] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [370, 375] }},\n    {\"endTime\": { \"value\": \"2018\", \"span\": [670, 674] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [1013, 1017] }},\n    {\"endTime\": { \"value\": \"2018\", \"span\": [1021, 1025] }},\n    {\"duration\": { \"value\": \"7-year\", \"span\": [41, 47] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2626,
+    "completion_tokens": 488,
+    "total_tokens": 3114,
+    "prompt_tokens_details": null
+  }
+}

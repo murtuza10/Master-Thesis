@@ -1,28 +1,29 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "winter barley", "span": [76, 86] }},
-    {"cropSpecies": { "value": "winter oilseed rape", "span": [117, 130] }},
-    {"cropSpecies": { "value": "winter wheat", "span": [131, 139] }},
-    {"cropSpecies": { "value": "lupine", "span": [140, 145] }},
-    {"cropSpecies": { "value": "winter rye", "span": [146, 152] }},
-    {"cropSpecies": { "value": "Hordeum vulgare L.", "span": [238, 255] }},
-    {"cropVariety": { "value": "OTTO", "span": [257, 261] }}
+    {"cropSpecies": { "value": "winter barley", "span": [87, 97] }},
+    {"cropSpecies": { "value": "winter oilseed rape", "span": [208, 220] }},
+    {"cropSpecies": { "value": "winter wheat", "span": [225, 233] }},
+    {"cropSpecies": { "value": "lupine", "span": [238, 243] }},
+    {"cropSpecies": { "value": "winter rye", "span": [248, 254] }},
+    {"cropSpecies": { "value": "Hordeum vulgare L.", "span": [358, 372] }},
+    {"cropSpecies": { "value": "OTTO", "span": [373, 377] }}
   ],
   "Soil": [
-    {"soilTexture": { "value": "extensively managed grassland", "span": [296, 319] }},
-    {"soilDepth": { "value": "25 cm", "span": [329, 335] }},
-    {"soilPH": { "value": "PCAL", "span": [366, 369] }}
+    {"soilPH": { "value": "PCAL", "span": [175, 179] }},
+    {"soilPH": { "value": "PCAL", "span": [463, 467] }}
   ],
   "Location": [
-    {"city": { "value": "Braunschweig", "span": [28, 36] }}
+    {"city": { "value": "Braunschweig", "span": [33, 41] }}
   ],
   "Time Statement": [
-    {"startTime": { "value": "1985-2008", "span": [190, 200] }},
-    {"endTime": { "value": "2013", "span": [201, 205] }},
-    {"startTime": { "value": "2013", "span": [226, 230] }},
-    {"endTime": { "value": "2014", "span": [231, 235] }},
-    {"duration": { "value": "once a year", "span": [377, 386] }}
+    {"startTime": { "value": "1985", "span": [126, 130] }},
+    {"endTime": { "value": "2008", "span": [131, 135] }},
+    {"startTime": { "value": "2013", "span": [288, 292] }},
+    {"endTime": { "value": "2013", "span": [325, 329] }},
+    {"startTime": { "value": "autumn 2013", "span": [412, 422] }},
+    {"endTime": { "value": "2014", "span": [486, 489] }},
+    {"duration": { "value": "13 years", "span": [136, 142] }}
   ]
 }
 ```

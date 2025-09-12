@@ -1,0 +1,26 @@
+### Output JSON ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Winter wheat", "span": [137, 145] }}
+  ],
+  "Soil": [
+    {"soilTexture": []},
+    {"soilReferenceGroup": []},
+    {"soilDepth": []},
+    {"soilBulkDensity": []},
+    {"soilPH": []},
+    {"soilOrganicCarbon": []},
+    {"soilAvailableNitrogen": []}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+### Explanation ###
+Based on the input text, I found the following entities:
+
+* In the "Crops" category, I found a mention of "Winter wheat", which is a crop species.
+* In the "Soil" category, no specific soil properties or characteristics were mentioned, so the lists for each soil attribute are empty.
+* In the "Location" category, no specific location was mentioned, so the list is empty.
+* In the "Time Statement" category, no specific time-related information was mentioned, so the list is empty.

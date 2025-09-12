@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757363144-3CiFtJIuZlR6CLgANhUx",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757363151,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"winter barley\", \"span\": [41, 54]}},\n    {\"cropSpecies\": {\"value\": \"winter barley\", \"span\": [1184, 1197]}},\n    {\"cropSpecies\": {\"value\": \"oat\", \"span\": [1002, 1005]}},\n    {\"cropSpecies\": {\"value\": \"winter barley\", \"span\": [1319, 1332]}},\n    {\"cropSpecies\": {\"value\": \"winter oilseed rape\", \"span\": [1334, 1354]}},\n    {\"cropSpecies\": {\"value\": \"winter wheat\", \"span\": [1356, 1368]}},\n    {\"cropSpecies\": {\"value\": \"lupine\", \"span\": [1370, 1377]}},\n    {\"cropSpecies\": {\"value\": \"winter rye\", \"span\": [1382, 1393]}},\n    {\"cropSpecies\": {\"value\": \"winter barley\", \"span\": [1651, 1664]}},\n    {\"cropSpecies\": {\"value\": \"Hordeum vulgare\", \"span\": [1666, 1682]}},\n    {\"cropVariety\": {\"value\": \"OTTO\", \"span\": [1686, 1690]}}\n  ],\n  \"Soil\": [\n    {\"soilDepth\": {\"value\": \"25 cm\", \"span\": [1007, 1012]}},\n    {\"soilDepth\": {\"value\": \"0-30 cm\", \"span\": [1233, 1240]}},\n    {\"soilDepth\": {\"value\": \"25 cm\", \"span\": [1415, 1420]}}\n  ],\n  \"Location\": [\n    {\"city\": {\"value\": \"Braunschweig\", \"span\": [23, 35]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"1985\", \"span\": [756, 760]}},\n    {\"endTime\": {\"value\": \"2008\", \"span\": [762, 766]}},\n    {\"endTime\": {\"value\": \"2013\", \"span\": [1029, 1033]}},\n    {\"startTime\": {\"value\": \"2013\", \"span\": [1087, 1091]}},\n    {\"startTime\": {\"value\": \"2014\", \"span\": [56, 60]}},\n    {\"startTime\": {\"value\": \"2014\", \"span\": [1199, 1203]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2597,
+    "completion_tokens": 560,
+    "total_tokens": 3157,
+    "prompt_tokens_details": null
+  }
+}

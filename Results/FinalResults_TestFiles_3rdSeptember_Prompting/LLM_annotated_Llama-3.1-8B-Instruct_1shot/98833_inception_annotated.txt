@@ -1,0 +1,38 @@
+### Output JSON ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Mais", "span": [] }}, // no crop species mentioned in the text
+    {"cropVariety": { "value": "", "span": [] }} // no crop variety mentioned in the text
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "pseudovergleyte Parabraunerde", "span": [123, 153] }},
+    {"soilReferenceGroup": { "value": "Löss", "span": [123, 128] }},
+    {"soilDepth": { "value": "28 cm", "span": [134, 137] }},
+    {"soilBulkDensity": { "value": "", "span": [] }}, // no soil bulk density mentioned in the text
+    {"soilPH": { "value": "", "span": [] }}, // no soil pH mentioned in the text
+    {"soilOrganicCarbon": { "value": "", "span": [] }}, // no soil organic carbon mentioned in the text
+    {"soilAvailableNitrogen": { "value": "", "span": [] }} // no soil available nitrogen mentioned in the text
+  ],
+  "Location": [
+    {"country": { "value": "", "span": [] }}, // no country mentioned in the text
+    {"region": { "value": "", "span": [] }}, // no region mentioned in the text
+    {"city": { "value": "", "span": [] }}, // no city mentioned in the text
+    {"latitude": { "value": "", "span": [] }}, // no latitude mentioned in the text
+    {"longitude": { "value": "", "span": [] }} // no longitude mentioned in the text
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2017", "span": [57, 61] }},
+    {"endTime": { "value": "", "span": [] }},
+    {"duration": { "value": "", "span": [] }}
+  ]
+}
+```
+
+### Note: ###
+
+- There is no mention of any crop species or variety in the given text, so the `Crops` section remains empty.
+- The soil texture is mentioned as "pseudovergleyte Parabraunerde", and the soil reference group is mentioned as "Löss". The soil depth is mentioned as "28 cm".
+- There is no mention of soil bulk density, soil pH, soil organic carbon, or soil available nitrogen in the text.
+- There is no mention of country, region, city, latitude, or longitude in the text.
+- The time statement mentions the year "2017" as the start time.

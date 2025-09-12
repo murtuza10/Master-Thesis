@@ -1,0 +1,32 @@
+### Filled JSON Structure ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Helosciadium nodiflorum", "span": [43, 61]}},
+    {"cropSpecies": {"value": "H. nodiflorum", "span": [97, 109]}},
+    {"cropSpecies": {"value": "Helosciadium nodiflorum", "span": [123, 142]}},
+    {"cropSpecies": {"value": "celery", "span": [248, 254]}},
+    {"cropSpecies": {"value": "wild celery", "span": [264, 274]}},
+    {"cropSpecies": {"value": "wild celery species", "span": [297, 310]}},
+    {"cropSpecies": {"value": "wild celery relatives", "span": [324, 337]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"city": {"value": "Gatersleben", "span": [94, 103]}},
+    {"country": {"value": "Germany", "span": [96, 104]}},
+    {"city": {"value": "London", "span": [144, 149]}},
+    {"city": {"value": "Berlin", "span": [223, 228]}},
+    {"country": {"value": "Germany", "span": [226, 234]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2015", "span": [242, 246]}},
+    {"startTime": {"value": "2016", "span": [243, 247]}},
+    {"endTime": {"value": "2018", "span": [285, 289]}},
+    {"endTime": {"value": "2019", "span": [290, 294]}}
+  ]
+}
+```
+### Note: ###
+- The given text does not contain any information about soil, hence the "Soil" section is empty.
+- All other sections ("Crops", "Location", and "Time Statement") are filled based on the text.

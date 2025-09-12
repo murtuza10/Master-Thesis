@@ -1,21 +1,49 @@
 {
-  "Crops": [],
-  "Soil": [
+  "Crops": [
     {
-      "soilTexture": {
-        "value": "C3 soil",
+      "cropSpecies": {
+        "value": "C4",
         "span": [
           156,
-          162
+          158
         ]
       }
     },
     {
+      "cropSpecies": {
+        "value": "C3",
+        "span": [
+          165,
+          167
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "C4",
+        "span": [
+          194,
+          196
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "C3",
+        "span": [
+          203,
+          205
+        ]
+      }
+    }
+  ],
+  "Soil": [
+    {
       "soilOrganicCarbon": {
         "value": "particulate organic carbon (POC)",
         "span": [
-          247,
-          275
+          244,
+          269
         ]
       }
     },
@@ -23,8 +51,8 @@
       "soilOrganicCarbon": {
         "value": "mineral associated organic carbon (MAOC)",
         "span": [
-          281,
-          313
+          274,
+          306
         ]
       }
     },
@@ -32,62 +60,80 @@
       "soilOrganicCarbon": {
         "value": "total carbon content",
         "span": [
-          344,
-          363
+          325,
+          344
         ]
       }
     },
     {
       "soilOrganicCarbon": {
-        "value": "old (native) carbon",
+        "value": "13C",
         "span": [
-          441,
-          457
+          357,
+          359
         ]
       }
     },
     {
       "soilOrganicCarbon": {
-        "value": "new (added) carbon",
+        "value": "13C",
         "span": [
-          465,
-          482
+          399,
+          401
         ]
       }
     },
     {
-      "soilDepth": {
-        "value": "2-year",
+      "soilOrganicCarbon": {
+        "value": "new carbon",
         "span": [
-          106,
-          111
+          444,
+          453
         ]
       }
     },
     {
-      "soilDepth": {
-        "value": "6 months",
+      "soilOrganicCarbon": {
+        "value": "old carbon",
         "span": [
-          194,
-          203
+          458,
+          467
         ]
       }
     },
     {
-      "soilDepth": {
-        "value": "12 months",
+      "soilOrganicCarbon": {
+        "value": "C contents",
         "span": [
-          208,
-          217
+          526,
+          535
         ]
       }
     },
     {
-      "soilDepth": {
-        "value": "24 months",
+      "soilOrganicCarbon": {
+        "value": "delta 13C values",
         "span": [
-          222,
-          231
+          540,
+          555
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "new carbon",
+        "span": [
+          602,
+          611
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "old carbon",
+        "span": [
+          616,
+          625
         ]
       }
     }
@@ -98,8 +144,8 @@
       "duration": {
         "value": "2-year",
         "span": [
-          106,
-          111
+          146,
+          152
         ]
       }
     },
@@ -107,26 +153,26 @@
       "startTime": {
         "value": "6 months",
         "span": [
-          194,
-          203
+          216,
+          224
         ]
       }
     },
     {
-      "startTime": {
+      "endTime": {
         "value": "12 months",
         "span": [
-          208,
-          217
+          229,
+          238
         ]
       }
     },
     {
-      "startTime": {
+      "endTime": {
         "value": "24 months",
         "span": [
-          222,
-          231
+          243,
+          252
         ]
       }
     }

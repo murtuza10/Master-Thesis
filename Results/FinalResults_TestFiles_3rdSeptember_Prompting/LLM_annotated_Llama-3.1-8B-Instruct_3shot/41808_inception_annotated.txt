@@ -1,22 +1,20 @@
-### JSON Output ###
-
+### Output Format ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "Apium graveolens", "span": [67, 83]}},
-    {"cropSpecies": {"value": "wild celery", "span": [283, 291]}},
-    {"cropVariety": {"value": "L. ssp. graveolens", "span": [84, 99]}}
+    {"cropSpecies": { "value": "Apium graveolens", "span": [55, 73] }},
+    {"cropSpecies": { "value": "wild celery", "span": [413, 423] }},
+    {"cropSpecies": { "value": "Apium graveolens", "span": [436, 454] }}
   ],
   "Soil": [],
   "Location": [
-    {"city": {"value": "Quedlinburg", "span": [224, 234]}},
-    {"region": {"value": "Germany", "span": [235, 241]}}
+    {"region": { "value": "Germany", "span": [259, 265] }},
+    {"city": { "value": "Quedlinburg", "span": [256, 268] }}
   ],
   "Time Statement": [
-    {"startTime": {"value": "2016", "span": [255, 259]}},
-    {"startTime": {"value": "2017", "span": [299, 303]}},
-    {"endTime": {"value": "2018", "span": [305, 309]}},
-    {"duration": {"value": "2017-2018", "span": [300, 309]}}
+    {"startTime": { "value": "2016", "span": [284, 288] }},
+    {"startTime": { "value": "2017", "span": [310, 314] }},
+    {"endTime": { "value": "2018", "span": [316, 320] }}
   ]
 }
 ```

@@ -1,18 +1,15 @@
 ### Output Format ###
-
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "barley", "span": [133, 140]}},
-    {"cropSpecies": {"value": "wheat", "span": [194, 199]}},
-    {"cropSpecies": {"value": "barley", "span": [207, 213]}}
+    {"cropSpecies": { "value": "Wheat dwarfing virus", "span": [13, 31] }},
+    {"cropSpecies": { "value": "barley", "span": [56, 62] }},
+    {"cropSpecies": { "value": "barley", "span": [97, 103] }},
+    {"cropVariety": { "value": "Hordeum vulgare ssp. vulgare", "span": [62, 92] }}
   ],
   "Soil": [],
   "Location": [],
   "Time Statement": []
 }
 ```
-### Explanation ###
-- In the input text, "barley" is mentioned twice and "wheat" is mentioned once as crop species. Therefore, the corresponding keys in the JSON structure are populated with the extracted information.
-- The `cropSpecies` key is used for all crop mentions as the text does not provide any specific variety information.
-- The `soil`, `location`, and `time statement` categories are empty as there is no relevant information in the text.
+This output format includes all the requested entity categories with the corresponding extracted values from the input text.

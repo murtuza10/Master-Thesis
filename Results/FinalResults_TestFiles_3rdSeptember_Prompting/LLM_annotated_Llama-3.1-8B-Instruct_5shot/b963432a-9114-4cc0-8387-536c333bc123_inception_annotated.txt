@@ -2,8 +2,8 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "spring barley", "span": [342, 351]}},
-    {"cropSpecies": {"value": "serradella", "span": [365, 373]}}
+    {"cropSpecies": {"value": "spring barley", "span": [235, 246]}},
+    {"cropSpecies": {"value": "serradella", "span": [281, 289]}}
   ],
   "Soil": [
     {"soilTexture": {}},
@@ -15,16 +15,19 @@
     {"soilAvailableNitrogen": {}}
   ],
   "Location": [
-    {"country": {"value": "Northern Germany", "span": [128, 143]}},
-    {"region": {}},
-    {"city": {}},
-    {"latitude": {}},
-    {"longitude": {}}
+    {"country": {"value": "Germany", "span": [69, 74]}},
+    {"region": {"value": "Northern Germany", "span": [155, 169]}}
   ],
   "Time Statement": [
-    {"startTime": {"value": "2018", "span": [268, 272]}},
-    {"endTime": {"value": "2020", "span": [277, 281]}},
-    {"duration": {"value": "3.5 months", "span": [644, 654]}}
+    {"startTime": {"value": "2018", "span": [194, 198]}},
+    {"endTime": {"value": "2020", "span": [202, 206]}},
+    {"duration": {"value": "3.5 months", "span": [346, 356]}}
   ]
 }
 ```
+
+### Explanation ###
+- The text mentions two crop species: spring barley and serradella.
+- The location is Northern Germany, and the country is Germany.
+- The time statement includes the start and end years (2018 and 2020) and a duration of 3.5 months in 2020.
+- The soil category is empty because the text does not provide any information about soil texture, reference group, depth, bulk density, pH, organic carbon, or available nitrogen.

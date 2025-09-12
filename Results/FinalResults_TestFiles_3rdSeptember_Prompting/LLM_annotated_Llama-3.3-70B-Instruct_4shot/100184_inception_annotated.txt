@@ -1,23 +1,35 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "oilseed rape", "span": [446, 459]}},
-    {"cropSpecies": {"value": "Brassica napus", "span": [461, 474]}},
-    {"cropVariety": {"value": "OSR", "span": [476, 479]}}
+    {"cropSpecies": {"value": "oilseed rape", "span": [346, 359]}},
+    {"cropSpecies": {"value": "Brassica napus", "span": [361, 373]}},
+    {"cropSpecies": {"value": "OSR", "span": [375, 378]}},
+    {"cropSpecies": {"value": "honey bee", "span": [422, 433]}},
+    {"cropSpecies": {"value": "queen", "span": [573, 577]}},
+    {"cropSpecies": {"value": "worker", "span": [582, 588]}},
+    {"cropSpecies": {"value": "drone", "span": [593, 598]}},
+    {"cropSpecies": {"value": "royal", "span": [564, 569]}},
+    {"cropSpecies": {"value": "worker", "span": [570, 576]}},
+    {"cropSpecies": {"value": "drone", "span": [581, 586]}},
+    {"cropSpecies": {"value": "queen", "span": [604, 608]}},
+    {"cropSpecies": {"value": "worker", "span": [613, 619]}},
+    {"cropSpecies": {"value": "drone", "span": [624, 629]}}
   ],
   "Soil": [],
   "Location": [
-    {"country": {"value": "Germany", "span": [382, 389]}},
-    {"city": {"value": "Bochum", "span": [395, 401]}},
-    {"city": {"value": "Braunschweig", "span": [403, 414]}},
-    {"city": {"value": "Celle", "span": [416, 421]}},
-    {"city": {"value": "Hohenheim", "span": [423, 433]}},
-    {"city": {"value": "Veitshöchheim", "span": [435, 448]}}
+    {"country": {"value": "Germany", "span": [395, 402]}},
+    {"city": {"value": "Bochum", "span": [405, 411]}},
+    {"city": {"value": "Braunschweig", "span": [413, 424]}},
+    {"city": {"value": "Celle", "span": [426, 431]}},
+    {"city": {"value": "Hohenheim", "span": [433, 442]}},
+    {"city": {"value": "Veitshöchheim", "span": [444, 457]}}
   ],
   "Time Statement": [
-    {"startTime": {"value": "spring 2022", "span": [366, 379]}},
-    {"endTime": {"value": "spring 2023", "span": [388, 401]}},
-    {"startTime": {"value": "2024", "span": [104, 108]}}
+    {"startTime": {"value": "spring 2022", "span": [317, 329]}},
+    {"endTime": {"value": "spring 2023", "span": [332, 344]}},
+    {"startTime": {"value": "2022", "span": [317, 321]}},
+    {"endTime": {"value": "2023", "span": [336, 340]}},
+    {"startTime": {"value": "2024", "span": [93, 97]}}
   ]
 }
 ```

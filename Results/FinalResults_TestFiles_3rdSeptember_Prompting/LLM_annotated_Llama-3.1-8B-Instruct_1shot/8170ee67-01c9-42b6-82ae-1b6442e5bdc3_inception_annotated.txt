@@ -1,0 +1,29 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "winter barley", "span": [83, 96]}},
+    {"cropSpecies": {"value": "winter barley", "span": [145, 158]}},
+    {"cropSpecies": {"value": "winter oilseed rape", "span": [163, 177]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [179, 188]}},
+    {"cropSpecies": {"value": "lupine", "span": [192, 198]}},
+    {"cropSpecies": {"value": "winter rye", "span": [202, 209]}},
+    {"cropSpecies": {"value": "winter barley", "span": [213, 226]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "soil class A", "span": [249, 262]}},
+    {"soilReferenceGroup": {"value": "soil class B", "span": [263, 276]}},
+    {"soilReferenceGroup": {"value": "soil class C", "span": [279, 292]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "1985", "span": [292, 296]}},
+    {"endTime": {"value": "2008", "span": [297, 301]}},
+    {"startTime": {"value": "2013", "span": [311, 315]}},
+    {"endTime": {"value": "2013", "span": [316, 320]}},
+    {"startTime": {"value": "2014", "span": [342, 346]}},
+    {"endTime": {"value": "2014", "span": [347, 351]}}
+  ]
+}
+```
+Note: The extracted entities are listed in the exact JSON format specified, with the required keys and values. Each entity includes the "value" and "span" keys, with the "span" key containing the start and end character positions from the beginning of the full text.

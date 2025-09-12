@@ -1,24 +1,24 @@
-### Output ###
+### JSON Output ###
 ```json
 {
   "Crops": [],
   "Soil": [],
   "Location": [
-    {"country": {"value": "Germany", "span": [167, 173]}},
-    {"region": {"value": "Deutscher Wetterdienst", "span": [186, 208]}},
-    {"city": {"value": "NFI", "span": [216, 219]}},
-    {"latitude": {"value": "47,15766000", "span": [243, 253]}},
-    {"longitude": {"value": "5,79922100", "span": [255, 265]}}
+    {"country": {"value": "Germany", "span": [159, 164]}},
+    {"region": {"value": "German National Forest Inventory", "span": [213, 245]}},
+    {"city": {}},
+    {"latitude": {"value": "47,15766000", "span": [511, 523]}},
+    {"latitude": {"value": "55,08484000", "span": [529, 541]}}
   ],
   "Time Statement": [
-    {"startTime": {"value": "1961", "span": [42, 46]}},
-    {"endTime": {"value": "2013", "span": [59, 63]}},
-    {"startTime": {"value": "2011", "span": [130, 134]}},
-    {"endTime": {"value": "2050", "span": [141, 145]}},
-    {"startTime": {"value": "2011", "span": [147, 151]}},
-    {"endTime": {"value": "2100", "span": [158, 162]}},
-    {"startTime": {"value": "01.01.1961", "span": [220, 232]}},
-    {"endTime": {"value": "31.12.2099", "span": [236, 248]}}
+    {"startTime": {"value": "1961", "span": [91, 95]}},
+    {"endTime": {"value": "2013", "span": [104, 108]}},
+    {"startTime": {"value": "2011", "span": [246, 250]}},
+    {"endTime": {"value": "2050", "span": [253, 257]}},
+    {"startTime": {"value": "2011", "span": [266, 270]}},
+    {"endTime": {"value": "2100", "span": [273, 277]}},
+    {"startTime": {"value": "1961", "span": [299, 303]}},
+    {"endTime": {"value": "2100", "span": [307, 311]}}
   ]
 }
 ```

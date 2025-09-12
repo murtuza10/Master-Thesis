@@ -1,21 +1,23 @@
 ### JSON Output ###
+
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "Drosophila suzukii", "span": [143, 156]}},
-    {"cropSpecies": {"value": "grape", "span": [236, 242]}},
-    {"cropSpecies": {"value": "apple", "span": [342, 348]}}
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [141, 155]}},
+    {"cropSpecies": {"value": "apple", "span": [262, 267]}},
+    {"cropVariety": {"value": "grape", "span": [272, 277]}}
   ],
   "Soil": [],
   "Location": [
-    {"region": {"value": "southwest Germany", "span": [28, 47]}},
-    {"city": {"value": "Darmstadt", "span": [439, 446]}},
-    {"city": {"value": "Dossenheim", "span": [451, 459]}},
-    {"city": {"value": "Siebeldingen", "span": [463, 471]}}
+    {"country": {"value": "Germany", "span": [52, 59]}},
+    {"region": {"value": "southwest", "span": [111, 118]}},
+    {"city": {"value": "Dossenheim", "span": [234, 242]}},
+    {"city": {"value": "Siebeldingen", "span": [243, 252]}},
+    {"city": {"value": "Darmstadt", "span": [253, 261]}}
   ],
   "Time Statement": [
-    {"startTime": {"value": "2011", "span": [101, 105]}},
-    {"endTime": {"value": "February 2018", "span": [394, 405]}}
+    {"startTime": {"value": "2011", "span": [125, 129]}},
+    {"endTime": {"value": "2018", "span": [345, 349]}}
   ]
 }
 ```

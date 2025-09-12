@@ -1,28 +1,29 @@
-### Output ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "wheat", "span": [245, 251]}},
-    {"cropSpecies": {"value": "barley", "value": "beet", "span": [252, 257]}},
-    {"cropSpecies": {"value": "beet", "span": [252, 257]}}
+    {"cropSpecies": {"value": "wheat", "span": [213, 218]}},
+    {"cropSpecies": {"value": "barley", "span": [226, 231]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [235, 242]}},
+    {"cropVariety": {"value": "winter wheat", "span": [210, 219]}},
+    {"cropVariety": {"value": "winter barley", "span": [224, 231]}},
+    {"cropVariety": {"value": "sugar beet", "span": [233, 240]}}
   ],
   "Soil": [
-    {"soilReferenceGroup": {"value": "IOSDV", "span": [10, 15]}},
-    {"soilReferenceGroup": {"value": "LUFA Speyer", "span": [83, 96]}},
-    {"soilTexture": {"value": "ploughing", "span": [124, 133]}},
-    {"soilBulkDensity": {"value": "mineral fertilizer", "span": [155, 174]}},
-    {"soilPH": {"value": "humus development", "span": [179, 193]}},
-    {"soilOrganicCarbon": {"value": "mineral nutrients", "span": [204, 216]}},
-    {"soilAvailableNitrogen": {"value": "mineral fertilization", "span": [234, 248]}}
+    {"soilReferenceGroup": {"value": "ploughing", "span": [143, 150]}},
+    {"soilTexture": {"value": "farmyard", "span": [179, 185]}},
+    {"soilDepth": {"value": "72 samples", "span": [342, 349]}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}}
   ],
   "Location": [
-    {"country": {"value": "Germany", "span": [28, 33]}},
-    {"city": {"value": "Speyer", "span": [40, 46]}},
-    {"region": {"value": "Germany", "span": [83, 88]}}
+    {"country": {"value": "Germany", "span": [44, 51]}},
+    {"region": {"value": "Speyer", "span": [52, 58]}},
+    {"city": {"value": "Speyer", "span": [52, 58]}}
   ],
   "Time Statement": [
-    {"startTime": {"value": "1984", "span": [141, 145]}},
-    {"duration": {"value": "four sampling seasons", "span": [305, 318]}}
+    {"startTime": {"value": "1984", "span": [121, 125]}}
   ]
 }
 ```

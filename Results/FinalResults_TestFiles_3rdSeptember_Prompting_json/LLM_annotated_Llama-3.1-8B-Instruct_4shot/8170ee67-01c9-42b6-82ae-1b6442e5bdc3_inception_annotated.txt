@@ -4,8 +4,8 @@
       "cropSpecies": {
         "value": "winter barley",
         "span": [
-          143,
-          155
+          135,
+          146
         ]
       }
     },
@@ -13,8 +13,8 @@
       "cropSpecies": {
         "value": "winter oilseed rape",
         "span": [
-          163,
-          175
+          153,
+          166
         ]
       }
     },
@@ -22,8 +22,8 @@
       "cropSpecies": {
         "value": "winter wheat",
         "span": [
-          180,
-          189
+          172,
+          179
         ]
       }
     },
@@ -31,8 +31,8 @@
       "cropSpecies": {
         "value": "lupine",
         "span": [
-          196,
-          203
+          184,
+          190
         ]
       }
     },
@@ -40,8 +40,8 @@
       "cropSpecies": {
         "value": "winter rye",
         "span": [
-          210,
-          216
+          201,
+          208
         ]
       }
     },
@@ -49,8 +49,8 @@
       "cropSpecies": {
         "value": "Hordeum vulgare L.",
         "span": [
-          266,
-          279
+          237,
+          251
         ]
       }
     },
@@ -58,17 +58,8 @@
       "cropSpecies": {
         "value": "winter barley",
         "span": [
-          320,
-          332
-        ]
-      }
-    },
-    {
-      "cropVariety": {
-        "value": "OTTO",
-        "span": [
-          329,
-          334
+          276,
+          287
         ]
       }
     }
@@ -76,10 +67,10 @@
   "Soil": [
     {
       "soilReferenceGroup": {
-        "value": "grassland",
+        "value": "extensively managed grassland",
         "span": [
-          123,
-          131
+          234,
+          253
         ]
       }
     },
@@ -87,64 +78,28 @@
       "soilDepth": {
         "value": "25 cm",
         "span": [
-          245,
-          251
+          319,
+          324
         ]
       }
     },
     {
-      "soilTexture": {
-        "value": "extensively managed",
+      "soilDepth": {
+        "value": "0-30 cm",
         "span": [
-          259,
-          273
-        ]
-      }
-    },
-    {
-      "soilBulkDensity": {
-        "value": "PCAL",
-        "span": [
-          334,
-          338
-        ]
-      }
-    },
-    {
-      "soilPH": {
-        "value": "PCAL",
-        "span": [
-          334,
-          338
-        ]
-      }
-    },
-    {
-      "soilOrganicCarbon": {
-        "value": "PCAL",
-        "span": [
-          334,
-          338
-        ]
-      }
-    },
-    {
-      "soilAvailableNitrogen": {
-        "value": "PCAL",
-        "span": [
-          334,
-          338
+          374,
+          382
         ]
       }
     }
   ],
   "Location": [
     {
-      "region": {
+      "city": {
         "value": "Braunschweig",
         "span": [
-          12,
-          21
+          44,
+          56
         ]
       }
     }
@@ -154,44 +109,8 @@
       "startTime": {
         "value": "2014",
         "span": [
-          46,
-          50
-        ]
-      }
-    },
-    {
-      "endTime": {
-        "value": "2014",
-        "span": [
-          46,
-          50
-        ]
-      }
-    },
-    {
-      "duration": {
-        "value": "2013",
-        "span": [
-          219,
-          223
-        ]
-      }
-    },
-    {
-      "startTime": {
-        "value": "2013",
-        "span": [
-          219,
-          223
-        ]
-      }
-    },
-    {
-      "endTime": {
-        "value": "2013",
-        "span": [
-          219,
-          223
+          96,
+          100
         ]
       }
     },
@@ -199,8 +118,8 @@
       "startTime": {
         "value": "1985",
         "span": [
-          363,
-          367
+          293,
+          297
         ]
       }
     },
@@ -208,8 +127,44 @@
       "endTime": {
         "value": "2008",
         "span": [
-          368,
-          372
+          302,
+          306
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "2013",
+        "span": [
+          327,
+          331
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2013",
+        "span": [
+          334,
+          338
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "autumn 2013",
+        "span": [
+          348,
+          358
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2014",
+        "span": [
+          361,
+          365
         ]
       }
     }

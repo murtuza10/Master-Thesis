@@ -1,27 +1,29 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "winter wheat", "span": [198, 209] }},
-    {"cropSpecies": { "value": "winter barley", "span": [211, 223] }},
-    {"cropSpecies": { "value": "sugar beet", "span": [225, 235] }},
-    {"cropSpecies": { "value": "winter barley", "span": [465, 477] }},
-    {"cropSpecies": { "value": "sugar beet", "span": [481, 491] }}
+    {"cropSpecies": { "value": "winter wheat", "span": [272, 282] }},
+    {"cropSpecies": { "value": "winter barley", "span": [284, 296] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [298, 308] }},
+    {"cropSpecies": { "value": "winter barley", "span": [500, 512] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [514, 524] }}
   ],
   "Soil": [
-    {"soilReferenceGroup": { "value": "mineral fertilization", "span": [82, 101] }},
-    {"soilReferenceGroup": { "value": "organic", "span": [72, 81] }},
-    {"soilOrganicCarbon": { "value": "humus", "span": [135, 139] }}
+    {"soilReferenceGroup": { "value": "ploughing", "span": [218, 226] }},
+    {"soilOrganicCarbon": { "value": "humus", "span": [74, 79] }}
   ],
   "Location": [
-    {"city": { "value": "Speyer", "span": [24, 30] }},
-    {"country": { "value": "Germany", "span": [32, 39] }},
-    {"city": { "value": "Speyer", "span": [146, 152] }},
-    {"country": { "value": "Germany", "span": [154, 161] }},
-    {"city": { "value": "Karlsruhe", "span": [343, 352] }}
+    {"city": { "value": "Speyer", "span": [11, 17] }},
+    {"country": { "value": "Germany", "span": [19, 26] }},
+    {"city": { "value": "Speyer", "span": [203, 209] }},
+    {"country": { "value": "Germany", "span": [211, 218] }},
+    {"city": { "value": "Karlsruhe", "span": [348, 357] }},
+    {"country": { "value": "Germany", "span": [400, 407] }},
+    {"city": { "value": "Speyer", "span": [548, 554] }},
+    {"country": { "value": "Germany", "span": [556, 563] }}
   ],
   "Time Statement": [
-    {"startTime": { "value": "1984", "span": [243, 247] }},
-    {"startTime": { "value": "2009", "span": [363, 367] }}
+    {"startTime": { "value": "1984", "span": [230, 234] }},
+    {"startTime": { "value": "16. September 2009", "span": [359, 377] }}
   ]
 }
 ```

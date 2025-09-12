@@ -1,0 +1,26 @@
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "energy crop", "span": [81, 93] }},
+    {"cropSpecies": { "value": "energy crop", "span": [137, 149] }}
+  ],
+  "Soil": [
+    {"soilTexture": { }},
+    {"soilReferenceGroup": { }},
+    {"soilDepth": { }},
+    {"soilBulkDensity": { }},
+    {"soilPH": { }},
+    {"soilOrganicCarbon": { }},
+    {"soilAvailableNitrogen": { "value": "nitrogen content", "span": [115, 126] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [45, 52] }},
+    {"region": { "value": "Germany", "span": [45, 52] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2011/2012", "span": [57, 69] }},
+    {"endTime": { "value": "2014/2015", "span": [74, 86] }}
+  ]
+}
+```

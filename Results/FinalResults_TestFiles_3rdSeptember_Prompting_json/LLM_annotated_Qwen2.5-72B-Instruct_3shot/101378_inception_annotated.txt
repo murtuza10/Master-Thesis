@@ -1,50 +1,41 @@
 {
-  "Crops": [],
-  "Soil": [
+  "Crops": [
     {
-      "soilReferenceGroup": {
-        "value": "bog",
+      "cropSpecies": {
+        "value": "Betula pubescens Ehrh.",
         "span": [
-          161,
-          164
+          126,
+          148
         ]
       }
     },
     {
-      "soilReferenceGroup": {
-        "value": "mire",
+      "cropSpecies": {
+        "value": "birch",
         "span": [
-          184,
-          188
+          456,
+          461
         ]
       }
     },
     {
-      "soilReferenceGroup": {
-        "value": "peat",
+      "cropSpecies": {
+        "value": "birches",
         "span": [
-          1251,
-          1255
+          885,
+          892
         ]
       }
     }
   ],
+  "Soil": [],
   "Location": [
     {
       "region": {
         "value": "northern hemisphere",
         "span": [
-          229,
-          246
-        ]
-      }
-    },
-    {
-      "region": {
-        "value": "former peat extraction area",
-        "span": [
-          315,
-          344
+          288,
+          302
         ]
       }
     }
@@ -54,8 +45,26 @@
       "duration": {
         "value": "one year",
         "span": [
-          525,
-          533
+          498,
+          506
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "yr-1",
+        "span": [
+          627,
+          632
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "yr-1",
+        "span": [
+          661,
+          666
         ]
       }
     }

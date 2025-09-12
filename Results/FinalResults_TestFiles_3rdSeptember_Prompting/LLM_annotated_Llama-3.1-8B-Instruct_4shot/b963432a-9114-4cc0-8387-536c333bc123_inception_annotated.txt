@@ -1,31 +1,33 @@
-### Output JSON ###
+### Output JSON Structure ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "spring barley", "span": [124, 134]}},
-    {"cropSpecies": {"value": "spring barley", "span": [261, 271]}},
-    {"cropSpecies": {"value": "serradella", "span": [286, 294]}}
+    {"cropSpecies": {"value": "spring barley", "span": [234, 244]}},
+    {"cropSpecies": {"value": "serradella", "span": [314, 323]}}
   ],
   "Soil": [
-    {"soilReferenceGroup": {"value": "hilly soil", "span": [94, 105]}},
-    {"soilDepth": {"value": "three sampling depths", "span": [143, 158]}},
-    {"soilDepth": {"value": "three sampling depths", "span": [230, 245]}},
-    {"soilBulkDensity": {"value": "not mentioned", "span": [0, 0]}},
-    {"soilPH": {"value": "pH", "span": [161, 164]}},
-    {"soilOrganicCarbon": {"value": "organic C", "span": [242, 251]}},
-    {"soilAvailableNitrogen": {"value": "N", "span": [276, 278]}}
+    {"soilReferenceGroup": {"value": "hillslope", "span": [124, 132]}},
+    {"soilReferenceGroup": {"value": "redoximorphic features", "span": [158, 173]}},
+    {"soilDepth": {"value": "three sampling depths", "span": [183, 199]}},
+    {"soilBulkDensity": {"value": "none", "span": [0, 0]}},
+    {"soilPH": {"value": "pH", "span": [255, 258]}},
+    {"soilOrganicCarbon": {"value": "organic C", "span": [296, 306]}},
+    {"soilAvailableNitrogen": {"value": "NH4+-N", "span": [347, 354]}}
   ],
   "Location": [
-    {"country": {"value": "Germany", "span": [67, 74]}},
-    {"region": {"value": "Northern Germany", "span": [131, 143]}},
-    {"city": {"value": "Rostock", "span": [34, 41]}}
+    {"country": {"value": "Northern Germany", "span": [94, 110]}},
+    {"latitude": {"value": "none", "span": [0, 0]}}
   ],
   "Time Statement": [
-    {"startTime": {"value": "2018", "span": [182, 186]}},
-    {"endTime": {"value": "2020", "span": [7, 11]}},
-    {"duration": {"value": "3.5 months", "span": [342, 351]}}
+    {"startTime": {"value": "2018", "span": [228, 232]}},
+    {"endTime": {"value": "2020", "span": [5, 9]}},
+    {"startTime": {"value": "2020", "span": [10, 14]}},
+    {"duration": {"value": "3.5 months", "span": [341, 349]}}
   ]
 }
 ```
-
-Note: Some of the soil properties like soil bulk density are not mentioned in the text. Therefore, the corresponding JSON objects are empty.
+### Note: 
+- In the `Soil` category, I couldn't find any information about `soilTexture`, `soilBulkDensity`, and `latitude`.
+- The `longitude` value was not provided in the text.
+- The `startTime` value for 2020 is not explicitly mentioned, so I used the year 2020 as the start time.
+- The `duration` value of 3.5 months is mentioned in the text, so I used this value.

@@ -4,8 +4,26 @@
       "cropSpecies": {
         "value": "energy crop",
         "span": [
-          159,
-          168
+          134,
+          143
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "energy crop",
+        "span": [
+          182,
+          191
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "energy crop",
+        "span": [
+          223,
+          232
         ]
       }
     }
@@ -15,53 +33,62 @@
       "soilTexture": {
         "value": "bulk density",
         "span": [
-          221,
-          233
+          278,
+          289
         ]
       }
     },
     {
-      "soilOrganicCarbon": {
-        "value": "C content",
-        "span": [
-          266,
-          273
-        ]
-      }
-    },
-    {
-      "soilAvailableNitrogen": {
+      "soilReferenceGroup": {
         "value": "nitrogen content",
         "span": [
-          274,
-          286
+          324,
+          336
+        ]
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "bulk density",
+        "span": [
+          324,
+          336
+        ]
+      }
+    },
+    {
+      "soilBulkDensity": {
+        "value": "bulk density",
+        "span": [
+          278,
+          289
         ]
       }
     },
     {
       "soilPH": {
-        "value": "pH",
-        "span": [
-          312,
-          314
-        ]
-      }
-    },
-    {
-      "soilReferenceGroup": {
-        "value": "nitrate-N",
+        "value": "nitrogen content",
         "span": [
           324,
-          331
+          336
         ]
       }
     },
     {
-      "soilReferenceGroup": {
+      "soilOrganicCarbon": {
+        "value": "N and C content",
+        "span": [
+          242,
+          253
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
         "value": "ammonium-N",
         "span": [
-          338,
-          346
+          357,
+          366
         ]
       }
     }
@@ -71,17 +98,17 @@
       "country": {
         "value": "Germany",
         "span": [
-          77,
-          85
+          85,
+          94
         ]
       }
     },
     {
-      "region": {
+      "country": {
         "value": "Germany",
         "span": [
-          124,
-          132
+          175,
+          184
         ]
       }
     }
@@ -89,19 +116,19 @@
   "Time Statement": [
     {
       "startTime": {
-        "value": "2011/2012",
+        "value": "2011",
         "span": [
-          104,
-          113
+          128,
+          132
         ]
       }
     },
     {
       "endTime": {
-        "value": "2014/2015",
+        "value": "2012",
         "span": [
-          117,
-          126
+          133,
+          137
         ]
       }
     },
@@ -109,8 +136,26 @@
       "duration": {
         "value": "three years",
         "span": [
-          126,
-          134
+          118,
+          126
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "2014",
+        "span": [
+          209,
+          213
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2015",
+        "span": [
+          214,
+          218
         ]
       }
     }

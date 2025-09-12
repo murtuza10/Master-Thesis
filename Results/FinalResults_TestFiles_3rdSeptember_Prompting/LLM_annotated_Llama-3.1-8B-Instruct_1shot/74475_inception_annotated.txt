@@ -1,0 +1,19 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilOrganicCarbon": { "value": "soil organic carbon", "span": [46, 64] }},
+    {"soilAvailableNitrogen": { "value": "soil organic nitrogen", "span": [76, 94] }}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+Explanation:
+
+- In the input text, the words "soil organic carbon" and "soil organic nitrogen" are explicitly mentioned in the context of soil properties. These phrases are used to extract the "soilOrganicCarbon" and "soilAvailableNitrogen" entities, respectively.
+- The entity "soilOrganicCarbon" is extracted from the text with a value of "soil organic carbon" and a span from character position 46 to 64.
+- The entity "soilAvailableNitrogen" is extracted from the text with a value of "soil organic nitrogen" and a span from character position 76 to 94.
+- Since no other entities related to "Crops", "Location", or "Time Statement" are explicitly mentioned in the text, their corresponding lists remain empty.

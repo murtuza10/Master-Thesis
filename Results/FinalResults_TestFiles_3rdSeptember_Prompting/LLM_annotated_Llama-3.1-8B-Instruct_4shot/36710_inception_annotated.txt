@@ -1,17 +1,18 @@
-### Output ###
+### Output Format ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "apple", "span": [55, 60] }}
+    {"cropSpecies": { "value": "apple", "span": [84, 89] }}
   ],
   "Soil": [],
   "Location": [
-    {"country": { "value": "Germany", "span": [83, 90] }},
-    {"region": { "value": "Lower Saxony", "span": [95, 107] }}
+    {"country": { "value": "Germany", "span": [147, 152] }},
+    {"region": { "value": "Lower Saxony", "span": [153, 164] }}
   ],
   "Time Statement": [
-    {"startTime": { "value": "2001", "span": [126, 130] }},
-    {"endTime": { "value": "2003", "span": [135, 139] }}
+    {"startTime": { "value": "2001", "span": [171, 175] }},
+    {"endTime": { "value": "2003", "span": [176, 180] }}
   ]
 }
 ```
+Note: The "span" value for "cropSpecies" is the start and end character positions from the beginning of the full text, which in this case is the string "apple" at positions 84 to 89. Similarly, the "span" value for "country" is the start and end character positions for the string "Germany" at positions 147 to 152.

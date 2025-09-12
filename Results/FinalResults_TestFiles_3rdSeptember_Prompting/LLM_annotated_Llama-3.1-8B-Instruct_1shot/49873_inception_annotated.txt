@@ -1,0 +1,30 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "Bodentyp", "span": [104, 110] }},
+    {"soilDepth": { "value": "Entkalkungstiefe", "span": [258, 273] }},
+    {"soilBulkDensity": { "value": "Trockenrohdichte (TRD)", "span": [179, 196] }},
+    {"soilPH": { "value": "Basensättigung", "span": [221, 230] }},
+    {"soilOrganicCarbon": { "value": "organischer Kohlenstoffgehalt (Corg)", "span": [245, 265] }},
+    {"soilAvailableNitrogen": { "value": "Nährstoffansprache", "span": [125, 136] }}
+  ],
+  "Location": [
+    {"country": { "value": "Deutschland", "span": [19, 26] }},
+    {"region": { "value": "Bundesländer", "span": [54, 63] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2012", "span": [154, 158] }},
+    {"endTime": { "value": "2012", "span": [159, 163] }}
+  ]
+}
+```
+
+### Notes ###
+
+- The input text does not mention any crops, so the "Crops" list is empty.
+- The soil-related entities are extracted from the text, including soil reference group, depth, bulk density, pH, organic carbon, and available nitrogen.
+- The location entities are extracted as country and region.
+- The time statement entities are extracted as start and end dates for the year 2012.

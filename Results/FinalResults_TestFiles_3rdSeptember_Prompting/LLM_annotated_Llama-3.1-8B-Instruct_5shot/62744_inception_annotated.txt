@@ -1,32 +1,26 @@
-### Output JSON Structure ###
-
+### JSON Output ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "rye", "span": [83, 86]}},
-    {"cropSpecies": {"value": "Secale cereale L.", "span": [87, 106]}}
+    {"cropSpecies": {"value": "rye", "span": [134, 137]}},
+    {"cropSpecies": {"value": "rye", "span": [241, 244]}},
+    {"cropSpecies": {"value": "rye", "span": [344, 347]}},
+    {"cropSpecies": {"value": "rye", "span": [450, 453]}},
+    {"cropSpecies": {"value": "rye", "span": [557, 560]}},
+    {"cropSpecies": {"value": "rye", "span": [662, 665]}},
+    {"cropSpecies": {"value": "rye", "span": [766, 769]}},
+    {"cropSpecies": {"value": "rye", "span": [870, 873]}},
+    {"cropSpecies": {"value": "rye", "span": [974, 977]}},
+    {"cropSpecies": {"value": "rye", "span": [1078, 1081]}},
+    {"cropSpecies": {"value": "rye", "span": [1182, 1185]}}
   ],
   "Soil": [],
   "Location": [],
-  "Time Statement": [
-    {"startTime": {"value": "drought", "span": [145, 151]}},
-    {"duration": {"value": "controlled conditions", "span": [156, 171]}},
-    {"duration": {"value": "well-watered", "span": [184, 192]}},
-    {"duration": {"value": "stressed", "span": [194, 201]}},
-    {"startTime": {"value": "drought", "span": [243, 249]}},
-    {"duration": {"value": "genotype", "span": [254, 259]}},
-    {"duration": {"value": "tissue", "span": [264, 268]}},
-    {"duration": {"value": "abiotic stress tolerance", "span": [342, 357]}},
-    {"duration": {"value": "controlled conditions", "span": [386, 401]}},
-    {"duration": {"value": "well-watered", "span": [408, 416]}},
-    {"duration": {"value": "stressed", "span": [418, 425]}}
-  ]
+  "Time Statement": []
 }
 ```
 
-### Note: ###
-
-- I have filled in the JSON structure based on the input text provided.
-- I have only included the entities that match the specified categories in the output JSON structure.
-- The start and end character positions (`span`) are based on the input text and are 0-indexed from the beginning of the text.
-- The `Time Statement` category includes multiple start times, durations, and end times as specified in the text.
+### Explanation ###
+- The input text mentions the crop "rye" several times, which is correctly identified as the crop species and added to the "Crops" list with the corresponding span positions.
+- No soil-related information is mentioned in the text, so the "Soil" list remains empty.
+- The text does not provide any information about locations or time statements, so the "Location" and "Time Statement" lists are also empty.

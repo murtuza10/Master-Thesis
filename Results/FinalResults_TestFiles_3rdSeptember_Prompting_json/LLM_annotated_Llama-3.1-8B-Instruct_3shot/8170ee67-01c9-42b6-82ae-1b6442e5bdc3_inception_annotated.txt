@@ -2,37 +2,28 @@
   "Crops": [
     {
       "cropSpecies": {
-        "value": "barley",
+        "value": "winter barley",
         "span": [
-          144,
-          150
+          34,
+          45
         ]
       }
     },
     {
       "cropSpecies": {
-        "value": "oat",
+        "value": "winter oilseed rape",
         "span": [
-          384,
-          388
+          111,
+          123
         ]
       }
     },
     {
       "cropSpecies": {
-        "value": "oilseed rape",
+        "value": "winter wheat",
         "span": [
-          244,
-          253
-        ]
-      }
-    },
-    {
-      "cropSpecies": {
-        "value": "wheat",
-        "span": [
-          275,
-          281
+          124,
+          132
         ]
       }
     },
@@ -40,26 +31,17 @@
       "cropSpecies": {
         "value": "lupine",
         "span": [
-          296,
-          302
+          133,
+          139
         ]
       }
     },
     {
       "cropSpecies": {
-        "value": "rye",
+        "value": "winter rye",
         "span": [
-          314,
-          318
-        ]
-      }
-    },
-    {
-      "cropSpecies": {
-        "value": "winter barley",
-        "span": [
-          164,
-          176
+          140,
+          146
         ]
       }
     },
@@ -67,8 +49,8 @@
       "cropVariety": {
         "value": "OTTO",
         "span": [
-          409,
-          413
+          175,
+          179
         ]
       }
     }
@@ -78,26 +60,17 @@
       "soilDepth": {
         "value": "25 cm",
         "span": [
-          396,
-          401
+          236,
+          240
         ]
       }
     },
     {
-      "soilReferenceGroup": {
-        "value": "grassland",
+      "soilClass": {
+        "value": "A",
         "span": [
-          246,
-          253
-        ]
-      }
-    },
-    {
-      "soilReferenceGroup": {
-        "value": "Boden",
-        "span": [
-          531,
-          535
+          281,
+          282
         ]
       }
     }
@@ -107,8 +80,8 @@
       "region": {
         "value": "Braunschweig",
         "span": [
-          19,
-          29
+          10,
+          20
         ]
       }
     }
@@ -116,10 +89,28 @@
   "Time Statement": [
     {
       "startTime": {
-        "value": "2014",
+        "value": "1985",
         "span": [
-          145,
-          149
+          69,
+          73
+        ]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2008",
+        "span": [
+          85,
+          89
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "2013",
+        "span": [
+          182,
+          186
         ]
       }
     },
@@ -127,8 +118,17 @@
       "endTime": {
         "value": "2013",
         "span": [
-          395,
-          399
+          190,
+          194
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "2014",
+        "span": [
+          32,
+          36
         ]
       }
     }

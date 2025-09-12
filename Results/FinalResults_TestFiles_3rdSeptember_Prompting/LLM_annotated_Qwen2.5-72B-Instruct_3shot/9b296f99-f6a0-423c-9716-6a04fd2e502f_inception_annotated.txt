@@ -1,52 +1,31 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "winter wheat", "span": [276, 289] }},
-    {"cropSpecies": { "value": "winter barley", "span": [291, 304] }},
-    {"cropSpecies": { "value": "sugar beet", "span": [306, 315] }},
-    {"cropSpecies": { "value": "winter barley", "span": [664, 677] }},
-    {"cropSpecies": { "value": "sugar beet", "span": [679, 688] }}
+    {"cropSpecies": { "value": "winter wheat", "span": [357, 369] }},
+    {"cropSpecies": { "value": "winter barley", "span": [371, 384] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [386, 395] }},
+    {"cropSpecies": { "value": "winter barley", "span": [915, 928] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [930, 939] }}
   ],
   "Soil": [
-    {"soilReferenceGroup": { "value": "bulk soil", "span": [738, 747] }},
-    {"soilFertility": { "value": "soil fertility", "span": [438, 452] }},
-    {"soilFertility": { "value": "soil fertility", "span": [792, 806] }},
-    {"soilNutrientAvailability": { "value": "nutrient availability", "span": [453, 471] }},
-    {"soilNutrientAvailability": { "value": "nutrient availability", "span": [782, 799] }},
-    {"soilOrganicCarbon": { "value": "humus", "span": [86, 91] }},
-    {"soilOrganicCarbon": { "value": "humus", "span": [108, 113] }},
-    {"soilOrganicCarbon": { "value": "humus", "span": [146, 151] }},
-    {"soilOrganicCarbon": { "value": "humus", "span": [625, 630] }},
-    {"soilOrganicCarbon": { "value": "humus", "span": [703, 708] }},
-    {"soilAvailableNitrogen": { "value": "mineral N", "span": [239, 247] }},
-    {"soilAvailableNitrogen": { "value": "mineral N", "span": [259, 267] }},
-    {"soilAvailableNitrogen": { "value": "mineral fertilizer", "span": [271, 286] }},
-    {"soilAvailableNitrogen": { "value": "mineral fertilizer", "span": [719, 734] }},
-    {"soilAvailableNitrogen": { "value": "mineral fertilizer", "span": [755, 770] }},
-    {"soilAvailableNitrogen": { "value": "mineral fertilizer", "span": [780, 795] }},
-    {"soilAvailableNitrogen": { "value": "mineral fertilizer", "span": [849, 864] }},
-    {"soilAvailableNitrogen": { "value": "mineral fertilizer", "span": [871, 886] }},
-    {"soilAvailableNitrogen": { "value": "Stickstoffdünger", "span": [898, 912] }},
-    {"soilAvailableNitrogen": { "value": "Stickstoffdünger", "span": [934, 948] }},
-    {"soilAvailableNitrogen": { "value": "Stickstoffdünger", "span": [960, 974] }},
-    {"soilAvailableNitrogen": { "value": "Stickstoffdünger", "span": [982, 996] }},
-    {"soilAvailableNitrogen": { "value": "Stickstoffdünger", "span": [1004, 1018] }},
-    {"soilAvailableNitrogen": { "value": "Stickstoffdünger", "span": [1026, 1040] }},
-    {"soilAvailableNitrogen": { "value": "Stickstoffdünger", "span": [1048, 1062] }},
-    {"soilAvailableNitrogen": { "value": "Stickstoffdünger", "span": [1070, 1084] }},
-    {"soilAvailableNitrogen": { "value": "Stickstoffdünger", "span": [1092, 1106] }},
-    {"soilAvailableNitrogen": { "value": "Stickstoffdünger", "span": [1110, 1124] }},
-    {"soilAvailableNitrogen": { "value": "Stickstoffdünger", "span": [1132, 1146] }},
-    {"soilAvailableNitrogen": { "value": "Stickstoffdünger", "span": [1154, 1168] }},
-    {"soilAvailableNitrogen": { "value": "Stickstoffdünger", "span": [1172, 1186] }},
-    {"soilAvailableNitrogen": { "value": "Stickstoffdünger", "span": [1190, 1204] }},
-    {"soilAvailableNitrogen": { "value": "Stickstoffdünger", "span": [1208, 1222] }},
-    {"soilAvailableNitrogen": { "value": "Stickstoffdünger", "span": [1226, 1240] }},
-    {"soilAvailableNitrogen": { "value": "Stickstoffdünger", "span": [1244, 1258] }},
-    {"soilAvailableNitrogen": { "value": "Stickstoffdünger", "span": [1262, 1276] }},
-    {"soilAvailableNitrogen": { "value": "Stickstoffdünger", "span": [1280, 1294] }},
-    {"soilAvailableNitrogen": { "value": "Stickstoffdünger", "span": [1298, 1312] }},
-    {"soilAvailableNitrogen": { "value": "Stickstoffdünger", "span": [1316, 1330] }},
-    {"soilAvailableNitrogen": { "value": "Stickstoffdünger", "span": [1334, 1348] }},
-    {"soilAvailableNitrogen": { "value": "Stickstoffdünger", "span": [1352, 1366] }},
-    {"soilAvailableNitrogen": { "value": "Stickstoffdünger", "span": [13
+    {"soilReferenceGroup": { "value": "Bacterial Community", "span": [16, 33] }},
+    {"soilReferenceGroup": { "value": "Bacterial Community", "span": [63, 80] }},
+    {"soilTexture": { "value": "bulk soil", "span": [981, 989] }},
+    {"soilFertility": { "value": "soil fertility", "span": [417, 429] }},
+    {"soilFertility": { "value": "Boden", "span": [1078, 1082] }},
+    {"soilFertility": { "value": "N채hrstoffgehalt", "span": [1111, 1126] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [45, 53] }},
+    {"region": { "value": "Speyer", "span": [39, 45] }},
+    {"city": { "value": "Speyer", "span": [39, 45] }},
+    {"city": { "value": "Karlsruhe", "span": [801, 810] }},
+    {"city": { "value": "Speyer", "span": [834, 840] }},
+    {"city": { "value": "Speyer", "span": [1070, 1076] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1984", "span": [342, 346] }},
+    {"duration": { "value": "long term", "span": [962, 970] }}
+  ]
+}
+```

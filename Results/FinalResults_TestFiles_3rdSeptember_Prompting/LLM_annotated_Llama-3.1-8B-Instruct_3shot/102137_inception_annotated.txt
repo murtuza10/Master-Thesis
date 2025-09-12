@@ -1,19 +1,34 @@
-### JSON Output ###
+### Output JSON Structure ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "wheat", "span": [96, 102]}},
-    {"cropSpecies": { "value": "maize", "span": [106, 112]}},
-    {"cropSpecies": { "value": "barley", "span": [118, 124]}}
+    {"cropSpecies": {"value": "wheat", "span": [67, 72]}},
+    {"cropSpecies": {"value": "wheat", "span": [95, 100]}},
+    {"cropSpecies": {"value": "wheat", "span": [119, 124]}},
+    {"cropSpecies": {"value": "wheat", "span": [153, 158]}},
+    {"cropSpecies": {"value": "grass", "span": [177, 181]}},
+    {"cropSpecies": {"value": "grass", "span": [205, 209]}},
+    {"cropSpecies": {"value": "grass", "span": [231, 235]}},
+    {"cropSpecies": {"value": "grass", "span": [263, 267]}}
   ],
   "Soil": [
-    {"soilReferenceGroup": { "value": "temperate agricultural soils", "span": [24, 51]}},
-    {"soilTexture": { "value": "organic carbon", "span": [53, 68]}},
-    {"soilDepth": { "value": "soil cores", "span": [69, 76]}},
-    {"soilBulkDensity": { "value": "soil monitoring", "span": [77, 91]}}
+    {"soilReferenceGroup": {"value": "temperate agricultural soils", "span": [6, 27]}},
+    {"soilReferenceGroup": {"value": "temperate agricultural soils", "span": [29, 50]}},
+    {"soilReferenceGroup": {"value": "agricultural soils", "span": [53, 69]}},
+    {"soilReferenceGroup": {"value": "agricultural soils", "span": [71, 89]}},
+    {"soilReferenceGroup": {"value": "German soils", "span": [113, 123]}},
+    {"soilDepth": {"value": "soil cores", "span": [39, 46]}},
+    {"soilDepth": {"value": "soil cores", "span": [57, 64]}},
+    {"soilDepth": {"value": "soil profile", "span": [127, 136]}},
+    {"soilBulkDensity": {"value": "soil properties", "span": [49, 62]}},
+    {"soilBulkDensity": {"value": "soil properties", "span": [83, 96]}},
+    {"soilBulkDensity": {"value": "soil properties", "span": [111, 124]}},
+    {"soilBulkDensity": {"value": "soil properties", "span": [137, 150]}}
   ],
   "Location": [
-    {"country": { "value": "Germany", "span": [65, 74]}}
+    {"country": {"value": "Germany", "span": [93, 101]}},
+    {"region": {"value": "Germany", "span": [113, 121]}},
+    {"latitude": {"value": "unknown", "span": [0, 0]}}
   ],
   "Time Statement": []
 }

@@ -1,18 +1,17 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "apple", "span": [81, 86] }},
-    {"cropSpecies": { "value": "grassland", "span": [168, 177] }}
+    {"cropSpecies": { "value": "apple", "span": [45, 50] }}
   ],
   "Soil": [],
   "Location": [
-    {"region": { "value": "Lower Saxony", "span": [151, 162] }},
-    {"region": { "value": "Germany", "span": [164, 171] }},
-    {"region": { "value": "Altes Land", "span": [66, 75] }}
+    {"region": { "value": "Altes Land", "span": [67, 78] }},
+    {"country": { "value": "Germany", "span": [179, 186] }},
+    {"region": { "value": "Lower Saxony", "span": [165, 176] }}
   ],
   "Time Statement": [
-    {"startTime": { "value": "2001", "span": [201, 205] }},
-    {"endTime": { "value": "2003", "span": [209, 213] }}
+    {"startTime": { "value": "2001", "span": [221, 225] }},
+    {"endTime": { "value": "2003", "span": [230, 234] }}
   ]
 }
 ```

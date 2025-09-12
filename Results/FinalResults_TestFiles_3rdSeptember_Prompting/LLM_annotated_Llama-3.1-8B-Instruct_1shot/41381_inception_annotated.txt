@@ -1,0 +1,30 @@
+### Output JSON Structure ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [46, 61]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [266, 281]}},
+    {"cropSpecies": {"value": "grape varieties", "span": [135, 147]}},
+    {"cropSpecies": {"value": "apple", "span": [292, 296]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [18, 23]}},
+    {"region": {"value": "southwest Germany", "span": [35, 51]}},
+    {"city": {"value": "Dossenheim", "span": [246, 253]}},
+    {"city": {"value": "Siebeldingen", "span": [258, 265]}},
+    {"city": {"value": "Darmstadt", "span": [304, 311]}},
+    {"latitude": {"value": "~75 km radius", "span": [184, 193]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2011", "span": [102, 106]}},
+    {"endTime": {"value": "February 2018", "span": [239, 253]}}
+  ]
+}
+```
+
+### Note: ###
+
+*   In the `Location` category, the `latitude` entity is annotated with the text `~75 km radius`, which is an approximation of the geographical distance. However, it does not directly represent a specific latitude value. Therefore, this annotation may not strictly adhere to the specified format. If you require a more precise latitude value, you may need to use additional data or processing steps to obtain it.
+*   The `Soil` category is empty because there are no explicit mentions of soil-related entities in the given text.

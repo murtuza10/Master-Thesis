@@ -2,41 +2,11 @@
   "Crops": [],
   "Soil": [
     {
-      "soilTexture": {
-        "value": "",
-        "span": []
-      }
-    },
-    {
-      "soilReferenceGroup": {
-        "value": "",
-        "span": []
-      }
-    },
-    {
-      "soilDepth": {
-        "value": "",
-        "span": []
-      }
-    },
-    {
-      "soilBulkDensity": {
-        "value": "",
-        "span": []
-      }
-    },
-    {
-      "soilPH": {
-        "value": "",
-        "span": []
-      }
-    },
-    {
       "soilOrganicCarbon": {
         "value": "particulate organic carbon (POC)",
         "span": [
-          115,
-          142
+          122,
+          148
         ]
       }
     },
@@ -44,8 +14,8 @@
       "soilOrganicCarbon": {
         "value": "mineral associated organic carbon (MAOC)",
         "span": [
-          146,
-          179
+          153,
+          185
         ]
       }
     },
@@ -53,44 +23,26 @@
       "soilOrganicCarbon": {
         "value": "total carbon content",
         "span": [
-          190,
-          208
+          214,
+          234
         ]
       }
     },
     {
       "soilOrganicCarbon": {
-        "value": "carbon",
+        "value": "old (native) carbon",
         "span": [
-          246,
-          252
+          261,
+          279
         ]
       }
     },
     {
       "soilOrganicCarbon": {
-        "value": "carbon",
+        "value": "new (added) carbon",
         "span": [
-          256,
-          262
-        ]
-      }
-    },
-    {
-      "soilOrganicCarbon": {
-        "value": "new and old carbon",
-        "span": [
-          275,
-          292
-        ]
-      }
-    },
-    {
-      "soilOrganicCarbon": {
-        "value": "old (native) and new (added) carbon",
-        "span": [
-          316,
-          350
+          284,
+          302
         ]
       }
     }
@@ -101,35 +53,44 @@
       "duration": {
         "value": "2-year",
         "span": [
-          38,
-          42
+          36,
+          41
         ]
       }
     },
     {
       "startTime": {
-        "value": "6 months",
+        "value": "6",
         "span": [
-          65,
-          72
+          56,
+          57
         ]
       }
     },
     {
       "startTime": {
-        "value": "12 months",
+        "value": "12",
         "span": [
-          76,
-          84
+          60,
+          62
         ]
       }
     },
     {
       "startTime": {
-        "value": "24 months",
+        "value": "24",
         "span": [
-          89,
-          97
+          66,
+          68
+        ]
+      }
+    },
+    {
+      "duration": {
+        "value": "months",
+        "span": [
+          69,
+          74
         ]
       }
     }

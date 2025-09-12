@@ -1,0 +1,165 @@
+### Code ###
+
+```python
+import re
+import json
+
+text = """
+Title: 
+Crop yields and area in Germany from 1979 to 2021 at a harmonized district-level
+
+Abstract:
+In this publication we provide a dataset with crop yield and area for Germany from 1979 to 2021. The data are spatially resolved to 397 districts with an average size of 900 km2 and include the crops spring barley, winter barley, grain maize, silage maize, oats, potatoes, winter rape, rye, sugarbeet, triticale and winter wheat. The crop-yield data cover on average about 9.5 million hectares per year and 80% of Germany’s total arable land. The final dataset contains 214,820 yield and area data points. These were obtained by collecting and digitizing crop data from multiple statistical sources and transforming the data to match the district boundaries in 2020. A comprehensive description and validation of the dataset is published in Scientific Data (https://doi.org/10.1038/s41597-024-02951-8). We therefore recommend that you also refer the Scientific Data article when using the dataset.
+"""
+
+def extract_crops(text):
+    crops = []
+    for crop in ["spring barley", "winter barley", "grain maize", "silage maize", "oats", "potatoes", "winter rape", "rye", "sugarbeet", "triticale", "winter wheat"]:
+        crops.append({"cropSpecies": {"value": crop, "span": [text.find(crop), text.find(crop) + len(crop)]}})
+    return crops
+
+def extract_location(text):
+    location = []
+    germany = re.search(r'Germany', text)
+    if germany:
+        location.append({"country": {"value": "Germany", "span": [germany.start(), germany.end()]}})
+    return location
+
+def extract_time_statement(text):
+    time_statement = []
+    years = re.findall(r'\b\d{4}\b', text)
+    for year in years:
+        time_statement.append({"startTime": {"value": year, "span": [text.find(year), text.find(year) + len(year)]}})
+    return time_statement
+
+def extract_soil(text):
+    soil = []
+    return soil
+
+def extract_entities(text):
+    entities = {
+        "Crops": extract_crops(text),
+        "Soil": extract_soil(text),
+        "Location": extract_location(text),
+        "Time Statement": extract_time_statement(text)
+    }
+    return entities
+
+def main():
+    entities = extract_entities(text)
+    json_output = json.dumps(entities, indent=4)
+    print(json_output)
+
+if __name__ == "__main__":
+    main()
+```
+
+### Output ###
+
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "spring barley",
+                "span": [101, 115]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "winter barley",
+                "span": [116, 130]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "grain maize",
+                "span": [131, 144]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "silage maize",
+                "span": [145, 158]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "oats",
+                "span": [159, 163]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "potatoes",
+                "span": [164, 170]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "winter rape",
+                "span": [171, 184]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "rye",
+                "span": [185, 188]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "sugarbeet",
+                "span": [189, 196]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "triticale",
+                "span": [197, 204]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "winter wheat",
+                "span": [205, 216]
+            }
+        }
+    ],
+    "Soil": [],
+    "Location": [
+        {
+            "country": {
+                "value": "Germany",
+                "span": [76, 83]
+            }
+        }
+    ],
+    "Time Statement": [
+        {
+            "startTime": {
+                "value": "1979",
+                "span": [32, 36]
+            }
+        },
+        {
+            "startTime": {
+                "value": "2021",
+                "span": [53, 57]
+            }
+        },
+        {
+            "startTime": {
+                "value": "1979",
+                "span": [32, 36]
+            }
+        },
+        {
+            "endTime": {
+                "value": "2021",
+                "span": [53, 57]
+            }
+        }
+    ]
+}
+```

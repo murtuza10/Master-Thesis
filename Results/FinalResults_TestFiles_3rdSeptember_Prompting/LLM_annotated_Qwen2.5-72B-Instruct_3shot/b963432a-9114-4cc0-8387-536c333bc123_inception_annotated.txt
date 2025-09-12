@@ -1,31 +1,51 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "spring barley", "span": [553, 565] }},
-    {"cropSpecies": { "value": "serradella", "span": [577, 588] }},
-    {"cropSpecies": { "value": "spring barley", "span": [595, 607] }}
+    {"cropSpecies": { "value": "spring barley", "span": [467, 479] }},
+    {"cropSpecies": { "value": "serradella", "span": [491, 501] }}
   ],
   "Soil": [
-    {"soilReferenceGroup": { "value": "redoximorphic features", "span": [395, 415] }},
-    {"soilDepth": { "value": "three sampling depths", "span": [125, 144] }},
-    {"soilDepth": { "value": "three different depths", "span": [469, 488] }},
-    {"soilPH": { "value": "pH", "span": [92, 94] }},
-    {"soilPH": { "value": "pH", "span": [509, 511] }},
-    {"soilPH": { "value": "pH", "span": [652, 654] }},
-    {"soilPH": { "value": "pH-Wert", "span": [789, 795] }}
+    {"soilReferenceGroup": { "value": "redoximorphic features", "span": [359, 376] }},
+    {"soilDepth": { "value": "three sampling depths", "span": [167, 184] }},
+    {"soilPH": { "value": "pH", "span": [42, 44] }},
+    {"soilPH": { "value": "pH", "span": [106, 108] }},
+    {"soilPH": { "value": "pH", "span": [451, 453] }},
+    {"soilPH": { "value": "pH", "span": [546, 548] }},
+    {"soilPH": { "value": "pH-Wert", "span": [619, 625] }},
+    {"soilOrganicCarbon": { "value": "Gel√∂ster organischer Kohlenstoff", "span": [632, 659] }},
+    {"soilOrganicCarbon": { "value": "Kohlenstoff", "span": [661, 671] }},
+    {"soilAvailableNitrogen": { "value": "NH4+-N", "span": [558, 565] }},
+    {"soilAvailableNitrogen": { "value": "NO2-- and NO3--N-", "span": [571, 588] }},
+    {"soilAvailableNitrogen": { "value": "Nitrat", "span": [673, 678] }},
+    {"soilAvailableNitrogen": { "value": "Nitrit", "span": [679, 685] }},
+    {"soilAvailableNitrogen": { "value": "Stickstoff", "span": [687, 695] }},
+    {"soilAvailableNitrogen": { "value": "Ammonium", "span": [705, 713] }},
+    {"soilAvailableNitrogen": { "value": "PO43--P", "span": [550, 558] }},
+    {"soilAvailableNitrogen": { "value": "Phosphat", "span": [715, 722] }},
+    {"soilAvailableNitrogen": { "value": "total C, N, P", "span": [536, 545] }},
+    {"soilAvailableNitrogen": { "value": "Al, Fe, Mn, and Ca", "span": [547, 558] }},
+    {"soilAvailableNitrogen": { "value": "Aluminium", "span": [697, 705] }},
+    {"soilAvailableNitrogen": { "value": "Calcium", "span": [707, 713] }},
+    {"soilAvailableNitrogen": { "value": "Eisen", "span": [714, 718] }},
+    {"soilAvailableNitrogen": { "value": "Mn", "span": [724, 726] }},
+    {"soilAvailableNitrogen": { "value": "Ca", "span": [728, 730] }},
+    {"soilAvailableNitrogen": { "value": "DOC", "span": [593, 596] }},
+    {"soilAvailableNitrogen": { "value": "DIC", "span": [590, 593] }},
+    {"soilAvailableNitrogen": { "value": "PO43--P", "span": [600, 608] }},
+    {"soilAvailableNitrogen": { "value": "NH4+-N", "span": [610, 617] }},
+    {"soilAvailableNitrogen": { "value": "NO2-- and NO3--N-", "span": [619, 636] }}
   ],
   "Location": [
-    {"region": { "value": "Northern Germany", "span": [168, 183] }},
-    {"city": { "value": "Rostock", "span": [14, 21] }},
-    {"city": { "value": "Rostock", "span": [110, 117] }}
+    {"region": { "value": "Northern Germany", "span": [138, 152] }},
+    {"city": { "value": "Rostock", "span": [17, 24] }}
   ],
   "Time Statement": [
-    {"startTime": { "value": "2020", "span": [76, 80] }},
-    {"startTime": { "value": "2020", "span": [188, 192] }},
-    {"startTime": { "value": "2018", "span": [371, 375] }},
-    {"startTime": { "value": "2019", "span": [425, 429] }},
-    {"startTime": { "value": "2020", "span": [435, 439] }},
-    {"duration": { "value": "about 3.5 months", "span": [639, 655] }}
+    {"startTime": { "value": "2020", "span": [88, 92] }},
+    {"startTime": { "value": "2020", "span": [197, 201] }},
+    {"startTime": { "value": "2020", "span": [434, 438] }},
+    {"startTime": { "value": "2018", "span": [322, 326] }},
+    {"startTime": { "value": "2019", "span": [411, 415] }},
+    {"duration": { "value": "about 3.5 months", "span": [519, 535] }}
   ]
 }
 ```

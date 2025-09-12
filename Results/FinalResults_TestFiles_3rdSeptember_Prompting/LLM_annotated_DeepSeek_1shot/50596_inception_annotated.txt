@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757409657-Ho2xqMprvgskn6OdRif9",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757409657,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [187, 193] }},\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [283, 289] }},\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [493, 499] }},\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [1015, 1021] }},\n    {\"cropSpecies\": { \"value\": \"grape cluster\", \"span\": [1127, 1140] }},\n    {\"cropSpecies\": { \"value\": \"grape clusters\", \"span\": [1199, 1213] }},\n    {\"cropSpecies\": { \"value\": \"grape cluster\", \"span\": [1284, 1297] }},\n    {\"cropSpecies\": { \"value\": \"grape cluster\", \"span\": [1561, 1574] }},\n    {\"cropSpecies\": { \"value\": \"grape cluster\", \"span\": [1779, 1792] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2017\", \"span\": [696, 700] }},\n    {\"startTime\": { \"value\": \"2018\", \"span\": [703, 707] }},\n    {\"startTime\": { \"value\": \"30.8.2017\", \"span\": [1161, 1170] }},\n    {\"startTime\": { \"value\": \"6.9.2017\", \"span\": [1175, 1183] }},\n    {\"endTime\": { \"value\": \"20.9.2017\", \"span\": [1201, 1210] }},\n    {\"endTime\": { \"value\": \"25.9.2017\", \"span\": [1215, 1224] }},\n    {\"startTime\": { \"value\": \"24.8.2018\", \"span\": [1442, 1451] }},\n    {\"startTime\": { \"value\": \"31.8.2018\", \"span\": [1456, 1464] }},\n    {\"endTime\": { \"value\": \"13.9.2018\", \"span\": [1498, 1507] }},\n    {\"endTime\": { \"value\": \"20.9.2018\", \"span\": [1512, 1521] }},\n    {\"startTime\": { \"value\": \"29.8.2018\", \"span\": [1703, 1712] }},\n    {\"startTime\": { \"value\": \"4.9.2018\", \"span\": [1717, 1725] }},\n    {\"endTime\": { \"value\": \"12.9.2018\", \"span\": [1783, 1792] }},\n    {\"endTime\": { \"value\": \"29.9.2018\", \"span\": [1797, 1806] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2721,
+    "completion_tokens": 685,
+    "total_tokens": 3406,
+    "prompt_tokens_details": null
+  }
+}

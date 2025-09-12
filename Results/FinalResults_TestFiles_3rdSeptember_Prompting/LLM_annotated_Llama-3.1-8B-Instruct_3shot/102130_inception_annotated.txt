@@ -1,21 +1,23 @@
-### Output ###
+### Output JSON Structure ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "C4 roots", "span": [64, 71]}},
-    {"cropSpecies": {"value": "C3 soil", "span": [85, 91]}}
+    {"cropSpecies": {"value": "C4", "span": [105, 108]}},
+    {"cropSpecies": {"value": "C3", "span": [134, 137]}}
   ],
   "Soil": [
-    {"soilReferenceGroup": {"value": "C3 soil", "span": [85, 91]}},
-    {"soilTexture": {"value": "particulate organic carbon (POC)", "span": [121, 146]}},
-    {"soilTexture": {"value": "mineral associated organic carbon (MAOC)", "span": [147, 171]}},
-    {"soilDepth": {"value": "6 months", "span": [97, 104]}},
-    {"soilDepth": {"value": "12 months", "span": [106, 113]}},
-    {"soilDepth": {"value": "24 months", "span": [115, 122]}}
+    {"soilReferenceGroup": {"value": "C3 soil", "span": [134, 141]}},
+    {"soilReferenceGroup": {"value": "C4 roots litter", "span": [98, 110]}},
+    {"soilTexture": {"value": "particulate organic carbon", "span": [165, 184]}},
+    {"soilTexture": {"value": "mineral associated organic carbon", "span": [185, 205]}},
+    {"soilDepth": {"value": "6 months", "span": [146, 154]}},
+    {"soilDepth": {"value": "12 months", "span": [154, 162]}},
+    {"soilDepth": {"value": "24 months", "span": [162, 170]}}
   ],
   "Location": [],
   "Time Statement": [
-    {"startTime": {"value": "2 years", "span": [10, 17]}}
+    {"startTime": {"value": "2 years", "span": [23, 29]}},
+    {"duration": {"value": "6", "span": [146, 148]}}
   ]
 }
 ```

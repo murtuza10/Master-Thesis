@@ -1,38 +1,45 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "winter wheat", "span": [285, 296] }},
-    {"cropSpecies": { "value": "winter barley", "span": [298, 309] }},
-    {"cropSpecies": { "value": "sugar beet", "span": [311, 321] }},
-    {"cropSpecies": { "value": "winter barley", "span": [683, 694] }},
-    {"cropSpecies": { "value": "sugar beet", "span": [696, 706] }}
+    {"cropSpecies": { "value": "winter wheat", "span": [217, 229] }},
+    {"cropSpecies": { "value": "winter barley", "span": [231, 243] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [245, 254] }},
+    {"cropSpecies": { "value": "winter barley", "span": [947, 959] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [961, 970] }}
   ],
   "Soil": [
-    {"soilReferenceGroup": { "value": "Bacterial Community", "span": [15, 34] }},
-    {"soilReferenceGroup": { "value": "Bacterial Community", "span": [53, 72] }},
-    {"soilOrganicCarbon": { "value": "humus", "span": [128, 133] }},
-    {"soilAvailableNitrogen": { "value": "mineral nutrients", "span": [102, 116] }},
-    {"soilAvailableNitrogen": { "value": "nitrogen", "span": [465, 472] }},
-    {"soilAvailableNitrogen": { "value": "Stickstoffd채nger", "span": [901, 916] }},
-    {"soilAvailableNitrogen": { "value": "N채hrstoffgehalt", "span": [928, 941] }},
-    {"soilFertility": { "value": "soil fertility", "span": [167, 178] }},
-    {"soilFertility": { "value": "N채hrstoffgehalt", "span": [928, 941] }}
+    {"soilReferenceGroup": { "value": "Bacterial Community", "span": [20, 38] }},
+    {"soilReferenceGroup": { "value": "Bacterial Community", "span": [141, 159] }},
+    {"soilOrganicCarbon": { "value": "humus", "span": [197, 202] }},
+    {"soilAvailableNitrogen": { "value": "mineral nutrients", "span": [204, 219] }},
+    {"soilAvailableNitrogen": { "value": "nutrients", "span": [225, 233] }},
+    {"soilAvailableNitrogen": { "value": "nutrients", "span": [258, 266] }},
+    {"soilAvailableNitrogen": { "value": "nutrients", "span": [284, 292] }},
+    {"soilAvailableNitrogen": { "value": "nutrients", "span": [308, 316] }},
+    {"soilAvailableNitrogen": { "value": "nitrogen", "span": [533, 541] }},
+    {"soilAvailableNitrogen": { "value": "nitrogen", "span": [587, 595] }},
+    {"soilAvailableNitrogen": { "value": "Stickstoffdünger", "span": [1057, 1070] }},
+    {"soilAvailableNitrogen": { "value": "Nährstoffgehalt", "span": [1105, 1119] }}
   ],
   "Location": [
-    {"city": { "value": "Speyer", "span": [44, 49] }},
-    {"city": { "value": "Speyer", "span": [83, 88] }},
-    {"city": { "value": "Speyer", "span": [108, 113] }},
-    {"city": { "value": "Speyer", "span": [143, 148] }},
-    {"city": { "value": "Karlsruhe", "span": [386, 395] }},
-    {"country": { "value": "Germany", "span": [50, 57] }},
-    {"country": { "value": "Germany", "span": [89, 96] }},
-    {"country": { "value": "Germany", "span": [114, 121] }},
-    {"country": { "value": "Germany", "span": [149, 156] }},
-    {"country": { "value": "Germany", "span": [339, 346] }}
+    {"city": { "value": "Speyer", "span": [49, 55] }},
+    {"city": { "value": "Speyer", "span": [171, 177] }},
+    {"city": { "value": "Karlsruhe", "span": [681, 691] }},
+    {"country": { "value": "Germany", "span": [59, 66] }},
+    {"country": { "value": "Germany", "span": [179, 186] }},
+    {"country": { "value": "Germany", "span": [696, 703] }},
+    {"region": { "value": "Rinkenbergerhof", "span": [289, 304] }},
+    {"region": { "value": "LUFA Speyer", "span": [310, 321] }},
+    {"region": { "value": "LUFA Speyer", "span": [391, 402] }},
+    {"region": { "value": "LUFA Speyer", "span": [436, 447] }},
+    {"region": { "value": "LUFA Speyer", "span": [465, 476] }},
+    {"region": { "value": "LUFA Speyer", "span": [1046, 1056] }}
   ],
   "Time Statement": [
-    {"startTime": { "value": "1984", "span": [218, 222] }},
-    {"duration": { "value": "long term", "span": [665, 674] }}
+    {"startTime": { "value": "1984", "span": [348, 352] }},
+    {"duration": { "value": "three years", "span": [412, 422] }},
+    {"duration": { "value": "long term", "span": [863, 871] }},
+    {"duration": { "value": "long-term", "span": [982, 990] }}
   ]
 }
 ```

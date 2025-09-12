@@ -1,17 +1,16 @@
+### Output ###
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "wheat", "span": [69, 74]}}
+    {"cropSpecies": {"value": "wheat", "span": [67, 72]}}
   ],
-  "Soil": [
-    {"soilTexture": {"value": "pedo-climatic zones", "span": [111, 129]}}
-  ],
+  "Soil": [],
   "Location": [
-    {"region": {"value": "Europe", "span": [143, 148]}}
+    {"region": {"value": "Europe", "span": [95, 102]}}
   ],
   "Time Statement": [
-    {"startTime": {"value": "2019", "span": [163, 167]}},
-    {"endTime": {"value": "2020", "span": [171, 175]}}
+    {"startTime": {"value": "2019", "span": [117, 121]}},
+    {"endTime": {"value": "2020", "span": [122, 126]}}
   ]
 }
 ```

@@ -2,18 +2,17 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": { "value": "winter wheat", "span": [124, 136] }}
+    {"cropSpecies": { "value": "winter wheat", "span": [135, 145] }}
   ],
   "Soil": [],
   "Location": [
-    {"region": { "value": "Germany", "span": [246, 253] }},
-    {"region": { "value": "Brandenburg", "span": [254, 262] }},
-    {"region": { "value": "Uckermark", "span": [263, 271] }},
-    {"city": { "value": "Quillow", "span": [272, 278] }}
+    {"country": { "value": "Germany", "span": [246, 250] }},
+    {"region": { "value": "Brandenburg", "span": [251, 258] }},
+    {"city": { "value": "Quillow", "span": [264, 270] }}
   ],
   "Time Statement": [
-    {"startTime": { "value": "April 2019", "span": [175, 192] }},
-    {"endTime": { "value": "June 2019", "span": [193, 210] }}
+    {"startTime": { "value": "April 2019", "span": [154, 166] }},
+    {"endTime": { "value": "June 2019", "span": [172, 180] }}
   ]
 }
 ```

@@ -1,0 +1,63 @@
+### Filled JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "agrarische und forstliche Biomasse", "span": [144, 173]}},
+    {"cropSpecies": {"value": "agrarische Biomasse", "span": [144, 161]}},
+    {"cropSpecies": {"value": "forstliche Biomasse", "span": [166, 179]}},
+    {"cropSpecies": {"value": "agrarische Biomasse", "span": [246, 263]}},
+    {"cropSpecies": {"value": "forstliche Biomasse", "span": [276, 289]}},
+    {"cropSpecies": {"value": "agrarische Biomasse", "span": [341, 358]}},
+    {"cropSpecies": {"value": "forstliche Biomasse", "span": [372, 385]}},
+    {"cropSpecies": {"value": "agrarische Biomasse", "span": [454, 471]}},
+    {"cropSpecies": {"value": "forstliche Biomasse", "span": [476, 489]}},
+    {"cropSpecies": {"value": "agrarische Biomasse", "span": [551, 568]}},
+    {"cropSpecies": {"value": "forstliche Biomasse", "span": [572, 585]}},
+    {"cropSpecies": {"value": "agrarische Biomasse", "span": [656, 673]}},
+    {"cropSpecies": {"value": "forstliche Biomasse", "span": [678, 691]}},
+    {"cropSpecies": {"value": "agrarische Biomasse", "span": [767, 784]}},
+    {"cropSpecies": {"value": "forstliche Biomasse", "span": [790, 803]}},
+    {"cropSpecies": {"value": "agrarische Biomasse", "span": [881, 898]}},
+    {"cropSpecies": {"value": "forstliche Biomasse", "span": [904, 917]}},
+    {"cropSpecies": {"value": "agrarische Biomasse", "span": [991, 1008]}},
+    {"cropSpecies": {"value": "forstliche Biomasse", "span": [1013, 1026]}},
+    {"cropSpecies": {"value": "agrarische Biomasse", "span": [1103, 1120]}},
+    {"cropSpecies": {"value": "forstliche Biomasse", "span": [1126, 1139]}},
+    {"cropSpecies": {"value": "agrarische Biomasse", "span": [1215, 1232]}},
+    {"cropSpecies": {"value": "forstliche Biomasse", "span": [1239, 1252]}},
+    {"cropSpecies": {"value": "agrarische Biomasse", "span": [1329, 1346]}},
+    {"cropSpecies": {"value": "forstliche Biomasse", "span": [1352, 1365]}},
+    {"cropSpecies": {"value": "agrarische Biomasse", "span": [1441, 1458]}},
+    {"cropSpecies": {"value": "forstliche Biomasse", "span": [1465, 1478]}},
+    {"cropSpecies": {"value": "agrarische Biomasse", "span": [1553, 1570]}},
+    {"cropSpecies": {"value": "forstliche Biomasse", "span": [1577, 1590]}},
+    {"cropSpecies": {"value": "agrarische Biomasse", "span": [1667, 1684]}},
+    {"cropSpecies": {"value": "forstliche Biomasse", "span": [1691, 1704]}},
+    {"cropSpecies": {"value": "agrarische Biomasse", "span": [1791, 1808]}},
+    {"cropSpecies": {"value": "forstliche Biomasse", "span": [1816, 1829]}},
+    {"cropSpecies": {"value": "agrarische Biomasse", "span": [1915, 1932]}},
+    {"cropSpecies": {"value": "forstliche Biomasse", "span": [1939, 1952]}},
+    {"cropSpecies": {"value": "agrarische Biomasse", "span": [2033, 2050]}},
+    {"cropSpecies": {"value": "forstliche Biomasse", "span": [2057, 2070]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Deutschland", "span": [1294, 1301]}},
+    {"region": {"value": "Hürth", "span": [1835, 1842]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2020", "span": [1319, 1323]}},
+    {"endTime": {"value": "2050", "span": [1331, 1335]}},
+    {"duration": {"value": "30", "span": [1336, 1338]}},
+    {"startTime": {"value": "2023", "span": [1447, 1451]}},
+    {"endTime": {"value": "2028", "span": [1459, 1463]}},
+    {"duration": {"value": "5", "span": [1464, 1466]}},
+    {"startTime": {"value": "2018", "span": [1632, 1636]}},
+    {"endTime": {"value": "2023", "span": [1644, 1648]}},
+    {"duration": {"value": "5", "span": [1649, 1651]}}
+  ]
+}
+```
+### Note ###
+*   This JSON structure is filled based on the provided input text. It includes all entities related to crops, soil, location, and time statements that are explicitly mentioned in the text.
+*   The `span` attribute in each entity object represents the start and end character positions of the entity in the input text, with the start index being 0-based.

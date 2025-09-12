@@ -4,19 +4,52 @@
       "cropSpecies": {
         "value": "energy crop",
         "span": [
-          118,
-          128
+          95,
+          105
         ]
       }
     }
   ],
   "Soil": [
     {
+      "soilTexture": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilDepth": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
       "soilBulkDensity": {
         "value": "bulk density",
         "span": [
-          462,
-          472
+          525,
+          536
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "",
+        "span": []
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "C content",
+        "span": [
+          510,
+          519
         ]
       }
     },
@@ -24,26 +57,8 @@
       "soilAvailableNitrogen": {
         "value": "nitrogen content",
         "span": [
-          433,
-          448
-        ]
-      }
-    },
-    {
-      "soilAvailableNitrogen": {
-        "value": "ammonium-N",
-        "span": [
-          450,
-          459
-        ]
-      }
-    },
-    {
-      "soilAvailableNitrogen": {
-        "value": "nitrate-N",
-        "span": [
-          461,
-          469
+          486,
+          500
         ]
       }
     }
@@ -53,17 +68,8 @@
       "country": {
         "value": "Germany",
         "span": [
-          106,
-          113
-        ]
-      }
-    },
-    {
-      "country": {
-        "value": "Germany",
-        "span": [
-          188,
-          195
+          122,
+          129
         ]
       }
     }
@@ -73,8 +79,8 @@
       "startTime": {
         "value": "2011/2012",
         "span": [
-          197,
-          208
+          155,
+          164
         ]
       }
     },
@@ -82,8 +88,8 @@
       "endTime": {
         "value": "2014/2015",
         "span": [
-          211,
-          222
+          169,
+          178
         ]
       }
     }

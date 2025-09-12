@@ -1,16 +1,13 @@
-### Output Format ###
+### Output ###
 ```json
 {
   "Crops": [],
   "Soil": [
-    {"soilReferenceGroup": {"value": "soils", "span": [140, 145]}},
-    {"soilReferenceGroup": {"value": "soil properties", "span": [98, 113]}},
-    {"soilDepth": {"value": "sites", "span": [104, 108]}},
-    {"soilDepth": {"value": "1396 individual sites", "span": [128, 143]}},
-    {"soilDepth": {"value": "587 sites", "span": [206, 212]}},
-    {"soilBulkDensity": {"value": "soil properties", "span": [98, 113]}},
-    {"soilOrganicCarbon": {"value": "organic carbon", "span": [134, 146]}},
-    {"soilAvailableNitrogen": {"value": "soil properties", "span": [98, 113]}}
+    {"soilReferenceGroup": {"value": "soils", "span": [142, 147]}},
+    {"soilReferenceGroup": {"value": "soil properties", "span": [176, 189]}},
+    {"soilTexture": {"value": "organic carbon", "span": [122, 133]}},
+    {"soilDepth": {"value": "sites", "span": [164, 168]}},
+    {"soilBulkDensity": {"value": "dataset", "span": [97, 104]}}
   ],
   "Location": [],
   "Time Statement": []

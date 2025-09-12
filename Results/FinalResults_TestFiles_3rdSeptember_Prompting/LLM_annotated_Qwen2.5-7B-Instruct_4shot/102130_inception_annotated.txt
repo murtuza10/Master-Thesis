@@ -1,8 +1,8 @@
 ```json
 {
   "Crops": [],
-  "Soil": [{"soilReferenceGroup": {"value": "C3 soil", "span": [46, 52]}}],
+  "Soil": [{"soilReferenceGroup": {"value": "C3 soil", "span": [55, 61]}}, {"soilDepth": {"value": "6 months", "span": [83, 90]}}, {"soilDepth": {"value": "12 months", "span": [95, 102]}}, {"soilDepth": {"value": "24 months", "span": [107, 114]}}],
   "Location": [],
-  "Time Statement": [{"startTime": {"value": "2 years", "span": [19, 25]}}, {"startTime": {"value": "6 months", "span": [58, 65]}}, {"startTime": {"value": "12 months", "span": [70, 77]}}, {"startTime": {"value": "24 months", "span": [82, 89]}}]
+  "Time Statement": [{"duration": {"value": "2 years", "span": [28, 33]}}, {"startTime": {"value": "6 months", "span": [81, 87]}}, {"startTime": {"value": "12 months", "span": [90, 96]}}, {"startTime": {"value": "24 months", "span": [101, 107]}}]
 }
 ```

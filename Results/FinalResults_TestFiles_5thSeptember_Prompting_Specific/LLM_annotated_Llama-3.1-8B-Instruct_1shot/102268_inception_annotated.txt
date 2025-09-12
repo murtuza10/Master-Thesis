@@ -1,0 +1,19 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [71, 76]}}
+  ],
+  "Soil": [
+    {"soilTexture": { "value": "pedo-climatic", "span": [83, 93] }},
+    {"soilReferenceGroup": { "value": "soil properties", "span": [103, 115] }}
+  ],
+  "Location": [
+    {"country": { "value": "Europe", "span": [49, 55] }}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2019", "span": [67, 71]}},
+    {"endTime": {"value": "2020", "span": [78, 82]}}
+  ]
+}
+```

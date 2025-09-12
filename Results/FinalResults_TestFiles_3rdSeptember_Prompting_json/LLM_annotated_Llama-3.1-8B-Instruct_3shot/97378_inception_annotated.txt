@@ -4,8 +4,17 @@
       "cropSpecies": {
         "value": "cropland",
         "span": [
-          21,
-          29
+          36,
+          44
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "cropland",
+        "span": [
+          67,
+          75
         ]
       }
     }
@@ -15,8 +24,8 @@
       "soilTexture": {
         "value": "Lehm",
         "span": [
-          173,
-          177
+          143,
+          148
         ]
       }
     },
@@ -24,35 +33,35 @@
       "soilTexture": {
         "value": "Ton",
         "span": [
-          183,
-          186
+          152,
+          155
         ]
       }
     },
     {
       "soilReferenceGroup": {
-        "value": "Bodentextur",
+        "value": "Lehm und Ton",
         "span": [
-          173,
-          185
+          143,
+          154
         ]
       }
     },
     {
-      "soilReferenceGroup": {
-        "value": "Bodenbearbeitung",
+      "soilDepth": {
+        "value": "Boden",
         "span": [
-          187,
-          202
+          230,
+          234
         ]
       }
     },
     {
-      "soilBulkDensity": {
+      "soilPH": {
         "value": "pH Wert",
         "span": [
-          206,
-          212
+          234,
+          241
         ]
       }
     },
@@ -60,8 +69,8 @@
       "soilOrganicCarbon": {
         "value": "organischen Kohlenstoff",
         "span": [
-          213,
-          231
+          243,
+          262
         ]
       }
     },
@@ -69,17 +78,17 @@
       "soilAvailableNitrogen": {
         "value": "Gesamt-Stickstoff",
         "span": [
-          233,
-          244
+          266,
+          276
         ]
       }
     },
     {
-      "soilDepth": {
-        "value": "2 Jahre",
+      "soilReferenceGroup": {
+        "value": "Boden",
         "span": [
-          41,
-          47
+          230,
+          233
         ]
       }
     }
@@ -89,8 +98,8 @@
       "city": {
         "value": "Hildesheim",
         "span": [
-          133,
-          141
+          141,
+          148
         ]
       }
     }
@@ -98,19 +107,19 @@
   "Time Statement": [
     {
       "startTime": {
-        "value": "14-tÃ¤gigen Zeitraster",
+        "value": "14 Tage",
         "span": [
-          29,
-          43
+          93,
+          101
         ]
       }
     },
     {
-      "endTime": {
+      "startTime": {
         "value": "2 Jahre",
         "span": [
-          41,
-          47
+          111,
+          117
         ]
       }
     }

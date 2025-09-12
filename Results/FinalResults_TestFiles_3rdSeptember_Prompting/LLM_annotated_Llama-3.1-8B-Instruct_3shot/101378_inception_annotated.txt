@@ -1,18 +1,21 @@
-### Output ###
+### Filled JSON Structure ###
+
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "birch", "span": [145, 151]}},
-    {"cropSpecies": {"value": "Betula pubescens", "span": [146, 162]}}
+    {"cropSpecies": {"value": "Birch", "span": [145, 151]}},
+    {"cropSpecies": {"value": "Betula pubescens Ehrh.", "span": [146, 164]}}
   ],
   "Soil": [
-    {"soilReferenceGroup": {"value": "peat", "span": [136, 140]}},
-    {"soilReferenceGroup": {"value": "bog", "span": [143, 146]}},
-    {"soilTexture": {"value": "mire-specific", "span": [182, 193]}}
+    {"soilReferenceGroup": {"value": "peat", "span": [117, 121]}},
+    {"soilReferenceGroup": {"value": "peat", "span": [236, 239]}},
+    {"soilDepth": {"value": "m-2", "span": [253, 258]}}
   ],
-  "Location": [],
+  "Location": [
+    {"region": {"value": "northern hemisphere", "span": [82, 103]}}
+  ],
   "Time Statement": [
-    {"startTime": {"value": "one year", "span": [246, 251]}}
+    {"startTime": {"value": "one year", "span": [230, 236]}}
   ]
 }
 ```

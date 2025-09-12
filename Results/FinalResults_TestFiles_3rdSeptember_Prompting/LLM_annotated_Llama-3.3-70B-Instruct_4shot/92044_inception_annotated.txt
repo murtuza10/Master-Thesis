@@ -1,28 +1,32 @@
 ```json
 {
   "Crops": [
-    {"cropSpecies": {"value": "spring barley", "span": [346, 358]}},
-    {"cropSpecies": {"value": "winter barley", "span": [360, 373]}},
+    {"cropSpecies": {"value": "spring barley", "span": [346, 359]}},
+    {"cropSpecies": {"value": "winter barley", "span": [361, 373]}},
     {"cropSpecies": {"value": "grain maize", "span": [375, 386]}},
     {"cropSpecies": {"value": "silage maize", "span": [388, 400]}},
     {"cropSpecies": {"value": "oats", "span": [402, 406]}},
     {"cropSpecies": {"value": "potatoes", "span": [408, 416]}},
-    {"cropSpecies": {"value": "winter rape", "span": [418, 429]}},
-    {"cropSpecies": {"value": "rye", "span": [431, 434]}},
-    {"cropSpecies": {"value": "sugarbeet", "span": [436, 445]}},
-    {"cropSpecies": {"value": "triticale", "span": [447, 456]}},
-    {"cropSpecies": {"value": "winter wheat", "span": [458, 470]}}
+    {"cropSpecies": {"value": "winter rape", "span": [418, 428]}},
+    {"cropSpecies": {"value": "rye", "span": [430, 433]}},
+    {"cropSpecies": {"value": "sugarbeet", "span": [435, 444]}},
+    {"cropSpecies": {"value": "triticale", "span": [446, 455]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [457, 468]}},
+    {"cropSpecies": {"value": "barley", "span": [346, 353]}},
+    {"cropSpecies": {"value": "maize", "span": [375, 380]}},
+    {"cropSpecies": {"value": "rape", "span": [418, 423]}},
+    {"cropSpecies": {"value": "wheat", "span": [457, 463]}}
   ],
   "Soil": [],
   "Location": [
     {"country": {"value": "Germany", "span": [156, 163]}},
-    {"country": {"value": "Germany", "span": [494, 501]}},
-    {"country": {"value": "Germany", "span": [549, 556]}}
+    {"country": {"value": "Germany", "span": [283, 290]}},
+    {"country": {"value": "Germany", "span": [541, 548]}}
   ],
   "Time Statement": [
-    {"startTime": {"value": "1979", "span": [173, 177]}},
-    {"endTime": {"value": "2021", "span": [181, 185]}},
-    {"startTime": {"value": "2020", "span": [624, 628]}}
+    {"startTime": {"value": "1979", "span": [201, 205]}},
+    {"endTime": {"value": "2021", "span": [209, 213]}},
+    {"startTime": {"value": "2020", "span": [644, 648]}}
   ]
 }
 ```

@@ -4,8 +4,8 @@
       "cropSpecies": {
         "value": "winter wheat",
         "span": [
-          186,
-          195
+          146,
+          157
         ]
       }
     },
@@ -13,8 +13,8 @@
       "cropSpecies": {
         "value": "winter barley",
         "span": [
-          206,
-          215
+          163,
+          173
         ]
       }
     },
@@ -22,8 +22,26 @@
       "cropSpecies": {
         "value": "sugar beet",
         "span": [
-          217,
-          225
+          179,
+          187
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "winter barley",
+        "span": [
+          272,
+          282
+        ]
+      }
+    },
+    {
+      "cropSpecies": {
+        "value": "sugar beet",
+        "span": [
+          288,
+          296
         ]
       }
     }
@@ -33,53 +51,26 @@
       "soilReferenceGroup": {
         "value": "ploughing",
         "span": [
-          157,
-          166
-        ]
-      }
-    },
-    {
-      "soilReferenceGroup": {
-        "value": "farmyard (horse) manure",
-        "span": [
-          222,
-          241
-        ]
-      }
-    },
-    {
-      "soilReferenceGroup": {
-        "value": "crop residues + catch crop",
-        "span": [
-          229,
-          247
+          124,
+          134
         ]
       }
     },
     {
       "soilBulkDensity": {
-        "value": "72",
+        "value": "Bodendichte",
         "span": [
-          344,
-          346
-        ]
-      }
-    },
-    {
-      "soilBulkDensity": {
-        "value": "4",
-        "span": [
-          376,
-          378
+          124,
+          134
         ]
       }
     },
     {
       "soilPH": {
-        "value": "long-term source of nutrients",
+        "value": "BodenpH",
         "span": [
-          81,
-          98
+          124,
+          134
         ]
       }
     },
@@ -87,8 +78,26 @@
       "soilOrganicCarbon": {
         "value": "humus",
         "span": [
-          83,
-          89
+          44,
+          50
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "NÃ¤hrstoffgehalt",
+        "span": [
+          114,
+          128
+        ]
+      }
+    },
+    {
+      "soilReferenceGroup": {
+        "value": "Boden",
+        "span": [
+          114,
+          118
         ]
       }
     }
@@ -98,8 +107,8 @@
       "country": {
         "value": "Germany",
         "span": [
-          30,
-          37
+          15,
+          21
         ]
       }
     },
@@ -107,8 +116,26 @@
       "city": {
         "value": "Speyer",
         "span": [
-          34,
-          41
+          19,
+          25
+        ]
+      }
+    },
+    {
+      "latitude": {
+        "value": "48.3776",
+        "span": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "longitude": {
+        "value": "12.5733",
+        "span": [
+          null,
+          null
         ]
       }
     }
@@ -118,17 +145,17 @@
       "startTime": {
         "value": "1984",
         "span": [
-          139,
-          143
+          91,
+          95
         ]
       }
     },
     {
-      "duration": {
-        "value": "four sampling seasons",
+      "endTime": {
+        "value": "2009",
         "span": [
-          321,
-          335
+          216,
+          220
         ]
       }
     }

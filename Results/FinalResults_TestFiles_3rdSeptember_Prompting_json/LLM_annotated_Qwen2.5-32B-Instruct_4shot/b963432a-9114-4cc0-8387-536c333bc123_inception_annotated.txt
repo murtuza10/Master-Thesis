@@ -4,8 +4,8 @@
       "cropSpecies": {
         "value": "spring barley",
         "span": [
-          459,
-          470
+          333,
+          345
         ]
       }
     },
@@ -13,8 +13,8 @@
       "cropSpecies": {
         "value": "spring barley",
         "span": [
-          540,
-          551
+          409,
+          421
         ]
       }
     },
@@ -22,37 +22,28 @@
       "cropVariety": {
         "value": "serradella",
         "span": [
-          501,
-          510
+          365,
+          374
         ]
       }
     }
   ],
   "Soil": [
     {
-      "soilReferenceGroup": {
-        "value": "Boden",
+      "soilPH": {
+        "value": "pH",
         "span": [
-          674,
-          679
+          102,
+          104
         ]
       }
     },
     {
       "soilPH": {
-        "value": "pH-Wert",
+        "value": "pH",
         "span": [
-          731,
-          737
-        ]
-      }
-    },
-    {
-      "soilOrganicCarbon": {
-        "value": "GelÃ¶ster organischer Kohlenstoff",
-        "span": [
-          687,
-          712
+          238,
+          240
         ]
       }
     },
@@ -60,8 +51,8 @@
       "soilOrganicCarbon": {
         "value": "OC",
         "span": [
-          317,
-          319
+          148,
+          150
         ]
       }
     },
@@ -69,35 +60,8 @@
       "soilOrganicCarbon": {
         "value": "DOC",
         "span": [
-          644,
-          647
-        ]
-      }
-    },
-    {
-      "soilOrganicCarbon": {
-        "value": "Kohlenstoff",
-        "span": [
-          714,
-          725
-        ]
-      }
-    },
-    {
-      "soilAvailableNitrogen": {
-        "value": "Nitrat",
-        "span": [
-          728,
-          733
-        ]
-      }
-    },
-    {
-      "soilAvailableNitrogen": {
-        "value": "Nitrit",
-        "span": [
-          736,
-          741
+          476,
+          479
         ]
       }
     },
@@ -105,125 +69,71 @@
       "soilAvailableNitrogen": {
         "value": "NH4+-N",
         "span": [
-          658,
-          664
+          486,
+          492
         ]
       }
     },
     {
       "soilAvailableNitrogen": {
-        "value": "NO2--N",
+        "value": "NO2--",
         "span": [
-          667,
-          672
+          495,
+          500
         ]
       }
     },
     {
       "soilAvailableNitrogen": {
-        "value": "NO3--N",
+        "value": "NO3--N-",
         "span": [
-          675,
-          680
+          503,
+          510
+        ]
+      }
+    },
+    {
+      "soilPH": {
+        "value": "pH-Wert",
+        "span": [
+          623,
+          628
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "GelÃ¶ster organischer Kohlenstoff",
+        "span": [
+          576,
+          604
+        ]
+      }
+    },
+    {
+      "soilOrganicCarbon": {
+        "value": "Kohlenstoff",
+        "span": [
+          611,
+          620
         ]
       }
     },
     {
       "soilAvailableNitrogen": {
-        "value": "Stickstoff",
+        "value": "Nitrat",
         "span": [
-          756,
-          765
+          627,
+          632
         ]
       }
     },
     {
       "soilAvailableNitrogen": {
-        "value": "TN",
+        "value": "Nitrit",
         "span": [
-          322,
-          324
-        ]
-      }
-    },
-    {
-      "soilAvailableNitrogen": {
-        "value": "PO43--P",
-        "span": [
-          651,
-          657
-        ]
-      }
-    },
-    {
-      "soilAvailableNitrogen": {
-        "value": "Phosphat",
-        "span": [
-          744,
-          751
-        ]
-      }
-    },
-    {
-      "soilAvailableNitrogen": {
-        "value": "Aluminium",
-        "span": [
-          749,
-          758
-        ]
-      }
-    },
-    {
-      "soilAvailableNitrogen": {
-        "value": "Calcium",
-        "span": [
-          759,
-          767
-        ]
-      }
-    },
-    {
-      "soilAvailableNitrogen": {
-        "value": "Eisen",
-        "span": [
-          768,
-          772
-        ]
-      }
-    },
-    {
-      "soilAvailableNitrogen": {
-        "value": "total Ca",
-        "span": [
-          345,
-          351
-        ]
-      }
-    },
-    {
-      "soilAvailableNitrogen": {
-        "value": "Fe",
-        "span": [
-          354,
-          356
-        ]
-      }
-    },
-    {
-      "soilAvailableNitrogen": {
-        "value": "Al",
-        "span": [
-          359,
-          361
-        ]
-      }
-    },
-    {
-      "soilAvailableNitrogen": {
-        "value": "Mn",
-        "span": [
-          364,
-          366
+          634,
+          639
         ]
       }
     },
@@ -231,8 +141,26 @@
       "soilAvailableNitrogen": {
         "value": "Ammonium",
         "span": [
-          769,
-          779
+          647,
+          654
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "Stickstoff",
+        "span": [
+          656,
+          664
+        ]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "PO43--P",
+        "span": [
+          471,
+          477
         ]
       }
     }
@@ -242,8 +170,8 @@
       "city": {
         "value": "Rostock",
         "span": [
-          7,
-          15
+          16,
+          23
         ]
       }
     },
@@ -251,8 +179,8 @@
       "region": {
         "value": "Northern Germany",
         "span": [
-          143,
-          158
+          129,
+          144
         ]
       }
     }
@@ -262,26 +190,8 @@
       "startTime": {
         "value": "2020",
         "span": [
-          43,
-          47
-        ]
-      }
-    },
-    {
-      "startTime": {
-        "value": "2018",
-        "span": [
-          425,
-          429
-        ]
-      }
-    },
-    {
-      "startTime": {
-        "value": "2019",
-        "span": [
-          487,
-          491
+          31,
+          35
         ]
       }
     },
@@ -289,17 +199,53 @@
       "startTime": {
         "value": "2020",
         "span": [
-          546,
-          550
+          214,
+          218
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "2018",
+        "span": [
+          274,
+          278
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "2019",
+        "span": [
+          326,
+          330
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "2020",
+        "span": [
+          402,
+          406
         ]
       }
     },
     {
       "duration": {
-        "value": "about 3.5 months",
+        "value": "3.5 months",
         "span": [
-          625,
-          641
+          686,
+          697
+        ]
+      }
+    },
+    {
+      "startTime": {
+        "value": "2020",
+        "span": [
+          703,
+          707
         ]
       }
     }
