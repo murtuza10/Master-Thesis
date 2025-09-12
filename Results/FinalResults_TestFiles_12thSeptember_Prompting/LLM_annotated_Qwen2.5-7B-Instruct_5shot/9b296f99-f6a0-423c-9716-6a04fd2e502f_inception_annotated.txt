@@ -1,0 +1,46 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wheat", "span": [104, 109]}},
+    {"cropSpecies": { "value": "barley", "span": [111, 116]}},
+    {"cropSpecies": { "value": "sugar beet", "span": [118, 126]}}
+  ],
+  "Soil": [
+    {"Soil": { "value": "humus", "span": [42, 46]}},
+    {"Soil": { "value": "mineral nutrients", "span": [58, 66]}},
+    {"Soil": { "value": "ploughing", "span": [212, 219]}},
+    {"Soil": { "value": "manure", "span": [318, 323]}},
+    {"Soil": { "value": "crop residues", "span": [325, 332]}},
+    {"Soil": { "value": "catch crop", "span": [334, 342]}},
+    {"Soil": { "value": "bacterial 16S rRNA gene", "span": [618, 638]}}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [28, 33]}},
+    {"region": { "value": "LUFA Speyer", "span": [34, 41]}},
+    {"region": { "value": "Rinkenbergerhof", "span": [42, 51]}},
+    {"region": { "value": "Speyer", "span": [52, 57]}},
+    {"region": { "value": "VDLUFA", "span": [191, 197]}},
+    {"region": { "value": "Karlsruhe", "span": [226, 233]}},
+    {"region": { "value": "Germany", "span": [257, 262]}},
+    {"region": { "value": "Germany", "span": [294, 299]}},
+    {"region": { "value": "Germany", "span": [321, 326]}},
+    {"region": { "value": "Germany", "span": [333, 338]}},
+    {"region": { "value": "Germany", "span": [343, 348]}},
+    {"region": { "value": "Germany", "span": [371, 376]}},
+    {"region": { "value": "Germany", "span": [452, 457]}},
+    {"region": { "value": "Germany", "span": [503, 508]}},
+    {"region": { "value": "Germany", "span": [544, 549]}},
+    {"region": { "value": "Germany", "span": [646, 651]}},
+    {"region": { "value": "Germany", "span": [668, 673]}},
+    {"region": { "value": "Germany", "span": [712, 717]}}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1984", "span": [89, 93]}},
+    {"duration": { "value": "long-term", "span": [220, 227]}},
+    {"duration": { "value": "4 sampling seasons", "span": [254, 265]}},
+    {"duration": { "value": "16. September 2009", "span": [574, 594]}},
+    {"startTime": { "value": "2009", "span": [591, 595]}},
+    {"startTime": { "value": "2017", "span": [684, 688]}}
+  ]
+}
+```

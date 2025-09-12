@@ -1,0 +1,33 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "barley", "span": [270, 275]}},
+    {"cropSpecies": { "value": "Hordeum vulgare", "span": [278, 290]}},
+    {"cropSpecies": { "value": "wheat", "span": [317, 322]}},
+    {"cropSpecies": { "value": "oilseed rape", "span": [325, 334]}},
+    {"cropSpecies": { "value": "lupine", "span": [337, 342]}},
+    {"cropSpecies": { "value": "rye", "span": [345, 349]}}
+  ],
+  "Soil": [
+    {"Soil": { "value": "soil class A", "span": [209, 222]}},
+    {"Soil": { "value": "11 mg kg-1 PCAL", "span": [223, 235]}},
+    {"Soil": { "value": "21 mg kg-1 PCAL", "span": [236, 248]}},
+    {"Soil": { "value": "47 mg kg-1 PCAL", "span": [249, 261]},
+    {"Soil": { "value": "PCAL", "span": [234, 237]},
+    {"Soil": { "value": "25 cm", "span": [429, 433]},
+    {"Soil": { "value": "0-30 cm", "span": [396, 402]}
+  ],
+  "Location": [
+    {"city": { "value": "Braunschweig", "span": [26, 36]}},
+    {"region": { "value": "Lower Saxony", "span": [36, 45]}}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1985", "span": [174, 178]}},
+    {"endTime": { "value": "2008", "span": [179, 183]}},
+    {"startTime": { "value": "2013", "span": [291, 295]}},
+    {"startTime": { "value": "autumn 2013", "span": [484, 495]}},
+    {"startTime": { "value": "2014", "span": [366, 370]},
+    {"endTime": { "value": "2014", "span": [370, 374]}
+  ]
+}
+```
