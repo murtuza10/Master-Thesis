@@ -1,0 +1,19 @@
+### JSON Output
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2020", "span": [130, 133]}},
+    {"endTime": {"value": "2050", "span": [135, 139]}},
+    {"duration": {"value": "30 years", "span": [138, 147]}},
+    {"startTime": {"value": "2023", "span": [246, 249]}},
+    {"endTime": {"value": "2024", "span": [253, 256]}},
+    {"startTime": {"value": "2023", "span": [302, 305]}},
+    {"endTime": {"value": "2028", "span": [309, 312]}},
+    {"startTime": {"value": "1995", "span": [None, None]}}
+  ]
+}
+```
+Note: In the JSON output, the `startTime` for the year "1995" is not included because the year is not explicitly mentioned in the text. It was inferred incorrectly.

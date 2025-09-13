@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751389-pOC6ljnvutgJK2KpWG3P",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751389,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"Lehm\", \"span\": [368, 372] }},\n    {\"Soil\": { \"value\": \"Ton\", \"span\": [377, 380] }},\n    {\"Soil\": { \"value\": \"pH Wert\", \"span\": [573, 580] }},\n    {\"Soil\": { \"value\": \"organischen Kohlenstoff\", \"span\": [591, 612] }},\n    {\"Soil\": { \"value\": \"Gesamt-Stickstoff\", \"span\": [617, 633] }}\n  ],\n  \"Location\": [\n    {\"city\": { \"value\": \"Hildesheim\", \"span\": [253, 263] }}\n  ],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"14-tägigen Zeitraster\", \"span\": [301, 320] }},\n    {\"duration\": { \"value\": \"2 Jahren\", \"span\": [349, 357] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 3515,
+    "completion_tokens": 228,
+    "total_tokens": 3743
+  }
+}

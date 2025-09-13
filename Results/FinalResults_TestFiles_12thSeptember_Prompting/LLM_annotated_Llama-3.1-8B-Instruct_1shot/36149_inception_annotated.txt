@@ -1,0 +1,34 @@
+### Output JSON ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "energy crops", "span": [145, 155] }},
+    {"cropSpecies": { "value": "energy crops", "span": [194, 204] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "nitrogen content", "span": [182, 195] }},
+    {"Soil": { "value": "ammonium-N", "span": [202, 212] }},
+    {"Soil": { "value": "nitrate-N", "span": [218, 227] }},
+    {"Soil": { "value": "bulk density", "span": [236, 246] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [85, 94] }},
+    {"region": { "value": "Germany", "span": [114, 123] }}
+  ],
+  "Time Statement": [
+    {"duration": { "value": "three years", "span": [114, 123] }},
+    {"startTime": { "value": "2011/2012", "span": [117, 125] }},
+    {"endTime": { "value": "2014/2015", "span": [133, 141] }}
+  ]
+}
+```
+
+### Note: ###
+
+- The input text does not explicitly mention any specific crop species other than "energy crops".
+- The soil characteristics mentioned are "nitrogen content", "ammonium-N", "nitrate-N", and "bulk density".
+- Germany is mentioned as the country where the field trials took place.
+- The time period mentioned is "three years" from 2011/2012 to 2014/2015.
+- The start time is mentioned as "2011/2012" and the end time is mentioned as "2014/2015".
+- The duration is also mentioned as "three years".

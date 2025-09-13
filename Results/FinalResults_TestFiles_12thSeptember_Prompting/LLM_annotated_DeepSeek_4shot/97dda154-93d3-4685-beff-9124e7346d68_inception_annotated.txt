@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751303-dIldGFSywNjrwsEyf8ei",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751303,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"maize\", \"span\": [186, 191]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"Sand\", \"span\": [324, 328]}},\n    {\"Soil\": {\"value\": \"Sand\", \"span\": [355, 359]}},\n    {\"Soil\": {\"value\": \"Marsch\", \"span\": [406, 412]}},\n    {\"Soil\": {\"value\": \"biogas slurry\", \"span\": [441, 454]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [830, 834]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [939, 943]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [1217, 1221]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [1422, 1426]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"Europe\", \"span\": [1602, 1608]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [1610, 1617]}},\n    {\"region\": {\"value\": \"Lower Saxony\", \"span\": [1619, 1631]}},\n    {\"city\": {\"value\": \"Wanna\", \"span\": [1633, 1638]}},\n    {\"region\": {\"value\": \"Mecklenburg-Vorpommern\", \"span\": [1640, 1662]}},\n    {\"city\": {\"value\": \"Rostock\", \"span\": [1664, 1671]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2021\", \"span\": [200, 204]}},\n    {\"endTime\": {\"value\": \"2023\", \"span\": [209, 213]}},\n    {\"startTime\": {\"value\": \"April\", \"span\": [748, 753]}},\n    {\"endTime\": {\"value\": \"August\", \"span\": [758, 764]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 3700,
+    "completion_tokens": 457,
+    "total_tokens": 4157
+  }
+}

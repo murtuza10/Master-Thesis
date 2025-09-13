@@ -1,0 +1,19 @@
+### Output JSON ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"Soil": {"value": "organic carbon", "span": [134, 146]}},
+    {"Soil": {"value": "soil properties", "span": [93, 106]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+### Explanation ###
+- No crops are mentioned in the text.
+- Two soil-related entities are found:
+  - "organic carbon" is a property of soil, so it's classified as "Soil".
+  - "soil properties" is also a property of soil, so it's classified as "Soil".
+- No locations are mentioned in the text.
+- No time statements are mentioned in the text.

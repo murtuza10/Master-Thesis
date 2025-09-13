@@ -1,0 +1,20 @@
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [169, 175]}},
+    {"cropSpecies": {"value": "Hordeum vulgare", "span": [193, 206]}},
+    {"cropSpecies": {"value": "wheat", "span": [55, 60]}},
+    {"cropSpecies": {"value": "barley", "span": [237, 242]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+### Explanation ###
+- In the "Crops" section, I identified the following crop species:
+  - "barley" (two mentions)
+  - "Hordeum vulgare" (one mention, which is the scientific name for barley)
+  - "wheat" (one mention)
+- The "Soil", "Location", and "Time Statement" sections are empty since there are no mentions of soil, location, or time-related entities in the given text.

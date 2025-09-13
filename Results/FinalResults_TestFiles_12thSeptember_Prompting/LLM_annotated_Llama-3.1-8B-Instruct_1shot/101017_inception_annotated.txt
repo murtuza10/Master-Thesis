@@ -1,0 +1,22 @@
+### Output JSON Structure Filled with Input Text Entities ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Möhre", "span": [137, 142]}},
+    {"cropSpecies": { "value": "Salat", "span": [145, 150]}},
+    {"cropSpecies": { "value": "Apfel", "span": [152, 156]}},
+    {"cropSpecies": { "value": "Erdbeere", "span": [158, 165]}},
+    {"cropSpecies": { "value": "Himbeere", "span": [171, 178]}}
+  ],
+  "Soil": [
+    {"Soil": { "value": "Freilandanbau", "span": [109, 120]}}
+  ],
+  "Location": [
+    {"region": { "value": "Wertschöpfungskette", "span": [124, 139]}}
+  ],
+  "Time Statement": []
+}
+```
+
+Note that there are no Time Statement entities in the provided text.

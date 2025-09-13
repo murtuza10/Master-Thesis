@@ -1,0 +1,22 @@
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "C4", "span": [123, 126] }},
+    {"cropSpecies": { "value": "C3", "span": [139, 142] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "soil", "span": [93, 99] }},
+    {"Soil": { "value": "carbon", "span": [175, 182] }}
+  ],
+  "Location": [
+    {"region": { "value": "", "span": [] }} // No location information available
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2 years", "span": [23, 29] }},
+    {"duration": { "value": "6, 12 and 24 months", "span": [68, 92] }}
+  ]
+}
+```
+
+Note: The "Location" category is empty because the text does not provide any information about a specific location.

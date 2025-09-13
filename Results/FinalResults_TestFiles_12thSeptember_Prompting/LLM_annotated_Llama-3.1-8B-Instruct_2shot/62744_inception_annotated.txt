@@ -1,0 +1,19 @@
+### Output JSON Structure Filled with the Given Input Text ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "rye", "span": [141, 145] }},
+    {"cropSpecies": { "value": "rye", "span": [247, 251] }},
+    {"cropSpecies": { "value": "rye", "span": [351, 355] }},
+    {"cropSpecies": { "value": "Secale cereale", "span": [397, 414] }}
+  ],
+  "Soil": [
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [233, 238] }}
+  ],
+  "Time Statement": [
+  ]
+}
+```
+Note that the input text does not contain any information about soil, time, or duration, so the respective lists are empty.

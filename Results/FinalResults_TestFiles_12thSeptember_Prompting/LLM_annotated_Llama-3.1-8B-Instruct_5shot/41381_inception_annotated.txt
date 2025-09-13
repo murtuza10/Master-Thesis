@@ -1,0 +1,38 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [135, 153]}},
+    {"cropSpecies": {"value": "Drosophila suzukii", "span": [1026, 1044]}},
+    {"cropSpecies": {"value": "grape", "span": [155, 162]}},
+    {"cropSpecies": {"value": "grapes", "span": [164, 171]}},
+    {"cropSpecies": {"value": "apple", "span": [266, 273]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": {"value": "southwest Germany", "span": [63, 83]}},
+    {"city": {"value": "Darmstadt", "span": [1131, 1140]}},
+    {"city": {"value": "Dossenheim", "span": [1143, 1152]}},
+    {"city": {"value": "Siebeldingen", "span": [1163, 1172]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2011", "span": [145, 149]}},
+    {"endTime": {"value": "February 2018", "span": [1064, 1086]}}
+  ]
+}
+```
+### Output Explanation ###
+- The JSON structure contains the following entities:
+  - **Crops**: The mentioned crop species are:
+    - Drosophila suzukii (Spotted wing drosophila - SWD)
+    - Grape (and grapes) - a susceptible fruit-crop
+    - Apple - another susceptible fruit-crop
+  - **Soil**: No soil-related entities were found in the text.
+  - **Location**: The mentioned locations are:
+    - southwest Germany - a geographic region
+    - Darmstadt - a city in Germany
+    - Dossenheim - a city in Germany
+    - Siebeldingen - a city in Germany
+  - **Time Statement**: The mentioned time-related entities are:
+    - 2011 - the start year of the monitoring program
+    - February 2018 - the end date of the monitoring program

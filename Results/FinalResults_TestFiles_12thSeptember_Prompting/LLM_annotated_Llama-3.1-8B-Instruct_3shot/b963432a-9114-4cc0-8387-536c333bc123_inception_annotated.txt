@@ -1,0 +1,34 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [444, 449]}},
+    {"cropSpecies": {"value": "serradella", "span": [491, 500]}}
+  ],
+  "Soil": [
+    {"Soil": {"value": "redox potential", "span": [176, 193]}},
+    {"Soil": {"value": "pH", "span": [194, 197]}},
+    {"Soil": {"value": "redoximorphic features", "span": [306, 320]}},
+    {"Soil": {"value": "soil", "span": [361, 365]}},
+    {"Soil": {"value": "pore water", "span": [376, 385]}},
+    {"Soil": {"value": "pore water", "span": [409, 418]}},
+    {"Soil": {"value": "soil pore water", "span": [415, 428]}},
+    {"Soil": {"value": "pore water", "span": [441, 450]}},
+    {"Soil": {"value": "soil pore water", "span": [448, 461]}},
+    {"Soil": {"value": "soil pore water", "span": [467, 480]}},
+    {"Soil": {"value": "soil pore water", "span": [485, 498]}},
+    {"Soil": {"value": "pore water samples", "span": [511, 523]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [108, 114]}},
+    {"region": {"value": "Northern Germany", "span": [124, 137]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2018", "span": [278, 282]}},
+    {"startTime": {"value": "2019", "span": [305, 309]}},
+    {"startTime": {"value": "2020", "span": [334, 338]}},
+    {"endTime": {"value": "2020", "span": [535, 539]}},
+    {"duration": {"value": "3.5 months", "span": [550, 560]}}
+  ]
+}
+```

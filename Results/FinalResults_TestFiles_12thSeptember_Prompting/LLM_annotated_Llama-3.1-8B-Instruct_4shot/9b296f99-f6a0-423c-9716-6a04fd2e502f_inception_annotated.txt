@@ -1,0 +1,27 @@
+### Output Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wheat", "span": [442, 448]}},
+    {"cropSpecies": { "value": "barley", "span": [463, 470]}},
+    {"cropSpecies": { "value": "sugar beet", "span": [479, 489]}}
+  ],
+  "Soil": [
+    {"Soil": { "value": "humus", "span": [132, 138]}},
+    {"Soil": { "value": "mineral fertilizer", "span": [170, 187]}},
+    {"Soil": { "value": "ploughing", "span": [225, 233]}}
+  ],
+  "Location": [
+    {"city": { "value": "Speyer", "span": [49, 56]}},
+    {"country": { "value": "Germany", "span": [57, 64]}}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1984", "span": [246, 250]}}
+  ]
+}
+```
+### Explanation ###
+- The text mentions three crop species: winter wheat, winter barley, and sugar beet.
+- The soil is managed with ploughing and different fertilization treatments, including mineral fertilizer and horse manure.
+- The location is Speyer, Germany.
+- The time statement is the start year of the experiment, which is 1984.

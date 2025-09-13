@@ -1,0 +1,24 @@
+### Filled JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "winter wheat", "span": [164, 174]}},
+    {"cropSpecies": {"value": "wheat", "span": [217, 223]}},
+    {"cropSpecies": {"value": "wheat", "span": [235, 241]}},
+  ],
+  "Soil": [
+    {"Soil": {"value": "kettle holes", "span": [93, 105]}},
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [344, 351]}},
+    {"region": {"value": "Brandenburg", "span": [355, 365]}},
+    {"city": {"value": "Uckermark", "span": [371, 379]}},
+    {"city": {"value": "Quillow", "span": [405, 413]}},
+  ],
+  "Time Statement": [
+    {"duration": {"value": "between April and June 2019", "span": [241, 262]}},
+    {"startTime": {"value": "2019", "span": [264, 268]}},
+  ]
+}
+```
+Note that the JSON structure only contains entities that are explicitly mentioned in the text. If an entity is mentioned multiple times, it is included as a separate object in its category list.

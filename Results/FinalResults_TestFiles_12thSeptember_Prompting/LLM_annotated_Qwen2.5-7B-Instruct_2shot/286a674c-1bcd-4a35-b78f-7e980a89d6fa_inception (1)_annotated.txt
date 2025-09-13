@@ -1,0 +1,21 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wheat", "span": [149, 154] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": { "value": "Germany", "span": [329, 335] }},
+    {"region": { "value": "Brandenburg", "span": [336, 344] }},
+    {"region": { "value": "Uckermark", "span": [345, 351] }},
+    {"city": { "value": "Quillow", "span": [352, 358] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "April", "span": [222, 226] }},
+    {"startTime": { "value": "2019", "span": [227, 231] }},
+    {"startTime": { "value": "June", "span": [234, 238] }},
+    {"startTime": { "value": "2019", "span": [239, 243] }},
+    {"duration": { "value": "between April and June 2019", "span": [221, 243] }}
+  ]
+}
+```

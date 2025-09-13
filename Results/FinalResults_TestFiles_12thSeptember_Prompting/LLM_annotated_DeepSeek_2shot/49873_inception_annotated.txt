@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751042-6LIpY66OJCoX5FoOChSy",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751042,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"Bodenleitprofile\", \"span\": [153, 169]}},\n    {\"Soil\": {\"value\": \"boden-physikalischen Grundlagendaten\", \"span\": [174, 208]}},\n    {\"Soil\": {\"value\": \"Standorts- und Bodeninformationen\", \"span\": [280, 313]}},\n    {\"Soil\": {\"value\": \"Standorts- und Bodenkartierung\", \"span\": [353, 382]}},\n    {\"Soil\": {\"value\": \"Standorts- und Leitprofildaten\", \"span\": [616, 645]}},\n    {\"Soil\": {\"value\": \"Standortseinheit\", \"span\": [724, 741]}},\n    {\"Soil\": {\"value\": \"Bodentyp\", \"span\": [747, 755]}},\n    {\"Soil\": {\"value\": \"Wasserhaushalts-/ Nährstoffansprache\", \"span\": [757, 791]}},\n    {\"Soil\": {\"value\": \"Kalkung\", \"span\": [793, 800]}},\n    {\"Soil\": {\"value\": \"Leitprofil\", \"span\": [803, 813]}},\n    {\"Soil\": {\"value\": \"Bodenart\", \"span\": [855, 863]}},\n    {\"Soil\": {\"value\": \"Skelett\", \"span\": [865, 872]}},\n    {\"Soil\": {\"value\": \"Trockenrohdichte\", \"span\": [874, 889]}},\n    {\"Soil\": {\"value\": \"TRD\", \"span\": [891, 894]}},\n    {\"Soil\": {\"value\": \"nutzbare Feldkapazität\", \"span\": [896, 917]}},\n    {\"Soil\": {\"value\": \"nFK\", \"span\": [919, 922]}},\n    {\"Soil\": {\"value\": \"Leitprofil\", \"span\": [925, 935]}},\n    {\"Soil\": {\"value\": \"Basensättigung\", \"span\": [979, 992]}},\n    {\"Soil\": {\"value\": \"organischer Kohlenstoffgehalt\", \"span\": [994, 1021]}},\n    {\"Soil\": {\"value\": \"Corg\", \"span\": [1023, 1027]}},\n    {\"Soil\": {\"value\": \"Entkalkungstiefe\", \"span\": [1029, 1044]}},\n    {\"Soil\": {\"value\": \"Standortseinheit\", \"span\": [1132, 1149]}},\n    {\"Soil\": {\"value\": \"Leitprofil\", \"span\": [1185, 1195]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"deutschen\", \"span\": [220, 228]}},\n    {\"region\": {\"value\": \"Bundesländern\", \"span\": [338, 351]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2012\", \"span\": [1325, 1329]}},\n    {\"endTime\": {\"value\": \"2012\", \"span\": [1341, 1345]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4522,
+    "completion_tokens": 693,
+    "total_tokens": 5215
+  }
+}

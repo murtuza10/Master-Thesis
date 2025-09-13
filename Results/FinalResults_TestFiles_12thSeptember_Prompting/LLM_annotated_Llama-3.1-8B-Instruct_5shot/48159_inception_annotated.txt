@@ -1,0 +1,21 @@
+### Output JSON ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "energy crops", "span": [443, 453]}}
+  ],
+  "Soil": [
+    {"Soil": {"value": "agricultural soils", "span": [241, 255]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [73, 81]}},
+    {"country": {"value": "Germany", "span": [196, 204]}},
+    {"country": {"value": "Germany", "span": [268, 276]}},
+    {"country": {"value": "Germany", "span": [343, 351]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1990", "span": [104, 108]}},
+    {"endTime": {"value": "2017", "span": [131, 135]}}
+  ]
+}
+```

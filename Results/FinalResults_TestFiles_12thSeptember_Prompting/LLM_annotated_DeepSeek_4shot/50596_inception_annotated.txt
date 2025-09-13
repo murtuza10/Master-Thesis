@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751371-IQ5OVHbrT49wa4t8XWNW",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751374,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [138, 144]}},\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [290, 296]}},\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [1025, 1031]}},\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [1275, 1281]}},\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [1543, 1549]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2017\", \"span\": [667, 671]}},\n    {\"endTime\": {\"value\": \"2018\", \"span\": [676, 680]}},\n    {\"startTime\": {\"value\": \"30.8.2017\", \"span\": [1121, 1130]}},\n    {\"startTime\": {\"value\": \"6.9.2017\", \"span\": [1135, 1143]}},\n    {\"endTime\": {\"value\": \"20.9.2017\", \"span\": [1165, 1174]}},\n    {\"endTime\": {\"value\": \"25.9.2017\", \"span\": [1179, 1188]}},\n    {\"startTime\": {\"value\": \"24.8.2018\", \"span\": [1435, 1444]}},\n    {\"startTime\": {\"value\": \"31.8.2018\", \"span\": [1449, 1458]}},\n    {\"endTime\": {\"value\": \"13.9.2018\", \"span\": [1495, 1504]}},\n    {\"endTime\": {\"value\": \"20.9.2018\", \"span\": [1509, 1518]}},\n    {\"startTime\": {\"value\": \"29.8.2018\", \"span\": [1661, 1670]}},\n    {\"startTime\": {\"value\": \"4.9.2018\", \"span\": [1675, 1683]}},\n    {\"endTime\": {\"value\": \"12.9.2018\", \"span\": [1780, 1789]}},\n    {\"endTime\": {\"value\": \"29.9.2018\", \"span\": [1794, 1803]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4031,
+    "completion_tokens": 539,
+    "total_tokens": 4570,
+    "prompt_tokens_details": null
+  }
+}

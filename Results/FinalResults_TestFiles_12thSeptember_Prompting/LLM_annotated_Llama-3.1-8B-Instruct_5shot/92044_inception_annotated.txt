@@ -1,0 +1,27 @@
+### Output JSON Structure Filled with Entities Extracted from the Text ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "spring barley", "span": [123, 134]}},
+    {"cropSpecies": {"value": "winter barley", "span": [136, 147]}},
+    {"cropSpecies": {"value": "grain maize", "span": [153, 164]}},
+    {"cropSpecies": {"value": "silage maize", "span": [173, 184]}},
+    {"cropSpecies": {"value": "oats", "span": [203, 208]}},
+    {"cropSpecies": {"value": "potatoes", "span": [216, 223]}},
+    {"cropSpecies": {"value": "winter rape", "span": [236, 245]}},
+    {"cropSpecies": {"value": "rye", "span": [255, 259]}},
+    {"cropSpecies": {"value": "sugarbeet", "span": [271, 280]}},
+    {"cropSpecies": {"value": "triticale", "span": [294, 302]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [315, 324]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [19, 27]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1979", "span": [67, 71]}},
+    {"endTime": {"value": "2021", "span": [83, 87]}}
+  ]
+}
+```
+Note that the `"Soil"` list is empty since there are no mentions of soil-related entities in the given text.

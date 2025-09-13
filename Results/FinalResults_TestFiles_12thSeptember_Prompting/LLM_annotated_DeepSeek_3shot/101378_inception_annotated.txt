@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751334-ecac82uGgbUaHei0A5rv",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751334,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"birch\", \"span\": [344, 349] }},\n    {\"cropSpecies\": { \"value\": \"Betula pubescens\", \"span\": [351, 367] }},\n    {\"cropSpecies\": { \"value\": \"birch\", \"span\": [1291, 1296] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"one year\", \"span\": [791, 799] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 3279,
+    "completion_tokens": 133,
+    "total_tokens": 3412
+  }
+}

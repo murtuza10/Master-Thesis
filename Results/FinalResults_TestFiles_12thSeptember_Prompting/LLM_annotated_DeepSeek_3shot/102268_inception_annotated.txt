@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751036-jicXEQBR7PQK2jvs05uI",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751036,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [138, 143] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"soil properties\", \"span\": [326, 340] }}\n  ],\n  \"Location\": [\n    {\"region\": { \"value\": \"Europe\", \"span\": [235, 241] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2019\", \"span\": [100, 104] }},\n    {\"endTime\": { \"value\": \"2020\", \"span\": [109, 113] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 2908,
+    "completion_tokens": 150,
+    "total_tokens": 3058
+  }
+}

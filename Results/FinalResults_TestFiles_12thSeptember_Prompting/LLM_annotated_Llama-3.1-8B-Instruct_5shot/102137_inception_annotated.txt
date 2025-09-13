@@ -1,0 +1,38 @@
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wheat", "span": [54, 58]}}, 
+    {"cropSpecies": { "value": "barley", "span": [73, 78]}},
+    {"cropSpecies": { "value": "maize", "span": [104, 109]}},
+    {"cropSpecies": { "value": "oats", "span": [145, 150]}},
+    {"cropSpecies": { "value": "rye", "span": [173, 178]}},
+    {"cropSpecies": { "value": "potato", "span": [204, 210]}},
+    {"cropSpecies": { "value": "sugar beet", "span": [232, 241]}},
+    {"cropSpecies": { "value": "soybean", "span": [263, 271]}},
+    {"cropSpecies": { "value": "sunflower", "span": [294, 302]}},
+    {"cropSpecies": { "value": "peas", "span": [325, 330]}},
+    {"cropSpecies": { "value": "lentil", "span": [357, 363]}},
+    {"cropSpecies": { "value": "chickpea", "span": [389, 398]}},
+    {"cropSpecies": { "value": "faba bean", "span": [420, 429]}},
+    {"cropSpecies": { "value": "flax", "span": [451, 456]}},
+    {"cropSpecies": { "value": "rapeseed", "span": [483, 491]}},
+    {"cropSpecies": { "value": "winter wheat", "span": [524, 533]}}
+  ],
+  "Soil": [
+    {"Soil": { "value": "organic carbon", "span": [156, 169]}},
+    {"Soil": { "value": "soil properties", "span": [219, 231]}},
+    {"Soil": { "value": "soil profile", "span": [246, 256]}},
+    {"Soil": { "value": "soil cores", "span": [281, 291]}},
+    {"Soil": { "value": "soil monitoring", "span": [318, 331]}}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [137, 144]}},
+    {"region": { "value": "temperate", "span": [169, 176]}},
+    {"region": { "value": "agricultural", "span": [198, 208]}}
+  ],
+  "Time Statement": [
+    {"duration": { "value": "small-distance", "span": [114, 124]}}
+  ]
+}
+```

@@ -1,0 +1,22 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "celery", "span": [342, 348] }},
+    {"cropSpecies": { "value": "celery", "span": [434, 440] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"city": { "value": "Gatersleben", "span": [144, 154] }},
+    {"city": { "value": "London", "span": [258, 264] }},
+    {"city": { "value": "Berlin", "span": [439, 445] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2015", "span": [231, 235] }},
+    {"startTime": { "value": "2016", "span": [236, 240] }},
+    {"endTime": { "value": "2018", "span": [320, 324] }},
+    {"endTime": { "value": "2019", "span": [325, 329] }}
+  ]
+}
+```
+Note: The JSON structure above reflects the entities mentioned in the text, following the specified categories and format.

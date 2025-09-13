@@ -1,0 +1,30 @@
+### Output JSON ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Riesling", "span": [95, 103]}},
+    {"cropSpecies": {"value": "Felicia", "span": [105, 113]}},
+    {"cropSpecies": {"value": "Regent", "span": [118, 126]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"duration": {"value": "2 points in time", "span": [124, 138]}},
+    {"startTime": {"value": "before", "span": [140, 146]}},
+    {"endTime": {"value": "after thinning", "span": [150, 162]}},
+    {"startTime": {"value": "2018", "span": [172, 176]}}
+  ]
+}
+```
+
+### Explanation ###
+
+- We extracted three crop species: Riesling, Felicia, and Regent.
+- No soil-related entities were found in the text.
+- No location-related entities were found in the text.
+- We extracted four time-related entities:
+  - A duration of "2 points in time" (before and after thinning).
+  - A start time of "before".
+  - An end time of "after thinning".
+  - A start time of "2018".

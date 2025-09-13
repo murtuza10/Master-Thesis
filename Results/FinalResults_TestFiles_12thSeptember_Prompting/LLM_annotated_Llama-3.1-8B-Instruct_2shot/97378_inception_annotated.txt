@@ -1,0 +1,36 @@
+### Output JSON ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "cropland", "span": [145, 153]}},
+    {"cropSpecies": {"value": "maßnahmen", "span": [193, 201]}},
+    {"cropSpecies": {"value": "maßnahmen", "span": [205, 213]}},
+    {"cropSpecies": {"value": "maßnahmen", "span": [219, 227]}}
+  ],
+  "Soil": [
+    {"Soil": {"value": "Lehm", "span": [115, 119]}},
+    {"Soil": {"value": "Ton", "span": [121, 124]}},
+    {"Soil": {"value": "Boden", "span": [133, 137]}},
+    {"Soil": {"value": "pH Wert", "span": [172, 179]}},
+    {"Soil": {"value": "organischen Kohlenstoff", "span": [183, 197]}},
+    {"Soil": {"value": "Gesamt-Stickstoff", "span": [206, 216]}},
+    {"Soil": {"value": "Boden-DNA", "span": [234, 241]}},
+    {"Soil": {"value": "Boden-DNA", "span": [244, 251]}}
+  ],
+  "Location": [
+    {"city": {"value": "Hildesheim", "span": [104, 113]}}
+  ],
+  "Time Statement": [
+    {"duration": {"value": "2 Jahre", "span": [27, 35]}},
+    {"startTime": {"value": "14-tägiges", "span": [43, 53]}}
+  ]
+}
+```
+
+### Note ###
+
+- The text is in German, so the extracted entities are in German as well.
+- The span values are based on the character positions in the original text.
+- Some entities might be extracted based on context or word similarity, as the task is to extract entities explicitly mentioned in the text.
+- The output JSON structure follows the specified format, with each entity type having its own list.

@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751026-E7vec1NyUccyakpoPEgG",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751026,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"spring barley\", \"span\": [295, 308] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [310, 323] }},\n    {\"cropSpecies\": { \"value\": \"grain maize\", \"span\": [325, 336] }},\n    {\"cropSpecies\": { \"value\": \"silage maize\", \"span\": [338, 350] }},\n    {\"cropSpecies\": { \"value\": \"oats\", \"span\": [352, 356] }},\n    {\"cropSpecies\": { \"value\": \"potatoes\", \"span\": [358, 366] }},\n    {\"cropSpecies\": { \"value\": \"winter rape\", \"span\": [368, 379] }},\n    {\"cropSpecies\": { \"value\": \"rye\", \"span\": [381, 384] }},\n    {\"cropSpecies\": { \"value\": \"sugarbeet\", \"span\": [386, 395] }},\n    {\"cropSpecies\": { \"value\": \"triticale\", \"span\": [397, 406] }},\n    {\"cropSpecies\": { \"value\": \"winter wheat\", \"span\": [408, 420] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [80, 87] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [254, 261] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1979\", \"span\": [89, 93] }},\n    {\"endTime\": { \"value\": \"2021\", \"span\": [97, 101] }},\n    {\"startTime\": { \"value\": \"1979\", \"span\": [263, 267] }},\n    {\"endTime\": { \"value\": \"2021\", \"span\": [271, 275] }},\n    {\"endTime\": { \"value\": \"2020\", \"span\": [575, 579] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 3280,
+    "completion_tokens": 478,
+    "total_tokens": 3758
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751075-HUE2SPxwTonRdBpOenfU",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751075,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Apium graveolens\", \"span\": [27, 42] }},\n    {\"cropSpecies\": { \"value\": \"Apium graveolens\", \"span\": [175, 190] }},\n    {\"cropSpecies\": { \"value\": \"celery\", \"span\": [324, 330] }},\n    {\"cropSpecies\": { \"value\": \"Apium graveolens\", \"span\": [332, 347] }},\n    {\"cropSpecies\": { \"value\": \"Apium graveolens\", \"span\": [513, 528] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"city\": { \"value\": \"Quedlinburg\", \"span\": [450, 461] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [463, 470] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2016\", \"span\": [535, 540] }},\n    {\"startTime\": { \"value\": \"2017\", \"span\": [665, 669] }},\n    {\"endTime\": { \"value\": \"2018\", \"span\": [671, 675] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 3069,
+    "completion_tokens": 288,
+    "total_tokens": 3357
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751236-a9iP8wJeZ6RwPHOtNINg",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751236,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"Bodendruck\", \"span\": [16, 26]}},\n    {\"Soil\": {\"value\": \"28 cm\", \"span\": [228, 233]}},\n    {\"Soil\": {\"value\": \"Tiefe\", \"span\": [234, 239]}},\n    {\"Soil\": {\"value\": \"Bodendruck\", \"span\": [492, 502]}},\n    {\"Soil\": {\"value\": \"Wasserretentionseigenschaften\", \"span\": [505, 531]}},\n    {\"Soil\": {\"value\": \"Lagerungsdichte\", \"span\": [533, 548]}},\n    {\"Soil\": {\"value\": \"hydr. Leitfähigkeit\", \"span\": [563, 581]}},\n    {\"Soil\": {\"value\": \"100 cm3\", \"span\": [584, 591]}},\n    {\"Soil\": {\"value\": \"Gesamtporenvolumen\", \"span\": [643, 661]}},\n    {\"Soil\": {\"value\": \"Luftkapazität\", \"span\": [663, 676]}},\n    {\"Soil\": {\"value\": \"Feldkapazität\", \"span\": [678, 691]}},\n    {\"Soil\": {\"value\": \"Welkepunkt\", \"span\": [704, 714]}},\n    {\"Soil\": {\"value\": \"Trocken-rohdichte\", \"span\": [716, 732]}},\n    {\"Soil\": {\"value\": \"Bioporen\", \"span\": [741, 749]}},\n    {\"Soil\": {\"value\": \"Tiefe\", \"span\": [759, 764]}}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2017\", \"span\": [113, 117]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 3145,
+    "completion_tokens": 404,
+    "total_tokens": 3549
+  }
+}

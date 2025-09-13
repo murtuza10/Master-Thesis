@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751156-oZaZhNEc8I3a2XyXKPBc",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751156,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [56, 62]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [1338, 1344]}},\n    {\"cropSpecies\": {\"value\": \"Hordeum vulgare\", \"span\": [1347, 1362]}},\n    {\"cropSpecies\": {\"value\": \"oat\", \"span\": [1144, 1147]}},\n    {\"cropSpecies\": {\"value\": \"oilseed rape\", \"span\": [1429, 1441]}},\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [1444, 1449]}},\n    {\"cropSpecies\": {\"value\": \"lupine\", \"span\": [1452, 1458]}},\n    {\"cropSpecies\": {\"value\": \"rye\", \"span\": [1463, 1466]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"soil P\", \"span\": [947, 953]}},\n    {\"Soil\": {\"value\": \"depth\", \"span\": [1165, 1170]}},\n    {\"Soil\": {\"value\": \"25 cm\", \"span\": [1171, 1176]}},\n    {\"Soil\": {\"value\": \"PCAL\", \"span\": [1262, 1266]}},\n    {\"Soil\": {\"value\": \"0-30 cm\", \"span\": [1274, 1281]}},\n    {\"Soil\": {\"value\": \"11 mg kg-1 PCAL\", \"span\": [1298, 1314]}},\n    {\"Soil\": {\"value\": \"21 mg kg-1 PCAL\", \"span\": [1319, 1335]}},\n    {\"Soil\": {\"value\": \"47 mg kg-1 PCAL\", \"span\": [1340, 1356]}},\n    {\"Soil\": {\"value\": \"depth\", \"span\": [1492, 1497]}},\n    {\"Soil\": {\"value\": \"25 cm\", \"span\": [1498, 1503]}}\n  ],\n  \"Location\": [\n    {\"city\": {\"value\": \"Braunschweig\", \"span\": [26, 38]}},\n    {\"city\": {\"value\": \"Braunschweig\", \"span\": [103, 115]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2014\", \"span\": [60, 64]}},\n    {\"startTime\": {\"value\": \"1985\", \"span\": [876, 880]}},\n    {\"endTime\": {\"value\": \"2008\", \"span\": [883, 887]}},\n    {\"startTime\": {\"value\": \"2013\", \"span\": [1071, 1075]}},\n    {\"endTime\": {\"value\": \"2013\", \"span\": [1080, 1084]}},\n    {\"startTime\": {\"value\": \"2013\", \"span\": [1532, 1536]}},\n    {\"startTime\": {\"value\": \"2014\", \"span\": [1365, 1369]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 3500,
+    "completion_tokens": 692,
+    "total_tokens": 4192
+  }
+}

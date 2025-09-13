@@ -1,0 +1,24 @@
+### Output JSON Structure Filled with Input Text Entities
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "energy crops", "span": [442, 452]}},
+    {"cropSpecies": {"value": "crops", "span": [454, 460]}}
+  ],
+  "Soil": [
+    {"Soil": {"value": "soils", "span": [294, 301]}},
+    {"Soil": {"value": "soil", "span": [341, 347]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [134, 141]}},
+    {"country": {"value": "Germany", "span": [173, 180]}},
+    {"region": {"value": "European Union", "span": [224, 237]}},
+    {"region": {"value": "Germany", "span": [244, 251]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1990", "span": [187, 191]}},
+    {"endTime": {"value": "2017", "span": [193, 197]}}
+  ]
+}
+```

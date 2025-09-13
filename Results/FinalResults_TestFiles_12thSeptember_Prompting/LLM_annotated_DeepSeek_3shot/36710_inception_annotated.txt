@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751357-YJLeK6IFkFRteCiiVi63",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751361,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"region\": {\"value\": \"Altes Land\", \"span\": [62, 72]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [318, 325]}},\n    {\"region\": {\"value\": \"Lower Saxony\", \"span\": [305, 318]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2001\", \"span\": [339, 345]}},\n    {\"endTime\": {\"value\": \"2003\", \"span\": [349, 353]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3081,
+    "completion_tokens": 141,
+    "total_tokens": 3222,
+    "prompt_tokens_details": null
+  }
+}

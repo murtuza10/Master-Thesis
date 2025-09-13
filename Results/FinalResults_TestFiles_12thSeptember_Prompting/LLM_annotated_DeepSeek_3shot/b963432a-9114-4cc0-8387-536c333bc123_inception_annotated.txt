@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751177-BDWBXAkPxf3BIfFl0SuQ",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751177,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [1040, 1046]}},\n    {\"cropSpecies\": {\"value\": \"serradella\", \"span\": [1073, 1083]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [1122, 1128]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"pH\", \"span\": [59, 61]}},\n    {\"Soil\": {\"value\": \"redox potential\", \"span\": [321, 335]}},\n    {\"Soil\": {\"value\": \"Eh\", \"span\": [338, 340]}},\n    {\"Soil\": {\"value\": \"pH\", \"span\": [343, 345]}},\n    {\"Soil\": {\"value\": \"redox potential\", \"span\": [1129, 1143]}},\n    {\"Soil\": {\"value\": \"Eh\", \"span\": [1146, 1148]}},\n    {\"Soil\": {\"value\": \"pH\", \"span\": [1181, 1183]}}\n  ],\n  \"Location\": [\n    {\"city\": {\"value\": \"Rostock\", \"span\": [16, 23]}},\n    {\"city\": {\"value\": \"Rostock\", \"span\": [135, 142]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [293, 300]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2020\", \"span\": [85, 89]}},\n    {\"startTime\": {\"value\": \"2020\", \"span\": [161, 165]}},\n    {\"startTime\": {\"value\": \"2018\", \"span\": [813, 817]}},\n    {\"startTime\": {\"value\": \"2019\", \"span\": [1058, 1062]}},\n    {\"startTime\": {\"value\": \"2020\", \"span\": [1092, 1096]}},\n    {\"endTime\": {\"value\": \"2020\", \"span\": [85, 89]}},\n    {\"endTime\": {\"value\": \"2020\", \"span\": [161, 165]}},\n    {\"endTime\": {\"value\": \"2020\", \"span\": [1092, 1096]}},\n    {\"duration\": {\"value\": \"3.5 months\", \"span\": [1412, 1422]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 3281,
+    "completion_tokens": 534,
+    "total_tokens": 3815
+  }
+}

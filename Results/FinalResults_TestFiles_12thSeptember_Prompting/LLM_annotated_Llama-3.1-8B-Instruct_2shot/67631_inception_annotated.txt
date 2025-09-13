@@ -1,0 +1,22 @@
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Riesling", "span": [157, 163]}},
+    {"cropSpecies": { "value": "Felicia", "span": [174, 180]}},
+    {"cropSpecies": { "value": "Regent", "span": [192, 198]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": { "value": "2018", "span": [232, 236]}},
+    {"endTime": { "value": "2018", "span": [238, 242]}}
+  ]
+}
+```
+In the output, we have identified the following entities:
+
+- Crops: "Riesling", "Felicia", and "Regent" as varieties of wine berries.
+- Soil: No soil-related entities are mentioned in the text.
+- Location: No location-related entities are mentioned in the text.
+- Time Statement: The start and end times are mentioned as "2018" for before and after thinning, respectively.

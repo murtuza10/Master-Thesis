@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751129-74LWsFowofTaxWMvP4se",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751129,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"maize\", \"span\": [127, 132]}},\n    {\"cropSpecies\": {\"value\": \"maize\", \"span\": [665, 670]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"Sand\", \"span\": [278, 282]}},\n    {\"Soil\": {\"value\": \"Sand\", \"span\": [300, 304]}},\n    {\"Soil\": {\"value\": \"Sand\", \"span\": [317, 321]}},\n    {\"Soil\": {\"value\": \"Marsch\", \"span\": [333, 339]}},\n    {\"Soil\": {\"value\": \"slurry\", \"span\": [386, 392]}},\n    {\"Soil\": {\"value\": \"slurry\", \"span\": [402, 408]}},\n    {\"Soil\": {\"value\": \"phosphate\", \"span\": [482, 491]}},\n    {\"Soil\": {\"value\": \"fertilizer\", \"span\": [512, 521]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [626, 630]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [713, 717]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [842, 846]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [1082, 1086]}},\n    {\"Soil\": {\"value\": \"Soil\", \"span\": [1687, 1691]}},\n    {\"Soil\": {\"value\": \"Boden\", \"span\": [1814, 1819]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"Europe\", \"span\": [1794, 1800]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [1802, 1809]}},\n    {\"region\": {\"value\": \"Lower Saxony\", \"span\": [1811, 1824]}},\n    {\"city\": {\"value\": \"Wanna\", \"span\": [1826, 1831]}},\n    {\"region\": {\"value\": \"Mecklenburg-Vorpommern\", \"span\": [1833, 1855]}},\n    {\"city\": {\"value\": \"Rostock\", \"span\": [1857, 1864]}},\n    {\"city\": {\"value\": \"Wanna\", \"span\": [275, 280]}},\n    {\"city\": {\"value\": \"Wanna\", \"span\": [299, 304]}},\n    {\"city\": {\"value\": \"Rostock\", \"span\": [316, 323]}},\n    {\"city\": {\"value\": \"Wanna\", \"span\": [332, 337]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2021\", \"span\": [194, 198]}},\n    {\"startTime\": {\"value\": \"2022\", \"span\": [200, 204]}},\n    {\"endTime\": {\"value\": \"2023\", \"span\": [209, 213]}},\n    {\"startTime\": {\"value\": \"April\", \"span\": [633, 638]}},\n    {\"endTime\": {\"value\": \"August\", \"span\": [643, 649]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 3293,
+    "completion_tokens": 711,
+    "total_tokens": 4004
+  }
+}

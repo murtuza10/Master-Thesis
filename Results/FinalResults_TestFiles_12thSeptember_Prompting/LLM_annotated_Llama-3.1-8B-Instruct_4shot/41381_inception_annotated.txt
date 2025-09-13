@@ -1,0 +1,26 @@
+### Output JSON Structure Filled with Entities from the Text
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Drosophila suzukii", "span": [159, 173] }},
+    {"cropSpecies": { "value": "apple", "span": [528, 533] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": { "value": "southwest Germany", "span": [33, 50] }},
+    {"region": { "value": "Germany", "span": [103, 112] }},
+    {"region": { "value": "Europe", "span": [125, 132] }},
+    {"city": { "value": "Darmstadt", "span": [416, 424] }},
+    {"city": { "value": "Dossenheim", "span": [433, 441] }},
+    {"city": { "value": "Siebeldingen", "span": [449, 457] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2011", "span": [95, 99] }},
+    {"endTime": { "value": "February 2018", "span": [266, 284] }},
+    {"duration": { "value": "7 years", "span": [24, 30] }}
+  ]
+}
+```
+
+The output JSON structure is filled with the extracted entities from the given text. The `Crops` category includes `Drosophila suzukii` and `apple`, which are explicitly mentioned in the text as fruit-crops affected by the invasive pest. The `Location` category includes various geographic locations mentioned in the text, such as `southwest Germany`, `Germany`, and `Europe`. The `Time Statement` category includes time-related information, including the start and end years of the monitoring program, as well as the duration of the program.

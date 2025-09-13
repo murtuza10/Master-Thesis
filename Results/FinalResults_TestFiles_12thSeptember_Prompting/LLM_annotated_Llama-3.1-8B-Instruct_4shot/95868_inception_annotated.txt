@@ -1,0 +1,26 @@
+### Output ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Norway spruce", "span": [144, 155] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": { "value": "Germany", "span": [122, 127] }},
+    {"region": { "value": "Western Germany", "span": [139, 152] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1964", "span": [179, 183] }},
+    {"endTime": { "value": "2015", "span": [189, 193] }},
+    {"duration": { "value": "51 years", "span": [194, 202] }}
+  ]
+}
+```
+
+### Explanation ###
+
+*   "Crops": We extracted the species name "Norway spruce" as the crop species.
+*   "Soil": No soil-related information was found in the text.
+*   "Location": We extracted "Germany" as the country and "Western Germany" as the region.
+*   "Time Statement": We extracted "1964" as the start time, "2015" as the end time, and "51 years" as the duration of the measurement period.

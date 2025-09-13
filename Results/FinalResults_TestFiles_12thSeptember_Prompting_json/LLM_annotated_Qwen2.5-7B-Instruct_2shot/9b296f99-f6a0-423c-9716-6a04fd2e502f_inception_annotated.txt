@@ -1,0 +1,24 @@
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wheat", "span": [124, 128]}},
+    {"cropSpecies": { "value": "barley", "span": [130, 135]}},
+    {"cropSpecies": { "value": "sugar beet", "span": [137, 145]}}
+  ],
+  "Soil": [
+    {"Soil": { "value": "ploughing", "span": [243, 251]}},
+    {"Soil": { "value": "horse manure", "span": [433, 442]}},
+    {"Soil": { "value": "crop residues", "span": [444, 452]},
+    {"Soil": { "value": "catch crop", "span": [454, 461]}}
+  ],
+  "Location": [
+    {"region": { "value": "LUFA Speyer", "span": [175, 185]}},
+    {"region": { "value": "Rinkenbergerhof", "span": [211, 223]}},
+    {"region": { "value": "Speyer, Germany", "span": [225, 237]}},
+    {"country": { "value": "Germany", "span": [237, 243]}}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1984", "span": [107, 111]}},
+    {"duration": { "value": "long term", "span": [358, 364]}},
+    {"duration": { "value": "4 sampling seasons", "span": [595, 606]}}
+  ]
+}

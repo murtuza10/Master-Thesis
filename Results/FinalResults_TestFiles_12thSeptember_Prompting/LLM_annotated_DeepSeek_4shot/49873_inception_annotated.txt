@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751221-soPVqeXFe48iqHQ71mci",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751221,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"Bodenprofile\", \"span\": [18, 30] }},\n    {\"Soil\": { \"value\": \"Bodenleitprofile\", \"span\": [157, 172] }},\n    {\"Soil\": { \"value\": \"boden-physikalischen\", \"span\": [177, 194] }},\n    {\"Soil\": { \"value\": \"Bodeninformationen\", \"span\": [252, 269] }},\n    {\"Soil\": { \"value\": \"Bodenkartierung\", \"span\": [316, 330] }},\n    {\"Soil\": { \"value\": \"Bodenkundler\", \"span\": [418, 430] }},\n    {\"Soil\": { \"value\": \"Bodentyp\", \"span\": [740, 748] }},\n    {\"Soil\": { \"value\": \"Bodenart\", \"span\": [814, 822] }},\n    {\"Soil\": { \"value\": \"Skelett\", \"span\": [825, 832] }},\n    {\"Soil\": { \"value\": \"Trockenrohdichte\", \"span\": [835, 850] }},\n    {\"Soil\": { \"value\": \"TRD\", \"span\": [852, 855] }},\n    {\"Soil\": { \"value\": \"nutzbare Feldkapazität\", \"span\": [858, 878] }},\n    {\"Soil\": { \"value\": \"nFK\", \"span\": [880, 883] }},\n    {\"Soil\": { \"value\": \"Basensättigung\", \"span\": [923, 936] }},\n    {\"Soil\": { \"value\": \"organischer Kohlenstoffgehalt\", \"span\": [939, 965] }},\n    {\"Soil\": { \"value\": \"Corg\", \"span\": [967, 971] }},\n    {\"Soil\": { \"value\": \"Entkalkungstiefe\", \"span\": [974, 989] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"deutschland\", \"span\": [144, 154] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2012\", \"span\": [7, 11] }},\n    {\"startTime\": { \"value\": \"28.05.2019\", \"span\": [1117, 1127] }},\n    {\"startTime\": { \"value\": \"2012\", \"span\": [1157, 1161] }},\n    {\"endTime\": { \"value\": \"2012\", \"span\": [1171, 1175] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 3648,
+    "completion_tokens": 593,
+    "total_tokens": 4241
+  }
+}

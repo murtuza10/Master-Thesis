@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751353-lfp1levbmFaGK5FJg6dx",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751353,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [869, 875] }},\n    {\"cropSpecies\": { \"value\": \"serradella\", \"span\": [911, 921] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [969, 975] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"Redox potential\", \"span\": [22, 37] }},\n    {\"Soil\": { \"value\": \"pH\", \"span\": [39, 41] }},\n    {\"Soil\": { \"value\": \"pH\", \"span\": [334, 336] }},\n    {\"Soil\": { \"value\": \"pH\", \"span\": [1184, 1186] }},\n    {\"Soil\": { \"value\": \"depths\", \"span\": [155, 161] }},\n    {\"Soil\": { \"value\": \"water\", \"span\": [229, 234] }},\n    {\"Soil\": { \"value\": \"water\", \"span\": [1022, 1027] }},\n    {\"Soil\": { \"value\": \"depths\", \"span\": [1191, 1197] }}\n  ],\n  \"Location\": [\n    {\"city\": { \"value\": \"Rostock\", \"span\": [15, 22] }},\n    {\"city\": { \"value\": \"Rostock\", \"span\": [182, 189] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [266, 273] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2020\", \"span\": [93, 97] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [253, 257] }},\n    {\"startTime\": { \"value\": \"2018\", \"span\": [716, 720] }},\n    {\"startTime\": { \"value\": \"2019\", \"span\": [827, 831] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [853, 857] }},\n    {\"endTime\": { \"value\": \"2020\", \"span\": [93, 97] }},\n    {\"endTime\": { \"value\": \"2020\", \"span\": [253, 257] }},\n    {\"endTime\": { \"value\": \"2020\", \"span\": [853, 857] }},\n    {\"duration\": { \"value\": \"3.5 months\", \"span\": [1366, 1376] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 3688,
+    "completion_tokens": 583,
+    "total_tokens": 4271
+  }
+}

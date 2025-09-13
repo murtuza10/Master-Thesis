@@ -1,0 +1,16 @@
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wheat", "span": [409, 415] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "water stable aggregation", "span": [295, 313] }},
+    {"Soil": { "value": "soil properties", "span": [227, 236] }},
+    {"Soil": { "value": "soil", "span": [25, 29] }}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+Note: In this output, I have only included the entities that are explicitly mentioned in the text. The start and end indices of the entities are also included as per the format specified.

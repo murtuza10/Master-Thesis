@@ -1,0 +1,31 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [106, 111]}},
+    {"cropSpecies": {"value": "barley", "span": [234, 239]}},
+    {"cropSpecies": {"value": "oat", "span": [342, 346]}},
+    {"cropSpecies": {"value": "rape", "span": [384, 389]}},
+    {"cropSpecies": {"value": "wheat", "span": [403, 408]}},
+    {"cropSpecies": {"value": "lupine", "span": [422, 428]}},
+    {"cropSpecies": {"value": "rye", "span": [442, 446]}}
+  ],
+  "Soil": [
+    {"Soil": {"value": "grassland", "span": [158, 168]}},
+    {"Soil": {"value": "PCAL", "span": [272, 278]}},
+    {"Soil": {"value": "PCAL", "span": [311, 317]}},
+    {"Soil": {"value": "PCAL", "span": [351, 357]}},
+    {"Soil": {"value": "BC", "span": [417, 420]}},
+    {"Soil": {"value": "BCplus", "span": [425, 432]}},
+    {"Soil": {"value": "TSP", "span": [439, 443]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "1985", "span": [93, 97]}},
+    {"endTime": {"value": "2008", "span": [103, 107]}},
+    {"startTime": {"value": "2013", "span": [132, 136]}},
+    {"endTime": {"value": "2013", "span": [142, 146]}},
+    {"startTime": {"value": "2014", "span": [164, 168]}}
+  ]
+}
+```

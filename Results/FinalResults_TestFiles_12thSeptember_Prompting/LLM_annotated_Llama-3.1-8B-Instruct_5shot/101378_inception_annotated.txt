@@ -1,0 +1,25 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "birch", "span": [123, 129] }},
+    {"cropSpecies": { "value": "Betula pubescens", "span": [142, 157] }}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"duration": { "value": "one year", "span": [264, 273] }}
+  ]
+}
+```
+
+### Explanation ###
+The JSON structure is filled based on the input text as follows:
+
+- **Crops**: The text mentions "birch" and "Betula pubescens" which are plant species, so they are categorized as crops. The span values are calculated from the beginning of the text.
+
+- **Soil**: There is no mention of soil in the text, so the list is empty.
+
+- **Location**: There is no mention of a specific location, so the list is empty.
+
+- **Time Statement**: The text mentions "one year" which is a duration, so it is categorized as a time statement. The span value is calculated from the beginning of the text.

@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751294-VAripVvquJAHSoN8wpqz",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751294,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"grape\", \"span\": [246, 251]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [393, 400]}},\n    {\"region\": {\"value\": \"southwest Germany\", \"span\": [131, 149]}},\n    {\"region\": {\"value\": \"southwest Germany\", \"span\": [393, 411]}},\n    {\"region\": {\"value\": \"Germany\", \"span\": [452, 459]}},\n    {\"region\": {\"value\": \"Europe\", \"span\": [547, 553]}},\n    {\"city\": {\"value\": \"Dossenheim\", \"span\": [1024, 1034]}},\n    {\"city\": {\"value\": \"Siebeldingen\", \"span\": [1039, 1051]}},\n    {\"city\": {\"value\": \"Darmstadt\", \"span\": [1101, 1110]}},\n    {\"region\": {\"value\": \"southwest Germany\", \"span\": [1167, 1185]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2011\", \"span\": [381, 385]}},\n    {\"startTime\": {\"value\": \"late summer 2011\", \"span\": [453, 468]}},\n    {\"startTime\": {\"value\": \"2011\", \"span\": [1035, 1039]}},\n    {\"endTime\": {\"value\": \"February 2018\", \"span\": [886, 899]}},\n    {\"endTime\": {\"value\": \"2018\", \"span\": [1052, 1056]}},\n    {\"duration\": {\"value\": \"7-year\", \"span\": [45, 51]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4810,
+    "completion_tokens": 401,
+    "total_tokens": 5211
+  }
+}

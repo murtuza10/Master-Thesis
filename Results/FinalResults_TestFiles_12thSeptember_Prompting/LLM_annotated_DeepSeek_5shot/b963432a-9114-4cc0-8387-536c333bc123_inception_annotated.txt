@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751346-PzfKBEDg8V7Ie2vs2uKu",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751346,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [1105, 1111] }},\n    {\"cropSpecies\": { \"value\": \"serradella\", \"span\": [1131, 1141] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [1172, 1178] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"redox potential\", \"span\": [44, 59] }},\n    {\"Soil\": { \"value\": \"pH\", \"span\": [61, 63] }},\n    {\"Soil\": { \"value\": \"redox potential\", \"span\": [293, 308] }},\n    {\"Soil\": { \"value\": \"pH\", \"span\": [310, 312] }},\n    {\"Soil\": { \"value\": \"redox potential\", \"span\": [1429, 1444] }},\n    {\"Soil\": { \"value\": \"pH\", \"span\": [1484, 1486] }}\n  ],\n  \"Location\": [\n    {\"city\": { \"value\": \"Rostock\", \"span\": [14, 21] }},\n    {\"city\": { \"value\": \"Rostock\", \"span\": [128, 135] }},\n    {\"region\": { \"value\": \"Northern Germany\", \"span\": [247, 263] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2020\", \"span\": [92, 96] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [176, 180] }},\n    {\"startTime\": { \"value\": \"2018\", \"span\": [904, 908] }},\n    {\"startTime\": { \"value\": \"2019\", \"span\": [1096, 1100] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [1166, 1170] }},\n    {\"duration\": { \"value\": \"3.5 months\", \"span\": [1860, 1870] }},\n    {\"endTime\": { \"value\": \"2020\", \"span\": [1871, 1875] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 6495,
+    "completion_tokens": 504,
+    "total_tokens": 6999
+  }
+}

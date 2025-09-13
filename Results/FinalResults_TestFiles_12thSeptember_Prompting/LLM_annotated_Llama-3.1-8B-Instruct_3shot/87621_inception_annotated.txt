@@ -1,0 +1,21 @@
+### Output JSON Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "barley", "span": [155, 161] }},
+    {"cropSpecies": { "value": "Hordeum vulgare", "span": [163, 175] }},
+    {"cropSpecies": { "value": "wheat", "span": [21, 26] }}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Explanation ###
+- The entity `"barley"` is extracted as a crop species from the text `"Identification of markers associated with Wheat dwarf virus (WDV) tolerance/resistance in barley (Hordeum vulgare ssp. vulgare) using Genome wide association studies"`.
+- The entity `"Hordeum vulgare"` is extracted as a crop species from the text `"Identification of markers associated with Wheat dwarf virus (WDV) tolerance/resistance in barley (Hordeum vulgare ssp. vulgare) using Genome wide association studies"`.
+- The entity `"wheat"` is extracted as a crop species from the text `"Identification of markers associated with Wheat dwarf virus (WDV) tolerance/resistance in barley (Hordeum vulgare ssp. vulgare) using Genome wide association studies"`.
+- There are no mentions of soil in the text.
+- There are no mentions of location in the text.
+- There are no mentions of time statements in the text.

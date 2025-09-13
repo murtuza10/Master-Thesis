@@ -1,0 +1,22 @@
+### Output JSON ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"Soil": {"value": "organic carbon", "span": [95, 112]}},
+    {"Soil": {"value": "agricultural soils", "span": [132, 146]}},
+    {"Soil": {"value": "temperate agricultural soils", "span": [1, 20]}}
+  ],
+  "Location": [
+    {"city": {"value": "Germany", "span": [117, 122]}}
+  ],
+  "Time Statement": []
+}
+```
+
+### Explanation ###
+Based on the input text, I have identified the following entities:
+
+*   **Soil**: "organic carbon", "agricultural soils", and "temperate agricultural soils" are mentioned as soil properties.
+*   **Location**: "Germany" is mentioned as a country.
+*   **Time Statement**: No time-related information is mentioned in the text.

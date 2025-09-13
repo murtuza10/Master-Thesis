@@ -1,0 +1,19 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "apple", "span": [246, 251] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": { "value": "Altes Land", "span": [103, 113] }},
+    {"country": { "value": "Germany", "span": [164, 171] }},
+    {"region": { "value": "Lower Saxony", "span": [181, 192] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2001", "span": [225, 229] }},
+    {"endTime": { "value": "2003", "span": [231, 235] }}
+  ]
+}
+```
+Note: The `span` values represent the start and end character positions from the beginning of the full text.

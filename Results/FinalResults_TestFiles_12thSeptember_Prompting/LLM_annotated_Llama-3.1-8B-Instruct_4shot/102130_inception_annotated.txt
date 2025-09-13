@@ -1,0 +1,32 @@
+### Output JSON ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "C4 roots", "span": [115, 123]}},
+    {"cropSpecies": {"value": "C3", "span": [124, 127]}}
+  ],
+  "Soil": [
+    {"Soil": {"value": "C3 soil", "span": [127, 132]}},
+    {"Soil": {"value": "POC", "span": [234, 238]}},
+    {"Soil": {"value": "MAOC", "span": [241, 246]}},
+    {"Soil": {"value": "bulk soil", "span": [258, 266]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2 years", "span": [23, 29]}},
+    {"duration": {"value": "6 months", "span": [184, 192]}},
+    {"duration": {"value": "12 months", "span": [194, 202]}},
+    {"duration": {"value": "24 months", "span": [204, 212]}}
+  ]
+}
+```
+
+### Explanation ###
+
+In the given text, the following entities are identified:
+
+- **Crops**: Two crop species are mentioned: "C4 roots" and "C3" (which is a soil type, but can be interpreted as a crop type).
+- **Soil**: Several soil-related entities are mentioned: "C3 soil", "POC", "MAOC", and "bulk soil".
+- **Location**: No location is mentioned in the text.
+- **Time Statement**: The text mentions a 2-year duration, as well as specific time periods (6, 12, and 24 months) for the incubation experiment.

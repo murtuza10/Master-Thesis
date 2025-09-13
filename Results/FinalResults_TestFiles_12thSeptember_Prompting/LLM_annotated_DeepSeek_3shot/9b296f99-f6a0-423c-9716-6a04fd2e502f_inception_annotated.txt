@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751368-0uLxKCQtMCjuDkM0I5yB",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751368,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [511, 516]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [518, 524]}},\n    {\"cropSpecies\": {\"value\": \"sugar beet\", \"span\": [530, 540]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [1019, 1025]}},\n    {\"cropSpecies\": {\"value\": \"sugar beet\", \"span\": [1030, 1040]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"humus\", \"span\": [114, 119]}},\n    {\"Soil\": {\"value\": \"soil fertility\", \"span\": [182, 195]}},\n    {\"Soil\": {\"value\": \"ploughing\", \"span\": [613, 622]}},\n    {\"Soil\": {\"value\": \"farmyard\", \"span\": [689, 697]}},\n    {\"Soil\": {\"value\": \"manure\", \"span\": [698, 704]}},\n    {\"Soil\": {\"value\": \"crop residues\", \"span\": [732, 745]}},\n    {\"Soil\": {\"value\": \"catch crop\", \"span\": [749, 759]}},\n    {\"Soil\": {\"value\": \"soil fertility\", \"span\": [2212, 2225]}},\n    {\"Soil\": {\"value\": \"Boden\", \"span\": [2533, 2538]}}\n  ],\n  \"Location\": [\n    {\"city\": {\"value\": \"Speyer\", \"span\": [34, 40]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [42, 49]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [196, 202]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [204, 211]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [1439, 1445]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [1447, 1454]}},\n    {\"city\": {\"value\": \"Karlsruhe\", \"span\": [1011, 1020]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [1523, 1529]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [1531, 1538]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"1984\", \"span\": [473, 477]}},\n    {\"startTime\": {\"value\": \"2009\", \"span\": [1000, 1004]}},\n    {\"startTime\": {\"value\": \"16. September 2009\", \"span\": [983, 999]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3502,
+    "completion_tokens": 623,
+    "total_tokens": 4125,
+    "prompt_tokens_details": null
+  }
+}

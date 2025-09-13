@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751145-UQDP9KR0JcrrqM35FcXx",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751145,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [1373, 1378] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"soil properties\", \"span\": [267, 281] }},\n    {\"Soil\": { \"value\": \"soil water stable aggregation\", \"span\": [367, 395] }},\n    {\"Soil\": { \"value\": \"soil properties\", \"span\": [445, 459] }},\n    {\"Soil\": { \"value\": \"soil-plant system\", \"span\": [1040, 1057] }},\n    {\"Soil\": { \"value\": \"Soil\", \"span\": [1276, 1280] }},\n    {\"Soil\": { \"value\": \"Soil properties\", \"span\": [1322, 1336] }},\n    {\"Soil\": { \"value\": \"Boden\", \"span\": [1362, 1367] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 3363,
+    "completion_tokens": 229,
+    "total_tokens": 3592
+  }
+}

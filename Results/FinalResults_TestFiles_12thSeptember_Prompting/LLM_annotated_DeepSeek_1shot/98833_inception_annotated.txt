@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757750992-nef83Q70nyvn5lg1B6BX",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757750992,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"Bodendruck\", \"span\": [8, 18]}},\n    {\"Soil\": {\"value\": \"bodenphysikalischer Parameter\", \"span\": [20, 46]}},\n    {\"Soil\": {\"value\": \"pseudovergleyte Parabraunerde\", \"span\": [252, 278]}},\n    {\"Soil\": {\"value\": \"Löss\", \"span\": [283, 287]}},\n    {\"Soil\": {\"value\": \"28 cm Tiefe\", \"span\": [295, 306]}},\n    {\"Soil\": {\"value\": \"Bodendruck\", \"span\": [587, 597]}},\n    {\"Soil\": {\"value\": \"plastische Bodensetzung\", \"span\": [599, 621]}},\n    {\"Soil\": {\"value\": \"Wasserretentionseigenschaften\", \"span\": [623, 650]}},\n    {\"Soil\": {\"value\": \"Lagerungsdichte\", \"span\": [652, 667]}},\n    {\"Soil\": {\"value\": \"hydr. Leitfähigkeit\", \"span\": [681, 700]}},\n    {\"Soil\": {\"value\": \"100 cm3 Stechzylinder\", \"span\": [703, 724]}},\n    {\"Soil\": {\"value\": \"Gesamtporenvolumen\", \"span\": [779, 797]}},\n    {\"Soil\": {\"value\": \"Luftkapazität\", \"span\": [799, 812]}},\n    {\"Soil\": {\"value\": \"Feldkapazität\", \"span\": [814, 827]}},\n    {\"Soil\": {\"value\": \"permanenter Welkepunkt\", \"span\": [829, 850]}},\n    {\"Soil\": {\"value\": \"Trocken-rohdichte\", \"span\": [852, 868]}},\n    {\"Soil\": {\"value\": \"Bioporen\", \"span\": [881, 889]}}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2017\", \"span\": [110, 114]}},\n    {\"startTime\": {\"value\": \"2017\", \"span\": [184, 188]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 3367,
+    "completion_tokens": 493,
+    "total_tokens": 3860
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751361-RArMhyfxHkIKaXgD9Rsd",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751361,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [169, 175]}},\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [239, 245]}},\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [272, 278]}},\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [1534, 1540]}},\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [1761, 1767]}},\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [2046, 2052]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2017\", \"span\": [830, 831]}},\n    {\"endTime\": {\"value\": \"2018\", \"span\": [835, 839]}},\n    {\"startTime\": {\"value\": \"30.8.2017\", \"span\": [1456, 1465]}},\n    {\"startTime\": {\"value\": \"6.9.2017\", \"span\": [1470, 1478]}},\n    {\"endTime\": {\"value\": \"20.9.2017\", \"span\": [1500, 1509]}},\n    {\"endTime\": {\"value\": \"25.9.2017\", \"span\": [1514, 1523]}},\n    {\"startTime\": {\"value\": \"24.8.2018\", \"span\": [1714, 1723]}},\n    {\"startTime\": {\"value\": \"31.8.2018\", \"span\": [1728, 1736]}},\n    {\"endTime\": {\"value\": \"13.9.2018\", \"span\": [1769, 1778]}},\n    {\"endTime\": {\"value\": \"20.9.2018\", \"span\": [1783, 1792]}},\n    {\"startTime\": {\"value\": \"29.8.2018\", \"span\": [1954, 1963]}},\n    {\"startTime\": {\"value\": \"4.9.2018\", \"span\": [1968, 1976]}},\n    {\"endTime\": {\"value\": \"12.9.2018\", \"span\": [2106, 2115]}},\n    {\"endTime\": {\"value\": \"29.9.2018\", \"span\": [2120, 2129]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 6838,
+    "completion_tokens": 563,
+    "total_tokens": 7401
+  }
+}

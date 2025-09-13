@@ -1,0 +1,31 @@
+### Output JSON ###
+
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"Soil": {"value": "Lehm", "span": [213, 217]}},
+    {"Soil": {"value": "Ton", "span": [222, 225]}},
+    {"Soil": {"value": "pH Wert", "span": [274, 280]}},
+    {"Soil": {"value": "organischen Kohlenstoff", "span": [292, 303]}},
+    {"Soil": {"value": "Gesamt-Stickstoff", "span": [314, 323]}},
+    {"Soil": {"value": "Boden-DNA", "span": [349, 357]}},
+    {"Soil": {"value": "Boden", "span": [361, 366]}}
+  ],
+  "Location": [
+    {"region": {"value": "Nähe von Hildesheim", "span": [146, 159]}},
+    {"city": {"value": "Hildesheim", "span": [144, 154]}}
+  ],
+  "Time Statement": [
+    {"duration": {"value": "14-tägigen Zeitraster", "span": [83, 96]}},
+    {"startTime": {"value": "2 Jahre", "span": [110, 115]}}
+  ]
+}
+```
+
+### Explanation ###
+
+- **Crops**: Keine Erwähnung von Kulturen.
+- **Soil**: Bodentextur (Lehm, Ton), pH Wert, organische Kohlenstoff, Gesamt-Stickstoff, Boden-DNA und Boden selbst wurden erwähnt.
+- **Location**: Die Nähe von Hildesheim und die Stadt Hildesheim wurden erwähnt.
+- **Time Statement**: Ein 14-tägiger Zeitraster und ein Zeitraum von 2 Jahren wurden erwähnt.

@@ -1,0 +1,19 @@
+### Output JSON Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wheat", "span": [113, 119] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "earthworms", "span": [83, 92] }},
+    {"Soil": { "value": "pedo-climatic zones", "span": [130, 146] }}
+  ],
+  "Location": [
+    {"region": { "value": "Europe", "span": [167, 173] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2019", "span": [144, 148] }},
+    {"startTime": { "value": "2020", "span": [155, 159] }}
+  ]
+}
+```

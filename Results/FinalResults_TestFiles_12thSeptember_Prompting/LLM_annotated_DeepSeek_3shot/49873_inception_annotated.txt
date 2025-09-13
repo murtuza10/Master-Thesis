@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751042-6OaV2rbsAQgG9mK3gG8O",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751042,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"Bodenprofile\", \"span\": [23, 34]}},\n    {\"Soil\": {\"value\": \"Bodenleitprofile\", \"span\": [148, 163]}},\n    {\"Soil\": {\"value\": \"boden-physikalischen\", \"span\": [171, 189]}},\n    {\"Soil\": {\"value\": \"Standorts- und Bodeninformationen\", \"span\": [247, 277]}},\n    {\"Soil\": {\"value\": \"Standorts- und Bodenkartierung\", \"span\": [315, 343]}},\n    {\"Soil\": {\"value\": \"Standorts- und Leitprofildaten\", \"span\": [520, 546]}},\n    {\"Soil\": {\"value\": \"Bodentyp\", \"span\": [634, 642]}},\n    {\"Soil\": {\"value\": \"Wasserhaushalts-\", \"span\": [645, 660]}},\n    {\"Soil\": {\"value\": \"Nährstoffansprache\", \"span\": [661, 678]}},\n    {\"Soil\": {\"value\": \"Kalkung\", \"span\": [680, 686]}},\n    {\"Soil\": {\"value\": \"Bodenart\", \"span\": [725, 733]}},\n    {\"Soil\": {\"value\": \"Skelett\", \"span\": [736, 743]}},\n    {\"Soil\": {\"value\": \"Trockenrohdichte\", \"span\": [746, 761]}},\n    {\"Soil\": {\"value\": \"TRD\", \"span\": [763, 766]}},\n    {\"Soil\": {\"value\": \"nutzbare Feldkapazität\", \"span\": [769, 790]}},\n    {\"Soil\": {\"value\": \"nFK\", \"span\": [792, 795]}},\n    {\"Soil\": {\"value\": \"Basensättigung\", \"span\": [832, 845]}},\n    {\"Soil\": {\"value\": \"organischer Kohlenstoffgehalt\", \"span\": [848, 875]}},\n    {\"Soil\": {\"value\": \"Corg\", \"span\": [877, 881]}},\n    {\"Soil\": {\"value\": \"Entkalkungstiefe\", \"span\": [884, 899]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"deutschen\", \"span\": [110, 118]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"28.05.2019\", \"span\": [1016, 1026]}},\n    {\"startTime\": {\"value\": \"2012\", \"span\": [1065, 1069]}},\n    {\"endTime\": {\"value\": \"2012\", \"span\": [1080, 1084]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 3241,
+    "completion_tokens": 611,
+    "total_tokens": 3852
+  }
+}

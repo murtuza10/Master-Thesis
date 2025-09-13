@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751230-zRbEHBvewLxI84mZVAkt",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751230,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"Bodendruck\", \"span\": [13, 23]}},\n    {\"Soil\": {\"value\": \"Pseudovergleyte Parabraunerde\", \"span\": [330, 356]}},\n    {\"Soil\": {\"value\": \"Löss\", \"span\": [361, 365]}},\n    {\"Soil\": {\"value\": \"28 cm\", \"span\": [375, 380]}},\n    {\"Soil\": {\"value\": \"20\", \"span\": [664, 666]}},\n    {\"Soil\": {\"value\": \"35\", \"span\": [668, 670]}},\n    {\"Soil\": {\"value\": \"50 cm\", \"span\": [672, 677]}},\n    {\"Soil\": {\"value\": \"Bodendruck\", \"span\": [680, 690]}},\n    {\"Soil\": {\"value\": \"Wasserretentionseigenschaften\", \"span\": [692, 719]}},\n    {\"Soil\": {\"value\": \"Lagerungsdichte\", \"span\": [721, 735]}},\n    {\"Soil\": {\"value\": \"hydr. Leitfähigkeit\", \"span\": [742, 760]}},\n    {\"Soil\": {\"value\": \"100 cm3\", \"span\": [763, 770]}},\n    {\"Soil\": {\"value\": \"Gesamtporenvolumen\", \"span\": [805, 823]}},\n    {\"Soil\": {\"value\": \"Luftkapazität\", \"span\": [825, 838]}},\n    {\"Soil\": {\"value\": \"Feldkapazität\", \"span\": [840, 852]}},\n    {\"Soil\": {\"value\": \"permanenter Welkepunkt\", \"span\": [854, 875]}},\n    {\"Soil\": {\"value\": \"Trocken-rohdichte\", \"span\": [877, 893]}},\n    {\"Soil\": {\"value\": \"Bioporen\", \"span\": [895, 903]}}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2017\", \"span\": [114, 118]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4426,
+    "completion_tokens": 474,
+    "total_tokens": 4900
+  }
+}

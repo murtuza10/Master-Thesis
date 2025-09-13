@@ -1,0 +1,18 @@
+{
+  "Crops": [
+    {"cropSpecies": { "value": "C4", "span": [105, 108] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "C3 soil", "span": [92, 98] }},
+    {"Soil": { "value": "C4 roots litter", "span": [104, 117] }}
+  ],
+  "Location": [
+    {"city": { "value": "", "span": [] }}  // no city mentioned
+  ],
+  "Time Statement": [
+    {"duration": { "value": "2 years", "span": [13, 19] }},
+    {"startTime": { "value": "6 months", "span": [64, 71] }},
+    {"startTime": { "value": "12 months", "span": [74, 81] }},
+    {"startTime": { "value": "24 months", "span": [83, 90] }}
+  ]
+}

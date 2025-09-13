@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751319-rRiQEtNnivyre1j5WzfF",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751319,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [43, 49]}},\n    {\"cropSpecies\": {\"value\": \"oat\", \"span\": [1031, 1034]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [1257, 1263]}},\n    {\"cropSpecies\": {\"value\": \"Hordeum vulgare\", \"span\": [1266, 1282]}},\n    {\"cropSpecies\": {\"value\": \"oilseed rape\", \"span\": [1381, 1393]}},\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [1396, 1401]}},\n    {\"cropSpecies\": {\"value\": \"lupine\", \"span\": [1404, 1410]}},\n    {\"cropSpecies\": {\"value\": \"rye\", \"span\": [1415, 1418]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"soil P\", \"span\": [1011, 1017]}},\n    {\"Soil\": {\"value\": \"depth\", \"span\": [1025, 1030]}},\n    {\"Soil\": {\"value\": \"25 cm\", \"span\": [1032, 1037]}},\n    {\"Soil\": {\"value\": \"PCAL\", \"span\": [1185, 1189]}},\n    {\"Soil\": {\"value\": \"11 mg kg-1 PCAL\", \"span\": [1209, 1225]}},\n    {\"Soil\": {\"value\": \"21 mg kg-1 PCAL\", \"span\": [1230, 1246]}},\n    {\"Soil\": {\"value\": \"47 mg kg-1 PCAL\", \"span\": [1251, 1267]}},\n    {\"Soil\": {\"value\": \"depth\", \"span\": [1494, 1499]}},\n    {\"Soil\": {\"value\": \"25 cm\", \"span\": [1501, 1506]}}\n  ],\n  \"Location\": [\n    {\"city\": {\"value\": \"Braunschweig\", \"span\": [25, 37]}},\n    {\"city\": {\"value\": \"Braunschweig\", \"span\": [168, 180]}}\n  ],\n  \"Time Statement\": [\n    {\"endTime\": {\"value\": \"2014\", \"span\": [52, 56]}},\n    {\"startTime\": {\"value\": \"1985\", \"span\": [782, 786]}},\n    {\"endTime\": {\"value\": \"2008\", \"span\": [788, 792]}},\n    {\"endTime\": {\"value\": \"2013\", \"span\": [1018, 1022]}},\n    {\"endTime\": {\"value\": \"2013\", \"span\": [1087, 1091]}},\n    {\"startTime\": {\"value\": \"autumn 2013\", \"span\": [1603, 1614]}},\n    {\"endTime\": {\"value\": \"2014\", \"span\": [1291, 1295]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6714,
+    "completion_tokens": 674,
+    "total_tokens": 7388,
+    "prompt_tokens_details": null
+  }
+}

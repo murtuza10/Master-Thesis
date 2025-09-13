@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751063-bhXpzmsLq6g3WfId1b70",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751063,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"soil organic carbon\", \"span\": [135, 154] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [207, 214] }}\n  ],\n  \"Time Statement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4242,
+    "completion_tokens": 76,
+    "total_tokens": 4318
+  }
+}

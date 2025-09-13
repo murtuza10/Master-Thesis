@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751115-5TQQbtDALGXqza2oDNmb",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751115,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"maize\", \"span\": [166, 171] }},\n    {\"cropSpecies\": { \"value\": \"maize\", \"span\": [679, 684] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"soil\", \"span\": [18, 22] }},\n    {\"Soil\": { \"value\": \"soil\", \"span\": [1199, 1203] }},\n    {\"Soil\": { \"value\": \"Sand\", \"span\": [384, 388] }},\n    {\"Soil\": { \"value\": \"Sand\", \"span\": [417, 421] }},\n    {\"Soil\": { \"value\": \"Sand\", \"span\": [450, 454] }},\n    {\"Soil\": { \"value\": \"Marsch\", \"span\": [464, 470] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Europe\", \"span\": [1689, 1695] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [1697, 1704] }},\n    {\"region\": { \"value\": \"Lower Saxony\", \"span\": [1706, 1719] }},\n    {\"city\": { \"value\": \"Wanna\", \"span\": [1721, 1726] }},\n    {\"region\": { \"value\": \"Mecklenburg-Vorpommern\", \"span\": [1728, 1751] }},\n    {\"city\": { \"value\": \"Rostock\", \"span\": [1753, 1760] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2021\", \"span\": [205, 209] }},\n    {\"endTime\": { \"value\": \"2023\", \"span\": [214, 218] }},\n    {\"startTime\": { \"value\": \"April\", \"span\": [720, 725] }},\n    {\"endTime\": { \"value\": \"August\", \"span\": [730, 736] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4574,
+    "completion_tokens": 467,
+    "total_tokens": 5041
+  }
+}

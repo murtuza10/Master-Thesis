@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757750874-GJskpk5v1LmpW5jLDAOx",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757750874,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"maize\", \"span\": [227, 232]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"soil\", \"span\": [63, 67]}},\n    {\"Soil\": {\"value\": \"roots\", \"span\": [72, 77]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [116, 120]}},\n    {\"Soil\": {\"value\": \"roots\", \"span\": [125, 130]}},\n    {\"Soil\": {\"value\": \"Wanna Sand\", \"span\": [283, 293]}},\n    {\"Soil\": {\"value\": \"Wanna Sand\", \"span\": [310, 320]}},\n    {\"Soil\": {\"value\": \"Rostock Sand\", \"span\": [339, 351]}},\n    {\"Soil\": {\"value\": \"Wanna Marsch\", \"span\": [359, 371]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [666, 670]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [742, 746]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [1053, 1057]}},\n    {\"Soil\": {\"value\": \"Soil\", \"span\": [1532, 1536]}},\n    {\"Soil\": {\"value\": \"Boden\", \"span\": [1675, 1680]}}\n  ],\n  \"Location\": [\n    {\"region\": {\"value\": \"Europe\", \"span\": [1653, 1659]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [1661, 1668]}},\n    {\"region\": {\"value\": \"Lower Saxony\", \"span\": [1670, 1683]}},\n    {\"city\": {\"value\": \"Wanna\", \"span\": [1685, 1690]}},\n    {\"region\": {\"value\": \"Mecklenburg-Vorpommern\", \"span\": [1692, 1716]}},\n    {\"city\": {\"value\": \"Rostock\", \"span\": [1718, 1725]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2021\", \"span\": [250, 254]}},\n    {\"endTime\": {\"value\": \"2023\", \"span\": [260, 264]}},\n    {\"startTime\": {\"value\": \"April\", \"span\": [642, 647]}},\n    {\"endTime\": {\"value\": \"August\", \"span\": [652, 658]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 3515,
+    "completion_tokens": 566,
+    "total_tokens": 4081
+  }
+}

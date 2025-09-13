@@ -1,0 +1,19 @@
+### Output JSON ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "apple", "span": [131, 136] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": { "value": "Altes Land", "span": [11, 20] }},
+    {"country": { "value": "Germany", "span": [104, 110] }},
+    {"region": { "value": "Lower Saxony", "span": [126, 135] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2001", "span": [153, 157] }},
+    {"endTime": { "value": "2003", "span": [163, 167] }}
+  ]
+}
+```
+Note that the "Soil" category is empty because there is no mention of soil in the input text.

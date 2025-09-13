@@ -1,0 +1,41 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "maize", "span": [439, 445] }},
+    {"cropSpecies": { "value": "maize", "span": [531, 537] }},
+    {"cropSpecies": { "value": "maize", "span": [636, 642] }},
+    {"cropSpecies": { "value": "maize", "span": [725, 731] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "Wanna Sand", "span": [256, 272] }},
+    {"Soil": { "value": "Wanna Sand without biogas slurry", "span": [273, 299] }},
+    {"Soil": { "value": "Rostock Sand", "span": [308, 324] }},
+    {"Soil": { "value": "Wanna Marsch", "span": [329, 345] }},
+    {"Soil": { "value": "biogas slurry", "span": [416, 428] }}
+  ],
+  "Location": [
+    {"country": { "value": "Europe", "span": [646, 653] }},
+    {"region": { "value": "Germany", "span": [659, 666] }},
+    {"region": { "value": "Lower Saxony", "span": [677, 688] }},
+    {"city": { "value": "Wanna", "span": [694, 700] }},
+    {"city": { "value": "Mecklenburg-Vorpommern", "span": [711, 725] }},
+    {"city": { "value": "Rostock", "span": [732, 738] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2021", "span": [211, 215] }},
+    {"endTime": { "value": "2023", "span": [221, 225] }},
+    {"duration": { "value": "2 years", "span": [226, 233] }},
+    {"startTime": { "value": "April", "span": [349, 355] }},
+    {"endTime": { "value": "August", "span": [362, 368] }}
+  ]
+}
+```
+
+### Note: ###
+
+-   The start and end indices in the span arrays are 0-based, starting from the beginning of the full text.
+-   The "cropSpecies" value for "maize" is extracted as a single entity, regardless of the mention in the text.
+-   The "Soil" entity values are extracted as single entities, regardless of the property type.
+-   The "Location" entity values are extracted as single entities, regardless of the geographic or administrative level.
+-   The "Time Statement" entity values are extracted as single entities, regardless of the duration or specific dates.

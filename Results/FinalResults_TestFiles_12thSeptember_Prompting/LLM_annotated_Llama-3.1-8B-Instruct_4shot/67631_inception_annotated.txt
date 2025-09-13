@@ -1,0 +1,18 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Riesling", "span": [176, 183] }},
+    {"cropSpecies": { "value": "Felicia", "span": [186, 193] }},
+    {"cropSpecies": { "value": "Regent", "span": [203, 210] }}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": { "value": "2018", "span": [243, 247] }},
+    {"endTime": { "value": "2018", "span": [259, 263] }}
+  ]
+}
+```
+
+Note that the time period "before and after thinning" is not included in the output as it is not explicitly mentioned as a start or end time, but rather as a descriptive phrase.

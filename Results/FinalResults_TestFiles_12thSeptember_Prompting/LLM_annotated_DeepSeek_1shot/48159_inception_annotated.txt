@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757750978-Jsm0TQYqFbfpe7e9m0XH",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757750978,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"energy crops\", \"span\": [1032, 1044]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"agricultural soils\", \"span\": [1007, 1025]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [39, 46]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [808, 815]}},\n    {\"region\": {\"value\": \"European Union\", \"span\": [292, 307]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [890, 897]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"1990\", \"span\": [63, 67]}},\n    {\"endTime\": {\"value\": \"2017\", \"span\": [70, 74]}},\n    {\"startTime\": {\"value\": \"1990\", \"span\": [868, 872]}},\n    {\"endTime\": {\"value\": \"2017\", \"span\": [875, 879]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 3294,
+    "completion_tokens": 255,
+    "total_tokens": 3549
+  }
+}

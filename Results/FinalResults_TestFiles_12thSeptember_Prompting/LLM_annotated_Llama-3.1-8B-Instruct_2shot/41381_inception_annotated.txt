@@ -1,0 +1,31 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Drosophila suzukii", "span": [131, 143]}},
+    {"cropSpecies": { "value": "apple", "span": [1043, 1049]}},
+    {"cropSpecies": { "value": "grape", "span": [1085, 1092]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": { "value": "Germany", "span": [53, 60]}},
+    {"region": { "value": "southwest Germany", "span": [93, 108]}},
+    {"city": { "value": "Darmstadt", "span": [394, 402]}},
+    {"city": { "value": "Dossenheim", "span": [406, 414]}},
+    {"city": { "value": "Siebeldingen", "span": [421, 429]}}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2011", "span": [140, 144]}},
+    {"endTime": { "value": "2018", "span": [266, 270]}},
+    {"duration": { "value": "7 years", "span": [154, 161]}}
+  ]
+}
+```
+### Explanation ###
+
+- The text mentions "Drosophila suzukii" as a crop species, which is a type of fruit fly that is considered a pest in many fruit crops.
+- "Apple" and "grape" are also mentioned as crop species that are affected by the Drosophila suzukii infestation.
+- The text mentions "Germany" as the country where the monitoring program took place.
+- "Southwest Germany" is mentioned as the region where the monitoring program was conducted.
+- "Darmstadt", "Dossenheim", and "Siebeldingen" are mentioned as cities where the monitoring sites were located.
+- The text mentions that the monitoring program started in 2011 and ended in 2018, with a duration of 7 years.

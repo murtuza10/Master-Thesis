@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --partition=mlgpu_short
 #SBATCH --time=8:00:00
-#SBATCH --gpus=4
+#SBATCH --gpus=16
 #SBATCH --output=/home/s27mhusa_hpc/Master-Thesis/FinalOutput-12thSeptember-ThreeShotPrompting_Final/gpu_job_TestFiles_%j_12thSeptember.out
 
 MODEL_NAME=$1

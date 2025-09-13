@@ -1,0 +1,21 @@
+### Output JSON Format ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "birch", "span": [106, 112] }}
+  ],
+  "Soil": [
+  ],
+  "Location": [
+  ],
+  "Time Statement": [
+    {"duration": { "value": "one year", "span": [141, 146] }}
+  ]
+}
+```
+
+Explanation:
+1. We extracted the "crop species" as "birch" from the text.
+2. We found no mentions of "soil" properties or types.
+3. We found no mentions of "location" (country, region, city).
+4. We extracted the "duration" of the study as "one year".

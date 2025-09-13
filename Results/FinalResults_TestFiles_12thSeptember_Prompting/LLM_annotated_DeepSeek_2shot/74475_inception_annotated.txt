@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751308-fmpW1uH9HCUUGm3hUgNJ",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751308,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"soil organic carbon\", \"span\": [78, 97] }},\n    {\"Soil\": { \"value\": \"soil organic nitrogen\", \"span\": [102, 122] }},\n    {\"Soil\": { \"value\": \"SOC\", \"span\": [127, 130] }},\n    {\"Soil\": { \"value\": \"SON\", \"span\": [135, 138] }},\n    {\"Soil\": { \"value\": \"N mineralisation rates\", \"span\": [155, 177] }},\n    {\"Soil\": { \"value\": \"SOC\", \"span\": [233, 236] }},\n    {\"Soil\": { \"value\": \"SOC\", \"span\": [278, 281] }},\n    {\"Soil\": { \"value\": \"SON\", \"span\": [366, 369] }},\n    {\"Soil\": { \"value\": \"N mineralisation / immobilisation\", \"span\": [374, 408] }},\n    {\"Soil\": { \"value\": \"SOC\", \"span\": [511, 514] }},\n    {\"Soil\": { \"value\": \"C\", \"span\": [576, 577] }},\n    {\"Soil\": { \"value\": \"N\", \"span\": [582, 583] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4308,
+    "completion_tokens": 306,
+    "total_tokens": 4614
+  }
+}

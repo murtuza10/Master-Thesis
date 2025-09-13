@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751339-fwEyH4pKn8Aaq87rQp8I",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751339,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"Norway spruce\", \"span\": [62, 75]}},\n    {\"cropSpecies\": {\"value\": \"Picea abies\", \"span\": [77, 88]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [129, 136]}},\n    {\"country\": {\"value\": \"Europe\", \"span\": [297, 303]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [496, 503]}}\n  ],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"51 years\", \"span\": [95, 103]}},\n    {\"startTime\": {\"value\": \"1964\", \"span\": [236, 240]}},\n    {\"endTime\": {\"value\": \"68\", \"span\": [241, 243]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 3029,
+    "completion_tokens": 208,
+    "total_tokens": 3237
+  }
+}

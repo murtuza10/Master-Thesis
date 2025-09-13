@@ -10,15 +10,18 @@ sys.path.append(os.path.abspath('..'))
 from Evaluation_Files.generate_ner_prompt_3Examples_Broad import generate_ner_prompts
 from Evaluation_Files.calculate_metrics_multiple_excel_partial_exact_count import evaluate_all
 
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 
 def perform_ner(text,max_length):
     system_prompt, user_prompt = generate_ner_prompts(text)
-
+    api_key = os.getenv("OPENROUTER_API_KEY")
     response = requests.post(
     url="https://openrouter.ai/api/v1/chat/completions",
     headers={
-        "Authorization": "Bearer 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",
+        "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json"
     },
     data=json.dumps({

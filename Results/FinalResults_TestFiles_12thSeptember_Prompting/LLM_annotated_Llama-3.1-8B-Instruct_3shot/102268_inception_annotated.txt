@@ -1,0 +1,20 @@
+### Output JSON Structure ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wheat", "span": [113, 118] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "earthworms", "span": [57, 67] }},
+    {"Soil": { "value": "pedo-climatic", "span": [109, 121] }}
+  ],
+  "Location": [
+    {"region": { "value": "Europe", "span": [124, 130] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2019", "span": [143, 147] }},
+    {"startTime": { "value": "2020", "span": [152, 156] }}
+  ]
+}
+```

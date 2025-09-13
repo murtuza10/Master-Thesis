@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751100-1BH0aHGKzPdA1xXXHYMP",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751100,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"soil\", \"span\": [104, 108] }},\n    {\"Soil\": { \"value\": \"carbon\", \"span\": [179, 185] }},\n    {\"Soil\": { \"value\": \"organic carbon\", \"span\": [212, 225] }},\n    {\"Soil\": { \"value\": \"mineral associated organic carbon\", \"span\": [230, 258] }},\n    {\"Soil\": { \"value\": \"carbon\", \"span\": [304, 310] }},\n    {\"Soil\": { \"value\": \"carbon\", \"span\": [383, 389] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"2-year\", \"span\": [89, 95] }},\n    {\"startTime\": { \"value\": \"6\", \"span\": [153, 154] }},\n    {\"startTime\": { \"value\": \"12\", \"span\": [156, 158] }},\n    {\"endTime\": { \"value\": \"24 months\", \"span\": [160, 168] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 3004,
+    "completion_tokens": 260,
+    "total_tokens": 3264
+  }
+}

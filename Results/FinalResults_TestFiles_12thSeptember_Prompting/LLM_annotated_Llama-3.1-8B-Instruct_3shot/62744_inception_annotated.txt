@@ -1,0 +1,25 @@
+### Output JSON Structure Filled with Input Text Entities ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "rye", "span": [161, 166] }},
+    {"cropSpecies": { "value": "Secale cereale", "span": [170, 186] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": { "value": "Germany", "span": [245, 251] }},
+    {"region": { "value": "Northern Europe", "span": [125, 141] }}
+  ],
+  "Time Statement": []
+}
+```
+
+### Explanation of Output JSON Structure Filled with Input Text Entities ###
+
+In the input text, the following entities are identified:
+
+*   **Crops:** The text mentions "rye" and "Secale cereale" as crop species. These are included in the "Crops" category of the output JSON structure.
+*   **Soil:** There is no mention of soil in the input text, so the "Soil" category in the output JSON structure remains empty.
+*   **Location:** The text mentions "Germany" as a country and "Northern Europe" as a region. These are included in the "Location" category of the output JSON structure.
+*   **Time Statement:** There is no mention of time or dates in the input text, so the "Time Statement" category in the output JSON structure remains empty.

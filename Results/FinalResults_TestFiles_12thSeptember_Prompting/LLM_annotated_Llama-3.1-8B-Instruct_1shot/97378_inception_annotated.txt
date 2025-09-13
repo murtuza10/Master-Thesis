@@ -1,0 +1,24 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "cropland", "span": [63, 70] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "Lehm", "span": [97, 102]}},
+    {"Soil": { "value": "Ton", "span": [104, 108]}},
+    {"Soil": { "value": "pH Wert", "span": [145, 151]}},
+    {"Soil": { "value": "organischen Kohlenstoff", "span": [152, 172]}},
+    {"Soil": { "value": "Gesamt-Stickstoff", "span": [173, 186]}}
+  ],
+  "Location": [
+    {"city": { "value": "Hildesheim", "span": [133, 142]}}
+  ],
+  "Time Statement": [
+    {"duration": { "value": "14-tägig", "span": [31, 39]}},
+    {"startTime": { "value": "2 Jahre", "span": [45, 51]}},
+    {"duration": { "value": "14-tägig", "span": [54, 62]}}
+  ]
+}
+```

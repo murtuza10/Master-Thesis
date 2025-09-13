@@ -1,0 +1,22 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wheat", "span": [439, 444] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "water stable aggregation", "span": [253, 269] }},
+    {"Soil": { "value": "soil properties", "span": [293, 303] }},
+    {"Soil": { "value": "soil", "span": [306, 310] }}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Explanation ###
+
+*   The input text mentions "winter wheat" as the crop species, which is annotated as "wheat" due to the instruction to extract only the species name from compound names.
+*   The text mentions "soil properties" and "soil water stable aggregation" as soil-related entities, which are annotated as "Soil" entities.
+*   The text does not mention any specific locations, so the "Location" list is empty.
+*   The text does not mention any time-related entities, so the "Time Statement" list is also empty.

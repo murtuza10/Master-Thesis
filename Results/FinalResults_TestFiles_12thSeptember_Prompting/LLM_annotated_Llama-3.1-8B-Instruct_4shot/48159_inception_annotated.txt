@@ -1,0 +1,21 @@
+### Output JSON ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "energy crops", "span": [342, 351]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [95, 104]}},
+    {"country": {"value": "Germany", "span": [155, 164]}},
+    {"country": {"value": "Germany", "span": [216, 225]}},
+    {"country": {"value": "Germany", "span": [305, 314]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1990", "span": [179, 183]}},
+    {"endTime": {"value": "2017", "span": [184, 188]}}
+  ]
+}
+```
+
+Note: The `start_index` and `end_index` in the `span` field represent the character positions in the input text where the entity value starts and ends, respectively.

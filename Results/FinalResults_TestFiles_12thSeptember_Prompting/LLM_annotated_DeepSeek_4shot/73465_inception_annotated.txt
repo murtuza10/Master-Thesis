@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751283-MtrVWDRFkSkhLcW0gyPV",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751283,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"Helosciadium nodiflorum\", \"span\": [44, 66]}},\n    {\"cropSpecies\": {\"value\": \"Helosciadium nodiflorum\", \"span\": [212, 234]}},\n    {\"cropSpecies\": {\"value\": \"Helosciadium nodiflorum\", \"span\": [374, 396]}},\n    {\"cropSpecies\": {\"value\": \"celery\", \"span\": [560, 566]}},\n    {\"cropSpecies\": {\"value\": \"Helosciadium nodiflorum\", \"span\": [599, 621]}},\n    {\"cropSpecies\": {\"value\": \"celery\", \"span\": [1047, 1053]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"city\": {\"value\": \"Gatersleben\", \"span\": [113, 124]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [127, 134]}},\n    {\"city\": {\"value\": \"London\", \"span\": [183, 189]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [543, 550]}},\n    {\"city\": {\"value\": \"Berlin\", \"span\": [580, 586]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [589, 596]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [1032, 1039]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2015\", \"span\": [672, 676]}},\n    {\"endTime\": {\"value\": \"2016\", \"span\": [680, 684]}},\n    {\"startTime\": {\"value\": \"2018\", \"span\": [851, 855]}},\n    {\"endTime\": {\"value\": \"2019\", \"span\": [856, 860]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 3660,
+    "completion_tokens": 427,
+    "total_tokens": 4087
+  }
+}

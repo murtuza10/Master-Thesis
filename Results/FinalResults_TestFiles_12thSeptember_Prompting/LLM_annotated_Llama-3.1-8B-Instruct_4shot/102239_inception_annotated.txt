@@ -1,0 +1,18 @@
+### Text Extraction and JSON Output ###
+
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"Soil": {"value": "soils", "span": [109, 115]}},
+    {"Soil": {"value": "carbon", "span": [143, 149]}},
+    {"Soil": {"value": "organic carbon", "span": [141, 155]}},
+    {"Soil": {"value": "soil properties", "span": [94, 109]}},
+    {"Soil": {"value": "soil", "span": [85, 90]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+The JSON structure is filled with the entities extracted from the input text. Note that there are multiple mentions of "soil" in the text, but only the specific types or properties of soil are included in the JSON output.

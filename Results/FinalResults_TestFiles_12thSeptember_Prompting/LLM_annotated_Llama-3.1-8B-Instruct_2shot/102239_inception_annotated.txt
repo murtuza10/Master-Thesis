@@ -1,0 +1,19 @@
+### JSON Output ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"Soil": {"value": "soil", "span": [123, 126]}},
+    {"Soil": {"value": "properties", "span": [134, 143]}},
+    {"Soil": {"value": "carbon", "span": [161, 166]}},
+    {"Soil": {"value": "in soils", "span": [172, 178]}},
+    {"Soil": {"value": "organic carbon", "span": [185, 198]}},
+    {"Soil": {"value": "soil", "span": [233, 236]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Explanation ###
+The input text does not mention any crops, so the `Crops` list is empty. The text mentions "soil" and related concepts multiple times, which are categorized as `Soil` entities. There are no mentions of specific locations or time statements, so the `Location` and `Time Statement` lists are also empty.

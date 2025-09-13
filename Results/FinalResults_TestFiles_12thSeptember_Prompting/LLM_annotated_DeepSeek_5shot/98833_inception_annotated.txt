@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751397-kuRRTlgVrYxK8sHkiATJ",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751397,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"Pseudovergleyte Parabraunerde\", \"span\": [272, 298] }},\n    {\"Soil\": { \"value\": \"Löss\", \"span\": [303, 307] }},\n    {\"Soil\": { \"value\": \"28 cm\", \"span\": [317, 322] }},\n    {\"Soil\": { \"value\": \"Bodendruck\", \"span\": [768, 778] }},\n    {\"Soil\": { \"value\": \"Bodensetzung\", \"span\": [783, 795] }},\n    {\"Soil\": { \"value\": \"Wasserretentionseigenschaften\", \"span\": [797, 823] }},\n    {\"Soil\": { \"value\": \"Lagerungsdichte\", \"span\": [828, 842] }},\n    {\"Soil\": { \"value\": \"hydr. Leitfähigkeit\", \"span\": [847, 865] }},\n    {\"Soil\": { \"value\": \"100 cm3\", \"span\": [868, 874] }},\n    {\"Soil\": { \"value\": \"Gesamtporenvolumen\", \"span\": [937, 956] }},\n    {\"Soil\": { \"value\": \"Luftkapazität\", \"span\": [961, 974] }},\n    {\"Soil\": { \"value\": \"Feldkapazität\", \"span\": [979, 992] }},\n    {\"Soil\": { \"value\": \"permanenter Welkepunkt\", \"span\": [997, 1018] }},\n    {\"Soil\": { \"value\": \"Trocken-rohdichte\", \"span\": [1023, 1039] }},\n    {\"Soil\": { \"value\": \"Bioporen\", \"span\": [1044, 1052] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2017\", \"span\": [175, 179] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 6359,
+    "completion_tokens": 449,
+    "total_tokens": 6808
+  }
+}

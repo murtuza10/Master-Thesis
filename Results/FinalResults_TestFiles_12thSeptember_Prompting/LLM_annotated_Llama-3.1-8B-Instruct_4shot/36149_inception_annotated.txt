@@ -1,0 +1,29 @@
+### Output JSON ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "energy crops", "span": [137, 147]}},
+    {"cropSpecies": {"value": "crops", "span": [230, 235]}},
+    {"cropSpecies": {"value": "crops", "span": [276, 281]}}
+  ],
+  "Soil": [
+    {"Soil": {"value": "nitrogen content", "span": [195, 210]}},
+    {"Soil": {"value": "bulk density", "span": [216, 224]}},
+    {"Soil": {"value": "ammonium-N", "span": [223, 231]}},
+    {"Soil": {"value": "nitrate-N", "span": [233, 241]}},
+    {"Soil": {"value": "soil characteristics", "span": [185, 202]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [118, 125]}},
+    {"city": {"value": "Germany", "span": [138, 145]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2011", "span": [104, 108]}},
+    {"endTime": {"value": "2012", "span": [105, 109]}},
+    {"startTime": {"value": "2012", "span": [106, 110]}},
+    {"endTime": {"value": "2015", "span": [111, 115]}},
+    {"startTime": {"value": "2014", "span": [112, 116]}},
+    {"endTime": {"value": "2015", "span": [113, 117]}}
+  ]
+}
+```

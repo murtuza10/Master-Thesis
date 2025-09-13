@@ -1,0 +1,20 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "rye", "span": [155, 159] }},
+    {"cropSpecies": { "value": "rye", "span": [217, 221] }},
+    {"cropSpecies": { "value": "rye", "span": [384, 388] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"city": { "value": "Germany", "span": [97, 102] }}
+  ],
+  "Time Statement": []
+}
+```
+### Explanation ###
+- **Crops**: The crop species mentioned in the text are "rye" (Secale cereale L.) which appears three times in the text. Each mention is annotated as a separate object in the "Crops" list.
+- **Soil**: There is no mention of soil in the text, so the "Soil" list is empty.
+- **Location**: The location mentioned in the text is "Germany", which is annotated as a city in the "Location" list. Note that "Germany" is not a typical city name, but in this context, it refers to the country where the study was conducted.
+- **Time Statement**: There is no mention of time or dates in the text, so the "Time Statement" list is empty.

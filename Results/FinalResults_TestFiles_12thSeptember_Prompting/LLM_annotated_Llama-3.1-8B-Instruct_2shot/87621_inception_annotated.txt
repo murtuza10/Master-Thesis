@@ -1,0 +1,20 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [83, 89]}},
+    {"cropSpecies": {"value": "Hordeum vulgare ssp. vulgare", "span": [95, 119]}},
+    {"cropSpecies": {"value": "wheat", "span": [26, 30]}},
+    {"cropSpecies": {"value": "barley", "span": [145, 151]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Notes: ###
+
+*   The input text does not contain any mentions of soil, location, or time-related entities.
+*   The text does mention barley (Hordeum vulgare ssp. vulgare) and wheat (implied as Wheat dwarf virus, WDV), so these are extracted as crop species.
+*   The crop species are extracted based on their exact mention in the text, following the rules provided.

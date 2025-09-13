@@ -1,0 +1,25 @@
+### JSON Output
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Winter wheat", "span": [1055, 1066]}}
+  ],
+  "Soil": [
+    {"Soil": {"value": "soil water stable aggregation", "span": [241, 258]}},
+    {"Soil": {"value": "soil properties", "span": [257, 268]}},
+    {"Soil": {"value": "soil-plant system", "span": [295, 307]}},
+    {"Soil": {"value": "soil-plant system", "span": [351, 363]}},
+    {"Soil": {"value": "soil", "span": [406, 410]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+### Explanation
+
+Based on the input text, the following entities were extracted:
+
+*   **Crops:** "Winter wheat" was found to be the only crop mentioned in the text.
+*   **Soil:** Several soil-related entities were found, including "soil water stable aggregation," "soil properties," "soil-plant system," and "soil." Each of these entities was extracted and added to the "Soil" list.
+*   **Location:** No location-related entities were found in the text.
+*   **Time Statement:** No time-related entities were found in the text.
