@@ -7,22 +7,27 @@ import argparse
 
 sys.path.append(os.path.abspath('..'))
 
-from Evaluation_Files.generate_ner_prompt import generate_ner_prompts
-from Evaluation_Files.calculate_metrics_multiple import evaluate_all
+from Evaluation_Files.generate_ner_prompt_broad_definition import generate_ner_prompts
+from Evaluation_Files.calculate_metrics_multiple_excel_partial_exact_count import evaluate_all
 
 
+
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 def perform_ner(text,max_length):
     system_prompt, user_prompt = generate_ner_prompts(text)
-
+    api_key = os.getenv("OPENROUTER_API_KEY")
     response = requests.post(
     url="https://openrouter.ai/api/v1/chat/completions",
     headers={
-        "Authorization": "Bearer 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",
+        "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json"
     },
     data=json.dumps({
-        "model": "deepseek/deepseek-chat-v3-0324:free",
+        "model": "deepseek/deepseek-chat-v3-0324",
         "messages": [
         {
             "role": "system",
@@ -82,6 +87,8 @@ def main():
     parser.add_argument("--output_dir", required=True, help="Directory to save annotated output files.")
     parser.add_argument("--output_dir_json", required=True, help="Directory to save extracted json output from annotated files.")
     parser.add_argument("--max_length", type=int, default=1512, help="Maximum length for tokenized input.")
+    parser.add_argument("--start", type=int, default=3, help="Starting point for evaluation.")
+
 
     args = parser.parse_args()
 
@@ -89,15 +96,17 @@ def main():
     # input_text_dir = "/home/s27mhusa_hpc/Master-Thesis/Text_Files_For_LLM_Input"
     # input_annot_dir = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_new_prompt/LLM_annotated_{model_name}"
     # input_annot_dir_json = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_new_prompt_json/LLM_annotated_{model_name}"
-    xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/XMI_Files"
-    evaluate_all("DeepSeekV3",
+    log_dir = os.environ.get('LOG_DIR')
+
+    xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptemberDocumentLevel/Test_XMI_Files"
+    evaluate_all("DeepSeekV3Broad",
         args.input_dir,
         args.output_dir,
         args.output_dir_json,
-        0,
-        xmi_dir)
+        int(args.start),
+        xmi_dir,
+        log_dir)
     print("NER processing complete.")
-
 
 if __name__ == "__main__":
     main()

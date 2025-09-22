@@ -19,4 +19,8 @@ sbatch job-embeddings.sbatch Llama-3.1-8B-Instruct 4
 sbatch job-embeddings.sbatch Llama-3.1-8B-Instruct 3
 sbatch job-embeddings.sbatch Llama-3.1-8B-Instruct 2
 sbatch job-embeddings.sbatch Llama-3.1-8B-Instruct 1
-
+sbatch job-embeddings_deepseek.sbatch DeepSeekV3 5
+sbatch job-embeddings_deepseek.sbatch DeepSeekV3 4
+sbatch job-embeddings_deepseek.sbatch DeepSeekV3 3
+sbatch job-embeddings_deepseek.sbatch DeepSeekV3 2
+sbatch job-embeddings_deepseek.sbatch DeepSeekV3 1

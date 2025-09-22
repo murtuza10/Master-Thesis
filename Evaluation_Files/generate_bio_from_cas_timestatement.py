@@ -27,6 +27,8 @@ def cas_to_bio(cas, annotation_types):
                 label = type_name.split(".")[-1]  # fallback to type name
             elif  type_name == "webanno.custom.Location":
                 label = "locationName"
+            elif type_name == "webanno.custom.Soil":
+                label = "Soil"
 
             for i, token in enumerate(doc):
                 if token.idx >= begin and (token.idx + len(token)) <= end:

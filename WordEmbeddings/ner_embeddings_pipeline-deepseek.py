@@ -14,9 +14,11 @@ import numpy as np
 import requests
 from sentence_transformers import SentenceTransformer
 from Evaluation_Files.generate_ner_prompt import generate_ner_prompts
-from Evaluation_Files.calculate_metrics_multiple_excel_partial_exact import evaluate_all
+from Evaluation_Files.calculate_metrics_multiple_excel_partial_exact_count import evaluate_all
+from dotenv import load_dotenv
+import os
 
-
+load_dotenv()
 
 def load_dataset(path: str):
     data = []
@@ -68,11 +70,11 @@ def perform_ner(text, max_length, examples):
         blocks.append(f"### Example {i} ###:\nInput Text:\n {example_text}\nOutput: {json.dumps(ents, ensure_ascii=False)}")
     blocks_str = "\n\n".join(blocks)
     system_prompt += blocks_str
-
+    api_key = os.getenv("OPENROUTER_API_KEY")
     response = requests.post(
     url="https://openrouter.ai/api/v1/chat/completions",
     headers={
-        "Authorization": "Bearer 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",
+        "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json"
     },
     data=json.dumps({

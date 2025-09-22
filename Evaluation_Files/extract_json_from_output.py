@@ -27,7 +27,7 @@ def extract_json_block_from_directory(input_dir, output_dir, model_name, start):
                 with open(input_file, "r", encoding="utf-8") as f:
                     content = f.read()
 
-                if model_name == "DeepSeekV3":
+                if model_name == "DeepSeekV3" or model_name == "GPT4o" or model_name == "gpt-5":
                     data = json.loads(content)  
                     content = data['choices'][0]['message']['content']
 

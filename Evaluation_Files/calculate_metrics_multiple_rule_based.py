@@ -92,9 +92,11 @@ def evaluate_all(rule_based_dir, xmi_dir):
     all_y_pred = []
     tokens_all = []
     results_per_file = []
-    y_true_dir = f"/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/random"
-    results_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/RuleBased_8thSeptember/ner_evaluation_results_rule_based_broad.txt"
-    stats_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/RuleBased_8thSeptember/Stats/ner_evaluation_stats_rule_based_broad.txt"
+    y_true_dir = f"/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/Test_BIO_labels_document_time_location"
+    y_pred_dir = f"/home/s27mhusa_hpc/Master-Thesis/Rule-based-annotations/Rule_BIO_labels_timestatement"
+
+    results_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/RuleBased_12thSeptember/ner_evaluation_results_rule_based_broad.txt"
+    stats_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/RuleBased_12thSeptember/Stats/ner_evaluation_stats_rule_based_broad.txt"
 
     results_lines = []  # Collect output to write to file later
     stats_lines = []
@@ -113,6 +115,7 @@ def evaluate_all(rule_based_dir, xmi_dir):
 
         try:
             y_true_path = os.path.join(y_true_dir, f"{filename}.txt")
+            y_pred_path = os.path.join(y_pred_dir, f"{filename}.txt")
             if os.path.exists(y_true_path):
                 # File exists: read and convert to list
                 with open(y_true_path, "r", encoding="utf-8") as f:
@@ -130,16 +133,29 @@ def evaluate_all(rule_based_dir, xmi_dir):
                 
                 # Save the output to the file
                 with open(y_true_path, "w", encoding="utf-8") as f:
-                    f.write("\n".join(y_true))
+                    # f.write("\n".join(y_true))
+                    f.write(str(y_true))
             # print(f"Y_true for {filename} is {y_true}")
             # print(f"Y_true is {y_true} and length is {len(y_true)}")
-            if os.path.exists(rule_based_path):
-                token,y_pred = generate_bio_annotations_from_cas(rule_based_path)
-                # print(f"Y_pred for {filename} is {y_pred}")
+            if os.path.exists(y_pred_path):
+                # File exists: read and convert to list
+                with open(y_pred_path, "r", encoding="utf-8") as f:
+                    # y_pred = f.read().splitlines()
+                    content = f.read().strip()
+                    y_pred = ast.literal_eval(content)
+                token = []  # if saved previously without tokens
 
             else:
-                msg = f"ℹ️ No annotation file for {filename}, assuming no predictions."
-                continue
+                # File doesn't exist: generate and save
+                token, y_pred = generate_bio_annotations_from_cas(rule_based_path)
+                
+                # Ensure the directory exists
+                os.makedirs(os.path.dirname(y_pred_path), exist_ok=True)
+
+                # Save the output to the file
+                with open(y_pred_path, "w", encoding="utf-8") as f:
+                    # f.write("\n".join(y_pred))
+                    f.write(str(y_pred))
 
             if len(y_true) != len(y_pred):
                 msg = f"❌ Length mismatch in {filename} — skipping."
@@ -212,7 +228,7 @@ def evaluate_all(rule_based_dir, xmi_dir):
 if __name__ == "__main__":
     
     xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptemberDocumentLevel/Test_XMI_Files"
-    rule_based_dir = "/home/s27mhusa_hpc/Master-Thesis/Test_Rule_Based_Annotations_8thSeptember"
+    rule_based_dir = "/home/s27mhusa_hpc/Master-Thesis/Test_Rule_Based_Annotations_12thSeptember"
 
     evaluate_all(
         rule_based_dir,

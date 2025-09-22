@@ -449,12 +449,12 @@ def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_js
     stats_lines = []
 
     y_true_dir = f"/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptemberDocumentLevel/Test_BIO_labels"
-    results_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_12thSeptember_FewShotTest_Broad_Count/ner_evaluation_results_{model_name}_{start}_shot.txt"
-    stats_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_12thSeptember_FewShotTest_Broad_Count/Stats/ner_evaluation_stats_{model_name}_{start}_shot.txt"
+    results_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_22September_FewShotTest_Embeddings_Broad/ner_evaluation_results_{model_name}_{start}_shot.txt"
+    stats_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_22September_FewShotTest_Embeddings_Broad/Stats/ner_evaluation_stats_{model_name}_{start}_shot.txt"
 
     # Excel output paths
-    excel_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_12thSeptember_FewShotTest_Broad_Count/ner_evaluation_results_{model_name}_{start}_shot.xlsx"
-    detailed_excel_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_12thSeptember_FewShotTest_Broad_Count/detailed_category_results_{model_name}_{start}_shot.xlsx"
+    excel_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_22September_FewShotTest_Embeddings_Broad/ner_evaluation_results_{model_name}_{start}_shot.xlsx"
+    detailed_excel_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_22September_FewShotTest_Embeddings_Broad/detailed_category_results_{model_name}_{start}_shot.xlsx"
 
     for filename in os.listdir(input_text_dir):
         if filename.endswith("_inception.txt"):
@@ -464,7 +464,7 @@ def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_js
             xmi_path = os.path.join(xmi_dir, f"{file_id}.xmi")
 
             if not os.path.exists(xmi_path):
-                print(f"⚠️ XMI file not found for {filename}")
+                print(f"⚠️ XMI file not found for {xmi_path}")
                 continue
 
             try:
@@ -489,6 +489,9 @@ def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_js
 
                 if len(y_true) != len(y_pred):
                     print(f"❌ Length mismatch in {file_id} — skipping.")
+                    all_y_true.append(y_true)
+                    token, y_pred = generate_empty_bio(text_path)
+                    all_y_pred.append(y_pred)
                     continue
 
                 all_y_true.append(y_true)
@@ -501,6 +504,10 @@ def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_js
                 print(f"✅ {file_id}: {results['overall_f1']:.4f} F1 (Exact)")
             except Exception as e:
                 print(f"❌ Error processing {file_id}: {e}")
+                all_y_true.append(y_true)
+                token, y_pred = generate_empty_bio(text_path)
+                all_y_pred.append(y_pred)
+
 
     # -------------------- Exact Match (SeqEval) --------------------
     overall_results = ner_metric.compute(predictions=all_y_pred, references=all_y_true, zero_division=0)
@@ -582,24 +589,24 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Evaluate NER output against XMI gold standard.")
     parser.add_argument("--model_name", required=True, help="Name of the model to evaluate.")
     parser.add_argument("--shot_count", type=int, help="Number of shots used for few-shot learning.")
-    parser.add_argument("--log_dir", help="Directory containing GPU usage logs for power calculation.")
     args = parser.parse_args()
 
     model_name = args.model_name
     shot_count = args.shot_count
-    log_dir = args.log_dir
-    
-    input_text_dir = "/home/s27mhusa_hpc/Master-Thesis/Text_Files_For_LLM_Input"
-    input_annot_dir = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_Chat_GPT"
-    input_annot_dir_json = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_Chat_GPT_JSON"
-    xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/XMI_Files"
+    log_dir = "/home/s27mhusa_hpc/Master-Thesis/Logs/Llama-3.3-70B"
+
+    os.makedirs(log_dir, exist_ok=True)
+
+    input_text_dir = "/home/s27mhusa_hpc/Master-Thesis/Text_Files_Test_Data"
+    input_annot_dir = f"/home/s27mhusa_hpc/Master-Thesis/Results/Corrected/LLM_annotated_Llama-3.3-70B-Instruct_{shot_count}shot"
+    input_annot_dir_json = f"/home/s27mhusa_hpc/Master-Thesis/Results/Corrected_json/LLM_annotated_Llama-3.3-70B-Instruct_{shot_count}shot"
+    xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptemberDocumentLevel/Test_XMI_Files"
 
     evaluate_all(
         model_name,
         input_text_dir,
         input_annot_dir,
         input_annot_dir_json,
+        shot_count,
         xmi_dir,
-        log_dir,
-        shot_count
-    )
+        log_dir)
