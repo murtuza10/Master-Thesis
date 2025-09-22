@@ -1,0 +1,27 @@
+{
+  "id": "gen-1758012385-F9iAzRoXubOd0OcNQTmw",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1758012385,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"maize\", \"span\": [283, 288] }},\n    {\"cropSpecies\": { \"value\": \"maize\", \"span\": [1046, 1051] }}\n  ],\n  \"Soil\": [\n    {\"soilReferenceGroup\": { \"value\": \"Wanna Sand\", \"span\": [410, 420] }},\n    {\"soilReferenceGroup\": { \"value\": \"Wanna Sand\", \"span\": [447, 457] }},\n    {\"soilReferenceGroup\": { \"value\": \"Rostock Sand\", \"span\": [482, 494] }},\n    {\"soilReferenceGroup\": { \"value\": \"Wanna Marsch\", \"span\": [499, 511] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Europe\", \"span\": [1425, 1431] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [1433, 1440] }},\n    {\"region\": { \"value\": \"Lower Saxony\", \"span\": [1442, 1455] }},\n    {\"city\": { \"value\": \"Wanna\", \"span\": [1457, 1462] }},\n    {\"region\": { \"value\": \"Mecklenburg-Vorpommern\", \"span\": [1464, 1487] }},\n    {\"city\": { \"value\": \"Rostock\", \"span\": [1489, 1496] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2021\", \"span\": [377, 381] }},\n    {\"endTime\": { \"value\": \"2023\", \"span\": [386, 390] }},\n    {\"startTime\": { \"value\": \"April\", \"span\": [717, 722] }},\n    {\"endTime\": { \"value\": \"August\", \"span\": [726, 732] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 1348,
+    "completion_tokens": 440,
+    "total_tokens": 1788
+  }
+}

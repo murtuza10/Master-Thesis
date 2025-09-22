@@ -1,0 +1,27 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [301, 307]}},
+    {"cropSpecies": {"value": "barley", "span": [312, 318]}},
+    {"cropSpecies": {"value": "beet", "span": [327, 331]}}
+  ],
+  "Soil": [
+    {"soilOrganicCarbon": {"value": "humus", "span": [109, 114]}},
+    {"soilAvailableNitrogen": {"value": "nutrient availability", "span": [256, 270]}},
+    {"soilReferenceGroup": {"value": "Bacilli", "span": [665, 671]}},
+    {"soilTexture": {"value": "bulk soil", "span": [1465, 1473]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [28, 34]}},
+    {"region": {"value": "Speyer", "span": [35, 40]},
+    {"region": {"value": "LUFA Speyer", "span": [217, 226]}},
+    {"latitude": {"value": "", "span": []}},
+    {"longitude": {"value": "", "span": []}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1984", "span": [204, 209]}},
+    {"duration": {"value": "long term", "span": [766, 775]}},
+    {"duration": {"value": "four sampling seasons", "span": [847, 860]}}
+  ]
+}
+```

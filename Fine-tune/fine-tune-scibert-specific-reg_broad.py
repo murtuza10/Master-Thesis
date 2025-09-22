@@ -1,0 +1,357 @@
+import os
+import gc
+import numpy as np
+import torch
+import evaluate
+import optuna
+from datasets import Dataset, DatasetDict, concatenate_datasets
+from transformers import (
+    AutoTokenizer,
+    AutoModelForTokenClassification,
+    TrainingArguments,
+    Trainer,
+    EarlyStoppingCallback
+)
+from sklearn.model_selection import KFold
+from sklearn.metrics import classification_report
+from seqeval.metrics import classification_report as seqeval_classification_report
+import random
+
+# --- Environment Setup and GPU Cache Clearing ---
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
+torch.cuda.empty_cache()
+gc.collect()
+
+def align_predictions(predictions, label_ids):
+    preds = np.argmax(predictions, axis=2)
+    batch_size, seq_len = preds.shape
+    out_label_list = [[] for _ in range(batch_size)]
+    preds_list = [[] for _ in range(batch_size)]
+
+    for i in range(batch_size):
+        for j in range(seq_len):
+            if label_ids[i, j] != -100:
+                out_label_list[i].append(label_list[label_ids[i][j]])
+                preds_list[i].append(label_list[preds[i][j]])
+
+    return preds_list, out_label_list
+
+def print_classification_reports(predictions, label_ids, dataset_name="Dataset"):
+    """
+    Print both token-level and entity-level classification reports
+    """
+    preds, labels = align_predictions(predictions, label_ids)
+    
+    # Flatten predictions and labels for token-level classification report
+    flat_preds = [item for sublist in preds for item in sublist]
+    flat_labels = [item for sublist in labels for item in sublist]
+    
+    print(f"\n{'='*60}")
+    print(f"{dataset_name.upper()} CLASSIFICATION REPORTS")
+    print(f"{'='*60}")
+    
+    print(f"\n{dataset_name} - Token-level Classification Report:")
+    print("-" * 50)
+    print(classification_report(flat_labels, flat_preds, zero_division=0))
+    
+    print(f"\n{dataset_name} - Entity-level Classification Report:")
+    print("-" * 50)
+    print(seqeval_classification_report(labels, preds, zero_division=0))
+    
+    # Additional statistics
+    print(f"\n{dataset_name} - Additional Statistics:")
+    print("-" * 30)
+    print(f"Total sequences: {len(preds)}")
+    print(f"Total tokens: {len(flat_preds)}")
+    print(f"Unique labels in predictions: {len(set(flat_preds))}")
+    print(f"Unique labels in ground truth: {len(set(flat_labels))}")
+
+# --- Data Augmentation Functions ---
+def augment_sequence(tokens, labels, augmentation_prob=0.3):
+    """Apply data augmentation techniques to a single sequence"""
+    augmented_tokens = tokens.copy()
+    augmented_labels = labels.copy()
+    
+    # 1. Random token masking (only for O labels to avoid corrupting entities)
+    if random.random() < augmentation_prob:
+        o_indices = [i for i, label in enumerate(labels) if label == 0]  # 0 is "O" label
+        if o_indices:
+            mask_idx = random.choice(o_indices)
+            augmented_tokens[mask_idx] = "[MASK]"
+    
+    # 2. Random deletion (only for O tokens)
+    if random.random() < augmentation_prob * 0.5:  # Lower probability
+        o_indices = [i for i, label in enumerate(labels) if label == 0]
+        if len(o_indices) > 1:  # Ensure we don't delete all O tokens
+            del_idx = random.choice(o_indices)
+            augmented_tokens.pop(del_idx)
+            augmented_labels.pop(del_idx)
+    
+    return augmented_tokens, augmented_labels
+
+def augment_dataset(dataset, augmentation_ratio=0.2):
+    """Augment dataset by creating additional examples"""
+    augmented_examples = []
+    
+    for i in range(int(len(dataset) * augmentation_ratio)):
+        # Select random example to augment
+        idx = random.randint(0, len(dataset) - 1)
+        original_tokens = dataset[idx]["tokens"]
+        original_labels = dataset[idx]["ner_tags"]
+        
+        aug_tokens, aug_labels = augment_sequence(original_tokens, original_labels)
+        
+        augmented_examples.append({
+            "tokens": aug_tokens,
+            "ner_tags": aug_labels
+        })
+    
+    # Combine original and augmented data
+    augmented_dataset = Dataset.from_list(augmented_examples)
+    return concatenate_datasets([dataset, augmented_dataset])
+
+# --- Helper Functions (Tokenization, Metrics) ---
+def tokenize_and_align_labels(examples):
+    """Tokenizes texts and aligns labels with sub-word units."""
+    tokenized_inputs = tokenizer(
+        examples["tokens"],
+        truncation=True,
+        is_split_into_words=True,
+        padding="max_length",
+        max_length=256,
+    )
+    labels = []
+    for i, label in enumerate(examples["ner_tags"]):
+        word_ids = tokenized_inputs.word_ids(batch_index=i)
+        previous_word_idx = None
+        label_ids = []
+        for word_idx in word_ids:
+            if word_idx is None:
+                label_ids.append(-100)
+            elif word_idx != previous_word_idx:
+                label_ids.append(label[word_idx])
+            else:
+                label_ids.append(-100)
+            previous_word_idx = word_idx
+        labels.append(label_ids)
+    tokenized_inputs["labels"] = labels
+    return tokenized_inputs
+
+def compute_metrics(p):
+    """Computes and returns a dictionary of performance metrics."""
+    predictions, labels = p
+    predictions = np.argmax(predictions, axis=2)
+    true_predictions = [
+        [label_list[p] for (p, l) in zip(prediction, label) if l != -100]
+        for prediction, label in zip(predictions, labels)
+    ]
+    true_labels = [
+        [label_list[l] for (p, l) in zip(prediction, label) if l != -100]
+        for prediction, label in zip(predictions, labels)
+    ]
+    results = seqeval.compute(predictions=true_predictions, references=true_labels)
+    return {
+        "precision": results["overall_precision"],
+        "recall": results["overall_recall"],
+        "f1": results["overall_f1"],
+        "accuracy": results["overall_accuracy"],
+    }
+
+    
+# --- 1. SETUP: DATA LOADING AND CONFIGURATION ---
+
+# Load datasets
+train_dataset = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptember/NER_dataset_sentence_train_stratified_nodupl.json")
+val_dataset   = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptember/NER_dataset_sentence_val_stratified_nodupl.json")
+test_dataset  = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptember/Test_NER_dataset_nodupl.json")
+
+# Apply data augmentation to training data
+print("Applying data augmentation...")
+augmented_train_dataset = augment_dataset(train_dataset, augmentation_ratio=2.0)  # 200% augmentation
+print(f"Original train size: {len(train_dataset)}, Augmented size: {len(augmented_train_dataset)}")
+
+# Combine for k-fold and final training
+combined_dataset = concatenate_datasets([augmented_train_dataset, val_dataset])
+
+dataset_dict = DatasetDict({
+    'train_val': combined_dataset,
+    'validation': val_dataset,
+    'test': test_dataset
+})
+
+# Global configurations
+label_list = ["O", "B-startTime", "I-startTime", "B-endTime", "I-endTime", "B-city", "I-city", "B-duration", "I-duration", "B-cropSpecies", "I-cropSpecies", "B-region", "I-region", "B-country", "I-country", "B-Soil", "I-Soil"]
+model_checkpoint = "allenai/scibert_scivocab_uncased"
+tokenizer = AutoTokenizer.from_pretrained(model_checkpoint)
+seqeval = evaluate.load("seqeval")
+
+# Tokenize all datasets once
+tokenized_datasets = dataset_dict.map(tokenize_and_align_labels, batched=True)
+
+def model_init_with_regularization(dropout=0.3):
+    """Initializes a model with enhanced regularization."""
+    model = AutoModelForTokenClassification.from_pretrained(
+        model_checkpoint,
+        num_labels=len(label_list),
+        hidden_dropout_prob=dropout,
+        attention_probs_dropout_prob=dropout,
+    )
+    return model
+
+# =================================================================================
+# PART A: IMPROVED HYPERPARAMETER SEARCH WITH REGULARIZATION FOCUS
+# =================================================================================
+print("\n" + "="*80)
+print("PART A: STARTING IMPROVED HYPERPARAMETER SEARCH")
+print("="*80 + "\n")
+
+def objective(trial):
+    """Enhanced objective function with regularization focus."""
+    # Regularization parameters
+    dropout = trial.suggest_float("dropout", 0.2, 0.5)  # Higher dropout range
+    weight_decay = trial.suggest_float("weight_decay", 0.01, 0.3, log=True)  # Higher weight decay
+    
+    # Learning parameters - favor lower learning rates
+    learning_rate = trial.suggest_float("learning_rate", 5e-6, 1e-5, log=True)
+    warmup_ratio = trial.suggest_float("warmup_ratio", 0.1, 0.5)  # Use ratio instead of steps
+    
+    def model_init_trial():
+        return model_init_with_regularization(dropout)
+    
+    training_args = TrainingArguments(
+        output_dir=f"/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/Scibert-results-broad_14/hyperparameter_search_regularized/trial_{trial.number}",
+        eval_strategy="epoch",  # Use epoch-based evaluation for compatibility
+        save_strategy="epoch",
+        load_best_model_at_end=True,
+        metric_for_best_model="f1",
+        save_total_limit=1,
+        fp16=True,
+        # Regularization-focused hyperparameters
+        learning_rate=learning_rate,
+        num_train_epochs=trial.suggest_int("num_train_epochs", 3, 15),  # Fewer epochs
+        per_device_train_batch_size=trial.suggest_categorical("per_device_train_batch_size", [2, 4, 8, 16]),
+        weight_decay=weight_decay,
+        warmup_ratio=warmup_ratio,
+        # Additional regularization
+        max_grad_norm=0.5,  # Gradient clipping
+        dataloader_drop_last=True,
+        # Logging
+        logging_steps=50,
+        report_to=None,  # Disable wandb/tensorboard
+    )
+
+    # K-Fold Cross-Validation
+    n_splits = 3
+    kf = KFold(n_splits=n_splits, shuffle=True, random_state=42)
+    fold_f1_scores = []
+    
+    for fold, (train_indices, val_indices) in enumerate(kf.split(tokenized_datasets['train_val'])):
+        fold_train_dataset = tokenized_datasets['train_val'].select(train_indices)
+        fold_val_dataset = tokenized_datasets['train_val'].select(val_indices)
+
+        trainer = Trainer(
+            model_init=model_init_trial,
+            args=training_args,
+            train_dataset=fold_train_dataset,
+            eval_dataset=fold_val_dataset,
+            compute_metrics=compute_metrics,
+            callbacks=[EarlyStoppingCallback(early_stopping_patience=3)],
+        )
+        
+        trainer.train()
+        eval_metrics = trainer.evaluate()
+        fold_f1_scores.append(eval_metrics['eval_f1'])
+
+        # Clean up
+        del trainer
+        gc.collect()
+        torch.cuda.empty_cache()
+
+    # Return average F1 score
+    average_f1 = np.mean(fold_f1_scores)
+    return average_f1
+
+# Run Optuna study with more trials for better optimization
+study = optuna.create_study(direction="maximize")
+study.optimize(objective, n_trials=5)  # Reduced trials for faster testing
+
+print("\nHyperparameter search complete!")
+print("Best trial:", study.best_trial.params)
+print("Best F1 score (average over folds):", study.best_value)
+
+# =================================================================================
+# PART B: FINAL MODEL TRAINING WITH BEST PARAMETERS
+# =================================================================================
+print("\n" + "="*80)
+print("PART B: TRAINING FINAL MODEL WITH REGULARIZATION")
+print("="*80 + "\n")
+
+best_params = study.best_trial.params
+
+final_training_args = TrainingArguments(
+    output_dir="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/Scibert-results-broad_14/results/final_model_regularized_14",
+    run_name="scibert-regularized-training",
+    eval_strategy="epoch",
+    save_strategy="epoch",
+    load_best_model_at_end=True,
+    metric_for_best_model="f1",
+    save_total_limit=2,
+    fp16=True,
+    # Best parameters from optimization
+    learning_rate=best_params['learning_rate'],
+    num_train_epochs=best_params['num_train_epochs'],
+    per_device_train_batch_size=best_params['per_device_train_batch_size'],
+    weight_decay=best_params['weight_decay'],
+    warmup_ratio=best_params['warmup_ratio'],
+    # Additional regularization
+    max_grad_norm=1.0,
+    dataloader_drop_last=True,
+    # Logging
+    logging_steps=100,
+    logging_dir="./logs",
+    report_to=None,
+)
+
+def final_model_init():
+    return model_init_with_regularization(dropout=best_params['dropout'])
+
+# Use regular trainer
+final_trainer = Trainer(
+    model_init=final_model_init,
+    args=final_training_args,
+    train_dataset=tokenized_datasets['train_val'],
+    eval_dataset=tokenized_datasets['validation'],
+    compute_metrics=compute_metrics,
+    callbacks=[EarlyStoppingCallback(early_stopping_patience=3)],
+)
+
+final_trainer.train()
+
+# =================================================================================
+# PART C: FINAL EVALUATION ON TEST SET
+# =================================================================================
+print("\n" + "="*80)
+print("PART C: EVALUATING FINAL REGULARIZED MODEL")
+print("="*80 + "\n")
+
+test_results = final_trainer.predict(tokenized_datasets['test'])
+
+print("Final Test Set Metrics:")
+print(test_results.metrics)
+
+# Save the final model and tokenizer
+final_trainer.save_model("/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/scibert_final_model_regularized_saved_broad_14")
+tokenizer.save_pretrained("/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/scibert_final_model_regularized_saved_broad_14")
+
+print_classification_reports(test_results.predictions, test_results.label_ids, "Final Test")
+
+# Additional analysis: Compare validation vs test performance
+val_results = final_trainer.predict(tokenized_datasets['validation'])
+print("\nValidation Set Metrics for comparison:")
+print(val_results.metrics)
+print_classification_reports(val_results.predictions, val_results.label_ids, "Validation")
+
+print("\n" + "="*80)
+print("REGULARIZED WORKFLOW COMPLETED!")
+print("Final model saved to ./results/final_model_regularized_saved")
+print("="*80)

@@ -1,0 +1,21 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilOrganicCarbon": {"value": "organic carbon", "span": [111, 126]}},
+    {"soilOrganicCarbon": {"value": "soil properties", "span": [96, 113]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Explanation ###
+
+*   "Crops" is empty because there are no mentions of crops in the text.
+*   "Soil" has two mentions of "organic carbon", which are both related to soil organic carbon.
+    *   The first mention is at position [111, 126] in the text.
+    *   The second mention is at position [96, 113] in the text.
+*   "Location" is empty because there are no mentions of specific locations in the text.
+*   "Time Statement" is empty because there are no mentions of time-related information in the text.

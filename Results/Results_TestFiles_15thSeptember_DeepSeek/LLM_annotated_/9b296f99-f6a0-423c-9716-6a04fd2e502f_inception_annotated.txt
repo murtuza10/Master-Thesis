@@ -1,0 +1,34 @@
+{
+  "id": "gen-1758012593-vOBcXcLJNbPsV4zPyKE3",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1758012593,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [426, 431] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [433, 439] }},\n    {\"cropSpecies\": { \"value\": \"sugar beet\", \"span\": [444, 454] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [1131, 1137] }},\n    {\"cropSpecies\": { \"value\": \"sugar beet\", \"span\": [1142, 1152] }}\n  ],\n  \"Soil\": [\n    {\"soilReferenceGroup\": { \"value\": \"humus\", \"span\": [128, 133] }},\n    {\"soilReferenceGroup\": { \"value\": \"soil fertility\", \"span\": [199, 212] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [35, 42] }},\n    {\"city\": { \"value\": \"Speyer\", \"span\": [28, 34] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [301, 308] }},\n    {\"city\": { \"value\": \"Speyer\", \"span\": [294, 300] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [1023, 1030] }},\n    {\"city\": { \"value\": \"Speyer\", \"span\": [1016, 1022] }},\n    {\"city\": { \"value\": \"Karlsruhe\", \"span\": [721, 730] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1984\", \"span\": [315, 319] }},\n    {\"startTime\": { \"value\": \"2009\", \"span\": [687, 691] }},\n    {\"startTime\": { \"value\": \"16. September 2009\", \"span\": [663, 680] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 1557,
+    "completion_tokens": 453,
+    "total_tokens": 2010,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

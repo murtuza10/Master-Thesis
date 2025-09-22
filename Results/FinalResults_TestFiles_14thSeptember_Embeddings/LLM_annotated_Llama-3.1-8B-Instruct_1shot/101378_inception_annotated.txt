@@ -1,0 +1,40 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Birch", "span": [246, 252]}},
+    {"cropSpecies": {"value": "Betula pubescens Ehrh.", "span": [246, 262]}},
+    {"cropSpecies": {"value": "Birch", "span": [394, 400]}},
+    {"cropSpecies": {"value": "Betula pubescens Ehrh.", "span": [394, 410]}},
+    {"cropSpecies": {"value": "Birch", "span": [579, 585]}},
+    {"cropSpecies": {"value": "Betula pubescens Ehrh.", "span": [579, 595]}}
+  ],
+  "Soil": [
+    {"soilTexture": []},
+    {"soilReferenceGroup": []},
+    {"soilDepth": []},
+    {"soilBulkDensity": []},
+    {"soilPH": []},
+    {"soilOrganicCarbon": []},
+    {"soilAvailableNitrogen": []}
+  ],
+  "Location": [
+    {"country": []},
+    {"region": []},
+    {"city": []},
+    {"latitude": []},
+    {"longitude": []},
+    {"country": {"value": "northern hemisphere", "span": [109, 123]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "one year", "span": [234, 240]}},
+    {"endTime": {"value": "one year", "span": [234, 240]}}
+  ]
+}
+```
+### Explanation ###
+
+*   Crops: The text mentions "Birch" and "Betula pubescens Ehrh." multiple times as crop species.
+*   Soil: There is no mention of soil-related entities in the text, so the corresponding lists are empty.
+*   Location: The text mentions the "northern hemisphere" as a location, which is a region.
+*   Time Statement: The text mentions "one year" as the duration of the measurement, so it is included in the time statement list.

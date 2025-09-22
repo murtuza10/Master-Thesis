@@ -1,0 +1,98 @@
+### Code ###
+```python
+import re
+import json
+
+def extract_entities(text):
+    # Define regular expressions for entity patterns
+    crop_species_pattern = r"\b(wheat|barley|maize|oats|rye|potato|soybean|sunflower|sugarbeet|wheat|barley|maize|oats|rye|potato|soybean|sunflower|sugarbeet|other crops)\b"
+    crop_variety_pattern = r"\b(cultivar|hybrid|variety|cultivar|hybrid|variety)\b"
+    soil_texture_pattern = r"\b(sandy|loamy|clayey|silty|loamy|clayey|silty)\b"
+    soil_reference_group_pattern = r"\b(reference group|reference soil|reference group|reference soil)\b"
+    soil_depth_pattern = r"\b(\d+(?:\.\d+)?)\b"
+    soil_bulk_density_pattern = r"\b(\d+(?:\.\d+)?)\b"
+    soil_ph_pattern = r"\b(\d+(?:\.\d+)?)\b"
+    soil_organic_carbon_pattern = r"\b(\d+(?:\.\d+)?)\b"
+    soil_available_nitrogen_pattern = r"\b(\d+(?:\.\d+)?)\b"
+    location_country_pattern = r"\b(Germany|Germany)\b"
+    location_region_pattern = r"\b(federal states|federal states)\b"
+    location_city_pattern = r"\b(unknown|unknown)\b"
+    location_latitude_pattern = r"\b(\d+(?:\.\d+)?)\b"
+    location_longitude_pattern = r"\b(\d+(?:\.\d+)?)\b"
+    time_start_pattern = r"\b(\d{4})\b"
+    time_end_pattern = r"\b(\d{4})\b"
+
+    # Initialize entity lists
+    crops = []
+    soil = []
+    location = []
+    time_statement = []
+
+    # Extract entities from text
+    for match in re.finditer(crop_species_pattern, text, re.IGNORECASE):
+        crops.append({"cropSpecies": {"value": match.group(1), "span": [match.start(), match.end()]}})
+    for match in re.finditer(crop_variety_pattern, text, re.IGNORECASE):
+        crops.append({"cropVariety": {"value": match.group(1), "span": [match.start(), match.end()]}})
+    for match in re.finditer(soil_texture_pattern, text, re.IGNORECASE):
+        soil.append({"soilTexture": {"value": match.group(1), "span": [match.start(), match.end()]}})
+    for match in re.finditer(soil_reference_group_pattern, text, re.IGNORECASE):
+        soil.append({"soilReferenceGroup": {"value": match.group(1), "span": [match.start(), match.end()]}})
+    for match in re.finditer(soil_depth_pattern, text):
+        soil.append({"soilDepth": {"value": match.group(1), "span": [match.start(), match.end()]}})
+    for match in re.finditer(soil_bulk_density_pattern, text):
+        soil.append({"soilBulkDensity": {"value": match.group(1), "span": [match.start(), match.end()]}})
+    for match in re.finditer(soil_ph_pattern, text):
+        soil.append({"soilPH": {"value": match.group(1), "span": [match.start(), match.end()]}})
+    for match in re.finditer(soil_organic_carbon_pattern, text):
+        soil.append({"soilOrganicCarbon": {"value": match.group(1), "span": [match.start(), match.end()]}})
+    for match in re.finditer(soil_available_nitrogen_pattern, text):
+        soil.append({"soilAvailableNitrogen": {"value": match.group(1), "span": [match.start(), match.end()]}})
+    for match in re.finditer(location_country_pattern, text, re.IGNORECASE):
+        location.append({"country": {"value": match.group(1), "span": [match.start(), match.end()]}})
+    for match in re.finditer(location_region_pattern, text, re.IGNORECASE):
+        location.append({"region": {"value": match.group(1), "span": [match.start(), match.end()]}})
+    for match in re.finditer(location_city_pattern, text, re.IGNORECASE):
+        location.append({"city": {"value": match.group(1), "span": [match.start(), match.end()]}})
+    for match in re.finditer(location_latitude_pattern, text):
+        location.append({"latitude": {"value": match.group(1), "span": [match.start(), match.end()]}})
+    for match in re.finditer(location_longitude_pattern, text):
+        location.append({"longitude": {"value": match.group(1), "span": [match.start(), match.end()]}})
+    for match in re.finditer(time_start_pattern, text):
+        time_statement.append({"startTime": {"value": match.group(1), "span": [match.start(), match.end()]}})
+    for match in re.finditer(time_end_pattern, text):
+        time_statement.append({"endTime": {"value": match.group(1), "span": [match.start(), match.end()]}})
+
+    # Return entity lists as JSON
+    return {
+        "Crops": crops,
+        "Soil": soil,
+        "Location": location,
+        "Time Statement": time_statement
+    }
+
+text = """
+Title: 
+Calculations of gaseous and particulate emissions from German agriculture 1990 - 2017: Input data and emission results
+
+Abstract:
+In international conventions Germany has committed to the mitigation of emissions of greenhouse gases and air pollution. These international regulations (protocols etc.) are the UN Framework Convention on Climate Change (UNFCCC), the UNECE Convention on Long-Range Transboundary Air Pollution (CLRTAP), and within the European Union the Directive of the European Parliament and of the Council on national emission ceilings for certain atmospheric pollutants (NEC Directive). These conventions require annual calculations of the emissions of the respective gases and air pollutants. The results have to be documented in an emission inventory and to be reported to the organisations in charge. The data file contains input data and results of the calculation of gas and particulate emissions from German agriculture for Germany and the federal states in the years 1990 - 2017. In this context the sector Agriculture comprises the emissions from animal husbandry, the use of agricultural soils and anaerobic digestion of energy crops. As required by the guidelines, emissions from activities preceding agriculture, from the use of energy and from land use change are reported elsewhere in the national inventories.
+"""
+
+result = extract_entities(text)
+print(json.dumps(result, indent=4))
+```
+
+### Output ###
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "energy crops",
+                "span": [
+                    245,
+                    253
+                ]
+            }
+        }
+    ],

@@ -1,0 +1,26 @@
+{
+  "id": "gen-1758015951-9q9lLOyYYZj5BG8h1hCQ",
+  "provider": "Fireworks",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1758015951,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [684, 690] }},\n    {\"cropSpecies\": { \"value\": \"serradella\", \"span\": [721, 731] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [766, 772] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"soil pore water\", \"span\": [187, 201] }},\n    {\"Soil\": { \"value\": \"soil profiles\", \"span\": [233, 246] }},\n    {\"Soil\": { \"value\": \"soil pore water\", \"span\": [323, 337] }},\n    {\"Soil\": { \"value\": \"redoximorphic features\", \"span\": [526, 548] }},\n    {\"Soil\": { \"value\": \"soil\", \"span\": [556, 560] }},\n    {\"Soil\": { \"value\": \"Boden\", \"span\": [1204, 1209] }},\n    {\"Soil\": { \"value\": \"Bodenwasser\", \"span\": [1211, 1222] }}\n  ],\n  \"Location\": [\n    {\"region\": { \"value\": \"Northern Germany\", \"span\": [268, 284] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2018\", \"span\": [591, 595] }},\n    {\"startTime\": { \"value\": \"2019\", \"span\": [698, 702] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [740, 744] }},\n    {\"endTime\": { \"value\": \"2020\", \"span\": [1070, 1074] }},\n    {\"duration\": { \"value\": \"3.5 months\", \"span\": [1064, 1074] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1398,
+    "completion_tokens": 427,
+    "total_tokens": 1825
+  }
+}

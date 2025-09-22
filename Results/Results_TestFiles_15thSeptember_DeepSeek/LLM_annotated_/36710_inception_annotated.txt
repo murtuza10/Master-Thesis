@@ -1,0 +1,34 @@
+{
+  "id": "gen-1758012587-rZYD7JlC0txJyZJz6tq6",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1758012587,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"apple\", \"span\": [89, 94] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [343, 350] }},\n    {\"region\": { \"value\": \"Lower Saxony\", \"span\": [327, 340] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2001\", \"span\": [368, 372] }},\n    {\"endTime\": { \"value\": \"2003\", \"span\": [377, 381] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 1136,
+    "completion_tokens": 149,
+    "total_tokens": 1285,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

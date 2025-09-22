@@ -1,0 +1,38 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wheat", "span": [416, 421] }},
+    {"cropSpecies": { "value": "barley", "span": [426, 432] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [437, 447] }},
+    {"cropSpecies": { "value": "barley", "span": [743, 749] }},
+    {"cropSpecies": { "value": "beet", "span": [754, 758] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "humus", "span": [201, 206] }},
+    {"Soil": { "value": "mineral fertilizer", "span": [221, 238] }},
+    {"Soil": { "value": "mineral nutrients", "span": [247, 264] }},
+    {"Soil": { "value": "soil fertility", "span": [311, 323] }},
+    {"Soil": { "value": "ploughing", "span": [351, 359] }},
+    {"Soil": { "value": "farmyard manure", "span": [393, 408] }},
+    {"Soil": { "value": "crop residues", "span": [424, 438] }},
+    {"Soil": { "value": "mineral N fertilization", "span": [463, 483] }},
+    {"Soil": { "value": "bacterial bulk soil community", "span": [642, 670] }},
+    {"Soil": { "value": "bacterial interaction networks", "span": [843, 870] }},
+    {"Soil": { "value": "soil fertility", "span": [1034, 1046] }}
+  ],
+  "Location": [
+    {"city": { "value": "Speyer", "span": [73, 79] }},
+    {"city": { "value": "Speyer", "span": [191, 197] }},
+    {"city": { "value": "Speyer", "span": [310, 316] }},
+    {"city": { "value": "Karlsruhe", "span": [531, 539] }},
+    {"country": { "value": "Germany", "span": [86, 93] }},
+    {"country": { "value": "Germany", "span": [204, 211] }},
+    {"country": { "value": "Germany", "span": [323, 330] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1984", "span": [365, 369] }},
+    {"duration": { "value": "long-term", "span": [371, 379] }},
+    {"startTime": { "value": "2009", "span": [566, 570] }}
+  ]
+}
+```

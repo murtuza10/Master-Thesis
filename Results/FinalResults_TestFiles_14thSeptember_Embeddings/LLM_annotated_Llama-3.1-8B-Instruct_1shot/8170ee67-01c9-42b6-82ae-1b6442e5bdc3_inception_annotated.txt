@@ -1,0 +1,43 @@
+### JSON Structure Filled with Extracted Entities ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [145, 151]}},
+    {"cropSpecies": {"value": "barley", "span": [345, 351]}},
+    {"cropSpecies": {"value": "wheat", "span": [367, 373]}},
+    {"cropSpecies": {"value": "lupine", "span": [384, 391]}},
+    {"cropSpecies": {"value": "rye", "span": [402, 407]}}
+  ],
+  "Soil": [
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}},
+    {"soilTexture": {}},
+    {"soilReferenceGroup": {}},
+    {"soilDepth": {"value": "25 cm", "span": [235, 239]}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {}}
+  ],
+  "Location": [
+    {"country": {}},
+    {"region": {}},
+    {"city": {}},
+    {"latitude": {}},
+    {"longitude": {}}
+  ],
+  "Time Statement": [
+    {"startTime": {}},
+    {"endTime": {}},
+    {"duration": {}}
+  ]
+}
+```
+
+### Notes on Extraction ###
+
+- The text mentions "winter barley 2014" which implies that the experiment started in 2013 and the harvest in 2014, but there is no explicit mention of the start time.
+- The duration of the experiment is not mentioned explicitly.
+- There is no explicit mention of the latitude, longitude, country, or region where the experiment took place.
+- Soil texture, soil reference group, soil bulk density, and soil pH are not mentioned in the text.
+- Soil organic carbon and soil available nitrogen are not mentioned in the text.
+- Crop rotation includes winter barley, winter oilseed rape, winter wheat, lupine, and winter rye.

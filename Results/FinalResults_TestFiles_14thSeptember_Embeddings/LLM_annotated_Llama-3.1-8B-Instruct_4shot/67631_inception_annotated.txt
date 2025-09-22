@@ -1,0 +1,18 @@
+### Text Extraction Results
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Riesling", "span": [0, 7] }},
+    {"cropSpecies": { "value": "Felicia", "span": [24, 31] }},
+    {"cropSpecies": { "value": "Regent", "span": [39, 46] }}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": { "value": "before", "span": [104, 109] }},
+    {"endTime": { "value": "after", "span": [114, 119] }},
+    {"duration": { "value": "2018", "span": [129, 133] }}
+  ]
+}
+```
+Note: The `"span"` values represent the start and end character positions from the beginning of the full text.

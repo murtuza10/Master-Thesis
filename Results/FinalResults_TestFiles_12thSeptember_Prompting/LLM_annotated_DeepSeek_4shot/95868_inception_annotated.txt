@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751515-UFtCX0nUZtqy3gh0Ma0f",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751515,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Picea abies\", \"span\": [77, 87] }},\n    {\"cropSpecies\": { \"value\": \"Norway spruce\", \"span\": [122, 135] }},\n    {\"cropSpecies\": { \"value\": \"Picea abies\", \"span\": [137, 147] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [203, 210] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [203, 210] }},\n    {\"region\": { \"value\": \"Western Germany\", \"span\": [182, 197] }},\n    {\"country\": { \"value\": \"Europe\", \"span\": [339, 345] }}\n  ],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"51 years\", \"span\": [150, 158] }},\n    {\"startTime\": { \"value\": \"1964\", \"span\": [306, 310] }},\n    {\"endTime\": { \"value\": \"68\", \"span\": [311, 313] }},\n    {\"startTime\": { \"value\": \"7\", \"span\": [449, 450] }},\n    {\"endTime\": { \"value\": \"10\",}},\n    {\"startTime\": { \"value\": \"13\",}},\n    {\"endTime\": { \"value\": \"16\",}},\n    {\"startTime\": { \"value\": \"16\",}},\n    {\"endTime\": { \"value\": \"21\",}},\n    {\"startTime\": { \"value\": \"29\",}},\n    {\"endTime\": { \"value\": \"39\",}},\n    {\"startTime\": { \"value\": \"51\",}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 3436,
+    "completion_tokens": 400,
+    "total_tokens": 3836
+  }
+}

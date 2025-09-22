@@ -1,0 +1,32 @@
+{
+  "id": "gen-1758012576-Hel1VquNlyQp3fP8yMhd",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1758012576,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Norway spruce\", \"span\": [69, 82] }},\n    {\"cropSpecies\": { \"value\": \"Picea abies\", \"span\": [84, 94] }},\n    {\"cropSpecies\": { \"value\": \"Norway spruce\", \"span\": [244, 257] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [126, 133] }},\n    {\"country\": { \"value\": \"Europe\", \"span\": [299, 305] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [432, 439] }}\n  ],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"51 years\", \"span\": [108, 116] }},\n    {\"startTime\": { \"value\": \"1964\", \"span\": [224, 228] }},\n    {\"endTime\": { \"value\": \"68\", \"span\": [229, 231] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 1084,
+    "completion_tokens": 247,
+    "total_tokens": 1331,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": null
+  }
+}

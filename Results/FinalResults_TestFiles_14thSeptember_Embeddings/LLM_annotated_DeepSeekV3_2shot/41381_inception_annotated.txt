@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757936086-6faiYtByTYTWcgmaTMKS",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757936086,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"fruits\", \"span\": [121, 127]}},\n    {\"cropSpecies\": {\"value\": \"grape\", \"span\": [196, 201]}},\n    {\"cropVariety\": {\"value\": \"grape varieties\", \"span\": [196, 211]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [75, 82]}},\n    {\"region\": {\"value\": \"southwest Germany\", \"span\": [55, 73]}},\n    {\"city\": {\"value\": \"Dossenheim\", \"span\": [843, 853]}},\n    {\"city\": {\"value\": \"Siebeldingen\", \"span\": [858, 870]}},\n    {\"city\": {\"value\": \"Darmstadt\", \"span\": [919, 928]}},\n    {\"region\": {\"value\": \"southwest Germany\", \"span\": [1024, 1042]}},\n    {\"latitude\": {\"value\": \"lat\", \"span\": [1186, 1189]}},\n    {\"longitude\": {\"value\": \"lon\", \"span\": [1194, 1197]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2011\", \"span\": [345, 349]}},\n    {\"endTime\": {\"value\": \"February 2018\", \"span\": [738, 751]}},\n    {\"startTime\": {\"value\": \"2011\", \"span\": [1123, 1127]}},\n    {\"endTime\": {\"value\": \"2018\", \"span\": [1131, 1135]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 1899,
+    "completion_tokens": 380,
+    "total_tokens": 2279
+  }
+}

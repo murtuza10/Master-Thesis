@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIizKxH6SEZFOwAn067sf5kJnNXuQ",
+  "object": "chat.completion",
+  "created": 1758578874,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"maize\", \"span\": [227, 232] }},\n    {\"cropSpecies\": { \"value\": \"maize\", \"span\": [842, 847] }},\n    {\"cropSpecies\": { \"value\": \"maize\", \"span\": [1637, 1642] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"soil\", \"span\": [61, 65] }},\n    {\"Soil\": { \"value\": \"soil\", \"span\": [156, 160] }},\n    {\"Soil\": { \"value\": \"Wanna Sand\", \"span\": [303, 313] }},\n    {\"Soil\": { \"value\": \"Wanna Sand without biogas slurry\", \"span\": [316, 349] }},\n    {\"Soil\": { \"value\": \"Rostock Sand\", \"span\": [352, 364] }},\n    {\"Soil\": { \"value\": \"Wanna Marsch\", \"span\": [371, 383] }},\n    {\"Soil\": { \"value\": \"biogas slurry\", \"span\": [423, 436] }},\n    {\"Soil\": { \"value\": \"Starter fertilization\", \"span\": [472, 493] }},\n    {\"Soil\": { \"value\": \"diammonium phosphate (DAP)\", \"span\": [517, 545] }},\n    {\"Soil\": { \"value\": \"microgranular fertilizer (MG)\", \"span\": [547, 575] }},\n    {\"Soil\": { \"value\": \"soil\", \"span\": [1034, 1038] }},\n    {\"Soil\": { \"value\": \"soil\", \"span\": [1148, 1152] }},\n    {\"Soil\": { \"value\": \"soil\", \"span\": [1323, 1327] }},\n    {\"Soil\": { \"value\": \"Soil\", \"span\": [1860, 1864] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Europe\", \"span\": [1988, 1994] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [1996, 2003] }},\n    {\"region\": { \"value\": \"Lower Saxony\", \"span\": [2005, 2017] }},\n    {\"city\": { \"value\": \"Wanna\", \"span\": [2019, 2024] }},\n    {\"region\": { \"value\": \"Mecklenburg-Vorpommern\", \"span\": [2026, 2050] }},\n    {\"city\": { \"value\": \"Rostock\", \"span\": [2052, 2059] }}\n  ],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"over the years 2021, 2022 and 2023\", \"span\": [237, 273] }},\n    {\"duration\": { \"value\": \"between April and August each year\", \"span\": [939, 973] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2001,
+    "completion_tokens": 666,
+    "total_tokens": 2667,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

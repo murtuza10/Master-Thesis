@@ -1,0 +1,19 @@
+### Output JSON ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [245, 249]}},
+    {"cropSpecies": {"value": "wheat", "span": [313, 317]}}
+  ],
+  "Soil": [
+    {"soilProperties": {"value": "soil properties", "span": [225, 235]}},
+    {"soilWaterStableAggregation": {"value": "soil water stable aggregation", "span": [253, 272]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+### Notes ###
+- The input text does not contain any information about soil texture, reference group, depth, bulk density, pH, organic carbon, available nitrogen, country, region, city, latitude, longitude, start time, end time, or duration.
+- The text mentions "Winter wheat" as a crop species, which is included in the output.
+- The text mentions "soil properties" and "soil water stable aggregation" as soil-related entities, which are included in the output under the "Soil" category.

@@ -1,0 +1,26 @@
+### Output JSON ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "energy crops", "span": [342, 349]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [13, 20]}},
+    {"city": {"value": "Germany", "span": [13, 20]}},
+    {"region": {"value": "federal states", "span": [234, 243]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1990", "span": [102, 106]}},
+    {"endTime": {"value": "2017", "span": [141, 145]}}
+  ]
+}
+```
+
+### Notes ###
+
+*   The "cropSpecies" entity is identified as "energy crops" in the text.
+*   No "Soil" entities are found in the text.
+*   The "Location" entities are identified as "Germany", "Germany" (city is not explicitly mentioned, so I used country as city), and "federal states".
+*   The "Time Statement" entities are identified as "1990" and "2017".

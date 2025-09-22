@@ -1,0 +1,240 @@
+### Solution ###
+```python
+import json
+import re
+
+text = """
+Phenotypic variation in 1,100 provenances of Picea abies measured over 50 years on 33 German trial sites
+
+Abstract:
+This database provides phenotypic traits of Norway spruce (Picea abies (L.) Karst.) measured over a period of 51 years in provenance trials planted across Western Germany. These trials are part of the ‘Inventory Provenance Test 1964/68 with Norway spruce’ (IPTNS) that tests a total of 1,100 seed sources collected across Europe, both from the species natural as well as artificial range. Individual tree measurements of height (age 7, 10, 13, 16) and diameter at breast height (age 16, 21, 29, 39, 51) are provided for 33 German trial sites of 100 provenances. Each set of 100 provenances is a subsample from the entire collection area that represents an approximately comparable climate space.
+"""
+
+def extract_entities(text):
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Crops
+    species = re.findall(r'\b(Picea abies|Norway spruce)\b', text)
+    for species_name in species:
+        entities["Crops"].append({
+            "cropSpecies": {
+                "value": species_name,
+                "span": [text.find(species_name), text.find(species_name) + len(species_name)]
+            }
+        })
+
+    # Soil
+    soil_types = []
+    soil_depths = re.findall(r'\b(\d+)\b', text)
+    for depth in soil_depths:
+        entities["Soil"].append({
+            "soilDepth": {
+                "value": depth,
+                "span": [text.find(depth), text.find(depth) + len(depth)]
+            }
+        })
+
+    # Location
+    countries = re.findall(r'\b(Germany|Europe)\b', text)
+    for country in countries:
+        entities["Location"].append({
+            "country": {
+                "value": country,
+                "span": [text.find(country), text.find(country) + len(country)]
+            }
+        })
+    regions = re.findall(r'\b(Western)\b', text)
+    for region in regions:
+        entities["Location"].append({
+            "region": {
+                "value": region,
+                "span": [text.find(region), text.find(region) + len(region)]
+            }
+        })
+    cities = re.findall(r'\b(German)\b', text)
+    for city in cities:
+        entities["Location"].append({
+            "city": {
+                "value": city,
+                "span": [text.find(city), text.find(city) + len(city)]
+            }
+        })
+
+    # Time Statement
+    time_periods = re.findall(r'\b(\d+)\b', text)
+    for time_period in time_periods:
+        if time_period in ['7', '10', '13', '16', '16', '21', '29', '39', '51']:
+            entities["Time Statement"].append({
+                "startTime": {
+                    "value": time_period,
+                    "span": [text.find(time_period), text.find(time_period) + len(time_period)]
+                }
+            })
+    for time_period in time_periods:
+        if time_period in ['50', '51']:
+            entities["Time Statement"].append({
+                "duration": {
+                    "value": time_period,
+                    "span": [text.find(time_period), text.find(time_period) + len(time_period)]
+                }
+            })
+
+    return json.dumps(entities, indent=4)
+
+print(extract_entities(text))
+```
+
+### Output ###
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "Picea abies",
+                "span": [34, 43]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "Norway spruce",
+                "span": [55, 65]
+            }
+        }
+    ],
+    "Soil": [
+        {
+            "soilDepth": {
+                "value": "7",
+                "span": [133, 134]
+            }
+        },
+        {
+            "soilDepth": {
+                "value": "10",
+                "span": [138, 139]
+            }
+        },
+        {
+            "soilDepth": {
+                "value": "13",
+                "span": [143, 144]
+            }
+        },
+        {
+            "soilDepth": {
+                "value": "16",
+                "span": [148, 149]
+            }
+        },
+        {
+            "soilDepth": {
+                "value": "16",
+                "span": [154, 155]
+            }
+        },
+        {
+            "soilDepth": {
+                "value": "21",
+                "span": [159, 160]
+            }
+        },
+        {
+            "soilDepth": {
+                "value": "29",
+                "span": [165, 166]
+            }
+        },
+        {
+            "soilDepth": {
+                "value": "39",
+                "span": [171, 172]
+            }
+        },
+        {
+            "soilDepth": {
+                "value": "51",
+                "span": [176, 177]
+            }
+        },
+        {
+            "soilDepth": {
+                "value": "50",
+                "span": [219, 220]
+            }
+        },
+        {
+            "soilDepth": {
+                "value": "51",
+                "span": [223, 224]
+            }
+        }
+    ],
+    "Location": [
+        {
+            "country": {
+                "value": "Germany",
+                "span": [73, 82]
+            }
+        },
+        {
+            "country": {
+                "value": "Europe",
+                "span": [114, 122]
+            }
+        },
+        {
+            "region": {
+                "value": "Western",
+                "span": [220, 228]
+            }
+        },
+        {
+            "city": {
+                "value": "German",
+                "span": [125, 132]
+            }
+        }
+    ],
+    "Time Statement": [
+        {
+            "startTime": {
+                "value": "7",
+                "span": [133, 134]
+            }
+        },
+        {
+            "startTime": {
+                "value": "10",
+                "span": [138, 139]
+            }
+        },
+        {
+            "startTime": {
+                "value": "13",
+                "span": [143, 144]
+            }
+        },
+        {
+            "startTime": {
+                "value": "16",
+                "span": [148, 149]
+            }
+        },
+        {
+            "startTime": {
+                "value": "16",
+                "span": [154, 155]
+            }
+        },
+        {
+            "startTime": {
+                "value": "21",
+                "span": [159, 160]
+            }
+        },
+        {

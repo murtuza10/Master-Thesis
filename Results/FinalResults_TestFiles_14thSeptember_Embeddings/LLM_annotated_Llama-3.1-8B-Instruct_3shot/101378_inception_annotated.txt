@@ -1,0 +1,19 @@
+### Filled JSON Structure ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Betula pubescens", "span": [161, 175]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Explanation ###
+From the given input text, we can identify the following entities:
+
+- **Crops**: "Birch (Betula pubescens Ehrh.)" is mentioned, which refers to a crop species. The value is "Betula pubescens" and the span is from character position 161 to 175 (inclusive).
+
+The other categories (Soil, Location, and Time Statement) do not have any explicitly mentioned entities in the text.

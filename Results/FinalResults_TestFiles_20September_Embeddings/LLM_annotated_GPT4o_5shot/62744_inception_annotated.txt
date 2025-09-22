@@ -1,0 +1,34 @@
+{
+  "id": "gen-1758382467-mzrzcJNYSrt2T85OioFW",
+  "provider": "OpenAI",
+  "model": "openai/gpt-4o",
+  "object": "chat.completion",
+  "created": 1758382467,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"rye\", \"span\": [77, 80] }},\n    {\"cropSpecies\": { \"value\": \"Secale cereale L.\", \"span\": [81, 98] }},\n    {\"cropSpecies\": { \"value\": \"Rye\", \"span\": [101, 104] }},\n    {\"cropSpecies\": { \"value\": \"rye\", \"span\": [253, 256] }},\n    {\"cropSpecies\": { \"value\": \"rye\", \"span\": [1038, 1041] }},\n    {\"cropSpecies\": { \"value\": \"rye\", \"span\": [1224, 1227] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"region\": { \"value\": \"Northern Europe\", \"span\": [126, 141] }},\n    {\"country\": { \"value\": \"German\", \"span\": [412, 418] }}\n  ],\n  \"Time Statement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "fp_07871e2ad8",
+  "usage": {
+    "prompt_tokens": 5670,
+    "completion_tokens": 221,
+    "total_tokens": 5891,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

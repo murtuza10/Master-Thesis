@@ -1,0 +1,32 @@
+{
+  "id": "gen-1758012425-QopfyikY3Do6wKJMXd2G",
+  "provider": "AtlasCloud",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1758012425,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [635, 641] }},\n    {\"cropSpecies\": { \"value\": \"serradella\", \"span\": [668, 678] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [715, 721] }}\n  ],\n  \"Soil\": [\n    {\"soilPH\": { \"value\": \"pH\", \"span\": [42, 44] }},\n    {\"soilPH\": { \"value\": \"pH\", \"span\": [327, 329] }},\n    {\"soilPH\": { \"value\": \"pH\", \"span\": [1072, 1074] }}\n  ],\n  \"Location\": [\n    {\"region\": { \"value\": \"Northern Germany\", \"span\": [168, 184] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2018\", \"span\": [591, 595] }},\n    {\"startTime\": { \"value\": \"2019\", \"span\": [658, 662] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [52, 56] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [692, 696] }},\n    {\"endTime\": { \"value\": \"2020\", \"span\": [52, 56] }},\n    {\"endTime\": { \"value\": \"2020\", \"span\": [692, 696] }},\n    {\"duration\": { \"value\": \"3.5 months\", \"span\": [1142, 1152] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1336,
+    "completion_tokens": 373,
+    "total_tokens": 1709,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

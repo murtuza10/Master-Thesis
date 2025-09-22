@@ -1,0 +1,24 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "energy crop", "span": [64, 76]}}
+  ],
+  "Soil": [
+    {"soilBulkDensity": {"value": "bulk density", "span": [341, 353]}},
+    {"soilAvailableNitrogen": {"value": "nitrogen content", "span": [326, 341}}},
+    {"soilAvailableNitrogen": {"value": "ammonium-N", "span": [346, 355}}},
+    {"soilAvailableNitrogen": {"value": "nitrate-N", "span": [356, 364}}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [117, 124]}},
+    {"country": {"value": "Germany", "span": [282, 289]}}
+  ],
+  "Time Statement": [
+    {"duration": {"value": "three years", "span": [191, 202]}},
+    {"startTime": {"value": "2011/2012", "span": [205, 214]}},
+    {"endTime": {"value": "2014/2015", "span": [217, 226]}},
+    {"startTime": {"value": "2007", "span": [247, 252}}},
+    {"endTime": {"value": "2016", "span": [253, 258}}}
+  ]
+}
+```

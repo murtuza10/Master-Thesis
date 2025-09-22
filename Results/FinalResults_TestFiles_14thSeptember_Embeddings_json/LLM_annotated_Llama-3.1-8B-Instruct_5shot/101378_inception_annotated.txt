@@ -1,0 +1,32 @@
+{
+  "Crops": [
+    {"cropSpecies": {"value": "birch", "span": [121, 127]}},
+    {"cropSpecies": {"value": "Betula pubescens", "span": [128, 144]}},
+    {"cropSpecies": {"value": "maize", "span": []}},  // Not found, so empty object
+    {"cropSpecies": {"value": "wheat", "span": []}},  // Not found, so empty object
+    {"cropSpecies": {"value": "barley", "span": []}},  // Not found, so empty object
+  ],
+  "Soil": [
+    {"soilAvailableNitrogen": {"value": "CO2", "span": [234, 236]}},
+    {"soilDepth": {"value": "peat", "span": [244, 247]}},
+    {"soilBulkDensity": {"value": "peat C", "span": [257, 261]}},
+    {"soilPH": {"value": "", "span": []}},  // Not found, so empty object
+    {"soilOrganicCarbon": {"value": "peat C", "span": [266, 270]}},
+    {"soilReferenceGroup": {"value": "peat", "span": [266, 268]}}
+  ],
+  "Location": [
+    {"country": {"value": "", "span": []}},  // Not found, so empty object
+    {"region": {"value": "", "span": []}},  // Not found, so empty object
+    {"city": {"value": "", "span": []}},  // Not found, so empty object
+    {"latitude": {"value": "", "span": []}},  // Not found, so empty object
+    {"longitude": {"value": "", "span": []}},  // Not found, so empty object
+    {"country": {"value": "", "span": []}},  // Not found, so empty object
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "one year", "span": [283, 290]}},
+    {"endTime": {"value": "", "span": []}},  // Not found, so empty object
+    {"duration": {"value": "one year", "span": [283, 290]}},
+    {"startTime": {"value": "", "span": []}},  // Not found, so empty object
+    {"endTime": {"value": "", "span": []}},  // Not found, so empty object
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "gen-1758015958-zIzoApJ7LZKiX6Zmma4n",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1758015958,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [68, 74] }},\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [181, 187] }},\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [198, 204] }},\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [440, 446] }},\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [1194, 1200] }},\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [1373, 1379] }},\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [1503, 1509] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"region\": { \"value\": \"vineyard\", \"span\": [528, 536] }},\n    {\"region\": { \"value\": \"vineyard\", \"span\": [1212, 1220] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2017\", \"span\": [416, 420] }},\n    {\"endTime\": { \"value\": \"2018\", \"span\": [424, 428] }},\n    {\"startTime\": { \"value\": \"30.8.2017\", \"span\": [859, 868] }},\n    {\"startTime\": { \"value\": \"6.9.2017\", \"span\": [875, 883] }},\n    {\"endTime\": { \"value\": \"20.9.2017\", \"span\": [904, 913] }},\n    {\"endTime\": { \"value\": \"25.9.2017\", \"span\": [918, 927] }},\n    {\"startTime\": { \"value\": \"24.8.2018\", \"span\": [1145, 1154] }},\n    {\"startTime\": { \"value\": \"31.8.2018\", \"span\": [1161, 1170] }},\n    {\"endTime\": { \"value\": \"13.9.2018\", \"span\": [1204, 1213] }},\n    {\"endTime\": { \"value\": \"20.9.2018\", \"span\": [1218, 1227] }},\n    {\"startTime\": { \"value\": \"29.8.2018\", \"span\": [1326, 1335] }},\n    {\"startTime\": { \"value\": \"4.9.2018\", \"span\": [1342, 1350] }},\n    {\"duration\": { \"value\": \"two weeks\", \"span\": [1495, 1504] }},\n    {\"endTime\": { \"value\": \"12.9.2018\", \"span\": [1537, 1546] }},\n    {\"endTime\": { \"value\": \"29.9.2018\", \"span\": [1551, 1560] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 1741,
+    "completion_tokens": 692,
+    "total_tokens": 2433
+  }
+}

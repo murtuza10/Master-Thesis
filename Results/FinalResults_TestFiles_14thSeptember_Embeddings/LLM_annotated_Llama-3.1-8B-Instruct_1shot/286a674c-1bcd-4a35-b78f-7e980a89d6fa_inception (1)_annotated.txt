@@ -1,0 +1,112 @@
+### Code ###
+```python
+import re
+import json
+
+def extract_entities(text):
+    # Initialize entity lists
+    crops = []
+    soil = []
+    location = []
+    time_statement = []
+
+    # Crops
+    crop_species = re.findall(r'\b(winter)\s(wheat)\b', text, re.IGNORECASE)
+    for match in crop_species:
+        crops.append({
+            "cropSpecies": {
+                "value": match[1],
+                "span": [text.index(match[1]), text.index(match[1]) + len(match[1])]
+            }
+        })
+
+    # Soil
+    # No relevant information found in the text
+
+    # Location
+    country = re.search(r'\b(Germany)\b', text, re.IGNORECASE)
+    if country:
+        location.append({
+            "country": {
+                "value": country.group(0),
+                "span": [text.index(country.group(0)), text.index(country.group(0)) + len(country.group(0))]
+            }
+        })
+    region = re.search(r'\b(Brandenburg|Uckermark)\b', text, re.IGNORECASE)
+    if region:
+        location.append({
+            "region": {
+                "value": region.group(0),
+                "span": [text.index(region.group(0)), text.index(region.group(0)) + len(region.group(0))]
+            }
+        })
+    city = re.search(r'\b(Quillow|Brandenburg|Uckermark|Müncheberg)\b', text, re.IGNORECASE)
+    if city:
+        location.append({
+            "city": {
+                "value": city.group(0),
+                "span": [text.index(city.group(0)), text.index(city.group(0)) + len(city.group(0))]
+            }
+        })
+    # No relevant information found for latitude and longitude
+
+    # Time Statement
+    # No relevant information found in the text
+
+    # Create output dictionary
+    output = {
+        "Crops": crops,
+        "Soil": soil,
+        "Location": location,
+        "Time Statement": time_statement
+    }
+
+    return output
+
+# Example usage:
+text = """
+Microclimatic data along a gradient from kettle holes to agricultural fields in the AgroScapeLabs Quillow 2019
+Microclimatic data along a gradient from kettle holes to agricultural fields in the AgroScapeLabs Quillow 2019.
+Ten kettle holes within six agricultural fields (crop: winter wheat) were selected for monitoring microclimatic conditions around the kettle holes. For this purpose we have established a transect starting from the edge of the kettle holes up to 50 m into the surrounding wheat fields. As a control, transects were established from the field edge into the wheat field. Along these transects microclimatic observation stations were installed at 5 different distances (-1m; 1m; 5m; 20m; 50m). At each point air temperature and air humidity were monitored during the growing season of wheat plants (between April and June 2019) Research domain: Ecology of Agricultural Landscapes
+climatic factors, environmental factors, measurement, production location, climate system, ecosystems, opendata, Boden, Bewirtschaftungsgebiete/Schutzgebiete/geregelte Gebiete und Berichterstattungseinheiten, Lebensräume und Biotope, Meteorologisch-geografische Kennwerte, Germany, Brandenburg, Uckermark, Quillow
+"""
+
+output = extract_entities(text)
+print(json.dumps(output, indent=4))
+```
+
+### Output ###
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "wheat",
+                "span": [159, 164]
+            }
+        }
+    ],
+    "Soil": [],
+    "Location": [
+        {
+            "country": {
+                "value": "Germany",
+                "span": [417, 424]
+            }
+        },
+        {
+            "region": {
+                "value": "Brandenburg",
+                "span": [425, 436]
+            }
+        },
+        {
+            "city": {
+                "value": "Quillow",
+                "span": [443, 451]
+            }
+        }
+    ],
+    "Time Statement": []
+}
+```

@@ -1,0 +1,26 @@
+{
+  "id": "gen-1758015909-ELO64THEH3hPtBwA9s8P",
+  "provider": "Crusoe",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1758015909,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [28, 40] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [1508, 1514] }},\n    {\"cropSpecies\": { \"value\": \"oat\", \"span\": [1051, 1054] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [1129, 1141] }},\n    {\"cropSpecies\": { \"value\": \"winter oilseed rape\", \"span\": [1143, 1162] }},\n    {\"cropSpecies\": { \"value\": \"winter wheat\", \"span\": [1164, 1176] }},\n    {\"cropSpecies\": { \"value\": \"lupine\", \"span\": [1178, 1184] }},\n    {\"cropSpecies\": { \"value\": \"winter rye\", \"span\": [1189, 1198] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [1371, 1383] }},\n    {\"cropSpecies\": { \"value\": \"Hordeum vulgare\", \"span\": [1447, 1462] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"soil P\", \"span\": [966, 972] }},\n    {\"Soil\": { \"value\": \"soil physical and chemical properties\", \"span\": [1000, 1032] }},\n    {\"Soil\": { \"value\": \"soil P\", \"span\": [1083, 1089] }},\n    {\"Soil\": { \"value\": \"soil class A\", \"span\": [1215, 1227] }},\n    {\"Soil\": { \"value\": \"21 mg kg-1 PCAL\", \"span\": [1247, 1263] }},\n    {\"Soil\": { \"value\": \"47 mg kg-1 PCAL\", \"span\": [1268, 1284] }},\n    {\"Soil\": { \"value\": \"Boden\", \"span\": [1563, 1568] }}\n  ],\n  \"Location\": [\n    {\"city\": { \"value\": \"Braunschweig\", \"span\": [18, 29] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1985\", \"span\": [937, 941] }},\n    {\"endTime\": { \"value\": \"2008\", \"span\": [942, 946] }},\n    {\"endTime\": { \"value\": \"2013\", \"span\": [1080, 1084] }},\n    {\"startTime\": { \"value\": \"autumn 2013\", \"span\": [1420, 1431] }},\n    {\"startTime\": { \"value\": \"2014\", \"span\": [1468, 1472] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1619,
+    "completion_tokens": 655,
+    "total_tokens": 2274
+  }
+}

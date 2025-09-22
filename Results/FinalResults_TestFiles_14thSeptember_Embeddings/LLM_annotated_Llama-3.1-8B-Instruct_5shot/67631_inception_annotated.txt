@@ -1,0 +1,24 @@
+### JSON Output
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wine berries", "span": [43, 54] }},
+    {"cropSpecies": { "value": "Riesling", "span": [95, 103] }},
+    {"cropSpecies": { "value": "Felicia", "span": [109, 116] }},
+    {"cropSpecies": { "value": "Regent", "span": [123, 130] }}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": { "value": "before", "span": [124, 129] }},
+    {"endTime": { "value": "after", "span": [135, 140] }},
+    {"duration": { "value": "2018", "span": [165, 169] }}
+  ]
+}
+```
+In the JSON output above:
+
+- We extracted the "wine berries" as the crop species, and the varieties "Riesling", "Felicia", and "Regent".
+- We did not find any soil-related entities.
+- We did not find any location-related entities.
+- We extracted the time-related entities: "before" as the start time, "after" as the end time, and "2018" as the duration.

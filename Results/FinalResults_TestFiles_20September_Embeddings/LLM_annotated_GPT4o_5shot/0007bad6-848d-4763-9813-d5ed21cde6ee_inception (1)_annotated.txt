@@ -1,0 +1,34 @@
+{
+  "id": "gen-1758382552-DTXSUHh9SWLkFAZrPhLT",
+  "provider": "OpenAI",
+  "model": "openai/gpt-4o",
+  "object": "chat.completion",
+  "created": 1758382552,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [798, 803]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"soil properties\", \"span\": [105, 120]}},\n    {\"Soil\": {\"value\": \"soil water stable aggregation\", \"span\": [278, 308]}},\n    {\"Soil\": {\"value\": \"soil properties\", \"span\": [362, 377]}}\n  ],\n  \"Location\": [],\n  \"Time Statement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "fp_07871e2ad8",
+  "usage": {
+    "prompt_tokens": 4407,
+    "completion_tokens": 123,
+    "total_tokens": 4530,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,28 @@
+### Filled JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "forest", "span": [124, 132]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [100, 107]}},
+    {"latitude": {"value": "47.15766000", "span": [442, 457]}},
+    {"latitude": {"value": "55.08484000", "span": [450, 465]}},
+    {"longitude": {"value": "5.79922100", "span": [430, 439]}},
+    {"longitude": {"value": "15.08954000", "span": [436, 445]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1961", "span": [275, 279]}},
+    {"endTime": {"value": "2100", "span": [296, 300]}},
+    {"startTime": {"value": "1961", "span": [275, 279]}},
+    {"endTime": {"value": "2013", "span": [304, 308]}},
+    {"startTime": {"value": "2011", "span": [345, 349]}},
+    {"endTime": {"value": "2050", "span": [357, 361]}},
+    {"startTime": {"value": "2011", "span": [345, 349]}},
+    {"endTime": {"value": "2100", "span": [362, 366]}},
+    {"startTime": {"value": "1961", "span": [275, 279]}},
+    {"endTime": {"value": "2099", "span": [419, 423]}}
+  ]
+}
+```

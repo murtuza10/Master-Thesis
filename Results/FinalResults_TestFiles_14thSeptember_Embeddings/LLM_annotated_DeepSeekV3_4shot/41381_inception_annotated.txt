@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757936105-aoIwQPobLiAS4uOn8MUV",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757936105,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"grape\", \"span\": [201, 206]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"region\": {\"value\": \"southwest Germany\", \"span\": [56, 74]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [183, 190]}},\n    {\"region\": {\"value\": \"southwest Germany\", \"span\": [1039, 1057]}},\n    {\"latitude\": {\"value\": \"lat\", \"span\": [1219, 1222]}},\n    {\"longitude\": {\"value\": \"lon\", \"span\": [1228, 1231]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2011\", \"span\": [246, 250]}},\n    {\"endTime\": {\"value\": \"February 2018\", \"span\": [778, 791]}},\n    {\"startTime\": {\"value\": \"2011\", \"span\": [1010, 1014]}},\n    {\"endTime\": {\"value\": \"2018\", \"span\": [1018, 1022]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 2244,
+    "completion_tokens": 264,
+    "total_tokens": 2508
+  }
+}

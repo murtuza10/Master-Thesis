@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757935901-y6D0BGlnIUIUjSVWZ1t6",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757935901,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [220, 226]}},\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [301, 307]}},\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [1276, 1282]}},\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [1717, 1723]}},\n    {\"cropSpecies\": {\"value\": \"grapes\", \"span\": [2175, 2181]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2017\", \"span\": [1066, 1070]}},\n    {\"endTime\": {\"value\": \"2018\", \"span\": [1074, 1078]}},\n    {\"startTime\": {\"value\": \"30.8.2017\", \"span\": [1628, 1636]}},\n    {\"endTime\": {\"value\": \"20.9.2017\", \"span\": [1671, 1680]}},\n    {\"startTime\": {\"value\": \"6.9.2017\", \"span\": [1639, 1646]}},\n    {\"endTime\": {\"value\": \"25.9.2017\", \"span\": [1683, 1692]}},\n    {\"startTime\": {\"value\": \"24.8.2018\", \"span\": [1893, 1901]}},\n    {\"endTime\": {\"value\": \"13.9.2018\", \"span\": [1934, 1942]}},\n    {\"startTime\": {\"value\": \"31.8.2018\", \"span\": [1904, 1911]}},\n    {\"endTime\": {\"value\": \"20.9.2018\", \"span\": [1945, 1953]}},\n    {\"startTime\": {\"value\": \"29.8.2018\", \"span\": [2096, 2103]}},\n    {\"endTime\": {\"value\": \"12.9.2018\", \"span\": [2188, 2196]}},\n    {\"startTime\": {\"value\": \"4.9.2018\", \"span\": [2106, 2112]}},\n    {\"endTime\": {\"value\": \"29.9.2018\", \"span\": [2200, 2208]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 2531,
+    "completion_tokens": 542,
+    "total_tokens": 3073
+  }
+}

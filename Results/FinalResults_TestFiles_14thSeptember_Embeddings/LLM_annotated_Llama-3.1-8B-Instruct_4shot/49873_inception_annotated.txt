@@ -1,0 +1,44 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilDepth": {"value": "Bodenleitprofile", "span": [39, 51]}},
+    {"soilTexture": {"value": "Bodentyp", "span": [133, 138]}},
+    {"soilBulkDensity": {"value": "Trockenrohdichte", "span": [236, 250]}},
+    {"soilOrganicCarbon": {"value": "organischer Kohlenstoffgehalt", "span": [283, 305]}},
+    {"soilAvailableNitrogen": {}},
+    {"soilReferenceGroup": {}},
+    {"soilPH": {}}
+  ],
+  "Location": [
+    {"country": {"value": "Deutschland", "span": [56, 66]}},
+    {"region": {"value": "Bundesländer", "span": [103, 112]}},
+    {"city": {}},
+    {"latitude": {}},
+    {"longitude": {}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2012", "span": [173, 176]}},
+    {"endTime": {"value": "2012", "span": [177, 180]}},
+    {"duration": {"value": "Creation date: 28.05.2019", "span": [181, 194]}}
+  ]
+}
+```
+
+Explanation:
+- For "Soil" category:
+  - "soilDepth": "Bodenleitprofile" (mention of soil profiles)
+  - "soilTexture": "Bodentyp" (mention of soil type)
+  - "soilBulkDensity": "Trockenrohdichte" (mention of dry bulk density)
+  - "soilOrganicCarbon": "organischer Kohlenstoffgehalt" (mention of organic carbon content)
+  - "soilAvailableNitrogen", "soilReferenceGroup", "soilPH": no mentions found
+- For "Location" category:
+  - "country": "Deutschland" (mention of Germany)
+  - "region": "Bundesländer" (mention of federal states)
+  - "city": no mention found
+  - "latitude" and "longitude": no mention found
+- For "Time Statement" category:
+  - "startTime": "2012" (start date of temporal coverage)
+  - "endTime": "2012" (end date of temporal coverage)
+  - "duration": "Creation date: 28.05.2019" (creation date, not duration)

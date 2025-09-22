@@ -1,0 +1,42 @@
+### Filled JSON Structure ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [213, 219]}},
+    {"cropSpecies": {"value": "rapeseed", "span": [234, 242]}},
+    {"cropSpecies": {"value": "wheat", "span": [253, 259]}},
+    {"cropSpecies": {"value": "lupine", "span": [267, 273]}},
+    {"cropSpecies": {"value": "rye", "span": [281, 286]}}
+  ],
+  "Soil": [
+    {"soilTexture": {}},
+    {"soilReferenceGroup": {}},
+    {"soilDepth": {"value": "25 cm", "span": [555, 559]}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}}
+  ],
+  "Location": [
+    {"country": {}},
+    {"region": {}},
+    {"city": {"value": "Braunschweig", "span": [44, 55]}},
+    {"latitude": {}},
+    {"longitude": {}}
+  ],
+  "Time Statement": [
+    {"startTime": {}},
+    {"endTime": {}},
+    {"duration": {"value": "2014", "span": [213, 219]}}
+  ]
+}
+```
+
+### Notes on the process: ###
+
+1.  Extracted the crop species from the text: "winter barley", "winter oilseed rape", "winter wheat", "lupine", and "winter rye".
+2.  The soil depth was mentioned as "25 cm", but other soil properties like texture, reference group, bulk density, pH, organic carbon, and available nitrogen were not mentioned in the text.
+3.  The location is mentioned as "Braunschweig", but country, region, latitude, and longitude are not specified.
+4.  The time statement mentions the year "2014" as the harvest year of winter barley.
+5.  The fertilizers used are BC, BCplus, and TSP, but these are not categorized in the JSON structure as they do not fit into the predefined categories.

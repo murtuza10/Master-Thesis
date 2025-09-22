@@ -1,0 +1,34 @@
+{
+  "id": "gen-1758382383-LnR81LBomYJudE5Nqh32",
+  "provider": "OpenAI",
+  "model": "openai/gpt-4o",
+  "object": "chat.completion",
+  "created": 1758382383,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [124, 131]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [935, 942]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"1990\", \"span\": [84, 88]}},\n    {\"endTime\": {\"value\": \"2017\", \"span\": [91, 95]}},\n    {\"startTime\": {\"value\": \"1990\", \"span\": [979, 983]}},\n    {\"endTime\": {\"value\": \"2017\", \"span\": [986, 990]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "fp_f33640a400",
+  "usage": {
+    "prompt_tokens": 3198,
+    "completion_tokens": 161,
+    "total_tokens": 3359,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

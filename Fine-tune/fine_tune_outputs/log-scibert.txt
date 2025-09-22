@@ -1,0 +1,22 @@
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/condabin/conda
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/conda
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/conda-env
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/activate
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/deactivate
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/etc/profile.d/conda.sh
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/etc/fish/conf.d/conda.fish
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/shell/condabin/Conda.psm1
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/shell/condabin/conda-hook.ps1
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/lib/python3.10/site-packages/xontrib/conda.xsh
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/etc/profile.d/conda.csh
+no change     /home/s27mhusa_hpc/.bashrc
+No action taken.
+Starting resource monitoring every 30 seconds...
+Logs will be stored in: /home/s27mhusa_hpc/Master-Thesis/OutputNewDatasets15thSeptemberFineTune/job_monitor_logs_scibert-specific_23235181_20250917_174452
+job-finetune-generic-bash-scibert.bash: line 42: iostat: command not found
+/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+HTTP Error 429 thrown while requesting HEAD https://huggingface.co/allenai/scibert_scivocab_uncased/resolve/main/tokenizer_config.json
+Retrying in 1s [Retry 1/5].
+HTTP Error 429 thrown while requesting HEAD https://huggingface.co/allenai/scibert_scivocab_uncased/resolve/main/tokenizer_config.json
+Retrying in 2s [Retry 2/5].

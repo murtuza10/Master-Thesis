@@ -1,0 +1,53 @@
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {
+      "soilBulkDensity": {
+        "value": "bulk density",
+        "span": [386, 395]
+      }
+    ],
+    {
+      "soilAvailableNitrogen": {
+        "value": "ammonium-n",
+        "span": [406, 414]
+      }
+    },
+    {
+      "soilAvailableNitrogen": {
+        "value": "nitrate-n",
+        "span": [416, 424]
+      }
+    }
+  ],
+  "Location": [
+    {
+      "country": {
+        "value": "Germany",
+        "span": [143, 149]
+      }
+    }
+  ],
+  "Time Statement": [
+    {
+      "duration": {
+        "value": "three years",
+        "span": [206, 215]
+      }
+    },
+    {
+      "startTime": {
+        "value": "2011/2012",
+        "span": [218, 229]
+      }
+    },
+    {
+      "endTime": {
+        "value": "2014/2015",
+        "span": [232, 243]
+      }
+    }
+  ]
+}
+```

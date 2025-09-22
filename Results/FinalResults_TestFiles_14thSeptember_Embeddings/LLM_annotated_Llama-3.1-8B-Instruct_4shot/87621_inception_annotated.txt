@@ -1,0 +1,63 @@
+### Code ###
+
+```python
+import re
+from collections import defaultdict
+
+def extract_entities(text):
+    entities = defaultdict(list)
+
+    # Crops
+    crop_species = re.findall(r'\b(Hordeum|Wheat|barley)\b', text, re.IGNORECASE)
+    for species in crop_species:
+        entities['Crops'].append({"cropSpecies": {"value": species, "span": [text.find(species), text.find(species) + len(species)]}})
+
+    # Soil
+    entities['Soil'] = []
+
+    # Location
+    location = re.findall(r'\b(Hordeum|Wheat|barley|Hordeum vulgare ssp\. vulgare)\b', text, re.IGNORECASE)
+    for loc in location:
+        entities['Location'].append({"country": {"value": "global", "span": [text.find(loc), text.find(loc) + len(loc)]}})
+        entities['Location'].append({"region": {"value": "global", "span": [text.find(loc), text.find(loc) + len(loc)]}})
+        entities['Location'].append({"city": {"value": "global", "span": [text.find(loc), text.find(loc) + len(loc)]}})
+        entities['Location'].append({"latitude": {"value": "global", "span": [text.find(loc), text.find(loc) + len(loc)]}})
+        entities['Location'].append({"longitude": {"value": "global", "span": [text.find(loc), text.find(loc) + len(loc)]}})
+
+    # Time Statement
+    entities['Time Statement'] = []
+
+    return entities
+
+text = """
+Title: 
+Dataset: Identification of markers associated with Wheat dwarf virus (WDV) tolerance/resistance in barley (Hordeum vulgare ssp. vulgare) using Genome wide association studies
+
+Abstract:
+Wheat dwarfing virus (WDV) is transmitted by the leafhopper Psammotettix alienus and causes yield losses in barley and other cereals. To date, little evidence of WDV-resistant/tolerant cultivars has been published, and no information is available for associated markers and QTL to WDV in barley. Therefore, identification of genetic factors controlling WDV to reduce the negative impact of WDV on yield plays an important role in resistance breeding. In this study, we examined a set of 480 barley genotypes to identify genotypic differences in response to WDV. Five traits, including infection rate (ELISA 60), total grain weight, plant height, number of ears per plant and thousand grain weight, were measured under infected and uninfected conditions. Finally, phenotypic and genotypic data of 191 out of 480 genotypes were used for a genome-wide association study (GWAS). A set of 34, 408 single nucleotide polymorphisms (SNPs) were identified on the 50 K iSelect array. In total, 1, 3, 2, 2, and 1 significantly associated markers on chromosomes 3H, 4H, 5H, and 7H were identified for ELISA-60, relative performance of total grain weight, plant height, number of ears per plant, and thousand grain weight (on chromosome 7H), respectively.
+"""
+
+print(extract_entities(text))
+```
+
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [59, 65]}},
+    {"cropSpecies": {"value": "barley", "span": [101, 107]}},
+    {"cropSpecies": {"value": "Wheat", "span": [137, 142]}},
+    {"cropSpecies": {"value": "barley", "span": [174, 180]}},
+    {"cropSpecies": {"value": "Hordeum vulgare ssp. vulgare", "span": [200, 226]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "global", "span": [59, 65]}},
+    {"region": {"value": "global", "span": [59, 65]}},
+    {"city": {"value": "global", "span": [59, 65]}},
+    {"latitude": {"value": "global", "span": [59, 65]}},
+    {"longitude": {"value": "global", "span": [59, 65]}}
+  ],
+  "Time Statement": []
+}
+```

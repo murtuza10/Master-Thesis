@@ -1,0 +1,23 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [625, 630]}},
+    {"cropSpecies": {"value": "serradella", "span": [638, 646]}}
+  ],
+  "Soil": [
+    {"soilPH": {"value": "pH", "span": [157, 159]}},
+    {"soilPH": {"value": "pH", "span": [677, 679]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [205, 211]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2018", "span": [649, 653]}},
+    {"startTime": {"value": "2019", "span": [662, 666]}},
+    {"startTime": {"value": "2020", "span": [670, 674]}},
+    {"startTime": {"value": "2020", "span": [695, 699]}},
+    {"startTime": {"value": "2020", "span": [729, 733]}},
+    {"duration": {"value": "3.5 months", "span": [757, 766]}}
+  ]
+}
+```

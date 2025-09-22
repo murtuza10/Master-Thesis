@@ -1,0 +1,48 @@
+### Solution ###
+
+To fill the JSON structure, we need to extract the entities mentioned in the text and categorize them according to the given rules. 
+
+### Text Analysis ###
+
+1. **Crops**: 
+   - The text mentions "energy crops".
+   - "Energy crops" is a type of crop, so we will extract the species name "crops".
+
+2. **Soil**: 
+   - The text mentions "agricultural soils".
+
+3. **Location**: 
+   - The text mentions "Germany", "federal states", and "European Union".
+   - We will extract "Germany" as a country and "federal states" as a region.
+
+4. **Time Statement**: 
+   - The text mentions "1990 - 2017".
+   - We will extract "1990" as the start time and "2017" as the end time.
+
+### JSON Output ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "crops", "span": [143, 149] }}
+  ],
+  "Soil": [
+    {"soilTexture": []},
+    {"soilReferenceGroup": []},
+    {"soilDepth": []},
+    {"soilBulkDensity": []},
+    {"soilPH": []},
+    {"soilOrganicCarbon": []},
+    {"soilAvailableNitrogen": []}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [20, 27] }},
+    {"region": { "value": "federal states", "span": [108, 120] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1990", "span": [34, 38] }},
+    {"endTime": { "value": "2017", "span": [63, 67] }},
+    {"duration": []}
+  ]
+}
+```

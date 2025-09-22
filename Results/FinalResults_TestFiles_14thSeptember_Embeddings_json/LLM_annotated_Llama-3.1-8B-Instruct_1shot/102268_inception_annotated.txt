@@ -1,0 +1,64 @@
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "wheat",
+                "span": [23, 29]
+            }
+        }
+    ],
+    "Soil": [
+        {
+            "soilReferenceGroup": {
+                "value": "pedo-climatic",
+                "span": [50, 61]
+            },
+        {
+            "soilDepth": {
+                "value": "depth",
+                "span": [84, 90]
+            },
+        {
+            "soilBulkDensity": {
+                "value": "bulk density",
+                "span": [91, 104]
+            },
+        {
+            "soilPH": {
+                "value": "ph",
+                "span": [105, 108]
+            },
+        {
+            "soilOrganicCarbon": {
+                "value": "organic carbon",
+                "span": [109, 122]
+            },
+        {
+            "soilAvailableNitrogen": {
+                "value": "available nitrogen",
+                "span": [123, 137]
+            },
+    ],
+    "Location": [
+        {
+            "country": {
+                "value": "Europe",
+                "span": [34, 41]
+            }
+        }
+    ],
+    "Time Statement": [
+        {
+            "startTime": {
+                "value": "2019",
+                "span": [69, 73]
+            }
+        },
+        {
+            "startTime": {
+                "value": "2020",
+                "span": [76, 80]
+            }
+        }
+    ]
+}

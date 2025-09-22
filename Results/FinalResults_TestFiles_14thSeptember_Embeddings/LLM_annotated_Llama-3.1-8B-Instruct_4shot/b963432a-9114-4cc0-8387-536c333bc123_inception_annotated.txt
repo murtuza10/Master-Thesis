@@ -1,0 +1,24 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [1030, 1039]}},
+    {"cropSpecies": {"value": "barley", "span": [1055, 1064]}}
+  ],
+  "Soil": [
+    {"soilPH": {"value": "pH", "span": [144, 146]}},
+    {"soilPH": {"value": "pH-Wert", "span": [1231, 1233]}}
+  ],
+  "Location": [
+    {"city": {"value": "Rostock", "span": [43, 50]}},
+    {"city": {"value": "Rostock", "span": [153, 160]}},
+    {"country": {"value": "Germany", "span": [557, 564]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2018", "span": [246, 250]}},
+    {"startTime": {"value": "2019", "span": [311, 315]}},
+    {"startTime": {"value": "2020", "span": [124, 128]}},
+    {"endTime": {"value": "2020", "span": [1019, 1023]}}
+  ]
+}
+```

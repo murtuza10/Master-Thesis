@@ -1,0 +1,24 @@
+### Filled JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Mähdrescher", "span": [44, 51] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "Parabraunerde", "span": [216, 230] }},
+    {"soilTexture": { "value": "Löss", "span": [231, 235] }},
+    {"soilDepth": { "value": "28 cm", "span": [241, 245] }},
+    {"soilBulkDensity": { "value": "17 t", "span": [108, 112] }}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": { "value": "2017", "span": [51, 55] }}
+  ]
+}
+```
+### Explanation ###
+
+*   In the "Crops" category, we identified "Mähdrescher" as a crop species.
+*   In the "Soil" category, we identified "Parabraunerde" as a soil reference group, "Löss" as a soil texture, and "28 cm" as the soil depth. Additionally, we found "17 t" as the soil bulk density.
+*   In the "Location" category, we found no explicit location information.
+*   In the "Time Statement" category, we identified "2017" as the start time.

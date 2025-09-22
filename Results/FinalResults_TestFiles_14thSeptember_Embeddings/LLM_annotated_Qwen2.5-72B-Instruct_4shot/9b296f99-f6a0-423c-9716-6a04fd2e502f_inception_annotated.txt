@@ -1,0 +1,36 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wheat", "span": [313, 318] }},
+    {"cropSpecies": { "value": "barley", "span": [323, 329] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [333, 343] }},
+    {"cropSpecies": { "value": "barley", "span": [819, 825] }},
+    {"cropSpecies": { "value": "sugar beet", "span": [829, 839] }}
+  ],
+  "Soil": [
+    {"soilOrganicCarbon": { "value": "humus", "span": [107, 112] }},
+    {"soilAvailableNitrogen": { "value": "nitrogen", "span": [181, 189] }},
+    {"soilAvailableNitrogen": { "value": "mineral nutrients", "span": [151, 166] }},
+    {"soilAvailableNitrogen": { "value": "nutrients", "span": [119, 127] }},
+    {"soilAvailableNitrogen": { "value": "mineral N", "span": [433, 440] }},
+    {"soilAvailableNitrogen": { "value": "mineral fertilizer", "span": [146, 160] }},
+    {"soilAvailableNitrogen": { "value": "mineral fertilization", "span": [433, 450] }},
+    {"soilAvailableNitrogen": { "value": "mineral fertilization", "span": [926, 943] }},
+    {"soilAvailableNitrogen": { "value": "mineral fertilizer", "span": [946, 960] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [45, 52] }},
+    {"city": { "value": "Speyer", "span": [54, 60] }},
+    {"city": { "value": "Speyer", "span": [1102, 1108] }},
+    {"city": { "value": "Karlsruhe", "span": [798, 808] }},
+    {"city": { "value": "Speyer", "span": [858, 864] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1984", "span": [379, 383] }},
+    {"duration": { "value": "long term", "span": [926, 934] }},
+    {"duration": { "value": "long term", "span": [961, 969] }},
+    {"duration": { "value": "long-term", "span": [1059, 1068] }},
+    {"duration": { "value": "long-term", "span": [1145, 1154] }}
+  ]
+}
+```

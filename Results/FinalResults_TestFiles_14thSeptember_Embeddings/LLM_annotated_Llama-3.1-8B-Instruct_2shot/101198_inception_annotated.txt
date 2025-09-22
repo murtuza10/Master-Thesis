@@ -1,0 +1,80 @@
+### Text Processing and Entity Extraction ###
+
+```python
+import json
+import re
+
+def extract_entities(text):
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Crops
+    crops = ["Biomasse", "Holz", "holzbasierte Produkte", "Schnittholz", "Textilfaser"]
+    for crop in crops:
+        matches = re.finditer(r'\b' + re.escape(crop) + r'\b', text)
+        for match in matches:
+            entity = {
+                "cropSpecies": {
+                    "value": match.group(),
+                    "span": [match.start(), match.end()]
+                }
+            }
+            entities["Crops"].append(entity)
+
+    # Soil
+    soil = []
+    matches = re.finditer(r'\b(soil|Boden)\b', text)
+    for match in matches:
+        entity = {
+            "soilTexture": {
+                "value": match.group(),
+                "span": [match.start(), match.end()]
+            }
+        }
+        soil.append(entity)
+
+    # Location
+    locations = ["nova-Institut", "Thünen-Institut für Waldwirtschaft", "FAO", "World Bank", "FRA", "IIASA-SSP", "WTO", "Germany"]
+    for location in locations:
+        matches = re.finditer(r'\b' + re.escape(location) + r'\b', text)
+        for match in matches:
+            if location == "Germany":
+                entity = {
+                    "country": {
+                        "value": match.group(),
+                        "span": [match.start(), match.end()]
+                    }
+                }
+            else:
+                entity = {
+                    "region": {
+                        "value": match.group(),
+                        "span": [match.start(), match.end()]
+                    }
+                }
+            entities["Location"].append(entity)
+
+    # Time Statement
+    time_statements = ["2020", "2050", "2023", "2024"]
+    for time_statement in time_statements:
+        matches = re.finditer(r'\b' + re.escape(time_statement) + r'\b', text)
+        for match in matches:
+            entity = {
+                "startTime": {
+                    "value": match.group(),
+                    "span": [match.start(), match.end()]
+                }
+            }
+            entities["Time Statement"].append(entity)
+
+    return entities
+
+text = """
+Datensatz Biomassestudie
+
+Abstract:
+Im Rahmen einer vom nova-Institut durchgeführten Studie modelliert das Thünen-Institut für Waldwirtschaft als Unterauftragnehmer die Auswirkungen verschiedener Politiken und gesellschaftlicher Trends auf den Holzmarkt. Die Studie ist von der Renewable Carbon Initiative (RCI) und des Bio-based Industries Consortium (BIC) beauftragt. Der zentrale Forschungsauftrag der Konsortien lautet: Unter der Prämisse, dass der chemische Industriesektor eine vollständige Defossilisierung anstrebt, soll quantifiziert werden, welcher Anteil des Kohlenstoffinputs, den die chemische Industrien als Input benötigen, im Jahr 2050 nachhaltig aus agrarischer und forstlicher Biomasse bereitgestellt werden kann. Für diesen Zweck werden ein Referenzszenario und zwei alternative Szenarien entworfen, die verschiedene zukünftige Entwicklungspfade beschreiben. Die Szenarien betreffen sowohl den landwirtschaftlichen als auch den forstwirtschaftlichen Sektor. Die hier dargestellten Forstsektoranalysen untersuchen mögliche Entwicklungen zur Verfügbarkeit forstbasierter Biomassepotentiale. Die Entwicklung der globalen Waldfläche in den Szenarien wird normativ angepasst, sodass beispielweise die Entwaldung abnimmt. Das Thünen-Institut für Waldwirtschaft nutzt zur Modellierung das Timber market Model for policy-Based Analysis (TiMBA), wobei angebots- und nachfrageseitig 19 Holz und holzbasierte Produkte in 180 Ländern bis zum Jahr 2050 simuliert werden. In enger Zusammenarbeit mit dem nova-Institut kalibriert das Thünen-Institut für Waldwirtschaft das Model. Im Anschluss werden mit TiMBA verschiedene Szenarien simuliert, wobei die Eingangsdaten und Parameter von FAOstat[1], World Bank[2], FRA[3], IIASA-SSP[4], WTO[5], the fibre yearbook 2023[6] und Skoczinski et al. 2024[7] zum Einsatz kommen. Die Modellierungsergebnisse zeigen eine Erhöhung der Rohholzlieferung zwischen 2020 und 2050 um bis zu 38%. Die steigende Nachfrage nach holzbasierten Produkten, vom Schnittholz (bis zu +36%) bis zur Textilfaser (bis zu +447%), kann dadurch gedeckt werden. Trotz dieser starken, relativen Produktionssteigerungen bleiben holzbasierte Fasern und chemische Derivate, gemessen am Gesamtvolumen aller holzbasierten Sektoren, weiterhin Nischenprodukte. Steigende Bedarfe, insbesondere in sich neu bildendenden Energiemärkten, führen zu einem Nachfrageüberhang nach Holznebenprodukten, welche heute vor allem Einsatz in der Plattenindustrie finden. Neue Nachfragemärkte umschließen beispielsweise die Pelletindustrie, Hersteller von grünem Treibstoff für die Luftfahrt sowie Bioraffinerien. Dies führt erwartungsgemäß zu steigenden Ressourcenkonkurrenzen. In den hier dargestellten Dokumenten sind Eingangsdaten, Datenkalibrierungen, Modelinputdaten, Ergebnisse der Modellierung der drei Szenarien und Hintergrundinformationen abgelegt. Die Dokumente sind auf Anfrage verfügbar. [1] FAOStat, 2023. Forestry Production and Trade, Statistical Database. www.fao. org/FAOSTAT/en/#data/FO (Accessed on November 2023). [2] World Bank, 2023: World Development Indicators: https://datatopics.worldbank.org/world-development-indicators/. [3] Forest Resource Assessment, 2020: 2020: Main Report. 2020. Rome: FAO. https://doi.org/10.4060/ca9825en. [4] International Institute for Applied Systems Analyses, 2018. Shared Socioeconomic Pathways Scenario Database (SSP). https://iiasa.ac.at/models-tools-data/ssp (Accessed on November 2023) [5] World Trade Organization, 2024. Integrated Database

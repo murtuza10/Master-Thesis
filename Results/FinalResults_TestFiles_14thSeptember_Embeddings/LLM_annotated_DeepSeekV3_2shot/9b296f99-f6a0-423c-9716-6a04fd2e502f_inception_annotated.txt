@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757936219-ybE0FNAKg8rS3QwwOaOL",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757936219,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [411, 416]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [427, 433]}},\n    {\"cropSpecies\": {\"value\": \"sugar beet\", \"span\": [439, 449]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [1047, 1053]}},\n    {\"cropSpecies\": {\"value\": \"sugar beet\", \"span\": [1058, 1068]}}\n  ],\n  \"Soil\": [\n    {\"soilOrganicCarbon\": {\"value\": \"humus\", \"span\": [181, 186]}},\n    {\"soilOrganicCarbon\": {\"value\": \"humus\", \"span\": [227, 232]}},\n    {\"soilOrganicCarbon\": {\"value\": \"humus\", \"span\": [1943, 1948]}}\n  ],\n  \"Location\": [\n    {\"city\": {\"value\": \"Speyer\", \"span\": [38, 44]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [46, 53]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [76, 82]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [84, 91]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [347, 353]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [355, 362]}},\n    {\"city\": {\"value\": \"Karlsruhe\", \"span\": [696, 705]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [355, 362]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [890, 896]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [898, 905]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"1984\", \"span\": [383, 387]}},\n    {\"duration\": {\"value\": \"long-term\", \"span\": [1806, 1815]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 2270,
+    "completion_tokens": 480,
+    "total_tokens": 2750
+  }
+}

@@ -1,0 +1,32 @@
+### Output JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "apple", "span": [124, 129]}},
+    {"cropSpecies": {"value": "grass", "span": [281, 286]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": {"value": "Altes Land", "span": [143, 153]}},
+    {"country": {"value": "Germany", "span": [228, 235]}},
+    {"region": {"value": "Lower Saxony", "span": [215, 225]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2001", "span": [249, 252]}},
+    {"endTime": {"value": "2003", "span": [257, 260]}}
+  ]
+}
+```
+### Explanation ###
+
+*   We identified two crop species: "apple" and "grass".
+*   For "apple", the start index is 124 and the end index is 129.
+*   For "grass", the start index is 281 and the end index is 286.
+*   No soil-related entities were found.
+*   We identified three location-related entities: "Altes Land", "Germany", and "Lower Saxony".
+*   For "Altes Land", the start index is 143 and the end index is 153.
+*   For "Germany", the start index is 228 and the end index is 235.
+*   For "Lower Saxony", the start index is 215 and the end index is 225.
+*   We identified two time-related entities: "2001" and "2003".
+*   For "2001", the start index is 249 and the end index is 252.
+*   For "2003", the start index is 257 and the end index is 260.

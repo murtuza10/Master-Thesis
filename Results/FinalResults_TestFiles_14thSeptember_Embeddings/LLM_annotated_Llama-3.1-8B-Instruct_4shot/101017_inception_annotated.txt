@@ -1,0 +1,22 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Möhre", "span": [123, 128]}},
+    {"cropSpecies": {"value": "Salat", "span": [133, 138]}},
+    {"cropSpecies": {"value": "Apfel", "span": [142, 146]}},
+    {"cropSpecies": {"value": "Erdbeere", "span": [153, 162]}},
+    {"cropSpecies": {"value": "Erdbeere", "span": [164, 173]}},
+    {"cropSpecies": {"value": "Himbeere", "span": [180, 188]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Notes ###
+- The crop species are extracted from the text, including "Möhre", "Salat", "Apfel", "Erdbeere", and "Himbeere".
+- Each crop species is listed as a separate entity with its corresponding value and span in the JSON output.
+- The other entity categories (Soil, Location, Time Statement) do not have any relevant information in the text, so they are left empty.

@@ -1,0 +1,16 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Barley", "span": [148, 154]}},
+    {"cropSpecies": {"value": "Wheat", "span": [229, 234]}},
+    {"cropSpecies": {"value": "barley", "span": [240, 245]}},
+    {"cropSpecies": {"value": "Hordeum vulgare ssp. vulgare", "span": [253, 273]}},
+    {"cropSpecies": {"value": "wheat", "span": [279, 284]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+Note: The "span" value for each entity represents the start and end character positions from the beginning of the full text.

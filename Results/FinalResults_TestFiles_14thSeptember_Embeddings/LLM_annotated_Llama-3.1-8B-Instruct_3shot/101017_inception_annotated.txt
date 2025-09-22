@@ -1,0 +1,17 @@
+### Filled JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Möhre", "span": [122, 127]}},
+    {"cropSpecies": {"value": "Salat", "span": [129, 133]}},
+    {"cropSpecies": {"value": "Apfel", "span": [135, 139]}},
+    {"cropSpecies": {"value": "Erdbeere", "span": [141, 148]}},
+    {"cropSpecies": {"value": "Himbeere", "span": [155, 161]}},
+    {"cropSpecies": {"value": "Erdbeere", "span": [167, 174]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+Note that I have only included the entities that are explicitly mentioned in the text.

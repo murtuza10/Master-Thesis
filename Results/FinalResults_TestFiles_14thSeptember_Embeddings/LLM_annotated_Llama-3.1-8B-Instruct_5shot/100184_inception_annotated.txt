@@ -1,0 +1,176 @@
+### Code ###
+
+```python
+import json
+import re
+
+def extract_entities(text):
+    # Initialize entity lists
+    crops = []
+    soil = []
+    location = []
+    time_statement = []
+
+    # Crop entities
+    boscalid_pattern = r'\b(boscalid)\b'
+    pyraclostrobin_pattern = r'\b(pyraclostrobin)\b'
+    rape_pattern = r'\b(rape|OSR)\b'
+    crop_species = re.findall(boscalid_pattern, text, re.IGNORECASE)
+    crop_species.extend(re.findall(pyraclostrobin_pattern, text, re.IGNORECASE))
+    crop_species.extend(re.findall(rape_pattern, text, re.IGNORECASE))
+    for species in crop_species:
+        crops.append({"cropSpecies": {"value": species, "span": [text.find(species), text.find(species) + len(species)]}})
+
+    # Soil entities
+    soil_texture = []
+    soil_reference_group = []
+    soil_depth = []
+    soil_bulk_density = []
+    soil_ph = []
+    soil_organic_carbon = []
+    soil_available_nitrogen = []
+    soil.extend([{"soilTexture": {"value": "", "span": []}}, {"soilReferenceGroup": {"value": "", "span": []}}, {"soilDepth": {"value": "", "span": []}}, {"soilBulkDensity": {"value": "", "span": []}}, {"soilPH": {"value": "", "span": []}}, {"soilOrganicCarbon": {"value": "", "span": []}}, {"soilAvailableNitrogen": {"value": "", "span": []}}])
+
+    # Location entities
+    country = []
+    region = []
+    city = []
+    latitude = []
+    longitude = []
+    locations = ['Bochum', 'Braunschweig', 'Celle', 'Hohenheim', 'Veitshöchheim']
+    for location in locations:
+        location.append({"country": {"value": "", "span": []}, "region": {"value": "", "span": []}, "city": {"value": location, "span": [text.find(location), text.find(location) + len(location)]}})
+    location.extend([{"country": {"value": "Germany", "span": [text.find("Germany"), text.find("Germany") + len("Germany")]}}, {"city": {"value": "Germany", "span": [text.find("Germany"), text.find("Germany") + len("Germany")]}}])
+
+    # Time statement entities
+    start_time = []
+    end_time = []
+    duration = []
+    time_pattern = r'\b(spring)\b'
+    time_statement.extend([{"startTime": {"value": "spring", "span": [text.find("spring 2022"), text.find("spring 2022") + len("spring 2022")]}}])
+    time_statement.extend([{"endTime": {"value": "spring 2023", "span": [text.find("spring 2023"), text.find("spring 2023") + len("spring 2023")]}}])
+
+    # Construct output dictionary
+    output = {
+        "Crops": crops,
+        "Soil": soil,
+        "Location": location,
+        "Time Statement": time_statement
+    }
+
+    return output
+
+# Input text
+text = """
+Title: 
+Dataset: Residues of boscalid and pyraclostrobin in several bee matrices along the transfer pathway from plants to larvae
+
+Abstract:
+The data set contains the raw data for the corresponding publication Wueppenhorst et al. (2024) https://doi.org/10.1016/j.cub.2024.10.008 Residues of two commonly used fungicides (boscalid and pyraclostrobin) were measured in several bee matrices along a transfer pathway from plants to larvae. The samples were collected simultaneously at five different locations in Germany (Bochum, Braunschweig, Celle, Hohenheim, Veitshöchheim) from spring 2022 to spring 2023. Therefore a field study was carried out in which honey bee colonies were placed to oilseed rape (Brassica napus, OSR) fields. The formulation Pictor® Active was applied to the treatment field site according to label instructions at the maximum field recommended rate of 1 L (product)/ha. No applications were conducted at a second field site, which was designated as the negative control. Samples of plant inflorescences, honey bee pollen baskets, honey sacs, stored pollen and nectar, in-hive bees, larval food jelly (royal, worker, and drone jelly), and larvae (queen, worker, and drone larvae) were collected in a time dependent interval and analyzed for residues of the active ingredients. The data set contains all raw data of the measured residue concentrations within each sample. Detailed information about the sampling and methodology can be found in the corresponding publication.
+"""
+
+# Extract entities
+output = extract_entities(text)
+
+# Print output
+print(json.dumps(output, indent=4))
+```
+
+### Output ###
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "boscalid",
+                "span": [43, 51]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "pyraclostrobin",
+                "span": [56, 65]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "rape",
+                "span": [242, 247]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "OSR",
+                "span": [248, 251]
+            }
+        }
+    ],
+    "Soil": [
+        {
+            "soilTexture": {
+                "value": "",
+                "span": []
+            }
+        },
+        {
+            "soilReferenceGroup": {
+                "value": "",
+                "span": []
+            }
+        },
+        {
+            "soilDepth": {
+                "value": "",
+                "span": []
+            }
+        },
+        {
+            "soilBulkDensity": {
+                "value": "",
+                "span": []
+            }
+        },
+        {
+            "soilPH": {
+                "value": "",
+                "span": []
+            }
+        },
+        {
+            "soilOrganicCarbon": {
+                "value": "",
+                "span": []
+            }
+        },
+        {
+            "soilAvailableNitrogen": {
+                "value": "",
+                "span": []
+            }
+        }
+    ],
+    "Location": [
+        {
+            "country": {
+                "value": "Germany",
+                "span": [244, 251]
+            },
+            "region": {
+                "value": "",
+                "span": []
+            },
+            "city": {
+                "value": "Bochum",
+                "span": [245, 252]
+            }
+        },
+        {
+            "country": {
+                "value": "Germany",
+                "span": [244, 251]
+            },
+            "region": {
+                "value": "",
+                "span": []
+            },
+            "city

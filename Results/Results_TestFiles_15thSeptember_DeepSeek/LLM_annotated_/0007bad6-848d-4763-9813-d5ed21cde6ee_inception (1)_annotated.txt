@@ -1,0 +1,26 @@
+{
+  "id": "gen-1758012612-BCOWDqiUo8Nw9V5QZkRm",
+  "provider": "Crusoe",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1758012612,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [673, 678] }}\n  ],\n  \"Soil\": [\n    {\"soilTexture\": { \"value\": \"\", \"span\": [] }},\n    {\"soilReferenceGroup\": { \"value\": \"\", \"span\": [] }},\n    {\"soilDepth\": { \"value\": \"\", \"span\": [] }},\n    {\"soilBulkDensity\": { \"value\": \"\", \"span\": [] }},\n    {\"soilPH\": { \"value\": \"\", \"span\": [] }},\n    {\"soilOrganicCarbon\": { \"value\": \"\", \"span\": [] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"\", \"span\": [] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"\", \"span\": [] }},\n    {\"region\": { \"value\": \"\", \"span\": [] }},\n    {\"city\": { \"value\": \"\", \"span\": [] }},\n    {\"latitude\": { \"value\": \"\", \"span\": [] }},\n    {\"longitude\": { \"value\": \"\", \"span\": [] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"\", \"span\": [] }},\n    {\"endTime\": { \"value\": \"\", \"span\": [] }},\n    {\"duration\": { \"value\": \"\", \"span\": [] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1198,
+    "completion_tokens": 300,
+    "total_tokens": 1498
+  }
+}

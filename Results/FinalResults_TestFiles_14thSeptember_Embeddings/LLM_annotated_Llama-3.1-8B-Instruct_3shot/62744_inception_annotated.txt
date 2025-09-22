@@ -1,0 +1,21 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "rye", "span": [111, 116]}},
+    {"cropSpecies": {"value": "rye", "span": [174, 179]}},
+    {"cropSpecies": {"value": "cereals", "span": [240, 248]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Explanation ###
+
+*   The JSON output includes the identified entities from the input text.
+*   In the "Crops" section, we have three entities: "rye" mentioned twice and "cereals".
+*   The "span" values are calculated based on the start and end character positions from the beginning of the full text.
+*   The "Soil", "Location", and "Time Statement" sections are empty since no entities related to these categories are found in the input text.

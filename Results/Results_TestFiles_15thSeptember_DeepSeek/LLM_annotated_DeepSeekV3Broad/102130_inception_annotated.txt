@@ -1,0 +1,27 @@
+{
+  "id": "gen-1758015865-XyRbeFf1LOqpilqpZqL1",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1758015865,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"C3 soil\", \"span\": [75, 82] }},\n    {\"Soil\": { \"value\": \"particulate organic carbon\", \"span\": [128, 154] }},\n    {\"Soil\": { \"value\": \"mineral associated organic carbon\", \"span\": [160, 192] }},\n    {\"Soil\": { \"value\": \"bulk soil\", \"span\": [204, 213] }},\n    {\"Soil\": { \"value\": \"total carbon\", \"span\": [223, 236] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2-year\", \"span\": [62, 67] }},\n    {\"duration\": { \"value\": \"6, 12 and 24 months\", \"span\": [101, 120] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 1121,
+    "completion_tokens": 207,
+    "total_tokens": 1328
+  }
+}

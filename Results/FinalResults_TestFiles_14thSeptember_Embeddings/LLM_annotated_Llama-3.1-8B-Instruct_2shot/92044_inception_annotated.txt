@@ -1,0 +1,39 @@
+### Filled JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "spring barley", "span": [243, 253]}},
+    {"cropSpecies": {"value": "winter barley", "span": [255, 265]}},
+    {"cropSpecies": {"value": "grain maize", "span": [269, 278]}},
+    {"cropSpecies": {"value": "silage maize", "span": [281, 291]}},
+    {"cropSpecies": {"value": "oats", "span": [295, 300]}},
+    {"cropSpecies": {"value": "potatoes", "span": [303, 309]}},
+    {"cropSpecies": {"value": "winter rape", "span": [313, 321]}},
+    {"cropSpecies": {"value": "rye", "span": [325, 329]}},
+    {"cropSpecies": {"value": "sugarbeet", "span": [331, 339]}},
+    {"cropSpecies": {"value": "triticale", "span": [343, 351]}},
+    {"cropSpecies": {"value": "winter wheat", "span": [355, 364]}}
+  ],
+  "Soil": [
+    {"soilTexture": []},
+    {"soilReferenceGroup": []},
+    {"soilDepth": []},
+    {"soilBulkDensity": []},
+    {"soilPH": []},
+    {"soilOrganicCarbon": []},
+    {"soilAvailableNitrogen": []}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [11, 18]}},
+    {"region": []},
+    {"city": []},
+    {"latitude": []},
+    {"longitude": []}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1979", "span": [88, 92]}},
+    {"endTime": {"value": "2021", "span": [100, 104]}},
+    {"duration": {"value": "42", "span": [106, 108]}}
+  ]
+}
+```

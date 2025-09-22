@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757936270-uv4KKjzzhTeBRCFfpAAG",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757936270,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [500, 505]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [510, 516]}},\n    {\"cropSpecies\": {\"value\": \"sugar beet\", \"span\": [522, 532]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [1511, 1517]}},\n    {\"cropSpecies\": {\"value\": \"sugar beet\", \"span\": [1522, 1532]}}\n  ],\n  \"Soil\": [\n    {\"soilOrganicCarbon\": {\"value\": \"humus\", \"span\": [244, 249]}},\n    {\"soilOrganicCarbon\": {\"value\": \"humus\", \"span\": [302, 307]}},\n    {\"soilAvailableNitrogen\": {\"value\": \"mineral nutrients\", \"span\": [240, 256]}}\n  ],\n  \"Location\": [\n    {\"city\": {\"value\": \"Speyer\", \"span\": [35, 41]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [43, 50]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [502, 508]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [510, 517]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [1513, 1519]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [1521, 1528]}},\n    {\"city\": {\"value\": \"Karlsruhe\", \"span\": [1040, 1049]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"1984\", \"span\": [471, 475]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 2932,
+    "completion_tokens": 402,
+    "total_tokens": 3334
+  }
+}

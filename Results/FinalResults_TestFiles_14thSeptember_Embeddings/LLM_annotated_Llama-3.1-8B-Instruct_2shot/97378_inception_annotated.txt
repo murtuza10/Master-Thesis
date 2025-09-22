@@ -1,0 +1,23 @@
+### JSON Output ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilTexture": {"value": "Lehm", "span": [230, 235]}},
+    {"soilTexture": {"value": "Ton", "span": [239, 242]}},
+    {"soilBulkDensity": {"value": "pH Wert", "span": [333, 339]}},
+    {"soilOrganicCarbon": {"value": "Gehalte an organischen Kohlenstoff", "span": [346, 363]}},
+    {"soilAvailableNitrogen": {"value": "Gesamt-Stickstoff", "span": [369, 378]}},
+    {"soilDepth": {"value": "Boden", "span": [215, 219]}}
+  ],
+  "Location": [
+    {"region": {"value": "Nähe von Hildesheim", "span": [169, 185]}},
+    {"city": {"value": "Hildesheim", "span": [181, 188]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "14-tägigen Zeitraster", "span": [118, 134]}},
+    {"endTime": {"value": "2 Jahre", "span": [140, 145]}},
+    {"duration": {"value": "2 Jahre", "span": [140, 145]}}
+  ]
+}
+```

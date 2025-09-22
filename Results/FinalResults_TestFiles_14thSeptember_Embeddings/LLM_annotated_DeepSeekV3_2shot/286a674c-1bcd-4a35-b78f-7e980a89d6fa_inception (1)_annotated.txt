@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757936072-7dm8Nx1MO2HDGmt5cWwM",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757936072,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [230, 235]}},\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [340, 345]}},\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [410, 415]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [828, 835]}},\n    {\"city\": {\"value\": \"Brandenburg\", \"span\": [838, 849]}},\n    {\"region\": {\"value\": \"Uckermark\", \"span\": [852, 861]}},\n    {\"city\": {\"value\": \"Quillow\", \"span\": [864, 871]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"April\", \"span\": [602, 607]}},\n    {\"endTime\": {\"value\": \"June 2019\", \"span\": [612, 621]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 1842,
+    "completion_tokens": 235,
+    "total_tokens": 2077
+  }
+}

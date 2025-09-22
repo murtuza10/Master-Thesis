@@ -1,0 +1,19 @@
+### JSON Output ###
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [100, 106]}},
+    {"region": {"value": "National", "span": [183, 191]}},
+    {"city": {"value": "Forest", "span": [196, 203]}},
+    {"latitude": {"value": "47.15766", "span": [246, 255]}},
+    {"longitude": {"value": "5.79922", "span": [231, 239]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1961", "span": [123, 127]}},
+    {"endTime": {"value": "2100", "span": [131, 135]}},
+    {"duration": {"value": "40", "span": [136, 138]}}
+  ]
+}
+```

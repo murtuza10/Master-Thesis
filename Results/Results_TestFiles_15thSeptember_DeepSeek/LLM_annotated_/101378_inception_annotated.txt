@@ -1,0 +1,26 @@
+{
+  "id": "gen-1758012569-NcjimIPSqTawCUHUnHYe",
+  "provider": "Phala",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1758012569,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"birch\", \"span\": [303, 308] }},\n    {\"cropSpecies\": { \"value\": \"Betula pubescens\", \"span\": [309, 324] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"one year\", \"span\": [627, 635] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1337,
+    "completion_tokens": 107,
+    "total_tokens": 1444
+  }
+}

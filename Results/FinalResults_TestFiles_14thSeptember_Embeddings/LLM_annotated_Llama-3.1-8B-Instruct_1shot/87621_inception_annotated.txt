@@ -1,0 +1,23 @@
+### JSON Output: ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Wheat", "span": [75, 81]}},
+    {"cropSpecies": {"value": "barley", "span": [102, 109]}},
+    {"cropSpecies": {"value": "Hordeum vulgare", "span": [113, 127]}},
+    {"cropSpecies": {"value": "barley", "span": [144, 151]}},
+    {"cropSpecies": {"value": "barley", "span": [168, 175]}},
+    {"cropSpecies": {"value": "barley", "span": [182, 189]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Note: ###
+
+- The JSON structure is filled based on the given input text, with the required entity categories ("Crops", "Soil", "Location", and "Time Statement") and their corresponding entity types.
+- Each entity is represented as a separate object within its category list, with the required keys ("value" and "span") containing the exact string from the text and the start and end character positions from the beginning of the full text, respectively.
+- The list of entities for each category is empty if no relevant information is found in the text.

@@ -1,0 +1,21 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "wine", "span": [47, 51] }},
+    {"cropVariety": { "value": "Riesling", "span": [193, 200] }},
+    {"cropVariety": { "value": "Felicia", "span": [202, 209] }},
+    {"cropVariety": { "value": "Regent", "span": [211, 217] }}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"year": { "value": "2018", "span": [264, 268] }}
+  ]
+}
+```
+
+### Notes ###
+- The term "wine" is inferred as the crop species from "wine berries".
+- Years are categorized under `Time Statement` rather than a specific type such as `startTime`, `endTime`, or `duration` since the exact type wasn't specified and only the year was mentioned.
+- No location or soil-related terms were found in the text.
+- Crop varieties (`Riesling`, `Felicia`, `Regent`) are annotated under `cropVariety`.

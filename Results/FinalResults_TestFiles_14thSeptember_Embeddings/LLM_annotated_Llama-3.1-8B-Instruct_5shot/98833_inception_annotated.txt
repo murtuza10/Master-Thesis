@@ -1,0 +1,213 @@
+### Code Implementation ###
+
+```python
+import json
+import re
+
+def extract_entities(text):
+    # Define regular expression patterns for each entity type
+    patterns = {
+        "Crops": [
+            r"(Mähdrescher)",
+            r"(Parabraunerde)",
+            r"(Löss)",
+            r"(Wasserretentionseigenschaften)",
+            r"(Leitfähigkeit)",
+            r"(Gesamtporenvolumen)",
+            r"(Luftkapazität)",
+            r"(Feldkapazität)",
+            r"(permanenter Welkepunkt)",
+            r"(Trocken-rohdichte)",
+            r"(Bioporen)",
+            r"(maize)",
+            r"(wheat)",
+            r"(barley)",
+        ],
+        "Soil": [
+            r"(Bodendruck)",
+            r"(plastische Bodensetzung)",
+            r"(Wasserretentionseigenschaften)",
+            r"(Lagerungsdichte)",
+            r"(gesättigte hydr. Leitfähigkeit)",
+            r"(Gesamtporenvolumen)",
+            r"(Luftkapazität)",
+            r"(Feldkapazität)",
+            r"(permanenter Welkepunkt)",
+            r"(Trocken-rohdichte)",
+            r"(Bioporen)",
+            r"(Parabraunerde)",
+            r"(Löss)",
+            r"(soil texture)",
+            r"(soil depth)",
+            r"(soil bulk density)",
+            r"(soil pH)",
+            r"(soil organic carbon)",
+            r"(soil available nitrogen)",
+        ],
+        "Location": [
+            r"(Deutschland)",
+            r"(Hessen)",
+            r"(Werra-Meißner-Kreis)",
+            r"(Neu-Eichenberg)",
+            r"(2017)",
+        ],
+        "Time Statement": [
+            r"(2017)",
+        ],
+    }
+
+    # Initialize the result dictionary
+    result = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": [],
+    }
+
+    # Iterate over each entity type and pattern
+    for entity_type, patterns in patterns.items():
+        for pattern in patterns:
+            # Find all matches of the pattern in the text
+            matches = re.findall(pattern, text, re.IGNORECASE)
+
+            # Iterate over each match and extract the value and span
+            for match in matches:
+                value = match
+                span = [text.find(value), text.find(value) + len(value)]
+
+                # Add the entity to the result dictionary
+                result[entity_type].append({entity_type.replace(" ", ""): {"value": value, "span": span}})
+
+    # Return the result dictionary as JSON
+    return json.dumps(result, indent=4)
+
+# Example usage
+text = """
+Bodendruck, -setzung und Änderungen bodenphysikalischer Parameter durch Befahrung mit einem Mähdrescher im Jahr 2017
+
+Abstract:
+Dieser Datensatz enthält Bodendaten aus einem Befahrungsversuch mit einem landwirtschaftlichen Fahrzeug (2-achsiger Mähdrescher mit Bunker; Gesamtgewicht: 17 t). Der Versuch fand 2017 während der Ernte statt. Der Boden, eine pseudovergleyte Parabraunerde aus Löss, wurde bis 28 cm Tiefe bearbeitet. Der Mähdrescher fuhr nacheinander über definierte Plots. Im Kernfeldbereich wurden zwei und im Vorgewende acht Überrollungen durchgeführt. Vor den Befahrungen wurde je Variante eine, nach den Befahrungen zwei Gruben ausgehoben. Folgende Messungen wurde in 20, 35 und 50 cm Tiefe je Grube durchgeführt: Bodendruck und plastische Bodensetzung Wasserretentionseigenschaften, Lagerungsdichte und gesättigte hydr. Leitfähigkeit (100 cm3 Stechzylinder; je 5 Wiederholungen pro Grube und Tiefe). Daraus abgeleitet wurden Gesamtporenvolumen, Luftkapazität, Feldkapazität, permanenter Welkepunkt und Trocken-rohdichte Bioporen wurden in jeder Grube und Tiefe gezählt
+"""
+
+print(extract_entities(text))
+```
+
+### Output JSON ###
+```json
+{
+    "Crops": [
+        {
+            "Mähdrescher": {
+                "value": "Mähdrescher",
+                "span": [
+                    21,
+                    32
+                ]
+            }
+        },
+        {
+            "Parabraunerde": {
+                "value": "Parabraunerde",
+                "span": [
+                    143,
+                    154
+                ]
+            }
+        },
+        {
+            "Löss": {
+                "value": "Löss",
+                "span": [
+                    158,
+                    161
+                ]
+            }
+        }
+    ],
+    "Soil": [
+        {
+            "Bodendruck": {
+                "value": "Bodendruck",
+                "span": [
+                    22,
+                    31
+                ]
+            }
+        },
+        {
+            "plastische Bodensetzung": {
+                "value": "plastische Bodensetzung",
+                "span": [
+                    34,
+                    49
+                ]
+            }
+        },
+        {
+            "Wasserretentionseigenschaften": {
+                "value": "Wasserretentionseigenschaften",
+                "span": [
+                    56,
+                    76
+                ]
+            }
+        },
+        {
+            "Lagerungsdichte": {
+                "value": "Lagerungsdichte",
+                "span": [
+                    82,
+                    93
+                ]
+            }
+        },
+        {
+            "gesättigte hydr. Leitfähigkeit": {
+                "value": "gesättigte hydr. Leitfähigkeit",
+                "span": [
+                    94,
+                    116
+                ]
+            }
+        },
+        {
+            "Gesamtporenvolumen": {
+                "value": "Gesamtporenvolumen",
+                "span": [
+                    117,
+                    130
+                ]
+            }
+        },
+        {
+            "Luftkapazität": {
+                "value": "Luftkapazität",
+                "span": [
+                    132,
+                    141
+                ]
+            }
+        },
+        {
+            "Feldkapazität": {
+                "value": "Feldkapazität",
+                "span": [
+                    143,
+                    152
+                ]
+            }
+        },
+        {
+            "permanenter Welkepunkt": {
+                "value": "permanenter Welkepunkt",
+                "span": [
+                    153,
+                    167
+                ]
+            }
+        },
+        {
+            "Trocken-rohdichte": {
+                "value": "Trocken-rohdichte",
+                "span": [
+                    168

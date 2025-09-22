@@ -1,0 +1,49 @@
+### JSON Output ###
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2020", "span": [446, 450]}},
+    {"endTime": {"value": "2050", "span": [447, 451]}},
+    {"duration": {"value": "30", "span": [453, 455]}}
+  ]
+}
+```
+### Reasoning and Code Implementation ###
+The input text does not explicitly mention any crops, soil, or location. However, it does mention time-related information, specifically the start year "2020" and the end year "2050" with a duration of "30" years.
+
+To extract this information, we can use a Python script with the following implementation:
+
+```python
+import re
+
+def extract_entities(text):
+    entities = {"Crops": [], "Soil": [], "Location": [], "Time Statement": []}
+
+    # Time Statement
+    start_time = re.search(r'\b\d{4}\b', text)
+    if start_time:
+        entities["Time Statement"].append({"startTime": {"value": start_time.group(), "span": [start_time.start(), start_time.end()]}})
+    
+    end_time = re.search(r'\b\d{4}\b', text, start_time.end())
+    if end_time:
+        entities["Time Statement"].append({"endTime": {"value": end_time.group(), "span": [end_time.start(), end_time.end()]}})
+    
+    duration = re.search(r'\d+', text, end_time.end() if end_time else len(text))
+    if duration:
+        entities["Time Statement"].append({"duration": {"value": duration.group(), "span": [duration.start(), duration.end()]}})
+    
+    return entities
+
+text = """
+Datensatz Biomassestudie
+
+Abstract:
+...
+"""
+
+print(extract_entities(text))
+```
+This script uses regular expressions to search for the time-related information in the text and extract the start year, end year, and duration. The extracted information is then added to the "Time Statement" list in the entities dictionary. The script returns the entities dictionary, which contains the extracted information.

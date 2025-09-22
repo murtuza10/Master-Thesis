@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757936159-JmRxS4mSGE3qu0qtgYW6",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757936159,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"Picea abies\", \"span\": [47, 57]}},\n    {\"cropSpecies\": {\"value\": \"Norway spruce\", \"span\": [120, 133]}},\n    {\"cropSpecies\": {\"value\": \"Picea abies\", \"span\": [135, 145]}},\n    {\"cropSpecies\": {\"value\": \"Norway spruce\", \"span\": [312, 325]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"German\", \"span\": [89, 95]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [222, 229]}},\n    {\"country\": {\"value\": \"Europe\", \"span\": [350, 356]}},\n    {\"country\": {\"value\": \"German\", \"span\": [508, 514]}}\n  ],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"50 years\", \"span\": [33, 41]}},\n    {\"duration\": {\"value\": \"51 years\", \"span\": [165, 172]}},\n    {\"startTime\": {\"value\": \"1964/68\", \"span\": [289, 295]}},\n    {\"duration\": {\"value\": \"age 7\", \"span\": [401, 406]}},\n    {\"duration\": {\"value\": \"age 10\", \"span\": [408, 414]}},\n    {\"duration\": {\"value\": \"age 13\", \"span\": [416, 422]}},\n    {\"duration\": {\"value\": \"age 16\", \"span\": [424, 430]}},\n    {\"duration\": {\"value\": \"age 16\", \"span\": [448, 454]}},\n    {\"duration\": {\"value\": \"age 21\", \"span\": [456, 462]}},\n    {\"duration\": {\"value\": \"age 29\", \"span\": [464, 470]}},\n    {\"duration\": {\"value\": \"age 39\", \"span\": [472, 478]}},\n    {\"duration\": {\"value\": \"age 51\", \"span\": [480, 486]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 1310,
+    "completion_tokens": 479,
+    "total_tokens": 1789
+  }
+}

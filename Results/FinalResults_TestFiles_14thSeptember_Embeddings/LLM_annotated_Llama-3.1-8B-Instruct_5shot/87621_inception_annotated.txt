@@ -1,0 +1,20 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Barley", "span": [143, 149]}},
+    {"cropSpecies": {"value": "barley", "span": [169, 175]}},
+    {"cropSpecies": {"value": "Hordeum vulgare ssp. vulgare", "span": [179, 203]}},
+    {"cropSpecies": {"value": "Wheat", "span": [224, 229]}},
+    {"cropSpecies": {"value": "wheat", "span": [257, 262]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Explanation ###
+
+*   We identified the following crop species: "Barley", "barley", "Hordeum vulgare ssp. vulgare", "Wheat", and "wheat".

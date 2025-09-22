@@ -1,0 +1,27 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [172, 177]}},
+    {"cropSpecies": {"value": "barley", "span": [181, 187]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [191, 199]}}
+  ],
+  "Soil": [
+    {"Soil": {"value": "humus", "span": [109, 114]}},
+    {"Soil": {"value": "soil fertility", "span": [119, 131]}},
+    {"Soil": {"value": "bacterial community", "span": [339, 352]}},
+    {"Soil": {"value": "bulk soil", "span": [403, 410]}},
+    {"Soil": {"value": "bacterial community", "span": [522, 535]}},
+    {"Soil": {"value": "bacterial interaction networks", "span": [620, 638]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [133, 140]}},
+    {"city": {"value": "Speyer", "span": [126, 132]}},
+    {"city": {"value": "Speyer", "span": [447, 453]}},
+    {"city": {"value": "Karlsruhe", "span": [682, 690]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1984", "span": [151, 155]}},
+    {"duration": {"value": "long term", "span": [465, 472]}}
+  ]
+}
+```

@@ -1,0 +1,24 @@
+### JSON Output ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilType": {"value": "Bodentyp", "span": [134, 140]}},
+    {"soilTexture": {"value": "Bodenart", "span": [184, 191]}},
+    {"soilDepth": {"value": "Entkalkungstiefe", "span": [274, 286]}},
+    {"soilBulkDensity": {"value": "Trockenrohdichte (TRD)", "span": [198, 215]}},
+    {"soilPH": {"value": "Basensättigung", "span": [238, 247]}},
+    {"soilOrganicCarbon": {"value": "organischer Kohlenstoffgehalt (Corg)", "span": [258, 274]}}
+  ],
+  "Location": [
+    {"country": {"value": "Deutschland", "span": [18, 27]}},
+    {"region": {"value": "Bundesländer", "span": [32, 40]}},
+    {"city": {"value": "BWI", "span": [10, 12]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2012", "span": [151, 155]}},
+    {"endTime": {"value": "2012", "span": [157, 161]}},
+    {"duration": {"value": "2012", "span": [157, 161]}}
+  ]
+}
+```

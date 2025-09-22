@@ -1,0 +1,30 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [103, 109]}},
+    {"region": {"value": "German National Forest Inventory", "span": [185, 216]}},
+    {"city": {"value": "", "span": []}},
+    {"latitude": {"value": "47.15766", "span": [340, 346]}},
+    {"longitude": {"value": "5.79922", "span": [129, 135]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1961", "span": [91, 95]}},
+    {"endTime": {"value": "2100", "span": [122, 126]}},
+    {"duration": {"value": "40", "span": [209, 211]}}
+  ]
+}
+```
+### Explanation ###
+- No crops are mentioned in the text.
+- No soil information is provided.
+- The country "Germany" is mentioned explicitly.
+- The region "German National Forest Inventory" is mentioned.
+- No city is mentioned.
+- The minimum and maximum latitude are mentioned.
+- The minimum and maximum longitude are mentioned.
+- The time period 1961-2100 is mentioned.
+- The duration 40 years is mentioned (as the difference between 2100 and 1961).

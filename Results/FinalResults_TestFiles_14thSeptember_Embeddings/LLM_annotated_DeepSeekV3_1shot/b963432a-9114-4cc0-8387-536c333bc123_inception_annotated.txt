@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757935919-RqVlzF8Olp8SSZ4ZJpUX",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757935919,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [1071, 1077]}},\n    {\"cropSpecies\": {\"value\": \"serradella\", \"span\": [1099, 1109]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [1144, 1150]}}\n  ],\n  \"Soil\": [\n    {\"soilPH\": {\"value\": \"pH\", \"span\": [43, 45]}},\n    {\"soilPH\": {\"value\": \"pH\", \"span\": [177, 179]}},\n    {\"soilPH\": {\"value\": \"pH\", \"span\": [1181, 1183]}},\n    {\"soilPH\": {\"value\": \"pH-Wert\", \"span\": [1809, 1816]}}\n  ],\n  \"Location\": [\n    {\"city\": {\"value\": \"Rostock\", \"span\": [20, 27]}},\n    {\"city\": {\"value\": \"Rostock\", \"span\": [154, 161]}},\n    {\"region\": {\"value\": \"Northern Germany\", \"span\": [350, 366]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2020\", \"span\": [90, 94]}},\n    {\"startTime\": {\"value\": \"2020\", \"span\": [224, 228]}},\n    {\"startTime\": {\"value\": \"2018\", \"span\": [1025, 1029]}},\n    {\"startTime\": {\"value\": \"2019\", \"span\": [1086, 1090]}},\n    {\"startTime\": {\"value\": \"2020\", \"span\": [1125, 1129]}},\n    {\"startTime\": {\"value\": \"2020\", \"span\": [1703, 1707]}},\n    {\"duration\": {\"value\": \"3.5 months\", \"span\": [1687, 1697]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 1534,
+    "completion_tokens": 432,
+    "total_tokens": 1966
+  }
+}

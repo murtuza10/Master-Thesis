@@ -1,0 +1,142 @@
+### Code ###
+
+```python
+import re
+import json
+
+def extract_entities(text):
+    # Crops
+    crops = []
+    crops Species = re.findall(r"\b(winter|spring)\s(wheat|barley|maize|potatoes|sugar beet|grass)\b", text)
+    for species in crops Species:
+        crop = species[1]
+        crops.append({"cropSpecies": {"value": crop, "span": [text.find(crop), text.find(crop) + len(crop)]}})
+
+    # Soil
+    soil = []
+    soilOrganicCarbon = re.search(r"soil organic carbon", text)
+    if soilOrganicCarbon:
+        soil.append({"soilOrganicCarbon": {"value": "soil organic carbon", "span": [text.find(soilOrganicCarbon.group()), text.find(soilOrganicCarbon.group()) + len(soilOrganicCarbon.group())]}})
+    soilAvailableNitrogen = re.search(r"total nitrogen", text)
+    if soilAvailableNitrogen:
+        soil.append({"soilAvailableNitrogen": {"value": "total nitrogen", "span": [text.find(soilAvailableNitrogen.group()), text.find(soilAvailableNitrogen.group()) + len(soilAvailableNitrogen.group())]}})
+
+    # Location
+    location = []
+    country = re.search(r"Germany", text)
+    if country:
+        location.append({"country": {"value": "Germany", "span": [text.find(country.group()), text.find(country.group()) + len(country.group())]}})
+    region = re.search(r"Lower Saxony|Mecklenburg-Vorpommern", text)
+    if region:
+        location.append({"region": {"value": region.group(), "span": [text.find(region.group()), text.find(region.group()) + len(region.group())]}})
+    city = re.search(r"Wanna|Rostock", text)
+    if city:
+        location.append({"city": {"value": city.group(), "span": [text.find(city.group()), text.find(city.group()) + len(city.group())]}})
+
+    # Time Statement
+    time_statement = []
+    start_time = re.search(r"\b2021\b|\b2022\b|\b2023\b", text)
+    if start_time:
+        time_statement.append({"startTime": {"value": start_time.group(), "span": [text.find(start_time.group()), text.find(start_time.group()) + len(start_time.group())]}})
+    end_time = re.search(r"\b2021\b|\b2022\b|\b2023\b", text)
+    if end_time:
+        time_statement.append({"endTime": {"value": end_time.group(), "span": [text.find(end_time.group()), text.find(end_time.group()) + len(end_time.group())]}})
+
+    return {
+        "Crops": crops,
+        "Soil": soil,
+        "Location": location,
+        "Time Statement": time_statement
+    }
+
+text = """
+Title: 
+ Abundance of different microorganism groups in soil and roots in a field trial on starter fertilization and application of plant growth-promoting microorganisms
+Abstract_text_1: 
+ Abundance of different microorganism groups in soil and roots in a field trial on starter fertilization and application of plant growth-promoting microorganisms.
+Abstract_text_2: 
+ Fertilizer experiments were carried out as plot trials on maize fields over the years 2021, 2022 and 2023. The fields investigated were Wanna Sand (WS), Wanna Sand without biogas slurry (WSo), Rostock Sand (RS) and Wanna Marsch (WM). On the WS and WM fields, 30 m³ of biogas slurry was applied before the experiment. Starter fertilization was carried out with diammonium phosphate (DAP), microgranular fertilizer (MG) and without (control). In addition, a microorganism preparation (MO) consisting of three mycorrhizal species: R. irregulare, F. mosseae, F. caledonium and Bacillus atrophaeus Abi05 was applied to half of the plots. Soil samples were taken between April and August each year. During the vegetation period, the soil was sampled in and between the maize rows. At some sampling times, additional mixed samples were taken plot by plot. Before the experimental setup samples were taken in blocks or randomly. The abundances of the following microorganism groups were determined using qPCR: Acidobacteria, Actinobacteria, Alpha-Proteobacteria, Beta-Proteobacteria, Cyanobacteria, Firmicutes, Alternaria, Fusarium, Bacillus atrophaeus Abi05 and total fungal population. In addition to the soil samples, root samples were also taken at certain times. The rate of mycorrhization was determined and in some cases DNA was extracted and qPCR measurements were carried out. This table contains the Index of the data collection. Related datasets are listed in the metadata element 'Related Identifier'. Dataset version 1.0
+Keywords: 
+ Soil, maize, field experimentation, soil microorganisms, Fungi, Bacteria, arbuscular mycorrhiza, quantitative polymerase chain reaction, fertilization, opendata, Boden, Europe, Germany, Lower Saxony, Wanna, Mecklenburg-Vorpommern, Rostock
+"""
+
+result = extract_entities(text)
+print(json.dumps(result, indent=4))
+```
+
+### Output ###
+
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "maize",
+                "span": [245, 251]
+            }
+        }
+    ],
+    "Soil": [
+        {
+            "soilOrganicCarbon": {
+                "value": "soil organic carbon",
+                "span": [484, 503]
+            }
+        },
+        {
+            "soilAvailableNitrogen": {
+                "value": "total nitrogen",
+                "span": [506, 520]
+            }
+        }
+    ],
+    "Location": [
+        {
+            "country": {
+                "value": "Germany",
+                "span": [528, 535]
+            }
+        },
+        {
+            "region": {
+                "value": "Lower Saxony",
+                "span": [542, 553]
+            }
+        },
+        {
+            "city": {
+                "value": "Wanna",
+                "span": [558, 564]
+            }
+        }
+    ],
+    "Time Statement": [
+        {
+            "startTime": {
+                "value": "2021",
+                "span": [124, 129]
+            }
+        },
+        {
+            "endTime": {
+                "value": "2021",
+                "span": [124, 129]
+            }
+        },
+        {
+            "startTime": {
+                "value": "2022",
+                "span": [124, 129]
+            }
+        },
+        {
+            "endTime": {
+                "value": "2022",
+                "span": [124, 129]
+            }
+        },
+        {
+            "startTime": {
+                "value": "2023",
+                "span": [124, 129]
+            }

@@ -1,0 +1,34 @@
+{
+  "id": "gen-1758382517-ird12PeKNK7RLGJqDznA",
+  "provider": "OpenAI",
+  "model": "openai/gpt-4o",
+  "object": "chat.completion",
+  "created": 1758382517,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"nitrogen content\", \"span\": [445, 461] }},\n    {\"Soil\": { \"value\": \"ammonium-N\", \"span\": [463, 473] }},\n    {\"Soil\": { \"value\": \"nitrate-N\", \"span\": [475, 484] }},\n    {\"Soil\": { \"value\": \"bulk density\", \"span\": [486, 498] }},\n    {\"Soil\": { \"value\": \"soil temperatures\", \"span\": [581, 597] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [125, 132] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [265, 272] }}\n  ],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"three years\", \"span\": [158, 169] }},\n    {\"startTime\": { \"value\": \"2011/2012\", \"span\": [171, 180] }},\n    {\"endTime\": { \"value\": \"2014/2015\", \"span\": [183, 192] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "fp_07871e2ad8",
+  "usage": {
+    "prompt_tokens": 3439,
+    "completion_tokens": 270,
+    "total_tokens": 3709,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

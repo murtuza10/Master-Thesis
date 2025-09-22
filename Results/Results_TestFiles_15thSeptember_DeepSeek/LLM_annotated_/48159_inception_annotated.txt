@@ -1,0 +1,26 @@
+{
+  "id": "gen-1758012485-ZN95Jx17izixex1HAJBm",
+  "provider": "Crusoe",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1758012485,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [206, 213] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [529, 536] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1990\", \"span\": [66, 70] }},\n    {\"endTime\": { \"value\": \"2017\", \"span\": [74, 78] }},\n    {\"startTime\": { \"value\": \"1990\", \"span\": [541, 545] }},\n    {\"endTime\": { \"value\": \"2017\", \"span\": [549, 553] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1129,
+    "completion_tokens": 171,
+    "total_tokens": 1300
+  }
+}

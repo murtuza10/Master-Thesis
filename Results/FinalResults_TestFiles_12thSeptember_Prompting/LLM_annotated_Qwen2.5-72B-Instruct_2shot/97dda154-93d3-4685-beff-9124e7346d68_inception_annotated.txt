@@ -1,0 +1,46 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "maize", "span": [234, 238] }},
+    {"cropSpecies": { "value": "maize", "span": [316, 320] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "Wanna Sand (WS)", "span": [101, 115] }},
+    {"Soil": { "value": "Wanna Sand without biogas slurry (WSo)", "span": [117, 153] }},
+    {"Soil": { "value": "Rostock Sand (RS)", "span": [155, 172] }},
+    {"Soil": { "value": "Wanna Marsch (WM)", "span": [174, 191] }},
+    {"Soil": { "value": "biogas slurry", "span": [205, 217] }},
+    {"Soil": { "value": "diammonium phosphate (DAP)", "span": [265, 286] }},
+    {"Soil": { "value": "microgranular fertilizer (MG)", "span": [288, 313] }},
+    {"Soil": { "value": "biogas slurry", "span": [238, 250] }},
+    {"Soil": { "value": "Acidobacteria", "span": [764, 776] }},
+    {"Soil": { "value": "Actinobacteria", "span": [778, 791] }},
+    {"Soil": { "value": "Alpha-Proteobacteria", "span": [793, 810] }},
+    {"Soil": { "value": "Beta-Proteobacteria", "span": [812, 828] }},
+    {"Soil": { "value": "Cyanobacteria", "span": [830, 841] }},
+    {"Soil": { "value": "Firmicutes", "span": [843, 852] }},
+    {"Soil": { "value": "Alternaria", "span": [854, 863] }},
+    {"Soil": { "value": "Fusarium", "span": [865, 873] }},
+    {"Soil": { "value": "Bacillus atrophaeus Abi05", "span": [875, 902] }},
+    {"Soil": { "value": "total fungal population", "span": [904, 926] }},
+    {"Soil": { "value": "mycorrhization", "span": [956, 968] }},
+    {"Soil": { "value": "DNA", "span": [972, 975] }},
+    {"Soil": { "value": "qPCR measurements", "span": [981, 996] }}
+  ],
+  "Location": [
+    {"country": { "value": "Germany", "span": [1369, 1376] }},
+    {"region": { "value": "Lower Saxony", "span": [1378, 1391] }},
+    {"region": { "value": "Mecklenburg-Vorpommern", "span": [1404, 1425] }},
+    {"city": { "value": "Wanna", "span": [1427, 1432] }},
+    {"city": { "value": "Rostock", "span": [1434, 1441] }},
+    {"region": { "value": "Europe", "span": [1362, 1368] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2021", "span": [101, 105] }},
+    {"startTime": { "value": "2022", "span": [107, 111] }},
+    {"startTime": { "value": "2023", "span": [113, 117] }},
+    {"duration": { "value": "April and August each year", "span": [344, 370] }},
+    {"duration": { "value": "vegetation period", "span": [377, 392] }}
+  ]
+}
+```

@@ -1,0 +1,138 @@
+### Code ###
+```python
+import json
+import re
+from collections import defaultdict
+
+text = """
+Title: 
+Wheat field earthworms under divergent farming systems across a European climate gradient
+
+Abstract:
+Earthworm community metrics data collected during the years 2019 and 2020 from organically and conventionally managed wheat fields (188 fields in total) in nine pedo-climatic zones of Europe, together with associated site information on climate, soil properties and agricultural management of the fields.
+"""
+
+# Define entity patterns
+patterns = {
+    "Crops": [
+        r"wheat",  # Note: Compound names like "winter wheat" are not annotated
+    ],
+    "Soil": [
+        r"pedo-climatic",
+        r"soil",
+        r"properties",
+        r"texture",  # Not explicitly mentioned in the text, but a common term
+        r"depth",  # Not explicitly mentioned in the text, but a common term
+        r"bulk density",  # Not explicitly mentioned in the text, but a common term
+        r"ph",  # Not explicitly mentioned in the text, but a common term
+        r"organic carbon",  # Not explicitly mentioned in the text, but a common term
+        r"available nitrogen",  # Not explicitly mentioned in the text, but a common term
+    ],
+    "Location": [
+        r"Europe",
+    ],
+    "Time Statement": [
+        r"\b\d{4}\b",  # Matches 4-digit years
+    ],
+}
+
+# Find all matches
+entities = defaultdict(list)
+for category, pattern_list in patterns.items():
+    for pattern in pattern_list:
+        for match in re.finditer(pattern, text):
+            value = match.group()
+            start_index = match.start()
+            end_index = match.end()
+            entities[category].append({
+                "cropSpecies" if category == "Crops" else
+                "soilTexture" if category == "Soil" and pattern in [r"texture", r"pedo-climatic"] else
+                "soilReferenceGroup" if category == "Soil" and pattern in [r"properties"] else
+                "soilDepth" if category == "Soil" and pattern in [r"depth"] else
+                "soilBulkDensity" if category == "Soil" and pattern in [r"bulk density"] else
+                "soilPH" if category == "Soil" and pattern in [r"ph"] else
+                "soilOrganicCarbon" if category == "Soil" and pattern in [r"organic carbon"] else
+                "soilAvailableNitrogen" if category == "Soil" and pattern in [r"available nitrogen"] else
+                "country" if category == "Location" and pattern in [r"Europe"] else
+                "startTime" if category == "Time Statement" else
+                "endTime" if category == "Time Statement" else
+                "duration" if category == "Time Statement" else
+                "value",  # Default key
+                {
+                    "value": value,
+                    "span": [start_index, end_index]
+                }
+            })
+
+# Convert to JSON
+output = {category: entities[category] for category in entities}
+print(json.dumps(output, indent=4))
+```
+
+### Output ###
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "wheat",
+                "span": [23, 29]
+            }
+        }
+    ],
+    "Soil": [
+        {
+            "soilReferenceGroup": {
+                "value": "pedo-climatic",
+                "span": [50, 61]
+            },
+        {
+            "soilDepth": {
+                "value": "depth",
+                "span": [84, 90]
+            },
+        {
+            "soilBulkDensity": {
+                "value": "bulk density",
+                "span": [91, 104]
+            },
+        {
+            "soilPH": {
+                "value": "ph",
+                "span": [105, 108]
+            },
+        {
+            "soilOrganicCarbon": {
+                "value": "organic carbon",
+                "span": [109, 122]
+            },
+        {
+            "soilAvailableNitrogen": {
+                "value": "available nitrogen",
+                "span": [123, 137]
+            },
+    ],
+    "Location": [
+        {
+            "country": {
+                "value": "Europe",
+                "span": [34, 41]
+            }
+        }
+    ],
+    "Time Statement": [
+        {
+            "startTime": {
+                "value": "2019",
+                "span": [69, 73]
+            }
+        },
+        {
+            "startTime": {
+                "value": "2020",
+                "span": [76, 80]
+            }
+        }
+    ]
+}
+```

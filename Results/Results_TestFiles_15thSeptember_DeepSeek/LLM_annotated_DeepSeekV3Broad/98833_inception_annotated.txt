@@ -1,0 +1,26 @@
+{
+  "id": "gen-1758016009-RzGWCgtIioUayFAvBP0l",
+  "provider": "Crusoe",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1758016009,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"pseudovergleyte Parabraunerde\", \"span\": [242, 269] }},\n    {\"Soil\": { \"value\": \"Löss\", \"span\": [273, 277] }},\n    {\"Soil\": { \"value\": \"28 cm Tiefe\", \"span\": [280, 290] }},\n    {\"Soil\": { \"value\": \"Bodendruck\", \"span\": [531, 541] }},\n    {\"Soil\": { \"value\": \"plastische Bodensetzung\", \"span\": [544, 566] }},\n    {\"Soil\": { \"value\": \"Wasserretentionseigenschaften\", \"span\": [568, 595] }},\n    {\"Soil\": { \"value\": \"Lagerungsdichte\", \"span\": [597, 612] }},\n    {\"Soil\": { \"value\": \"gesättigte hydr. Leitfähigkeit\", \"span\": [614, 643] }},\n    {\"Soil\": { \"value\": \"20, 35 und 50 cm Tiefe\", \"span\": [487, 507] }},\n    {\"Soil\": { \"value\": \"Gesamtporenvolumen\", \"span\": [719, 737] }},\n    {\"Soil\": { \"value\": \"Luftkapazität\", \"span\": [739, 751] }},\n    {\"Soil\": { \"value\": \"Feldkapazität\", \"span\": [753, 766] }},\n    {\"Soil\": { \"value\": \"permanenter Welkepunkt\", \"span\": [768, 789] }},\n    {\"Soil\": { \"value\": \"Trocken-rohdichte\", \"span\": [791, 807] }},\n    {\"Soil\": { \"value\": \"Bioporen\", \"span\": [809, 817] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2017\", \"span\": [114, 118] }},\n    {\"endTime\": { \"value\": \"2017\", \"span\": [114, 118] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1264,
+    "completion_tokens": 486,
+    "total_tokens": 1750
+  }
+}

@@ -1,0 +1,100 @@
+### Code ###
+```python
+import json
+import re
+
+def extract_entities(text):
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Crops
+    crop_species_pattern = r"\b(Picea abies|Norway spruce)\b"
+    crop_variety_pattern = r"\b(L.) Karst.\b"
+    crop_species_matches = re.findall(crop_species_pattern, text, re.IGNORECASE)
+    crop_variety_matches = re.findall(crop_variety_pattern, text, re.IGNORECASE)
+    for match in crop_species_matches:
+        entities["Crops"].append({"cropSpecies": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in crop_variety_matches:
+        entities["Crops"].append({"cropVariety": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+
+    # Soil
+    soil_texture_pattern = r"\b\w+\b"
+    soil_reference_group_pattern = r"\b\w+\b"
+    soil_depth_pattern = r"\b\w+\b"
+    soil_bulk_density_pattern = r"\b\w+\b"
+    soil_ph_pattern = r"\b\w+\b"
+    soil_organic_carbon_pattern = r"\b\w+\b"
+    soil_available_nitrogen_pattern = r"\b\w+\b"
+    soil_texture_matches = re.findall(soil_texture_pattern, text)
+    soil_reference_group_matches = re.findall(soil_reference_group_pattern, text)
+    soil_depth_matches = re.findall(soil_depth_pattern, text)
+    soil_bulk_density_matches = re.findall(soil_bulk_density_pattern, text)
+    soil_ph_matches = re.findall(soil_ph_pattern, text)
+    soil_organic_carbon_matches = re.findall(soil_organic_carbon_pattern, text)
+    soil_available_nitrogen_matches = re.findall(soil_available_nitrogen_pattern, text)
+    for i, match in enumerate(soil_texture_matches):
+        entities["Soil"].append({"soilTexture": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for i, match in enumerate(soil_reference_group_matches):
+        entities["Soil"].append({"soilReferenceGroup": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for i, match in enumerate(soil_depth_matches):
+        entities["Soil"].append({"soilDepth": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for i, match in enumerate(soil_bulk_density_matches):
+        entities["Soil"].append({"soilBulkDensity": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for i, match in enumerate(soil_ph_matches):
+        entities["Soil"].append({"soilPH": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for i, match in enumerate(soil_organic_carbon_matches):
+        entities["Soil"].append({"soilOrganicCarbon": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for i, match in enumerate(soil_available_nitrogen_matches):
+        entities["Soil"].append({"soilAvailableNitrogen": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+
+    # Location
+    country_pattern = r"\bGermany\b"
+    region_pattern = r"\bWestern\b"
+    city_pattern = r"\b\w+\b"
+    latitude_pattern = r"\b\d+\.\d+\b"
+    longitude_pattern = r"\b\d+\.\d+\b"
+    country_matches = re.findall(country_pattern, text)
+    region_matches = re.findall(region_pattern, text)
+    city_matches = re.findall(city_pattern, text)
+    latitude_matches = re.findall(latitude_pattern, text)
+    longitude_matches = re.findall(longitude_pattern, text)
+    for match in country_matches:
+        entities["Location"].append({"country": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in region_matches:
+        entities["Location"].append({"region": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in city_matches:
+        entities["Location"].append({"city": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in latitude_matches:
+        entities["Location"].append({"latitude": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in longitude_matches:
+        entities["Location"].append({"longitude": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+
+    # Time Statement
+    start_time_pattern = r"\b\d{4}\b"
+    end_time_pattern = r"\b\d{4}\b"
+    duration_pattern = r"\b\d+\b"
+    start_time_matches = re.findall(start_time_pattern, text)
+    end_time_matches = re.findall(end_time_pattern, text)
+    duration_matches = re.findall(duration_pattern, text)
+    for match in start_time_matches:
+        entities["Time Statement"].append({"startTime": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in end_time_matches:
+        entities["Time Statement"].append({"endTime": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+    for match in duration_matches:
+        entities["Time Statement"].append({"duration": {"value": match, "span": [text.find(match), text.find(match) + len(match)]}})
+
+    return entities
+
+text = """
+Phenotypic variation in 1,100 provenances of Picea abies measured over 50 years on 33 German trial sites
+
+Abstract:
+This database provides phenotypic traits of Norway spruce (Picea abies (L.) Karst.) measured over a period of 51 years in provenance trials planted across Western Germany. These trials are part of the ‘Inventory Provenance Test 1964/68 with Norway spruce’ (IPTNS) that tests a total of 1,100 seed sources collected across Europe, both from the species natural as well as artificial range. Individual tree measurements of height (age 7, 10, 13, 16) and diameter at breast height (age 16, 21, 29, 39, 51) are provided for 33 German trial sites of 100 provenances. Each set of 100 provenances is a subsample from the entire collection area that represents an approximately comparable climate space.
+"""
+
+entities = extract_entities(text)
+print

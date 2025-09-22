@@ -1,0 +1,33 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "maize", "span": [61, 65]}},
+    {"cropSpecies": {"value": "maize", "span": [248, 252]}}
+  ],
+  "Soil": [
+    {"soilAvailableNitrogen": {"value": "Firmicutes", "span": [327, 338]}},
+    {"soilAvailableNitrogen": {"value": "Acidobacteria", "span": [342, 354]}},
+    {"soilAvailableNitrogen": {"value": "Actinobacteria", "span": [358, 369]}},
+    {"soilAvailableNitrogen": {"value": "Alpha-Proteobacteria", "span": [373, 391]}},
+    {"soilAvailableNitrogen": {"value": "Beta-Proteobacteria", "span": [395, 408]}},
+    {"soilAvailableNitrogen": {"value": "Cyanobacteria", "span": [412, 422]}},
+    {"soilAvailableNitrogen": {"value": "Fusarium", "span": [426, 434]}},
+    {"soilAvailableNitrogen": {"value": "Alternaria", "span": [438, 447]}},
+    {"soilAvailableNitrogen": {"value": "Bacillus atrophaeus Abi05", "span": [451, 472]}},
+    {"soilAvailableNitrogen": {"value": "total fungal population", "span": [476, 496]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [391, 397]}},
+    {"region": {"value": "Lower Saxony", "span": [398, 409]}},
+    {"region": {"value": "Mecklenburg-Vorpommern", "span": [412, 431]}},
+    {"city": {"value": "Rostock", "span": [434, 439]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2021", "span": [202, 206]}},
+    {"startTime": {"value": "2022", "span": [209, 213]}},
+    {"startTime": {"value": "2023", "span": [216, 220]}},
+    {"startTime": {"value": "between April and August", "span": [240, 254]}},
+    {"endTime": {"value": "vegetation period", "span": [258, 271]}}
+  ]
+}
+```

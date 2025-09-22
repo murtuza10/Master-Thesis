@@ -1,0 +1,23 @@
+### Entity Extraction Result ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Helosciadium nodiflorum", "span": [35, 53]}},
+    {"cropSpecies": {"value": "celery", "span": [335, 340]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [94, 101]}},
+    {"city": {"value": "Gatersleben", "span": [96, 108]}},
+    {"city": {"value": "London", "span": [169, 175]}},
+    {"region": {"value": "Germany", "span": [338, 344]}},
+    {"city": {"value": "Berlin", "span": [377, 384]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2015", "span": [242, 246]}},
+    {"endTime": {"value": "2016", "span": [242, 246]}},
+    {"duration": {"value": "2018-2019", "span": [293, 304]}}
+  ]
+}
+```

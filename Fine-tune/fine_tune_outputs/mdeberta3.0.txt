@@ -1,0 +1,79 @@
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/condabin/conda
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/conda
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/conda-env
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/activate
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/deactivate
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/etc/profile.d/conda.sh
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/etc/fish/conf.d/conda.fish
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/shell/condabin/Conda.psm1
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/shell/condabin/conda-hook.ps1
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/lib/python3.10/site-packages/xontrib/conda.xsh
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/etc/profile.d/conda.csh
+no change     /home/s27mhusa_hpc/.bashrc
+No action taken.
+Starting resource monitoring every 30 seconds...
+Logs will be stored in: /home/s27mhusa_hpc/Master-Thesis/OutputNewDatasets15thSeptemberFineTune/job_monitor_logs_mdeberta-broad-3.0__20250919_113032
+job-finetune-generic-bash-mdeberta.bash: line 26: nvidia-smi: command not found
+job-finetune-generic-bash-mdeberta.bash: line 42: iostat: command not found
+/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/transformers/convert_slow_tokenizer.py:564: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
+  warnings.warn(
+Applying data augmentation...
+Original train size: 957, Augmented size: 3828
+Map:   0%|          | 0/3828 [00:00<?, ? examples/s]Map:  26%|██▌       | 1000/3828 [00:00<00:00, 6949.08 examples/s]Map:  52%|█████▏    | 2000/3828 [00:00<00:00, 7249.54 examples/s]Map:  78%|███████▊  | 3000/3828 [00:00<00:00, 7680.65 examples/s]Map: 100%|██████████| 3828/3828 [00:00<00:00, 7814.50 examples/s]Map: 100%|██████████| 3828/3828 [00:00<00:00, 7538.68 examples/s]
+Map:   0%|          | 0/103 [00:00<?, ? examples/s]Map: 100%|██████████| 103/103 [00:00<00:00, 4695.24 examples/s]
+Map:   0%|          | 0/319 [00:00<?, ? examples/s]Map: 100%|██████████| 319/319 [00:00<00:00, 3652.99 examples/s]
+[I 2025-09-19 11:30:41,205] A new study created in memory with name: no-name-33b37843-8404-486b-ae2c-9cd6f97ffb9b
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Some weights of DebertaV2ForTokenClassification were not initialized from the model checkpoint at microsoft/mdeberta-v3-base and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of DebertaV2ForTokenClassification were not initialized from the model checkpoint at microsoft/mdeberta-v3-base and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+wandb: Currently logged in as: murtuzanh (murtuzanh-university-bonn) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+wandb: Tracking run with wandb version 0.19.7
+wandb: Run data is saved locally in /home/s27mhusa_hpc/Master-Thesis/Fine-tune/wandb/run-20250919_113047-gvvfi9bx
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run robust-snow-767
+wandb: ⭐️ View project at https://wandb.ai/murtuzanh-university-bonn/huggingface
+wandb: 🚀 View run at https://wandb.ai/murtuzanh-university-bonn/huggingface/runs/gvvfi9bx
+
+================================================================================
+PART A: STARTING IMPROVED HYPERPARAMETER SEARCH
+================================================================================
+
+  0%|          | 0/3870 [00:00<?, ?it/s]/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/torch/utils/data/dataloader.py:666: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  warnings.warn(warn_msg)
+  0%|          | 1/3870 [00:01<1:28:26,  1.37s/it]  0%|          | 2/3870 [00:02<1:20:18,  1.25s/it]  0%|          | 3/3870 [00:03<1:14:13,  1.15s/it]  0%|          | 4/3870 [00:04<1:11:28,  1.11s/it]  0%|          | 5/3870 [00:05<1:09:57,  1.09s/it]  0%|          | 6/3870 [00:06<1:12:01,  1.12s/it]  0%|          | 7/3870 [00:07<1:10:21,  1.09s/it]  0%|          | 8/3870 [00:09<1:11:36,  1.11s/it]  0%|          | 9/3870 [00:10<1:12:37,  1.13s/it]  0%|          | 10/3870 [00:11<1:11:17,  1.11s/it]

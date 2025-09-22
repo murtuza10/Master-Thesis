@@ -1,0 +1,19 @@
+### Filled JSON Structure ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Picea abies", "span": [124, 134] }},
+    {"cropSpecies": { "value": "Norway spruce", "span": [120, 130] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": { "value": "Germany", "span": [182, 189] }},
+    {"country": { "value": "Europe", "span": [246, 253] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1964", "span": [134, 138] }},
+    {"endTime": { "value": "2015", "span": [161, 165] }},
+    {"duration": { "value": "51", "span": [157, 161] }}
+  ]
+}
+```

@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757936164-TRVtCgaJlOQtv5PDfesf",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757936164,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"birch\", \"span\": [230, 235]}},\n    {\"cropSpecies\": {\"value\": \"Betula pubescens Ehrh.\", \"span\": [237, 259]}},\n    {\"cropSpecies\": {\"value\": \"birch\", \"span\": [1030, 1035]}},\n    {\"cropSpecies\": {\"value\": \"birches\", \"span\": [1116, 1123]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"one year\", \"span\": [673, 681]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 2016,
+    "completion_tokens": 155,
+    "total_tokens": 2171
+  }
+}

@@ -1,0 +1,21 @@
+### JSON Output: 
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [258, 265]}}
+  ],
+  "Soil": [
+    {"soilTexture": {}},
+    {"soilReferenceGroup": {}},
+    {"soilDepth": {}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+Note that the location and time statement categories are empty because no corresponding entities are present in the input text. The soil category also has empty objects because the text does not explicitly mention soil properties like texture, reference group, depth, bulk density, pH, organic carbon, or available nitrogen. However, it does mention "soil" as a keyword, so I left the soil category in the output JSON.

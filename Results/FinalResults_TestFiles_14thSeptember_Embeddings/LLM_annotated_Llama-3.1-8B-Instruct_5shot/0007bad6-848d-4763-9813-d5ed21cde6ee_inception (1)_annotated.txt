@@ -1,0 +1,29 @@
+### JSON Output ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [384, 389]}}
+  ],
+  "Soil": [
+    {"soilProperties": {"value": "soil properties", "span": [246, 261]}},
+    {"soilWaterStableAggregation": {"value": "soil water stable aggregation", "span": [291, 311]}},
+    {"soilOrganicCarbon": {"value": "soil organic carbon", "span": [396, 415]}},
+    {"soilAvailableNitrogen": {"value": "soil available nitrogen", "span": [418, 435]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+### Explanation ###
+
+Based on the input text, the following entities were identified:
+
+- **Crop**: "wheat" is mentioned in the abstract text as part of the plant-soil system and as a factor in the study.
+- **Soil**: Several soil-related entities were identified:
+  - "soil properties" is mentioned in the abstract text as being affected by the increasing number of GCFs.
+  - "soil water stable aggregation" is mentioned as being negatively affected by the higher level of GCFs.
+  - "soil organic carbon" is mentioned in the abstract text as a factor affected by microplastics.
+  - "soil available nitrogen" is not explicitly mentioned in the abstract text, but is included based on the context of the study and the keywords provided.
+
+Note that some entities, such as "microplastics" and "global change factors," were not included in the output as they do not fit the predefined entity categories.

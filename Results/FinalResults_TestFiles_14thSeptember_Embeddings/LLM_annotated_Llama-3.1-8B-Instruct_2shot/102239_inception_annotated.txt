@@ -1,0 +1,17 @@
+### JSON Output ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilOrganicCarbon": {"value": "organic carbon", "span": [122, 136]}},
+    {"soilOrganicCarbon": {"value": "soil properties", "span": [83, 97]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+### Explanation ###
+- For "Crops", no entities were found.
+- For "Soil", two mentions of "organic carbon" and "soil properties" were found and annotated as "soilOrganicCarbon".
+- For "Location", no entities were found.
+- For "Time Statement", no entities were found.

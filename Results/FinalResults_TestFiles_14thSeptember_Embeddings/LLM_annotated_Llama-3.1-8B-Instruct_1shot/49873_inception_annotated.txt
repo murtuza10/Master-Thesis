@@ -1,0 +1,109 @@
+### Code ###
+```python
+import json
+import re
+
+def extract_entities(text):
+    # Initialize entity lists
+    crops = []
+    soil = []
+    location = []
+    time_statement = []
+
+    # Crops
+    crops_species = ["Bodenart", "Bodenart", "Waldproduktivität"]
+    for species in crops_species:
+        matches = re.finditer(r'\b' + species + r'\b', text, re.IGNORECASE)
+        for match in matches:
+            crops.append({"cropSpecies": {"value": species, "span": [match.start(), match.end()]}})
+
+    # Soil
+    soil_texture = []
+    matches = re.finditer(r'\bBodentyp\b', text, re.IGNORECASE)
+    for match in matches:
+        soil_texture.append({"soilTexture": {"value": "Bodentyp", "span": [match.start(), match.end()]}})
+    matches = re.finditer(r'\bSkelett\b', text, re.IGNORECASE)
+    for match in matches:
+        soil_texture.append({"soilTexture": {"value": "Skelett", "span": [match.start(), match.end()]}})
+    soil.append({"soilTexture": {"value": "Bodentyp", "span": [match.start(), match.end()]}})
+
+    soil_reference_group = []
+    matches = re.finditer(r'\bBundesland\b', text, re.IGNORECASE)
+    for match in matches:
+        soil_reference_group.append({"soilReferenceGroup": {"value": "Bundesland", "span": [match.start(), match.end()]}})
+    matches = re.finditer(r'\bStandortseinheit\b', text, re.IGNORECASE)
+    for match in matches:
+        soil_reference_group.append({"soilReferenceGroup": {"value": "Standortseinheit", "span": [match.start(), match.end()]}})
+
+    soil_depth = []
+    matches = re.finditer(r'\bHorizontangaben\b', text, re.IGNORECASE)
+    for match in matches:
+        soil_depth.append({"soilDepth": {"value": "Horizontangaben", "span": [match.start(), match.end()]}})
+    matches = re.finditer(r'\bEntkalkungstiefe\b', text, re.IGNORECASE)
+    for match in matches:
+        soil_depth.append({"soilDepth": {"value": "Entkalkungstiefe", "span": [match.start(), match.end()]}})
+
+    soil_bulk_density = []
+    matches = re.finditer(r'\bTrockenrohdichte\b', text, re.IGNORECASE)
+    for match in matches:
+        soil_bulk_density.append({"soilBulkDensity": {"value": "Trockenrohdichte", "span": [match.start(), match.end()]}})
+
+    soil_ph = []
+    matches = re.finditer(r'\bBasensättigung\b', text, re.IGNORECASE)
+    for match in matches:
+        soil_ph.append({"soilPH": {"value": "Basensättigung", "span": [match.start(), match.end()]}})
+    matches = re.finditer(r'\bEntkalkungstiefe\b', text, re.IGNORECASE)
+    for match in matches:
+        soil_ph.append({"soilPH": {"value": "Entkalkungstiefe", "span": [match.start(), match.end()]}})
+
+    soil_organic_carbon = []
+    matches = re.finditer(r'\borganischer Kohlenstoffgehalt\b', text, re.IGNORECASE)
+    for match in matches:
+        soil_organic_carbon.append({"soilOrganicCarbon": {"value": "organischer Kohlenstoffgehalt", "span": [match.start(), match.end()]}})
+
+    soil_available_nitrogen = []
+    matches = re.finditer(r'\bNährstoffansprache\b', text, re.IGNORECASE)
+    for match in matches:
+        soil_available_nitrogen.append({"soilAvailableNitrogen": {"value": "Nährstoffansprache", "span": [match.start(), match.end()]}})
+
+    # Location
+    matches = re.finditer(r'\bBundeswaldinventur\b', text, re.IGNORECASE)
+    for match in matches:
+        location.append({"country": {"value": "Deutschland", "span": [match.start(), match.end()]}})
+    matches = re.finditer(r'\bBundesland\b', text, re.IGNORECASE)
+    for match in matches:
+        location.append({"region": {"value": "Bundesland", "span": [match.start(), match.end()]}})
+    matches = re.finditer(r'\bBWI\b', text, re.IGNORECASE)
+    for match in matches:
+        location.append({"city": {"value": "BWI", "span": [match.start(), match.end()]}})
+    matches = re.finditer(r'\b28\.05\.2019\b', text, re.IGNORECASE)
+    for match in matches:
+        location.append({"latitude": {"value": "28.05.2019", "span": [match.start(), match.end()]}})
+    matches = re.finditer(r'\b2012\b', text, re.IGNORECASE)
+    for match in matches:
+        location.append({"longitude": {"value": "2012", "span": [match.start(), match.end()]}})
+
+    # Time Statement
+    matches = re.finditer(r'\b2012\b', text, re.IGNORECASE)
+    for match in matches:
+        time_statement.append({"startTime": {"value": "2012", "span": [match.start(), match.end()]}})
+    matches = re.finditer(r'\b2012\b', text, re.IGNORECASE)
+    for match in matches:
+        time_statement.append({"endTime": {"value": "2012", "span": [match.start(), match.end()]}})
+    matches = re.finditer(r'\b2012\b', text, re.IGNORECASE)
+    for match in matches:
+        time_statement.append({"duration": {"value": "2012", "span": [match.start(), match.end()]}})
+
+    return {
+        "Crops": crops,
+        "Soil": soil,
+        "Location": location,
+        "Time Statement": time_statement
+    }
+
+text = """
+Title: 
+BWI 2012 Umweltdatenbank Bodenprofile
+
+Abstract:
+Ziel des Moduls Bodenprofile im Projekt WP-KS-KW (Waldproduktivität - Klimawandel - Kohlenstoffspeicherung) war es, für 26.450 Punkte der deutschen Bundeswaldinventur (BWI) Bodenleitprofile mit boden-physikalischen Grundlagendaten zu erstellen. Die Grundlage der Ableitung der Standorts- und Bodeninformationen bildeten die in den Bundesländern zur Verfügung stehenden Informationen aus der Standorts- und Bodenkartierung. Um den oft historisch gewachsenen Feinheiten der einzelnen Kartierungsverfahren gerecht zu werden, wurden Standorts- und Bodenkundler aus jedem Bundesland in das Projekt

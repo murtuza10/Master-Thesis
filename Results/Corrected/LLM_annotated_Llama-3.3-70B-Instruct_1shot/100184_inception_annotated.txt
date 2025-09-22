@@ -1,0 +1,27 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "oilseed rape", "span": [556, 568]}},
+    {"cropSpecies": {"value": "Brassica napus", "span": [570, 583]}},
+    {"cropSpecies": {"value": "OSR", "span": [585, 588]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [391, 398]}},
+    {"city": {"value": "Bochum", "span": [413, 419]}},
+    {"city": {"value": "Braunschweig", "span": [420, 431]}},
+    {"city": {"value": "Celle", "span": [432, 437]}},
+    {"city": {"value": "Hohenheim", "span": [438, 447]}},
+    {"city": {"value": "Veitshöchheim", "span": [448, 460]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "spring 2022", "span": [463, 475]}},
+    {"endTime": {"value": "spring 2023", "span": [480, 492]}},
+    {"duration": {"value": "time dependent interval", "span": [743, 764]}},
+    {"startTime": {"value": "2022", "span": [463, 467]}},
+    {"endTime": {"value": "2023", "span": [480, 483]}},
+    {"startTime": {"value": "spring", "span": [463, 469]}},
+    {"endTime": {"value": "spring", "span": [480, 486]}}
+  ]
+}
+```

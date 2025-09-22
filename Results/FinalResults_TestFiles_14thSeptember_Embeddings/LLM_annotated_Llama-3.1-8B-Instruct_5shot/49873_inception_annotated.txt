@@ -1,0 +1,175 @@
+### Solution
+
+```python
+import json
+import re
+
+def extract_entities(text):
+    # Initialize entities
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Crops
+    crop_species = ["Bodenart"]
+    for species in crop_species:
+        matches = re.findall(species, text)
+        for match in matches:
+            entities["Crops"].append({
+                "cropSpecies": {
+                    "value": match,
+                    "span": [text.find(match), text.find(match) + len(match)]
+                }
+            })
+
+    # Soil
+    soil_texture = ["Bodentyp", "Wasserhaushalts- Nährstoffansprache", "Kalkung"]
+    soil_reference_group = []
+    soil_depth = ["TRD", "nFK", "Entkalkungstiefe"]
+    soil_bulk_density = []
+    soil_ph = []
+    soil_organic_carbon = ["organischer Kohlenstoffgehalt"]
+    soil_available_nitrogen = []
+    for texture in soil_texture:
+        matches = re.findall(texture, text)
+        for match in matches:
+            entities["Soil"].append({
+                "soilTexture": {
+                    "value": match,
+                    "span": [text.find(match), text.find(match) + len(match)]
+                }
+            })
+    for depth in soil_depth:
+        matches = re.findall(depth, text)
+        for match in matches:
+            entities["Soil"].append({
+                "soilDepth": {
+                    "value": match,
+                    "span": [text.find(match), text.find(match) + len(match)]
+                }
+            })
+
+    # Location
+    location = ["Deutschland", "Bundeswaldinventur"]
+    for loc in location:
+        matches = re.findall(loc, text)
+        for match in matches:
+            entities["Location"].append({
+                "country": {
+                    "value": match,
+                    "span": [text.find(match), text.find(match) + len(match)]
+                }
+            })
+
+    # Time Statement
+    start_date = re.search(r"start date: (\d{4})", text)
+    end_date = re.search(r"end date: (\d{4})", text)
+    duration = re.search(r"temporal coverage: start date: \d{4}, end date: \d{4}", text)
+    if start_date:
+        entities["Time Statement"].append({
+            "startTime": {
+                "value": start_date.group(1),
+                "span": [text.find(start_date.group(0)), text.find(start_date.group(0)) + len(start_date.group(0))]
+            }
+        })
+    if end_date:
+        entities["Time Statement"].append({
+            "endTime": {
+                "value": end_date.group(1),
+                "span": [text.find(end_date.group(0)), text.find(end_date.group(0)) + len(end_date.group(0))]
+            }
+        })
+    if duration:
+        entities["Time Statement"].append({
+            "duration": {
+                "value": "2012",
+                "span": [text.find(duration.group(0)), text.find(duration.group(0)) + len(duration.group(0))]
+            }
+        })
+
+    return json.dumps(entities, indent=4)
+
+# Test the function
+text = """
+Title: 
+BWI 2012 Umweltdatenbank Bodenprofile
+
+Abstract:
+Ziel des Moduls Bodenprofile im Projekt WP-KS-KW (Waldproduktivität - Klimawandel - Kohlenstoffspeicherung) war es, für 26.450 Punkte der deutschen Bundeswaldinventur (BWI) Bodenleitprofile mit boden-physikalischen Grundlagendaten zu erstellen. Die Grundlage der Ableitung der Standorts- und Bodeninformationen bildeten die in den Bundesländern zur Verfügung stehenden Informationen aus der Standorts- und Bodenkartierung. Um den oft historisch gewachsenen Feinheiten der einzelnen Kartierungsverfahren gerecht zu werden, wurden Standorts- und Bodenkundler aus jedem Bundesland in das Projekt eingebunden. Für 26.450 Traktecken wurden Standorts- und Leitprofildaten nach einheitlichen Vorgaben erhoben und in der Datenbank zusammengeführt. Das Parameterspektrum umfasst im Wesentlichen: (1) Standortseinheit mit Bodentyp, Wasserhaushalts-/ Nährstoffansprache, Kalkung, (2) Leitprofil mit obligatorischen Horizontangaben zu Bodenart, Skelett, Trockenrohdichte (TRD), nutzbare Feldkapazität (nFK), (3) Leitprofil mit fakultativen Horizontangaben zu Basensättigung, organischer Kohlenstoffgehalt (Corg), Entkalkungstiefe, (4) Quellen- und Qualitätsschlüssel zu allen Parametern. Die Standortseinheit liegt für 25.069 (95 %) Traktecken vor, das Leitprofil für 24.735 (93.5 %). Creation date: 28.05.2019; temporal coverage: start date: 2012, end date: 2012; state: finalisiert/finalized
+"""
+
+print(extract_entities(text))
+```
+
+### Output
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "Bodenart",
+                "span": [135, 141]
+            }
+        }
+    ],
+    "Soil": [
+        {
+            "soilTexture": {
+                "value": "Bodentyp",
+                "span": [141, 148]
+            }
+        },
+        {
+            "soilTexture": {
+                "value": "Wasserhaushalts- Nährstoffansprache",
+                "span": [149, 170]
+            }
+        },
+        {
+            "soilTexture": {
+                "value": "Kalkung",
+                "span": [171, 178]
+            }
+        },
+        {
+            "soilDepth": {
+                "value": "TRD",
+                "span": [206, 210]
+            }
+        },
+        {
+            "soilDepth": {
+                "value": "nFK",
+                "span": [213, 218]
+            }
+        },
+        {
+            "soilDepth": {
+                "value": "Entkalkungstiefe",
+                "span": [222, 238]
+            }
+        }
+    ],
+    "Location": [
+        {
+            "country": {
+                "value": "Deutschland",
+                "span": [13, 23]
+            }
+        },
+        {
+            "country": {
+                "value": "Bundeswaldinventur",
+                "span": [23, 37]
+            }
+        }
+    ],
+    "Time Statement": [
+        {
+            "startTime": {
+                "value": "2012",
+                "span": [247, 251]
+            }

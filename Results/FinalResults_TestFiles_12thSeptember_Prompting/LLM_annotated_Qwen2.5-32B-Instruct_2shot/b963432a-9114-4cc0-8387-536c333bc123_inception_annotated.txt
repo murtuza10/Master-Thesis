@@ -1,0 +1,43 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "barley", "span": [376, 381] }},
+    {"cropSpecies": { "value": "barley", "span": [496, 501] }},
+    {"cropSpecies": { "value": "serradella", "span": [408, 417] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "redox potential", "span": [183, 198] }},
+    {"Soil": { "value": "pH", "span": [199, 201] }},
+    {"Soil": { "value": "element concentrations", "span": [202, 220] }},
+    {"Soil": { "value": "pore water", "span": [221, 231] }},
+    {"Soil": { "value": "pore water", "span": [433, 443] }},
+    {"Soil": { "value": "redox potential", "span": [444, 459] }},
+    {"Soil": { "value": "pH", "span": [460, 462] }},
+    {"Soil": { "value": "element concentrations", "span": [463, 481] }},
+    {"Soil": { "value": "total C", "span": [482, 490] }},
+    {"Soil": { "value": "N", "span": [491, 492] }},
+    {"Soil": { "value": "P", "span": [493, 494] }},
+    {"Soil": { "value": "Al", "span": [495, 497] }},
+    {"Soil": { "value": "Fe", "span": [498, 500] }},
+    {"Soil": { "value": "Mn", "span": [501, 503] }},
+    {"Soil": { "value": "Ca", "span": [504, 506] }},
+    {"Soil": { "value": "inorganic and organic C", "span": [507, 528] }},
+    {"Soil": { "value": "PO43--P", "span": [529, 538] }},
+    {"Soil": { "value": "NH4+-N", "span": [539, 548] }},
+    {"Soil": { "value": "NO2--", "span": [549, 556] }},
+    {"Soil": { "value": "NO3--N-", "span": [557, 567] }}
+  ],
+  "Location": [
+    {"city": { "value": "Rostock", "span": [15, 23] }},
+    {"region": { "value": "Northern Germany", "span": [125, 140] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2018", "span": [277, 281] }},
+    {"duration": { "value": "2020", "span": [133, 137] }},
+    {"duration": { "value": "2020", "span": [338, 342] }},
+    {"duration": { "value": "2020", "span": [430, 434] }},
+    {"duration": { "value": "2020", "span": [569, 573] }},
+    {"duration": { "value": "3.5 months", "span": [584, 596] }}
+  ]
+}
+```

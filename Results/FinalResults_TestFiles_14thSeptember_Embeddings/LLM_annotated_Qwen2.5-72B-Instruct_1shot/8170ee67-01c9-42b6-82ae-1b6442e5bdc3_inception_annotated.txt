@@ -1,0 +1,34 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "barley", "span": [72, 78] }},
+    {"cropSpecies": { "value": "barley", "span": [1074, 1080] }},
+    {"cropSpecies": { "value": "oilseed rape", "span": [1090, 1102] }},
+    {"cropSpecies": { "value": "wheat", "span": [1106, 1111] }},
+    {"cropSpecies": { "value": "lupine", "span": [1113, 1119] }},
+    {"cropSpecies": { "value": "rye", "span": [1121, 1124] }},
+    {"cropSpecies": { "value": "oat", "span": [571, 574] }},
+    {"cropVariety": { "value": "OTTO", "span": [1098, 1102] }}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": { "value": "grassland", "span": [556, 565] }},
+    {"soilDepth": { "value": "25 cm", "span": [569, 574] }},
+    {"soilDepth": { "value": "25 cm", "span": [1038, 1043] }},
+    {"soilDepth": { "value": "0-30 cm", "span": [692, 700] }},
+    {"soilAvailableNitrogen": { "value": "11 mg kg-1 PCAL", "span": [715, 732] }},
+    {"soilAvailableNitrogen": { "value": "21 mg kg-1 PCAL", "span": [736, 753] }},
+    {"soilAvailableNitrogen": { "value": "47 mg kg-1 PCAL", "span": [757, 774] }}
+  ],
+  "Location": [
+    {"city": { "value": "Braunschweig", "span": [24, 36] }},
+    {"city": { "value": "Braunschweig", "span": [62, 74] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1985", "span": [433, 437] }},
+    {"endTime": { "value": "2008", "span": [438, 442] }},
+    {"endTime": { "value": "2013", "span": [540, 544] }},
+    {"startTime": { "value": "autumn 2013", "span": [994, 1006] }},
+    {"endTime": { "value": "2014", "span": [1056, 1060] }}
+  ]
+}
+```

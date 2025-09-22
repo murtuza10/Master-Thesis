@@ -1,0 +1,32 @@
+{
+  "id": "gen-1758015889-ecMncKBwy9rJ6TG5hvIe",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1758015889,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"maize\", \"span\": [301, 306] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"Wanna Sand\", \"span\": [354, 364] }},\n    {\"Soil\": { \"value\": \"Wanna Sand\", \"span\": [386, 396] }},\n    {\"Soil\": { \"value\": \"Rostock Sand\", \"span\": [420, 432] }},\n    {\"Soil\": { \"value\": \"Wanna Marsch\", \"span\": [437, 449] }},\n    {\"Soil\": { \"value\": \"soil\", \"span\": [108, 112] }},\n    {\"Soil\": { \"value\": \"soil\", \"span\": [1063, 1067] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Europe\", \"span\": [1633, 1639] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [1641, 1648] }},\n    {\"region\": { \"value\": \"Lower Saxony\", \"span\": [1650, 1663] }},\n    {\"city\": { \"value\": \"Wanna\", \"span\": [1665, 1670] }},\n    {\"region\": { \"value\": \"Mecklenburg-Vorpommern\", \"span\": [1672, 1694] }},\n    {\"city\": { \"value\": \"Rostock\", \"span\": [1696, 1703] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2021\", \"span\": [329, 335] }},\n    {\"endTime\": { \"value\": \"2023\", \"span\": [340, 344] }},\n    {\"startTime\": { \"value\": \"April\", \"span\": [696, 701] }},\n    {\"endTime\": { \"value\": \"August\", \"span\": [706, 712] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 1410,
+    "completion_tokens": 451,
+    "total_tokens": 1861,
+    "prompt_tokens_details": {
+      "cached_tokens": 2,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": null
+  }
+}

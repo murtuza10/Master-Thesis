@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIizAv0xxHHJ79QATmx2IW1mBeZVg",
+  "object": "chat.completion",
+  "created": 1758578864,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"soil\", \"span\": [88, 92]}},\n    {\"Soil\": {\"value\": \"The soil\", \"span\": [94, 102]}},\n    {\"Soil\": {\"value\": \"particulate organic carbon (POC)\", \"span\": [164, 197]}},\n    {\"Soil\": {\"value\": \"mineral associated organic carbon (MAOC)\", \"span\": [202, 243]}},\n    {\"Soil\": {\"value\": \"bulk soil\", \"span\": [274, 283]}},\n    {\"Soil\": {\"value\": \"total carbon content\", \"span\": [302, 322]}},\n    {\"Soil\": {\"value\": \"abundance of the stable isotope 13C\", \"span\": [342, 377]}},\n    {\"Soil\": {\"value\": \"carbon\", \"span\": [435, 441]},\n    },\n    {\"Soil\": {\"value\": \"C contents\", \"span\": [572, 582]}},\n    {\"Soil\": {\"value\": \"delta 13C values\", \"span\": [584, 601]}},\n    {\"Soil\": {\"value\": \"fraction weights\", \"span\": [603, 619]}},\n    {\"Soil\": {\"value\": \"amounts of new and old carbon\", \"span\": [647, 676]}}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"2-year\", \"span\": [53, 59]}},\n    {\"endTime\": {\"value\": \"6\", \"span\": [132, 133]}},\n    {\"endTime\": {\"value\": \"12\", \"span\": [135, 137]}},\n    {\"endTime\": {\"value\": \"24 months\", \"span\": [142, 151]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1398,
+    "completion_tokens": 414,
+    "total_tokens": 1812,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

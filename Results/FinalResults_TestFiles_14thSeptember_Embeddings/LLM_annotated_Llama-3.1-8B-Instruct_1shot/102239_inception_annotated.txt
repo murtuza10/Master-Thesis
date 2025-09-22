@@ -1,0 +1,14 @@
+### JSON Output ###
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilOrganicCarbon": {"value": "organic carbon", "span": [115, 129]}},
+    {"soilOrganicCarbon": {"value": "organic carbon", "span": [244, 258]}},
+    {"soilProperties": {"value": "soil properties", "span": [77, 92]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+Note: The entity "soilProperties" is used as the key for the "soilProperties" entity in the "Soil" category. The other entities in the "Soil" category are "soilOrganicCarbon".

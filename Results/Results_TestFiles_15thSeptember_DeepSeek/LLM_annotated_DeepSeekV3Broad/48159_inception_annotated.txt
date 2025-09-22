@@ -1,0 +1,26 @@
+{
+  "id": "gen-1758015999-mpAO9UwTP7vZBtEhGzXr",
+  "provider": "Crusoe",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1758015999,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"energy crops\", \"span\": [842, 853] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"agricultural soils\", \"span\": [835, 852] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [584, 591] }},\n    {\"country\": { \"value\": \"German\", \"span\": [520, 526] }},\n    {\"country\": { \"value\": \"European Union\", \"span\": [234, 248] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1990\", \"span\": [608, 612] }},\n    {\"endTime\": { \"value\": \"2017\", \"span\": [616, 620] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1191,
+    "completion_tokens": 197,
+    "total_tokens": 1388
+  }
+}

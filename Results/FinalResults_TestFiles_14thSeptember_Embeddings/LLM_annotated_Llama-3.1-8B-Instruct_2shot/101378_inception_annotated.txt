@@ -1,0 +1,26 @@
+### Filled JSON Structure ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "birch", "span": [173, 178]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": {"value": "northern hemisphere", "span": [108, 125]}},
+    {"city": {"value": "bog", "span": [123, 126]}},
+    {"city": {"value": "bog", "span": [213, 216]}},
+    {"city": {"value": "bog", "span": [292, 295]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "one year", "span": [240, 245]}}
+  ]
+}
+```
+
+### Explanation ###
+
+- **Crops**: Identified "birch" as the only crop species mentioned in the text.
+- **Soil**: No soil-related entities were found in the text.
+- **Location**: Found "northern hemisphere" as a region, and "bog" as a city (or a specific location) multiple times.
+- **Time Statement**: Identified "one year" as a time statement, which is the duration of the measurements.

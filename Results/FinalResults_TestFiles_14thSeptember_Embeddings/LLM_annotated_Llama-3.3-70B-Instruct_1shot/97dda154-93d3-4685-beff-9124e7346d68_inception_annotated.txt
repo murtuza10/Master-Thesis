@@ -1,0 +1,43 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "maize", "span": [226, 231]}},
+    {"cropSpecies": {"value": "maize", "span": [346, 351]}},
+    {"cropSpecies": {"value": "Fusarium", "span": [663, 671]}},
+    {"cropSpecies": {"value": "Bacillus atrophaeus Abi05", "span": [304, 324]}},
+    {"cropSpecies": {"value": "Bacillus atrophaeus Abi05", "span": [682, 702]}},
+    {"cropSpecies": {"value": "Alternaria", "span": [645, 654]}},
+    {"cropSpecies": {"value": "R. irregulare", "span": [281, 291]}},
+    {"cropSpecies": {"value": "F. mosseae", "span": [292, 300]}},
+    {"cropSpecies": {"value": "F. caledonium", "span": [301, 313]}},
+    {"cropSpecies": {"value": "Acidobacteria", "span": [626, 638]}},
+    {"cropSpecies": {"value": "Actinobacteria", "span": [639, 652]}},
+    {"cropSpecies": {"value": "Alpha-Proteobacteria", "span": [653, 671]}},
+    {"cropSpecies": {"value": "Beta-Proteobacteria", "span": [672, 688]}},
+    {"cropSpecies": {"value": "Cyanobacteria", "span": [689, 702]}},
+    {"cropSpecies": {"value": "Firmicutes", "span": [703, 712]}}
+  ],
+  "Soil": [
+    {"soilTexture": {"value": "Sand", "span": [247, 251]}},
+    {"soilTexture": {"value": "Sand", "span": [262, 266]}},
+    {"soilTexture": {"value": "Marsch", "span": [300, 306]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [819, 826]}},
+    {"region": {"value": "Lower Saxony", "span": [838, 851]}},
+    {"city": {"value": "Wanna", "span": [852, 857]}},
+    {"region": {"value": "Mecklenburg-Vorpommern", "span": [858, 877]}},
+    {"city": {"value": "Rostock", "span": [878, 885]}},
+    {"region": {"value": "Europe", "span": [794, 800]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2021", "span": [234, 238]}},
+    {"endTime": {"value": "2023", "span": [244, 248]}},
+    {"duration": {"value": "April", "span": [355, 360]}},
+    {"duration": {"value": "August", "span": [366, 372]}},
+    {"startTime": {"value": "2021", "span": [234, 238]}},
+    {"endTime": {"value": "2022", "span": [239, 243]}},
+    {"endTime": {"value": "2023", "span": [244, 248]}}
+  ]
+}
+```

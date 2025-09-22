@@ -1,0 +1,34 @@
+{
+  "id": "gen-1758382068-6XqViFh6bMe4062i116W",
+  "provider": "OpenAI",
+  "model": "openai/gpt-4o",
+  "object": "chat.completion",
+  "created": 1758382068,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"Bodentyp\", \"span\": [402, 410]}},\n    {\"Soil\": {\"value\": \"Wasserhaushalts-/ Nährstoffansprache\", \"span\": [412, 450]}},\n    {\"Soil\": {\"value\": \"Kalkung\", \"span\": [452, 459]}},\n    {\"Soil\": {\"value\": \"Bodenart\", \"span\": [504, 512]}},\n    {\"Soil\": {\"value\": \"Skelett\", \"span\": [514, 521]}},\n    {\"Soil\": {\"value\": \"Trockenrohdichte (TRD)\", \"span\": [523, 544]}},\n    {\"Soil\": {\"value\": \"nutzbare Feldkapazität (nFK)\", \"span\": [546, 573]}},\n    {\"Soil\": {\"value\": \"Basensättigung\", \"span\": [611, 625]}},\n    {\"Soil\": {\"value\": \"organischer Kohlenstoffgehalt (Corg)\", \"span\": [627, 661]}},\n    {\"Soil\": {\"value\": \"Entkalkungstiefe\", \"span\": [663, 678]}}\n  ],\n  \"Location\": [\n    {\"region\": {\"value\": \"deutschen Bundeswaldinventur\", \"span\": [92, 121]}},\n    {\"region\": {\"value\": \"Bundesländern\", \"span\": [190, 203]}},\n    {\"region\": {\"value\": \"Bundesland\", \"span\": [344, 354]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2012\", \"span\": [980, 984]}},\n    {\"endTime\": {\"value\": \"2012\", \"span\": [996, 1000]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "fp_07871e2ad8",
+  "usage": {
+    "prompt_tokens": 4882,
+    "completion_tokens": 413,
+    "total_tokens": 5295,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

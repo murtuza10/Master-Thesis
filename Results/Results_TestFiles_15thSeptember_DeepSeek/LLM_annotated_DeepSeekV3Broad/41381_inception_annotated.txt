@@ -1,0 +1,27 @@
+{
+  "id": "gen-1758016084-tYusu5IK5zdcYJvAmcpb",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1758016084,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"fruits\", \"span\": [79, 85] }},\n    {\"cropSpecies\": { \"value\": \"grape\", \"span\": [146, 151] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [231, 238] }},\n    {\"region\": { \"value\": \"southwest Germany\", \"span\": [219, 236] }},\n    {\"city\": { \"value\": \"Dossenheim\", \"span\": [640, 650] }},\n    {\"city\": { \"value\": \"Siebeldingen\", \"span\": [655, 667] }},\n    {\"city\": { \"value\": \"Darmstadt\", \"span\": [712, 721] }},\n    {\"region\": { \"value\": \"southwest Germany\", \"span\": [803, 820] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2011\", \"span\": [251, 255] }},\n    {\"startTime\": { \"value\": \"late summer 2011\", \"span\": [301, 317] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [624, 628] }},\n    {\"endTime\": { \"value\": \"February 2018\", \"span\": [473, 486] }},\n    {\"endTime\": { \"value\": \"2018\", \"span\": [631, 635] }},\n    {\"duration\": { \"value\": \"7-year\", \"span\": [25, 31] }},\n    {\"duration\": { \"value\": \"116,602 days\", \"span\": [1189, 1201] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 1646,
+    "completion_tokens": 402,
+    "total_tokens": 2048
+  }
+}

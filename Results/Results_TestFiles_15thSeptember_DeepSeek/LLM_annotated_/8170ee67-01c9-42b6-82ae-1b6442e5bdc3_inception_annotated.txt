@@ -1,0 +1,32 @@
+{
+  "id": "gen-1758012407-h2eiaVNBfwFhUfcL3REs",
+  "provider": "AtlasCloud",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1758012407,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [41, 47] }},\n    {\"cropSpecies\": { \"value\": \"oat\", \"span\": [1081, 1084] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [1202, 1208] }},\n    {\"cropSpecies\": { \"value\": \"oilseed rape\", \"span\": [1210, 1222] }},\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [1224, 1229] }},\n    {\"cropSpecies\": { \"value\": \"lupine\", \"span\": [1231, 1237] }},\n    {\"cropSpecies\": { \"value\": \"rye\", \"span\": [1242, 1245] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [1505, 1511] }},\n    {\"cropVariety\": { \"value\": \"OTTO\", \"span\": [1528, 1532] }}\n  ],\n  \"Soil\": [\n    {\"soilDepth\": { \"value\": \"25 cm\", \"span\": [1076, 1081] }},\n    {\"soilDepth\": { \"value\": \"25 cm\", \"span\": [1337, 1342] }},\n    {\"soilDepth\": { \"value\": \"0-30 cm\", \"span\": [1281, 1288] }}\n  ],\n  \"Location\": [\n    {\"city\": { \"value\": \"Braunschweig\", \"span\": [19, 31] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1985\", \"span\": [920, 924] }},\n    {\"endTime\": { \"value\": \"2008\", \"span\": [925, 929] }},\n    {\"startTime\": { \"value\": \"2013\", \"span\": [1053, 1057] }},\n    {\"endTime\": { \"value\": \"2013\", \"span\": [1173, 1177] }},\n    {\"startTime\": { \"value\": \"2014\", \"span\": [42, 46] }},\n    {\"endTime\": { \"value\": \"2014\", \"span\": [1513, 1517] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1555,
+    "completion_tokens": 531,
+    "total_tokens": 2086,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

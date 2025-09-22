@@ -1,0 +1,28 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [278, 283]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [436, 443]}},
+    {"region": {"value": "Brandenburg", "span": [448, 459]}},
+    {"region": {"value": "Uckermark", "span": [461, 471]}},
+    {"city": {"value": "Quillow", "span": [473, 483]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "April", "span": [294, 299]}},
+    {"endTime": {"value": "June", "span": [303, 308]}}
+  ]
+}
+```
+
+### Explanation ###
+From the input text, we can extract the following entities:
+
+- **Crops**: "winter wheat" is mentioned as the crop species.
+- **Location**: The location is mentioned as "Germany", "Brandenburg", "Uckermark", and "Quillow".
+- **Time Statement**: The time period is mentioned as "April" to "June 2019".
+
+The extracted entities are then structured into the required JSON format.

@@ -1,0 +1,18 @@
+### Filled JSON Structure ###
+
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilOrganicCarbon": {"value": "organic carbon", "span": [128, 141]}},
+    {"soilOrganicCarbon": {"value": "soil properties", "span": [95, 109]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Entity Extraction Explanation ###
+
+- `"organic carbon"` is extracted as a soil organic carbon entity at character positions [128, 141].
+- `"soil properties"` is extracted as a soil organic carbon entity at character positions [95, 109].

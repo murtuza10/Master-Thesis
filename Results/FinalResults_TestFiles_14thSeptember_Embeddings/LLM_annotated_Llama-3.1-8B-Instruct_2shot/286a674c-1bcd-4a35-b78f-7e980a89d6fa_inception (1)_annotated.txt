@@ -1,0 +1,28 @@
+### Text Analysis and Extraction Results ###
+
+Based on the input text, I extracted the following entities and filled the JSON structure accordingly.
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [196, 202]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [432, 439]}},
+    {"region": {"value": "Brandenburg", "span": [444, 453]}},
+    {"region": {"value": "Uckermark", "span": [464, 472]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "April", "span": [241, 247]}},
+    {"endTime": {"value": "June", "span": [253, 258]}}
+  ]
+}
+```
+
+### Entity Extraction Explanation ###
+
+*   **Crops**: Extracted "wheat" as the crop species mentioned in the text.
+*   **Soil**: No soil-related entities were mentioned in the text, so the list remains empty.
+*   **Location**: Extracted "Germany" as the country, "Brandenburg" and "Uckermark" as regions, and noted their respective positions in the text.
+*   **Time Statement**: Extracted "April" as the start time and "June" as the end time of the growing season of wheat plants in 2019.

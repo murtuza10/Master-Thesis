@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757936041-ouy9uweVzA7Txz57t5IL",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757936041,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [235, 241] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [251, 257] }},\n    {\"cropSpecies\": { \"value\": \"maize\", \"span\": [266, 271] }},\n    {\"cropSpecies\": { \"value\": \"maize\", \"span\": [281, 286] }},\n    {\"cropSpecies\": { \"value\": \"oats\", \"span\": [289, 293] }},\n    {\"cropSpecies\": { \"value\": \"potatoes\", \"span\": [296, 304] }},\n    {\"cropSpecies\": { \"value\": \"rape\", \"span\": [314, 318] }},\n    {\"cropSpecies\": { \"value\": \"rye\", \"span\": [321, 324] }},\n    {\"cropSpecies\": { \"value\": \"sugarbeet\", \"span\": [327, 336] }},\n    {\"cropSpecies\": { \"value\": \"triticale\", \"span\": [339, 348] }},\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [360, 365] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [24, 31] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [115, 122] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [406, 413] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1979\", \"span\": [37, 41] }},\n    {\"endTime\": { \"value\": \"2021\", \"span\": [45, 49] }},\n    {\"startTime\": { \"value\": \"1979\", \"span\": [128, 132] }},\n    {\"endTime\": { \"value\": \"2021\", \"span\": [136, 140] }},\n    {\"endTime\": { \"value\": \"2020\", \"span\": [637, 641] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 1791,
+    "completion_tokens": 494,
+    "total_tokens": 2285
+  }
+}

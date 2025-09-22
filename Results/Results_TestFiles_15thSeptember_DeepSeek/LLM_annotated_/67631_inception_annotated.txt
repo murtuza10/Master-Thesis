@@ -1,0 +1,26 @@
+{
+  "id": "gen-1758012512-aJFSwgAz2anLxGfsV0mD",
+  "provider": "Phala",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1758012512,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"wine berries\", \"span\": [18, 29] }},\n    {\"cropVariety\": { \"value\": \"Riesling\", \"span\": [223, 231] }},\n    {\"cropVariety\": { \"value\": \"Felicia\", \"span\": [233, 240] }},\n    {\"cropVariety\": { \"value\": \"Regent\", \"span\": [242, 248] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2018\", \"span\": [322, 326] }},\n    {\"endTime\": { \"value\": \"2018\", \"span\": [322, 326] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1101,
+    "completion_tokens": 184,
+    "total_tokens": 1285
+  }
+}

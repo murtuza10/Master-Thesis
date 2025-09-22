@@ -1,0 +1,30 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [246, 251]}},
+    {"cropSpecies": {"value": "barley", "span": [314, 319]}}
+  ],
+  "Soil": [
+    {"soilPH": {"value": "pH", "span": [215, 217]}},
+    {"soilPH": {"value": "pH", "span": [376, 378]}}
+  ],
+  "Location": [
+    {"city": {"value": "Rostock", "span": [11, 18]}},
+    {"city": {"value": "Rostock", "span": [69, 76]}},
+    {"country": {"value": "Germany", "span": [166, 173]}},
+    {"region": {"value": "Northern Germany", "span": [143, 155]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2020", "span": [104, 108]}},
+    {"startTime": {"value": "2018", "span": [276, 280]}},
+    {"startTime": {"value": "2019", "span": [290, 294]}}
+  ]
+}
+```
+### Explanation ###
+- Two crop species ("barley" and "serradella") were identified.
+- Two pH values were found in the text.
+- The city "Rostock" and the country "Germany" were identified as location entities.
+- The region "Northern Germany" was also identified as a location entity.
+- Three time statements were found in the text, representing the years 2020, 2018, and 2019.

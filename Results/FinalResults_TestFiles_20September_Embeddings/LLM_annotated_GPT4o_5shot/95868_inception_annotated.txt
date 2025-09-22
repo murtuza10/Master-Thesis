@@ -1,0 +1,34 @@
+{
+  "id": "gen-1758382484-my8n45knVZp3SAusDTWh",
+  "provider": "OpenAI",
+  "model": "openai/gpt-4o",
+  "object": "chat.completion",
+  "created": 1758382484,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Norway spruce\", \"span\": [82, 95]}},\n    {\"cropSpecies\": { \"value\": \"Picea abies\", \"span\": [97, 108]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [187, 194]}},\n    {\"country\": { \"value\": \"Europe\", \"span\": [368, 374]}}\n  ],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"50 years\", \"span\": [58, 66]}},\n    {\"duration\": { \"value\": \"51 years\", \"span\": [146, 154]}},\n    {\"startTime\": { \"value\": \"1964/68\", \"span\": [276, 283]}},\n    {\"startTime\": { \"value\": \"age 7\", \"span\": [468, 473]}},\n    {\"startTime\": { \"value\": \"age 10\", \"span\": [475, 481]}},\n    {\"startTime\": { \"value\": \"age 13\", \"span\": [483, 489]}},\n    {\"startTime\": { \"value\": \"age 16\", \"span\": [491, 497]}},\n    {\"startTime\": { \"value\": \"age 16\", \"span\": [527, 533]}},\n    {\"startTime\": { \"value\": \"age 21\", \"span\": [535, 541]}},\n    {\"startTime\": { \"value\": \"age 29\", \"span\": [543, 549]}},\n    {\"startTime\": { \"value\": \"age 39\", \"span\": [551, 557]}},\n    {\"startTime\": { \"value\": \"age 51\", \"span\": [559, 565]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "fp_07871e2ad8",
+  "usage": {
+    "prompt_tokens": 4343,
+    "completion_tokens": 412,
+    "total_tokens": 4755,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

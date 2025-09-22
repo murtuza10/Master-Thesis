@@ -1,0 +1,31 @@
+### Text Analysis and Entity Extraction ###
+
+After analyzing the input text, I have extracted the relevant entities and filled the JSON structure according to the provided format.
+
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilDepth": {"value": "Bodentyp", "span": [143, 149]}},
+    {"soilBulkDensity": {"value": "Skelett", "span": [223, 229]}},
+    {"soilOrganicCarbon": {"value": "organischer Kohlenstoffgehalt", "span": [271, 293]}},
+    {"soilAvailableNitrogen": {"value": "Nährstoffansprache", "span": [162, 175]}}
+  ],
+  "Location": [
+    {"country": {"value": "Deutschland", "span": [13, 23]}},
+    {"region": {"value": "Bundesländer", "span": [135, 144]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2012", "span": [246, 250]}},
+    {"endTime": {"value": "2012", "span": [251, 255]}}
+  ]
+}
+```
+
+Note that I have only extracted entities that are explicitly mentioned in the text, without inferring any additional information. The extracted entities are:
+
+* Soil entities: Bodentyp, Skelett, organischer Kohlenstoffgehalt, Nährstoffansprache
+* Location entities: Deutschland, Bundesländer
+* Time statement entities: 2012 (start and end date)
+
+Each entity is represented as a dictionary with the key corresponding to the entity category and the value being another dictionary containing the entity value and its span (start and end character positions in the text).

@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757936262-BQ0q60h2KKqUlaVMYMnr",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757936262,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"oilseed rape\", \"span\": [503, 515]}},\n    {\"cropSpecies\": {\"value\": \"Brassica napus\", \"span\": [517, 531]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [363, 370]}},\n    {\"city\": {\"value\": \"Bochum\", \"span\": [373, 379]}},\n    {\"city\": {\"value\": \"Braunschweig\", \"span\": [381, 393]}},\n    {\"city\": {\"value\": \"Celle\", \"span\": [395, 400]}},\n    {\"city\": {\"value\": \"Hohenheim\", \"span\": [402, 411]}},\n    {\"city\": {\"value\": \"Veitshöchheim\", \"span\": [413, 427]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"spring 2022\", \"span\": [431, 442]}},\n    {\"endTime\": {\"value\": \"spring 2023\", \"span\": [446, 457]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 1867,
+    "completion_tokens": 266,
+    "total_tokens": 2133
+  }
+}

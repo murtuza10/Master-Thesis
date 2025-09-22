@@ -1,0 +1,26 @@
+{
+  "id": "gen-1758015979-6SK0JYQdcboTaPCtFmTA",
+  "provider": "Phala",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1758015979,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"Lehm\", \"span\": [327, 331] }},\n    {\"Soil\": { \"value\": \"Ton\", \"span\": [336, 339] }},\n    {\"Soil\": { \"value\": \"pH Wert\", \"span\": [520, 526] }},\n    {\"Soil\": { \"value\": \"organischen Kohlenstoff\", \"span\": [538, 558] }},\n    {\"Soil\": { \"value\": \"Gesamt-Stickstoff\", \"span\": [563, 578] }}\n  ],\n  \"Location\": [\n    {\"city\": { \"value\": \"Hildesheim\", \"span\": [228, 238] }}\n  ],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"14-tägigen Zeitraster\", \"span\": [248, 268] }},\n    {\"duration\": { \"value\": \"2 Jahren\", \"span\": [301, 308] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1228,
+    "completion_tokens": 228,
+    "total_tokens": 1456
+  }
+}

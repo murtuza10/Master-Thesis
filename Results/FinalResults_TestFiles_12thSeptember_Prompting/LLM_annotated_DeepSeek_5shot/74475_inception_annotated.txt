@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751465-AWqbEGijhiy1JyLBHzev",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751465,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"soil organic carbon\", \"span\": [70, 88] }},\n    {\"Soil\": { \"value\": \"SOC\", \"span\": [91, 94] }},\n    {\"Soil\": { \"value\": \"soil organic nitrogen\", \"span\": [99, 119] }},\n    {\"Soil\": { \"value\": \"SON\", \"span\": [122, 125] }},\n    {\"Soil\": { \"value\": \"SOC\", \"span\": [300, 303] }},\n    {\"Soil\": { \"value\": \"SOC\", \"span\": [480, 483] }},\n    {\"Soil\": { \"value\": \"SON\", \"span\": [540, 543] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 6241,
+    "completion_tokens": 188,
+    "total_tokens": 6429
+  }
+}

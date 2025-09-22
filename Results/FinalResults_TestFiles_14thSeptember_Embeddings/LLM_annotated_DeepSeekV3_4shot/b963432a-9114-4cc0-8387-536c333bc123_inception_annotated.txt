@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757935927-sZtUXwGC1CfXQAUWA2b1",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757935927,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [848, 854]}},\n    {\"cropSpecies\": {\"value\": \"serradella\", \"span\": [878, 888]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [941, 947]}}\n  ],\n  \"Soil\": [\n    {\"soilPH\": {\"value\": \"pH\", \"span\": [35, 37]}},\n    {\"soilPH\": {\"value\": \"pH\", \"span\": [127, 129]}},\n    {\"soilPH\": {\"value\": \"pH\", \"span\": [160, 162]}},\n    {\"soilPH\": {\"value\": \"pH\", \"span\": [1233, 1235]}},\n    {\"soilPH\": {\"value\": \"pH\", \"span\": [1431, 1433]}},\n    {\"soilPH\": {\"value\": \"pH-Wert\", \"span\": [1685, 1692]}}\n  ],\n  \"Location\": [\n    {\"city\": {\"value\": \"Rostock\", \"span\": [20, 27]}},\n    {\"city\": {\"value\": \"Rostock\", \"span\": [112, 119]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [273, 280]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2020\", \"span\": [77, 81]}},\n    {\"startTime\": {\"value\": \"2020\", \"span\": [169, 173]}},\n    {\"startTime\": {\"value\": \"2018\", \"span\": [806, 810]}},\n    {\"startTime\": {\"value\": \"2019\", \"span\": [864, 868]}},\n    {\"startTime\": {\"value\": \"2020\", \"span\": [895, 899]}},\n    {\"startTime\": {\"value\": \"2020\", \"span\": [1506, 1510]}},\n    {\"duration\": {\"value\": \"3.5 months\", \"span\": [1485, 1495]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 2114,
+    "completion_tokens": 464,
+    "total_tokens": 2578
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757935903-sMIdz8mOBk3bJYiuKExd",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757935903,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [44, 50]}},\n    {\"cropSpecies\": {\"value\": \"oat\", \"span\": [1066, 1069]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [1275, 1281]}},\n    {\"cropSpecies\": {\"value\": \"oilseed rape\", \"span\": [1383, 1395]}},\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [1406, 1411]}},\n    {\"cropSpecies\": {\"value\": \"lupine\", \"span\": [1416, 1422]}},\n    {\"cropSpecies\": {\"value\": \"rye\", \"span\": [1432, 1435]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [1680, 1686]}},\n    {\"cropVariety\": {\"value\": \"OTTO\", \"span\": [1713, 1717]}}\n  ],\n  \"Soil\": [\n    {\"soilDepth\": {\"value\": \"25 cm\", \"span\": [1061, 1065]}},\n    {\"soilDepth\": {\"value\": \"0-30 cm\", \"span\": [1327, 1334]}},\n    {\"soilDepth\": {\"value\": \"25 cm\", \"span\": [1497, 1501]}}\n  ],\n  \"Location\": [\n    {\"city\": {\"value\": \"Braunschweig\", \"span\": [25, 37]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"1985\", \"span\": [897, 901]}},\n    {\"endTime\": {\"value\": \"2008\", \"span\": [902, 906]}},\n    {\"startTime\": {\"value\": \"2013\", \"span\": [1040, 1044]}},\n    {\"endTime\": {\"value\": \"2013\", \"span\": [1086, 1090]}},\n    {\"startTime\": {\"value\": \"2014\", \"span\": [1691, 1695]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 2331,
+    "completion_tokens": 475,
+    "total_tokens": 2806
+  }
+}

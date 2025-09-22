@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757936031-2MYp0gVjPRPXqIfjEcpj",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757936031,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [244, 250] }},\n    {\"cropVariety\": { \"value\": \"spring barley\", \"span\": [238, 252] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [258, 264] }},\n    {\"cropVariety\": { \"value\": \"winter barley\", \"span\": [253, 267] }},\n    {\"cropSpecies\": { \"value\": \"maize\", \"span\": [275, 280] }},\n    {\"cropVariety\": { \"value\": \"grain maize\", \"span\": [268, 280] }},\n    {\"cropSpecies\": { \"value\": \"maize\", \"span\": [291, 296] }},\n    {\"cropVariety\": { \"value\": \"silage maize\", \"span\": [281, 293] }},\n    {\"cropSpecies\": { \"value\": \"oats\", \"span\": [298, 302] }},\n    {\"cropSpecies\": { \"value\": \"potatoes\", \"span\": [304, 312] }},\n    {\"cropSpecies\": { \"value\": \"rape\", \"span\": [320, 324] }},\n    {\"cropVariety\": { \"value\": \"winter rape\", \"span\": [313, 325] }},\n    {\"cropSpecies\": { \"value\": \"rye\", \"span\": [327, 330] }},\n    {\"cropSpecies\": { \"value\": \"sugarbeet\", \"span\": [332, 341] }},\n    {\"cropSpecies\": { \"value\": \"triticale\", \"span\": [346, 355] }},\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [361, 366] }},\n    {\"cropVariety\": { \"value\": \"winter wheat\", \"span\": [356, 368] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [34, 41] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [71, 78] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [80, 87] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1979\", \"span\": [47, 51] }},\n    {\"endTime\": { \"value\": \"2021\", \"span\": [55, 59] }},\n    {\"startTime\": { \"value\": \"1979\", \"span\": [84, 88] }},\n    {\"endTime\": { \"value\": \"2021\", \"span\": [92, 96] }},\n    {\"endTime\": { \"value\": \"2020\", \"span\": [521, 525] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 1459,
+    "completion_tokens": 656,
+    "total_tokens": 2115
+  }
+}

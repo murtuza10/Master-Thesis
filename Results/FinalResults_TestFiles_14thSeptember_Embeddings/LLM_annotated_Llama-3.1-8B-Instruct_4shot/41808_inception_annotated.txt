@@ -1,0 +1,21 @@
+### Filled JSON Structure ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Apium graveolens L. ssp. graveolens", "span": [38, 61]}},
+    {"cropSpecies": {"value": "Apium graveolens", "span": [114, 127]}},
+    {"cropSpecies": {"value": "wild celery", "span": [183, 191]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [230, 235]}},
+    {"city": {"value": "Quedlinburg", "span": [238, 248]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2016", "span": [172, 176]}},
+    {"endTime": {"value": "2018", "span": [184, 188]}},
+    {"duration": {"value": "2017-2018", "span": [193, 203]}}
+  ]
+}
+```

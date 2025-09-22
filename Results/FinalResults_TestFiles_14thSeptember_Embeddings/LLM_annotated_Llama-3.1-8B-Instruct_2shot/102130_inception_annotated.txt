@@ -1,0 +1,139 @@
+### Code ###
+
+```python
+import json
+import re
+
+def extract_entities(text):
+    # Regular expression patterns
+    patterns = {
+        "Crops": {
+            "cropSpecies": r"(C4|C3)",
+            "cropVariety": []
+        },
+        "Soil": {
+            "soilTexture": [],
+            "soilReferenceGroup": [],
+            "soilDepth": [],
+            "soilBulkDensity": [],
+            "soilPH": [],
+            "soilOrganicCarbon": ["POC", "MAOC"]
+        },
+        "Location": {
+            "country": [],
+            "region": [],
+            "city": [],
+            "latitude": [],
+            "longitude": []
+        },
+        "Time Statement": {
+            "startTime": [r"\b6\b", r"\b12\b", r"\b24\b"],
+            "endTime": [],
+            "duration": []
+        }
+    }
+
+    # Extract entities
+    entities = {}
+    for category, patterns in patterns.items():
+        entities[category] = []
+        for key, pattern_list in patterns.items():
+            if isinstance(pattern_list, list):
+                for pattern in pattern_list:
+                    matches = re.finditer(pattern, text, re.IGNORECASE)
+                    for match in matches:
+                        entities[category].append({
+                            key: {
+                                "value": match.group(),
+                                "span": [match.start(), match.end()]
+                            }
+                        })
+            else:
+                matches = re.finditer(pattern, text, re.IGNORECASE)
+                for match in matches:
+                    entities[category].append({
+                        key: {
+                            "value": match.group(),
+                            "span": [match.start(), match.end()]
+                        }
+                    })
+
+    return entities
+
+# Input text
+text = """
+Title: 
+Root litter quality incubation experiment
+
+Abstract:
+The dataset contains data of a 2-year incubation experiment of C4 roots litter added to a C3 soil. The soil was sampled after 6, 12 and 24 months and fractionated into particulate organic carbon (POC) and mineral associated organic carbon (MAOC) and each fraction (plus the bulk soil) was measured for total carbon content as well as the abundance of the stable isotope 13C, to distinguish between old (native) and new (added) carbon. There are two files: One contains the raw data with measured C contents, delta 13C values, fraction weights and the subsequently calculated amounts of new and old carbon in all fractions. The second file is related to the first, but contains the final dataset which was used to produce the graphs and tables in the paper.
+"""
+
+# Extract entities
+entities = extract_entities(text)
+
+# Print entities as JSON
+print(json.dumps(entities, indent=4))
+```
+
+### Output ###
+
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "C4",
+                "span": [88, 91]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "C3",
+                "span": [133, 136]
+            }
+        }
+    ],
+    "Soil": [
+        {
+            "soilOrganicCarbon": {
+                "value": "POC",
+                "span": [181, 186]
+            }
+        },
+        {
+            "soilOrganicCarbon": {
+                "value": "MAOC",
+                "span": [205, 212]
+            }
+        }
+    ],
+    "Location": [],
+    "Time Statement": [
+        {
+            "startTime": {
+                "value": "6",
+                "span": [146, 148]
+            }
+        },
+        {
+            "startTime": {
+                "value": "12",
+                "span": [159, 162]
+            }
+        },
+        {
+            "startTime": {
+                "value": "24",
+                "span": [175, 178]
+            }
+        },
+        {
+            "duration": {
+                "value": "2-year",
+                "span": [38, 45]
+            }
+        }
+    ]
+}
+```

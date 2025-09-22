@@ -1,0 +1,32 @@
+### Entity Extraction Results ###
+
+```json
+{
+  "Crops": [],
+  "Soil": [
+    {"soilTexture": {"value": "Lehm und Ton", "span": [155, 166]}},
+    {"soilReferenceGroup": {"value": "Ton", "span": [155, 158]}},
+    {"soilReferenceGroup": {"value": "Lehm", "span": [159, 163]}},
+    {"soilDepth": {"value": "Boden", "span": [143, 146]}},
+    {"soilBulkDensity": {"value": "Boden", "span": [143, 146]}},
+    {"soilPH": {"value": "pH Wert", "span": [173, 178]}},
+    {"soilOrganicCarbon": {"value": "organischen Kohlenstoff", "span": [179, 193]}},
+    {"soilAvailableNitrogen": {"value": "Gesamt-Stickstoff", "span": [194, 206]}}
+  ],
+  "Location": [
+    {"region": {"value": "Nähe von Hildesheim", "span": [124, 140]}},
+    {"city": {"value": "Hildesheim", "span": [124, 134]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "14-tägigen Zeitraster", "span": [93, 109]}},
+    {"endTime": {"value": "2 Jahre", "span": [116, 120]}}
+  ]
+}
+```
+
+### Explanation ###
+
+- **Crops**: No crops are explicitly mentioned in the text.
+- **Soil**: Several soil-related entities are extracted, including soil texture, reference groups, depth, bulk density, pH, organic carbon, and available nitrogen.
+- **Location**: The region near Hildesheim and the city of Hildesheim are identified as location entities.
+- **Time Statement**: The 14-day time frame and a 2-year duration are extracted as time statement entities.

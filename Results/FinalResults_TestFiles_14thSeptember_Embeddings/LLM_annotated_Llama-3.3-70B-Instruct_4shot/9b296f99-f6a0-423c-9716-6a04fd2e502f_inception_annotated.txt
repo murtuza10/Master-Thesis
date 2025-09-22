@@ -1,0 +1,39 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [236, 241]}},
+    {"cropSpecies": {"value": "barley", "span": [243, 249]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [252, 262]}},
+    {"cropSpecies": {"value": "barley", "span": [454, 460]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [463, 473]}},
+    {"cropSpecies": {"value": "barley", "span": [573, 579]}},
+    {"cropSpecies": {"value": "beet", "span": [582, 586]}}
+  ],
+  "Soil": [
+    {"soilOrganicCarbon": {"value": "humus", "span": [192, 197]}},
+    {"soilOrganicCarbon": {"value": "humus", "span": [216, 221]}},
+    {"soilFertility": {"value": "soil fertility", "span": [345, 358]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [34, 41]}},
+    {"city": {"value": "Speyer", "span": [42, 48]}},
+    {"country": {"value": "Germany", "span": [157, 164]}},
+    {"city": {"value": "Speyer", "span": [165, 171]}},
+    {"country": {"value": "Germany", "span": [310, 317]}},
+    {"city": {"value": "Karlsruhe", "span": [375, 384]}},
+    {"country": {"value": "Germany", "span": [432, 439]}},
+    {"city": {"value": "Speyer", "span": [440, 446]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1984", "span": [268, 272]}},
+    {"duration": {"value": "long-term", "span": [283, 291]}},
+    {"duration": {"value": "long-term", "span": [621, 629]}},
+    {"duration": {"value": "long term", "span": [704, 712]}},
+    {"duration": {"value": "Long-term", "span": [819, 827]}},
+    {"startTime": {"value": "2009", "span": [351, 354]}},
+    {"duration": {"value": "four sampling seasons", "span": [449, 469]}},
+    {"startTime": {"value": "16. September 2009", "span": [362, 381]}},
+    {"duration": {"value": "three years", "span": [208, 219]}}
+  ]
+}
+```

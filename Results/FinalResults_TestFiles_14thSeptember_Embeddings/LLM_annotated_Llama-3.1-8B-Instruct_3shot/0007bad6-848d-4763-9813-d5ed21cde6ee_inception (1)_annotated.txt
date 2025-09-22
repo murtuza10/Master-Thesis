@@ -1,0 +1,20 @@
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [266, 271]}}
+  ],
+  "Soil": [
+    {"soilTexture": {"value": "Boden", "span": [313, 318]}},
+    {"soilReferenceGroup": {"value": "Boden", "span": [313, 318]}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+### Explanation ###
+From the input text, we can extract the following entities:
+- **Crops**: The text mentions "Winter wheat" which is a type of crop. We extracted the species name as "wheat".
+- **Soil**: The text mentions "Boden" which is a German word for soil. We extracted it as a soil reference group.
+- **Location**: There are no explicit mentions of location in the text.
+- **Time Statement**: There are no explicit mentions of time or duration in the text.

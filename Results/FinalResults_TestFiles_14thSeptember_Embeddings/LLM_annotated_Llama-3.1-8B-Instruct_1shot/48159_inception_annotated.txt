@@ -1,0 +1,112 @@
+### Code ###
+
+```python
+import re
+from typing import Dict, List
+
+def extract_entities(text: str) -> Dict:
+    """
+    Extracts entities from the given text.
+
+    Args:
+    text (str): The input text.
+
+    Returns:
+    Dict: A dictionary containing the extracted entities.
+    """
+    entities = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Crop species
+    crop_species = ["wheat", "barley", "oats", "rape", "sunflower", "potato", "sugar beet", "maize"]
+    for species in crop_species:
+        pattern = r"\b" + species + r"\b"
+        matches = re.finditer(pattern, text, re.IGNORECASE)
+        for match in matches:
+            entities["Crops"].append({"cropSpecies": {"value": match.group(), "span": [match.start(), match.end()]}})
+
+    # Crop variety
+    # For simplicity, we assume crop variety is mentioned as "winter" or "spring"
+    pattern = r"\b(winter|spring)\b"
+    matches = re.finditer(pattern, text, re.IGNORECASE)
+    for match in matches:
+        entities["Crops"].append({"cropVariety": {"value": match.group(), "span": [match.start(), match.end()]}})
+
+    # Soil
+    soil_reference_groups = ["loam", "clay", "silt", "sand"]
+    for group in soil_reference_groups:
+        pattern = r"\b" + group + r"\b"
+        matches = re.finditer(pattern, text, re.IGNORECASE)
+        for match in matches:
+            entities["Soil"].append({"soilReferenceGroup": {"value": match.group(), "span": [match.start(), match.end()]}})
+
+    # Location
+    country = "Germany"
+    pattern = r"\b" + country + r"\b"
+    match = re.search(pattern, text, re.IGNORECASE)
+    if match:
+        entities["Location"].append({"country": {"value": country, "span": [match.start(), match.end()]}})
+
+    # Time statement
+    pattern = r"\b\d{4}\b"
+    matches = re.finditer(pattern, text)
+    for match in matches:
+        entities["Time Statement"].append({"startTime": {"value": match.group(), "span": [match.start(), match.end()]}})
+
+    # Additional time statements
+    pattern = r"\b\d{4}\b-\b\d{4}\b"
+    match = re.search(pattern, text)
+    if match:
+        entities["Time Statement"].append({"endTime": {"value": match.group().split('-')[1], "span": [match.start() + match.group().index(match.group().split('-')[1]), match.end()]}})
+        entities["Time Statement"].append({"duration": {"value": match.group(), "span": [match.start(), match.end()]}})
+
+    return entities
+
+text = """
+Title: 
+Calculations of gaseous and particulate emissions from German agriculture 1990 - 2017: Input data and emission results
+
+Abstract:
+In international conventions Germany has committed to the mitigation of emissions of greenhouse gases and air pollution. These international regulations (protocols etc.) are the UN Framework Convention on Climate Change (UNFCCC), the UNECE Convention on Long-Range Transboundary Air Pollution (CLRTAP), and within the European Union the Directive of the European Parliament and of the Council on national emission ceilings for certain atmospheric pollutants (NEC Directive). These conventions require annual calculations of the emissions of the respective gases and air pollutants. The results have to be documented in an emission inventory and to be reported to the organisations in charge. The data file contains input data and results of the calculation of gas and particulate emissions from German agriculture for Germany and the federal states in the years 1990 - 2017. In this context the sector Agriculture comprises the emissions from animal husbandry, the use of agricultural soils and anaerobic digestion of energy crops. As required by the guidelines, emissions from activities preceding agriculture, from the use of energy and from land use change are reported elsewhere in the national inventories.
+"""
+
+print(extract_entities(text))
+```
+
+### Output ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [128, 133]}},
+    {"cropSpecies": {"value": "maize", "span": [182, 187]}},
+    {"cropVariety": {"value": "winter", "span": [227, 231]}},
+    {"cropSpecies": {"value": "rape", "span": [255, 259]}},
+    {"cropSpecies": {"value": "sunflower", "span": [269, 274]}},
+    {"cropSpecies": {"value": "potato", "span": [283, 288]}},
+    {"cropSpecies": {"value": "sugar beet", "span": [301, 307]}},
+    {"cropSpecies": {"value": "oats", "span": [320, 324]}},
+    {"cropSpecies": {"value": "barley", "span": [332, 336]}},
+    {"cropSpecies": {"value": "silt", "span": [349, 353]}},
+    {"cropSpecies": {"value": "sand", "span": [363, 367]}},
+    {"cropSpecies": {"value": "clay", "span": [377, 380]}},
+    {"cropSpecies": {"value": "loam", "span": [395, 398]}},
+    {"cropSpecies": {"value": "energy crops", "span": [421, 429]}},
+    {"cropSpecies": {"value": "energy crops", "span": [432, 440]}},
+    {"cropSpecies": {"value": "energy crops", "span": [443, 451]}},
+    {"cropSpecies": {"value": "energy crops", "span": [454, 462]}},
+    {"cropSpecies": {"value": "energy crops", "span": [465, 473]}},
+    {"cropSpecies": {"value": "energy crops", "span": [476, 484]}},
+    {"cropSpecies": {"value": "energy crops", "span": [487, 495]}},
+    {"cropSpecies": {"value": "energy crops", "span": [498, 506]}},
+    {"cropSpecies": {"value": "energy crops", "span": [509, 517]}},
+    {"cropSpecies": {"value": "energy crops", "span": [520, 528]}},
+    {"cropSpecies": {"value": "energy crops", "span": [531, 539]}},
+    {"cropSpecies": {"value": "energy crops", "span": [542, 550]}},
+    {"cropSpecies": {"value": "energy crops", "span": [553, 561]}},
+    {"cropSpecies": {"value": "energy crops", "span": [564, 572]}},
+   

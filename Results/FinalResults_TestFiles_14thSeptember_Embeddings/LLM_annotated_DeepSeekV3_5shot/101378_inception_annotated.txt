@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757936096-LBBdD4uy9pJpTacoNqhx",
+  "provider": "DeepInfra",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757936096,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"Betula pubescens Ehrh.\", \"span\": [219, 241]}},\n    {\"cropSpecies\": {\"value\": \"Betula pubescens Ehrh.\", \"span\": [441, 463]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"one year\", \"span\": [783, 791]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2279,
+    "completion_tokens": 110,
+    "total_tokens": 2389,
+    "prompt_tokens_details": null
+  }
+}

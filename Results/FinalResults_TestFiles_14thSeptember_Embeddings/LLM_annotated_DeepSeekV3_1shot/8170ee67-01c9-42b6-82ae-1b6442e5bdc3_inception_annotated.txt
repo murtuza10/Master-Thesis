@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757935891-oHbb72Z6qvo12B2zHpPH",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757935891,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [43, 49]}},\n    {\"cropSpecies\": {\"value\": \"oat\", \"span\": [1025, 1028]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [1246, 1252]}},\n    {\"cropSpecies\": {\"value\": \"rape\", \"span\": [1254, 1258]}},\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [1266, 1271]}},\n    {\"cropSpecies\": {\"value\": \"lupine\", \"span\": [1273, 1279]}},\n    {\"cropSpecies\": {\"value\": \"rye\", \"span\": [1285, 1288]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [1559, 1565]}},\n    {\"cropVariety\": {\"value\": \"OTTO\", \"span\": [1593, 1597]}}\n  ],\n  \"Soil\": [\n    {\"soilDepth\": {\"value\": \"25 cm\", \"span\": [1021, 1025]}},\n    {\"soilDepth\": {\"value\": \"25 cm\", \"span\": [1337, 1341]}},\n    {\"soilAvailableNitrogen\": {\"value\": \"available soil P\", \"span\": [916, 931]}},\n    {\"soilAvailableNitrogen\": {\"value\": \"soil P\", \"span\": [1014, 1020]}},\n    {\"soilAvailableNitrogen\": {\"value\": \"PCAL\", \"span\": [1135, 1139]}},\n    {\"soilAvailableNitrogen\": {\"value\": \"PCAL\", \"span\": [1151, 1155]}},\n    {\"soilAvailableNitrogen\": {\"value\": \"PCAL\", \"span\": [1169, 1173]}}\n  ],\n  \"Location\": [\n    {\"city\": {\"value\": \"Braunschweig\", \"span\": [25, 37]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"1985\", \"span\": [852, 856]}},\n    {\"endTime\": {\"value\": \"2008\", \"span\": [857, 861]}},\n    {\"startTime\": {\"value\": \"2013\", \"span\": [993, 997]}},\n    {\"endTime\": {\"value\": \"2013\", \"span\": [1033, 1037]}},\n    {\"startTime\": {\"value\": \"2014\", \"span\": [1566, 1570]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 1996,
+    "completion_tokens": 574,
+    "total_tokens": 2570
+  }
+}

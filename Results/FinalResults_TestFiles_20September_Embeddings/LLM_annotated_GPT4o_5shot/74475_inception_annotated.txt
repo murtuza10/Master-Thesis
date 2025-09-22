@@ -1,0 +1,34 @@
+{
+  "id": "gen-1758382459-RBYzVrWRdvuR8M5ttaXf",
+  "provider": "OpenAI",
+  "model": "openai/gpt-4o",
+  "object": "chat.completion",
+  "created": 1758382459,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"Soil ORganic Carbon\", \"span\": [12, 31] }},\n    {\"Soil\": { \"value\": \"soil organic carbon\", \"span\": [94, 113] }},\n    {\"Soil\": { \"value\": \"SOC\", \"span\": [116, 119] }},\n    {\"Soil\": { \"value\": \"soil organic nitrogen\", \"span\": [126, 147] }},\n    {\"Soil\": { \"value\": \"SON\", \"span\": [150, 153] }},\n    {\"Soil\": { \"value\": \"SOC\", \"span\": [210, 213] }},\n    {\"Soil\": { \"value\": \"SOC\", \"span\": [261, 264] }},\n    {\"Soil\": { \"value\": \"SON\", \"span\": [319, 322] }},\n    {\"Soil\": { \"value\": \"SOC\", \"span\": [477, 480] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "fp_f33640a400",
+  "usage": {
+    "prompt_tokens": 3687,
+    "completion_tokens": 238,
+    "total_tokens": 3925,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

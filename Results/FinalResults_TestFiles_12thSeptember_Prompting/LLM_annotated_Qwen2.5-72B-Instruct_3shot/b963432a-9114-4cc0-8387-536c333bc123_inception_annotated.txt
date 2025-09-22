@@ -1,0 +1,51 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "spring barley", "span": [715, 727] }},
+    {"cropSpecies": { "value": "serradella", "span": [744, 754] }},
+    {"cropSpecies": { "value": "spring barley", "span": [775, 787] }}
+  ],
+  "Soil": [
+    {"Soil": { "value": "redox potential", "span": [119, 133] }},
+    {"Soil": { "value": "pH", "span": [137, 139] }},
+    {"Soil": { "value": "element concentrations", "span": [144, 162] }},
+    {"Soil": { "value": "pore water", "span": [166, 175] }},
+    {"Soil": { "value": "sampling depths", "span": [219, 233] }},
+    {"Soil": { "value": "soil profiles", "span": [237, 249] }},
+    {"Soil": { "value": "hill slope", "span": [258, 267] }},
+    {"Soil": { "value": "redox potential (Eh)", "span": [293, 311] }},
+    {"Soil": { "value": "pH", "span": [313, 315] }},
+    {"Soil": { "value": "element concentrations", "span": [317, 335] }},
+    {"Soil": { "value": "filtered (0.45 µm)", "span": [367, 382] }},
+    {"Soil": { "value": "pore water", "span": [384, 393] }},
+    {"Soil": { "value": "redoximorphic features", "span": [468, 487] }},
+    {"Soil": { "value": "redox potential (Eh)", "span": [625, 643] }},
+    {"Soil": { "value": "pH", "span": [645, 647] }},
+    {"Soil": { "value": "element concentrations", "span": [649, 667] }},
+    {"Soil": { "value": "total C", "span": [671, 677] }},
+    {"Soil": { "value": "N", "span": [679, 680] }},
+    {"Soil": { "value": "P", "span": [682, 683] }},
+    {"Soil": { "value": "Al", "span": [685, 687] }},
+    {"Soil": { "value": "Fe", "span": [689, 691] }},
+    {"Soil": { "value": "Mn", "span": [693, 695] }},
+    {"Soil": { "value": "Ca", "span": [697, 699] }},
+    {"Soil": { "value": "inorganic and organic C (DIC, DOC)", "span": [701, 731] }},
+    {"Soil": { "value": "PO43--P", "span": [733, 741] }},
+    {"Soil": { "value": "NH4+-N", "span": [743, 751] }},
+    {"Soil": { "value": "NO2-- and NO3--N", "span": [753, 769] }},
+    {"Soil": { "value": "solutions (0.45 µm)", "span": [771, 786] }}
+  ],
+  "Location": [
+    {"city": { "value": "Rostock", "span": [20, 27] }},
+    {"city": { "value": "Rostock", "span": [102, 109] }},
+    {"region": { "value": "Northern Germany", "span": [213, 227] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "2020", "span": [179, 183] }},
+    {"startTime": { "value": "2018", "span": [451, 455] }},
+    {"startTime": { "value": "2019", "span": [487, 491] }},
+    {"startTime": { "value": "2020", "span": [511, 515] }},
+    {"duration": { "value": "3.5 months", "span": [824, 835] }}
+  ]
+}
+```

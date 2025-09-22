@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757936159-dn0dDw6zpfsbMuf5xPxA",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757936159,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [436, 441]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [453, 459]}},\n    {\"cropSpecies\": {\"value\": \"sugar beet\", \"span\": [466, 476]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [1193, 1199]}},\n    {\"cropSpecies\": {\"value\": \"sugar beet\", \"span\": [1206, 1216]}}\n  ],\n  \"Soil\": [\n    {\"soilOrganicCarbon\": {\"value\": \"humus\", \"span\": [162, 168]}},\n    {\"soilOrganicCarbon\": {\"value\": \"humus\", \"span\": [185, 191]}},\n    {\"soilOrganicCarbon\": {\"value\": \"soil fertility\", \"span\": [220, 234]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [40, 47]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [53, 59]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [296, 303]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [309, 315]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [1095, 1102]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [1108, 1114]}},\n    {\"city\": {\"value\": \"Karlsruhe\", \"span\": [723, 732]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"1984\", \"span\": [335, 339]}},\n    {\"duration\": {\"value\": \"long term\", \"span\": [1559, 1568]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 3093,
+    "completion_tokens": 421,
+    "total_tokens": 3514
+  }
+}

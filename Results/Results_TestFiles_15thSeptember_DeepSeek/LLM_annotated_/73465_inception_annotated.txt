@@ -1,0 +1,32 @@
+{
+  "id": "gen-1758012368-WltR7SygizeTNRwca1Ax",
+  "provider": "AtlasCloud",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1758012369,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [24, 46] }},\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [199, 221] }},\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [334, 356] }},\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [472, 494] }},\n    {\"cropSpecies\": { \"value\": \"celery\", \"span\": [528, 534] }},\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [580, 602] }},\n    {\"cropSpecies\": { \"value\": \"celery\", \"span\": [1001, 1007] }},\n    {\"cropSpecies\": { \"value\": \"celery\", \"span\": [1169, 1175] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [98, 105] }},\n    {\"city\": { \"value\": \"Gatersleben\", \"span\": [87, 98] }},\n    {\"city\": { \"value\": \"London\", \"span\": [174, 180] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [580, 587] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [752, 759] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [1085, 1092] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2015\", \"span\": [643, 647] }},\n    {\"endTime\": { \"value\": \"2016\", \"span\": [651, 655] }},\n    {\"startTime\": { \"value\": \"2018\", \"span\": [783, 787] }},\n    {\"endTime\": { \"value\": \"2019\", \"span\": [788, 792] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1308,
+    "completion_tokens": 492,
+    "total_tokens": 1800,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

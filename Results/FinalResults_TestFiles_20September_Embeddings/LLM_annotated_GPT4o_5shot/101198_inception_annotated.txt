@@ -1,0 +1,34 @@
+{
+  "id": "gen-1758382400-oGNvnh80O7T5MoOBV1Yi",
+  "provider": "OpenAI",
+  "model": "openai/gpt-4o",
+  "object": "chat.completion",
+  "created": 1758382400,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [1278, 1285]}}\n  ],\n  \"Time Statement\": [\n    {\"endTime\": {\"value\": \"2050\", \"span\": [383, 387]}},\n    {\"startTime\": {\"value\": \"2020\", \"span\": [1071, 1075]}},\n    {\"endTime\": {\"value\": \"2050\", \"span\": [1080, 1084]}},\n    {\"startTime\": {\"value\": \"2023\", \"span\": [1722, 1726]}},\n    {\"endTime\": {\"value\": \"2023\", \"span\": [1722, 1726]}},\n    {\"endTime\": {\"value\": \"2024\", \"span\": [1946, 1950]}},\n    {\"startTime\": {\"value\": \"2023\", \"span\": [2217, 2221]}},\n    {\"endTime\": {\"value\": \"2024\", \"span\": [2463, 2467]}},\n    {\"startTime\": {\"value\": \"2023\", \"span\": [2463, 2467]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "fp_07871e2ad8",
+  "usage": {
+    "prompt_tokens": 5504,
+    "completion_tokens": 269,
+    "total_tokens": 5773,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

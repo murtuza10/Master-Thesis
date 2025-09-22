@@ -1,0 +1,30 @@
+### Filled JSON Structure ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [124, 130]}},
+    {"cropSpecies": {"value": "barley", "span": [140, 146]}},
+    {"cropSpecies": {"value": "maize", "span": [155, 160]}},
+    {"cropSpecies": {"value": "maize", "span": [171, 176]}},
+    {"cropSpecies": {"value": "oats", "span": [179, 183]}},
+    {"cropSpecies": {"value": "potatoes", "span": [187, 195]}},
+    {"cropSpecies": {"value": "rape", "span": [205, 209]}},
+    {"cropSpecies": {"value": "rye", "span": [212, 215]}},
+    {"cropSpecies": {"value": "sugarbeet", "span": [219, 228]}},
+    {"cropSpecies": {"value": "triticale", "span": [231, 240]}},
+    {"cropSpecies": {"value": "wheat", "span": [251, 256]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [67, 74]}},
+    {"region": {"value": "Germany", "span": [67, 74]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1979", "span": [105, 109]}},
+    {"endTime": {"value": "2021", "span": [117, 121]}}
+  ]
+}
+```
+
+Note that I've extracted the entities according to the provided rules. The `"region"` entity is also included because `"Germany"` can be considered a region as well.

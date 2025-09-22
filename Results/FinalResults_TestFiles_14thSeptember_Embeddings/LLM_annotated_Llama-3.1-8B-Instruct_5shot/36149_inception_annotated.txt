@@ -1,0 +1,30 @@
+### Output JSON ###
+
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "energy crop", "span": [136, 145]}},
+    {"cropSpecies": {"value": "crop", "span": [246, 251]}},
+    {"cropSpecies": {"value": "crop", "span": [276, 281]}}
+  ],
+  "Soil": [
+    {"soilTexture": {"value": "soil", "span": [123, 128]}},
+    {"soilReferenceGroup": {"value": "soil characteristics", "span": [172, 192]}},
+    {"soilDepth": {"value": "bulk density", "span": [182, 191]}},
+    {"soilBulkDensity": {"value": "bulk density", "span": [182, 191]}},
+    {"soilPH": {"value": "nitrogen content", "span": [165, 176]}},
+    {"soilOrganicCarbon": {"value": "nitrogen content", "span": [165, 176]}},
+    {"soilAvailableNitrogen": {"value": "ammonium-N", "span": [172, 183]}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [128, 134]}},
+    {"country": {"value": "Germany", "span": [244, 251]}},
+    {"region": {"value": "Germany", "span": [244, 251]}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2011/2012", "span": [146, 155]}},
+    {"endTime": {"value": "2014/2015", "span": [157, 166]}},
+    {"duration": {"value": "three years", "span": [158, 169]}}
+  ]
+}
+```

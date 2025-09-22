@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><xmi:XMI xmlns:pos="http:///de/tudarmstadt/ukp/dkpro/core/api/lexmorph/type/pos.ecore" xmlns:tcas="http:///uima/tcas.ecore" xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:tweet="http:///de/tudarmstadt/ukp/dkpro/core/api/lexmorph/type/pos/tweet.ecore" xmlns:morph="http:///de/tudarmstadt/ukp/dkpro/core/api/lexmorph/type/morph.ecore" xmlns:type="http:///de/tudarmstadt/ukp/clarin/webanno/api/type.ecore" xmlns:dependency="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type/dependency.ecore" xmlns:type6="http:///de/tudarmstadt/ukp/dkpro/core/api/semantics/type.ecore" xmlns:type9="http:///de/tudarmstadt/ukp/dkpro/core/api/transform/type.ecore" xmlns:type8="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type.ecore" xmlns:type3="http:///de/tudarmstadt/ukp/dkpro/core/api/metadata/type.ecore" xmlns:type11="http:///org/dkpro/core/api/xml/type.ecore" xmlns:type4="http:///de/tudarmstadt/ukp/dkpro/core/api/ner/type.ecore" xmlns:type10="http:///org/dkpro/core/api/pdf/type.ecore" xmlns:type5="http:///de/tudarmstadt/ukp/dkpro/core/api/segmentation/type.ecore" xmlns:type2="http:///de/tudarmstadt/ukp/dkpro/core/api/coref/type.ecore" xmlns:type7="http:///de/tudarmstadt/ukp/dkpro/core/api/structure/type.ecore" xmlns:constituent="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type/constituent.ecore" xmlns:chunk="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type/chunk.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+    <cas:NULL xmi:id="0"/>
+    <type5:Sentence xmi:id="8" sofa="1" begin="0" end="78"/>
+    <type5:Token xmi:id="13" sofa="1" begin="0" end="5" order="0"/>
+    <type5:Token xmi:id="26" sofa="1" begin="5" end="6" order="0"/>
+    <type5:Token xmi:id="39" sofa="1" begin="7" end="8" order="0"/>
+    <type5:Token xmi:id="52" sofa="1" begin="8" end="13" order="0"/>
+    <type5:Token xmi:id="65" sofa="1" begin="14" end="19" order="0"/>
+    <type5:Token xmi:id="78" sofa="1" begin="20" end="33" order="0"/>
+    <type5:Token xmi:id="91" sofa="1" begin="34" end="35" order="0"/>
+    <type5:Token xmi:id="104" sofa="1" begin="36" end="43" order="0"/>
+    <type5:Token xmi:id="117" sofa="1" begin="43" end="44" order="0"/>
+    <type5:Token xmi:id="130" sofa="1" begin="45" end="55" order="0"/>
+    <type5:Token xmi:id="143" sofa="1" begin="55" end="57" order="0"/>
+    <type5:Token xmi:id="156" sofa="1" begin="57" end="65" order="0"/>
+    <type5:Token xmi:id="169" sofa="1" begin="65" end="66" order="0"/>
+    <type5:Token xmi:id="182" sofa="1" begin="66" end="67" order="0"/>
+    <type5:Token xmi:id="195" sofa="1" begin="67" end="70" order="0"/>
+    <type5:Token xmi:id="208" sofa="1" begin="71" end="76" order="0"/>
+    <type5:Token xmi:id="221" sofa="1" begin="76" end="78" order="0"/>
+    <type3:DocumentMetaData xmi:id="234" sofa="1" begin="0" end="78" language="x-unspecified" documentTitle="79177_inception.xmi" documentId="GolzL" documentUri="admin-5/GolzL" collectionId="admin-5/GolzL" documentBaseUri="admin-5" isLastSegment="false"/>
+    <type:LayerDefinition xmi:id="267" name="webanno.custom.Soil" uiName="Soil"/>
+    <type:LayerDefinition xmi:id="245" name="webanno.custom.Crops" uiName="Crops"/>
+    <type:LayerDefinition xmi:id="256" name="webanno.custom.Location" uiName="Location"/>
+    <type:LayerDefinition xmi:id="278" name="webanno.custom.Timestatement" uiName="Timestatement"/>
+    <type:FeatureDefinition xmi:id="263" layer="256" name="identifier" uiName="identifier"/>
+    <type:FeatureDefinition xmi:id="248" layer="245" name="crops" uiName="crops"/>
+    <type:FeatureDefinition xmi:id="252" layer="245" name="identifier" uiName="identifier"/>
+    <type:FeatureDefinition xmi:id="274" layer="267" name="identifier" uiName="identifier"/>
+    <type:FeatureDefinition xmi:id="285" layer="278" name="identifier" uiName="identifier"/>
+    <type:FeatureDefinition xmi:id="259" layer="256" name="Location" uiName="Location"/>
+    <type:FeatureDefinition xmi:id="281" layer="278" name="Timestatement" uiName="Timestatement"/>
+    <type:FeatureDefinition xmi:id="270" layer="267" name="Soil" uiName="Soil"/>
+    <type3:TagsetDescription xmi:id="289" sofa="1" begin="0" end="0" layer="webanno.custom.Crops" name="Crop" input="false"/>
+    <type3:TagsetDescription xmi:id="302" sofa="1" begin="0" end="0" layer="webanno.custom.Location" name="Location" input="false"/>
+    <type3:TagsetDescription xmi:id="315" sofa="1" begin="0" end="0" layer="webanno.custom.Soil" name="Soil" input="false"/>
+    <type3:TagsetDescription xmi:id="328" sofa="1" begin="0" end="0" layer="webanno.custom.Timestatement" name="Time statement" input="false"/>
+    <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" sofaString="Title: &#10;CAPRI model documentation : Version: 18/01/2022&#10;&#10;Abstract:&#10;Not Found&#10;&#10;"/>
+    <cas:View sofa="1" members="8 13 26 39 52 65 78 91 104 117 130 143 156 169 182 195 208 221 234 267 245 256 278 263 248 252 274 285 259 281 270 289 302 315 328"/>
+</xmi:XMI>

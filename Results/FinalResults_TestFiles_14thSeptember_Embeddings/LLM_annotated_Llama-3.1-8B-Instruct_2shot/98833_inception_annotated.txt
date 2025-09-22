@@ -1,0 +1,26 @@
+### JSON Structure with Filled Entities ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Mähdrescher", "span": [57, 67]}}
+  ],
+  "Soil": [
+    {"soilReferenceGroup": {"value": "Parabraunerde", "span": [159, 172]}},
+    {"soilTexture": {"value": "Löss", "span": [173, 176]}},
+    {"soilDepth": {"value": "28 cm", "span": [182, 186]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"startTime": {"value": "2017", "span": [77, 81]}}
+  ]
+}
+```
+### Explanation of Filled Entities ###
+
+1. **Crops**: The only crop-related entity mentioned is "Mähdrescher", which is a type of agricultural machine. It is annotated as a `cropSpecies`.
+2. **Soil**: The following soil-related entities are extracted:
+   - `soilReferenceGroup`: "Parabraunerde" is mentioned as the type of soil.
+   - `soilTexture`: "Löss" is mentioned as the texture of the soil.
+   - `soilDepth`: "28 cm" is mentioned as the depth at which the soil was bearbeitet (worked on).
+3. **Location**: No location-related entities are mentioned in the text.
+4. **Time Statement**: The only time-related entity mentioned is "2017", which is annotated as the `startTime`.

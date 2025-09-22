@@ -1,0 +1,24 @@
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [170, 176]}},
+    {"cropSpecies": {"value": "barley", "span": [182, 188]}},
+    {"cropSpecies": {"value": "maize", "span": [200, 205]}},
+    {"cropSpecies": {"value": "maize", "span": [216, 221]}},
+    {"cropSpecies": {"value": "oats", "span": [224, 228]}},
+    {"cropSpecies": {"value": "potatoes", "span": [232, 240]}},
+    {"cropSpecies": {"value": "rape", "span": [248, 252]}},
+    {"cropSpecies": {"value": "rye", "span": [255, 258]}},
+    {"cropSpecies": {"value": "sugarbeet", "span": [262, 271]}},
+    {"cropSpecies": {"value": "triticale", "span": [274, 283]}},
+    {"cropSpecies": {"value": "wheat", "span": [295, 300]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [44, 51]}},
+    {"city": {"value": "Germany", "span": [44, 51]}}  # Assuming 'Germany' as a city name
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "1979", "span": [98, 102]}},
+    {"endTime": {"value": "2021", "span": [110, 114]}}
+  ]
+}

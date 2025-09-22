@@ -1,0 +1,101 @@
+### Code Implementation ###
+```python
+import json
+import re
+
+def extract_entities(text):
+    # Define regular expressions for each entity type
+    crop_species_pattern = r'\b(apple|wheat|barley|oats)\b'
+    soil_pattern = r''  # No soil entities in this text
+    location_pattern = r'\b(Lower Saxony|Germany)\b'
+    time_statement_pattern = r'\b([0-9]{4})\b'
+
+    # Find all matches for each pattern
+    crop_species_matches = re.findall(crop_species_pattern, text)
+    location_matches = re.findall(location_pattern, text)
+    time_statement_matches = re.findall(time_statement_pattern, text)
+
+    # Extract start and end indices for each match
+    crop_species_indices = [(m.start(), m.end()) for m in re.finditer(crop_species_pattern, text)]
+    location_indices = [(m.start(), m.end()) for m in re.finditer(location_pattern, text)]
+    time_statement_indices = [(m.start(), m.end()) for m in re.finditer(time_statement_pattern, text)]
+
+    # Create the output JSON structure
+    output = {
+        "Crops": [],
+        "Soil": [],
+        "Location": [],
+        "Time Statement": []
+    }
+
+    # Add crop species entities
+    for species, indices in zip(crop_species_matches, crop_species_indices):
+        output["Crops"].append({"cropSpecies": {"value": species, "span": indices}})
+
+    # Add location entities
+    for location, indices in zip(location_matches, location_indices):
+        output["Location"].append({"region": {"value": location, "span": indices}})
+
+    # Add time statement entities
+    for time, indices in zip(time_statement_matches, time_statement_indices):
+        if int(time) >= 2001 and int(time) <= 2003:
+            output["Time Statement"].append({"startTime": {"value": time, "span": indices}})
+
+    return output
+
+text = """
+Title: 
+Three-year pesticide monitoring in ditches of the apple orchard region 'Altes Land'
+
+Abstract:
+The data presented in this file are related to the research article ‘Süß A,  Bischoff G, Mueller A, Buhr L (2006) Chemical and biological monitoring of the load of plant protection products and of zoocoenoses in ditches of the orchard region ‘Altes Land’. Nachrichtenblatt des Deutschen Pflanzenschutzdienstes 58:28-42’ which is only available in German language. The pesticide data presented here were acquired in four ditches in Lower Saxony, Germany (three ditches located in apple plantations, one ditch located in grassland) between 2001 and 2003. Two different monitoring strategies have been applied; event-driven sampling after pesticide applications and weekly integrated sampling using automatic water samplers. A total of 70 active substances have been monitored while farmers applied 25 active substances. LC-MS/MS (PE Sciex API 2000), GC-MS (Finnigan GCQ), GC coupled with electron capture detector (ECD) and inductively coupled plasma optical emission spectrometry (ICP-OES) were used for identification and quantification of the target substances.
+"""
+
+output = extract_entities(text)
+print(json.dumps(output, indent=4))
+```
+
+### Output JSON Structure ###
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "apple",
+                "span": [64, 69]
+            }
+        }
+    ],
+    "Soil": [],
+    "Location": [
+        {
+            "region": {
+                "value": "Lower Saxony",
+                "span": [221, 232]
+            }
+        },
+        {
+            "region": {
+                "value": "Germany",
+                "span": [233, 238]
+            }
+        }
+    ],
+    "Time Statement": [
+        {
+            "startTime": {
+                "value": "2001",
+                "span": [294, 298]
+            }
+        },
+        {
+            "startTime": {
+                "value": "2003",
+                "span": [304, 308]
+            }
+        }
+    ]
+}
+```
+
+This code defines regular expressions for each entity type, finds all matches for each pattern, extracts start and end indices for each match, and creates the output JSON structure. It then uses the `json.dumps()` function to print the output in a human-readable format.

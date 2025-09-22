@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757751508-SRojmysCvwPkuCBmSno4",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757751508,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Betula pubescens\", \"span\": [383, 398] }},\n    {\"cropSpecies\": { \"value\": \"birch\", \"span\": [381, 386] }},\n    {\"cropSpecies\": { \"value\": \"birches\", \"span\": [1234, 1241] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"peat\", \"span\": [1401, 1405] }},\n    {\"Soil\": { \"value\": \"peat\", \"span\": [1478, 1482] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"one year\", \"span\": [757, 765] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 3686,
+    "completion_tokens": 182,
+    "total_tokens": 3868
+  }
+}

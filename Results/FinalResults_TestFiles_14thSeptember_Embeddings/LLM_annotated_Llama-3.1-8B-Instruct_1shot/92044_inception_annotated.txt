@@ -1,0 +1,108 @@
+### Code ###
+```python
+import re
+from typing import Dict, List
+
+def extract_entities(text: str) -> Dict:
+    # Initialize the entity lists
+    crops = []
+    soil = []
+    location = []
+    time_statement = []
+
+    # Regular expression patterns for entity extraction
+    patterns = {
+        "cropSpecies": r"\b(barley|maize|oats|potatoes|rape|rye|sugarbeet|triticale|wheat)\b",
+        "cropVariety": r"\b(spring|winter)\b",
+        "country": r"\b(Germany)\b",
+        "region": r"\b(distric|arable land)\b",  # Simplified pattern, might need improvement
+        "city": r"\b",  # Simplified pattern, might need improvement
+        "latitude": r"\b900 km2\b",  # Simplified pattern, might need improvement
+        "longitude": r"\b900 km2\b",  # Simplified pattern, might need improvement
+        "soilTexture": r"\b",  # Simplified pattern, might need improvement
+        "soilReferenceGroup": r"\b",  # Simplified pattern, might need improvement
+        "soilDepth": r"\b",  # Simplified pattern, might need improvement
+        "soilBulkDensity": r"\b",  # Simplified pattern, might need improvement
+        "soilPH": r"\b",  # Simplified pattern, might need improvement
+        "soilOrganicCarbon": r"\b",  # Simplified pattern, might need improvement
+        "soilAvailableNitrogen": r"\b",  # Simplified pattern, might need improvement
+        "startTime": r"\b(1979)\b",
+        "endTime": r"\b(2021)\b",
+        "duration": r"\b",  # Simplified pattern, might need improvement
+    }
+
+    # Iterate over the patterns and extract entities
+    for entity, pattern in patterns.items():
+        for match in re.finditer(pattern, text):
+            value = match.group()
+            start_index = match.start()
+            end_index = match.end()
+            if entity in ["cropSpecies", "cropVariety"]:
+                if entity == "cropSpecies":
+                    crops.append({"cropSpecies": {"value": value, "span": [start_index, end_index]}})
+                else:
+                    crops.append({"cropVariety": {"value": value, "span": [start_index, end_index]}})
+            elif entity == "country":
+                location.append({"country": {"value": value, "span": [start_index, end_index]}})
+            elif entity == "region":
+                location.append({"region": {"value": value, "span": [start_index, end_index]}})
+            elif entity == "city":
+                location.append({"city": {"value": value, "span": [start_index, end_index]}})
+            elif entity == "latitude":
+                location.append({"latitude": {"value": value, "span": [start_index, end_index]}})
+            elif entity == "longitude":
+                location.append({"longitude": {"value": value, "span": [start_index, end_index]}})
+            elif entity == "soilTexture":
+                soil.append({"soilTexture": {"value": value, "span": [start_index, end_index]}})
+            elif entity == "soilReferenceGroup":
+                soil.append({"soilReferenceGroup": {"value": value, "span": [start_index, end_index]}})
+            elif entity == "soilDepth":
+                soil.append({"soilDepth": {"value": value, "span": [start_index, end_index]}})
+            elif entity == "soilBulkDensity":
+                soil.append({"soilBulkDensity": {"value": value, "span": [start_index, end_index]}})
+            elif entity == "soilPH":
+                soil.append({"soilPH": {"value": value, "span": [start_index, end_index]}})
+            elif entity == "soilOrganicCarbon":
+                soil.append({"soilOrganicCarbon": {"value": value, "span": [start_index, end_index]}})
+            elif entity == "soilAvailableNitrogen":
+                soil.append({"soilAvailableNitrogen": {"value": value, "span": [start_index, end_index]}})
+            elif entity == "startTime":
+                time_statement.append({"startTime": {"value": value, "span": [start_index, end_index]}})
+            elif entity == "endTime":
+                time_statement.append({"endTime": {"value": value, "span": [start_index, end_index]}})
+            elif entity == "duration":
+                time_statement.append({"duration": {"value": value, "span": [start_index, end_index]}})
+
+    # Return the extracted entities
+    return {
+        "Crops": crops,
+        "Soil": soil,
+        "Location": location,
+        "Time Statement": time_statement
+    }
+
+text = """
+Title: 
+Crop yields and area in Germany from 1979 to 2021 at a harmonized district-level
+
+Abstract:
+In this publication we provide a dataset with crop yield and area for Germany from 1979 to 2021. The data are spatially resolved to 397 districts with an average size of 900 km2 and include the crops spring barley, winter barley, grain maize, silage maize, oats, potatoes, winter rape, rye, sugarbeet, triticale and winter wheat. The crop-yield data cover on average about 9.5 million hectares per year and 80% of Germany’s total arable land. The final dataset contains 214,820 yield and area data points. These were obtained by collecting and digitizing crop data from multiple statistical sources and transforming the data to match the district boundaries in 2020. A comprehensive description and validation of the dataset is published in Scientific Data (https://doi.org/10.1038/s41597-024-02951-8). We therefore recommend that you also refer the Scientific Data article when using the dataset.
+"""
+
+result = extract_entities(text)
+print(result)
+```
+
+### Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "barley", "span": [126, 132]}},
+    {"cropSpecies": {"value": "barley", "span": [132, 138]}},
+    {"cropSpecies": {"value": "maize", "span": [139, 144]}},
+    {"cropSpecies": {"value": "maize", "span": [144, 149]}},
+    {"cropSpecies": {"value": "oats", "span": [150, 154]}},
+    {"cropSpecies": {"value": "potatoes", "span": [155, 163]}},
+    {"cropSpecies": {"value": "rape", "span": [164, 168]}},
+    {"cropSpecies": {"value": "rye", "span": [169, 172]}},
+    {"cropSpecies": {"value": "sugarbeet", "span": [173

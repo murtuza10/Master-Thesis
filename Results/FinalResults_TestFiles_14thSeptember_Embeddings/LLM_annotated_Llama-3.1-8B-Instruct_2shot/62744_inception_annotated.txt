@@ -1,0 +1,13 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "rye", "span": [36, 40]}},
+    {"cropSpecies": {"value": "cereals", "span": [129, 135]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+```
+Note: Since the text doesn't mention any soil-related information, location, or time statements, the corresponding JSON arrays are empty. The only mentioned crops are "rye" and "cereals".

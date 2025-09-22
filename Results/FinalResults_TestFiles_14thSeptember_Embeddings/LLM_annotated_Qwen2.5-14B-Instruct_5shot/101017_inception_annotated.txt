@@ -1,0 +1,16 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "Möhre", "span": [131, 136]}},
+    {"cropSpecies": {"value": "Salat", "span": [138, 142]}},
+    {"cropSpecies": {"value": "Apfel", "span": [144, 148]}},
+    {"cropSpecies": {"value": "Erdbeere", "span": [150, 157]}, "cropSpecies": {"value": "Erdbeere", "span": [178, 185]}},
+    {"cropSpecies": {"value": "Himbeere", "span": [190, 197]}}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": []
+}
+``` 
+
+Note: The repeated entry for `Erdbeere` was included twice because it appears multiple times in the text. Each occurrence should be treated separately per the rules specified.

@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757936173-ymLy8bwSh2AFDN7K6XlG",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757936173,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"apple\", \"span\": [64, 69]}},\n    {\"cropSpecies\": {\"value\": \"apple\", \"span\": [422, 427]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"region\": {\"value\": \"Altes Land\", \"span\": [87, 97]}},\n    {\"region\": {\"value\": \"Altes Land\", \"span\": [294, 304]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [390, 397]}},\n    {\"region\": {\"value\": \"Lower Saxony\", \"span\": [375, 388]}}\n  ],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"Three-year\", \"span\": [10, 20]}},\n    {\"startTime\": {\"value\": \"2001\", \"span\": [453, 457]}},\n    {\"endTime\": {\"value\": \"2003\", \"span\": [462, 466]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 1327,
+    "completion_tokens": 229,
+    "total_tokens": 1556
+  }
+}

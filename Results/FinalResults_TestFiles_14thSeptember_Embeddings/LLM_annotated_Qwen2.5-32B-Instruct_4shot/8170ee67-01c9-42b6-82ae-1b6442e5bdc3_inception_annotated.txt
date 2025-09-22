@@ -1,0 +1,32 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "barley", "span": [63, 68] }},
+    {"cropSpecies": { "value": "barley", "span": [576, 581] }},
+    {"cropSpecies": { "value": "oat", "span": [423, 426] }},
+    {"cropSpecies": { "value": "rape", "span": [596, 599] }},
+    {"cropSpecies": { "value": "wheat", "span": [604, 609] }},
+    {"cropSpecies": { "value": "lupine", "span": [614, 620] }},
+    {"cropSpecies": { "value": "rye", "span": [625, 628] }}
+  ],
+  "Soil": [
+    {"soilDepth": { "value": "25 cm", "span": [346, 351] }},
+    {"soilDepth": { "value": "0-30 cm", "span": [499, 506] }},
+    {"soilAvailableNitrogen": { "value": "PCAL", "span": [235, 239] }},
+    {"soilAvailableNitrogen": { "value": "PCAL", "span": [482, 486] }},
+    {"soilAvailableNitrogen": { "value": "PCAL", "span": [507, 511] }},
+    {"soilAvailableNitrogen": { "value": "PCAL", "span": [522, 526] }}
+  ],
+  "Location": [
+    {"city": { "value": "Braunschweig", "span": [20, 32] }}
+  ],
+  "Time Statement": [
+    {"startTime": { "value": "1985", "span": [188, 192] }},
+    {"endTime": { "value": "2008", "span": [193, 197] }},
+    {"startTime": { "value": "2013", "span": [296, 299] }},
+    {"endTime": { "value": "2013", "span": [319, 322] }},
+    {"startTime": { "value": "autumn 2013", "span": [662, 671] }},
+    {"endTime": { "value": "2014", "span": [705, 709] }}
+  ]
+}
+```

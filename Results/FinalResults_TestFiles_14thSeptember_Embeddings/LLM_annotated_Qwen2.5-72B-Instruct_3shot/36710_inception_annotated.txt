@@ -1,0 +1,20 @@
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "apple", "span": [87, 92] }},
+    {"cropSpecies": { "value": "apple", "span": [317, 322] }}
+  ],
+  "Soil": [],
+  "Location": [
+    {"region": { "value": "Altes Land", "span": [100, 110] }},
+    {"region": { "value": "Altes Land", "span": [330, 340] }},
+    {"country": { "value": "Germany", "span": [358, 365] }},
+    {"region": { "value": "Lower Saxony", "span": [347, 358] }}
+  ],
+  "Time Statement": [
+    {"duration": { "value": "Three-year", "span": [10, 20] }},
+    {"startTime": { "value": "2001", "span": [426, 430] }},
+    {"endTime": { "value": "2003", "span": [435, 439] }}
+  ]
+}
+```

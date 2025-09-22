@@ -1,0 +1,18 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": { "value": "Riesling", "span": [35, 43] }},
+    {"cropSpecies": { "value": "Felicia", "span": [63, 71] }},
+    {"cropSpecies": { "value": "Regent", "span": [89, 97] }}
+  ],
+  "Soil": [],
+  "Location": [],
+  "Time Statement": [
+    {"year": { "value": "2018", "span": [133, 137] }},
+    {"startTime": { "value": "before", "span": [104, 111] }},
+    {"endTime": { "value": "after", "span": [115, 122] }}
+  ]
+}
+```
+Note that I have considered "Riesling", "Felicia", and "Regent" as crop species, "before" and "after" as time points, and "2018" as a year. The exact start and end indices are based on the original text.

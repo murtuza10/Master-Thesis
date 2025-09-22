@@ -1,0 +1,32 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "wheat", "span": [255, 262]}},
+    {"cropSpecies": {"value": "wheat", "span": [340, 347]}}
+  ],
+  "Soil": [
+    {"soilTexture": {}},
+    {"soilReferenceGroup": {}},
+    {"soilDepth": {}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}}
+  ],
+  "Location": [],
+  "Time Statement": []
+}
+```
+
+### Explanation ###
+- In the given text, the following entities were identified:
+  - Crops:
+    - "wheat" is mentioned twice as the crop species.
+  - Soil:
+    - No specific soil entities were mentioned in the text.
+  - Location:
+    - No specific location entities were mentioned in the text.
+  - Time Statement:
+    - No time-related entities were mentioned in the text.
+- As per the rules, each entity must include "value" and "span" in its JSON object. Since no specific soil entities were mentioned, the corresponding JSON objects are empty.

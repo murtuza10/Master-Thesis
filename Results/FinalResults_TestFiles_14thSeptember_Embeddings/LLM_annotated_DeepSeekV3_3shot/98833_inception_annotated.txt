@@ -1,0 +1,27 @@
+{
+  "id": "gen-1757935992-0DikONC6nfgQSsiwEFp7",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1757935992,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilReferenceGroup\": {\"value\": \"Parabraunerde\", \"span\": [215, 228]}},\n    {\"soilTexture\": {\"value\": \"Löss\", \"span\": [233, 237]}},\n    {\"soilDepth\": {\"value\": \"28 cm\", \"span\": [253, 258]}},\n    {\"soilDepth\": {\"value\": \"20\", \"span\": [505, 507]}},\n    {\"soilDepth\": {\"value\": \"35\", \"span\": [510, 512]}},\n    {\"soilDepth\": {\"value\": \"50 cm\", \"span\": [517, 522]}}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2017\", \"span\": [85, 89]}},\n    {\"startTime\": {\"value\": \"2017\", \"span\": [191, 195]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 1831,
+    "completion_tokens": 210,
+    "total_tokens": 2041
+  }
+}

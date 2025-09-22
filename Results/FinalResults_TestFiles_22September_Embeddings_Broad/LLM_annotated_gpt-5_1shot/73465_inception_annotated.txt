@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIizFNDs82rbIJsfHLJkAMZWalsCf",
+  "object": "chat.completion",
+  "created": 1758578869,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [39, 62] }},\n    {\"cropSpecies\": { \"value\": \"H. nodiflorum\", \"span\": [208, 222] }},\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [453, 476] }},\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [774, 797] }},\n    {\"cropSpecies\": { \"value\": \"celery\", \"span\": [949, 955] }},\n    {\"cropSpecies\": { \"value\": \"wild celery\", \"span\": [1045, 1057] }},\n    {\"cropSpecies\": { \"value\": \"wild celery\", \"span\": [1214, 1226] }},\n    {\"cropSpecies\": { \"value\": \"wild celery\", \"span\": [1488, 1500] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [252, 259] }},\n    {\"region\": { \"value\": \"Kew Gardens London\", \"span\": [242, 261] }},\n    {\"city\": { \"value\": \"Gatersleben\", \"span\": [175, 186] }},\n    {\"city\": { \"value\": \"Berlin\", \"span\": [837, 843] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [845, 852] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [1003, 1010] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2015\", \"span\": [911, 915] }},\n    {\"endTime\": { \"value\": \"2016\", \"span\": [919, 923] }},\n    {\"duration\": { \"value\": \"2018-2019\", \"span\": [1175, 1184] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2137,
+    "completion_tokens": 455,
+    "total_tokens": 2592,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

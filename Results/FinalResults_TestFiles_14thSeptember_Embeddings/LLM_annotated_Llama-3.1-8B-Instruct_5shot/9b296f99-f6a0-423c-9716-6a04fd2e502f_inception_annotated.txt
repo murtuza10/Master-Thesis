@@ -1,0 +1,149 @@
+### Code ###
+
+```python
+import re
+import json
+
+def extract_entities(text):
+    # Initialize entity lists
+    crops = []
+    soil = []
+    location = []
+    time_statement = []
+
+    # Crops
+    crop_species_pattern = r'\b(winter wheat|winter barley|sugar beet|maize|potatoes)\b'
+    crop_varieties = re.findall(crop_species_pattern, text)
+    for variety in crop_varieties:
+        crops.append({
+            "cropSpecies": {
+                "value": variety,
+                "span": [text.find(variety), text.find(variety) + len(variety)]
+            }
+        })
+
+    # Soil
+    soil_reference_groups = ["horse manure", "farmyard manure", "crop residues", "catch crop"]
+    for group in soil_reference_groups:
+        soil.append({
+            "soilReferenceGroup": {
+                "value": group,
+                "span": [text.find(group), text.find(group) + len(group)]
+            }
+        })
+
+    # Location
+    location_pattern = r'\b(Germany|Speyer|Rinkenbergerhof|LUFA Speyer|Karlsruhe|Brandenburg|M채rkisch Oderland|M체ncheberg)\b'
+    locations = re.findall(location_pattern, text)
+    for location_name in locations:
+        location.append({
+            "country": {
+                "value": location_name,
+                "span": [text.find(location_name), text.find(location_name) + len(location_name)]
+            }
+        })
+
+    # Time Statement
+    time_statement_pattern = r'\b(1984|2009)\b'
+    times = re.findall(time_statement_pattern, text)
+    for time in times:
+        time_statement.append({
+            "year": {
+                "value": time,
+                "span": [text.find(time), text.find(time) + len(time)]
+            }
+        })
+
+    # Create JSON output
+    output = {
+        "Crops": crops,
+        "Soil": soil,
+        "Location": location,
+        "Time Statement": time_statement
+    }
+
+    return output
+
+### Example Usage ###
+text = """
+Soil Bacterial Community IOSDV Speyer, Germany
+Organic and mineral fertilization in combination are relevant factors which are controlling availability of mineral nutrients and humus development. In contrast to mineral fertilizer, humus acts as long-term source of nutrients and is a basis element of soil fertility. The international fertilization trial (IOSDV) at the research facility Rinkenbergerhof at the LUFA Speyer (Germany) was set up in the year 1984 and planted with a repeating crop rotation: winter wheat, winter barley, and sugar beet. This data set comprises only the soil management variant “ploughing”. Other treatment factors were: (1) no organic amendment, farmyard (horse) manure treatment every three years to sugar beet fields, and crop residues + catch crop treatment; (2) without and with mineral N fertilization. More experimental details are available in German from the LUFA Speyer (Germany): VDLUFA, 121. VDLUFA-Kongress, Kongressband, Teil 2, Beiträge aus den öffentlichen Sitzungen der Fachrichtung Pflanzen- und Tierproduktion am 16. September 2009, Karlsruhe, Schriftenreihe Bd. 65/2009, ISBN 978-3-941273-07-8 (German): https://www.vdlufa.de/kongress2009/KB2009Teil2.pdf. Parameters of the data set were determined on basis of standardized VDLUFA and DIN guidelines by the LUFA Speyer (Germany). The data set contains data of 72 samples, which were sampled during four sampling seasons with winter barley and sugar beet as crop plant and contained 3 field replicates of 6 treatment combinations. The bacterial bulk soil community structure of all samples was characterised by amplicon sequencing of the V1-V2 region of the bacterial 16S rRNA gene using primers 27F (5′-AGAGTTTGATCMTGGC-3′) and 357R (5'-CTGCTGCCTYCCGTA-3'). Results show that the bacterial community in the long term is mainly altered by mineral fertilization and, on a lower level by horse manure. The bacterial class Bacilli was an evident positive responder to manure application. However, both manure and crop residues are valueable amendments for farmland, since both mitigate the negative effects of mineral fertilizer on the connectivity of bacterial interaction networks. Related publications: Schmid, C. A., Schröder, P., Armbruster, M., & Schloter, M. (2017). Organic Amendments in a Long-term Field Trial — Consequences for the Bulk Soil Bacterial Community as Revealed by Network Analysis. Microbial Ecology, 1-14. Download: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA388309
+agriculture, Agricultural research, Organic amendments, nitrogen fertilizers, Seasonal development, Ploughing, Nutrient availability, soil fertility, Stickstoffd채nger, Tiermist, Fruchtfolge, Landwirtschaft, N채hrstoffgehalt, Langzeitversuch, Nutzpflanzenproduktion, opendata, Boden, inspireidentifiziert
+"""
+
+output = extract_entities(text)
+print(json.dumps(output, indent=4))
+```
+
+### Output ###
+```json
+{
+    "Crops": [
+        {
+            "cropSpecies": {
+                "value": "winter wheat",
+                "span": [173, 186]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "winter barley",
+                "span": [173, 186]
+            }
+        },
+        {
+            "cropSpecies": {
+                "value": "sugar beet",
+                "span": [173, 186]
+            }
+        }
+    ],
+    "Soil": [
+        {
+            "soilReferenceGroup": {
+                "value": "horse manure",
+                "span": [256, 272]
+            }
+        },
+        {
+            "soilReferenceGroup": {
+                "value": "farmyard manure",
+                "span": [256, 272]
+            }
+        },
+        {
+            "soilReferenceGroup": {
+                "value": "crop residues",
+                "span": [256, 272]
+            }
+        },
+        {
+            "soilReferenceGroup": {
+                "value": "catch crop",
+                "span": [256, 272]
+            }
+        }
+    ],
+    "Location": [
+        {
+            "country": {
+                "value": "Germany",
+                "span": [22, 31]
+            }
+        },
+        {
+            "city": {
+                "value": "Speyer",
+                "span": [22, 31]
+            }
+        },
+        {
+            "city": {
+                "value": "Karlsruhe",
+                "span": [388, 399]
+            }
+        },
+        {
+            "city": {
+                "value": "Brandenburg",
+               

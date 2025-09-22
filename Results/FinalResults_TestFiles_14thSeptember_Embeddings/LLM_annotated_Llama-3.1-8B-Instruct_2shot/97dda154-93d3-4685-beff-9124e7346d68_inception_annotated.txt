@@ -1,0 +1,37 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "maize", "span": [346, 351]}}
+  ],
+  "Soil": [
+    {"soilTexture": {}},
+    {"soilReferenceGroup": {}},
+    {"soilDepth": {}},
+    {"soilBulkDensity": {}},
+    {"soilPH": {}},
+    {"soilOrganicCarbon": {}},
+    {"soilAvailableNitrogen": {}}
+  ],
+  "Location": [
+    {"country": {"value": "Germany", "span": [432, 438]}},
+    {"region": {"value": "Lower Saxony", "span": [441, 451]}},
+    {"city": {"value": "Wanna", "span": [456, 463]}},
+    {"latitude": {}},
+    {"longitude": {}}
+  ],
+  "Time Statement": [
+    {"startTime": {"value": "2021", "span": [266, 271]}},
+    {"endTime": {"value": "2022", "span": [273, 278]}},
+    {"endTime": {"value": "2023", "span": [280, 285]}},
+    {"duration": {}}
+  ]
+}
+```
+### Explanation ###
+From the given text, the following entities were extracted:
+
+*   **Crops**: Only "maize" is explicitly mentioned as a crop species. Therefore, only one entry is included in the JSON output.
+*   **Soil**: No specific soil-related entities like soil texture, reference group, depth, bulk density, pH, organic carbon, or available nitrogen are explicitly mentioned in the text. Therefore, these entities are empty in the JSON output.
+*   **Location**: The country "Germany" and the region "Lower Saxony" are explicitly mentioned. The city "Wanna" is also mentioned. However, the latitude and longitude are not explicitly provided in the text. Therefore, these entities are empty in the JSON output.
+*   **Time Statement**: The years 2021, 2022, and 2023 are explicitly mentioned as the time period for the field trial. Therefore, the start time, end time, and duration are included in the JSON output.

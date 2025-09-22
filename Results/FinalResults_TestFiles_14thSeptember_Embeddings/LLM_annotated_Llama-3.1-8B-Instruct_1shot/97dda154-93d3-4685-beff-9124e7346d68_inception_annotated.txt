@@ -1,0 +1,19 @@
+### JSON Output ###
+```json
+{
+  "Crops": [
+    {"cropSpecies": {"value": "maize", "span": [234, 239]}}
+  ],
+  "Soil": [],
+  "Location": [
+    {"country": {"value": "Germany", "span": [341, 346]}},
+    {"region": {"value": "Lower Saxony", "span": [349, 362]}},
+    {"city": {"value": "Wanna", "span": [364, 370]}},
+    {"region": {"value": "Mecklenburg-Vorpommern", "span": [373, 391]}},
+    {"city": {"value": "Rostock", "span": [394, 401]}}
+  ],
+  "Time Statement": []
+}
+```
+
+Note: I extracted the relevant information from the text and populated the JSON structure according to the rules provided. The output includes the specified entities with their corresponding values and span positions.

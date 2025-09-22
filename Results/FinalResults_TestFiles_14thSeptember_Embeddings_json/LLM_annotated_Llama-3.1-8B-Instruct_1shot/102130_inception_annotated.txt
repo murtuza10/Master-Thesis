@@ -1,0 +1,27 @@
+{
+  "Crops": [
+    {"cropSpecies": {"value": "C4", "span": [55, 58]}},
+    {"cropSpecies": {"value": "C3", "span": [102, 105]}}
+  ],
+  "Soil": [
+    {"soilOrganicCarbon": {"value": "particulate organic carbon", "span": [104, 128]}},
+    {"soilOrganicCarbon": {"value": "mineral associated organic carbon", "span": [130, 155]}},
+    {"soilOrganicCarbon": {"value": "bulk soil", "span": [171, 176]}},
+    {"soilPH": {}},  // Not found
+    {"soilBulkDensity": {}},  // Not found
+    {"soilDepth": {}},  // Not found
+    {"soilTexture": {}},  // Not found
+    {"soilReferenceGroup": {}},  // Not found
+    {"soilAvailableNitrogen": {}},  // Not found
+    {"soilOrganicCarbon": {"value": "new carbon", "span": [224, 233]}},
+    {"soilOrganicCarbon": {"value": "old carbon", "span": [231, 239]}}
+  ],
+  "Location": [],
+  "Time Statement": [
+    {"duration": {"value": "2-year", "span": [9, 15]}},
+    {"startTime": {"value": "6 months", "span": [78, 86]}},
+    {"startTime": {"value": "12 months", "span": [91, 99]}},
+    {"startTime": {"value": "24 months", "span": [107, 115]}},
+    {"endTime": {"value": "24 months", "span": [107, 115]}}
+  ]
+}
