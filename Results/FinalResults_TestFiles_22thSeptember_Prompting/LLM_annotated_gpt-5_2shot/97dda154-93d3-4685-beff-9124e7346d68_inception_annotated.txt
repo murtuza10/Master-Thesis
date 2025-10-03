@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyAgOAB4UCenE27pRACK9farcqht",
+  "object": "chat.completion",
+  "created": 1758637238,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"maize\", \"span\": [214, 219]}},\n    {\"cropSpecies\": {\"value\": \"maize\", \"span\": [959, 964]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"soil\", \"span\": [41, 45]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [161, 165]}},\n    {\"Soil\": {\"value\": \"Wanna Sand\", \"span\": [298, 308]}},\n    {\"Soil\": {\"value\": \"Wanna Sand without biogas slurry\", \"span\": [311, 344]}},\n    {\"Soil\": {\"value\": \"Rostock Sand\", \"span\": [347, 359]}},\n    {\"Soil\": {\"value\": \"Wanna Marsch\", \"span\": [366, 378]}},\n    {\"Soil\": {\"value\": \"biogas slurry\", \"span\": [436, 449]}},\n    {\"Soil\": {\"value\": \"diammonium phosphate\", \"span\": [523, 544]}},\n    {\"Soil\": {\"value\": \"microgranular fertilizer\", \"span\": [549, 573]}},\n    {\"Soil\": {\"value\": \"Soil samples\", \"span\": [787, 799]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [884, 888]}},\n    {\"Soil\": {\"value\": \"soil samples\", \"span\": [1438, 1450]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [1718, 1722]}},\n    {\"Soil\": {\"value\": \"Soil\", \"span\": [1932, 1936]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"Europe\", \"span\": [2066, 2072]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [2074, 2081]}},\n    {\"region\": {\"value\": \"Lower Saxony\", \"span\": [2083, 2095]}},\n    {\"city\": {\"value\": \"Wanna\", \"span\": [2097, 2102]}},\n    {\"region\": {\"value\": \"Mecklenburg-Vorpommern\", \"span\": [2104, 2126]}},\n    {\"city\": {\"value\": \"Rostock\", \"span\": [2128, 2135]}}\n  ],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"over the years 2021, 2022 and 2023\", \"span\": [222, 259]}},\n    {\"startTime\": {\"value\": \"April\", \"span\": [817, 822]}},\n    {\"endTime\": {\"value\": \"August\", \"span\": [827, 833]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4580,
+    "completion_tokens": 629,
+    "total_tokens": 5209,
+    "prompt_tokens_details": {
+      "cached_tokens": 3968,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

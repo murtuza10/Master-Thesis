@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIvBig13jWPp1GBs0MORJxpioQ61k",
+  "object": "chat.completion",
+  "created": 1758625770,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilTexture\": { \"value\": \"Lehm\", \"span\": [394, 398] }},\n    {\"soilTexture\": { \"value\": \"Ton\", \"span\": [403, 406] }},\n    {\"soilPH\": { \"value\": \"pH Wert\", \"span\": [794, 800] }},\n    {\"soilOrganicCarbon\": { \"value\": \"organischen Kohlenstoff\", \"span\": [812, 835] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"Gesamt-Stickstoff\", \"span\": [840, 858] }}\n  ],\n  \"Location\": [\n    {\"city\": { \"value\": \"Hildesheim\", \"span\": [232, 242] }}\n  ],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"14-tägigen Zeitraster\", \"span\": [282, 303] }},\n    {\"duration\": { \"value\": \"2 Jahren\", \"span\": [374, 382] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1859,
+    "completion_tokens": 237,
+    "total_tokens": 2096,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

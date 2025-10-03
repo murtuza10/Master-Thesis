@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIvOl0ozzMq4RLkiqtkmRBtCM1GDW",
+  "object": "chat.completion",
+  "created": 1758626579,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"German\", \"span\": [180, 186] }},\n    {\"country\": { \"value\": \"National Forest Inventory\", \"span\": [187, 212] }},\n    {\"latitude\": { \"value\": \"47,15766000\", \"span\": [1040, 1051] }},\n    {\"latitude\": { \"value\": \"55,08484000\", \"span\": [1082, 1093] }},\n    {\"longitude\": { \"value\": \"5,79922100\", \"span\": [956, 966] }},\n    {\"longitude\": { \"value\": \"15,08954000\", \"span\": [999, 1010] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1961\", \"span\": [237, 241] }},\n    {\"endTime\": { \"value\": \"2100\", \"span\": [244, 248] }},\n    {\"startTime\": { \"value\": \"1961\", \"span\": [342, 346] }},\n    {\"endTime\": { \"value\": \"2013\", \"span\": [349, 353] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [656, 660] }},\n    {\"endTime\": { \"value\": \"2050\", \"span\": [663, 667] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [681, 685] }},\n    {\"endTime\": { \"value\": \"2100\", \"span\": [688, 692] }},\n    {\"startTime\": { \"value\": \"31.12.2016\", \"span\": [916, 926] }},\n    {\"startTime\": { \"value\": \"01.01.1961\", \"span\": [969, 979] }},\n    {\"endTime\": { \"value\": \"31.12.2099\", \"span\": [982, 992] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1923,
+    "completion_tokens": 452,
+    "total_tokens": 2375,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

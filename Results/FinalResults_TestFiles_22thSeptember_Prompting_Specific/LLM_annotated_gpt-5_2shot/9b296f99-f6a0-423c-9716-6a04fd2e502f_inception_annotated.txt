@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwEsPiw2r44y0VJsKTNstoXOYi0F",
+  "object": "chat.completion",
+  "created": 1758629810,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [394, 399]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [408, 414]}},\n    {\"cropSpecies\": {\"value\": \"sugar beet\", \"span\": [421, 431]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [1502, 1508]}},\n    {\"cropSpecies\": {\"value\": \"sugar beet\", \"span\": [1513, 1523]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [41, 48]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [34, 40]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [101, 108]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [87, 93]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [532, 539]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [517, 523]}},\n    {\"city\": {\"value\": \"Rinkenbergerhof\", \"span\": [469, 484]}},\n    {\"region\": {\"value\": \"Karlsruhe\", \"span\": [1326, 1335]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"1984\", \"span\": [555, 559]}},\n    {\"startTime\": {\"value\": \"16. September 2009\", \"span\": [1279, 1298]}},\n    {\"startTime\": {\"value\": \"2017\", \"span\": [2105, 2109]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2302,
+    "completion_tokens": 400,
+    "total_tokens": 2702,
+    "prompt_tokens_details": {
+      "cached_tokens": 1536,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,27 @@
+{
+  "id": "gen-1759421492-FZPdXb3t8TazxqI93oVT",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759421492,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"winter wheat\", \"span\": [480, 492] }},\n    {\"Crop\": { \"value\": \"winter barley\", \"span\": [494, 507] }},\n    {\"Crop\": { \"value\": \"sugar beet\", \"span\": [513, 523] }},\n    {\"Crop\": { \"value\": \"winter barley\", \"span\": [1337, 1350] }},\n    {\"Crop\": { \"value\": \"sugar beet\", \"span\": [1356, 1366] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Speyer\", \"span\": [39, 45] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [47, 54] }},\n    {\"Location\": { \"value\": \"Rinkenbergerhof\", \"span\": [339, 354] }},\n    {\"Location\": { \"value\": \"Speyer\", \"span\": [366, 372] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [374, 381] }},\n    {\"Location\": { \"value\": \"Karlsruhe\", \"span\": [965, 974] }},\n    {\"Location\": { \"value\": \"Speyer\", \"span\": [1200, 1206] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [1208, 1215] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"1984\", \"span\": [399, 403] }},\n    {\"TimeStatement\": { \"value\": \"every three years\", \"span\": [603, 619] }},\n    {\"TimeStatement\": { \"value\": \"16. September 2009\", \"span\": [947, 964] }},\n    {\"TimeStatement\": { \"value\": \"2009\", \"span\": [1030, 1034] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 5178,
+    "completion_tokens": 448,
+    "total_tokens": 5626
+  }
+}

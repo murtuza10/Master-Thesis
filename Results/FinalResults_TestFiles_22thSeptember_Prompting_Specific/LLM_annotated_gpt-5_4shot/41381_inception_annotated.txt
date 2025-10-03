@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwRVzdYPvWxQPzS28BrfbFQtzoyo",
+  "object": "chat.completion",
+  "created": 1758630593,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"grape\", \"span\": [192, 197] }},\n    {\"cropVariety\": { \"value\": \"grape varieties\", \"span\": [192, 207] }},\n    {\"cropSpecies\": { \"value\": \"apple\", \"span\": [1485, 1490] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [116, 123] }},\n    {\"region\": { \"value\": \"southwest Germany\", \"span\": [95, 114] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [398, 405] }},\n    {\"country\": { \"value\": \"Europe\", \"span\": [92, 98] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [944, 951] }},\n    {\"region\": { \"value\": \"southwest Germany\", \"span\": [924, 943] }},\n    {\"city\": { \"value\": \"Dossenheim\", \"span\": [825, 835] }},\n    {\"city\": { \"value\": \"Siebeldingen\", \"span\": [840, 851] }},\n    {\"city\": { \"value\": \"Darmstadt\", \"span\": [889, 898] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2011\", \"span\": [280, 284] }},\n    {\"startTime\": { \"value\": \"late summer 2011\", \"span\": [394, 411] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [1032, 1036] }},\n    {\"endTime\": { \"value\": \"February 2018\", \"span\": [1040, 1054] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [741, 745] }},\n    {\"endTime\": { \"value\": \"2018\", \"span\": [750, 754] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [914, 918] }},\n    {\"endTime\": { \"value\": \"2018\", \"span\": [923, 927] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4400,
+    "completion_tokens": 505,
+    "total_tokens": 4905,
+    "prompt_tokens_details": {
+      "cached_tokens": 3584,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

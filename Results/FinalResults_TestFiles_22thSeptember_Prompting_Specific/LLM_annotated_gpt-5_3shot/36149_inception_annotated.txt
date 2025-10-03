@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwKFbz4lkcUI4bor9dOrGTxNA3hv",
+  "object": "chat.completion",
+  "created": 1758630143,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"energy crop\", \"span\": [102, 113]}},\n    {\"cropSpecies\": {\"value\": \"crop\", \"span\": [693, 697]}},\n    {\"cropSpecies\": {\"value\": \"crops\", \"span\": [1102, 1107]}},\n    {\"cropSpecies\": {\"value\": \"crop\", \"span\": [1112, 1116]}}\n  ],\n  \"Soil\": [\n    {\"soilBulkDensity\": {\"value\": \"bulk density\", \"span\": [935, 947]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [156, 163]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [331, 338]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2011/2012\", \"span\": [252, 261]}},\n    {\"endTime\": {\"value\": \"2014/2015\", \"span\": [264, 273]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2236,
+    "completion_tokens": 245,
+    "total_tokens": 2481,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

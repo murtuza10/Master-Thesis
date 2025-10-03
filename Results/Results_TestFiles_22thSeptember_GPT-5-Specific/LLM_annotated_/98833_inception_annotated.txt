@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIzW3z7SYaqUbnkUhtuVVtFymjxiQ",
+  "object": "chat.completion",
+  "created": 1758642407,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilTexture\": { \"value\": \"L\\u00f6ss\", \"span\": [272, 276] }},\n    {\"soilReferenceGroup\": { \"value\": \"pseudovergleyte Parabraunerde\", \"span\": [239, 270] }},\n    {\"soilDepth\": { \"value\": \"28 cm\", \"span\": [289, 294] }},\n    {\"soilBulkDensity\": { \"value\": \"Lagerungsdichte\", \"span\": [636, 652] }},\n    {\"soilPH\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilOrganicCarbon\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"\", \"span\": [0, 0] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2017\", \"span\": [175, 179] }},\n    {\"endTime\": { \"value\": \"2017\", \"span\": [175, 179] }},\n    {\"duration\": { \"value\": \"\", \"span\": [0, 0] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1142,
+    "completion_tokens": 275,
+    "total_tokens": 1417,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

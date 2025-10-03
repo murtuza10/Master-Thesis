@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwRbv7NcLfD3ujW3JANUNw6XRL7X",
+  "object": "chat.completion",
+  "created": 1758630599,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilOrganicCarbon\": {\"value\": \"soil organic carbon\", \"span\": [78, 97]}},\n    {\"soilOrganicCarbon\": {\"value\": \"SOC\", \"span\": [99, 102]}},\n    {\"soilOrganicCarbon\": {\"value\": \"SOC\", \"span\": [226, 229]}},\n    {\"soilOrganicCarbon\": {\"value\": \"SOC\", \"span\": [384, 387]}},\n    {\"soilAvailableNitrogen\": {\"value\": \"soil organic nitrogen\", \"span\": [108, 129]}},\n    {\"soilAvailableNitrogen\": {\"value\": \"SON\", \"span\": [131, 134]}},\n    {\"soilAvailableNitrogen\": {\"value\": \"N mineralisation\", \"span\": [153, 169]}},\n    {\"soilAvailableNitrogen\": {\"value\": \"N mineralisation\", \"span\": [464, 480]}},\n    {\"soilAvailableNitrogen\": {\"value\": \"immobilisation\", \"span\": [483, 498]}}\n  ],\n  \"Location\": [],\n  \"Time Statement\": []\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3899,
+    "completion_tokens": 249,
+    "total_tokens": 4148,
+    "prompt_tokens_details": {
+      "cached_tokens": 3584,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

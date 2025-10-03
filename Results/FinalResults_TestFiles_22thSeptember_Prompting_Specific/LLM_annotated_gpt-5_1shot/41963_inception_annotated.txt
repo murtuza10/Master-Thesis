@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIw6T51BMv3YngMxxALjZ2aUnh83g",
+  "object": "chat.completion",
+  "created": 1758629289,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"German\", \"span\": [167, 173] }},\n    {\"latitude\": { \"value\": \"47,15766000\", \"span\": [1020, 1032] }},\n    {\"latitude\": { \"value\": \"55,08484000\", \"span\": [1076, 1088] }},\n    {\"longitude\": { \"value\": \"5,79922100\", \"span\": [948, 959] }},\n    {\"longitude\": { \"value\": \"15,08954000\", \"span\": [988, 1000] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1961\", \"span\": [232, 236] }},\n    {\"endTime\": { \"value\": \"2100\", \"span\": [239, 243] }},\n    {\"startTime\": { \"value\": \"1961\", \"span\": [352, 356] }},\n    {\"endTime\": { \"value\": \"2013\", \"span\": [359, 363] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [636, 640] }},\n    {\"endTime\": { \"value\": \"2050\", \"span\": [643, 647] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [653, 657] }},\n    {\"endTime\": { \"value\": \"2100\", \"span\": [660, 664] }},\n    {\"startTime\": { \"value\": \"31.12.2016\", \"span\": [986, 996] }},\n    {\"startTime\": { \"value\": \"01.01.1961\", \"span\": [1047, 1057] }},\n    {\"endTime\": { \"value\": \"31.12.2099\", \"span\": [1060, 1070] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2192,
+    "completion_tokens": 433,
+    "total_tokens": 2625,
+    "prompt_tokens_details": {
+      "cached_tokens": 1792,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

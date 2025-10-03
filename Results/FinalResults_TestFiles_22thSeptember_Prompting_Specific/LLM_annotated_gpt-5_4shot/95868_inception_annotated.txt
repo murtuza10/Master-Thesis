@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwRmGVK98sVgoFNsKdspjtM3gkmQ",
+  "object": "chat.completion",
+  "created": 1758630610,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Picea abies\", \"span\": [66, 77] }},\n    {\"cropSpecies\": { \"value\": \"Norway spruce\", \"span\": [104, 117] }},\n    {\"cropSpecies\": { \"value\": \"Picea abies\", \"span\": [119, 130] }},\n    {\"cropSpecies\": { \"value\": \"Norway spruce\", \"span\": [294, 307] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [52, 59] }},\n    {\"region\": { \"value\": \"Western Germany\", \"span\": [258, 274] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [679, 686] }},\n    {\"region\": { \"value\": \"Europe\", \"span\": [455, 461] }}\n  ],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"50 years\", \"span\": [89, 97] }},\n    {\"duration\": { \"value\": \"51 years\", \"span\": [224, 232] }},\n    {\"startTime\": { \"value\": \"1964/68\", \"span\": [347, 354] }},\n    {\"startTime\": { \"value\": \"7\", \"span\": [633, 634] }},\n    {\"startTime\": { \"value\": \"10\", \"span\": [636, 638] }},\n    {\"startTime\": { \"value\": \"13\", \"span\": [640, 642] }},\n    {\"startTime\": { \"value\": \"16\", \"span\": [644, 646] }},\n    {\"startTime\": { \"value\": \"16\", \"span\": [677, 679] }},\n    {\"startTime\": { \"value\": \"21\", \"span\": [681, 683] }},\n    {\"startTime\": { \"value\": \"29\", \"span\": [685, 687] }},\n    {\"startTime\": { \"value\": \"39\", \"span\": [689, 691] }},\n    {\"startTime\": { \"value\": \"51\", \"span\": [693, 695] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3900,
+    "completion_tokens": 492,
+    "total_tokens": 4392,
+    "prompt_tokens_details": {
+      "cached_tokens": 3584,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

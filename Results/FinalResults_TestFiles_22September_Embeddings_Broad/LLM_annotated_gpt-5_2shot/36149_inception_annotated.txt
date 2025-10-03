@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIu0TycNebEmdNpS3WZtN4xEU4qpZ",
+  "object": "chat.completion",
+  "created": 1758621229,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"soil emissions\", \"span\": [82, 97] }},\n    {\"Soil\": { \"value\": \"soil characteristics\", \"span\": [575, 594] }},\n    {\"Soil\": { \"value\": \"nitrogen content\", \"span\": [596, 612] }},\n    {\"Soil\": { \"value\": \"ammonium-N\", \"span\": [614, 624] }},\n    {\"Soil\": { \"value\": \"nitrate-N\", \"span\": [626, 635] }},\n    {\"Soil\": { \"value\": \"bulk density\", \"span\": [637, 649] }},\n    {\"Soil\": { \"value\": \"soil temperatures\", \"span\": [757, 774] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [166, 173] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [452, 459] }}\n  ],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"three years\", \"span\": [223, 234] }},\n    {\"startTime\": { \"value\": \"2011/2012\", \"span\": [236, 245] }},\n    {\"endTime\": { \"value\": \"2014/2015\", \"span\": [248, 257] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2177,
+    "completion_tokens": 321,
+    "total_tokens": 2498,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

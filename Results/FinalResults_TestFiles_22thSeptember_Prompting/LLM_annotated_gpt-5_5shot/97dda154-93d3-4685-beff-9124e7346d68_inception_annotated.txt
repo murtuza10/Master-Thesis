@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyx3lPaRe9mZG8YfZUNHk3zcg3xx",
+  "object": "chat.completion",
+  "created": 1758640237,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"maize\", \"span\": [230, 235]}},\n    {\"cropSpecies\": {\"value\": \"maize\", \"span\": [807, 812]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"Wanna Sand\", \"span\": [340, 350]}},\n    {\"Soil\": {\"value\": \"Wanna Sand without biogas slurry\", \"span\": [354, 387]}},\n    {\"Soil\": {\"value\": \"Rostock Sand\", \"span\": [392, 404]}},\n    {\"Soil\": {\"value\": \"Wanna Marsch\", \"span\": [410, 422]}},\n    {\"Soil\": {\"value\": \"biogas slurry\", \"span\": [466, 479]}},\n    {\"Soil\": {\"value\": \"biogas slurry\", \"span\": [576, 589]}},\n    {\"Soil\": {\"value\": \"Soil\", \"span\": [1431, 1435]}}\n  ],\n  \"Location\": [\n    {\"region\": {\"value\": \"Europe\", \"span\": [2092, 2098]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [2100, 2107]}},\n    {\"region\": {\"value\": \"Lower Saxony\", \"span\": [2109, 2121]}},\n    {\"city\": {\"value\": \"Wanna\", \"span\": [2123, 2128]}},\n    {\"region\": {\"value\": \"Mecklenburg-Vorpommern\", \"span\": [2130, 2153]}},\n    {\"city\": {\"value\": \"Rostock\", \"span\": [2155, 2162]}}\n  ],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"over the years 2021, 2022 and 2023\", \"span\": [237, 274]}},\n    {\"startTime\": {\"value\": \"April\", \"span\": [1036, 1041]}},\n    {\"endTime\": {\"value\": \"August\", \"span\": [1046, 1052]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6434,
+    "completion_tokens": 475,
+    "total_tokens": 6909,
+    "prompt_tokens_details": {
+      "cached_tokens": 5888,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

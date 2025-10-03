@@ -1,0 +1,26 @@
+{
+  "id": "gen-1759333224-OAKvIBslkizBvFamclJO",
+  "provider": "Nebius",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759333224,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [],\n  \"Location\": [\n    {\"Location\": { \"value\": \"German National Forest Inventory\", \"span\": [152, 181] }},\n    {\"Location\": { \"value\": \"5,79922100\", \"span\": [857, 867] }},\n    {\"Location\": { \"value\": \"15,08954000\", \"span\": [894, 905] }},\n    {\"Location\": { \"value\": \"47,15766000\", \"span\": [931, 942] }},\n    {\"Location\": { \"value\": \"55,08484000\", \"span\": [969, 980] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"1961 - 2100\", \"span\": [123, 132] }},\n    {\"TimeStatement\": { \"value\": \"1961 - 2013\", \"span\": [209, 218] }},\n    {\"TimeStatement\": { \"value\": \"2011 – 2050\", \"span\": [422, 432] }},\n    {\"TimeStatement\": { \"value\": \"2011 – 2100\", \"span\": [436, 446] }},\n    {\"TimeStatement\": { \"value\": \"31.12.2016\", \"span\": [684, 694] }},\n    {\"TimeStatement\": { \"value\": \"01.01.1961 - 31.12.2099\", \"span\": [751, 774] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 782,
+    "completion_tokens": 331,
+    "total_tokens": 1113
+  }
+}

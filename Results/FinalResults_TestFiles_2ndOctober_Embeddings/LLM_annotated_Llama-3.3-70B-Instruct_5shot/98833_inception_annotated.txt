@@ -1,0 +1,21 @@
+To fill the JSON structure based on the input text, we need to identify entities that belong to the categories "Crop", "Location", and "TimeStatement" as defined in the allowed subcategories.
+
+- **Crop**: This category includes crop species or varieties. However, the input text does not explicitly mention any crop species or varieties by their scientific or common names (e.g., "wheat", "Zea mays", "Golden Delicious"). Therefore, there are no entities to report under "Crop".
+
+- **Location**: This category includes country names, geographic/administrative regions, settlement names (villages, towns, cities), latitude coordinates, and longitude coordinates. The input text does not provide any specific location details that fit these subcategories. Thus, there are no entities to report under "Location".
+
+- **TimeStatement**: This category includes explicit start dates/seasons/years, end dates/seasons/years, or durations. The input text mentions the year "2017" as the time when the experiment took place. This fits the subcategory of an explicit year, which is a form of "TimeStatement".
+
+Given the analysis, the JSON output would be:
+
+```json
+{
+  "Crop": [],
+  "Location": [],
+  "TimeStatement": [
+    {"TimeStatement": {"value": "2017", "span": [56, 60]}}
+  ]
+}
+```
+
+Note: The span `[56, 60]` indicates the start and end indices of the entity "2017" in the input text, assuming the text starts from index 0. However, since the exact indexing might depend on the specific text processing or the inclusion of the title and abstract labels, the span provided is an approximation based on the visible text.

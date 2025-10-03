@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIzWLaIM7PqMojEcjHxTc3ntzVZOB",
+  "object": "chat.completion",
+  "created": 1758642425,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"spring barley\", \"span\": [219, 232] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [234, 247] }},\n    {\"cropSpecies\": { \"value\": \"grain maize\", \"span\": [249, 260] }},\n    {\"cropSpecies\": { \"value\": \"silage maize\", \"span\": [262, 274] }},\n    {\"cropSpecies\": { \"value\": \"oats\", \"span\": [276, 280] }},\n    {\"cropSpecies\": { \"value\": \"potatoes\", \"span\": [282, 290] }},\n    {\"cropSpecies\": { \"value\": \"winter rape\", \"span\": [292, 303] }},\n    {\"cropSpecies\": { \"value\": \"rye\", \"span\": [305, 308] }},\n    {\"cropSpecies\": { \"value\": \"sugarbeet\", \"span\": [310, 319] }},\n    {\"cropSpecies\": { \"value\": \"triticale\", \"span\": [321, 330] }},\n    {\"cropSpecies\": { \"value\": \"winter wheat\", \"span\": [335, 347] }}\n  ],\n  \"Soil\": [\n    {\"soilTexture\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilReferenceGroup\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilDepth\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilBulkDensity\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilPH\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilOrganicCarbon\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"\", \"span\": [0, 0] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [63, 70] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [133, 140] }},\n    {\"region\": { \"value\": \"district\", \"span\": [179, 187] }},\n    {\"region\": { \"value\": \"district\", \"span\": [518, 526] }},\n    {\"city\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"latitude\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"longitude\": { \"value\": \"\", \"span\": [0, 0] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1979\", \"span\": [74, 78] }},\n    {\"endTime\": { \"value\": \"2021\", \"span\": [82, 86] }},\n    {\"startTime\": { \"value\": \"1979\", \"span\": [146, 150] }},\n    {\"endTime\": { \"value\": \"2021\", \"span\": [154, 158] }},\n    {\"duration\": { \"value\": \"per year\", \"span\": [399, 407] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [568, 572] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1080,
+    "completion_tokens": 722,
+    "total_tokens": 1802,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

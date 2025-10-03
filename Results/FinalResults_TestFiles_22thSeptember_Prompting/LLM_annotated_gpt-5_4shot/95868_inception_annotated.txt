@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyhHCgTWQqWkw28LsH8mIW4UABnk",
+  "object": "chat.completion",
+  "created": 1758639259,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"Norway spruce\", \"span\": [69, 82]}},\n    {\"cropSpecies\": {\"value\": \"Picea abies\", \"span\": [84, 95]}},\n    {\"cropSpecies\": {\"value\": \"Norway spruce\", \"span\": [214, 227]}},\n    {\"cropSpecies\": {\"value\": \"Norway spruce\", \"span\": [387, 400]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"region\": {\"value\": \"Western Germany\", \"span\": [262, 278]}},\n    {\"region\": {\"value\": \"Europe\", \"span\": [473, 479]}}\n  ],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"50 years\", \"span\": [76, 84]}},\n    {\"duration\": {\"value\": \"51 years\", \"span\": [239, 247]}},\n    {\"startTime\": {\"value\": \"1964/68\", \"span\": [430, 437]}},\n    {\"startTime\": {\"value\": \"age 7\", \"span\": [682, 687]}},\n    {\"startTime\": {\"value\": \"10\", \"span\": [689, 691]}},\n    {\"startTime\": {\"value\": \"13\", \"span\": [693, 695]}},\n    {\"startTime\": {\"value\": \"16\", \"span\": [697, 699]}},\n    {\"startTime\": {\"value\": \"age 16\", \"span\": [726, 732]}},\n    {\"startTime\": {\"value\": \"21\", \"span\": [734, 736]}},\n    {\"startTime\": {\"value\": \"29\", \"span\": [738, 740]}},\n    {\"startTime\": {\"value\": \"39\", \"span\": [742, 744]}},\n    {\"startTime\": {\"value\": \"51\", \"span\": [746, 748]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3354,
+    "completion_tokens": 434,
+    "total_tokens": 3788,
+    "prompt_tokens_details": {
+      "cached_tokens": 3072,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

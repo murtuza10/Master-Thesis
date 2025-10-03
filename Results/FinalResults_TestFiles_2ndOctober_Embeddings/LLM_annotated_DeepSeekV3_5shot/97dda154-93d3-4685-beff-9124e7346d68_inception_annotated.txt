@@ -1,0 +1,27 @@
+{
+  "id": "gen-1759421253-Ob97A9sY2jmFqNRf29kO",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759421253,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"maize\", \"span\": [232, 237] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Europe\", \"span\": [1816, 1822] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [1824, 1831] }},\n    {\"Location\": { \"value\": \"Lower Saxony\", \"span\": [1833, 1846] }},\n    {\"Location\": { \"value\": \"Wanna\", \"span\": [1848, 1853] }},\n    {\"Location\": { \"value\": \"Mecklenburg-Vorpommern\", \"span\": [1855, 1878] }},\n    {\"Location\": { \"value\": \"Rostock\", \"span\": [1880, 1887] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2021\", \"span\": [279, 283] }},\n    {\"TimeStatement\": { \"value\": \"2022\", \"span\": [285, 289] }},\n    {\"TimeStatement\": { \"value\": \"2023\", \"span\": [294, 298] }},\n    {\"TimeStatement\": { \"value\": \"April and August\", \"span\": [735, 750] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4689,
+    "completion_tokens": 304,
+    "total_tokens": 4993
+  }
+}

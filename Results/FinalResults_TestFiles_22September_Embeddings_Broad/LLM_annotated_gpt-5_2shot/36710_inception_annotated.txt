@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIu0Zo3aUoZJsaX05vrRsJV9PqIbY",
+  "object": "chat.completion",
+  "created": 1758621235,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"Crops\": [{\"cropSpecies\": {\"value\": \"apple\", \"span\": [82, 87]}}, {\"cropSpecies\": {\"value\": \"apple\", \"span\": [489, 494]}}], \"Soil\": [], \"Location\": [{\"country\": {\"value\": \"Germany\", \"span\": [524, 531]}}, {\"region\": {\"value\": \"Altes Land\", \"span\": [99, 109]}}, {\"region\": {\"value\": \"Lower Saxony\", \"span\": [511, 524]}}], \"Time Statement\": [{\"duration\": {\"value\": \"Three-year\", \"span\": [7, 17]}}, {\"startTime\": {\"value\": \"2001\", \"span\": [610, 614]}}, {\"endTime\": {\"value\": \"2003\", \"span\": [619, 623]}}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1895,
+    "completion_tokens": 191,
+    "total_tokens": 2086,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

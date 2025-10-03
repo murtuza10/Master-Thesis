@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIxl0ke2wYulIvcqM5hZ3vxTC5OuA",
+  "object": "chat.completion",
+  "created": 1758635646,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"winter wheat\", \"span\": [346, 358] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [360, 373] }},\n    {\"cropSpecies\": { \"value\": \"sugar beet\", \"span\": [380, 390] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [1045, 1058] }},\n    {\"cropSpecies\": { \"value\": \"sugar beet\", \"span\": [1063, 1073] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"humus\", \"span\": [206, 211] }},\n    {\"Soil\": { \"value\": \"soil fertility\", \"span\": [292, 306] }},\n    {\"Soil\": { \"value\": \"ploughing\", \"span\": [520, 529] }},\n    {\"Soil\": { \"value\": \"no organic amendment\", \"span\": [574, 595] }},\n    {\"Soil\": { \"value\": \"manure\", \"span\": [610, 616] }},\n    {\"Soil\": { \"value\": \"crop residues\", \"span\": [669, 682] }},\n    {\"Soil\": { \"value\": \"catch crop\", \"span\": [685, 695] }},\n    {\"Soil\": { \"value\": \"mineral N fertilization\", \"span\": [760, 783] }},\n    {\"Soil\": { \"value\": \"bacterial bulk soil\", \"span\": [1224, 1243] }},\n    {\"Soil\": { \"value\": \"bulk soil\", \"span\": [1732, 1741] }},\n    {\"Soil\": { \"value\": \"mineral fertilization\", \"span\": [1530, 1552] }},\n    {\"Soil\": { \"value\": \"manure\", \"span\": [1582, 1588] }},\n    {\"Soil\": { \"value\": \"manure\", \"span\": [1634, 1640] }},\n    {\"Soil\": { \"value\": \"crop residues\", \"span\": [1660, 1673] }},\n    {\"Soil\": { \"value\": \"mineral fertilizer\", \"span\": [1748, 1766] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [57, 64] }},\n    {\"city\": { \"value\": \"Speyer\", \"span\": [48, 54] }},\n    {\"city\": { \"value\": \"Speyer\", \"span\": [134, 140] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [142, 149] }},\n    {\"region\": { \"value\": \"Rinkenbergerhof\", \"span\": [319, 334] }},\n    {\"city\": { \"value\": \"Speyer\", \"span\": [350, 356] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [358, 365] }},\n    {\"city\": { \"value\": \"Speyer\", \"span\": [892, 898] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [900, 907] }},\n    {\"city\": { \"value\": \"Karlsruhe\", \"span\": [1040, 1049] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1984\", \"span\": [374, 378] }},\n    {\"startTime\": { \"value\": \"16. September 2009\", \"span\": [1000, 1019] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3718,
+    "completion_tokens": 805,
+    "total_tokens": 4523,
+    "prompt_tokens_details": {
+      "cached_tokens": 2944,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

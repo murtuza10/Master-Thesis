@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIzX6XBdubvLXDcHlsN9bziUjk1VT",
+  "object": "chat.completion",
+  "created": 1758642472,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"apple\", \"span\": [54, 59] }},\n    {\"cropSpecies\": { \"value\": \"apple\", \"span\": [436, 441] }},\n    {\"cropSpecies\": { \"value\": \"grass\", \"span\": [546, 551] }},\n    {\"cropSpecies\": { \"value\": \"grassland\", \"span\": [546, 555] }}\n  ],\n  \"Soil\": [\n    {\"soilTexture\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilReferenceGroup\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilDepth\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilBulkDensity\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilPH\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilOrganicCarbon\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"\", \"span\": [0, 0] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [571, 578] }},\n    {\"region\": { \"value\": \"Lower Saxony\", \"span\": [556, 569] }},\n    {\"city\": { \"value\": \"Altes Land\", \"span\": [100, 111] }},\n    {\"latitude\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"longitude\": { \"value\": \"\", \"span\": [0, 0] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"between 2001 and 2003\", \"span\": [585, 608] }},\n    {\"endTime\": { \"value\": \"between 2001 and 2003\", \"span\": [585, 608] }},\n    {\"duration\": { \"value\": \"Three-year\", \"span\": [1, 12] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1102,
+    "completion_tokens": 461,
+    "total_tokens": 1563,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

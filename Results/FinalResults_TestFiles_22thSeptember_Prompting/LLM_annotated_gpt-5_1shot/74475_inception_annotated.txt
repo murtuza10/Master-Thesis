@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIxkQwcxiuAPMo8wBLO2P9jun4XLp",
+  "object": "chat.completion",
+  "created": 1758635610,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"soil organic carbon (SOC)\", \"span\": [73, 99]}},\n    {\"Soil\": {\"value\": \"soil organic nitrogen (SON)\", \"span\": [105, 132]}},\n    {\"Soil\": {\"value\": \"N mineralisation rates\", \"span\": [149, 171]}},\n    {\"Soil\": {\"value\": \"SOC\", \"span\": [217, 220]}},\n    {\"Soil\": {\"value\": \"SOC models\", \"span\": [233, 243]}},\n    {\"Soil\": {\"value\": \"SOC\", \"span\": [331, 334]}},\n    {\"Soil\": {\"value\": \"SOC models\", \"span\": [363, 373]}},\n    {\"Soil\": {\"value\": \"SOC\", \"span\": [420, 423]}},\n    {\"Soil\": {\"value\": \"SON\", \"span\": [458, 461]}},\n    {\"Soil\": {\"value\": \"N mineralisation\", \"span\": [468, 484]}},\n    {\"Soil\": {\"value\": \"immobilisation\", \"span\": [487, 502]}},\n    {\"Soil\": {\"value\": \"C transfer matrix\", \"span\": [723, 740]}},\n    {\"Soil\": {\"value\": \"decomposition\", \"span\": [768, 781]}},\n    {\"Soil\": {\"value\": \"model pools\", \"span\": [811, 822]}},\n    {\"Soil\": {\"value\": \"initial distributions of C and N\", \"span\": [845, 877]}},\n    {\"Soil\": {\"value\": \"model pools\", \"span\": [884, 895]}},\n    {\"Soil\": {\"value\": \"time series of C and N inputs\", \"span\": [901, 929]}},\n    {\"Soil\": {\"value\": \"environmental factors\", \"span\": [943, 965]}}\n  ],\n  \"Location\": [],\n  \"Time Statement\": []\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3242,
+    "completion_tokens": 449,
+    "total_tokens": 3691,
+    "prompt_tokens_details": {
+      "cached_tokens": 2944,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

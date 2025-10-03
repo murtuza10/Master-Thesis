@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyAwaVinsoDdj2S7gODl3PgkKe4z",
+  "object": "chat.completion",
+  "created": 1758637254,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"winter barley\", \"span\": [55, 68]}},\n    {\"cropSpecies\": {\"value\": \"winter barley\", \"span\": [130, 143]}},\n    {\"cropSpecies\": {\"value\": \"oat\", \"span\": [1019, 1022]}},\n    {\"cropSpecies\": {\"value\": \"winter barley\", \"span\": [1621, 1634]}},\n    {\"cropSpecies\": {\"value\": \"winter oilseed rape\", \"span\": [1636, 1656]}},\n    {\"cropSpecies\": {\"value\": \"winter wheat\", \"span\": [1658, 1670]}},\n    {\"cropSpecies\": {\"value\": \"lupine\", \"span\": [1672, 1678]}},\n    {\"cropSpecies\": {\"value\": \"winter rye\", \"span\": [1683, 1693]}},\n    {\"cropSpecies\": {\"value\": \"winter barley\", \"span\": [2055, 2068]}},\n    {\"cropSpecies\": {\"value\": \"Hordeum vulgare L.\", \"span\": [2070, 2089]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"soil P\", \"span\": [890, 896]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [1186, 1190]}},\n    {\"Soil\": {\"value\": \"PCAL\", \"span\": [823, 828]}},\n    {\"Soil\": {\"value\": \"available soil P\", \"span\": [777, 793]}},\n    {\"Soil\": {\"value\": \"soil P\", \"span\": [1395, 1401]}},\n    {\"Soil\": {\"value\": \"PCAL\", \"span\": [1522, 1527]}},\n    {\"Soil\": {\"value\": \"0-30 cm\", \"span\": [1529, 1536]}},\n    {\"Soil\": {\"value\": \"soil class\", \"span\": [1585, 1595]}},\n    {\"Soil\": {\"value\": \"25 cm\", \"span\": [1073, 1078]}},\n    {\"Soil\": {\"value\": \"25 cm\", \"span\": [1760, 1765]}}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"1985-2008\", \"span\": [724, 733]}},\n    {\"endTime\": {\"value\": \"2013\", \"span\": [953, 957]}},\n    {\"startTime\": {\"value\": \"2013\", \"span\": [1110, 1114]}},\n    {\"startTime\": {\"value\": \"autumn 2013\", \"span\": [1918, 1929]}},\n    {\"startTime\": {\"value\": \"2014\", \"span\": [2100, 2104]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4786,
+    "completion_tokens": 641,
+    "total_tokens": 5427,
+    "prompt_tokens_details": {
+      "cached_tokens": 3968,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

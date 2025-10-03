@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIuX5tpHY3stwang5hcP0POnH8ZDN",
+  "object": "chat.completion",
+  "created": 1758623251,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"wine berries\", \"span\": [15, 27]}},\n    {\"cropSpecies\": {\"value\": \"Riesling\", \"span\": [164, 172]}},\n    {\"cropSpecies\": {\"value\": \"Felicia\", \"span\": [174, 181]}},\n    {\"cropSpecies\": {\"value\": \"Regent\", \"span\": [183, 189]}},\n    {\"cropSpecies\": {\"value\": \"berries\", \"span\": [467, 474]}},\n    {\"cropSpecies\": {\"value\": \"berry\", \"span\": [870, 875]}},\n    {\"cropSpecies\": {\"value\": \"berries\", \"span\": [1201, 1208]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"before\", \"span\": [353, 359]}},\n    {\"endTime\": {\"value\": \"after\", \"span\": [370, 375]}},\n    {\"duration\": {\"value\": \"2018\", \"span\": [389, 393]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3785,
+    "completion_tokens": 255,
+    "total_tokens": 4040,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

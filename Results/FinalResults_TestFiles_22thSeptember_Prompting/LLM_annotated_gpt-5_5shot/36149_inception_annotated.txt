@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyzIlvWsu3nkWGjIB56sBSeTBWOq",
+  "object": "chat.completion",
+  "created": 1758640376,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"crop\", \"span\": [108, 112]}},\n    {\"cropSpecies\": {\"value\": \"crops\", \"span\": [1195, 1200]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"soil emissions\", \"span\": [94, 109]}},\n    {\"Soil\": {\"value\": \"soil characteristics\", \"span\": [888, 907]}},\n    {\"Soil\": {\"value\": \"nitrogen content\", \"span\": [909, 925]}},\n    {\"Soil\": {\"value\": \"ammonium-N\", \"span\": [927, 937]}},\n    {\"Soil\": {\"value\": \"nitrate-N\", \"span\": [939, 948]}},\n    {\"Soil\": {\"value\": \"bulk density\", \"span\": [950, 962]}},\n    {\"Soil\": {\"value\": \"soil temperatures\", \"span\": [1017, 1034]}},\n    {\"Soil\": {\"value\": \"soil tillage\", \"span\": [1127, 1139]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [148, 155]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [476, 483]}}\n  ],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"three years\", \"span\": [359, 370]}},\n    {\"startTime\": {\"value\": \"2011\", \"span\": [372, 376]}},\n    {\"endTime\": {\"value\": \"2012\", \"span\": [377, 381]}},\n    {\"startTime\": {\"value\": \"2014\", \"span\": [384, 388]}},\n    {\"endTime\": {\"value\": \"2015\", \"span\": [389, 393]}},\n    {\"duration\": {\"value\": \"2007-2016\", \"span\": [575, 584]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6209,
+    "completion_tokens": 445,
+    "total_tokens": 6654,
+    "prompt_tokens_details": {
+      "cached_tokens": 5888,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

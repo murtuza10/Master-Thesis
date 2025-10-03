@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwR0aOSrvgFO98u58lYGlS3qiu7O",
+  "object": "chat.completion",
+  "created": 1758630562,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"energy crops\", \"span\": [911, 923] }}\n  ],\n  \"Soil\": [\n    {\"soilReferenceGroup\": { \"value\": \"agricultural soils\", \"span\": [853, 871] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"German\", \"span\": [57, 63] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [117, 124] }},\n    {\"country\": { \"value\": \"European Union\", \"span\": [377, 391] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [740, 747] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1990\", \"span\": [724, 728] }},\n    {\"endTime\": { \"value\": \"2017\", \"span\": [731, 735] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3941,
+    "completion_tokens": 222,
+    "total_tokens": 4163,
+    "prompt_tokens_details": {
+      "cached_tokens": 3584,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

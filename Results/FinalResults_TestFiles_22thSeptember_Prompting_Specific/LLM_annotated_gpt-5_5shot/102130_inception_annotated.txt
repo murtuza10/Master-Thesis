@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwdga7QmABOJaA3tKfvIEpBssPdz",
+  "object": "chat.completion",
+  "created": 1758631348,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"2-year\", \"span\": [58, 64]}},\n    {\"endTime\": {\"value\": \"6\", \"span\": [164, 165]}},\n    {\"endTime\": {\"value\": \"12\", \"span\": [167, 169]}},\n    {\"endTime\": {\"value\": \"24 months\", \"span\": [174, 183]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4592,
+    "completion_tokens": 121,
+    "total_tokens": 4713,
+    "prompt_tokens_details": {
+      "cached_tokens": 4352,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

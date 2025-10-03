@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMFY8Ww1uLLtJs2XM0DlERBG4rLRS",
+  "object": "chat.completion",
+  "created": 1759419024,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [],\n  \"Location\": [\n    {\"Location\": {\"value\": \"longitude\", \"span\": [846, 855]}},\n    {\"Location\": {\"value\": \"longitude\", \"span\": [903, 912]}},\n    {\"Location\": {\"value\": \"latitude\", \"span\": [961, 969]}},\n    {\"Location\": {\"value\": \"latitude\", \"span\": [1018, 1026]}}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": {\"value\": \"1961 - 2100\", \"span\": [192, 204]}},\n    {\"TimeStatement\": {\"value\": \"1961 - 2013\", \"span\": [278, 290]}},\n    {\"TimeStatement\": {\"value\": \"2011 – 2050\", \"span\": [564, 576]}},\n    {\"TimeStatement\": {\"value\": \"2011 – 2100\", \"span\": [582, 594]}},\n    {\"TimeStatement\": {\"value\": \"31.12.2016\", \"span\": [851, 861]}},\n    {\"TimeStatement\": {\"value\": \"01.01.1961 - 31.12.2099\", \"span\": [939, 964]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4806,
+    "completion_tokens": 277,
+    "total_tokens": 5083,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

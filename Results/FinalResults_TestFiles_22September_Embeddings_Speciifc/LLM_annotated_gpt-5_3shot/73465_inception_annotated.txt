@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIvB37NE0R4VMiHSmbKeAj2i97Lmi",
+  "object": "chat.completion",
+  "created": 1758625729,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [33, 56] }},\n    {\"cropSpecies\": { \"value\": \"H. nodiflorum\", \"span\": [214, 227] }},\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [466, 489] }},\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [743, 766] }},\n    {\"cropSpecies\": { \"value\": \"celery\", \"span\": [815, 821] }},\n    {\"cropSpecies\": { \"value\": \"wild celery\", \"span\": [876, 887] }},\n    {\"cropSpecies\": { \"value\": \"wild celery\", \"span\": [1295, 1306] }},\n    {\"cropSpecies\": { \"value\": \"wild celery\", \"span\": [1516, 1527] }},\n    {\"cropSpecies\": { \"value\": \"wild celery\", \"span\": [1624, 1635] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [161, 168] }},\n    {\"city\": { \"value\": \"Gatersleben\", \"span\": [141, 152] }},\n    {\"city\": { \"value\": \"Kew Gardens London\", \"span\": [256, 275] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [849, 856] }},\n    {\"city\": { \"value\": \"Berlin\", \"span\": [807, 813] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [839, 846] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [1136, 1143] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2015\", \"span\": [957, 961] }},\n    {\"endTime\": { \"value\": \"2016\", \"span\": [965, 969] }},\n    {\"duration\": { \"value\": \"2018-2019\", \"span\": [1175, 1184] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1956,
+    "completion_tokens": 499,
+    "total_tokens": 2455,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

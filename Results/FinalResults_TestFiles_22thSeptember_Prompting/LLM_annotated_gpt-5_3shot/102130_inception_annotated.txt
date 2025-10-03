@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyITp7bmkINVzjg7KhER0wwazfzj",
+  "object": "chat.completion",
+  "created": 1758637721,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"soil\", \"span\": [84, 88]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [278, 282]}},\n    {\"Soil\": {\"value\": \"particulate organic carbon (POC)\", \"span\": [327, 361]}},\n    {\"Soil\": {\"value\": \"mineral associated organic carbon (MAOC)\", \"span\": [366, 406]}},\n    {\"Soil\": {\"value\": \"bulk soil\", \"span\": [438, 447]}},\n    {\"Soil\": {\"value\": \"total carbon content\", \"span\": [464, 484]}},\n    {\"Soil\": {\"value\": \"13C\", \"span\": [517, 520]}},\n    {\"Soil\": {\"value\": \"carbon\", \"span\": [566, 572]}},\n    {\"Soil\": {\"value\": \"C contents\", \"span\": [744, 754]}},\n    {\"Soil\": {\"value\": \"delta 13C values\", \"span\": [756, 773]}},\n    {\"Soil\": {\"value\": \"fraction weights\", \"span\": [775, 792]}},\n    {\"Soil\": {\"value\": \"carbon\", \"span\": [859, 865]}},\n    {\"Soil\": {\"value\": \"fractions\", \"span\": [875, 884]}}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"2-year\", \"span\": [45, 51]}},\n    {\"endTime\": {\"value\": \"6\", \"span\": [234, 235]}},\n    {\"endTime\": {\"value\": \"12\", \"span\": [237, 239]}},\n    {\"endTime\": {\"value\": \"24 months\", \"span\": [244, 253]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3000,
+    "completion_tokens": 421,
+    "total_tokens": 3421,
+    "prompt_tokens_details": {
+      "cached_tokens": 2688,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

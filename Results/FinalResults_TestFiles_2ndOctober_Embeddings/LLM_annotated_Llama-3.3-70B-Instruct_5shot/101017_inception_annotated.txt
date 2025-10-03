@@ -1,0 +1,31 @@
+To fill the JSON structure based on the input text, we need to identify entities that belong to the allowed subcategories: Crop, Location, and TimeStatement.
+
+From the input text, the following entities can be identified:
+
+- Crop:
+  - Möhre (carrot)
+  - Salat (lettuce)
+  - Apfel (apple)
+  - Erdbeere (strawberry)
+  - Himbeere (raspberry)
+
+- Location: None explicitly mentioned in the allowed subcategories.
+- TimeStatement: None mentioned.
+
+Given the entities identified, the JSON output would be:
+
+```json
+{
+  "Crop": [
+    {"Crop": { "value": "Möhre", "span": [156, 161] }},
+    {"Crop": { "value": "Salat", "span": [163, 168] }},
+    {"Crop": { "value": "Apfel", "span": [170, 174] }},
+    {"Crop": { "value": "Erdbeere", "span": [176, 184] }},
+    {"Crop": { "value": "Himbeere", "span": [204, 212] }}
+  ],
+  "Location": [],
+  "TimeStatement": []
+}
+```
+
+Note: The span indices are approximate and based on the text provided, starting from the beginning of the abstract. They may vary depending on the exact positioning within the original document or text format.

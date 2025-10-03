@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwfgGkyn7zo1e8p5iILzCtb1Aqc4",
+  "object": "chat.completion",
+  "created": 1758631472,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilBulkDensity\": {\"value\": \"bulk density\", \"span\": [627, 639]}},\n    {\"soilAvailableNitrogen\": {\"value\": \"nitrogen content\", \"span\": [586, 603]}},\n    {\"soilAvailableNitrogen\": {\"value\": \"ammonium-N\", \"span\": [606, 616]}},\n    {\"soilAvailableNitrogen\": {\"value\": \"nitrate-N\", \"span\": [619, 628]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [234, 241]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [1062, 1069]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2011/2012\", \"span\": [161, 170]}},\n    {\"endTime\": {\"value\": \"2014/2015\", \"span\": [173, 182]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4668,
+    "completion_tokens": 231,
+    "total_tokens": 4899,
+    "prompt_tokens_details": {
+      "cached_tokens": 4352,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

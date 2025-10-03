@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwQCtNrbFrmkFXVNhYCeH9GtBDiQ",
+  "object": "chat.completion",
+  "created": 1758630512,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilOrganicCarbon\": { \"value\": \"particulate organic carbon\", \"span\": [159, 186] }},\n    {\"soilOrganicCarbon\": { \"value\": \"POC\", \"span\": [188, 191] }},\n    {\"soilOrganicCarbon\": { \"value\": \"mineral associated organic carbon\", \"span\": [197, 230] }},\n    {\"soilOrganicCarbon\": { \"value\": \"MAOC\", \"span\": [232, 236] }},\n    {\"soilOrganicCarbon\": { \"value\": \"total carbon\", \"span\": [310, 322] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"2-year\", \"span\": [51, 57] }},\n    {\"endTime\": { \"value\": \"6\", \"span\": [107, 108] }},\n    {\"endTime\": { \"value\": \"12\", \"span\": [110, 112] }},\n    {\"endTime\": { \"value\": \"24 months\", \"span\": [117, 126] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3872,
+    "completion_tokens": 253,
+    "total_tokens": 4125,
+    "prompt_tokens_details": {
+      "cached_tokens": 3584,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

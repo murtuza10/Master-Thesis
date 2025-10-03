@@ -1,0 +1,26 @@
+{
+  "id": "gen-1759333257-kDuanbpHGjB6Yg4aRBah",
+  "provider": "Nebius",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759333257,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"maize\", \"span\": [133, 138] }},\n    {\"Crop\": { \"value\": \"R. irregulare\", \"span\": [554, 566] }},\n    {\"Crop\": { \"value\": \"F. mosseae\", \"span\": [568, 578] }},\n    {\"Crop\": { \"value\": \"F. caledonium\", \"span\": [580, 593] }},\n    {\"Crop\": { \"value\": \"Bacillus atrophaeus Abi05\", \"span\": [595, 619] }},\n    {\"Crop\": { \"value\": \"maize\", \"span\": [802, 807] }},\n    {\"Crop\": { \"value\": \"Bacillus atrophaeus Abi05\", \"span\": [1066, 1090] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Europe\", \"span\": [1425, 1431] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [1433, 1440] }},\n    {\"Location\": { \"value\": \"Lower Saxony\", \"span\": [1442, 1455] }},\n    {\"Location\": { \"value\": \"Wanna\", \"span\": [1457, 1462] }},\n    {\"Location\": { \"value\": \"Mecklenburg-Vorpommern\", \"span\": [1464, 1486] }},\n    {\"Location\": { \"value\": \"Rostock\", \"span\": [1488, 1495] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2021\", \"span\": [173, 177] }},\n    {\"TimeStatement\": { \"value\": \"2022\", \"span\": [179, 183] }},\n    {\"TimeStatement\": { \"value\": \"2023\", \"span\": [188, 192] }},\n    {\"TimeStatement\": { \"value\": \"April\", \"span\": [654, 659] }},\n    {\"TimeStatement\": { \"value\": \"August\", \"span\": [663, 669] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 930,
+    "completion_tokens": 496,
+    "total_tokens": 1426
+  }
+}

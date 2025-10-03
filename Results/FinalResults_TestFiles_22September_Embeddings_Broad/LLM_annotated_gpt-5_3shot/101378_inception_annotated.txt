@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIuBFtdp7xAo70ee26MConD3vjZDO",
+  "object": "chat.completion",
+  "created": 1758621897,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Birch\", \"span\": [52, 57] }},\n    {\"cropSpecies\": { \"value\": \"Betula pubescens Ehrh.\", \"span\": [59, 82] }},\n    {\"cropSpecies\": { \"value\": \"birch\", \"span\": [469, 474] }},\n    {\"cropSpecies\": { \"value\": \"Betula pubescens Ehrh.\", \"span\": [476, 499] }},\n    {\"cropSpecies\": { \"value\": \"birch\", \"span\": [1078, 1083] }},\n    {\"cropSpecies\": { \"value\": \"birches\", \"span\": [1672, 1679] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"peat\", \"span\": [221, 225] }},\n    {\"Soil\": { \"value\": \"peat\", \"span\": [1886, 1890] }},\n    {\"Soil\": { \"value\": \"peat\", \"span\": [1969, 1973] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"one year\", \"span\": [721, 729] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3750,
+    "completion_tokens": 284,
+    "total_tokens": 4034,
+    "prompt_tokens_details": {
+      "cached_tokens": 2304,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

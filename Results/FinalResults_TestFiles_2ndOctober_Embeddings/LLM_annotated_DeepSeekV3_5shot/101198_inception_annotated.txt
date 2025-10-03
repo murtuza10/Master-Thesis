@@ -1,0 +1,27 @@
+{
+  "id": "gen-1759421352-AQl3w5DD2DTuIt5Lh8Df",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759421352,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Thünen-Institut für Waldwirtschaft\", \"span\": [131, 166] }},\n    {\"Location\": { \"value\": \"Renewable Carbon Initiative\", \"span\": [235, 260] }},\n    {\"Location\": { \"value\": \"Bio-based Industries Consortium\", \"span\": [265, 295] }},\n    {\"Location\": { \"value\": \"FAOstat\", \"span\": [1161, 1168] }},\n    {\"Location\": { \"value\": \"World Bank\", \"span\": [1170, 1180] }},\n    {\"Location\": { \"value\": \"FRA\", \"span\": [1182, 1185] }},\n    {\"Location\": { \"value\": \"IIASA-SSP\", \"span\": [1187, 1196] }},\n    {\"Location\": { \"value\": \"WTO\", \"span\": [1198, 1201] }},\n    {\"Location\": { \"value\": \"fibre yearbook 2023\", \"span\": [1203, 1220] }},\n    {\"Location\": { \"value\": \"nova-Institut GmbH\", \"span\": [1653, 1671] }},\n    {\"Location\": { \"value\": \"Hürth\", \"span\": [1673, 1678] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [1680, 1687] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2050\", \"span\": [461, 465] }},\n    {\"TimeStatement\": { \"value\": \"2050\", \"span\": [847, 851] }},\n    {\"TimeStatement\": { \"value\": \"2020\", \"span\": [1436, 1440] }},\n    {\"TimeStatement\": { \"value\": \"2050\", \"span\": [1445, 1449] }},\n    {\"TimeStatement\": { \"value\": \"2023\", \"span\": [1527, 1531] }},\n    {\"TimeStatement\": { \"value\": \"November 2023\", \"span\": [1533, 1546] }},\n    {\"TimeStatement\": { \"value\": \"2023\", \"span\": [1583, 1587] }},\n    {\"TimeStatement\": { \"value\": \"2020\", \"span\": [1621, 1625] }},\n    {\"TimeStatement\": { \"value\": \"2020\", \"span\": [1627, 1631] }},\n    {\"TimeStatement\": { \"value\": \"November 2023\", \"span\": [1711, 1724] }},\n    {\"TimeStatement\": { \"value\": \"2024\", \"span\": [1751, 1755] }},\n    {\"TimeStatement\": { \"value\": \"August 2024\", \"span\": [1757, 1767] }},\n    {\"TimeStatement\": { \"value\": \"2023\", \"span\": [1792, 1796] }},\n    {\"TimeStatement\": { \"value\": \"17.11.2023\", \"span\": [1798, 1808] }},\n    {\"TimeStatement\": { \"value\": \"2024\", \"span\": [1810, 1814] }},\n    {\"TimeStatement\": { \"value\": \"2023–2028\", \"span\": [1892, 1900] }},\n    {\"TimeStatement\": { \"value\": \"2024-03\", \"span\": [1902, 1908] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 5755,
+    "completion_tokens": 792,
+    "total_tokens": 6547
+  }
+}

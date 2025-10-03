@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIv3BefzoiQJPQtKLdJxWi9WelrAx",
+  "object": "chat.completion",
+  "created": 1758625241,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilOrganicCarbon\": { \"value\": \"organic carbon\", \"span\": [54, 68] }},\n    {\"soilOrganicCarbon\": { \"value\": \"soil organic carbon\", \"span\": [160, 179] }},\n    {\"soilDepth\": { \"value\": \"soil cores\", \"span\": [262, 271] }},\n    {\"soilDepth\": { \"value\": \"soil profile\", \"span\": [575, 587] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [204, 211] }}\n  ],\n  \"Time Statement\": []\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1321,
+    "completion_tokens": 154,
+    "total_tokens": 1475,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

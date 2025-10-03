@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwI39nan8jTbsR7Z9o1OmMSyfvCx",
+  "object": "chat.completion",
+  "created": 1758630007,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilBulkDensity\": {\"value\": \"Trockenrohdichte (TRD)\", \"span\": [744, 767]}},\n    {\"soilOrganicCarbon\": {\"value\": \"organischer Kohlenstoffgehalt (Corg)\", \"span\": [938, 972]}},\n    {\"soilDepth\": {\"value\": \"Entkalkungstiefe\", \"span\": [975, 991]}}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"28.05.2019\", \"span\": [1158, 1168]}},\n    {\"startTime\": {\"value\": \"2012\", \"span\": [1195, 1199]}},\n    {\"endTime\": {\"value\": \"2012\", \"span\": [1211, 1215]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2370,
+    "completion_tokens": 201,
+    "total_tokens": 2571,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

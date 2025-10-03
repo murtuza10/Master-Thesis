@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwIxZGCrdTXisqVmOrJyYjMdk8EW",
+  "object": "chat.completion",
+  "created": 1758630063,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"spring barley\", \"span\": [842, 855] }},\n    {\"cropSpecies\": { \"value\": \"serradella\", \"span\": [876, 886] }},\n    {\"cropSpecies\": { \"value\": \"spring barley\", \"span\": [913, 926] }}\n  ],\n  \"Soil\": [\n    {\"soilDepth\": { \"value\": \"three sampling depths\", \"span\": [194, 215] }},\n    {\"soilDepth\": { \"value\": \"three different depths\", \"span\": [1213, 1236] }},\n    {\"soilPH\": { \"value\": \"pH\", \"span\": [77, 79] }},\n    {\"soilPH\": { \"value\": \"pH\", \"span\": [363, 365] }},\n    {\"soilPH\": { \"value\": \"pH\", \"span\": [1272, 1274] }},\n    {\"soilOrganicCarbon\": { \"value\": \"OC\", \"span\": [388, 390] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"NH4+ -N\", \"span\": [397, 404] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"NO2- -N\", \"span\": [406, 413] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"NO3- -N\", \"span\": [415, 422] }},\n    {\"soilOrganicCarbon\": { \"value\": \"organic C (DIC, DOC)\", \"span\": [1352, 1372] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [270, 277] }},\n    {\"city\": { \"value\": \"Rostock\", \"span\": [13, 20] }},\n    {\"city\": { \"value\": \"Rostock\", \"span\": [93, 100] }},\n    {\"region\": { \"value\": \"Northern Germany\", \"span\": [252, 270] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2020\", \"span\": [81, 85] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [328, 332] }},\n    {\"startTime\": { \"value\": \"2018\", \"span\": [796, 800] }},\n    {\"startTime\": { \"value\": \"2019\", \"span\": [866, 870] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [902, 906] }},\n    {\"duration\": { \"value\": \"weekly\", \"span\": [340, 346] }},\n    {\"duration\": { \"value\": \"weekly\", \"span\": [1188, 1194] }},\n    {\"duration\": { \"value\": \"about 3.5 months\", \"span\": [1491, 1509] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2453,
+    "completion_tokens": 647,
+    "total_tokens": 3100,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIygBe26OBWSTPAwSTSNnmia1NoLo",
+  "object": "chat.completion",
+  "created": 1758639191,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [2310, 2317]}},\n    {\"city\": {\"value\": \"Hürth\", \"span\": [2303, 2308]}}\n  ],\n  \"Time Statement\": [\n    {\"endTime\": {\"value\": \"2050\", \"span\": [570, 574]}},\n    {\"endTime\": {\"value\": \"2050\", \"span\": [1026, 1030]}},\n    {\"duration\": {\"value\": \"zwischen 2020 und 2050\", \"span\": [1431, 1455]}},\n    {\"endTime\": {\"value\": \"2023\", \"span\": [1759, 1763]}},\n    {\"endTime\": {\"value\": \"November 2023\", \"span\": [1923, 1937]}},\n    {\"endTime\": {\"value\": \"2023\", \"span\": [1981, 1985]}},\n    {\"endTime\": {\"value\": \"2020\", \"span\": [2071, 2075]}},\n    {\"endTime\": {\"value\": \"2020\", \"span\": [2080, 2084]}},\n    {\"endTime\": {\"value\": \"2018\", \"span\": [2184, 2188]}},\n    {\"endTime\": {\"value\": \"November 2023\", \"span\": [231, 245]}},\n    {\"endTime\": {\"value\": \"2024\", \"span\": [2224, 2228]}},\n    {\"endTime\": {\"value\": \"August 2024\", \"span\": [2302, 2313]}},\n    {\"endTime\": {\"value\": \"2023\", \"span\": [2349, 2353]}},\n    {\"endTime\": {\"value\": \"17.11.2023\", \"span\": [2406, 2416]}},\n    {\"endTime\": {\"value\": \"2024\", \"span\": [2548, 2552]}},\n    {\"endTime\": {\"value\": \"2023–2028\", \"span\": [2622, 2631]}},\n    {\"endTime\": {\"value\": \"2024-03\", \"span\": [235, 242]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4152,
+    "completion_tokens": 506,
+    "total_tokens": 4658,
+    "prompt_tokens_details": {
+      "cached_tokens": 3072,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

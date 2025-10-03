@@ -1,0 +1,27 @@
+{
+  "id": "gen-1759421333-cScre83P7098CJiBQkt4",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759421333,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Hildesheim\", \"span\": [273, 283] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"14-tägigen Zeitraster\", \"span\": [291, 311] }},\n    {\"TimeStatement\": { \"value\": \"2 Jahren\", \"span\": [329, 337] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4705,
+    "completion_tokens": 103,
+    "total_tokens": 4808
+  }
+}

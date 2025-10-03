@@ -1,0 +1,26 @@
+{
+  "id": "gen-1759333210-hAU4EmguCHtBYzUyTTvJ",
+  "provider": "Together",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759333210,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [],\n  \"Location\": [\n    {\"Location\": { \"value\": \"deutschen Bundeswaldinventur\", \"span\": [122, 146] }},\n    {\"Location\": { \"value\": \"Bundesländern\", \"span\": [228, 241] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2012\", \"span\": [9, 13] }},\n    {\"TimeStatement\": { \"value\": \"28.05.2019\", \"span\": [1301, 1311] }},\n    {\"TimeStatement\": { \"value\": \"2012\", \"span\": [1344, 1348] }},\n    {\"TimeStatement\": { \"value\": \"2012\", \"span\": [1360, 1364] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 875,
+    "completion_tokens": 188,
+    "total_tokens": 1063
+  }
+}

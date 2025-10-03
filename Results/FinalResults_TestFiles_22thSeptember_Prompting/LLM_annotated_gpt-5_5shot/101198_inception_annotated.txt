@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyyBwM5zSbOAKOMfCBk3ROjIG7Ah",
+  "object": "chat.completion",
+  "created": 1758640307,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [1890, 1897]}},\n    {\"city\": {\"value\": \"Hürth\", \"span\": [1879, 1884]}}\n  ],\n  \"Time Statement\": [\n    {\"endTime\": {\"value\": \"2050\", \"span\": [474, 478]}},\n    {\"endTime\": {\"value\": \"2050\", \"span\": [970, 974]}},\n    {\"startTime\": {\"value\": \"2024\", \"span\": [1653, 1657]}},\n    {\"endTime\": {\"value\": \"2023\", \"span\": [1403, 1407]}},\n    {\"endTime\": {\"value\": \"2023\", \"span\": [1545, 1549]}},\n    {\"endTime\": {\"value\": \"2024\", \"span\": [1608, 1612]}},\n    {\"endTime\": {\"value\": \"2023–2028\", \"span\": [1833, 1842]}},\n    {\"endTime\": {\"value\": \"2024-03\", \"span\": [1900, 1907]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6959,
+    "completion_tokens": 277,
+    "total_tokens": 7236,
+    "prompt_tokens_details": {
+      "cached_tokens": 5888,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

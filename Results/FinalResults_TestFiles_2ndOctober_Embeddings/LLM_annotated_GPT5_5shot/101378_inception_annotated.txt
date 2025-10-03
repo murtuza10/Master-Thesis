@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMFabBw9SoPbnO4NSbgEhhdvIOsV7",
+  "object": "chat.completion",
+  "created": 1759419177,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"Birch\", \"span\": [79, 84] }},\n    {\"Crop\": { \"value\": \"Betula pubescens\", \"span\": [86, 103] }},\n    {\"Crop\": { \"value\": \"birch\", \"span\": [478, 483] }},\n    {\"Crop\": { \"value\": \"Betula pubescens\", \"span\": [485, 502] }},\n    {\"Crop\": { \"value\": \"birches\", \"span\": [1240, 1247] }}\n  ],\n  \"Location\": [],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"one year\", \"span\": [663, 671] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4958,
+    "completion_tokens": 172,
+    "total_tokens": 5130,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

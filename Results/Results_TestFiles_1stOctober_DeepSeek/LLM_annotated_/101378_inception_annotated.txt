@@ -1,0 +1,26 @@
+{
+  "id": "gen-1759333485-HSgdFhmWtrIB8Jg8A2Fp",
+  "provider": "Crusoe",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759333485,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"Betula pubescens Ehrh.\", \"span\": [314, 335] }},\n    {\"Crop\": { \"value\": \"Betula pubescens Ehrh.\", \"span\": [588, 609] }}\n  ],\n  \"Location\": [],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"one year\", \"span\": [492, 500] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 915,
+    "completion_tokens": 108,
+    "total_tokens": 1023
+  }
+}

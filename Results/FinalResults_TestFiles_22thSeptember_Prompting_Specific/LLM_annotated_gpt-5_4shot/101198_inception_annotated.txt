@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwR84nKQFpMINkwQxrDG6kwxp0fD",
+  "object": "chat.completion",
+  "created": 1758630570,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [1983, 1990]}},\n    {\"city\": {\"value\": \"Hürth\", \"span\": [1976, 1981]}}\n  ],\n  \"Time Statement\": [\n    {\"endTime\": {\"value\": \"2050\", \"span\": [432, 436]}},\n    {\"endTime\": {\"value\": \"2050\", \"span\": [1003, 1007]}},\n    {\"startTime\": {\"value\": \"2024\", \"span\": [1298, 1302]}},\n    {\"endTime\": {\"value\": \"2023\", \"span\": [1620, 1624]}},\n    {\"endTime\": {\"value\": \"November 2023\", \"span\": [1764, 1778]}},\n    {\"endTime\": {\"value\": \"2020\", \"span\": [1887, 1891]}},\n    {\"endTime\": {\"value\": \"2018\", \"span\": [2146, 2150]}},\n    {\"endTime\": {\"value\": \"November 2023\", \"span\": [2327, 2341]}},\n    {\"endTime\": {\"value\": \"2024\", \"span\": [2422, 2426]}},\n    {\"endTime\": {\"value\": \"August 2024\", \"span\": [2536, 2548]}},\n    {\"endTime\": {\"value\": \"17.11.2023\", \"span\": [2630, 2640]}},\n    {\"endTime\": {\"value\": \"2024\", \"span\": [2929, 2933]}},\n    {\"endTime\": {\"value\": \"2023–2028\", \"span\": [2995, 3004]}},\n    {\"endTime\": {\"value\": \"2024-03\", \"span\": [3028, 3035]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4698,
+    "completion_tokens": 433,
+    "total_tokens": 5131,
+    "prompt_tokens_details": {
+      "cached_tokens": 3584,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

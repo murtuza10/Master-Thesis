@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIw74wgwU6TB5pYA9nG9PCgyygtpL",
+  "object": "chat.completion",
+  "created": 1758629326,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"spring barley\", \"span\": [766, 779] }},\n    {\"cropSpecies\": { \"value\": \"serradella\", \"span\": [802, 812] }},\n    {\"cropSpecies\": { \"value\": \"spring barley\", \"span\": [837, 850] }}\n  ],\n  \"Soil\": [\n    {\"soilTexture\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilReferenceGroup\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilDepth\": { \"value\": \"three sampling depths\", \"span\": [192, 214] }},\n    {\"soilBulkDensity\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilPH\": { \"value\": \"pH\", \"span\": [66, 68] }},\n    {\"soilPH\": { \"value\": \"pH\", \"span\": [362, 364] }},\n    {\"soilOrganicCarbon\": { \"value\": \"OC\", \"span\": [454, 456] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"NH4+ -N\", \"span\": [462, 470] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"NO2- -N\", \"span\": [472, 480] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"NO3- -N\", \"span\": [482, 490] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [293, 300] }},\n    {\"region\": { \"value\": \"Northern Germany\", \"span\": [275, 292] }},\n    {\"city\": { \"value\": \"Rostock\", \"span\": [14, 21] }},\n    {\"city\": { \"value\": \"Rostock\", \"span\": [120, 127] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2020\", \"span\": [92, 96] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [144, 148] }},\n    {\"startTime\": { \"value\": \"2018\", \"span\": [736, 740] }},\n    {\"startTime\": { \"value\": \"2019\", \"span\": [817, 821] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [856, 860] }},\n    {\"duration\": { \"value\": \"about 3.5 months\", \"span\": [1434, 1452] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2348,
+    "completion_tokens": 583,
+    "total_tokens": 2931,
+    "prompt_tokens_details": {
+      "cached_tokens": 1792,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

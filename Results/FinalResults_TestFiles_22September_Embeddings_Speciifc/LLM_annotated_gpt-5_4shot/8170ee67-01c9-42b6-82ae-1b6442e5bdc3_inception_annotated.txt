@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIvP9PkSRJrjwRZ9weHIvD32yxc8a",
+  "object": "chat.completion",
+  "created": 1758626603,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [49, 55] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [119, 125] }},\n    {\"cropSpecies\": { \"value\": \"oat\", \"span\": [1227, 1230] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [1937, 1943] }},\n    {\"cropSpecies\": { \"value\": \"oilseed rape\", \"span\": [1952, 1964] }},\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [1973, 1978] }},\n    {\"cropSpecies\": { \"value\": \"lupine\", \"span\": [1980, 1986] }},\n    {\"cropSpecies\": { \"value\": \"rye\", \"span\": [1997, 2000] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [2401, 2407] }},\n    {\"cropVariety\": { \"value\": \"OTTO\", \"span\": [2431, 2435] }}\n  ],\n  \"Soil\": [\n    {\"soilTexture\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilReferenceGroup\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilDepth\": { \"value\": \"25 cm\", \"span\": [1409, 1414] }},\n    {\"soilBulkDensity\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilPH\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilOrganicCarbon\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"\", \"span\": [0, 0] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"region\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"city\": { \"value\": \"Braunschweig\", \"span\": [31, 43] }},\n    {\"latitude\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"longitude\": { \"value\": \"\", \"span\": [0, 0] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2013\", \"span\": [1683, 1687] }},\n    {\"endTime\": { \"value\": \"2014\", \"span\": [2441, 2445] }},\n    {\"duration\": { \"value\": \"1985-2008\", \"span\": [822, 831] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2640,
+    "completion_tokens": 615,
+    "total_tokens": 3255,
+    "prompt_tokens_details": {
+      "cached_tokens": 1792,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

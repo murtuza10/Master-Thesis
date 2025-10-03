@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIzOKnXF8kPAJnvmWUe37aNkbSgFt",
+  "object": "chat.completion",
+  "created": 1758641928,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"organic carbon\", \"span\": [51, 65] }},\n    {\"Soil\": { \"value\": \"soil organic carbon\", \"span\": [173, 194] }},\n    {\"Soil\": { \"value\": \"soil\", \"span\": [205, 209] }},\n    {\"Soil\": { \"value\": \"soil cores\", \"span\": [342, 351] }},\n    {\"Soil\": { \"value\": \"soil properties\", \"span\": [477, 492] }},\n    {\"Soil\": { \"value\": \"soil properties\", \"span\": [592, 607] }},\n    {\"Soil\": { \"value\": \"soil profile\", \"span\": [633, 645] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [217, 224] }}\n  ],\n  \"Time Statement\": []\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1069,
+    "completion_tokens": 220,
+    "total_tokens": 1289,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyeAWemnR0PpHRlW54xMvgZhtS1Y",
+  "object": "chat.completion",
+  "created": 1758639066,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"soil\", \"span\": [98, 102]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [341, 345]}},\n    {\"Soil\": {\"value\": \"particulate organic carbon (POC)\", \"span\": [175, 209]}},\n    {\"Soil\": {\"value\": \"mineral associated organic carbon (MAOC)\", \"span\": [214, 254]}},\n    {\"Soil\": {\"value\": \"fraction\", \"span\": [264, 272]}},\n    {\"Soil\": {\"value\": \"bulk soil\", \"span\": [287, 296]}},\n    {\"Soil\": {\"value\": \"total carbon content\", \"span\": [314, 334]}},\n    {\"Soil\": {\"value\": \"stable isotope 13C\", \"span\": [361, 380]}},\n    {\"Soil\": {\"value\": \"carbon\", \"span\": [427, 433]}},\n    {\"Soil\": {\"value\": \"raw data\", \"span\": [498, 506]}},\n    {\"Soil\": {\"value\": \"C contents\", \"span\": [522, 532]}},\n    {\"Soil\": {\"value\": \"delta 13C values\", \"span\": [535, 552]}},\n    {\"Soil\": {\"value\": \"fraction weights\", \"span\": [555, 572]}},\n    {\"Soil\": {\"value\": \"carbon\", \"span\": [641, 647]}},\n    {\"Soil\": {\"value\": \"fractions\", \"span\": [655, 664]}}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"2-year\", \"span\": [61, 67]}},\n    {\"endTime\": {\"value\": \"6\", \"span\": [123, 124]}},\n    {\"endTime\": {\"value\": \"12\", \"span\": [126, 128]}},\n    {\"endTime\": {\"value\": \"24 months\", \"span\": [133, 142]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3326,
+    "completion_tokens": 467,
+    "total_tokens": 3793,
+    "prompt_tokens_details": {
+      "cached_tokens": 3072,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

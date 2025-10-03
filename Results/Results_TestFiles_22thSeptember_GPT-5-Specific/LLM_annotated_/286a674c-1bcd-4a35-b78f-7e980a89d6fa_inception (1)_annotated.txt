@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIzWZAa6f6TgsOlBzKrzf4AY8LK9I",
+  "object": "chat.completion",
+  "created": 1758642439,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [244, 249] }},\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [355, 360] }},\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [449, 454] }},\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [635, 640] }}\n  ],\n  \"Soil\": [\n    {\"soilTexture\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilReferenceGroup\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilDepth\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilBulkDensity\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilPH\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilOrganicCarbon\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"\", \"span\": [0, 0] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [915, 922] }},\n    {\"region\": { \"value\": \"Brandenburg\", \"span\": [924, 935] }},\n    {\"region\": { \"value\": \"Uckermark\", \"span\": [937, 946] }},\n    {\"city\": { \"value\": \"Quillow\", \"span\": [948, 955] }},\n    {\"latitude\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"longitude\": { \"value\": \"\", \"span\": [0, 0] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"April 2019\", \"span\": [676, 686] }},\n    {\"endTime\": { \"value\": \"June 2019\", \"span\": [691, 700] }},\n    {\"duration\": { \"value\": \"growing season\", \"span\": [650, 665] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1138,
+    "completion_tokens": 479,
+    "total_tokens": 1617,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

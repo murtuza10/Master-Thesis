@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIvCaPcIx1RvOCaxvNQ3MSi3YJ8cb",
+  "object": "chat.completion",
+  "created": 1758625824,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Picea abies\", \"span\": [53, 65] }},\n    {\"cropSpecies\": { \"value\": \"Norway spruce\", \"span\": [135, 149] }},\n    {\"cropSpecies\": { \"value\": \"Picea abies\", \"span\": [151, 163] }},\n    {\"cropSpecies\": { \"value\": \"Norway spruce\", \"span\": [383, 397] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [306, 313] }},\n    {\"region\": { \"value\": \"Western Germany\", \"span\": [298, 314] }},\n    {\"country\": { \"value\": \"German\", \"span\": [725, 731] }},\n    {\"region\": { \"value\": \"Europe\", \"span\": [514, 520] }}\n  ],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"50 years\", \"span\": [91, 99] }},\n    {\"duration\": { \"value\": \"51 years\", \"span\": [233, 241] }},\n    {\"startTime\": { \"value\": \"1964/68\", \"span\": [424, 431] }},\n    {\"age\": { \"value\": \"age 7, 10, 13, 16\", \"span\": [607, 627] }},\n    {\"age\": { \"value\": \"age 16, 21, 29, 39, 51\", \"span\": [657, 681] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1382,
+    "completion_tokens": 361,
+    "total_tokens": 1743,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

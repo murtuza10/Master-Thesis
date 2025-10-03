@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwQGwB3w0D7ceRy82LCNwDMfvh9X",
+  "object": "chat.completion",
+  "created": 1758630516,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [33, 56] }},\n    {\"cropSpecies\": { \"value\": \"H. nodiflorum\", \"span\": [192, 205] }},\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [470, 493] }},\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [758, 781] }},\n    {\"cropSpecies\": { \"value\": \"celery\", \"span\": [846, 852] }},\n    {\"cropSpecies\": { \"value\": \"wild celery\", \"span\": [888, 900] }},\n    {\"cropSpecies\": { \"value\": \"wild celery\", \"span\": [1121, 1133] }},\n    {\"cropSpecies\": { \"value\": \"wild celery\", \"span\": [1331, 1343] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"city\": { \"value\": \"Gatersleben\", \"span\": [134, 145] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [147, 154] }},\n    {\"city\": { \"value\": \"Kew Gardens London\", \"span\": [241, 260] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [820, 827] }},\n    {\"city\": { \"value\": \"Berlin\", \"span\": [811, 817] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [1042, 1049] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2015\", \"span\": [883, 887] }},\n    {\"startTime\": { \"value\": \"2016\", \"span\": [891, 895] }},\n    {\"startTime\": { \"value\": \"2018\", \"span\": [1185, 1189] }},\n    {\"endTime\": { \"value\": \"2019\", \"span\": [1190, 1194] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4122,
+    "completion_tokens": 476,
+    "total_tokens": 4598,
+    "prompt_tokens_details": {
+      "cached_tokens": 3584,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

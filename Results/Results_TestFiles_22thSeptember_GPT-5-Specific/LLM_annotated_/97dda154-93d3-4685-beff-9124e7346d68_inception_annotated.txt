@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIzV9Y04x55cKdFmakX6QB6xdt12B",
+  "object": "chat.completion",
+  "created": 1758642351,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"maize\", \"span\": [240, 245] }},\n    {\"cropSpecies\": { \"value\": \"maize\", \"span\": [992, 997] }}\n  ],\n  \"Soil\": [\n    {\"soilTexture\": { \"value\": \"Wanna Sand\", \"span\": [348, 358] }},\n    {\"soilTexture\": { \"value\": \"Rostock Sand\", \"span\": [404, 416] }},\n    {\"soilTexture\": { \"value\": \"Wanna Marsch\", \"span\": [429, 441] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [1672, 1679] }},\n    {\"region\": { \"value\": \"Europe\", \"span\": [1664, 1670] }},\n    {\"region\": { \"value\": \"Lower Saxony\", \"span\": [1681, 1693] }},\n    {\"region\": { \"value\": \"Mecklenburg-Vorpommern\", \"span\": [1703, 1728] }},\n    {\"city\": { \"value\": \"Wanna\", \"span\": [1695, 1700] }},\n    {\"city\": { \"value\": \"Rostock\", \"span\": [1730, 1737] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2021\", \"span\": [275, 279] }},\n    {\"endTime\": { \"value\": \"2023\", \"span\": [289, 293] }},\n    {\"duration\": { \"value\": \"over the years 2021, 2022 and 2023\", \"span\": [260, 296] }},\n    {\"startTime\": { \"value\": \"April\", \"span\": [1036, 1041] }},\n    {\"endTime\": { \"value\": \"August\", \"span\": [1046, 1052] }},\n    {\"duration\": { \"value\": \"each year\", \"span\": [1053, 1062] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1329,
+    "completion_tokens": 462,
+    "total_tokens": 1791,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

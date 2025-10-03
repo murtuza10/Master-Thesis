@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwD0VSuP75AAaqTQMAawSDBQV3OP",
+  "object": "chat.completion",
+  "created": 1758629694,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"celery\", \"span\": [497, 503] }},\n    {\"cropSpecies\": { \"value\": \"celery\", \"span\": [709, 715] }},\n    {\"cropSpecies\": { \"value\": \"celery\", \"span\": [831, 837] }},\n    {\"cropSpecies\": { \"value\": \"celery\", \"span\": [934, 940] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [188, 195] }},\n    {\"city\": { \"value\": \"Gatersleben\", \"span\": [164, 175] }},\n    {\"city\": { \"value\": \"Kew Gardens London\", \"span\": [297, 316] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [671, 678] }},\n    {\"city\": { \"value\": \"Berlin\", \"span\": [662, 668] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [1006, 1013] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2015\", \"span\": [750, 754] }},\n    {\"endTime\": { \"value\": \"2016\", \"span\": [758, 762] }},\n    {\"duration\": { \"value\": \"2018-2019\", \"span\": [1040, 1049] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2049,
+    "completion_tokens": 338,
+    "total_tokens": 2387,
+    "prompt_tokens_details": {
+      "cached_tokens": 1536,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

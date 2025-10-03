@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIxlNT2wRV3kj7me3gseSBK7J6e3w",
+  "object": "chat.completion",
+  "created": 1758635669,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"Winter wheat\", \"span\": [838, 850]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"soil\", \"span\": [145, 149]}},\n    {\"Soil\": {\"value\": \"soil properties\", \"span\": [287, 302]}},\n    {\"Soil\": {\"value\": \"soil water stable aggregation\", \"span\": [474, 504]}},\n    {\"Soil\": {\"value\": \"soil properties\", \"span\": [581, 596]}},\n    {\"Soil\": {\"value\": \"soil-plant system\", \"span\": [1081, 1098]}},\n    {\"Soil\": {\"value\": \"Soil\", \"span\": [811, 815]}},\n    {\"Soil\": {\"value\": \"Soil properties\", \"span\": [868, 883]}}\n  ],\n  \"Location\": [],\n  \"Time Statement\": []\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3358,
+    "completion_tokens": 220,
+    "total_tokens": 3578,
+    "prompt_tokens_details": {
+      "cached_tokens": 2944,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

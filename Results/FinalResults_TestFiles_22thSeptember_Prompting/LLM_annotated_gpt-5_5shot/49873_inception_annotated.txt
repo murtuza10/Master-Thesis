@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyw9XcnQgpjQ5cOzCnUR9du43dex",
+  "object": "chat.completion",
+  "created": 1758640181,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"Bodenleitprofile\", \"span\": [79, 95]}},\n    {\"Soil\": {\"value\": \"Standorts- und Bodeninformationen\", \"span\": [296, 329]}},\n    {\"Soil\": {\"value\": \"Standorts- und Bodenkartierung\", \"span\": [387, 416]}},\n    {\"Soil\": {\"value\": \"Standorts- und Bodenkundler\", \"span\": [494, 520]}},\n    {\"Soil\": {\"value\": \"Standorts-\", \"span\": [694, 705]}},\n    {\"Soil\": {\"value\": \"Leitprofildaten\", \"span\": [710, 725]}},\n    {\"Soil\": {\"value\": \"Bodentyp\", \"span\": [946, 954]}},\n    {\"Soil\": {\"value\": \"Wasserhaushalts-/ Nährstoffansprache\", \"span\": [956, 991]}},\n    {\"Soil\": {\"value\": \"Kalkung\", \"span\": [993, 1000]}},\n    {\"Soil\": {\"value\": \"Bodenart\", \"span\": [1061, 1069]}},\n    {\"Soil\": {\"value\": \"Skelett\", \"span\": [1071, 1078]}},\n    {\"Soil\": {\"value\": \"Trockenrohdichte (TRD)\", \"span\": [1080, 1102]}},\n    {\"Soil\": {\"value\": \"nutzbare Feldkapazität (nFK)\", \"span\": [1104, 1133]}},\n    {\"Soil\": {\"value\": \"Basensättigung\", \"span\": [1185, 1199]}},\n    {\"Soil\": {\"value\": \"organischer Kohlenstoffgehalt (Corg)\", \"span\": [1201, 1236]}},\n    {\"Soil\": {\"value\": \"Entkalkungstiefe\", \"span\": [1238, 1254]}},\n    {\"Soil\": {\"value\": \"Quellen- und Qualitätsschlüssel\", \"span\": [1260, 1289]}},\n    {\"Soil\": {\"value\": \"Standortseinheit\", \"span\": [1296, 1311]}},\n    {\"Soil\": {\"value\": \"Leitprofil\", \"span\": [1342, 1351]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"deutschen\", \"span\": [165, 173]}},\n    {\"region\": {\"value\": \"Bundesländer\", \"span\": [360, 372]}},\n    {\"region\": {\"value\": \"Bundesland\", \"span\": [548, 559]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"28.05.2019\", \"span\": [1522, 1532]}},\n    {\"startTime\": {\"value\": \"2012\", \"span\": [1566, 1570]}},\n    {\"endTime\": {\"value\": \"2012\", \"span\": [1582, 1586]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6343,
+    "completion_tokens": 692,
+    "total_tokens": 7035,
+    "prompt_tokens_details": {
+      "cached_tokens": 5888,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

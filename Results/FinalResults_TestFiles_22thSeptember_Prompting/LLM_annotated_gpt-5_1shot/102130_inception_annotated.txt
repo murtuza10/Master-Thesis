@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIxhr6LNl4UPi45zcdSltlhAPrpxX",
+  "object": "chat.completion",
+  "created": 1758635451,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"soil\", \"span\": [85, 89]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [322, 326]}},\n    {\"Soil\": {\"value\": \"particulate organic carbon (POC)\", \"span\": [369, 402]}},\n    {\"Soil\": {\"value\": \"mineral associated organic carbon (MAOC)\", \"span\": [407, 448]}},\n    {\"Soil\": {\"value\": \"bulk soil\", \"span\": [484, 493]}},\n    {\"Soil\": {\"value\": \"total carbon content\", \"span\": [509, 529]}},\n    {\"Soil\": {\"value\": \"abundance of the stable isotope 13C\", \"span\": [547, 582]}},\n    {\"Soil\": {\"value\": \"carbon\", \"span\": [634, 640]}},\n    {\"Soil\": {\"value\": \"carbon\", \"span\": [672, 678]}}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"2-year\", \"span\": [43, 49]}},\n    {\"startTime\": {\"value\": \"6\", \"span\": [207, 208]}},\n    {\"startTime\": {\"value\": \"12\", \"span\": [210, 212]}},\n    {\"endTime\": {\"value\": \"24 months\", \"span\": [217, 226]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3215,
+    "completion_tokens": 337,
+    "total_tokens": 3552,
+    "prompt_tokens_details": {
+      "cached_tokens": 2944,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIzOioIcClpBqCGqtx3rPylQxfi9k",
+  "object": "chat.completion",
+  "created": 1758641952,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [45, 67] }},\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [338, 360] }},\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [564, 586] }},\n    {\"cropSpecies\": { \"value\": \"celery\", \"span\": [739, 745] }},\n    {\"cropSpecies\": { \"value\": \"wild celery\", \"span\": [1117, 1129] }},\n    {\"cropSpecies\": { \"value\": \"wild celery\", \"span\": [1222, 1234] }},\n    {\"cropSpecies\": { \"value\": \"wild celery\", \"span\": [1373, 1385] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [196, 203] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [708, 715] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [1065, 1072] }},\n    {\"region\": { \"value\": \"Kew Gardens London\", \"span\": [276, 295] }},\n    {\"city\": { \"value\": \"Berlin\", \"span\": [699, 705] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"in prep.\", \"span\": [631, 639] }},\n    {\"startTime\": { \"value\": \"2015\", \"span\": [765, 769] }},\n    {\"startTime\": { \"value\": \"2016\", \"span\": [773, 777] }},\n    {\"duration\": { \"value\": \"2018-2019\", \"span\": [106, 115] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1359,
+    "completion_tokens": 426,
+    "total_tokens": 1785,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

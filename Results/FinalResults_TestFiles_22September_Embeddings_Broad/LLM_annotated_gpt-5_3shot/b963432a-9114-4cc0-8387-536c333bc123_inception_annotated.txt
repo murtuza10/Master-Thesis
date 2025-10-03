@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIu9rbQZV1iOuXTTw0dTwNL82fkFr",
+  "object": "chat.completion",
+  "created": 1758621811,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"spring barley\", \"span\": [739, 752] }},\n    {\"cropSpecies\": { \"value\": \"serradella\", \"span\": [774, 784] }},\n    {\"cropSpecies\": { \"value\": \"spring barley\", \"span\": [820, 833] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"Redox potential\", \"span\": [34, 49] }},\n    {\"Soil\": { \"value\": \"pH\", \"span\": [51, 53] }},\n    {\"Soil\": { \"value\": \"soil pore water\", \"span\": [208, 223] }},\n    {\"Soil\": { \"value\": \"redox potential\", \"span\": [367, 382] }},\n    {\"Soil\": { \"value\": \"pH\", \"span\": [385, 387] }},\n    {\"Soil\": { \"value\": \"organic C\", \"span\": [1259, 1268] }},\n    {\"Soil\": { \"value\": \"DOC\", \"span\": [1277, 1280] }},\n    {\"Soil\": { \"value\": \"pH\", \"span\": [1415, 1417] }}\n  ],\n  \"Location\": [\n    {\"region\": { \"value\": \"Northern Germany\", \"span\": [281, 298] }},\n    {\"city\": { \"value\": \"Rostock\", \"span\": [14, 21] }},\n    {\"city\": { \"value\": \"Rostock\", \"span\": [116, 123] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2020\", \"span\": [96, 100] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [508, 512] }},\n    {\"startTime\": { \"value\": \"2018\", \"span\": [1002, 1006] }},\n    {\"startTime\": { \"value\": \"2019\", \"span\": [1059, 1063] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [1080, 1084] }},\n    {\"duration\": { \"value\": \"about 3.5 months\", \"span\": [1472, 1490] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [1494, 1498] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4098,
+    "completion_tokens": 546,
+    "total_tokens": 4644,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

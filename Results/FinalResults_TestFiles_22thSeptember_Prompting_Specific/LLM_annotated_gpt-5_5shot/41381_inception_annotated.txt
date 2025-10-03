@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwfCD3U3vZGEeAPCqr0GVI3eYDQv",
+  "object": "chat.completion",
+  "created": 1758631442,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [79, 86]}},\n    {\"region\": {\"value\": \"southwest Germany\", \"span\": [69, 87]}},\n    {\"country\": {\"value\": \"Europe\", \"span\": [104, 110]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [433, 440]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [567, 574]}},\n    {\"country\": {\"value\": \"Europe\", \"span\": [579, 585]}},\n    {\"city\": {\"value\": \"Dossenheim\", \"span\": [985, 995]}},\n    {\"city\": {\"value\": \"Siebeldingen\", \"span\": [1000, 1012]}},\n    {\"city\": {\"value\": \"Darmstadt\", \"span\": [1052, 1061]}},\n    {\"region\": {\"value\": \"southwest Germany\", \"span\": [1164, 1182]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2011\", \"span\": [355, 359]}},\n    {\"startTime\": {\"value\": \"late summer 2011\", \"span\": [457, 473]}},\n    {\"startTime\": {\"value\": \"2011\", \"span\": [892, 896]}},\n    {\"endTime\": {\"value\": \"February 2018\", \"span\": [900, 913]}},\n    {\"startTime\": {\"value\": \"2011\", \"span\": [1077, 1081]}},\n    {\"endTime\": {\"value\": \"2018\", \"span\": [1086, 1090]}},\n    {\"duration\": {\"value\": \"7-year\", \"span\": [38, 44]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5120,
+    "completion_tokens": 417,
+    "total_tokens": 5537,
+    "prompt_tokens_details": {
+      "cached_tokens": 4352,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

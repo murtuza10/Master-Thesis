@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIzPWPajfN2jCsqfw2lbZko0ffZzb",
+  "object": "chat.completion",
+  "created": 1758642002,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"energy crops\", \"span\": [919, 931] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"agricultural soils\", \"span\": [865, 883] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"German\", \"span\": [57, 63] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [117, 124] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [652, 659] }},\n    {\"region\": { \"value\": \"European Union\", \"span\": [361, 375] }}\n  ],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"1990 - 2017\", \"span\": [64, 75] }},\n    {\"duration\": { \"value\": \"1990 - 2017\", \"span\": [701, 712] }},\n    {\"duration\": { \"value\": \"the years 1990 - 2017\", \"span\": [682, 703] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1178,
+    "completion_tokens": 256,
+    "total_tokens": 1434,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

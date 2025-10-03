@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIzWUovU7A8Egw3qgY2thYbLrhwp0",
+  "object": "chat.completion",
+  "created": 1758642434,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [87, 93] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [256, 262] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [498, 504] }},\n    {\"cropVariety\": { \"value\": \"Hordeum vulgare ssp. vulgare\", \"span\": [95, 123] }}\n  ],\n  \"Soil\": [\n    {\"soilTexture\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilReferenceGroup\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilDepth\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilBulkDensity\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilPH\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilOrganicCarbon\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"\", \"span\": [0, 0] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"region\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"city\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"latitude\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"longitude\": { \"value\": \"\", \"span\": [0, 0] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"endTime\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"duration\": { \"value\": \"\", \"span\": [0, 0] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1191,
+    "completion_tokens": 442,
+    "total_tokens": 1633,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwCqfEVAieolbwjnmZahIAnxeZtt",
+  "object": "chat.completion",
+  "created": 1758629684,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"German National Forest Inventory\", \"span\": [183, 216] }},\n    {\"longitude\": { \"value\": \"5,79922100\", \"span\": [1027, 1037] }},\n    {\"longitude\": { \"value\": \"15,08954000\", \"span\": [1067, 1078] }},\n    {\"latitude\": { \"value\": \"47,15766000\", \"span\": [1111, 1122] }},\n    {\"latitude\": { \"value\": \"55,08484000\", \"span\": [1153, 1164] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1961\", \"span\": [156, 160] }},\n    {\"endTime\": { \"value\": \"2100\", \"span\": [163, 167] }},\n    {\"startTime\": { \"value\": \"1961\", \"span\": [269, 273] }},\n    {\"endTime\": { \"value\": \"2013\", \"span\": [276, 280] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [560, 564] }},\n    {\"endTime\": { \"value\": \"2050\", \"span\": [567, 571] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [578, 582] }},\n    {\"endTime\": { \"value\": \"2100\", \"span\": [585, 589] }},\n    {\"startTime\": { \"value\": \"31.12.2016\", \"span\": [893, 903] }},\n    {\"startTime\": { \"value\": \"01.01.1961\", \"span\": [960, 970] }},\n    {\"endTime\": { \"value\": \"31.12.2099\", \"span\": [973, 983] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1936,
+    "completion_tokens": 435,
+    "total_tokens": 2371,
+    "prompt_tokens_details": {
+      "cached_tokens": 1536,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

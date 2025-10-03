@@ -1,0 +1,38 @@
+To fill the JSON structure based on the input text, we need to identify entities that belong to the allowed subcategories: Crop, Location, and TimeStatement.
+
+1. **Crop**: 
+   - cropSpecies or cropVariety mentions: "spring barley", "winter barley", "grain maize", "silage maize", "oats", "potatoes", "winter rape", "rye", "sugarbeet", "triticale", "winter wheat".
+
+2. **Location**:
+   - Country or region mentions: "Germany".
+
+3. **TimeStatement**:
+   - startTime, endTime, or duration mentions: "1979", "2021", "2020".
+
+Given the input text:
+
+```json
+{
+  "Crop": [
+    {"Crop": { "value": "spring barley", "span": [156, 168] }},
+    {"Crop": { "value": "winter barley", "span": [170, 183] }},
+    {"Crop": { "value": "grain maize", "span": [185, 196] }},
+    {"Crop": { "value": "silage maize", "span": [198, 210] }},
+    {"Crop": { "value": "oats", "span": [212, 216] }},
+    {"Crop": { "value": "potatoes", "span": [218, 226] }},
+    {"Crop": { "value": "winter rape", "span": [228, 239] }},
+    {"Crop": { "value": "rye", "span": [241, 244] }},
+    {"Crop": { "value": "sugarbeet", "span": [246, 255] }},
+    {"Crop": { "value": "triticale", "span": [257, 266] }},
+    {"Crop": { "value": "winter wheat", "span": [268, 279] }}
+  ],
+  "Location": [
+    {"Location": { "value": "Germany", "span": [34, 41] }}
+  ],
+  "TimeStatement": [
+    {"TimeStatement": { "value": "1979", "span": [47, 51] }},
+    {"TimeStatement": { "value": "2021", "span": [55, 59] }},
+    {"TimeStatement": { "value": "2020", "span": [323, 327] }}
+  ]
+}
+```

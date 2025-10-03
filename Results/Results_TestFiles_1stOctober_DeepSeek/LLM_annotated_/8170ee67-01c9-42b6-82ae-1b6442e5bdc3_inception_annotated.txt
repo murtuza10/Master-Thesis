@@ -1,0 +1,26 @@
+{
+  "id": "gen-1759333295-6VWAgysGTceTVScrv48U",
+  "provider": "Phala",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759333295,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"winter barley\", \"span\": [41, 54] }},\n    {\"Crop\": { \"value\": \"oat\", \"span\": [1173, 1176] }},\n    {\"Crop\": { \"value\": \"winter barley\", \"span\": [1465, 1478] }},\n    {\"Crop\": { \"value\": \"winter oilseed rape\", \"span\": [1480, 1499] }},\n    {\"Crop\": { \"value\": \"winter wheat\", \"span\": [1501, 1513] }},\n    {\"Crop\": { \"value\": \"lupine\", \"span\": [1515, 1521] }},\n    {\"Crop\": { \"value\": \"winter rye\", \"span\": [1526, 1536] }},\n    {\"Crop\": { \"value\": \"winter barley\", \"span\": [1787, 1800] }},\n    {\"Crop\": { \"value\": \"Hordeum vulgare L.\", \"span\": [1802, 1819] }},\n    {\"Crop\": { \"value\": \"OTTO\", \"span\": [1829, 1833] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Braunschweig\", \"span\": [21, 33] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2014\", \"span\": [58, 62] }},\n    {\"TimeStatement\": { \"value\": \"1985-2008\", \"span\": [764, 773] }},\n    {\"TimeStatement\": { \"value\": \"2013\", \"span\": [1179, 1183] }},\n    {\"TimeStatement\": { \"value\": \"2013\", \"span\": [1233, 1237] }},\n    {\"TimeStatement\": { \"value\": \"2014\", \"span\": [1840, 1844] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1137,
+    "completion_tokens": 453,
+    "total_tokens": 1590
+  }
+}

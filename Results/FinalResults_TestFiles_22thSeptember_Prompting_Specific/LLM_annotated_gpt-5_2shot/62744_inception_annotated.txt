@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwEWJkXRfsze4sKNQUmRfI0WsdHD",
+  "object": "chat.completion",
+  "created": 1758629788,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"rye\", \"span\": [94, 97]}},\n    {\"cropSpecies\": {\"value\": \"Rye\", \"span\": [115, 118]}},\n    {\"cropSpecies\": {\"value\": \"rye\", \"span\": [257, 260]}},\n    {\"cropSpecies\": {\"value\": \"rye\", \"span\": [1140, 1143]}},\n    {\"cropSpecies\": {\"value\": \"rye\", \"span\": [1391, 1394]}},\n    {\"cropSpecies\": {\"value\": \"cereals\", \"span\": [126, 133]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"region\": {\"value\": \"Northern Europe\", \"span\": [169, 185]}},\n    {\"country\": {\"value\": \"German\", \"span\": [635, 641]}}\n  ],\n  \"Time Statement\": []\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2061,
+    "completion_tokens": 216,
+    "total_tokens": 2277,
+    "prompt_tokens_details": {
+      "cached_tokens": 1536,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

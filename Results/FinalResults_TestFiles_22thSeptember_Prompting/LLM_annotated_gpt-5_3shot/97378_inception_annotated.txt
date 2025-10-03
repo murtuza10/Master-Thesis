@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyJWIY6SwDAY0r3wSPh8O0JZn5h1",
+  "object": "chat.completion",
+  "created": 1758637786,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"Bodentextur\", \"span\": [329, 340]}},\n    {\"Soil\": {\"value\": \"Lehm\", \"span\": [342, 346]}},\n    {\"Soil\": {\"value\": \"Ton\", \"span\": [351, 354]}},\n    {\"Soil\": {\"value\": \"Bodenbearbeitung\", \"span\": [360, 376]}},\n    {\"Soil\": {\"value\": \"pH Wert\", \"span\": [702, 709]}},\n    {\"Soil\": {\"value\": \"organischen Kohlenstoff\", \"span\": [721, 745]}},\n    {\"Soil\": {\"value\": \"Gesamt-Stickstoff\", \"span\": [750, 768]}},\n    {\"Soil\": {\"value\": \"Boden-DNA\", \"span\": [831, 840]}}\n  ],\n  \"Location\": [\n    {\"city\": {\"value\": \"Hildesheim\", \"span\": [238, 248]}}\n  ],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"14-tägigen\", \"span\": [265, 276]}},\n    {\"duration\": {\"value\": \"2 Jahren\", \"span\": [354, 362]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3084,
+    "completion_tokens": 296,
+    "total_tokens": 3380,
+    "prompt_tokens_details": {
+      "cached_tokens": 2688,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

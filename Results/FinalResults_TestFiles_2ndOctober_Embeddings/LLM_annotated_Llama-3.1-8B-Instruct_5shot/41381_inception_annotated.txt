@@ -1,0 +1,28 @@
+### Output JSON Structure ###
+```json
+{
+  "Crop": [],
+  "Location": [
+    {"Location": {"value": "Germany", "span": [123, 130]}},
+    {"Location": {"value": "southwest Germany", "span": [134, 147]}},
+    {"Location": {"value": "Europe", "span": [171, 178]}},
+    {"Location": {"value": "Dossenheim", "span": [255, 265]}},
+    {"Location": {"value": "Siebeldingen", "span": [271, 281]}},
+    {"Location": {"value": "Darmstadt", "span": [287, 295]}},
+    {"Location": {"value": "JKI", "span": [309, 312]}}
+  ],
+  "TimeStatement": [
+    {"TimeStatement": {"value": "2011", "span": [103, 107]}},
+    {"TimeStatement": {"value": "2018", "span": [222, 226]}}
+  ]
+}
+```
+### Explanation ###
+
+The input text describes a study about Drosophila suzukii (Spotted wing drosophila - SWD) in southwest Germany. The entities that are extracted from the text are:
+
+*   Crop: None (no specific crop species or variety is mentioned)
+*   Location: Several locations are mentioned, including Germany, southwest Germany, Europe, Dossenheim, Siebeldingen, Darmstadt, and JKI.
+*   TimeStatement: The years 2011 and 2018 are mentioned as the start and end years of the study.
+
+The extracted entities are returned in the JSON structure as specified.

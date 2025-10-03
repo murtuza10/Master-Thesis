@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyyYjaf15E4OEZPO6azFcIeBuEyQ",
+  "object": "chat.completion",
+  "created": 1758640330,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"fruits\", \"span\": [83, 89]}},\n    {\"cropSpecies\": {\"value\": \"grape\", \"span\": [162, 167]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [47, 54]}},\n    {\"region\": {\"value\": \"southwest Germany\", \"span\": [43, 61]}},\n    {\"region\": {\"value\": \"Europe\", \"span\": [112, 118]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [391, 398]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [474, 481]}},\n    {\"region\": {\"value\": \"Europe\", \"span\": [486, 492]}},\n    {\"region\": {\"value\": \"southwest Germany\", \"span\": [1113, 1131]}},\n    {\"city\": {\"value\": \"Dossenheim\", \"span\": [986, 996]}},\n    {\"city\": {\"value\": \"Siebeldingen\", \"span\": [1001, 1013]}},\n    {\"city\": {\"value\": \"Darmstadt\", \"span\": [1057, 1066]}}\n  ],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"7-year\", \"span\": [28, 34]}},\n    {\"startTime\": {\"value\": \"2011\", \"span\": [328, 332]}},\n    {\"startTime\": {\"value\": \"late summer 2011\", \"span\": [434, 451]}},\n    {\"startTime\": {\"value\": \"2011\", \"span\": [871, 875]}},\n    {\"endTime\": {\"value\": \"February 2018\", \"span\": [889, 902]}},\n    {\"startTime\": {\"value\": \"2011\", \"span\": [1078, 1082]}},\n    {\"endTime\": {\"value\": \"2018\", \"span\": [1087, 1091]}},\n    {\"endTime\": {\"value\": \"2018\", \"span\": [1154, 1158]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6661,
+    "completion_tokens": 487,
+    "total_tokens": 7148,
+    "prompt_tokens_details": {
+      "cached_tokens": 5888,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIxi8h5ROjaE13iUqIqAsoYgfD9jF",
+  "object": "chat.completion",
+  "created": 1758635468,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"maize\", \"span\": [199, 204] }},\n    {\"cropSpecies\": { \"value\": \"maize\", \"span\": [774, 779] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"soil\", \"span\": [54, 58] }},\n    {\"Soil\": { \"value\": \"soil\", \"span\": [167, 171] }},\n    {\"Soil\": { \"value\": \"Wanna Sand\", \"span\": [289, 299] }},\n    {\"Soil\": { \"value\": \"Wanna Sand without biogas slurry\", \"span\": [304, 336] }},\n    {\"Soil\": { \"value\": \"Rostock Sand\", \"span\": [362, 374] }},\n    {\"Soil\": { \"value\": \"Wanna Marsch\", \"span\": [382, 394] }},\n    {\"Soil\": { \"value\": \"biogas slurry\", \"span\": [452, 465] }},\n    {\"Soil\": { \"value\": \"Soil samples\", \"span\": [1036, 1048] }},\n    {\"Soil\": { \"value\": \"soil\", \"span\": [1135, 1139] }},\n    {\"Soil\": { \"value\": \"soil\", \"span\": [1512, 1516] }},\n    {\"Soil\": { \"value\": \"Soil\", \"span\": [2085, 2089] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Europe\", \"span\": [2425, 2431] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [2433, 2440] }},\n    {\"region\": { \"value\": \"Lower Saxony\", \"span\": [2442, 2454] }},\n    {\"city\": { \"value\": \"Wanna\", \"span\": [2456, 2461] }},\n    {\"region\": { \"value\": \"Mecklenburg-Vorpommern\", \"span\": [2463, 2487] }},\n    {\"city\": { \"value\": \"Rostock\", \"span\": [2489, 2496] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2021\", \"span\": [241, 245] }},\n    {\"startTime\": { \"value\": \"2022\", \"span\": [247, 251] }},\n    {\"startTime\": { \"value\": \"2023\", \"span\": [256, 260] }},\n    {\"duration\": { \"value\": \"between April and August\", \"span\": [1065, 1090] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3516,
+    "completion_tokens": 600,
+    "total_tokens": 4116,
+    "prompt_tokens_details": {
+      "cached_tokens": 2944,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

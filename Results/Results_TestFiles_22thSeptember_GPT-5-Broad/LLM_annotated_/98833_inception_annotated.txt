@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIzPbZLH8XKBUjWeKVrXhpXtylYEA",
+  "object": "chat.completion",
+  "created": 1758642007,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"Bodendruck\", \"span\": [165, 175] }},\n    {\"Soil\": { \"value\": \"pseudovergleyte Parabraunerde\", \"span\": [322, 352] }},\n    {\"Soil\": { \"value\": \"Löss\", \"span\": [357, 361] }},\n    {\"Soil\": { \"value\": \"28 cm Tiefe\", \"span\": [373, 384] }},\n    {\"Soil\": { \"value\": \"20, 35 und 50 cm Tiefe\", \"span\": [681, 703] }},\n    {\"Soil\": { \"value\": \"Bodendruck\", \"span\": [723, 733] }},\n    {\"Soil\": { \"value\": \"plastische Bodensetzung\", \"span\": [738, 762] }},\n    {\"Soil\": { \"value\": \"Wasserretentionseigenschaften\", \"span\": [763, 793] }},\n    {\"Soil\": { \"value\": \"Lagerungsdichte\", \"span\": [795, 811] }},\n    {\"Soil\": { \"value\": \"gesättigte hydr. Leitfähigkeit\", \"span\": [816, 846] }},\n    {\"Soil\": { \"value\": \"Gesamtporenvolumen\", \"span\": [908, 927] }},\n    {\"Soil\": { \"value\": \"Luftkapazität\", \"span\": [929, 943] }},\n    {\"Soil\": { \"value\": \"Feldkapazität\", \"span\": [945, 959] }},\n    {\"Soil\": { \"value\": \"permanenter Welkepunkt\", \"span\": [961, 983] }},\n    {\"Soil\": { \"value\": \"Trocken-rohdichte\", \"span\": [988, 1005] }},\n    {\"Soil\": { \"value\": \"Bioporen\", \"span\": [1006, 1014] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"im Jahr 2017\", \"span\": [57, 70] }},\n    {\"startTime\": { \"value\": \"2017\", \"span\": [228, 232] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1223,
+    "completion_tokens": 511,
+    "total_tokens": 1734,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

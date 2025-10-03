@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIw7zDdTxMBpKhGFvnaYMKut0IlXF",
+  "object": "chat.completion",
+  "created": 1758629383,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"spring barley\", \"span\": [210, 223]}},\n    {\"cropSpecies\": {\"value\": \"winter barley\", \"span\": [225, 238]}},\n    {\"cropSpecies\": {\"value\": \"grain maize\", \"span\": [240, 250]}},\n    {\"cropSpecies\": {\"value\": \"silage maize\", \"span\": [252, 264]}},\n    {\"cropSpecies\": {\"value\": \"oats\", \"span\": [266, 270]}},\n    {\"cropSpecies\": {\"value\": \"potatoes\", \"span\": [272, 280]}},\n    {\"cropSpecies\": {\"value\": \"winter rape\", \"span\": [282, 293]}},\n    {\"cropSpecies\": {\"value\": \"rye\", \"span\": [295, 298]}},\n    {\"cropSpecies\": {\"value\": \"sugarbeet\", \"span\": [300, 309]}},\n    {\"cropSpecies\": {\"value\": \"triticale\", \"span\": [311, 320]}},\n    {\"cropSpecies\": {\"value\": \"winter wheat\", \"span\": [325, 337]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [64, 71]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [111, 118]}},\n    {\"region\": {\"value\": \"district\", \"span\": [169, 177]}},\n    {\"region\": {\"value\": \"district\", \"span\": [617, 625]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"1979\", \"span\": [72, 76]}},\n    {\"endTime\": {\"value\": \"2021\", \"span\": [80, 84]}},\n    {\"startTime\": {\"value\": \"1979\", \"span\": [119, 123]}},\n    {\"endTime\": {\"value\": \"2021\", \"span\": [127, 131]}},\n    {\"startTime\": {\"value\": \"2020\", \"span\": [681, 685]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2107,
+    "completion_tokens": 476,
+    "total_tokens": 2583,
+    "prompt_tokens_details": {
+      "cached_tokens": 1792,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

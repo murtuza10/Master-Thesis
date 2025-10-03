@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyJs1Rf3ph74ASqncnsxcAU3hFrQ",
+  "object": "chat.completion",
+  "created": 1758637808,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [2296, 2303]}},\n    {\"city\": {\"value\": \"Hürth\", \"span\": [2288, 2293]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2050\", \"span\": [476, 480]}},\n    {\"endTime\": {\"value\": \"2050\", \"span\": [1016, 1020]}},\n    {\"startTime\": {\"value\": \"2020\", \"span\": [1679, 1683]}},\n    {\"endTime\": {\"value\": \"2050\", \"span\": [1688, 1692]}},\n    {\"startTime\": {\"value\": \"November 2023\", \"span\": [2103, 2117]}},\n    {\"startTime\": {\"value\": \"2023\", \"span\": [2056, 2060]}},\n    {\"startTime\": {\"value\": \"2020\", \"span\": [2244, 2248]}},\n    {\"startTime\": {\"value\": \"2018\", \"span\": [2198, 2202]}},\n    {\"startTime\": {\"value\": \"November 2023\", \"span\": [2333, 2347]}},\n    {\"startTime\": {\"value\": \"2024\", \"span\": [2388, 2392]}},\n    {\"startTime\": {\"value\": \"August 2024\", \"span\": [2453, 2464]}},\n    {\"startTime\": {\"value\": \"2023\", \"span\": [2495, 2499]}},\n    {\"startTime\": {\"value\": \"17.11.2023\", \"span\": [2563, 2573]}},\n    {\"startTime\": {\"value\": \"2024\", \"span\": [266, 270]}},\n    {\"startTime\": {\"value\": \"2024\", \"span\": [2605, 2609]}},\n    {\"startTime\": {\"value\": \"2023–2028\", \"span\": [2640, 2649]}},\n    {\"startTime\": {\"value\": \"2024-03\", \"span\": [2320, 2327]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3826,
+    "completion_tokens": 503,
+    "total_tokens": 4329,
+    "prompt_tokens_details": {
+      "cached_tokens": 2688,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

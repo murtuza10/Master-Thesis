@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIzWed9v5L4PSrTNd4jgVKoEWA0Jv",
+  "object": "chat.completion",
+  "created": 1758642444,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"grape\", \"span\": [201, 206] }},\n    {\"cropSpecies\": { \"value\": \"apple\", \"span\": [1451, 1456] }},\n    {\"cropSpecies\": { \"value\": \"D. suzukii\", \"span\": [146, 156] }},\n    {\"cropSpecies\": { \"value\": \"Drosophila suzukii\", \"span\": [66, 85] }}\n  ],\n  \"Soil\": [\n    {\"soilTexture\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilReferenceGroup\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilDepth\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilBulkDensity\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilPH\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilOrganicCarbon\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"\", \"span\": [0, 0] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [55, 62] }},\n    {\"country\": { \"value\": \"Europe\", \"span\": [121, 127] }},\n    {\"region\": { \"value\": \"southwest Germany\", \"span\": [46, 64] }},\n    {\"region\": { \"value\": \"southwest Germany\", \"span\": [808, 826] }},\n    {\"city\": { \"value\": \"Dossenheim\", \"span\": [1028, 1038] }},\n    {\"city\": { \"value\": \"Siebeldingen\", \"span\": [1043, 1055] }},\n    {\"city\": { \"value\": \"Darmstadt\", \"span\": [1093, 1102] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2011\", \"span\": [724, 728] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [951, 955] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [1208, 1212] }},\n    {\"endTime\": { \"value\": \"February 2018\", \"span\": [877, 891] }},\n    {\"endTime\": { \"value\": \"2018\", \"span\": [1217, 1221] }},\n    {\"duration\": { \"value\": \"7-year\", \"span\": [29, 35] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1556,
+    "completion_tokens": 595,
+    "total_tokens": 2151,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

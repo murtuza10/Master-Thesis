@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwJJ0uUi7Q3heb0u8OlK0jcPuMxM",
+  "object": "chat.completion",
+  "created": 1758630085,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"energy crops\", \"span\": [978, 990]}}\n  ],\n  \"Soil\": [\n    {\"soilTexture\": {\"value\": \"\", \"span\": [0, 0]}},\n    {\"soilReferenceGroup\": {\"value\": \"\", \"span\": [0, 0]}},\n    {\"soilDepth\": {\"value\": \"\", \"span\": [0, 0]}},\n    {\"soilBulkDensity\": {\"value\": \"\", \"span\": [0, 0]}},\n    {\"soilPH\": {\"value\": \"\", \"span\": [0, 0]}},\n    {\"soilOrganicCarbon\": {\"value\": \"\", \"span\": [0, 0]}},\n    {\"soilAvailableNitrogen\": {\"value\": \"\", \"span\": [0, 0]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"German\", \"span\": [61, 67]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [170, 177]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [717, 724]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"1990\", \"span\": [679, 683]}},\n    {\"endTime\": {\"value\": \"2017\", \"span\": [686, 690]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2229,
+    "completion_tokens": 306,
+    "total_tokens": 2535,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

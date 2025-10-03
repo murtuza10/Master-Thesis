@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIuiUI21TJiyE5yUaqlriJUNeSuoP",
+  "object": "chat.completion",
+  "created": 1758623958,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"maize\", \"span\": [203, 208] }},\n    {\"cropSpecies\": { \"value\": \"maize\", \"span\": [784, 789] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"region\": { \"value\": \"Wanna Sand\", \"span\": [276, 286] }},\n    {\"region\": { \"value\": \"Wanna Sand without biogas slurry\", \"span\": [289, 321] }},\n    {\"region\": { \"value\": \"Rostock Sand\", \"span\": [325, 337] }},\n    {\"region\": { \"value\": \"Wanna Marsch\", \"span\": [342, 354] }},\n    {\"region\": { \"value\": \"Europe\", \"span\": [1690, 1696] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [1699, 1706] }},\n    {\"region\": { \"value\": \"Lower Saxony\", \"span\": [1709, 1721] }},\n    {\"city\": { \"value\": \"Wanna\", \"span\": [1724, 1729] }},\n    {\"region\": { \"value\": \"Mecklenburg-Vorpommern\", \"span\": [1732, 1756] }},\n    {\"city\": { \"value\": \"Rostock\", \"span\": [1759, 1766] }}\n  ],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"over the years 2021, 2022 and 2023\", \"span\": [210, 247] }},\n    {\"duration\": { \"value\": \"between April and August each year\", \"span\": [973, 1006] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5238,
+    "completion_tokens": 393,
+    "total_tokens": 5631,
+    "prompt_tokens_details": {
+      "cached_tokens": 3456,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

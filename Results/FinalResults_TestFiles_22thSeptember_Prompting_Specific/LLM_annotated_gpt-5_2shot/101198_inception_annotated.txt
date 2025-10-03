@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwDlBAhwXmk9HDMYBC9LPL9i5roN",
+  "object": "chat.completion",
+  "created": 1758629741,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [1807, 1814]}},\n    {\"city\": {\"value\": \"Hürth\", \"span\": [1799, 1804]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2020\", \"span\": [1097, 1101]}},\n    {\"endTime\": {\"value\": \"2050\", \"span\": [1106, 1110]}},\n    {\"endTime\": {\"value\": \"2050\", \"span\": [600, 604]}},\n    {\"startTime\": {\"value\": \"2023\", \"span\": [1478, 1482]}},\n    {\"startTime\": {\"value\": \"2020\", \"span\": [1655, 1659]}},\n    {\"startTime\": {\"value\": \"2018\", \"span\": [1598, 1602]}},\n    {\"startTime\": {\"value\": \"2024\", \"span\": [1730, 1734]}},\n    {\"startTime\": {\"value\": \"2023\", \"span\": [1761, 1765]}},\n    {\"startTime\": {\"value\": \"2024\", \"span\": [1869, 1873]}},\n    {\"startTime\": {\"value\": \"2023–2028\", \"span\": [1715, 1724]}},\n    {\"startTime\": {\"value\": \"2024-03\", \"span\": [1821, 1828]}},\n    {\"duration\": {\"value\": \"zwischen 2020 und 2050\", \"span\": [1088, 1111]}},\n    {\"startTime\": {\"value\": \"November 2023\", \"span\": [1512, 1526]}},\n    {\"startTime\": {\"value\": \"November 2023\", \"span\": [1626, 1640]}},\n    {\"startTime\": {\"value\": \"August 2024\", \"span\": [1704, 1715]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2625,
+    "completion_tokens": 458,
+    "total_tokens": 3083,
+    "prompt_tokens_details": {
+      "cached_tokens": 1536,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

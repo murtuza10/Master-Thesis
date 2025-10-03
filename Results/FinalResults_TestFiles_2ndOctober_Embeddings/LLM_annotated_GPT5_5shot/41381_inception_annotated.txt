@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMFaG5Rt23pcDXPo2OOA9YAbinaLU",
+  "object": "chat.completion",
+  "created": 1759419156,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"grape\", \"span\": [214, 219] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Europe\", \"span\": [95, 101] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [319, 326] }},\n    {\"Location\": { \"value\": \"southwest Germany\", \"span\": [274, 292] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [369, 376] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [640, 647] }},\n    {\"Location\": { \"value\": \"Europe\", \"span\": [652, 658] }},\n    {\"Location\": { \"value\": \"Dossenheim\", \"span\": [1064, 1074] }},\n    {\"Location\": { \"value\": \"Siebeldingen\", \"span\": [1079, 1091] }},\n    {\"Location\": { \"value\": \"Darmstadt\", \"span\": [1125, 1134] }},\n    {\"Location\": { \"value\": \"southwest Germany\", \"span\": [1234, 1252] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2011\", \"span\": [298, 302] }},\n    {\"TimeStatement\": { \"value\": \"late summer 2011\", \"span\": [407, 424] }},\n    {\"TimeStatement\": { \"value\": \"2011\", \"span\": [1045, 1049] }},\n    {\"TimeStatement\": { \"value\": \"February 2018\", \"span\": [869, 883] }},\n    {\"TimeStatement\": { \"value\": \"2011\", \"span\": [1186, 1190] }},\n    {\"TimeStatement\": { \"value\": \"2018\", \"span\": [1194, 1198] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4636,
+    "completion_tokens": 433,
+    "total_tokens": 5069,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

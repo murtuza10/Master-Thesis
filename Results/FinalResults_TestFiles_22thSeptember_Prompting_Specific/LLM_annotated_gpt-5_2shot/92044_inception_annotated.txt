@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwDv05UcFLhpnkAEfDStWE60NUel",
+  "object": "chat.completion",
+  "created": 1758629751,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"spring barley\", \"span\": [232, 245]}},\n    {\"cropSpecies\": {\"value\": \"winter barley\", \"span\": [247, 260]}},\n    {\"cropSpecies\": {\"value\": \"grain maize\", \"span\": [262, 272]}},\n    {\"cropSpecies\": {\"value\": \"silage maize\", \"span\": [274, 285]}},\n    {\"cropSpecies\": {\"value\": \"oats\", \"span\": [287, 291]}},\n    {\"cropSpecies\": {\"value\": \"potatoes\", \"span\": [293, 301]}},\n    {\"cropSpecies\": {\"value\": \"winter rape\", \"span\": [303, 314]}},\n    {\"cropSpecies\": {\"value\": \"rye\", \"span\": [316, 319]}},\n    {\"cropSpecies\": {\"value\": \"sugarbeet\", \"span\": [321, 330]}},\n    {\"cropSpecies\": {\"value\": \"triticale\", \"span\": [332, 341]}},\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [353, 358]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [64, 71]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [120, 127]}},\n    {\"latitude\": {\"value\": \"https://doi.org/10.1038/s41597-024-02951-8\", \"span\": [743, 788]}},\n    {\"longitude\": {\"value\": \"https://doi.org/10.1038/s41597-024-02951-8\", \"span\": [743, 788]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"1979\", \"span\": [75, 79]}},\n    {\"endTime\": {\"value\": \"2021\", \"span\": [83, 87]}},\n    {\"startTime\": {\"value\": \"1979\", \"span\": [130, 134]}},\n    {\"endTime\": {\"value\": \"2021\", \"span\": [138, 142]}},\n    {\"duration\": {\"value\": \"per year\", \"span\": [465, 473]}},\n    {\"startTime\": {\"value\": \"2020\", \"span\": [690, 694]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1851,
+    "completion_tokens": 533,
+    "total_tokens": 2384,
+    "prompt_tokens_details": {
+      "cached_tokens": 1536,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

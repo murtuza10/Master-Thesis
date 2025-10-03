@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIjAuNE1nIrigMoRz1GdgfqKCG6SN",
+  "object": "chat.completion",
+  "created": 1758579592,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"apple\", \"span\": [54, 59] }},\n    {\"cropSpecies\": { \"value\": \"apple\", \"span\": [368, 373] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"region\": { \"value\": \"Altes Land\", \"span\": [72, 82] }},\n    {\"region\": { \"value\": \"Lower Saxony\", \"span\": [338, 351] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [353, 360] }}\n  ],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"Three-year\", \"span\": [7, 17] }},\n    {\"startTime\": { \"value\": \"2001\", \"span\": [500, 504] }},\n    {\"endTime\": { \"value\": \"2003\", \"span\": [509, 513] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1562,
+    "completion_tokens": 219,
+    "total_tokens": 1781,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

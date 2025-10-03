@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CItxBHOdhCAeFqXTMDqflz8zgyzqr",
+  "object": "chat.completion",
+  "created": 1758621025,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"Bodenleitprofile\", \"span\": [141, 157]}},\n    {\"Soil\": {\"value\": \"bodenkundler\", \"span\": [573, 586]}},\n    {\"Soil\": {\"value\": \"Bodentyp\", \"span\": [907, 915]}},\n    {\"Soil\": {\"value\": \"Wasserhaushalts-/ Nährstoffansprache\", \"span\": [917, 954]}},\n    {\"Soil\": {\"value\": \"Kalkung\", \"span\": [956, 963]}},\n    {\"Soil\": {\"value\": \"Bodenart\", \"span\": [1015, 1023]}},\n    {\"Soil\": {\"value\": \"Skelett\", \"span\": [1025, 1032]}},\n    {\"Soil\": {\"value\": \"Trockenrohdichte (TRD)\", \"span\": [1034, 1056]}},\n    {\"Soil\": {\"value\": \"nutzbare Feldkapazität (nFK)\", \"span\": [1058, 1086]}},\n    {\"Soil\": {\"value\": \"Basensättigung\", \"span\": [1137, 1151]}},\n    {\"Soil\": {\"value\": \"organischer Kohlenstoffgehalt (Corg)\", \"span\": [1153, 1187]}},\n    {\"Soil\": {\"value\": \"Entkalkungstiefe\", \"span\": [1189, 1206]}}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"Creation date: 28.05.2019\", \"span\": [1407, 1434]}},\n    {\"startTime\": {\"value\": \"start date: 2012\", \"span\": [1457, 1474]}},\n    {\"endTime\": {\"value\": \"end date: 2012\", \"span\": [1476, 1491]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2629,
+    "completion_tokens": 451,
+    "total_tokens": 3080,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

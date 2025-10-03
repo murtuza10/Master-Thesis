@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwEcM0xJN5ihg8fGldwQ25gRJuMa",
+  "object": "chat.completion",
+  "created": 1758629794,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"German\", \"span\": [76, 82]}},\n    {\"region\": {\"value\": \"Western Germany\", \"span\": [221, 237]}},\n    {\"country\": {\"value\": \"German\", \"span\": [654, 660]}},\n    {\"country\": {\"value\": \"Europe\", \"span\": [412, 418]}}\n  ],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"50 years\", \"span\": [60, 68]}},\n    {\"duration\": {\"value\": \"51 years\", \"span\": [183, 191]}},\n    {\"startTime\": {\"value\": \"1964/68\", \"span\": [302, 309]}},\n    {\"startTime\": {\"value\": \"age 7\", \"span\": [573, 578]}},\n    {\"startTime\": {\"value\": \"10\", \"span\": [580, 582]}},\n    {\"startTime\": {\"value\": \"13\", \"span\": [584, 586]}},\n    {\"startTime\": {\"value\": \"16\", \"span\": [588, 590]}},\n    {\"startTime\": {\"value\": \"age 16\", \"span\": [614, 620]}},\n    {\"startTime\": {\"value\": \"21\", \"span\": [622, 624]}},\n    {\"startTime\": {\"value\": \"29\", \"span\": [626, 628]}},\n    {\"startTime\": {\"value\": \"39\", \"span\": [630, 632]}},\n    {\"startTime\": {\"value\": \"51\", \"span\": [634, 636]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1827,
+    "completion_tokens": 378,
+    "total_tokens": 2205,
+    "prompt_tokens_details": {
+      "cached_tokens": 1536,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

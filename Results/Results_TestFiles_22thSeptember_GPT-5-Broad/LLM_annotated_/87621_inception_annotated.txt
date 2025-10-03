@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIzQ06FxatnZ8rhgWTnqvMBzKlJRJ",
+  "object": "chat.completion",
+  "created": 1758642032,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Wheat\", \"span\": [53, 58] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [104, 110] }},\n    {\"cropSpecies\": { \"value\": \"Hordeum vulgare ssp. vulgare\", \"span\": [112, 140] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [221, 227] }},\n    {\"cropSpecies\": { \"value\": \"cereals\", \"span\": [242, 249] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [330, 336] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [496, 502] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [],\n  \"Time Statement\": []\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1272,
+    "completion_tokens": 206,
+    "total_tokens": 1478,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

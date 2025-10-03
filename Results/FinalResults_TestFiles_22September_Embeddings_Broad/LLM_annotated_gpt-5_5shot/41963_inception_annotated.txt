@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIui1GbocEVcwWO5ucAvmJVE2CjsP",
+  "object": "chat.completion",
+  "created": 1758623929,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"Crops\": [], \"Soil\": [], \"Location\": [], \"Time Statement\": [{\"startTime\": {\"value\": \"1961\", \"span\": [173, 177]}}, {\"endTime\": {\"value\": \"2100\", \"span\": [180, 184]}}, {\"startTime\": {\"value\": \"1961\", \"span\": [278, 282]}}, {\"endTime\": {\"value\": \"2013\", \"span\": [285, 289]}}, {\"startTime\": {\"value\": \"2011\", \"span\": [430, 434]}}, {\"endTime\": {\"value\": \"2050\", \"span\": [437, 441]}}, {\"startTime\": {\"value\": \"2011\", \"span\": [454, 458]}}, {\"endTime\": {\"value\": \"2100\", \"span\": [461, 465]}}, {\"duration\": {\"value\": \"monthly\", \"span\": [752, 759]}}, {\"duration\": {\"value\": \"seasonal\", \"span\": [762, 770]}}, {\"duration\": {\"value\": \"yearly\", \"span\": [772, 778]}}, {\"duration\": {\"value\": \"multiyearly\", \"span\": [780, 791]}}, {\"startTime\": {\"value\": \"31.12.2016\", \"span\": [932, 943]}}, {\"startTime\": {\"value\": \"01.01.1961\", \"span\": [1019, 1029]}}, {\"endTime\": {\"value\": \"31.12.2099\", \"span\": [1032, 1042]}}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4446,
+    "completion_tokens": 355,
+    "total_tokens": 4801,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

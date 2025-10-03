@@ -1,0 +1,27 @@
+{
+  "id": "gen-1759333535-ojtwdpcQO6ymtt76jAwA",
+  "provider": "Parasail",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759333535,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"Winter wheat\", \"span\": [519, 530] }}\n  ],\n  \"Location\": [],\n  \"TimeStatement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 776,
+    "completion_tokens": 49,
+    "total_tokens": 825,
+    "prompt_tokens_details": null
+  }
+}

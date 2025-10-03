@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIzO6poMruf66HWU2F84rC1tO5imm",
+  "object": "chat.completion",
+  "created": 1758641914,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"Bodenprofile\", \"span\": [39, 51] }},\n    {\"Soil\": { \"value\": \"Bodenleitprofile\", \"span\": [233, 248] }},\n    {\"Soil\": { \"value\": \"boden-physikalischen Grundlagendaten\", \"span\": [253, 288] }},\n    {\"Soil\": { \"value\": \"Standorts- und Bodeninformationen\", \"span\": [313, 346] }},\n    {\"Soil\": { \"value\": \"Standorts- und Bodenkartierung\", \"span\": [415, 444] }},\n    {\"Soil\": { \"value\": \"Standorts- und Bodenkundler\", \"span\": [531, 558] }},\n    {\"Soil\": { \"value\": \"Standorts- und Leitprofildaten\", \"span\": [723, 752] }},\n    {\"Soil\": { \"value\": \"Bodentyp\", \"span\": [954, 962] }},\n    {\"Soil\": { \"value\": \"Wasserhaushalts-/ Nährstoffansprache\", \"span\": [964, 1000] }},\n    {\"Soil\": { \"value\": \"Kalkung\", \"span\": [1002, 1009] }},\n    {\"Soil\": { \"value\": \"Leitprofil\", \"span\": [1014, 1024] }},\n    {\"Soil\": { \"value\": \"Horizontangaben\", \"span\": [1040, 1055] }},\n    {\"Soil\": { \"value\": \"Bodenart\", \"span\": [1060, 1068] }},\n    {\"Soil\": { \"value\": \"Skelett\", \"span\": [1070, 1077] }},\n    {\"Soil\": { \"value\": \"Trockenrohdichte (TRD)\", \"span\": [1079, 1101] }},\n    {\"Soil\": { \"value\": \"nutzbare Feldkapazität (nFK)\", \"span\": [1103, 1131] }},\n    {\"Soil\": { \"value\": \"Basensättigung\", \"span\": [1155, 1169] }},\n    {\"Soil\": { \"value\": \"organischer Kohlenstoffgehalt (Corg)\", \"span\": [1171, 1205] }},\n    {\"Soil\": { \"value\": \"Entkalkungstiefe\", \"span\": [1207, 1223] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"deutschen\", \"span\": [190, 199] }},\n    {\"region\": { \"value\": \"Bundesländern\", \"span\": [391, 404] }},\n    {\"region\": { \"value\": \"Bundesland\", \"span\": [579, 589] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"Creation date: 28.05.2019\", \"span\": [1394, 1422] }},\n    {\"startTime\": { \"value\": \"start date: 2012\", \"span\": [1437, 1453] }},\n    {\"endTime\": { \"value\": \"end date: 2012\", \"span\": [155, 169] }},\n    {\"endTime\": { \"value\": \"end date: 2012\", \"span\": [1455, 1469] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1319,
+    "completion_tokens": 763,
+    "total_tokens": 2082,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMFaVJKJEoxAbtVBwobhpd6EBT4vT",
+  "object": "chat.completion",
+  "created": 1759419171,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"rye\", \"span\": [85, 88] }},\n    {\"Crop\": { \"value\": \"Secale cereale L.\", \"span\": [90, 108] }},\n    {\"Crop\": { \"value\": \"Rye\", \"span\": [121, 124] }},\n    {\"Crop\": { \"value\": \"Secale cereale L.\", \"span\": [126, 144] }},\n    {\"Crop\": { \"value\": \"cereals\", \"span\": [1470, 1477] }},\n    {\"Crop\": { \"value\": \"rye\", \"span\": [2074, 2077] }},\n    {\"Crop\": { \"value\": \"rye\", \"span\": [2431, 2434] }},\n    {\"Crop\": { \"value\": \"cereals\", \"span\": [2466, 2473] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Northern Europe\", \"span\": [172, 187] }},\n    {\"Location\": { \"value\": \"German\", \"span\": [636, 642] }}\n  ],\n  \"TimeStatement\": []\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4758,
+    "completion_tokens": 266,
+    "total_tokens": 5024,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

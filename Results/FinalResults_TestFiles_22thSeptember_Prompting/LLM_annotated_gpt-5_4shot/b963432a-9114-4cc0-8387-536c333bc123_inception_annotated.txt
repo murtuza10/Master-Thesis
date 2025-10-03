@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyezvCZ7exwasmPm5iIcOwUNhu28",
+  "object": "chat.completion",
+  "created": 1758639117,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [844, 850]}},\n    {\"cropSpecies\": {\"value\": \"serradella\", \"span\": [871, 881]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [913, 919]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"soil pore water\", \"span\": [205, 220]}},\n    {\"Soil\": {\"value\": \"three sampling depths\", \"span\": [226, 247]}},\n    {\"Soil\": {\"value\": \"three soil profiles\", \"span\": [255, 274]}},\n    {\"Soil\": {\"value\": \"redox potential\", \"span\": [402, 417]}},\n    {\"Soil\": {\"value\": \"pH\", \"span\": [420, 422]}},\n    {\"Soil\": {\"value\": \"element concentrations\", \"span\": [428, 449]}},\n    {\"Soil\": {\"value\": \"filtered (0.45 µm) soil pore water\", \"span\": [640, 673]}},\n    {\"Soil\": {\"value\": \"phosphorus\", \"span\": [848, 858]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [872, 876]}},\n    {\"Soil\": {\"value\": \"redox conditions\", \"span\": [909, 926]}},\n    {\"Soil\": {\"value\": \"redoximorphic features\", \"span\": [955, 977]}},\n    {\"Soil\": {\"value\": \"lysimeter monoliths\", \"span\": [1025, 1045]}},\n    {\"Soil\": {\"value\": \"spring barley\", \"span\": [1071, 1083]}},\n    {\"Soil\": {\"value\": \"serradella\", \"span\": [1104, 1114]}},\n    {\"Soil\": {\"value\": \"lysimeters\", \"span\": [1130, 1140]}},\n    {\"Soil\": {\"value\": \"spring barley\", \"span\": [1162, 1174]}},\n    {\"Soil\": {\"value\": \"water table\", \"span\": [1228, 1239]}},\n    {\"Soil\": {\"value\": \"redox potential\", \"span\": [1388, 1403]}},\n    {\"Soil\": {\"value\": \"pH\", \"span\": [1478, 1480]}},\n    {\"Soil\": {\"value\": \"element concentrations\", \"span\": [1489, 1510]}},\n    {\"Soil\": {\"value\": \"inorganic and organic C\", \"span\": [1544, 1568]}},\n    {\"Soil\": {\"value\": \"solutions (0.45 µm)\", \"span\": [1669, 1688]}},\n    {\"Soil\": {\"value\": \"redox potentials\", \"span\": [1707, 1723]}},\n    {\"Soil\": {\"value\": \"pH\", \"span\": [1728, 1730]}}\n  ],\n  \"Location\": [\n    {\"region\": {\"value\": \"Northern Germany\", \"span\": [317, 334]}},\n    {\"city\": {\"value\": \"Rostock\", \"span\": [15, 22]}},\n    {\"city\": {\"value\": \"Rostock\", \"span\": [92, 99]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2020\", \"span\": [69, 73]}},\n    {\"startTime\": {\"value\": \"2020\", \"span\": [160, 164]}},\n    {\"startTime\": {\"value\": \"2018\", \"span\": [1006, 1010]}},\n    {\"startTime\": {\"value\": \"2019\", \"span\": [1121, 1125]}},\n    {\"startTime\": {\"value\": \"2020\", \"span\": [1148, 1152]}},\n    {\"duration\": {\"value\": \"about 3.5 months\", \"span\": [1759, 1777]}},\n    {\"startTime\": {\"value\": \"2020\", \"span\": [1781, 1785]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3619,
+    "completion_tokens": 928,
+    "total_tokens": 4547,
+    "prompt_tokens_details": {
+      "cached_tokens": 3072,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

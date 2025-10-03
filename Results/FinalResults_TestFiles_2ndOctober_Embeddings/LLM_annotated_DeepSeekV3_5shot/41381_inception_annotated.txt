@@ -1,0 +1,27 @@
+{
+  "id": "gen-1759421432-HlgkxUXTN8ykt2Dj5rOH",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759421432,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [],\n  \"Location\": [\n    {\"Location\": { \"value\": \"southwest Germany\", \"span\": [65, 82] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [254, 261] }},\n    {\"Location\": { \"value\": \"Europe\", \"span\": [334, 340] }},\n    {\"Location\": { \"value\": \"Dossenheim\", \"span\": [681, 691] }},\n    {\"Location\": { \"value\": \"Siebeldingen\", \"span\": [696, 708] }},\n    {\"Location\": { \"value\": \"Darmstadt\", \"span\": [746, 756] }},\n    {\"Location\": { \"value\": \"southwest Germany\", \"span\": [820, 837] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2011\", \"span\": [283, 287] }},\n    {\"TimeStatement\": { \"value\": \"late summer 2011\", \"span\": [305, 321] }},\n    {\"TimeStatement\": { \"value\": \"2011\", \"span\": [580, 585] }},\n    {\"TimeStatement\": { \"value\": \"February 2018\", \"span\": [590, 603] }},\n    {\"TimeStatement\": { \"value\": \"2011\", \"span\": [704, 708] }},\n    {\"TimeStatement\": { \"value\": \"2018\", \"span\": [713, 717] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4670,
+    "completion_tokens": 341,
+    "total_tokens": 5011
+  }
+}

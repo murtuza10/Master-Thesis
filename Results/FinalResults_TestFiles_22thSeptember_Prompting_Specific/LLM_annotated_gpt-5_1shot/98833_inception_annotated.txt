@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIw7fue21TchXxMePpfhM48dDr1tP",
+  "object": "chat.completion",
+  "created": 1758629363,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilReferenceGroup\": { \"value\": \"pseudovergleyte Parabraunerde\", \"span\": [214, 244] }},\n    {\"soilTexture\": { \"value\": \"L\\u00f6ss\", \"span\": [250, 254] }},\n    {\"soilDepth\": { \"value\": \"28 cm\", \"span\": [266, 271] }},\n    {\"soilBulkDensity\": { \"value\": \"Lagerungsdichte\", \"span\": [606, 621] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2017\", \"span\": [162, 166] }},\n    {\"startTime\": { \"value\": \"2017\", \"span\": [80, 84] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2169,
+    "completion_tokens": 193,
+    "total_tokens": 2362,
+    "prompt_tokens_details": {
+      "cached_tokens": 1792,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

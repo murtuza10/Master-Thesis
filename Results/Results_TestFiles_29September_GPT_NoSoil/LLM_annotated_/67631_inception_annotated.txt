@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CLWNE7K5E2Jwy50decxMiSymG2v0M",
+  "object": "chat.completion",
+  "created": 1759245368,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"Riesling\", \"span\": [186, 193] }},\n    {\"Crop\": { \"value\": \"Felicia\", \"span\": [195, 202] }},\n    {\"Crop\": { \"value\": \"Regent\", \"span\": [204, 210] }},\n    {\"Crop\": { \"value\": \"berries\", \"span\": [22, 29] }},\n    {\"Crop\": { \"value\": \"wine berries\", \"span\": [12, 24] }},\n    {\"Crop\": { \"value\": \"berries\", \"span\": [515, 522] }},\n    {\"Crop\": { \"value\": \"berries\", \"span\": [902, 909] }}\n  ],\n  \"Location\": [],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2018\", \"span\": [356, 360] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 674,
+    "completion_tokens": 206,
+    "total_tokens": 880,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

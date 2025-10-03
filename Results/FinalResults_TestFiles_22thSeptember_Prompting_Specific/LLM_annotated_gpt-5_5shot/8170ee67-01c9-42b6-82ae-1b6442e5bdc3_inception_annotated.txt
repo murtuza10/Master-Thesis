@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwe1ACWMSGPdKjYouEpE5jPw5BhG",
+  "object": "chat.completion",
+  "created": 1758631369,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"winter barley\", \"span\": [42, 55]}},\n    {\"cropSpecies\": {\"value\": \"winter barley\", \"span\": [109, 122]}},\n    {\"cropSpecies\": {\"value\": \"oat\", \"span\": [1191, 1194]}},\n    {\"cropSpecies\": {\"value\": \"winter barley\", \"span\": [1685, 1698]}},\n    {\"cropSpecies\": {\"value\": \"winter oilseed rape\", \"span\": [1700, 1719]}},\n    {\"cropSpecies\": {\"value\": \"winter wheat\", \"span\": [1721, 1733]}},\n    {\"cropSpecies\": {\"value\": \"lupine\", \"span\": [1735, 1741]}},\n    {\"cropSpecies\": {\"value\": \"winter rye\", \"span\": [1746, 1756]}},\n    {\"cropSpecies\": {\"value\": \"Hordeum vulgare L.\", \"span\": [2144, 2163]}},\n    {\"cropVariety\": {\"value\": \"OTTO\", \"span\": [2173, 2177]}}\n  ],\n  \"Soil\": [\n    {\"soilDepth\": {\"value\": \"25 cm\", \"span\": [1131, 1136]}},\n    {\"soilAvailableNitrogen\": {\"value\": \"available soil P (PCAL) concentrations\", \"span\": [865, 902]}},\n    {\"soilDepth\": {\"value\": \"0-30 cm\", \"span\": [1518, 1525]}},\n    {\"soilPH\": {\"value\": \"pH\", \"span\": [1078, 1080]}}\n  ],\n  \"Location\": [\n    {\"city\": {\"value\": \"Braunschweig\", \"span\": [26, 39]}}\n  ],\n  \"Time Statement\": [\n    {\"endTime\": {\"value\": \"2014\", \"span\": [56, 60]}},\n    {\"endTime\": {\"value\": \"2014\", \"span\": [123, 127]}},\n    {\"startTime\": {\"value\": \"1985\", \"span\": [906, 910]}},\n    {\"endTime\": {\"value\": \"2008\", \"span\": [911, 915]}},\n    {\"endTime\": {\"value\": \"2013\", \"span\": [1166, 1170]}},\n    {\"startTime\": {\"value\": \"2013\", \"span\": [1609, 1613]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5099,
+    "completion_tokens": 548,
+    "total_tokens": 5647,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

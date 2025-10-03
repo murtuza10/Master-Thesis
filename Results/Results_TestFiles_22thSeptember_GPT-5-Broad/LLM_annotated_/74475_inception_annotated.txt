@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIzQHgn5M9ANzZu1PuQXdQiooqcKD",
+  "object": "chat.completion",
+  "created": 1758642049,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"soil organic carbon\", \"span\": [102, 121] }},\n    {\"Soil\": { \"value\": \"SOC\", \"span\": [123, 126] }},\n    {\"Soil\": { \"value\": \"soil organic nitrogen\", \"span\": [131, 153] }},\n    {\"Soil\": { \"value\": \"SON\", \"span\": [155, 158] }},\n    {\"Soil\": { \"value\": \"N mineralisation rates\", \"span\": [171, 193] }},\n    {\"Soil\": { \"value\": \"SOC\", \"span\": [260, 263] }},\n    {\"Soil\": { \"value\": \"SOC\", \"span\": [409, 412] }},\n    {\"Soil\": { \"value\": \"SOC\", \"span\": [455, 458] }},\n    {\"Soil\": { \"value\": \"SON\", \"span\": [529, 532] }},\n    {\"Soil\": { \"value\": \"N mineralisation\", \"span\": [537, 553] }},\n    {\"Soil\": { \"value\": \"immobilisation\", \"span\": [556, 571] }},\n    {\"Soil\": { \"value\": \"C\", \"span\": [730, 731] }},\n    {\"Soil\": { \"value\": \"N\", \"span\": [736, 737] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": []\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1136,
+    "completion_tokens": 333,
+    "total_tokens": 1469,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

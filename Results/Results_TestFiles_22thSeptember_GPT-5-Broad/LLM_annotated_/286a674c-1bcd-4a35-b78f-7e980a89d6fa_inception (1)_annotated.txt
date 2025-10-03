@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIzQ6S1wKnLbo7GEasnR8wVTYMB3F",
+  "object": "chat.completion",
+  "created": 1758642038,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [279, 284] }},\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [401, 406] }},\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [487, 492] }},\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [673, 678] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"Boden\", \"span\": [995, 1000] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [1220, 1227] }},\n    {\"region\": { \"value\": \"Brandenburg\", \"span\": [1229, 1239] }},\n    {\"region\": { \"value\": \"Uckermark\", \"span\": [1241, 1250] }},\n    {\"region\": { \"value\": \"Quillow\", \"span\": [1252, 1259] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2019\", \"span\": [88, 92] }},\n    {\"startTime\": { \"value\": \"2019\", \"span\": [170, 174] }},\n    {\"duration\": { \"value\": \"during the growing season of wheat plants (between April and June 2019)\", \"span\": [679, 752] }},\n    {\"startTime\": { \"value\": \"April 2019\", \"span\": [722, 732] }},\n    {\"endTime\": { \"value\": \"June 2019\", \"span\": [737, 746] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1219,
+    "completion_tokens": 386,
+    "total_tokens": 1605,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIvZGOLUa75toksJ6J7cvrMgRzVmy",
+  "object": "chat.completion",
+  "created": 1758627230,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"Crops\": [], \"Soil\": [{\"soilReferenceGroup\": {\"value\": \"Parabraunerde\", \"span\": [265, 278]}}, {\"soilTexture\": {\"value\": \"Löss\", \"span\": [283, 287]}}, {\"soilDepth\": {\"value\": \"28 cm\", \"span\": [299, 304]}}, {\"soilDepth\": {\"value\": \"20\", \"span\": [627, 629]}}, {\"soilDepth\": {\"value\": \"35\", \"span\": [631, 633]}}, {\"soilDepth\": {\"value\": \"50 cm\", \"span\": [638, 643]}}], \"Location\": [], \"Time Statement\": [{\"startTime\": {\"value\": \"2017\", \"span\": [120, 124]}}, {\"startTime\": {\"value\": \"2017\", \"span\": [207, 211]}}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2113,
+    "completion_tokens": 197,
+    "total_tokens": 2310,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

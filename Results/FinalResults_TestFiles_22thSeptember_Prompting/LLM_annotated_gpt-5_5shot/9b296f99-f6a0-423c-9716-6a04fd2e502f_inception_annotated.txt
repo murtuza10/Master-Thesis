@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyzU3mfYzNarxDUvN1UjUjkDTE9D",
+  "object": "chat.completion",
+  "created": 1758640388,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [367, 372]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [381, 387]}},\n    {\"cropSpecies\": {\"value\": \"sugar beet\", \"span\": [393, 403]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [1216, 1222]}},\n    {\"cropSpecies\": {\"value\": \"sugar beet\", \"span\": [1227, 1237]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"soil fertility\", \"span\": [236, 250]}},\n    {\"Soil\": {\"value\": \"ploughing\", \"span\": [474, 483]}},\n    {\"Soil\": {\"value\": \"bulk soil\", \"span\": [1410, 1419]}}\n  ],\n  \"Location\": [\n    {\"city\": {\"value\": \"Speyer\", \"span\": [35, 41]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [43, 50]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [94, 100]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [102, 109]}},\n    {\"region\": {\"value\": \"Rinkenbergerhof\", \"span\": [306, 321]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [342, 348]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [350, 357]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [1031, 1037]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [1039, 1046]}},\n    {\"city\": {\"value\": \"Karlsruhe\", \"span\": [903, 912]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"1984\", \"span\": [326, 330]}},\n    {\"startTime\": {\"value\": \"16. September 2009\", \"span\": [874, 894]}},\n    {\"endTime\": {\"value\": \"2009\", \"span\": [898, 902]}},\n    {\"startTime\": {\"value\": \"2017\", \"span\": [1895, 1899]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6636,
+    "completion_tokens": 534,
+    "total_tokens": 7170,
+    "prompt_tokens_details": {
+      "cached_tokens": 5888,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

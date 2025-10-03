@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CItxuzJwzAQVmJtHgkFlxisiGvSvq",
+  "object": "chat.completion",
+  "created": 1758621070,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"maize\", \"span\": [248, 253]}},\n    {\"cropSpecies\": {\"value\": \"maize\", \"span\": [1007, 1012]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"soil\", \"span\": [47, 51]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [105, 109]}},\n    {\"Soil\": {\"value\": \"Soil\", \"span\": [1687, 1691]}},\n    {\"Soil\": {\"value\": \"Soil\", \"span\": [2037, 2041]}},\n    {\"Soil\": {\"value\": \"Wanna Sand\", \"span\": [357, 367]}},\n    {\"Soil\": {\"value\": \"Wanna Sand without biogas slurry\", \"span\": [370, 403]}},\n    {\"Soil\": {\"value\": \"Rostock Sand\", \"span\": [406, 418]}},\n    {\"Soil\": {\"value\": \"Wanna Marsch\", \"span\": [424, 436]}},\n    {\"Soil\": {\"value\": \"biogas slurry\", \"span\": [481, 494]}},\n    {\"Soil\": {\"value\": \"diammonium phosphate (DAP)\", \"span\": [582, 610]}},\n    {\"Soil\": {\"value\": \"microgranular fertilizer (MG)\", \"span\": [613, 642]}},\n    {\"Soil\": {\"value\": \"control\", \"span\": [656, 663]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [1190, 1194]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [1265, 1269]}},\n    {\"Soil\": {\"value\": \"Soil\", \"span\": [2008, 2012]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [2171, 2175]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [2327, 2331]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [2477, 2481]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [2695, 2699]}},\n    {\"Soil\": {\"value\": \"root\", \"span\": [2711, 2715]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"Europe\", \"span\": [3078, 3084]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [3086, 3093]}},\n    {\"region\": {\"value\": \"Lower Saxony\", \"span\": [3095, 3107]}},\n    {\"city\": {\"value\": \"Wanna\", \"span\": [3109, 3114]}},\n    {\"region\": {\"value\": \"Mecklenburg-Vorpommern\", \"span\": [3116, 3139]}},\n    {\"city\": {\"value\": \"Rostock\", \"span\": [3141, 3148]}}\n  ],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"over the years 2021, 2022 and 2023\", \"span\": [266, 305]}},\n    {\"duration\": {\"value\": \"between April and August each year\", \"span\": [959, 992]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2940,
+    "completion_tokens": 757,
+    "total_tokens": 3697,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

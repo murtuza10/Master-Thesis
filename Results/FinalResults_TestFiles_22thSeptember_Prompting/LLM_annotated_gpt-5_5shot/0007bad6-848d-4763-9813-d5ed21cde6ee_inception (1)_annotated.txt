@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyzlA828bk9eokq4VG6vxcM9pd3H",
+  "object": "chat.completion",
+  "created": 1758640405,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [823, 828]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"Soil\", \"span\": [68, 72]}},\n    {\"Soil\": {\"value\": \"soil-crop system\", \"span\": [201, 217]}},\n    {\"Soil\": {\"value\": \"soil properties\", \"span\": [292, 307]}},\n    {\"Soil\": {\"value\": \"soil water stable aggregation\", \"span\": [472, 501]}},\n    {\"Soil\": {\"value\": \"soil properties\", \"span\": [566, 581]}},\n    {\"Soil\": {\"value\": \"soil-plant system\", \"span\": [1055, 1072]}},\n    {\"Soil\": {\"value\": \"soil and plants\", \"span\": [1220, 1235]}},\n    {\"Soil\": {\"value\": \"Soil\", \"span\": [1348, 1352]}},\n    {\"Soil\": {\"value\": \"Soil properties\", \"span\": [1383, 1398]}}\n  ],\n  \"Location\": [],\n  \"Time Statement\": []\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6276,
+    "completion_tokens": 274,
+    "total_tokens": 6550,
+    "prompt_tokens_details": {
+      "cached_tokens": 5888,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIw6iFXWWuwS26ZSkhQyD95jS0oq1",
+  "object": "chat.completion",
+  "created": 1758629304,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"maize\", \"span\": [224, 229] }},\n    {\"cropSpecies\": { \"value\": \"maize\", \"span\": [773, 778] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Europe\", \"span\": [1909, 1915] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [1917, 1924] }},\n    {\"region\": { \"value\": \"Lower Saxony\", \"span\": [1926, 1938] }},\n    {\"region\": { \"value\": \"Mecklenburg-Vorpommern\", \"span\": [1946, 1970] }},\n    {\"city\": { \"value\": \"Wanna\", \"span\": [1940, 1945] }},\n    {\"city\": { \"value\": \"Rostock\", \"span\": [1972, 1979] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2021\", \"span\": [195, 199] }},\n    {\"startTime\": { \"value\": \"2022\", \"span\": [201, 205] }},\n    {\"startTime\": { \"value\": \"2023\", \"span\": [210, 214] }},\n    {\"startTime\": { \"value\": \"April\", \"span\": [1055, 1060] }},\n    {\"endTime\": { \"value\": \"August\", \"span\": [1065, 1071] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2356,
+    "completion_tokens": 351,
+    "total_tokens": 2707,
+    "prompt_tokens_details": {
+      "cached_tokens": 1792,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

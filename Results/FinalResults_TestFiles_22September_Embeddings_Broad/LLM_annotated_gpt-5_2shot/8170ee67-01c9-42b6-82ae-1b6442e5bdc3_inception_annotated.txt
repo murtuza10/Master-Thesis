@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIty8Zwxhwte6MeFiAf1IB7gUuUfR",
+  "object": "chat.completion",
+  "created": 1758621084,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [49, 62] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [1026, 1032] }},\n    {\"cropSpecies\": { \"value\": \"oat\", \"span\": [1327, 1330] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [1776, 1789] }},\n    {\"cropSpecies\": { \"value\": \"winter oilseed rape\", \"span\": [1791, 1811] }},\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [1820, 1826] }},\n    {\"cropSpecies\": { \"value\": \"lupine\", \"span\": [1828, 1834] }},\n    {\"cropSpecies\": { \"value\": \"rye\", \"span\": [1846, 1849] }},\n    {\"cropSpecies\": { \"value\": \"Hordeum vulgare\", \"span\": [2212, 2228] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"soil P\", \"span\": [1013, 1019] }},\n    {\"Soil\": { \"value\": \"available soil P (PCAL)\", \"span\": [917, 941] }},\n    {\"Soil\": { \"value\": \"soil P\", \"span\": [1211, 1217] }},\n    {\"Soil\": { \"value\": \"soil class\", \"span\": [1597, 1607] }},\n    {\"Soil\": { \"value\": \"PCAL concentrations (0-30 cm)\", \"span\": [1564, 1593] }},\n    {\"Soil\": { \"value\": \"PCAL\", \"span\": [1625, 1629] }},\n    {\"Soil\": { \"value\": \"PCAL\", \"span\": [1643, 1647] }},\n    {\"Soil\": { \"value\": \"PCAL\", \"span\": [1663, 1667] }},\n    {\"Soil\": { \"value\": \"soil physical and chemical properties\", \"span\": [1145, 1184] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"region\": { \"value\": \"Braunschweig\", \"span\": [26, 38] }},\n    {\"city\": { \"value\": \"\", \"span\": [0, 0] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2014\", \"span\": [63, 67] }},\n    {\"startTime\": { \"value\": \"1985-2008\", \"span\": [872, 881] }},\n    {\"endTime\": { \"value\": \"2008\", \"span\": [877, 881] }},\n    {\"endTime\": { \"value\": \"2013\", \"span\": [1237, 1241] }},\n    {\"startTime\": { \"value\": \"2013\", \"span\": [1406, 1410] }},\n    {\"startTime\": { \"value\": \"autumn 2013\", \"span\": [2058, 2069] }},\n    {\"startTime\": { \"value\": \"2014\", \"span\": [2194, 2198] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3012,
+    "completion_tokens": 743,
+    "total_tokens": 3755,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

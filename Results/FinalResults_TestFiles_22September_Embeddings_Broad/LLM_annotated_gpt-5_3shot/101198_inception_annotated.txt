@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIuAPDSiH6PzpwLB9523Q3WKb0lj9",
+  "object": "chat.completion",
+  "created": 1758621845,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"Crops\": [], \"Soil\": [], \"Location\": [{\"country\": {\"value\": \"Germany\", \"span\": [1781, 1788]}}], \"Time Statement\": [{\"endTime\": {\"value\": \"2050\", \"span\": [531, 535]}}, {\"endTime\": {\"value\": \"2050\", \"span\": [933, 937]}}, {\"duration\": {\"value\": \"zwischen 2020 und 2050\", \"span\": [1558, 1581]}}, {\"endTime\": {\"value\": \"2023\", \"span\": [2151, 2155]}}, {\"endTime\": {\"value\": \"2023\", \"span\": [2348, 2352]}}, {\"endTime\": {\"value\": \"2020\", \"span\": [2459, 2463]}}, {\"endTime\": {\"value\": \"2020\", \"span\": [2472, 2476]}}, {\"endTime\": {\"value\": \"2018\", \"span\": [2637, 2641]}}, {\"endTime\": {\"value\": \"2023–2028\", \"span\": [3148, 3157]}}, {\"endTime\": {\"value\": \"2024-03\", \"span\": [1797, 1804]}}, {\"endTime\": {\"value\": \"November 2023\", \"span\": [2272, 2286]}}, {\"endTime\": {\"value\": \"November 2023\", \"span\": [2716, 2730]}}, {\"endTime\": {\"value\": \"August 2024\", \"span\": [2926, 2937]}}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4297,
+    "completion_tokens": 360,
+    "total_tokens": 4657,
+    "prompt_tokens_details": {
+      "cached_tokens": 2432,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

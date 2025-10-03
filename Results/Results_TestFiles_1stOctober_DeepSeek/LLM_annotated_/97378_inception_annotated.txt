@@ -1,0 +1,26 @@
+{
+  "id": "gen-1759333353-8HGAVrlyNfQjhOS04ZG3",
+  "provider": "Crusoe",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759333353,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Hildesheim\", \"span\": [195, 205] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"14-tägigen Zeitraster\", \"span\": [213, 232] }},\n    {\"TimeStatement\": { \"value\": \"2 Jahren\", \"span\": [268, 275] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 744,
+    "completion_tokens": 104,
+    "total_tokens": 848
+  }
+}

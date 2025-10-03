@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CLWMMtdmFIP4Z3YOY3jJKLjRBBgGx",
+  "object": "chat.completion",
+  "created": 1759245314,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [36, 58] }},\n    {\"Crop\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [440, 462] }},\n    {\"Crop\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [720, 742] }},\n    {\"Crop\": { \"value\": \"celery\", \"span\": [893, 899] }},\n    {\"Crop\": { \"value\": \"wild celery\", \"span\": [1083, 1095] }},\n    {\"Crop\": { \"value\": \"wild celery\", \"span\": [1240, 1252] }},\n    {\"Crop\": { \"value\": \"wild celery\", \"span\": [1421, 1433] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Gatersleben\", \"span\": [160, 171] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [173, 180] }},\n    {\"Location\": { \"value\": \"Kew Gardens London\", \"span\": [305, 324] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [866, 873] }},\n    {\"Location\": { \"value\": \"Berlin\", \"span\": [882, 888] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [890, 897] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [1310, 1317] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2015\", \"span\": [1032, 1036] }},\n    {\"TimeStatement\": { \"value\": \"2016\", \"span\": [1040, 1044] }},\n    {\"TimeStatement\": { \"value\": \"2018-2019\", \"span\": [1249, 1258] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 887,
+    "completion_tokens": 440,
+    "total_tokens": 1327,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

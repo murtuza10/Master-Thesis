@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwIQvfiqXRAFOSxLEBN0C2S2scTB",
+  "object": "chat.completion",
+  "created": 1758630030,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"celery\", \"span\": [610, 616]}},\n    {\"cropSpecies\": {\"value\": \"celery\", \"span\": [915, 921]}},\n    {\"cropSpecies\": {\"value\": \"celery\", \"span\": [1056, 1062]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"city\": {\"value\": \"Gatersleben\", \"span\": [108, 119]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [122, 129]}},\n    {\"city\": {\"value\": \"London\", \"span\": [249, 255]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [769, 776]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [946, 953]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2015\", \"span\": [814, 818]}},\n    {\"endTime\": {\"value\": \"2016\", \"span\": [822, 826]}},\n    {\"startTime\": {\"value\": \"2018\", \"span\": [1000, 1004]}},\n    {\"endTime\": {\"value\": \"2019\", \"span\": [1005, 1009]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2410,
+    "completion_tokens": 302,
+    "total_tokens": 2712,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

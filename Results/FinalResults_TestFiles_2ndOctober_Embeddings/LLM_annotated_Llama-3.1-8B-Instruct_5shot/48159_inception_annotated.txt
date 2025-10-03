@@ -1,0 +1,22 @@
+### Output JSON ###
+
+```json
+{
+  "Crop": [],
+  "Location": [
+    {"Location": {"value": "Germany", "span": [175, 182]}},
+    {"Location": {"value": "Europe", "span": [257, 263]}}
+  ],
+  "TimeStatement": [
+    {"TimeStatement": {"value": "1990", "span": [95, 99]}},
+    {"TimeStatement": {"value": "2017", "span": [139, 143]}}
+  ]
+}
+```
+
+### Explanation ###
+
+1. No crops are mentioned in the text, so the "Crop" list is empty.
+2. The country "Germany" is mentioned twice, so it is included in the "Location" list twice.
+3. The continent "Europe" is mentioned in the text, so it is included in the "Location" list.
+4. The years "1990" and "2017" are mentioned as the start and end years of the data, so they are included in the "TimeStatement" list.

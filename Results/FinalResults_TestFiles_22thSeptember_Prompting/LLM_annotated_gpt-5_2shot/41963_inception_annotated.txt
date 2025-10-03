@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyALEtoO61XEfFeGTkFF9lgpdO2Q",
+  "object": "chat.completion",
+  "created": 1758637217,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"German\", \"span\": [163, 169]}},\n    {\"region\": {\"value\": \"German National Forest Inventory\", \"span\": [170, 204]}},\n    {\"region\": {\"value\": \"Deutscher Wetterdienst\", \"span\": [333, 355]}}\n  ],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"1961 - 2100\", \"span\": [124, 135]}},\n    {\"duration\": {\"value\": \"1961 - 2013\", \"span\": [240, 251]}},\n    {\"duration\": {\"value\": \"2011 – 2050\", \"span\": [441, 452]}},\n    {\"duration\": {\"value\": \"2011 – 2100\", \"span\": [459, 470]}},\n    {\"startTime\": {\"value\": \"31.12.2016\", \"span\": [808, 818]}},\n    {\"duration\": {\"value\": \"01.01.1961 - 31.12.2099\", \"span\": [862, 884]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4416,
+    "completion_tokens": 264,
+    "total_tokens": 4680,
+    "prompt_tokens_details": {
+      "cached_tokens": 4096,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

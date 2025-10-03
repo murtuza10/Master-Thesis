@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIjAGbkohPZDXDKqeDTuch1Q3dzi0",
+  "object": "chat.completion",
+  "created": 1758579552,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [1827, 1834] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2020\", \"span\": [1202, 1206] }},\n    {\"endTime\": { \"value\": \"2050\", \"span\": [1211, 1215] }},\n    {\"endTime\": { \"value\": \"2050\", \"span\": [840, 844] }},\n    {\"endTime\": { \"value\": \"2023\", \"span\": [1520, 1524] }},\n    {\"startTime\": { \"value\": \"November 2023\", \"span\": [1574, 1588] }},\n    {\"endTime\": { \"value\": \"2023\", \"span\": [1642, 1646] }},\n    {\"endTime\": { \"value\": \"2020\", \"span\": [1742, 1746] }},\n    {\"endTime\": { \"value\": \"2020\", \"span\": [1765, 1769] }},\n    {\"endTime\": { \"value\": \"2018\", \"span\": [1836, 1840] }},\n    {\"startTime\": { \"value\": \"November 2023\", \"span\": [1969, 1983] }},\n    {\"endTime\": { \"value\": \"2024\", \"span\": [2026, 2030] }},\n    {\"startTime\": { \"value\": \"August 2024\", \"span\": [2109, 2121] }},\n    {\"endTime\": { \"value\": \"2023\", \"span\": [2159, 2163] }},\n    {\"startTime\": { \"value\": \"17.11.2023\", \"span\": [2216, 2226] }},\n    {\"endTime\": { \"value\": \"2024\", \"span\": [2363, 2367] }},\n    {\"endTime\": { \"value\": \"2023–2028\", \"span\": [2427, 2436] }},\n    {\"endTime\": { \"value\": \"2024-03\", \"span\": [2477, 2484] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2804,
+    "completion_tokens": 499,
+    "total_tokens": 3303,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

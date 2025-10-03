@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CItxXlBOZj7W6ccxI2lSdTTArhMT6",
+  "object": "chat.completion",
+  "created": 1758621047,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"German\", \"span\": [168, 174] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1961\", \"span\": [226, 230] }},\n    {\"endTime\": { \"value\": \"2100\", \"span\": [233, 237] }},\n    {\"startTime\": { \"value\": \"1961\", \"span\": [351, 355] }},\n    {\"endTime\": { \"value\": \"2013\", \"span\": [358, 362] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [609, 613] }},\n    {\"endTime\": { \"value\": \"2050\", \"span\": [616, 620] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [633, 637] }},\n    {\"endTime\": { \"value\": \"2100\", \"span\": [640, 644] }},\n    {\"duration\": { \"value\": \"monthly\", \"span\": [901, 908] }},\n    {\"duration\": { \"value\": \"seasonal\", \"span\": [910, 918] }},\n    {\"duration\": { \"value\": \"yearly\", \"span\": [920, 926] }},\n    {\"duration\": { \"value\": \"multiyearly\", \"span\": [928, 939] }},\n    {\"startTime\": { \"value\": \"31.12.2016\", \"span\": [1007, 1017] }},\n    {\"startTime\": { \"value\": \"01.01.1961\", \"span\": [1093, 1103] }},\n    {\"endTime\": { \"value\": \"31.12.2099\", \"span\": [1067, 1077] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2367,
+    "completion_tokens": 418,
+    "total_tokens": 2785,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

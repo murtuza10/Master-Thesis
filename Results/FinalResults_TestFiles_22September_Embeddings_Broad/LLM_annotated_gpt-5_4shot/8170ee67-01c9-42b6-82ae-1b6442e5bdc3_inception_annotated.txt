@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIuVmk91hc7VL9ZWd45a0sVMB4zuD",
+  "object": "chat.completion",
+  "created": 1758623170,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [55, 61]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [131, 137]}},\n    {\"cropSpecies\": {\"value\": \"oat\", \"span\": [1208, 1211]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [2046, 2052]}},\n    {\"cropSpecies\": {\"value\": \"oilseed rape\", \"span\": [1788, 1801]}},\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [1809, 1814]}},\n    {\"cropSpecies\": {\"value\": \"lupine\", \"span\": [1816, 1822]}},\n    {\"cropSpecies\": {\"value\": \"rye\", \"span\": [1834, 1837]}},\n    {\"cropSpecies\": {\"value\": \"Hordeum vulgare L.\", \"span\": [2096, 2114]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"soil P\", \"span\": [933, 939]}},\n    {\"Soil\": {\"value\": \"soil P\", \"span\": [1466, 1472]}},\n    {\"Soil\": {\"value\": \"depth of 25 cm\", \"span\": [1178, 1193]}},\n    {\"Soil\": {\"value\": \"PCAL\", \"span\": [967, 971]}},\n    {\"Soil\": {\"value\": \"PCAL\", \"span\": [1540, 1544]}},\n    {\"Soil\": {\"value\": \"PCAL\", \"span\": [1578, 1582]}},\n    {\"Soil\": {\"value\": \"PCAL\", \"span\": [1604, 1608]}},\n    {\"Soil\": {\"value\": \"PCAL\", \"span\": [1633, 1637]}},\n    {\"Soil\": {\"value\": \"25 cm\", \"span\": [1733, 1738]}},\n    {\"Soil\": {\"value\": \"crop residues\", \"span\": [1750, 1763]}}\n  ],\n  \"Location\": [\n    {\"city\": {\"value\": \"Braunschweig\", \"span\": [27, 39]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"1985-2008\", \"span\": [808, 817]}},\n    {\"endTime\": {\"value\": \"2013\", \"span\": [1233, 1237]}},\n    {\"startTime\": {\"value\": \"2013\", \"span\": [1401, 1405]}},\n    {\"startTime\": {\"value\": \"autumn 2013\", \"span\": [1975, 1986]}},\n    {\"startTime\": {\"value\": \"2014\", \"span\": [2123, 2127]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4476,
+    "completion_tokens": 645,
+    "total_tokens": 5121,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

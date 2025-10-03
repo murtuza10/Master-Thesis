@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyKzBuNiaz9tbOG5CKyojEpRXvPu",
+  "object": "chat.completion",
+  "created": 1758637877,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [408, 413]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [422, 428]}},\n    {\"cropSpecies\": {\"value\": \"sugar beet\", \"span\": [434, 444]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [1302, 1308]}},\n    {\"cropSpecies\": {\"value\": \"sugar beet\", \"span\": [1313, 1323]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"soil\", \"span\": [0, 4]}},\n    {\"Soil\": {\"value\": \"mineral nutrients\", \"span\": [146, 164]}},\n    {\"Soil\": {\"value\": \"humus\", \"span\": [169, 174]}},\n    {\"Soil\": {\"value\": \"humus\", \"span\": [238, 243]}},\n    {\"Soil\": {\"value\": \"soil fertility\", \"span\": [294, 308]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [1145, 1149]}},\n    {\"Soil\": {\"value\": \"bulk soil\", \"span\": [1149, 1158]}},\n    {\"Soil\": {\"value\": \"mineral fertilization\", \"span\": [79, 100]}},\n    {\"Soil\": {\"value\": \"mineral fertilizer\", \"span\": [259, 277]}},\n    {\"Soil\": {\"value\": \"manure\", \"span\": [119, 125]}},\n    {\"Soil\": {\"value\": \"farmyard (horse) manure\", \"span\": [704, 727]}},\n    {\"Soil\": {\"value\": \"crop residues\", \"span\": [780, 793]}},\n    {\"Soil\": {\"value\": \"catch crop\", \"span\": [796, 806]}},\n    {\"Soil\": {\"value\": \"mineral N fertilization\", \"span\": [856, 879]}},\n    {\"Soil\": {\"value\": \"ploughing\", \"span\": [658, 667]}},\n    {\"Soil\": {\"value\": \"Bacilli\", \"span\": [1767, 1774]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [41, 48]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [33, 39]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [1269, 1275]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [1277, 1285]}},\n    {\"region\": {\"value\": \"Rinkenbergerhof\", \"span\": [520, 535]}},\n    {\"region\": {\"value\": \"Karlsruhe\", \"span\": [1099, 1108]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"1984\", \"span\": [597, 601]}},\n    {\"duration\": {\"value\": \"every three years\", \"span\": [739, 757]}},\n    {\"startTime\": {\"value\": \"16. September 2009\", \"span\": [1110, 1130]}},\n    {\"duration\": {\"value\": \"four sampling seasons\", \"span\": [1288, 1309]}},\n    {\"duration\": {\"value\": \"long term\", \"span\": [1659, 1668]}},\n    {\"startTime\": {\"value\": \"2017\", \"span\": [2073, 2077]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3503,
+    "completion_tokens": 803,
+    "total_tokens": 4306,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

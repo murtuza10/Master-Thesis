@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwJPEH94N3hd4RXPKPj3ihw3FTRw",
+  "object": "chat.completion",
+  "created": 1758630091,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilReferenceGroup\": {\"value\": \"pseudovergleyte Parabraunerde\", \"span\": [231, 260]}},\n    {\"soilTexture\": {\"value\": \"Löss\", \"span\": [265, 269]}},\n    {\"soilDepth\": {\"value\": \"28 cm\", \"span\": [284, 289]}},\n    {\"soilDepth\": {\"value\": \"20\", \"span\": [582, 584]}},\n    {\"soilDepth\": {\"value\": \"35\", \"span\": [587, 589]}},\n    {\"soilDepth\": {\"value\": \"50 cm\", \"span\": [594, 599]}}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2017\", \"span\": [192, 196]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2274,
+    "completion_tokens": 199,
+    "total_tokens": 2473,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

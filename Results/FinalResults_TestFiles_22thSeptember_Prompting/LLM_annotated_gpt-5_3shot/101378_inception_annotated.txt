@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyKY0mV5IT7aUnTdEPn93vrYA2o9",
+  "object": "chat.completion",
+  "created": 1758637850,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"Birch\", \"span\": [60, 65]}},\n    {\"cropSpecies\": {\"value\": \"Betula pubescens\", \"span\": [67, 84]}},\n    {\"cropSpecies\": {\"value\": \"birch\", \"span\": [414, 419]}},\n    {\"cropSpecies\": {\"value\": \"Betula pubescens\", \"span\": [421, 438]}},\n    {\"cropSpecies\": {\"value\": \"birch\", \"span\": [1065, 1070]}},\n    {\"cropSpecies\": {\"value\": \"birches\", \"span\": [1594, 1601]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"bog\", \"span\": [141, 144]}},\n    {\"Soil\": {\"value\": \"peat\", \"span\": [327, 331]}},\n    {\"Soil\": {\"value\": \"water levels\", \"span\": [162, 174]}},\n    {\"Soil\": {\"value\": \"WL\", \"span\": [176, 178]}},\n    {\"Soil\": {\"value\": \"WL\", \"span\": [341, 343]}},\n    {\"Soil\": {\"value\": \"water levels\", \"span\": [383, 395]}},\n    {\"Soil\": {\"value\": \"peat\", \"span\": [2055, 2059]}},\n    {\"Soil\": {\"value\": \"peat\", \"span\": [2142, 2146]}},\n    {\"Soil\": {\"value\": \"CH4\", \"span\": [2313, 2316]}}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"one year\", \"span\": [693, 701]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3278,
+    "completion_tokens": 401,
+    "total_tokens": 3679,
+    "prompt_tokens_details": {
+      "cached_tokens": 2688,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

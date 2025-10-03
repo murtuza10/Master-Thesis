@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIzVFzbHc1NDxFUqRcQzSX9uvBi2W",
+  "object": "chat.completion",
+  "created": 1758642357,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Möhre\", \"span\": [211, 216] }},\n    {\"cropSpecies\": { \"value\": \"Salat\", \"span\": [218, 223] }},\n    {\"cropSpecies\": { \"value\": \"Apfel\", \"span\": [225, 230] }},\n    {\"cropSpecies\": { \"value\": \"Erdbeere\", \"span\": [235, 243] }},\n    {\"cropSpecies\": { \"value\": \"Erdbeere\", \"span\": [272, 280] }},\n    {\"cropSpecies\": { \"value\": \"Himbeere\", \"span\": [285, 293] }}\n  ],\n  \"Soil\": [\n    {\"soilTexture\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilReferenceGroup\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilDepth\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilBulkDensity\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilPH\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilOrganicCarbon\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"\", \"span\": [0, 0] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"region\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"city\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"latitude\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"longitude\": { \"value\": \"\", \"span\": [0, 0] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"endTime\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"duration\": { \"value\": \"\", \"span\": [0, 0] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 975,
+    "completion_tokens": 486,
+    "total_tokens": 1461,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

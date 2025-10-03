@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIxkuHmUAA7PEltsm0b445W1rIZIb",
+  "object": "chat.completion",
+  "created": 1758635640,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"apple\", \"span\": [57, 62] }},\n    {\"cropSpecies\": { \"value\": \"apple\", \"span\": [368, 373] }},\n    {\"cropSpecies\": { \"value\": \"grassland\", \"span\": [430, 439] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"region\": { \"value\": \"Altes Land\", \"span\": [78, 89] }},\n    {\"region\": { \"value\": \"Altes Land\", \"span\": [301, 312] }},\n    {\"region\": { \"value\": \"Lower Saxony\", \"span\": [390, 402] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [404, 411] }}\n  ],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"Three-year\", \"span\": [7, 17] }},\n    {\"duration\": { \"value\": \"between 2001 and 2003\", \"span\": [476, 497] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3289,
+    "completion_tokens": 247,
+    "total_tokens": 3536,
+    "prompt_tokens_details": {
+      "cached_tokens": 2944,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

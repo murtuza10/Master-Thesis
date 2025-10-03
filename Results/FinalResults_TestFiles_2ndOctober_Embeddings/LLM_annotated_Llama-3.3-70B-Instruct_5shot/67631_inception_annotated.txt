@@ -1,0 +1,24 @@
+To fill the JSON structure based on the input text, we need to identify entities that belong to the allowed subcategories: Crop, Location, and TimeStatement.
+
+- **Crop**: The text mentions "wine berries" and specific varieties of grapes: "Riesling", "Felicia", and "Regent". These are crop species or varieties.
+- **Location**: There is no explicit mention of a country, region, city, latitude, or longitude in the provided text.
+- **TimeStatement**: The text mentions a specific year, "2018", and two points in time: "before" and "after thinning". However, "before" and "after thinning" are not explicit dates, seasons, or years, so they do not fit the TimeStatement subcategory as defined. Only "2018" qualifies as an explicit year.
+
+Given this analysis, the JSON output would be:
+
+```json
+{
+  "Crop": [
+    {"Crop": { "value": "wine berries", "span": [24, 36] }},
+    {"Crop": { "value": "Riesling", "span": [157, 165] }},
+    {"Crop": { "value": "Felicia", "span": [166, 173] }},
+    {"Crop": { "value": "Regent", "span": [174, 180] }}
+  ],
+  "Location": [],
+  "TimeStatement": [
+    {"TimeStatement": { "value": "2018", "span": [246, 250] }}
+  ]
+}
+```
+
+Note: The span indices are approximate and based on the text provided, starting from the beginning of the abstract. They might not perfectly match if the text is processed differently or if there are leading characters (like spaces or newline characters) not accounted for in this calculation.

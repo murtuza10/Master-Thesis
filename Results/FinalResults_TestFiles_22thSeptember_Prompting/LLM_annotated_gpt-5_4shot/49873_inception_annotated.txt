@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIydoRt4Z3mQFnoMcZnni4cke8Tfo",
+  "object": "chat.completion",
+  "created": 1758639044,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"Bodenleitprofile\", \"span\": [141, 157]}},\n    {\"Soil\": {\"value\": \"boden-physikalischen Grundlagendaten\", \"span\": [163, 200]}},\n    {\"Soil\": {\"value\": \"Standorts- und Bodeninformationen\", \"span\": [257, 290]}},\n    {\"Soil\": {\"value\": \"Standorts- und Bodenkartierung\", \"span\": [352, 381]}},\n    {\"Soil\": {\"value\": \"Standorts-\", \"span\": [484, 493]}},\n    {\"Soil\": {\"value\": \"Bodenkundler\", \"span\": [498, 510]}},\n    {\"Soil\": {\"value\": \"Leitprofildaten\", \"span\": [682, 697]}},\n    {\"Soil\": {\"value\": \"Standortseinheit\", \"span\": [740, 756]}},\n    {\"Soil\": {\"value\": \"Bodentyp\", \"span\": [790, 798]}},\n    {\"Soil\": {\"value\": \"Wasserhaushalts-/ Nährstoffansprache\", \"span\": [800, 837]}},\n    {\"Soil\": {\"value\": \"Kalkung\", \"span\": [839, 846]}},\n    {\"Soil\": {\"value\": \"Leitprofil\", \"span\": [850, 860]}},\n    {\"Soil\": {\"value\": \"Horizontangaben\", \"span\": [878, 893]}},\n    {\"Soil\": {\"value\": \"Bodenart\", \"span\": [897, 905]}},\n    {\"Soil\": {\"value\": \"Skelett\", \"span\": [907, 914]}},\n    {\"Soil\": {\"value\": \"Trockenrohdichte (TRD)\", \"span\": [916, 937]}},\n    {\"Soil\": {\"value\": \"nutzbare Feldkapazität (nFK)\", \"span\": [939, 968]}},\n    {\"Soil\": {\"value\": \"Leitprofil\", \"span\": [973, 983]}},\n    {\"Soil\": {\"value\": \"Horizontangaben\", \"span\": [1001, 1016]}},\n    {\"Soil\": {\"value\": \"Basensättigung\", \"span\": [1020, 1034]}},\n    {\"Soil\": {\"value\": \"organischer Kohlenstoffgehalt (Corg)\", \"span\": [1036, 1071]}},\n    {\"Soil\": {\"value\": \"Entkalkungstiefe\", \"span\": [1073, 1089]}},\n    {\"Soil\": {\"value\": \"Leitprofil\", \"span\": [1192, 1202]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"deutschen\", \"span\": [220, 228]}},\n    {\"region\": {\"value\": \"Bundesländer\", \"span\": [336, 348]}},\n    {\"region\": {\"value\": \"Bundesland\", \"span\": [520, 531]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"Creation date: 28.05.2019\", \"span\": [1321, 1349]}},\n    {\"startTime\": {\"value\": \"2012\", \"span\": [1374, 1378]}},\n    {\"endTime\": {\"value\": \"2012\", \"span\": [1390, 1394]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3536,
+    "completion_tokens": 778,
+    "total_tokens": 4314,
+    "prompt_tokens_details": {
+      "cached_tokens": 3072,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

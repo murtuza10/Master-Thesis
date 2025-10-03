@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIzVJJJGYK5to9VIk2LURk2km5lAZ",
+  "object": "chat.completion",
+  "created": 1758642361,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [41, 54] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [107, 120] }},\n    {\"cropSpecies\": { \"value\": \"oat\", \"span\": [1177, 1180] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [1726, 1739] }},\n    {\"cropSpecies\": { \"value\": \"winter oilseed rape\", \"span\": [1741, 1761] }},\n    {\"cropSpecies\": { \"value\": \"winter wheat\", \"span\": [1763, 1775] }},\n    {\"cropSpecies\": { \"value\": \"lupine\", \"span\": [1777, 1783] }},\n    {\"cropSpecies\": { \"value\": \"winter rye\", \"span\": [1788, 1798] }},\n    {\"cropSpecies\": { \"value\": \"Hordeum vulgare\", \"span\": [2183, 2199] }},\n    {\"cropVariety\": { \"value\": \"OTTO\", \"span\": [2211, 2215] }}\n  ],\n  \"Soil\": [\n    {\"soilTexture\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilReferenceGroup\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilDepth\": { \"value\": \"25 cm\", \"span\": [1111, 1116] }},\n    {\"soilDepth\": { \"value\": \"0-30 cm\", \"span\": [1492, 1499] }},\n    {\"soilDepth\": { \"value\": \"25 cm\", \"span\": [1891, 1896] }},\n    {\"soilBulkDensity\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilPH\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilOrganicCarbon\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"\", \"span\": [0, 0] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"region\": { \"value\": \"Braunschweig\", \"span\": [23, 35] }},\n    {\"city\": { \"value\": \"Braunschweig\", \"span\": [23, 35] }},\n    {\"latitude\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"longitude\": { \"value\": \"\", \"span\": [0, 0] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2014\", \"span\": [55, 59] }},\n    {\"startTime\": { \"value\": \"2014\", \"span\": [121, 125] }},\n    {\"startTime\": { \"value\": \"1985-2008\", \"span\": [819, 828] }},\n    {\"startTime\": { \"value\": \"2013\", \"span\": [1155, 1159] }},\n    {\"startTime\": { \"value\": \"2013\", \"span\": [1353, 1357] }},\n    {\"startTime\": { \"value\": \"2014\", \"span\": [2217, 2221] }},\n    {\"endTime\": { \"value\": \"2008\", \"span\": [829, 833] }},\n    {\"endTime\": { \"value\": \"2013\", \"span\": [1168, 1172] }},\n    {\"endTime\": { \"value\": \"2013\", \"span\": [1390, 1394] }},\n    {\"duration\": { \"value\": \"once a year\", \"span\": [2016, 2027] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1535,
+    "completion_tokens": 845,
+    "total_tokens": 2380,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

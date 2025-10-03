@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIywaocmKf2WCPMd4cPfv59E7GfJq",
+  "object": "chat.completion",
+  "created": 1758640208,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"German\", \"span\": [160, 166]}},\n    {\"region\": {\"value\": \"German National Forest Inventory\", \"span\": [167, 199]}},\n    {\"region\": {\"value\": \"Deutscher Wetterdienst\", \"span\": [358, 381]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"1961\", \"span\": [141, 145]}},\n    {\"endTime\": {\"value\": \"2100\", \"span\": [148, 152]}},\n    {\"startTime\": {\"value\": \"1961\", \"span\": [255, 259]}},\n    {\"endTime\": {\"value\": \"2013\", \"span\": [262, 266]}},\n    {\"startTime\": {\"value\": \"2011\", \"span\": [465, 469]}},\n    {\"endTime\": {\"value\": \"2050\", \"span\": [472, 476]}},\n    {\"startTime\": {\"value\": \"2011\", \"span\": [482, 486]}},\n    {\"endTime\": {\"value\": \"2100\", \"span\": [489, 493]}},\n    {\"startTime\": {\"value\": \"31.12.2016\", \"span\": [862, 872]}},\n    {\"startTime\": {\"value\": \"01.01.1961\", \"span\": [946, 956]}},\n    {\"endTime\": {\"value\": \"31.12.2099\", \"span\": [959, 969]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6270,
+    "completion_tokens": 359,
+    "total_tokens": 6629,
+    "prompt_tokens_details": {
+      "cached_tokens": 5888,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

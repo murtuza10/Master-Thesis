@@ -1,0 +1,90 @@
+================================================================================
+MODEL EVALUATION RESULTS SUMMARY
+================================================================================
+Evaluation Date: 2025-09-24T18:21:54.087440
+Model Path: /lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/roberta-english_specific_final_model_regularized_saved_broad_3.0-21sept
+Test Dataset Size: 233
+Labels Used: ['O', 'B-soilReferenceGroup', 'I-soilReferenceGroup', 'B-soilOrganicCarbon', 'I-soilOrganicCarbon', 'B-soilTexture', 'I-soilTexture', 'B-startTime', 'I-startTime', 'B-endTime', 'I-endTime', 'B-city', 'I-city', 'B-duration', 'I-duration', 'B-cropSpecies', 'I-cropSpecies', 'B-soilAvailableNitrogen', 'I-soilAvailableNitrogen', 'B-soilDepth', 'I-soilDepth', 'B-region', 'I-region', 'B-country', 'I-country', 'B-longitude', 'I-longitude', 'B-latitude', 'I-latitude', 'B-cropVariety', 'I-cropVariety', 'B-soilPH', 'I-soilPH', 'B-soilBulkDensity', 'I-soilBulkDensity']
+
+================================================================================
+F1 SCORES
+================================================================================
+Exact F1 Score (Strict Entity Matching): 0.7393
+Partial F1 Score (Lenient/Token-level): 0.7670
+
+================================================================================
+CLASSIFICATION REPORTS
+================================================================================
+
+TOKEN-LEVEL CLASSIFICATION REPORT:
+--------------------------------------------------
+                         precision    recall  f1-score   support
+
+                 B-city       0.58      0.93      0.72        15
+              B-country       0.81      0.92      0.86        24
+          B-cropSpecies       0.80      0.93      0.86        80
+          B-cropVariety       1.00      0.67      0.80         3
+             B-duration       0.70      0.73      0.71        22
+              B-endTime       0.86      0.70      0.78        27
+             B-latitude       1.00      0.50      0.67         2
+            B-longitude       1.00      1.00      1.00         2
+               B-region       0.56      0.64      0.60        14
+B-soilAvailableNitrogen       0.20      0.33      0.25         3
+      B-soilBulkDensity       0.00      0.00      0.00         1
+            B-soilDepth       0.00      0.00      0.00         2
+    B-soilOrganicCarbon       0.62      0.76      0.68        17
+               B-soilPH       0.57      0.80      0.67         5
+          B-soilTexture       0.33      0.12      0.18         8
+            B-startTime       0.79      0.91      0.84        53
+          I-cropSpecies       0.72      0.77      0.74        30
+          I-cropVariety       0.00      0.00      0.00         0
+             I-duration       0.71      0.83      0.77        18
+              I-endTime       1.00      0.67      0.80         3
+               I-region       0.45      0.83      0.59         6
+I-soilAvailableNitrogen       0.00      0.00      0.00         2
+      I-soilBulkDensity       0.00      0.00      0.00         1
+            I-soilDepth       0.00      0.00      0.00         1
+    I-soilOrganicCarbon       0.70      1.00      0.82        14
+               I-soilPH       0.00      0.00      0.00         2
+          I-soilTexture       0.00      0.00      0.00         4
+            I-startTime       0.75      0.60      0.67         5
+                      O       0.99      0.99      0.99      6561
+
+               accuracy                           0.98      6925
+              macro avg       0.52      0.54      0.52      6925
+           weighted avg       0.98      0.98      0.98      6925
+
+
+ENTITY-LEVEL CLASSIFICATION REPORT:
+--------------------------------------------------
+                       precision    recall  f1-score   support
+
+                 city       0.58      0.93      0.72        15
+              country       0.81      0.92      0.86        24
+          cropSpecies       0.75      0.89      0.81        80
+          cropVariety       0.67      0.67      0.67         3
+             duration       0.64      0.73      0.68        22
+              endTime       0.86      0.70      0.78        27
+             latitude       1.00      0.50      0.67         2
+            longitude       1.00      1.00      1.00         2
+               region       0.53      0.64      0.58        14
+soilAvailableNitrogen       0.20      0.33      0.25         3
+      soilBulkDensity       0.00      0.00      0.00         1
+            soilDepth       0.00      0.00      0.00         2
+    soilOrganicCarbon       0.57      0.76      0.65        17
+               soilPH       0.43      0.60      0.50         5
+          soilTexture       0.00      0.00      0.00         8
+            startTime       0.76      0.89      0.82        53
+
+            micro avg       0.69      0.79      0.74       278
+            macro avg       0.55      0.60      0.56       278
+         weighted avg       0.69      0.79      0.73       278
+
+
+================================================================================
+ADDITIONAL STATISTICS
+================================================================================
+Total sequences: 233
+Total tokens: 6925
+Unique labels in predictions: 24
+Unique labels in ground truth: 28

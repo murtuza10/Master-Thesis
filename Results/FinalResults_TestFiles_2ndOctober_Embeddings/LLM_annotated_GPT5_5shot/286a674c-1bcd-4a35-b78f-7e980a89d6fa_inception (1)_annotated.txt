@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMFZy48JTR8SQdvlPq5v10J2brlcY",
+  "object": "chat.completion",
+  "created": 1759419138,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"winter wheat\", \"span\": [226, 238] }},\n    {\"Crop\": { \"value\": \"wheat\", \"span\": [371, 376] }},\n    {\"Crop\": { \"value\": \"wheat\", \"span\": [429, 434] }},\n    {\"Crop\": { \"value\": \"wheat\", \"span\": [614, 619] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Quillow\", \"span\": [133, 140] }},\n    {\"Location\": { \"value\": \"Quillow\", \"span\": [223, 230] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [1090, 1097] }},\n    {\"Location\": { \"value\": \"Brandenburg\", \"span\": [1100, 1111] }},\n    {\"Location\": { \"value\": \"Uckermark\", \"span\": [1114, 1123] }},\n    {\"Location\": { \"value\": \"Quillow\", \"span\": [1126, 1133] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2019\", \"span\": [137, 141] }},\n    {\"TimeStatement\": { \"value\": \"2019\", \"span\": [227, 231] }},\n    {\"TimeStatement\": { \"value\": \"April\", \"span\": [665, 670] }},\n    {\"TimeStatement\": { \"value\": \"June 2019\", \"span\": [675, 684] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4531,
+    "completion_tokens": 355,
+    "total_tokens": 4886,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

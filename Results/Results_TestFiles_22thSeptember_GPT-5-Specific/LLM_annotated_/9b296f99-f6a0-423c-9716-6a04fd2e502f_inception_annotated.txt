@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIzXCCtdsoVdSW6eilQkUtkrXJLu3",
+  "object": "chat.completion",
+  "created": 1758642478,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [413, 418] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [427, 433] }},\n    {\"cropSpecies\": { \"value\": \"sugar beet\", \"span\": [439, 449] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [1072, 1078] }},\n    {\"cropSpecies\": { \"value\": \"sugar beet\", \"span\": [1083, 1093] }}\n  ],\n  \"Soil\": [\n    {\"soilTexture\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilReferenceGroup\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilDepth\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilBulkDensity\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilPH\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilOrganicCarbon\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"\", \"span\": [0, 0] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [52, 59] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [122, 129] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [676, 683] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [1150, 1157] }},\n    {\"region\": { \"value\": \"Speyer\", \"span\": [46, 52] }},\n    {\"region\": { \"value\": \"Speyer\", \"span\": [116, 122] }},\n    {\"region\": { \"value\": \"Rinkenbergerhof\", \"span\": [292, 308] }},\n    {\"city\": { \"value\": \"Karlsruhe\", \"span\": [940, 949] }},\n    {\"latitude\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"longitude\": { \"value\": \"\", \"span\": [0, 0] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"the year 1984\", \"span\": [350, 364] }},\n    {\"endTime\": { \"value\": \"16. September 2009\", \"span\": [906, 925] }},\n    {\"duration\": { \"value\": \"every three years\", \"span\": [641, 660] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1531,
+    "completion_tokens": 599,
+    "total_tokens": 2130,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

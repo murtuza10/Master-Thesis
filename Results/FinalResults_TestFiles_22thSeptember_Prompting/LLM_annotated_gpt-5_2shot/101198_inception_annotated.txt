@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyBzjVyWopfTm2NkE7CijswblVFQ",
+  "object": "chat.completion",
+  "created": 1758637319,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [1899, 1906]}},\n    {\"city\": {\"value\": \"Hürth\", \"span\": [1891, 1896]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2020\", \"span\": [1191, 1195]}},\n    {\"endTime\": {\"value\": \"2050\", \"span\": [1200, 1204]}},\n    {\"endTime\": {\"value\": \"2028\", \"span\": [1860, 1864]}},\n    {\"startTime\": {\"value\": \"2024-03\", \"span\": [1910, 1917]}},\n    {\"startTime\": {\"value\": \"November 2023\", \"span\": [1517, 1531]}},\n    {\"startTime\": {\"value\": \"November 2023\", \"span\": [1653, 1667]}},\n    {\"startTime\": {\"value\": \"August 2024\", \"span\": [1782, 1794]}},\n    {\"startTime\": {\"value\": \"17.11.2023\", \"span\": [1828, 1838]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5105,
+    "completion_tokens": 288,
+    "total_tokens": 5393,
+    "prompt_tokens_details": {
+      "cached_tokens": 3968,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIu9zCWopDzCrirJAsxXcy5oJAtJb",
+  "object": "chat.completion",
+  "created": 1758621819,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [179, 185] }},\n    {\"cropSpecies\": { \"value\": \"grapes\", \"span\": [420, 426] }},\n    {\"cropSpecies\": { \"value\": \"grape\", \"span\": [1297, 1302] }},\n    {\"cropSpecies\": { \"value\": \"grape\", \"span\": [1847, 1852] }},\n    {\"cropSpecies\": { \"value\": \"grape\", \"span\": [2300, 2305] }},\n    {\"cropSpecies\": { \"value\": \"grape\", \"span\": [2820, 2825] }},\n    {\"cropSpecies\": { \"value\": \"grape\", \"span\": [3298, 3303] }},\n    {\"cropSpecies\": { \"value\": \"grape\", \"span\": [3537, 3542] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2017\", \"span\": [893, 897] }},\n    {\"startTime\": { \"value\": \"2018\", \"span\": [1201, 1205] }},\n    {\"startTime\": { \"value\": \"2018\", \"span\": [2054, 2058] }},\n    {\"startTime\": { \"value\": \"30.8.2017\", \"span\": [1480, 1489] }},\n    {\"startTime\": { \"value\": \"6.9.2017\", \"span\": [1494, 1502] }},\n    {\"endTime\": { \"value\": \"20.9.2017\", \"span\": [1536, 1545] }},\n    {\"endTime\": { \"value\": \"25.9.2017\", \"span\": [1550, 1559] }},\n    {\"startTime\": { \"value\": \"24.8.2018\", \"span\": [1920, 1929] }},\n    {\"startTime\": { \"value\": \"31.8.2018\", \"span\": [1934, 1943] }},\n    {\"endTime\": { \"value\": \"13.9.2018\", \"span\": [1982, 1991] }},\n    {\"endTime\": { \"value\": \"20.9.2018\", \"span\": [1996, 2005] }},\n    {\"startTime\": { \"value\": \"29.8.2018\", \"span\": [2445, 2454] }},\n    {\"startTime\": { \"value\": \"4.9.2018\", \"span\": [2459, 2467] }},\n    {\"endTime\": { \"value\": \"12.9.2018\", \"span\": [2921, 2930] }},\n    {\"endTime\": { \"value\": \"29.9.2018\", \"span\": [2935, 2944] }},\n    {\"duration\": { \"value\": \"three weeks\", \"span\": [1514, 1526] }},\n    {\"duration\": { \"value\": \"two weeks\", \"span\": [2868, 2877] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4272,
+    "completion_tokens": 703,
+    "total_tokens": 4975,
+    "prompt_tokens_details": {
+      "cached_tokens": 2432,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,34 @@
+{
+  "id": "gen-1759333537-EUsGUXgVDdqH7bMNCyHF",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759333537,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"oilseed rape\", \"span\": [459, 471] }},\n    {\"Crop\": { \"value\": \"Brassica napus\", \"span\": [473, 486] }},\n    {\"Crop\": { \"value\": \"OSR\", \"span\": [488, 491] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Germany\", \"span\": [300, 307] }},\n    {\"Location\": { \"value\": \"Bochum\", \"span\": [310, 316] }},\n    {\"Location\": { \"value\": \"Braunschweig\", \"span\": [318, 330] }},\n    {\"Location\": { \"value\": \"Celle\", \"span\": [332, 337] }},\n    {\"Location\": { \"value\": \"Hohenheim\", \"span\": [339, 348] }},\n    {\"Location\": { \"value\": \"Veitshöchheim\", \"span\": [350, 364] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"spring 2022\", \"span\": [366, 376] }},\n    {\"TimeStatement\": { \"value\": \"spring 2023\", \"span\": [380, 390] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 800,
+    "completion_tokens": 299,
+    "total_tokens": 1099,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

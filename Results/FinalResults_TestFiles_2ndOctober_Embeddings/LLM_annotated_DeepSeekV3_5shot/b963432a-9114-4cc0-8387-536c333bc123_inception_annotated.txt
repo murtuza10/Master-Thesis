@@ -1,0 +1,27 @@
+{
+  "id": "gen-1759421289-pkWZZwAD6dvG6XPmHy6o",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759421289,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"spring barley\", \"span\": [833, 846] }},\n    {\"Crop\": { \"value\": \"serradella\", \"span\": [873, 883] }},\n    {\"Crop\": { \"value\": \"spring barley\", \"span\": [926, 939] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Rostock\", \"span\": [14, 21] }},\n    {\"Location\": { \"value\": \"Rostock\", \"span\": [120, 127] }},\n    {\"Location\": { \"value\": \"Northern Germany\", \"span\": [275, 291] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2020\", \"span\": [102, 106] }},\n    {\"TimeStatement\": { \"value\": \"2020\", \"span\": [208, 212] }},\n    {\"TimeStatement\": { \"value\": \"2018\", \"span\": [737, 741] }},\n    {\"TimeStatement\": { \"value\": \"2019\", \"span\": [809, 813] }},\n    {\"TimeStatement\": { \"value\": \"2020\", \"span\": [833, 837] }},\n    {\"TimeStatement\": { \"value\": \"3.5 months\", \"span\": [1460, 1469] }},\n    {\"TimeStatement\": { \"value\": \"2020\", \"span\": [1475, 1479] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4966,
+    "completion_tokens": 345,
+    "total_tokens": 5311
+  }
+}

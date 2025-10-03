@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyHzZSR5kxeED1P0Z6F2ylVZ5ZcU",
+  "object": "chat.completion",
+  "created": 1758637691,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"Bodenprofile\", \"span\": [29, 40]}},\n    {\"Soil\": {\"value\": \"Bodenleitprofile\", \"span\": [190, 206]}},\n    {\"Soil\": {\"value\": \"boden-physikalischen Grundlagendaten\", \"span\": [212, 247]}},\n    {\"Soil\": {\"value\": \"Bodeninformationen\", \"span\": [394, 412]}},\n    {\"Soil\": {\"value\": \"Bodenkartierung\", \"span\": [470, 484]}},\n    {\"Soil\": {\"value\": \"Bodenkundler\", \"span\": [595, 606]}},\n    {\"Soil\": {\"value\": \"Bodentyp\", \"span\": [959, 967]}},\n    {\"Soil\": {\"value\": \"Wasserhaushalts-/ Nährstoffansprache\", \"span\": [969, 1006]}},\n    {\"Soil\": {\"value\": \"Kalkung\", \"span\": [1008, 1015]}},\n    {\"Soil\": {\"value\": \"Bodenart\", \"span\": [1099, 1107]}},\n    {\"Soil\": {\"value\": \"Skelett\", \"span\": [1109, 1116]}},\n    {\"Soil\": {\"value\": \"Trockenrohdichte\", \"span\": [1118, 1134]}},\n    {\"Soil\": {\"value\": \"TRD\", \"span\": [1136, 1139]}},\n    {\"Soil\": {\"value\": \"nutzbare Feldkapazität\", \"span\": [1142, 1164]}},\n    {\"Soil\": {\"value\": \"nFK\", \"span\": [1166, 1169]}},\n    {\"Soil\": {\"value\": \"Basensättigung\", \"span\": [1236, 1250]}},\n    {\"Soil\": {\"value\": \"organischer Kohlenstoffgehalt\", \"span\": [1252, 1281]}},\n    {\"Soil\": {\"value\": \"Corg\", \"span\": [1283, 1287]}},\n    {\"Soil\": {\"value\": \"Entkalkungstiefe\", \"span\": [1289, 1306]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"deutschen\", \"span\": [154, 162]}},\n    {\"region\": {\"value\": \"Bundesländern\", \"span\": [436, 449]}},\n    {\"region\": {\"value\": \"Bundesland\", \"span\": [620, 631]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"28.05.2019\", \"span\": [1512, 1522]}},\n    {\"startTime\": {\"value\": \"2012\", \"span\": [1552, 1556]}},\n    {\"endTime\": {\"value\": \"2012\", \"span\": [1568, 1572]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3210,
+    "completion_tokens": 674,
+    "total_tokens": 3884,
+    "prompt_tokens_details": {
+      "cached_tokens": 2688,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

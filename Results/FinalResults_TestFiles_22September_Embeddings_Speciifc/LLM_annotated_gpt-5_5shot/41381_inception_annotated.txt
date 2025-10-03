@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIvZqCzDtkjf9I60i3TTBRt04ewQh",
+  "object": "chat.completion",
+  "created": 1758627266,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"grape\", \"span\": [210, 215] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [104, 111] }},\n    {\"region\": { \"value\": \"southwest Germany\", \"span\": [96, 113] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [580, 587] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [865, 872] }},\n    {\"country\": { \"value\": \"Europe\", \"span\": [173, 179] }},\n    {\"city\": { \"value\": \"Dossenheim\", \"span\": [1350, 1360] }},\n    {\"city\": { \"value\": \"Siebeldingen\", \"span\": [1365, 1377] }},\n    {\"city\": { \"value\": \"Darmstadt\", \"span\": [1416, 1425] }},\n    {\"region\": { \"value\": \"southwest Germany\", \"span\": [1557, 1574] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2011\", \"span\": [552, 556] }},\n    {\"startTime\": { \"value\": \"late summer 2011\", \"span\": [670, 687] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [1221, 1225] }},\n    {\"endTime\": { \"value\": \"February 2018\", \"span\": [1230, 1244] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [1494, 1498] }},\n    {\"endTime\": { \"value\": \"2018\", \"span\": [1503, 1507] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2530,
+    "completion_tokens": 422,
+    "total_tokens": 2952,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

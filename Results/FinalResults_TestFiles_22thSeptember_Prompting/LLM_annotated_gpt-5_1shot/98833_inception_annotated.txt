@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIxjjRT1VKNzUl1NemjuEWYGXhm7S",
+  "object": "chat.completion",
+  "created": 1758635567,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"Bodendruck\", \"span\": [7, 18] }},\n    {\"Soil\": { \"value\": \"bodenphysikalischer Parameter\", \"span\": [33, 63] }},\n    {\"Soil\": { \"value\": \"Bodendaten\", \"span\": [118, 129] }},\n    {\"Soil\": { \"value\": \"pseudovergleyte Parabraunerde\", \"span\": [293, 323] }},\n    {\"Soil\": { \"value\": \"Löss\", \"span\": [329, 333] }},\n    {\"Soil\": { \"value\": \"28 cm Tiefe\", \"span\": [348, 359] }},\n    {\"Soil\": { \"value\": \"Bodendruck\", \"span\": [669, 680] }},\n    {\"Soil\": { \"value\": \"plastische Bodensetzung\", \"span\": [685, 709] }},\n    {\"Soil\": { \"value\": \"Wasserretentionseigenschaften\", \"span\": [710, 741] }},\n    {\"Soil\": { \"value\": \"Lagerungsdichte\", \"span\": [744, 760] }},\n    {\"Soil\": { \"value\": \"gesättigte hydr. Leitfähigkeit\", \"span\": [765, 794] }},\n    {\"Soil\": { \"value\": \"Gesamtporenvolumen\", \"span\": [861, 881] }},\n    {\"Soil\": { \"value\": \"Luftkapazität\", \"span\": [883, 896] }},\n    {\"Soil\": { \"value\": \"Feldkapazität\", \"span\": [898, 912] }},\n    {\"Soil\": { \"value\": \"permanenter Welkepunkt\", \"span\": [914, 936] }},\n    {\"Soil\": { \"value\": \"Trocken-rohdichte\", \"span\": [941, 957] }},\n    {\"Soil\": { \"value\": \"Bioporen\", \"span\": [958, 966] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"im Jahr 2017\", \"span\": [78, 90] }},\n    {\"startTime\": { \"value\": \"2017\", \"span\": [199, 203] }},\n    {\"startTime\": { \"value\": \"während der Ernte\", \"span\": [204, 222] }},\n    {\"startTime\": { \"value\": \"20, 35 und 50 cm Tiefe\", \"span\": [641, 663] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3329,
+    "completion_tokens": 584,
+    "total_tokens": 3913,
+    "prompt_tokens_details": {
+      "cached_tokens": 2944,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

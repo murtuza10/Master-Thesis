@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIxkHyTD7gEeH81JEpp6A6gEFuEsp",
+  "object": "chat.completion",
+  "created": 1758635601,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"grape\", \"span\": [164, 169]}},\n    {\"cropSpecies\": {\"value\": \"grape\", \"span\": [302, 307]}},\n    {\"cropSpecies\": {\"value\": \"apple\", \"span\": [1608, 1613]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Europe\", \"span\": [119, 125]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [234, 241]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [285, 292]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [904, 911]}},\n    {\"region\": {\"value\": \"southwest Germany\", \"span\": [76, 94]}},\n    {\"region\": {\"value\": \"southwest Germany\", \"span\": [756, 774]}},\n    {\"city\": {\"value\": \"Dossenheim\", \"span\": [1035, 1045]}},\n    {\"city\": {\"value\": \"Siebeldingen\", \"span\": [1050, 1062]}},\n    {\"city\": {\"value\": \"Darmstadt\", \"span\": [1101, 1110]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"7-year\", \"span\": [44, 50]}},\n    {\"startTime\": {\"value\": \"2011\", \"span\": [213, 217]}},\n    {\"startTime\": {\"value\": \"late summer 2011\", \"span\": [328, 345]}},\n    {\"startTime\": {\"value\": \"2011\", \"span\": [884, 888]}},\n    {\"startTime\": {\"value\": \"2011\", \"span\": [1124, 1128]}},\n    {\"startTime\": {\"value\": \"2011\", \"span\": [1211, 1215]}},\n    {\"endTime\": {\"value\": \"February 2018\", \"span\": [895, 909]}},\n    {\"endTime\": {\"value\": \"2018\", \"span\": [1219, 1223]}},\n    {\"duration\": {\"value\": \"from 2011 to February 2018\", \"span\": [879, 909]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3743,
+    "completion_tokens": 519,
+    "total_tokens": 4262,
+    "prompt_tokens_details": {
+      "cached_tokens": 2944,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

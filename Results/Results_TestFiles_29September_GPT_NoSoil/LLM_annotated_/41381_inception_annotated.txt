@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CLWNUozUVULkzrM0UHolCyIC9hYZH",
+  "object": "chat.completion",
+  "created": 1759245384,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"grape\", \"span\": [210, 215] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"southwest Germany\", \"span\": [73, 90] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [292, 299] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [432, 439] }},\n    {\"Location\": { \"value\": \"Europe\", \"span\": [411, 417] }},\n    {\"Location\": { \"value\": \"southwest Germany\", \"span\": [1080, 1097] }},\n    {\"Location\": { \"value\": \"Dossenheim\", \"span\": [917, 927] }},\n    {\"Location\": { \"value\": \"Siebeldingen\", \"span\": [932, 944] }},\n    {\"Location\": { \"value\": \"Darmstadt\", \"span\": [984, 993] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2011\", \"span\": [166, 170] }},\n    {\"TimeStatement\": { \"value\": \"late summer 2011\", \"span\": [349, 366] }},\n    {\"TimeStatement\": { \"value\": \"2011 to February 2018\", \"span\": [699, 721] }},\n    {\"TimeStatement\": { \"value\": \"between 2011 and 2018\", \"span\": [1003, 1025] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1165,
+    "completion_tokens": 344,
+    "total_tokens": 1509,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

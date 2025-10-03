@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIzQOYWyzWUiwvEr3y2uMgnnSZiiM",
+  "object": "chat.completion",
+  "created": 1758642056,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"bog\", \"span\": [83, 86] }},\n    {\"Soil\": { \"value\": \"peat\", \"span\": [510, 514] }},\n    {\"Soil\": { \"value\": \"bog-specific microforms\", \"span\": [1103, 1126] }},\n    {\"Soil\": { \"value\": \"hummocks\", \"span\": [1726, 1734] }},\n    {\"Soil\": { \"value\": \"hollows\", \"span\": [1739, 1746] }},\n    {\"Soil\": { \"value\": \"peat\", \"span\": [2062, 2066] }},\n    {\"Soil\": { \"value\": \"peat\", \"span\": [2150, 2154] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"one year\", \"span\": [949, 957] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1387,
+    "completion_tokens": 230,
+    "total_tokens": 1617,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

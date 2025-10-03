@@ -1,0 +1,86 @@
+================================================================================
+MODEL EVALUATION RESULTS SUMMARY
+================================================================================
+Evaluation Date: 2025-09-24T17:21:13.301528
+Model Path: /lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/roberta-en-de_final_model_regularized_saved_specific_22
+Test Dataset Size: 233
+Labels Used: ['O', 'B-soilReferenceGroup', 'I-soilReferenceGroup', 'B-soilOrganicCarbon', 'I-soilOrganicCarbon', 'B-soilTexture', 'I-soilTexture', 'B-startTime', 'I-startTime', 'B-endTime', 'I-endTime', 'B-city', 'I-city', 'B-duration', 'I-duration', 'B-cropSpecies', 'I-cropSpecies', 'B-soilAvailableNitrogen', 'I-soilAvailableNitrogen', 'B-soilDepth', 'I-soilDepth', 'B-region', 'I-region', 'B-country', 'I-country', 'B-longitude', 'I-longitude', 'B-latitude', 'I-latitude', 'B-cropVariety', 'I-cropVariety', 'B-soilPH', 'I-soilPH', 'B-soilBulkDensity', 'I-soilBulkDensity']
+
+================================================================================
+F1 SCORES
+================================================================================
+Exact F1 Score (Strict Entity Matching): 0.0140
+Partial F1 Score (Lenient/Token-level): 0.0139
+
+================================================================================
+CLASSIFICATION REPORTS
+================================================================================
+
+TOKEN-LEVEL CLASSIFICATION REPORT:
+--------------------------------------------------
+                      precision    recall  f1-score   support
+
+              B-city       0.15      0.21      0.18        14
+           B-country       0.00      0.00      0.00         0
+       B-cropSpecies       0.00      0.00      0.00        36
+       B-cropVariety       0.00      0.00      0.00         0
+          B-duration       0.00      0.00      0.00        24
+           B-endTime       0.00      0.00      0.00        80
+          B-latitude       0.00      0.00      0.00         0
+         B-longitude       0.00      0.00      0.00         0
+            B-region       0.00      0.00      0.00         0
+         B-soilDepth       0.00      0.00      0.00         0
+ B-soilOrganicCarbon       0.00      0.00      0.00        27
+            B-soilPH       0.00      0.00      0.00         0
+B-soilReferenceGroup       0.00      0.00      0.00        53
+       B-soilTexture       0.00      0.00      0.00        15
+         B-startTime       0.02      0.05      0.02        22
+              I-city       0.00      0.00      0.00         6
+       I-cropSpecies       0.00      0.00      0.00        24
+       I-cropVariety       0.00      0.00      0.00         0
+          I-duration       0.00      0.00      0.00         0
+           I-endTime       0.00      0.00      0.00        30
+            I-region       0.00      0.00      0.00         0
+         I-soilDepth       0.00      0.00      0.00         0
+ I-soilOrganicCarbon       0.00      0.00      0.00         3
+I-soilReferenceGroup       0.00      0.00      0.00         5
+         I-startTime       0.00      0.00      0.00        18
+                   O       0.99      0.99      0.99      6568
+
+            accuracy                           0.94      6925
+           macro avg       0.04      0.05      0.05      6925
+        weighted avg       0.94      0.94      0.94      6925
+
+
+ENTITY-LEVEL CLASSIFICATION REPORT:
+--------------------------------------------------
+                    precision    recall  f1-score   support
+
+              city       0.15      0.21      0.18        14
+           country       0.00      0.00      0.00         0
+       cropSpecies       0.00      0.00      0.00        36
+       cropVariety       0.00      0.00      0.00         0
+          duration       0.00      0.00      0.00        24
+           endTime       0.00      0.00      0.00        80
+          latitude       0.00      0.00      0.00         0
+         longitude       0.00      0.00      0.00         0
+            region       0.00      0.00      0.00         0
+         soilDepth       0.00      0.00      0.00         0
+ soilOrganicCarbon       0.00      0.00      0.00        27
+            soilPH       0.00      0.00      0.00         0
+soilReferenceGroup       0.00      0.00      0.00        53
+       soilTexture       0.00      0.00      0.00        15
+         startTime       0.02      0.05      0.02        22
+
+         micro avg       0.01      0.01      0.01       271
+         macro avg       0.01      0.02      0.01       271
+      weighted avg       0.01      0.01      0.01       271
+
+
+================================================================================
+ADDITIONAL STATISTICS
+================================================================================
+Total sequences: 233
+Total tokens: 6925
+Unique labels in predictions: 23
+Unique labels in ground truth: 15

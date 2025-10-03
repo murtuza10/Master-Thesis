@@ -1,0 +1,26 @@
+{
+  "id": "gen-1759333237-f0uRacZN2PUKsa6ZAWDT",
+  "provider": "AtlasCloud",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759333237,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [],\n  \"Location\": [],\n  \"TimeStatement\": [\n    {\"TimeLiteral\": { \"value\": \"2-year\", \"span\": [66, 72] }},\n    {\"TimeLiteral\": { \"value\": \"6, 12 and 24 stuff\", \"span\": [116, 135] }}\n  ]\n}\nlength: 135\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 638,
+    "completion_tokens": 84,
+    "total_tokens": 722
+  }
+}

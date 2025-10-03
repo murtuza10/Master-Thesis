@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIvYh16JpIDpRaPKY5KqH9pvbMvUt",
+  "object": "chat.completion",
+  "created": 1758627195,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [44, 57] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [100, 113] }},\n    {\"cropSpecies\": { \"value\": \"oat\", \"span\": [1193, 1196] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [1752, 1765] }},\n    {\"cropSpecies\": { \"value\": \"winter wheat\", \"span\": [1796, 1809] }},\n    {\"cropSpecies\": { \"value\": \"lupine\", \"span\": [1811, 1817] }},\n    {\"cropSpecies\": { \"value\": \"winter rye\", \"span\": [1822, 1832] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [2188, 2201] }},\n    {\"cropVariety\": { \"value\": \"OTTO\", \"span\": [2224, 2228] }}\n  ],\n  \"Soil\": [\n    {\"soilDepth\": { \"value\": \"25 cm\", \"span\": [1158, 1163] }},\n    {\"soilDepth\": { \"value\": \"0-30 cm\", \"span\": [1507, 1514] }},\n    {\"soilDepth\": { \"value\": \"25 cm\", \"span\": [1919, 1924] }}\n  ],\n  \"Location\": [\n    {\"city\": { \"value\": \"Braunschweig\", \"span\": [29, 41] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1985-2008\", \"span\": [736, 745] }},\n    {\"startTime\": { \"value\": \"2013\", \"span\": [1211, 1215] }},\n    {\"startTime\": { \"value\": \"autumn 2013\", \"span\": [2033, 2045] }},\n    {\"startTime\": { \"value\": \"2014\", \"span\": [2234, 2238] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2960,
+    "completion_tokens": 469,
+    "total_tokens": 3429,
+    "prompt_tokens_details": {
+      "cached_tokens": 1792,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

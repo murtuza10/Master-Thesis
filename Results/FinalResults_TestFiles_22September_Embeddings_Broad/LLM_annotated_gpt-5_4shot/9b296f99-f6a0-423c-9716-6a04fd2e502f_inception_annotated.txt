@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIuYccfdvEpMM3kbz7G98qnlXWVOm",
+  "object": "chat.completion",
+  "created": 1758623346,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [358, 363] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [372, 378] }},\n    {\"cropSpecies\": { \"value\": \"sugar beet\", \"span\": [385, 395] }},\n    {\"cropSpecies\": { \"value\": \"barley\", \"span\": [1270, 1276] }},\n    {\"cropSpecies\": { \"value\": \"sugar beet\", \"span\": [1281, 1291] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [320, 327] }},\n    {\"city\": { \"value\": \"Speyer\", \"span\": [294, 300] }},\n    {\"city\": { \"value\": \"Rinkenbergerhof\", \"span\": [252, 267] }},\n    {\"city\": { \"value\": \"Speyer\", \"span\": [302, 308] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [310, 318] }},\n    {\"city\": { \"value\": \"Speyer\", \"span\": [1047, 1053] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [1055, 1063] }},\n    {\"city\": { \"value\": \"Karlsruhe\", \"span\": [926, 935] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1984\", \"span\": [337, 341] }},\n    {\"startTime\": { \"value\": \"16. September 2009\", \"span\": [896, 916] }},\n    {\"startTime\": { \"value\": \"2017\", \"span\": [1956, 1960] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5964,
+    "completion_tokens": 416,
+    "total_tokens": 6380,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

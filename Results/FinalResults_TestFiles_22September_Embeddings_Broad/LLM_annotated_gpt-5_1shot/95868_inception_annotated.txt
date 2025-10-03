@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIjAmUyRT6Ziqlz0twJjxi5jo6nKN",
+  "object": "chat.completion",
+  "created": 1758579584,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Picea abies\", \"span\": [61, 72] }},\n    {\"cropSpecies\": { \"value\": \"Norway spruce\", \"span\": [134, 148] }},\n    {\"cropSpecies\": { \"value\": \"Picea abies\", \"span\": [150, 161] }},\n    {\"cropSpecies\": { \"value\": \"Norway spruce\", \"span\": [372, 386] }},\n    {\"cropSpecies\": { \"value\": \"Norway spruce\", \"span\": [636, 650] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [233, 240] }},\n    {\"region\": { \"value\": \"Western Germany\", \"span\": [225, 240] }},\n    {\"region\": { \"value\": \"Europe\", \"span\": [551, 557] }}\n  ],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"50 years\", \"span\": [96, 104] }},\n    {\"duration\": { \"value\": \"51 years\", \"span\": [205, 213] }},\n    {\"startTime\": { \"value\": \"1964/68\", \"span\": [444, 451] }},\n    {\"startTime\": { \"value\": \"age 7\", \"span\": [771, 776] }},\n    {\"startTime\": { \"value\": \"10\", \"span\": [778, 780] }},\n    {\"startTime\": { \"value\": \"13\", \"span\": [782, 784] }},\n    {\"startTime\": { \"value\": \"16\", \"span\": [786, 788] }},\n    {\"startTime\": { \"value\": \"16\", \"span\": [823, 825] }},\n    {\"startTime\": { \"value\": \"21\", \"span\": [827, 829] }},\n    {\"startTime\": { \"value\": \"29\", \"span\": [831, 833] }},\n    {\"startTime\": { \"value\": \"39\", \"span\": [835, 837] }},\n    {\"startTime\": { \"value\": \"51\", \"span\": [839, 841] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1753,
+    "completion_tokens": 497,
+    "total_tokens": 2250,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

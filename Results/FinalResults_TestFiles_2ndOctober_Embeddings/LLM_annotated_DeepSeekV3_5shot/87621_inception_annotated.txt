@@ -1,0 +1,27 @@
+{
+  "id": "gen-1759421415-SZ3Nmi2ZTNUCCBjhN2Vm",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759421415,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"barley\", \"span\": [105, 111] }},\n    {\"Crop\": { \"value\": \"Hordeum vulgare ssp. vulgare\", \"span\": [113, 142] }}\n  ],\n  \"Location\": [],\n  \"TimeStatement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4117,
+    "completion_tokens": 82,
+    "total_tokens": 4199
+  }
+}

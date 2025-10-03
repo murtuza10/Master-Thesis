@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIxlRI9IWQhQekb0hVMpE1iEJ9aYS",
+  "object": "chat.completion",
+  "created": 1758635673,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"honey bee\", \"span\": [404, 413]}},\n    {\"cropSpecies\": {\"value\": \"oilseed rape\", \"span\": [435, 447]}},\n    {\"cropSpecies\": {\"value\": \"Brassica napus\", \"span\": [450, 464]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [247, 254]}},\n    {\"city\": {\"value\": \"Bochum\", \"span\": [256, 262]}},\n    {\"city\": {\"value\": \"Braunschweig\", \"span\": [264, 276]}},\n    {\"city\": {\"value\": \"Celle\", \"span\": [278, 283]}},\n    {\"city\": {\"value\": \"Hohenheim\", \"span\": [285, 294]}},\n    {\"city\": {\"value\": \"Veitshöchheim\", \"span\": [296, 310]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2024\", \"span\": [118, 122]}},\n    {\"startTime\": {\"value\": \"spring 2022\", \"span\": [312, 323]}},\n    {\"endTime\": {\"value\": \"spring 2023\", \"span\": [327, 338]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3370,
+    "completion_tokens": 312,
+    "total_tokens": 3682,
+    "prompt_tokens_details": {
+      "cached_tokens": 2944,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

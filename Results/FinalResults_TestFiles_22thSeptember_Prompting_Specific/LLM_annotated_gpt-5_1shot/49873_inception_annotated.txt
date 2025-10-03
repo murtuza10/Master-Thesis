@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIw6ICeBkHmS8aotvEtE2TLzDv0Yh",
+  "object": "chat.completion",
+  "created": 1758629278,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilTexture\": { \"value\": \"Bodenart\", \"span\": [720, 728] }},\n    {\"soilBulkDensity\": { \"value\": \"Trockenrohdichte (TRD)\", \"span\": [741, 764] }},\n    {\"soilOrganicCarbon\": { \"value\": \"organischer Kohlenstoffgehalt (Corg)\", \"span\": [892, 928] }},\n    {\"soilDepth\": { \"value\": \"Entkalkungstiefe\", \"span\": [931, 947] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"deutschen\", \"span\": [168, 176] }},\n    {\"region\": { \"value\": \"Bundesländern\", \"span\": [331, 344] }},\n    {\"country\": { \"value\": \"Bundesland\", \"span\": [519, 530] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"28.05.2019\", \"span\": [1147, 1156] }},\n    {\"startTime\": { \"value\": \"2012\", \"span\": [1187, 1191] }},\n    {\"endTime\": { \"value\": \"2012\", \"span\": [1203, 1207] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2265,
+    "completion_tokens": 302,
+    "total_tokens": 2567,
+    "prompt_tokens_details": {
+      "cached_tokens": 1792,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

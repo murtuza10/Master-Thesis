@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIzQY6gjyN50DHg20FLYe8KYnjOx4",
+  "object": "chat.completion",
+  "created": 1758642066,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"crop\", \"span\": [166, 170] }},\n    {\"cropSpecies\": { \"value\": \"crop\", \"span\": [620, 624] }},\n    {\"cropSpecies\": { \"value\": \"crops\", \"span\": [1076, 1081] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"soil emissions\", \"span\": [117, 132] }},\n    {\"Soil\": { \"value\": \"soil\", \"span\": [468, 472] }},\n    {\"Soil\": { \"value\": \"soil characteristics\", \"span\": [740, 760] }},\n    {\"Soil\": { \"value\": \"ammonium-N\", \"span\": [787, 797] }},\n    {\"Soil\": { \"value\": \"nitrate-N\", \"span\": [799, 808] }},\n    {\"Soil\": { \"value\": \"bulk density\", \"span\": [810, 822] }},\n    {\"Soil\": { \"value\": \"soil temperatures\", \"span\": [892, 910] }},\n    {\"Soil\": { \"value\": \"soil tillage\", \"span\": [968, 980] }},\n    {\"Soil\": { \"value\": \"N2\", \"span\": [1031, 1033] }},\n    {\"Soil\": { \"value\": \"C and N balances\", \"span\": [1057, 1074] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [104, 111] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [311, 318] }},\n    {\"region\": { \"value\": \"eight sites\", \"span\": [86, 97] }},\n    {\"region\": { \"value\": \"eight field trials\", \"span\": [322, 341] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2011/2012\", \"span\": [263, 272] }},\n    {\"endTime\": { \"value\": \"2014/2015\", \"span\": [275, 284] }},\n    {\"duration\": { \"value\": \"three years\", \"span\": [247, 258] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1185,
+    "completion_tokens": 511,
+    "total_tokens": 1696,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

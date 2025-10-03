@@ -1,0 +1,47 @@
+To fill the JSON structure based on the input text, we need to identify entities that belong to the allowed subcategories: Crop, Location, and TimeStatement.
+
+1. **Crop**: 
+   - The text mentions "grapes" several times, which is a crop species. 
+   - "Viticulture" is related to grape cultivation, implying grapes as the crop.
+
+2. **Location**: 
+   - The text does not explicitly mention a country, region, city, latitude, or longitude.
+
+3. **TimeStatement**: 
+   - The text mentions specific years: "2017" and "2018".
+   - It also mentions specific dates for the start and end of experiments.
+
+Given this information, the JSON structure would be filled as follows:
+
+```json
+{
+  "Crop": [
+    {"Crop": { "value": "grapes", "span": [find_index("grapes")]}},
+    {"Crop": { "value": "grapes", "span": [find_index("viticulture")]}},
+    # Add other instances of "grapes" or crop mentions with their respective spans
+  ],
+  "Location": [],
+  "TimeStatement": [
+    {"TimeStatement": { "value": "2017", "span": [find_index("2017")]}},
+    {"TimeStatement": { "value": "2018", "span": [find_index("2018")]}},
+    {"TimeStatement": { "value": "30.8.2017", "span": [find_index("30.8.2017")]}},
+    {"TimeStatement": { "value": "6.9.2017", "span": [find_index("6.9.2017")]}},
+    {"TimeStatement": { "value": "20.9.2017", "span": [find_index("20.9.2017")]}},
+    {"TimeStatement": { "value": "25.9.2017", "span": [find_index("25.9.2017")]}},
+    {"TimeStatement": { "value": "24.8.2018", "span": [find_index("24.8.2018")]}},
+    {"TimeStatement": { "value": "31.8.2018", "span": [find_index("31.8.2018")]}},
+    {"TimeStatement": { "value": "13.9.2018", "span": [find_index("13.9.2018")]}},
+    {"TimeStatement": { "value": "20.9.2018", "span": [find_index("20.9.2018")]}},
+    {"TimeStatement": { "value": "29.8.2018", "span": [find_index("29.8.2018")]}},
+    {"TimeStatement": { "value": "4.9.2018", "span": [find_index("4.9.2018")]}},
+    {"TimeStatement": { "value": "12.9.2018", "span": [find_index("12.9.2018")]}},
+    {"TimeStatement": { "value": "29.9.2018", "span": [find_index("29.9.2018")]}},
+  ]
+}
+```
+
+Note: The `find_index()` function is a placeholder for finding the start and end indices of the entity values in the original text. You would need to implement a way to find these indices based on the actual text and the entity values. 
+
+Also, remember to adjust the span indices according to the actual text and how the indices are counted (whether it's from 0 or 1, and whether the end index is inclusive or exclusive). 
+
+This example assumes that each mention of an entity (like "grapes" or a specific date) should be returned separately, as per the rules provided.

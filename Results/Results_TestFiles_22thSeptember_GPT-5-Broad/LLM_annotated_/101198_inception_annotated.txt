@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIzPj6fFTEqIOR2QQc3L1jiflJywW",
+  "object": "chat.completion",
+  "created": 1758642015,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [2034, 2041] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2020\", \"span\": [1543, 1547] }},\n    {\"endTime\": { \"value\": \"2050\", \"span\": [1053, 1057] }},\n    {\"endTime\": { \"value\": \"2050\", \"span\": [1552, 1556] }},\n    {\"startTime\": { \"value\": \"2024-03\", \"span\": [2004, 2011] }},\n    {\"startTime\": { \"value\": \"November 2023\", \"span\": [1640, 1654] }},\n    {\"startTime\": { \"value\": \"November 2023\", \"span\": [1798, 1812] }},\n    {\"startTime\": { \"value\": \"August 2024\", \"span\": [1762, 1773] }},\n    {\"startTime\": { \"value\": \"2023\", \"span\": [1608, 1612] }},\n    {\"startTime\": { \"value\": \"2023\", \"span\": [1667, 1671] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [1706, 1710] }},\n    {\"startTime\": { \"value\": \"2018\", \"span\": [1733, 1737] }},\n    {\"startTime\": { \"value\": \"2024\", \"span\": [1787, 1791] }},\n    {\"startTime\": { \"value\": \"2023\", \"span\": [1821, 1825] }},\n    {\"startTime\": { \"value\": \"17.11.2023\", \"span\": [1876, 1886] }},\n    {\"duration\": { \"value\": \"zwischen 2020 und 2050\", \"span\": [1534, 1556] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1935,
+    "completion_tokens": 453,
+    "total_tokens": 2388,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

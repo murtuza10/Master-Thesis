@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIuVyHtVqSUjdyt4Wiyo5bw8btExF",
+  "object": "chat.completion",
+  "created": 1758623182,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"Crops\": [{\"cropSpecies\": {\"value\": \"barley\", \"span\": [702, 708]}}, {\"cropSpecies\": {\"value\": \"serradella\", \"span\": [733, 743]}}, {\"cropSpecies\": {\"value\": \"barley\", \"span\": [770, 776]}}], \"Soil\": [{\"Soil\": {\"value\": \"Redox potential\", \"span\": [29, 44]}}, {\"Soil\": {\"value\": \"pH\", \"span\": [46, 48]}}, {\"Soil\": {\"value\": \"Redox potential\", \"span\": [159, 174]}}, {\"Soil\": {\"value\": \"pH\", \"span\": [176, 178]}}, {\"Soil\": {\"value\": \"soil pore water\", \"span\": [266, 281]}}, {\"Soil\": {\"value\": \"redox potential (Eh)\", \"span\": [364, 383]}}, {\"Soil\": {\"value\": \"pH\", \"span\": [386, 388]}}, {\"Soil\": {\"value\": \"soil pore water\", \"span\": [459, 474]}}, {\"Soil\": {\"value\": \"phosphorus\", \"span\": [648, 658]}}, {\"Soil\": {\"value\": \"soil\", \"span\": [672, 676]}}, {\"Soil\": {\"value\": \"redox\", \"span\": [704, 709]}}, {\"Soil\": {\"value\": \"soil\", \"span\": [724, 728]}}, {\"Soil\": {\"value\": \"The redox potential (Eh)\", \"span\": [1102, 1124]}}, {\"Soil\": {\"value\": \"pH\", \"span\": [1319, 1321]}}, {\"Soil\": {\"value\": \"organic C\", \"span\": [1407, 1416]}}, {\"Soil\": {\"value\": \"DIC\", \"span\": [1418, 1421]}}, {\"Soil\": {\"value\": \"DOC\", \"span\": [1423, 1426]}}, {\"Soil\": {\"value\": \"pH\", \"span\": [1599, 1601]}}, {\"Soil\": {\"value\": \"pH-Wert\", \"span\": [1893, 1900]}}], \"Location\": [{\"region\": {\"value\": \"Northern Germany\", \"span\": [236, 253]}}, {\"city\": {\"value\": \"Rostock\", \"span\": [13, 20]}}, {\"city\": {\"value\": \"Rostock\", \"span\": [121, 128]}}], \"Time Statement\": [{\"startTime\": {\"value\": \"2020\", \"span\": [79, 83]}}, {\"startTime\": {\"value\": \"2020\", \"span\": [206, 210]}}, {\"startTime\": {\"value\": \"2018\", \"span\": [1014, 1018]}}, {\"startTime\": {\"value\": \"2019\", \"span\": [748, 752]}}, {\"startTime\": {\"value\": \"2020\", \"span\": [790, 794]}}, {\"duration\": {\"value\": \"about 3.5 months\", \"span\": [1708, 1726]}}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4495,
+    "completion_tokens": 711,
+    "total_tokens": 5206,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyegV6oWcyRDdtMxCbiCa05aRNyd",
+  "object": "chat.completion",
+  "created": 1758639098,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"maize\", \"span\": [214, 219]}},\n    {\"cropSpecies\": {\"value\": \"maize\", \"span\": [1021, 1026]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"soil\", \"span\": [58, 62]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [167, 171]}},\n    {\"Soil\": {\"value\": \"Wanna Sand\", \"span\": [333, 343]}},\n    {\"Soil\": {\"value\": \"Wanna Sand without biogas slurry\", \"span\": [348, 381]}},\n    {\"Soil\": {\"value\": \"Rostock Sand\", \"span\": [384, 396]}},\n    {\"Soil\": {\"value\": \"Wanna Marsch\", \"span\": [402, 414]}},\n    {\"Soil\": {\"value\": \"biogas slurry\", \"span\": [469, 482]}},\n    {\"Soil\": {\"value\": \"biogas slurry\", \"span\": [560, 573]}},\n    {\"Soil\": {\"value\": \"diammonium phosphate\", \"span\": [642, 664]}},\n    {\"Soil\": {\"value\": \"microgranular fertilizer\", \"span\": [667, 691]}},\n    {\"Soil\": {\"value\": \"Soil\", \"span\": [1173, 1177]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [1367, 1371]}}\n  ],\n  \"Location\": [\n    {\"region\": {\"value\": \"Europe\", \"span\": [2106, 2112]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [2114, 2121]}},\n    {\"region\": {\"value\": \"Lower Saxony\", \"span\": [2123, 2136]}},\n    {\"city\": {\"value\": \"Wanna\", \"span\": [2138, 2143]}},\n    {\"region\": {\"value\": \"Mecklenburg-Vorpommern\", \"span\": [2145, 2169]}},\n    {\"city\": {\"value\": \"Rostock\", \"span\": [2171, 2178]}}\n  ],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"over the years 2021, 2022 and 2023\", \"span\": [220, 256]}},\n    {\"duration\": {\"value\": \"between April and August\", \"span\": [1111, 1134]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3627,
+    "completion_tokens": 569,
+    "total_tokens": 4196,
+    "prompt_tokens_details": {
+      "cached_tokens": 3072,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

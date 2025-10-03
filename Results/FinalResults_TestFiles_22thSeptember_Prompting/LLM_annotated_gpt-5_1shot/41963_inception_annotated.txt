@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIxhmffxSRYDAnQOF3UUfmk7sN0ms",
+  "object": "chat.completion",
+  "created": 1758635446,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"German\", \"span\": [175, 181]}},\n    {\"region\": {\"value\": \"German National Forest Inventory\", \"span\": [175, 209]}},\n    {\"region\": {\"value\": \"NFI 2012\", \"span\": [629, 637]}}\n  ],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"1961 - 2100\", \"span\": [129, 140]}},\n    {\"duration\": {\"value\": \"1961 - 2013\", \"span\": [199, 210]}},\n    {\"startTime\": {\"value\": \"2011 – 2050\", \"span\": [401, 413]}},\n    {\"startTime\": {\"value\": \"2011 – 2100\", \"span\": [424, 436]}},\n    {\"startTime\": {\"value\": \"31.12.2016\", \"span\": [857, 867]}},\n    {\"startTime\": {\"value\": \"01.01.1961\", \"span\": [946, 956]}},\n    {\"endTime\": {\"value\": \"31.12.2099\", \"span\": [959, 969]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3352,
+    "completion_tokens": 285,
+    "total_tokens": 3637,
+    "prompt_tokens_details": {
+      "cached_tokens": 2944,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

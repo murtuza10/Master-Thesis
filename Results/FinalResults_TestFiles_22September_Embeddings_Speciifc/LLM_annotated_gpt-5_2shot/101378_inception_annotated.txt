@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIv4n2zL0Hs01vairMenLwO96Y4pH",
+  "object": "chat.completion",
+  "created": 1758625341,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"birch\", \"span\": [302, 307]}},\n    {\"cropSpecies\": {\"value\": \"Betula pubescens Ehrh.\", \"span\": [309, 332]}},\n    {\"cropSpecies\": {\"value\": \"birch\", \"span\": [777, 782]}},\n    {\"cropSpecies\": {\"value\": \"birches\", \"span\": [1413, 1420]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"region\": {\"value\": \"northern hemisphere\", \"span\": [192, 211]}}\n  ],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"one year\", \"span\": [636, 644]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1653,
+    "completion_tokens": 178,
+    "total_tokens": 1831,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

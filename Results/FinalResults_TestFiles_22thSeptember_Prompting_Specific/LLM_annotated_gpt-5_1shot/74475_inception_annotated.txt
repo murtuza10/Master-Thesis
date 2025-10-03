@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIw8SUXRcKr5OzlWBnjy9HnJfyNb8",
+  "object": "chat.completion",
+  "created": 1758629412,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilOrganicCarbon\": { \"value\": \"soil organic carbon\", \"span\": [94, 113] }},\n    {\"soilOrganicCarbon\": { \"value\": \"SOC\", \"span\": [115, 118] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"soil organic nitrogen\", \"span\": [124, 145] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"SON\", \"span\": [147, 150] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"N\", \"span\": [168, 169] }},\n    {\"soilOrganicCarbon\": { \"value\": \"SOC\", \"span\": [245, 248] }},\n    {\"soilOrganicCarbon\": { \"value\": \"SOC\", \"span\": [357, 360] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"SON\", \"span\": [448, 451] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"N\", \"span\": [456, 457] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"N\", \"span\": [495, 496] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"N\", \"span\": [523, 524] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"N\", \"span\": [659, 660] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"N\", \"span\": [671, 672] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": []\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2082,
+    "completion_tokens": 348,
+    "total_tokens": 2430,
+    "prompt_tokens_details": {
+      "cached_tokens": 1792,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

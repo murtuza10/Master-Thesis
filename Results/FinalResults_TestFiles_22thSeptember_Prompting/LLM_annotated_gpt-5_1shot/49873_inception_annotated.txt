@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIxhBL8CPfKfT9G4XXOpYVftrOAqh",
+  "object": "chat.completion",
+  "created": 1758635409,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"Bodenleitprofile\", \"span\": [132, 148]}},\n    {\"Soil\": {\"value\": \"boden-physikalischen Grundlagendaten\", \"span\": [154, 189]}},\n    {\"Soil\": {\"value\": \"Standorts- und Bodeninformationen\", \"span\": [224, 257]}},\n    {\"Soil\": {\"value\": \"Standorts- und Bodenkartierung\", \"span\": [335, 364]}},\n    {\"Soil\": {\"value\": \"Standorts- und Bodenkundler\", \"span\": [448, 474]}},\n    {\"Soil\": {\"value\": \"Standorts- und Leitprofildaten\", \"span\": [612, 642]}},\n    {\"Soil\": {\"value\": \"Bodentyp\", \"span\": [797, 805]}},\n    {\"Soil\": {\"value\": \"Wasserhaushalts-/ Nährstoffansprache\", \"span\": [807, 842]}},\n    {\"Soil\": {\"value\": \"Kalkung\", \"span\": [844, 851]}},\n    {\"Soil\": {\"value\": \"Bodenart\", \"span\": [900, 908]}},\n    {\"Soil\": {\"value\": \"Skelett\", \"span\": [910, 917]}},\n    {\"Soil\": {\"value\": \"Trockenrohdichte (TRD)\", \"span\": [919, 941]}},\n    {\"Soil\": {\"value\": \"nutzbare Feldkapazität (nFK)\", \"span\": [943, 971]}},\n    {\"Soil\": {\"value\": \"Basensättigung\", \"span\": [1021, 1036]}},\n    {\"Soil\": {\"value\": \"organischer Kohlenstoffgehalt (Corg)\", \"span\": [1038, 1073]}},\n    {\"Soil\": {\"value\": \"Entkalkungstiefe\", \"span\": [1075, 1091]}},\n    {\"Soil\": {\"value\": \"Standorteinheit\", \"span\": [1120, 1136]}},\n    {\"Soil\": {\"value\": \"Leitprofil\", \"span\": [1175, 1185]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"deutschen\", \"span\": [204, 212]}},\n    {\"region\": {\"value\": \"Bundesländer\", \"span\": [322, 334]}},\n    {\"region\": {\"value\": \"Bundesland\", \"span\": [498, 509]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"Creation date: 28.05.2019\", \"span\": [1267, 1295]}},\n    {\"startTime\": {\"value\": \"2012\", \"span\": [1320, 1324]}},\n    {\"endTime\": {\"value\": \"2012\", \"span\": [1337, 1341]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3425,
+    "completion_tokens": 668,
+    "total_tokens": 4093,
+    "prompt_tokens_details": {
+      "cached_tokens": 2944,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

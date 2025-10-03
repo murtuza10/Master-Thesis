@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwet2ppGUYE71GyeQBZSrpLiXISZ",
+  "object": "chat.completion",
+  "created": 1758631423,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"wine berries\", \"span\": [17, 28] }},\n    {\"cropVariety\": { \"value\": \"Riesling\", \"span\": [193, 201] }},\n    {\"cropVariety\": { \"value\": \"Felicia\", \"span\": [203, 210] }},\n    {\"cropVariety\": { \"value\": \"Regent\", \"span\": [212, 218] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"endTime\": { \"value\": \"2018\", \"span\": [396, 400] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4629,
+    "completion_tokens": 157,
+    "total_tokens": 4786,
+    "prompt_tokens_details": {
+      "cached_tokens": 4352,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

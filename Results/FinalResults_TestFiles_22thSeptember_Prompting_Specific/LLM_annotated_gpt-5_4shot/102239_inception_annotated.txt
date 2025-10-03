@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwQx4gNXx9Z0iXNl0ApbY0yatv3z",
+  "object": "chat.completion",
+  "created": 1758630559,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilOrganicCarbon\": {\"value\": \"organic carbon\", \"span\": [57, 71]}},\n    {\"soilOrganicCarbon\": {\"value\": \"organic carbon\", \"span\": [260, 274]}},\n    {\"soilDepth\": {\"value\": \"topsoils\", \"span\": [0, 0]}}\n  ],\n  \"Location\": [],\n  \"Time Statement\": []\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3859,
+    "completion_tokens": 105,
+    "total_tokens": 3964,
+    "prompt_tokens_details": {
+      "cached_tokens": 3584,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

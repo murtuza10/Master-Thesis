@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIzPPlNWbP89SwSBnBLvigbHGrCTY",
+  "object": "chat.completion",
+  "created": 1758641995,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"Bodentextur\", \"span\": [452, 463] }},\n    {\"Soil\": { \"value\": \"Lehm\", \"span\": [465, 469] }},\n    {\"Soil\": { \"value\": \"Ton\", \"span\": [474, 477] }},\n    {\"Soil\": { \"value\": \"Bodenbearbeitung\", \"span\": [482, 499] }},\n    {\"Soil\": { \"value\": \"physikochemische Bodeneigenschaften\", \"span\": [802, 837] }},\n    {\"Soil\": { \"value\": \"pH Wert\", \"span\": [840, 847] }},\n    {\"Soil\": { \"value\": \"organischen Kohlenstoff\", \"span\": [858, 881] }},\n    {\"Soil\": { \"value\": \"Gesamt-Stickstoff\", \"span\": [886, 904] }},\n    {\"Soil\": { \"value\": \"Boden-DNA\", \"span\": [953, 962] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Hildesheim\", \"span\": [332, 342] }},\n    {\"region\": { \"value\": \"Hildesheim\", \"span\": [332, 342] }}\n  ],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"14-tägigen\", \"span\": [390, 400] }},\n    {\"duration\": { \"value\": \"über einen Zeitraum von 2 Jahren\", \"span\": [441, 472] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1193,
+    "completion_tokens": 365,
+    "total_tokens": 1558,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

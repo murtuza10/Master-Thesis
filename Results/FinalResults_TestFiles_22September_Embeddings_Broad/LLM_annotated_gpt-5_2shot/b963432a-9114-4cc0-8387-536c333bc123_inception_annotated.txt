@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CItyPZR0jPapr5IynBaWXGAJklipe",
+  "object": "chat.completion",
+  "created": 1758621101,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"Crops\": [{\"cropSpecies\": {\"value\": \"spring barley\", \"span\": [690, 703]}}, {\"cropSpecies\": {\"value\": \"serradella\", \"span\": [726, 736]}}, {\"cropSpecies\": {\"value\": \"spring barley\", \"span\": [760, 773]}}], \"Soil\": [{\"Soil\": {\"value\": \"Redox potential\", \"span\": [30, 46]}}, {\"Soil\": {\"value\": \"pH\", \"span\": [48, 50]}}, {\"Soil\": {\"value\": \"pH\", \"span\": [132, 134]}}, {\"Soil\": {\"value\": \"redox potential\", \"span\": [255, 269]}}, {\"Soil\": {\"value\": \"pH\", \"span\": [273, 275]}}, {\"Soil\": {\"value\": \"organic C\", \"span\": [1046, 1055]}}, {\"Soil\": {\"value\": \"DOC\", \"span\": [1061, 1064]}}, {\"Soil\": {\"value\": \"pH\", \"span\": [1346, 1348]}}, {\"Soil\": {\"value\": \"pH-Wert\", \"span\": [1606, 1612]}}], \"Location\": [{\"region\": {\"value\": \"Northern Germany\", \"span\": [226, 243]}}, {\"city\": {\"value\": \"Rostock\", \"span\": [16, 23]}}], \"Time Statement\": [{\"startTime\": {\"value\": \"2020\", \"span\": [83, 87]}}, {\"startTime\": {\"value\": \"2020\", \"span\": [164, 168]}}, {\"startTime\": {\"value\": \"2020\", \"span\": [497, 501]}}, {\"startTime\": {\"value\": \"2018\", \"span\": [653, 657]}}, {\"startTime\": {\"value\": \"2019\", \"span\": [719, 723]}}, {\"duration\": {\"value\": \"weekly\", \"span\": [239, 245]}}, {\"duration\": {\"value\": \"weekly\", \"span\": [957, 963]}}, {\"duration\": {\"value\": \"about 3.5 months\", \"span\": [1376, 1393]}}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2885,
+    "completion_tokens": 502,
+    "total_tokens": 3387,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

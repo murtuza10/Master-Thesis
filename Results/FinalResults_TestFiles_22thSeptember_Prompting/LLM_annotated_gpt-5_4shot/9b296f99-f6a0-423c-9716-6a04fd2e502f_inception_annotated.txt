@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyhdHQeQoXzrflefp1ZQmUBVjCLt",
+  "object": "chat.completion",
+  "created": 1758639281,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [460, 465]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [474, 480]}},\n    {\"cropSpecies\": {\"value\": \"sugar beet\", \"span\": [487, 497]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [1252, 1258]}},\n    {\"cropSpecies\": {\"value\": \"sugar beet\", \"span\": [1263, 1273]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"humus\", \"span\": [222, 227]}},\n    {\"Soil\": {\"value\": \"soil fertility\", \"span\": [323, 337]}},\n    {\"Soil\": {\"value\": \"soil management\", \"span\": [571, 587]}},\n    {\"Soil\": {\"value\": \"ploughing\", \"span\": [598, 607]}},\n    {\"Soil\": {\"value\": \"manure\", \"span\": [741, 747]}},\n    {\"Soil\": {\"value\": \"crop residues\", \"span\": [803, 816]}},\n    {\"Soil\": {\"value\": \"catch crop\", \"span\": [819, 829]}},\n    {\"Soil\": {\"value\": \"bulk soil\", \"span\": [1417, 1426]}},\n    {\"Soil\": {\"value\": \"manure\", \"span\": [1788, 1794]}},\n    {\"Soil\": {\"value\": \"manure\", \"span\": [1878, 1884]}},\n    {\"Soil\": {\"value\": \"crop residues\", \"span\": [1890, 1903]}},\n    {\"Soil\": {\"value\": \"soil fertility\", \"span\": [2627, 2641]}}\n  ],\n  \"Location\": [\n    {\"city\": {\"value\": \"Speyer\", \"span\": [38, 44]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [46, 53]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [127, 133]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [135, 142]}},\n    {\"region\": {\"value\": \"Rinkenbergerhof\", \"span\": [414, 430]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [463, 469]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [471, 478]}},\n    {\"city\": {\"value\": \"Karlsruhe\", \"span\": [1123, 1132]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [1208, 1214]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [1216, 1223]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"the year 1984\", \"span\": [520, 534]}},\n    {\"startTime\": {\"value\": \"every three years\", \"span\": [759, 777]}},\n    {\"startTime\": {\"value\": \"16. September 2009\", \"span\": [1149, 1168]}},\n    {\"startTime\": {\"value\": \"(2017)\", \"span\": [2088, 2094]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3829,
+    "completion_tokens": 748,
+    "total_tokens": 4577,
+    "prompt_tokens_details": {
+      "cached_tokens": 3072,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

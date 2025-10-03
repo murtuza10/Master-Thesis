@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIvBvXkyykcF3HcgRenZnRoFA3FJ2",
+  "object": "chat.completion",
+  "created": 1758625783,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilReferenceGroup\": { \"value\": \"Parabraunerde\", \"span\": [232, 245] }},\n    {\"soilTexture\": { \"value\": \"Löss\", \"span\": [250, 254] }},\n    {\"soilDepth\": { \"value\": \"28 cm\", \"span\": [270, 275] }},\n    {\"soilDepth\": { \"value\": \"20\", \"span\": [629, 631] }},\n    {\"soilDepth\": { \"value\": \"35\", \"span\": [633, 635] }},\n    {\"soilDepth\": { \"value\": \"50 cm\", \"span\": [640, 645] }},\n    {\"soilBulkDensity\": { \"value\": \"Trocken-rohdichte\", \"span\": [930, 947] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2017\", \"span\": [102, 106] }},\n    {\"startTime\": { \"value\": \"2017\", \"span\": [209, 213] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1755,
+    "completion_tokens": 250,
+    "total_tokens": 2005,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

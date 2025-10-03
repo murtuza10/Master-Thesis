@@ -1,0 +1,27 @@
+{
+  "id": "gen-1759421272-tJINpvmq8PI76T0ONYis",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759421272,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"winter barley\", \"span\": [41, 54] }},\n    {\"Crop\": { \"value\": \"oat\", \"span\": [844, 847] }},\n    {\"Crop\": { \"value\": \"winter barley\", \"span\": [1005, 1018] }},\n    {\"Crop\": { \"value\": \"winter oilseed rape\", \"span\": [1020, 1039] }},\n    {\"Crop\": { \"value\": \"winter wheat\", \"span\": [1041, 1053] }},\n    {\"Crop\": { \"value\": \"lupine\", \"span\": [1055, 1061] }},\n    {\"Crop\": { \"value\": \"winter rye\", \"span\": [1063, 1073] }},\n    {\"Crop\": { \"value\": \"winter barley\", \"span\": [1263, 1276] }},\n    {\"Crop\": { \"value\": \"Hordeum vulgare\", \"span\": [1298, 1313] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Braunschweig\", \"span\": [23, 35] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2014\", \"span\": [56, 60] }},\n    {\"TimeStatement\": { \"value\": \"1985-2008\", \"span\": [690, 698] }},\n    {\"TimeStatement\": { \"value\": \"2013\", \"span\": [813, 817] }},\n    {\"TimeStatement\": { \"value\": \"2014\", \"span\": [1321, 1325] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4887,
+    "completion_tokens": 395,
+    "total_tokens": 5282
+  }
+}

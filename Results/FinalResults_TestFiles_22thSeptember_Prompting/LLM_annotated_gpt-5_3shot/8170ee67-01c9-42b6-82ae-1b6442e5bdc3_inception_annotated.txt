@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyIuNr8tw5tnBwd5yavBLhWH915x",
+  "object": "chat.completion",
+  "created": 1758637748,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [49, 55]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [122, 128]}},\n    {\"cropSpecies\": {\"value\": \"oat\", \"span\": [1431, 1434]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [1877, 1883]}},\n    {\"cropSpecies\": {\"value\": \"oilseed rape\", \"span\": [1901, 1913]}},\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [1922, 1927]}},\n    {\"cropSpecies\": {\"value\": \"lupine\", \"span\": [1929, 1935]}},\n    {\"cropSpecies\": {\"value\": \"rye\", \"span\": [1947, 1950]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [2227, 2233]}},\n    {\"cropSpecies\": {\"value\": \"Hordeum vulgare\", \"span\": [2236, 2252]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"soil\", \"span\": [209, 213]}},\n    {\"Soil\": {\"value\": \"soil P\", \"span\": [1188, 1194]}},\n    {\"Soil\": {\"value\": \"soil P\", \"span\": [1622, 1628]}},\n    {\"Soil\": {\"value\": \"PCAL\", \"span\": [1195, 1200]}},\n    {\"Soil\": {\"value\": \"Soil\", \"span\": [2438, 2442]}}\n  ],\n  \"Location\": [\n    {\"city\": {\"value\": \"Braunschweig\", \"span\": [34, 46]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2014\", \"span\": [56, 60]}},\n    {\"startTime\": {\"value\": \"2014\", \"span\": [129, 133]}},\n    {\"duration\": {\"value\": \"1985-2008\", \"span\": [865, 874]}},\n    {\"endTime\": {\"value\": \"2013\", \"span\": [1397, 1401]}},\n    {\"startTime\": {\"value\": \"2013\", \"span\": [1469, 1473]}},\n    {\"startTime\": {\"value\": \"autumn 2013\", \"span\": [2097, 2108]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3507,
+    "completion_tokens": 565,
+    "total_tokens": 4072,
+    "prompt_tokens_details": {
+      "cached_tokens": 2688,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,26 @@
+{
+  "id": "gen-1759333369-OdozRPvCK6DGprbUxICg",
+  "provider": "Crusoe",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759333369,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [],\n  \"Location\": [\n    {\n      \"Location\": {\n        \"value\": \"180 Ländern\",\n        \"span\": [1141, 1151]\n      }\n    },\n    {\n      \"Location\": {\n        \"value\": \"Germany\",\n        \"span\": [3025, 3032]\n      }\n    }\n  ],\n  \"TimeStatement\": [\n    {\n      \"TimeStatement\": {\n        \"value\": \"2050\",\n        \"span\": [442, 446]\n      }\n    },\n    {\n      \"TimeStatement\": {\n        \"value\": \"2020\",\n        \"span\": [1405, 1409]\n      }\n    },\n    {\n      \"TimeStatement\": {\n        \"value\": \"2050\",\n        \"span\": [1413, 1417]\n      }\n    },\n    {\n      \"TimeStatement\": {\n        \"value\": \"2023\",\n        \"span\": [2201, 2205]\n      }\n    },\n    {\n      \"TimeStatement\": {\n        \"value\": \"November 2023\",\n        \"span\": [2229, 2242]\n      }\n    },\n    {\n      \"TimeStatement\": {\n        \"value\": \"2023\",\n        \"span\": [2292, 2296]\n      }\n    },\n    {\n      \"TimeStatement\": {\n        \"value\": \"2020\",\n        \"span\": [2339, 2343]\n      }\n    },\n    {\n      \"TimeStatement\": {\n        \"value\": \"2018\",\n        \"span\": [2523, 2527]\n      }\n    },\n    {\n      \"TimeStatement\": {\n        \"value\": \"November 2023\",\n        \"span\": [2594, 2607]\n      }\n    },\n    {\n      \"TimeStatement\": {\n        \"value\": \"2024\",\n        \"span\": [2624, 2628]\n      }\n    },\n    {\n      \"TimeStatement\": {\n        \"value\": \"August 2024\",\n        \"span\": [2701, 2712]\n      }\n    },\n    {\n      \"TimeStatement\": {\n        \"value\": \"2023\",\n        \"span\": [2757, 2761]\n      }\n    },\n    {\n      \"TimeStatement\": {\n        \"value\": \"17.11.2023\",\n        \"span\": [2798, 2808]\n      }\n    },\n    {\n      \"TimeStatement\": {\n        \"value\": \"2024\",\n        \"span\": [2832, 2836]\n      }\n    },\n    {\n      \"TimeStatement\": {\n        \"value\": \"2023–2028\",\n        \"span\": [2883, 2891]\n      }\n    }\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1555,
+    "completion_tokens": 581,
+    "total_tokens": 2136
+  }
+}

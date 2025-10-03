@@ -1,0 +1,27 @@
+### JSON Output ###
+
+```json
+{
+  "Crop": [
+    {"Crop": {"value": "rye", "span": [85, 90]}},
+    {"Crop": {"value": "Secale cereale L.", "span": [85, 104]}}
+  ],
+  "Location": [],
+  "TimeStatement": []
+}
+```
+
+### Explanation ###
+
+From the input text, we can extract two crop entities:
+
+1. "rye" (Secale cereale L.) - This is a crop species mentioned in the abstract.
+2. "Secale cereale L." - This is the full scientific name of the rye crop species mentioned in the title and abstract.
+
+We can also extract a location entity:
+
+1. None - There is no explicit location mentioned in the text, so the "Location" list is empty.
+
+Finally, we can extract a time statement entity:
+
+1. None - There is no explicit time statement mentioned in the text, so the "TimeStatement" list is empty.

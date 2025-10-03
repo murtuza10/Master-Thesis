@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIu09iwa6DzBMmCpOrPR27KZuNV2F",
+  "object": "chat.completion",
+  "created": 1758621209,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"rye\", \"span\": [91, 94] }},\n    {\"cropSpecies\": { \"value\": \"Secale cereale L.\", \"span\": [96, 114] }},\n    {\"cropSpecies\": { \"value\": \"Rye\", \"span\": [127, 130] }},\n    {\"cropSpecies\": { \"value\": \"Secale cereale L.\", \"span\": [132, 150] }},\n    {\"cropSpecies\": { \"value\": \"cereal\", \"span\": [168, 174] }},\n    {\"cropSpecies\": { \"value\": \"rye\", \"span\": [724, 727] }},\n    {\"cropSpecies\": { \"value\": \"cereals\", \"span\": [1869, 1876] }},\n    {\"cropSpecies\": { \"value\": \"rye\", \"span\": [1913, 1916] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Northern Europe\", \"span\": [181, 197] }},\n    {\"country\": { \"value\": \"German\", \"span\": [535, 541] }}\n  ],\n  \"Time Statement\": []\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2643,
+    "completion_tokens": 276,
+    "total_tokens": 2919,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

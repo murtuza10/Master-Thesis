@@ -1,0 +1,27 @@
+{
+  "id": "gen-1759421480-ze5a3dznZT83NgjEbgzP",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759421480,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"apple\", \"span\": [64, 69] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Altes Land\", \"span\": [80, 90] }},\n    {\"Location\": { \"value\": \"Altes Land\", \"span\": [290, 300] }},\n    {\"Location\": { \"value\": \"Lower Saxony\", \"span\": [428, 441] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [443, 450] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"Three-year\", \"span\": [10, 20] }},\n    {\"TimeStatement\": { \"value\": \"2001\", \"span\": [501, 505] }},\n    {\"TimeStatement\": { \"value\": \"2003\", \"span\": [510, 514] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4651,
+    "completion_tokens": 216,
+    "total_tokens": 4867
+  }
+}

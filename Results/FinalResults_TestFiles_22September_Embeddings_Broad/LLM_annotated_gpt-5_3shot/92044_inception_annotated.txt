@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIuActZ51mwta8oH7C8fBbuNTsCKL",
+  "object": "chat.completion",
+  "created": 1758621858,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"Crops\": [{\"cropSpecies\": {\"value\": \"barley\", \"span\": [240, 246]}}, {\"cropSpecies\": {\"value\": \"barley\", \"span\": [256, 262]}}, {\"cropSpecies\": {\"value\": \"maize\", \"span\": [271, 276]}}, {\"cropSpecies\": {\"value\": \"maize\", \"span\": [286, 291]}}, {\"cropSpecies\": {\"value\": \"oats\", \"span\": [294, 298]}}, {\"cropSpecies\": {\"value\": \"potatoes\", \"span\": [301, 309]}}, {\"cropSpecies\": {\"value\": \"rape\", \"span\": [319, 323]}}, {\"cropSpecies\": {\"value\": \"rye\", \"span\": [325, 328]}}, {\"cropSpecies\": {\"value\": \"sugarbeet\", \"span\": [330, 339]}}, {\"cropSpecies\": {\"value\": \"triticale\", \"span\": [342, 351]}}, {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [363, 368]}}], \"Soil\": [], \"Location\": [{\"country\": {\"value\": \"Germany\", \"span\": [110, 117]}}, {\"country\": {\"value\": \"Germany\", \"span\": [456, 463]}}], \"Time Statement\": [{\"startTime\": {\"value\": \"1979\", \"span\": [122, 126]}}, {\"endTime\": {\"value\": \"2021\", \"span\": [130, 134]}}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3649,
+    "completion_tokens": 341,
+    "total_tokens": 3990,
+    "prompt_tokens_details": {
+      "cached_tokens": 2688,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

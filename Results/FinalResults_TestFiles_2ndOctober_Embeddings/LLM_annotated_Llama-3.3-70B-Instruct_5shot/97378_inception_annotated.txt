@@ -1,0 +1,40 @@
+To fill the JSON structure based on the input text, we need to identify entities that belong to the allowed subcategories: Crop, Location, and TimeStatement.
+
+1. **Crop**: 
+   - cropSpecies: None mentioned explicitly in the context of crops (e.g., wheat, maize).
+   - cropVariety: None mentioned.
+
+2. **Location**:
+   - country: None mentioned explicitly.
+   - region: "Nähe von Hildesheim" implies a region near Hildesheim, but "Hildesheim" itself is a city.
+   - city: "Hildesheim".
+   - latitude: None mentioned.
+   - longitude: None mentioned.
+
+3. **TimeStatement**:
+   - startTime: None mentioned explicitly.
+   - endTime: None mentioned explicitly.
+   - duration: "über einen Zeitraum von 2 Jahren" implies a duration of 2 years, and "in einem 14-tägigen Zeitraster" implies a 14-day time frame.
+
+Given the information:
+
+- **Crop**: Since no specific crop species or variety is mentioned in the abstract related to the research focus, this category remains empty.
+- **Location**: "Hildesheim" is identified as a city.
+- **TimeStatement**: "2 Jahren" and "14-tägigen" are durations/time frames mentioned in the text.
+
+The output in JSON format, considering the start and end indices of the identified entities in the text, would be:
+
+```json
+{
+  "Crop": [],
+  "Location": [
+    {"Location": { "value": "Hildesheim", "span": [156, 165] }}
+  ],
+  "TimeStatement": [
+    {"TimeStatement": { "value": "2 Jahren", "span": [204, 212] }},
+    {"TimeStatement": { "value": "14-tägigen", "span": [174, 185] }}
+  ]
+}
+```
+
+Note: The span indices are approximate and based on the text provided. Actual indices might vary depending on the exact text format and encoding used.

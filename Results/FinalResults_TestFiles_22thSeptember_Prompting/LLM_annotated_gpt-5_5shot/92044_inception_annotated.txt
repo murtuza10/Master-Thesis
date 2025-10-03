@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyyINkLcs0MEoiv73WLbyU9DWxCV",
+  "object": "chat.completion",
+  "created": 1758640314,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [226, 232]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [241, 247]}},\n    {\"cropSpecies\": {\"value\": \"maize\", \"span\": [255, 260]}},\n    {\"cropSpecies\": {\"value\": \"maize\", \"span\": [272, 277]}},\n    {\"cropSpecies\": {\"value\": \"oats\", \"span\": [279, 283]}},\n    {\"cropSpecies\": {\"value\": \"potatoes\", \"span\": [285, 293]}},\n    {\"cropSpecies\": {\"value\": \"rape\", \"span\": [303, 307]}},\n    {\"cropSpecies\": {\"value\": \"rye\", \"span\": [309, 312]}},\n    {\"cropSpecies\": {\"value\": \"sugarbeet\", \"span\": [314, 323]}},\n    {\"cropSpecies\": {\"value\": \"triticale\", \"span\": [325, 334]}},\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [346, 351]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [84, 91]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [204, 211]}},\n    {\"region\": {\"value\": \"districts\", \"span\": [234, 243]}},\n    {\"region\": {\"value\": \"district\", \"span\": [145, 152]}},\n    {\"region\": {\"value\": \"district boundaries\", \"span\": [665, 684]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"1979\", \"span\": [116, 120]}},\n    {\"endTime\": {\"value\": \"2021\", \"span\": [124, 128]}},\n    {\"startTime\": {\"value\": \"1979\", \"span\": [207, 211]}},\n    {\"endTime\": {\"value\": \"2021\", \"span\": [215, 219]}},\n    {\"endTime\": {\"value\": \"2020\", \"span\": [685, 689]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6185,
+    "completion_tokens": 496,
+    "total_tokens": 6681,
+    "prompt_tokens_details": {
+      "cached_tokens": 5888,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

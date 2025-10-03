@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIxh3Q6snieO4iBQob2JxpNYlc070",
+  "object": "chat.completion",
+  "created": 1758635401,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Wheat\", \"span\": [7, 12] }},\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [126, 131] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"soil properties\", \"span\": [295, 310] }}\n  ],\n  \"Location\": [\n    {\"region\": { \"value\": \"European\", \"span\": [39, 47] }},\n    {\"region\": { \"value\": \"Europe\", \"span\": [217, 223] }}\n  ],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"during the years 2019 and 2020\", \"span\": [154, 186] }},\n    {\"startTime\": { \"value\": \"2019\", \"span\": [173, 177] }},\n    {\"endTime\": { \"value\": \"2020\", \"span\": [182, 186] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3119,
+    "completion_tokens": 229,
+    "total_tokens": 3348,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

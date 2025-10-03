@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIzOoRTaLlrblb3wM22q5E8buKtOr",
+  "object": "chat.completion",
+  "created": 1758641958,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"maize\", \"span\": [222, 227] }},\n    {\"cropSpecies\": { \"value\": \"maize\", \"span\": [775, 780] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"soil\", \"span\": [60, 64] }},\n    {\"Soil\": { \"value\": \"soil\", \"span\": [152, 156] }},\n    {\"Soil\": { \"value\": \"Wanna Sand\", \"span\": [347, 357] }},\n    {\"Soil\": { \"value\": \"Wanna Sand without biogas slurry\", \"span\": [360, 393] }},\n    {\"Soil\": { \"value\": \"Rostock Sand\", \"span\": [397, 409] }},\n    {\"Soil\": { \"value\": \"Wanna Marsch\", \"span\": [414, 426] }},\n    {\"Soil\": { \"value\": \"biogas slurry\", \"span\": [466, 479] }},\n    {\"Soil\": { \"value\": \"diammonium phosphate (DAP)\", \"span\": [536, 563] }},\n    {\"Soil\": { \"value\": \"microgranular fertilizer (MG)\", \"span\": [566, 594] }},\n    {\"Soil\": { \"value\": \"Soil\", \"span\": [1217, 1221] }},\n    {\"Soil\": { \"value\": \"soil\", \"span\": [1424, 1428] }},\n    {\"Soil\": { \"value\": \"soil\", \"span\": [1608, 1612] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Europe\", \"span\": [2036, 2042] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [2044, 2051] }},\n    {\"region\": { \"value\": \"Lower Saxony\", \"span\": [2053, 2066] }},\n    {\"region\": { \"value\": \"Mecklenburg-Vorpommern\", \"span\": [2074, 2098] }},\n    {\"city\": { \"value\": \"Wanna\", \"span\": [2068, 2073] }},\n    {\"city\": { \"value\": \"Rostock\", \"span\": [2100, 2107] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2021\", \"span\": [272, 276] }},\n    {\"endTime\": { \"value\": \"2023\", \"span\": [286, 290] }},\n    {\"duration\": { \"value\": \"between April and August each year\", \"span\": [934, 969] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1410,
+    "completion_tokens": 605,
+    "total_tokens": 2015,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

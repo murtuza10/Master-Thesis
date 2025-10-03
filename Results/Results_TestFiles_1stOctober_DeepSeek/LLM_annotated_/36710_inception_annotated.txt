@@ -1,0 +1,26 @@
+{
+  "id": "gen-1759333514-Dlf3NUpC0uzMPFTeV3ys",
+  "provider": "Crusoe",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759333520,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Lower Saxony\", \"span\": [346, 358] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [360, 367] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2001\", \"span\": [399, 403] }},\n    {\"TimeStatement\": { \"value\": \"2003\", \"span\": [408, 412] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 717,
+    "completion_tokens": 120,
+    "total_tokens": 837
+  }
+}

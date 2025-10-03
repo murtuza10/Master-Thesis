@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIvAuniq1xmGbsInTSopAQwaWL1QC",
+  "object": "chat.completion",
+  "created": 1758625720,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"German\", \"span\": [201, 207] }},\n    {\"latitude\": { \"value\": \"47,15766000\", \"span\": [1116, 1128] }},\n    {\"latitude\": { \"value\": \"55,08484000\", \"span\": [1167, 1179] }},\n    {\"longitude\": { \"value\": \"5,79922100\", \"span\": [1008, 1018] }},\n    {\"longitude\": { \"value\": \"15,08954000\", \"span\": [1052, 1063] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"1961\", \"span\": [197, 201] }},\n    {\"endTime\": { \"value\": \"2100\", \"span\": [204, 208] }},\n    {\"startTime\": { \"value\": \"1961\", \"span\": [348, 352] }},\n    {\"endTime\": { \"value\": \"2013\", \"span\": [355, 359] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [558, 562] }},\n    {\"endTime\": { \"value\": \"2050\", \"span\": [565, 569] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [583, 587] }},\n    {\"endTime\": { \"value\": \"2100\", \"span\": [590, 594] }},\n    {\"startTime\": { \"value\": \"31.12.2016\", \"span\": [869, 879] }},\n    {\"startTime\": { \"value\": \"01.01.1961\", \"span\": [959, 969] }},\n    {\"endTime\": { \"value\": \"31.12.2099\", \"span\": [972, 982] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1847,
+    "completion_tokens": 432,
+    "total_tokens": 2279,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

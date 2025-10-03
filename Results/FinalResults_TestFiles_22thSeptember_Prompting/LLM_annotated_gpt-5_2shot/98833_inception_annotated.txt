@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyBk94EMKw0YmJUyp4yDiMMcfg03",
+  "object": "chat.completion",
+  "created": 1758637304,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"Bodendruck\", \"span\": [7, 18]}},\n    {\"Soil\": {\"value\": \"bodenphysikalischer Parameter\", \"span\": [34, 64]}},\n    {\"Soil\": {\"value\": \"Bodendaten\", \"span\": [129, 140]}},\n    {\"Soil\": {\"value\": \"pseudovergleyte Parabraunerde\", \"span\": [337, 366]}},\n    {\"Soil\": {\"value\": \"Löss\", \"span\": [372, 376]}},\n    {\"Soil\": {\"value\": \"28 cm Tiefe\", \"span\": [394, 405]}},\n    {\"Soil\": {\"value\": \"Bodendruck\", \"span\": [730, 741]}},\n    {\"Soil\": {\"value\": \"plastische Bodensetzung\", \"span\": [746, 770]}},\n    {\"Soil\": {\"value\": \"Wasserretentionseigenschaften\", \"span\": [771, 800]}},\n    {\"Soil\": {\"value\": \"Lagerungsdichte\", \"span\": [803, 819]}},\n    {\"Soil\": {\"value\": \"gesättigte hydr. Leitfähigkeit\", \"span\": [824, 853]}},\n    {\"Soil\": {\"value\": \"100 cm3\", \"span\": [855, 862]}},\n    {\"Soil\": {\"value\": \"Gesamtporenvolumen\", \"span\": [917, 937]}},\n    {\"Soil\": {\"value\": \"Luftkapazität\", \"span\": [939, 952]}},\n    {\"Soil\": {\"value\": \"Feldkapazität\", \"span\": [954, 968]}},\n    {\"Soil\": {\"value\": \"permanenter Welkepunkt\", \"span\": [970, 992]}},\n    {\"Soil\": {\"value\": \"Trocken-rohdichte\", \"span\": [997, 1014]}},\n    {\"Soil\": {\"value\": \"Bioporen\", \"span\": [1015, 1023]}}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2017\", \"span\": [241, 245]}},\n    {\"startTime\": {\"value\": \"2017\", \"span\": [278, 282]}},\n    {\"startTime\": {\"value\": \"20\", \"span\": [720, 722]}},\n    {\"startTime\": {\"value\": \"35\", \"span\": [724, 726]}},\n    {\"startTime\": {\"value\": \"50 cm\", \"span\": [731, 736]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4393,
+    "completion_tokens": 595,
+    "total_tokens": 4988,
+    "prompt_tokens_details": {
+      "cached_tokens": 3968,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

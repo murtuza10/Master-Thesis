@@ -1,0 +1,32 @@
+To fill the JSON structure based on the provided input text, we need to identify entities that belong to the categories of "Crop", "Location", and "TimeStatement" as defined in the allowed subcategories.
+
+1. **Crop**: This includes crop species or variety names. From the text, we can identify "winter barley" as a crop species. Additionally, "winter oilseed rape", "winter wheat", "lupine", and "winter rye" are mentioned as part of the crop rotation. The variety of winter barley mentioned is "OTTO".
+
+2. **Location**: This includes country names, regions, cities, latitude, or longitude coordinates. The text mentions "Braunschweig", which is a city in Germany, but it does not explicitly mention the country name "Germany" in the relevant context. However, based on the information given, "Braunschweig" can be identified as a location.
+
+3. **TimeStatement**: This includes explicit start dates, end dates, or durations. The text mentions specific years like "2013" and "2014", and also refers to a period from "1985-2008", which can be considered as a duration or a time statement.
+
+Given this analysis, the JSON output would be:
+
+```json
+{
+  "Crop": [
+    {"Crop": { "value": "winter barley", "span": [69, 83] }},
+    {"Crop": { "value": "OTTO", "span": [444, 448] }},
+    {"Crop": { "value": "winter oilseed rape", "span": [463, 482] }},
+    {"Crop": { "value": "winter wheat", "span": [483, 496] }},
+    {"Crop": { "value": "lupine", "span": [497, 503] }},
+    {"Crop": { "value": "winter rye", "span": [504, 514] }}
+  ],
+  "Location": [
+    {"Location": { "value": "Braunschweig", "span": [36, 47] }}
+  ],
+  "TimeStatement": [
+    {"TimeStatement": { "value": "2014", "span": [63, 67] }},
+    {"TimeStatement": { "value": "2013", "span": [203, 207] }},
+    {"TimeStatement": { "value": "1985-2008", "span": [272, 281] }}
+  ]
+}
+```
+
+Note: The span indices are approximate and based on the text provided, starting from the beginning of the "### Text ###" section. They may vary depending on the exact text and its formatting.

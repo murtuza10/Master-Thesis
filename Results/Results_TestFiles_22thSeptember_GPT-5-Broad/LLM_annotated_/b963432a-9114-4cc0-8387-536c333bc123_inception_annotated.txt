@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIzP7R6zdyQHMFyo99iXryYoJTcXW",
+  "object": "chat.completion",
+  "created": 1758641977,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"spring barley\", \"span\": [707, 720] }},\n    {\"cropSpecies\": { \"value\": \"serradella\", \"span\": [742, 752] }},\n    {\"cropSpecies\": { \"value\": \"spring barley\", \"span\": [781, 794] }}\n  ],\n  \"Soil\": [\n    {\"Soil\": { \"value\": \"soil pore water\", \"span\": [205, 219] }},\n    {\"Soil\": { \"value\": \"soil profiles\", \"span\": [260, 273] }},\n    {\"Soil\": { \"value\": \"redox potential\", \"span\": [383, 398] }},\n    {\"Soil\": { \"value\": \"pH\", \"span\": [401, 403] }},\n    {\"Soil\": { \"value\": \"element concentrations\", \"span\": [409, 430] }},\n    {\"Soil\": { \"value\": \"soil pore water\", \"span\": [514, 528] }},\n    {\"Soil\": { \"value\": \"phosphorus mobilization\", \"span\": [654, 678] }},\n    {\"Soil\": { \"value\": \"redox conditions\", \"span\": [715, 732] }},\n    {\"Soil\": { \"value\": \"redoximorphic features\", \"span\": [756, 779] }},\n    {\"Soil\": { \"value\": \"lysimeter monoliths\", \"span\": [824, 844] }},\n    {\"Soil\": { \"value\": \"redox potential\", \"span\": [1090, 1105] }},\n    {\"Soil\": { \"value\": \"pH\", \"span\": [1238, 1240] }},\n    {\"Soil\": { \"value\": \"inorganic and organic C (DIC, DOC)\", \"span\": [1294, 1328] }},\n    {\"Soil\": { \"value\": \"PO43--P\", \"span\": [1331, 1338] }},\n    {\"Soil\": { \"value\": \"NH4+-N\", \"span\": [1340, 1347] }},\n    {\"Soil\": { \"value\": \"NO2--\", \"span\": [1349, 1354] }},\n    {\"Soil\": { \"value\": \"NO3--N\", \"span\": [1359, 1365] }},\n    {\"Soil\": { \"value\": \"pH\", \"span\": [1446, 1448] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [320, 327] }},\n    {\"region\": { \"value\": \"Northern Germany\", \"span\": [302, 319] }},\n    {\"city\": { \"value\": \"Rostock\", \"span\": [15, 22] }},\n    {\"city\": { \"value\": \"Rostock\", \"span\": [119, 126] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2020\", \"span\": [86, 90] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [221, 225] }},\n    {\"startTime\": { \"value\": \"2018\", \"span\": [872, 876] }},\n    {\"startTime\": { \"value\": \"2019\", \"span\": [912, 916] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [928, 932] }},\n    {\"duration\": { \"value\": \"weekly\", \"span\": [371, 377] }},\n    {\"duration\": { \"value\": \"weekly\", \"span\": [1165, 1171] }},\n    {\"duration\": { \"value\": \"over a period of about 3.5 months in 2020\", \"span\": [1453, 1495] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1402,
+    "completion_tokens": 856,
+    "total_tokens": 2258,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

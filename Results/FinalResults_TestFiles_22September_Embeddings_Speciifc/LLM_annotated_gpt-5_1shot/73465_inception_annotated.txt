@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIuwBjGq0ouJh5zChG5ygDKRfaDnJ",
+  "object": "chat.completion",
+  "created": 1758624807,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [39, 62] }},\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [394, 417] }},\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [652, 675] }},\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [1073, 1096] }},\n    {\"cropSpecies\": { \"value\": \"celery\", \"span\": [1207, 1213] }},\n    {\"cropSpecies\": { \"value\": \"wild celery\", \"span\": [1409, 1421] }},\n    {\"cropSpecies\": { \"value\": \"wild celery\", \"span\": [1543, 1555] }},\n    {\"cropSpecies\": { \"value\": \"wild celery\", \"span\": [1697, 1709] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [192, 199] }},\n    {\"city\": { \"value\": \"Kew Gardens London\", \"span\": [288, 307] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [1179, 1186] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2015\", \"span\": [1326, 1330] }},\n    {\"endTime\": { \"value\": \"2016\", \"span\": [1334, 1338] }},\n    {\"duration\": { \"value\": \"2018-2019\", \"span\": [1624, 1633] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1421,
+    "completion_tokens": 399,
+    "total_tokens": 1820,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

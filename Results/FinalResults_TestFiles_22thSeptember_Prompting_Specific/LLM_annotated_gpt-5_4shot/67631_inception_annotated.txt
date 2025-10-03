@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwRD4hV8jrTXb8mMGlkg7IAKPNVG",
+  "object": "chat.completion",
+  "created": 1758630575,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"wine berries\", \"span\": [13, 25] }},\n    {\"cropVariety\": { \"value\": \"Riesling\", \"span\": [187, 195] }},\n    {\"cropVariety\": { \"value\": \"Felicia\", \"span\": [197, 204] }},\n    {\"cropVariety\": { \"value\": \"Regent\", \"span\": [206, 212] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2018\", \"span\": [370, 374] }},\n    {\"duration\": { \"value\": \"before and after thinning\", \"span\": [333, 359] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3909,
+    "completion_tokens": 181,
+    "total_tokens": 4090,
+    "prompt_tokens_details": {
+      "cached_tokens": 3584,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,26 @@
+{
+  "id": "gen-1759333240-yxLePIDs87164qW4dbpn",
+  "provider": "Crusoe",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759333240,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [25, 46] }},\n    {\"Crop\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [191, 212] }},\n    {\"Crop\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [433, 454] }},\n    {\"Crop\": { \"value\": \"celery\", \"span\": [482, 488] }},\n    {\"Crop\": { \"value\": \"wild celery\", \"span\": [694, 705] }},\n    {\"Crop\": { \"value\": \"wild celery\", \"span\": [915, 926] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Germany\", \"span\": [95, 102] }},\n    {\"Location\": { \"value\": \"Gatersleben\", \"span\": [88, 99] }},\n    {\"Location\": { \"value\": \"London\", \"span\": [155, 161] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [482, 489] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [771, 778] }},\n    {\"Location\": { \"value\": \"HU Berlin\", \"span\": [341, 350] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [351, 358] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2015\", \"span\": [414, 418] }},\n    {\"TimeStatement\": { \"value\": \"2016\", \"span\": [422, 426] }},\n    {\"TimeStatement\": { \"value\": \"2018-2019\", \"span\": [593, 602] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 889,
+    "completion_tokens": 418,
+    "total_tokens": 1307
+  }
+}

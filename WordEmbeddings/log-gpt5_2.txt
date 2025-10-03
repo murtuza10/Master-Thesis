@@ -1,0 +1,229 @@
+Lmod has detected the following error: The following module(s) are unknown: "sysstat"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "sysstat"
+
+Also make sure that all modulefiles written in TCL start with the string #%Module
+
+
+
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/condabin/conda
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/conda
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/conda-env
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/activate
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/deactivate
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/etc/profile.d/conda.sh
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/etc/fish/conf.d/conda.fish
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/shell/condabin/Conda.psm1
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/shell/condabin/conda-hook.ps1
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/lib/python3.10/site-packages/xontrib/conda.xsh
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/etc/profile.d/conda.csh
+no change     /home/s27mhusa_hpc/.bashrc
+No action taken.
+Starting resource monitoring every 1 seconds...
+Logs will be stored in: /home/s27mhusa_hpc/Master-Thesis/FinalOutput-22September-EmbeddingsSpecific/job_monitor_logs_TestFilesgpt-5_20250923_130018_2shot
+job-embeddings_openai.bash: line 51: iostat: command not found
+/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Batches:   0%|          | 0/16 [00:00<?, ?it/s]Batches:   6%|▋         | 1/16 [00:01<00:22,  1.51s/it]Batches:  12%|█▎        | 2/16 [00:02<00:13,  1.04it/s]Batches:  19%|█▉        | 3/16 [00:02<00:08,  1.50it/s]Batches:  25%|██▌       | 4/16 [00:02<00:06,  1.92it/s]Batches:  31%|███▏      | 5/16 [00:02<00:04,  2.41it/s]Batches:  38%|███▊      | 6/16 [00:03<00:03,  2.96it/s]Batches:  44%|████▍     | 7/16 [00:03<00:02,  3.38it/s]Batches:  50%|█████     | 8/16 [00:03<00:02,  3.82it/s]Batches:  56%|█████▋    | 9/16 [00:03<00:01,  4.39it/s]Batches:  62%|██████▎   | 10/16 [00:03<00:01,  4.86it/s]Batches:  69%|██████▉   | 11/16 [00:03<00:00,  5.33it/s]Batches:  75%|███████▌  | 12/16 [00:04<00:00,  5.93it/s]Batches:  81%|████████▏ | 13/16 [00:04<00:00,  6.60it/s]Batches:  88%|████████▊ | 14/16 [00:04<00:00,  7.28it/s]Batches:  94%|█████████▍| 15/16 [00:04<00:00,  7.85it/s]Batches: 100%|██████████| 16/16 [00:04<00:00,  3.57it/s]
+/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Processing 102268_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/102268_inception_annotated.txt
+Processing 49873_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/49873_inception_annotated.txt
+Processing 102137_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/102137_inception_annotated.txt
+Processing 41808_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/41808_inception_annotated.txt
+Processing 41963_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/41963_inception_annotated.txt
+Processing 102130_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/102130_inception_annotated.txt
+Processing 73465_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/73465_inception_annotated.txt
+Processing 97dda154-93d3-4685-beff-9124e7346d68_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/97dda154-93d3-4685-beff-9124e7346d68_inception_annotated.txt
+Processing 101017_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/101017_inception_annotated.txt
+Processing 8170ee67-01c9-42b6-82ae-1b6442e5bdc3_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/8170ee67-01c9-42b6-82ae-1b6442e5bdc3_inception_annotated.txt
+Processing b963432a-9114-4cc0-8387-536c333bc123_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/b963432a-9114-4cc0-8387-536c333bc123_inception_annotated.txt
+Processing 50596_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/50596_inception_annotated.txt
+Processing 97378_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/97378_inception_annotated.txt
+Processing 102239_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/102239_inception_annotated.txt
+Processing 48159_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/48159_inception_annotated.txt
+Processing 98833_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/98833_inception_annotated.txt
+Processing 101198_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/101198_inception_annotated.txt
+Processing 67631_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/67631_inception_annotated.txt
+Processing 92044_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/92044_inception_annotated.txt
+Processing 87621_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/87621_inception_annotated.txt
+Processing 286a674c-1bcd-4a35-b78f-7e980a89d6fa_inception (1).txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/286a674c-1bcd-4a35-b78f-7e980a89d6fa_inception (1)_annotated.txt
+Processing 41381_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/41381_inception_annotated.txt
+Processing 74475_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/74475_inception_annotated.txt
+Processing 62744_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/62744_inception_annotated.txt
+Processing 101378_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/101378_inception_annotated.txt
+Processing 95868_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/95868_inception_annotated.txt
+Processing 36149_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/36149_inception_annotated.txt
+Processing 36710_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/36710_inception_annotated.txt
+Processing 9b296f99-f6a0-423c-9716-6a04fd2e502f_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/9b296f99-f6a0-423c-9716-6a04fd2e502f_inception_annotated.txt
+Processing 0007bad6-848d-4763-9813-d5ed21cde6ee_inception (1).txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/0007bad6-848d-4763-9813-d5ed21cde6ee_inception (1)_annotated.txt
+Processing 100184_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22September_Embeddings_Speciifc/LLM_annotated_gpt-5_2shot/100184_inception_annotated.txt
+✅ Processed: 0007bad6-848d-4763-9813-d5ed21cde6ee_inception (1)_annotated.txt
+✅ Processed: 101378_inception_annotated.txt
+✅ Processed: 41381_inception_annotated.txt
+✅ Processed: 41808_inception_annotated.txt
+✅ Processed: 62744_inception_annotated.txt
+✅ Processed: 95868_inception_annotated.txt
+✅ Processed: 36710_inception_annotated.txt
+✅ Processed: 73465_inception_annotated.txt
+✅ Processed: 102239_inception_annotated.txt
+✅ Processed: 92044_inception_annotated.txt
+✅ Processed: 101017_inception_annotated.txt
+✅ Processed: 49873_inception_annotated.txt
+✅ Processed: 9b296f99-f6a0-423c-9716-6a04fd2e502f_inception_annotated.txt
+✅ Processed: 286a674c-1bcd-4a35-b78f-7e980a89d6fa_inception (1)_annotated.txt
+✅ Processed: 98833_inception_annotated.txt
+✅ Processed: 102137_inception_annotated.txt
+✅ Processed: 97378_inception_annotated.txt
+✅ Processed: 8170ee67-01c9-42b6-82ae-1b6442e5bdc3_inception_annotated.txt
+✅ Processed: 50596_inception_annotated.txt
+✅ Processed: 36149_inception_annotated.txt
+✅ Processed: 101198_inception_annotated.txt
+✅ Processed: 102268_inception_annotated.txt
+✅ Processed: 48159_inception_annotated.txt
+✅ Processed: 100184_inception_annotated.txt
+✅ Processed: 97dda154-93d3-4685-beff-9124e7346d68_inception_annotated.txt
+✅ Processed: 102130_inception_annotated.txt
+✅ Processed: 74475_inception_annotated.txt
+✅ Processed: 41963_inception_annotated.txt
+✅ Processed: 87621_inception_annotated.txt
+✅ Processed: b963432a-9114-4cc0-8387-536c333bc123_inception_annotated.txt
+✅ Processed: 67631_inception_annotated.txt
+✅ 102268: 0.8000 F1 (Exact)
+✅ 49873: 0.0000 F1 (Exact)
+✅ 102137: 0.5000 F1 (Exact)
+✅ 41808: 0.5882 F1 (Exact)
+✅ 41963: 0.6875 F1 (Exact)
+✅ 102130: 0.1250 F1 (Exact)
+✅ 73465: 0.2500 F1 (Exact)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+✅ 97dda154-93d3-4685-beff-9124e7346d68: 0.2667 F1 (Exact)
+✅ 101017: 0.9091 F1 (Exact)
+✅ 8170ee67-01c9-42b6-82ae-1b6442e5bdc3: 0.0714 F1 (Exact)
+✅ b963432a-9114-4cc0-8387-536c333bc123: 0.3871 F1 (Exact)
+✅ 50596: 0.5909 F1 (Exact)
+✅ 97378: 0.5333 F1 (Exact)
+✅ 102239: 0.6667 F1 (Exact)
+✅ 48159: 0.6000 F1 (Exact)
+✅ 98833: 0.8000 F1 (Exact)
+✅ 101198: 0.2000 F1 (Exact)
+✅ 67631: 0.8000 F1 (Exact)
+✅ 92044: 0.5455 F1 (Exact)
+✅ 87621: 0.6000 F1 (Exact)
+✅ 41381: 0.3226 F1 (Exact)
+✅ 74475: 0.6667 F1 (Exact)
+✅ 62744: 0.3077 F1 (Exact)
+✅ 101378: 0.3333 F1 (Exact)
+✅ 95868: 0.3636 F1 (Exact)
+✅ 36149: 0.7692 F1 (Exact)
+✅ 36710: 0.8235 F1 (Exact)
+✅ 9b296f99-f6a0-423c-9716-6a04fd2e502f: 0.3571 F1 (Exact)
+✅ 100184: 0.6000 F1 (Exact)
+
+📊 Exact Match Overall Performance:
+{'city': {'precision': 0.5294117647058824, 'recall': 0.5294117647058824, 'f1': 0.5294117647058824, 'number': 17}, 'country': {'precision': 0.5, 'recall': 0.4166666666666667, 'f1': 0.45454545454545453, 'number': 24}, 'cropSpecies': {'precision': 0.5882352941176471, 'recall': 0.3614457831325301, 'f1': 0.4477611940298508, 'number': 83}, 'cropVariety': {'precision': 0.6, 'recall': 1.0, 'f1': 0.7499999999999999, 'number': 3}, 'duration': {'precision': 0.5, 'recall': 0.3333333333333333, 'f1': 0.4, 'number': 24}, 'endTime': {'precision': 0.5333333333333333, 'recall': 0.5161290322580645, 'f1': 0.5245901639344263, 'number': 31}, 'latitude': {'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'number': 2}, 'longitude': {'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'number': 2}, 'region': {'precision': 0.23076923076923078, 'recall': 0.21428571428571427, 'f1': 0.22222222222222224, 'number': 14}, 'soilAvailableNitrogen': {'precision': 0.6666666666666666, 'recall': 0.6666666666666666, 'f1': 0.6666666666666666, 'number': 3}, 'soilBulkDensity': {'precision': 0.5, 'recall': 1.0, 'f1': 0.6666666666666666, 'number': 1}, 'soilDepth': {'precision': 0.42857142857142855, 'recall': 0.5, 'f1': 0.4615384615384615, 'number': 6}, 'soilOrganicCarbon': {'precision': 0.5, 'recall': 0.3, 'f1': 0.37499999999999994, 'number': 20}, 'soilPH': {'precision': 0.5, 'recall': 0.2, 'f1': 0.28571428571428575, 'number': 5}, 'soilReferenceGroup': {'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'number': 1}, 'soilTexture': {'precision': 0.75, 'recall': 0.2727272727272727, 'f1': 0.39999999999999997, 'number': 11}, 'startTime': {'precision': 0.6046511627906976, 'recall': 0.45614035087719296, 'f1': 0.52, 'number': 57}, 'overall_precision': 0.5478260869565217, 'overall_recall': 0.4144736842105263, 'overall_f1': 0.47191011235955055, 'overall_accuracy': 0.9602156980227681}
+
+==================================================
+EXACT MATCH Per-Category Entity Analysis
+==================================================
+Category        TP     FP     FN     Precision  Recall     F1         Support   
+--------------------------------------------------------------------------------
+city            9      8      8      0.5294     0.5294     0.5294     17        
+country         10     10     14     0.5000     0.4167     0.4545     24        
+cropSpecies     30     21     52     0.5882     0.3659     0.4511     82        
+cropVariety     3      2      0      0.6000     1.0000     0.7500     3         
+duration        8      7      16     0.5333     0.3333     0.4103     24        
+endTime         16     14     15     0.5333     0.5161     0.5246     31        
+latitude        2      0      0      1.0000     1.0000     1.0000     2         
+longitude       2      0      0      1.0000     1.0000     1.0000     2         
+region          3      10     11     0.2308     0.2143     0.2222     14        
+soilAvailableNitrogen 2      1      1      0.6667     0.6667     0.6667     3         
+soilBulkDensity 1      1      0      0.5000     1.0000     0.6667     1         
+soilDepth       3      4      3      0.4286     0.5000     0.4615     6         
+soilOrganicCarbon 6      6      14     0.5000     0.3000     0.3750     20        
+soilPH          1      1      4      0.5000     0.2000     0.2857     5         
+soilReferenceGroup 1      0      0      1.0000     1.0000     1.0000     1         
+soilTexture     3      1      8      0.7500     0.2727     0.4000     11        
+startTime       26     17     31     0.6047     0.4561     0.5200     57        
+
+📊 Partial Match Overall Performance:
+{'precision': 0.6681222707423581, 'recall': 0.504950495049505, 'f1': 0.5751879699248119, 'tp': 153, 'fp': 76, 'fn': 150}
+
+==================================================
+PARTIAL MATCH Per-Category Entity Analysis
+==================================================
+Category        TP     FP     FN     Precision  Recall     F1         Support   
+--------------------------------------------------------------------------------
+city            9      8      8      0.5294     0.5294     0.5294     17        
+country         10     10     14     0.5000     0.4167     0.4545     24        
+cropSpecies     44     7      38     0.8627     0.5366     0.6617     82        
+cropVariety     3      2      0      0.6000     1.0000     0.7500     3         
+duration        10     5      14     0.6667     0.4167     0.5128     24        
+endTime         18     12     13     0.6000     0.5806     0.5902     31        
+latitude        2      0      0      1.0000     1.0000     1.0000     2         
+longitude       2      0      0      1.0000     1.0000     1.0000     2         
+region          4      9      10     0.3077     0.2857     0.2963     14        
+soilAvailableNitrogen 2      1      1      0.6667     0.6667     0.6667     3         
+soilBulkDensity 1      1      0      0.5000     1.0000     0.6667     1         
+soilDepth       3      4      3      0.4286     0.5000     0.4615     6         
+soilOrganicCarbon 11     1      9      0.9167     0.5500     0.6875     20        
+soilPH          1      1      4      0.5000     0.2000     0.2857     5         
+soilReferenceGroup 1      0      0      1.0000     1.0000     1.0000     1         
+soilTexture     3      1      8      0.7500     0.2727     0.4000     11        
+startTime       29     14     28     0.6744     0.5088     0.5800     57        
+📊 Detailed category results saved to /home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_22September_FewShotTest_Embeddings_Specific/detailed_category_results_gpt-5_2_shot.xlsx
+
+📁 Text results saved to /home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_22September_FewShotTest_Embeddings_Specific/ner_evaluation_results_gpt-5_2_shot.txt
+📊 Excel results saved to /home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_22September_FewShotTest_Embeddings_Specific/ner_evaluation_results_gpt-5_2_shot.xlsx
+📋 Detailed category results saved to /home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_22September_FewShotTest_Embeddings_Specific/detailed_category_results_gpt-5_2_shot.xlsx
+🔋 Power consumption: 0.004 kWh
+NER processing complete.
+Stopping resource monitoring...
+job-embeddings_openai.bash: line 75: kill: (1105664) - No such process
+Total GPU execution time: 165 seconds
+✔ Execution time saved to Excel: /home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_22September_FewShotTest_Embeddings_Specific/ner_evaluation_results_gpt-5_2_shot.xlsx
+Fetching SLURM job summary...
+JobID           Elapsed     MaxRSS    CPUTime ExitCode 
+------------ ---------- ---------- ---------- -------- 
+23437494     2-20:46:29            733-14:19:44      0:0 
+23437494.ex+ 2-20:46:29            733-14:19:44      0:0 
+23437494.0   2-20:46:16            733-13:24:16      0:0 
+All logs are saved in: /home/s27mhusa_hpc/Master-Thesis/FinalOutput-22September-EmbeddingsSpecific/job_monitor_logs_TestFilesgpt-5_20250923_130018_2shot

@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIvQtfuhIIzMawmRA1PLO5yA3ZGvn",
+  "object": "chat.completion",
+  "created": 1758626711,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"winter wheat\", \"span\": [481, 493] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [495, 508] }},\n    {\"cropSpecies\": { \"value\": \"sugar beet\", \"span\": [514, 524] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [1393, 1406] }},\n    {\"cropSpecies\": { \"value\": \"sugar beet\", \"span\": [1411, 1421] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [49, 56] }},\n    {\"city\": { \"value\": \"Speyer\", \"span\": [41, 47] }},\n    {\"city\": { \"value\": \"Speyer\", \"span\": [122, 128] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [130, 137] }},\n    {\"city\": { \"value\": \"Rinkenbergerhof\", \"span\": [392, 407] }},\n    {\"city\": { \"value\": \"Speyer\", \"span\": [428, 434] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [436, 443] }},\n    {\"city\": { \"value\": \"Speyer\", \"span\": [1258, 1264] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [1266, 1273] }},\n    {\"city\": { \"value\": \"Karlsruhe\", \"span\": [1120, 1129] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"the year 1984\", \"span\": [457, 470] }},\n    {\"startTime\": { \"value\": \"16. September 2009\", \"span\": [1083, 1103] }},\n    {\"duration\": { \"value\": \"long-term\", \"span\": [236, 245] }},\n    {\"duration\": { \"value\": \"long term\", \"span\": [1727, 1735] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2877,
+    "completion_tokens": 487,
+    "total_tokens": 3364,
+    "prompt_tokens_details": {
+      "cached_tokens": 1792,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

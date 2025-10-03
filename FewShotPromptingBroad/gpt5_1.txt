@@ -1,0 +1,13 @@
+/usr/bin/lua: /usr/share/lmod/lmod/libexec/../tools/capture.lua:75: interrupted!
+stack traceback:
+	[C]: in method 'read'
+	/usr/share/lmod/lmod/libexec/../tools/capture.lua:75: in function 'capture'
+	/usr/share/lmod/lmod/libexec/MainControl.lua:166: in upvalue 'l_error_on_missing_loaded_modules'
+	/usr/share/lmod/lmod/libexec/MainControl.lua:875: in function 'MC_MgrLoad.report'
+	/usr/share/lmod/lmod/libexec/MainControl.lua:186: in upvalue 'l_error_on_missing_loaded_modules'
+	/usr/share/lmod/lmod/libexec/MainControl.lua:913: in function 'MainControl.mustLoad'
+	/usr/share/lmod/lmod/libexec/cmdfuncs.lua:589: in upvalue 'l_usrLoad'
+	/usr/share/lmod/lmod/libexec/cmdfuncs.lua:614: in function 'Load_Usr'
+	/usr/share/lmod/lmod/libexec/lmod:523: in function 'main'
+	/usr/share/lmod/lmod/libexec/lmod:594: in main chunk
+	[C]: in ?

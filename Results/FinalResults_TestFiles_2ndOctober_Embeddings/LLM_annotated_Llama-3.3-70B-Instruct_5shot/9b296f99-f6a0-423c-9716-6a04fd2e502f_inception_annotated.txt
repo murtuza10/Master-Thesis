@@ -1,0 +1,23 @@
+Here is the JSON output based on the input text:
+
+```json
+{
+  "Crop": [
+    {"Crop": { "value": "winter wheat", "span": [346, 357] }},
+    {"Crop": { "value": "winter barley", "span": [362, 375] }},
+    {"Crop": { "value": "sugar beet", "span": [380, 390] }}
+  ],
+  "Location": [
+    {"Location": { "value": "Speyer", "span": [24, 30] }},
+    {"Location": { "value": "Germany", "span": [32, 39] }},
+    {"Location": { "value": "Germany", "span": [154, 161] }},
+    {"Location": { "value": "Karlsruhe", "span": [441, 450] }},
+    {"Location": { "value": "Germany", "span": [538, 545] }}
+  ],
+  "TimeStatement": [
+    {"TimeStatement": { "value": "1984", "span": [294, 298] }},
+    {"TimeStatement": { "value": "2009", "span": [423, 427] }},
+    {"TimeStatement": { "value": "2017", "span": [753, 757] }}
+  ]
+}
+```

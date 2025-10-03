@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIuy2UvJVrnd7PsOHa27CxLd0tYHf",
+  "object": "chat.completion",
+  "created": 1758624922,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"wheat\", \"span\": [424, 429]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [438, 444]}},\n    {\"cropSpecies\": {\"value\": \"sugar beet\", \"span\": [451, 461]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [1423, 1429]}},\n    {\"cropSpecies\": {\"value\": \"sugar beet\", \"span\": [1434, 1444]}}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [44, 51]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [125, 132]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [39, 45]}},\n    {\"city\": {\"value\": \"Speyer\", \"span\": [120, 126]}},\n    {\"city\": {\"value\": \"Karlsruhe\", \"span\": [1188, 1197]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"the year 1984\", \"span\": [361, 375]}},\n    {\"duration\": {\"value\": \"every three years\", \"span\": [789, 807]}},\n    {\"startTime\": {\"value\": \"16. September 2009\", \"span\": [1165, 1185]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1965,
+    "completion_tokens": 337,
+    "total_tokens": 2302,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

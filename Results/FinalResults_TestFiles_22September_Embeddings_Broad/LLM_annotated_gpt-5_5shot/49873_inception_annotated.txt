@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIuhlsHEI4zilPclJigYMrzB6KpHq",
+  "object": "chat.completion",
+  "created": 1758623913,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"Crops\": [], \"Soil\": [{\"Soil\": {\"value\": \"Bodenleitprofile\", \"span\": [142, 158]}}, {\"Soil\": {\"value\": \"boden-physikalischen Grundlagendaten\", \"span\": [164, 200]}}, {\"Soil\": {\"value\": \"Bodeninformationen\", \"span\": [273, 291]}}, {\"Soil\": {\"value\": \"Bodenkartierung\", \"span\": [374, 388]}}, {\"Soil\": {\"value\": \"Bodenkundler\", \"span\": [474, 486]}}, {\"Soil\": {\"value\": \"Bodentyp\", \"span\": [729, 737]}}, {\"Soil\": {\"value\": \"Wasserhaushalts-/ Nährstoffansprache\", \"span\": [739, 775]}}, {\"Soil\": {\"value\": \"Kalkung\", \"span\": [777, 784]}}, {\"Soil\": {\"value\": \"Bodenart\", \"span\": [844, 852]}}, {\"Soil\": {\"value\": \"Skelett\", \"span\": [854, 861]}}, {\"Soil\": {\"value\": \"Trockenrohdichte (TRD)\", \"span\": [863, 885]}}, {\"Soil\": {\"value\": \"nutzbare Feldkapazität (nFK)\", \"span\": [887, 915]}}, {\"Soil\": {\"value\": \"Basensättigung\", \"span\": [959, 973]}}, {\"Soil\": {\"value\": \"organischer Kohlenstoffgehalt (Corg)\", \"span\": [975, 1011]}}, {\"Soil\": {\"value\": \"Entkalkungstiefe\", \"span\": [1013, 1029]}}], \"Location\": [], \"Time Statement\": [{\"startTime\": {\"value\": \"Creation date: 28.05.2019\", \"span\": [1315, 1342]}}, {\"startTime\": {\"value\": \"start date: 2012\", \"span\": [1365, 1382]}}, {\"endTime\": {\"value\": \"end date: 2012\", \"span\": [1384, 1400]}}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4881,
+    "completion_tokens": 490,
+    "total_tokens": 5371,
+    "prompt_tokens_details": {
+      "cached_tokens": 3712,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

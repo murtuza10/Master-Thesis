@@ -1,0 +1,27 @@
+{
+  "id": "gen-1759421446-d7rJnwU7utD0my4Iumdp",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759421446,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"rye\", \"span\": [160, 163] }},\n    {\"Crop\": { \"value\": \"Secale cereale\", \"span\": [166, 180] }},\n    {\"Crop\": { \"value\": \"rye\", \"span\": [247, 250] }},\n    {\"Crop\": { \"value\": \"rye\", \"span\": [1020, 1023] }},\n    {\"Crop\": { \"value\": \"rye\", \"span\": [1440, 1443] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Northern Europe\", \"span\": [209, 224] }},\n    {\"Location\": { \"value\": \"German\", \"span\": [540, 546] }}\n  ],\n  \"TimeStatement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4850,
+    "completion_tokens": 196,
+    "total_tokens": 5046
+  }
+}

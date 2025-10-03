@@ -1,0 +1,27 @@
+{
+  "id": "gen-1759421215-92IVWYn6riFduZmGrQVt",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759421215,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [],\n  \"Location\": [\n    {\"Location\": {\"value\": \"German National Forest Inventory\", \"span\": [208, 238]}},\n    {\"Location\": {\"value\": \"5,79922100\", \"span\": [846, 856]}},\n    {\"Location\": {\"value\": \"15,08954000\", \"span\": [886, 897]}},\n    {\"Location\": {\"value\": \"47,15766000\", \"span\": [931, 942]}},\n    {\"Location\": {\"value\": \"55,08484000\", \"span\": [971, 982]}}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": {\"value\": \"1961 - 2100\", \"span\": [194, 204]}},\n    {\"TimeStatement\": {\"value\": \"1961 - 2013\", \"span\": [253, 263]}},\n    {\"TimeStatement\": {\"value\": \"2011 – 2050\", \"span\": [445, 455]}},\n    {\"TimeStatement\": {\"value\": \"2011 – 2100\", \"span\": [470, 480]}},\n    {\"TimeStatement\": {\"value\": \"31.12.2016\", \"span\": [737, 747]}},\n    {\"TimeStatement\": {\"value\": \"01.01.1961 - 31.12.2099\", \"span\": [793, 818]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4915,
+    "completion_tokens": 311,
+    "total_tokens": 5226
+  }
+}

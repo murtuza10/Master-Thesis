@@ -1,0 +1,68 @@
+================================================================================
+MODEL EVALUATION RESULTS SUMMARY
+================================================================================
+Evaluation Date: 2025-09-24T20:58:28.716383
+Model Path: /lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/agribert-new_final_model_regularized_saved_broad_22-3
+Test Dataset Size: 303
+Labels Used: ['O', 'B-startTime', 'I-startTime', 'B-endTime', 'I-endTime', 'B-city', 'I-city', 'B-duration', 'I-duration', 'B-cropSpecies', 'I-cropSpecies', 'B-region', 'I-region', 'B-country', 'I-country', 'B-Soil', 'I-Soil']
+
+================================================================================
+F1 SCORES
+================================================================================
+Exact F1 Score (Strict Entity Matching): 0.6021
+Partial F1 Score (Lenient/Token-level): 0.6408
+
+================================================================================
+CLASSIFICATION REPORTS
+================================================================================
+
+TOKEN-LEVEL CLASSIFICATION REPORT:
+--------------------------------------------------
+               precision    recall  f1-score   support
+
+       B-Soil       0.40      0.45      0.42        47
+       B-city       0.37      0.59      0.45        17
+    B-country       0.61      0.92      0.73        24
+B-cropSpecies       0.62      0.87      0.73        86
+   B-duration       0.68      0.71      0.69        24
+    B-endTime       0.75      0.87      0.81        31
+     B-region       0.33      0.50      0.40        14
+  B-startTime       0.59      0.95      0.72        57
+       I-Soil       0.49      0.66      0.56        29
+I-cropSpecies       0.50      0.87      0.63        30
+   I-duration       0.56      0.86      0.68        21
+    I-endTime       0.00      0.00      0.00         3
+     I-region       0.27      0.50      0.35         6
+  I-startTime       0.00      0.00      0.00         5
+            O       1.00      0.98      0.99      7803
+
+     accuracy                           0.97      8197
+    macro avg       0.48      0.65      0.54      8197
+ weighted avg       0.97      0.97      0.97      8197
+
+
+ENTITY-LEVEL CLASSIFICATION REPORT:
+--------------------------------------------------
+              precision    recall  f1-score   support
+
+        Soil       0.38      0.53      0.44        47
+        city       0.37      0.59      0.45        17
+     country       0.61      0.92      0.73        24
+ cropSpecies       0.59      0.84      0.69        86
+    duration       0.44      0.62      0.52        24
+     endTime       0.69      0.81      0.75        31
+      region       0.21      0.36      0.26        14
+   startTime       0.54      0.88      0.67        57
+
+   micro avg       0.51      0.75      0.61       300
+   macro avg       0.48      0.69      0.56       300
+weighted avg       0.52      0.75      0.61       300
+
+
+================================================================================
+ADDITIONAL STATISTICS
+================================================================================
+Total sequences: 303
+Total tokens: 8197
+Unique labels in predictions: 13
+Unique labels in ground truth: 15

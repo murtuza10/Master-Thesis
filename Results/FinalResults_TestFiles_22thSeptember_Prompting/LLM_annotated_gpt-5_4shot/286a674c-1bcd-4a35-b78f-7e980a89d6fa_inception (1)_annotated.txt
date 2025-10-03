@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIygl5kXpyQtJUVIYA1JUSqpbS7Qb",
+  "object": "chat.completion",
+  "created": 1758639227,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [187, 192] }},\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [332, 337] }},\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [392, 397] }},\n    {\"cropSpecies\": { \"value\": \"wheat\", \"span\": [642, 647] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [1172, 1179] }},\n    {\"region\": { \"value\": \"Brandenburg\", \"span\": [1181, 1192] }},\n    {\"region\": { \"value\": \"Uckermark\", \"span\": [1194, 1203] }},\n    {\"city\": { \"value\": \"Quillow\", \"span\": [1205, 1212] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2019\", \"span\": [120, 124] }},\n    {\"duration\": { \"value\": \"growing season\", \"span\": [616, 631] }},\n    {\"startTime\": { \"value\": \"April\", \"span\": [659, 664] }},\n    {\"endTime\": { \"value\": \"June 2019\", \"span\": [669, 678] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3436,
+    "completion_tokens": 322,
+    "total_tokens": 3758,
+    "prompt_tokens_details": {
+      "cached_tokens": 3072,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

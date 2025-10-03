@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIvBT2bHM7xKJYvvSjxtuYJx0n6oc",
+  "object": "chat.completion",
+  "created": 1758625755,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [772, 778]}},\n    {\"cropSpecies\": {\"value\": \"serradella\", \"span\": [799, 809]}},\n    {\"cropSpecies\": {\"value\": \"barley\", \"span\": [841, 847]}}\n  ],\n  \"Soil\": [\n    {\"soilTexture\": {\"value\": \"\", \"span\": [0, 0]}},\n    {\"soilReferenceGroup\": {\"value\": \"\", \"span\": [0, 0]}},\n    {\"soilDepth\": {\"value\": \"three sampling depths\", \"span\": [205, 227]}},\n    {\"soilBulkDensity\": {\"value\": \"\", \"span\": [0, 0]}},\n    {\"soilPH\": {\"value\": \"pH\", \"span\": [53, 55]}},\n    {\"soilPH\": {\"value\": \"pH\", \"span\": [322, 324]}},\n    {\"soilPH\": {\"value\": \"pH\", \"span\": [1273, 1275]}},\n    {\"soilOrganicCarbon\": {\"value\": \"OC\", \"span\": [344, 346]}},\n    {\"soilOrganicCarbon\": {\"value\": \"organic C\", \"span\": [1140, 1150]}},\n    {\"soilAvailableNitrogen\": {\"value\": \"NH4+\", \"span\": [350, 354]}},\n    {\"soilAvailableNitrogen\": {\"value\": \"NO2-\", \"span\": [360, 364]}},\n    {\"soilAvailableNitrogen\": {\"value\": \"NO3-\", \"span\": [371, 375]}},\n    {\"soilAvailableNitrogen\": {\"value\": \"NH4+\", \"span\": [1184, 1188]}},\n    {\"soilAvailableNitrogen\": {\"value\": \"NO2-\", \"span\": [1194, 1198]}},\n    {\"soilAvailableNitrogen\": {\"value\": \"NO3-\", \"span\": [1204, 1208]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [283, 290]}},\n    {\"region\": {\"value\": \"Northern\", \"span\": [275, 283]}},\n    {\"city\": {\"value\": \"Rostock\", \"span\": [18, 25]}},\n    {\"latitude\": {\"value\": \"\", \"span\": [0, 0]}},\n    {\"longitude\": {\"value\": \"\", \"span\": [0, 0]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2020\", \"span\": [94, 98]}},\n    {\"startTime\": {\"value\": \"2020\", \"span\": [166, 170]}},\n    {\"startTime\": {\"value\": \"2018\", \"span\": [690, 694]}},\n    {\"startTime\": {\"value\": \"2019\", \"span\": [745, 749]}},\n    {\"startTime\": {\"value\": \"2020\", \"span\": [856, 860]}},\n    {\"duration\": {\"value\": \"about 3.5 months\", \"span\": [1397, 1415]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1998,
+    "completion_tokens": 691,
+    "total_tokens": 2689,
+    "prompt_tokens_details": {
+      "cached_tokens": 1280,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

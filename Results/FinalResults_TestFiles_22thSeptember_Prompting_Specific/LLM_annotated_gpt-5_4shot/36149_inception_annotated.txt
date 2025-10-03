@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwRsnCNlWxecYL2b2iKGlTYcp8OK",
+  "object": "chat.completion",
+  "created": 1758630616,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"energy crop\", \"span\": [106, 116]}},\n    {\"cropSpecies\": {\"value\": \"crops\", \"span\": [1003, 1008]}},\n    {\"cropSpecies\": {\"value\": \"crop\", \"span\": [1013, 1017]}},\n    {\"cropSpecies\": {\"value\": \"crop\", \"span\": [479, 483]}}\n  ],\n  \"Soil\": [\n    {\"soilBulkDensity\": {\"value\": \"bulk density\", \"span\": [813, 825]}},\n    {\"soilAvailableNitrogen\": {\"value\": \"nitrogen content\", \"span\": [772, 788]}},\n    {\"soilAvailableNitrogen\": {\"value\": \"ammonium-N\", \"span\": [790, 800]}},\n    {\"soilAvailableNitrogen\": {\"value\": \"nitrate-N\", \"span\": [802, 811]}},\n    {\"soilTemperature\": {\"value\": \"soil temperatures\", \"span\": [906, 922]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"Germany\", \"span\": [203, 210]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [300, 307]}}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": {\"value\": \"2011/2012\", \"span\": [150, 159]}},\n    {\"endTime\": {\"value\": \"2014/2015\", \"span\": [162, 171]}},\n    {\"duration\": {\"value\": \"three years\", \"span\": [140, 151]}},\n    {\"startTime\": {\"value\": \"2007-2016\", \"span\": [356, 365]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3948,
+    "completion_tokens": 389,
+    "total_tokens": 4337,
+    "prompt_tokens_details": {
+      "cached_tokens": 3584,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

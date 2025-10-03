@@ -1,0 +1,26 @@
+{
+  "id": "gen-1759333475-ua3J12ijfLWpqUgmx29Y",
+  "provider": "Crusoe",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759333475,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"rye\", \"span\": [35, 38] }},\n    {\"Crop\": { \"value\": \"Secale cereale L.\", \"span\": [40, 56] }},\n    {\"Crop\": { \"value\": \"rye\", \"span\": [102, 105] }},\n    {\"Crop\": { \"value\": \"rye\", \"span\": [1100, 1103] }},\n    {\"Crop\": { \"value\": \"rye\", \"span\": [1161, 1164] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Northern Europe\", \"span\": [70, 85] }},\n    {\"Location\": { \"value\": \"German\", \"span\": [428, 434] }}\n  ],\n  \"TimeStatement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 895,
+    "completion_tokens": 198,
+    "total_tokens": 1093
+  }
+}

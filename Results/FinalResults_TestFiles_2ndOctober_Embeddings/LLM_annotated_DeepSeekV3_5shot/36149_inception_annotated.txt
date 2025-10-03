@@ -1,0 +1,27 @@
+{
+  "id": "gen-1759421473-yzia1fMnsc8sO1SV0Fwm",
+  "provider": "SiliconFlow",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759421473,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Germany\", \"span\": [100, 107] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"three years\", \"span\": [195, 206] }},\n    {\"TimeStatement\": { \"value\": \"2011/2012\", \"span\": [209, 218] }},\n    {\"TimeStatement\": { \"value\": \"2014/2015\", \"span\": [221, 230] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 4474,
+    "completion_tokens": 126,
+    "total_tokens": 4600
+  }
+}

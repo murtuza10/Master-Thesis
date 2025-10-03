@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIu9Mkh7CaCJNPdKJGAerHvEyWRPa",
+  "object": "chat.completion",
+  "created": 1758621780,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"Crops\": [{\"cropSpecies\": {\"value\": \"maize\", \"span\": [246, 251]}}], \"Soil\": [{\"Soil\": {\"value\": \"soil\", \"span\": [65, 69]}}, {\"Soil\": {\"value\": \"soil\", \"span\": [138, 142]}}, {\"Soil\": {\"value\": \"soil\", \"span\": [1159, 1163]}}, {\"Soil\": {\"value\": \"Soil\", \"span\": [1831, 1835]}}], \"Location\": [{\"country\": {\"value\": \"Europe\", \"span\": [1975, 1981]}}, {\"country\": {\"value\": \"Germany\", \"span\": [1983, 1990]}}, {\"region\": {\"value\": \"Lower Saxony\", \"span\": [1992, 2004]}}, {\"city\": {\"value\": \"Wanna\", \"span\": [2006, 2011]}}, {\"region\": {\"value\": \"Mecklenburg-Vorpommern\", \"span\": [2013, 2036]}}, {\"city\": {\"value\": \"Rostock\", \"span\": [2038, 2045]}}], \"Time Statement\": [{\"duration\": {\"value\": \"over the years 2021, 2022 and 2023\", \"span\": [256, 291]}}, {\"duration\": {\"value\": \"between April and August each year\", \"span\": [916, 949]}}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3572,
+    "completion_tokens": 326,
+    "total_tokens": 3898,
+    "prompt_tokens_details": {
+      "cached_tokens": 2304,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

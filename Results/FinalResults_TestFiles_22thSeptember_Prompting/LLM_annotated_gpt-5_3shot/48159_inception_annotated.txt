@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIyJe4yHCgtepnbVV6EIao7EXpk3P",
+  "object": "chat.completion",
+  "created": 1758637794,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"crops\", \"span\": [823, 828]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"soils\", \"span\": [770, 775]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"German\", \"span\": [57, 63]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [65, 72]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [514, 521]}},\n    {\"region\": {\"value\": \"European Union\", \"span\": [324, 338]}}\n  ],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"1990 - 2017\", \"span\": [95, 106]}},\n    {\"duration\": {\"value\": \"1990 - 2017\", \"span\": [624, 635]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3069,
+    "completion_tokens": 217,
+    "total_tokens": 3286,
+    "prompt_tokens_details": {
+      "cached_tokens": 2688,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIuVT5XtvRPwiFq7u2NK7wlXpTooQ",
+  "object": "chat.completion",
+  "created": 1758623151,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": {\"value\": \"maize\", \"span\": [204, 209]}},\n    {\"cropSpecies\": {\"value\": \"maize\", \"span\": [702, 707]}}\n  ],\n  \"Soil\": [\n    {\"Soil\": {\"value\": \"soil\", \"span\": [59, 63]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [93, 97]}},\n    {\"Soil\": {\"value\": \"biogas slurry\", \"span\": [373, 386]}},\n    {\"Soil\": {\"value\": \"biogas slurry\", \"span\": [548, 561]}},\n    {\"Soil\": {\"value\": \"diammonium phosphate (DAP)\", \"span\": [620, 648]}},\n    {\"Soil\": {\"value\": \"microgranular fertilizer (MG)\", \"span\": [651, 680]}},\n    {\"Soil\": {\"value\": \"Soil samples\", \"span\": [979, 991]}},\n    {\"Soil\": {\"value\": \"the soil\", \"span\": [1132, 1140]}},\n    {\"Soil\": {\"value\": \"soil\", \"span\": [1340, 1344]}},\n    {\"Soil\": {\"value\": \"soil samples\", \"span\": [1915, 1927]}}\n  ],\n  \"Location\": [\n    {\"country\": {\"value\": \"Europe\", \"span\": [2469, 2475]}},\n    {\"country\": {\"value\": \"Germany\", \"span\": [2477, 2484]}},\n    {\"region\": {\"value\": \"Lower Saxony\", \"span\": [2486, 2498]}},\n    {\"city\": {\"value\": \"Wanna\", \"span\": [2500, 2505]}},\n    {\"region\": {\"value\": \"Mecklenburg-Vorpommern\", \"span\": [2507, 2530]}},\n    {\"city\": {\"value\": \"Rostock\", \"span\": [2532, 2539]}},\n    {\"region\": {\"value\": \"Wanna Sand\", \"span\": [290, 300]}},\n    {\"region\": {\"value\": \"Wanna Sand without biogas slurry\", \"span\": [303, 335]}},\n    {\"region\": {\"value\": \"Rostock Sand\", \"span\": [338, 350]}},\n    {\"region\": {\"value\": \"Wanna Marsch\", \"span\": [355, 367]}}\n  ],\n  \"Time Statement\": [\n    {\"duration\": {\"value\": \"over the years 2021, 2022 and 2023\", \"span\": [216, 253]}},\n    {\"startTime\": {\"value\": \"April\", \"span\": [1006, 1011]}},\n    {\"endTime\": {\"value\": \"August\", \"span\": [1016, 1022]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4026,
+    "completion_tokens": 635,
+    "total_tokens": 4661,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

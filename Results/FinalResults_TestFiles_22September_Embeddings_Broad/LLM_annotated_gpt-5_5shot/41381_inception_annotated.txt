@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIukV47wsq00nZzHL3nJWIr51teWG",
+  "object": "chat.completion",
+  "created": 1758624083,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"grape\", \"span\": [187, 192] }},\n    {\"cropSpecies\": { \"value\": \"apple\", \"span\": [1876, 1881] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [96, 103] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [352, 359] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [517, 524] }},\n    {\"region\": { \"value\": \"southwest Germany\", \"span\": [75, 93] }},\n    {\"region\": { \"value\": \"southwest Germany\", \"span\": [1371, 1389] }},\n    {\"region\": { \"value\": \"Europe\", \"span\": [531, 537] }},\n    {\"city\": { \"value\": \"Dossenheim\", \"span\": [1088, 1098] }},\n    {\"city\": { \"value\": \"Siebeldingen\", \"span\": [1103, 1115] }},\n    {\"city\": { \"value\": \"Darmstadt\", \"span\": [1152, 1161] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2011\", \"span\": [271, 275] }},\n    {\"startTime\": { \"value\": \"late summer 2011\", \"span\": [406, 423] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [935, 939] }},\n    {\"endTime\": { \"value\": \"February 2018\", \"span\": [943, 956] }},\n    {\"startTime\": { \"value\": \"2011\", \"span\": [1226, 1230] }},\n    {\"endTime\": { \"value\": \"2018\", \"span\": [1235, 1239] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5669,
+    "completion_tokens": 442,
+    "total_tokens": 6111,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

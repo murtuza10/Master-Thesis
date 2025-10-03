@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwDKSssyy41S3NDtbMkSaUFcQwPM",
+  "object": "chat.completion",
+  "created": 1758629714,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"spring barley\", \"span\": [716, 729] }},\n    {\"cropSpecies\": { \"value\": \"serradella\", \"span\": [752, 762] }},\n    {\"cropSpecies\": { \"value\": \"spring barley\", \"span\": [784, 797] }}\n  ],\n  \"Soil\": [\n    {\"soilPH\": { \"value\": \"pH\", \"span\": [66, 68] }},\n    {\"soilDepth\": { \"value\": \"three sampling depths\", \"span\": [179, 201] }},\n    {\"soilPH\": { \"value\": \"pH\", \"span\": [392, 394] }},\n    {\"soilDepth\": { \"value\": \"three different depths\", \"span\": [1053, 1076] }},\n    {\"soilPH\": { \"value\": \"pH\", \"span\": [1292, 1294] }}\n  ],\n  \"Location\": [\n    {\"city\": { \"value\": \"Rostock\", \"span\": [18, 25] }},\n    {\"region\": { \"value\": \"Northern Germany\", \"span\": [238, 256] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2020\", \"span\": [73, 77] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [315, 319] }},\n    {\"startTime\": { \"value\": \"2018\", \"span\": [906, 910] }},\n    {\"startTime\": { \"value\": \"2019\", \"span\": [947, 951] }},\n    {\"startTime\": { \"value\": \"2020\", \"span\": [963, 967] }},\n    {\"duration\": { \"value\": \"about 3.5 months\", \"span\": [1435, 1454] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2092,
+    "completion_tokens": 421,
+    "total_tokens": 2513,
+    "prompt_tokens_details": {
+      "cached_tokens": 1536,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

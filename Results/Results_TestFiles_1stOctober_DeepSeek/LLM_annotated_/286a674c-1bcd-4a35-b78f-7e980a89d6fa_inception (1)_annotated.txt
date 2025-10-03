@@ -1,0 +1,27 @@
+{
+  "id": "gen-1759333444-jQcISghd4ieNwUURdbNv",
+  "provider": "Parasail",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759333444,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"winter wheat\", \"span\": [142, 154] }},\n    {\"Crop\": { \"value\": \"wheat\", \"span\": [273, 278] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Germany\", \"span\": [679, 686] }},\n    {\"Location\": { \"value\": \"Brandenburg\", \"span\": [687, 699] }},\n    {\"Location\": { \"value\": \"Uckermark\", \"span\": [700, 709] }},\n    {\"Location\": { \"value\": \"Quillow\", \"span\": [710, 717] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2019\", \"span\": [96, 100] }},\n    {\"TimeStatement\": { \"value\": \"between April and June 2019\", \"span\": [491, 516] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 759,
+    "completion_tokens": 224,
+    "total_tokens": 983,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIvOq7htB5J5D5TR7SeqM1TpZTsi5",
+  "object": "chat.completion",
+  "created": 1758626584,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilOrganicCarbon\": { \"value\": \"particulate organic carbon (POC)\", \"span\": [168, 203] }},\n    {\"soilOrganicCarbon\": { \"value\": \"mineral associated organic carbon (MAOC)\", \"span\": [208, 249] }},\n    {\"soilOrganicCarbon\": { \"value\": \"total carbon\", \"span\": [310, 321] }}\n  ],\n  \"Location\": [],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"2-year\", \"span\": [49, 55] }},\n    {\"duration\": { \"value\": \"6\", \"span\": [127, 128] }},\n    {\"duration\": { \"value\": \"12\", \"span\": [130, 132] }},\n    {\"duration\": { \"value\": \"24 months\", \"span\": [137, 146] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1849,
+    "completion_tokens": 208,
+    "total_tokens": 2057,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

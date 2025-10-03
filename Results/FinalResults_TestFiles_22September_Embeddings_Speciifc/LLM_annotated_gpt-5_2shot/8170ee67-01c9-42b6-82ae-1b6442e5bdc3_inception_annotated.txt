@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIv3ip7FzNMwX79WYAw8VpGRATTQ9",
+  "object": "chat.completion",
+  "created": 1758625274,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [52, 65] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [112, 125] }},\n    {\"cropSpecies\": { \"value\": \"oat\", \"span\": [1037, 1040] }},\n    {\"cropSpecies\": { \"value\": \"winter barley\", \"span\": [1554, 1567] }},\n    {\"cropSpecies\": { \"value\": \"winter wheat\", \"span\": [1598, 1611] }},\n    {\"cropSpecies\": { \"value\": \"lupine\", \"span\": [1613, 1619] }},\n    {\"cropSpecies\": { \"value\": \"winter rye\", \"span\": [1624, 1634] }},\n    {\"cropVariety\": { \"value\": \"OTTO\", \"span\": [2135, 2139] }}\n  ],\n  \"Soil\": [\n    {\"soilTexture\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilReferenceGroup\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilDepth\": { \"value\": \"25 cm\", \"span\": [900, 905] }},\n    {\"soilBulkDensity\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilPH\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilOrganicCarbon\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"\", \"span\": [0, 0] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"region\": { \"value\": \"Braunschweig\", \"span\": [30, 42] }},\n    {\"city\": { \"value\": \"Braunschweig\", \"span\": [30, 42] }},\n    {\"latitude\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"longitude\": { \"value\": \"\", \"span\": [0, 0] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2014\", \"span\": [126, 130] }},\n    {\"endTime\": { \"value\": \"2014\", \"span\": [173, 177] }},\n    {\"duration\": { \"value\": \"\", \"span\": [0, 0] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2300,
+    "completion_tokens": 556,
+    "total_tokens": 2856,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

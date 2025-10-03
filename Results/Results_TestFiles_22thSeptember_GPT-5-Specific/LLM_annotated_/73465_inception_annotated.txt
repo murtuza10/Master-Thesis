@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIzV1GpA16L0GRiHUMs5m8Np0KvUQ",
+  "object": "chat.completion",
+  "created": 1758642343,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [57, 80] }},\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [373, 396] }},\n    {\"cropSpecies\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [572, 595] }},\n    {\"cropSpecies\": { \"value\": \"celery\", \"span\": [780, 786] }},\n    {\"cropSpecies\": { \"value\": \"wild celery\", \"span\": [1030, 1042] }},\n    {\"cropSpecies\": { \"value\": \"wild celery\", \"span\": [1197, 1209] }},\n    {\"cropSpecies\": { \"value\": \"wild celery\", \"span\": [1417, 1429] }},\n    {\"cropSpecies\": { \"value\": \"wild celery\", \"span\": [1477, 1489] }},\n    {\"cropSpecies\": { \"value\": \"wild celery\", \"span\": [1572, 1584] }},\n    {\"cropSpecies\": { \"value\": \"wild celery\", \"span\": [1658, 1670] }},\n    {\"cropSpecies\": { \"value\": \"celery\", \"span\": [1731, 1737] }}\n  ],\n  \"Soil\": [\n    {\"soilTexture\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilReferenceGroup\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilDepth\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilBulkDensity\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilPH\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilOrganicCarbon\": { \"value\": \"\", \"span\": [0, 0] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"\", \"span\": [0, 0] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"Germany\", \"span\": [225, 232] }},\n    {\"country\": { \"value\": \"London\", \"span\": [308, 314] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [777, 784] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [1001, 1008] }},\n    {\"region\": { \"value\": \"Gatersleben\", \"span\": [201, 213] }},\n    {\"city\": { \"value\": \"Kew Gardens London\", \"span\": [294, 313] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2015\", \"span\": [889, 893] }},\n    {\"endTime\": { \"value\": \"2016\", \"span\": [897, 901] }},\n    {\"duration\": { \"value\": \"2018-2019\", \"span\": [1102, 1111] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1278,
+    "completion_tokens": 675,
+    "total_tokens": 1953,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIwKJVENZi6QIRLcHt5QfAa4yWFMp",
+  "object": "chat.completion",
+  "created": 1758630147,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"apple\", \"span\": [57, 62] }},\n    {\"cropSpecies\": { \"value\": \"apple\", \"span\": [404, 409] }},\n    {\"cropSpecies\": { \"value\": \"grassland\", \"span\": [464, 473] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"region\": { \"value\": \"Lower Saxony\", \"span\": [429, 441] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [443, 450] }},\n    {\"region\": { \"value\": \"Altes Land\", \"span\": [96, 107] }},\n    {\"region\": { \"value\": \"Altes Land\", \"span\": [320, 331] }}\n  ],\n  \"Time Statement\": [\n    {\"duration\": { \"value\": \"Three-year\", \"span\": [0, 10] }},\n    {\"startTime\": { \"value\": \"2001\", \"span\": [507, 511] }},\n    {\"endTime\": { \"value\": \"2003\", \"span\": [516, 520] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2234,
+    "completion_tokens": 265,
+    "total_tokens": 2499,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

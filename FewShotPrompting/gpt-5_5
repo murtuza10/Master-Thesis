@@ -1,0 +1,226 @@
+Lmod has detected the following error: The following module(s) are unknown: "sysstat"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "sysstat"
+
+Also make sure that all modulefiles written in TCL start with the string #%Module
+
+
+
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/condabin/conda
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/conda
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/conda-env
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/activate
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/bin/deactivate
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/etc/profile.d/conda.sh
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/etc/fish/conf.d/conda.fish
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/shell/condabin/Conda.psm1
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/shell/condabin/conda-hook.ps1
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/lib/python3.10/site-packages/xontrib/conda.xsh
+no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/etc/profile.d/conda.csh
+no change     /home/s27mhusa_hpc/.bashrc
+No action taken.
+Starting resource monitoring every 1 seconds...
+Logs will be stored in: /home/s27mhusa_hpc/Master-Thesis/FinalOutput-22thSeptember-FiveShotPrompting_Final_Specific/job_monitor_logs_TestFilesgpt-5_20250923_144152
+job-generic-usage-complete_OpenAi_5.bash: line 51: iostat: command not found
+/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Processing 102268_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/102268_inception_annotated.txt
+Processing 49873_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/49873_inception_annotated.txt
+Processing 102137_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/102137_inception_annotated.txt
+Processing 41808_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/41808_inception_annotated.txt
+Processing 41963_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/41963_inception_annotated.txt
+Processing 102130_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/102130_inception_annotated.txt
+Processing 73465_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/73465_inception_annotated.txt
+Processing 97dda154-93d3-4685-beff-9124e7346d68_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/97dda154-93d3-4685-beff-9124e7346d68_inception_annotated.txt
+Processing 101017_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/101017_inception_annotated.txt
+Processing 8170ee67-01c9-42b6-82ae-1b6442e5bdc3_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/8170ee67-01c9-42b6-82ae-1b6442e5bdc3_inception_annotated.txt
+Processing b963432a-9114-4cc0-8387-536c333bc123_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/b963432a-9114-4cc0-8387-536c333bc123_inception_annotated.txt
+Processing 50596_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/50596_inception_annotated.txt
+Processing 97378_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/97378_inception_annotated.txt
+Processing 102239_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/102239_inception_annotated.txt
+Processing 48159_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/48159_inception_annotated.txt
+Processing 98833_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/98833_inception_annotated.txt
+Processing 101198_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/101198_inception_annotated.txt
+Processing 67631_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/67631_inception_annotated.txt
+Processing 92044_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/92044_inception_annotated.txt
+Processing 87621_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/87621_inception_annotated.txt
+Processing 286a674c-1bcd-4a35-b78f-7e980a89d6fa_inception (1).txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/286a674c-1bcd-4a35-b78f-7e980a89d6fa_inception (1)_annotated.txt
+Processing 41381_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/41381_inception_annotated.txt
+Processing 74475_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/74475_inception_annotated.txt
+Processing 62744_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/62744_inception_annotated.txt
+Processing 101378_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/101378_inception_annotated.txt
+Processing 95868_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/95868_inception_annotated.txt
+Processing 36149_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/36149_inception_annotated.txt
+Processing 36710_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/36710_inception_annotated.txt
+Processing 9b296f99-f6a0-423c-9716-6a04fd2e502f_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/9b296f99-f6a0-423c-9716-6a04fd2e502f_inception_annotated.txt
+Processing 0007bad6-848d-4763-9813-d5ed21cde6ee_inception (1).txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/0007bad6-848d-4763-9813-d5ed21cde6ee_inception (1)_annotated.txt
+Processing 100184_inception.txt...
+Saved: /home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_gpt-5_5shot/100184_inception_annotated.txt
+✅ Processed: 8170ee67-01c9-42b6-82ae-1b6442e5bdc3_inception_annotated.txt
+✅ Processed: 102137_inception_annotated.txt
+✅ Processed: 73465_inception_annotated.txt
+✅ Processed: 49873_inception_annotated.txt
+✅ Processed: 92044_inception_annotated.txt
+✅ Processed: 286a674c-1bcd-4a35-b78f-7e980a89d6fa_inception (1)_annotated.txt
+✅ Processed: 41381_inception_annotated.txt
+✅ Processed: b963432a-9114-4cc0-8387-536c333bc123_inception_annotated.txt
+✅ Processed: 0007bad6-848d-4763-9813-d5ed21cde6ee_inception (1)_annotated.txt
+✅ Processed: 62744_inception_annotated.txt
+✅ Processed: 41808_inception_annotated.txt
+✅ Processed: 97dda154-93d3-4685-beff-9124e7346d68_inception_annotated.txt
+✅ Processed: 36710_inception_annotated.txt
+✅ Processed: 102268_inception_annotated.txt
+✅ Processed: 101198_inception_annotated.txt
+✅ Processed: 95868_inception_annotated.txt
+✅ Processed: 100184_inception_annotated.txt
+✅ Processed: 102130_inception_annotated.txt
+✅ Processed: 74475_inception_annotated.txt
+✅ Processed: 48159_inception_annotated.txt
+✅ Processed: 67631_inception_annotated.txt
+✅ Processed: 101378_inception_annotated.txt
+✅ Processed: 41963_inception_annotated.txt
+✅ Processed: 87621_inception_annotated.txt
+✅ Processed: 101017_inception_annotated.txt
+✅ Processed: 9b296f99-f6a0-423c-9716-6a04fd2e502f_inception_annotated.txt
+✅ Processed: 97378_inception_annotated.txt
+✅ Processed: 50596_inception_annotated.txt
+✅ Processed: 36149_inception_annotated.txt
+✅ Processed: 98833_inception_annotated.txt
+✅ Processed: 102239_inception_annotated.txt
+✅ 102268: 0.8000 F1 (Exact)
+✅ 49873: 0.3333 F1 (Exact)
+✅ 102137: 0.4000 F1 (Exact)
+✅ 41808: 0.4706 F1 (Exact)
+✅ 41963: 0.7097 F1 (Exact)
+✅ 102130: 0.1667 F1 (Exact)
+/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+✅ 73465: 0.3704 F1 (Exact)
+✅ 97dda154-93d3-4685-beff-9124e7346d68: 0.4118 F1 (Exact)
+✅ 101017: 0.9091 F1 (Exact)
+✅ 8170ee67-01c9-42b6-82ae-1b6442e5bdc3: 0.2857 F1 (Exact)
+✅ b963432a-9114-4cc0-8387-536c333bc123: 0.3077 F1 (Exact)
+✅ 50596: 0.5333 F1 (Exact)
+✅ 97378: 0.9231 F1 (Exact)
+✅ 102239: 0.0000 F1 (Exact)
+✅ 48159: 0.6000 F1 (Exact)
+✅ 98833: 0.2667 F1 (Exact)
+✅ 101198: 0.3636 F1 (Exact)
+✅ 67631: 0.8000 F1 (Exact)
+✅ 92044: 0.4571 F1 (Exact)
+✅ 87621: 0.2000 F1 (Exact)
+✅ 41381: 0.2667 F1 (Exact)
+✅ 74475: 0.0000 F1 (Exact)
+✅ 62744: 0.5714 F1 (Exact)
+✅ 101378: 0.3333 F1 (Exact)
+✅ 95868: 0.4545 F1 (Exact)
+✅ 36149: 0.5333 F1 (Exact)
+✅ 36710: 0.7000 F1 (Exact)
+✅ 9b296f99-f6a0-423c-9716-6a04fd2e502f: 0.2143 F1 (Exact)
+✅ 100184: 0.6667 F1 (Exact)
+
+📊 Exact Match Overall Performance:
+{'city': {'precision': 0.5, 'recall': 0.47058823529411764, 'f1': 0.48484848484848486, 'number': 17}, 'country': {'precision': 0.5882352941176471, 'recall': 0.4166666666666667, 'f1': 0.48780487804878053, 'number': 24}, 'cropSpecies': {'precision': 0.43103448275862066, 'recall': 0.30120481927710846, 'f1': 0.35460992907801414, 'number': 83}, 'cropVariety': {'precision': 0.6, 'recall': 1.0, 'f1': 0.7499999999999999, 'number': 3}, 'duration': {'precision': 0.6666666666666666, 'recall': 0.3333333333333333, 'f1': 0.4444444444444444, 'number': 24}, 'endTime': {'precision': 0.46511627906976744, 'recall': 0.6451612903225806, 'f1': 0.5405405405405406, 'number': 31}, 'latitude': {'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'number': 2}, 'longitude': {'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'number': 2}, 'region': {'precision': 0.3333333333333333, 'recall': 0.42857142857142855, 'f1': 0.375, 'number': 14}, 'soilAvailableNitrogen': {'precision': 0.0, 'recall': 0.0, 'f1': 0.0, 'number': 3}, 'soilBulkDensity': {'precision': 0.25, 'recall': 1.0, 'f1': 0.4, 'number': 1}, 'soilDepth': {'precision': 0.0, 'recall': 0.0, 'f1': 0.0, 'number': 6}, 'soilOrganicCarbon': {'precision': 0.4, 'recall': 0.1, 'f1': 0.16000000000000003, 'number': 20}, 'soilPH': {'precision': 0.5, 'recall': 0.2, 'f1': 0.28571428571428575, 'number': 5}, 'soilReferenceGroup': {'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'number': 1}, 'soilTexture': {'precision': 1.0, 'recall': 0.2727272727272727, 'f1': 0.42857142857142855, 'number': 11}, 'startTime': {'precision': 0.7441860465116279, 'recall': 0.5614035087719298, 'f1': 0.6399999999999999, 'number': 57}, 'overall_precision': 0.5040650406504065, 'overall_recall': 0.40789473684210525, 'overall_f1': 0.45090909090909087, 'overall_accuracy': 0.9553025763930497}
+
+==================================================
+EXACT MATCH Per-Category Entity Analysis
+==================================================
+Category        TP     FP     FN     Precision  Recall     F1         Support   
+--------------------------------------------------------------------------------
+city            8      8      9      0.5000     0.4706     0.4848     17        
+country         10     7      14     0.5882     0.4167     0.4878     24        
+cropSpecies     25     33     57     0.4310     0.3049     0.3571     82        
+cropVariety     3      2      0      0.6000     1.0000     0.7500     3         
+duration        8      3      16     0.7273     0.3333     0.4571     24        
+endTime         20     23     11     0.4651     0.6452     0.5405     31        
+latitude        2      0      0      1.0000     1.0000     1.0000     2         
+longitude       2      0      0      1.0000     1.0000     1.0000     2         
+region          6      11     8      0.3529     0.4286     0.3871     14        
+soilAvailableNitrogen 0      9      3      0.0000     0.0000     0.0000     3         
+soilBulkDensity 1      3      0      0.2500     1.0000     0.4000     1         
+soilDepth       0      6      6      0.0000     0.0000     0.0000     6         
+soilOrganicCarbon 2      3      18     0.4000     0.1000     0.1600     20        
+soilPH          1      1      4      0.5000     0.2000     0.2857     5         
+soilReferenceGroup 1      0      0      1.0000     1.0000     1.0000     1         
+soilTexture     3      0      8      1.0000     0.2727     0.4286     11        
+startTime       32     11     25     0.7442     0.5614     0.6400     57        
+
+📊 Partial Match Overall Performance:
+{'precision': 0.6147540983606558, 'recall': 0.49504950495049505, 'f1': 0.5484460694698355, 'tp': 150, 'fp': 94, 'fn': 153}
+
+==================================================
+PARTIAL MATCH Per-Category Entity Analysis
+==================================================
+Category        TP     FP     FN     Precision  Recall     F1         Support   
+--------------------------------------------------------------------------------
+city            8      8      9      0.5000     0.4706     0.4848     17        
+country         10     7      14     0.5882     0.4167     0.4878     24        
+cropSpecies     46     12     36     0.7931     0.5610     0.6571     82        
+cropVariety     3      2      0      0.6000     1.0000     0.7500     3         
+duration        8      3      16     0.7273     0.3333     0.4571     24        
+endTime         21     22     10     0.4884     0.6774     0.5676     31        
+latitude        2      0      0      1.0000     1.0000     1.0000     2         
+longitude       2      0      0      1.0000     1.0000     1.0000     2         
+region          6      11     8      0.3529     0.4286     0.3871     14        
+soilAvailableNitrogen 0      9      3      0.0000     0.0000     0.0000     3         
+soilBulkDensity 1      3      0      0.2500     1.0000     0.4000     1         
+soilDepth       1      5      5      0.1667     0.1667     0.1667     6         
+soilOrganicCarbon 5      0      15     1.0000     0.2500     0.4000     20        
+soilPH          1      1      4      0.5000     0.2000     0.2857     5         
+soilReferenceGroup 1      0      0      1.0000     1.0000     1.0000     1         
+soilTexture     3      0      8      1.0000     0.2727     0.4286     11        
+startTime       32     11     25     0.7442     0.5614     0.6400     57        
+📊 Detailed category results saved to /home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_22thSeptember_FewShotTest_Specific/detailed_category_results_gpt-5_5_shot.xlsx
+
+📁 Text results saved to /home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_22thSeptember_FewShotTest_Specific/ner_evaluation_results_gpt-5_5_shot.txt
+📊 Excel results saved to /home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_22thSeptember_FewShotTest_Specific/ner_evaluation_results_gpt-5_5_shot.xlsx
+📋 Detailed category results saved to /home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_22thSeptember_FewShotTest_Specific/detailed_category_results_gpt-5_5_shot.xlsx
+🔋 Power consumption: 0.001 kWh
+NER processing complete.
+Stopping resource monitoring...
+job-generic-usage-complete_OpenAi_5.bash: line 71: kill: (3282845) - No such process
+Total GPU execution time: 198 seconds
+✔ Execution time saved to Excel: /home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_22thSeptember_FewShotTest_Specific/ner_evaluation_results_gpt-5_5_shot.xlsx
+Fetching SLURM job summary...
+JobID           Elapsed     MaxRSS    CPUTime ExitCode 
+------------ ---------- ---------- ---------- -------- 
+23501790       00:50:44            2-06:06:56      0:0 
+23501790.ex+   00:50:44            2-06:06:56      0:0 
+23501790.0     00:50:31            2-05:53:04      0:0 
+All logs are saved in: /home/s27mhusa_hpc/Master-Thesis/FinalOutput-22thSeptember-FiveShotPrompting_Final_Specific/job_monitor_logs_TestFilesgpt-5_20250923_144152

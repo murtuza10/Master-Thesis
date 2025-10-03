@@ -1,0 +1,30 @@
+To fill the JSON structure based on the input text, we need to identify the entities that belong to the allowed subcategories: Crop, Location, and TimeStatement.
+
+- **Crop**: There are no mentions of crop species or varieties in the text.
+- **Location**: The text mentions "German National Forest Inventory", which implies Germany as a country. It also provides longitude and latitude coordinates, which can be considered as location entities.
+- **TimeStatement**: The text mentions several time-related entities: "1961 - 2100", "1961 - 2013", "2011 – 2050", "2011 – 2100", "31.12.2016", "01.01.1961 - 31.12.2099".
+
+Given the information, the JSON output would be:
+
+```json
+{
+  "Crop": [],
+  "Location": [
+    {"Location": { "value": "Germany", "span": [156, 163] }},
+    {"Location": { "value": "5,79922100", "span": [745, 756] }},
+    {"Location": { "value": "15,08954000", "span": [772, 784] }},
+    {"Location": { "value": "47,15766000", "span": [810, 823] }},
+    {"Location": { "value": "55,08484000", "span": [838, 851] }}
+  ],
+  "TimeStatement": [
+    {"TimeStatement": { "value": "1961 - 2100", "span": [204, 215] }},
+    {"TimeStatement": { "value": "1961 - 2013", "span": [263, 274] }},
+    {"TimeStatement": { "value": "2011 – 2050", "span": [350, 360] }},
+    {"TimeStatement": { "value": "2011 – 2100", "span": [365, 375] }},
+    {"TimeStatement": { "value": "31.12.2016", "span": [442, 453] }},
+    {"TimeStatement": { "value": "01.01.1961 - 31.12.2099", "span": [526, 548] }}
+  ]
+}
+```
+
+Note: The span indices are approximate and based on the text provided, starting from the beginning of the abstract. They may vary depending on the exact text formatting and the tool used for extraction.

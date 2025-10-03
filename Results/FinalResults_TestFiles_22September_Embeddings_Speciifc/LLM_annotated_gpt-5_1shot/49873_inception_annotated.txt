@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIuvpUq636jEJrTzd9Z6G0nUiAurT",
+  "object": "chat.completion",
+  "created": 1758624785,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [],\n  \"Soil\": [\n    {\"soilTexture\": { \"value\": \"Bodenart\", \"span\": [558, 566] }},\n    {\"soilReferenceGroup\": { \"value\": \"Bodentyp\", \"span\": [406, 414] }},\n    {\"soilDepth\": { \"value\": \"Entkalkungstiefe\", \"span\": [772, 788] }},\n    {\"soilBulkDensity\": { \"value\": \"Trockenrohdichte (TRD)\", \"span\": [604, 626] }},\n    {\"soilPH\": { \"value\": \"Kalkung\", \"span\": [425, 432] }},\n    {\"soilOrganicCarbon\": { \"value\": \"organischer Kohlenstoffgehalt (Corg)\", \"span\": [739, 774] }},\n    {\"soilAvailableNitrogen\": { \"value\": \"Nährstoffansprache\", \"span\": [445, 462] }}\n  ],\n  \"Location\": [\n    {\"country\": { \"value\": \"deutschen\", \"span\": [183, 191] }},\n    {\"region\": { \"value\": \"Bundesländern\", \"span\": [304, 317] }},\n    {\"region\": { \"value\": \"Bundesland\", \"span\": [473, 483] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2012\", \"span\": [1138, 1142] }},\n    {\"endTime\": { \"value\": \"2012\", \"span\": [1154, 1158] }},\n    {\"startTime\": { \"value\": \"28.05.2019\", \"span\": [1092, 1102] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1507,
+    "completion_tokens": 380,
+    "total_tokens": 1887,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

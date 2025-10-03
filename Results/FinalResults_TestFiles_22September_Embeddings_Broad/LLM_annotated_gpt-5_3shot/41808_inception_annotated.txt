@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CIu8bajWWl9FYxVwvnCKu7YNV9yN7",
+  "object": "chat.completion",
+  "created": 1758621733,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crops\": [\n    {\"cropSpecies\": { \"value\": \"Apium graveolens\", \"span\": [41, 58] }},\n    {\"cropSpecies\": { \"value\": \"Apium graveolens\", \"span\": [194, 211] }},\n    {\"cropSpecies\": { \"value\": \"wild celery\", \"span\": [390, 401] }},\n    {\"cropSpecies\": { \"value\": \"Apium graveolens\", \"span\": [403, 420] }},\n    {\"cropSpecies\": { \"value\": \"Apium graveolens\", \"span\": [567, 584] }}\n  ],\n  \"Soil\": [],\n  \"Location\": [\n    {\"city\": { \"value\": \"Quedlinburg\", \"span\": [642, 653] }},\n    {\"country\": { \"value\": \"Germany\", \"span\": [656, 663] }}\n  ],\n  \"Time Statement\": [\n    {\"startTime\": { \"value\": \"2018\", \"span\": [325, 329] }},\n    {\"startTime\": { \"value\": \"2016\", \"span\": [729, 733] }},\n    {\"startTime\": { \"value\": \"2017\", \"span\": [946, 950] }},\n    {\"endTime\": { \"value\": \"2018\", \"span\": [951, 955] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3592,
+    "completion_tokens": 304,
+    "total_tokens": 3896,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}
