@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --output=/home/s27mhusa_hpc/Master-Thesis/Output-15thSeptember-DeepSeek/gpu_job_TestFiles_%j_15thSeptember.out
+#SBATCH --output=/home/s27mhusa_hpc/Master-Thesis/Output-1stOctoberDeepSeek/gpu_job_TestFiles_%j_1stOctober.out
 
 MODEL_NAME=$1
 
 INPUT_DIR="/home/s27mhusa_hpc/Master-Thesis/Text_Files_Test_Data"
-OUTPUT_DIR="/home/s27mhusa_hpc/Master-Thesis/Results/Results_TestFiles_15thSeptember_DeepSeek/LLM_annotated_${MODEL_NAME}"
-OUTPUT_DIR_JSON="/home/s27mhusa_hpc/Master-Thesis/Results/Results_TestFiles_15thSeptember_DeepSeek_json/LLM_annotated_${MODEL_NAME}"
+OUTPUT_DIR="/home/s27mhusa_hpc/Master-Thesis/Results/Results_TestFiles_1stOctober_DeepSeek/LLM_annotated_${MODEL_NAME}"
+OUTPUT_DIR_JSON="/home/s27mhusa_hpc/Master-Thesis/Results/Results_TestFiles_1stOctober_DeepSeek_json/LLM_annotated_${MODEL_NAME}"
 MODEL_PATH="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/${MODEL_NAME}"
 START=0
 
@@ -22,7 +22,7 @@ conda activate Llama
 start_time=$(date +%s)
 
 # === Begin Resource Monitoring ===
-LOG_DIR="/home/s27mhusa_hpc/Master-Thesis/Output-15thSeptember-DeepSeek/job_monitor_logs_TestFiles${MODEL_NAME}_$(date +%Y%m%d_%H%M%S)"
+LOG_DIR="/home/s27mhusa_hpc/Master-Thesis/Output-1stOctoberDeepSeek/job_monitor_logs_TestFiles${MODEL_NAME}_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$LOG_DIR"
 INTERVAL=1
 
@@ -57,7 +57,7 @@ echo $CPU_PID >> "$LOG_DIR/pids.txt"
 echo $IO_PID >> "$LOG_DIR/pids.txt"
 
 # === Run Main Script ===
-python /home/s27mhusa_hpc/Master-Thesis/Zero-Shot-Prompting/NER_Prompting_chat_deepseekV3.py \
+python //home/s27mhusa_hpc/Master-Thesis/Zero-Shot-Prompting/NER_Prompting_chat_deepseekV3.py \
   --input_dir "$INPUT_DIR" \
   --output_dir "$OUTPUT_DIR" \
   --output_dir_json "$OUTPUT_DIR_JSON" \
@@ -77,7 +77,7 @@ elapsed=$(( end_time - start_time ))
 echo "Total GPU execution time: $elapsed seconds"
 echo "$elapsed" > "$LOG_DIR/elapsed_time_seconds.txt"
 
-EXCEL_PATH="/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_15thSeptemberDeepSeek/ner_evaluation_results_${MODEL_NAME}_${START}_shot.xlsx"
+EXCEL_PATH="/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_1stOctoberDeepSeekNoSoil/ner_evaluation_results_${MODEL_NAME}_${START}_shot.xlsx"
 
 python <<EOF
 import openpyxl

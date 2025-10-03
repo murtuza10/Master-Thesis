@@ -7,7 +7,7 @@ import argparse
 
 sys.path.append(os.path.abspath('..'))
 
-from Evaluation_Files.generate_ner_prompt_broad_definition import generate_ner_prompts
+from Evaluation_Files.generate_ner_prompt_nosoil_definition import generate_ner_prompts
 from Evaluation_Files.calculate_metrics_multiple_excel_partial_exact_count import evaluate_all
 
 
@@ -98,7 +98,7 @@ def main():
     # input_annot_dir_json = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_new_prompt_json/LLM_annotated_{model_name}"
     log_dir = os.environ.get('LOG_DIR')
 
-    xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptemberDocumentLevel/Test_XMI_Files"
+    xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/Dataset19SeptemberNoSoil/Test_XMI_Files"
     evaluate_all("DeepSeekV3Broad",
         args.input_dir,
         args.output_dir,

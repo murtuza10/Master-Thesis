@@ -261,7 +261,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_checkpoint)
 seqeval = evaluate.load("seqeval")
 
 # Tokenize all datasets once
-tokenized_datasets = dataset_dict.map(tokenize_and_align_labels, batched=False)
+tokenized_datasets = dataset_dict.map(tokenize_and_align_labels, batched=True)
 
 # Add data collator for proper batching
 data_collator = DataCollatorForTokenClassification(tokenizer=tokenizer)

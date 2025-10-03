@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --partition=mlgpu_short
-#SBATCH --time=8:00:00
+#SBATCH --partition=mlgpu_medium
+#SBATCH --time=24:00:00
 #SBATCH --gpus=16
 #SBATCH --output=/home/s27mhusa_hpc/Master-Thesis/OutputNewDatasets22thSeptemberFineTune/finetune_gpu_scibert_specific_english_3.0_%j.out
 

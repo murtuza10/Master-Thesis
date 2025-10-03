@@ -15,8 +15,8 @@ from collections import defaultdict, Counter
 sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 sys.path.append("/home/s27mhusa_hpc/Master-Thesis/Evaluation_Files")
 
-from generate_bio_from_cas import generate_bio_annotations_from_cas
-from generate_bio_from_json import generate_bio_from_json
+from generate_bio_from_cas_nosoil import generate_bio_annotations_from_cas
+from generate_bio_from_json_updated import generate_bio_from_json
 from extract_json_from_output import extract_json_block_from_directory
 
 
@@ -448,13 +448,13 @@ def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_js
     results_per_file = []
     stats_lines = []
 
-    y_true_dir = f"/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptemberDocumentLevel/Test_BIO_labels"
-    results_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_22September_FewShotTest_Embeddings_Broad/ner_evaluation_results_{model_name}_{start}_shot.txt"
-    stats_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_22September_FewShotTest_Embeddings_Broad/Stats/ner_evaluation_stats_{model_name}_{start}_shot.txt"
+    y_true_dir = f"/home/s27mhusa_hpc/Master-Thesis/Dataset19SeptemberNoSoil/Test_BIO_labels_NoSoil"
+    results_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_2ndOctober_FewShotTest_Embeddings/ner_evaluation_results_{model_name}_{start}_shot.txt"
+    stats_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_2ndOctober_FewShotTest_Embeddings/Stats/ner_evaluation_stats_{model_name}_{start}_shot.txt"
 
     # Excel output paths
-    excel_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_22September_FewShotTest_Embeddings_Broad/ner_evaluation_results_{model_name}_{start}_shot.xlsx"
-    detailed_excel_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_22September_FewShotTest_Embeddings_Broad/detailed_category_results_{model_name}_{start}_shot.xlsx"
+    excel_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_2ndOctober_FewShotTest_Embeddings/ner_evaluation_results_{model_name}_{start}_shot.xlsx"
+    detailed_excel_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_2ndOctober_FewShotTest_Embeddings/detailed_category_results_{model_name}_{start}_shot.xlsx"
 
     for filename in os.listdir(input_text_dir):
         if filename.endswith("_inception.txt"):
@@ -497,7 +497,10 @@ def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_js
                 all_y_true.append(y_true)
                 all_y_pred.append(y_pred)
                 tokens_all.append(token if token else tokens)
-
+                print(f"For File {file_id}:")
+                for idx, tok in enumerate(token if token else tokens):
+                    print(f"Token {idx}: '{tok}' | y_true: {y_true[idx]} | y_pred: {y_pred[idx]}")
+                print()
                 results = ner_metric.compute(predictions=[y_pred], references=[y_true], zero_division=0)
                 results_per_file.append(f"{file_id}:\n{classification_report([y_true],[y_pred])}")
                 results_per_file.append(f"Accuracy: {results['overall_accuracy']}\n")

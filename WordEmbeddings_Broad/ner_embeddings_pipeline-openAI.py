@@ -18,6 +18,9 @@ from Evaluation_Files.calculate_metrics_multiple_excel_partial_exact_count impor
 from dotenv import load_dotenv
 import os
 
+import time
+import random
+
 load_dotenv()
 
 def load_dataset(path: str):
@@ -63,7 +66,7 @@ def get_similar_examples(query_text: str, embedder, index, corpus_texts: List[st
 
 
 
-def perform_ner(text, max_length, examples):
+def perform_ner(text, max_length, examples, max_retries=5, base_delay=1):
     system_prompt, user_prompt = generate_ner_prompts(text)
     blocks = []
     for i, (example_text, ents) in enumerate(examples):
@@ -72,29 +75,75 @@ def perform_ner(text, max_length, examples):
     system_prompt += blocks_str
     
     api_key = os.getenv("OPENAI_API_KEY")
-    response = requests.post(
-        url="https://api.openai.com/v1/chat/completions",
-        headers={
-            "Authorization": f"Bearer {api_key}",
-            "Content-Type": "application/json"
-        },
-        data=json.dumps({
-            "model": "gpt-5",
-            "messages": [
-                {
-                    "role": "system",
-                    "content": system_prompt
+    for attempt in range(max_retries):
+        try:
+            response = requests.post(
+                url="https://api.openai.com/v1/chat/completions",
+                headers={
+                    "Authorization": f"Bearer {api_key}",
+                    "Content-Type": "application/json"
                 },
-                {
-                    "role": "user",
-                    "content": user_prompt
-                }
-            ],
-            "max_completion_tokens": max_length,
-            "reasoning_effort": "minimal"
-        })
-    )
-    return response.json()
+                data=json.dumps({
+                    "model": "gpt-5",
+                    "messages": [
+                        {
+                            "role": "system",
+                            "content": system_prompt
+                        },
+                        {
+                            "role": "user",
+                            "content": user_prompt
+                        }
+                    ],
+                    "max_completion_tokens": max_length,
+                    "reasoning_effort": "minimal",
+                })
+            )
+            
+            # Check if the request was successful
+            if response.status_code == 200:
+                try:
+                    return response.json()
+                except json.JSONDecodeError:
+                    print(f"Failed to parse JSON response. Raw response: {response.text}")
+                    raise
+            
+            # Handle rate limiting (status code 429)
+            elif response.status_code == 429:
+                if attempt < max_retries - 1:
+                    # Extract retry-after header if available
+                    retry_after = response.headers.get('retry-after')
+                    if retry_after:
+                        delay = int(retry_after)
+                        print(f"Rate limited. Waiting {delay} seconds before retry {attempt + 1}/{max_retries}")
+                    else:
+                        # Exponential backoff with jitter
+                        delay = base_delay * (2 ** attempt) + random.uniform(0, 1)
+                        print(f"Rate limited. Waiting {delay:.2f} seconds before retry {attempt + 1}/{max_retries}")
+                    
+                    time.sleep(delay)
+                    continue
+                else:
+                    print(f"Max retries ({max_retries}) reached for rate limiting")
+                    response.raise_for_status()
+            
+            # Handle other HTTP errors
+            else:
+                print(f"API Error - Status Code: {response.status_code}")
+                print(f"Response Text: {response.text}")
+                response.raise_for_status()
+                
+        except requests.exceptions.RequestException as e:
+            if attempt < max_retries - 1:
+                delay = base_delay * (2 ** attempt) + random.uniform(0, 1)
+                print(f"Request failed: {e}. Retrying in {delay:.2f} seconds...")
+                time.sleep(delay)
+                continue
+            else:
+                print(f"Max retries ({max_retries}) reached for request errors")
+                raise
+    
+    raise Exception(f"Failed to complete request after {max_retries} attempts")
 
 
 def process_text_files(input_dir, output_dir, max_length, embedder, index, corpus_texts, corpus_entities, top_k):

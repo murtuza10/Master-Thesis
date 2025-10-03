@@ -304,7 +304,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_checkpoint)
 seqeval = evaluate.load("seqeval")
 
 # Tokenize all datasets once
-tokenized_datasets = dataset_dict.map(tokenize_and_align_labels)
+tokenized_datasets = dataset_dict.map(tokenize_and_align_labels, batched=True)
 
 def model_init_with_regularization(dropout=0.3):
     """Initializes a model with enhanced regularization."""

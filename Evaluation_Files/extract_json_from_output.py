@@ -35,31 +35,35 @@ def extract_json_block_from_directory(input_dir, output_dir, model_name, start):
                 cleaned_content = content.strip()
                 
                 # Find the start of JSON block
-                json_start = cleaned_content.find("```json")
-                if json_start == -1:
-                    print(f"⚠️  No ```json found in {filename}")
-                    continue
+                if model_name != "gpt-5":
+                    json_start = cleaned_content.find("```json")
+                    if json_start == -1:
+                        print(f"⚠️  No ```json found in {filename}")
+                        continue
+                    
+                    # Move past the ```json marker
+                    json_start += 7  # len("```json")
+                    
+                    # Find the closing ``` after the json block
+                    json_end = cleaned_content.find("```", json_start)
+                    if json_end == -1:
+                        print(f"⚠️  No closing ``` found in {filename}")
+                        continue
                 
-                # Move past the ```json marker
-                json_start += 7  # len("```json")
-                
-                # Find the closing ``` after the json block
-                json_end = cleaned_content.find("```", json_start)
-                if json_end == -1:
-                    print(f"⚠️  No closing ``` found in {filename}")
-                    continue
-                
-                # Extract the JSON block
-                json_block = cleaned_content[json_start:json_end].strip()
-                
-                # Decode escape sequences
-                json_block = decode_escape_sequences(json_block)
-                
-                # Save the extracted JSON block
-                # with open(output_file, "w", encoding="utf-8") as out:
-                #     out.write(json_block)
-                
-                                # OPTION 2: Parse and save pretty-printed JSON (uncomment if you want formatted output)
+                    # Extract the JSON block
+                    json_block = cleaned_content[json_start:json_end].strip()
+                    
+                    # Decode escape sequences
+                    json_block = decode_escape_sequences(json_block)
+                    
+                    # Save the extracted JSON block
+                    # with open(output_file, "w", encoding="utf-8") as out:
+                    #     out.write(json_block)
+                    
+                                    # OPTION 2: Parse and save pretty-printed JSON (uncomment if you want formatted output)
+                else:
+                    # For gpt-5, assume the entire content is the JSON block
+                    json_block = cleaned_content.strip()
                 try:
                     parsed_json = json.loads(json_block)
                     formatted_json = json.dumps(parsed_json, indent=2, ensure_ascii=False)

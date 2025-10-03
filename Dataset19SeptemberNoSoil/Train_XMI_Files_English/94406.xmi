@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><xmi:XMI xmlns:pos="http:///de/tudarmstadt/ukp/dkpro/core/api/lexmorph/type/pos.ecore" xmlns:tcas="http:///uima/tcas.ecore" xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:tweet="http:///de/tudarmstadt/ukp/dkpro/core/api/lexmorph/type/pos/tweet.ecore" xmlns:morph="http:///de/tudarmstadt/ukp/dkpro/core/api/lexmorph/type/morph.ecore" xmlns:type="http:///de/tudarmstadt/ukp/clarin/webanno/api/type.ecore" xmlns:dependency="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type/dependency.ecore" xmlns:type6="http:///de/tudarmstadt/ukp/dkpro/core/api/semantics/type.ecore" xmlns:type9="http:///de/tudarmstadt/ukp/dkpro/core/api/transform/type.ecore" xmlns:type8="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type.ecore" xmlns:type3="http:///de/tudarmstadt/ukp/dkpro/core/api/metadata/type.ecore" xmlns:type11="http:///org/dkpro/core/api/xml/type.ecore" xmlns:type4="http:///de/tudarmstadt/ukp/dkpro/core/api/ner/type.ecore" xmlns:type10="http:///org/dkpro/core/api/pdf/type.ecore" xmlns:type5="http:///de/tudarmstadt/ukp/dkpro/core/api/segmentation/type.ecore" xmlns:type2="http:///de/tudarmstadt/ukp/dkpro/core/api/coref/type.ecore" xmlns:type7="http:///de/tudarmstadt/ukp/dkpro/core/api/structure/type.ecore" xmlns:constituent="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type/constituent.ecore" xmlns:chunk="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type/chunk.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+    <cas:NULL xmi:id="0"/>
+    <type5:Sentence xmi:id="8" sofa="1" begin="0" end="170"/>
+    <type5:Token xmi:id="13" sofa="1" begin="0" end="5" order="0"/>
+    <type5:Token xmi:id="26" sofa="1" begin="5" end="6" order="0"/>
+    <type5:Token xmi:id="39" sofa="1" begin="7" end="8" order="0"/>
+    <type5:Token xmi:id="52" sofa="1" begin="8" end="20" order="0"/>
+    <type5:Token xmi:id="65" sofa="1" begin="21" end="23" order="0"/>
+    <type5:Token xmi:id="78" sofa="1" begin="24" end="33" order="0"/>
+    <type5:Token xmi:id="91" sofa="1" begin="34" end="42" order="0"/>
+    <type5:Token xmi:id="104" sofa="1" begin="43" end="50" order="0"/>
+    <type5:Token xmi:id="117" sofa="1" begin="51" end="53" order="0"/>
+    <type5:Token xmi:id="130" sofa="1" begin="54" end="65" order="0"/>
+    <type5:Token xmi:id="143" sofa="1" begin="66" end="72" order="0"/>
+    <type5:Token xmi:id="156" sofa="1" begin="73" end="77" order="0"/>
+    <type5:Token xmi:id="169" sofa="1" begin="77" end="78" order="0"/>
+    <type5:Token xmi:id="182" sofa="1" begin="79" end="84" order="0"/>
+    <type5:Token xmi:id="195" sofa="1" begin="85" end="91" order="0"/>
+    <type5:Token xmi:id="208" sofa="1" begin="92" end="96" order="0"/>
+    <type5:Token xmi:id="221" sofa="1" begin="97" end="98" order="0"/>
+    <type5:Token xmi:id="234" sofa="1" begin="99" end="107" order="0"/>
+    <type5:Token xmi:id="247" sofa="1" begin="108" end="120" order="0"/>
+    <type5:Token xmi:id="260" sofa="1" begin="121" end="132" order="0"/>
+    <type5:Token xmi:id="273" sofa="1" begin="133" end="134" order="0"/>
+    <type5:Token xmi:id="286" sofa="1" begin="135" end="141" order="0"/>
+    <type5:Token xmi:id="299" sofa="1" begin="142" end="147" order="0"/>
+    <type5:Token xmi:id="312" sofa="1" begin="147" end="149" order="0"/>
+    <type5:Token xmi:id="325" sofa="1" begin="149" end="157" order="0"/>
+    <type5:Token xmi:id="338" sofa="1" begin="157" end="158" order="0"/>
+    <type5:Token xmi:id="351" sofa="1" begin="158" end="159" order="0"/>
+    <type5:Token xmi:id="364" sofa="1" begin="159" end="162" order="0"/>
+    <type5:Token xmi:id="377" sofa="1" begin="163" end="168" order="0"/>
+    <type5:Token xmi:id="390" sofa="1" begin="168" end="170" order="0"/>
+    <type3:DocumentMetaData xmi:id="403" sofa="1" begin="0" end="170" language="x-unspecified" documentTitle="94406_inception.xmi" documentId="GolzL" documentUri="admin-5/GolzL" collectionId="admin-5/GolzL" documentBaseUri="admin-5" isLastSegment="false"/>
+    <type:LayerDefinition xmi:id="447" name="webanno.custom.Timestatement" uiName="Timestatement"/>
+    <type:LayerDefinition xmi:id="425" name="webanno.custom.Location" uiName="Location"/>
+    <type:LayerDefinition xmi:id="436" name="webanno.custom.Soil" uiName="Soil"/>
+    <type:LayerDefinition xmi:id="414" name="webanno.custom.Crops" uiName="Crops"/>
+    <type:FeatureDefinition xmi:id="417" layer="414" name="crops" uiName="crops"/>
+    <type:FeatureDefinition xmi:id="421" layer="414" name="identifier" uiName="identifier"/>
+    <type:FeatureDefinition xmi:id="428" layer="425" name="Location" uiName="Location"/>
+    <type:FeatureDefinition xmi:id="454" layer="447" name="identifier" uiName="identifier"/>
+    <type:FeatureDefinition xmi:id="432" layer="425" name="identifier" uiName="identifier"/>
+    <type:FeatureDefinition xmi:id="450" layer="447" name="Timestatement" uiName="Timestatement"/>
+    <type:FeatureDefinition xmi:id="439" layer="436" name="Soil" uiName="Soil"/>
+    <type:FeatureDefinition xmi:id="443" layer="436" name="identifier" uiName="identifier"/>
+    <type3:TagsetDescription xmi:id="458" sofa="1" begin="0" end="0" layer="webanno.custom.Crops" name="Crop" input="false"/>
+    <type3:TagsetDescription xmi:id="471" sofa="1" begin="0" end="0" layer="webanno.custom.Location" name="Location" input="false"/>
+    <type3:TagsetDescription xmi:id="484" sofa="1" begin="0" end="0" layer="webanno.custom.Soil" name="Soil" input="false"/>
+    <type3:TagsetDescription xmi:id="497" sofa="1" begin="0" end="0" layer="webanno.custom.Timestatement" name="Time statement" input="false"/>
+    <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" sofaString="Title: &#10;Establishing an effective European network of Agroecology Living Labs: Entry points from a farmland biodiversity perspective ; Policy brief&#10;&#10;Abstract:&#10;Not Found&#10;&#10;"/>
+    <cas:View sofa="1" members="8 13 26 39 52 65 78 91 104 117 130 143 156 169 182 195 208 221 234 247 260 273 286 299 312 325 338 351 364 377 390 403 447 425 436 414 417 421 428 454 432 450 439 443 458 471 484 497"/>
+</xmi:XMI>
