@@ -1,0 +1,71 @@
+#!/bin/bash
+#SBATCH --partition=mlgpu_short
+#SBATCH --time=8:00:00
+#SBATCH --gpus=16
+#SBATCH --output=/home/s27mhusa_hpc/Master-Thesis/FinalPredictions-12October/gpu_job_TestFiles_%j_12October.out
+
+
+
+module load CUDA/12.6.0
+module load sysstat
+
+
+source ~/.bashrc
+conda init
+conda deactivate 
+conda activate Llama
+
+# Record start time
+start_time=$(date +%s)
+
+# === Begin Resource Monitoring ===
+LOG_DIR="/home/s27mhusa_hpc/Master-Thesis/FinalPredictions-12October/job_monitor_logs_TestFiles${MODEL_NAME}_$(date +%Y%m%d_%H%M%S)_${EXAMPLES}shot"
+mkdir -p "$LOG_DIR"
+INTERVAL=1
+
+echo "Starting resource monitoring every $INTERVAL seconds..."
+echo "Logs will be stored in: $LOG_DIR"
+
+export LOG_DIR="$LOG_DIR"
+
+# GPU Monitoring
+nvidia-smi --query-gpu=timestamp,index,utilization.gpu,memory.used,temperature.gpu,power.draw \
+  --format=csv -l $INTERVAL > "$LOG_DIR/gpu_usage.log" &
+GPU_PID=$!
+
+# CPU & Memory Monitoring
+(
+  while true; do
+    echo "$(date)" >> "$LOG_DIR/cpu_mem.log"
+    top -b -n1 | head -n 20 >> "$LOG_DIR/cpu_mem.log"
+    echo "===============================" >> "$LOG_DIR/cpu_mem.log"
+    sleep $INTERVAL
+  done
+) &
+CPU_PID=$!
+
+# Disk I/O Monitoring
+iostat -xz $INTERVAL > "$LOG_DIR/disk_io.log" &
+IO_PID=$!
+
+# Save monitor PIDs
+echo $GPU_PID > "$LOG_DIR/pids.txt"
+echo $CPU_PID >> "$LOG_DIR/pids.txt"
+echo $IO_PID >> "$LOG_DIR/pids.txt"
+
+# === Run Main Script ===
+python EnsembleModels.py
+
+# === Stop Resource Monitoring ===
+echo "Stopping resource monitoring..."
+kill $GPU_PID
+kill $CPU_PID
+kill $IO_PID
+
+
+# === SLURM Summary Metrics ===
+echo "Fetching SLURM job summary..."
+sacct -j $SLURM_JOB_ID --format=JobID,Elapsed,MaxRSS,CPUTime,ExitCode > "$LOG_DIR/slurm_summary.log"
+cat "$LOG_DIR/slurm_summary.log"
+
+echo "All logs are saved in: $LOG_DIR"
