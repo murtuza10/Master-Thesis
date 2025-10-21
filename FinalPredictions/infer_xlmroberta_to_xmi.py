@@ -115,9 +115,7 @@ def load_inference_pipeline(model_path: str):
     tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=True)
     model = AutoModelForTokenClassification.from_pretrained(model_path)
     
-    # ================================
-    # CRITICAL FIX: Override generic LABEL_0, LABEL_1 with actual labels
-    # ================================
+   
     id2label = {i: lab for i, lab in enumerate(LABEL_LIST)}
     label2id = {lab: i for i, lab in enumerate(LABEL_LIST)}
     
