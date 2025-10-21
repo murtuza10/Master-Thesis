@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMYCWm1Q12au4lK2EEKfLIW00sBev",
+  "object": "chat.completion",
+  "created": 1759490720,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [48, 70] }},\n    {\"Crop\": { \"value\": \"H. nodiflorum\", \"span\": [210, 223] }},\n    {\"Crop\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [438, 460] }},\n    {\"Crop\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [709, 731] }},\n    {\"Crop\": { \"value\": \"celery\", \"span\": [782, 788] }},\n    {\"Crop\": { \"value\": \"wild celery\", \"span\": [918, 930] }},\n    {\"Crop\": { \"value\": \"wild celery\", \"span\": [1238, 1250] }},\n    {\"Crop\": { \"value\": \"wild celery\", \"span\": [1464, 1476] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Gatersleben\", \"span\": [157, 168] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [170, 177] }},\n    {\"Location\": { \"value\": \"Kew Gardens London\", \"span\": [272, 291] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [834, 841] }},\n    {\"Location\": { \"value\": \"Berlin\", \"span\": [847, 853] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [855, 862] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [1495, 1502] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2015\", \"span\": [1027, 1031] }},\n    {\"TimeStatement\": { \"value\": \"2016\", \"span\": [1035, 1039] }},\n    {\"TimeStatement\": { \"value\": \"2018-2019\", \"span\": [1252, 1261] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4672,
+    "completion_tokens": 464,
+    "total_tokens": 5136,
+    "prompt_tokens_details": {
+      "cached_tokens": 4096,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

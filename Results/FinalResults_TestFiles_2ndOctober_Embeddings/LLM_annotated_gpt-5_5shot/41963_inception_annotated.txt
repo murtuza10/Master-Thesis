@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMYCPrBhd0Gw0awRSZgyxIUWpcweX",
+  "object": "chat.completion",
+  "created": 1759490713,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [],\n  \"Location\": [\n    {\"Location\": {\"value\": \"minimum longitude (x min in decimal degree): 5,79922100\", \"span\": [968, 1022]}},\n    {\"Location\": {\"value\": \"maximum longitude (x max in decimal degree): 15,08954000\", \"span\": [1024, 1081]}},\n    {\"Location\": {\"value\": \"minimum latitude (y min in decimal degree): 47,15766000\", \"span\": [1083, 1138]}},\n    {\"Location\": {\"value\": \"maximum latitude (y max in decimal degree): 55,08484000\", \"span\": [1140, 1196]}}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": {\"value\": \"1961 - 2100\", \"span\": [214, 225]}},\n    {\"TimeStatement\": {\"value\": \"1961 - 2013\", \"span\": [365, 376]}},\n    {\"TimeStatement\": {\"value\": \"2011 – 2050\", \"span\": [754, 766]}},\n    {\"TimeStatement\": {\"value\": \"2011 – 2100\", \"span\": [771, 783]}},\n    {\"TimeStatement\": {\"value\": \"31.12.2016\", \"span\": [1067, 1077]}},\n    {\"TimeStatement\": {\"value\": \"01.01.1961 - 31.12.2099\", \"span\": [1135, 1159]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4806,
+    "completion_tokens": 342,
+    "total_tokens": 5148,
+    "prompt_tokens_details": {
+      "cached_tokens": 4352,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

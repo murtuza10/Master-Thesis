@@ -1,0 +1,29 @@
+{
+  "id": "gen-1759498973-Z677lXhYbclHlCu0TJyB",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759498973,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"Secale cereale\", \"span\": [50, 63]}},\n    {\"Crop\": { \"value\": \"rye\", \"span\": [66, 69]}},\n    {\"Crop\": { \"value\": \"rye\", \"span\": [136, 139]}},\n    {\"Crop\": { \"value\": \"rye\", \"span\": [1024, 1027]}},\n    {\"Crop\": { \"value\": \"rye\", \"span\": [1165, 1168]}}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Northern Europe\", \"span\": [97, 111]}},\n    {\"Location\": { \"value\": \"German\", \"span\": [402, 408]}}\n  ],\n  \"TimeStatement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 16406,
+    "completion_tokens": 193,
+    "total_tokens": 16599,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": null
+  }
+}

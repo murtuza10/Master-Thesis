@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMYERTkURXhaUGfcMdvM1lt5m7xyK",
+  "object": "chat.completion",
+  "created": 1759490839,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [],\n  \"Location\": [\n    {\"Location\": {\"value\": \"Germany\", \"span\": [124, 131]}},\n    {\"Location\": {\"value\": \"Germany\", \"span\": [365, 372]}}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": {\"value\": \"three years\", \"span\": [228, 239]}},\n    {\"TimeStatement\": {\"value\": \"2011/2012\", \"span\": [242, 251]}},\n    {\"TimeStatement\": {\"value\": \"2014/2015\", \"span\": [254, 263]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4436,
+    "completion_tokens": 143,
+    "total_tokens": 4579,
+    "prompt_tokens_details": {
+      "cached_tokens": 4096,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

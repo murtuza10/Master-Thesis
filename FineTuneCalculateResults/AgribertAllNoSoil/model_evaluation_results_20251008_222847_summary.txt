@@ -1,0 +1,55 @@
+================================================================================
+MODEL EVALUATION RESULTS SUMMARY
+================================================================================
+Evaluation Date: 2025-10-08T22:28:47.843258
+Model Path: /lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/agribert-new_final_model_regularized_saved_nosoil-30
+Test Dataset Size: 303
+Labels Used: ['O', 'B-Crop', 'I-Crop', 'B-TimeStatement', 'I-TimeStatement', 'B-Location', 'I-Location']
+
+================================================================================
+F1 SCORES
+================================================================================
+Exact F1 Score (Strict Entity Matching): 0.7637
+Partial F1 Score (Lenient/Token-level): 0.7852
+
+================================================================================
+CLASSIFICATION REPORTS
+================================================================================
+
+TOKEN-LEVEL CLASSIFICATION REPORT:
+--------------------------------------------------
+                 precision    recall  f1-score   support
+
+         B-Crop       0.78      0.87      0.82        89
+     B-Location       0.54      0.88      0.67        59
+B-TimeStatement       0.77      0.96      0.85       112
+         I-Crop       0.65      0.87      0.74        30
+     I-Location       0.33      0.50      0.40         6
+I-TimeStatement       0.75      0.72      0.74        29
+              O       1.00      0.99      0.99      7872
+
+       accuracy                           0.98      8197
+      macro avg       0.69      0.83      0.75      8197
+   weighted avg       0.99      0.98      0.98      8197
+
+
+ENTITY-LEVEL CLASSIFICATION REPORT:
+--------------------------------------------------
+               precision    recall  f1-score   support
+
+         Crop       0.72      0.84      0.78        89
+     Location       0.51      0.83      0.63        59
+TimeStatement       0.71      0.92      0.80       112
+
+    micro avg       0.66      0.87      0.75       260
+    macro avg       0.65      0.86      0.74       260
+ weighted avg       0.67      0.87      0.75       260
+
+
+================================================================================
+ADDITIONAL STATISTICS
+================================================================================
+Total sequences: 303
+Total tokens: 8197
+Unique labels in predictions: 7
+Unique labels in ground truth: 7

@@ -1,0 +1,29 @@
+{
+  "id": "gen-1759498816-fxKnbkhzcJJjPGfCmq8f",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759498816,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"grapes\", \"span\": [145, 151] }},\n    {\"Crop\": { \"value\": \"grape clusters\", \"span\": [1101, 1114] }},\n    {\"Crop\": { \"value\": \"grape cluster\", \"span\": [1872, 1884] }}\n  ],\n  \"Location\": [],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2017\", \"span\": [760, 761] }},\n    {\"TimeStatement\": { \"value\": \"2018\", \"span\": [766, 767] }},\n    {\"TimeStatement\": { \"value\": \"30.8.2017\", \"span\": [1190, 1199] }},\n    {\"TimeStatement\": { \"value\": \"6.9.2017\", \"span\": [1204, 1212] }},\n    {\"TimeStatement\": { \"value\": \"three weeks later at 20.9.2017\", \"span\": [1217, 1245] }},\n    {\"TimeStatement\": { \"value\": \"25.9.2017\", \"span\": [1249, 1258] }},\n    {\"TimeStatement\": { \"value\": \"2018\", \"span\": [1412, 1416] }},\n    {\"TimeStatement\": { \"value\": \"24.8.2018\", \"span\": [1510, 1519] }},\n    {\"TimeStatement\": { \"value\": \"31.8.2018\", \"span\": [1524, 1533] }},\n    {\"TimeStatement\": { \"value\": \"13.9.2018\", \"span\": [1568, 1577] }},\n    {\"TimeStatement\": { \"value\": \"20.9.2018\", \"span\": [1581, 1590] }},\n    {\"TimeStatement\": { \"value\": \"2018\", \"span\": [1694, 1698] }},\n    {\"TimeStatement\": { \"value\": \"29.8.2018\", \"span\": [1802, 1811] }},\n    {\"TimeStatement\": { \"value\": \"4.9.2018\", \"span\": [1816, 1824] }},\n    {\"TimeStatement\": { \"value\": \"two weeks\", \"span\": [1924, 1934] }},\n    {\"TimeStatement\": { \"value\": \"12.9.2018\", \"span\": [1960, 1969] }},\n    {\"TimeStatement\": { \"value\": \"29.9.2018\", \"span\": [1981, 1990] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 8022,
+    "completion_tokens": 597,
+    "total_tokens": 8619,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": null
+  }
+}

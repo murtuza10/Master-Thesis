@@ -12,7 +12,7 @@ import os
 from datetime import datetime
 
 # Model and tokenizer paths
-model_path = "/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/agribert-english_final_model_regularized_saved_broad_3.0-1"
+model_path = "/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/scibert_final_model_regularized_saved_nosoil-30"
 
 def compute_advanced_f1_scores(predictions, label_ids):
     """Advanced F1 computation with boundary-relaxed evaluation"""
@@ -121,7 +121,7 @@ def load_saved_model(model_path):
     print(f"Number of labels: {model.config.num_labels}")
     
     return model, tokenizer
-label_list = ["O", "B-startTime", "I-startTime", "B-endTime", "I-endTime", "B-city", "I-city", "B-duration", "I-duration", "B-cropSpecies", "I-cropSpecies", "B-region", "I-region", "B-country", "I-country", "B-Soil", "I-Soil"]
+label_list = ["O","B-Crop", "I-Crop", "B-TimeStatement","I-TimeStatement","B-Location","I-Location"]
 
 def align_predictions(predictions, label_ids):
     preds = np.argmax(predictions, axis=2)
@@ -383,9 +383,15 @@ def evaluate_with_test_dataset(test_dataset, model=None, tokenizer=None, compute
     # Evaluate on test set
     predictions, label_ids = evaluate_model_on_test_set(model, tokenizer, tokenized_test, compute_metrics_func)
     
-    # Compute F1 scores
-# Get the dictionary result
+    # Compute F1 scores and get decoded sequences
     exact_f1, partial_f1, preds, labels  = compute_advanced_f1_scores(predictions, label_ids)
+
+    # Print unique gold and predicted labels (IOB tags) for quick inspection
+    gold_labels = sorted({lab for seq in labels for lab in seq})
+    pred_labels = sorted({lab for seq in preds for lab in seq})
+    print("\nLabel sets (IOB):")
+    print(f"Gold labels:      {gold_labels}")
+    print(f"Predicted labels: {pred_labels}")
 
     
     # Print results
@@ -437,7 +443,7 @@ def quick_evaluate(save_results=True, output_dir="./evaluation_results"):
     
     # Load test dataset
     print("Loading test dataset...")
-    test_dataset  = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset19September/Test_NER_dataset_English.json")
+    test_dataset  = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset19SeptemberNoSoil/Test_NER_dataset_Broad_NoSoil.json")
 
     print(f"Test dataset loaded! Size: {len(test_dataset)}")
    
@@ -463,7 +469,7 @@ if __name__ == "__main__":
     # Quick and easy way to run evaluation with file saving
     exact_f1, partial_f1, saved_files = quick_evaluate(
         save_results=True, 
-        output_dir="/home/s27mhusa_hpc/Master-Thesis/FineTuneCalculateResults/AgribertEnglishBroad"
+        output_dir="/home/s27mhusa_hpc/Master-Thesis/FineTuneCalculateResults/ScibertAllNoSoil"
     )
     
     print(f"\n✅ Evaluation completed!")

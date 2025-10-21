@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMaMEPVuF4P5yjrEM9C0NG21L7ltE",
+  "object": "chat.completion",
+  "created": 1759499010,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [\n    {\"Crop\": {\"value\": \"barley\", \"span\": [120, 126]}},\n    {\"Crop\": {\"value\": \"Hordeum vulgare ssp. vulgare\", \"span\": [128, 158]}},\n    {\"Crop\": {\"value\": \"barley\", \"span\": [235, 241]}},\n    {\"Crop\": {\"value\": \"barley\", \"span\": [481, 487]}}\n  ],\n  \"Location\": [],\n  \"TimeStatement\": []\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14368,
+    "completion_tokens": 121,
+    "total_tokens": 14489,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMXzcyLYn0KizBIFjMB4ezp3fkisX",
+  "object": "chat.completion",
+  "created": 1759489920,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [],\n  \"Location\": [],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"28.05.2019\", \"span\": [918, 928] }},\n    {\"TimeStatement\": { \"value\": \"2012\", \"span\": [953, 957] }},\n    {\"TimeStatement\": { \"value\": \"2012\", \"span\": [969, 973] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8977,
+    "completion_tokens": 102,
+    "total_tokens": 9079,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

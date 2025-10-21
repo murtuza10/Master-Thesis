@@ -1,0 +1,29 @@
+{
+  "id": "gen-1759498982-xfO6qUmdjtSx49HNiL0C",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759498982,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"Winter wheat\", \"span\": [857, 868] }}\n  ],\n  \"Location\": [],\n  \"TimeStatement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 8337,
+    "completion_tokens": 49,
+    "total_tokens": 8386,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": null
+  }
+}

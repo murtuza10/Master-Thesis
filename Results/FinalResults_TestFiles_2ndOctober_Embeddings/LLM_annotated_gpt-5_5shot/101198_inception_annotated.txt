@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMYDUgRAzSOOHkws6O6ZqjTrsypd6",
+  "object": "chat.completion",
+  "created": 1759490780,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [],\n  \"Location\": [],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2050\", \"span\": [637, 641] }},\n    {\"TimeStatement\": { \"value\": \"2050\", \"span\": [1188, 1192] }},\n    {\"TimeStatement\": { \"value\": \"2023\", \"span\": [1774, 1778] }},\n    {\"TimeStatement\": { \"value\": \"2023\", \"span\": [1940, 1944] }},\n    {\"TimeStatement\": { \"value\": \"2020\", \"span\": [2327, 2331] }},\n    {\"TimeStatement\": { \"value\": \"2050\", \"span\": [2336, 2340] }},\n    {\"TimeStatement\": { \"value\": \"2023\", \"span\": [3059, 3063] }},\n    {\"TimeStatement\": { \"value\": \"2023\", \"span\": [3241, 3245] }},\n    {\"TimeStatement\": { \"value\": \"2020\", \"span\": [3354, 3358] }},\n    {\"TimeStatement\": { \"value\": \"2020\", \"span\": [3370, 3374] }},\n    {\"TimeStatement\": { \"value\": \"2018\", \"span\": [3551, 3555] }},\n    {\"TimeStatement\": { \"value\": \"2024\", \"span\": [3707, 3711] }},\n    {\"TimeStatement\": { \"value\": \"2024\", \"span\": [3794, 3798] }},\n    {\"TimeStatement\": { \"value\": \"2023\", \"span\": [3872, 3876] }},\n    {\"TimeStatement\": { \"value\": \"2023–2028\", \"span\": [4092, 4101] }},\n    {\"TimeStatement\": { \"value\": \"2024-03\", \"span\": [4136, 4143] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5542,
+    "completion_tokens": 432,
+    "total_tokens": 5974,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMYDxFz6NT2LBDKb4gLTd0P0pTqM7",
+  "object": "chat.completion",
+  "created": 1759490809,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"grape\", \"span\": [223, 228] }},\n    {\"Crop\": { \"value\": \"grape varieties\", \"span\": [243, 259] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Europe\", \"span\": [121, 127] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [367, 374] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [451, 458] }},\n    {\"Location\": { \"value\": \"Europe\", \"span\": [616, 622] }},\n    {\"Location\": { \"value\": \"Dossenheim\", \"span\": [1059, 1069] }},\n    {\"Location\": { \"value\": \"Siebeldingen\", \"span\": [1074, 1086] }},\n    {\"Location\": { \"value\": \"Darmstadt\", \"span\": [1122, 1131] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [1256, 1263] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2011\", \"span\": [323, 327] }},\n    {\"TimeStatement\": { \"value\": \"late summer 2011\", \"span\": [456, 473] }},\n    {\"TimeStatement\": { \"value\": \"2011\", \"span\": [1041, 1045] }},\n    {\"TimeStatement\": { \"value\": \"February 2018\", \"span\": [870, 884] }},\n    {\"TimeStatement\": { \"value\": \"2011\", \"span\": [1187, 1191] }},\n    {\"TimeStatement\": { \"value\": \"2018\", \"span\": [1196, 1200] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4636,
+    "completion_tokens": 410,
+    "total_tokens": 5046,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

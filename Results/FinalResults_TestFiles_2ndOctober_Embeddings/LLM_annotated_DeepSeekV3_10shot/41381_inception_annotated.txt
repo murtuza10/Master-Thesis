@@ -1,0 +1,29 @@
+{
+  "id": "gen-1759498902-EuN04mGR9QXFmJSfM2Qb",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759498902,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"soft-skinned fruits\", \"span\": [83, 101] }},\n    {\"Crop\": { \"value\": \"fruit-crops\", \"span\": [151, 161] }},\n    {\"Crop\": { \"value\": \"grape\", \"span\": [174, 179] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"southwest Germany\", \"span\": [72, 89] }},\n    {\"Location\": { \"value\": \"Europe\", \"span\": [106, 112] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [248, 255] }},\n    {\"Location\": { \"value\": \"southwest Germany\", \"span\": [297, 314] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [366, 373] }},\n    {\"Location\": { \"value\": \"Europe\", \"span\": [379, 385] }},\n    {\"Location\": { \"value\": \"Dossenheim\", \"span\": [570, 580] }},\n    {\"Location\": { \"value\": \"Siebeldingen\", \"span\": [586, 598] }},\n    {\"Location\": { \"value\": \"Darmstadt\", \"span\": [634, 643] }},\n    {\"Location\": { \"value\": \"southwest Germany\", \"span\": [682, 699] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2011\", \"span\": [241, 245] }},\n    {\"TimeStatement\": { \"value\": \"late summer 2011\", \"span\": [280, 295] }},\n    {\"TimeStatement\": { \"value\": \"2011\", \"span\": [1048, 1052] }},\n    {\"TimeStatement\": { \"value\": \"2018\", \"span\": [1056, 1060] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 8487,
+    "completion_tokens": 441,
+    "total_tokens": 8928,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": null
+  }
+}

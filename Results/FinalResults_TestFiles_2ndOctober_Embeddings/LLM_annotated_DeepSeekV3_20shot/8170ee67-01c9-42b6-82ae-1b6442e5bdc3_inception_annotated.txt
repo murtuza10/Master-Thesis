@@ -1,0 +1,32 @@
+{
+  "id": "gen-1759498797-yYONMJJ3gUftX2jUUNav",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759498797,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"winter barley\", \"span\": [51, 64] }},\n    {\"Crop\": { \"value\": \"oat\", \"span\": [1071, 1074] }},\n    {\"Crop\": { \"value\": \"winter barley\", \"span\": [1201, 1214] }},\n    {\"Crop\": { \"value\": \"winter oilseed rape\", \"span\": [1223, 1242] }},\n    {\"Crop\": { \"value\": \"winter wheat\", \"span\": [1247, 1259] }},\n    {\"Crop\": { \"value\": \"lupine\", \"span\": [1264, 1271] }},\n    {\"Crop\": { \"value\": \"winter rye\", \"span\": [1276, 1286] }},\n    {\"Crop\": { \"value\": \"Hordeum vulgare L.\", \"span\": [1585, 1603] }},\n    {\"Crop\": { \"value\": \"OTTO\", \"span\": [1615, 1619] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Braunschweig\", \"span\": [28, 40] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2014\", \"span\": [65, 69] }},\n    {\"TimeStatement\": { \"value\": \"1985\", \"span\": [835, 839] }},\n    {\"TimeStatement\": { \"value\": \"2008\", \"span\": [841, 845] }},\n    {\"TimeStatement\": { \"value\": \"2013\", \"span\": [1019, 1023] }},\n    {\"TimeStatement\": { \"value\": \"2013\", \"span\": [1190, 1194] }},\n    {\"TimeStatement\": { \"value\": \"2014\", \"span\": [1593, 1597] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 16633,
+    "completion_tokens": 448,
+    "total_tokens": 17081,
+    "prompt_tokens_details": {
+      "cached_tokens": 3,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": null
+  }
+}

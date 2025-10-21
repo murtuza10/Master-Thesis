@@ -1,0 +1,32 @@
+{
+  "id": "gen-1759498935-liYx1fESL6IJWGzF3hVk",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759498935,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"Picea abies\", \"span\": [30, 41] }},\n    {\"Crop\": { \"value\": \"Norway spruce\", \"span\": [104, 117] }},\n    {\"Crop\": { \"value\": \"Picea abies\", \"span\": [119, 130] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Germany\", \"span\": [89, 96] }},\n    {\"Location\": { \"value\": \"Western Germany\", \"span\": [180, 195] }},\n    {\"Location\": { \"value\": \"Europe\", \"span\": [346, 352] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"50 years\", \"span\": [53, 61] }},\n    {\"TimeStatement\": { \"value\": \"51 years\", \"span\": [156, 163] }},\n    {\"TimeStatement\": { \"value\": \"1964/68\", \"span\": [281, 288] }},\n    {\"TimeStatement\": { \"value\": \"age 7\", \"span\": [438, 443] }},\n    {\"TimeStatement\": { \"value\": \"age 10\", \"span\": [445, 451] }},\n    {\"TimeStatement\": { \"value\": \"age 13\", \"span\": [453, 459] }},\n    {\"TimeStatement\": { \"value\": \"age 16\", \"span\": [461, 467] }},\n    {\"TimeStatement\": { \"value\": \"age 16\", \"span\": [490, 496] }},\n    {\"TimeStatement\": { \"value\": \"age 21\", \"span\": [498, 504] }},\n    {\"TimeStatement\": { \"value\": \"age 29\", \"span\": [506, 512] }},\n    {\"TimeStatement\": { \"value\": \"age 39\", \"span\": [514, 520] }},\n    {\"TimeStatement\": { \"value\": \"age 51\", \"span\": [522, 528] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 8780,
+    "completion_tokens": 473,
+    "total_tokens": 9253,
+    "prompt_tokens_details": {
+      "cached_tokens": 3,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": null
+  }
+}

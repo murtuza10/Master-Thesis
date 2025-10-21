@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMaIiWkKiO6IyA99k3kdIlatuHl9i",
+  "object": "chat.completion",
+  "created": 1759498792,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"Möhre\", \"span\": [257, 262] }},\n    {\"Crop\": { \"value\": \"Salat\", \"span\": [264, 269] }},\n    {\"Crop\": { \"value\": \"Apfel\", \"span\": [271, 276] }},\n    {\"Crop\": { \"value\": \"Erdbeere\", \"span\": [281, 289] }},\n    {\"Crop\": { \"value\": \"Erdbeere\", \"span\": [316, 324] }},\n    {\"Crop\": { \"value\": \"Himbeere\", \"span\": [329, 337] }}\n  ],\n  \"Location\": [],\n  \"TimeStatement\": []\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 16554,
+    "completion_tokens": 168,
+    "total_tokens": 16722,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

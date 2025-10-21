@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMYEIhoyEgFXVf3pIn7yf0JzhtdAE",
+  "object": "chat.completion",
+  "created": 1759490830,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"rye\", \"span\": [79, 82] }},\n    {\"Crop\": { \"value\": \"Secale cereale\", \"span\": [84, 99] }},\n    {\"Crop\": { \"value\": \"Rye\", \"span\": [134, 137] }},\n    {\"Crop\": { \"value\": \"Secale cereale\", \"span\": [139, 154] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Northern Europe\", \"span\": [187, 202] }},\n    {\"Location\": { \"value\": \"German\", \"span\": [691, 697] }}\n  ],\n  \"TimeStatement\": []\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8601,
+    "completion_tokens": 166,
+    "total_tokens": 8767,
+    "prompt_tokens_details": {
+      "cached_tokens": 8576,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

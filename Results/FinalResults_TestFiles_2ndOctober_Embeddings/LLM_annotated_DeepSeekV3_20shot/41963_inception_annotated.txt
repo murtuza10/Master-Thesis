@@ -1,0 +1,29 @@
+{
+  "id": "gen-1759498742-jGwOpBarNG3JfhVZAf8T",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759498742,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [],\n  \"Location\": [\n    {\"Location\": { \"value\": \"5,79922100\", \"span\": [576, 587] }},\n    {\"Location\": { \"value\": \"15,08954000\", \"span\": [603, 615] }},\n    {\"Location\": { \"value\": \"47,15766000\", \"span\": [632, 644] }},\n    {\"Location\": { \"value\": \"55,08484000\", \"span\": [659, 671] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"1961 - 2100\", \"span\": [143, 153] }},\n    {\"TimeStatement\": { \"value\": \"1961 - 2013\", \"span\": [228, 239] }},\n    {\"TimeStatement\": { \"value\": \"2011 – 2050\", \"span\": [370, 382] }},\n    {\"TimeStatement\": { \"value\": \"2011 – 2100\", \"span\": [386, 398] }},\n    {\"TimeStatement\": { \"value\": \"01.01.1961 - 31.12.2099\", \"span\": [518, 542] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 17434,
+    "completion_tokens": 278,
+    "total_tokens": 17712,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": null
+  }
+}

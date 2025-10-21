@@ -15,28 +15,86 @@ import os
 import requests
 import faiss
 from sentence_transformers import SentenceTransformer
+from seqeval.metrics import (
+    classification_report,
+    f1_score,
+    precision_score,
+    recall_score,
+    accuracy_score
+)
+from seqeval.scheme import IOB2
 
 class MultiModelNER:
     """
     Multi-Model Named Entity Recognition system that uses different specialized models
-    for different entity types, including LLM-based models (Qwen, Llama) and API-based models (DeepSeek).
+    for different entity types with model-specific label lists.
     """
     
-    def __init__(self, label_list: List[str]):
-        self.label_list = label_list
-        self.id2label = {i: label for i, label in enumerate(label_list)}
-        self.label2id = {label: i for i, label in enumerate(label_list)}
+    def __init__(self, global_label_list: List[str]):
+        self.global_label_list = global_label_list
+        self.global_id2label = {i: label for i, label in enumerate(global_label_list)}
+        self.global_label2id = {label: i for i, label in enumerate(global_label_list)}
         
-        # Model configurations
+        # Model-specific label lists
+        self.model_label_lists = {
+            'roberta_all_specific': [
+                "O", "B-soilReferenceGroup", "I-soilReferenceGroup", 
+                "B-soilOrganicCarbon", "I-soilOrganicCarbon", "B-soilTexture", "I-soilTexture",
+                "B-startTime", "I-startTime", "B-endTime", "I-endTime", 
+                "B-city", "I-city", "B-duration", "I-duration", "B-cropSpecies", "I-cropSpecies",
+                "B-soilAvailableNitrogen", "I-soilAvailableNitrogen", "B-soilDepth", "I-soilDepth",
+                "B-region", "I-region", "B-country", "I-country", 
+                "B-longitude", "I-longitude", "B-latitude", "I-latitude",
+                "B-cropVariety", "I-cropVariety", "B-soilPH", "I-soilPH", 
+                "B-soilBulkDensity", "I-soilBulkDensity"
+            ],
+            'agribert_all_specific': [
+                "O", "B-soilReferenceGroup", "I-soilReferenceGroup", 
+                "B-soilOrganicCarbon", "I-soilOrganicCarbon", "B-soilTexture", "I-soilTexture",
+                "B-startTime", "I-startTime", "B-endTime", "I-endTime", 
+                "B-city", "I-city", "B-duration", "I-duration", "B-cropSpecies", "I-cropSpecies",
+                "B-soilAvailableNitrogen", "I-soilAvailableNitrogen", "B-soilDepth", "I-soilDepth",
+                "B-region", "I-region", "B-country", "I-country", 
+                "B-longitude", "I-longitude", "B-latitude", "I-latitude",
+                "B-cropVariety", "I-cropVariety", "B-soilPH", "I-soilPH", 
+                "B-soilBulkDensity", "I-soilBulkDensity"
+            ],
+            'roberta_english_specific': [
+                "O", "B-soilReferenceGroup", "I-soilReferenceGroup", 
+                "B-soilOrganicCarbon", "I-soilOrganicCarbon", "B-soilTexture", "I-soilTexture",
+                "B-startTime", "I-startTime", "B-endTime", "I-endTime", 
+                "B-city", "I-city", "B-duration", "I-duration", "B-cropSpecies", "I-cropSpecies",
+                "B-soilAvailableNitrogen", "I-soilAvailableNitrogen", "B-soilDepth", "I-soilDepth",
+                "B-region", "I-region", "B-country", "I-country", 
+                "B-longitude", "I-longitude", "B-latitude", "I-latitude",
+                "B-cropVariety", "I-cropVariety", "B-soilPH", "I-soilPH", 
+                "B-soilBulkDensity", "I-soilBulkDensity"
+            ],
+            'xlm_roberta_broad': [
+                "O", "B-Crop", "I-Crop", "B-TimeStatement", "I-TimeStatement",
+                "B-Location", "I-Location"
+            ]
+        }
+        
+        # Entity mapping for XLM RoBERTa Broad model
+        self.entity_mapping = {
+            'xlm_roberta_broad': {
+                'Location': 'locationName',  # Map Location to locationName
+                'Crop': 'cropSpecies',
+                'TimeStatement': 'startTime'  # Can be mapped as needed
+            }
+        }
+        
+        # Model configurations with updated entity names
         self.model_configs = {
             'roberta_all_specific': {
                 'path': '/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/roberta-en-de_final_model_regularized_saved_specific_22',
                 'type': 'token_classification',
-                'entities': ['cropSpecies', 'soilReferenceGroup', 'endTime', 'duration'],
+                'entities': ['cropSpecies', 'soilReferenceGroup', 'endTime', 'duration','startTime', 'soilOrganicCarbon'],
                 'languages': ['en', 'de']
             },
             'qwen_2.5_7b': {
-                'path': 'Qwen/Qwen2.5-7B-Instruct',
+                'path': '/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/Qwen2.5-7B-Instruct',
                 'type': 'causal_lm',
                 'entities': ['cropVariety', 'soilAvailableNitrogen', 'soilBulkDensity'],
                 'languages': ['en', 'de']
@@ -44,7 +102,7 @@ class MultiModelNER:
             'xlm_roberta_broad': {
                 'path': '/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/roberta-en-de_final_model_regularized_saved_nosoil_29',
                 'type': 'token_classification',
-                'entities': ['locationName'],
+                'entities': ['locationName'],  # Uses Location internally, mapped to locationName
                 'languages': ['en', 'de']
             },
             'roberta_english_specific': {
@@ -79,6 +137,8 @@ class MultiModelNER:
         
         self.models = {}
         self.tokenizers = {}
+        self.model_id2label = {}  # Store model-specific id2label mappings
+        self.model_label2id = {}  # Store model-specific label2id mappings
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         
         # FAISS index and corpus for retrieval-based few-shot learning
@@ -87,21 +147,81 @@ class MultiModelNER:
         self.corpus_texts = []
         self.corpus_entities = []
         
-        # Dataset paths
-        self.test_dataset_en_path = "/home/s27mhusa_hpc/Master-Thesis/Dataset19September/Test_NER_dataset_English_Specific.json"
-        self.train_dataset_de_path = "/home/s27mhusa_hpc/Master-Thesis/Dataset19September/NER_dataset_sentence_train_final.json"
+        # Updated dataset paths
+        self.embeddings_dataset = "/home/s27mhusa_hpc/Master-Thesis/DatasetsFinalPredictions/ner_dataset_input_output.jsonl"
+        self.test_dataset_en_path = "/home/s27mhusa_hpc/Master-Thesis/DatasetsFinalPredictions/Test_NER_dataset_English.json"
+        self.test_dataset_de_path = "/home/s27mhusa_hpc/Master-Thesis/DatasetsFinalPredictions/Test_NER_dataset_German.json"
+    
+    def get_model_labels(self, model_name: str) -> Tuple[Dict, Dict]:
+        """
+        Get model-specific label mappings.
+        
+        Args:
+            model_name: Name of the model
+            
+        Returns:
+            Tuple of (id2label, label2id) dictionaries
+        """
+        if model_name in self.model_label_lists:
+            labels = self.model_label_lists[model_name]
+            id2label = {i: label for i, label in enumerate(labels)}
+            label2id = {label: i for i, label in enumerate(labels)}
+            return id2label, label2id
+        else:
+            # Default to global labels
+            return self.global_id2label, self.global_label2id
+    
+    def map_entity_name(self, model_name: str, entity_name: str) -> str:
+        """
+        Map entity name from model-specific to global entity name.
+        
+        Args:
+            model_name: Name of the model
+            entity_name: Entity name from model prediction
+            
+        Returns:
+            Mapped entity name
+        """
+        if model_name in self.entity_mapping:
+            # Extract entity type from BIO tag
+            if entity_name.startswith('B-') or entity_name.startswith('I-'):
+                prefix = entity_name[:2]
+                entity_type = entity_name[2:]
+                
+                # Map entity type if mapping exists
+                if entity_type in self.entity_mapping[model_name]:
+                    mapped_type = self.entity_mapping[model_name][entity_type]
+                    return f"{prefix}{mapped_type}"
+        
+        return entity_name
     
     def load_model_token_classification(self, model_path: str, model_name: str):
-        """Load standard token classification model."""
+        """Load standard token classification model with model-specific labels."""
         print(f"Loading token classification model: {model_name}")
+        
+        # Get model-specific labels
+        id2label, label2id = self.get_model_labels(model_name)
+        
+        # Store for later use
+        self.model_id2label[model_name] = id2label
+        self.model_label2id[model_name] = label2id
+        
         tokenizer = AutoTokenizer.from_pretrained(model_path)
-        model = AutoModelForTokenClassification.from_pretrained(model_path)
+        
+        # Load model with custom label mapping
+        model = AutoModelForTokenClassification.from_pretrained(
+            model_path,
+            num_labels=len(id2label),
+            id2label=id2label,
+            label2id=label2id
+        )
+        
         model.to(self.device)
         model.eval()
         return model, tokenizer
     
     def load_model_causal_lm(self, model_path: str, model_name: str):
-        """Load causal LM model (Qwen/Llama) using your specific method."""
+        """Load causal LM model (Qwen/Llama)."""
         print(f"Loading causal LM model from: {model_path}")
         
         config = AutoConfig.from_pretrained(model_path, trust_remote_code=True)
@@ -148,41 +268,24 @@ class MultiModelNER:
                 print(f"✗ Error loading {model_name}: {str(e)}")
     
     def load_hf_dataset(self, dataset_path: str) -> Dataset:
-        """
-        Load Hugging Face dataset from JSON file.
-        
-        Args:
-            dataset_path: Path to JSON dataset file
-            
-        Returns:
-            Hugging Face Dataset object
-        """
+        """Load Hugging Face dataset from JSON file."""
         print(f"Loading dataset from: {dataset_path}")
         dataset = Dataset.from_json(dataset_path)
         print(f"✓ Loaded {len(dataset)} examples")
         return dataset
     
     def convert_hf_dataset_to_texts_entities(self, dataset: Dataset) -> Tuple[List[str], List[List]]:
-        """
-        Convert Hugging Face Dataset to lists of texts and entities.
-        
-        Args:
-            dataset: Hugging Face Dataset object
-            
-        Returns:
-            Tuple of (texts, entities)
-        """
+        """Convert Hugging Face Dataset to lists of texts and entities."""
         texts = []
         entities_list = []
         
         for example in dataset:
-            # Extract text - handle different possible field names
+            # Extract text
             if 'tokens' in example:
                 text = ' '.join(example['tokens'])
             elif 'text' in example:
                 text = example['text']
             else:
-                # Check if there's an 'input' field that might contain the text
                 if 'input' in example:
                     input_field = example['input']
                     text = input_field.split("\n### Text ###\n", 1)[-1] if "\n### Text ###\n" in input_field else input_field
@@ -190,10 +293,9 @@ class MultiModelNER:
                     print(f"Warning: Could not find text field in example: {example.keys()}")
                     continue
             
-            # Extract entities - handle different formats
+            # Extract entities
             entities = []
             if 'ner_tags' in example:
-                # Convert BIO tags to entity format
                 tokens = example['tokens'] if 'tokens' in example else text.split()
                 ner_tags = example['ner_tags']
                 
@@ -202,7 +304,7 @@ class MultiModelNER:
                 
                 for i, (token, tag) in enumerate(zip(tokens, ner_tags)):
                     if isinstance(tag, int):
-                        tag = self.id2label.get(tag, 'O')
+                        tag = self.global_id2label.get(tag, 'O')
                     
                     if tag.startswith('B-'):
                         if current_entity:
@@ -221,7 +323,7 @@ class MultiModelNER:
                             entities.append(current_entity)
                             current_entity = None
                     
-                    start_idx += len(token) + 1  # +1 for space
+                    start_idx += len(token) + 1
                 
                 if current_entity:
                     entities.append(current_entity)
@@ -229,7 +331,6 @@ class MultiModelNER:
             elif 'entities' in example:
                 entities = example['entities']
             elif 'output' in example:
-                # Parse output field
                 output_field = example['output']
                 try:
                     entities = json.loads(output_field) if isinstance(output_field, str) else output_field
@@ -244,18 +345,9 @@ class MultiModelNER:
         return texts, entities_list
     
     def build_or_load_index(self, embeddings: np.ndarray, index_path: str = None):
-        """
-        Build FAISS index from embeddings.
-        
-        Args:
-            embeddings: Numpy array of embeddings
-            index_path: Optional path to save the index
-            
-        Returns:
-            FAISS index
-        """
+        """Build FAISS index from embeddings."""
         d = embeddings.shape[1]
-        index = faiss.IndexFlatIP(d)  # cosine via normalized vectors
+        index = faiss.IndexFlatIP(d)
         faiss.normalize_L2(embeddings)
         index.add(embeddings)
         if index_path:
@@ -263,16 +355,7 @@ class MultiModelNER:
         return index
     
     def embed_texts(self, texts: List[str], batch_size: int = 64):
-        """
-        Embed texts using sentence transformer.
-        
-        Args:
-            texts: List of texts to embed
-            batch_size: Batch size for embedding
-            
-        Returns:
-            Numpy array of embeddings
-        """
+        """Embed texts using sentence transformer."""
         if self.embedder is None:
             print("Loading sentence transformer for embeddings...")
             self.embedder = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
@@ -287,16 +370,7 @@ class MultiModelNER:
         return embs
     
     def get_similar_examples(self, query_text: str, top_k: int = 5):
-        """
-        Retrieve similar examples using FAISS.
-        
-        Args:
-            query_text: Query text
-            top_k: Number of similar examples to retrieve
-            
-        Returns:
-            Tuple of (examples, (distances, indices))
-        """
+        """Retrieve similar examples using FAISS."""
         if self.faiss_index is None or self.embedder is None:
             raise ValueError("FAISS index not initialized. Call setup_retrieval() first.")
         
@@ -306,74 +380,41 @@ class MultiModelNER:
         examples = [(self.corpus_texts[i], self.corpus_entities[i]) for i in idxs]
         return examples, (D[0].tolist(), idxs)
     
-    def setup_retrieval(self, dataset_path: str = None, index_path: str = None, use_german: bool = False):
-        """
-        Setup FAISS-based retrieval system using Hugging Face datasets.
-        
-        Args:
-            dataset_path: Path to training dataset (JSON format). If None, uses default German dataset
-            index_path: Optional path to save/load FAISS index
-            use_german: If True, use German dataset, else use English
-        """
+    def setup_retrieval(self, dataset_path: str = None, index_path: str = None):
+        """Setup FAISS-based retrieval system."""
         print("Setting up retrieval system...")
         
-        # Use default path if not provided
         if dataset_path is None:
-            dataset_path = self.train_dataset_de_path if use_german else self.test_dataset_en_path
+            dataset_path = self.embeddings_dataset
         
-        # Load Hugging Face dataset
         dataset = self.load_hf_dataset(dataset_path)
-        
-        # Convert to texts and entities
         texts, entities = self.convert_hf_dataset_to_texts_entities(dataset)
         self.corpus_texts = texts
         self.corpus_entities = entities
         
-        # Check if index already exists
         if index_path and os.path.exists(index_path):
             print(f"Loading existing FAISS index from {index_path}")
             self.faiss_index = faiss.read_index(index_path)
-            # Still need to load embedder
             if self.embedder is None:
                 self.embedder = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
         else:
-            # Embed texts
             print("Embedding corpus texts...")
             embeddings = self.embed_texts(texts)
-            
-            # Build index
             print("Building FAISS index...")
             self.faiss_index = self.build_or_load_index(embeddings, index_path)
         
         print(f"✓ Retrieval system ready with {len(self.corpus_texts)} examples")
     
     def generate_ner_prompts(self, text: str, entity_types: List[str] = None):
-        """
-        Generate system and user prompts for LLM-based NER.
-        
-        Args:
-            text: Input text
-            entity_types: List of entity types to extract (optional)
-            
-        Returns:
-            Tuple of (system_prompt, user_prompt)
-        """
+        """Generate system and user prompts for LLM-based NER."""
         if entity_types is None:
             entity_types = []
         
         entity_descriptions = {
-            'cropVariety': 'Specific variety or cultivar name of a crop (e.g., "Winter Wheat", "Golden Harvest")',
-            'soilAvailableNitrogen': 'Measurements or values related to nitrogen availability in soil',
-            'soilBulkDensity': 'Measurements of soil bulk density, typically in g/cm³ or kg/m³',
-            'soilTexture': 'Description of soil texture (e.g., "sandy loam", "clay", "silt")',
-            'cropSpecies': 'Type of crop species (e.g., "Wheat", "Corn", "Rice")',
-            'locationName': 'Geographic location or place name',
-            'startTime': 'Start time or date of an event or period',
-            'endTime': 'End time or date of an event or period',
-            'soilDepth': 'Depth measurement of soil',
-            'soilPH': 'pH value of soil',
-            'soilOrganicCarbon': 'Organic carbon content in soil',
-            'soilReferenceGroup': 'Soil classification or reference group'
+            'cropVariety': 'Specific cultivar/variety name (e.g., "Golden Delicious")',
+            'soilAvailableNitrogen': 'Nitrogen is present in a soil sample that is available to plants. Please only annotate explicit mentions of the available nitrogen. Make sure it is related to the nitrogen in the soil and not in fertilizers, etc',
+            'soilBulkDensity': 'The dry weight of soil divided by its volume. Please annotate the term “bulk density” if it is mentioned in a text: ',
+            'soilTexture': 'Soil texture measures the proportion of sand, silt, and clay-sized particles in a soil sample. Please annotate a soil texture if it is part of a soil texture classification such as the USDA Soil Texture Classification, consisting of 12 different soil textures or the soil textures of the Bodenkundliche Kartieranleitung',
         }
         
         if entity_types:
@@ -403,31 +444,18 @@ Few-shot Examples:
 """
         
         user_prompt = f"Extract entities from the following text:\n\n{text}"
-        
         return system_prompt, user_prompt
     
     def perform_ner_deepseek(self, text: str, max_length: int = 512, examples: List = None):
-        """
-        Perform NER using DeepSeek API.
-        
-        Args:
-            text: Input text
-            max_length: Maximum token length for response
-            examples: Few-shot examples
-            
-        Returns:
-            API response dictionary
-        """
+        """Perform NER using DeepSeek API."""
         if examples is None:
-            # Use retrieval to get similar examples
             if self.faiss_index is not None:
-                examples, _ = self.get_similar_examples(text, top_k=3)
+                examples, _ = self.get_similar_examples(text, top_k=5)
             else:
                 examples = []
         
         system_prompt, user_prompt = self.generate_ner_prompts(text)
         
-        # Add few-shot examples
         blocks = []
         for i, (example_text, ents) in enumerate(examples):
             blocks.append(f"### Example {i} ###:\nInput Text:\n {example_text}\nOutput: {json.dumps(ents, ensure_ascii=False)}")
@@ -448,18 +476,10 @@ Few-shot Examples:
                 data=json.dumps({
                     "model": "deepseek/deepseek-chat-v3-0324",
                     "messages": [
-                        {
-                            "role": "system",
-                            "content": system_prompt
-                        },
-                        {
-                            "role": "user",
-                            "content": user_prompt
-                        }
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": user_prompt}
                     ],
-                    "provider": {
-                        "sort": "price"
-                    },
+                    "provider": {"sort": "price"},
                     "temperature": 0.7,
                     "max_tokens": max_length,
                     "top_p": 0.90,
@@ -470,23 +490,9 @@ Few-shot Examples:
             print(f"Error calling DeepSeek API: {str(e)}")
             return {"entities": []}
     
-    def perform_ner_llama(self, model, tokenizer, text: str, max_length: int = 1500, 
-                         examples: List = None):
-        """
-        Perform NER using Llama model with chat template.
-        
-        Args:
-            model: Llama model
-            tokenizer: Llama tokenizer
-            text: Input text
-            max_length: Maximum new tokens to generate
-            examples: Few-shot examples
-            
-        Returns:
-            Generated response text
-        """
+    def perform_ner_llama(self, model, tokenizer, text: str, max_length: int = 1500, examples: List = None):
+        """Perform NER using Llama model with chat template."""
         if examples is None:
-            # Use retrieval to get similar examples
             if self.faiss_index is not None:
                 examples, _ = self.get_similar_examples(text, top_k=5)
             else:
@@ -494,14 +500,12 @@ Few-shot Examples:
         
         system_prompt, user_prompt = self.generate_ner_prompts(text)
         
-        # Add few-shot examples
         blocks = []
         for i, (example_text, ents) in enumerate(examples):
             blocks.append(f"### Example {i} ###:\nInput Text:\n {example_text}\nOutput: {json.dumps(ents, ensure_ascii=False)}")
         blocks_str = "\n\n".join(blocks)
         system_prompt += blocks_str
         
-        # Build messages list according to role-based chat format
         messages = [
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt}
@@ -509,7 +513,6 @@ Few-shot Examples:
         
         device = model.device
         
-        # Tokenize the prompt using chat template
         input_ids = tokenizer.apply_chat_template(
             messages,
             tokenize=True,
@@ -518,7 +521,6 @@ Few-shot Examples:
         ).to(device)
         attention_mask = torch.ones_like(input_ids)
         
-        # Generate response
         output_ids = model.generate(
             input_ids=input_ids, 
             attention_mask=attention_mask, 
@@ -527,39 +529,22 @@ Few-shot Examples:
             top_p=0.9,
         )
         
-        # Decode response
         response = tokenizer.decode(output_ids[0][input_ids.shape[1]:], skip_special_tokens=True)
         return response
     
     def perform_ner_causal_lm(self, text: str, tokens: List[str], model_name: str, 
                              target_entity: str, max_length: int = 1500) -> List[str]:
-        """
-        Perform NER using causal LM model (Qwen/Llama) with prompting.
-        
-        Args:
-            text: Input text
-            tokens: Pre-tokenized tokens
-            model_name: Name of the model to use
-            target_entity: Entity type to extract
-            max_length: Maximum new tokens to generate
-            
-        Returns:
-            List of BIO tags for each token
-        """
+        """Perform NER using causal LM model."""
         model = self.models[model_name]
         tokenizer = self.tokenizers[model_name]
         
-        # Get similar examples using retrieval if available
         examples = None
         if self.faiss_index is not None:
             examples, _ = self.get_similar_examples(text, top_k=5)
         
-        # Use Llama-style inference
         response = self.perform_ner_llama(model, tokenizer, text, max_length, examples)
         
-        # Parse JSON response to extract entities
         try:
-            # Extract JSON from response
             json_start = response.find('{')
             json_end = response.rfind('}') + 1
             if json_start != -1 and json_end > json_start:
@@ -572,7 +557,6 @@ Few-shot Examples:
             print(f"Failed to parse JSON response from {model_name}")
             entities = []
         
-        # Convert entities to BIO tags
         bio_tags = ['O'] * len(tokens)
         
         for entity in entities:
@@ -583,7 +567,6 @@ Few-shot Examples:
             if not entity_text:
                 continue
             
-            # Find entity in tokens
             entity_words = entity_text.split()
             for i in range(len(tokens) - len(entity_words) + 1):
                 if tokens[i:i+len(entity_words)] == entity_words or \
@@ -596,17 +579,7 @@ Few-shot Examples:
         return bio_tags
     
     def get_model_for_entity(self, entity_type: str, language: str = 'en') -> Tuple[str, str, object, object]:
-        """
-        Get the appropriate model and tokenizer for a given entity type and language.
-        
-        Args:
-            entity_type: The entity type (e.g., 'cropSpecies')
-            language: Language code ('en' or 'de')
-            
-        Returns:
-            Tuple of (model_name, model_type, model, tokenizer)
-        """
-        # Check for language-specific overrides
+        """Get the appropriate model for a given entity type and language."""
         if entity_type in self.language_overrides:
             if language in self.language_overrides[entity_type]:
                 override_model = self.language_overrides[entity_type][language]
@@ -615,7 +588,6 @@ Few-shot Examples:
                        self.models.get(override_model), 
                        self.tokenizers.get(override_model))
         
-        # Find the model that handles this entity type
         for model_name, config in self.model_configs.items():
             if entity_type in config['entities'] and language in config['languages']:
                 return (model_name, config['type'],
@@ -626,24 +598,10 @@ Few-shot Examples:
     
     def predict_entity_with_model(self, text: str, tokens: List[str], model_name: str, 
                                   model_type: str, target_entity: str) -> List[str]:
-        """
-        Predict entities using a specific model, filtering for target entity type.
-        
-        Args:
-            text: Input text
-            tokens: Pre-tokenized tokens
-            model_name: Name of the model to use
-            model_type: Type of model ('token_classification', 'causal_lm', 'api')
-            target_entity: Entity type to extract
-            
-        Returns:
-            List of BIO tags for each token
-        """
+        """Predict entities using a specific model."""
         if model_type == 'api':
-            # Handle DeepSeek API
             response = self.perform_ner_deepseek(text)
             
-            # Parse response and convert to BIO tags
             bio_tags = ['O'] * len(tokens)
             try:
                 if 'choices' in response and len(response['choices']) > 0:
@@ -655,7 +613,6 @@ Few-shot Examples:
                         result = json.loads(json_str)
                         entities = result.get('entities', [])
                         
-                        # Convert to BIO tags
                         for entity in entities:
                             if target_entity.lower() not in entity.get('label', '').lower():
                                 continue
@@ -675,32 +632,31 @@ Few-shot Examples:
             return bio_tags
         
         elif model_type == 'causal_lm':
-            # Handle Qwen/Llama
             return self.perform_ner_causal_lm(text, tokens, model_name, target_entity)
         
         elif model_type == 'token_classification':
-            # Handle standard token classification models
             model = self.models[model_name]
             tokenizer = self.tokenizers[model_name]
             
-            # Tokenize
+            # Get model-specific id2label mapping
+            id2label = self.model_id2label.get(model_name, self.global_id2label)
+            
             encoding = tokenizer(tokens, is_split_into_words=True, 
                                return_tensors='pt', truncation=True, 
                                padding=True, return_offsets_mapping=True)
             
-            # Move to device
             input_ids = encoding['input_ids'].to(self.device)
             attention_mask = encoding['attention_mask'].to(self.device)
             
-            # Get predictions
             with torch.no_grad():
                 outputs = model(input_ids=input_ids, attention_mask=attention_mask)
                 predictions = torch.argmax(outputs.logits, dim=-1)
             
-            # Convert predictions to labels
-            predicted_labels = [self.id2label[pred.item()] for pred in predictions[0]]
+            predicted_labels = [id2label[pred.item()] for pred in predictions[0]]
             
-            # Align subword tokens back to word tokens
+            # Map entity names if needed (e.g., Location -> locationName)
+            predicted_labels = [self.map_entity_name(model_name, label) for label in predicted_labels]
+            
             word_ids = encoding.word_ids(batch_index=0)
             aligned_labels = []
             previous_word_id = None
@@ -709,14 +665,12 @@ Few-shot Examples:
                 if word_id is None:
                     continue
                 if word_id != previous_word_id:
-                    # Filter: only keep labels for target entity
                     if target_entity in label or label == 'O':
                         aligned_labels.append(label)
                     else:
                         aligned_labels.append('O')
                     previous_word_id = word_id
             
-            # Pad or truncate to match original tokens length
             while len(aligned_labels) < len(tokens):
                 aligned_labels.append('O')
             aligned_labels = aligned_labels[:len(tokens)]
@@ -726,21 +680,10 @@ Few-shot Examples:
         else:
             raise ValueError(f"Unknown model type: {model_type}")
     
-    def merge_predictions(self, all_predictions: Dict[str, List[str]], 
-                         tokens: List[str]) -> List[str]:
-        """
-        Merge predictions from different models into a single prediction.
-        
-        Args:
-            all_predictions: Dictionary mapping entity types to their predictions
-            tokens: Original tokens
-            
-        Returns:
-            Final merged predictions
-        """
+    def merge_predictions(self, all_predictions: Dict[str, List[str]], tokens: List[str]) -> List[str]:
+        """Merge predictions from different models."""
         final_labels = ['O'] * len(tokens)
         
-        # Priority order for resolving conflicts
         for entity_type, predictions in all_predictions.items():
             for i, pred in enumerate(predictions):
                 if i >= len(final_labels):
@@ -752,29 +695,16 @@ Few-shot Examples:
         return final_labels
     
     def predict(self, text: str, tokens: List[str] = None, language: str = 'en') -> Dict:
-        """
-        Perform multi-model NER prediction on input text.
-        
-        Args:
-            text: Input text
-            tokens: Pre-tokenized tokens (optional)
-            language: Language code ('en' or 'de')
-            
-        Returns:
-            Dictionary with tokens and predicted labels
-        """
-        # Tokenize if not provided
+        """Perform multi-model NER prediction."""
         if tokens is None:
             tokens = text.split()
         
         all_predictions = {}
         entity_types = set()
         
-        # Collect all unique entity types
         for config in self.model_configs.values():
             entity_types.update(config['entities'])
         
-        # Get predictions for each entity type
         for entity_type in entity_types:
             try:
                 model_name, model_type, model, tokenizer = self.get_model_for_entity(entity_type, language)
@@ -791,7 +721,6 @@ Few-shot Examples:
                 print(f"Error processing {entity_type}: {str(e)}")
                 continue
         
-        # Merge all predictions
         final_predictions = self.merge_predictions(all_predictions, tokens)
         
         return {
@@ -801,22 +730,12 @@ Few-shot Examples:
         }
     
     def predict_dataset(self, dataset: Dataset, language: str = 'en') -> List[Dict]:
-        """
-        Perform predictions on a Hugging Face Dataset.
-        
-        Args:
-            dataset: Hugging Face Dataset object
-            language: Language code ('en' or 'de')
-            
-        Returns:
-            List of prediction dictionaries
-        """
+        """Perform predictions on a Hugging Face Dataset."""
         results = []
         
         for i, example in enumerate(dataset):
             print(f"\nProcessing example {i+1}/{len(dataset)}")
             
-            # Extract text and tokens
             if 'tokens' in example:
                 tokens = example['tokens']
                 text = ' '.join(tokens)
@@ -827,26 +746,85 @@ Few-shot Examples:
                 print(f"Warning: Could not find text/tokens in example {i}")
                 continue
             
-            # Perform prediction
             result = self.predict(text, tokens=tokens, language=language)
             
-            # Add original data to result
             result['example_id'] = i
             if 'ner_tags' in example:
-                result['gold_labels'] = example['ner_tags']
+                gold_tags = []
+                for tag in example['ner_tags']:
+                    if isinstance(tag, int):
+                        gold_tags.append(self.global_id2label.get(tag, 'O'))
+                    else:
+                        gold_tags.append(tag)
+                result['gold_labels'] = gold_tags
             
             results.append(result)
         
         return results
     
-    def save_predictions(self, predictions: List[Dict], output_path: str):
-        """
-        Save predictions to a file in CoNLL format.
+    def calculate_f1_scores(self, predictions: List[Dict], output_file: str = None) -> Dict:
+        """Calculate F1 scores using seqeval."""
+        print("\n" + "="*60)
+        print("CALCULATING F1 SCORES")
+        print("="*60)
         
-        Args:
-            predictions: List of prediction dictionaries
-            output_path: Path to save the predictions
-        """
+        y_true = []
+        y_pred = []
+        
+        for pred in predictions:
+            if 'gold_labels' in pred and 'labels' in pred:
+                y_true.append(pred['gold_labels'])
+                y_pred.append(pred['labels'])
+        
+        if not y_true or not y_pred:
+            print("Error: No valid predictions with gold labels found!")
+            return {}
+        
+        precision = precision_score(y_true, y_pred, mode='strict', scheme=IOB2)
+        recall = recall_score(y_true, y_pred, mode='strict', scheme=IOB2)
+        f1 = f1_score(y_true, y_pred, mode='strict', scheme=IOB2)
+        accuracy = accuracy_score(y_true, y_pred)
+        
+        report = classification_report(y_true, y_pred, mode='strict', scheme=IOB2, digits=4)
+        
+        print("\n" + "="*60)
+        print("OVERALL METRICS")
+        print("="*60)
+        print(f"Precision: {precision:.4f}")
+        print(f"Recall:    {recall:.4f}")
+        print(f"F1 Score:  {f1:.4f}")
+        print(f"Accuracy:  {accuracy:.4f}")
+        
+        print("\n" + "="*60)
+        print("DETAILED CLASSIFICATION REPORT")
+        print("="*60)
+        print(report)
+        
+        if output_file:
+            with open(output_file, 'w', encoding='utf-8') as f:
+                f.write("="*60 + "\n")
+                f.write("OVERALL METRICS\n")
+                f.write("="*60 + "\n")
+                f.write(f"Precision: {precision:.4f}\n")
+                f.write(f"Recall:    {recall:.4f}\n")
+                f.write(f"F1 Score:  {f1:.4f}\n")
+                f.write(f"Accuracy:  {accuracy:.4f}\n\n")
+                f.write("="*60 + "\n")
+                f.write("DETAILED CLASSIFICATION REPORT\n")
+                f.write("="*60 + "\n")
+                f.write(report)
+            print(f"\nReport saved to: {output_file}")
+        
+        return {
+            'precision': precision,
+            'recall': recall,
+            'f1_score': f1,
+            'accuracy': accuracy,
+            'classification_report': report
+        }
+    
+    def save_predictions(self, predictions: List[Dict], output_path: str):
+        """Save predictions in CoNLL format."""
         with open(output_path, 'w', encoding='utf-8') as f:
             for pred in predictions:
                 tokens = pred['tokens']
@@ -856,66 +834,61 @@ Few-shot Examples:
                 for j, token in enumerate(tokens):
                     label = labels[j] if j < len(labels) else 'O'
                     
-                    # Include gold labels if available
                     if gold_labels:
                         gold = gold_labels[j] if j < len(gold_labels) else 'O'
-                        if isinstance(gold, int):
-                            gold = self.id2label.get(gold, 'O')
                         f.write(f"{token}\t{gold}\t{label}\n")
                     else:
                         f.write(f"{token}\t{label}\n")
                 
-                f.write("\n")  # Blank line between sentences
+                f.write("\n")
         
         print(f"Predictions saved to {output_path}")
 
 
 # Usage Example
 def main():
-    # Define label list
-    label_list = [
-        "O",
-        "B-soilReferenceGroup", "I-soilReferenceGroup",
-        "B-soilOrganicCarbon", "I-soilOrganicCarbon",
-        "B-soilTexture", "I-soilTexture",
-        "B-startTime", "I-startTime",
-        "B-endTime", "I-endTime",
-        "B-cropSpecies", "I-cropSpecies",
-        "B-soilAvailableNitrogen", "I-soilAvailableNitrogen",
-        "B-soilDepth", "I-soilDepth",
-        "B-locationName", "I-locationName",
-        "B-cropVariety", "I-cropVariety",
-        "B-soilPH", "I-soilPH",
-        "B-soilBulkDensity", "I-soilBulkDensity"
-    ]
+    # Global label list for dataset
+    global_label_list = ["O","B-cropSpecies","I-cropSpecies","B-cropVariety","I-cropVariety","B-locationName","I-locationName","B-startTime","I-startTime","B-endTime","I-endTime","B-duration","I-duration","B-soilDepth","I-soilDepth","B-soilReferenceGroup","I-soilReferenceGroup","B-soilOrganicCarbon","I-soilOrganicCarbon","B-soilTexture","I-soilTexture","B-soilBulkDensity","I-soilBulkDensity","B-soilAvailableNitrogen","I-soilAvailableNitrogen","B-soilPH","I-soilPH"]
+
     
     # Initialize multi-model NER
-    ner = MultiModelNER(label_list)
+    ner = MultiModelNER(global_label_list)
     
-    # Setup retrieval system for German dataset
-    print("\n=== Setting up retrieval system ===")
-    ner.setup_retrieval(use_german=True, index_path="faiss_index_german.bin")
+    # Setup retrieval
+    print("\n" + "="*60)
+    print("SETTING UP RETRIEVAL SYSTEM")
+    print("="*60)
+    ner.setup_retrieval(index_path="faiss_index_specific.bin")
     
-    # Load all models
-    print("\n=== Loading models ===")
+    # Load models
+    print("\n" + "="*60)
+    print("LOADING MODELS")
+    print("="*60)
     ner.load_models()
     
-    # Load test datasets
-    print("\n=== Loading test datasets ===")
+    # Load and predict on German test dataset
+    print("\n" + "="*60)
+    print("GERMAN TEST DATASET EVALUATION")
+    print("="*60)
+    test_dataset_de = ner.load_hf_dataset(ner.test_dataset_de_path)
+    de_results = ner.predict_dataset(test_dataset_de, language='de')
+    ner.save_predictions(de_results, 'predictions_german_multimodel.conll')
+    metrics_de = ner.calculate_f1_scores(de_results, output_file='f1_scores_german_multimodel.txt')
+    
+    # Load and predict on English test dataset
+    print("\n" + "="*60)
+    print("ENGLISH TEST DATASET EVALUATION")
+    print("="*60)
     test_dataset_en = ner.load_hf_dataset(ner.test_dataset_en_path)
-    test_dataset_de = ner.load_hf_dataset(ner.train_dataset_de_path)
-    
-    # Predict on English test dataset
-    print("\n=== Predicting on English test set ===")
     en_results = ner.predict_dataset(test_dataset_en, language='en')
-    ner.save_predictions(en_results, 'predictions_english.conll')
+    ner.save_predictions(en_results, 'predictions_english_multimodel.conll')
+    metrics_en = ner.calculate_f1_scores(en_results, output_file='f1_scores_english_multimodel.txt')
     
-    # Predict on German test dataset (using first 10 examples)
-    print("\n=== Predicting on German test set ===")
-    de_results = ner.predict_dataset(test_dataset_de.select(range(10)), language='de')
-    ner.save_predictions(de_results, 'predictions_german.conll')
-    
-    print("\n=== Predictions complete ===")
+    print("\n" + "="*60)
+    print("FINAL RESULTS")
+    print("="*60)
+    print(f"German F1 Score:  {metrics_de.get('f1_score', 0):.4f}")
+    print(f"English F1 Score: {metrics_en.get('f1_score', 0):.4f}")
 
 
 if __name__ == "__main__":

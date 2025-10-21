@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMYEpf8UiOg2OxuyLljaWjfBDFcO3",
+  "object": "chat.completion",
+  "created": 1759490863,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"Winter wheat\", \"span\": [928, 941] }}\n  ],\n  \"Location\": [],\n  \"TimeStatement\": []\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8275,
+    "completion_tokens": 51,
+    "total_tokens": 8326,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

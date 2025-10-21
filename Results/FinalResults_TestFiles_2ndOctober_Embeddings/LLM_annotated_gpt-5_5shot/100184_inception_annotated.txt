@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMYErH9KJKSGuWleLJCImyn3x1jff",
+  "object": "chat.completion",
+  "created": 1759490865,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"oilseed rape\", \"span\": [523, 535] }},\n    {\"Crop\": { \"value\": \"Brassica napus\", \"span\": [537, 552] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Germany\", \"span\": [327, 334] }},\n    {\"Location\": { \"value\": \"Bochum\", \"span\": [336, 342] }},\n    {\"Location\": { \"value\": \"Braunschweig\", \"span\": [344, 356] }},\n    {\"Location\": { \"value\": \"Celle\", \"span\": [358, 363] }},\n    {\"Location\": { \"value\": \"Hohenheim\", \"span\": [365, 375] }},\n    {\"Location\": { \"value\": \"Veitshöchheim\", \"span\": [377, 391] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"spring 2022\", \"span\": [398, 409] }},\n    {\"TimeStatement\": { \"value\": \"spring 2023\", \"span\": [413, 424] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4213,
+    "completion_tokens": 268,
+    "total_tokens": 4481,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

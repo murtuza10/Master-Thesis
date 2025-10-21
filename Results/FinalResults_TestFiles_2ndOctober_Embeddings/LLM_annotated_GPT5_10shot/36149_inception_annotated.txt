@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMY2ZxI4tWCw5LhJTnt0XupisIJ0A",
+  "object": "chat.completion",
+  "created": 1759490103,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"energy crop\", \"span\": [111, 121] }},\n    {\"Crop\": { \"value\": \"crops\", \"span\": [938, 943] }},\n    {\"Crop\": { \"value\": \"crop rotations\", \"span\": [948, 962] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Germany\", \"span\": [151, 158] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [380, 387] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"three years\", \"span\": [456, 467] }},\n    {\"TimeStatement\": { \"value\": \"2011/2012\", \"span\": [470, 479] }},\n    {\"TimeStatement\": { \"value\": \"2014/2015\", \"span\": [482, 491] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7981,
+    "completion_tokens": 216,
+    "total_tokens": 8197,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

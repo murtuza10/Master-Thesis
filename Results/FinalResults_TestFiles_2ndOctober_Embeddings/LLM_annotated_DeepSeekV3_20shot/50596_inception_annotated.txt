@@ -1,0 +1,32 @@
+{
+  "id": "gen-1759498831-wtuRwqmK5Np0gek55Lnu",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759498831,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"grapes\", \"span\": [190, 196] }},\n    {\"Crop\": { \"value\": \"grapes\", \"span\": [343, 349] }},\n    {\"Crop\": { \"value\": \"grape clusters\", \"span\": [1223, 1237] }},\n    {\"Crop\": { \"value\": \"grape cluster\", \"span\": [1543, 1556] }}\n  ],\n  \"Location\": [],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2017\", \"span\": [715, 721] }},\n    {\"TimeStatement\": { \"value\": \"2018\", \"span\": [725, 729] }},\n    {\"TimeStatement\": { \"value\": \"30.8.2017\", \"span\": [1087, 1096] }},\n    {\"TimeStatement\": { \"value\": \"6.9.2017\", \"span\": [1101, 1109] }},\n    {\"TimeStatement\": { \"value\": \"three weeks later\", \"span\": [1114, 1131] }},\n    {\"TimeStatement\": { \"value\": \"20.9.2017\", \"span\": [1135, 1144] }},\n    {\"TimeStatement\": { \"value\": \"25.9.2017\", \"span\": [1149, 1158] }},\n    {\"TimeStatement\": { \"value\": \"2018\", \"span\": [1238, 1242] }},\n    {\"TimeStatement\": { \"value\": \"24.8.2018\", \"span\": [1333, 1342] }},\n    {\"TimeStatement\": { \"value\": \"31.8.2018\", \"span\": [1347, 1356] }},\n    {\"TimeStatement\": { \"value\": \"13.9.2018\", \"span\": [1388, 1397] }},\n    {\"TimeStatement\": { \"value\": \"20.9.2018\", \"span\": [1402, 1411] }},\n    {\"TimeStatement\": { \"value\": \"2018\", \"span\": [1443, 1447] }},\n    {\"TimeStatement\": { \"value\": \"29.8.2018\", \"span\": [1519, 1528] }},\n    {\"TimeStatement\": { \"value\": \"4.9.2018\", \"span\": [1533, 1541] }},\n    {\"TimeStatement\": { \"value\": \"two weeks\", \"span\": [1585, 1594] }},\n    {\"TimeStatement\": { \"value\": \"12.9.2018\", \"span\": [1633, 1642] }},\n    {\"TimeStatement\": { \"value\": \"29.9.2018\", \"span\": [1647, 1656] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 15010,
+    "completion_tokens": 642,
+    "total_tokens": 15652,
+    "prompt_tokens_details": {
+      "cached_tokens": 2,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": null
+  }
+}

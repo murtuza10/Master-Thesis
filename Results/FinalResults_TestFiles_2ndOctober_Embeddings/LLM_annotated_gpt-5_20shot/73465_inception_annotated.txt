@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMaICxN4yxtB9UeSLmm1HVeesnqzi",
+  "object": "chat.completion",
+  "created": 1759498760,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [\n    {\"Crop\": {\"value\": \"Helosciadium nodiflorum\", \"span\": [48, 71]}},\n    {\"Crop\": {\"value\": \"H. nodiflorum\", \"span\": [215, 229]}},\n    {\"Crop\": {\"value\": \"Helosciadium nodiflorum\", \"span\": [490, 513]}},\n    {\"Crop\": {\"value\": \"Helosciadium nodiflorum\", \"span\": [808, 831]}},\n    {\"Crop\": {\"value\": \"celery\", \"span\": [902, 908]}},\n    {\"Crop\": {\"value\": \"wild celery\", \"span\": [1245, 1256]}},\n    {\"Crop\": {\"value\": \"wild celery\", \"span\": [1341, 1352]}},\n    {\"Crop\": {\"value\": \"wild celery\", \"span\": [1463, 1474]}}\n  ],\n  \"Location\": [\n    {\"Location\": {\"value\": \"Gatersleben\", \"span\": [139, 150]}},\n    {\"Location\": {\"value\": \"Germany\", \"span\": [153, 160]}},\n    {\"Location\": {\"value\": \"Kew Gardens London\", \"span\": [268, 287]}},\n    {\"Location\": {\"value\": \"Germany\", \"span\": [713, 720]}},\n    {\"Location\": {\"value\": \"Germany\", \"span\": [1111, 1118]}}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": {\"value\": \"2015\", \"span\": [924, 928]}},\n    {\"TimeStatement\": {\"value\": \"2016\", \"span\": [932, 936]}},\n    {\"TimeStatement\": {\"value\": \"2018-2019\", \"span\": [1133, 1142]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 16280,
+    "completion_tokens": 404,
+    "total_tokens": 16684,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

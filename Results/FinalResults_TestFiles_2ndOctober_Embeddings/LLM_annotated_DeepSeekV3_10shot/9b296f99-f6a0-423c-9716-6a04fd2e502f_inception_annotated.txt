@@ -1,0 +1,34 @@
+{
+  "id": "gen-1759498967-OAn7ElrymjIUuPCaUTMc",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759498967,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"winter wheat\", \"span\": [414, 426] }},\n    {\"Crop\": { \"value\": \"winter barley\", \"span\": [428, 441] }},\n    {\"Crop\": { \"value\": \"sugar beet\", \"span\": [447, 457] }},\n    {\"Crop\": { \"value\": \"winter barley\", \"span\": [1195, 1208] }},\n    {\"Crop\": { \"value\": \"sugar beet\", \"span\": [1213, 1223] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Speyer\", \"span\": [34, 40] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [42, 49] }},\n    {\"Location\": { \"value\": \"Rinkenbergerhof\", \"span\": [343, 358] }},\n    {\"Location\": { \"value\": \"LUFA Speyer\", \"span\": [362, 373] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [375, 382] }},\n    {\"Location\": { \"value\": \"Karlsruhe\", \"span\": [798, 807] }},\n    {\"Location\": { \"value\": \"LUFA Speyer\", \"span\": [901, 912] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [914, 921] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"1984\", \"span\": [395, 399] }},\n    {\"TimeStatement\": { \"value\": \"2009\", \"span\": [775, 779] }},\n    {\"TimeStatement\": { \"value\": \"16. September 2009\", \"span\": [759, 775] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 9272,
+    "completion_tokens": 421,
+    "total_tokens": 9693,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

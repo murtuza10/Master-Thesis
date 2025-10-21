@@ -1,0 +1,34 @@
+{
+  "id": "gen-1759498731-9UxH14i02BLjvSzkQqtB",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759498731,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"Apium graveolens\", \"span\": [29, 45] }},\n    {\"Crop\": { \"value\": \"Apium graveolens\", \"span\": [227, 243] }},\n    {\"Crop\": { \"value\": \"Apium graveolens\", \"span\": [313, 329] }},\n    {\"Crop\": { \"value\": \"Apium graveolens\", \"span\": [445, 461] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Quedlinburg\", \"span\": [412, 423] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [425, 432] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2016\", \"span\": [490, 494] }},\n    {\"TimeStatement\": { \"value\": \"2017-2018\", \"span\": [680, 689] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 15935,
+    "completion_tokens": 232,
+    "total_tokens": 16167,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

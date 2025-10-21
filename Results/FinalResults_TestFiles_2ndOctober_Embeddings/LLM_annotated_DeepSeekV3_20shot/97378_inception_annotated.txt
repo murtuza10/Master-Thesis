@@ -1,0 +1,32 @@
+{
+  "id": "gen-1759498863-4TwdkiY3ZmfYtB2RVWp5",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759498863,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Hildesheim\", \"span\": [240, 250] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2 Jahren\", \"span\": [297, 305] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 16895,
+    "completion_tokens": 75,
+    "total_tokens": 16970,
+    "prompt_tokens_details": {
+      "cached_tokens": 3,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": null
+  }
+}

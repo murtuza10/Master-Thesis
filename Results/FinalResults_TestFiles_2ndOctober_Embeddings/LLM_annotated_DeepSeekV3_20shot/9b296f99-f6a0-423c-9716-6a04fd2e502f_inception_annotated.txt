@@ -1,0 +1,34 @@
+{
+  "id": "gen-1759499026-01FBVDuPZd5sjVcH9Nzh",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759499026,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"winter wheat\", \"span\": [428, 440] }},\n    {\"Crop\": { \"value\": \"winter barley\", \"span\": [442, 455] }},\n    {\"Crop\": { \"value\": \"sugar beet\", \"span\": [461, 471] }},\n    {\"Crop\": { \"value\": \"sugar beet\", \"span\": [620, 630] }},\n    {\"Crop\": { \"value\": \"winter barley\", \"span\": [1012, 1025] }},\n    {\"Crop\": { \"value\": \"sugar beet\", \"span\": [1040, 1050] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Speyer\", \"span\": [38, 44] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [46, 53] }},\n    {\"Location\": { \"value\": \"Rinkenbergerhof\", \"span\": [336, 351] }},\n    {\"Location\": { \"value\": \"Speyer\", \"span\": [360, 366] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [368, 375] }},\n    {\"Location\": { \"value\": \"Karlsruhe\", \"span\": [824, 833] }},\n    {\"Location\": { \"value\": \"Speyer\", \"span\": [1002, 1008] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [1010, 1017] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"1984\", \"span\": [390, 394] }},\n    {\"TimeStatement\": { \"value\": \"2009\", \"span\": [775, 779] }},\n    {\"TimeStatement\": { \"value\": \"16. September 2009\", \"span\": [800, 817] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 17378,
+    "completion_tokens": 446,
+    "total_tokens": 17824,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

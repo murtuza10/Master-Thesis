@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><xmi:XMI xmlns:pos="http:///de/tudarmstadt/ukp/dkpro/core/api/lexmorph/type/pos.ecore" xmlns:tcas="http:///uima/tcas.ecore" xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:tweet="http:///de/tudarmstadt/ukp/dkpro/core/api/lexmorph/type/pos/tweet.ecore" xmlns:morph="http:///de/tudarmstadt/ukp/dkpro/core/api/lexmorph/type/morph.ecore" xmlns:type="http:///de/tudarmstadt/ukp/clarin/webanno/api/type.ecore" xmlns:dependency="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type/dependency.ecore" xmlns:type6="http:///de/tudarmstadt/ukp/dkpro/core/api/semantics/type.ecore" xmlns:type9="http:///de/tudarmstadt/ukp/dkpro/core/api/transform/type.ecore" xmlns:type8="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type.ecore" xmlns:type3="http:///de/tudarmstadt/ukp/dkpro/core/api/metadata/type.ecore" xmlns:type11="http:///org/dkpro/core/api/xml/type.ecore" xmlns:type4="http:///de/tudarmstadt/ukp/dkpro/core/api/ner/type.ecore" xmlns:type10="http:///org/dkpro/core/api/pdf/type.ecore" xmlns:type5="http:///de/tudarmstadt/ukp/dkpro/core/api/segmentation/type.ecore" xmlns:type2="http:///de/tudarmstadt/ukp/dkpro/core/api/coref/type.ecore" xmlns:type7="http:///de/tudarmstadt/ukp/dkpro/core/api/structure/type.ecore" xmlns:constituent="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type/constituent.ecore" xmlns:chunk="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type/chunk.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+    <cas:NULL xmi:id="0"/>
+    <type3:DocumentMetaData xmi:id="8" sofa="1" begin="0" end="186" language="x-unspecified" documentTitle="99959_inception.xmi" documentId="CURATION_USER" documentUri="admin-7/CURATION_USER" collectionId="admin-7/CURATION_USER" documentBaseUri="admin-7" isLastSegment="false"/>
+    <type5:Token xmi:id="19" sofa="1" begin="0" end="5" order="0"/>
+    <type5:Token xmi:id="32" sofa="1" begin="5" end="6" order="0"/>
+    <type5:Token xmi:id="45" sofa="1" begin="7" end="8" order="0"/>
+    <type5:Token xmi:id="58" sofa="1" begin="8" end="21" order="0"/>
+    <type5:Token xmi:id="71" sofa="1" begin="22" end="33" order="0"/>
+    <type5:Token xmi:id="84" sofa="1" begin="34" end="41" order="0"/>
+    <type5:Token xmi:id="97" sofa="1" begin="42" end="55" order="0"/>
+    <type5:Token xmi:id="110" sofa="1" begin="56" end="61" order="0"/>
+    <type5:Token xmi:id="123" sofa="1" begin="62" end="65" order="0"/>
+    <type5:Token xmi:id="136" sofa="1" begin="66" end="79" order="0"/>
+    <type5:Token xmi:id="149" sofa="1" begin="80" end="83" order="0"/>
+    <type5:Token xmi:id="162" sofa="1" begin="84" end="95" order="0"/>
+    <type5:Token xmi:id="175" sofa="1" begin="96" end="97" order="0"/>
+    <type5:Token xmi:id="188" sofa="1" begin="98" end="115" order="0"/>
+    <type5:Token xmi:id="201" sofa="1" begin="116" end="119" order="0"/>
+    <type5:Token xmi:id="214" sofa="1" begin="120" end="138" order="0"/>
+    <type5:Token xmi:id="227" sofa="1" begin="139" end="147" order="0"/>
+    <type5:Token xmi:id="240" sofa="1" begin="148" end="151" order="0"/>
+    <type5:Token xmi:id="253" sofa="1" begin="152" end="163" order="0"/>
+    <type5:Token xmi:id="266" sofa="1" begin="163" end="165" order="0"/>
+    <type5:Token xmi:id="279" sofa="1" begin="165" end="173" order="0"/>
+    <type5:Token xmi:id="292" sofa="1" begin="173" end="174" order="0"/>
+    <type5:Token xmi:id="305" sofa="1" begin="174" end="175" order="0"/>
+    <type5:Token xmi:id="318" sofa="1" begin="175" end="178" order="0"/>
+    <type5:Token xmi:id="331" sofa="1" begin="179" end="184" order="0"/>
+    <type5:Token xmi:id="344" sofa="1" begin="184" end="186" order="0"/>
+    <type5:Sentence xmi:id="357" sofa="1" begin="0" end="61"/>
+    <type5:Sentence xmi:id="362" sofa="1" begin="62" end="186"/>
+    <type:LayerDefinition xmi:id="400" name="webanno.custom.Timestatement" uiName="Time statement"/>
+    <type:LayerDefinition xmi:id="378" name="webanno.custom.Location" uiName="Location"/>
+    <type:LayerDefinition xmi:id="367" name="webanno.custom.Crops" uiName="Crops"/>
+    <type:LayerDefinition xmi:id="389" name="webanno.custom.Soil" uiName="Soil"/>
+    <type:FeatureDefinition xmi:id="403" layer="400" name="Timestatement" uiName="Time statement"/>
+    <type:FeatureDefinition xmi:id="381" layer="378" name="Location" uiName="Location"/>
+    <type:FeatureDefinition xmi:id="370" layer="367" name="crops" uiName="crops"/>
+    <type:FeatureDefinition xmi:id="374" layer="367" name="identifier" uiName="identifier"/>
+    <type:FeatureDefinition xmi:id="407" layer="400" name="identifier" uiName="identifier"/>
+    <type:FeatureDefinition xmi:id="385" layer="378" name="identifier" uiName="identifier"/>
+    <type:FeatureDefinition xmi:id="392" layer="389" name="Soil" uiName="Soil"/>
+    <type:FeatureDefinition xmi:id="396" layer="389" name="identifier" uiName="identifier"/>
+    <type3:TagsetDescription xmi:id="411" sofa="1" begin="0" end="0" layer="webanno.custom.Crops" name="Crop" input="false"/>
+    <type3:TagsetDescription xmi:id="424" sofa="1" begin="0" end="0" layer="webanno.custom.Location" name="Location" input="false"/>
+    <type3:TagsetDescription xmi:id="437" sofa="1" begin="0" end="0" layer="webanno.custom.Soil" name="Soil" input="false"/>
+    <type3:TagsetDescription xmi:id="450" sofa="1" begin="0" end="0" layer="webanno.custom.Timestatement" name="Time statement" input="false"/>
+    <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="Title: &#10;Wirkungsvolle Waldpolitik braucht wirkungsvolle Wald- und Holzforschung mit Perspektive : Kurzstellungnahme des Wissenschaftlichen Beirates für Waldpolitik&#10;&#10;Abstract:&#10;Not Found&#10;&#10;"/>
+    <cas:View sofa="1" members="8 19 32 45 58 71 84 97 110 123 136 149 162 175 188 201 214 227 240 253 266 279 292 305 318 331 344 357 362 400 378 367 389 403 381 370 374 407 385 392 396 411 424 437 450"/>
+</xmi:XMI>

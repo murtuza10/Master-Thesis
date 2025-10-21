@@ -1,0 +1,29 @@
+{
+  "id": "gen-1759498789-oBDqIDS4zoLhlaOh6wIS",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759498789,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"Möhre\", \"span\": [236, 241] }},\n    {\"Crop\": { \"value\": \"Salat\", \"span\": [243, 248] }},\n    {\"Crop\": { \"value\": \"Apfel\", \"span\": [250, 255] }},\n    {\"Crop\": { \"value\": \"Erdbeere\", \"span\": [257, 265] }},\n    {\"Crop\": { \"value\": \"Erdbeere\", \"span\": [294, 302] }},\n    {\"Crop\": { \"value\": \"Himbeere\", \"span\": [307, 315] }}\n  ],\n  \"Location\": [],\n  \"TimeStatement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 17031,
+    "completion_tokens": 177,
+    "total_tokens": 17208,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": null
+  }
+}

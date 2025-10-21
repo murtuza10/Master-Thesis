@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMYEZKGOEwuOEcxBHJYw3MDfWcVn6",
+  "object": "chat.completion",
+  "created": 1759490847,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"apple\", \"span\": [66, 71] }},\n    {\"Crop\": { \"value\": \"apple\", \"span\": [478, 483] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Altes Land\", \"span\": [86, 96] }},\n    {\"Location\": { \"value\": \"Altes Land\", \"span\": [330, 340] }},\n    {\"Location\": { \"value\": \"Lower Saxony\", \"span\": [455, 468] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [470, 477] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2001\", \"span\": [650, 654] }},\n    {\"TimeStatement\": { \"value\": \"2003\", \"span\": [659, 663] }},\n    {\"TimeStatement\": { \"value\": \"2006\", \"span\": [236, 240] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8403,
+    "completion_tokens": 234,
+    "total_tokens": 8637,
+    "prompt_tokens_details": {
+      "cached_tokens": 8320,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

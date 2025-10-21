@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMYCKKktDzII56oP4U0AIkcr2HjF6",
+  "object": "chat.completion",
+  "created": 1759490708,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [],\n  \"Location\": [\n    {\"Location\": {\"value\": \"longitude\", \"span\": [790, 799]}},\n    {\"Location\": {\"value\": \"longitude\", \"span\": [846, 855]}},\n    {\"Location\": {\"value\": \"latitude\", \"span\": [901, 909]}},\n    {\"Location\": {\"value\": \"latitude\", \"span\": [957, 965]}},\n    {\"Location\": {\"value\": \"5,79922100\", \"span\": [801, 811]}},\n    {\"Location\": {\"value\": \"15,08954000\", \"span\": [857, 868]}},\n    {\"Location\": {\"value\": \"47,15766000\", \"span\": [911, 922]}},\n    {\"Location\": {\"value\": \"55,08484000\", \"span\": [967, 978]}}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": {\"value\": \"1961 - 2100\", \"span\": [219, 231]}},\n    {\"TimeStatement\": {\"value\": \"1961 - 2013\", \"span\": [364, 376]}},\n    {\"TimeStatement\": {\"value\": \"2011 – 2050\", \"span\": [597, 609]}},\n    {\"TimeStatement\": {\"value\": \"2011 – 2100\", \"span\": [615, 627]}},\n    {\"TimeStatement\": {\"value\": \"2012\", \"span\": [718, 722]}},\n    {\"TimeStatement\": {\"value\": \"31.12.2016\", \"span\": [820, 830]}},\n    {\"TimeStatement\": {\"value\": \"01.01.1961 - 31.12.2099\", \"span\": [897, 922]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8845,
+    "completion_tokens": 393,
+    "total_tokens": 9238,
+    "prompt_tokens_details": {
+      "cached_tokens": 8704,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

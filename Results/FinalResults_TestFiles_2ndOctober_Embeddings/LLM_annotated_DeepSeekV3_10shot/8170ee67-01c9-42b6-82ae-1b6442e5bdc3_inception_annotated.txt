@@ -1,0 +1,29 @@
+{
+  "id": "gen-1759498791-bmUB2PfqRqkqzeC5TR6p",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759498791,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"winter barley\", \"span\": [45, 58] }},\n    {\"Crop\": { \"value\": \"winter barley\", \"span\": [1520, 1533] }},\n    {\"Crop\": { \"value\": \"Hordeum vulgare L.\", \"span\": [1571, 1589] }},\n    {\"Crop\": { \"value\": \"OTTO\", \"span\": [1599, 1603] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Braunschweig\", \"span\": [27, 39] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2014\", \"span\": [60, 64] }},\n    {\"TimeStatement\": { \"value\": \"1985\", \"span\": [890, 894] }},\n    {\"TimeStatement\": { \"value\": \"2008\", \"span\": [897, 901] }},\n    {\"TimeStatement\": { \"value\": \"2013\", \"span\": [1076, 1080] }},\n    {\"TimeStatement\": { \"value\": \"2014\", \"span\": [1570, 1574] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 9038,
+    "completion_tokens": 287,
+    "total_tokens": 9325,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": null
+  }
+}

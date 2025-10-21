@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --partition=mlgpu_short
 #SBATCH --time=8:00:00
-#SBATCH --gpus=16
-#SBATCH --output=/home/s27mhusa_hpc/Master-Thesis/FinalPredictions-12October/gpu_job_TestFiles_%j_12October.out
+#SBATCH --gpus=4
+#SBATCH --output=/home/s27mhusa_hpc/Master-Thesis/FinalPredictions-14October/gpu_job_TestFiles_%j_14October.out
 
 
 
@@ -19,7 +19,7 @@ conda activate Llama
 start_time=$(date +%s)
 
 # === Begin Resource Monitoring ===
-LOG_DIR="/home/s27mhusa_hpc/Master-Thesis/FinalPredictions-12October/job_monitor_logs_TestFiles${MODEL_NAME}_$(date +%Y%m%d_%H%M%S)_${EXAMPLES}shot"
+LOG_DIR="/home/s27mhusa_hpc/Master-Thesis/FinalPredictions-14October/job_monitor_logs_TestFiles${MODEL_NAME}_$(date +%Y%m%d_%H%M%S)_${EXAMPLES}shot"
 mkdir -p "$LOG_DIR"
 INTERVAL=1
 
@@ -54,7 +54,7 @@ echo $CPU_PID >> "$LOG_DIR/pids.txt"
 echo $IO_PID >> "$LOG_DIR/pids.txt"
 
 # === Run Main Script ===
-python EnsembleModels.py
+python EnsembleModels_ver5.py
 
 # === Stop Resource Monitoring ===
 echo "Stopping resource monitoring..."

@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMYDAsD2Hv503xMzMilW8L2gMPdYM",
+  "object": "chat.completion",
+  "created": 1759490760,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"grapes\", \"span\": [193, 199] }},\n    {\"Crop\": { \"value\": \"grapes\", \"span\": [374, 380] }},\n    {\"Crop\": { \"value\": \"grapes\", \"span\": [540, 546] }},\n    {\"Crop\": { \"value\": \"grape cluster\", \"span\": [1228, 1241] }},\n    {\"Crop\": { \"value\": \"grape clusters\", \"span\": [1975, 1989] }},\n    {\"Crop\": { \"value\": \"grape cluster\", \"span\": [2627, 2640] }},\n    {\"Crop\": { \"value\": \"grape cluster\", \"span\": [3281, 3294] }},\n    {\"Crop\": { \"value\": \"grape cluster\", \"span\": [3791, 3804] }}\n  ],\n  \"Location\": [],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2017\", \"span\": [1055, 1059] }},\n    {\"TimeStatement\": { \"value\": \"2018\", \"span\": [2226, 2230] }},\n    {\"TimeStatement\": { \"value\": \"2018\", \"span\": [3078, 3082] }},\n    {\"TimeStatement\": { \"value\": \"30.8.2017\", \"span\": [1401, 1410] }},\n    {\"TimeStatement\": { \"value\": \"6.9.2017\", \"span\": [1415, 1423] }},\n    {\"TimeStatement\": { \"value\": \"20.9.2017\", \"span\": [1463, 1472] }},\n    {\"TimeStatement\": { \"value\": \"25.9.2017\", \"span\": [1477, 1486] }},\n    {\"TimeStatement\": { \"value\": \"24.8.2018\", \"span\": [2495, 2504] }},\n    {\"TimeStatement\": { \"value\": \"31.8.2018\", \"span\": [2509, 2518] }},\n    {\"TimeStatement\": { \"value\": \"13.9.2018\", \"span\": [2568, 2577] }},\n    {\"TimeStatement\": { \"value\": \"20.9.2018\", \"span\": [2582, 2591] }},\n    {\"TimeStatement\": { \"value\": \"29.8.2018\", \"span\": [3344, 3353] }},\n    {\"TimeStatement\": { \"value\": \"4.9.2018\", \"span\": [3358, 3366] }},\n    {\"TimeStatement\": { \"value\": \"12.9.2018\", \"span\": [3723, 3732] }},\n    {\"TimeStatement\": { \"value\": \"29.9.2018\", \"span\": [3737, 3746] }}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4597,
+    "completion_tokens": 645,
+    "total_tokens": 5242,
+    "prompt_tokens_details": {
+      "cached_tokens": 3712,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

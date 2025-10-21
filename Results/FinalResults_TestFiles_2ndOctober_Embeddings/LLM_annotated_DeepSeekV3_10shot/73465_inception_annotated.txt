@@ -1,0 +1,32 @@
+{
+  "id": "gen-1759498756-dH170L2ThJ9TjwlLXwMH",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759498756,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [40, 61] }},\n    {\"Crop\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [268, 289] }},\n    {\"Crop\": { \"value\": \"Helosciadium nodiflorum\", \"span\": [500, 521] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Gatersleben\", \"span\": [112, 123] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [126, 133] }},\n    {\"Location\": { \"value\": \"Kew Gardens London\", \"span\": [185, 203] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [379, 386] }},\n    {\"Location\": { \"value\": \"HU Berlin\", \"span\": [418, 426] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [428, 435] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2015\", \"span\": [483, 487] }},\n    {\"TimeStatement\": { \"value\": \"2016\", \"span\": [492, 496] }},\n    {\"TimeStatement\": { \"value\": \"2018-2019\", \"span\": [615, 624] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 8753,
+    "completion_tokens": 327,
+    "total_tokens": 9080,
+    "prompt_tokens_details": {
+      "cached_tokens": 998,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": null
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMaMO1OHOyxZI22PnwTIm8yXyiN44",
+  "object": "chat.completion",
+  "created": 1759499020,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [],\n  \"Location\": [\n    {\"Location\": {\"value\": \"Germany\", \"span\": [742, 749]}},\n    {\"Location\": {\"value\": \"Brandenburg\", \"span\": [752, 763]}},\n    {\"Location\": {\"value\": \"Uckermark\", \"span\": [766, 775]}},\n    {\"Location\": {\"value\": \"Quillow\", \"span\": [778, 785]}},\n    {\"Location\": {\"value\": \"Quillow\", \"span\": [112, 119]}},\n    {\"Location\": {\"value\": \"Quillow\", \"span\": [216, 223]}}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": {\"value\": \"2019\", \"span\": [120, 124]}},\n    {\"TimeStatement\": {\"value\": \"2019\", \"span\": [224, 228]}},\n    {\"TimeStatement\": {\"value\": \"April\", \"span\": [628, 633]}},\n    {\"TimeStatement\": {\"value\": \"June 2019\", \"span\": [638, 647]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14856,
+    "completion_tokens": 247,
+    "total_tokens": 15103,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

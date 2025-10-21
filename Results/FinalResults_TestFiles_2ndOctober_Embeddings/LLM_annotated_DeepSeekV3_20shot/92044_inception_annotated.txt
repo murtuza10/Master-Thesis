@@ -1,0 +1,29 @@
+{
+  "id": "gen-1759498930-JtgiQJc6mlINthx4yAPe",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759498930,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"spring barley\", \"span\": [271, 284] }},\n    {\"Crop\": { \"value\": \"winter barley\", \"span\": [286, 299] }},\n    {\"Crop\": { \"value\": \"grain maize\", \"span\": [301, 312] }},\n    {\"Crop\": { \"value\": \"silage maize\", \"span\": [314, 326] }},\n    {\"Crop\": { \"value\": \"oats\", \"span\": [328, 332] }},\n    {\"Crop\": { \"value\": \"potatoes\", \"span\": [334, 342] }},\n    {\"Crop\": { \"value\": \"winter rape\", \"span\": [344, 355] }},\n    {\"Crop\": { \"value\": \"rye\", \"span\": [357, 360] }},\n    {\"Crop\": { \"value\": \"sugarbeet\", \"span\": [362, 371] }},\n    {\"Crop\": { \"value\": \"triticale\", \"span\": [373, 382] }},\n    {\"Crop\": { \"value\": \"winter wheat\", \"span\": [384, 396] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Germany\", \"span\": [19, 26] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"1979\", \"span\": [32, 36] }},\n    {\"TimeStatement\": { \"value\": \"2021\", \"span\": [40, 44] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 16896,
+    "completion_tokens": 370,
+    "total_tokens": 17266,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": null
+  }
+}

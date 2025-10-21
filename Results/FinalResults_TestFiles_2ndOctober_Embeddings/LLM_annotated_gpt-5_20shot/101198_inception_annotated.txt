@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMaLY5mCbU3mJpRPntHWFKAhfnc6u",
+  "object": "chat.completion",
+  "created": 1759498968,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [],\n  \"Location\": [\n    {\"Location\": {\"value\": \"Germany\", \"span\": [1705, 1712]}},\n    {\"Location\": {\"value\": \"Rome\", \"span\": [2174, 2178]}}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": {\"value\": \"2050\", \"span\": [610, 614]}},\n    {\"TimeStatement\": {\"value\": \"2050\", \"span\": [1087, 1091]}},\n    {\"TimeStatement\": {\"value\": \"2023\", \"span\": [1512, 1516]}},\n    {\"TimeStatement\": {\"value\": \"2024\", \"span\": [1928, 1932]}},\n    {\"TimeStatement\": {\"value\": \"2020\", \"span\": [1286, 1290]}},\n    {\"TimeStatement\": {\"value\": \"2050\", \"span\": [1295, 1299]}},\n    {\"TimeStatement\": {\"value\": \"2023\", \"span\": [1700, 1704]}},\n    {\"TimeStatement\": {\"value\": \"2020\", \"span\": [2100, 2104]}},\n    {\"TimeStatement\": {\"value\": \"2018\", \"span\": [2272, 2276]}},\n    {\"TimeStatement\": {\"value\": \"2023\", \"span\": [2555, 2559]}},\n    {\"TimeStatement\": {\"value\": \"2024\", \"span\": [2703, 2707]}},\n    {\"TimeStatement\": {\"value\": \"2023\", \"span\": [2839, 2843]}},\n    {\"TimeStatement\": {\"value\": \"2024\", \"span\": [3056, 3060]}},\n    {\"TimeStatement\": {\"value\": \"2023–2028\", \"span\": [2976, 2985]}},\n    {\"TimeStatement\": {\"value\": \"2024-03\", \"span\": [3091, 3098]}},\n    {\"TimeStatement\": {\"value\": \"17.11.2023\", \"span\": [2475, 2485]}},\n    {\"TimeStatement\": {\"value\": \"November 2023\", \"span\": [1641, 1655]}},\n    {\"TimeStatement\": {\"value\": \"November 2023\", \"span\": [2362, 2376]}},\n    {\"TimeStatement\": {\"value\": \"August 2024\", \"span\": [2056, 2067]}},\n    {\"TimeStatement\": {\"value\": \"zwischen 2020 und 2050\", \"span\": [1266, 1288]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 17710,
+    "completion_tokens": 574,
+    "total_tokens": 18284,
+    "prompt_tokens_details": {
+      "cached_tokens": 2560,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

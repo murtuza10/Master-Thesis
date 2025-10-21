@@ -1,0 +1,29 @@
+{
+  "id": "gen-1759498960-8NGRNGggbE92IcMS1Hdo",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759498960,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [],\n  \"Location\": [\n    {\"Location\": {\"value\": \"Altes Land\", \"span\": [75, 85]}},\n    {\"Location\": {\"value\": \"Altes Land\", \"span\": [237, 247]}},\n    {\"Location\": {\"value\": \"Lower Saxony\", \"span\": [378, 390]}},\n    {\"Location\": {\"value\": \"Germany\", \"span\": [392, 399]}}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": {\"value\": \"Three-year\", \"span\": [8, 17]}},\n    {\"TimeStatement\": {\"value\": \"2001\", \"span\": [486, 490]}},\n    {\"TimeStatement\": {\"value\": \"2003\", \"span\": [495, 499]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 8595,
+    "completion_tokens": 181,
+    "total_tokens": 8776,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": null
+  }
+}

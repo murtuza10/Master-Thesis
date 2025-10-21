@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMaKQFyDkzgfwfWbHhwc1NzGoc8ri",
+  "object": "chat.completion",
+  "created": 1759498898,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [\n    {\"Crop\": {\"value\": \"grapes\", \"span\": [240, 246]}},\n    {\"Crop\": {\"value\": \"grapes\", \"span\": [534, 540]}},\n    {\"Crop\": {\"value\": \"grapes\", \"span\": [861, 867]}},\n    {\"Crop\": {\"value\": \"grape cluster\", \"span\": [1551, 1564]}},\n    {\"Crop\": {\"value\": \"grape cluster\", \"span\": [2068, 2081]}},\n    {\"Crop\": {\"value\": \"grape clusters\", \"span\": [2787, 2801]}},\n    {\"Crop\": {\"value\": \"grape cluster\", \"span\": [3498, 3511]}},\n    {\"Crop\": {\"value\": \"grape cluster\", \"span\": [4276, 4289]}}\n  ],\n  \"Location\": [],\n  \"TimeStatement\": [\n    {\"TimeStatement\": {\"value\": \"2017\", \"span\": [1355, 1359]}},\n    {\"TimeStatement\": {\"value\": \"2018\", \"span\": [1364, 1368]}},\n    {\"TimeStatement\": {\"value\": \"2017\", \"span\": [2211, 2215]}},\n    {\"TimeStatement\": {\"value\": \"30.8.2017\", \"span\": [2399, 2408]}},\n    {\"TimeStatement\": {\"value\": \"6.9.2017\", \"span\": [2413, 2421]}},\n    {\"TimeStatement\": {\"value\": \"20.9.2017\", \"span\": [2469, 2478]}},\n    {\"TimeStatement\": {\"value\": \"25.9.2017\", \"span\": [2483, 2492]}},\n    {\"TimeStatement\": {\"value\": \"2018\", \"span\": [2708, 2712]}},\n    {\"TimeStatement\": {\"value\": \"2018\", \"span\": [2864, 2868]}},\n    {\"TimeStatement\": {\"value\": \"24.8.2018\", \"span\": [3046, 3055]}},\n    {\"TimeStatement\": {\"value\": \"31.8.2018\", \"span\": [3060, 3069]}},\n    {\"TimeStatement\": {\"value\": \"13.9.2018\", \"span\": [3115, 3124]}},\n    {\"TimeStatement\": {\"value\": \"20.9.2018\", \"span\": [3129, 3138]}},\n    {\"TimeStatement\": {\"value\": \"2018\", \"span\": [3226, 3230]}},\n    {\"TimeStatement\": {\"value\": \"2018\", \"span\": [3382, 3386]}},\n    {\"TimeStatement\": {\"value\": \"29.8.2018\", \"span\": [3564, 3573]}},\n    {\"TimeStatement\": {\"value\": \"4.9.2018\", \"span\": [3578, 3586]}},\n    {\"TimeStatement\": {\"value\": \"12.9.2018\", \"span\": [4160, 4169]}},\n    {\"TimeStatement\": {\"value\": \"29.9.2018\", \"span\": [4174, 4183]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14888,
+    "completion_tokens": 718,
+    "total_tokens": 15606,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

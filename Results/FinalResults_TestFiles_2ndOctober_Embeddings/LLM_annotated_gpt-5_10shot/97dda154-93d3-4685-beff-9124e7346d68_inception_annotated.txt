@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMYClhOJPBt2F5U1G8R9sqR13hgkv",
+  "object": "chat.completion",
+  "created": 1759490735,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [\n    {\"Crop\": {\"value\": \"maize\", \"span\": [225, 230]}},\n    {\"Crop\": {\"value\": \"maize\", \"span\": [812, 817]}}\n  ],\n  \"Location\": [\n    {\"Location\": {\"value\": \"Wanna Sand\", \"span\": [320, 330]}},\n    {\"Location\": {\"value\": \"Wanna Sand\", \"span\": [356, 366]}},\n    {\"Location\": {\"value\": \"Rostock Sand\", \"span\": [393, 405]}},\n    {\"Location\": {\"value\": \"Wanna Marsch\", \"span\": [417, 429]}},\n    {\"Location\": {\"value\": \"Europe\", \"span\": [1453, 1459]}},\n    {\"Location\": {\"value\": \"Germany\", \"span\": [1462, 1469]}},\n    {\"Location\": {\"value\": \"Lower Saxony\", \"span\": [1472, 1484]}},\n    {\"Location\": {\"value\": \"Wanna\", \"span\": [1487, 1492]}},\n    {\"Location\": {\"value\": \"Mecklenburg-Vorpommern\", \"span\": [1494, 1518]}},\n    {\"Location\": {\"value\": \"Rostock\", \"span\": [1520, 1527]}}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": {\"value\": \"2021\", \"span\": [262, 266]}},\n    {\"TimeStatement\": {\"value\": \"2022\", \"span\": [268, 272]}},\n    {\"TimeStatement\": {\"value\": \"2023\", \"span\": [277, 281]}},\n    {\"TimeStatement\": {\"value\": \"between April and August\", \"span\": [1062, 1087]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8613,
+    "completion_tokens": 399,
+    "total_tokens": 9012,
+    "prompt_tokens_details": {
+      "cached_tokens": 8576,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

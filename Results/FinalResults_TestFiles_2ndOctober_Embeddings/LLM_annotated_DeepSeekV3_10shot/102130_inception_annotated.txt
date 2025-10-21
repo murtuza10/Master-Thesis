@@ -1,0 +1,34 @@
+{
+  "id": "gen-1759498751-eqpNdtKS4Tq72UBOXxUv",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759498751,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [],\n  \"Location\": [],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2-year\", \"span\": [74, 80] }},\n    {\"TimeStatement\": { \"value\": \"6\", \"span\": [157, 158] }},\n    {\"TimeStatement\": { \"value\": \"12\", \"span\": [160, 162] }},\n    {\"TimeStatement\": { \"value\": \"24 months\", \"span\": [164, 173] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 8165,
+    "completion_tokens": 119,
+    "total_tokens": 8284,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

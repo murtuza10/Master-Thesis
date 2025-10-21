@@ -1,0 +1,32 @@
+{
+  "id": "gen-1759498711-njypG2Jf2HPVz2alMJ4r",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759498711,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"wheat\", \"span\": [123, 128] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Europe\", \"span\": [233, 239] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2019\", \"span\": [95, 99] }},\n    {\"TimeStatement\": { \"value\": \"2020\", \"span\": [104, 108] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 15589,
+    "completion_tokens": 122,
+    "total_tokens": 15711,
+    "prompt_tokens_details": {
+      "cached_tokens": 2,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": null
+  }
+}

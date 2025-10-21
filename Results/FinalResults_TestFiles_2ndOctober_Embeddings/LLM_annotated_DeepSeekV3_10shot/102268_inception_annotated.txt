@@ -1,0 +1,29 @@
+{
+  "id": "gen-1759498709-i9lhLW3NTo8j3JF0gtIg",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759498709,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"wheat\", \"span\": [153, 158] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Europe\", \"span\": [276, 282] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2019\", \"span\": [108, 112] }},\n    {\"TimeStatement\": { \"value\": \"2020\", \"span\": [117, 121] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 8300,
+    "completion_tokens": 122,
+    "total_tokens": 8422,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": null
+  }
+}

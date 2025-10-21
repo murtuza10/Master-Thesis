@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMYEBHlqYLaxHzwRJS9tCAMe3hxtM",
+  "object": "chat.completion",
+  "created": 1759490823,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [],\n  \"Location\": [\n    {\"Location\": {\"value\": \"Europe\", \"span\": [133, 139]}},\n    {\"Location\": {\"value\": \"Germany\", \"span\": [303, 310]}},\n    {\"Location\": {\"value\": \"Germany\", \"span\": [380, 387]}},\n    {\"Location\": {\"value\": \"Europe\", \"span\": [393, 399]}},\n    {\"Location\": {\"value\": \"Dossenheim\", \"span\": [865, 875]}},\n    {\"Location\": {\"value\": \"Siebeldingen\", \"span\": [880, 892]}},\n    {\"Location\": {\"value\": \"Darmstadt\", \"span\": [930, 939]}},\n    {\"Location\": {\"value\": \"Germany\", \"span\": [1033, 1040]}}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": {\"value\": \"2011\", \"span\": [274, 278]}},\n    {\"TimeStatement\": {\"value\": \"late summer 2011\", \"span\": [320, 338]}},\n    {\"TimeStatement\": {\"value\": \"2011\", \"span\": [1197, 1201]}},\n    {\"TimeStatement\": {\"value\": \"February 2018\", \"span\": [1205, 1218]}},\n    {\"TimeStatement\": {\"value\": \"2011\", \"span\": [1370, 1374]}},\n    {\"TimeStatement\": {\"value\": \"2018\", \"span\": [1378, 1382]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8372,
+    "completion_tokens": 345,
+    "total_tokens": 8717,
+    "prompt_tokens_details": {
+      "cached_tokens": 8320,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMY0Wz2fYMXjC13OYh2KQ7KgBrcj4",
+  "object": "chat.completion",
+  "created": 1759489976,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [\n    {\"Crop\": {\"value\": \"winter barley\", \"span\": [47, 60]}},\n    {\"Crop\": {\"value\": \"winter barley\", \"span\": [125, 138]}},\n    {\"Crop\": {\"value\": \"oat\", \"span\": [1176, 1179]}},\n    {\"Crop\": {\"value\": \"winter barley\", \"span\": [1794, 1807]}},\n    {\"Crop\": {\"value\": \"winter oilseed rape\", \"span\": [1823, 1843]}},\n    {\"Crop\": {\"value\": \"winter wheat\", \"span\": [1845, 1858]}},\n    {\"Crop\": {\"value\": \"lupine\", \"span\": [1860, 1866]}},\n    {\"Crop\": {\"value\": \"winter rye\", \"span\": [1871, 1881]}},\n    {\"Crop\": {\"value\": \"Hordeum vulgare L.\", \"span\": [2100, 2119]}},\n    {\"Crop\": {\"value\": \"OTTO\", \"span\": [2130, 2134]}}\n  ],\n  \"Location\": [\n    {\"Location\": {\"value\": \"Braunschweig\", \"span\": [33, 45]}}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": {\"value\": \"2014\", \"span\": [139, 143]}},\n    {\"TimeStatement\": {\"value\": \"2014\", \"span\": [2140, 2144]}},\n    {\"TimeStatement\": {\"value\": \"1985\", \"span\": [889, 893]}},\n    {\"TimeStatement\": {\"value\": \"2008\", \"span\": [894, 898]}},\n    {\"TimeStatement\": {\"value\": \"2013\", \"span\": [1401, 1405]}},\n    {\"TimeStatement\": {\"value\": \"2013\", \"span\": [1620, 1624]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8979,
+    "completion_tokens": 426,
+    "total_tokens": 9405,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

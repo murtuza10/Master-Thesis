@@ -1,0 +1,32 @@
+{
+  "id": "gen-1759498800-hlmy8etjNMiV6cr1CrbY",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759498800,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"spring barley\", \"span\": [796, 809] }},\n    {\"Crop\": { \"value\": \"serradella\", \"span\": [831, 841] }},\n    {\"Crop\": { \"value\": \"spring barley\", \"span\": [866, 879] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Rostock\", \"span\": [16, 23] }},\n    {\"Location\": { \"value\": \"Rostock\", \"span\": [150, 157] }},\n    {\"Location\": { \"value\": \"Northern Germany\", \"span\": [284, 300] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2020\", \"span\": [104, 108] }},\n    {\"TimeStatement\": { \"value\": \"2020\", \"span\": [238, 242] }},\n    {\"TimeStatement\": { \"value\": \"2018\", \"span\": [699, 703] }},\n    {\"TimeStatement\": { \"value\": \"2019\", \"span\": [760, 764] }},\n    {\"TimeStatement\": { \"value\": \"2020\", \"span\": [789, 793] }},\n    {\"TimeStatement\": { \"value\": \"3.5 months\", \"span\": [1336, 1346] }},\n    {\"TimeStatement\": { \"value\": \"2020\", \"span\": [1349, 1353] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 8807,
+    "completion_tokens": 346,
+    "total_tokens": 9153,
+    "prompt_tokens_details": {
+      "cached_tokens": 3,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": null
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "gen-1759498776-Y34Lz0zSrjW69TAZD4yO",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759498776,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"maize\", \"span\": [220, 225] }}\n  ],\n  \"Location\": [\n    {\"Location\": { \"value\": \"Europe\", \"span\": [1681, 1688] }},\n    {\"Location\": { \"value\": \"Germany\", \"span\": [1690, 1697] }},\n    {\"Location\": { \"value\": \"Lower Saxony\", \"span\": [1699, 1712] }},\n    {\"Location\": { \"value\": \"Wanna\", \"span\": [1714, 1719] }},\n    {\"Location\": { \"value\": \"Mecklenburg-Vorpommern\", \"span\": [1721, 1744] }},\n    {\"Location\": { \"value\": \"Rostock\", \"span\": [1746, 1753] }}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": { \"value\": \"2021\", \"span\": [292, 296] }},\n    {\"TimeStatement\": { \"value\": \"2022\", \"span\": [298, 302] }},\n    {\"TimeStatement\": { \"value\": \"2023\", \"span\": [307, 311] }},\n    {\"TimeStatement\": { \"value\": \"April and August\", \"span\": [722, 737] }}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 16980,
+    "completion_tokens": 304,
+    "total_tokens": 17284,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

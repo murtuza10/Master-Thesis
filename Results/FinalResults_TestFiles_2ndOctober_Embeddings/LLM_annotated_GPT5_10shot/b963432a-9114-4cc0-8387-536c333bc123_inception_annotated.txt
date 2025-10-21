@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMY0ktizUzZwelcMJMISj3Uaf1KvU",
+  "object": "chat.completion",
+  "created": 1759489990,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [\n    {\"Crop\": {\"value\": \"spring barley\", \"span\": [702, 715]}},\n    {\"Crop\": {\"value\": \"serradella\", \"span\": [737, 747]}},\n    {\"Crop\": {\"value\": \"spring barley\", \"span\": [771, 784]}}\n  ],\n  \"Location\": [\n    {\"Location\": {\"value\": \"Rostock\", \"span\": [22, 29]}},\n    {\"Location\": {\"value\": \"Northern Germany\", \"span\": [292, 309]}}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": {\"value\": \"2020\", \"span\": [87, 91]}},\n    {\"TimeStatement\": {\"value\": \"2020\", \"span\": [510, 514]}},\n    {\"TimeStatement\": {\"value\": \"2018\", \"span\": [676, 680]}},\n    {\"TimeStatement\": {\"value\": \"2019\", \"span\": [751, 755]}},\n    {\"TimeStatement\": {\"value\": \"2020\", \"span\": [796, 800]}},\n    {\"TimeStatement\": {\"value\": \"3.5 months\", \"span\": [1270, 1280]}},\n    {\"TimeStatement\": {\"value\": \"2020\", \"span\": [1284, 1288]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8674,
+    "completion_tokens": 300,
+    "total_tokens": 8974,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

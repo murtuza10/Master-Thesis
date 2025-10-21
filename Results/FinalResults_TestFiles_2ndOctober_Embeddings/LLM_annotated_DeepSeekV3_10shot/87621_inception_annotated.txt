@@ -1,0 +1,29 @@
+{
+  "id": "gen-1759498885-zVSP7x5C0s0n8ZrHZWQt",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759498885,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [\n    {\"Crop\": { \"value\": \"Wheat dwarf virus\", \"span\": [51, 68] }},\n    {\"Crop\": { \"value\": \"barley\", \"span\": [81, 87] }},\n    {\"Crop\": { \"value\": \"Hordeum vulgare ssp. vulgare\", \"span\": [89, 118] }},\n    {\"Crop\": { \"value\": \"barley\", \"span\": [252, 258] }},\n    {\"Crop\": { \"value\": \"barley\", \"span\": [497, 503] }}\n  ],\n  \"Location\": [],\n  \"TimeStatement\": []\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 7339,
+    "completion_tokens": 158,
+    "total_tokens": 7497,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": null
+  }
+}

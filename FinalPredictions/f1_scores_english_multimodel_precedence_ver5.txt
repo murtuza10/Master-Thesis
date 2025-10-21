@@ -1,0 +1,29 @@
+============================================================
+OVERALL METRICS
+============================================================
+Precision: 0.4574
+Recall:    0.5311
+F1 Score:  0.4915
+Accuracy:  0.9517
+
+============================================================
+DETAILED CLASSIFICATION REPORT
+============================================================
+                       precision    recall  f1-score   support
+
+          cropSpecies     0.5158    0.6447    0.5731        76
+          cropVariety     0.0000    0.0000    0.0000         3
+             duration     0.5238    0.5000    0.5116        22
+              endTime     0.6000    0.4444    0.5106        27
+         locationName     0.3429    0.4211    0.3780        57
+soilAvailableNitrogen     0.0000    0.0000    0.0000         3
+      soilBulkDensity     0.0000    0.0000    0.0000         1
+            soilDepth     0.3333    1.0000    0.5000         2
+    soilOrganicCarbon     0.2400    0.3529    0.2857        17
+               soilPH     0.1250    0.2500    0.1667         4
+          soilTexture     0.8571    0.7500    0.8000         8
+            startTime     0.5231    0.6415    0.5763        53
+
+            micro avg     0.4574    0.5311    0.4915       273
+            macro avg     0.3384    0.4171    0.3585       273
+         weighted avg     0.4626    0.5311    0.4894       273

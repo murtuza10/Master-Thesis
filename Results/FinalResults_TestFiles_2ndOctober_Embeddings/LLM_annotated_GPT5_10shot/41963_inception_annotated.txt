@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMXzuyzsSQyK6y3ZE2XCFoGHn0whw",
+  "object": "chat.completion",
+  "created": 1759489938,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [],\n  \"Location\": [\n    {\"Location\": {\"value\": \"longitude\", \"span\": [679, 688]}},\n    {\"Location\": {\"value\": \"longitude\", \"span\": [735, 744]}},\n    {\"Location\": {\"value\": \"latitude\", \"span\": [789, 797]}},\n    {\"Location\": {\"value\": \"latitude\", \"span\": [844, 852]}}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": {\"value\": \"1961 - 2100\", \"span\": [211, 222]}},\n    {\"TimeStatement\": {\"value\": \"1961 - 2013\", \"span\": [353, 364]}},\n    {\"TimeStatement\": {\"value\": \"2011 – 2050\", \"span\": [648, 659]}},\n    {\"TimeStatement\": {\"value\": \"2011 – 2100\", \"span\": [664, 675]}},\n    {\"TimeStatement\": {\"value\": \"31.12.2016\", \"span\": [926, 936]}},\n    {\"TimeStatement\": {\"value\": \"01.01.1961 - 31.12.2099\", \"span\": [1004, 1028]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8845,
+    "completion_tokens": 277,
+    "total_tokens": 9122,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

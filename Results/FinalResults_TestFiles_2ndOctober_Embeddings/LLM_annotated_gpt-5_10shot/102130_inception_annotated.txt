@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-CMYCUwroULwUKOP9VK6i3TBJnzbxv",
+  "object": "chat.completion",
+  "created": 1759490718,
+  "model": "gpt-5-2025-08-07",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [],\n  \"Location\": [],\n  \"TimeStatement\": [\n    {\"TimeStatement\": {\"value\": \"2-year\", \"span\": [84, 90]}},\n    {\"TimeStatement\": {\"value\": \"6\", \"span\": [186, 187]}},\n    {\"TimeStatement\": {\"value\": \"12\", \"span\": [189, 191]}},\n    {\"TimeStatement\": {\"value\": \"24 months\", \"span\": [196, 205]}}\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8090,
+    "completion_tokens": 115,
+    "total_tokens": 8205,
+    "prompt_tokens_details": {
+      "cached_tokens": 8064,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,32 @@
+{
+  "id": "gen-1759498737-slgzbo3z5C49gXhtHb87",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759498737,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [],\n  \"Location\": [\n    {\"Location\": {\"value\": \"German National Forest Inventory\", \"span\": [168, 198]}},\n    {\"Location\": {\"value\": \"5,79922100\", \"span\": [746, 756]}},\n    {\"Location\": {\"value\": \"15,08954000\", \"span\": [784, 795]}},\n    {\"Location\": {\"value\": \"47,15766000\", \"span\": [822, 833]}},\n    {\"Location\": {\"value\": \"55,08484000\", \"span\": [861, 872]}}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": {\"value\": \"1961 - 2100\", \"span\": [152, 162]}},\n    {\"TimeStatement\": {\"value\": \"1961 - 2013\", \"span\": [229, 239]}},\n    {\"TimeStatement\": {\"value\": \"2011 – 2050\", \"span\": [397, 407]}},\n    {\"TimeStatement\": {\"value\": \"2011 – 2100\", \"span\": [412, 422]}},\n    {\"TimeStatement\": {\"value\": \"31.12.2016\", \"span\": [629, 639]}},\n    {\"TimeStatement\": {\"value\": \"01.01.1961 - 31.12.2099\", \"span\": [683, 707]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 9052,
+    "completion_tokens": 312,
+    "total_tokens": 9364,
+    "prompt_tokens_details": {
+      "cached_tokens": 3,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": null
+  }
+}

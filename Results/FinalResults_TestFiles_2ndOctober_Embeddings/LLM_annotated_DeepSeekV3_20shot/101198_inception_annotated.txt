@@ -1,0 +1,34 @@
+{
+  "id": "gen-1759498898-Z86wrZU5eVdbs3JHgK2T",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759498898,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"Crop\": [],\n  \"Location\": [\n    {\"Location\": {\"value\": \"Thünen-Institut für Waldwirtschaft\", \"span\": [92, 124]}},\n    {\"Location\": {\"value\": \"Renewable Carbon Initiative (RCI)\", \"span\": [198, 227]}},\n    {\"Location\": {\"value\": \"Bio-based Industries Consortium (BIC)\", \"span\": [232, 265]}},\n    {\"Location\": {\"value\": \"FAOStat\", \"span\": [1283, 1290]}},\n    {\"Location\": {\"value\": \"World Bank\", \"span\": [1348, 1358]}},\n    {\"Location\": {\"value\": \"Forest Resource Assessment\", \"span\": [1421, 1443]}},\n    {\"Location\": {\"value\": \"Rome\", \"span\": [1461, 1465]}},\n    {\"Location\": {\"value\": \"International Institute for Applied Systems Analyses\", \"span\": [1509, 1553]}},\n    {\"Location\": {\"value\": \"World Trade Organization\", \"span\": [1642, 1664]}},\n    {\"Location\": {\"value\": \"The fibre year consulting\", \"span\": [1725, 1748]}},\n    {\"Location\": {\"value\": \"nova-Institut GmbH\", \"span\": [2133, 2151]}},\n    {\"Location\": {\"value\": \"Hürth\", \"span\": [2152, 2158]}},\n    {\"Location\": {\"value\": \"Germany\", \"span\": [2160, 2167]}}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": {\"value\": \"2050\", \"span\": [447, 451]}},\n    {\"TimeStatement\": {\"value\": \"2020\", \"span\": [1093, 1097]}},\n    {\"TimeStatement\": {\"value\": \"2050\", \"span\": [1101, 1105]}},\n    {\"TimeStatement\": {\"value\": \"2023\", \"span\": [1291, 1295]}},\n    {\"TimeStatement\": {\"value\": \"November 2023\", \"span\": [1326, 1339]}},\n    {\"TimeStatement\": {\"value\": \"2023\", \"span\": [1367, 1371]}},\n    {\"TimeStatement\": {\"value\": \"2020\", \"span\": [1444, 1448]}},\n    {\"TimeStatement\": {\"value\": \"2020\", \"span\": [1450, 1454]}},\n    {\"TimeStatement\": {\"value\": \"November 2023\", \"span\": [1592, 1605]}},\n    {\"TimeStatement\": {\"value\": \"2024\", \"span\": [1665, 1669]}},\n    {\"TimeStatement\": {\"value\": \"August 2024\", \"span\": [1706, 1717]}},\n    {\"TimeStatement\": {\"value\": \"2023\", \"span\": [1750, 1754]}},\n    {\"TimeStatement\": {\"value\": \"17.11.2023\", \"span\": [1788, 1798]}},\n    {\"TimeStatement\": {\"value\": \"2024\", \"span\": [1800, 1804]}},\n    {\"TimeStatement\": {\"value\": \"2023–2028\", \"span\": [1943, 1952]}},\n    {\"TimeStatement\": {\"value\": \"2024-03\", \"span\": [1966, 1973]}}\n  ]\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 18247,
+    "completion_tokens": 745,
+    "total_tokens": 18992,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "gen-1759498962-mSs3KXhZIhYWKYwztHXo",
+  "provider": "Novita",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "object": "chat.completion",
+  "created": 1759498962,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"Crop\": [],\n  \"Location\": [\n    {\"Location\": {\"value\": \"southwest Germany\", \"span\": [54, 71]}},\n    {\"Location\": {\"value\": \"Europe\", \"span\": [128, 134]}},\n    {\"Location\": {\"value\": \"Germany\", \"span\": [298, 305]}},\n    {\"Location\": {\"value\": \"Germany\", \"span\": [354, 361]}},\n    {\"Location\": {\"value\": \"Europe\", \"span\": [365, 371]}},\n    {\"Location\": {\"value\": \"Dossenheim\", \"span\": [598, 608]}},\n    {\"Location\": {\"value\": \"Siebeldingen\", \"span\": [613, 625]}},\n    {\"Location\": {\"value\": \"Darmstadt\", \"span\": [665, 675]}},\n    {\"Location\": {\"value\": \"southwest Germany\", \"span\": [733, 750]}}\n  ],\n  \"TimeStatement\": [\n    {\"TimeStatement\": {\"value\": \"7-year\", \"span\": [22, 28]}},\n    {\"TimeStatement\": {\"value\": \"2011\", \"span\": [285, 289]}},\n    {\"TimeStatement\": {\"value\": \"late summer 2011\", \"span\": [324, 340]}},\n    {\"TimeStatement\": {\"value\": \"2011\", \"span\": [482, 486]}},\n    {\"TimeStatement\": {\"value\": \"February 2018\", \"span\": [490, 503]}},\n    {\"TimeStatement\": {\"value\": \"2011\", \"span\": [644, 648]}},\n    {\"TimeStatement\": {\"value\": \"2018\", \"span\": [652, 656]}}\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "system_fingerprint": "",
+  "usage": {
+    "prompt_tokens": 16511,
+    "completion_tokens": 377,
+    "total_tokens": 16888,
+    "prompt_tokens_details": {
+      "cached_tokens": 4,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": null
+  }
+}
