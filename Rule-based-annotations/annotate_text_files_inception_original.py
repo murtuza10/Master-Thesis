@@ -1,6 +1,8 @@
 import spacy
 import json
 import os
+import sys
+from datetime import datetime
 from spacy.matcher import Matcher
 from spacy import displacy
 from cassis import *
@@ -8,8 +10,14 @@ from cassis.typesystem import TYPE_NAME_FS_ARRAY, TYPE_NAME_ANNOTATION
 from geotext import GeoText
 from collections import Counter
 import re
+
+sys.path.append(r"/home/s27mhusa_hpc/Master-Thesis/FineTune19SeptBroad")
+
 from gliner import GLiNER
 from extra_rules import make_soil_patterns, make_soil_referencegroup
+from power_monitor import power_monitor, estimate_carbon_footprint
+
+POWER_MONITOR_INTERVAL = 0.5
 model = GLiNER.from_pretrained("urchade/gliner_multi-v2.1")
 
 
@@ -596,28 +604,122 @@ def annotate_text_inception(input_file_path, output_file_path, nlp, matcher):
         print(f"Error processing {input_file_path}: {e}")
 
 
+def save_power_monitoring_results(power_results, output_directory, run_metadata=None):
+    if not power_results:
+        print("⚠️  No power monitoring data collected.")
+        return None
+
+    os.makedirs(output_directory, exist_ok=True)
+
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    carbon_footprint = estimate_carbon_footprint(power_results.get("total_energy_kwh", 0.0))
+
+    summary_payload = {
+        "timestamp": datetime.now().isoformat(),
+        "output_directory": output_directory,
+        "power_consumption": power_results,
+        "carbon_footprint": carbon_footprint,
+        "monitoring_interval_seconds": power_results.get("measurement_interval", POWER_MONITOR_INTERVAL),
+    }
+
+    if run_metadata:
+        summary_payload["run_metadata"] = run_metadata
+
+    summary_filename = f"power_monitoring_summary_{timestamp}.json"
+    summary_path = os.path.join(output_directory, summary_filename)
+
+    with open(summary_path, "w", encoding="utf-8") as f:
+        json.dump(summary_payload, f, indent=2)
+
+    duration_seconds = power_results.get("duration_seconds") or 0.0
+    duration_minutes = power_results.get("duration_minutes") or 0.0
+    total_energy_wh = power_results.get("total_energy_wh") or 0.0
+    average_power_watts = power_results.get("average_power_watts") or 0.0
+    peak_power_watts = power_results.get("peak_power_watts") or 0.0
+    average_cpu = power_results.get("average_cpu_usage_percent") or 0.0
+    peak_cpu = power_results.get("peak_cpu_usage_percent") or 0.0
+    average_memory = power_results.get("average_memory_usage_percent") or 0.0
+    peak_memory = power_results.get("peak_memory_usage_percent") or 0.0
+    measurement_count = int(power_results.get("measurement_count") or 0)
+
+    print("\n" + "=" * 80)
+    print("POWER MONITORING SUMMARY")
+    print("=" * 80)
+    print(f"Duration: {duration_seconds:.2f} seconds ({duration_minutes:.2f} minutes)")
+    print(f"Total Energy: {total_energy_wh:.4f} Wh")
+    print(f"Average Power: {average_power_watts:.2f} W")
+    print(f"Peak Power: {peak_power_watts:.2f} W")
+    print(f"Average CPU Usage: {average_cpu:.1f}% (peak {peak_cpu:.1f}%)")
+    print(f"Average Memory Usage: {average_memory:.1f}% (peak {peak_memory:.1f}%)")
+    print(f"Samples collected: {measurement_count}")
+    print(f"CO2 Emissions: {carbon_footprint['co2_g']:.2f} g")
+
+    if run_metadata and isinstance(run_metadata, dict):
+        processed_files = run_metadata.get("processed_files")
+        annotated_files = run_metadata.get("annotated_files")
+        if processed_files is not None or annotated_files is not None:
+            print("-" * 80)
+            if processed_files is not None:
+                print(f"Files processed: {processed_files}")
+            if annotated_files is not None:
+                print(f"Files with annotations: {annotated_files}")
+
+    print("-" * 80)
+    print("Power monitoring summary saved to:")
+    print(summary_path)
+    print("=" * 80)
+
+    return summary_path
+
+
 def process_directory_inception(input_directory, output_directory, nlp, matcher):
     input_directory = os.path.normpath(input_directory)
     output_directory = os.path.normpath(output_directory)
 
     os.makedirs(output_directory, exist_ok=True)
 
-    i = 0
+    processed_files = 0
+    annotated_files = 0
     for filename in os.listdir(input_directory):
         if filename.endswith(".txt"):
             input_file_path = os.path.join(input_directory, filename)
             output_file_path = os.path.join(output_directory, filename.replace(".txt", "_inception.xmi"))
             entity_present = annotate_text_inception(input_file_path, output_file_path, nlp, matcher)
+            processed_files += 1
+            if entity_present:
+                annotated_files += 1
             # if(entity_present):
             #     i = i+1
             # if i == 15:
             #     break
 
+    return {
+        "processed_files": processed_files,
+        "annotated_files": annotated_files
+    }
+
 if __name__ == "__main__":
     nlp, matcher = initialize_nlp_with_entity_ruler()
     input_directory = r"/home/s27mhusa_hpc/Master-Thesis/Text_Files_Test_Data"
-    output_directory = r"/home/s27mhusa_hpc/Master-Thesis/Test_Rule_Based_Annotations_12thSeptember"
+    output_directory = r"/home/s27mhusa_hpc/Master-Thesis/Test_Rule_Based_Annotations_1stNovember"
 
     print(f"Processing text files in Inception format from: {input_directory}")
-    process_directory_inception(input_directory, output_directory, nlp, matcher)
+
+    run_metadata = {
+        "input_directory": input_directory,
+        "output_directory": output_directory
+    }
+
+    with power_monitor(monitoring_interval=POWER_MONITOR_INTERVAL) as monitor:
+        process_stats = process_directory_inception(input_directory, output_directory, nlp, matcher)
+
+    if isinstance(process_stats, dict):
+        run_metadata.update(process_stats)
+
+    power_results = monitor.get_results()
+    summary_file = save_power_monitoring_results(power_results, output_directory, run_metadata)
+
+    if summary_file:
+        print(f"Power monitoring data stored at: {summary_file}")
+
     print("✅ Inception annotation process completed.")

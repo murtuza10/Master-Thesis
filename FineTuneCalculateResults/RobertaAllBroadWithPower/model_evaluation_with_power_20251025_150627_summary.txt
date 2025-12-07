@@ -1,0 +1,89 @@
+================================================================================
+MODEL EVALUATION RESULTS WITH POWER MONITORING
+================================================================================
+Evaluation Date: 2025-10-25T15:06:27.845488
+Model Path: /lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/roberta-en-de_final_model_regularized_saved_broad_22
+Test Dataset Size: 303
+Labels Used: ['O', 'B-startTime', 'I-startTime', 'B-endTime', 'I-endTime', 'B-city', 'I-city', 'B-duration', 'I-duration', 'B-cropSpecies', 'I-cropSpecies', 'B-region', 'I-region', 'B-country', 'I-country', 'B-Soil', 'I-Soil']
+
+================================================================================
+POWER CONSUMPTION ANALYSIS
+================================================================================
+Duration: 45.57 seconds (0.76 minutes)
+Total Energy: 0.4571 Wh (0.000457 kWh)
+Average Power: 36.26 W
+Peak Power: 39.20 W
+Min Power: 26.41 W
+Average CPU Usage: 37.9%
+Peak CPU Usage: 50.9%
+Average Memory Usage: 27.9%
+Peak Memory Usage: 27.9%
+
+================================================================================
+ENVIRONMENTAL IMPACT
+================================================================================
+CO2 Emissions: 0.23 g
+Trees needed to offset: 0.0000
+Equivalent car travel: 0.00 km
+
+================================================================================
+F1 SCORES
+================================================================================
+Exact F1 Score (Strict Entity Matching): 0.2708
+Partial F1 Score (Lenient/Token-level): 0.1506
+
+================================================================================
+CLASSIFICATION REPORTS
+================================================================================
+
+TOKEN-LEVEL CLASSIFICATION REPORT:
+--------------------------------------------------
+               precision    recall  f1-score   support
+
+       B-Soil       0.00      0.00      0.00         0
+       B-city       0.69      0.31      0.42        59
+    B-country       0.00      0.00      0.00         0
+B-cropSpecies       0.00      0.00      0.00         0
+   B-duration       0.00      0.00      0.00         0
+    B-endTime       0.94      0.26      0.41       112
+     B-region       0.00      0.00      0.00         0
+  B-startTime       0.00      0.00      0.00        89
+       I-Soil       0.00      0.00      0.00         0
+       I-city       0.00      0.00      0.00         6
+I-cropSpecies       0.00      0.00      0.00         0
+   I-duration       0.00      0.00      0.00         0
+    I-endTime       1.00      0.07      0.13        29
+     I-region       0.00      0.00      0.00         0
+  I-startTime       0.00      0.00      0.00        30
+            O       1.00      0.98      0.99      7872
+
+     accuracy                           0.94      8197
+    macro avg       0.23      0.10      0.12      8197
+ weighted avg       0.98      0.94      0.96      8197
+
+
+ENTITY-LEVEL CLASSIFICATION REPORT:
+--------------------------------------------------
+              precision    recall  f1-score   support
+
+        Soil       0.00      0.00      0.00         0
+        city       0.69      0.31      0.42        59
+     country       0.00      0.00      0.00         0
+ cropSpecies       0.00      0.00      0.00         0
+    duration       0.00      0.00      0.00         0
+     endTime       0.94      0.26      0.41       112
+      region       0.00      0.00      0.00         0
+   startTime       0.00      0.00      0.00        89
+
+   micro avg       0.13      0.18      0.15       260
+   macro avg       0.20      0.07      0.10       260
+weighted avg       0.56      0.18      0.27       260
+
+
+================================================================================
+ADDITIONAL STATISTICS
+================================================================================
+Total sequences: 303
+Total tokens: 8197
+Unique labels in predictions: 15
+Unique labels in ground truth: 7

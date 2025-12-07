@@ -1,0 +1,88 @@
+================================================================================
+MODEL EVALUATION RESULTS WITH POWER MONITORING
+================================================================================
+Evaluation Date: 2025-10-25T15:11:52.102944
+Model Path: /lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/roberta-en-de_final_model_regularized_saved_broad_22
+Test Dataset Size: 303
+Labels Used: ['O', 'B-startTime', 'I-startTime', 'B-endTime', 'I-endTime', 'B-city', 'I-city', 'B-duration', 'I-duration', 'B-cropSpecies', 'I-cropSpecies', 'B-region', 'I-region', 'B-country', 'I-country', 'B-Soil', 'I-Soil']
+
+================================================================================
+POWER CONSUMPTION ANALYSIS
+================================================================================
+Duration: 27.39 seconds (0.46 minutes)
+Total Energy: 0.2908 Wh (0.000291 kWh)
+Average Power: 38.30 W
+Peak Power: 39.48 W
+Min Power: 26.40 W
+Average CPU Usage: 47.4%
+Peak CPU Usage: 51.5%
+Average Memory Usage: 28.0%
+Peak Memory Usage: 28.0%
+
+================================================================================
+ENVIRONMENTAL IMPACT
+================================================================================
+CO2 Emissions: 0.15 g
+Trees needed to offset: 0.0000
+Equivalent car travel: 0.00 km
+
+================================================================================
+F1 SCORES
+================================================================================
+Exact F1 Score (Strict Entity Matching): 0.7655
+Partial F1 Score (Lenient/Token-level): 0.7801
+
+================================================================================
+CLASSIFICATION REPORTS
+================================================================================
+
+TOKEN-LEVEL CLASSIFICATION REPORT:
+--------------------------------------------------
+               precision    recall  f1-score   support
+
+       B-Soil       0.63      0.77      0.69        47
+       B-city       0.54      0.82      0.65        17
+    B-country       0.76      0.92      0.83        24
+B-cropSpecies       0.76      0.94      0.84        86
+   B-duration       0.78      0.75      0.77        24
+    B-endTime       0.84      0.84      0.84        31
+     B-region       0.50      0.57      0.53        14
+  B-startTime       0.71      0.95      0.81        57
+       I-Soil       0.68      0.93      0.78        29
+I-cropSpecies       0.68      0.83      0.75        30
+   I-duration       0.89      0.76      0.82        21
+    I-endTime       1.00      0.67      0.80         3
+     I-region       0.50      0.67      0.57         6
+  I-startTime       0.43      0.60      0.50         5
+            O       1.00      0.99      0.99      7803
+
+     accuracy                           0.98      8197
+    macro avg       0.71      0.80      0.75      8197
+ weighted avg       0.98      0.98      0.98      8197
+
+
+ENTITY-LEVEL CLASSIFICATION REPORT:
+--------------------------------------------------
+              precision    recall  f1-score   support
+
+        Soil       0.59      0.77      0.67        47
+        city       0.54      0.82      0.65        17
+     country       0.76      0.92      0.83        24
+ cropSpecies       0.74      0.92      0.82        86
+    duration       0.71      0.71      0.71        24
+     endTime       0.84      0.84      0.84        31
+      region       0.50      0.57      0.53        14
+   startTime       0.69      0.93      0.79        57
+
+   micro avg       0.69      0.85      0.76       300
+   macro avg       0.67      0.81      0.73       300
+weighted avg       0.69      0.85      0.76       300
+
+
+================================================================================
+ADDITIONAL STATISTICS
+================================================================================
+Total sequences: 303
+Total tokens: 8197
+Unique labels in predictions: 15
+Unique labels in ground truth: 15

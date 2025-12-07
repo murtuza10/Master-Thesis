@@ -1,0 +1,109 @@
+================================================================================
+MODEL EVALUATION RESULTS WITH POWER MONITORING
+================================================================================
+Evaluation Date: 2025-10-25T15:28:49.319162
+Model Path: /lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/agribert-english_specific_final_model_regularized_saved_broad_3.0-1
+Test Dataset Size: 233
+Labels Used: ['O', 'B-soilReferenceGroup', 'I-soilReferenceGroup', 'B-soilOrganicCarbon', 'I-soilOrganicCarbon', 'B-soilTexture', 'I-soilTexture', 'B-startTime', 'I-startTime', 'B-endTime', 'I-endTime', 'B-city', 'I-city', 'B-duration', 'I-duration', 'B-cropSpecies', 'I-cropSpecies', 'B-soilAvailableNitrogen', 'I-soilAvailableNitrogen', 'B-soilDepth', 'I-soilDepth', 'B-region', 'I-region', 'B-country', 'I-country', 'B-longitude', 'I-longitude', 'B-latitude', 'I-latitude', 'B-cropVariety', 'I-cropVariety', 'B-soilPH', 'I-soilPH', 'B-soilBulkDensity', 'I-soilBulkDensity']
+
+================================================================================
+POWER CONSUMPTION ANALYSIS
+================================================================================
+Duration: 8.98 seconds (0.15 minutes)
+Total Energy: 0.0849 Wh (0.000085 kWh)
+Average Power: 34.37 W
+Peak Power: 38.87 W
+Min Power: 26.42 W
+Average CPU Usage: 32.5%
+Peak CPU Usage: 50.7%
+Average Memory Usage: 27.9%
+Peak Memory Usage: 27.9%
+
+================================================================================
+ENVIRONMENTAL IMPACT
+================================================================================
+CO2 Emissions: 0.04 g
+Trees needed to offset: 0.0000
+Equivalent car travel: 0.00 km
+
+================================================================================
+F1 SCORES
+================================================================================
+Exact F1 Score (Strict Entity Matching): 0.7082
+Partial F1 Score (Lenient/Token-level): 0.7442
+
+================================================================================
+CLASSIFICATION REPORTS
+================================================================================
+
+TOKEN-LEVEL CLASSIFICATION REPORT:
+--------------------------------------------------
+                         precision    recall  f1-score   support
+
+                 B-city       0.41      0.73      0.52        15
+              B-country       0.79      0.92      0.85        24
+          B-cropSpecies       0.69      0.94      0.80        80
+          B-cropVariety       1.00      0.33      0.50         3
+             B-duration       0.77      0.77      0.77        22
+              B-endTime       0.92      0.81      0.86        27
+             B-latitude       0.00      0.00      0.00         2
+            B-longitude       0.67      1.00      0.80         2
+               B-region       0.50      0.57      0.53        14
+B-soilAvailableNitrogen       0.00      0.00      0.00         3
+      B-soilBulkDensity       0.00      0.00      0.00         1
+            B-soilDepth       0.40      1.00      0.57         2
+    B-soilOrganicCarbon       0.52      0.71      0.60        17
+               B-soilPH       0.56      1.00      0.71         5
+          B-soilTexture       0.00      0.00      0.00         8
+            B-startTime       0.83      0.92      0.88        53
+          I-cropSpecies       0.52      0.90      0.66        30
+             I-duration       0.70      0.89      0.78        18
+              I-endTime       0.00      0.00      0.00         3
+               I-region       0.36      0.67      0.47         6
+I-soilAvailableNitrogen       0.00      0.00      0.00         2
+      I-soilBulkDensity       0.00      0.00      0.00         1
+            I-soilDepth       0.20      1.00      0.33         1
+    I-soilOrganicCarbon       0.76      0.93      0.84        14
+               I-soilPH       0.00      0.00      0.00         2
+          I-soilTexture       0.00      0.00      0.00         4
+            I-startTime       0.27      0.60      0.38         5
+                      O       1.00      0.98      0.99      6561
+
+               accuracy                           0.97      6925
+              macro avg       0.42      0.56      0.46      6925
+           weighted avg       0.98      0.97      0.97      6925
+
+
+ENTITY-LEVEL CLASSIFICATION REPORT:
+--------------------------------------------------
+                       precision    recall  f1-score   support
+
+                 city       0.41      0.73      0.52        15
+              country       0.79      0.92      0.85        24
+          cropSpecies       0.65      0.91      0.76        80
+          cropVariety       1.00      0.33      0.50         3
+             duration       0.65      0.77      0.71        22
+              endTime       0.80      0.74      0.77        27
+             latitude       0.00      0.00      0.00         2
+            longitude       0.67      1.00      0.80         2
+               region       0.44      0.57      0.50        14
+soilAvailableNitrogen       0.00      0.00      0.00         3
+      soilBulkDensity       0.00      0.00      0.00         1
+            soilDepth       0.40      1.00      0.57         2
+    soilOrganicCarbon       0.48      0.71      0.57        17
+               soilPH       0.44      0.80      0.57         5
+          soilTexture       0.00      0.00      0.00         8
+            startTime       0.74      0.92      0.82        53
+
+            micro avg       0.63      0.79      0.70       278
+            macro avg       0.47      0.59      0.50       278
+         weighted avg       0.62      0.79      0.69       278
+
+
+================================================================================
+ADDITIONAL STATISTICS
+================================================================================
+Total sequences: 233
+Total tokens: 6925
+Unique labels in predictions: 21
+Unique labels in ground truth: 28
