@@ -200,5 +200,6 @@ sbatch <path-to-sbatch-file>
 - Type systems: see `Evaluation_Files/TypeSystem.xml` and `full-typesystem.xml`
 - Guidelines: `admin-*/guideline/250507_Annotation_Guidelines_2.0.pdf`
 - Many folders are date- and shot-specific to preserve experiment lineage
+- Published Dataset - https://frl.publisso.de/resource/frl:6526458
 
 
