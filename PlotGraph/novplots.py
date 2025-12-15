@@ -86,10 +86,10 @@ f1_df = pd.DataFrame({
         '—',
         'DeepSeekV3 – Specific Schema',
         'DeepSeekV3 – Specific Schema',
-        'DeepSeekV3 – Broad Schema',
+        'DeepSeekV3 – Specific Schema',
         'XLM-Roberta-Large – Broad Schema'
     ],
-    'Value': [48, 49.39, 49.85, 54.08, 76.55]
+    'Value': [56.85, 53.76, 58.91, 59.24, 78.01]
 })
 
 
@@ -235,7 +235,7 @@ def plot_horizontal_chart(df, category_col, value_col, title, xlabel, save_path=
 def generate_all_charts(output_dir=DEFAULT_OUTPUT_DIR, show=False):
     output_dir = Path(output_dir)
     chart_configs = [
-        (f1_df, 'Comparison of Exact Match F1-Scores Across All Methodologies', 'F1 Score (%)', output_dir / 'f1_scores.png', None),
+        (f1_df, 'Comparison of Partial Match F1-Scores Across All Methodologies', 'F1 Score (%)', output_dir / 'f1_partial_scores.png', None),
         (power_df, 'Sustainability Metrics Comparison: Power Consumption', 'Power (KWh)', output_dir / 'power_consumption.png', lambda v: f"{v:.4f}"),
         (cost_df, 'Sustainability Metrics Comparison: Cost', 'Cost (€)', output_dir / 'cost.png', None),
         (time_df, 'Sustainability Metrics Comparison: Processing Time', 'Time (seconds)', output_dir / 'processing_time.png', None),

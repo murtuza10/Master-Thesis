@@ -22,7 +22,8 @@ colors = {
 models = ['DeepSeekV3', 'GPT-5', 'Llama-3.1-8B-Instruct', 'Llama-3.3-70B-Instruct',
           'Qwen2.5-14B-Instruct', 'Qwen2.5-32B-Instruct', 'Qwen2.5-72B-Instruct', 'Qwen2.5-7B-Instruct']
 
-f1_scores = [0.536022, 0.507546, 0.332936, 0.377012, 0.457524, 0.527633, 0.490441, 0.440615]
+exact_f1_scores = [0.536022, 0.507546, 0.332936, 0.377012, 0.457524, 0.527633, 0.490441, 0.440615]
+partial_f1_scores = [0.592445, 0.599613, 0.359338, 0.424779, 0.508772, 0.572581, 0.539623, 0.510949]
 precision = [0.702855, 0.627604, 0.586264, 0.676326, 0.732071, 0.70773, 0.635107, 0.609432]
 recall = [0.450658, 0.4375, 0.241611, 0.273026, 0.348684, 0.434211, 0.417763, 0.352273]
 time_seconds = [1050, 179, 876, 5527, 1013, 2312, 4788, 645]
@@ -35,14 +36,14 @@ model_colors = [colors[m] for m in models]
 fig1, ax1 = plt.subplots(figsize=(12, 8), facecolor=bg_color)
 ax1.set_facecolor(bg_color)
 
-sorted_indices = np.argsort(f1_scores)
+sorted_indices = np.argsort(exact_f1_scores)
 sorted_models = [models[i] for i in sorted_indices]
-sorted_f1 = [f1_scores[i] for i in sorted_indices]
+sorted_f1 = [exact_f1_scores[i] for i in sorted_indices]
 sorted_colors = [model_colors[i] for i in sorted_indices]
 
 bars1 = ax1.barh(sorted_models, sorted_f1, color=sorted_colors, edgecolor=text_color, linewidth=1.5)
 ax1.set_xlabel('F1 Score', color=text_color, fontsize=14, fontweight='bold')
-ax1.set_title('F1 Score Comparison - Five Shot Prompting Embeddings Specific', 
+ax1.set_title('Exact F1 Score Comparison - Five Shot Prompting Embeddings Specific', 
               color=text_color, fontsize=16, fontweight='bold', pad=20)
 ax1.tick_params(colors=text_color, labelsize=11)
 ax1.grid(axis='x', color=grid_color, alpha=0.3, linestyle='--')
@@ -53,16 +54,42 @@ for i, (bar, val) in enumerate(zip(bars1, sorted_f1)):
              va='center', color=text_color, fontsize=10, fontweight='bold')
 
 plt.tight_layout()
-plt.savefig('f1_scores_comparison.png', dpi=300, facecolor=bg_color)
-print("Chart 1 saved: f1_scores_comparison.png")
+plt.savefig('exact_f1_scores_comparison.png', dpi=300, facecolor=bg_color)
+print("Chart 1 saved: exact_f1_scores_comparison.png")
+
+
+# Chart 6: F1 Scores Comparison (sorted)
+fig1, ax1 = plt.subplots(figsize=(12, 8), facecolor=bg_color)
+ax1.set_facecolor(bg_color)
+
+sorted_indices = np.argsort(partial_f1_scores)
+sorted_models = [models[i] for i in sorted_indices]
+sorted_f1 = [partial_f1_scores[i] for i in sorted_indices]
+sorted_colors = [model_colors[i] for i in sorted_indices]
+
+bars1 = ax1.barh(sorted_models, sorted_f1, color=sorted_colors, edgecolor=text_color, linewidth=1.5)
+ax1.set_xlabel('F1 Score', color=text_color, fontsize=14, fontweight='bold')
+ax1.set_title('Partial F1 Score Comparison - Five Shot Prompting Embeddings Specific', 
+              color=text_color, fontsize=16, fontweight='bold', pad=20)
+ax1.tick_params(colors=text_color, labelsize=11)
+ax1.grid(axis='x', color=grid_color, alpha=0.3, linestyle='--')
+ax1.set_xlim(0.3, 0.64)
+
+for i, (bar, val) in enumerate(zip(bars1, sorted_f1)):
+    ax1.text(val + 0.005, bar.get_y() + bar.get_height()/2, f'{val:.4f}', 
+             va='center', color=text_color, fontsize=10, fontweight='bold')
+
+plt.tight_layout()
+plt.savefig('partial_f1_scores_comparison.png', dpi=300, facecolor=bg_color)
+print("Chart 1 saved: partial_f1_scores_comparison.png")
 
 # Chart 2: Cost Comparison (logarithmic scale)
 fig2, ax2 = plt.subplots(figsize=(12, 8), facecolor=bg_color)
 ax2.set_facecolor(bg_color)
 
 bars2 = ax2.bar(models, costs, color=model_colors, edgecolor=text_color, linewidth=1.5)
-ax2.set_yscale('log')
-ax2.set_ylabel('Cost (EUR, log scale)', color=text_color, fontsize=14, fontweight='bold')
+# ax2.set_yscale('log')
+ax2.set_ylabel('Cost (EUR)', color=text_color, fontsize=14, fontweight='bold')
 ax2.set_title('Inference Cost Comparison - Five Shot Prompting Embeddings Specific', 
               color=text_color, fontsize=16, fontweight='bold', pad=20)
 ax2.tick_params(colors=text_color, labelsize=10)
@@ -71,7 +98,7 @@ ax2.grid(axis='y', color=grid_color, alpha=0.3, linestyle='--')
 
 for bar, val in zip(bars2, costs):
     height = bar.get_height()
-    ax2.text(bar.get_x() + bar.get_width()/2, height * 1.3, f'€{val:.4f}', 
+    ax2.text(bar.get_x() + bar.get_width()/2, height , f'€{val:.4f}', 
              ha='center', va='bottom', color=text_color, fontsize=9, fontweight='bold')
 
 plt.tight_layout()
@@ -83,12 +110,12 @@ fig3, ax3 = plt.subplots(figsize=(12, 8), facecolor=bg_color)
 ax3.set_facecolor(bg_color)
 
 for i, model in enumerate(models):
-    ax3.scatter(f1_scores[i], time_seconds[i], s=250, c=model_colors[i], 
+    ax3.scatter(exact_f1_scores[i], time_seconds[i], s=250, c=model_colors[i], 
                edgecolors=text_color, linewidth=2, label=model, alpha=0.9)
 
 ax3.set_xlabel('F1 Score', color=text_color, fontsize=14, fontweight='bold')
-ax3.set_ylabel('Execution Time (seconds, log scale)', color=text_color, fontsize=14, fontweight='bold')
-ax3.set_yscale('log')
+ax3.set_ylabel('Execution Time (seconds)', color=text_color, fontsize=14, fontweight='bold')
+# ax3.set_yscale('log')
 ax3.set_title('Performance vs Execution Time Trade-off - Five Shot Prompting Embeddings Specific', 
               color=text_color, fontsize=16, fontweight='bold', pad=20)
 ax3.tick_params(colors=text_color, labelsize=11)
@@ -99,6 +126,29 @@ ax3.legend(loc='best', facecolor=bg_color, edgecolor=text_color,
 plt.tight_layout()
 plt.savefig('performance_vs_time.png', dpi=300, facecolor=bg_color)
 print("Chart 3 saved: performance_vs_time.png")
+
+
+# Chart 5: Performance vs Execution Cost (scatter plot)
+fig3, ax3 = plt.subplots(figsize=(12, 8), facecolor=bg_color)
+ax3.set_facecolor(bg_color)
+
+for i, model in enumerate(models):
+    ax3.scatter(exact_f1_scores[i], costs[i], s=250, c=model_colors[i], 
+               edgecolors=text_color, linewidth=2, label=model, alpha=0.9)
+
+ax3.set_xlabel('F1 Score', color=text_color, fontsize=14, fontweight='bold')
+ax3.set_ylabel('Execution Cost (EUR)', color=text_color, fontsize=14, fontweight='bold')
+# ax3.set_yscale('log')
+ax3.set_title('Performance vs Execution Cost Trade-off - Five Shot Prompting Embeddings Specific', 
+              color=text_color, fontsize=16, fontweight='bold', pad=20)
+ax3.tick_params(colors=text_color, labelsize=11)
+ax3.grid(color=grid_color, alpha=0.3, linestyle='--')
+ax3.legend(loc='best', facecolor=bg_color, edgecolor=text_color, 
+          fontsize=9, framealpha=0.9, labelcolor=text_color)
+
+plt.tight_layout()
+plt.savefig('performance_vs_cost.png', dpi=300, facecolor=bg_color)
+print("Chart 5 saved: performance_vs_cost.png")
 
 # Chart 4: Power Consumption (local models only)
 local_models = []
