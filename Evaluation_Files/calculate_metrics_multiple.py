@@ -5,7 +5,7 @@ import evaluate
 import argparse
 import sys
 sys.path.append(os.path.abspath(os.path.dirname(__file__)))  # ensures current directory is included
-sys.path.append("/home/s27mhusa_hpc/Master-Thesis/Evaluation_Files")
+sys.path.append("/home/user/Master-Thesis/Evaluation_Files")
 from generate_bio_from_cas import generate_bio_annotations_from_cas
 from generate_bio_from_json import generate_bio_from_json
 from seqeval.metrics import classification_report
@@ -50,9 +50,9 @@ def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_js
     all_y_true = []
     all_y_pred = []
     results_per_file = []
-    y_true_dir = f"/home/s27mhusa_hpc/Master-Thesis/Test_BIO_labels"
-    results_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/TestFiles_23thAugust_DeepSeek/ner_evaluation_results_{model_name}_{start}_shot.txt"
-    stats_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/TestFiles_23thAugust_DeepSeek/Stats/ner_evaluation_stats_{model_name}_{start}_shot.txt"
+    y_true_dir = f"/home/user/Master-Thesis/Test_BIO_labels"
+    results_output_path = f"/home/user/Master-Thesis/Evaluation_Results/TestFiles_23thAugust_DeepSeek/ner_evaluation_results_{model_name}_{start}_shot.txt"
+    stats_output_path = f"/home/user/Master-Thesis/Evaluation_Results/TestFiles_23thAugust_DeepSeek/Stats/ner_evaluation_stats_{model_name}_{start}_shot.txt"
 
     results_lines = []  # Collect output to write to file later
     stats_lines = []
@@ -166,10 +166,10 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     model_name = args.model_name
-    input_text_dir = "/home/s27mhusa_hpc/Master-Thesis/Text_Files_For_LLM_Input"
-    input_annot_dir = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_TestFiles_22thAugust/LLM_annotated_Llama-3.1-8B-Instruct_1shot"
-    input_annot_dir_json = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_TestFiles_22thAugust_json/LLM_annotated_Llama-3.1-8B-Instruct_1shot"
-    xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/XMI_Files"
+    input_text_dir = "/home/user/Master-Thesis/Text_Files_For_LLM_Input"
+    input_annot_dir = f"/home/user/Master-Thesis/Results/Results_TestFiles_22thAugust/LLM_annotated_Llama-3.1-8B-Instruct_1shot"
+    input_annot_dir_json = f"/home/user/Master-Thesis/Results/Results_TestFiles_22thAugust_json/LLM_annotated_Llama-3.1-8B-Instruct_1shot"
+    xmi_dir = "/home/user/Master-Thesis/XMI_Files"
 
     evaluate_all(
         model_name,

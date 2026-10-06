@@ -14,7 +14,7 @@ def main():
     """Example usage of power monitoring with CPU predictions."""
     
     # Configuration
-    model_path = "/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/agribert-new_final_model_regularized_saved_broad_22-3"
+    model_path = "/lustre/scratch/data/user-murtuza_master_thesis/agribert-new_final_model_regularized_saved_broad_22-3"
     
     # Check if model exists
     if not os.path.exists(model_path):

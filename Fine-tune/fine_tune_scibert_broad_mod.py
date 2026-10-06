@@ -119,9 +119,9 @@ def compute_metrics(p):
 # --- 1. SETUP: DATA LOADING AND CONFIGURATION ---
 
 # Load datasets
-train_dataset = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptember/NER_dataset_sentence_train_stratified.json")
-val_dataset = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptember/NER_dataset_sentence_val_stratified.json")
-test_dataset = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptember/Test_NER_dataset.json")
+train_dataset = Dataset.from_json("/home/user/Master-Thesis/Dataset1stSeptember/NER_dataset_sentence_train_stratified.json")
+val_dataset = Dataset.from_json("/home/user/Master-Thesis/Dataset1stSeptember/NER_dataset_sentence_val_stratified.json")
+test_dataset = Dataset.from_json("/home/user/Master-Thesis/Dataset1stSeptember/Test_NER_dataset.json")
 
 # Combine for k-fold and final training
 combined_dataset = concatenate_datasets([train_dataset, val_dataset])

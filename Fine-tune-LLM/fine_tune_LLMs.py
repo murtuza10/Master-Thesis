@@ -86,13 +86,13 @@ if __name__ == "__main__":
     wandb.login(key="ed7faaa7784428261467aee38c86ccc5c316f954")
 
 
-    results_output_path = f"/home/s27mhusa_hpc/Master-Thesis/LLM_Evaluation_Results/OpenAgrar/ner_evaluation_results_{model_name}.txt"
+    results_output_path = f"/home/user/Master-Thesis/LLM_Evaluation_Results/OpenAgrar/ner_evaluation_results_{model_name}.txt"
 
     # Load dataset
-    dataset = load_dataset("json", data_files="/home/s27mhusa_hpc/Master-Thesis/combined_ner_dataset.json")
-    train_dataset = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/combined_ner_dataset_combined_manual_train_token_minlabel.json")
-    val_dataset   = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/combined_ner_dataset_combined_manual_val_token_minlabel.json")
-    test_dataset  = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/combined_ner_dataset_combined_manual_test_token_minlabel.json")
+    dataset = load_dataset("json", data_files="/home/user/Master-Thesis/combined_ner_dataset.json")
+    train_dataset = Dataset.from_json("/home/user/Master-Thesis/combined_ner_dataset_combined_manual_train_token_minlabel.json")
+    val_dataset   = Dataset.from_json("/home/user/Master-Thesis/combined_ner_dataset_combined_manual_val_token_minlabel.json")
+    test_dataset  = Dataset.from_json("/home/user/Master-Thesis/combined_ner_dataset_combined_manual_test_token_minlabel.json")
 
     dataset = DatasetDict({
         "train": train_dataset,
@@ -104,7 +104,7 @@ if __name__ == "__main__":
     label_list = ["O", "B-soilOrganicCarbon", "I-soilOrganicCarbon", "B-soilTexture", "I-soilTexture", "B-startTime", "I-startTime", "B-endTime", "I-endTime", "B-city", "I-city", "B-duration", "I-duration", "B-cropSpecies", "I-cropSpecies", "B-soilAvailableNitrogen", "I-soilAvailableNitrogen", "B-soilDepth", "I-soilDepth", "B-region", "I-region", "B-country", "I-country", "B-longitude", "I-longitude", "B-latitude", "I-latitude", "B-cropVariety", "I-cropVariety", "B-soilPH", "I-soilPH", "B-soilBulkDensity", "I-soilBulkDensity"]
     label_to_id = {l: i for i, l in enumerate(label_list)}
 
-    model_path=f"/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/{model_name}"
+    model_path=f"/lustre/scratch/data/user-murtuza_master_thesis/{model_name}"
 
 
     config = AutoConfig.from_pretrained(model_path, trust_remote_code=True)
@@ -158,7 +158,7 @@ if __name__ == "__main__":
 
     # Static training args (some overridden by Optuna)
     training_args = TrainingArguments(
-        output_dir="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/ner_model",
+        output_dir="/lustre/scratch/data/user-murtuza_master_thesis/ner_model",
         eval_strategy="epoch",
         save_strategy="epoch", 
         logging_dir="./logs",
@@ -192,7 +192,7 @@ if __name__ == "__main__":
 
     # Optionally retrain with best config:
     best_args = TrainingArguments(
-        output_dir="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/ner_model_best",
+        output_dir="/lustre/scratch/data/user-murtuza_master_thesis/ner_model_best",
         eval_strategy="epoch",
         save_strategy="epoch", 
         logging_dir="./logs_best",

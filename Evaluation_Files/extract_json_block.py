@@ -1,8 +1,8 @@
 import json
 
 # File paths
-input_file = '/home/s27mhusa_hpc/Master-Thesis/FinalDatasets-21July/Test_gold.jsonl'
-output_file = '/home/s27mhusa_hpc/Master-Thesis/FinalDatasets-21July/Test_gold_extracted.json'
+input_file = '/home/user/Master-Thesis/FinalDatasets-21July/Test_gold.jsonl'
+output_file = '/home/user/Master-Thesis/FinalDatasets-21July/Test_gold_extracted.json'
 
 # List to store id + gold_output entries
 extracted_entries = []

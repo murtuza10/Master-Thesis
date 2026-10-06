@@ -2,7 +2,7 @@
 #SBATCH --partition=sgpu_short
 #SBATCH --time=8:00:00
 #SBATCH --gpus=4
-#SBATCH --output=/home/s27mhusa_hpc/Master-Thesis/Output-FineTune-Sentence-11August/finetune_gpu_Qwen2-5-7B-Instruct_Sentence_job_%j_11_August.out
+#SBATCH --output=/home/user/Master-Thesis/Output-FineTune-Sentence-11August/finetune_gpu_Qwen2-5-7B-Instruct_Sentence_job_%j_11_August.out
 
 MODEL_NAME=$1
 
@@ -18,7 +18,7 @@ conda activate autotrain
 start_time=$(date +%s)
 
 # === Begin Resource Monitoring ===
-LOG_DIR="/home/s27mhusa_hpc/Master-Thesis/Output-FineTune-Sentence-11August/job_monitor_logs_${MODEL_NAME}_${SLURM_JOB_ID}_$(date +%Y%m%d_%H%M%S)"
+LOG_DIR="/home/user/Master-Thesis/Output-FineTune-Sentence-11August/job_monitor_logs_${MODEL_NAME}_${SLURM_JOB_ID}_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$LOG_DIR"
 INTERVAL=1
 

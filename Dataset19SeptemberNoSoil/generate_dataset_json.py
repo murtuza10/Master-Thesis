@@ -4,9 +4,9 @@ import json
 from pathlib import Path
 
 # Define paths
-tokens_path = Path("/home/s27mhusa_hpc/Master-Thesis/Dataset19SeptemberNoSoil/Train_BIO_tokens_Broad_NoSoil_sentence")
-labels_path = Path("/home/s27mhusa_hpc/Master-Thesis/Dataset19SeptemberNoSoil/Train_BIO_labels_Broad_NoSoil_sentence_indexed")
-output_path = Path("/home/s27mhusa_hpc/Master-Thesis/Dataset19SeptemberNoSoil/Train_NER_dataset_Broad_NoSoil.json")
+tokens_path = Path("/home/user/Master-Thesis/Dataset19SeptemberNoSoil/Train_BIO_tokens_Broad_NoSoil_sentence")
+labels_path = Path("/home/user/Master-Thesis/Dataset19SeptemberNoSoil/Train_BIO_labels_Broad_NoSoil_sentence_indexed")
+output_path = Path("/home/user/Master-Thesis/Dataset19SeptemberNoSoil/Train_NER_dataset_Broad_NoSoil.json")
 
 data = []
 

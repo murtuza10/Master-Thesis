@@ -21,7 +21,7 @@ def main():
     print("="*80)
     
     # Configuration
-    output_dir = "/home/s27mhusa_hpc/Master-Thesis/FineTuneCalculateResults/ScibertAllNoSoilWithPower"
+    output_dir = "/home/user/Master-Thesis/FineTuneCalculateResults/ScibertAllNoSoilWithPower"
     monitoring_interval = 0.1  # Monitor every 0.1 seconds
     
     print(f"Output directory: {output_dir}")

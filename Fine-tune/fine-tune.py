@@ -1,7 +1,7 @@
 from transformers import AutoTokenizer
 from datasets import load_dataset
 
-dataset = load_dataset("json", data_files="/home/s27mhusa_hpc/Master-Thesis/FinalDatasets-21July/combine_ner_dataset_sentence_train_stratified_filtered.json")
+dataset = load_dataset("json", data_files="/home/user/Master-Thesis/FinalDatasets-21July/combine_ner_dataset_sentence_train_stratified_filtered.json")
 
 model_checkpoint = "bert-base-cased"
 tokenizer = AutoTokenizer.from_pretrained(model_checkpoint)

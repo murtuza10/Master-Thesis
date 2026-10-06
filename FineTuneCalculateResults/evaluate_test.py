@@ -12,7 +12,7 @@ import os
 from datetime import datetime
 
 # Model and tokenizer paths
-model_path = "/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/scibert_final_model_regularized_saved_nosoil-30"
+model_path = "/lustre/scratch/data/user-murtuza_master_thesis/scibert_final_model_regularized_saved_nosoil-30"
 
 def compute_advanced_f1_scores(predictions, label_ids):
     """Advanced F1 computation with boundary-relaxed evaluation"""
@@ -340,7 +340,7 @@ def evaluate_model_on_test_set(model, tokenizer, test_dataset, compute_metrics_f
 def main():
     # Load test dataset
     print("Loading test dataset...")
-    test_dataset  = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset19September/Test_NER_dataset_Specific.json")
+    test_dataset  = Dataset.from_json("/home/user/Master-Thesis/Dataset19September/Test_NER_dataset_Specific.json")
     print(f"Test dataset loaded successfully! Size: {len(test_dataset)}")
     
     # Load model and tokenizer
@@ -443,7 +443,7 @@ def quick_evaluate(save_results=True, output_dir="./evaluation_results"):
     
     # Load test dataset
     print("Loading test dataset...")
-    test_dataset  = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset19SeptemberNoSoil/Test_NER_dataset_Broad_NoSoil.json")
+    test_dataset  = Dataset.from_json("/home/user/Master-Thesis/Dataset19SeptemberNoSoil/Test_NER_dataset_Broad_NoSoil.json")
 
     print(f"Test dataset loaded! Size: {len(test_dataset)}")
    
@@ -469,7 +469,7 @@ if __name__ == "__main__":
     # Quick and easy way to run evaluation with file saving
     exact_f1, partial_f1, saved_files = quick_evaluate(
         save_results=True, 
-        output_dir="/home/s27mhusa_hpc/Master-Thesis/FineTuneCalculateResults/ScibertAllNoSoil"
+        output_dir="/home/user/Master-Thesis/FineTuneCalculateResults/ScibertAllNoSoil"
     )
     
     print(f"\n✅ Evaluation completed!")

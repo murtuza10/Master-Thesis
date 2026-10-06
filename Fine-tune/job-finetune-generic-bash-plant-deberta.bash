@@ -15,7 +15,7 @@ conda activate Llama
 start_time=$(date +%s)
 
 # === Begin Resource Monitoring ===
-LOG_DIR="/home/s27mhusa_hpc/Master-Thesis/OutputNewDatasets14thSeptemberFineTune/job_monitor_logs_${MODEL_NAME}_${SLURM_JOB_ID}_$(date +%Y%m%d_%H%M%S)"
+LOG_DIR="/home/user/Master-Thesis/OutputNewDatasets14thSeptemberFineTune/job_monitor_logs_${MODEL_NAME}_${SLURM_JOB_ID}_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$LOG_DIR"
 INTERVAL=30
 
@@ -48,7 +48,7 @@ echo $CPU_PID >> "$LOG_DIR/pids.txt"
 echo $IO_PID >> "$LOG_DIR/pids.txt"
 
 # === Run Main Script ===
-python /home/s27mhusa_hpc/Master-Thesis/Fine-tune/fine-tune_plant-deberta.py
+python /home/user/Master-Thesis/Fine-tune/fine-tune_plant-deberta.py
 
 # === Stop Resource Monitoring ===
 echo "Stopping resource monitoring..."

@@ -209,9 +209,9 @@ if __name__ == "__main__":
     wandb.login(key="ed7faaa7784428261467aee38c86ccc5c316f954")
 
     # Load dataset
-    train_dataset = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptember/NER_dataset_sentence_train_stratified.json")
-    val_dataset   = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptember/NER_dataset_sentence_val_stratified.json")
-    test_dataset  = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptember/Test_NER_dataset.json")
+    train_dataset = Dataset.from_json("/home/user/Master-Thesis/Dataset1stSeptember/NER_dataset_sentence_train_stratified.json")
+    val_dataset   = Dataset.from_json("/home/user/Master-Thesis/Dataset1stSeptember/NER_dataset_sentence_val_stratified.json")
+    test_dataset  = Dataset.from_json("/home/user/Master-Thesis/Dataset1stSeptember/Test_NER_dataset.json")
 
     dataset = DatasetDict({
         "train": train_dataset,
@@ -250,7 +250,7 @@ if __name__ == "__main__":
 
     # Static training args
     training_args = TrainingArguments(
-        output_dir="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/ner_crf_model_6thSeptember",
+        output_dir="/lustre/scratch/data/user-murtuza_master_thesis/ner_crf_model_6thSeptember",
         eval_strategy="epoch",
         save_strategy="epoch", 
         logging_dir="./logs",
@@ -285,7 +285,7 @@ if __name__ == "__main__":
 
     # Retrain with best config
     best_args = TrainingArguments(
-        output_dir="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/ner_crf_model_best_6thSeptember",
+        output_dir="/lustre/scratch/data/user-murtuza_master_thesis/ner_crf_model_best_6thSeptember",
         eval_strategy="epoch",
         save_strategy="epoch", 
         logging_dir="./logs_best",

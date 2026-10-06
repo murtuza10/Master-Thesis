@@ -13,7 +13,7 @@ from transformers import (
 
 
 MODEL_PATH = \
-    "/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/roberta-en-de_final_model_regularized_saved_specific_22"
+    "/lustre/scratch/data/user-murtuza_master_thesis/roberta-en-de_final_model_regularized_saved_specific_22"
 
 
 # Keep this label list in sync with training
@@ -57,7 +57,7 @@ LABEL_LIST = [
 
 
 TYPE_SYSTEM_PATH = \
-    "/home/s27mhusa_hpc/Master-Thesis/Evaluation_Files/full-typesystem.xml"
+    "/home/user/Master-Thesis/Evaluation_Files/full-typesystem.xml"
 
 
 def build_label_mapping() -> Dict[str, Tuple[str, str]]:

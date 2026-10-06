@@ -1,8 +1,8 @@
 import json
 import re
 
-input_file = '/home/s27mhusa_hpc/Master-Thesis/FinalDatasets-21July/Test_predictions_Pretrained_Qwen2.5-72B.jsonl'
-output_file = '/home/s27mhusa_hpc/Master-Thesis/FinalDatasets-21July/Test_predictions_Pretrained_Qwen2.5-72B_extracted.json'
+input_file = '/home/user/Master-Thesis/FinalDatasets-21July/Test_predictions_Pretrained_Qwen2.5-72B.jsonl'
+output_file = '/home/user/Master-Thesis/FinalDatasets-21July/Test_predictions_Pretrained_Qwen2.5-72B_extracted.json'
 
 
 extracted_json_objects = []

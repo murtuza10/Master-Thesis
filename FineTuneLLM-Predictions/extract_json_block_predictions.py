@@ -1,8 +1,8 @@
 import json
 import re
 
-input_file = '/home/s27mhusa_hpc/Master-Thesis/LLM-Predictions-Document/Test_predictions_Llama3.1-8B-Instruct-Document.jsonl'
-output_file = '/home/s27mhusa_hpc/Master-Thesis/LLM-Predictions-Document/Test_predictions_Llama3.1-8B-Instruct-Document_extracted.json'
+input_file = '/home/user/Master-Thesis/LLM-Predictions-Document/Test_predictions_Llama3.1-8B-Instruct-Document.jsonl'
+output_file = '/home/user/Master-Thesis/LLM-Predictions-Document/Test_predictions_Llama3.1-8B-Instruct-Document_extracted.json'
 
 
 extracted_json_objects = []

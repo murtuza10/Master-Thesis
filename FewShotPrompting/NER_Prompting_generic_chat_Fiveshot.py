@@ -105,12 +105,12 @@ def main():
 
     model, tokenizer = load_model(args.model_path)
     process_text_files(args.input_dir, model, tokenizer, args.output_dir, int(args.max_length))
-    # input_text_dir = "/home/s27mhusa_hpc/Master-Thesis/Text_Files_For_LLM_Input"
-    # input_annot_dir = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_new_prompt/LLM_annotated_{model_name}"
-    # input_annot_dir_json = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_new_prompt_json/LLM_annotated_{model_name}"
+    # input_text_dir = "/home/user/Master-Thesis/Text_Files_For_LLM_Input"
+    # input_annot_dir = f"/home/user/Master-Thesis/Results/Results_new_prompt/LLM_annotated_{model_name}"
+    # input_annot_dir_json = f"/home/user/Master-Thesis/Results/Results_new_prompt_json/LLM_annotated_{model_name}"
     log_dir = os.environ.get('LOG_DIR')
 
-    xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/Test_XMI_Files"
+    xmi_dir = "/home/user/Master-Thesis/NewDatasets27August/Test_XMI_Files"
     evaluate_all(args.model_name,
         args.input_dir,
         args.output_dir,

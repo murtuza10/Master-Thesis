@@ -117,9 +117,9 @@ if __name__ == "__main__":
     wandb.login(key="ed7faaa7784428261467aee38c86ccc5c316f954")
 
     # Load only training and test datasets
-    train_dataset = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptember/NER_dataset_sentence_train_stratified.json")
-    val_dataset   = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptember/NER_dataset_sentence_val_stratified.json")
-    test_dataset  = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptember/Test_NER_dataset.json")
+    train_dataset = Dataset.from_json("/home/user/Master-Thesis/Dataset1stSeptember/NER_dataset_sentence_train_stratified.json")
+    val_dataset   = Dataset.from_json("/home/user/Master-Thesis/Dataset1stSeptember/NER_dataset_sentence_val_stratified.json")
+    test_dataset  = Dataset.from_json("/home/user/Master-Thesis/Dataset1stSeptember/Test_NER_dataset.json")
 
     combined_dataset = concatenate_datasets([train_dataset, val_dataset])
 
@@ -166,7 +166,7 @@ if __name__ == "__main__":
 
     # Training arguments without validation
     training_args = TrainingArguments(
-        output_dir="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/mdeberta_no_val_ner_model_7th_September_training_only",
+        output_dir="/lustre/scratch/data/user-murtuza_master_thesis/mdeberta_no_val_ner_model_7th_September_training_only",
         eval_strategy="no",  # No evaluation during training
         save_strategy="epoch",  # Save every epoch for manual selection
         save_total_limit=3,  # Keep only last 3 checkpoints to save space
@@ -224,7 +224,7 @@ if __name__ == "__main__":
     
     # Final training with selected config
     final_training_args = TrainingArguments(
-        output_dir="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/mdeberta_no_val_ner_model_7th_September_final",
+        output_dir="/lustre/scratch/data/user-murtuza_master_thesis/mdeberta_no_val_ner_model_7th_September_final",
         eval_strategy="no",
         save_strategy="epoch",
         save_total_limit=3,

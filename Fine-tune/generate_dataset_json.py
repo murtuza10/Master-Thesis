@@ -4,9 +4,9 @@ import json
 from pathlib import Path
 
 # Define paths
-tokens_path = Path("/home/s27mhusa_hpc/Master-Thesis/OpenAgrar_BIO_tokens")
-labels_path = Path("/home/s27mhusa_hpc/Master-Thesis/OpenAgrar_BIO_labels_indexed")
-output_path = Path("/home/s27mhusa_hpc/Master-Thesis/ner_dataset.json")
+tokens_path = Path("/home/user/Master-Thesis/OpenAgrar_BIO_tokens")
+labels_path = Path("/home/user/Master-Thesis/OpenAgrar_BIO_labels_indexed")
+output_path = Path("/home/user/Master-Thesis/ner_dataset.json")
 
 data = []
 

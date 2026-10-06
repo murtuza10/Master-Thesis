@@ -161,9 +161,9 @@ def compute_metrics(p):
 # --- 1. SETUP: DATA LOADING AND CONFIGURATION ---
 
 # Load datasets
-train_dataset = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/Train_ner_dataset_sentence_filtered_train_stratified.json")
-val_dataset   = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/Train_ner_dataset_sentence_filtered_val_stratified.json")
-test_dataset  = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/Test_ner_dataset_sentence.json")
+train_dataset = Dataset.from_json("/home/user/Master-Thesis/NewDatasets27August/Train_ner_dataset_sentence_filtered_train_stratified.json")
+val_dataset   = Dataset.from_json("/home/user/Master-Thesis/NewDatasets27August/Train_ner_dataset_sentence_filtered_val_stratified.json")
+test_dataset  = Dataset.from_json("/home/user/Master-Thesis/NewDatasets27August/Test_ner_dataset_sentence.json")
 
 # Apply data augmentation to training data
 print("Applying data augmentation...")
@@ -219,7 +219,7 @@ def objective(trial):
         return model_init_with_regularization(dropout)
     
     training_args = TrainingArguments(
-        output_dir=f"/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/Scibert-results/hyperparameter_search_regularized/trial_{trial.number}",
+        output_dir=f"/lustre/scratch/data/user-murtuza_master_thesis/Scibert-results/hyperparameter_search_regularized/trial_{trial.number}",
         eval_strategy="epoch",  # Use epoch-based evaluation for compatibility
         save_strategy="epoch",
         load_best_model_at_end=True,
@@ -289,7 +289,7 @@ print("="*80 + "\n")
 best_params = study.best_trial.params
 
 final_training_args = TrainingArguments(
-    con="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/Scibert-results/results/final_model_regularized",
+    con="/lustre/scratch/data/user-murtuza_master_thesis/Scibert-results/results/final_model_regularized",
     run_name="scibert-regularized-training",
     eval_strategy="epoch",
     save_strategy="epoch",

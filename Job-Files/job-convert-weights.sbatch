@@ -15,4 +15,4 @@ conda deactivate
 conda activate Llama
 
 # === Run Main Script ===
-python /lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/DeepSeek-V3/inference/fp8_cast_bf16.py --input-fp8-hf-path /lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/DeepSeek-V3 --output-bf16-hf-path /lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/DeepSeek-V3-bf16
+python /lustre/scratch/data/user-murtuza_master_thesis/DeepSeek-V3/inference/fp8_cast_bf16.py --input-fp8-hf-path /lustre/scratch/data/user-murtuza_master_thesis/DeepSeek-V3 --output-bf16-hf-path /lustre/scratch/data/user-murtuza_master_thesis/DeepSeek-V3-bf16

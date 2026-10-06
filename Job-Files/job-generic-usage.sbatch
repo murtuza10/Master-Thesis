@@ -6,10 +6,10 @@
 
 MODEL_NAME=$1
 
-INPUT_DIR="/home/s27mhusa_hpc/Master-Thesis/Text_Files_For_LLM_Input"
-OUTPUT_DIR="/home/s27mhusa_hpc/Master-Thesis/Results/Results_modified_prompt/LLM_annotated_${MODEL_NAME}"
-OUTPUT_DIR_JSON="/home/s27mhusa_hpc/Master-Thesis/Results/Results_modified_prompt_json/LLM_annotated_${MODEL_NAME}"
-MODEL_PATH="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/${MODEL_NAME}"
+INPUT_DIR="/home/user/Master-Thesis/Text_Files_For_LLM_Input"
+OUTPUT_DIR="/home/user/Master-Thesis/Results/Results_modified_prompt/LLM_annotated_${MODEL_NAME}"
+OUTPUT_DIR_JSON="/home/user/Master-Thesis/Results/Results_modified_prompt_json/LLM_annotated_${MODEL_NAME}"
+MODEL_PATH="/lustre/scratch/data/user-murtuza_master_thesis/${MODEL_NAME}"
 
 module load CUDA/12.6.0
 
@@ -27,7 +27,7 @@ nvidia-smi --query-gpu=timestamp,index,utilization.gpu,memory.used,temperature.g
 nvidia_pid=$!
 
 # Run your Python script
-python /home/s27mhusa_hpc/Master-Thesis/Zero-Shot-Prompting/NER_Prompting_generic.py \
+python /home/user/Master-Thesis/Zero-Shot-Prompting/NER_Prompting_generic.py \
   --input_dir "$INPUT_DIR" \
   --output_dir "$OUTPUT_DIR" \
   --output_dir_json "$OUTPUT_DIR_JSON" \

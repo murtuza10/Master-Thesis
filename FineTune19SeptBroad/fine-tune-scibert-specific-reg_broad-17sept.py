@@ -236,9 +236,9 @@ def augment_dataset_controlled(dataset, augmentation_ratio=0.5):
 # --- 1. SETUP: DATA LOADING AND CONFIGURATION ---
 
 # Load datasets
-train_dataset = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset19September/NER_dataset_sentence_train_final.json")
-val_dataset   = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset19September/NER_dataset_sentence_val_final.json")
-test_dataset  = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset19September/Test_NER_dataset.json")
+train_dataset = Dataset.from_json("/home/user/Master-Thesis/Dataset19September/NER_dataset_sentence_train_final.json")
+val_dataset   = Dataset.from_json("/home/user/Master-Thesis/Dataset19September/NER_dataset_sentence_val_final.json")
+test_dataset  = Dataset.from_json("/home/user/Master-Thesis/Dataset19September/Test_NER_dataset.json")
 
 
 
@@ -303,7 +303,7 @@ def objective(trial):
         return model_init_with_regularization(dropout)
     
     training_args = TrainingArguments(
-        output_dir=f"/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/Scibert-results_22sept/hyperparameter_search_regularized/trial_{trial.number}",
+        output_dir=f"/lustre/scratch/data/user-murtuza_master_thesis/Scibert-results_22sept/hyperparameter_search_regularized/trial_{trial.number}",
         eval_strategy="epoch",  # Use epoch-based evaluation for compatibility
         save_strategy="epoch",
         load_best_model_at_end=True,
@@ -383,7 +383,7 @@ print("="*80 + "\n")
 best_params = study.best_trial.params
 
 final_training_args = TrainingArguments(
-    output_dir="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/Scibert-results/results/Scibert_final_model_regularized_22sept",
+    output_dir="/lustre/scratch/data/user-murtuza_master_thesis/Scibert-results/results/Scibert_final_model_regularized_22sept",
     run_name="scibert-regularized-training",
     eval_strategy="epoch",
     save_strategy="epoch",
@@ -478,8 +478,8 @@ print("Final Test Set Metrics:")
 print(test_results.metrics)
 
 # Save the final model and tokenizer
-final_trainer.save_model("/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/scibert_final_model_regularized_saved_broad_22sept")
-tokenizer.save_pretrained("/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/scibert_final_model_regularized_saved_broad_22sept")
+final_trainer.save_model("/lustre/scratch/data/user-murtuza_master_thesis/scibert_final_model_regularized_saved_broad_22sept")
+tokenizer.save_pretrained("/lustre/scratch/data/user-murtuza_master_thesis/scibert_final_model_regularized_saved_broad_22sept")
 
 print_classification_reports(test_results.predictions, test_results.label_ids, "Final Test")
 
@@ -491,5 +491,5 @@ print_classification_reports(val_results.predictions, val_results.label_ids, "Va
 
 print("\n" + "="*80)
 print("REGULARIZED WORKFLOW COMPLETED!")
-print("Final model saved to /lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/scibert_final_model_regularized_saved_broad_22sept")
+print("Final model saved to /lustre/scratch/data/user-murtuza_master_thesis/scibert_final_model_regularized_saved_broad_22sept")
 print("="*80)

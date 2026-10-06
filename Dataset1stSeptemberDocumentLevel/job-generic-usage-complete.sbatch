@@ -2,14 +2,14 @@
 #SBATCH --partition=mlgpu_short
 #SBATCH --time=8:00:00
 #SBATCH --gpus=4
-#SBATCH --output=/home/s27mhusa_hpc/Master-Thesis/FinalOutput-2ndSeptember-Broad/gpu_job_TestFiles_%j_2ndSeptember.out
+#SBATCH --output=/home/user/Master-Thesis/FinalOutput-2ndSeptember-Broad/gpu_job_TestFiles_%j_2ndSeptember.out
 
 MODEL_NAME=$1
 
-INPUT_DIR="/home/s27mhusa_hpc/Master-Thesis/Text_Files_Test_Data"
-OUTPUT_DIR="/home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_2ndSeptember_Prompting_Broad/LLM_annotated_${MODEL_NAME}_0shot"
-OUTPUT_DIR_JSON="/home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_2ndSeptember_Prompting_Broad_json/LLM_annotated_${MODEL_NAME}_0shot"
-MODEL_PATH="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/${MODEL_NAME}"
+INPUT_DIR="/home/user/Master-Thesis/Text_Files_Test_Data"
+OUTPUT_DIR="/home/user/Master-Thesis/Results/FinalResults_TestFiles_2ndSeptember_Prompting_Broad/LLM_annotated_${MODEL_NAME}_0shot"
+OUTPUT_DIR_JSON="/home/user/Master-Thesis/Results/FinalResults_TestFiles_2ndSeptember_Prompting_Broad_json/LLM_annotated_${MODEL_NAME}_0shot"
+MODEL_PATH="/lustre/scratch/data/user-murtuza_master_thesis/${MODEL_NAME}"
 START=0
 
 module load CUDA/12.6.0
@@ -25,7 +25,7 @@ conda activate Llama
 start_time=$(date +%s)
 
 # === Begin Resource Monitoring ===
-LOG_DIR="/home/s27mhusa_hpc/Master-Thesis/FinalOutput-2ndSeptember-Broad/job_monitor_logs_TestFiles${MODEL_NAME}_$(date +%Y%m%d_%H%M%S)"
+LOG_DIR="/home/user/Master-Thesis/FinalOutput-2ndSeptember-Broad/job_monitor_logs_TestFiles${MODEL_NAME}_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$LOG_DIR"
 INTERVAL=1
 
@@ -61,7 +61,7 @@ echo $CPU_PID >> "$LOG_DIR/pids.txt"
 echo $IO_PID >> "$LOG_DIR/pids.txt"
 
 # === Run Main Script ===
-python /home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptemberDocumentLevel/NER_Prompting_chat_deepseekV3.py \
+python /home/user/Master-Thesis/Dataset1stSeptemberDocumentLevel/NER_Prompting_chat_deepseekV3.py \
   --input_dir "$INPUT_DIR" \
   --output_dir "$OUTPUT_DIR" \
   --output_dir_json "$OUTPUT_DIR_JSON" \
@@ -82,7 +82,7 @@ echo "Total GPU execution time: $elapsed seconds"
 echo "$elapsed" > "$LOG_DIR/elapsed_time_seconds.txt"
 
 # === Save execution time into Excel sheet ===
-EXCEL_PATH="/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_2ndSeptember_ZeroShot/ner_evaluation_results_${MODEL_NAME}_${START}_shot.xlsx"
+EXCEL_PATH="/home/user/Master-Thesis/Evaluation_Results/Final_TestFiles_2ndSeptember_ZeroShot/ner_evaluation_results_${MODEL_NAME}_${START}_shot.xlsx"
 
 python <<EOF
 import openpyxl

@@ -9,12 +9,12 @@ no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/shell/c
 no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/shell/condabin/conda-hook.ps1
 no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/lib/python3.10/site-packages/xontrib/conda.xsh
 no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/etc/profile.d/conda.csh
-no change     /home/s27mhusa_hpc/.bashrc
+no change     /home/user/.bashrc
 No action taken.
 Starting resource monitoring every 30 seconds...
-Logs will be stored in: /home/s27mhusa_hpc/Master-Thesis/OutputNewDatasets15thSeptemberFineTune/job_monitor_logs_scibert-broad-focal_loss_23371862_20250917_142723
+Logs will be stored in: /home/user/Master-Thesis/OutputNewDatasets15thSeptemberFineTune/job_monitor_logs_scibert-broad-focal_loss_23371862_20250917_142723
 job-finetune-generic-bash-scibert.bash: line 42: iostat: command not found
-/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+/home/user/.conda/envs/Llama/lib/python3.9/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
   warnings.warn(
 HTTP Error 429 thrown while requesting HEAD https://huggingface.co/allenai/scibert_scivocab_uncased/resolve/main/tokenizer_config.json
 Retrying in 1s [Retry 1/5].
@@ -84,7 +84,7 @@ To disable this warning, you can either:
 	- Avoid using `tokenizers` before the fork if possible
 	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
 wandb: Tracking run with wandb version 0.19.7
-wandb: Run data is saved locally in /home/s27mhusa_hpc/Master-Thesis/Fine-tune/wandb/run-20250917_142820-cfpsp5qw
+wandb: Run data is saved locally in /home/user/Master-Thesis/Fine-tune/wandb/run-20250917_142820-cfpsp5qw
 wandb: Run `wandb offline` to turn off syncing.
 wandb: Syncing run grateful-dew-749
 wandb: ⭐️ View project at https://wandb.ai/murtuzanh-university-bonn/huggingface
@@ -106,7 +106,7 @@ PART A: STARTING IMPROVED HYPERPARAMETER SEARCH
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 19.43it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.88it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.54it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.54it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 25%|██▌       | 28/112 [00:12<00:23,  3.62it/s]
@@ -116,9 +116,9 @@ PART A: STARTING IMPROVED HYPERPARAMETER SEARCH
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 19.38it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.96it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.43it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.43it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
-/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 38%|███▊      | 42/112 [00:17<00:16,  4.21it/s]
@@ -129,7 +129,7 @@ PART A: STARTING IMPROVED HYPERPARAMETER SEARCH
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.52it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.48it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.45it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.45it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 50%|█████     | 56/112 [00:22<00:12,  4.43it/s]
@@ -139,7 +139,7 @@ PART A: STARTING IMPROVED HYPERPARAMETER SEARCH
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.85it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.59it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.37it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.37it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 62%|██████▎   | 70/112 [00:28<00:09,  4.53it/s]
@@ -149,7 +149,7 @@ PART A: STARTING IMPROVED HYPERPARAMETER SEARCH
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.94it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.49it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.39it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.39it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 75%|███████▌  | 84/112 [00:33<00:05,  4.82it/s]
@@ -159,7 +159,7 @@ PART A: STARTING IMPROVED HYPERPARAMETER SEARCH
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.40it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.33it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.50it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.50it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 88%|████████▊ | 98/112 [00:38<00:02,  4.86it/s]
@@ -170,7 +170,7 @@ PART A: STARTING IMPROVED HYPERPARAMETER SEARCH
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.97it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.31it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00,  5.64it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00,  5.64it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                  
                                              [A100%|██████████| 112/112 [00:44<00:00,  4.99it/s]
@@ -178,7 +178,7 @@ PART A: STARTING IMPROVED HYPERPARAMETER SEARCH
                                              [A                                                 100%|██████████| 112/112 [00:45<00:00,  4.99it/s]100%|██████████| 112/112 [00:45<00:00,  2.44it/s]
 {'eval_loss': 0.142373725771904, 'eval_precision': 0.5179856115107914, 'eval_recall': 0.2857142857142857, 'eval_f1': 0.36828644501278773, 'eval_accuracy': 0.9465787821720025, 'eval_runtime': 1.3819, 'eval_samples_per_second': 334.323, 'eval_steps_per_second': 5.789, 'epoch': 8.0}
 {'train_runtime': 47.29, 'train_samples_per_second': 155.974, 'train_steps_per_second': 2.368, 'train_loss': 0.5964469398771014, 'epoch': 8.0}
-  0%|          | 0/7 [00:00<?, ?it/s] 29%|██▊       | 2/7 [00:00<00:00, 18.18it/s] 57%|█████▋    | 4/7 [00:00<00:00, 11.72it/s] 86%|████████▌ | 6/7 [00:00<00:00, 10.37it/s]/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  0%|          | 0/7 [00:00<?, ?it/s] 29%|██▊       | 2/7 [00:00<00:00, 18.18it/s] 57%|█████▋    | 4/7 [00:00<00:00, 11.72it/s] 86%|████████▌ | 6/7 [00:00<00:00, 10.37it/s]/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
 100%|██████████| 7/7 [00:01<00:00,  4.85it/s]
 HTTP Error 429 thrown while requesting HEAD https://huggingface.co/allenai/scibert_scivocab_uncased/resolve/main/config.json
@@ -216,7 +216,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.74it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.65it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.42it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.42it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 25%|██▌       | 28/112 [00:09<00:17,  4.83it/s]
@@ -226,9 +226,9 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 19.24it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 12.18it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.63it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.63it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
-/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 38%|███▊      | 42/112 [00:15<00:18,  3.84it/s]
@@ -239,7 +239,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.55it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.80it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.56it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.56it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 50%|█████     | 56/112 [00:20<00:13,  4.18it/s]
@@ -249,7 +249,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 19.31it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.87it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.64it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.64it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 62%|██████▎   | 70/112 [00:26<00:08,  4.70it/s]
@@ -259,7 +259,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 19.20it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.70it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.69it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.69it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 75%|███████▌  | 84/112 [00:31<00:05,  4.84it/s]
@@ -269,7 +269,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 19.57it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 12.27it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.97it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.97it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 88%|████████▊ | 98/112 [00:37<00:02,  4.95it/s]
@@ -280,7 +280,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.81it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.55it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00,  6.96it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00,  6.96it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                  
                                              [A100%|██████████| 112/112 [00:42<00:00,  4.71it/s]
@@ -288,7 +288,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
                                              [A                                                 100%|██████████| 112/112 [00:44<00:00,  4.71it/s]100%|██████████| 112/112 [00:44<00:00,  2.53it/s]
 {'eval_loss': 0.11654001474380493, 'eval_precision': 0.5886214442013129, 'eval_recall': 0.34267515923566877, 'eval_f1': 0.43317230273752017, 'eval_accuracy': 0.9530279030096259, 'eval_runtime': 1.2378, 'eval_samples_per_second': 372.446, 'eval_steps_per_second': 6.463, 'epoch': 8.0}
 {'train_runtime': 44.2181, 'train_samples_per_second': 166.99, 'train_steps_per_second': 2.533, 'train_loss': 0.6102910158889634, 'epoch': 8.0}
-  0%|          | 0/7 [00:00<?, ?it/s] 29%|██▊       | 2/7 [00:00<00:00, 18.40it/s] 57%|█████▋    | 4/7 [00:00<00:00, 11.67it/s] 86%|████████▌ | 6/7 [00:00<00:00, 10.45it/s]/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  0%|          | 0/7 [00:00<?, ?it/s] 29%|██▊       | 2/7 [00:00<00:00, 18.40it/s] 57%|█████▋    | 4/7 [00:00<00:00, 11.67it/s] 86%|████████▌ | 6/7 [00:00<00:00, 10.45it/s]/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
 100%|██████████| 7/7 [00:01<00:00,  4.96it/s]
 Some weights of BertForTokenClassification were not initialized from the model checkpoint at allenai/scibert_scivocab_uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
@@ -307,7 +307,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.52it/s][A
  57%|█████▋    | 4/7 [00:00<00:00,  6.68it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00,  7.57it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00,  7.57it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 25%|██▌       | 28/112 [00:09<00:17,  4.73it/s]
@@ -317,9 +317,9 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.49it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.60it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.22it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.22it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
-/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 38%|███▊      | 42/112 [00:15<00:18,  3.70it/s]
@@ -330,7 +330,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.42it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.43it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.24it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.24it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 50%|█████     | 56/112 [00:20<00:14,  3.97it/s]
@@ -340,7 +340,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.70it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.59it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.38it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.38it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 62%|██████▎   | 70/112 [00:26<00:09,  4.38it/s]
@@ -350,7 +350,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.56it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.20it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.08it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.08it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 75%|███████▌  | 84/112 [00:32<00:06,  4.59it/s]
@@ -360,7 +360,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.64it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.26it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.00it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.00it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 88%|████████▊ | 98/112 [00:37<00:03,  4.63it/s]
@@ -371,7 +371,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.82it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.45it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.31it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.31it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                  
                                              [A100%|██████████| 112/112 [00:43<00:00,  4.60it/s]
@@ -379,7 +379,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
                                              [A                                                 100%|██████████| 112/112 [00:44<00:00,  4.60it/s]100%|██████████| 112/112 [00:44<00:00,  2.51it/s]
 {'eval_loss': 0.1351398080587387, 'eval_precision': 0.5561224489795918, 'eval_recall': 0.28797886393659183, 'eval_f1': 0.37946040034812883, 'eval_accuracy': 0.948537275872916, 'eval_runtime': 1.0388, 'eval_samples_per_second': 443.796, 'eval_steps_per_second': 7.701, 'epoch': 8.0}
 {'train_runtime': 44.5691, 'train_samples_per_second': 165.675, 'train_steps_per_second': 2.513, 'train_loss': 0.5994657054543495, 'epoch': 8.0}
-  0%|          | 0/7 [00:00<?, ?it/s] 29%|██▊       | 2/7 [00:00<00:00, 16.61it/s] 57%|█████▋    | 4/7 [00:00<00:00, 11.04it/s] 86%|████████▌ | 6/7 [00:00<00:00,  9.70it/s]/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  0%|          | 0/7 [00:00<?, ?it/s] 29%|██▊       | 2/7 [00:00<00:00, 16.61it/s] 57%|█████▋    | 4/7 [00:00<00:00, 11.04it/s] 86%|████████▌ | 6/7 [00:00<00:00,  9.70it/s]/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
 100%|██████████| 7/7 [00:01<00:00,  4.27it/s]
 [I 2025-09-17 14:31:23,911] Trial 0 finished with value: 0.3936397160328122 and parameters: {'dropout': 0.2139606297894513, 'weight_decay': 0.2041965541530357, 'learning_rate': 6.220587718851351e-06, 'warmup_ratio': 0.291316479273107, 'num_train_epochs': 8, 'per_device_train_batch_size': 8}. Best is trial 0 with value: 0.3936397160328122.
@@ -418,9 +418,9 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.79it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.62it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.04it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.04it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
-/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 25%|██▌       | 57/228 [00:11<00:32,  5.20it/s]
@@ -431,7 +431,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.58it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.31it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00,  7.06it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00,  7.06it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                  
                                              [A 50%|█████     | 114/228 [00:25<00:20,  5.66it/s]
@@ -442,7 +442,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.80it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.29it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.13it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.13it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                  
                                              [A 75%|███████▌  | 171/228 [00:38<00:10,  5.40it/s]
@@ -453,7 +453,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.79it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 10.99it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00,  9.99it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00,  9.99it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                  
                                              [A100%|██████████| 228/228 [00:52<00:00,  5.61it/s]
@@ -461,7 +461,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
                                              [A                                                 100%|██████████| 228/228 [00:53<00:00,  5.61it/s]100%|██████████| 228/228 [00:53<00:00,  4.24it/s]
 {'eval_loss': 0.14136402308940887, 'eval_precision': 0.4599358974358974, 'eval_recall': 0.37962962962962965, 'eval_f1': 0.41594202898550725, 'eval_accuracy': 0.9479598242310107, 'eval_runtime': 1.2415, 'eval_samples_per_second': 372.118, 'eval_steps_per_second': 6.444, 'epoch': 4.0}
 {'train_runtime': 53.7861, 'train_samples_per_second': 68.568, 'train_steps_per_second': 4.239, 'train_loss': 0.4262055618721142, 'epoch': 4.0}
-  0%|          | 0/7 [00:00<?, ?it/s] 29%|██▊       | 2/7 [00:00<00:00, 18.42it/s] 57%|█████▋    | 4/7 [00:00<00:00, 11.71it/s] 86%|████████▌ | 6/7 [00:00<00:00, 10.32it/s]/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  0%|          | 0/7 [00:00<?, ?it/s] 29%|██▊       | 2/7 [00:00<00:00, 18.42it/s] 57%|█████▋    | 4/7 [00:00<00:00, 11.71it/s] 86%|████████▌ | 6/7 [00:00<00:00, 10.32it/s]/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
 100%|██████████| 7/7 [00:01<00:00,  4.41it/s]
 HTTP Error 429 thrown while requesting HEAD https://huggingface.co/allenai/scibert_scivocab_uncased/resolve/main/config.json
@@ -494,7 +494,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.45it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.21it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00,  9.98it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00,  9.98it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 25%|██▌       | 57/228 [00:12<00:38,  4.45it/s]
@@ -505,7 +505,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.55it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.26it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.00it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.00it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                  
                                              [A 50%|█████     | 114/228 [00:25<00:20,  5.54it/s]
@@ -516,7 +516,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.55it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.02it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00,  9.75it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00,  9.75it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                  
                                              [A 75%|███████▌  | 171/228 [00:38<00:12,  4.52it/s]
@@ -565,9 +565,9 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.33it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.11it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.00it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.00it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
-/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 25%|██▌       | 57/228 [00:11<00:33,  5.06it/s]
@@ -578,7 +578,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.07it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.20it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00,  7.07it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00,  7.07it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                  
                                              [A 50%|█████     | 114/228 [00:25<00:20,  5.66it/s]
@@ -589,7 +589,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.78it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.18it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.23it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.23it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                  
                                              [A 75%|███████▌  | 171/228 [00:38<00:10,  5.23it/s]
@@ -600,7 +600,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.65it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.61it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00,  7.04it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00,  7.04it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                  
                                              [A100%|██████████| 228/228 [00:51<00:00,  5.78it/s]
@@ -608,7 +608,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
                                              [A                                                 100%|██████████| 228/228 [00:53<00:00,  5.78it/s]100%|██████████| 228/228 [00:53<00:00,  4.27it/s]
 {'eval_loss': 0.12524504959583282, 'eval_precision': 0.5017482517482518, 'eval_recall': 0.37912813738441214, 'eval_f1': 0.4319036869826938, 'eval_accuracy': 0.9511167033658383, 'eval_runtime': 1.2144, 'eval_samples_per_second': 379.621, 'eval_steps_per_second': 6.588, 'epoch': 4.0}
 {'train_runtime': 53.4306, 'train_samples_per_second': 69.099, 'train_steps_per_second': 4.267, 'train_loss': 0.42819327743429886, 'epoch': 4.0}
-  0%|          | 0/7 [00:00<?, ?it/s] 29%|██▊       | 2/7 [00:00<00:00, 18.50it/s] 57%|█████▋    | 4/7 [00:00<00:00, 11.26it/s] 86%|████████▌ | 6/7 [00:00<00:00, 10.14it/s]/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  0%|          | 0/7 [00:00<?, ?it/s] 29%|██▊       | 2/7 [00:00<00:00, 18.50it/s] 57%|█████▋    | 4/7 [00:00<00:00, 11.26it/s] 86%|████████▌ | 6/7 [00:00<00:00, 10.14it/s]/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
 100%|██████████| 7/7 [00:01<00:00,  4.23it/s]
 [I 2025-09-17 14:36:33,271] Trial 1 finished with value: 0.44994066685106043 and parameters: {'dropout': 0.3316020602461722, 'weight_decay': 0.0565839579339326, 'learning_rate': 9.203247728134384e-06, 'warmup_ratio': 0.2846422953072172, 'num_train_epochs': 4, 'per_device_train_batch_size': 2}. Best is trial 1 with value: 0.44994066685106043.
@@ -632,7 +632,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.24it/s][A
  57%|█████▋    | 4/7 [00:00<00:00,  6.66it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00,  7.58it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00,  7.58it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                
                                              [A 40%|████      | 28/70 [00:09<00:08,  4.70it/s]
@@ -642,7 +642,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.91it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.46it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.27it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.27it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                
                                              [A 60%|██████    | 42/70 [00:15<00:07,  3.52it/s]
@@ -653,7 +653,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.13it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.33it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.19it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.19it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                
                                              [A 80%|████████  | 56/70 [00:20<00:03,  4.18it/s]
@@ -702,7 +702,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
  43%|████▎     | 3/7 [00:00<00:00,  7.19it/s][A
  57%|█████▋    | 4/7 [00:00<00:00,  7.86it/s][A
  71%|███████▏  | 5/7 [00:00<00:00,  8.16it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00,  8.41it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00,  8.41it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                
                                              [A 40%|████      | 28/70 [00:09<00:08,  4.67it/s]
@@ -712,7 +712,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.10it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.50it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.45it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.45it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                
                                              [A 60%|██████    | 42/70 [00:15<00:07,  3.73it/s]
@@ -723,7 +723,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.17it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.00it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.20it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.20it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                
                                              [A 80%|████████  | 56/70 [00:20<00:03,  4.04it/s]
@@ -748,7 +748,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.05it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 10.90it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00,  9.90it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00,  9.90it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                
                                              [A 40%|████      | 28/70 [00:09<00:08,  4.81it/s]
@@ -758,7 +758,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.70it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.36it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.06it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.06it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                
                                              [A 60%|██████    | 42/70 [00:15<00:07,  3.63it/s]
@@ -769,7 +769,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.94it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.55it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.22it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.22it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                
                                              [A 80%|████████  | 56/70 [00:20<00:03,  4.32it/s]
@@ -799,7 +799,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.83it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.26it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.19it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.19it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                
                                              [A 29%|██▊       | 14/49 [00:08<00:13,  2.60it/s]
@@ -811,9 +811,9 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
  43%|████▎     | 3/7 [00:00<00:00,  7.08it/s][A
  57%|█████▋    | 4/7 [00:00<00:00,  7.51it/s][A
  71%|███████▏  | 5/7 [00:00<00:00,  7.87it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00,  8.30it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00,  8.30it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
-/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                
                                              [A 43%|████▎     | 21/49 [00:12<00:10,  2.69it/s]
@@ -823,9 +823,9 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.07it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.63it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.01it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.01it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
-/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                
                                              [A 57%|█████▋    | 28/49 [00:17<00:07,  2.64it/s]
@@ -869,7 +869,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.06it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.72it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.38it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.38it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                
                                              [A 29%|██▊       | 14/49 [00:08<00:13,  2.59it/s]
@@ -881,9 +881,9 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
  43%|████▎     | 3/7 [00:00<00:00,  7.03it/s][A
  57%|█████▋    | 4/7 [00:00<00:00,  7.62it/s][A
  71%|███████▏  | 5/7 [00:00<00:00,  7.98it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00,  8.38it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00,  8.38it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
-/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                
                                              [A 43%|████▎     | 21/49 [00:12<00:10,  2.70it/s]
@@ -893,9 +893,9 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.61it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.20it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.11it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.11it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
-/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                
                                              [A 57%|█████▋    | 28/49 [00:17<00:07,  2.64it/s]
@@ -920,7 +920,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.28it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.42it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.15it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.15it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                
                                              [A 29%|██▊       | 14/49 [00:08<00:13,  2.56it/s]
@@ -932,9 +932,9 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
  43%|████▎     | 3/7 [00:00<00:00,  6.93it/s][A
  57%|█████▋    | 4/7 [00:00<00:00,  7.51it/s][A
  71%|███████▏  | 5/7 [00:00<00:00,  7.84it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00,  8.13it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00,  8.13it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
-/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                
                                              [A 43%|████▎     | 21/49 [00:12<00:10,  2.70it/s]
@@ -944,9 +944,9 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.55it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.56it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.33it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.33it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
-/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                
                                              [A 57%|█████▋    | 28/49 [00:17<00:07,  2.65it/s]
@@ -997,7 +997,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.10it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.19it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.30it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.30it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 25%|██▌       | 28/112 [00:09<00:17,  4.80it/s]
@@ -1007,9 +1007,9 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.82it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.68it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.40it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.40it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
-/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 38%|███▊      | 42/112 [00:15<00:19,  3.54it/s]
@@ -1020,7 +1020,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.87it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.34it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.17it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.17it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 50%|█████     | 56/112 [00:20<00:13,  4.22it/s]
@@ -1030,7 +1030,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.86it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.86it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.29it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.29it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 62%|██████▎   | 70/112 [00:26<00:09,  4.40it/s]
@@ -1040,7 +1040,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.37it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.57it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.37it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.37it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 75%|███████▌  | 84/112 [00:31<00:06,  4.63it/s]
@@ -1050,7 +1050,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 16.16it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.17it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00,  9.94it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00,  9.94it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 88%|████████▊ | 98/112 [00:37<00:03,  4.65it/s]
@@ -1061,7 +1061,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.10it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.30it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00,  9.99it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00,  9.99it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                  
                                              [A100%|██████████| 112/112 [00:42<00:00,  4.84it/s]
@@ -1069,7 +1069,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
                                              [A                                                 100%|██████████| 112/112 [00:44<00:00,  4.84it/s]100%|██████████| 112/112 [00:44<00:00,  2.52it/s]
 {'eval_loss': 0.12420229613780975, 'eval_precision': 0.5671641791044776, 'eval_recall': 0.4021164021164021, 'eval_f1': 0.47058823529411764, 'eval_accuracy': 0.9509730069052102, 'eval_runtime': 1.0403, 'eval_samples_per_second': 444.09, 'eval_steps_per_second': 7.69, 'epoch': 8.0}
 {'train_runtime': 44.3755, 'train_samples_per_second': 166.218, 'train_steps_per_second': 2.524, 'train_loss': 0.6352649905851909, 'epoch': 8.0}
-  0%|          | 0/7 [00:00<?, ?it/s] 29%|██▊       | 2/7 [00:00<00:00,  6.08it/s] 43%|████▎     | 3/7 [00:00<00:00,  7.02it/s] 57%|█████▋    | 4/7 [00:00<00:00,  7.73it/s] 71%|███████▏  | 5/7 [00:00<00:00,  8.25it/s] 86%|████████▌ | 6/7 [00:00<00:00,  8.53it/s]/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  0%|          | 0/7 [00:00<?, ?it/s] 29%|██▊       | 2/7 [00:00<00:00,  6.08it/s] 43%|████▎     | 3/7 [00:00<00:00,  7.02it/s] 57%|█████▋    | 4/7 [00:00<00:00,  7.73it/s] 71%|███████▏  | 5/7 [00:00<00:00,  8.25it/s] 86%|████████▌ | 6/7 [00:00<00:00,  8.53it/s]/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
 100%|██████████| 7/7 [00:01<00:00,  4.56it/s]
 Some weights of BertForTokenClassification were not initialized from the model checkpoint at allenai/scibert_scivocab_uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
@@ -1088,7 +1088,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.13it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.30it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.28it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.28it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 25%|██▌       | 28/112 [00:10<00:17,  4.76it/s]
@@ -1098,9 +1098,9 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.79it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.86it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.32it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.32it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
-/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 38%|███▊      | 42/112 [00:15<00:21,  3.27it/s]
@@ -1111,7 +1111,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.64it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.44it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.32it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.32it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 50%|█████     | 56/112 [00:20<00:14,  3.96it/s]
@@ -1121,7 +1121,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.98it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.51it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.46it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.46it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 62%|██████▎   | 70/112 [00:26<00:09,  4.36it/s]
@@ -1131,7 +1131,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.71it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.21it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.11it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.11it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 75%|███████▌  | 84/112 [00:31<00:06,  4.56it/s]
@@ -1141,7 +1141,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.54it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.61it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.50it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.50it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 88%|████████▊ | 98/112 [00:37<00:02,  4.73it/s]
@@ -1152,7 +1152,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.90it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.87it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.40it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.40it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                  
                                              [A100%|██████████| 112/112 [00:42<00:00,  4.75it/s]
@@ -1160,7 +1160,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
                                              [A                                                 100%|██████████| 112/112 [00:44<00:00,  4.75it/s]100%|██████████| 112/112 [00:44<00:00,  2.54it/s]
 {'eval_loss': 0.09816914051771164, 'eval_precision': 0.6273584905660378, 'eval_recall': 0.5082802547770701, 'eval_f1': 0.561576354679803, 'eval_accuracy': 0.9599122700134032, 'eval_runtime': 1.0142, 'eval_samples_per_second': 454.557, 'eval_steps_per_second': 7.888, 'epoch': 8.0}
 {'train_runtime': 44.1598, 'train_samples_per_second': 167.211, 'train_steps_per_second': 2.536, 'train_loss': 0.6464850295867238, 'epoch': 8.0}
-  0%|          | 0/7 [00:00<?, ?it/s] 29%|██▊       | 2/7 [00:00<00:00, 17.02it/s] 57%|█████▋    | 4/7 [00:00<00:00, 11.01it/s] 86%|████████▌ | 6/7 [00:00<00:00, 10.01it/s]/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  0%|          | 0/7 [00:00<?, ?it/s] 29%|██▊       | 2/7 [00:00<00:00, 17.02it/s] 57%|█████▋    | 4/7 [00:00<00:00, 11.01it/s] 86%|████████▌ | 6/7 [00:00<00:00, 10.01it/s]/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
 100%|██████████| 7/7 [00:01<00:00,  4.96it/s]
 HTTP Error 429 thrown while requesting HEAD https://huggingface.co/allenai/scibert_scivocab_uncased/resolve/main/config.json
@@ -1202,7 +1202,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
  43%|████▎     | 3/7 [00:00<00:00,  7.20it/s][A
  57%|█████▋    | 4/7 [00:00<00:00,  7.88it/s][A
  71%|███████▏  | 5/7 [00:00<00:00,  8.22it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00,  8.46it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00,  8.46it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 25%|██▌       | 28/112 [00:09<00:17,  4.72it/s]
@@ -1212,9 +1212,9 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.64it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.08it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.23it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.23it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
-/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 38%|███▊      | 42/112 [00:15<00:18,  3.87it/s]
@@ -1225,7 +1225,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.75it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.53it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.43it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.43it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 50%|█████     | 56/112 [00:20<00:13,  4.27it/s]
@@ -1235,7 +1235,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.90it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.44it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00, 10.27it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00, 10.27it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 62%|██████▎   | 70/112 [00:26<00:09,  4.65it/s]
@@ -1245,7 +1245,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 17.45it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.40it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00,  9.94it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00,  9.94it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 75%|███████▌  | 84/112 [00:31<00:06,  4.67it/s]
@@ -1255,7 +1255,7 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   0%|          | 0/7 [00:00<?, ?it/s][A
  29%|██▊       | 2/7 [00:00<00:00, 18.90it/s][A
  57%|█████▋    | 4/7 [00:00<00:00, 11.75it/s][A
- 86%|████████▌ | 6/7 [00:00<00:00,  6.82it/s][A/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+ 86%|████████▌ | 6/7 [00:00<00:00,  6.82it/s][A/home/user/.conda/envs/Llama/lib/python3.9/site-packages/seqeval/metrics/v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
                                                 
                                              [A 88%|████████▊ | 98/112 [00:37<00:02,  4.74it/s]
@@ -1315,23 +1315,23 @@ PART B: TRAINING FINAL MODEL WITH REGULARIZATION
 ================================================================================
 
 Traceback (most recent call last):
-  File "/home/s27mhusa_hpc/Master-Thesis/Fine-tune/fine-tune-scibert-specific-reg_broad-17sept.py", line 500, in <module>
+  File "/home/user/Master-Thesis/Fine-tune/fine-tune-scibert-specific-reg_broad-17sept.py", line 500, in <module>
     final_trainer = FocalLossTrainer(
-  File "/home/s27mhusa_hpc/Master-Thesis/Fine-tune/fine-tune-scibert-specific-reg_broad-17sept.py", line 95, in __init__
+  File "/home/user/Master-Thesis/Fine-tune/fine-tune-scibert-specific-reg_broad-17sept.py", line 95, in __init__
     super().__init__(*args, **kwargs)
-  File "/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+  File "/home/user/.conda/envs/Llama/lib/python3.9/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
     return func(*args, **kwargs)
-  File "/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/transformers/trainer.py", line 660, in __init__
+  File "/home/user/.conda/envs/Llama/lib/python3.9/site-packages/transformers/trainer.py", line 660, in __init__
     raise RuntimeError(
 RuntimeError: Passing a `model_init` is incompatible with providing the `optimizers` argument. You should subclass `Trainer` and override the `create_optimizer_and_scheduler` method.
 Traceback (most recent call last):
-  File "/home/s27mhusa_hpc/Master-Thesis/Fine-tune/fine-tune-scibert-specific-reg_broad-17sept.py", line 500, in <module>
+  File "/home/user/Master-Thesis/Fine-tune/fine-tune-scibert-specific-reg_broad-17sept.py", line 500, in <module>
     final_trainer = FocalLossTrainer(
-  File "/home/s27mhusa_hpc/Master-Thesis/Fine-tune/fine-tune-scibert-specific-reg_broad-17sept.py", line 95, in __init__
+  File "/home/user/Master-Thesis/Fine-tune/fine-tune-scibert-specific-reg_broad-17sept.py", line 95, in __init__
     super().__init__(*args, **kwargs)
-  File "/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+  File "/home/user/.conda/envs/Llama/lib/python3.9/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
     return func(*args, **kwargs)
-  File "/home/s27mhusa_hpc/.conda/envs/Llama/lib/python3.9/site-packages/transformers/trainer.py", line 660, in __init__
+  File "/home/user/.conda/envs/Llama/lib/python3.9/site-packages/transformers/trainer.py", line 660, in __init__
     raise RuntimeError(
 RuntimeError: Passing a `model_init` is incompatible with providing the `optimizers` argument. You should subclass `Trainer` and override the `create_optimizer_and_scheduler` method.
 [1;34mwandb[0m: 
@@ -1346,4 +1346,4 @@ JobID           Elapsed     MaxRSS    CPUTime ExitCode
 23371862       01:37:21            17-07:21:36      0:0 
 23371862.ex+   01:37:21            17-07:21:36      0:0 
 23371862.0     01:37:07            17-06:21:52      0:0 
-All logs are saved in: /home/s27mhusa_hpc/Master-Thesis/OutputNewDatasets15thSeptemberFineTune/job_monitor_logs_scibert-broad-focal_loss_23371862_20250917_142723
+All logs are saved in: /home/user/Master-Thesis/OutputNewDatasets15thSeptemberFineTune/job_monitor_logs_scibert-broad-focal_loss_23371862_20250917_142723

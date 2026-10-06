@@ -272,9 +272,9 @@ def compute_metrics(p):
 # --- 1. SETUP: DATA LOADING AND CONFIGURATION ---
 
 # Load datasets
-train_dataset = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset19September/NER_dataset_sentence_English_Specific_train_final.json")
-val_dataset   = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset19September/NER_dataset_sentence_English_Specific_val_final.json")
-test_dataset  = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset19September/Test_NER_dataset_English_Specific.json")
+train_dataset = Dataset.from_json("/home/user/Master-Thesis/Dataset19September/NER_dataset_sentence_English_Specific_train_final.json")
+val_dataset   = Dataset.from_json("/home/user/Master-Thesis/Dataset19September/NER_dataset_sentence_English_Specific_val_final.json")
+test_dataset  = Dataset.from_json("/home/user/Master-Thesis/Dataset19September/Test_NER_dataset_English_Specific.json")
 
 
 label_list = ["O","B-soilReferenceGroup","I-soilReferenceGroup", "B-soilOrganicCarbon", "I-soilOrganicCarbon", "B-soilTexture", "I-soilTexture", "B-startTime", "I-startTime", "B-endTime", "I-endTime", "B-city", "I-city", "B-duration", "I-duration", "B-cropSpecies", "I-cropSpecies", "B-soilAvailableNitrogen", "I-soilAvailableNitrogen", "B-soilDepth", "I-soilDepth", "B-region", "I-region", "B-country", "I-country", "B-longitude", "I-longitude", "B-latitude", "I-latitude", "B-cropVariety", "I-cropVariety", "B-soilPH", "I-soilPH", "B-soilBulkDensity", "I-soilBulkDensity"]
@@ -337,7 +337,7 @@ def objective(trial):
         return model_init_with_regularization(dropout)
     
     training_args = TrainingArguments(
-        output_dir=f"/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/roberta-english_specific-results-broad_3.0-21sept/hyperparameter_search_regularized/trial_{trial.number}",
+        output_dir=f"/lustre/scratch/data/user-murtuza_master_thesis/roberta-english_specific-results-broad_3.0-21sept/hyperparameter_search_regularized/trial_{trial.number}",
         eval_strategy="epoch",  # Use epoch-based evaluation for compatibility
         save_strategy="epoch",
         load_best_model_at_end=True,
@@ -407,7 +407,7 @@ print("="*80 + "\n")
 best_params = study.best_trial.params
 
 final_training_args = TrainingArguments(
-    output_dir="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/roberta-english_specific-results-broad_no_aug/results/final_model_regularized_3.0-21sept",
+    output_dir="/lustre/scratch/data/user-murtuza_master_thesis/roberta-english_specific-results-broad_no_aug/results/final_model_regularized_3.0-21sept",
     run_name="roberta-english_specific-regularized-training",
     eval_strategy="epoch",
     save_strategy="epoch",
@@ -462,8 +462,8 @@ print("Final Test Set Metrics:")
 print(test_results.metrics)
 
 # Save the final model and tokenizer
-final_trainer.save_model("/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/roberta-english_specific_final_model_regularized_saved_broad_3.0-21sept")
-tokenizer.save_pretrained("/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/roberta-english_specific_final_model_regularized_saved_broad_3.0-21sept")
+final_trainer.save_model("/lustre/scratch/data/user-murtuza_master_thesis/roberta-english_specific_final_model_regularized_saved_broad_3.0-21sept")
+tokenizer.save_pretrained("/lustre/scratch/data/user-murtuza_master_thesis/roberta-english_specific_final_model_regularized_saved_broad_3.0-21sept")
 
 print_classification_reports(test_results.predictions, test_results.label_ids, "Final Test")
 
@@ -475,5 +475,5 @@ print_classification_reports(val_results.predictions, val_results.label_ids, "Va
 
 print("\n" + "="*80)
 print("REGULARIZED WORKFLOW COMPLETED!")
-print("Final model saved to /lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/roberta-english_specific_final_model_regularized_saved_broad_3.0-21sept")
+print("Final model saved to /lustre/scratch/data/user-murtuza_master_thesis/roberta-english_specific_final_model_regularized_saved_broad_3.0-21sept")
 print("="*80)

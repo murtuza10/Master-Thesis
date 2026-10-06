@@ -9,7 +9,7 @@ from seqeval.metrics import classification_report
 
 # Add local module paths
 sys.path.append(os.path.abspath(os.path.dirname(__file__)))
-sys.path.append("/home/s27mhusa_hpc/Master-Thesis/Evaluation_Files")
+sys.path.append("/home/user/Master-Thesis/Evaluation_Files")
 
 from generate_bio_from_cas import generate_bio_annotations_from_cas
 from generate_bio_from_json import generate_bio_from_json
@@ -104,9 +104,9 @@ def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_js
     results_per_file = []
     stats_lines = []
 
-    y_true_dir = f"/home/s27mhusa_hpc/Master-Thesis/Test_BIO_labels"
-    results_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/TestFiles_6thAugust/ner_evaluation_results_{model_name}_2shot_partial.txt"
-    stats_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/TestFiles_6thAugust/Stats/ner_evaluation_stats_{model_name}_2shot_partial.txt"
+    y_true_dir = f"/home/user/Master-Thesis/Test_BIO_labels"
+    results_output_path = f"/home/user/Master-Thesis/Evaluation_Results/TestFiles_6thAugust/ner_evaluation_results_{model_name}_2shot_partial.txt"
+    stats_output_path = f"/home/user/Master-Thesis/Evaluation_Results/TestFiles_6thAugust/Stats/ner_evaluation_stats_{model_name}_2shot_partial.txt"
 
     for filename in os.listdir(input_text_dir):
         if filename.endswith("_inception.txt"):
@@ -194,10 +194,10 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     model_name = args.model_name
-    input_text_dir = "/home/s27mhusa_hpc/Master-Thesis/Text_Files_For_LLM_Input"
-    input_annot_dir = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_Chat_GPT"
-    input_annot_dir_json = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_Chat_GPT_JSON"
-    xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/XMI_Files"
+    input_text_dir = "/home/user/Master-Thesis/Text_Files_For_LLM_Input"
+    input_annot_dir = f"/home/user/Master-Thesis/Results/Results_Chat_GPT"
+    input_annot_dir_json = f"/home/user/Master-Thesis/Results/Results_Chat_GPT_JSON"
+    xmi_dir = "/home/user/Master-Thesis/XMI_Files"
 
     evaluate_all(
         model_name,

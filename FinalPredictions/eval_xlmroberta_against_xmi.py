@@ -12,11 +12,11 @@ from sklearn.metrics import classification_report
 # Use environment variables with fallback defaults
 MODEL_PATH = os.getenv(
     "MODEL_PATH",
-    "/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/roberta-en-de_final_model_regularized_saved_specific_22"
+    "/lustre/scratch/data/user-murtuza_master_thesis/roberta-en-de_final_model_regularized_saved_specific_22"
 )
 TYPE_SYSTEM_PATH = os.getenv(
     "TYPE_SYSTEM_PATH",
-    "/home/s27mhusa_hpc/Master-Thesis/Evaluation_Files/TypeSystem.xml"
+    "/home/user/Master-Thesis/Evaluation_Files/TypeSystem.xml"
 )
 
 # Labels matching your training data format

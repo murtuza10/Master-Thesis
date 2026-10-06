@@ -225,9 +225,9 @@ def compute_metrics(p):
 # --- 1. SETUP: DATA LOADING AND CONFIGURATION ---
 
 # Load datasets
-train_dataset = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptember/NER_dataset_sentence_train_stratified_nodupl.json")
-val_dataset   = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptember/NER_dataset_sentence_val_stratified_nodupl.json")
-test_dataset  = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptember/Test_NER_dataset_nodupl.json")
+train_dataset = Dataset.from_json("/home/user/Master-Thesis/Dataset1stSeptember/NER_dataset_sentence_train_stratified_nodupl.json")
+val_dataset   = Dataset.from_json("/home/user/Master-Thesis/Dataset1stSeptember/NER_dataset_sentence_val_stratified_nodupl.json")
+test_dataset  = Dataset.from_json("/home/user/Master-Thesis/Dataset1stSeptember/Test_NER_dataset_nodupl.json")
 
 
 label_list = ["O", "B-startTime", "I-startTime", "B-endTime", "I-endTime", "B-city", "I-city", "B-duration", "I-duration", "B-cropSpecies", "I-cropSpecies", "B-region", "I-region", "B-country", "I-country", "B-Soil", "I-Soil"]
@@ -290,7 +290,7 @@ def objective(trial):
         return model_init_with_regularization(dropout)
     
     training_args = TrainingArguments(
-        output_dir=f"/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/roberta-results-broad_14/hyperparameter_search_regularized/trial_{trial.number}",
+        output_dir=f"/lustre/scratch/data/user-murtuza_master_thesis/roberta-results-broad_14/hyperparameter_search_regularized/trial_{trial.number}",
         eval_strategy="epoch",  # Use epoch-based evaluation for compatibility
         save_strategy="epoch",
         load_best_model_at_end=True,
@@ -360,7 +360,7 @@ print("="*80 + "\n")
 best_params = study.best_trial.params
 
 final_training_args = TrainingArguments(
-    output_dir="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/roberta-results-broad_14/results/final_model_regularized_14",
+    output_dir="/lustre/scratch/data/user-murtuza_master_thesis/roberta-results-broad_14/results/final_model_regularized_14",
     run_name="roberta-regularized-training",
     eval_strategy="epoch",
     save_strategy="epoch",
@@ -411,8 +411,8 @@ print("Final Test Set Metrics:")
 print(test_results.metrics)
 
 # Save the final model and tokenizer
-final_trainer.save_model("/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/roberta_final_model_regularized_saved_broad_14")
-tokenizer.save_pretrained("/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/roberta_final_model_regularized_saved_broad_14")
+final_trainer.save_model("/lustre/scratch/data/user-murtuza_master_thesis/roberta_final_model_regularized_saved_broad_14")
+tokenizer.save_pretrained("/lustre/scratch/data/user-murtuza_master_thesis/roberta_final_model_regularized_saved_broad_14")
 
 print_classification_reports(test_results.predictions, test_results.label_ids, "Final Test")
 
@@ -424,5 +424,5 @@ print_classification_reports(val_results.predictions, val_results.label_ids, "Va
 
 print("\n" + "="*80)
 print("REGULARIZED WORKFLOW COMPLETED!")
-print("Final model saved to /lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/roberta_final_model_regularized_saved_broad_14")
+print("Final model saved to /lustre/scratch/data/user-murtuza_master_thesis/roberta_final_model_regularized_saved_broad_14")
 print("="*80)

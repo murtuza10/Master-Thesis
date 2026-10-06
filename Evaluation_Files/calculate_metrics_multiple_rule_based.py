@@ -5,7 +5,7 @@ import ast
 
 import sys
 sys.path.append(os.path.abspath(os.path.dirname(__file__)))  # ensures current directory is included
-sys.path.append("/home/s27mhusa_hpc/Master-Thesis/Evaluation_Files")
+sys.path.append("/home/user/Master-Thesis/Evaluation_Files")
 from generate_bio_from_cas_timestatement import generate_bio_annotations_from_cas
 from seqeval.metrics import classification_report
 import spacy
@@ -92,11 +92,11 @@ def evaluate_all(rule_based_dir, xmi_dir):
     all_y_pred = []
     tokens_all = []
     results_per_file = []
-    y_true_dir = f"/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/Test_BIO_labels_document_time_location"
-    y_pred_dir = f"/home/s27mhusa_hpc/Master-Thesis/Rule-based-annotations/Rule_BIO_labels_timestatement"
+    y_true_dir = f"/home/user/Master-Thesis/NewDatasets27August/Test_BIO_labels_document_time_location"
+    y_pred_dir = f"/home/user/Master-Thesis/Rule-based-annotations/Rule_BIO_labels_timestatement"
 
-    results_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/RuleBased_12thSeptember/ner_evaluation_results_rule_based_broad.txt"
-    stats_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/RuleBased_12thSeptember/Stats/ner_evaluation_stats_rule_based_broad.txt"
+    results_output_path = f"/home/user/Master-Thesis/Evaluation_Results/RuleBased_12thSeptember/ner_evaluation_results_rule_based_broad.txt"
+    stats_output_path = f"/home/user/Master-Thesis/Evaluation_Results/RuleBased_12thSeptember/Stats/ner_evaluation_stats_rule_based_broad.txt"
 
     results_lines = []  # Collect output to write to file later
     stats_lines = []
@@ -227,8 +227,8 @@ def evaluate_all(rule_based_dir, xmi_dir):
 
 if __name__ == "__main__":
     
-    xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptemberDocumentLevel/Test_XMI_Files"
-    rule_based_dir = "/home/s27mhusa_hpc/Master-Thesis/Test_Rule_Based_Annotations_12thSeptember"
+    xmi_dir = "/home/user/Master-Thesis/Dataset1stSeptemberDocumentLevel/Test_XMI_Files"
+    rule_based_dir = "/home/user/Master-Thesis/Test_Rule_Based_Annotations_12thSeptember"
 
     evaluate_all(
         rule_based_dir,

@@ -2,7 +2,7 @@
 #SBATCH --partition=mlgpu_devel
 #SBATCH --time=1:00:00
 #SBATCH --gpus=16        
-#SBATCH --output=/home/s27mhusa_hpc/Master-Thesis/OutputNewDatasets/finetune_gpu_mdeberta-v3-base_job_%j.out
+#SBATCH --output=/home/user/Master-Thesis/OutputNewDatasets/finetune_gpu_mdeberta-v3-base_job_%j.out
 
 MODEL_NAME=$1
 
@@ -38,7 +38,7 @@ echo "======================="
 start_time=$(date +%s)
 
 # === Begin Resource Monitoring ===
-LOG_DIR="/home/s27mhusa_hpc/Master-Thesis/OutputNewDatasets/job_monitor_logs_${MODEL_NAME}_${SLURM_JOB_ID}_$(date +%Y%m%d_%H%M%S)"
+LOG_DIR="/home/user/Master-Thesis/OutputNewDatasets/job_monitor_logs_${MODEL_NAME}_${SLURM_JOB_ID}_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$LOG_DIR"
 INTERVAL=30
 
@@ -71,7 +71,7 @@ echo $CPU_PID >> "$LOG_DIR/pids.txt"
 echo $IO_PID >> "$LOG_DIR/pids.txt"
 
 # === Determine training method based on GPU count ===
-SCRIPT_PATH="/home/s27mhusa_hpc/Master-Thesis/Fine-tune/fine_tune_mdeberta_distributed.py"
+SCRIPT_PATH="/home/user/Master-Thesis/Fine-tune/fine_tune_mdeberta_distributed.py"
 
 if [ -z "$SLURM_GPUS_PER_NODE" ]; then
     # Fallback: detect GPUs manually

@@ -14,4 +14,4 @@ conda init
 conda deactivate 
 conda activate Llama
 
-python /home/s27mhusa_hpc/Master-Thesis/Zero-Shot-Prompting/NER_Prompting-Qwen2.5-72B-Instruct.py
+python /home/user/Master-Thesis/Zero-Shot-Prompting/NER_Prompting-Qwen2.5-72B-Instruct.py

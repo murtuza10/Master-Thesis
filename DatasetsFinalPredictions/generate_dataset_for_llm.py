@@ -92,8 +92,8 @@ def process_file(input_file, output_file):
 
 def main():
 
-    input_file = "/home/s27mhusa_hpc/Master-Thesis/DatasetsFinalPredictions/NER_dataset_converted.json"
-    output_file = "/home/s27mhusa_hpc/Master-Thesis/DatasetsFinalPredictions/ner_dataset_input_output.jsonl"
+    input_file = "/home/user/Master-Thesis/DatasetsFinalPredictions/NER_dataset_converted.json"
+    output_file = "/home/user/Master-Thesis/DatasetsFinalPredictions/ner_dataset_input_output.jsonl"
     process_file(input_file, output_file)
 
 if __name__ == "__main__":

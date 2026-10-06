@@ -12,7 +12,7 @@ from seqeval.metrics import classification_report
 
 # Add local module paths
 sys.path.append(os.path.abspath(os.path.dirname(__file__)))
-sys.path.append("/home/s27mhusa_hpc/Master-Thesis/Evaluation_Files")
+sys.path.append("/home/user/Master-Thesis/Evaluation_Files")
 
 from generate_bio_from_cas import generate_bio_annotations_from_cas
 from generate_bio_from_json import generate_bio_from_json
@@ -104,7 +104,7 @@ def get_power_consumption(log_dir=None):
             import subprocess
             result = subprocess.run([
                 'python', 
-                '/home/s27mhusa_hpc/Master-Thesis/Power-Consumption/gpu_power_calculator.py',
+                '/home/user/Master-Thesis/Power-Consumption/gpu_power_calculator.py',
                 gpu_log_file
             ], capture_output=True, text=True, cwd=log_dir)
             
@@ -209,12 +209,12 @@ def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_js
     results_per_file = []
     stats_lines = []
 
-    y_true_dir = f"/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptemberDocumentLevel/Test_BIO_labels"
-    results_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_3rdSeptember_FewShotTest_Broad/ner_evaluation_results_{model_name}_{start}_shot.txt"
-    stats_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_3rdSeptember_FewShotTest_Broad/Stats/ner_evaluation_stats_{model_name}_{start}_shot.txt"
+    y_true_dir = f"/home/user/Master-Thesis/Dataset1stSeptemberDocumentLevel/Test_BIO_labels"
+    results_output_path = f"/home/user/Master-Thesis/Evaluation_Results/Final_TestFiles_3rdSeptember_FewShotTest_Broad/ner_evaluation_results_{model_name}_{start}_shot.txt"
+    stats_output_path = f"/home/user/Master-Thesis/Evaluation_Results/Final_TestFiles_3rdSeptember_FewShotTest_Broad/Stats/ner_evaluation_stats_{model_name}_{start}_shot.txt"
 
     # Excel output path
-    excel_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_3rdSeptember_FewShotTest_Broad/ner_evaluation_results_{model_name}_{start}_shot.xlsx"
+    excel_output_path = f"/home/user/Master-Thesis/Evaluation_Results/Final_TestFiles_3rdSeptember_FewShotTest_Broad/ner_evaluation_results_{model_name}_{start}_shot.xlsx"
 
     for filename in os.listdir(input_text_dir):
         if filename.endswith("_inception.txt"):
@@ -327,10 +327,10 @@ if __name__ == "__main__":
     shot_count = args.shot_count
     log_dir = args.log_dir
     
-    input_text_dir = "/home/s27mhusa_hpc/Master-Thesis/Text_Files_For_LLM_Input"
-    input_annot_dir = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_Chat_GPT"
-    input_annot_dir_json = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_Chat_GPT_JSON"
-    xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/XMI_Files"
+    input_text_dir = "/home/user/Master-Thesis/Text_Files_For_LLM_Input"
+    input_annot_dir = f"/home/user/Master-Thesis/Results/Results_Chat_GPT"
+    input_annot_dir_json = f"/home/user/Master-Thesis/Results/Results_Chat_GPT_JSON"
+    xmi_dir = "/home/user/Master-Thesis/XMI_Files"
 
     evaluate_all(
         model_name,

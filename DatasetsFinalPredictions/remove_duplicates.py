@@ -59,7 +59,7 @@ def remove_duplicates_strict(input_file, output_file):
 # Usage examples
 if __name__ == "__main__":
     # Remove duplicates based on tokens only
-    remove_duplicates_from_json('/home/s27mhusa_hpc/Master-Thesis/DatasetsFinalPredictions/NER_dataset_filtered.json', '/home/s27mhusa_hpc/Master-Thesis/DatasetsFinalPredictions/NER_dataset_filtered_nodupl.json')
+    remove_duplicates_from_json('/home/user/Master-Thesis/DatasetsFinalPredictions/NER_dataset_filtered.json', '/home/user/Master-Thesis/DatasetsFinalPredictions/NER_dataset_filtered_nodupl.json')
 
     # Or use strict mode (considering both tokens and NER tags)
-    # remove_duplicates_strict('/home/s27mhusa_hpc/Master-Thesis/Dataset19September/Train_NER_dataset_filtered.json', '/home/s27mhusa_hpc/Master-Thesis/Dataset19September/output_strict_deduplicated.json')
+    # remove_duplicates_strict('/home/user/Master-Thesis/Dataset19September/Train_NER_dataset_filtered.json', '/home/user/Master-Thesis/Dataset19September/output_strict_deduplicated.json')

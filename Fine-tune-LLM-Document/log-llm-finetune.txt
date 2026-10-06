@@ -9,31 +9,31 @@ no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/shell/c
 no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/shell/condabin/conda-hook.ps1
 no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/lib/python3.10/site-packages/xontrib/conda.xsh
 no change     /opt/software/easybuild-INTEL/software/Miniforge3/24.1.2-0/etc/profile.d/conda.csh
-no change     /home/s27mhusa_hpc/.bashrc
+no change     /home/user/.bashrc
 No action taken.
 Starting resource monitoring every 1 seconds...
-Logs will be stored in: /home/s27mhusa_hpc/Master-Thesis/Fine-tune-LLM-Document/job_monitor_logs_llm-finetune_23218812_20250910_151856
+Logs will be stored in: /home/user/Master-Thesis/Fine-tune-LLM-Document/job_monitor_logs_llm-finetune_23218812_20250910_151856
 finetune-generic-llm-bash.bash: line 41: iostat: command not found
-/home/s27mhusa_hpc/.conda/envs/autotrain2/lib/python3.10/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+/home/user/.conda/envs/autotrain2/lib/python3.10/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
   warnings.warn(
 INFO     | 2025-09-10 15:18:59 | autotrain.cli.autotrain:main:58 - Using AutoTrain configuration: config_xinxin.yaml
 INFO     | 2025-09-10 15:19:00 | autotrain.parser:__post_init__:165 - Running task: lm_training
 INFO     | 2025-09-10 15:19:00 | autotrain.parser:__post_init__:166 - Using backend: local
 WARNING  | 2025-09-10 15:19:00 | autotrain.trainers.common:__init__:286 - Parameters supplied but not used: messages
-INFO     | 2025-09-10 15:19:00 | autotrain.parser:run:224 - {'model': 'meta-llama/Llama-3.2-3B-Instruct', 'project_name': 'Llama-3-1-8B-Document-10-Sept-2025', 'data_path': '/home/s27mhusa_hpc/Master-Thesis/xinxin', 'train_split': 'train', 'valid_split': None, 'add_eos_token': True, 'block_size': 8192, 'model_max_length': 8192, 'padding': 'right', 'trainer': 'sft', 'use_flash_attention_2': False, 'log': 'wandb', 'disable_gradient_checkpointing': False, 'logging_steps': -1, 'eval_strategy': 'epoch', 'save_total_limit': 1, 'auto_find_batch_size': False, 'mixed_precision': 'fp16', 'lr': 1e-05, 'epochs': 10, 'batch_size': 2, 'warmup_ratio': 0.1, 'gradient_accumulation': 4, 'optimizer': 'adamw_torch', 'scheduler': 'linear', 'weight_decay': 0.0, 'max_grad_norm': 1.0, 'seed': 42, 'chat_template': 'tokenizer', 'quantization': 'int4', 'target_modules': 'all-linear', 'merge_adapter': False, 'peft': True, 'lora_r': 16, 'lora_alpha': 32, 'lora_dropout': 0.05, 'model_ref': None, 'dpo_beta': 0.1, 'max_prompt_length': 4096, 'max_completion_length': None, 'prompt_text_column': None, 'text_column': 'messages', 'rejected_text_column': None, 'push_to_hub': False, 'username': 'murtuza10', 'token': '*****', 'unsloth': False, 'distributed_backend': None}
+INFO     | 2025-09-10 15:19:00 | autotrain.parser:run:224 - {'model': 'meta-llama/Llama-3.2-3B-Instruct', 'project_name': 'Llama-3-1-8B-Document-10-Sept-2025', 'data_path': '/home/user/Master-Thesis/xinxin', 'train_split': 'train', 'valid_split': None, 'add_eos_token': True, 'block_size': 8192, 'model_max_length': 8192, 'padding': 'right', 'trainer': 'sft', 'use_flash_attention_2': False, 'log': 'wandb', 'disable_gradient_checkpointing': False, 'logging_steps': -1, 'eval_strategy': 'epoch', 'save_total_limit': 1, 'auto_find_batch_size': False, 'mixed_precision': 'fp16', 'lr': 1e-05, 'epochs': 10, 'batch_size': 2, 'warmup_ratio': 0.1, 'gradient_accumulation': 4, 'optimizer': 'adamw_torch', 'scheduler': 'linear', 'weight_decay': 0.0, 'max_grad_norm': 1.0, 'seed': 42, 'chat_template': 'tokenizer', 'quantization': 'int4', 'target_modules': 'all-linear', 'merge_adapter': False, 'peft': True, 'lora_r': 16, 'lora_alpha': 32, 'lora_dropout': 0.05, 'model_ref': None, 'dpo_beta': 0.1, 'max_prompt_length': 4096, 'max_completion_length': None, 'prompt_text_column': None, 'text_column': 'messages', 'rejected_text_column': None, 'push_to_hub': False, 'username': 'murtuza10', 'token': '*****', 'unsloth': False, 'distributed_backend': None}
 Saving the dataset (0/1 shards):   0%|          | 0/12 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 12/12 [00:00<00:00, 2641.39 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 12/12 [00:00<00:00, 2564.28 examples/s]
 Saving the dataset (0/1 shards):   0%|          | 0/12 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 12/12 [00:00<00:00, 2838.94 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 12/12 [00:00<00:00, 2775.54 examples/s]
 INFO     | 2025-09-10 15:19:00 | autotrain.backends.local:create:20 - Starting local training...
 INFO     | 2025-09-10 15:19:00 | autotrain.commands:launch_command:514 - ['accelerate', 'launch', '--multi_gpu', '--num_machines', '1', '--num_processes', '2', '--mixed_precision', 'fp16', '-m', 'autotrain.trainers.clm', '--training_config', 'Llama-3-1-8B-Document-10-Sept-2025/training_params.json']
 INFO     | 2025-09-10 15:19:00 | autotrain.commands:launch_command:515 - {'model': 'meta-llama/Llama-3.2-3B-Instruct', 'project_name': 'Llama-3-1-8B-Document-10-Sept-2025', 'data_path': 'Llama-3-1-8B-Document-10-Sept-2025/autotrain-data', 'train_split': 'train', 'valid_split': None, 'add_eos_token': True, 'block_size': 8192, 'model_max_length': 8192, 'padding': 'right', 'trainer': 'sft', 'use_flash_attention_2': False, 'log': 'wandb', 'disable_gradient_checkpointing': False, 'logging_steps': -1, 'eval_strategy': 'epoch', 'save_total_limit': 1, 'auto_find_batch_size': False, 'mixed_precision': 'fp16', 'lr': 1e-05, 'epochs': 10, 'batch_size': 2, 'warmup_ratio': 0.1, 'gradient_accumulation': 4, 'optimizer': 'adamw_torch', 'scheduler': 'linear', 'weight_decay': 0.0, 'max_grad_norm': 1.0, 'seed': 42, 'chat_template': 'tokenizer', 'quantization': 'int4', 'target_modules': 'all-linear', 'merge_adapter': False, 'peft': True, 'lora_r': 16, 'lora_alpha': 32, 'lora_dropout': 0.05, 'model_ref': None, 'dpo_beta': 0.1, 'max_prompt_length': 4096, 'max_completion_length': None, 'prompt_text_column': 'autotrain_prompt', 'text_column': 'autotrain_text', 'rejected_text_column': 'autotrain_rejected_text', 'push_to_hub': False, 'username': 'murtuza10', 'token': '*****', 'unsloth': False, 'distributed_backend': None}
-/home/s27mhusa_hpc/.conda/envs/autotrain2/lib/python3.10/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+/home/user/.conda/envs/autotrain2/lib/python3.10/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
   warnings.warn(
 The following values were not passed to `accelerate launch` and had defaults used instead:
 	`--dynamo_backend` was set to a value of `'no'`
 To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
-/home/s27mhusa_hpc/.conda/envs/autotrain2/lib/python3.10/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+/home/user/.conda/envs/autotrain2/lib/python3.10/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
   warnings.warn(
-/home/s27mhusa_hpc/.conda/envs/autotrain2/lib/python3.10/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+/home/user/.conda/envs/autotrain2/lib/python3.10/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
   warnings.warn(
 INFO     | 2025-09-10 15:19:10 | autotrain.trainers.clm.train_clm_sft:train:11 - Starting SFT training...
 INFO     | 2025-09-10 15:19:10 | autotrain.trainers.clm.utils:process_input_data:487 - loading dataset from disk
@@ -66,15 +66,15 @@ INFO     | 2025-09-10 15:20:17 | autotrain.trainers.clm.train_clm_sft:train:39 -
 Generating train split: 1 examples [00:00,  6.47 examples/s]Generating train split: 14 examples [00:00, 71.59 examples/s]
 [rank0]:[W910 15:20:18.166484483 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
 [2025-09-10 15:20:18,303] [INFO] [real_accelerator.py:260:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-Warning: The cache directory for DeepSpeed Triton autotune, /home/s27mhusa_hpc/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /home/user/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
 [2025-09-10 15:20:18,420] [INFO] [real_accelerator.py:260:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-Warning: The cache directory for DeepSpeed Triton autotune, /home/s27mhusa_hpc/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /home/user/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
 [2025-09-10 15:20:19,528] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
 [2025-09-10 15:20:19,528] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
 wandb: WARNING The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
 wandb: Currently logged in as: murtuzanh (murtuzanh-university-bonn) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.21.3
-wandb: Run data is saved locally in /home/s27mhusa_hpc/Master-Thesis/Fine-tune-LLM-Document/wandb/run-20250910_152020-83z1bydn
+wandb: Run data is saved locally in /home/user/Master-Thesis/Fine-tune-LLM-Document/wandb/run-20250910_152020-83z1bydn
 wandb: Run `wandb offline` to turn off syncing.
 wandb: Syncing run Llama-3-1-8B-Document-10-Sept-2025
 wandb: ⭐️ View project at https://wandb.ai/murtuzanh-university-bonn/huggingface
@@ -118,4 +118,4 @@ JobID           Elapsed     MaxRSS    CPUTime ExitCode
 23218812       06:35:50            17-14:13:20      0:0 
 23218812.ex+   06:35:50            17-14:13:20      0:0 
 23218812.0     06:35:37            17-13:59:28      0:0 
-All logs are saved in: /home/s27mhusa_hpc/Master-Thesis/Fine-tune-LLM-Document/job_monitor_logs_llm-finetune_23218812_20250910_151856
+All logs are saved in: /home/user/Master-Thesis/Fine-tune-LLM-Document/job_monitor_logs_llm-finetune_23218812_20250910_151856

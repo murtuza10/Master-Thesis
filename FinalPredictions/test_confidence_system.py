@@ -6,11 +6,11 @@ This script shows how the new system resolves conflicts using confidence scores.
 
 import sys
 import os
-sys.path.append('/home/s27mhusa_hpc/Master-Thesis/FinalPredictions')
+sys.path.append('/home/user/Master-Thesis/FinalPredictions')
 
 # Import from the copy file with proper module name
-sys.path.insert(0, '/home/s27mhusa_hpc/Master-Thesis/FinalPredictions')
-exec(open('/home/s27mhusa_hpc/Master-Thesis/FinalPredictions/EnsembleModels_ver4 copy.py').read())
+sys.path.insert(0, '/home/user/Master-Thesis/FinalPredictions')
+exec(open('/home/user/Master-Thesis/FinalPredictions/EnsembleModels_ver4 copy.py').read())
 
 def test_confidence_system():
     """Test the confidence-based precedence system with sample data."""

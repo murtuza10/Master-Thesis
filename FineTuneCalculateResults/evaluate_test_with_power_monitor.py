@@ -13,11 +13,11 @@ import sys
 from datetime import datetime
 
 # Add the power monitoring module to the path
-sys.path.append('/home/s27mhusa_hpc/Master-Thesis/FineTune19SeptBroad')
+sys.path.append('/home/user/Master-Thesis/FineTune19SeptBroad')
 from power_monitor import power_monitor, estimate_carbon_footprint
 
 # Model and tokenizer paths
-model_path = "/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/scibert_final_english_model_regularized_saved_broad-3"
+model_path = "/lustre/scratch/data/user-murtuza_master_thesis/scibert_final_english_model_regularized_saved_broad-3"
 
 def compute_advanced_f1_scores(predictions, label_ids):
     """Advanced F1 computation with boundary-relaxed evaluation"""
@@ -493,7 +493,7 @@ def quick_evaluate_with_power_monitoring(save_results=True, output_dir="./evalua
     
     # Load test dataset
     print("Loading test dataset...")
-    test_dataset = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset19September/Test_NER_dataset_English.json")
+    test_dataset = Dataset.from_json("/home/user/Master-Thesis/Dataset19September/Test_NER_dataset_English.json")
     print(f"Test dataset loaded! Size: {len(test_dataset)}")
    
     # Load model and tokenizer
@@ -530,7 +530,7 @@ if __name__ == "__main__":
     # Quick and easy way to run evaluation with power monitoring
     exact_f1, partial_f1, saved_files, power_results = quick_evaluate_with_power_monitoring(
         save_results=True, 
-        output_dir="/home/s27mhusa_hpc/Master-Thesis/FineTuneCalculateResults/ScibertEnglishBroadWithPower",
+        output_dir="/home/user/Master-Thesis/FineTuneCalculateResults/ScibertEnglishBroadWithPower",
         monitoring_interval=0.1
     )
     

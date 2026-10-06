@@ -243,7 +243,7 @@ def evaluate_predictions_from_json(model_name, text_json_path, pred_json_path, g
     comparison_lines = []
 
     # Output paths
-    output_base = "/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_Eval_FineTune_Document-12August"
+    output_base = "/home/user/Master-Thesis/Evaluation_Results/Final_Eval_FineTune_Document-12August"
     output_path = f"{output_base}/ner_eval_{model_name}.txt"
     stats_output_path = f"{output_base}/Stats/ner_evaluation_stats_{model_name}.txt"
     comparison_output_path = f"{output_base}/Comparisons/Qwen2.5-14B-Document/ner_comparison_{model_name}.jsonl"
@@ -252,7 +252,7 @@ def evaluate_predictions_from_json(model_name, text_json_path, pred_json_path, g
     os.makedirs(os.path.dirname(stats_output_path), exist_ok=True)
     os.makedirs(os.path.dirname(comparison_output_path), exist_ok=True)
 
-    output_base = "/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_Eval_FineTune_Document-12August"
+    output_base = "/home/user/Master-Thesis/Evaluation_Results/Final_Eval_FineTune_Document-12August"
     comparison_dir = os.path.join(output_base, "Comparisons")
 
     for item_id in all_ids:
@@ -340,7 +340,7 @@ if __name__ == "__main__":
 
     evaluate_predictions_from_json(
         model_name=args.model_name,
-        text_json_path="/home/s27mhusa_hpc/Master-Thesis/Dataset-25-July-Document-Level/Test_ner_dataset_document_converted.json",
-        pred_json_path="/home/s27mhusa_hpc/Master-Thesis/LLM-Predictions-Document-12Aug/Test_predictions_Qwen2.5-14B-Instruct-Document_extracted.json",
-        gold_json_path="/home/s27mhusa_hpc/Master-Thesis/LLM-Predictions-Document-12Aug/Test_gold_Qwen2.5-14B-Instruct-Document_extracted.json"
+        text_json_path="/home/user/Master-Thesis/Dataset-25-July-Document-Level/Test_ner_dataset_document_converted.json",
+        pred_json_path="/home/user/Master-Thesis/LLM-Predictions-Document-12Aug/Test_predictions_Qwen2.5-14B-Instruct-Document_extracted.json",
+        gold_json_path="/home/user/Master-Thesis/LLM-Predictions-Document-12Aug/Test_gold_Qwen2.5-14B-Instruct-Document_extracted.json"
     )

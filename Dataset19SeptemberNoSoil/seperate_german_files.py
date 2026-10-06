@@ -189,8 +189,8 @@ if __name__ == "__main__":
 
     
     # Example paths
-    source_folder = "/home/s27mhusa_hpc/Master-Thesis/Dataset19September/Test_XMI_Files_English"
-    destination_folder = "/home/s27mhusa_hpc/Master-Thesis/Dataset19September/Test_XMI_Files_German"
+    source_folder = "/home/user/Master-Thesis/Dataset19September/Test_XMI_Files_English"
+    destination_folder = "/home/user/Master-Thesis/Dataset19September/Test_XMI_Files_German"
 
 
     # Method 2: Simple mode without prompts

@@ -3,7 +3,7 @@ import random
 import math
 
 # Load your JSON data
-with open('/home/s27mhusa_hpc/Master-Thesis/Dataset19SeptemberNoSoil/Train_NER_dataset_Broad_NoSoil.json', 'r') as f:
+with open('/home/user/Master-Thesis/Dataset19SeptemberNoSoil/Train_NER_dataset_Broad_NoSoil.json', 'r') as f:
     data = json.load(f)
 
 # Ensure it's a list of entries
@@ -26,7 +26,7 @@ final_data = non_zero_entries + sampled_zero_entries
 random.shuffle(final_data)
 
 # Save result
-with open('/home/s27mhusa_hpc/Master-Thesis/Dataset19SeptemberNoSoil/Train_NER_dataset_Broad_NoSoil_filtered.json', 'w') as f:
+with open('/home/user/Master-Thesis/Dataset19SeptemberNoSoil/Train_NER_dataset_Broad_NoSoil_filtered.json', 'w') as f:
     json.dump(final_data, f, indent=2)
 
 # Print summary

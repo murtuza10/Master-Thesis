@@ -15,10 +15,14 @@ from Evaluation_Files.calculate_metrics_multiple_excel_partial_exact import eval
 def perform_ner(text,max_length):
     system_prompt, user_prompt = generate_ner_prompts(text)
 
+    api_key = os.getenv("OPENROUTER_API_KEY")
+    if not api_key:
+        raise RuntimeError("Set OPENROUTER_API_KEY before running this script.")
+
     response = requests.post(
     url="https://openrouter.ai/api/v1/chat/completions",
     headers={
-        "Authorization": "Bearer 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",
+        "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json"
     },
     data=json.dumps({
@@ -87,12 +91,12 @@ def main():
     args = parser.parse_args()
 
     process_text_files(args.input_dir, args.output_dir, args.max_length)
-    # input_text_dir = "/home/s27mhusa_hpc/Master-Thesis/Text_Files_For_LLM_Input"
-    # input_annot_dir = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_new_prompt/LLM_annotated_{model_name}"
-    # input_annot_dir_json = f"/home/s27mhusa_hpc/Master-Thesis/Results/Results_new_prompt_json/LLM_annotated_{model_name}"
+    # input_text_dir = "/home/user/Master-Thesis/Text_Files_For_LLM_Input"
+    # input_annot_dir = f"/home/user/Master-Thesis/Results/Results_new_prompt/LLM_annotated_{model_name}"
+    # input_annot_dir_json = f"/home/user/Master-Thesis/Results/Results_new_prompt_json/LLM_annotated_{model_name}"
     log_dir = os.environ.get('LOG_DIR')
 
-    xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptemberDocumentLevel/Test_XMI_Files"
+    xmi_dir = "/home/user/Master-Thesis/Dataset1stSeptemberDocumentLevel/Test_XMI_Files"
     evaluate_all("DeepSeekV3",
         args.input_dir,
         args.output_dir,

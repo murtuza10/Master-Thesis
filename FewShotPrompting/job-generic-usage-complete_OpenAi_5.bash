@@ -2,10 +2,10 @@
 
 MODEL_NAME=$1
 
-INPUT_DIR="/home/s27mhusa_hpc/Master-Thesis/Text_Files_Test_Data"
-OUTPUT_DIR="/home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_${MODEL_NAME}_5shot"
-OUTPUT_DIR_JSON="/home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific_json/LLM_annotated_${MODEL_NAME}_5shot"
-MODEL_PATH="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/${MODEL_NAME}"
+INPUT_DIR="/home/user/Master-Thesis/Text_Files_Test_Data"
+OUTPUT_DIR="/home/user/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific/LLM_annotated_${MODEL_NAME}_5shot"
+OUTPUT_DIR_JSON="/home/user/Master-Thesis/Results/FinalResults_TestFiles_22thSeptember_Prompting_Specific_json/LLM_annotated_${MODEL_NAME}_5shot"
+MODEL_PATH="/lustre/scratch/data/user-murtuza_master_thesis/${MODEL_NAME}"
 START=5
 
 module load CUDA/12.6.0
@@ -21,7 +21,7 @@ conda activate Llama
 start_time=$(date +%s)
 
 # === Begin Resource Monitoring ===
-LOG_DIR="/home/s27mhusa_hpc/Master-Thesis/FinalOutput-22thSeptember-FiveShotPrompting_Final_Specific/job_monitor_logs_TestFiles${MODEL_NAME}_$(date +%Y%m%d_%H%M%S)"
+LOG_DIR="/home/user/Master-Thesis/FinalOutput-22thSeptember-FiveShotPrompting_Final_Specific/job_monitor_logs_TestFiles${MODEL_NAME}_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$LOG_DIR"
 INTERVAL=1
 
@@ -57,7 +57,7 @@ echo $CPU_PID >> "$LOG_DIR/pids.txt"
 echo $IO_PID >> "$LOG_DIR/pids.txt"
 
 # === Run Main Script ===
-python /home/s27mhusa_hpc/Master-Thesis/FewShotPrompting/NER_Prompting_chat_openAi_5.py \
+python /home/user/Master-Thesis/FewShotPrompting/NER_Prompting_chat_openAi_5.py \
   --input_dir "$INPUT_DIR" \
   --output_dir "$OUTPUT_DIR" \
   --output_dir_json "$OUTPUT_DIR_JSON" \
@@ -78,7 +78,7 @@ echo "Total GPU execution time: $elapsed seconds"
 echo "$elapsed" > "$LOG_DIR/elapsed_time_seconds.txt"
 
 # === Save execution time into Excel sheet ===
-EXCEL_PATH="/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_22thSeptember_FewShotTest_Specific/ner_evaluation_results_${MODEL_NAME}_${START}_shot.xlsx"
+EXCEL_PATH="/home/user/Master-Thesis/Evaluation_Results/Final_TestFiles_22thSeptember_FewShotTest_Specific/ner_evaluation_results_${MODEL_NAME}_${START}_shot.xlsx"
 
 python <<EOF
 import openpyxl

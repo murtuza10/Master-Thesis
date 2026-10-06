@@ -46,14 +46,14 @@ def convert_to_span_format(data: List[Dict]) -> List[Dict]:
     return results
 
 # Load your data
-with open("/home/s27mhusa_hpc/Master-Thesis/Dataset19SeptemberNoSoil/Train_NER_dataset_Broad_NoSoil_filtered_nodupl.json", "r", encoding="utf-8") as f:
+with open("/home/user/Master-Thesis/Dataset19SeptemberNoSoil/Train_NER_dataset_Broad_NoSoil_filtered_nodupl.json", "r", encoding="utf-8") as f:
     raw_data = json.load(f)
 
 # Convert
 converted_data = convert_to_span_format(raw_data)
 
 # Save
-with open("/home/s27mhusa_hpc/Master-Thesis/Dataset19SeptemberNoSoil/Train_NER_dataset_Broad_NoSoil_filtered_nodupl_converted.json", "w", encoding="utf-8") as f:
+with open("/home/user/Master-Thesis/Dataset19SeptemberNoSoil/Train_NER_dataset_Broad_NoSoil_filtered_nodupl_converted.json", "w", encoding="utf-8") as f:
     json.dump(converted_data, f, indent=2, ensure_ascii=False)
 
 print("✅ Conversion complete! Saved to 'Train_ner_dataset_converted.json'")

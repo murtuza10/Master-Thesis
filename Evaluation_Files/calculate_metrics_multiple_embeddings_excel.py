@@ -9,7 +9,7 @@ from datetime import datetime
 import time
 
 sys.path.append(os.path.abspath(os.path.dirname(__file__)))
-sys.path.append("/home/s27mhusa_hpc/Master-Thesis/Evaluation_Files")
+sys.path.append("/home/user/Master-Thesis/Evaluation_Files")
 from generate_bio_from_cas import generate_bio_annotations_from_cas
 from generate_bio_from_json import generate_bio_from_json
 from seqeval.metrics import classification_report
@@ -75,12 +75,12 @@ def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_js
     all_y_true = []
     all_y_pred = []
     results_per_file = []
-    y_true_dir = f"/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptemberDocumentLevel/Test_BIO_labels"
-    results_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_1stSeptember_ZeroShot/ner_evaluation_results_{model_name}_{start}_shot.txt"
-    stats_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_1stSeptember_ZeroShot/Stats/ner_evaluation_stats_{model_name}_{start}_shot.txt"
+    y_true_dir = f"/home/user/Master-Thesis/Dataset1stSeptemberDocumentLevel/Test_BIO_labels"
+    results_output_path = f"/home/user/Master-Thesis/Evaluation_Results/Final_TestFiles_1stSeptember_ZeroShot/ner_evaluation_results_{model_name}_{start}_shot.txt"
+    stats_output_path = f"/home/user/Master-Thesis/Evaluation_Results/Final_TestFiles_1stSeptember_ZeroShot/Stats/ner_evaluation_stats_{model_name}_{start}_shot.txt"
 
     # Excel output path
-    excel_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_1stSeptember_ZeroShot/ner_evaluation_results_{model_name}_{start}_shot.xlsx"
+    excel_output_path = f"/home/user/Master-Thesis/Evaluation_Results/Final_TestFiles_1stSeptember_ZeroShot/ner_evaluation_results_{model_name}_{start}_shot.xlsx"
 
     results_lines = []
     stats_lines = []
@@ -209,7 +209,7 @@ def get_power_consumption(log_dir=None):
             import subprocess
             result = subprocess.run([
                 'python', 
-                '/home/s27mhusa_hpc/Master-Thesis/Power-Consumption/gpu_power_calculator.py',
+                '/home/user/Master-Thesis/Power-Consumption/gpu_power_calculator.py',
                 gpu_log_file
             ], capture_output=True, text=True, cwd=log_dir)
             
@@ -298,11 +298,11 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     model_name = args.model_name
-    input_text_dir = "/home/s27mhusa_hpc/Master-Thesis/Text_Files_Test_Data"
-    input_annot_dir = f"/home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_27thAugust_Embeddings/LLM_annotated_{model_name}_5shot"
-    input_annot_dir_json = f"/home/s27mhusa_hpc/Master-Thesis/Results/FinalResults_TestFiles_27thAugust_Embeddings_json/LLM_annotated_{model_name}_5shot"
-    xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/Test_XMI_Files"
-    log_dir = "/home/s27mhusa_hpc/Master-Thesis/FinalOutput-27thAugust-Embeddings/job_monitor_logs_TestFilesQwen2.5-7B-Instruct_20250827_160535_5shot"
+    input_text_dir = "/home/user/Master-Thesis/Text_Files_Test_Data"
+    input_annot_dir = f"/home/user/Master-Thesis/Results/FinalResults_TestFiles_27thAugust_Embeddings/LLM_annotated_{model_name}_5shot"
+    input_annot_dir_json = f"/home/user/Master-Thesis/Results/FinalResults_TestFiles_27thAugust_Embeddings_json/LLM_annotated_{model_name}_5shot"
+    xmi_dir = "/home/user/Master-Thesis/NewDatasets27August/Test_XMI_Files"
+    log_dir = "/home/user/Master-Thesis/FinalOutput-27thAugust-Embeddings/job_monitor_logs_TestFilesQwen2.5-7B-Instruct_20250827_160535_5shot"
 
     evaluate_all(args.model_name,
         input_text_dir,

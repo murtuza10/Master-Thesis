@@ -269,10 +269,10 @@ def compute_metrics(p):
 # --- 1. SETUP: DATA LOADING AND CONFIGURATION ---
 
 # Load datasets
-train_dataset = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset19SeptemberNoSoil/NER_dataset_sentence_Broad_NoSoil_train_final.json")
+train_dataset = Dataset.from_json("/home/user/Master-Thesis/Dataset19SeptemberNoSoil/NER_dataset_sentence_Broad_NoSoil_train_final.json")
 # Load datasets
-val_dataset   = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset19SeptemberNoSoil/NER_dataset_sentence_Broad_NoSoil_val_final.json")
-test_dataset  = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset19SeptemberNoSoil/Test_NER_dataset_Broad_NoSoil.json")
+val_dataset   = Dataset.from_json("/home/user/Master-Thesis/Dataset19SeptemberNoSoil/NER_dataset_sentence_Broad_NoSoil_val_final.json")
+test_dataset  = Dataset.from_json("/home/user/Master-Thesis/Dataset19SeptemberNoSoil/Test_NER_dataset_Broad_NoSoil.json")
 
 id2label = {i: l for i, l in enumerate(label_list)}
 entity_pools = build_entity_pools(train_dataset, id2label=id2label)
@@ -330,7 +330,7 @@ def objective(trial):
         return model_init_with_regularization(dropout)
     
     training_args = TrainingArguments(
-        output_dir=f"/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/agribert-new-results-nosoil-30/hyperparameter_search_regularized/trial_{trial.number}",
+        output_dir=f"/lustre/scratch/data/user-murtuza_master_thesis/agribert-new-results-nosoil-30/hyperparameter_search_regularized/trial_{trial.number}",
         eval_strategy="epoch",  # Use epoch-based evaluation for compatibility
         save_strategy="epoch",
         load_best_model_at_end=True,
@@ -400,7 +400,7 @@ print("="*80 + "\n")
 best_params = study.best_trial.params
 
 final_training_args = TrainingArguments(
-    output_dir="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/agribert-new-results-nosoil-30/results/final_model_regularized_22",
+    output_dir="/lustre/scratch/data/user-murtuza_master_thesis/agribert-new-results-nosoil-30/results/final_model_regularized_22",
     run_name="agribert-new-regularized-training",
     eval_strategy="epoch",
     save_strategy="epoch",
@@ -451,8 +451,8 @@ print("Final Test Set Metrics:")
 print(test_results.metrics)
 
 # Save the final model and tokenizer
-final_trainer.save_model("/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/agribert-new_final_model_regularized_saved_nosoil-30")
-tokenizer.save_pretrained("/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/agribert-new_final_model_regularized_saved_nosoil-30")
+final_trainer.save_model("/lustre/scratch/data/user-murtuza_master_thesis/agribert-new_final_model_regularized_saved_nosoil-30")
+tokenizer.save_pretrained("/lustre/scratch/data/user-murtuza_master_thesis/agribert-new_final_model_regularized_saved_nosoil-30")
 
 print_classification_reports(test_results.predictions, test_results.label_ids, "Final Test")
 

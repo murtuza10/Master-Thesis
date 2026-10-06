@@ -2,7 +2,7 @@
 #SBATCH --partition=sgpu_long
 #SBATCH --time=24:00:00
 #SBATCH --gpus=4
-#SBATCH --output=/home/s27mhusa_hpc/Master-Thesis/Output-28July/Qwen2.5-72B-Instruct-finetune-sentence-29July.out
+#SBATCH --output=/home/user/Master-Thesis/Output-28July/Qwen2.5-72B-Instruct-finetune-sentence-29July.out
 
 MODEL_NAME=$1
 
@@ -18,7 +18,7 @@ conda activate Llama
 start_time=$(date +%s)
 
 # === Begin Resource Monitoring ===
-LOG_DIR="/home/s27mhusa_hpc/Master-Thesis/Output-28July/job_monitor_logs_${MODEL_NAME}_${SLURM_JOB_ID}_$(date +%Y%m%d_%H%M%S)"
+LOG_DIR="/home/user/Master-Thesis/Output-28July/job_monitor_logs_${MODEL_NAME}_${SLURM_JOB_ID}_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$LOG_DIR"
 INTERVAL=1
 

@@ -204,7 +204,7 @@ def generate_bio_from_json(text_file, annotations_file):
 
 
 if __name__ == "__main__":
-    input_file_text = "/home/s27mhusa_hpc/Master-Thesis/Text_Files_For_LLM_Input/00bee634-47e6-490b-89ba-2464c9f09c31_inception.txt"
-    input_file_annotations = "/home/s27mhusa_hpc/Master-Thesis/Results/Results_new_prompt_json/LLM_annotated_Qwen2.5-72B-Instruct/00bee634-47e6-490b-89ba-2464c9f09c31_inception_annotated.txt"
+    input_file_text = "/home/user/Master-Thesis/Text_Files_For_LLM_Input/00bee634-47e6-490b-89ba-2464c9f09c31_inception.txt"
+    input_file_annotations = "/home/user/Master-Thesis/Results/Results_new_prompt_json/LLM_annotated_Qwen2.5-72B-Instruct/00bee634-47e6-490b-89ba-2464c9f09c31_inception_annotated.txt"
 
     generate_bio_from_json(input_file_text,input_file_annotations)

@@ -146,9 +146,9 @@ if __name__ == "__main__":
     wandb.login(key="ed7faaa7784428261467aee38c86ccc5c316f954")
 
     # Load dataset
-    train_dataset = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptember/NER_dataset_sentence_train_stratified.json")
-    val_dataset   = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptember/NER_dataset_sentence_val_stratified.json")
-    test_dataset  = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptember/Test_NER_dataset.json")
+    train_dataset = Dataset.from_json("/home/user/Master-Thesis/Dataset1stSeptember/NER_dataset_sentence_train_stratified.json")
+    val_dataset   = Dataset.from_json("/home/user/Master-Thesis/Dataset1stSeptember/NER_dataset_sentence_val_stratified.json")
+    test_dataset  = Dataset.from_json("/home/user/Master-Thesis/Dataset1stSeptember/Test_NER_dataset.json")
 
     # # Apply data augmentation to training set
     # print("Applying data augmentation to training set...")
@@ -212,7 +212,7 @@ if __name__ == "__main__":
 
     # Enhanced training arguments with regularization
     training_args = TrainingArguments(
-        output_dir="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/mdeberta_ner_model_7th_September_ver2_regularized",
+        output_dir="/lustre/scratch/data/user-murtuza_master_thesis/mdeberta_ner_model_7th_September_ver2_regularized",
         eval_strategy="epoch",
         save_strategy="epoch", 
         logging_dir="./logs",
@@ -258,7 +258,7 @@ if __name__ == "__main__":
     
     # Train final model with best hyperparameters
     best_args = TrainingArguments(
-        output_dir="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/mdeberta_ner_model_7th_September_best_ver2_regularized",
+        output_dir="/lustre/scratch/data/user-murtuza_master_thesis/mdeberta_ner_model_7th_September_best_ver2_regularized",
         eval_strategy="epoch",
         save_strategy="epoch", 
         logging_dir="./logs_best",

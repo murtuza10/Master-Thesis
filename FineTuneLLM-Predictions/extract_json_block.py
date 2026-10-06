@@ -1,8 +1,8 @@
 import json
 
 # File paths
-input_file = '/home/s27mhusa_hpc/Master-Thesis/FineTuneLLM-Predictions/Test_gold_FineTune_Llama3.1-8B-Instruct.jsonl'
-output_file = '/home/s27mhusa_hpc/Master-Thesis/FineTuneLLM-Predictions/Test_gold_FineTune_Llama3.1-8B-Instruct_extracted.json'
+input_file = '/home/user/Master-Thesis/FineTuneLLM-Predictions/Test_gold_FineTune_Llama3.1-8B-Instruct.jsonl'
+output_file = '/home/user/Master-Thesis/FineTuneLLM-Predictions/Test_gold_FineTune_Llama3.1-8B-Instruct_extracted.json'
 
 # List to store id + gold_output entries
 extracted_entries = []

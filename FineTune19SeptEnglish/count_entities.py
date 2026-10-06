@@ -4,7 +4,7 @@ from datasets import Dataset, DatasetDict, concatenate_datasets
 from seqeval.metrics.sequence_labeling import get_entities
 
 # Load JSON file containing a list of records
-with open("/home/s27mhusa_hpc/Master-Thesis/Dataset19September/Test_NER_dataset_English.json", "r", encoding="utf-8") as f:
+with open("/home/user/Master-Thesis/Dataset19September/Test_NER_dataset_English.json", "r", encoding="utf-8") as f:
     records = json.load(f)
 
 label_list = [
@@ -103,4 +103,4 @@ def analyze_raw_dataset(dataset, dataset_name="Raw Dataset"):
     return total_b_tags, seqeval_entities
 
 # Run this on your raw test dataset
-analyze_raw_dataset(Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset19September/Test_NER_dataset_English.json"), "Raw Test Dataset")
+analyze_raw_dataset(Dataset.from_json("/home/user/Master-Thesis/Dataset19September/Test_NER_dataset_English.json"), "Raw Test Dataset")

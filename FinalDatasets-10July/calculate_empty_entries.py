@@ -2,8 +2,8 @@ import json
 import random
 
 # File paths
-input_path = '/home/s27mhusa_hpc/Master-Thesis/FinalDatasets-10July/Test_ner_dataset_sentence_chat_format_final.jsonl'
-output_path = '/home/s27mhusa_hpc/Master-Thesis/FinalDatasets-10July/Test_ner_dataset_sentence_chat_format_final_filtered.jsonl'
+input_path = '/home/user/Master-Thesis/FinalDatasets-10July/Test_ner_dataset_sentence_chat_format_final.jsonl'
+output_path = '/home/user/Master-Thesis/FinalDatasets-10July/Test_ner_dataset_sentence_chat_format_final_filtered.jsonl'
 
 # Data containers
 empty_entries = []

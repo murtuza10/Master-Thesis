@@ -207,9 +207,9 @@ if __name__ == "__main__":
     wandb.login(key="ed7faaa7784428261467aee38c86ccc5c316f954")
 
     # Load dataset
-    train_dataset = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset19September/NER_dataset_sentence_English_train_final.json")
-    val_dataset   = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset19September/NER_dataset_sentence_English_val_final.json")
-    test_dataset  = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/Dataset19September/Test_NER_dataset_English.json")
+    train_dataset = Dataset.from_json("/home/user/Master-Thesis/Dataset19September/NER_dataset_sentence_English_train_final.json")
+    val_dataset   = Dataset.from_json("/home/user/Master-Thesis/Dataset19September/NER_dataset_sentence_English_val_final.json")
+    test_dataset  = Dataset.from_json("/home/user/Master-Thesis/Dataset19September/Test_NER_dataset_English.json")
 
     id2label = {i: l for i, l in enumerate(label_list)}
     entity_pools = build_entity_pools(train_dataset, id2label=id2label)
@@ -260,7 +260,7 @@ if __name__ == "__main__":
         )
 
     training_args = TrainingArguments(
-        output_dir="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/xlm_roberta_english_ner_model_20th_September",
+        output_dir="/lustre/scratch/data/user-murtuza_master_thesis/xlm_roberta_english_ner_model_20th_September",
         eval_strategy="epoch",
         save_strategy="epoch", 
         logging_dir="./logs",
@@ -296,7 +296,7 @@ if __name__ == "__main__":
     
     # Optionally retrain with best config:
     best_args = TrainingArguments(
-        output_dir="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/xlm_roberta_english_ner_model_20th_September_best",
+        output_dir="/lustre/scratch/data/user-murtuza_master_thesis/xlm_roberta_english_ner_model_20th_September_best",
         eval_strategy="epoch",
         save_strategy="epoch", 
         logging_dir="./logs_best",

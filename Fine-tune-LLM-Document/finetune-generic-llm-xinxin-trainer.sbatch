@@ -2,7 +2,7 @@
 #SBATCH --partition=mlgpu_devel
 #SBATCH --time=1:00:00
 #SBATCH --gpus=4
-#SBATCH --output=/home/s27mhusa_hpc/Master-Thesis/Output-FineTune-xinxin-10Sept/finetune_gpu_Qwen-3-14B_trainer_job_%j_10_September.out
+#SBATCH --output=/home/user/Master-Thesis/Output-FineTune-xinxin-10Sept/finetune_gpu_Qwen-3-14B_trainer_job_%j_10_September.out
 
 MODEL_NAME=$1
 
@@ -18,7 +18,7 @@ conda activate autotrain1
 start_time=$(date +%s)
 
 # === Begin Resource Monitoring ===
-LOG_DIR="/home/s27mhusa_hpc/Master-Thesis/Fine-tune-LLM-Document/job_monitor_logs_${MODEL_NAME}_${SLURM_JOB_ID}_$(date +%Y%m%d_%H%M%S)"
+LOG_DIR="/home/user/Master-Thesis/Fine-tune-LLM-Document/job_monitor_logs_${MODEL_NAME}_${SLURM_JOB_ID}_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$LOG_DIR"
 INTERVAL=1
 
@@ -51,7 +51,7 @@ echo $CPU_PID >> "$LOG_DIR/pids.txt"
 echo $IO_PID >> "$LOG_DIR/pids.txt"
 
 # === Run Main Script ===
-python /home/s27mhusa_hpc/Master-Thesis/Fine-tune-LLM-Document/fine-tune-qwen-mod.py
+python /home/user/Master-Thesis/Fine-tune-LLM-Document/fine-tune-qwen-mod.py
 # === Stop Resource Monitoring ===
 echo "Stopping resource monitoring..."
 kill $GPU_PID

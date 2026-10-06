@@ -10,10 +10,10 @@ from cassis import Cas, load_typesystem
 # CONFIGURATION
 # ==============================
 
-MODEL_PATH = "/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/roberta-en-de_final_model_regularized_saved_specific_22"
-INPUT_DIR = "/home/s27mhusa_hpc/Master-Thesis/Text_Files_Test_Data"
-OUTPUT_DIR = "/home/s27mhusa_hpc/Master-Thesis/Test_Model_Predictions_XMI"
-TYPESYSTEM_PATH = "/home/s27mhusa_hpc/Master-Thesis/Evaluation_Files/full-typesystem.xml"
+MODEL_PATH = "/lustre/scratch/data/user-murtuza_master_thesis/roberta-en-de_final_model_regularized_saved_specific_22"
+INPUT_DIR = "/home/user/Master-Thesis/Text_Files_Test_Data"
+OUTPUT_DIR = "/home/user/Master-Thesis/Test_Model_Predictions_XMI"
+TYPESYSTEM_PATH = "/home/user/Master-Thesis/Evaluation_Files/full-typesystem.xml"
 
 # Your actual label list in the exact order used during training
 LABEL_LIST = [

@@ -78,7 +78,7 @@ def cas_to_bio_by_sentences(cas, annotation_types):
 
 
 def generate_bio_annotations_from_cas(cas_file):
-    with open('/home/s27mhusa_hpc/Master-Thesis/Evaluation_Files/TypeSystem.xml', 'rb') as f:
+    with open('/home/user/Master-Thesis/Evaluation_Files/TypeSystem.xml', 'rb') as f:
         typesystem = load_typesystem(f)
 
     with open(cas_file, 'rb') as f:

@@ -23,7 +23,7 @@ import time
 import socket
 
 # Set a new cache directory
-cache_dir = "/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/new_hf_cache_1"
+cache_dir = "/lustre/scratch/data/user-murtuza_master_thesis/new_hf_cache_1"
 os.makedirs(cache_dir, exist_ok=True)
 
 # Configure datasets to use the new cache
@@ -308,9 +308,9 @@ def main():
         print(f"Process {rank}: Loading datasets...")
         
         try:
-            train_dataset = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/Train_ner_dataset_sentence_filtered_train_stratified.json")
-            val_dataset   = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/Train_ner_dataset_sentence_filtered_val_stratified.json")
-            test_dataset  = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/NewDatasets27August/Test_ner_dataset_sentence.json")
+            train_dataset = Dataset.from_json("/home/user/Master-Thesis/NewDatasets27August/Train_ner_dataset_sentence_filtered_train_stratified.json")
+            val_dataset   = Dataset.from_json("/home/user/Master-Thesis/NewDatasets27August/Train_ner_dataset_sentence_filtered_val_stratified.json")
+            test_dataset  = Dataset.from_json("/home/user/Master-Thesis/NewDatasets27August/Test_ner_dataset_sentence.json")
 
             dataset = DatasetDict({
                 "train": train_dataset,
@@ -369,7 +369,7 @@ def main():
 
         # Training arguments
         training_args = TrainingArguments(
-            output_dir="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/mdeberta_ner_model_robust",
+            output_dir="/lustre/scratch/data/user-murtuza_master_thesis/mdeberta_ner_model_robust",
             eval_strategy="epoch",
             save_strategy="epoch",
             logging_dir="./logs_robust",

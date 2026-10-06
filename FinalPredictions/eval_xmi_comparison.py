@@ -10,7 +10,7 @@ from sklearn.metrics import classification_report
 
 TYPE_SYSTEM_PATH = os.getenv(
     "TYPE_SYSTEM_PATH",
-    "/home/s27mhusa_hpc/Master-Thesis/Evaluation_Files/TypeSystem.xml"
+    "/home/user/Master-Thesis/Evaluation_Files/TypeSystem.xml"
 )
 
 

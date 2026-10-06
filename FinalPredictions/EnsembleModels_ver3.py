@@ -387,31 +387,31 @@ class MultiModelNER:
         # Model configurations with updated entity names
         self.model_configs = {
             'roberta_all_specific': {
-                'path': '/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/roberta-en-de_final_model_regularized_saved_specific_22',
+                'path': '/lustre/scratch/data/user-murtuza_master_thesis/roberta-en-de_final_model_regularized_saved_specific_22',
                 'type': 'token_classification',
                 'entities': ['cropSpecies', 'soilReferenceGroup', 'endTime', 'duration','startTime','soilOrganicCarbon'],
                 'languages': ['en', 'de']
             },
             'qwen_2.5_7b': {
-                'path': '/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/Qwen2.5-7B-Instruct',
+                'path': '/lustre/scratch/data/user-murtuza_master_thesis/Qwen2.5-7B-Instruct',
                 'type': 'causal_lm',
                 'entities': ['cropVariety', 'soilAvailableNitrogen', 'soilBulkDensity'],
                 'languages': ['en', 'de']
             },
             'xlm_roberta_broad': {
-                'path': '/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/roberta-en-de_final_model_regularized_saved_nosoil_29',
+                'path': '/lustre/scratch/data/user-murtuza_master_thesis/roberta-en-de_final_model_regularized_saved_nosoil_29',
                 'type': 'token_classification',
                 'entities': ['locationName'],  # Uses Location internally, mapped to locationName
                 'languages': ['en', 'de']
             },
             'roberta_english_specific': {
-                'path': '/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/roberta-english_specific_final_model_regularized_saved_broad_3.0-21sept',
+                'path': '/lustre/scratch/data/user-murtuza_master_thesis/roberta-english_specific_final_model_regularized_saved_broad_3.0-21sept',
                 'type': 'token_classification',
                 'entities': ['startTime', 'soilOrganicCarbon'],
                 'languages': ['en']
             },
             'agribert_all_specific': {
-                'path': '/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/agribert-new_final_model_regularized_saved_specific_22-3',
+                'path': '/lustre/scratch/data/user-murtuza_master_thesis/agribert-new_final_model_regularized_saved_specific_22-3',
                 'type': 'token_classification',
                 'entities': ['soilDepth', 'soilPH'],
                 'languages': ['en', 'de']
@@ -447,9 +447,9 @@ class MultiModelNER:
         self.corpus_entities = []
         
         # Updated dataset paths
-        self.embeddings_dataset = "/home/s27mhusa_hpc/Master-Thesis/DatasetsFinalPredictions/ner_dataset_input_output.jsonl"
-        self.test_dataset_en_path = "/home/s27mhusa_hpc/Master-Thesis/DatasetsFinalPredictions/Test_NER_dataset_English.json"
-        self.test_dataset_de_path = "/home/s27mhusa_hpc/Master-Thesis/DatasetsFinalPredictions/Test_NER_dataset_German.json"
+        self.embeddings_dataset = "/home/user/Master-Thesis/DatasetsFinalPredictions/ner_dataset_input_output.jsonl"
+        self.test_dataset_en_path = "/home/user/Master-Thesis/DatasetsFinalPredictions/Test_NER_dataset_English.json"
+        self.test_dataset_de_path = "/home/user/Master-Thesis/DatasetsFinalPredictions/Test_NER_dataset_German.json"
     
     def get_model_labels(self, model_name: str) -> Tuple[Dict, Dict]:
         """

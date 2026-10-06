@@ -87,6 +87,6 @@ def extract_json_block_from_directory(input_dir, output_dir, model_name, start):
 
 if __name__ == "__main__":
     extract_second_json_block_from_directory(
-        "/home/s27mhusa_hpc/Master-Thesis/Results/Results_new_prompt/LLM_annotated_Qwen2.5-72B-Instruct",
-        "/home/s27mhusa_hpc/Master-Thesis/Results/Results_new_prompt_json/LLM_annotated_Qwen2.5-72B-Instruct"
+        "/home/user/Master-Thesis/Results/Results_new_prompt/LLM_annotated_Qwen2.5-72B-Instruct",
+        "/home/user/Master-Thesis/Results/Results_new_prompt_json/LLM_annotated_Qwen2.5-72B-Instruct"
     )

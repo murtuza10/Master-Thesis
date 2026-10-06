@@ -13,8 +13,8 @@ label_list = ["O","B-cropSpecies","I-cropSpecies","B-cropVariety","I-cropVariety
 
 label_to_index = {label: idx for idx, label in enumerate(label_list)}
 
-input_dir_labels = Path("/home/s27mhusa_hpc/Master-Thesis/DatasetsFinalPredictions/Test_BIO_labels_English")
-output_dir_labels = Path("/home/s27mhusa_hpc/Master-Thesis/DatasetsFinalPredictions/Test_BIO_labels_indexed_English")
+input_dir_labels = Path("/home/user/Master-Thesis/DatasetsFinalPredictions/Test_BIO_labels_English")
+output_dir_labels = Path("/home/user/Master-Thesis/DatasetsFinalPredictions/Test_BIO_labels_indexed_English")
 os.makedirs(output_dir_labels, exist_ok=True)
 
 for filename in os.listdir(input_dir_labels):

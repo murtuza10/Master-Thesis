@@ -14,4 +14,4 @@ conda init
 conda deactivate 
 conda activate Llama
 
-python /home/s27mhusa_hpc/pilot-uc-textmining-metadata/code/GoLLIE/NER_Prompting-GoLLIE-13B.py
+python /home/user/pilot-uc-textmining-metadata/code/GoLLIE/NER_Prompting-GoLLIE-13B.py

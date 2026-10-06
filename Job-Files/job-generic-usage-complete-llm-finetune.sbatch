@@ -2,14 +2,14 @@
 #SBATCH --partition=sgpu_medium
 #SBATCH --time=24:00:00
 #SBATCH --gpus=4
-#SBATCH --output=/home/s27mhusa_hpc/Master-Thesis/Output-FineTune-Document-12Aug-Prompting/gpu_job_FineTune_Prompting_Document_%j_12-8-2025.out
+#SBATCH --output=/home/user/Master-Thesis/Output-FineTune-Document-12Aug-Prompting/gpu_job_FineTune_Prompting_Document_%j_12-8-2025.out
 
 MODEL_NAME=$1
 
-JSONL_PATH="/home/s27mhusa_hpc/Master-Thesis/Dataset-25-July-Document-Level/Test_ner_dataset_document_input_output.jsonl"
-OUTPUT_PRED="/home/s27mhusa_hpc/Master-Thesis/LLM-Predictions-Document-12Aug/Test_predictions_${MODEL_NAME}-Document.jsonl"
-OUTPUT_GOLD="/home/s27mhusa_hpc/Master-Thesis/LLM-Predictions-Document-12Aug/Test_gold_${MODEL_NAME}-Document.jsonl"
-MODEL_PATH="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/${MODEL_NAME}"
+JSONL_PATH="/home/user/Master-Thesis/Dataset-25-July-Document-Level/Test_ner_dataset_document_input_output.jsonl"
+OUTPUT_PRED="/home/user/Master-Thesis/LLM-Predictions-Document-12Aug/Test_predictions_${MODEL_NAME}-Document.jsonl"
+OUTPUT_GOLD="/home/user/Master-Thesis/LLM-Predictions-Document-12Aug/Test_gold_${MODEL_NAME}-Document.jsonl"
+MODEL_PATH="/lustre/scratch/data/user-murtuza_master_thesis/${MODEL_NAME}"
 
 module load CUDA/12.6.0
 module load sysstat
@@ -24,7 +24,7 @@ conda activate autotrain
 start_time=$(date +%s)
 
 # === Begin Resource Monitoring ===
-LOG_DIR="/home/s27mhusa_hpc/Master-Thesis/Output-FineTune-Document-12Aug-Prompting/job_monitor_logs_${MODEL_NAME}_$(date +%Y%m%d_%H%M%S)"
+LOG_DIR="/home/user/Master-Thesis/Output-FineTune-Document-12Aug-Prompting/job_monitor_logs_${MODEL_NAME}_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$LOG_DIR"
 INTERVAL=30
 
@@ -57,7 +57,7 @@ echo $CPU_PID >> "$LOG_DIR/pids.txt"
 echo $IO_PID >> "$LOG_DIR/pids.txt"
 
 # === Run Main Script ===
-python /home/s27mhusa_hpc/Master-Thesis/Zero-Shot-Prompting/NER_Prompting_generic_chat-finetune-llm.py \
+python /home/user/Master-Thesis/Zero-Shot-Prompting/NER_Prompting_generic_chat-finetune-llm.py \
   --jsonl_path "$JSONL_PATH" \
   --output_pred "$OUTPUT_PRED" \
   --output_gold "$OUTPUT_GOLD" \

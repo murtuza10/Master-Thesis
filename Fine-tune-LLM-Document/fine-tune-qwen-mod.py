@@ -8,13 +8,13 @@ import torch
 # Load dataset
 dataset = load_dataset(
     "json", 
-    data_files="/home/s27mhusa_hpc/Master-Thesis/Fine-tune-LLM-Document/text2icasa_training_data_1to1_only_method_fertilizer.jsonl",
+    data_files="/home/user/Master-Thesis/Fine-tune-LLM-Document/text2icasa_training_data_1to1_only_method_fertilizer.jsonl",
     split='train'
 )
 split_dataset = dataset.train_test_split(test_size=2, seed=42)
 
 # Model and tokenizer loading
-model_path = "/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/Llama-3.1-8B-Instruct"
+model_path = "/lustre/scratch/data/user-murtuza_master_thesis/Llama-3.1-8B-Instruct"
 
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 if tokenizer.pad_token is None:
@@ -54,7 +54,7 @@ You are a helpful assistant.
 
 # Training arguments
 training_args = TrainingArguments(
-    output_dir="/home/s27mhusa_hpc/Master-Thesis/Fine-tune-LLM-Document/fine_tuned_llama",
+    output_dir="/home/user/Master-Thesis/Fine-tune-LLM-Document/fine_tuned_llama",
     per_device_train_batch_size=1,
     per_device_eval_batch_size=1,
     gradient_accumulation_steps=4,

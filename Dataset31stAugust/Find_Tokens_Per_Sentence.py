@@ -6,9 +6,9 @@ from pathlib import Path
 
 
 # Define paths
-tokens_path = Path("/home/s27mhusa_hpc/Master-Thesis/Dataset31stAugust/Test_BIO_tokens_Final")
-labels_path = Path("/home/s27mhusa_hpc/Master-Thesis/Dataset31stAugust/Test_BIO_labels_indexed_Final")
-output_path = Path("/home/s27mhusa_hpc/Master-Thesis/Dataset31stAugust/Test_ner_dataset_sentence.json")
+tokens_path = Path("/home/user/Master-Thesis/Dataset31stAugust/Test_BIO_tokens_Final")
+labels_path = Path("/home/user/Master-Thesis/Dataset31stAugust/Test_BIO_labels_indexed_Final")
+output_path = Path("/home/user/Master-Thesis/Dataset31stAugust/Test_ner_dataset_sentence.json")
 
 
 def split_tokens_and_labels(tokens, labels, sentence_end_tokens={".", "!", "?"}):

@@ -13,7 +13,7 @@ from collections import defaultdict, Counter
 
 # Add local module paths
 sys.path.append(os.path.abspath(os.path.dirname(__file__)))
-sys.path.append("/home/s27mhusa_hpc/Master-Thesis/Evaluation_Files")
+sys.path.append("/home/user/Master-Thesis/Evaluation_Files")
 
 from generate_bio_from_cas_nosoil import generate_bio_annotations_from_cas
 from generate_bio_from_json_updated import generate_bio_from_json
@@ -258,7 +258,7 @@ def get_power_consumption(log_dir=None):
             import subprocess
             result = subprocess.run([
                 'python', 
-                '/home/s27mhusa_hpc/Master-Thesis/Power-Consumption/gpu_power_calculator.py',
+                '/home/user/Master-Thesis/Power-Consumption/gpu_power_calculator.py',
                 gpu_log_file
             ], capture_output=True, text=True, cwd=log_dir)
             
@@ -448,13 +448,13 @@ def evaluate_all(model_name, input_text_dir, input_annot_dir, input_annot_dir_js
     results_per_file = []
     stats_lines = []
 
-    y_true_dir = f"/home/s27mhusa_hpc/Master-Thesis/Dataset19SeptemberNoSoil/Test_BIO_labels_NoSoil"
-    results_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_2ndOctober_FewShotTest_Embeddings/ner_evaluation_results_{model_name}_{start}_shot.txt"
-    stats_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_2ndOctober_FewShotTest_Embeddings/Stats/ner_evaluation_stats_{model_name}_{start}_shot.txt"
+    y_true_dir = f"/home/user/Master-Thesis/Dataset19SeptemberNoSoil/Test_BIO_labels_NoSoil"
+    results_output_path = f"/home/user/Master-Thesis/Evaluation_Results/Final_TestFiles_2ndOctober_FewShotTest_Embeddings/ner_evaluation_results_{model_name}_{start}_shot.txt"
+    stats_output_path = f"/home/user/Master-Thesis/Evaluation_Results/Final_TestFiles_2ndOctober_FewShotTest_Embeddings/Stats/ner_evaluation_stats_{model_name}_{start}_shot.txt"
 
     # Excel output paths
-    excel_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_2ndOctober_FewShotTest_Embeddings/ner_evaluation_results_{model_name}_{start}_shot.xlsx"
-    detailed_excel_output_path = f"/home/s27mhusa_hpc/Master-Thesis/Evaluation_Results/Final_TestFiles_2ndOctober_FewShotTest_Embeddings/detailed_category_results_{model_name}_{start}_shot.xlsx"
+    excel_output_path = f"/home/user/Master-Thesis/Evaluation_Results/Final_TestFiles_2ndOctober_FewShotTest_Embeddings/ner_evaluation_results_{model_name}_{start}_shot.xlsx"
+    detailed_excel_output_path = f"/home/user/Master-Thesis/Evaluation_Results/Final_TestFiles_2ndOctober_FewShotTest_Embeddings/detailed_category_results_{model_name}_{start}_shot.xlsx"
 
     for filename in os.listdir(input_text_dir):
         if filename.endswith("_inception.txt"):
@@ -596,14 +596,14 @@ if __name__ == "__main__":
 
     model_name = args.model_name
     shot_count = args.shot_count
-    log_dir = "/home/s27mhusa_hpc/Master-Thesis/Logs/Llama-3.3-70B"
+    log_dir = "/home/user/Master-Thesis/Logs/Llama-3.3-70B"
 
     os.makedirs(log_dir, exist_ok=True)
 
-    input_text_dir = "/home/s27mhusa_hpc/Master-Thesis/Text_Files_Test_Data"
-    input_annot_dir = f"/home/s27mhusa_hpc/Master-Thesis/Results/Corrected/LLM_annotated_Llama-3.3-70B-Instruct_{shot_count}shot"
-    input_annot_dir_json = f"/home/s27mhusa_hpc/Master-Thesis/Results/Corrected_json/LLM_annotated_Llama-3.3-70B-Instruct_{shot_count}shot"
-    xmi_dir = "/home/s27mhusa_hpc/Master-Thesis/Dataset1stSeptemberDocumentLevel/Test_XMI_Files"
+    input_text_dir = "/home/user/Master-Thesis/Text_Files_Test_Data"
+    input_annot_dir = f"/home/user/Master-Thesis/Results/Corrected/LLM_annotated_Llama-3.3-70B-Instruct_{shot_count}shot"
+    input_annot_dir_json = f"/home/user/Master-Thesis/Results/Corrected_json/LLM_annotated_Llama-3.3-70B-Instruct_{shot_count}shot"
+    xmi_dir = "/home/user/Master-Thesis/Dataset1stSeptemberDocumentLevel/Test_XMI_Files"
 
     evaluate_all(
         model_name,

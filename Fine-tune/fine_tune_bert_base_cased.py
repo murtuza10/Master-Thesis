@@ -67,10 +67,10 @@ if __name__ == "__main__":
     wandb.login(key="ed7faaa7784428261467aee38c86ccc5c316f954")
 
     # Load dataset
-    # dataset = load_dataset("json", data_files="/home/s27mhusa_hpc/Master-Thesis/ner_dataset_sentence.json")
-    train_dataset = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/FinalDatasets-21July/combine_ner_dataset_sentence_train_stratified_filtered.json")
-    val_dataset   = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/FinalDatasets-21July/combine_ner_dataset_sentence_val_stratified_filtered.json")
-    test_dataset  = Dataset.from_json("/home/s27mhusa_hpc/Master-Thesis/FinalDatasets-21July/Test_ner_dataset_sentence.json")
+    # dataset = load_dataset("json", data_files="/home/user/Master-Thesis/ner_dataset_sentence.json")
+    train_dataset = Dataset.from_json("/home/user/Master-Thesis/FinalDatasets-21July/combine_ner_dataset_sentence_train_stratified_filtered.json")
+    val_dataset   = Dataset.from_json("/home/user/Master-Thesis/FinalDatasets-21July/combine_ner_dataset_sentence_val_stratified_filtered.json")
+    test_dataset  = Dataset.from_json("/home/user/Master-Thesis/FinalDatasets-21July/Test_ner_dataset_sentence.json")
 
     dataset = DatasetDict({
         "train": train_dataset,
@@ -108,7 +108,7 @@ if __name__ == "__main__":
 
     # Static training args (some overridden by Optuna)
     training_args = TrainingArguments(
-        output_dir="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/ner_model_22_July",
+        output_dir="/lustre/scratch/data/user-murtuza_master_thesis/ner_model_22_July",
         eval_strategy="epoch",
         save_strategy="epoch", 
         logging_dir="./logs",
@@ -141,7 +141,7 @@ if __name__ == "__main__":
 
     # Optionally retrain with best config:
     best_args = TrainingArguments(
-        output_dir="/lustre/scratch/data/s27mhusa_hpc-murtuza_master_thesis/ner_model_best_22_July",
+        output_dir="/lustre/scratch/data/user-murtuza_master_thesis/ner_model_best_22_July",
         eval_strategy="epoch",
         save_strategy="epoch", 
         logging_dir="./logs_best",
