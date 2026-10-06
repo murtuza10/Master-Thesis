@@ -10,12 +10,17 @@ if not hub_token:
         "Set HF_TOKEN or HUGGINGFACE_HUB_TOKEN before running the sweep."
     )
 
+username = os.getenv("HF_USERNAME") or os.getenv("HUGGINGFACE_USERNAME")
+if not username:
+    raise RuntimeError(
+        "Set HF_USERNAME or HUGGINGFACE_USERNAME before running the sweep."
+    )
+
 
 # Sweep configuration
 learning_rates = [1e-5, 3e-5, 5e-5]
 batch_sizes = [2, 4]
 epochs_list = [3, 5]
-username = "murtuza10"
 
 for lr, bs, ep in itertools.product(learning_rates, batch_sizes, epochs_list):
     run_name = f"llama3-sweep-lr{lr}-bs{bs}-ep{ep}"

@@ -10,8 +10,13 @@ batch_sizes = [2, 4]
 epochs_list = [3, 5]
 
 # Hugging Face Hub credentials
-username = "murtuza10"
-hub_token = "hf_your_token_here"  # ← Replace with your actual token
+username = os.getenv("HF_USERNAME") or os.getenv("HUGGINGFACE_USERNAME")
+hub_token = os.getenv("HF_TOKEN") or os.getenv("HUGGINGFACE_HUB_TOKEN")
+if not username or not hub_token:
+    raise RuntimeError(
+        "Set HF_USERNAME (or HUGGINGFACE_USERNAME) and HF_TOKEN "
+        "(or HUGGINGFACE_HUB_TOKEN) before running the sweep."
+    )
 
 # Project prefix
 base_project = "llama3-sweep"

@@ -12,7 +12,7 @@ widget:
         content: What is your favorite condiment?
 license: other
 datasets:
-- murtuza10/25thJulySentenceLevel
+- <USERNAME>/25thJulySentenceLevel
 ---
 
 # Model Trained Using AutoTrain
